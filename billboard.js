@@ -9,7 +9,6 @@ for (var i=0; i<elements.length; i++){
     var title = element.getElementsByClassName('chart-list-item__title')[0];
     var artist = element.getElementsByClassName('chart-list-item__artist')[0];
     if(isNew){
-    console.log("New song!")
-    console.log("title: ", title.textContent.trim());
-    console.log("artist: ", artist.textContent.trim());}
+    setTimeout (console.log.bind (console, title.textContent.trim()));
+    setTimeout (console.log.bind (console, artist.textContent.trim()));}
 }
