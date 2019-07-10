@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Scraper Demo</title>
+</head>
+
+<body>
+	<ul>
+		<li><a href='https://www.billboard.com/charts/hot-100' target='scraperframe'>Billboard</a></li>
+	</ul>
+	<script>
+		var scrapeBillboard = function(){
+			var iframe = document.getElementById("scraperframe");
+			var innerDoc = iframe.contentWindow.document;
+			elements = innerDoc.getElementsByClassName('chart-list-item');
+			var output = "";
+			for (var i=0; i<elements.length; i++){ 
+			    var isNew = false;
+			    var element = elements[i];
+			    var trendIcon = element.getElementsByClassName('chart-list-item__trend-icon')[0].getElementsByTagName('img');
+			    if(trendIcon.length > 0){
+			       isNew = trendIcon[0].src.indexOf('-new') > -1;
+			    }
+			    var title = element.getElementsByClassName('chart-list-item__title')[0];
+			    var artist = element.getElementsByClassName('chart-list-item__artist')[0];
+			    if(isNew){
+				    output += "New song!" + "\n";
+				    output += "title: " + title.textContent.trim() + "\n";
+				    output += "artist: " + artist.textContent.trim() + "\n";
+				}
+			}
+			alert(output);
+	    }
+	</script>
+	<button onclick='scrapeBillboard();'>Scrape!</button>
+	<iframe id='scraperframe' name='scraperframe' style='width:100%; height:50%; position:absolute; bottom:0; left:0;'>
+	</iframe>
+</body>
+</html>
