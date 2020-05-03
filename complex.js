@@ -4,7 +4,7 @@
 // Always check the last song name to make sure everything got scraped.
 
 elements = document.getElementsByClassName("article__copy clearfix");
-element = elements[0].getElementsByTagName('h2');
+element = elements[0].getElementsByTagName('h2'); // was h3 on 7.26.19 chart only.
 sourceDate = document.getElementsByClassName("info-row__datetime");
 vidUrl = document.getElementsByClassName("video-lazyload");
 for (var i=0; i<element.length; i++){
