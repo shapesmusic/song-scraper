@@ -4,20 +4,20 @@
 // Always check the last song name to make sure everything got scraped.
 
 elements = document.getElementsByClassName("article__copy clearfix");
-element = elements[0].getElementsByTagName('h2'); // was h3 on 7.26.19 chart only.
+element = elements[0].getElementsByTagName("h2");
 sourceDate = document.getElementsByClassName("info-row__datetime");
-vidUrl = document.getElementsByClassName("video-lazyload");
+vidUrl = document.getElementsByClassName("custom-embed")
 for (var i=0; i<element.length; i++){
-  merged = element[i].innerHTML;
-  song = merged.match(/, “(.*?)”/)[1]; // may need " type quotation marks
-  artist = merged.match(/.+?(?=, “)/); // may need " type quotation marks
-  vid = vidUrl[i].style.backgroundImage.match(/vi\/([^\/]{0,})/)[1];
+  merged = element[i].innerText;
+  song = merged.match(/, “(.*?)”/)[1]; // may need " type quotation marks, or a comma after the artist name
+  artist = merged.match(/.+?(?=, “)/)[0]; // may need " type quotation marks
+  vid = vidUrl[i].getElementsByTagName("iframe")[0].src.match(/embed\/([^"]{0,})/)[1];
 
-  setTimeout (console.log.bind (console, "dateAdded: " + new Date()));
-  setTimeout (console.log.bind (console, "source: " + "Complex Best New Music This Week"));
-  setTimeout (console.log.bind (console, "sourceDate: " + sourceDate[0].innerHTML.trim()));
-  setTimeout (console.log.bind (console, "sourceUrl: " + window.location.href));
-  setTimeout (console.log.bind (console, "songName: " + song));
-  setTimeout (console.log.bind (console, "artistName: " + artist));
-  setTimeout (console.log.bind (console, "videoID: " + vid));
+  console.log("dateAdded: " + new Date());
+  console.log("source: " + "Complex Best New Music This Week");
+  console.log("sourceDate: " + sourceDate[0].innerHTML.trim());
+  console.log("sourceUrl: " + window.location.href);
+  console.log("songName: " + song);
+  console.log("artistName: " + artist);
+  console.log("videoID: " + vid);
 };
