@@ -1,14 +1,15 @@
-// Scroll to the bottom of the page first, so all the React stuff loads.
-// Always check the last song name to make sure everything got scraped.
+// Scroll to the bottom of the page first, so all the React stuff loads
+// Always check the last song name to make sure everything got scraped
 
 //
 // Step 1: get source data
 //
+
   chartTitle = document.getElementsByClassName("story-title story-title__article")[0].innerText;
   parentStream = chartTitle.match(/.+?(?=:)/)[0];
   instanceName = chartTitle.match(/[^:]+$/)[0].trim();
 
-  // add moment.js to the header
+  // add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
   momentjs.src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.2.1/moment.min.js";
   document.head.appendChild(momentjs);
@@ -22,8 +23,8 @@
     "parentEntity": "Complex",
     "parentStream": parentStream,
     "instanceName": instanceName,
-    "publicationDate": publicationDateFormatted, // previously "sourceDate"
-    "location": window.location.href, // previously "sourceUrl"
+    "publicationDate": publicationDateFormatted,
+    "location": window.location.href,
   };
 
   JSON.stringify(source, null, 4)
@@ -32,6 +33,7 @@
 //
 // Step 2: get songs data
 //
+
   sourceId = "5eb0e81665bca35b26437f21" // update with source ID
 
   elements = document.getElementsByClassName("article__copy clearfix");
@@ -47,8 +49,8 @@
     videoId = videoUrl[i].getElementsByTagName("iframe")[0].src.match(/embed\/([^"]{0,})/)[1];
 
     song = {
-      "captureDate": moment(new Date()).format(), // previously "dateAdded" (not used by the player)
-      "captureSource": "ObjectId(" + sourceId + ")", // TODO: should not be a string
+      "captureDate": moment(new Date()).format(),
+      "captureSource": "ObjectId(" + sourceId + ")", // FIXME: should not be a string
       "songName": songName,
       "artistName": artistName,
       "videoId": videoId
