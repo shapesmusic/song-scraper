@@ -1,22 +1,21 @@
-sourceDate = document.getElementsByClassName('chart-detail-header__date-selector-button');
-elements = document.getElementsByClassName('chart-list-item');
+sourceDate = document.getElementsByClassName('date-selector__button button--link');
+elements = document.getElementsByClassName('chart-list__element display--flex');
 for (var i=0; i<elements.length; i++){
-    var isNew = false;
     var element = elements[i];
-    var trendIcon = element.getElementsByClassName('chart-list-item__trend-icon')[0].getElementsByTagName('img');
-    if(trendIcon.length > 0){
-       isNew = trendIcon[0].src.indexOf('-new') > -1;
-    }
-    var title = element.getElementsByClassName('chart-list-item__title')[0];
-    var artist = element.getElementsByClassName('chart-list-item__artist')[0];
-    if(isNew){
+    var isNew = element.getElementsByClassName('chart-element__trend chart-element__trend--new color--accent');
+    var title = element.getElementsByClassName('chart-element__information__song text--truncate color--primary')[0];
+    var artist = element.getElementsByClassName('chart-element__information__artist text--truncate color--secondary')[0];
 
-    setTimeout (console.log.bind (console, "dateAdded: " + new Date()));
-    setTimeout (console.log.bind (console, "source: " + "Billboard Hot 100"));
-    setTimeout (console.log.bind (console, "sourceDate: " + sourceDate[0].innerText));
-    setTimeout (console.log.bind (console, "sourceUrl: " + window.location.href));
-    setTimeout (console.log.bind (console, "songName: " + title.textContent.trim()));
-    setTimeout (console.log.bind (console, "artistName: " + artist.textContent.trim()));
-    setTimeout (console.log.bind (console, "videoID: " + ""));
-  }
+if(isNew.length == 1 && isNew[0].innerText == "New"){ // because innerText can also be "Re-Enter"
+
+  // console.log("dateAdded: " + new Date());
+  // console.log("source: " + "Billboard Hot 100");
+  // console.log("sourceDate: " + sourceDate[0].innerText);
+  // console.log("sourceUrl: " + window.location.href);
+  console.log("songName: " + title.innerText.trim());
+  // console.log("artistName: " + artist.innerText.trim());
+  // console.log("videoID: " + "");
+
+}
+
 };
