@@ -32,6 +32,8 @@
 //
 // Step 2: get songs data
 //
+  sourceId = "5eb0e81665bca35b26437f21" // update with source ID
+
   elements = document.getElementsByClassName("article__copy clearfix");
   element = elements[0].getElementsByTagName("h2");
   videoUrl = document.getElementsByClassName("custom-embed")
@@ -46,7 +48,7 @@
 
     song = {
       "captureDate": moment(new Date()).format(), // previously "dateAdded" (not used by the player)
-      "captureSource": "", // TODO: a reference to source
+      "captureSource": "ObjectId(" + sourceId + ")", // TODO: should not be a string
       "songName": songName,
       "artistName": artistName,
       "videoId": videoId
