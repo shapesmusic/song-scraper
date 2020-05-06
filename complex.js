@@ -34,19 +34,18 @@
 // Step 2: get songs data
 //
 
-  sourceId = "5eb22b188e1f3aed7d986b50" // update with source ID
+  sourceId = "5eb2404e8e1f3aed7d986b74" // update with source ID
 
   elements = document.getElementsByClassName("article__copy clearfix");
   element = elements[0].getElementsByTagName("h3"); // sometimes h2 or h3
-  videoUrl = document.getElementsByClassName("custom-embed")
+  videoUrl = document.getElementsByClassName("video-lazyload");
 
   songs = [];
 
   for (var i=0; i<element.length; i++){
-    merged = element[i].innerText;
-    songName = merged.match(/, “(.*?)”/)[1]; // may need " type quotation marks, or a comma after the artist name, or may have an &nbsp; instead of a space
-    artistName = merged.match(/.+?(?=, “)/)[0]; // may need " type quotation marks
-    videoId = videoUrl[i].getElementsByTagName("iframe")[0].src.match(/embed\/([^"]{0,})/)[1]; // example: https://www.youtube.com/embed/nGXCuAHEjYI
+    songName = element[i].innerText.match(/, “(.*?)”/)[1]; // may need " or “” type quotation marks, or a comma after the artist name, or may have an &nbsp; instead of a space
+    artistName = element[i].innerText.match(/.+?(?=, “)/)[0]; // may need " or “ type quotation marks
+    videoId = videoUrl[i].style.backgroundImage.match(/(?<=vi\/)(.*)(?=\/)/)[0]; // example: url("https://i.ytimg.com/vi/gejbbL1AaJk/hqdefault.jpg")
 
     song = {
       "captureDate": moment(new Date()).format(),
