@@ -64,6 +64,6 @@ All this is doable, but tedious. But it’s moving me toward a bunch of song dat
 And incidentally, I had the thought that moving all this from a spreadsheet into a database has some parallels to my beginner coding lesson about moving to increasingly structured, representational layers of information--detaching what you see (a spreadsheet) from what you get. This is my version of that introCoding lesson.
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go on →]()\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go on →](2020-05-06-spreadsheet-sources.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or\
 [← go back](2020-05-04-scraping-into-the-player)
