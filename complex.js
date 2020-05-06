@@ -34,19 +34,19 @@
 // Step 2: get songs data
 //
 
-  sourceId = "5eb0e81665bca35b26437f21" // update with source ID
+  sourceId = "5eb22b188e1f3aed7d986b50" // update with source ID
 
   elements = document.getElementsByClassName("article__copy clearfix");
-  element = elements[0].getElementsByTagName("h2");
+  element = elements[0].getElementsByTagName("h3"); // sometimes h2 or h3
   videoUrl = document.getElementsByClassName("custom-embed")
 
   songs = [];
 
   for (var i=0; i<element.length; i++){
     merged = element[i].innerText;
-    songName = merged.match(/, “(.*?)”/)[1]; // may need " type quotation marks, or a comma after the artist name
+    songName = merged.match(/, “(.*?)”/)[1]; // may need " type quotation marks, or a comma after the artist name, or may have an &nbsp; instead of a space
     artistName = merged.match(/.+?(?=, “)/)[0]; // may need " type quotation marks
-    videoId = videoUrl[i].getElementsByTagName("iframe")[0].src.match(/embed\/([^"]{0,})/)[1];
+    videoId = videoUrl[i].getElementsByTagName("iframe")[0].src.match(/embed\/([^"]{0,})/)[1]; // example: https://www.youtube.com/embed/nGXCuAHEjYI
 
     song = {
       "captureDate": moment(new Date()).format(),
