@@ -43,6 +43,22 @@ So whereas the first example was of an instance of a stream without a parent ent
 
 ```
 
+On the other hand, here’s one for songs that came from Complex Best New Music This Week, back when they refreshed the same URL every week and it was impossible to go back to a prior chart, which also explains why some weeks are missing during that period. If I didn’t scrape it *during that week*, I missed it. So this is an instance, but without a name. So really what defines an instance versus a parent source in this model is the presence of *either* an `instanceName` or `publicationDate`, both of which refer to an instance, since this interim model is at the level of an instance:
+
+```Javascript
+
+{
+    "parentEntity": "Complex",
+    "parentStream": "Best New Music This Week",
+    "instanceName": "",
+    "publicationDate": "2019-02-15T00:00:00-07:00",
+    "location": ""
+}
+
+```
+
+In the case above, though, I actually am going to add the location I used at the time I found those songs, which is just "https://www.complex.com/music/new-music-this-week/", rather than leaving the location empty. There’s no way to find that individual instance now, since the URL is frozen where they deprecated it, on April 19, 2019. Beyoncé. But had I scraped the location at the time, this is what it would have looked like. This is different from the Billboard example higher up, from before I was paying attention to which instance of the chart. Because in this case, I did capture the publication date of the instance, so I was thinking (at least somewhat) in terms of instances.
+
 And finally, here’s one that’s an instance (an article), discovered through Billboard’s Twitter. So the full chain of sources is full. This is the same as an instance of the Hot 100 chart, actually, but it helps to see it as something other than a chart:
 
 ```Javascript
@@ -57,7 +73,7 @@ And finally, here’s one that’s an instance (an article), discovered through 
 
 ```
 
-For the moment, the takeaway here is that this development model is focused at the level of an instance, and if the `instanceName` value is empty, it means the document is a placeholder for a higher-level source, either a stream or an entity. So the first thing I’d want to do, if and when I’m breaking this out into different levels of sources down the line (if, indeed, I end up doing that), would be to search for documents with an empty instanceName value. This also means that there will be songs linked to more general sources, like, “oh, it came from Billboard, but who knows what chart or article or when… all I know is that it came from Billboard.”
+For the moment, the takeaway here is that this development model is focused at the level of an instance, and if *both* the `instanceName` *and* `publicationDate` values are empty, it means the document is a placeholder for a higher-level source, either a stream or an entity. So the first thing I’d want to do, if and when I’m breaking this out into different levels of sources down the line (if, indeed, I end up doing that), would be to search for documents with an empty `instanceName` and `publicationDate` value. This also means that there will be songs linked to more general sources, like, “oh, it came from Billboard, but who knows what chart or article or when… all I know is that it came from Billboard.”
 
 But now there are, like, over two years of Billboard charts in the spreadsheet that I *did* track, so am I going to add each of those to the database by hand? No way, not least for all the potential human error that would introduce. With just the date field, I can make a little script (for the browser console--my favorite :stuck_out_tongue:) that builds an insert array for me.
 
