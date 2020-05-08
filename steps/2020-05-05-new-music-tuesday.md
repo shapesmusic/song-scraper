@@ -66,4 +66,4 @@ And incidentally, I had the thought that moving all this from a spreadsheet into
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go on →](2020-05-06-spreadsheet-sources.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or\
-[← go back](2020-05-04-scraping-into-the-player)
+[← go back](2020-05-04-scraping-into-the-player.md)
