@@ -60,3 +60,26 @@
   };
 
   JSON.stringify(songs, null, 4)
+
+
+//
+// To see most recent scraped
+//
+
+  db.sources.aggregate( [
+    { $match :
+      {
+        parentStream : "Best New Music This Week"
+      }
+    },
+    { $sort : { publicationDate: -1 } },
+    { $project:
+      {
+        "_id" : 0,
+        "parentEntity" : 0,
+        "parentStream" : 0,
+        "instanceName" : 0,
+        "location" : 0
+      }
+    }
+  ] ).pretty();

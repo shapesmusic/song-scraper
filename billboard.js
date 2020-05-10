@@ -27,7 +27,7 @@
 // Step 2: get songs data
 //
 
-  sourceId = "5eb0e81665bca35b26437f21" // update with source ID
+  sourceId = "5eb765066c790abcd85f0fe5" // update with source ID
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
 
@@ -56,3 +56,26 @@
   };
 
   JSON.stringify(songs, null, 4)
+
+
+//
+// To see most recent scraped
+//
+
+  db.sources.aggregate( [
+    { $match :
+      {
+        parentStream : "The Hot 100"
+      }
+    },
+    { $sort : { publicationDate: -1 } },
+    { $project:
+      {
+        "_id" : 0,
+        "parentEntity" : 0,
+        "parentStream" : 0,
+        "publicationDate" : 0,
+        "location" : 0
+      }
+    }
+  ] ).pretty();
