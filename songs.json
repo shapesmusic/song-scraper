@@ -1,15 +1,14 @@
 mongo
-show dbs
 use music
 
 
 db.sources.insertOne(
 {
-    "parentEntity": "Complex",
-    "parentStream": "Best New Music This Week",
-    "instanceName": "Drake, Megan Thee Stallion, Beyoncé, Lil Baby, and More",
-    "publicationDate": "2020-05-01T00:00:00-07:00",
-    "location": "https://www.complex.com/music/best-new-music-this-week-drake-megan-thee-stallion-beyonce"
+    "parentEntity": "Billboard",
+    "parentStream": "The Hot 100",
+    "instanceName": "Week of May 9, 2020",
+    "publicationDate": "2020-05-09T00:00:00-07:00",
+    "location": "https://www.billboard.com/charts/hot-100"
 }
 )
 
@@ -17,102 +16,88 @@ db.sources.insertOne(
 db.songs.insertMany(
 [
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Losses",
-        "artistName": "Drake",
-        "videoId": "V7iHOPpKRJc"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "THE SCOTTS",
+        "artistName": "THE SCOTTS, Travis Scott & Kid Cudi",
+        "videoId": ""
     },
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Savage (Remix)",
-        "artistName": "Megan Thee Stallion f/ Beyoncé ",
-        "videoId": "i3V8xM4lKzg"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "Righteous",
+        "artistName": "Juice WRLD",
+        "videoId": ""
     },
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "We Paid",
-        "artistName": "Lil Baby f/ 42 Dugg",
-        "videoId": "2wowASwbq-w"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "All In",
+        "artistName": "Lil Baby",
+        "videoId": ""
     },
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Body Count",
-        "artistName": "Mozzy f/ King Von and G Herbo",
-        "videoId": "716QacB_TOY"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "Sasuke",
+        "artistName": "Lil Uzi Vert",
+        "videoId": ""
     },
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Save Me",
-        "artistName": "TheHxliday",
-        "videoId": "ve61WC3E_7k"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "Cool Again",
+        "artistName": "Kane Brown",
+        "videoId": ""
     },
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Pikachu",
-        "artistName": "Yung Lean",
-        "videoId": "2IkulUI9llc"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "Ain't Easy",
+        "artistName": "YoungBoy Never Broke Again",
+        "videoId": ""
     },
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Say So (Remix)",
-        "artistName": "Doja Cat f/ Nicki Minaj",
-        "videoId": "LmnCBjj-YyI"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "Party Girl",
+        "artistName": "StaySolidRocky",
+        "videoId": ""
     },
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Laugh Now, Kry Later",
-        "artistName": "YG",
-        "videoId": "-51KiXm3mHs"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "Diamonds",
+        "artistName": "YoungBoy Never Broke Again",
+        "videoId": ""
     },
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "BQE",
-        "artistName": "Kota the Friend F/ Joey Badass and Bas",
-        "videoId": "DnLQqpPTK-c"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "Bout My Business",
+        "artistName": "YoungBoy Never Broke Again Featuring Sherhonda Gaulden",
+        "videoId": ""
     },
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Outstanding",
-        "artistName": "Smoove’L",
-        "videoId": "6FHxP5za-kM"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "Rough Ryder",
+        "artistName": "YoungBoy Never Broke Again",
+        "videoId": ""
     },
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Baby Mama",
-        "artistName": "Brandy f/ Chance the Rapper",
-        "videoId": "mppCSlMUkjQ"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "Drinking Alone",
+        "artistName": "Carrie Underwood",
+        "videoId": ""
     },
     {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Oh Lord",
-        "artistName": "Tyler Thomas",
-        "videoId": "_zNQGahUrgI"
-    },
-    {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Nominated",
-        "artistName": "Hit-Boy f/ Dom Kennedy",
-        "videoId": "4moqnn5RBSg"
-    },
-    {
-        "captureDate": "2020-05-05T21:56:34-07:00",
-        "captureSource": ObjectId("5eb2404e8e1f3aed7d986b74"),
-        "songName": "Ice Cold",
-        "artistName": "Jay Worthy & Harry Fraud f/ G Perico & Guapdad 4000",
-        "videoId": "Km1nTzi0TdU"
+        "captureDate": "2020-05-09T19:21:12-07:00",
+        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
+        "songName": "Thug Of Spades",
+        "artistName": "YoungBoy Never Broke Again Featuring DaBaby",
+        "videoId": ""
     }
 ]
 )
