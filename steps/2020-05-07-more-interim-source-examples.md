@@ -105,6 +105,6 @@ Want another noteworthy one? Pitchfork [Best New Tracks](https://pitchfork.com/r
 And now, at long last, all the sources have moved, in a pretty workable form, from the spreadsheet to a database, and I’m only 120-something videoIDs away from being able to move all the songs from the spreadsheet into the database, too. I’ve also learned a thing or two about the sources model, which was why I took this little detour in the first place. Now, just to be safe, I exported all these new sources to a JSON and [saved it](https://github.com/davidforrest/development-db/commit/8ff291debb46bd04f1574eb5376ea201139d8996) in the development-db’s archive directory. This is some really good progress.
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go on →]()\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go on →](2020-05-09-catching-up-to-billboard.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or\
 [← go back](2020-05-06-spreadsheet-sources.md)
