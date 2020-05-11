@@ -161,6 +161,8 @@ I have to count *some* field, in the document, but it doesn’t really matter wh
 
 But remember, when I [imported](https://raw.githubusercontent.com/davidforrest/development-db/master/archive/2020-05-08-spreadsheet-songs-import.json?token=ABF6EBTF7BKSRMGMMOXWS2S6YGCPY) songs from the spreadsheet, there were a whole bunch that didn’t have sources--they were from before I tracked sources consistently. `db.songs.count( { captureSource : "" } )` tells me that there are 4402 such songs, which is 53% of the database. So the percentages below are of the 3904 songs that *do* have sources. Because that’s all I have to work with when it comes to trying to round up and assess sources. By the way, I can count all the songs that *do* have sources with `db.songs.count( { captureSource : {$ne : ""} } )`. Where [`$ne`](https://docs.mongodb.com/manual/reference/operator/query/ne/) means “does not equal.”
 
+#### Current sources breakdown
+
 ```
 
 Total songs - 8304
