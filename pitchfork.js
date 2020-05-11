@@ -17,3 +17,47 @@ for (var i=0; i<elements.length; i++){
   setTimeout (console.log.bind (console, "artistName: " + artist));
   setTimeout (console.log.bind (console, "videoID: " + ""));
 };
+
+
+//
+// To see the 3 most recent scraped (by song)
+//
+
+  db.songs.aggregate( [
+      { $lookup:
+        {
+         from: "sources",
+         localField: "captureSource",
+         foreignField: "_id",
+         as: "songSources"
+        }
+      },
+      {
+        $unwind: "$songSources"
+      },
+      { $match :
+        {
+          "songSources.parentEntity" : "Pitchfork"
+        }
+      },
+      { $match :
+        {
+          "songSources.parentStream" : {$exists: true} // optional: filter by stream
+        }
+      },
+      { $sort : { "songSources.publicationDate" : -1 } },
+      { $limit : 3 },
+      { $project:
+        {
+          "_id" : 0,
+          "captureDate" : 0,
+          "captureSource" : 0,
+          "artistName" : 0,
+          "videoId" : 0,
+          "songSources._id" : 0,
+          "songSources.parentEntity" : 0,
+          "songSources.instanceName" : 0,
+          "songSources.location" : 0
+        }
+      }
+    ] ).pretty();
