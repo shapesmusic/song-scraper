@@ -291,4 +291,4 @@ So I’m in bizness. Was this a chill Sunday like [yesterday](https://github.com
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go on →]()\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or\
-[← go back](20-05-09-catching-up-to-billboard.md)
+[← go back](2020-05-09-catching-up-to-billboard.md)
