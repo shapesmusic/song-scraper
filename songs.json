@@ -6,9 +6,9 @@ db.sources.insertOne(
 {
     "parentEntity": "Billboard",
     "parentStream": "The Hot 100",
-    "instanceName": "Week of May 9, 2020",
-    "publicationDate": "2020-05-09T00:00:00-07:00",
-    "location": "https://www.billboard.com/charts/hot-100"
+    "instanceName": "Week of May 16, 2020",
+    "publicationDate": "2020-05-16T00:00:00-07:00",
+    "location": "https://www.billboard.com/charts/hot-100/2020-05-16"
 }
 )
 
@@ -16,87 +16,150 @@ db.sources.insertOne(
 db.songs.insertMany(
 [
     {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "THE SCOTTS",
-        "artistName": "THE SCOTTS, Travis Scott & Kid Cudi",
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Pain 1993",
+        "artistName": "Drake Featuring Playboi Carti",
         "videoId": ""
     },
     {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "Righteous",
-        "artistName": "Juice WRLD",
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Chicago Freestyle",
+        "artistName": "Drake Featuring Giveon",
         "videoId": ""
     },
     {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "All In",
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "D4L",
+        "artistName": "Future, Drake & Young Thug",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Not You Too",
+        "artistName": "Drake Featuring Chris Brown",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Desires",
+        "artistName": "Drake Featuring Future",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Be Kind",
+        "artistName": "Marshmello & Halsey",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Time Flies",
+        "artistName": "Drake",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Deep Pockets",
+        "artistName": "Drake",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Demons",
+        "artistName": "Drake Featuring Fivio Foreign & Sosa Geek",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "When To Say When",
+        "artistName": "Drake",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Landed",
+        "artistName": "Drake",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "From Florida With Love",
+        "artistName": "Drake",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Losses",
+        "artistName": "Drake",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "War",
+        "artistName": "Drake",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Six Feet Apart",
+        "artistName": "Luke Combs",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "We Paid",
+        "artistName": "Lil Baby & 42 Dugg",
+        "videoId": ""
+    },
+    {
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Social Distancing",
         "artistName": "Lil Baby",
         "videoId": ""
     },
     {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "Sasuke",
-        "artistName": "Lil Uzi Vert",
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Low Down",
+        "artistName": "Lil Baby",
         "videoId": ""
     },
     {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "Cool Again",
-        "artistName": "Kane Brown",
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Humble",
+        "artistName": "Lil Baby",
         "videoId": ""
     },
     {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "Ain't Easy",
-        "artistName": "YoungBoy Never Broke Again",
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "One Margarita",
+        "artistName": "Luke Bryan",
         "videoId": ""
     },
     {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "Party Girl",
-        "artistName": "StaySolidRocky",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "Diamonds",
-        "artistName": "YoungBoy Never Broke Again",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "Bout My Business",
-        "artistName": "YoungBoy Never Broke Again Featuring Sherhonda Gaulden",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "Rough Ryder",
-        "artistName": "YoungBoy Never Broke Again",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "Drinking Alone",
-        "artistName": "Carrie Underwood",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-09T19:21:12-07:00",
-        "captureSource": ObjectId("5eb765066c790abcd85f0fe5"),
-        "songName": "Thug Of Spades",
-        "artistName": "YoungBoy Never Broke Again Featuring DaBaby",
+        "captureDate": "2020-05-12T10:36:23-07:00",
+        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
+        "songName": "Don't Rush",
+        "artistName": "Young T & Bugsey Featuring Headie One",
         "videoId": ""
     }
 ]
