@@ -2,6 +2,29 @@
 // Always check the last song name to make sure everything got scraped
 
 //
+// Step 0: Check most recent scraped
+//
+
+  db.sources.aggregate( [
+    { $match :
+      {
+        parentStream : "Best New Music This Week"
+      }
+    },
+    { $sort : { publicationDate: -1 } },
+    { $limit : 3 },
+    { $project:
+      {
+        "_id" : 0,
+        "parentEntity" : 0,
+        "parentStream" : 0,
+        "location" : 0
+      }
+    }
+  ] ).pretty();
+
+
+//
 // Step 1: get source data
 //
 
@@ -34,7 +57,7 @@
 // Step 2: get songs data
 //
 
-  sourceId = "5eb2404e8e1f3aed7d986b74" // update with source ID
+  sourceId = "5ebb6f15d40b0d37890f4e3c" // update with source ID
 
   elements = document.getElementsByClassName("article__copy clearfix");
   element = elements[0].getElementsByTagName("h3"); // sometimes h2 or h3
@@ -62,24 +85,4 @@
   JSON.stringify(songs, null, 4)
 
 
-//
-// To see most recent scraped
-//
-
-  db.sources.aggregate( [
-    { $match :
-      {
-        parentStream : "Best New Music This Week"
-      }
-    },
-    { $sort : { publicationDate: -1 } },
-    { $project:
-      {
-        "_id" : 0,
-        "parentEntity" : 0,
-        "parentStream" : 0,
-        "instanceName" : 0,
-        "location" : 0
-      }
-    }
-  ] ).pretty();
+  // format ObjectId("") before adding songs to the db
