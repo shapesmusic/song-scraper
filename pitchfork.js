@@ -59,6 +59,8 @@
 // Step 2: get source instance dates without duplicates
 //
 
+// Note: Songs released today have an "hours ago" date format, so enter YYYY-MM-DD manually
+
   sourceDates = [];
 
   // get a list of source dates from songs
