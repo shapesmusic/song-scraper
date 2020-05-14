@@ -15,7 +15,6 @@
     { $limit : 3 },
     { $project:
       {
-        "_id" : 0,
         "parentEntity" : 0,
         "parentStream" : 0,
         "location" : 0
@@ -29,14 +28,13 @@
 //
 
   title = document.getElementsByTagName("h1")[0].innerText;
-  parentStream = title.match(/.+?(?=:)/)[0];
   instanceName = title.match(/[^:]+$/)[0].trim();
   publicationDate = document.getElementsByTagName("time")[1].dateTime;
 
   // build the object
   source = { // a streamInstance
     "parentEntity": "New York Times",
-    "parentStream": parentStream,
+    "parentStream": "The Playlist",
     "instanceName": instanceName,
     "publicationDate": publicationDate,
     "location": window.location.href,
@@ -49,7 +47,7 @@
 // Step 2: get songs data
 //
 
-  sourceId = "5ebc8c7ef282c7b199ec3d78" // update with source ID
+  sourceId = "5ebd6774f282c7b199ec3e2e" // update with source ID
 
   // add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -59,10 +57,10 @@
 
   songs = [];
 
-  elements = document.getElementsByClassName("css-kcrh4f eoo0vm40"); // this class changes periodically
+  elements = document.getElementsByClassName("css-1hmt70a eoo0vm40"); // this class changes periodically
   for (var i=0; i<elements.length; i++){
 
-    merged = elements[i].innerHTML;
+    merged = elements[i].innerText;
     songName = merged.match(/, ‘(.*?)’$/)[1] // $ gives you the last apostrophe, so it doesn't cut off words like "ain't, etc."
     artistName = merged.match(/.+?(?=, ‘)/)[0];
     // vidUrl = document.getElementsByClassName("css-1u3pw94")[i].innerHTML;
