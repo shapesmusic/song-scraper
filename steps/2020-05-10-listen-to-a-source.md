@@ -291,6 +291,6 @@ And if I start the app with `nodemon start` instead of `npm start`, the player w
 So I’m in bizness. Was this a chill Sunday like [yesterday](https://github.com/davidforrest/Song-Scraper/blob/fb14b23385c210cd0e637b8224d649078805cb0e/steps/2020-05-09-catching-up-to-billboard.md) was a chill Saturday?
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go on →]()\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go on →](2020-05-12-1-new-music-tuesday.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or\
 [← go back](2020-05-09-catching-up-to-billboard.md)
