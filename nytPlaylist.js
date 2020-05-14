@@ -2,6 +2,29 @@
 // FIXME: sometimes two songs are grouped as one entry. this messes up vIDs.
 
 //
+// Step 0: Check most recent scraped
+//
+
+  db.sources.aggregate( [
+    { $match :
+      {
+        parentEntity : "New York Times"
+      }
+    },
+    { $sort : { publicationDate: -1 } },
+    { $limit : 3 },
+    { $project:
+      {
+        "_id" : 0,
+        "parentEntity" : 0,
+        "parentStream" : 0,
+        "location" : 0
+      }
+    }
+  ] ).pretty();
+
+
+//
 // Step 1: get source data
 //
 
@@ -26,27 +49,39 @@
 // Step 2: get songs data
 //
 
-  elements = document.getElementsByClassName("css-edk2dh eoo0vm40");
+  sourceId = "5ebc8c7ef282c7b199ec3d78" // update with source ID
+
+  // add moment.js to the header (make sure scripts aren't blocked in the browser)
+  momentjs = document.createElement("script");
+  momentjs.src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.2.1/moment.min.js";
+  document.head.appendChild(momentjs);
+
+
+  songs = [];
+
+  elements = document.getElementsByClassName("css-kcrh4f eoo0vm40"); // this class changes periodically
   for (var i=0; i<elements.length; i++){
+
     merged = elements[i].innerHTML;
-    song = merged.match(/, ‘(.*?)’$/)[1] // $ gives you the last apostrophe, so it doesn't cut off words like "ain't, etc."
-    artist = merged.match(/.+?(?=, ‘)/)[0];
-    vidUrl = document.getElementsByClassName("css-1u3pw94")[i].innerHTML;
-    vid = vidUrl.match(/embed\/([^"]{0,})/)[1];
+    songName = merged.match(/, ‘(.*?)’$/)[1] // $ gives you the last apostrophe, so it doesn't cut off words like "ain't, etc."
+    artistName = merged.match(/.+?(?=, ‘)/)[0];
+    // vidUrl = document.getElementsByClassName("css-1u3pw94")[i].innerHTML;
+    // videoId = vidUrl.match(/embed\/([^"]{0,})/)[1];
 
-    setTimeout (console.log.bind (console, "dateAdded: " + new Date()));
-    setTimeout (console.log.bind (console, "songName: " + song));
-    setTimeout (console.log.bind (console, "artistName: " + artist));
-    setTimeout (console.log.bind (console, "videoID: " + vid)); // temp removed `+ vid` but put it back if there aren't any double or non-YT vids this wk...
+    // template song to fill in manually
+    song = {
+      "captureDate": moment(new Date()).format(),
+      "captureSource": "ObjectId(" + sourceId + ")", // FIXME: should not be a string
+      "songName": songName,
+      "artistName": artistName,
+      "videoId": "" // videoId
+    };
+
+    songs.push(song);
+
   };
 
-  //vIDs only (gets all YT vids, including double-entries, skips non-YT):
-  elements = document.getElementsByClassName("css-1u3pw94");
-  for (var i=0; i<elements.length; i++){
-    vidUrl = elements[i].innerHTML;
-    vid = vidUrl.match(/embed\/([^"]{0,})/)[1];
-    setTimeout (console.log.bind (console, "videoID: " + vid));
-  };
+  JSON.stringify(songs, null, 4)
 
-  // line break between entries (this doesn't work):
-  console.log("\n\n");
+  // Add videoIds manually & prune songs
+  // format ObjectId("") before adding songs to the db
