@@ -47,7 +47,7 @@
 // Step 2: get songs data
 //
 
-  sourceId = "5ebd6774f282c7b199ec3e2e" // update with source ID
+  sourceId = "5ecdfbbb0b4291d1da7fe2df" // update with source ID
 
   // add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -57,7 +57,7 @@
 
   songs = [];
 
-  elements = document.getElementsByClassName("css-1hmt70a eoo0vm40"); // this class changes periodically
+  elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
   for (var i=0; i<elements.length; i++){
 
     merged = elements[i].innerText;
