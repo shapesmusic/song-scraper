@@ -6,6 +6,11 @@ Use [songs.json](https://github.com/davidforrest/Song-Scraper/blob/master/songs.
 
 Also, this is a [Learning Repo](https://github.com/davidforrest/A-Learning-Repo), so you can [follow its story](https://github.com/davidforrest/Song-Scraper/blob/master/steps/2020-05-03-2-resuscitating-the-chart-scrapers.md).
 
+### A Little Setup
+1. If necessary, first point Mongo to the database location with `mongod --dbpath /Users/davidforrest/david_local/development_local/development-db/db` (Check the dbpath using  `ps -xa | grep mongod`)
+1. Fire up Mongo with `mongo`
+1. `use music` to use the right db.
+
 
 ### Each Tuesday
 
