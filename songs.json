@@ -4,11 +4,11 @@ use music
 
 db.sources.insertOne(
 {
-    "parentEntity": "Billboard",
-    "parentStream": "The Hot 100",
-    "instanceName": "Week of May 16, 2020",
-    "publicationDate": "2020-05-16T00:00:00-07:00",
-    "location": "https://www.billboard.com/charts/hot-100/2020-05-16"
+    "parentEntity": "New York Times",
+    "parentStream": "The Playlist",
+    "instanceName": "Justin Bieber and Chance the Rapper’s Wholesome Team-Up, and 10 More New Songs",
+    "publicationDate": "2020-09-18T11:19:57-04:00",
+    "location": "https://www.nytimes.com/2020/09/18/arts/music/playlist-justin-bieber-chance-the-rapper.html"
 }
 )
 
@@ -16,151 +16,67 @@ db.sources.insertOne(
 db.songs.insertMany(
 [
     {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Pain 1993",
-        "artistName": "Drake Featuring Playboi Carti",
-        "videoId": ""
+        "captureDate": "2020-09-23T11:24:08-07:00",
+        "captureSource": ObjectId("5f6b92b72a27b3a021ae407a"),
+        "songName": "Holy",
+        "artistName": "Justin Bieber featuring Chance the Rapper",
+        "videoId": "pvPsJFRGleA"
     },
     {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Chicago Freestyle",
-        "artistName": "Drake Featuring Giveon",
-        "videoId": ""
+        "captureDate": "2020-09-23T11:24:08-07:00",
+        "captureSource": ObjectId("5f6b92b72a27b3a021ae407a"),
+        "songName": "Diamonds",
+        "artistName": "Sam Smith",
+        "videoId": "8RvAKRoIDqU"
     },
     {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "D4L",
-        "artistName": "Future, Drake & Young Thug",
-        "videoId": ""
+        "captureDate": "2020-09-23T11:24:08-07:00",
+        "captureSource": ObjectId("5f6b92b72a27b3a021ae407a"),
+        "songName": "Call Me (Freestyle)",
+        "artistName": "Blood Orange and Park Hye Jin",
+        "videoId": "wPr8zRCQV10"
     },
     {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Not You Too",
-        "artistName": "Drake Featuring Chris Brown",
-        "videoId": ""
+        "captureDate": "2020-09-23T11:24:08-07:00",
+        "captureSource": ObjectId("5f6b92b72a27b3a021ae407a"),
+        "songName": "Love Knows",
+        "artistName": "Steve Arrington",
+        "videoId": "IGCCBDHx5bU"
     },
     {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Desires",
-        "artistName": "Drake Featuring Future",
-        "videoId": ""
+        "captureDate": "2020-09-23T11:24:08-07:00",
+        "captureSource": ObjectId("5f6b92b72a27b3a021ae407a"),
+        "songName": "Starfall",
+        "artistName": "Salem",
+        "videoId": "OldLS3YE04Y"
     },
     {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Be Kind",
-        "artistName": "Marshmello & Halsey",
-        "videoId": ""
+        "captureDate": "2020-09-23T11:24:08-07:00",
+        "captureSource": ObjectId("5f6b92b72a27b3a021ae407a"),
+        "songName": "Hooligan",
+        "artistName": "Baby Keem",
+        "videoId": "UOrv5ZSbTIY"
     },
     {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Time Flies",
-        "artistName": "Drake",
-        "videoId": ""
+        "captureDate": "2020-09-23T11:24:08-07:00",
+        "captureSource": ObjectId("5f6b92b72a27b3a021ae407a"),
+        "songName": "Is It Just Me?",
+        "artistName": "Sasha Sloan",
+        "videoId": "cuxNuMDet0M"
     },
     {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Deep Pockets",
-        "artistName": "Drake",
-        "videoId": ""
+        "captureDate": "2020-09-23T11:24:08-07:00",
+        "captureSource": ObjectId("5f6b92b72a27b3a021ae407a"),
+        "songName": "Trouble and Strife",
+        "artistName": "Joan Osborne",
+        "videoId": "j3sfL-nM1Y8"
     },
     {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Demons",
-        "artistName": "Drake Featuring Fivio Foreign & Sosa Geek",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "When To Say When",
-        "artistName": "Drake",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Landed",
-        "artistName": "Drake",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "From Florida With Love",
-        "artistName": "Drake",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Losses",
-        "artistName": "Drake",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "War",
-        "artistName": "Drake",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Six Feet Apart",
-        "artistName": "Luke Combs",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "We Paid",
-        "artistName": "Lil Baby & 42 Dugg",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Social Distancing",
-        "artistName": "Lil Baby",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Low Down",
-        "artistName": "Lil Baby",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Humble",
-        "artistName": "Lil Baby",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "One Margarita",
-        "artistName": "Luke Bryan",
-        "videoId": ""
-    },
-    {
-        "captureDate": "2020-05-12T10:36:23-07:00",
-        "captureSource": ObjectId("5ebade79d40b0d37890f4e24"),
-        "songName": "Don't Rush",
-        "artistName": "Young T & Bugsey Featuring Headie One",
-        "videoId": ""
+        "captureDate": "2020-09-23T11:24:08-07:00",
+        "captureSource": ObjectId("5f6b92b72a27b3a021ae407a"),
+        "songName": "Long Violent History",
+        "artistName": "Tyler Childers",
+        "videoId": "2_I3Rp1CQak"
     }
 ]
 )

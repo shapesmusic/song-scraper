@@ -29,7 +29,7 @@
 
   title = document.getElementsByTagName("h1")[0].innerText;
   instanceName = title.match(/[^:]+$/)[0].trim();
-  publicationDate = document.getElementsByTagName("time")[1].dateTime;
+  publicationDate = document.getElementsByTagName("time")[0].dateTime;
 
   // build the object
   source = { // a streamInstance
@@ -47,7 +47,7 @@
 // Step 2: get songs data
 //
 
-  sourceId = "5ecdfbbb0b4291d1da7fe2df" // update with source ID
+  sourceId = "5f6b92b72a27b3a021ae407a" // update with source ID
 
   // add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -62,6 +62,7 @@
 
     merged = elements[i].innerText;
     songName = merged.match(/, ‘(.*?)’$/)[1] // $ gives you the last apostrophe, so it doesn't cut off words like "ain't, etc."
+    // if this throws an error, enter `merged` to see the problem song.
     artistName = merged.match(/.+?(?=, ‘)/)[0];
     // vidUrl = document.getElementsByClassName("css-1u3pw94")[i].innerHTML;
     // videoId = vidUrl.match(/embed\/([^"]{0,})/)[1];

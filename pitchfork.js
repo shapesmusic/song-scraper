@@ -60,6 +60,8 @@
 //
 
 // Note: Songs released today have an "hours ago" date format, so enter YYYY-MM-DD manually
+//
+// Also may need to remove page number from "location" field if scrolling down a lot to catch up.
 
   sourceDates = [];
 
@@ -135,7 +137,8 @@
       { _id :
           { $in:
             [
-              ObjectId("5eb9fd21ea751b2f83a055de"), // replace with current
+              // replace with current
+              ObjectId("5eb9fd21ea751b2f83a055de"),
               ObjectId("5eb9fd21ea751b2f83a055df"),
               ObjectId("5eb9fd21ea751b2f83a055e0")
             ]
@@ -154,6 +157,11 @@
 
 
   // turn that result into an array, "sourcesAdded"
+    // replace `}` with `},`
+    // replace `ObjectId("` with `"ObjectId(`
+    // replace `"),` with `"),`
+
+  // the "songs" array already exists from scraping
 
   // add correct source _ids to songs
   for (var i=0; i<songs.length; i++){
@@ -164,4 +172,8 @@
     }
   }
 
+  JSON.stringify(songs, null, 4);
+
   // format ObjectId("") before adding songs to the db
+    // replace `"ObjectId(` with `ObjectId("`
+    // replace `"),` with `"),`
