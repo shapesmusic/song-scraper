@@ -59,7 +59,9 @@
 // Step 2: get source instance dates without duplicates
 //
 
-// Note: Songs released today have an "hours ago" date format, so enter YYYY-MM-DD manually
+// Note: a new song may already have an existing source!
+//
+// Songs released today have an "hours ago" date format, so enter YYYY-MM-DD manually
 //
 // Also may need to remove page number from "location" field if scrolling down a lot to catch up.
 
