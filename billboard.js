@@ -35,7 +35,7 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
 // Step 2: get songs data
 //
 
-  source_id = 726 // SELECT last_insert_rowid();
+  source_id = 726; // SELECT last_insert_rowid();
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
 
@@ -53,7 +53,7 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
       video_id = ""; // excluding from SQL statement
 
       song = String(
-        "(\'" + capture_date + "\', "
+        "\n(\'" + capture_date + "\', "
         + source_id + ", "
         + "\'" + title + "\', "
         + "\'" + artist_name + "\', "
@@ -82,5 +82,5 @@ VALUES
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-07 03:16:55.492492', 726, 'Franchise', 'Travis Scott Featuring Young Thug & M.I.A.', NULL),('2020-10-07 03:16:55.494494', 726, 'Forget Me Too', 'Machine Gun Kelly & Halsey', NULL),('2020-10-07 03:16:55.495495', 726, 'Epidemic', 'Polo G', NULL),('2020-10-07 03:16:55.495495', 726, 'Bloody Valentine', 'Machine Gun Kelly', NULL),('2020-10-07 03:16:55.495495', 726, 'U 2 Luv', 'Ne-Yo & Jeremih', NULL),('2020-10-07 03:16:55.495495', 726, 'Better', 'Zayn', NULL),('2020-10-07 03:16:55.495495', 726, 'Drunk Face', 'Machine Gun Kelly', NULL),('2020-10-07 03:16:55.495495', 726, 'Big, Big Plans', 'Chris Lane', NULL),('2020-10-07 03:16:55.495495', 726, 'Ay, Dios Mio!', 'Karol G', NULL),('2020-10-07 03:16:55.495495', 726, 'Good Time', 'Niko Moon', NULL),('2020-10-07 03:16:55.495495', 726, 'Put Your Records On', 'Ritt Momney', NULL),('2020-10-07 03:16:55.495495', 726, 'Money Over Fallouts', 'Tory Lanez', NULL)
+  ('2020-10-06 22:21:10.492492', 726, 'Franchise', 'Travis Scott Featuring Young Thug & M.I.A.', NULL),('2020-10-06 22:21:10.494494', 726, 'Forget Me Too', 'Machine Gun Kelly & Halsey', NULL),('2020-10-06 22:21:10.495495', 726, 'Epidemic', 'Polo G', NULL),('2020-10-06 22:21:10.495495', 726, 'Bloody Valentine', 'Machine Gun Kelly', NULL),('2020-10-06 22:21:10.495495', 726, 'U 2 Luv', 'Ne-Yo & Jeremih', NULL),('2020-10-06 22:21:10.495495', 726, 'Better', 'Zayn', NULL),('2020-10-06 22:21:10.495495', 726, 'Drunk Face', 'Machine Gun Kelly', NULL),('2020-10-06 22:21:10.495495', 726, 'Big, Big Plans', 'Chris Lane', NULL),('2020-10-06 22:21:10.495495', 726, 'Ay, Dios Mio!', 'Karol G', NULL),('2020-10-06 22:21:10.495495', 726, 'Good Time', 'Niko Moon', NULL),('2020-10-06 22:21:10.495495', 726, 'Put Your Records On', 'Ritt Momney', NULL),('2020-10-06 22:21:10.495495', 726, 'Money Over Fallouts', 'Tory Lanez', NULL)
 ;

@@ -7,7 +7,6 @@
 
 SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Complex' ORDER BY publication_date DESC LIMIT 8;
 
-
 //
 // Step 1: get source data
 //
@@ -43,7 +42,7 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Comple
 // Step 2: get songs data
 //
 
-  source_id = 727 // SELECT last_insert_rowid();
+  source_id = 727; // SELECT last_insert_rowid();
 
   elements = document.getElementsByClassName("article-list");
   element = elements[0].getElementsByTagName("h2"); // sometimes h2 or h3
@@ -59,7 +58,7 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Comple
     capture_date = moment(new Date()).format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
 
     song = String(
-      "(\'" + capture_date + "\', "
+      "\n(\'" + capture_date + "\', "
       + source_id + ", "
       + "\'" + title + "\', "
       + "\'" + artist_name + "\', "
