@@ -1,6 +1,6 @@
 # Song Scraper
 
-`This is a program to be executed by a human, with some help from computers.`
+`This is a program to be executed by a human, with some help from computers.`  
 Also, this is a [Learning Repo](https://github.com/davidforrest/A-Learning-Repo), so you can [follow its story](https://github.com/davidforrest/Song-Scraper/blob/master/steps/2020-05-03-2-resuscitating-the-chart-scrapers.md).
 
 
