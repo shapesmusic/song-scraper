@@ -38,7 +38,7 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'New Yo
 // Step 2: get songs data
 //
 
-  source_id = 728; // SELECT last_insert_rowid();
+  source_id = 731; // SELECT last_insert_rowid();
 
   songs = [];
 
@@ -77,16 +77,19 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'New Yo
 INSERT INTO source
   (parent_entity, parent_stream, instance_name, publication_date, location)
 VALUES
-  ('New York Times', 'The Playlist', 'Maren Morris Pleads With America, and 8 More New Songs', '2020-10-02 08:25:20.000000', 'https://www.nytimes.com/2020/10/02/arts/music/playlist-maren-morris-halsey-21-savage.html');
+  ('New York Times', 'The Playlist', 'Jeff Tweedy’s Homesick Tune, and 11 More New Songs', '2020-10-09 08:26:45.000000', 'https://www.nytimes.com/2020/10/09/arts/music/playlist-jeff-tweedy-anderson-paak-davido.html');
 
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-07 09:53:03.810810', 728, 'Better Than We Found It', 'Maren Morris', 'U4rr6LewdIU'),
-  ('2020-10-07 09:53:03.812812', 728, 'I’m Not Mad', 'Halsey', 'OCkohjacFU0'),
-  ('2020-10-07 09:53:03.813813', 728, 'Come Over', 'Jorja Smith featuring Popcaan', 'T9_vgJUylyQ'),
-  ('2020-10-07 09:53:03.813813', 728, 'Good Love 2.0', 'Priya Ragu', 'wHZ2nuvIGdA'),
-  ('2020-10-07 09:53:03.813813', 728, 'Salt Licorice', 'Jonsi featuring Robyn', '-gPmPp5yTn4'),
-  ('2020-10-07 09:53:03.813813', 728, 'No Opp Left Behind', '21 Savage and Metro Boomin’', NULL),
-  ('2020-10-07 09:53:03.813813', 728, 'Dos Uno Nueve (219)', 'Omar Apollo', NULL)
+  ('2020-10-17 02:21:33.569569', 731, 'Gwendolyn', 'Jeff Tweedy', '0aqwuQuhP5U'),
+  ('2020-10-17 02:21:33.571571', 731, 'Before I Got Here', 'Palberta', 'hELyfMbtB-k'),
+  ('2020-10-17 02:21:33.571571', 731, 'Jewelz', 'Anderson .Paak', '6gXlC3rD8jI'),
+  ('2020-10-17 02:21:33.571571', 731, 'Kissez', 'Sevyn Streeter featuring Davido', 'nNpASlGAgcI'),
+  ('2020-10-17 02:21:33.571571', 731, 'Donuts Mind if I Do', 'Chai', 'UMoYR6gBpkc'),
+  ('2020-10-17 02:21:33.571571', 731, 'The Worst in Me', 'Kaytranada featuring Tinashe', 'p6hrlF0W0ig'),
+  ('2020-10-17 02:21:33.571571', 731, 'False Choice', 'Josh Johnson', '4jTeS4ZFw9E'),
+  ('2020-10-17 02:21:33.571571', 731, 'Okinawa/Ubud', 'Emmy the Great', 't96njPp0jDA'),
+  ('2020-10-17 02:21:33.571571', 731, 'Trick to Happy', 'Bahamas', 'reVZzYN0J4s'),
+  ('2020-10-17 02:21:33.571571', 731, 'New Skill', 'Henriette Sennenvaldt', 'B7HBFNPCxNE')
 ;

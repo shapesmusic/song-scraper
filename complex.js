@@ -42,7 +42,7 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Comple
 // Step 2: get songs data
 //
 
-  source_id = 727; // SELECT last_insert_rowid();
+  source_id = 730; // SELECT last_insert_rowid();
 
   elements = document.getElementsByClassName("article-list");
   element = elements[0].getElementsByTagName("h2"); // sometimes h2 or h3
@@ -78,10 +78,15 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Comple
 INSERT INTO source
   (parent_entity, parent_stream, instance_name, publication_date, location)
 VALUES
-  ('Complex', 'Best New Music This Week', '21 Savage, Metro Boomin, Megan Thee Stallion, Bryson Tiller, and More', '2020-10-02 12:00:00.000000', 'https://www.complex.com/music/2020/10/best-new-music-this-week-october-2/21-savage-metro-boomin-runnin');
+  ('Complex', 'Best New Music This Week', 'Benny the Butcher, Reason, SAINt JHN, and More', '2020-10-09 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-benny-the-butcher/lil-loaded-polo-g-while-im-here');
 
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-07 03:23:06.957957', 727, 'Runnin', '21 Savage & Metro Boomin', 'jbdROU6eJVg'),('2020-10-07 03:23:06.959959', 727, 'Don’t Stop', 'Megan Thee Stallion f/ Young Thug', '6iuwBio5EUA'),('2020-10-07 03:23:06.959959', 727, 'Outta Time', 'Bryson Tiller f/ Drake', 'FtaW6YMAafk'),('2020-10-07 03:23:06.959959', 727, 'Chocolate Pomegranate', 'Ari Lennox', '0mImzqbi3Qw'),('2020-10-07 03:23:06.959959', 727, 'Big ASAP', 'ASAP Ferg f/ Monica', 'r4xdnCXnRf8'),('2020-10-07 03:23:06.959959', 727, 'All Praises', 'Westside Gunn f/ Boldly James & Jadakiss', 'l3lrYoDU38o'),('2020-10-07 03:23:06.959959', 727, 'Bop It', 'Fivio Foreign f/ Polo G', 'xv10VQcExsw'),('2020-10-07 03:23:06.959959', 727, 'Jealous', 'YG', '2RD_cKtbcfE'),('2020-10-07 03:23:06.959959', 727, 'Bet You Wanna', 'Blackpink f/ Cardi B', 'gXBdvSj9F2I'),('2020-10-07 03:23:06.960960', 727, 'Training Day', 'Dougie F', '4ojvTFUpBes'),('2020-10-07 03:23:06.960960', 727, 'Come Over', 'Jorja Smith f/ Popcaan', 'T9_vgJUylyQ')
+  ('2020-10-17 02:17:28.573573', 730, 'Timeless', 'Benny the Butcher f/ Lil Wayne, Big Sean, and Hit-Boy', 'cwEGQAvsens'),
+  ('2020-10-17 02:17:28.575575', 730, 'Extinct', 'Reason f/ JID & Isaiah Rashad', 'mZtyIraf7jI'),
+  ('2020-10-17 02:17:28.575575', 730, 'Jewelz', 'Anderson .Paak & Timbaland', '677jKtsyDhg'),
+  ('2020-10-17 02:17:28.575575', 730, 'Princess Cuts', 'Headie One f/ Young T & Bugsey', '_Px5l4mQ0H4'),
+  ('2020-10-17 02:17:28.575575', 730, 'Gorgeous', 'SAINt JHN', 'k2gPDgC4Iz4'),
+  ('2020-10-17 02:17:28.575575', 730, 'While I’m Here', 'Lil Loaded f/ Polo G', '-SYUCByoYOk')
 ;

@@ -5,7 +5,7 @@ Also, this is a [Learning Repo](https://github.com/davidforrest/A-Learning-Repo)
 
 
 ### A Little Setup
-1. If necessary, [download](http://jkafader1.fnf.archive.org/shapes.sqlite) the `shapes.sqlite` database.
+1. If necessary, [download](http://jkafader1.fnf.archive.org/shapes.sqlite) the `shapes.sqlite` database (it's possible that the most recent version is [on GitHub](https://github.com/jkafader/shapes/blob/master/www/shapes.sqlite)).
 1. Point the sqlite CLI to the database with (for example):
 ```
 sqlite3 /Users/davidforrest/Desktop/shapes.sqlite
