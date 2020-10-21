@@ -35,7 +35,7 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
 // Step 2: get songs data
 //
 
-  source_id = 729; // SELECT last_insert_rowid();
+  source_id = 732; // SELECT last_insert_rowid();
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
 
@@ -79,31 +79,13 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
 INSERT INTO source
   (parent_entity, parent_stream, instance_name, publication_date, location)
 VALUES
-  ('Billboard', 'The Hot 100', 'Week of October 17, 2020', '2020-10-17 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-10-17');
+  ('Billboard', 'The Hot 100', 'Week of October 24, 2020', '2020-10-24 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-10-24');
 
 
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-17 01:51:50.075075', 729, 'Runnin', '21 Savage & Metro Boomin', NULL),
-  ('2020-10-17 01:51:50.075075', 729, 'Mr. Right Now', '21 Savage & Metro Boomin Featuring Drake', NULL),
-  ('2020-10-17 01:51:50.075075', 729, 'Wonder', 'Shawn Mendes', NULL),
-  ('2020-10-17 01:51:50.075075', 729, 'Glock In My Lap', '21 Savage & Metro Boomin', NULL),
-  ('2020-10-17 01:51:50.075075', 729, 'Rich N*gga Sh*t', '21 Savage & Metro Boomin Featuring Young Thug', NULL),
-  ('2020-10-17 01:51:50.076076', 729, 'Don’t Stop', 'Megan Thee Stallion Featuring Young Thug', NULL),
-  ('2020-10-17 01:51:50.076076', 729, 'Slidin', '21 Savage & Metro Boomin', NULL),
-  ('2020-10-17 01:51:50.076076', 729, 'Many Men', '21 Savage & Metro Boomin', NULL),
-  ('2020-10-17 01:51:50.076076', 729, 'Fallin’', 'Why Don’t We', NULL),
-  ('2020-10-17 01:51:50.076076', 729, 'Outta Time', 'Bryson Tiller Featuring Drake', NULL),
-  ('2020-10-17 01:51:50.076076', 729, 'My Dawg', '21 Savage & Metro Boomin', NULL),
-  ('2020-10-17 01:51:50.076076', 729, 'Brand New Draco', '21 Savage & Metro Boomin', NULL),
-  ('2020-10-17 01:51:50.076076', 729, 'Lovesick Girls', 'BLACKPINK', NULL),
-  ('2020-10-17 01:51:50.076076', 729, 'Snitches & Rats', '21 Savage & Metro Boomin Featuring Young Nudy', NULL),
-  ('2020-10-17 01:51:50.077077', 729, 'No Opp Left Behind', '21 Savage & Metro Boomin', NULL),
-  ('2020-10-17 01:51:50.077077', 729, 'Levitating', 'Dua Lipa Featuring DaBaby', NULL),
-  ('2020-10-17 01:51:50.077077', 729, 'Steppin On N*ggas', '21 Savage & Metro Boomin', NULL),
-  ('2020-10-17 01:51:50.077077', 729, 'RIP Luv', '21 Savage & Metro Boomin', NULL),
-  ('2020-10-17 01:51:50.077077', 729, 'Always Forever', 'Bryson Tiller', NULL),
-  ('2020-10-17 01:51:50.077077', 729, 'Years Go By', 'Bryson Tiller', NULL),
-  ('2020-10-17 01:51:50.077077', 729, 'Said N Done', '21 Savage & Metro Boomin', NULL)
+  ('2020-10-20 07:46:41.222222', 732, 'Baby, I’m Jealous', 'Bebe Rexha Featuring Doja Cat', NULL),
+  ('2020-10-20 07:46:41.223223', 732, 'Hole In The Bottle', 'Kelsea Ballerini', NULL),
+  ('2020-10-20 07:46:41.223223', 732, 'Sofia', 'Clairo', NULL)
 ;

@@ -38,7 +38,7 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'New Yo
 // Step 2: get songs data
 //
 
-  source_id = 731; // SELECT last_insert_rowid();
+  source_id = 734; // SELECT last_insert_rowid();
 
   songs = [];
 
@@ -77,19 +77,21 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'New Yo
 INSERT INTO source
   (parent_entity, parent_stream, instance_name, publication_date, location)
 VALUES
-  ('New York Times', 'The Playlist', 'Jeff Tweedy’s Homesick Tune, and 11 More New Songs', '2020-10-09 08:26:45.000000', 'https://www.nytimes.com/2020/10/09/arts/music/playlist-jeff-tweedy-anderson-paak-davido.html');
+  ('New York Times', 'The Playlist', 'Stevie Wonder Demands Justice, and 12 More New Songs', '2020-10-16 08:59:34.000000', 'https://www.nytimes.com/2020/10/16/arts/music/playlist-stevie-wonder-demi-lovato.html');
+
 
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-17 02:21:33.569569', 731, 'Gwendolyn', 'Jeff Tweedy', '0aqwuQuhP5U'),
-  ('2020-10-17 02:21:33.571571', 731, 'Before I Got Here', 'Palberta', 'hELyfMbtB-k'),
-  ('2020-10-17 02:21:33.571571', 731, 'Jewelz', 'Anderson .Paak', '6gXlC3rD8jI'),
-  ('2020-10-17 02:21:33.571571', 731, 'Kissez', 'Sevyn Streeter featuring Davido', 'nNpASlGAgcI'),
-  ('2020-10-17 02:21:33.571571', 731, 'Donuts Mind if I Do', 'Chai', 'UMoYR6gBpkc'),
-  ('2020-10-17 02:21:33.571571', 731, 'The Worst in Me', 'Kaytranada featuring Tinashe', 'p6hrlF0W0ig'),
-  ('2020-10-17 02:21:33.571571', 731, 'False Choice', 'Josh Johnson', '4jTeS4ZFw9E'),
-  ('2020-10-17 02:21:33.571571', 731, 'Okinawa/Ubud', 'Emmy the Great', 't96njPp0jDA'),
-  ('2020-10-17 02:21:33.571571', 731, 'Trick to Happy', 'Bahamas', 'reVZzYN0J4s'),
-  ('2020-10-17 02:21:33.571571', 731, 'New Skill', 'Henriette Sennenvaldt', 'B7HBFNPCxNE')
+  ('2020-10-20 08:02:01.673673', 734, 'Can’t Put It in the Hands of Fate', 'Stevie Wonder featuring Rapsody, Cordae, Chika and Busta Rhymes', 'Kgdfxeh0WtE'),
+  ('2020-10-20 08:02:01.674674', 734, 'American Landfill', 'Kristeen Young featuring David Bowie', 'd7_DEdmYLFI'),
+  ('2020-10-20 08:02:01.674674', 734, 'Commander in Chief', 'Demi Lovato', 'n9Y-lS1trhw'),
+  ('2020-10-20 08:02:01.674674', 734, 'Let Me Love You Like a Woman', 'Lana Del Rey', 'd-Uvy-aKoao'),
+  ('2020-10-20 08:02:01.674674', 734, 'Before', 'James Blake', 'xbUvNFUrkpc'),
+  ('2020-10-20 08:02:01.674674', 734, 'Chismiten', 'Mdou Moctar', 'y23ewhFf_hs'),
+  ('2020-10-20 08:02:01.674674', 734, 'Free Your Mind', 'Made Kuti', 'wyoAbMANuyc'),
+  ('2020-10-20 08:02:01.674674', 734, 'Love’s Refrain', 'Julie Byrne & Jefre Cantu-Ledesma', '07d_coPy7Ws'),
+  ('2020-10-20 08:02:01.674674', 734, 'Robber', 'The Weather Station', 'OJ9SYLVaIUI'),
+  ('2020-10-20 08:02:01.675675', 734, 'Lonely', 'Justin Bieber and Benny Blanco', 'xQOO2xGQ1Pc'),
+  ('2020-10-20 08:02:01.675675', 734, 'Alone', 'Bonzie', 'qpMPDUL3nkg')
 ;

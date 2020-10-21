@@ -6,44 +6,13 @@
 // Step 0: check most recent scraped (displays 3 songs w/ sources)
 //
 
-  db.songs.aggregate( [
-      { $lookup:
-        {
-         from: "sources",
-         localField: "captureSource",
-         foreignField: "_id",
-         as: "songSources"
-        }
-      },
-      {
-        $unwind: "$songSources"
-      },
-      { $match :
-        {
-          "songSources.parentEntity" : "Pitchfork"
-        }
-      },
-      { $match :
-        {
-          "songSources.parentStream" : {$exists: true} // optional: filter by stream
-        }
-      },
-      { $sort : { "songSources.publicationDate" : -1 } },
-      { $limit : 3 },
-      { $project:
-        {
-          "_id" : 0,
-          "captureDate" : 0,
-          "captureSource" : 0,
-          "artistName" : 0,
-          "videoId" : 0,
-          "songSources._id" : 0,
-          "songSources.parentEntity" : 0,
-          "songSources.instanceName" : 0,
-          "songSources.location" : 0
-        }
-      }
-    ] ).pretty();
+  // TODO: make an aggregate statement
+
+  SELECT id, publication_date FROM source WHERE parent_entity = 'Pitchfork' ORDER BY publication_date DESC LIMIT 3;
+
+  // Add the most recent source_id
+  SELECT title FROM song WHERE source_id = '723';
+
 
 
 //
@@ -59,11 +28,11 @@
 // Step 2: get source instance dates without duplicates
 //
 
-// Note: a new song may already have an existing source!
-//
-// Songs released today have an "hours ago" date format, so enter YYYY-MM-DD manually
-//
-// Also may need to remove page number from "location" field if scrolling down a lot to catch up.
+  // Note: a new song may already have an existing source!
+  //
+  // Songs released today have an "hours ago" date format, so enter YYYY-MM-DD manually
+  //
+  // Also may need to remove page number from "location" field if scrolling down a lot to catch up.
 
   sourceDates = [];
 
@@ -72,7 +41,7 @@
   for (var i=0; i<elements.length; i++){
 
     publicationDate = document.getElementsByClassName("pub-date")[i].innerText.trim();
-    publicationDateFormatted = moment(publicationDate, "MMMM DD YYYY").format(); // to ISO
+    publicationDateFormatted = moment(publicationDate, "MMMM DD YYYY").format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
 
     sourceDates.push(publicationDateFormatted);
   };
@@ -85,19 +54,22 @@
   sources = [];
   for (var i=0; i<sourceArray.length; i++){
 
-    source = {
-      "parentEntity": "Pitchfork",
-      "parentStream": "Track Reviews",
-      "instanceName": "",
-      "publicationDate": sourceArray[i],
-      "location": window.location.href
-    }
+    publicationDate = sourceArray[i];
+    chartLocation = window.location.href;
+
+    source = String(
+      "\n(\'Pitchfork\', "
+      + "\'Track Reviews\', "
+      + "NULL, "
+      + "\'" + publicationDate + "\', "
+      + "\'" + chartLocation + "\')"
+    );
 
     sources.push(source);
 
   };
 
-  JSON.stringify(sources, null, 4);
+  console.log(String(sources));
 
 
 //
@@ -112,19 +84,23 @@
     publicationDate = document.getElementsByClassName("pub-date")[i].innerText.trim();
     publicationDateFormatted = moment(publicationDate, "MMMM DD YYYY").format(); // to ISO
 
-    song = {
-      "captureDate": moment(new Date()).format(),
-      "captureSource": publicationDateFormatted, // placeholder!
-      "songName": elements[i].nextElementSibling.innerText,
-      "artistName": elements[i].innerText,
-      "videoId": ""
-    }
+    capture_date = moment(new Date()).format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
+    title = elements[i].nextElementSibling.innerText.match(/“(.*?)”/)[1]; // everything inside the quotatino marks
+    artist_name = elements[i].innerText;
+
+    song = String(
+      "\n(\'" + capture_date + "\', "
+      + publicationDateFormatted + ", " // placeholder!
+      + "\'" + title + "\', "
+      + "\'" + artist_name + "\', "
+      + "NULL)"
+    );
 
     songs.push(song);
 
   }
 
-  JSON.stringify(songs, null, 4);
+  console.log(String(songs));
 
 
 //
@@ -134,34 +110,14 @@
   // add new sources to the db
 
   // then get their _ids and dates
-  db.sources.aggregate( [
-    { $match :
-      { _id :
-          { $in:
-            [
-              // replace with current
-              ObjectId("5eb9fd21ea751b2f83a055de"),
-              ObjectId("5eb9fd21ea751b2f83a055df"),
-              ObjectId("5eb9fd21ea751b2f83a055e0")
-            ]
-          }
-      }
-    },
-    { $project:
-      {
-        "parentEntity" : 0,
-        "parentStream" : 0,
-        "instanceName" : 0,
-        "location" : 0
-      }
-    }
-  ] ).pretty()
+  SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 3;
 
+  // manually add sources to songs.
+
+
+  // TODO: update the code below to automate this process
 
   // turn that result into an array, "sourcesAdded"
-    // replace `}` with `},`
-    // replace `ObjectId("` with `"ObjectId(`
-    // replace `"),` with `"),`
 
   // the "songs" array already exists from scraping
 
@@ -176,6 +132,22 @@
 
   JSON.stringify(songs, null, 4);
 
-  // format ObjectId("") before adding songs to the db
-    // replace `"ObjectId(` with `ObjectId("`
-    // replace `"),` with `"),`
+
+//
+// Step 5: paste final statements below:
+//
+
+INSERT INTO source
+  (parent_entity, parent_stream, instance_name, publication_date, location)
+VALUES
+  ('Pitchfork', 'Track Reviews', NULL, '2020-10-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2020-10-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+;
+
+
+INSERT INTO song
+  (capture_date, source_id, title, artist_name, video_id)
+VALUES
+  ('2020-10-20 09:11:29.173173', 735, 'Let Me Love You Like a Woman', 'Lana Del Rey', NULL),
+  ('2020-10-20 09:11:29.173173', 736, 'Robber', 'The Weather Station', NULL)
+;

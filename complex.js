@@ -42,7 +42,7 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Comple
 // Step 2: get songs data
 //
 
-  source_id = 730; // SELECT last_insert_rowid();
+  source_id = 733; // SELECT last_insert_rowid();
 
   elements = document.getElementsByClassName("article-list");
   element = elements[0].getElementsByTagName("h2"); // sometimes h2 or h3
@@ -78,15 +78,22 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Comple
 INSERT INTO source
   (parent_entity, parent_stream, instance_name, publication_date, location)
 VALUES
-  ('Complex', 'Best New Music This Week', 'Benny the Butcher, Reason, SAINt JHN, and More', '2020-10-09 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-benny-the-butcher/lil-loaded-polo-g-while-im-here');
+  ('Complex', 'Best New Music This Week', 'Benny the Butcher, Black Thought, Ty Dolla Sign, More', '2020-10-16 12:00:00.000000', 'https://www.complex.com/music/2020/10/best-new-music-this-week-october-16/snot-flo-milli-mean');
+
 
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-17 02:17:28.573573', 730, 'Timeless', 'Benny the Butcher f/ Lil Wayne, Big Sean, and Hit-Boy', 'cwEGQAvsens'),
-  ('2020-10-17 02:17:28.575575', 730, 'Extinct', 'Reason f/ JID & Isaiah Rashad', 'mZtyIraf7jI'),
-  ('2020-10-17 02:17:28.575575', 730, 'Jewelz', 'Anderson .Paak & Timbaland', '677jKtsyDhg'),
-  ('2020-10-17 02:17:28.575575', 730, 'Princess Cuts', 'Headie One f/ Young T & Bugsey', '_Px5l4mQ0H4'),
-  ('2020-10-17 02:17:28.575575', 730, 'Gorgeous', 'SAINt JHN', 'k2gPDgC4Iz4'),
-  ('2020-10-17 02:17:28.575575', 730, 'While I’m Here', 'Lil Loaded f/ Polo G', '-SYUCByoYOk')
+  ('2020-10-20 07:56:24.172172', 733, 'Legend', 'Benny the Butcher', 'boskATjX9Wc'),
+  ('2020-10-20 07:56:24.173173', 733, 'Iced Out Audemars Remix', 'Pop Smoke f/ Lil Wayne', 'kIz4mKRPdlw'),
+  ('2020-10-20 07:56:24.173173', 733, 'You’re Mines Still Remix', 'Yung Bleu & Drake', 'eiXULl40N3I'),
+  ('2020-10-20 07:56:24.173173', 733, 'Diamond Choker', 'Lil Gnar & Lil Uzi Vert', 'peP0BJ9EWZ8'),
+  ('2020-10-20 07:56:24.174174', 733, 'Never', 'Young Nudy', 'QNP23jp_2wk'),
+  ('2020-10-20 07:56:24.174174', 733, 'Whole Lotta Choppas Remix', 'Sada Baby f/ Nicki Minaj', 'KV3fVY0nHw4'),
+  ('2020-10-20 07:56:24.174174', 733, 'Steak Um', 'Black Thought f/ Schoolboy Q', 'JagKPNTvCnY'),
+  ('2020-10-20 07:56:24.174174', 733, 'Before', 'James Blake', 'xbUvNFUrkpc'),
+  ('2020-10-20 07:56:24.174174', 733, 'By Yourself', 'Ty Dolla $ign f/ Jhene Aiko & Mustard', 'vEnW8rLMJlc'),
+  ('2020-10-20 07:56:24.174174', 733, 'I’m Amazing', 'Omar Apollo', '3ISHE5Mp628'),
+  ('2020-10-20 07:56:24.174174', 733, 'Pardon', 'T.I. f/ Lil Baby', '4QE6iIt2oIs'),
+  ('2020-10-20 07:56:24.174174', 733, 'Mean', '$not & Flo Milli', 'c-Z4me0FIVw')
 ;
