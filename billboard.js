@@ -31,11 +31,13 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
     + "\'" + currentChartLocation + "\');"
   )
 
+  // Paste the statement in Step 3 below and insert the source into the db
+
 //
 // Step 2: get songs data
 //
 
-  source_id = 732; // SELECT last_insert_rowid();
+  source_id = 737; // SELECT last_insert_rowid();
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
 
@@ -79,13 +81,18 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
 INSERT INTO source
   (parent_entity, parent_stream, instance_name, publication_date, location)
 VALUES
-  ('Billboard', 'The Hot 100', 'Week of October 24, 2020', '2020-10-24 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-10-24');
+  ('Billboard', 'The Hot 100', 'Week of October 31, 2020', '2020-10-31 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-10-31');
 
 
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-20 07:46:41.222222', 732, 'Baby, I’m Jealous', 'Bebe Rexha Featuring Doja Cat', NULL),
-  ('2020-10-20 07:46:41.223223', 732, 'Hole In The Bottle', 'Kelsea Ballerini', NULL),
-  ('2020-10-20 07:46:41.223223', 732, 'Sofia', 'Clairo', NULL)
+  ('2020-10-27 08:38:51.109109', 737, 'Lonely', 'Justin Bieber & benny blanco', NULL),
+  ('2020-10-27 08:38:51.109109', 737, 'You’re Mines Still', 'Yung Bleu Featuring Drake', NULL),
+  ('2020-10-27 08:38:51.110110', 737, 'Hate The Way', 'G-Eazy Featuring blackbear', NULL),
+  ('2020-10-27 08:38:51.110110', 737, 'Canceled', 'Larray', NULL),
+  ('2020-10-27 08:38:51.110110', 737, 'Happy Does', 'Kenny Chesney', NULL),
+  ('2020-10-27 08:38:51.110110', 737, 'Throat Baby (Go Baby)', 'BRS Kash', NULL),
+  ('2020-10-27 08:38:51.111111', 737, 'Pardon', 'T.I. Featuring Lil Baby', NULL),
+  ('2020-10-27 08:38:51.111111', 737, 'Champagne Night', 'Lady A', NULL)
 ;

@@ -38,11 +38,13 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Comple
     + "\'" + chartLocation + "\');"
   );
 
+  // Paste the statement in Step 3 below and insert the source into the db
+
 //
 // Step 2: get songs data
 //
 
-  source_id = 733; // SELECT last_insert_rowid();
+  source_id = 738; // SELECT last_insert_rowid();
 
   elements = document.getElementsByClassName("article-list");
   element = elements[0].getElementsByTagName("h2"); // sometimes h2 or h3
@@ -78,22 +80,18 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Comple
 INSERT INTO source
   (parent_entity, parent_stream, instance_name, publication_date, location)
 VALUES
-  ('Complex', 'Best New Music This Week', 'Benny the Butcher, Black Thought, Ty Dolla Sign, More', '2020-10-16 12:00:00.000000', 'https://www.complex.com/music/2020/10/best-new-music-this-week-october-16/snot-flo-milli-mean');
+  ('Complex', 'Best New Music This Week', 'Ty Dolla Sign, Ariana Grande, Saweetie, More', '2020-10-23 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-ariana-grande-ty-dolla-sign/rico-nasty-gucci-mane-don-toliver-for-me');
 
 
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-20 07:56:24.172172', 733, 'Legend', 'Benny the Butcher', 'boskATjX9Wc'),
-  ('2020-10-20 07:56:24.173173', 733, 'Iced Out Audemars Remix', 'Pop Smoke f/ Lil Wayne', 'kIz4mKRPdlw'),
-  ('2020-10-20 07:56:24.173173', 733, 'You’re Mines Still Remix', 'Yung Bleu & Drake', 'eiXULl40N3I'),
-  ('2020-10-20 07:56:24.173173', 733, 'Diamond Choker', 'Lil Gnar & Lil Uzi Vert', 'peP0BJ9EWZ8'),
-  ('2020-10-20 07:56:24.174174', 733, 'Never', 'Young Nudy', 'QNP23jp_2wk'),
-  ('2020-10-20 07:56:24.174174', 733, 'Whole Lotta Choppas Remix', 'Sada Baby f/ Nicki Minaj', 'KV3fVY0nHw4'),
-  ('2020-10-20 07:56:24.174174', 733, 'Steak Um', 'Black Thought f/ Schoolboy Q', 'JagKPNTvCnY'),
-  ('2020-10-20 07:56:24.174174', 733, 'Before', 'James Blake', 'xbUvNFUrkpc'),
-  ('2020-10-20 07:56:24.174174', 733, 'By Yourself', 'Ty Dolla $ign f/ Jhene Aiko & Mustard', 'vEnW8rLMJlc'),
-  ('2020-10-20 07:56:24.174174', 733, 'I’m Amazing', 'Omar Apollo', '3ISHE5Mp628'),
-  ('2020-10-20 07:56:24.174174', 733, 'Pardon', 'T.I. f/ Lil Baby', '4QE6iIt2oIs'),
-  ('2020-10-20 07:56:24.174174', 733, 'Mean', '$not & Flo Milli', 'c-Z4me0FIVw')
+  ('2020-10-27 08:46:07.176176', 738, 'Positions', 'Ariana Grande', 'tcYodQoapMg'),
+  ('2020-10-27 08:46:07.177177', 738, 'Track 6', 'Ty Dolla Sign f/ Kanye West, Anderson .Paak, & Thundercat', 'MODX7DWeN_c'),
+  ('2020-10-27 08:46:07.177177', 738, 'Back to the Streets', 'Saweetie f/ Jhene Aiko', 'dXg12-v10Xk'),
+  ('2020-10-27 08:46:07.178178', 738, 'Nissan Altima', 'Michael Christmas', 'PEiQDRA_WCs'),
+  ('2020-10-27 08:46:07.178178', 738, 'Tyler Herro', 'Jack Harlow', 'np9Ub1LilKU'),
+  ('2020-10-27 08:46:07.178178', 738, 'Tap In', 'DeJ Loaf f/ 42 Dugg & Sada Baby', 'Y4C_ujzbZdc'),
+  ('2020-10-27 08:46:07.178178', 738, 'For Me', 'Chase B f/ OMB Bloodbath & KenTheMan', 'b1QpBXmbX1A'),
+  ('2020-10-27 08:46:07.178178', 738, 'Don’t Like Me', 'Rico Nasty f/ Gucci Mane & Don Toliver', 'zxxnLeS7hfY')
 ;

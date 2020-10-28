@@ -34,11 +34,13 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'New Yo
     + "\'" + chartLocation + "\');"
   );
 
+  // Paste the statement in Step 3 below and insert the source into the db
+
 //
 // Step 2: get songs data
 //
 
-  source_id = 734; // SELECT last_insert_rowid();
+  source_id = 739; // SELECT last_insert_rowid();
 
   songs = [];
 
@@ -77,21 +79,20 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'New Yo
 INSERT INTO source
   (parent_entity, parent_stream, instance_name, publication_date, location)
 VALUES
-  ('New York Times', 'The Playlist', 'Stevie Wonder Demands Justice, and 12 More New Songs', '2020-10-16 08:59:34.000000', 'https://www.nytimes.com/2020/10/16/arts/music/playlist-stevie-wonder-demi-lovato.html');
+  ('New York Times', 'The Playlist', 'Ariana Grande Is in Love, and 11 More New Songs', '2020-10-26 09:02:06.000000', 'https://www.nytimes.com/2020/10/23/arts/music/playlist-ariana-grande-arlo-parks.html');
 
 
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-20 08:02:01.673673', 734, 'Can’t Put It in the Hands of Fate', 'Stevie Wonder featuring Rapsody, Cordae, Chika and Busta Rhymes', 'Kgdfxeh0WtE'),
-  ('2020-10-20 08:02:01.674674', 734, 'American Landfill', 'Kristeen Young featuring David Bowie', 'd7_DEdmYLFI'),
-  ('2020-10-20 08:02:01.674674', 734, 'Commander in Chief', 'Demi Lovato', 'n9Y-lS1trhw'),
-  ('2020-10-20 08:02:01.674674', 734, 'Let Me Love You Like a Woman', 'Lana Del Rey', 'd-Uvy-aKoao'),
-  ('2020-10-20 08:02:01.674674', 734, 'Before', 'James Blake', 'xbUvNFUrkpc'),
-  ('2020-10-20 08:02:01.674674', 734, 'Chismiten', 'Mdou Moctar', 'y23ewhFf_hs'),
-  ('2020-10-20 08:02:01.674674', 734, 'Free Your Mind', 'Made Kuti', 'wyoAbMANuyc'),
-  ('2020-10-20 08:02:01.674674', 734, 'Love’s Refrain', 'Julie Byrne & Jefre Cantu-Ledesma', '07d_coPy7Ws'),
-  ('2020-10-20 08:02:01.674674', 734, 'Robber', 'The Weather Station', 'OJ9SYLVaIUI'),
-  ('2020-10-20 08:02:01.675675', 734, 'Lonely', 'Justin Bieber and Benny Blanco', 'xQOO2xGQ1Pc'),
-  ('2020-10-20 08:02:01.675675', 734, 'Alone', 'Bonzie', 'qpMPDUL3nkg')
+  ('2020-10-27 08:49:39.478478', 739, 'Positions', 'Ariana Grande', '-Pr029fVsIY'),
+  ('2020-10-27 08:49:39.479479', 739, 'Green Eyes', 'Arlo Parks', 'ddjr5KDqYGA'),
+  ('2020-10-27 08:49:39.479479', 739, 'Faith Healer', 'Julien Baker', 'bWAOkg2i6_g'),
+  ('2020-10-27 08:49:39.480480', 739, 'Cat’s Cradle', 'Tigers Jaw', 'KV4tJJsIh5M'),
+  ('2020-10-27 08:49:39.480480', 739, 'Dominique', 'Ela Minus', '3EyDeCvQ8vA'),
+  ('2020-10-27 08:49:39.480480', 739, 'Music for Egun Movement 2', 'Ìfé', 'g8ZV9Ic-M1E'),
+  ('2020-10-27 08:49:39.480480', 739, 'Comfort, Edge', 'Helena Deland', 'lz3ol1AfK0I'),
+  ('2020-10-27 08:49:39.480480', 739, 'Crash', 'Nilüfer Yanya', 'Y17xKjMmM-U'),
+  ('2020-10-27 08:49:39.480480', 739, 'Tyler Herro', 'Jack Harlow', 'np9Ub1LilKU'),
+  ('2020-10-27 08:49:39.480480', 739, 'I Don’t Talk About That Much’ and ‘Hva Hvis', 'Smerz', 'YC0fA-OTeqA')
 ;
