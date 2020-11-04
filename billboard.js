@@ -37,7 +37,7 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
 // Step 2: get songs data
 //
 
-  source_id = 737; // SELECT last_insert_rowid();
+  source_id = 740; // SELECT last_insert_rowid();
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
 
@@ -81,18 +81,23 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
 INSERT INTO source
   (parent_entity, parent_stream, instance_name, publication_date, location)
 VALUES
-  ('Billboard', 'The Hot 100', 'Week of October 31, 2020', '2020-10-31 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-10-31');
+  ('Billboard', 'The Hot 100', 'Week of November 7, 2020', '2020-11-07 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-11-07');
 
 
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-27 08:38:51.109109', 737, 'Lonely', 'Justin Bieber & benny blanco', NULL),
-  ('2020-10-27 08:38:51.109109', 737, 'You’re Mines Still', 'Yung Bleu Featuring Drake', NULL),
-  ('2020-10-27 08:38:51.110110', 737, 'Hate The Way', 'G-Eazy Featuring blackbear', NULL),
-  ('2020-10-27 08:38:51.110110', 737, 'Canceled', 'Larray', NULL),
-  ('2020-10-27 08:38:51.110110', 737, 'Happy Does', 'Kenny Chesney', NULL),
-  ('2020-10-27 08:38:51.110110', 737, 'Throat Baby (Go Baby)', 'BRS Kash', NULL),
-  ('2020-10-27 08:38:51.111111', 737, 'Pardon', 'T.I. Featuring Lil Baby', NULL),
-  ('2020-10-27 08:38:51.111111', 737, 'Champagne Night', 'Lady A', NULL)
+  ('2020-11-03 09:15:54.900900', 740, 'Positions', 'Ariana Grande', NULL),
+  ('2020-11-03 09:15:54.901901', 740, 'Forever After All', 'Luke Combs', NULL),
+  ('2020-11-03 09:15:54.903903', 740, 'Tyler Herro', 'Jack Harlow', NULL),
+  ('2020-11-03 09:15:54.904904', 740, 'Spicy', 'Ty Dolla $ign Featuring Post Malone', NULL),
+  ('2020-11-03 09:15:54.904904', 740, 'The Other Guy', 'Luke Combs', NULL),
+  ('2020-11-03 09:15:54.904904', 740, 'Damage', 'H.E.R.', NULL),
+  ('2020-11-03 09:15:54.904904', 740, 'Back To The Streets', 'Saweetie Featuring Jhene Aiko', NULL),
+  ('2020-11-03 09:15:54.904904', 740, 'So Done', 'The Kid LAROI', NULL),
+  ('2020-11-03 09:15:54.904904', 740, 'Cold As You', 'Luke Combs', NULL),
+  ('2020-11-03 09:15:54.904904', 740, 'Practice', 'DaBaby', NULL),
+  ('2020-11-03 09:15:54.905905', 740, 'La Toxica', 'Farruko', NULL),
+  ('2020-11-03 09:15:54.905905', 740, 'Head & Heart', 'Joel Corry X MNEK', NULL),
+  ('2020-11-03 09:15:54.905905', 740, 'Wine, Beer, Whiskey', 'Little Big Town', NULL)
 ;

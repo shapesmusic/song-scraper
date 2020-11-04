@@ -40,7 +40,7 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'New Yo
 // Step 2: get songs data
 //
 
-  source_id = 739; // SELECT last_insert_rowid();
+  source_id = 742; // SELECT last_insert_rowid();
 
   songs = [];
 
@@ -79,20 +79,20 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'New Yo
 INSERT INTO source
   (parent_entity, parent_stream, instance_name, publication_date, location)
 VALUES
-  ('New York Times', 'The Playlist', 'Ariana Grande Is in Love, and 11 More New Songs', '2020-10-26 09:02:06.000000', 'https://www.nytimes.com/2020/10/23/arts/music/playlist-ariana-grande-arlo-parks.html');
+  ('New York Times', 'The Playlist', 'Kendrick Lamar’s Welcome Return, and 11 More New Songs', '2020-10-30 08:36:43.000000', 'https://www.nytimes.com/2020/10/30/arts/music/playlist-kendrick-lamar-busta-rhymes-tierra-whack.html');
 
 
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-27 08:49:39.478478', 739, 'Positions', 'Ariana Grande', '-Pr029fVsIY'),
-  ('2020-10-27 08:49:39.479479', 739, 'Green Eyes', 'Arlo Parks', 'ddjr5KDqYGA'),
-  ('2020-10-27 08:49:39.479479', 739, 'Faith Healer', 'Julien Baker', 'bWAOkg2i6_g'),
-  ('2020-10-27 08:49:39.480480', 739, 'Cat’s Cradle', 'Tigers Jaw', 'KV4tJJsIh5M'),
-  ('2020-10-27 08:49:39.480480', 739, 'Dominique', 'Ela Minus', '3EyDeCvQ8vA'),
-  ('2020-10-27 08:49:39.480480', 739, 'Music for Egun Movement 2', 'Ìfé', 'g8ZV9Ic-M1E'),
-  ('2020-10-27 08:49:39.480480', 739, 'Comfort, Edge', 'Helena Deland', 'lz3ol1AfK0I'),
-  ('2020-10-27 08:49:39.480480', 739, 'Crash', 'Nilüfer Yanya', 'Y17xKjMmM-U'),
-  ('2020-10-27 08:49:39.480480', 739, 'Tyler Herro', 'Jack Harlow', 'np9Ub1LilKU'),
-  ('2020-10-27 08:49:39.480480', 739, 'I Don’t Talk About That Much’ and ‘Hva Hvis', 'Smerz', 'YC0fA-OTeqA')
+  ('2020-11-03 09:37:33.703703', 742, 'Look Over Your Shoulder', 'Busta Rhymes featuring Kendrick Lamar', NULL),
+  ('2020-11-03 09:37:33.704704', 742, 'You’ve Got to Feel', 'Empress Of featuring Amber Mark', 'zNSf5t3toec'),
+  ('2020-11-03 09:37:33.704704', 742, 'Dora', 'Tierra Whack', NULL),
+  ('2020-11-03 09:37:33.704704', 742, 'Actually Vote', 'Keke Palmer', 'yGOAXdva_LE'),
+  ('2020-11-03 09:37:33.704704', 742, 'Juyendo', 'Sebastián Otero', 'qRFqNh3k4Ok'),
+  ('2020-11-03 09:37:33.704704', 742, 'Cady Road', 'Routine', 'kfRrhC0Xr7U'),
+  ('2020-11-03 09:37:33.704704', 742, 'There’s a First Time for Everything', 'Gillian Welch', 'A-qVpT6rKKE'),
+  ('2020-11-03 09:37:33.704704', 742, 'Closed Chapter', 'Gianna Lauren', 'MhTIebkJwLY'),
+  ('2020-11-03 09:37:33.705705', 742, 'Who Shot Ya?', 'Xenia Rubinos', 'J_X7yrfWU_U'),
+  ('2020-11-03 09:37:33.705705', 742, 'Lemon Trees', 'Mary Halvorson’s Code Girl', 'a689HlvUESM')
 ;

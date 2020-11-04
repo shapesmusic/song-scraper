@@ -44,7 +44,7 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Comple
 // Step 2: get songs data
 //
 
-  source_id = 738; // SELECT last_insert_rowid();
+  source_id = 741; // SELECT last_insert_rowid();
 
   elements = document.getElementsByClassName("article-list");
   element = elements[0].getElementsByTagName("h2"); // sometimes h2 or h3
@@ -80,18 +80,20 @@ SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Comple
 INSERT INTO source
   (parent_entity, parent_stream, instance_name, publication_date, location)
 VALUES
-  ('Complex', 'Best New Music This Week', 'Ty Dolla Sign, Ariana Grande, Saweetie, More', '2020-10-23 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-ariana-grande-ty-dolla-sign/rico-nasty-gucci-mane-don-toliver-for-me');
+  ('Complex', 'Best New Music This Week', 'Ariana Grande, Lil Durk, Busta Rhymes, and More', '2020-10-30 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-ariana-grande-busta-rhymes/tierra-whack-dora');
 
 
 INSERT INTO song
   (capture_date, source_id, title, artist_name, video_id)
 VALUES
-  ('2020-10-27 08:46:07.176176', 738, 'Positions', 'Ariana Grande', 'tcYodQoapMg'),
-  ('2020-10-27 08:46:07.177177', 738, 'Track 6', 'Ty Dolla Sign f/ Kanye West, Anderson .Paak, & Thundercat', 'MODX7DWeN_c'),
-  ('2020-10-27 08:46:07.177177', 738, 'Back to the Streets', 'Saweetie f/ Jhene Aiko', 'dXg12-v10Xk'),
-  ('2020-10-27 08:46:07.178178', 738, 'Nissan Altima', 'Michael Christmas', 'PEiQDRA_WCs'),
-  ('2020-10-27 08:46:07.178178', 738, 'Tyler Herro', 'Jack Harlow', 'np9Ub1LilKU'),
-  ('2020-10-27 08:46:07.178178', 738, 'Tap In', 'DeJ Loaf f/ 42 Dugg & Sada Baby', 'Y4C_ujzbZdc'),
-  ('2020-10-27 08:46:07.178178', 738, 'For Me', 'Chase B f/ OMB Bloodbath & KenTheMan', 'b1QpBXmbX1A'),
-  ('2020-10-27 08:46:07.178178', 738, 'Don’t Like Me', 'Rico Nasty f/ Gucci Mane & Don Toliver', 'zxxnLeS7hfY')
+  ('2020-11-03 09:20:05.027027', 741, 'Six Thirty', 'Ariana Grande', 'u7GAXfrajHc'),
+  ('2020-11-03 09:20:05.029029', 741, 'Look Over Your Shoulder', 'Busta Rhymes f/ Kendrick Lamar', 'Yl_-3oSlWaU'),
+  ('2020-11-03 09:20:05.029029', 741, 'Vice City', 'Young Nudy & Metro Boomin', 'LYbsTkPnVDw'),
+  ('2020-11-03 09:20:05.029029', 741, '4 Thangs', 'Freddie Gibbs f/ Big Sean and Hit-Boy', 'NXgeVXkPINo'),
+  ('2020-11-03 09:20:05.029029', 741, 'Stay Down', 'Lil Durk f/ Young Thug and 6LACK', '3ZSYPQYho3Q'),
+  ('2020-11-03 09:20:05.030030', 741, 'Sangria', '$not f/ Denzel Curry', 'mQijQBxmabE'),
+  ('2020-11-03 09:20:05.030030', 741, 'Losses', 'Lil Tjay', 'fd1HuGsR51I'),
+  ('2020-11-03 09:20:05.030030', 741, 'Like This!', 'Brevin Kim', 'ug6XZhvzqGU'),
+  ('2020-11-03 09:20:05.030030', 741, 'Double G', 'French Montana f/ Pop Smoke', '2EwAq5a9it8'),
+  ('2020-11-03 09:20:05.030030', 741, 'Dora', 'Tierra Whack', 'QCCxLpT9ymc')
 ;
