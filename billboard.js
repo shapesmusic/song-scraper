@@ -5,7 +5,7 @@
 SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publication_date DESC LIMIT 8;
 
 //
-// Step 1: get source data
+// Step 1: scrape source data
 //
 
   // add moment.js to the header (make sure scripts aren't blocked in the browser)
@@ -31,17 +31,26 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
     + "\'" + currentChartLocation + "\');"
   )
 
-  // Paste the statement in Step 3 below and insert the source into the db
+  // stage the statement below and insert the source into the db
+  // replace any ' in strings with ’
+
+  INSERT INTO source
+    (parent_entity, parent_stream, instance_name, publication_date, location)
+  VALUES
+    ('Billboard', 'The Hot 100', 'Week of November 14, 2020', '2020-11-14 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-11-14');
+
 
 //
-// Step 2: get songs data
+// Step 2: scrape song data (title, artist_name, video_id)
 //
 
-  source_id = 740; // SELECT last_insert_rowid();
+  source_id = 743; // `SELECT last_insert_rowid();`
+  song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
 
-  songs = [];
+  songsData = [];
+  // songs = [];
 
   for (var i=0; i<elements.length; i++){
       element = elements[i];
@@ -49,55 +58,252 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
       songName = element.getElementsByClassName('chart-element__information__song text--truncate color--primary')[0];
       artistName = element.getElementsByClassName('chart-element__information__artist text--truncate color--secondary')[0];
 
-      capture_date = moment(new Date()).format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
       title = songName.innerText.trim();
       artist_name = artistName.innerText.trim();
-      video_id = ""; // excluding from SQL statement
+      video_id = null;
+      capture_date = moment(new Date()).format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
 
-      song = String(
-        "\n(\'" + capture_date + "\', "
-        + source_id + ", "
-        + "\'" + title + "\', "
-        + "\'" + artist_name + "\', "
-        + "NULL)"
-      );
+      songData = {
+        'title' : title,
+        'artist_name' : artist_name,
+        'video_id' : video_id,
+        'capture_date' : capture_date,
+        'source_id' : source_id,
+        'song_id' : song_id
+      };
+
+      // song = String(
+      //   "\n(\'" + title + "\', "
+      //   + "\'" + artist_name + "\', "
+      //   + "NULL)"
+      // );
 
       if(isNew.length == 1 && isNew[0].innerText == "New"){ // because innerText can also be "Re-Enter"
 
-        songs.push(song);
+        songsData.push(songData);
+        // songs.push(song);
 
       };
   };
 
+  JSON.stringify(songsData, null, 4);
+  // console.log(String(songs));
+
+
+//
+// Step 3: stage songsData and move duplicates into a separate list below
+//
+
+songsData =
+[
+    {
+        "title": "34+35",
+        "artist_name": "Ariana Grande",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.629629",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Dakiti",
+        "artist_name": "Bad Bunny & Jhay Cortez",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.629629",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Motive",
+        "artist_name": "Ariana Grande Featuring Doja Cat",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.629629",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Off The Table",
+        "artist_name": "Ariana Grande Featuring The Weeknd",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.629629",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "pov",
+        "artist_name": "Ariana Grande",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.629629",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Just Like Magic",
+        "artist_name": "Ariana Grande",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.630630",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Shut Up",
+        "artist_name": "Ariana Grande",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.630630",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Nasty",
+        "artist_name": "Ariana Grande",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.630630",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Safety Net",
+        "artist_name": "Ariana Grande Featuring Ty Dolla $ign",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.630630",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "My Hair",
+        "artist_name": "Ariana Grande",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.630630",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Obvious",
+        "artist_name": "Ariana Grande",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.630630",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "West Side",
+        "artist_name": "Ariana Grande",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.630630",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Love Language",
+        "artist_name": "Ariana Grande",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.630630",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Weeeeee",
+        "artist_name": "Trippie Redd",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.631631",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Thick",
+        "artist_name": "DJ Chose Featuring BeatKing",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.631631",
+        "source_id": 743,
+        "song_id": null
+    },
+    {
+        "title": "Take You Dancing",
+        "artist_name": "Jason Derulo",
+        "video_id": null,
+        "capture_date": "2020-11-10 11:16:59.631631",
+        "source_id": 743,
+        "song_id": null
+    }
+]
+
+
+// check for duplicates, move them into a separate list, add song_id
+SELECT id, title, artist_name FROM song WHERE
+	title LIKE '%Stay Down%'
+  AND artist_name LIKE '%durk%'
+;
+
+duplicates =
+[
+  {
+      "title": "Six Thirty",
+      "artist_name": "Ariana Grande",
+      "video_id": null,
+      "capture_date": "2020-11-10 11:16:59.630630",
+      "source_id": 743,
+      "song_id": 9472
+  },
+  {
+      "title": "Stay Down",
+      "artist_name": "Lil Durk, 6LACK & Young Thug",
+      "video_id": null,
+      "capture_date": "2020-11-10 11:16:59.631631",
+      "source_id": 743,
+      "song_id": 9476
+  },
+]
+
+
+//
+// Step 4:
+//
+
+  // update songsData from deduplicated list above
+
+  // build SQL statement to update nonduplicates to song table
+
+  songs = [];
+
+  for (var i=0; i<songsData.length; i++){
+
+    song = String(
+      "\n(\'" + songsData[i].title + "\', "
+      + "\'" + songsData[i].artist_name + "\', "
+      + "NULL)"
+    );
+
+    songs.push(song);
+  }
   console.log(String(songs));
 
-//
-// Step 3: paste final statements below:
-//
+  // stage SQL statement and update to song table
+  // replace any ' in strings with ’
 
-// replace any ' in strings with ’
+  INSERT INTO song
+    (title, artist_name, video_id)
+  VALUES
+    ('34+35', 'Ariana Grande', NULL),
+    ('Dakiti', 'Bad Bunny & Jhay Cortez', NULL),
+    ('Motive', 'Ariana Grande Featuring Doja Cat', NULL),
+    ('Off The Table', 'Ariana Grande Featuring The Weeknd', NULL),
+    ('pov', 'Ariana Grande', NULL),
+    ('Just Like Magic', 'Ariana Grande', NULL),
+    ('Shut Up', 'Ariana Grande', NULL),
+    ('Nasty', 'Ariana Grande', NULL),
+    ('Safety Net', 'Ariana Grande Featuring Ty Dolla $ign', NULL),
+    ('My Hair', 'Ariana Grande', NULL),
+    ('Obvious', 'Ariana Grande', NULL),
+    ('West Side', 'Ariana Grande', NULL),
+    ('Love Language', 'Ariana Grande', NULL),
+    ('Weeeeee', 'Trippie Redd', NULL),
+    ('Thick', 'DJ Chose Featuring BeatKing', NULL),
+    ('Take You Dancing', 'Jason Derulo', NULL)
+  ;
 
+  // build SQL statement to update all songs to source_song
 
-INSERT INTO source
-  (parent_entity, parent_stream, instance_name, publication_date, location)
-VALUES
-  ('Billboard', 'The Hot 100', 'Week of November 7, 2020', '2020-11-07 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-11-07');
+  // first add nonduplicates
 
+  song_id = 9523; // `SELECT last_insert_rowid();`
 
-INSERT INTO song
-  (capture_date, source_id, title, artist_name, video_id)
-VALUES
-  ('2020-11-03 09:15:54.900900', 740, 'Positions', 'Ariana Grande', NULL),
-  ('2020-11-03 09:15:54.901901', 740, 'Forever After All', 'Luke Combs', NULL),
-  ('2020-11-03 09:15:54.903903', 740, 'Tyler Herro', 'Jack Harlow', NULL),
-  ('2020-11-03 09:15:54.904904', 740, 'Spicy', 'Ty Dolla $ign Featuring Post Malone', NULL),
-  ('2020-11-03 09:15:54.904904', 740, 'The Other Guy', 'Luke Combs', NULL),
-  ('2020-11-03 09:15:54.904904', 740, 'Damage', 'H.E.R.', NULL),
-  ('2020-11-03 09:15:54.904904', 740, 'Back To The Streets', 'Saweetie Featuring Jhene Aiko', NULL),
-  ('2020-11-03 09:15:54.904904', 740, 'So Done', 'The Kid LAROI', NULL),
-  ('2020-11-03 09:15:54.904904', 740, 'Cold As You', 'Luke Combs', NULL),
-  ('2020-11-03 09:15:54.904904', 740, 'Practice', 'DaBaby', NULL),
-  ('2020-11-03 09:15:54.905905', 740, 'La Toxica', 'Farruko', NULL),
-  ('2020-11-03 09:15:54.905905', 740, 'Head & Heart', 'Joel Corry X MNEK', NULL),
-  ('2020-11-03 09:15:54.905905', 740, 'Wine, Beer, Whiskey', 'Little Big Town', NULL)
-;
+  // TBC
