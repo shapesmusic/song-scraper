@@ -2,7 +2,7 @@
 // Step 0: Check recent scraped
 //
 
-SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publication_date DESC LIMIT 8;
+  SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publication_date DESC LIMIT 8;
 
 //
 // Step 1: Scrape source data
@@ -260,7 +260,9 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
     AND artist_name LIKE '%durk%'
   ;
 
+  // If duplicates:
   // Update var songsData = the deduplicated list above
+
 
 //
 // Step 4: Update nonduplicates to the song table
@@ -281,6 +283,7 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
     }
   }
   console.log(String(songs));
+
 
   // Stage SQL statement
   // Replace any ' in strings with ’
@@ -348,6 +351,7 @@ SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publ
   }
 
   console.log(String(source_songs));
+
 
   // Stage the SQL statement
   INSERT INTO source_song
