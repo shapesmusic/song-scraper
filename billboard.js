@@ -4,6 +4,7 @@
 
   SELECT instance_name FROM source WHERE parent_entity = 'Billboard' ORDER BY publication_date DESC LIMIT 8;
 
+
 //
 // Step 1: Scrape source data
 //

@@ -1,11 +1,13 @@
 // Scroll to the bottom of the page first, so all the lazyload stuff loads
 // Always check the last song name to make sure everything got scraped
 
+
 //
 // Step 0: Check recent scraped
 //
 
   SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Complex' ORDER BY publication_date DESC LIMIT 8;
+
 
 //
 // Step 1: Scrape source data
@@ -15,19 +17,19 @@
   parentStream = chartTitle.match(/.+?(?=:)/)[0];
   instanceName = chartTitle.match(/[^:]+$/)[0].trim();
 
-  // add moment.js to the header (make sure scripts aren't blocked in the browser)
+  // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
   momentjs.src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.2.1/moment.min.js";
   document.head.appendChild(momentjs);
 
-  // get and format publicationDate
+  // Get and format publicationDate
   publicationDate = document.getElementsByClassName("info-row__datetime")[0].innerHTML.trim();
   publicationDateFormatted = moment(publicationDate, "MMM DD, YYYY").format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
 
-  // get and format location
+  // Get and format location
   chartLocation = window.location.href; // "location" is a reserved word
 
-  // build the INSERT statement
+  // Build the INSERT statement
   console.log(
     "INSERT INTO "
     + "source \n  (parent_entity, parent_stream, instance_name, publication_date, location) "
