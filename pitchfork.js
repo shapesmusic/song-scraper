@@ -3,17 +3,17 @@
 // TODO: consider using uniqid instead of Mongo's _id when adding to multiple collections with references
 
 //
-// Step 0: check most recent scraped (displays 3 songs w/ sources)
+// Step 0: Check recent scraped
 //
 
-  // TODO: make an aggregate statement
-
-  SELECT id, publication_date FROM source WHERE parent_entity = 'Pitchfork' ORDER BY publication_date DESC LIMIT 3;
-
-  // Add the most recent source_id
-  SELECT title FROM song WHERE source_id = '723';
-
-
+  SELECT song.title, source.publication_date
+  FROM source_song
+  INNER JOIN song
+    ON song.id = source_song.song_id
+  INNER JOIN source
+    ON source.id = source_song.source_id
+  WHERE source.parent_entity = 'Pitchfork'
+  ORDER BY source.publication_date DESC LIMIT 8;
 
 //
 // Step 1: add moment.js

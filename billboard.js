@@ -38,7 +38,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of November 14, 2020', '2020-11-14 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-11-14');
+    ('Billboard', 'The Hot 100', 'Week of November 21, 2020', '2020-11-21 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-11-21');
 
   // Update to source table
 
@@ -47,7 +47,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 743; // `SELECT last_insert_rowid();`
+  source_id = 746; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -91,168 +91,123 @@
 
   songsData =
   [
-      {
-          "title": "34+35",
-          "artist_name": "Ariana Grande",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.439439",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Dakiti",
-          "artist_name": "Bad Bunny & Jhay Cortez",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.439439",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Motive",
-          "artist_name": "Ariana Grande Featuring Doja Cat",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.440440",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Off The Table",
-          "artist_name": "Ariana Grande Featuring The Weeknd",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.440440",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "pov",
-          "artist_name": "Ariana Grande",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.441441",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Just Like Magic",
-          "artist_name": "Ariana Grande",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.441441",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Shut Up",
-          "artist_name": "Ariana Grande",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.441441",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Nasty",
-          "artist_name": "Ariana Grande",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.441441",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Safety Net",
-          "artist_name": "Ariana Grande Featuring Ty Dolla $ign",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.441441",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Six Thirty",
-          "artist_name": "Ariana Grande",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.442442",
-          "source_id": 743,
-          "song_id": 9472,
-          "duplicate": true
-      },
-      {
-          "title": "My Hair",
-          "artist_name": "Ariana Grande",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.442442",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Obvious",
-          "artist_name": "Ariana Grande",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.442442",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "West Side",
-          "artist_name": "Ariana Grande",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.442442",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Love Language",
-          "artist_name": "Ariana Grande",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.442442",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Weeeeee",
-          "artist_name": "Trippie Redd",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.442442",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Stay Down",
-          "artist_name": "Lil Durk, 6LACK & Young Thug",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.443443",
-          "source_id": 743,
-          "song_id": 9476,
-          "duplicate": true
-      },
-      {
-          "title": "Thick",
-          "artist_name": "DJ Chose Featuring BeatKing",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.443443",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Take You Dancing",
-          "artist_name": "Jason Derulo",
-          "video_id": null,
-          "capture_date": "2020-11-11 10:39:07.443443",
-          "source_id": 743,
-          "song_id": null,
-          "duplicate": false
-      }
+    {
+        "title": "What That Speed Bout!?",
+        "artist_name": "Mike WiLL Made-It, Nicki Minaj & YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.079079",
+        "source_id": 746,
+        "song_id": 9540,
+        "duplicate": true
+    },
+    {
+        "title": "Took Her To The O",
+        "artist_name": "King Von",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.079079",
+        "source_id": 746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Don't Need Friends",
+        "artist_name": "NAV Featuring Lil Baby",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.079079",
+        "source_id": 746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Code",
+        "artist_name": "King Von Featuring Polo G",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.080080",
+        "source_id": 746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Tragic",
+        "artist_name": "The Kid LAROI Featuring YoungBoy Never Brok Again & Internet Money",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.080080",
+        "source_id": 746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "All These N**gas",
+        "artist_name": "King Von Featuring Lil Durk",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.080080",
+        "source_id": 746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Crazy Story 2.0",
+        "artist_name": "King Von Featuring Lil Durk",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.080080",
+        "source_id": 746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Always Do",
+        "artist_name": "The Kid LAROI",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.080080",
+        "source_id": 746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Young Wheezy",
+        "artist_name": "NAV With Gunna",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.080080",
+        "source_id": 746,
+        "song_id": 9543,
+        "duplicate": true
+    },
+    {
+        "title": "Beers And Sunshine",
+        "artist_name": "Darius Rucker",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.081081",
+        "source_id": 746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Therefore I Am",
+        "artist_name": "Billie Eilish",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.081081",
+        "source_id": 746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Whoopty",
+        "artist_name": "CJ",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.081081",
+        "source_id": 746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "F*ck You, Goodbye",
+        "artist_name": "The Kid LAROI Featuring Machine Gun Kelly",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:36:35.081081",
+        "source_id": 746,
+        "song_id": null,
+        "duplicate": false
+    }
   ]
 
   // Check each song for duplicates in the database
@@ -292,22 +247,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('34+35', 'Ariana Grande', NULL),
-    ('Dakiti', 'Bad Bunny & Jhay Cortez', NULL),
-    ('Motive', 'Ariana Grande Featuring Doja Cat', NULL),
-    ('Off The Table', 'Ariana Grande Featuring The Weeknd', NULL),
-    ('pov', 'Ariana Grande', NULL),
-    ('Just Like Magic', 'Ariana Grande', NULL),
-    ('Shut Up', 'Ariana Grande', NULL),
-    ('Nasty', 'Ariana Grande', NULL),
-    ('Safety Net', 'Ariana Grande Featuring Ty Dolla $ign', NULL),
-    ('My Hair', 'Ariana Grande', NULL),
-    ('Obvious', 'Ariana Grande', NULL),
-    ('West Side', 'Ariana Grande', NULL),
-    ('Love Language', 'Ariana Grande', NULL),
-    ('Weeeeee', 'Trippie Redd', NULL),
-    ('Thick', 'DJ Chose Featuring BeatKing', NULL),
-    ('Take You Dancing', 'Jason Derulo', NULL)
+    ('Took Her To The O', 'King Von', NULL),
+    ('Don’t Need Friends', 'NAV Featuring Lil Baby', NULL),
+    ('The Code', 'King Von Featuring Polo G', NULL),
+    ('Tragic', 'The Kid LAROI Featuring YoungBoy Never Brok Again & Internet Money', NULL),
+    ('All These N**gas', 'King Von Featuring Lil Durk', NULL),
+    ('Crazy Story 2.0', 'King Von Featuring Lil Durk', NULL),
+    ('Always Do', 'The Kid LAROI', NULL),
+    ('Beers And Sunshine', 'Darius Rucker', NULL),
+    ('Therefore I Am', 'Billie Eilish', NULL),
+    ('Whoopty', 'CJ', NULL),
+    ('F*ck You, Goodbye', 'The Kid LAROI Featuring Machine Gun Kelly', NULL)
   ;
 
    // Update to song table
@@ -318,7 +268,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9539; // `SELECT last_insert_rowid();`
+  song_id = 9567; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -358,24 +308,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-11-11 10:39:07.439439', '743', '9524'),
-    ('2020-11-11 10:39:07.439439', '743', '9525'),
-    ('2020-11-11 10:39:07.440440', '743', '9526'),
-    ('2020-11-11 10:39:07.440440', '743', '9527'),
-    ('2020-11-11 10:39:07.441441', '743', '9528'),
-    ('2020-11-11 10:39:07.441441', '743', '9529'),
-    ('2020-11-11 10:39:07.441441', '743', '9530'),
-    ('2020-11-11 10:39:07.441441', '743', '9531'),
-    ('2020-11-11 10:39:07.441441', '743', '9532'),
-    ('2020-11-11 10:39:07.442442', '743', '9472'),
-    ('2020-11-11 10:39:07.442442', '743', '9533'),
-    ('2020-11-11 10:39:07.442442', '743', '9534'),
-    ('2020-11-11 10:39:07.442442', '743', '9535'),
-    ('2020-11-11 10:39:07.442442', '743', '9536'),
-    ('2020-11-11 10:39:07.442442', '743', '9537'),
-    ('2020-11-11 10:39:07.443443', '743', '9476'),
-    ('2020-11-11 10:39:07.443443', '743', '9538'),
-    ('2020-11-11 10:39:07.443443', '743', '9539')
+    ('2020-11-19 09:36:35.079079', '746', '9540'),
+    ('2020-11-19 09:36:35.079079', '746', '9557'),
+    ('2020-11-19 09:36:35.079079', '746', '9558'),
+    ('2020-11-19 09:36:35.080080', '746', '9559'),
+    ('2020-11-19 09:36:35.080080', '746', '9560'),
+    ('2020-11-19 09:36:35.080080', '746', '9561'),
+    ('2020-11-19 09:36:35.080080', '746', '9562'),
+    ('2020-11-19 09:36:35.080080', '746', '9563'),
+    ('2020-11-19 09:36:35.080080', '746', '9543'),
+    ('2020-11-19 09:36:35.081081', '746', '9564'),
+    ('2020-11-19 09:36:35.081081', '746', '9565'),
+    ('2020-11-19 09:36:35.081081', '746', '9566'),
+    ('2020-11-19 09:36:35.081081', '746', '9567')
   ;
 
   // Update to source_song table

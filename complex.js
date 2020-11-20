@@ -40,13 +40,14 @@
     + "\'" + chartLocation + "\');"
   );
 
+
   // Stage the SQL statement
   // Replace any ' in strings with ’
 
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', '2 Chainz, 42 Dugg, Mike Will Made-It, and More', '2020-11-06 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-2-chainz-42-dugg-mike-will-made-it/');
+    ('Complex', 'Best New Music This Week', 'Lil Uzi Vert, Future, 2 Chainz, Billie Eilish, and More', '2020-11-13 12:00:00.000000', 'https://www.complex.com/music/2020/11/best-new-music-this-week-novemeber-13/dj-scheme-corda-ski-mask-the-slump-god-take-a-daytrip-soda');
 
   // Update to source table
 
@@ -55,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 744; // SELECT last_insert_rowid();
+  source_id = 747; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -94,60 +95,78 @@
 
   songsData =
   [
-      {
-          "title": "What That Speed Bout",
-          "artist_name": "Mike Will Made-It f/ YoungBoy Never Broke Again & Nicki Minaj",
-          "video_id": "BmzFSKGwx54",
-          "capture_date": "2020-11-13 07:55:34.480480",
-          "source_id": 744,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Quarantine Thick",
-          "artist_name": "2 Chainz f/ Mulatto",
-          "video_id": "pL3g7YjlgtQ",
-          "capture_date": "2020-11-13 07:55:34.480480",
-          "source_id": 744,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Free Woo",
-          "artist_name": "42 Dugg",
-          "video_id": "EXFShpgCKEw",
-          "capture_date": "2020-11-13 07:55:34.480480",
-          "source_id": 744,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Young Wheezy",
-          "artist_name": "NAV & Wheezy f/ Gunna",
-          "video_id": "-cdYZL08Dxo",
-          "capture_date": "2020-11-13 07:55:34.480480",
-          "source_id": 744,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Mood Remix",
-          "artist_name": "24KGoldn & Iann Dior f/ Justin Bieber & J Balvin",
-          "video_id": "JOHN4EnFqAU",
-          "capture_date": "2020-11-13 07:55:34.480480",
-          "source_id": 744,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "NTWFL",
-          "artist_name": "Sam Dew",
-          "video_id": "EoViE3lXWic",
-          "capture_date": "2020-11-13 07:55:34.480480",
-          "source_id": 744,
-          "song_id": null,
-          "duplicate": false
-      }
+    {
+        "title": "Million Dollar Play",
+        "artist_name": "Future & Lil Uzi Vert",
+        "video_id": "E4_QFJF7DQ8",
+        "capture_date": "2020-11-19 09:47:41.913913",
+        "source_id": 747,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Feel a Way",
+        "artist_name": "2 Chainz f/ Brent Faiyaz & Kanye West",
+        "video_id": "f6vg4ZVyUW8",
+        "capture_date": "2020-11-19 09:47:41.915915",
+        "source_id": 747,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Therefore I Am",
+        "artist_name": "Billie Eilish",
+        "video_id": "RUQl6YcMalg",
+        "capture_date": "2020-11-19 09:47:41.915915",
+        "source_id": 747,
+        "song_id": 9565,
+        "duplicate": true
+    },
+    {
+        "title": "No Save Point",
+        "artist_name": "Run The Jewels",
+        "video_id": "o3g0Ts60220",
+        "capture_date": "2020-11-19 09:47:41.915915",
+        "source_id": 747,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Holiday",
+        "artist_name": "Lil Nas X",
+        "video_id": "9vMLTcftlyI",
+        "capture_date": "2020-11-19 09:47:41.915915",
+        "source_id": 747,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "All Week",
+        "artist_name": "Rod Wave",
+        "video_id": "nS-DLy8yt9s",
+        "capture_date": "2020-11-19 09:47:41.915915",
+        "source_id": 747,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Top Say",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": "Y2uzPIxGvfw",
+        "capture_date": "2020-11-19 09:47:41.915915",
+        "source_id": 747,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Soda",
+        "artist_name": "DJ Scheme f/ Cordae, Ski Mask the Slump God & Take a Daytrip",
+        "video_id": "1-GXOrIUZjQ",
+        "capture_date": "2020-11-19 09:47:41.915915",
+        "source_id": 747,
+        "song_id": null,
+        "duplicate": false
+    }
   ]
 
   // Check each song for duplicates in the database
@@ -187,12 +206,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('What That Speed Bout', 'Mike Will Made-It f/ YoungBoy Never Broke Again & Nicki Minaj', NULL),
-    ('Quarantine Thick', '2 Chainz f/ Mulatto', NULL),
-    ('Free Woo', '42 Dugg', NULL),
-    ('Young Wheezy', 'NAV & Wheezy f/ Gunna', NULL),
-    ('Mood Remix', '24KGoldn & Iann Dior f/ Justin Bieber & J Balvin', NULL),
-    ('NTWFL', 'Sam Dew', NULL)
+    ('Million Dollar Play', 'Future & Lil Uzi Vert', NULL),
+    ('Feel a Way', '2 Chainz f/ Brent Faiyaz & Kanye West', NULL),
+    ('No Save Point', 'Run The Jewels', NULL),
+    ('Holiday', 'Lil Nas X', NULL),
+    ('All Week', 'Rod Wave', NULL),
+    ('Top Say', 'YoungBoy Never Broke Again', NULL),
+    ('Soda', 'DJ Scheme f/ Cordae, Ski Mask the Slump God & Take a Daytrip', NULL)
   ;
 
    // Update to song table
@@ -203,7 +223,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9545; // SELECT last_insert_rowid();
+  song_id = 9574; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -243,12 +263,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-11-13 07:55:34.480480', '744', '9540'),
-    ('2020-11-13 07:55:34.480480', '744', '9541'),
-    ('2020-11-13 07:55:34.480480', '744', '9542'),
-    ('2020-11-13 07:55:34.480480', '744', '9543'),
-    ('2020-11-13 07:55:34.480480', '744', '9544'),
-    ('2020-11-13 07:55:34.480480', '744', '9545')
+    ('2020-11-19 09:47:41.913913', '747', '9568'),
+    ('2020-11-19 09:47:41.915915', '747', '9569'),
+    ('2020-11-19 09:47:41.915915', '747', '9565'),
+    ('2020-11-19 09:47:41.915915', '747', '9570'),
+    ('2020-11-19 09:47:41.915915', '747', '9571'),
+    ('2020-11-19 09:47:41.915915', '747', '9572'),
+    ('2020-11-19 09:47:41.915915', '747', '9573'),
+    ('2020-11-19 09:47:41.915915', '747', '9574')
   ;
 
   // Update to source_song table

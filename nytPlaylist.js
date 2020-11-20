@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Burna Boy’s Cry for Nigeria, and 9 More New Songs', '2020-11-08 06:53:46.000000', 'https://www.nytimes.com/2020/11/06/arts/music/playlist-burna-boy-weeknd-missy-elliott.html');
+    ('New York Times', 'The Playlist', 'Billie Eilish’s Kiss-Off, and 14 More New Songs', '2020-11-13 09:00:16.000000', 'https://www.nytimes.com/2020/11/13/arts/music/playlist-billie-eilish-lil-nas-x.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 745; // SELECT last_insert_rowid();
+  source_id = 748; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -95,87 +95,96 @@
   songsData =
   [
     {
-        "title": "20 10 20",
-        "artist_name": "Burna Boy",
+        "title": "Therefore I Am",
+        "artist_name": "Billie Eilish",
         "video_id": null,
-        "capture_date": "2020-11-13 08:21:08.153153",
-        "source_id": 745,
+        "capture_date": "2020-11-19 09:58:19.867867",
+        "source_id": 748,
+        "song_id": 9565,
+        "duplicate": true
+    },
+    {
+        "title": "Shame Shame",
+        "artist_name": "Foo Fighters",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:58:19.868868",
+        "source_id": 748,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hawái Remix",
-        "artist_name": "Maluma and the Weeknd",
+        "title": "Holiday",
+        "artist_name": "Lil Nas X",
         "video_id": null,
-        "capture_date": "2020-11-13 08:21:08.154154",
-        "source_id": 745,
+        "capture_date": "2020-11-19 09:58:19.868868",
+        "source_id": 748,
+        "song_id": 9571,
+        "duplicate": true
+    },
+    {
+        "title": "Ginger",
+        "artist_name": "Wizkid featuring Burna Boy",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:58:19.868868",
+        "source_id": 748,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Headstart",
-        "artist_name": "Jade Bird",
+        "title": "Iris",
+        "artist_name": "Phoebe Bridgers and Maggie Rogers",
         "video_id": null,
-        "capture_date": "2020-11-13 08:21:08.154154",
-        "source_id": 745,
+        "capture_date": "2020-11-19 09:58:19.869869",
+        "source_id": 748,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cool Girl",
-        "artist_name": "dodie",
+        "title": "Hole in the Bottle",
+        "artist_name": "Kelsea Ballerini ft. Shania Twain",
         "video_id": null,
-        "capture_date": "2020-11-13 08:21:08.155155",
-        "source_id": 745,
+        "capture_date": "2020-11-19 09:58:19.869869",
+        "source_id": 748,
+        "song_id": 9406,
+        "duplicate": true
+    },
+    {
+        "title": "You Should Probably Leave",
+        "artist_name": "Chris Stapleton",
+        "video_id": null,
+        "capture_date": "2020-11-19 09:58:19.869869",
+        "source_id": 748,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Woven Song",
-        "artist_name": "Ólafur Arnalds",
+        "title": "Realize",
+        "artist_name": "AC/DC",
         "video_id": null,
-        "capture_date": "2020-11-13 08:21:08.155155",
-        "source_id": 745,
+        "capture_date": "2020-11-19 09:58:19.869869",
+        "source_id": 748,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "April Ha Ha",
-        "artist_name": "Nothing",
+        "title": "No Save Point",
+        "artist_name": "Run the Jewels",
         "video_id": null,
-        "capture_date": "2020-11-13 08:21:08.155155",
-        "source_id": 745,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2020-11-19 09:58:19.869869",
+        "source_id": 748,
+        "song_id": 9570,
+        "duplicate": true
     },
     {
-        "title": "Under Pressure",
-        "artist_name": "Karen O and Willie Nelson",
+        "title": "Chasing Light",
+        "artist_name": "Emily Sprague",
         "video_id": null,
-        "capture_date": "2020-11-13 08:21:08.155155",
-        "source_id": 745,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "A Revival",
-        "artist_name": "Michael Penn",
-        "video_id": null,
-        "capture_date": "2020-11-13 08:21:08.155155",
-        "source_id": 745,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "ATM",
-        "artist_name": "Bree Runway featuring Missy Elliott",
-        "video_id": null,
-        "capture_date": "2020-11-13 08:21:08.155155",
-        "source_id": 745,
+        "capture_date": "2020-11-19 09:58:19.869869",
+        "source_id": 748,
         "song_id": null,
         "duplicate": false
     }
-]
+  ]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -214,16 +223,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('20 10 20', 'Burna Boy', NULL),
-    ('Hawái Remix', 'Maluma and the Weeknd', NULL),
-    ('Headstart', 'Jade Bird', NULL),
-    ('Cool Girl', 'dodie', NULL),
-    ('Wouldn’t It Be Loverly', 'Fred Hersch', NULL),
-    ('Woven Song', 'Ólafur Arnalds', NULL),
-    ('April Ha Ha', 'Nothing', NULL),
-    ('Under Pressure', 'Karen O and Willie Nelson', NULL),
-    ('A Revival', 'Michael Penn', NULL),
-    ('ATM', 'Bree Runway featuring Missy Elliott', NULL)
+    ('Shame Shame', 'Foo Fighters', NULL),
+    ('Ginger', 'Wizkid featuring Burna Boy', NULL),
+    ('Iris', 'Phoebe Bridgers and Maggie Rogers', NULL),
+    ('You Should Probably Leave', 'Chris Stapleton', NULL),
+    ('Realize', 'AC/DC', NULL),
+    ('Chasing Light', 'Emily Sprague', NULL)
   ;
 
    // Update to song table
@@ -234,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9555; // SELECT last_insert_rowid();
+  song_id = 9580; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -274,16 +279,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-11-13 08:21:08.153153', '745', '9546'),
-    ('2020-11-13 08:21:08.154154', '745', '9547'),
-    ('2020-11-13 08:21:08.154154', '745', '9548'),
-    ('2020-11-13 08:21:08.155155', '745', '9549'),
-    ('2020-11-13 08:21:08.155155', '745', '9550'),
-    ('2020-11-13 08:21:08.155155', '745', '9551'),
-    ('2020-11-13 08:21:08.155155', '745', '9552'),
-    ('2020-11-13 08:21:08.155155', '745', '9553'),
-    ('2020-11-13 08:21:08.155155', '745', '9554'),
-    ('2020-11-13 08:21:08.155155', '745', '9555')
+    ('2020-11-19 09:58:19.867867', '748', '9565'),
+    ('2020-11-19 09:58:19.868868', '748', '9575'),
+    ('2020-11-19 09:58:19.868868', '748', '9571'),
+    ('2020-11-19 09:58:19.868868', '748', '9576'),
+    ('2020-11-19 09:58:19.869869', '748', '9577'),
+    ('2020-11-19 09:58:19.869869', '748', '9406'),
+    ('2020-11-19 09:58:19.869869', '748', '9578'),
+    ('2020-11-19 09:58:19.869869', '748', '9579'),
+    ('2020-11-19 09:58:19.869869', '748', '9570'),
+    ('2020-11-19 09:58:19.869869', '748', '9580')
   ;
 
   // Update to source_song table
