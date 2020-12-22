@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'A Bittersweet Juice WRLD Team-Up, and 13 More New Songs', '2020-12-04 08:58:58.000000', 'https://www.nytimes.com/2020/12/04/arts/music/playlist-juice-wrld-drake-britney-spears.html');
+    ('New York Times', 'The Playlist', 'Gwen Stefani’s Ska-Pop Flashback, and 10 More New Songs', '2020-12-11 09:27:22.000000', 'https://www.nytimes.com/2020/12/11/arts/music/playlist-gwen-stefani-sturgill-simpson.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 759; // SELECT last_insert_rowid();
+  source_id = 760; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -95,110 +95,92 @@
   songsData =
   [
     {
-        "title": "Real ___",
-        "artist_name": "Juice WRLD and Benny Blanco",
+        "title": "Let Me Reintroduce Myself",
+        "artist_name": "Gwen Stefani",
         "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.926926",
-        "source_id": 759,
-        "song_id": 9627,
+        "capture_date": "2020-12-22 03:17:03.257257",
+        "source_id": 760,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Easy",
+        "artist_name": "Troye Sivan, Kacey Musgraves and Mark Ronson",
+        "video_id": null,
+        "capture_date": "2020-12-22 03:17:03.259259",
+        "source_id": 760,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Dead Walk",
+        "artist_name": "John Carpenter",
+        "video_id": null,
+        "capture_date": "2020-12-22 03:17:03.259259",
+        "source_id": 760,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lurkin",
+        "artist_name": "Funkmaster Flex featuring King Von",
+        "video_id": null,
+        "capture_date": "2020-12-22 03:17:03.259259",
+        "source_id": 760,
+        "song_id": 9676,
         "duplicate": true
     },
     {
-        "title": "Blinding Lights (Remix)",
-        "artist_name": "The Weeknd featuring Rosalía",
+        "title": "3:30 in Houston",
+        "artist_name": "Benny the Butcher",
         "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.927927",
-        "source_id": 759,
+        "capture_date": "2020-12-22 03:17:03.259259",
+        "source_id": 760,
+        "song_id": 9674,
+        "duplicate": true
+    },
+    {
+        "title": "Pain",
+        "artist_name": "King Princess",
+        "video_id": null,
+        "capture_date": "2020-12-22 03:17:03.259259",
+        "source_id": 760,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Monsters",
-        "artist_name": "All Time Low featuring Demi Lovato and blackbear",
+        "title": "Oh Sarah",
+        "artist_name": "Sturgill Simpson",
         "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.927927",
-        "source_id": 759,
+        "capture_date": "2020-12-22 03:17:03.259259",
+        "source_id": 760,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Good Girls (Don’t Get Used)",
-        "artist_name": "Beach Bunny",
+        "title": "Another You",
+        "artist_name": "Elle King",
         "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.927927",
-        "source_id": 759,
+        "capture_date": "2020-12-22 03:17:03.259259",
+        "source_id": 760,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "If",
-        "artist_name": "Nana Yamato",
+        "title": "Alone in Halls",
+        "artist_name": "El Perro del Mar featuring Blood Orange",
         "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.927927",
-        "source_id": 759,
+        "capture_date": "2020-12-22 03:17:03.259259",
+        "source_id": 760,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Telepatía",
-        "artist_name": "Kali Uchis",
+        "title": "Ferry",
+        "artist_name": "Moontype",
         "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.927927",
-        "source_id": 759,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Coco",
-        "artist_name": "24kGoldn featuring DaBaby",
-        "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.927927",
-        "source_id": 759,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "B.B. King Freestyle",
-        "artist_name": "Lil Wayne featuring Drake",
-        "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.927927",
-        "source_id": 759,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "La Loba",
-        "artist_name": "La Chica",
-        "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.927927",
-        "source_id": 759,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Swimming in the Stars",
-        "artist_name": "Britney Spears",
-        "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.927927",
-        "source_id": 759,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Unblu",
-        "artist_name": "Jenny Lewis and Serengeti",
-        "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.927927",
-        "source_id": 759,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Better Days",
-        "artist_name": "Ant Clemons featuring Justin Timberlake",
-        "video_id": null,
-        "capture_date": "2020-12-22 03:08:42.927927",
-        "source_id": 759,
+        "capture_date": "2020-12-22 03:17:03.259259",
+        "source_id": 760,
         "song_id": null,
         "duplicate": false
     }
@@ -241,17 +223,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Blinding Lights (Remix)', 'The Weeknd featuring Rosalía', NULL),
-    ('Monsters', 'All Time Low featuring Demi Lovato and blackbear', NULL),
-    ('Good Girls (Don’t Get Used)', 'Beach Bunny', NULL),
-    ('If', 'Nana Yamato', NULL),
-    ('Telepatía', 'Kali Uchis', NULL),
-    ('Coco', '24kGoldn featuring DaBaby', NULL),
-    ('B.B. King Freestyle', 'Lil Wayne featuring Drake', NULL),
-    ('La Loba', 'La Chica', NULL),
-    ('Swimming in the Stars', 'Britney Spears', NULL),
-    ('Unblu', 'Jenny Lewis and Serengeti', NULL),
-    ('Better Days', 'Ant Clemons featuring Justin Timberlake', NULL)
+    ('Let Me Reintroduce Myself', 'Gwen Stefani', NULL),
+    ('Easy', 'Troye Sivan, Kacey Musgraves and Mark Ronson', NULL),
+    ('The Dead Walk', 'John Carpenter', NULL),
+    ('Pain', 'King Princess', NULL),
+    ('Oh Sarah', 'Sturgill Simpson', NULL),
+    ('Another You', 'Elle King', NULL),
+    ('Alone in Halls', 'El Perro del Mar featuring Blood Orange', NULL),
+    ('Ferry', 'Moontype', NULL)
   ;
 
    // Update to song table
@@ -262,7 +241,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9701; // SELECT last_insert_rowid();
+  song_id = 9709; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -302,18 +281,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-12-22 03:08:42.926926', '759', '9627'),
-    ('2020-12-22 03:08:42.927927', '759', '9691'),
-    ('2020-12-22 03:08:42.927927', '759', '9692'),
-    ('2020-12-22 03:08:42.927927', '759', '9693'),
-    ('2020-12-22 03:08:42.927927', '759', '9694'),
-    ('2020-12-22 03:08:42.927927', '759', '9695'),
-    ('2020-12-22 03:08:42.927927', '759', '9696'),
-    ('2020-12-22 03:08:42.927927', '759', '9697'),
-    ('2020-12-22 03:08:42.927927', '759', '9698'),
-    ('2020-12-22 03:08:42.927927', '759', '9699'),
-    ('2020-12-22 03:08:42.927927', '759', '9700'),
-    ('2020-12-22 03:08:42.927927', '759', '9701')
+    ('2020-12-22 03:17:03.257257', '760', '9702'),
+    ('2020-12-22 03:17:03.259259', '760', '9703'),
+    ('2020-12-22 03:17:03.259259', '760', '9704'),
+    ('2020-12-22 03:17:03.259259', '760', '9676'),
+    ('2020-12-22 03:17:03.259259', '760', '9674'),
+    ('2020-12-22 03:17:03.259259', '760', '9705'),
+    ('2020-12-22 03:17:03.259259', '760', '9706'),
+    ('2020-12-22 03:17:03.259259', '760', '9707'),
+    ('2020-12-22 03:17:03.259259', '760', '9708'),
+    ('2020-12-22 03:17:03.259259', '760', '9709')
   ;
 
   // Update to source_song table
