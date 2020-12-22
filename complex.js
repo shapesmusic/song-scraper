@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Lil Uzi Vert, Future, 2 Chainz, Billie Eilish, and More', '2020-11-13 12:00:00.000000', 'https://www.complex.com/music/2020/11/best-new-music-this-week-novemeber-13/dj-scheme-corda-ski-mask-the-slump-god-take-a-daytrip-soda');
+    ('Complex', 'Best New Music This Week', 'Megan Thee Stallion, DaBaby, Meek Mill, and More', '2020-11-20 12:00:00.000000', 'https://www.complex.com/music/2020/11/best-new-music-this-week-november-20/');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 747; // SELECT last_insert_rowid();
+  source_id = 754; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -96,78 +96,69 @@
   songsData =
   [
     {
-        "title": "Million Dollar Play",
-        "artist_name": "Future & Lil Uzi Vert",
-        "video_id": "E4_QFJF7DQ8",
-        "capture_date": "2020-11-19 09:47:41.913913",
-        "source_id": 747,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Feel a Way",
-        "artist_name": "2 Chainz f/ Brent Faiyaz & Kanye West",
-        "video_id": "f6vg4ZVyUW8",
-        "capture_date": "2020-11-19 09:47:41.915915",
-        "source_id": 747,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Therefore I Am",
-        "artist_name": "Billie Eilish",
-        "video_id": "RUQl6YcMalg",
-        "capture_date": "2020-11-19 09:47:41.915915",
-        "source_id": 747,
-        "song_id": 9565,
+        "title": "Shots Fired",
+        "artist_name": "Megan Thee Stallion",
+        "video_id": "P8jNPawT-aM",
+        "capture_date": "2020-12-22 01:10:28.798798",
+        "source_id": 754,
+        "song_id": 9603,
         "duplicate": true
     },
     {
-        "title": "No Save Point",
-        "artist_name": "Run The Jewels",
-        "video_id": "o3g0Ts60220",
-        "capture_date": "2020-11-19 09:47:41.915915",
-        "source_id": 747,
+        "title": "Gucci Peacoat",
+        "artist_name": "DaBaby",
+        "video_id": "uKhy1Y69BT4",
+        "capture_date": "2020-12-22 01:10:28.799799",
+        "source_id": 754,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Holiday",
-        "artist_name": "Lil Nas X",
-        "video_id": "9vMLTcftlyI",
-        "capture_date": "2020-11-19 09:47:41.915915",
-        "source_id": 747,
+        "title": "Pain Away",
+        "artist_name": "Meek Mill f/ Lil Durk",
+        "video_id": "E0gmyePNri4",
+        "capture_date": "2020-12-22 01:10:28.800800",
+        "source_id": 754,
+        "song_id": 9605,
+        "duplicate": true
+    },
+    {
+        "title": "Freedom Is Priceless",
+        "artist_name": "SAINt JHN",
+        "video_id": "kzb5lFcXo0A",
+        "capture_date": "2020-12-22 01:10:28.800800",
+        "source_id": 754,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "All Week",
-        "artist_name": "Rod Wave",
-        "video_id": "nS-DLy8yt9s",
-        "capture_date": "2020-11-19 09:47:41.915915",
-        "source_id": 747,
+        "title": "Here We Go",
+        "artist_name": "Jeezy",
+        "video_id": "fIUN8JfLwhA",
+        "capture_date": "2020-12-22 01:10:28.800800",
+        "source_id": 754,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Top Say",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": "Y2uzPIxGvfw",
-        "capture_date": "2020-11-19 09:47:41.915915",
-        "source_id": 747,
+        "title": "Flawed",
+        "artist_name": "Wale f/ Gunna",
+        "video_id": "EI1dpTo3nFU",
+        "capture_date": "2020-12-22 01:10:28.800800",
+        "source_id": 754,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Soda",
-        "artist_name": "DJ Scheme f/ Cordae, Ski Mask the Slump God & Take a Daytrip",
-        "video_id": "1-GXOrIUZjQ",
-        "capture_date": "2020-11-19 09:47:41.915915",
-        "source_id": 747,
+        "title": "Wave Blues",
+        "artist_name": "French Montana f/ Benny the Butcher",
+        "video_id": "lAW6qZbFxxI",
+        "capture_date": "2020-12-22 01:10:28.800800",
+        "source_id": 754,
         "song_id": null,
         "duplicate": false
     }
-  ]
+]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -206,13 +197,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Million Dollar Play', 'Future & Lil Uzi Vert', NULL),
-    ('Feel a Way', '2 Chainz f/ Brent Faiyaz & Kanye West', NULL),
-    ('No Save Point', 'Run The Jewels', NULL),
-    ('Holiday', 'Lil Nas X', NULL),
-    ('All Week', 'Rod Wave', NULL),
-    ('Top Say', 'YoungBoy Never Broke Again', NULL),
-    ('Soda', 'DJ Scheme f/ Cordae, Ski Mask the Slump God & Take a Daytrip', NULL)
+    ('Gucci Peacoat', 'DaBaby', NULL),
+    ('Freedom Is Priceless', 'SAINt JHN', NULL),
+    ('Here We Go', 'Jeezy', NULL),
+    ('Flawed', 'Wale f/ Gunna', NULL),
+    ('Wave Blues', 'French Montana f/ Benny the Butcher', NULL)
   ;
 
    // Update to song table
@@ -223,7 +212,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9574; // SELECT last_insert_rowid();
+  song_id = 9664; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -263,14 +252,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-11-19 09:47:41.913913', '747', '9568'),
-    ('2020-11-19 09:47:41.915915', '747', '9569'),
-    ('2020-11-19 09:47:41.915915', '747', '9565'),
-    ('2020-11-19 09:47:41.915915', '747', '9570'),
-    ('2020-11-19 09:47:41.915915', '747', '9571'),
-    ('2020-11-19 09:47:41.915915', '747', '9572'),
-    ('2020-11-19 09:47:41.915915', '747', '9573'),
-    ('2020-11-19 09:47:41.915915', '747', '9574')
+    ('2020-12-22 01:10:28.798798', '754', '9603'),
+    ('2020-12-22 01:10:28.799799', '754', '9660'),
+    ('2020-12-22 01:10:28.800800', '754', '9605'),
+    ('2020-12-22 01:10:28.800800', '754', '9661'),
+    ('2020-12-22 01:10:28.800800', '754', '9662'),
+    ('2020-12-22 01:10:28.800800', '754', '9663'),
+    ('2020-12-22 01:10:28.800800', '754', '9664')
   ;
 
   // Update to source_song table
