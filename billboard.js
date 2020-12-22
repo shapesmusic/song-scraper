@@ -38,7 +38,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of December 12, 2020', '2020-12-12 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-12-12');
+    ('Billboard', 'The Hot 100', 'Week of December 19, 2020', '2020-12-19 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-12-19');
 
   // Update to source table
 
@@ -47,7 +47,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 751; // SELECT last_insert_rowid();
+  source_id = 752; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -92,128 +92,74 @@
   songsData =
   [
     {
-        "title": "La Noche de Anoche",
-        "artist_name": "Bad Bunny & ROSALIA",
+        "title": "On Me",
+        "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.865865",
-        "source_id": 751,
+        "capture_date": "2020-12-22 12:45:11.938938",
+        "source_id": 752,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Te Mudaste",
-        "artist_name": "Bad Bunny",
+        "title": "Errbody",
+        "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.865865",
-        "source_id": 751,
+        "capture_date": "2020-12-22 12:45:11.939939",
+        "source_id": 752,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Yo Visto Asi",
-        "artist_name": "Bad Bunny",
+        "title": "Without You",
+        "artist_name": "The Kid LAROI",
         "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.865865",
-        "source_id": 751,
+        "capture_date": "2020-12-22 12:45:11.939939",
+        "source_id": 752,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dicked Down In Dallas",
-        "artist_name": "Trey Lewis",
+        "title": "Real Shit",
+        "artist_name": "Juice WRLD x benny blanco",
         "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.865865",
-        "source_id": 751,
+        "capture_date": "2020-12-22 12:45:11.939939",
+        "source_id": 752,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Haciendo Que Me Amas",
-        "artist_name": "Bad Bunny",
+        "title": "Oh Santa!",
+        "artist_name": "Mariah Carey Featuring Ariana Grande & Jennifer Hudson",
         "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.865865",
-        "source_id": 751,
+        "capture_date": "2020-12-22 12:45:11.940940",
+        "source_id": 752,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Te Deseo Lo Mejor",
-        "artist_name": "Bad Bunny",
+        "title": "Take Me Home For Christmas",
+        "artist_name": "Dan + Shay",
         "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.865865",
-        "source_id": 751,
+        "capture_date": "2020-12-22 12:45:11.940940",
+        "source_id": 752,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Under The Mistletoe",
-        "artist_name": "Kelly Clarkson & Brett Eldredge",
+        "title": "Hallelujah",
+        "artist_name": "Carrie Underwood & John Legend",
         "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.865865",
-        "source_id": 751,
+        "capture_date": "2020-12-22 12:45:11.940940",
+        "source_id": 752,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Booker T",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.866866",
-        "source_id": 751,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "El Mundo Es Mio",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.866866",
-        "source_id": 751,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hoy Cobre",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.866866",
-        "source_id": 751,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Rockin' Around The Christmas Tree",
-        "artist_name": "Justin Bieber",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.866866",
-        "source_id": 751,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Maldita Pobreza",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.866866",
-        "source_id": 751,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "La Droga",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.866866",
-        "source_id": 751,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Favorite Time Of Year",
+        "title": "Silent Night",
         "artist_name": "Carrie Underwood",
         "video_id": null,
-        "capture_date": "2020-12-22 12:36:27.866866",
-        "source_id": 751,
+        "capture_date": "2020-12-22 12:45:11.940940",
+        "source_id": 752,
         "song_id": null,
         "duplicate": false
     }
@@ -256,20 +202,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('La Noche de Anoche', 'Bad Bunny & ROSALIA', NULL),
-    ('Te Mudaste', 'Bad Bunny', NULL),
-    ('Yo Visto Asi', 'Bad Bunny', NULL),
-    ('Dicked Down In Dallas', 'Trey Lewis', NULL),
-    ('Haciendo Que Me Amas', 'Bad Bunny', NULL),
-    ('Te Deseo Lo Mejor', 'Bad Bunny', NULL),
-    ('Under The Mistletoe', 'Kelly Clarkson & Brett Eldredge', NULL),
-    ('Booker T', 'Bad Bunny', NULL),
-    ('El Mundo Es Mio', 'Bad Bunny', NULL),
-    ('Hoy Cobre', 'Bad Bunny', NULL),
-    ('Rockin’ Around The Christmas Tree', 'Justin Bieber', NULL),
-    ('Maldita Pobreza', 'Bad Bunny', NULL),
-    ('La Droga', 'Bad Bunny', NULL),
-    ('Favorite Time Of Year', 'Carrie Underwood', NULL)
+    ('On Me', 'Lil Baby', NULL),
+    ('Errbody', 'Lil Baby', NULL),
+    ('Without You', 'The Kid LAROI', NULL),
+    ('Real Shit', 'Juice WRLD x benny blanco', NULL),
+    ('Oh Santa!', 'Mariah Carey Featuring Ariana Grande & Jennifer Hudson', NULL),
+    ('Take Me Home For Christmas', 'Dan + Shay', NULL),
+    ('Hallelujah', 'Carrie Underwood & John Legend', NULL),
+    ('Silent Night', 'Carrie Underwood', NULL)
   ;
 
    // Update to song table
@@ -280,7 +220,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9623; // SELECT last_insert_rowid();
+  song_id = 9631; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -320,20 +260,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-12-22 12:36:27.865865', '751', '9610'),
-    ('2020-12-22 12:36:27.865865', '751', '9611'),
-    ('2020-12-22 12:36:27.865865', '751', '9612'),
-    ('2020-12-22 12:36:27.865865', '751', '9613'),
-    ('2020-12-22 12:36:27.865865', '751', '9614'),
-    ('2020-12-22 12:36:27.865865', '751', '9615'),
-    ('2020-12-22 12:36:27.865865', '751', '9616'),
-    ('2020-12-22 12:36:27.866866', '751', '9617'),
-    ('2020-12-22 12:36:27.866866', '751', '9618'),
-    ('2020-12-22 12:36:27.866866', '751', '9619'),
-    ('2020-12-22 12:36:27.866866', '751', '9620'),
-    ('2020-12-22 12:36:27.866866', '751', '9621'),
-    ('2020-12-22 12:36:27.866866', '751', '9622'),
-    ('2020-12-22 12:36:27.866866', '751', '9623')
+    ('2020-12-22 12:45:11.938938', '752', '9624'),
+    ('2020-12-22 12:45:11.939939', '752', '9625'),
+    ('2020-12-22 12:45:11.939939', '752', '9626'),
+    ('2020-12-22 12:45:11.939939', '752', '9627'),
+    ('2020-12-22 12:45:11.940940', '752', '9628'),
+    ('2020-12-22 12:45:11.940940', '752', '9629'),
+    ('2020-12-22 12:45:11.940940', '752', '9630'),
+    ('2020-12-22 12:45:11.940940', '752', '9631')
   ;
 
   // Update to source_song table
