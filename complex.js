@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Megan Thee Stallion, DaBaby, Meek Mill, and More', '2020-11-20 12:00:00.000000', 'https://www.complex.com/music/2020/11/best-new-music-this-week-november-20/');
+    ('Complex', 'Best New Music This Week', 'Lil Baby, Aminé, Rico Nasty, and More', '2020-12-04 12:00:00.000000', 'https://www.complex.com/music/2020/12/best-new-music-this-week-december4/lil-tjay-none-of-your-love');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 754; // SELECT last_insert_rowid();
+  source_id = 755; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -96,65 +96,74 @@
   songsData =
   [
     {
-        "title": "Shots Fired",
-        "artist_name": "Megan Thee Stallion",
-        "video_id": "P8jNPawT-aM",
-        "capture_date": "2020-12-22 01:10:28.798798",
-        "source_id": 754,
-        "song_id": 9603,
+        "title": "Errbody",
+        "artist_name": "Lil Baby",
+        "video_id": "pKtUpBjIl-g",
+        "capture_date": "2020-12-22 01:16:44.351351",
+        "source_id": 755,
+        "song_id": 9625,
         "duplicate": true
     },
     {
-        "title": "Gucci Peacoat",
-        "artist_name": "DaBaby",
-        "video_id": "uKhy1Y69BT4",
-        "capture_date": "2020-12-22 01:10:28.799799",
-        "source_id": 754,
+        "title": "Zack & Cody",
+        "artist_name": "Aminé f/ Valee",
+        "video_id": "T4P-mnIIAOU",
+        "capture_date": "2020-12-22 01:16:44.352352",
+        "source_id": 755,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pain Away",
-        "artist_name": "Meek Mill f/ Lil Durk",
-        "video_id": "E0gmyePNri4",
-        "capture_date": "2020-12-22 01:10:28.800800",
-        "source_id": 754,
-        "song_id": 9605,
+        "title": "No Debate",
+        "artist_name": "Rico Nasty",
+        "video_id": "519d4mNCHeQ",
+        "capture_date": "2020-12-22 01:16:44.352352",
+        "source_id": 755,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Real Shit",
+        "artist_name": "Juice WRLD & Benny Blanco",
+        "video_id": "2jqMRwOC0wY",
+        "capture_date": "2020-12-22 01:16:44.352352",
+        "source_id": 755,
+        "song_id": 9627,
         "duplicate": true
     },
     {
-        "title": "Freedom Is Priceless",
-        "artist_name": "SAINt JHN",
-        "video_id": "kzb5lFcXo0A",
-        "capture_date": "2020-12-22 01:10:28.800800",
-        "source_id": 754,
+        "title": "Reality Is",
+        "artist_name": "Symba",
+        "video_id": "46Y1G__ieGI",
+        "capture_date": "2020-12-22 01:16:44.352352",
+        "source_id": 755,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Here We Go",
-        "artist_name": "Jeezy",
-        "video_id": "fIUN8JfLwhA",
-        "capture_date": "2020-12-22 01:10:28.800800",
-        "source_id": 754,
+        "title": "You Ain’t Worth It",
+        "artist_name": "Melii & 6LACK",
+        "video_id": "IasOmjz3HSs",
+        "capture_date": "2020-12-22 01:16:44.353353",
+        "source_id": 755,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Flawed",
-        "artist_name": "Wale f/ Gunna",
-        "video_id": "EI1dpTo3nFU",
-        "capture_date": "2020-12-22 01:10:28.800800",
-        "source_id": 754,
+        "title": "None of Your Love",
+        "artist_name": "Lil Tjay",
+        "video_id": "bwxF1XNEf3Q",
+        "capture_date": "2020-12-22 01:16:44.353353",
+        "source_id": 755,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wave Blues",
-        "artist_name": "French Montana f/ Benny the Butcher",
-        "video_id": "lAW6qZbFxxI",
-        "capture_date": "2020-12-22 01:10:28.800800",
-        "source_id": 754,
+        "title": "Legend of Zelda",
+        "artist_name": "LNDN DRGS f/ Boldy James",
+        "video_id": "_IHywfUslZ8",
+        "capture_date": "2020-12-22 01:16:44.353353",
+        "source_id": 755,
         "song_id": null,
         "duplicate": false
     }
@@ -197,11 +206,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Gucci Peacoat', 'DaBaby', NULL),
-    ('Freedom Is Priceless', 'SAINt JHN', NULL),
-    ('Here We Go', 'Jeezy', NULL),
-    ('Flawed', 'Wale f/ Gunna', NULL),
-    ('Wave Blues', 'French Montana f/ Benny the Butcher', NULL)
+  ('Zack & Cody', 'Aminé f/ Valee', NULL),
+  ('No Debate', 'Rico Nasty', NULL),
+  ('Reality Is', 'Symba', NULL),
+  ('You Ain’t Worth It', 'Melii & 6LACK', NULL),
+  ('None of Your Love', 'Lil Tjay', NULL),
+  ('Legend of Zelda', 'LNDN DRGS f/ Boldy James', NULL)
   ;
 
    // Update to song table
@@ -212,7 +222,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9664; // SELECT last_insert_rowid();
+  song_id = 9670; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -252,13 +262,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-12-22 01:10:28.798798', '754', '9603'),
-    ('2020-12-22 01:10:28.799799', '754', '9660'),
-    ('2020-12-22 01:10:28.800800', '754', '9605'),
-    ('2020-12-22 01:10:28.800800', '754', '9661'),
-    ('2020-12-22 01:10:28.800800', '754', '9662'),
-    ('2020-12-22 01:10:28.800800', '754', '9663'),
-    ('2020-12-22 01:10:28.800800', '754', '9664')
+    ('2020-12-22 01:16:44.351351', '755', '9625'),
+    ('2020-12-22 01:16:44.352352', '755', '9665'),
+    ('2020-12-22 01:16:44.352352', '755', '9666'),
+    ('2020-12-22 01:16:44.352352', '755', '9627'),
+    ('2020-12-22 01:16:44.352352', '755', '9667'),
+    ('2020-12-22 01:16:44.353353', '755', '9668'),
+    ('2020-12-22 01:16:44.353353', '755', '9669'),
+    ('2020-12-22 01:16:44.353353', '755', '9670')
   ;
 
   // Update to source_song table
