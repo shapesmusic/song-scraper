@@ -38,7 +38,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of December 5, 2020', '2020-12-05 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-12-05');
+    ('Billboard', 'The Hot 100', 'Week of December 12, 2020', '2020-12-12 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-12-12');
 
   // Update to source table
 
@@ -47,7 +47,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 750; // SELECT last_insert_rowid();
+  source_id = 751; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -92,173 +92,128 @@
   songsData =
   [
     {
-        "title": "Life Goes On",
-        "artist_name": "BTS",
+        "title": "La Noche de Anoche",
+        "artist_name": "Bad Bunny & ROSALIA",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.870870",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.865865",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Monster",
-        "artist_name": "Shawn Mendes & Justin Bieber",
+        "title": "Te Mudaste",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.872872",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.865865",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Body",
-        "artist_name": "Megan Thee Stallion",
+        "title": "Yo Visto Asi",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.872872",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.865865",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Blue & Grey",
-        "artist_name": "BTS",
+        "title": "Dicked Down In Dallas",
+        "artist_name": "Trey Lewis",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.872872",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.865865",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Stay",
-        "artist_name": "BTS",
+        "title": "Haciendo Que Me Amas",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.872872",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.865865",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Somebody's Problem",
-        "artist_name": "Morgan Wallen",
+        "title": "Te Deseo Lo Mejor",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.872872",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.865865",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Still Goin Down",
-        "artist_name": "Morgan Wallen",
+        "title": "Under The Mistletoe",
+        "artist_name": "Kelly Clarkson & Brett Eldredge",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.873873",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.865865",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Prisoner",
-        "artist_name": "Miley Cyrus Featuring Dua Lipa",
+        "title": "Booker T",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.873873",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.866866",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fly To My Room",
-        "artist_name": "BTS",
+        "title": "El Mundo Es Mio",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.873873",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.866866",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Telepathy",
-        "artist_name": "BTS",
+        "title": "Hoy Cobre",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.873873",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.866866",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cry Baby",
-        "artist_name": "Megan Thee Stallion Featuring DaBaby",
+        "title": "Rockin' Around The Christmas Tree",
+        "artist_name": "Justin Bieber",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.873873",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.866866",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dis-ease",
-        "artist_name": "BTS",
+        "title": "Maldita Pobreza",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.873873",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.866866",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shots Fired",
-        "artist_name": "Megan Thee Stallion",
+        "title": "La Droga",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.874874",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.866866",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Livin' The Dream",
-        "artist_name": "Morgan Wallen",
+        "title": "Favorite Time Of Year",
+        "artist_name": "Carrie Underwood",
         "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.874874",
-        "source_id": 750,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pain Away",
-        "artist_name": "Meek Mill Featuring Lil Durk",
-        "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.874874",
-        "source_id": 750,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Do It On The Tip",
-        "artist_name": "Megan Thee Stallion Featuring City Girls & Hot Girl Meg",
-        "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.874874",
-        "source_id": 750,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Circles",
-        "artist_name": "Megan Thee Stallion",
-        "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.874874",
-        "source_id": 750,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bichota",
-        "artist_name": "Karol G",
-        "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.874874",
-        "source_id": 750,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cover Me Up",
-        "artist_name": "Morgan Wallen",
-        "video_id": null,
-        "capture_date": "2020-12-22 09:50:33.874874",
-        "source_id": 750,
+        "capture_date": "2020-12-22 12:36:27.866866",
+        "source_id": 751,
         "song_id": null,
         "duplicate": false
     }
@@ -301,25 +256,20 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Life Goes On', 'BTS', NULL),
-    ('Monster', 'Shawn Mendes & Justin Bieber', NULL),
-    ('Body', 'Megan Thee Stallion', NULL),
-    ('Blue & Grey', 'BTS', NULL),
-    ('Stay', 'BTS', NULL),
-    ('Somebody’s Problem', 'Morgan Wallen', NULL),
-    ('Still Goin Down', 'Morgan Wallen', NULL),
-    ('Prisoner', 'Miley Cyrus Featuring Dua Lipa', NULL),
-    ('Fly To My Room', 'BTS', NULL),
-    ('Telepathy', 'BTS', NULL),
-    ('Cry Baby', 'Megan Thee Stallion Featuring DaBaby', NULL),
-    ('Dis-ease', 'BTS', NULL),
-    ('Shots Fired', 'Megan Thee Stallion', NULL),
-    ('Livin’ The Dream', 'Morgan Wallen', NULL),
-    ('Pain Away', 'Meek Mill Featuring Lil Durk', NULL),
-    ('Do It On The Tip', 'Megan Thee Stallion Featuring City Girls & Hot Girl Meg', NULL),
-    ('Circles', 'Megan Thee Stallion', NULL),
-    ('Bichota', 'Karol G', NULL),
-    ('Cover Me Up', 'Morgan Wallen', NULL)
+    ('La Noche de Anoche', 'Bad Bunny & ROSALIA', NULL),
+    ('Te Mudaste', 'Bad Bunny', NULL),
+    ('Yo Visto Asi', 'Bad Bunny', NULL),
+    ('Dicked Down In Dallas', 'Trey Lewis', NULL),
+    ('Haciendo Que Me Amas', 'Bad Bunny', NULL),
+    ('Te Deseo Lo Mejor', 'Bad Bunny', NULL),
+    ('Under The Mistletoe', 'Kelly Clarkson & Brett Eldredge', NULL),
+    ('Booker T', 'Bad Bunny', NULL),
+    ('El Mundo Es Mio', 'Bad Bunny', NULL),
+    ('Hoy Cobre', 'Bad Bunny', NULL),
+    ('Rockin’ Around The Christmas Tree', 'Justin Bieber', NULL),
+    ('Maldita Pobreza', 'Bad Bunny', NULL),
+    ('La Droga', 'Bad Bunny', NULL),
+    ('Favorite Time Of Year', 'Carrie Underwood', NULL)
   ;
 
    // Update to song table
@@ -330,7 +280,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9609; // SELECT last_insert_rowid();
+  song_id = 9623; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -370,25 +320,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-12-22 09:50:33.870870', '750', '9591'),
-    ('2020-12-22 09:50:33.872872', '750', '9592'),
-    ('2020-12-22 09:50:33.872872', '750', '9593'),
-    ('2020-12-22 09:50:33.872872', '750', '9594'),
-    ('2020-12-22 09:50:33.872872', '750', '9595'),
-    ('2020-12-22 09:50:33.872872', '750', '9596'),
-    ('2020-12-22 09:50:33.873873', '750', '9597'),
-    ('2020-12-22 09:50:33.873873', '750', '9598'),
-    ('2020-12-22 09:50:33.873873', '750', '9599'),
-    ('2020-12-22 09:50:33.873873', '750', '9600'),
-    ('2020-12-22 09:50:33.873873', '750', '9601'),
-    ('2020-12-22 09:50:33.873873', '750', '9602'),
-    ('2020-12-22 09:50:33.874874', '750', '9603'),
-    ('2020-12-22 09:50:33.874874', '750', '9604'),
-    ('2020-12-22 09:50:33.874874', '750', '9605'),
-    ('2020-12-22 09:50:33.874874', '750', '9606'),
-    ('2020-12-22 09:50:33.874874', '750', '9607'),
-    ('2020-12-22 09:50:33.874874', '750', '9608'),
-    ('2020-12-22 09:50:33.874874', '750', '9609')
+    ('2020-12-22 12:36:27.865865', '751', '9610'),
+    ('2020-12-22 12:36:27.865865', '751', '9611'),
+    ('2020-12-22 12:36:27.865865', '751', '9612'),
+    ('2020-12-22 12:36:27.865865', '751', '9613'),
+    ('2020-12-22 12:36:27.865865', '751', '9614'),
+    ('2020-12-22 12:36:27.865865', '751', '9615'),
+    ('2020-12-22 12:36:27.865865', '751', '9616'),
+    ('2020-12-22 12:36:27.866866', '751', '9617'),
+    ('2020-12-22 12:36:27.866866', '751', '9618'),
+    ('2020-12-22 12:36:27.866866', '751', '9619'),
+    ('2020-12-22 12:36:27.866866', '751', '9620'),
+    ('2020-12-22 12:36:27.866866', '751', '9621'),
+    ('2020-12-22 12:36:27.866866', '751', '9622'),
+    ('2020-12-22 12:36:27.866866', '751', '9623')
   ;
 
   // Update to source_song table
