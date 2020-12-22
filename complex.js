@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Lil Baby, Aminé, Rico Nasty, and More', '2020-12-04 12:00:00.000000', 'https://www.complex.com/music/2020/12/best-new-music-this-week-december4/lil-tjay-none-of-your-love');
+    ('Complex', 'Best New Music This Week', 'Kid Cudi, Jack Harlow, Taylor Swift, and More', '2020-12-11 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-kid-cudi-jack-harlow-taylor-swift/westside-boogie-joey-badass-outside');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 755; // SELECT last_insert_rowid();
+  source_id = 756; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -96,74 +96,74 @@
   songsData =
   [
     {
-        "title": "Errbody",
-        "artist_name": "Lil Baby",
-        "video_id": "pKtUpBjIl-g",
-        "capture_date": "2020-12-22 01:16:44.351351",
-        "source_id": 755,
-        "song_id": 9625,
+        "title": "The Pale Moonlight",
+        "artist_name": "Kid Cudi",
+        "video_id": "HCnqE10nY5s",
+        "capture_date": "2020-12-22 02:44:58.573573",
+        "source_id": 756,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Face of My City",
+        "artist_name": "Jack Harlow f/ Lil Baby",
+        "video_id": "gnC9Y8_Qpe4",
+        "capture_date": "2020-12-22 02:44:58.574574",
+        "source_id": 756,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Willow",
+        "artist_name": "Taylor Swift",
+        "video_id": "RsEZmictANA",
+        "capture_date": "2020-12-22 02:44:58.574574",
+        "source_id": 756,
+        "song_id": 9632,
         "duplicate": true
     },
     {
-        "title": "Zack & Cody",
-        "artist_name": "Aminé f/ Valee",
-        "video_id": "T4P-mnIIAOU",
-        "capture_date": "2020-12-22 01:16:44.352352",
-        "source_id": 755,
+        "title": "Spend It",
+        "artist_name": "Mulatto",
+        "video_id": "ElDjH4lSu94",
+        "capture_date": "2020-12-22 02:44:58.574574",
+        "source_id": 756,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Debate",
-        "artist_name": "Rico Nasty",
-        "video_id": "519d4mNCHeQ",
-        "capture_date": "2020-12-22 01:16:44.352352",
-        "source_id": 755,
+        "title": "3:30 in Houston",
+        "artist_name": "Benny the Butcher",
+        "video_id": "HaGgifPEccI",
+        "capture_date": "2020-12-22 02:44:58.574574",
+        "source_id": 756,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Real Shit",
-        "artist_name": "Juice WRLD & Benny Blanco",
-        "video_id": "2jqMRwOC0wY",
-        "capture_date": "2020-12-22 01:16:44.352352",
-        "source_id": 755,
-        "song_id": 9627,
-        "duplicate": true
-    },
-    {
-        "title": "Reality Is",
-        "artist_name": "Symba",
-        "video_id": "46Y1G__ieGI",
-        "capture_date": "2020-12-22 01:16:44.352352",
-        "source_id": 755,
+        "title": "FWB",
+        "artist_name": "CHIKA",
+        "video_id": "YUTK6AcjHQQ",
+        "capture_date": "2020-12-22 02:44:58.574574",
+        "source_id": 756,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You Ain’t Worth It",
-        "artist_name": "Melii & 6LACK",
-        "video_id": "IasOmjz3HSs",
-        "capture_date": "2020-12-22 01:16:44.353353",
-        "source_id": 755,
+        "title": "Lurkin",
+        "artist_name": "King Von & Funkmaster Flex",
+        "video_id": "jD1jvB3M45I",
+        "capture_date": "2020-12-22 02:44:58.574574",
+        "source_id": 756,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "None of Your Love",
-        "artist_name": "Lil Tjay",
-        "video_id": "bwxF1XNEf3Q",
-        "capture_date": "2020-12-22 01:16:44.353353",
-        "source_id": 755,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Legend of Zelda",
-        "artist_name": "LNDN DRGS f/ Boldy James",
-        "video_id": "_IHywfUslZ8",
-        "capture_date": "2020-12-22 01:16:44.353353",
-        "source_id": 755,
+        "title": "Outside",
+        "artist_name": "Westside Boogie f/ Joey Badass",
+        "video_id": "mRBeyzEQ48c",
+        "capture_date": "2020-12-22 02:44:58.574574",
+        "source_id": 756,
         "song_id": null,
         "duplicate": false
     }
@@ -206,12 +206,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Zack & Cody', 'Aminé f/ Valee', NULL),
-  ('No Debate', 'Rico Nasty', NULL),
-  ('Reality Is', 'Symba', NULL),
-  ('You Ain’t Worth It', 'Melii & 6LACK', NULL),
-  ('None of Your Love', 'Lil Tjay', NULL),
-  ('Legend of Zelda', 'LNDN DRGS f/ Boldy James', NULL)
+  ('The Pale Moonlight', 'Kid Cudi', NULL),
+  ('Face of My City', 'Jack Harlow f/ Lil Baby', NULL),
+  ('Spend It', 'Mulatto', NULL),
+  ('3:30 in Houston', 'Benny the Butcher', NULL),
+  ('FWB', 'CHIKA', NULL),
+  ('Lurkin', 'King Von & Funkmaster Flex', NULL),
+  ('Outside', 'Westside Boogie f/ Joey Badass', NULL)
   ;
 
    // Update to song table
@@ -222,7 +223,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9670; // SELECT last_insert_rowid();
+  song_id = 9677; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -262,14 +263,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-12-22 01:16:44.351351', '755', '9625'),
-    ('2020-12-22 01:16:44.352352', '755', '9665'),
-    ('2020-12-22 01:16:44.352352', '755', '9666'),
-    ('2020-12-22 01:16:44.352352', '755', '9627'),
-    ('2020-12-22 01:16:44.352352', '755', '9667'),
-    ('2020-12-22 01:16:44.353353', '755', '9668'),
-    ('2020-12-22 01:16:44.353353', '755', '9669'),
-    ('2020-12-22 01:16:44.353353', '755', '9670')
+  ('2020-12-22 02:44:58.573573', '756', '9671'),
+  ('2020-12-22 02:44:58.574574', '756', '9672'),
+  ('2020-12-22 02:44:58.574574', '756', '9632'),
+  ('2020-12-22 02:44:58.574574', '756', '9673'),
+  ('2020-12-22 02:44:58.574574', '756', '9674'),
+  ('2020-12-22 02:44:58.574574', '756', '9675'),
+  ('2020-12-22 02:44:58.574574', '756', '9676'),
+  ('2020-12-22 02:44:58.574574', '756', '9677')
   ;
 
   // Update to source_song table
