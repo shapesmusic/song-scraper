@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Kid Cudi, Jack Harlow, Taylor Swift, and More', '2020-12-11 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-kid-cudi-jack-harlow-taylor-swift/westside-boogie-joey-badass-outside');
+    ('Complex', 'Best New Music This Week', 'Young Thug, Eminem, Sheff G, and More', '2020-12-18 12:00:00.000000', 'https://www.complex.com/music/2020/12/best-new-music-this-week-december-18/smoove-l-long-nights');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 756; // SELECT last_insert_rowid();
+  source_id = 757; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -96,74 +96,65 @@
   songsData =
   [
     {
-        "title": "The Pale Moonlight",
-        "artist_name": "Kid Cudi",
-        "video_id": "HCnqE10nY5s",
-        "capture_date": "2020-12-22 02:44:58.573573",
-        "source_id": 756,
+        "title": "Take It to Trial",
+        "artist_name": "Young Thug, Gunna, & Yak Gotti",
+        "video_id": "N4nfjhJN6SA",
+        "capture_date": "2020-12-22 02:53:43.449449",
+        "source_id": 757,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Face of My City",
-        "artist_name": "Jack Harlow f/ Lil Baby",
-        "video_id": "gnC9Y8_Qpe4",
-        "capture_date": "2020-12-22 02:44:58.574574",
-        "source_id": 756,
+        "title": "Anyone",
+        "artist_name": "Sheff G",
+        "video_id": "FNoPU7Aceh8",
+        "capture_date": "2020-12-22 02:53:43.450450",
+        "source_id": 757,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Willow",
-        "artist_name": "Taylor Swift",
-        "video_id": "RsEZmictANA",
-        "capture_date": "2020-12-22 02:44:58.574574",
-        "source_id": 756,
-        "song_id": 9632,
-        "duplicate": true
-    },
-    {
-        "title": "Spend It",
-        "artist_name": "Mulatto",
-        "video_id": "ElDjH4lSu94",
-        "capture_date": "2020-12-22 02:44:58.574574",
-        "source_id": 756,
+        "title": "Raw Oysters",
+        "artist_name": "Conway the Machine",
+        "video_id": "o4IF6h6_3yA",
+        "capture_date": "2020-12-22 02:53:43.450450",
+        "source_id": 757,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "3:30 in Houston",
-        "artist_name": "Benny the Butcher",
-        "video_id": "HaGgifPEccI",
-        "capture_date": "2020-12-22 02:44:58.574574",
-        "source_id": 756,
+        "title": "Gnat",
+        "artist_name": "Eminem",
+        "video_id": "EosMazKaPbU",
+        "capture_date": "2020-12-22 02:53:43.450450",
+        "source_id": 757,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "FWB",
-        "artist_name": "CHIKA",
-        "video_id": "YUTK6AcjHQQ",
-        "capture_date": "2020-12-22 02:44:58.574574",
-        "source_id": 756,
+        "title": "Statement",
+        "artist_name": "G Herbo",
+        "video_id": "FdhKsXJCAbk",
+        "capture_date": "2020-12-22 02:53:43.450450",
+        "source_id": 757,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lurkin",
-        "artist_name": "King Von & Funkmaster Flex",
-        "video_id": "jD1jvB3M45I",
-        "capture_date": "2020-12-22 02:44:58.574574",
-        "source_id": 756,
+        "title": "Cinderblocks",
+        "artist_name": "Michael Christmas f/ Kota the Friend",
+        "video_id": "0sMz6g3Uiz8",
+        "capture_date": "2020-12-22 02:53:43.450450",
+        "source_id": 757,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Outside",
-        "artist_name": "Westside Boogie f/ Joey Badass",
-        "video_id": "mRBeyzEQ48c",
-        "capture_date": "2020-12-22 02:44:58.574574",
-        "source_id": 756,
+        "title": "Long Nights",
+        "artist_name": "Smoove'L",
+        "video_id": "403i57Mg-Yc",
+        "capture_date": "2020-12-22 02:53:43.450450",
+        "source_id": 757,
         "song_id": null,
         "duplicate": false
     }
@@ -206,13 +197,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Pale Moonlight', 'Kid Cudi', NULL),
-  ('Face of My City', 'Jack Harlow f/ Lil Baby', NULL),
-  ('Spend It', 'Mulatto', NULL),
-  ('3:30 in Houston', 'Benny the Butcher', NULL),
-  ('FWB', 'CHIKA', NULL),
-  ('Lurkin', 'King Von & Funkmaster Flex', NULL),
-  ('Outside', 'Westside Boogie f/ Joey Badass', NULL)
+    ('Take It to Trial', 'Young Thug, Gunna, & Yak Gotti', NULL),
+    ('Anyone', 'Sheff G', NULL),
+    ('Raw Oysters', 'Conway the Machine', NULL),
+    ('Gnat', 'Eminem', NULL),
+    ('Statement', 'G Herbo', NULL),
+    ('Cinderblocks', 'Michael Christmas f/ Kota the Friend', NULL),
+    ('Long Nights', 'Smoove’L', NULL)
   ;
 
    // Update to song table
@@ -223,7 +214,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9677; // SELECT last_insert_rowid();
+  song_id = 9684; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -263,14 +254,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2020-12-22 02:44:58.573573', '756', '9671'),
-  ('2020-12-22 02:44:58.574574', '756', '9672'),
-  ('2020-12-22 02:44:58.574574', '756', '9632'),
-  ('2020-12-22 02:44:58.574574', '756', '9673'),
-  ('2020-12-22 02:44:58.574574', '756', '9674'),
-  ('2020-12-22 02:44:58.574574', '756', '9675'),
-  ('2020-12-22 02:44:58.574574', '756', '9676'),
-  ('2020-12-22 02:44:58.574574', '756', '9677')
+  ('2020-12-22 02:53:43.449449', '757', '9678'),
+  ('2020-12-22 02:53:43.450450', '757', '9679'),
+  ('2020-12-22 02:53:43.450450', '757', '9680'),
+  ('2020-12-22 02:53:43.450450', '757', '9681'),
+  ('2020-12-22 02:53:43.450450', '757', '9682'),
+  ('2020-12-22 02:53:43.450450', '757', '9683'),
+  ('2020-12-22 02:53:43.450450', '757', '9684')
   ;
 
   // Update to source_song table
