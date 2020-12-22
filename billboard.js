@@ -29,7 +29,7 @@
     + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'Week of "
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart
+    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   )
 
   // Stage the SQL statement
@@ -38,7 +38,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of November 21, 2020', '2020-11-21 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-11-21');
+    ('Billboard', 'The Hot 100', 'Week of November 28, 2020', '2020-11-28 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-11-28');
 
   // Update to source table
 
@@ -47,7 +47,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 746; // SELECT last_insert_rowid();
+  source_id = 749; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -91,123 +91,123 @@
 
   songsData =
   [
-    {
-        "title": "What That Speed Bout!?",
-        "artist_name": "Mike WiLL Made-It, Nicki Minaj & YoungBoy Never Broke Again",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.079079",
-        "source_id": 746,
-        "song_id": 9540,
-        "duplicate": true
-    },
-    {
-        "title": "Took Her To The O",
-        "artist_name": "King Von",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.079079",
-        "source_id": 746,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Don't Need Friends",
-        "artist_name": "NAV Featuring Lil Baby",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.079079",
-        "source_id": 746,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Code",
-        "artist_name": "King Von Featuring Polo G",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.080080",
-        "source_id": 746,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tragic",
-        "artist_name": "The Kid LAROI Featuring YoungBoy Never Brok Again & Internet Money",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.080080",
-        "source_id": 746,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "All These N**gas",
-        "artist_name": "King Von Featuring Lil Durk",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.080080",
-        "source_id": 746,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Crazy Story 2.0",
-        "artist_name": "King Von Featuring Lil Durk",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.080080",
-        "source_id": 746,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Always Do",
-        "artist_name": "The Kid LAROI",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.080080",
-        "source_id": 746,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Young Wheezy",
-        "artist_name": "NAV With Gunna",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.080080",
-        "source_id": 746,
-        "song_id": 9543,
-        "duplicate": true
-    },
-    {
-        "title": "Beers And Sunshine",
-        "artist_name": "Darius Rucker",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.081081",
-        "source_id": 746,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Therefore I Am",
-        "artist_name": "Billie Eilish",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.081081",
-        "source_id": 746,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Whoopty",
-        "artist_name": "CJ",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.081081",
-        "source_id": 746,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "F*ck You, Goodbye",
-        "artist_name": "The Kid LAROI Featuring Machine Gun Kelly",
-        "video_id": null,
-        "capture_date": "2020-11-19 09:36:35.081081",
-        "source_id": 746,
-        "song_id": null,
-        "duplicate": false
-    }
+      {
+          "title": "Drankin N Smokin",
+          "artist_name": "Future & Lil Uzi Vert",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.771771",
+          "source_id": 749,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Holiday",
+          "artist_name": "Lil Nas X",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.771771",
+          "source_id": 749,
+          "song_id": 9571,
+          "duplicate": true
+      },
+      {
+          "title": "Stripes Like Burberry",
+          "artist_name": "Future & Lil Uzi Vert",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.771771",
+          "source_id": 749,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "That's It",
+          "artist_name": "Future & Lil Uzi Vert",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.771771",
+          "source_id": 749,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Real Baby Pluto",
+          "artist_name": "Future & Lil Uzi Vert",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.771771",
+          "source_id": 749,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Iris",
+          "artist_name": "Phoebe & Maggie",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.772772",
+          "source_id": 749,
+          "song_id": 9577,
+          "duplicate": true
+      },
+      {
+          "title": "Marni On Me",
+          "artist_name": "Future & Lil Uzi Vert",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.772772",
+          "source_id": 749,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Million Dollar Play",
+          "artist_name": "Future & Lil Uzi Vert",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.772772",
+          "source_id": 749,
+          "song_id": 9568,
+          "duplicate": true
+      },
+      {
+          "title": "Sleeping On The Floor",
+          "artist_name": "Future & Lil Uzi Vert",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.772772",
+          "source_id": 749,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "What's Your Country Song",
+          "artist_name": "Thomas Rhett",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.772772",
+          "source_id": 749,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Plastic",
+          "artist_name": "Future & Lil Uzi Vert",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.772772",
+          "source_id": 749,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Rockstar Chainz",
+          "artist_name": "Future",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.773773",
+          "source_id": 749,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Bought A Bad Bitch",
+          "artist_name": "Future & Lil Uzi Vert",
+          "video_id": null,
+          "capture_date": "2020-12-22 09:07:59.773773",
+          "source_id": 749,
+          "song_id": null,
+          "duplicate": false
+      }
   ]
 
   // Check each song for duplicates in the database
@@ -247,17 +247,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Took Her To The O', 'King Von', NULL),
-    ('Don’t Need Friends', 'NAV Featuring Lil Baby', NULL),
-    ('The Code', 'King Von Featuring Polo G', NULL),
-    ('Tragic', 'The Kid LAROI Featuring YoungBoy Never Brok Again & Internet Money', NULL),
-    ('All These N**gas', 'King Von Featuring Lil Durk', NULL),
-    ('Crazy Story 2.0', 'King Von Featuring Lil Durk', NULL),
-    ('Always Do', 'The Kid LAROI', NULL),
-    ('Beers And Sunshine', 'Darius Rucker', NULL),
-    ('Therefore I Am', 'Billie Eilish', NULL),
-    ('Whoopty', 'CJ', NULL),
-    ('F*ck You, Goodbye', 'The Kid LAROI Featuring Machine Gun Kelly', NULL)
+    ('Drankin N Smokin', 'Future & Lil Uzi Vert', NULL),
+    ('Stripes Like Burberry', 'Future & Lil Uzi Vert', NULL),
+    ('That’s It', 'Future & Lil Uzi Vert', NULL),
+    ('Real Baby Pluto', 'Future & Lil Uzi Vert', NULL),
+    ('Marni On Me', 'Future & Lil Uzi Vert', NULL),
+    ('Sleeping On The Floor', 'Future & Lil Uzi Vert', NULL),
+    ('What’s Your Country Song', 'Thomas Rhett', NULL),
+    ('Plastic', 'Future & Lil Uzi Vert', NULL),
+    ('Rockstar Chainz', 'Future', NULL),
+    ('Bought A Bad Bitch', 'Future & Lil Uzi Vert', NULL)
   ;
 
    // Update to song table
@@ -268,7 +267,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9567; // SELECT last_insert_rowid();
+  song_id = 9590; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -308,19 +307,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-11-19 09:36:35.079079', '746', '9540'),
-    ('2020-11-19 09:36:35.079079', '746', '9557'),
-    ('2020-11-19 09:36:35.079079', '746', '9558'),
-    ('2020-11-19 09:36:35.080080', '746', '9559'),
-    ('2020-11-19 09:36:35.080080', '746', '9560'),
-    ('2020-11-19 09:36:35.080080', '746', '9561'),
-    ('2020-11-19 09:36:35.080080', '746', '9562'),
-    ('2020-11-19 09:36:35.080080', '746', '9563'),
-    ('2020-11-19 09:36:35.080080', '746', '9543'),
-    ('2020-11-19 09:36:35.081081', '746', '9564'),
-    ('2020-11-19 09:36:35.081081', '746', '9565'),
-    ('2020-11-19 09:36:35.081081', '746', '9566'),
-    ('2020-11-19 09:36:35.081081', '746', '9567')
+    ('2020-12-22 09:07:59.771771', '749', '9581'),
+    ('2020-12-22 09:07:59.771771', '749', '9571'),
+    ('2020-12-22 09:07:59.771771', '749', '9582'),
+    ('2020-12-22 09:07:59.771771', '749', '9583'),
+    ('2020-12-22 09:07:59.771771', '749', '9584'),
+    ('2020-12-22 09:07:59.772772', '749', '9577'),
+    ('2020-12-22 09:07:59.772772', '749', '9585'),
+    ('2020-12-22 09:07:59.772772', '749', '9568'),
+    ('2020-12-22 09:07:59.772772', '749', '9586'),
+    ('2020-12-22 09:07:59.772772', '749', '9587'),
+    ('2020-12-22 09:07:59.772772', '749', '9588'),
+    ('2020-12-22 09:07:59.773773', '749', '9589'),
+    ('2020-12-22 09:07:59.773773', '749', '9590')
   ;
 
   // Update to source_song table
