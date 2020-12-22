@@ -38,7 +38,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of November 28, 2020', '2020-11-28 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-11-28');
+    ('Billboard', 'The Hot 100', 'Week of December 5, 2020', '2020-12-05 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-12-05');
 
   // Update to source table
 
@@ -47,7 +47,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 749; // SELECT last_insert_rowid();
+  source_id = 750; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -91,124 +91,178 @@
 
   songsData =
   [
-      {
-          "title": "Drankin N Smokin",
-          "artist_name": "Future & Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.771771",
-          "source_id": 749,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Holiday",
-          "artist_name": "Lil Nas X",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.771771",
-          "source_id": 749,
-          "song_id": 9571,
-          "duplicate": true
-      },
-      {
-          "title": "Stripes Like Burberry",
-          "artist_name": "Future & Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.771771",
-          "source_id": 749,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "That's It",
-          "artist_name": "Future & Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.771771",
-          "source_id": 749,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Real Baby Pluto",
-          "artist_name": "Future & Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.771771",
-          "source_id": 749,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Iris",
-          "artist_name": "Phoebe & Maggie",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.772772",
-          "source_id": 749,
-          "song_id": 9577,
-          "duplicate": true
-      },
-      {
-          "title": "Marni On Me",
-          "artist_name": "Future & Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.772772",
-          "source_id": 749,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Million Dollar Play",
-          "artist_name": "Future & Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.772772",
-          "source_id": 749,
-          "song_id": 9568,
-          "duplicate": true
-      },
-      {
-          "title": "Sleeping On The Floor",
-          "artist_name": "Future & Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.772772",
-          "source_id": 749,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "What's Your Country Song",
-          "artist_name": "Thomas Rhett",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.772772",
-          "source_id": 749,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Plastic",
-          "artist_name": "Future & Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.772772",
-          "source_id": 749,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Rockstar Chainz",
-          "artist_name": "Future",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.773773",
-          "source_id": 749,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Bought A Bad Bitch",
-          "artist_name": "Future & Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2020-12-22 09:07:59.773773",
-          "source_id": 749,
-          "song_id": null,
-          "duplicate": false
-      }
-  ]
+    {
+        "title": "Life Goes On",
+        "artist_name": "BTS",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.870870",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Monster",
+        "artist_name": "Shawn Mendes & Justin Bieber",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.872872",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Body",
+        "artist_name": "Megan Thee Stallion",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.872872",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Blue & Grey",
+        "artist_name": "BTS",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.872872",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Stay",
+        "artist_name": "BTS",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.872872",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Somebody's Problem",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.872872",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Still Goin Down",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.873873",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Prisoner",
+        "artist_name": "Miley Cyrus Featuring Dua Lipa",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.873873",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fly To My Room",
+        "artist_name": "BTS",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.873873",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Telepathy",
+        "artist_name": "BTS",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.873873",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cry Baby",
+        "artist_name": "Megan Thee Stallion Featuring DaBaby",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.873873",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dis-ease",
+        "artist_name": "BTS",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.873873",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Shots Fired",
+        "artist_name": "Megan Thee Stallion",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.874874",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Livin' The Dream",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.874874",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pain Away",
+        "artist_name": "Meek Mill Featuring Lil Durk",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.874874",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Do It On The Tip",
+        "artist_name": "Megan Thee Stallion Featuring City Girls & Hot Girl Meg",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.874874",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Circles",
+        "artist_name": "Megan Thee Stallion",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.874874",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bichota",
+        "artist_name": "Karol G",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.874874",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cover Me Up",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2020-12-22 09:50:33.874874",
+        "source_id": 750,
+        "song_id": null,
+        "duplicate": false
+    }
+]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -247,16 +301,25 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Drankin N Smokin', 'Future & Lil Uzi Vert', NULL),
-    ('Stripes Like Burberry', 'Future & Lil Uzi Vert', NULL),
-    ('That’s It', 'Future & Lil Uzi Vert', NULL),
-    ('Real Baby Pluto', 'Future & Lil Uzi Vert', NULL),
-    ('Marni On Me', 'Future & Lil Uzi Vert', NULL),
-    ('Sleeping On The Floor', 'Future & Lil Uzi Vert', NULL),
-    ('What’s Your Country Song', 'Thomas Rhett', NULL),
-    ('Plastic', 'Future & Lil Uzi Vert', NULL),
-    ('Rockstar Chainz', 'Future', NULL),
-    ('Bought A Bad Bitch', 'Future & Lil Uzi Vert', NULL)
+    ('Life Goes On', 'BTS', NULL),
+    ('Monster', 'Shawn Mendes & Justin Bieber', NULL),
+    ('Body', 'Megan Thee Stallion', NULL),
+    ('Blue & Grey', 'BTS', NULL),
+    ('Stay', 'BTS', NULL),
+    ('Somebody’s Problem', 'Morgan Wallen', NULL),
+    ('Still Goin Down', 'Morgan Wallen', NULL),
+    ('Prisoner', 'Miley Cyrus Featuring Dua Lipa', NULL),
+    ('Fly To My Room', 'BTS', NULL),
+    ('Telepathy', 'BTS', NULL),
+    ('Cry Baby', 'Megan Thee Stallion Featuring DaBaby', NULL),
+    ('Dis-ease', 'BTS', NULL),
+    ('Shots Fired', 'Megan Thee Stallion', NULL),
+    ('Livin’ The Dream', 'Morgan Wallen', NULL),
+    ('Pain Away', 'Meek Mill Featuring Lil Durk', NULL),
+    ('Do It On The Tip', 'Megan Thee Stallion Featuring City Girls & Hot Girl Meg', NULL),
+    ('Circles', 'Megan Thee Stallion', NULL),
+    ('Bichota', 'Karol G', NULL),
+    ('Cover Me Up', 'Morgan Wallen', NULL)
   ;
 
    // Update to song table
@@ -267,7 +330,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9590; // SELECT last_insert_rowid();
+  song_id = 9609; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -307,19 +370,25 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-12-22 09:07:59.771771', '749', '9581'),
-    ('2020-12-22 09:07:59.771771', '749', '9571'),
-    ('2020-12-22 09:07:59.771771', '749', '9582'),
-    ('2020-12-22 09:07:59.771771', '749', '9583'),
-    ('2020-12-22 09:07:59.771771', '749', '9584'),
-    ('2020-12-22 09:07:59.772772', '749', '9577'),
-    ('2020-12-22 09:07:59.772772', '749', '9585'),
-    ('2020-12-22 09:07:59.772772', '749', '9568'),
-    ('2020-12-22 09:07:59.772772', '749', '9586'),
-    ('2020-12-22 09:07:59.772772', '749', '9587'),
-    ('2020-12-22 09:07:59.772772', '749', '9588'),
-    ('2020-12-22 09:07:59.773773', '749', '9589'),
-    ('2020-12-22 09:07:59.773773', '749', '9590')
+    ('2020-12-22 09:50:33.870870', '750', '9591'),
+    ('2020-12-22 09:50:33.872872', '750', '9592'),
+    ('2020-12-22 09:50:33.872872', '750', '9593'),
+    ('2020-12-22 09:50:33.872872', '750', '9594'),
+    ('2020-12-22 09:50:33.872872', '750', '9595'),
+    ('2020-12-22 09:50:33.872872', '750', '9596'),
+    ('2020-12-22 09:50:33.873873', '750', '9597'),
+    ('2020-12-22 09:50:33.873873', '750', '9598'),
+    ('2020-12-22 09:50:33.873873', '750', '9599'),
+    ('2020-12-22 09:50:33.873873', '750', '9600'),
+    ('2020-12-22 09:50:33.873873', '750', '9601'),
+    ('2020-12-22 09:50:33.873873', '750', '9602'),
+    ('2020-12-22 09:50:33.874874', '750', '9603'),
+    ('2020-12-22 09:50:33.874874', '750', '9604'),
+    ('2020-12-22 09:50:33.874874', '750', '9605'),
+    ('2020-12-22 09:50:33.874874', '750', '9606'),
+    ('2020-12-22 09:50:33.874874', '750', '9607'),
+    ('2020-12-22 09:50:33.874874', '750', '9608'),
+    ('2020-12-22 09:50:33.874874', '750', '9609')
   ;
 
   // Update to source_song table
