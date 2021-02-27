@@ -29,8 +29,9 @@
     + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'Week of "
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
+    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   )
+
 
   // Stage the SQL statement
   // Replace any ' in strings with ’
@@ -38,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of December 26, 2020', '2020-12-26 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2020-12-26');
+    ('Billboard', 'The Hot 100', 'Week of January 2, 2021', '2021-01-02 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-01-02');
 
   // Update to source table
 
@@ -47,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 753; // SELECT last_insert_rowid();
+  source_id = 764; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -92,254 +93,47 @@
   songsData =
   [
     {
-        "title": "Willow",
-        "artist_name": "Taylor Swift",
+        "title": "Afterglow",
+        "artist_name": "Ed Sheeran",
         "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.531531",
-        "source_id": 753,
+        "capture_date": "2021-02-27 03:46:13.097097",
+        "source_id": 764,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Champagne Problems",
-        "artist_name": "Taylor Swift",
+        "title": "Gnat",
+        "artist_name": "Eminem",
         "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.533533",
-        "source_id": 753,
+        "capture_date": "2021-02-27 03:46:13.097097",
+        "source_id": 764,
+        "song_id": 9681,
+        "duplicate": true
+    },
+    {
+        "title": "Adderall (Corvette Corvette)",
+        "artist_name": "Popp Hunna",
+        "video_id": null,
+        "capture_date": "2021-02-27 03:46:13.098098",
+        "source_id": 764,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Body, No Crime",
-        "artist_name": "Taylor Swift Featuring HAIM",
+        "title": "Backdoor",
+        "artist_name": "Lil Durk",
         "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.534534",
-        "source_id": 753,
+        "capture_date": "2021-02-27 03:46:13.099099",
+        "source_id": 764,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "’Tis The Damn Season",
-        "artist_name": "Taylor Swift",
+        "title": "Moonwalking In Calabasas",
+        "artist_name": "DDG",
         "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.534534",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gold Rush",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.534534",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tequila Shots",
-        "artist_name": "Kid Cudi",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.534534",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tolerate It",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.534534",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Deck The Halls",
-        "artist_name": "Nat King Cole",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.534534",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "She Knows This",
-        "artist_name": "Kid Cudi",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.534534",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Happiness",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.534534",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Show Out",
-        "artist_name": "Kid Cudi, Skepta & Pop Smoke",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.534534",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Evermore",
-        "artist_name": "Taylor Swift Featuring Bon Iver",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.534534",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ivy",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.534534",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Coney Island",
-        "artist_name": "Taylor Swift Featuring The National",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Another Day",
-        "artist_name": "Kid Cudi",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dorothea",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Long Story Short",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cowboy Like Me",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Way Out",
-        "artist_name": "Jack Harlow Featuring Big Sean",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Marjorie",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mr. Solo Dolo III",
-        "artist_name": "Kid Cudi",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dive",
-        "artist_name": "Kid Cudi",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Closure",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Heaven On Earth",
-        "artist_name": "Kid Cudi",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Reminds Me Of You",
-        "artist_name": "The Kid LAROI & Juice WRLD",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sad People",
-        "artist_name": "Kid Cudi",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Damaged",
-        "artist_name": "Kid Cudi",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.535535",
-        "source_id": 753,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Beautiful Trip",
-        "artist_name": "Kid Cudi",
-        "video_id": null,
-        "capture_date": "2020-12-22 12:51:52.536536",
-        "source_id": 753,
+        "capture_date": "2021-02-27 03:46:13.099099",
+        "source_id": 764,
         "song_id": null,
         "duplicate": false
     }
@@ -382,34 +176,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Willow', 'Taylor Swift', NULL),
-    ('Champagne Problems', 'Taylor Swift', NULL),
-    ('No Body, No Crime', 'Taylor Swift Featuring HAIM', NULL),
-    ('’Tis The Damn Season', 'Taylor Swift', NULL),
-    ('Gold Rush', 'Taylor Swift', NULL),
-    ('Tequila Shots', 'Kid Cudi', NULL),
-    ('Tolerate It', 'Taylor Swift', NULL),
-    ('Deck The Halls', 'Nat King Cole', NULL),
-    ('She Knows This', 'Kid Cudi', NULL),
-    ('Happiness', 'Taylor Swift', NULL),
-    ('Show Out', 'Kid Cudi, Skepta & Pop Smoke', NULL),
-    ('Evermore', 'Taylor Swift Featuring Bon Iver', NULL),
-    ('Ivy', 'Taylor Swift', NULL),
-    ('Coney Island', 'Taylor Swift Featuring The National', NULL),
-    ('Another Day', 'Kid Cudi', NULL),
-    ('Dorothea', 'Taylor Swift', NULL),
-    ('Long Story Short', 'Taylor Swift', NULL),
-    ('Cowboy Like Me', 'Taylor Swift', NULL),
-    ('Way Out', 'Jack Harlow Featuring Big Sean', NULL),
-    ('Marjorie', 'Taylor Swift', NULL),
-    ('Mr. Solo Dolo III', 'Kid Cudi', NULL),
-    ('Dive', 'Kid Cudi', NULL),
-    ('Closure', 'Taylor Swift', NULL),
-    ('Heaven On Earth', 'Kid Cudi', NULL),
-    ('Reminds Me Of You', 'The Kid LAROI & Juice WRLD', NULL),
-    ('Sad People', 'Kid Cudi', NULL),
-    ('Damaged', 'Kid Cudi', NULL),
-    ('Beautiful Trip', 'Kid Cudi', NULL)
+  ('Afterglow', 'Ed Sheeran', NULL),
+  ('Adderall (Corvette Corvette)', 'Popp Hunna', NULL),
+  ('Backdoor', 'Lil Durk', NULL),
+  ('Moonwalking In Calabasas', 'DDG', NULL)
   ;
 
    // Update to song table
@@ -420,7 +190,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9659; // SELECT last_insert_rowid();
+  song_id = 9715; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -460,34 +230,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-12-22 12:51:52.531531', '753', '9632'),
-    ('2020-12-22 12:51:52.533533', '753', '9633'),
-    ('2020-12-22 12:51:52.534534', '753', '9634'),
-    ('2020-12-22 12:51:52.534534', '753', '9635'),
-    ('2020-12-22 12:51:52.534534', '753', '9636'),
-    ('2020-12-22 12:51:52.534534', '753', '9637'),
-    ('2020-12-22 12:51:52.534534', '753', '9638'),
-    ('2020-12-22 12:51:52.534534', '753', '9639'),
-    ('2020-12-22 12:51:52.534534', '753', '9640'),
-    ('2020-12-22 12:51:52.534534', '753', '9641'),
-    ('2020-12-22 12:51:52.534534', '753', '9642'),
-    ('2020-12-22 12:51:52.534534', '753', '9643'),
-    ('2020-12-22 12:51:52.534534', '753', '9644'),
-    ('2020-12-22 12:51:52.535535', '753', '9645'),
-    ('2020-12-22 12:51:52.535535', '753', '9646'),
-    ('2020-12-22 12:51:52.535535', '753', '9647'),
-    ('2020-12-22 12:51:52.535535', '753', '9648'),
-    ('2020-12-22 12:51:52.535535', '753', '9649'),
-    ('2020-12-22 12:51:52.535535', '753', '9650'),
-    ('2020-12-22 12:51:52.535535', '753', '9651'),
-    ('2020-12-22 12:51:52.535535', '753', '9652'),
-    ('2020-12-22 12:51:52.535535', '753', '9653'),
-    ('2020-12-22 12:51:52.535535', '753', '9654'),
-    ('2020-12-22 12:51:52.535535', '753', '9655'),
-    ('2020-12-22 12:51:52.535535', '753', '9656'),
-    ('2020-12-22 12:51:52.535535', '753', '9657'),
-    ('2020-12-22 12:51:52.535535', '753', '9658'),
-    ('2020-12-22 12:51:52.536536', '753', '9659')
+  ('2021-02-27 03:46:13.097097', '764', '9712'),
+  ('2021-02-27 03:46:13.097097', '764', '9681'),
+  ('2021-02-27 03:46:13.098098', '764', '9713'),
+  ('2021-02-27 03:46:13.099099', '764', '9714'),
+  ('2021-02-27 03:46:13.099099', '764', '9715')
   ;
 
   // Update to source_song table
