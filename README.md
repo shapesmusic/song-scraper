@@ -5,10 +5,10 @@ Also, this is a [Learning Repo](https://github.com/davidforrest/A-Learning-Repo)
 
 
 ### A Little Setup
-1. If necessary, [download](http://jkafader1.fnf.archive.org/shapes.sqlite) the `shapes.sqlite` database (it's possible that the most recent version is [on GitHub](https://github.com/jkafader/shapes/blob/master/www/shapes.sqlite), or better, on a local clone of that repo).
+1. Make sure your local copy of the `shapes.sqlite` database is up to date.
 1. Point the sqlite CLI to the database with (for example):
 ```
-sqlite3 /Users/davidforrest/david_local/development_local/shapes/www/shapes.sqlite
+sqlite3 /Users/davidforrest/david_local/development_local/Shapes-API/www/shapes.sqlite
 ```
 
 
