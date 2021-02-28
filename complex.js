@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Saweetie, Westside Gunn, Dsvn, and More', '2021-01-08 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-saweetie-westside-gunn-dvsn/yg-day-sulan-d3szn-hit-em-up');
+    ('Complex', 'Best New Music This Week', 'Juice WRLD, Flo Milli, Ariana Grande, and More', '2021-01-15 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-juice-wrld-flo-milli-ariana-grande/dababy-masterpiece');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 773; // SELECT last_insert_rowid();
+  source_id = 774; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -96,76 +96,58 @@
   songsData =
   [
     {
-        "title": "MAZZA",
-        "artist_name": "Slowthai f/ ASAP Rocky",
-        "video_id": "1NhyFEZKq48",
-        "capture_date": "2021-02-28 08:26:52.082082",
-        "source_id": 773,
+        "title": "34+45 (Remix)",
+        "artist_name": "Ariana Grande f/ Megan Thee Stallion & Doja Cat",
+        "video_id": "4yf-PZDQ_34",
+        "capture_date": "2021-02-28 08:34:50.569569",
+        "source_id": 774,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Girl Like Me",
-        "artist_name": "Jazmine Sullivan f/ H.E.R",
-        "video_id": "8TLty1mCrPA",
-        "capture_date": "2021-02-28 08:26:52.083083",
-        "source_id": 773,
-        "song_id": 9755,
+        "title": "Bad Boy",
+        "artist_name": "Young Thug & Juice WRLD",
+        "video_id": "ghzdwjWrWcc",
+        "capture_date": "2021-02-28 08:34:50.570570",
+        "source_id": 774,
+        "song_id": 9757,
         "duplicate": true
     },
     {
-        "title": "The Hurt Business",
-        "artist_name": "Westside Gunn, Smoke DZA & Wale",
-        "video_id": "a5HySSrw9JE",
-        "capture_date": "2021-02-28 08:26:52.083083",
-        "source_id": 773,
+        "title": "Roaring 20s",
+        "artist_name": "Flo Milli",
+        "video_id": "miWFlMEuEqY",
+        "capture_date": "2021-02-28 08:34:50.571571",
+        "source_id": 774,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Her Honeymoon",
-        "artist_name": "RMR",
-        "video_id": "K464rsGt9J8",
-        "capture_date": "2021-02-28 08:26:52.083083",
-        "source_id": 773,
+        "title": "He Said",
+        "artist_name": "Dvsn f/ Miguel",
+        "video_id": "eihhlfUdWPc",
+        "capture_date": "2021-02-28 08:34:50.571571",
+        "source_id": 774,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Best Friend",
-        "artist_name": "Saweetie f/ Doja Cat",
-        "video_id": "_xJUCsyMQes",
-        "capture_date": "2021-02-28 08:26:52.083083",
-        "source_id": 773,
-        "song_id": 9741,
+        "title": "Jungle Mantra",
+        "artist_name": "DIVINE, Pusha-T, Vince Staples",
+        "video_id": "jBiTjN87F0o",
+        "capture_date": "2021-02-28 08:34:50.571571",
+        "source_id": 774,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Masterpiece",
+        "artist_name": "DaBaby",
+        "video_id": "pnMtmFzMLP4",
+        "capture_date": "2021-02-28 08:34:50.571571",
+        "source_id": 774,
+        "song_id": 9758,
         "duplicate": true
-    },
-    {
-        "title": "Use Somebody",
-        "artist_name": "Dvsn",
-        "video_id": "yiMrzqdFiA4",
-        "capture_date": "2021-02-28 08:26:52.083083",
-        "source_id": 773,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Chicken N Dumplins",
-        "artist_name": "GRIP",
-        "video_id": "7IsbOmJDLT8",
-        "capture_date": "2021-02-28 08:26:52.083083",
-        "source_id": 773,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hit Em Up",
-        "artist_name": "YG, Day Sulan, and D3szn",
-        "video_id": "TRRqR5rRRec",
-        "capture_date": "2021-02-28 08:26:52.083083",
-        "source_id": 773,
-        "song_id": null,
-        "duplicate": false
     }
 ]
 
@@ -206,12 +188,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('MAZZA', 'Slowthai f/ ASAP Rocky', NULL),
-  ('The Hurt Business', 'Westside Gunn, Smoke DZA & Wale', NULL),
-  ('Her Honeymoon', 'RMR', NULL),
-  ('Use Somebody', 'Dvsn', NULL),
-  ('Chicken N Dumplins', 'GRIP', NULL),
-  ('Hit Em Up', 'YG, Day Sulan, and D3szn', NULL)
+  ('34+45 (Remix)', 'Ariana Grande f/ Megan Thee Stallion & Doja Cat', NULL),
+  ('Roaring 20s', 'Flo Milli', NULL),
+  ('He Said', 'Dvsn f/ Miguel', NULL),
+  ('Jungle Mantra', 'DIVINE, Pusha-T, Vince Staples', NULL)
   ;
 
    // Update to song table
@@ -222,7 +202,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9799; // SELECT last_insert_rowid();
+  song_id = 9803; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -262,14 +242,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-02-28 08:26:52.082082', '773', '9794'),
-  ('2021-02-28 08:26:52.083083', '773', '9755'),
-  ('2021-02-28 08:26:52.083083', '773', '9795'),
-  ('2021-02-28 08:26:52.083083', '773', '9796'),
-  ('2021-02-28 08:26:52.083083', '773', '9741'),
-  ('2021-02-28 08:26:52.083083', '773', '9797'),
-  ('2021-02-28 08:26:52.083083', '773', '9798'),
-  ('2021-02-28 08:26:52.083083', '773', '9799')
+  ('2021-02-28 08:34:50.569569', '774', '9800'),
+  ('2021-02-28 08:34:50.570570', '774', '9757'),
+  ('2021-02-28 08:34:50.571571', '774', '9801'),
+  ('2021-02-28 08:34:50.571571', '774', '9802'),
+  ('2021-02-28 08:34:50.571571', '774', '9803'),
+  ('2021-02-28 08:34:50.571571', '774', '9758')
   ;
 
   // Update to source_song table
