@@ -192,7 +192,7 @@
     AND artist_name LIKE '%durk%'
   ;
 
-  // If duplicates:
+  // If any changes:
   // Update var songsData = the deduplicated list above
 
 

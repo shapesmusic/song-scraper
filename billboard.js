@@ -172,7 +172,7 @@
     AND artist_name LIKE '%Cardi%'
   ;
 
-  // If duplicates:
+  // If any changes:
   // Update var songsData = the deduplicated list above
 
 
