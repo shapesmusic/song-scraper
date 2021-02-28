@@ -29,7 +29,7 @@
     + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'Week of "
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
+    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   )
 
 
@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of February 20, 2021', '2021-02-20 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-02-20');
+    ('Billboard', 'The Hot 100', 'Week of February 27, 2021', '2021-02-27 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-02-27');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 771; // SELECT last_insert_rowid();
+  source_id = 772; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -93,110 +93,74 @@
   songsData =
   [
     {
-        "title": "Up",
-        "artist_name": "Cardi B",
+        "title": "Calling My Phone",
+        "artist_name": "Lil Tjay Featuring 6LACK",
         "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.097097",
-        "source_id": 771,
+        "capture_date": "2021-02-27 08:35:22.167167",
+        "source_id": 772,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Time Today",
-        "artist_name": "Moneybagg Yo",
+        "title": "Love Story (Taylor's Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.101101",
-        "source_id": 771,
+        "capture_date": "2021-02-27 08:35:22.167167",
+        "source_id": 772,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Neighbors",
-        "artist_name": "Pooh Shiesty Featuring BIG30",
+        "title": "We're Good",
+        "artist_name": "Dua Lipa",
         "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.101101",
-        "source_id": 771,
+        "capture_date": "2021-02-27 08:35:22.169169",
+        "source_id": 772,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "GNF (OKOKOK)",
-        "artist_name": "Polo G",
+        "title": "What It Feels Like",
+        "artist_name": "Nipsey Hussle & JAY-Z",
         "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.102102",
-        "source_id": 771,
+        "capture_date": "2021-02-27 08:35:22.169169",
+        "source_id": 772,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Glad You Exist",
-        "artist_name": "Dan + Shay",
+        "title": "Astronaut In The Ocean",
+        "artist_name": "Masked Wolf",
         "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.102102",
-        "source_id": 771,
+        "capture_date": "2021-02-27 08:35:22.170170",
+        "source_id": 772,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Provide",
-        "artist_name": "G-Eazy Featuring Chris Brown & Mark Morrison",
+        "title": "Heartbreak Anniversary",
+        "artist_name": "Giveon",
         "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.102102",
-        "source_id": 771,
+        "capture_date": "2021-02-27 08:35:22.170170",
+        "source_id": 772,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Box Of Churches",
-        "artist_name": "Pooh Shiesty Featuring 21 Savage",
+        "title": "Like I Want You",
+        "artist_name": "Giveon",
         "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.102102",
-        "source_id": 771,
+        "capture_date": "2021-02-27 08:35:22.171171",
+        "source_id": 772,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "My Head And My Heart",
-        "artist_name": "Ava Max",
+        "title": "How They Remember You",
+        "artist_name": "Rascal Flatts",
         "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.102102",
-        "source_id": 771,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "No More Parties",
-        "artist_name": "Coi Leray",
-        "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.102102",
-        "source_id": 771,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bandido",
-        "artist_name": "Myke Towers & Juhn",
-        "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.103103",
-        "source_id": 771,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lifestyle",
-        "artist_name": "Jason Derulo Featuring Adam Levine",
-        "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.103103",
-        "source_id": 771,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Quicksand",
-        "artist_name": "Morray",
-        "video_id": null,
-        "capture_date": "2021-02-27 08:29:25.103103",
-        "source_id": 771,
+        "capture_date": "2021-02-27 08:35:22.171171",
+        "source_id": 772,
         "song_id": null,
         "duplicate": false
     }
@@ -239,18 +203,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Up', 'Cardi B', NULL),
-  ('Time Today', 'Moneybagg Yo', NULL),
-  ('Neighbors', 'Pooh Shiesty Featuring BIG30', NULL),
-  ('GNF (OKOKOK)', 'Polo G', NULL),
-  ('Glad You Exist', 'Dan + Shay', NULL),
-  ('Provide', 'G-Eazy Featuring Chris Brown & Mark Morrison', NULL),
-  ('Box Of Churches', 'Pooh Shiesty Featuring 21 Savage', NULL),
-  ('My Head And My Heart', 'Ava Max', NULL),
-  ('No More Parties', 'Coi Leray', NULL),
-  ('Bandido', 'Myke Towers & Juhn', NULL),
-  ('Lifestyle', 'Jason Derulo Featuring Adam Levine', NULL),
-  ('Quicksand', 'Morray', NULL)
+  ('Calling My Phone', 'Lil Tjay Featuring 6LACK', NULL),
+  ('Love Story (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('We’re Good', 'Dua Lipa', NULL),
+  ('What It Feels Like', 'Nipsey Hussle & JAY-Z', NULL),
+  ('Astronaut In The Ocean', 'Masked Wolf', NULL),
+  ('Heartbreak Anniversary', 'Giveon', NULL),
+  ('Like I Want You', 'Giveon', NULL),
+  ('How They Remember You', 'Rascal Flatts', NULL)
   ;
 
    // Update to song table
@@ -261,7 +221,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9785; // SELECT last_insert_rowid();
+  song_id = 9793; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -301,18 +261,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-02-27 08:29:25.097097', '771', '9774'),
-  ('2021-02-27 08:29:25.101101', '771', '9775'),
-  ('2021-02-27 08:29:25.101101', '771', '9776'),
-  ('2021-02-27 08:29:25.102102', '771', '9777'),
-  ('2021-02-27 08:29:25.102102', '771', '9778'),
-  ('2021-02-27 08:29:25.102102', '771', '9779'),
-  ('2021-02-27 08:29:25.102102', '771', '9780'),
-  ('2021-02-27 08:29:25.102102', '771', '9781'),
-  ('2021-02-27 08:29:25.102102', '771', '9782'),
-  ('2021-02-27 08:29:25.103103', '771', '9783'),
-  ('2021-02-27 08:29:25.103103', '771', '9784'),
-  ('2021-02-27 08:29:25.103103', '771', '9785')
+  ('2021-02-27 08:35:22.167167', '772', '9786'),
+  ('2021-02-27 08:35:22.167167', '772', '9787'),
+  ('2021-02-27 08:35:22.169169', '772', '9788'),
+  ('2021-02-27 08:35:22.169169', '772', '9789'),
+  ('2021-02-27 08:35:22.170170', '772', '9790'),
+  ('2021-02-27 08:35:22.170170', '772', '9791'),
+  ('2021-02-27 08:35:22.171171', '772', '9792'),
+  ('2021-02-27 08:35:22.171171', '772', '9793')
   ;
 
   // Update to source_song table
