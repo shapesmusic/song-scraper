@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Rowdy Rebel, Juice WRLD, Joey Badass, and More', '2021-01-22 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-rowdy-rebel-juice-wrld-joey-badass/smino-mlk-dr');
+    ('Complex', 'Best New Music This Week', 'Brent Faiyaz, Lil Durk, Ty Dolla Sign, and More', '2021-01-29 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-brent-faiyaz-lil-durk-ty-dolla-sign/madlib-hopprock');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 775; // SELECT last_insert_rowid();
+  source_id = 776; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -96,92 +96,65 @@
   songsData =
   [
     {
-        "title": "Re Route",
-        "artist_name": "Rowdy Rebel & Funk Flex",
-        "video_id": "Y0kyvUNKkoU",
-        "capture_date": "2021-02-28 08:43:15.103103",
-        "source_id": 775,
+        "title": "Gravity",
+        "artist_name": "Brent Faiyaz f/ Tyler, the Creator",
+        "video_id": "FBM4cdml6Qs",
+        "capture_date": "2021-02-28 02:02:23.781781",
+        "source_id": 776,
+        "song_id": 9770,
+        "duplicate": true
+    },
+    {
+        "title": "Kanye Krazy",
+        "artist_name": "Lil Durk",
+        "video_id": "pLBCPLhQ_HY",
+        "capture_date": "2021-02-28 02:02:23.782782",
+        "source_id": 776,
+        "song_id": 9772,
+        "duplicate": true
+    },
+    {
+        "title": "Spicy Remix",
+        "artist_name": "Ty Dolla Sign f/ J Balvin, YG, Tyga, & Post Malone",
+        "video_id": "E_95Zi9BZVw",
+        "capture_date": "2021-02-28 02:02:23.782782",
+        "source_id": 776,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Let It Breathe",
-        "artist_name": "Joey Badass",
-        "video_id": "0WGPP_3BPPQ",
-        "capture_date": "2021-02-28 08:43:15.104104",
-        "source_id": 775,
+        "title": "Burner on Deck",
+        "artist_name": "Fredo f/ Pop Smoke & Young Adz",
+        "video_id": "2Mi5b4GgWNs",
+        "capture_date": "2021-02-28 02:02:23.783783",
+        "source_id": 776,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Buck 50",
-        "artist_name": "Juice WRLD & DJ Scheme",
-        "video_id": "hwCEFbJDCqg",
-        "capture_date": "2021-02-28 08:43:15.104104",
-        "source_id": 775,
+        "title": "GFU",
+        "artist_name": "Yak Gotti & Yung Kayo f/ Sheck Wes",
+        "video_id": "LdqijGtpXig",
+        "capture_date": "2021-02-28 02:02:23.783783",
+        "source_id": 776,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lo Vas Olvidar",
-        "artist_name": "Billie Eilish & ROSALÍA",
-        "video_id": "8TsWkuWWXgc",
-        "capture_date": "2021-02-28 08:43:15.104104",
-        "source_id": 775,
+        "title": "Bop",
+        "artist_name": "CJ",
+        "video_id": "ph4XVAPeZxk",
+        "capture_date": "2021-02-28 02:02:23.783783",
+        "source_id": 776,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pomegranate",
-        "artist_name": "Kota the Friend",
-        "video_id": "F7XZEZRA8hk",
-        "capture_date": "2021-02-28 08:43:15.104104",
-        "source_id": 775,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Soldiers Steppin",
-        "artist_name": "Duke Deuce",
-        "video_id": "cZhvZrMo4Ao",
-        "capture_date": "2021-02-28 08:43:15.104104",
-        "source_id": 775,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nasty",
-        "artist_name": "Rich the Kid f/ Mulatto, Flo Milli & Rubi Rose",
-        "video_id": "xgqKglrS3X4",
-        "capture_date": "2021-02-28 08:43:15.104104",
-        "source_id": 775,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Rose Gold",
-        "artist_name": "PnB Rock f/ King Von",
-        "video_id": "HPMXd2CMvuQ",
-        "capture_date": "2021-02-28 08:43:15.104104",
-        "source_id": 775,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Take 5",
-        "artist_name": "Lil Skies",
-        "video_id": "XmAtvFYmzN4",
-        "capture_date": "2021-02-28 08:43:15.104104",
-        "source_id": 775,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "MLK Dr",
-        "artist_name": "Smino",
-        "video_id": "AGscu-qCHh8",
-        "capture_date": "2021-02-28 08:43:15.104104",
-        "source_id": 775,
+        "title": "Hopprock",
+        "artist_name": "Madlib",
+        "video_id": "iOmgkVF5Anw",
+        "capture_date": "2021-02-28 02:02:23.783783",
+        "source_id": 776,
         "song_id": null,
         "duplicate": false
     }
@@ -224,16 +197,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Re Route', 'Rowdy Rebel & Funk Flex', NULL),
-  ('Let It Breathe', 'Joey Badass', NULL),
-  ('Buck 50', 'Juice WRLD & DJ Scheme', NULL),
-  ('Lo Vas Olvidar', 'Billie Eilish & ROSALÍA', NULL),
-  ('Pomegranate', 'Kota the Friend', NULL),
-  ('Soldiers Steppin', 'Duke Deuce', NULL),
-  ('Nasty', 'Rich the Kid f/ Mulatto, Flo Milli & Rubi Rose', NULL),
-  ('Rose Gold', 'PnB Rock f/ King Von', NULL),
-  ('Take 5', 'Lil Skies', NULL),
-  ('MLK Dr', 'Smino', NULL)
+  ('Spicy Remix', 'Ty Dolla Sign f/ J Balvin, YG, Tyga, & Post Malone', NULL),
+  ('Burner on Deck', 'Fredo f/ Pop Smoke & Young Adz', NULL),
+  ('GFU', 'Yak Gotti & Yung Kayo f/ Sheck Wes', NULL),
+  ('Bop', 'CJ', NULL),
+  ('Hopprock', 'Madlib', NULL)
   ;
 
    // Update to song table
@@ -244,7 +212,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9813; // SELECT last_insert_rowid();
+  song_id = 9818; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -284,16 +252,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-02-28 08:43:15.103103', '775', '9804'),
-  ('2021-02-28 08:43:15.104104', '775', '9805'),
-  ('2021-02-28 08:43:15.104104', '775', '9806'),
-  ('2021-02-28 08:43:15.104104', '775', '9807'),
-  ('2021-02-28 08:43:15.104104', '775', '9808'),
-  ('2021-02-28 08:43:15.104104', '775', '9809'),
-  ('2021-02-28 08:43:15.104104', '775', '9810'),
-  ('2021-02-28 08:43:15.104104', '775', '9811'),
-  ('2021-02-28 08:43:15.104104', '775', '9812'),
-  ('2021-02-28 08:43:15.104104', '775', '9813')
+  ('2021-02-28 02:02:23.781781', '776', '9770'),
+  ('2021-02-28 02:02:23.782782', '776', '9772'),
+  ('2021-02-28 02:02:23.782782', '776', '9814'),
+  ('2021-02-28 02:02:23.783783', '776', '9815'),
+  ('2021-02-28 02:02:23.783783', '776', '9816'),
+  ('2021-02-28 02:02:23.783783', '776', '9817'),
+  ('2021-02-28 02:02:23.783783', '776', '9818')
   ;
 
   // Update to source_song table
