@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Young Thug, Eminem, Sheff G, and More', '2020-12-18 12:00:00.000000', 'https://www.complex.com/music/2020/12/best-new-music-this-week-december-18/smoove-l-long-nights');
+    ('Complex', 'Best New Music This Week', 'Saweetie, Westside Gunn, Dsvn, and More', '2021-01-08 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-saweetie-westside-gunn-dvsn/yg-day-sulan-d3szn-hit-em-up');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 757; // SELECT last_insert_rowid();
+  source_id = 773; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -90,71 +90,80 @@
 
 
 //
-// Step 3: Stage songsData, find & set any duplicate songs to true, and add song_ids for duplicates
+// Step 3: Stage songsData, prune unwanted songs, find & set any duplicate songs to true, and add song_ids for duplicates
 //
 
   songsData =
   [
     {
-        "title": "Take It to Trial",
-        "artist_name": "Young Thug, Gunna, & Yak Gotti",
-        "video_id": "N4nfjhJN6SA",
-        "capture_date": "2020-12-22 02:53:43.449449",
-        "source_id": 757,
+        "title": "MAZZA",
+        "artist_name": "Slowthai f/ ASAP Rocky",
+        "video_id": "1NhyFEZKq48",
+        "capture_date": "2021-02-28 08:26:52.082082",
+        "source_id": 773,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Anyone",
-        "artist_name": "Sheff G",
-        "video_id": "FNoPU7Aceh8",
-        "capture_date": "2020-12-22 02:53:43.450450",
-        "source_id": 757,
+        "title": "Girl Like Me",
+        "artist_name": "Jazmine Sullivan f/ H.E.R",
+        "video_id": "8TLty1mCrPA",
+        "capture_date": "2021-02-28 08:26:52.083083",
+        "source_id": 773,
+        "song_id": 9755,
+        "duplicate": true
+    },
+    {
+        "title": "The Hurt Business",
+        "artist_name": "Westside Gunn, Smoke DZA & Wale",
+        "video_id": "a5HySSrw9JE",
+        "capture_date": "2021-02-28 08:26:52.083083",
+        "source_id": 773,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Raw Oysters",
-        "artist_name": "Conway the Machine",
-        "video_id": "o4IF6h6_3yA",
-        "capture_date": "2020-12-22 02:53:43.450450",
-        "source_id": 757,
+        "title": "Her Honeymoon",
+        "artist_name": "RMR",
+        "video_id": "K464rsGt9J8",
+        "capture_date": "2021-02-28 08:26:52.083083",
+        "source_id": 773,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gnat",
-        "artist_name": "Eminem",
-        "video_id": "EosMazKaPbU",
-        "capture_date": "2020-12-22 02:53:43.450450",
-        "source_id": 757,
+        "title": "Best Friend",
+        "artist_name": "Saweetie f/ Doja Cat",
+        "video_id": "_xJUCsyMQes",
+        "capture_date": "2021-02-28 08:26:52.083083",
+        "source_id": 773,
+        "song_id": 9741,
+        "duplicate": true
+    },
+    {
+        "title": "Use Somebody",
+        "artist_name": "Dvsn",
+        "video_id": "yiMrzqdFiA4",
+        "capture_date": "2021-02-28 08:26:52.083083",
+        "source_id": 773,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Statement",
-        "artist_name": "G Herbo",
-        "video_id": "FdhKsXJCAbk",
-        "capture_date": "2020-12-22 02:53:43.450450",
-        "source_id": 757,
+        "title": "Chicken N Dumplins",
+        "artist_name": "GRIP",
+        "video_id": "7IsbOmJDLT8",
+        "capture_date": "2021-02-28 08:26:52.083083",
+        "source_id": 773,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cinderblocks",
-        "artist_name": "Michael Christmas f/ Kota the Friend",
-        "video_id": "0sMz6g3Uiz8",
-        "capture_date": "2020-12-22 02:53:43.450450",
-        "source_id": 757,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Long Nights",
-        "artist_name": "Smoove'L",
-        "video_id": "403i57Mg-Yc",
-        "capture_date": "2020-12-22 02:53:43.450450",
-        "source_id": 757,
+        "title": "Hit Em Up",
+        "artist_name": "YG, Day Sulan, and D3szn",
+        "video_id": "TRRqR5rRRec",
+        "capture_date": "2021-02-28 08:26:52.083083",
+        "source_id": 773,
         "song_id": null,
         "duplicate": false
     }
@@ -197,13 +206,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Take It to Trial', 'Young Thug, Gunna, & Yak Gotti', NULL),
-    ('Anyone', 'Sheff G', NULL),
-    ('Raw Oysters', 'Conway the Machine', NULL),
-    ('Gnat', 'Eminem', NULL),
-    ('Statement', 'G Herbo', NULL),
-    ('Cinderblocks', 'Michael Christmas f/ Kota the Friend', NULL),
-    ('Long Nights', 'Smoove’L', NULL)
+  ('MAZZA', 'Slowthai f/ ASAP Rocky', NULL),
+  ('The Hurt Business', 'Westside Gunn, Smoke DZA & Wale', NULL),
+  ('Her Honeymoon', 'RMR', NULL),
+  ('Use Somebody', 'Dvsn', NULL),
+  ('Chicken N Dumplins', 'GRIP', NULL),
+  ('Hit Em Up', 'YG, Day Sulan, and D3szn', NULL)
   ;
 
    // Update to song table
@@ -214,7 +222,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9684; // SELECT last_insert_rowid();
+  song_id = 9799; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -254,13 +262,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2020-12-22 02:53:43.449449', '757', '9678'),
-  ('2020-12-22 02:53:43.450450', '757', '9679'),
-  ('2020-12-22 02:53:43.450450', '757', '9680'),
-  ('2020-12-22 02:53:43.450450', '757', '9681'),
-  ('2020-12-22 02:53:43.450450', '757', '9682'),
-  ('2020-12-22 02:53:43.450450', '757', '9683'),
-  ('2020-12-22 02:53:43.450450', '757', '9684')
+  ('2021-02-28 08:26:52.082082', '773', '9794'),
+  ('2021-02-28 08:26:52.083083', '773', '9755'),
+  ('2021-02-28 08:26:52.083083', '773', '9795'),
+  ('2021-02-28 08:26:52.083083', '773', '9796'),
+  ('2021-02-28 08:26:52.083083', '773', '9741'),
+  ('2021-02-28 08:26:52.083083', '773', '9797'),
+  ('2021-02-28 08:26:52.083083', '773', '9798'),
+  ('2021-02-28 08:26:52.083083', '773', '9799')
   ;
 
   // Update to source_song table
