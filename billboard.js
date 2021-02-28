@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of January 2, 2021', '2021-01-02 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-01-02');
+    ('Billboard', 'The Hot 100', 'Week of January 9, 2021', '2021-01-09 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-01-09');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 764; // SELECT last_insert_rowid();
+  source_id = 765; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -87,53 +87,134 @@
 
 
 //
-// Step 3: Stage songsData, find & set any duplicate songs to true, and add song_ids for duplicates
+// Step 3: Stage songsData, prune unwanted songs, find & set any duplicate songs to true, and add song_ids for duplicates
 //
 
   songsData =
   [
     {
-        "title": "Afterglow",
-        "artist_name": "Ed Sheeran",
+        "title": "Good Days",
+        "artist_name": "SZA",
         "video_id": null,
-        "capture_date": "2021-02-27 03:46:13.097097",
-        "source_id": 764,
+        "capture_date": "2021-02-27 04:26:25.264264",
+        "source_id": 765,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gnat",
-        "artist_name": "Eminem",
+        "title": "Still Trappin'",
+        "artist_name": "Lil Durk & King Von",
         "video_id": null,
-        "capture_date": "2021-02-27 03:46:13.097097",
-        "source_id": 764,
-        "song_id": 9681,
+        "capture_date": "2021-02-27 04:26:25.264264",
+        "source_id": 765,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Redman",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-02-27 04:26:25.265265",
+        "source_id": 765,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Slay3r",
+        "artist_name": "Playboi Carti",
+        "video_id": null,
+        "capture_date": "2021-02-27 04:26:25.265265",
+        "source_id": 765,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Go2DaMoon",
+        "artist_name": "Playboi Carti Featuring Kanye West",
+        "video_id": null,
+        "capture_date": "2021-02-27 04:26:25.265265",
+        "source_id": 765,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Refugee",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-02-27 04:26:25.265265",
+        "source_id": 765,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Monsters",
+        "artist_name": "All Time Low Featuring Demi Lovato & blackbear",
+        "video_id": null,
+        "capture_date": "2021-02-27 04:26:25.265265",
+        "source_id": 765,
+        "song_id": 9692,
         "duplicate": true
     },
     {
-        "title": "Adderall (Corvette Corvette)",
-        "artist_name": "Popp Hunna",
+        "title": "Vamp Anthem",
+        "artist_name": "Playboi Carti",
         "video_id": null,
-        "capture_date": "2021-02-27 03:46:13.098098",
-        "source_id": 764,
+        "capture_date": "2021-02-27 04:26:25.265265",
+        "source_id": 765,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Backdoor",
+        "title": "Down To One",
+        "artist_name": "Luke Bryan",
+        "video_id": null,
+        "capture_date": "2021-02-27 04:26:25.265265",
+        "source_id": 765,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "New N3on",
+        "artist_name": "Playboi Carti",
+        "video_id": null,
+        "capture_date": "2021-02-27 04:26:25.265265",
+        "source_id": 765,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Death Ain't Easy",
         "artist_name": "Lil Durk",
         "video_id": null,
-        "capture_date": "2021-02-27 03:46:13.099099",
-        "source_id": 764,
+        "capture_date": "2021-02-27 04:26:25.265265",
+        "source_id": 765,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Moonwalking In Calabasas",
-        "artist_name": "DDG",
+        "title": "Just The Way",
+        "artist_name": "Parmalee x Blanco Brown",
         "video_id": null,
-        "capture_date": "2021-02-27 03:46:13.099099",
-        "source_id": 764,
+        "capture_date": "2021-02-27 04:26:25.266266",
+        "source_id": 765,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "M3tamorphosis",
+        "artist_name": "Playboi Carti Featuring Kid Cudi",
+        "video_id": null,
+        "capture_date": "2021-02-27 04:26:25.266266",
+        "source_id": 765,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Good Ones",
+        "artist_name": "Gabby Barrett",
+        "video_id": null,
+        "capture_date": "2021-02-27 04:26:25.266266",
+        "source_id": 765,
         "song_id": null,
         "duplicate": false
     }
@@ -176,10 +257,19 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Afterglow', 'Ed Sheeran', NULL),
-  ('Adderall (Corvette Corvette)', 'Popp Hunna', NULL),
-  ('Backdoor', 'Lil Durk', NULL),
-  ('Moonwalking In Calabasas', 'DDG', NULL)
+  ('Good Days', 'SZA', NULL),
+  ('Still Trappin’', 'Lil Durk & King Von', NULL),
+  ('Redman', 'Lil Durk', NULL),
+  ('Slay3r', 'Playboi Carti', NULL),
+  ('Go2DaMoon', 'Playboi Carti Featuring Kanye West', NULL),
+  ('Refugee', 'Lil Durk', NULL),
+  ('Vamp Anthem', 'Playboi Carti', NULL),
+  ('Down To One', 'Luke Bryan', NULL),
+  ('New N3on', 'Playboi Carti', NULL),
+  ('Death Ain’t Easy', 'Lil Durk', NULL),
+  ('Just The Way', 'Parmalee x Blanco Brown', NULL),
+  ('M3tamorphosis', 'Playboi Carti Featuring Kid Cudi', NULL),
+  ('The Good Ones', 'Gabby Barrett', NULL)
   ;
 
    // Update to song table
@@ -190,7 +280,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9715; // SELECT last_insert_rowid();
+  song_id = 9728; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -230,11 +320,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-02-27 03:46:13.097097', '764', '9712'),
-  ('2021-02-27 03:46:13.097097', '764', '9681'),
-  ('2021-02-27 03:46:13.098098', '764', '9713'),
-  ('2021-02-27 03:46:13.099099', '764', '9714'),
-  ('2021-02-27 03:46:13.099099', '764', '9715')
+  ('2021-02-27 04:26:25.264264', '765', '9716'),
+  ('2021-02-27 04:26:25.264264', '765', '9717'),
+  ('2021-02-27 04:26:25.265265', '765', '9718'),
+  ('2021-02-27 04:26:25.265265', '765', '9719'),
+  ('2021-02-27 04:26:25.265265', '765', '9720'),
+  ('2021-02-27 04:26:25.265265', '765', '9721'),
+  ('2021-02-27 04:26:25.265265', '765', '9692'),
+  ('2021-02-27 04:26:25.265265', '765', '9722'),
+  ('2021-02-27 04:26:25.265265', '765', '9723'),
+  ('2021-02-27 04:26:25.265265', '765', '9724'),
+  ('2021-02-27 04:26:25.265265', '765', '9725'),
+  ('2021-02-27 04:26:25.266266', '765', '9726'),
+  ('2021-02-27 04:26:25.266266', '765', '9727'),
+  ('2021-02-27 04:26:25.266266', '765', '9728')
   ;
 
   // Update to source_song table
