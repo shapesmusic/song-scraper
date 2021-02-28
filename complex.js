@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Brent Faiyaz, Lil Durk, Ty Dolla Sign, and More', '2021-01-29 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-brent-faiyaz-lil-durk-ty-dolla-sign/madlib-hopprock');
+    ('Complex', 'Best New Music This Week', 'Cardi B, Freddie Gibbs, Polo G, and More', '2021-02-05 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-cardi-b-freddie-gibbs-polo-g/morray-kingdom');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 776; // SELECT last_insert_rowid();
+  source_id = 777; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -96,65 +96,83 @@
   songsData =
   [
     {
-        "title": "Gravity",
-        "artist_name": "Brent Faiyaz f/ Tyler, the Creator",
-        "video_id": "FBM4cdml6Qs",
-        "capture_date": "2021-02-28 02:02:23.781781",
-        "source_id": 776,
-        "song_id": 9770,
+        "title": "Up",
+        "artist_name": "Cardi B",
+        "video_id": "rCiBgLOcuKU",
+        "capture_date": "2021-02-28 03:42:32.299299",
+        "source_id": 777,
+        "song_id": 9774,
         "duplicate": true
     },
     {
-        "title": "Kanye Krazy",
-        "artist_name": "Lil Durk",
-        "video_id": "pLBCPLhQ_HY",
-        "capture_date": "2021-02-28 02:02:23.782782",
-        "source_id": 776,
-        "song_id": 9772,
+        "title": "Gang Signs",
+        "artist_name": "Freddie Gibbs f/ Schoolboy Q",
+        "video_id": "_WnXMMOkubA",
+        "capture_date": "2021-02-28 03:42:32.300300",
+        "source_id": 777,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "GNF (OKOKOK)",
+        "artist_name": "Polo G",
+        "video_id": "gxykC33lTiQ",
+        "capture_date": "2021-02-28 03:42:32.301301",
+        "source_id": 777,
+        "song_id": 9777,
         "duplicate": true
     },
     {
-        "title": "Spicy Remix",
-        "artist_name": "Ty Dolla Sign f/ J Balvin, YG, Tyga, & Post Malone",
-        "video_id": "E_95Zi9BZVw",
-        "capture_date": "2021-02-28 02:02:23.782782",
-        "source_id": 776,
+        "title": "Love You Too",
+        "artist_name": "Lil Durk f/ Kehlani",
+        "video_id": "GZagrum0fbQ",
+        "capture_date": "2021-02-28 03:42:32.301301",
+        "source_id": 777,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Burner on Deck",
-        "artist_name": "Fredo f/ Pop Smoke & Young Adz",
-        "video_id": "2Mi5b4GgWNs",
-        "capture_date": "2021-02-28 02:02:23.783783",
-        "source_id": 776,
+        "title": "Toxic Punk",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": "q5Cq_bNbZjM",
+        "capture_date": "2021-02-28 03:42:32.301301",
+        "source_id": 777,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "GFU",
-        "artist_name": "Yak Gotti & Yung Kayo f/ Sheck Wes",
-        "video_id": "LdqijGtpXig",
-        "capture_date": "2021-02-28 02:02:23.783783",
-        "source_id": 776,
+        "title": "Bruuuh (Remix)",
+        "artist_name": "JID f/ Denzel Curry",
+        "video_id": "yaCNI_W-lNQ",
+        "capture_date": "2021-02-28 03:42:32.301301",
+        "source_id": 777,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bop",
-        "artist_name": "CJ",
-        "video_id": "ph4XVAPeZxk",
-        "capture_date": "2021-02-28 02:02:23.783783",
-        "source_id": 776,
+        "title": "Forest Fire",
+        "artist_name": "Jevon",
+        "video_id": "8Mhk0SAsY9E",
+        "capture_date": "2021-02-28 03:42:32.301301",
+        "source_id": 777,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hopprock",
-        "artist_name": "Madlib",
-        "video_id": "iOmgkVF5Anw",
-        "capture_date": "2021-02-28 02:02:23.783783",
-        "source_id": 776,
+        "title": "0006TeslaSpaceForce",
+        "artist_name": "Whiterosemoxie",
+        "video_id": "R-nv2OPtGb4",
+        "capture_date": "2021-02-28 03:42:32.301301",
+        "source_id": 777,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Kingdom",
+        "artist_name": "Morray",
+        "video_id": "X_lO3YrI4Y0",
+        "capture_date": "2021-02-28 03:42:32.301301",
+        "source_id": 777,
         "song_id": null,
         "duplicate": false
     }
@@ -197,11 +215,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Spicy Remix', 'Ty Dolla Sign f/ J Balvin, YG, Tyga, & Post Malone', NULL),
-  ('Burner on Deck', 'Fredo f/ Pop Smoke & Young Adz', NULL),
-  ('GFU', 'Yak Gotti & Yung Kayo f/ Sheck Wes', NULL),
-  ('Bop', 'CJ', NULL),
-  ('Hopprock', 'Madlib', NULL)
+  ('Gang Signs', 'Freddie Gibbs f/ Schoolboy Q', NULL),
+  ('Love You Too', 'Lil Durk f/ Kehlani', NULL),
+  ('Toxic Punk', 'YoungBoy Never Broke Again', NULL),
+  ('Bruuuh (Remix)', 'JID f/ Denzel Curry', NULL),
+  ('Forest Fire', 'Jevon', NULL),
+  ('0006TeslaSpaceForce', 'Whiterosemoxie', NULL),
+  ('Kingdom', 'Morray', NULL)
   ;
 
    // Update to song table
@@ -212,7 +232,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9818; // SELECT last_insert_rowid();
+  song_id = 9825; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -252,13 +272,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-02-28 02:02:23.781781', '776', '9770'),
-  ('2021-02-28 02:02:23.782782', '776', '9772'),
-  ('2021-02-28 02:02:23.782782', '776', '9814'),
-  ('2021-02-28 02:02:23.783783', '776', '9815'),
-  ('2021-02-28 02:02:23.783783', '776', '9816'),
-  ('2021-02-28 02:02:23.783783', '776', '9817'),
-  ('2021-02-28 02:02:23.783783', '776', '9818')
+  ('2021-02-28 03:42:32.299299', '777', '9774'),
+  ('2021-02-28 03:42:32.300300', '777', '9819'),
+  ('2021-02-28 03:42:32.301301', '777', '9777'),
+  ('2021-02-28 03:42:32.301301', '777', '9820'),
+  ('2021-02-28 03:42:32.301301', '777', '9821'),
+  ('2021-02-28 03:42:32.301301', '777', '9822'),
+  ('2021-02-28 03:42:32.301301', '777', '9823'),
+  ('2021-02-28 03:42:32.301301', '777', '9824'),
+  ('2021-02-28 03:42:32.301301', '777', '9825')
   ;
 
   // Update to source_song table
