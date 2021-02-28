@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Cardi B, Freddie Gibbs, Polo G, and More', '2021-02-05 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-cardi-b-freddie-gibbs-polo-g/morray-kingdom');
+    ('Complex', 'Best New Music This Week', 'Ariana Grande, Kenny Mason, Lil Yachty, and More', '2021-02-19 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-ariana-grande-kenny-mason-lil-yachty/kaytranada-caution');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 777; // SELECT last_insert_rowid();
+  source_id = 778; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -96,83 +96,83 @@
   songsData =
   [
     {
-        "title": "Up",
-        "artist_name": "Cardi B",
-        "video_id": "rCiBgLOcuKU",
-        "capture_date": "2021-02-28 03:42:32.299299",
-        "source_id": 777,
-        "song_id": 9774,
-        "duplicate": true
-    },
-    {
-        "title": "Gang Signs",
-        "artist_name": "Freddie Gibbs f/ Schoolboy Q",
-        "video_id": "_WnXMMOkubA",
-        "capture_date": "2021-02-28 03:42:32.300300",
-        "source_id": 777,
+        "title": "Go Crazy (Remix)",
+        "artist_name": "Young Thug & Chris Brown f/ Mulatto, Lil Durk & Future",
+        "video_id": "frM2nSbtWi4",
+        "capture_date": "2021-02-28 03:47:58.214214",
+        "source_id": 778,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "GNF (OKOKOK)",
-        "artist_name": "Polo G",
-        "video_id": "gxykC33lTiQ",
-        "capture_date": "2021-02-28 03:42:32.301301",
-        "source_id": 777,
-        "song_id": 9777,
-        "duplicate": true
-    },
-    {
-        "title": "Love You Too",
-        "artist_name": "Lil Durk f/ Kehlani",
-        "video_id": "GZagrum0fbQ",
-        "capture_date": "2021-02-28 03:42:32.301301",
-        "source_id": 777,
+        "title": "Hit Bout It",
+        "artist_name": "Lil Yachty f/ Kodak Black",
+        "video_id": "_XqKuHT_09Y",
+        "capture_date": "2021-02-28 03:47:58.216216",
+        "source_id": 778,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Toxic Punk",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": "q5Cq_bNbZjM",
-        "capture_date": "2021-02-28 03:42:32.301301",
-        "source_id": 777,
+        "title": "Set",
+        "artist_name": "CJ",
+        "video_id": "I1BbugHHit0",
+        "capture_date": "2021-02-28 03:47:58.216216",
+        "source_id": 778,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bruuuh (Remix)",
-        "artist_name": "JID f/ Denzel Curry",
-        "video_id": "yaCNI_W-lNQ",
-        "capture_date": "2021-02-28 03:42:32.301301",
-        "source_id": 777,
+        "title": "Southside Forever Freestyle",
+        "artist_name": "Megan Thee Stallion",
+        "video_id": "S7UV0RSWyyQ",
+        "capture_date": "2021-02-28 03:47:58.216216",
+        "source_id": 778,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Forest Fire",
-        "artist_name": "Jevon",
-        "video_id": "8Mhk0SAsY9E",
-        "capture_date": "2021-02-28 03:42:32.301301",
-        "source_id": 777,
+        "title": "test drive",
+        "artist_name": "Ariana Grande",
+        "video_id": "rFA11HZu-RU",
+        "capture_date": "2021-02-28 03:47:58.216216",
+        "source_id": 778,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "0006TeslaSpaceForce",
-        "artist_name": "Whiterosemoxie",
-        "video_id": "R-nv2OPtGb4",
-        "capture_date": "2021-02-28 03:42:32.301301",
-        "source_id": 777,
+        "title": "Say A Prayer",
+        "artist_name": "Jim Jones & Harry Fraud, f/ Currensy & Jay Worthy",
+        "video_id": "DZNFPUMDnGU",
+        "capture_date": "2021-02-28 03:47:58.216216",
+        "source_id": 778,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kingdom",
-        "artist_name": "Morray",
-        "video_id": "X_lO3YrI4Y0",
-        "capture_date": "2021-02-28 03:42:32.301301",
-        "source_id": 777,
+        "title": "Partments",
+        "artist_name": "Kenny Mason",
+        "video_id": "rBAKvRCNixo",
+        "capture_date": "2021-02-28 03:47:58.216216",
+        "source_id": 778,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Gasoline (Remix)",
+        "artist_name": "Haim f/ Taylor Swift",
+        "video_id": "kQ15Nq1XjRA",
+        "capture_date": "2021-02-28 03:47:58.216216",
+        "source_id": 778,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Caution",
+        "artist_name": "Kaytranada",
+        "video_id": "E0PT0Ez4tSQ",
+        "capture_date": "2021-02-28 03:47:58.216216",
+        "source_id": 778,
         "song_id": null,
         "duplicate": false
     }
@@ -180,8 +180,8 @@
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
-    title LIKE '%Stay Down%'
-    AND artist_name LIKE '%durk%'
+    title LIKE '%Set%'
+    AND artist_name LIKE '%CJ%'
   ;
 
   // If any changes:
@@ -215,13 +215,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Gang Signs', 'Freddie Gibbs f/ Schoolboy Q', NULL),
-  ('Love You Too', 'Lil Durk f/ Kehlani', NULL),
-  ('Toxic Punk', 'YoungBoy Never Broke Again', NULL),
-  ('Bruuuh (Remix)', 'JID f/ Denzel Curry', NULL),
-  ('Forest Fire', 'Jevon', NULL),
-  ('0006TeslaSpaceForce', 'Whiterosemoxie', NULL),
-  ('Kingdom', 'Morray', NULL)
+  ('Go Crazy (Remix)', 'Young Thug & Chris Brown f/ Mulatto, Lil Durk & Future', NULL),
+  ('Hit Bout It', 'Lil Yachty f/ Kodak Black', NULL),
+  ('Set', 'CJ', NULL),
+  ('Southside Forever Freestyle', 'Megan Thee Stallion', NULL),
+  ('test drive', 'Ariana Grande', NULL),
+  ('Say A Prayer', 'Jim Jones & Harry Fraud, f/ Currensy & Jay Worthy', NULL),
+  ('Partments', 'Kenny Mason', NULL),
+  ('Gasoline (Remix)', 'Haim f/ Taylor Swift', NULL),
+  ('Caution', 'Kaytranada', NULL)
   ;
 
    // Update to song table
@@ -232,7 +234,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9825; // SELECT last_insert_rowid();
+  song_id = 9834; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -272,15 +274,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-02-28 03:42:32.299299', '777', '9774'),
-  ('2021-02-28 03:42:32.300300', '777', '9819'),
-  ('2021-02-28 03:42:32.301301', '777', '9777'),
-  ('2021-02-28 03:42:32.301301', '777', '9820'),
-  ('2021-02-28 03:42:32.301301', '777', '9821'),
-  ('2021-02-28 03:42:32.301301', '777', '9822'),
-  ('2021-02-28 03:42:32.301301', '777', '9823'),
-  ('2021-02-28 03:42:32.301301', '777', '9824'),
-  ('2021-02-28 03:42:32.301301', '777', '9825')
+  ('2021-02-28 03:47:58.214214', '778', '9826'),
+  ('2021-02-28 03:47:58.216216', '778', '9827'),
+  ('2021-02-28 03:47:58.216216', '778', '9828'),
+  ('2021-02-28 03:47:58.216216', '778', '9829'),
+  ('2021-02-28 03:47:58.216216', '778', '9830'),
+  ('2021-02-28 03:47:58.216216', '778', '9831'),
+  ('2021-02-28 03:47:58.216216', '778', '9832'),
+  ('2021-02-28 03:47:58.216216', '778', '9833'),
+  ('2021-02-28 03:47:58.216216', '778', '9834')
   ;
 
   // Update to source_song table
