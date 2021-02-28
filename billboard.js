@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of February 13, 2021', '2021-02-13 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-02-13');
+    ('Billboard', 'The Hot 100', 'Week of February 20, 2021', '2021-02-20 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-02-20');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 770; // SELECT last_insert_rowid();
+  source_id = 771; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -93,56 +93,110 @@
   songsData =
   [
     {
-        "title": "Finesse Out The Gang Way",
-        "artist_name": "Lil Durk Featuring Lil Baby",
+        "title": "Up",
+        "artist_name": "Cardi B",
         "video_id": null,
-        "capture_date": "2021-02-27 08:23:17.500500",
-        "source_id": 770,
+        "capture_date": "2021-02-27 08:29:25.097097",
+        "source_id": 771,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Should've Ducked",
-        "artist_name": "Lil Durk Featuring Pooh Shiesty",
+        "title": "Time Today",
+        "artist_name": "Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2021-02-27 08:23:17.501501",
-        "source_id": 770,
+        "capture_date": "2021-02-27 08:29:25.101101",
+        "source_id": 771,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gravity",
-        "artist_name": "Brent Faiyaz & DJ Dahi Featuring Tyler, The Creator",
+        "title": "Neighbors",
+        "artist_name": "Pooh Shiesty Featuring BIG30",
         "video_id": null,
-        "capture_date": "2021-02-27 08:23:17.502502",
-        "source_id": 770,
+        "capture_date": "2021-02-27 08:29:25.101101",
+        "source_id": 771,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Baila Conmigo",
-        "artist_name": "Selena Gomez With Rauw Alejandro",
+        "title": "GNF (OKOKOK)",
+        "artist_name": "Polo G",
         "video_id": null,
-        "capture_date": "2021-02-27 08:23:17.502502",
-        "source_id": 770,
+        "capture_date": "2021-02-27 08:29:25.102102",
+        "source_id": 771,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kanye Krazy",
-        "artist_name": "Lil Durk",
+        "title": "Glad You Exist",
+        "artist_name": "Dan + Shay",
         "video_id": null,
-        "capture_date": "2021-02-27 08:23:17.503503",
-        "source_id": 770,
+        "capture_date": "2021-02-27 08:29:25.102102",
+        "source_id": 771,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fake Woke",
-        "artist_name": "Tom MacDonald",
+        "title": "Provide",
+        "artist_name": "G-Eazy Featuring Chris Brown & Mark Morrison",
         "video_id": null,
-        "capture_date": "2021-02-27 08:23:17.503503",
-        "source_id": 770,
+        "capture_date": "2021-02-27 08:29:25.102102",
+        "source_id": 771,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Box Of Churches",
+        "artist_name": "Pooh Shiesty Featuring 21 Savage",
+        "video_id": null,
+        "capture_date": "2021-02-27 08:29:25.102102",
+        "source_id": 771,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "My Head And My Heart",
+        "artist_name": "Ava Max",
+        "video_id": null,
+        "capture_date": "2021-02-27 08:29:25.102102",
+        "source_id": 771,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "No More Parties",
+        "artist_name": "Coi Leray",
+        "video_id": null,
+        "capture_date": "2021-02-27 08:29:25.102102",
+        "source_id": 771,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bandido",
+        "artist_name": "Myke Towers & Juhn",
+        "video_id": null,
+        "capture_date": "2021-02-27 08:29:25.103103",
+        "source_id": 771,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lifestyle",
+        "artist_name": "Jason Derulo Featuring Adam Levine",
+        "video_id": null,
+        "capture_date": "2021-02-27 08:29:25.103103",
+        "source_id": 771,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Quicksand",
+        "artist_name": "Morray",
+        "video_id": null,
+        "capture_date": "2021-02-27 08:29:25.103103",
+        "source_id": 771,
         "song_id": null,
         "duplicate": false
     }
@@ -150,8 +204,8 @@
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
-    title LIKE '%Stay Down%'
-    AND artist_name LIKE '%durk%'
+    title LIKE '%Up%'
+    AND artist_name LIKE '%Cardi%'
   ;
 
   // If duplicates:
@@ -185,12 +239,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Finesse Out The Gang Way', 'Lil Durk Featuring Lil Baby', NULL),
-  ('Should’ve Ducked', 'Lil Durk Featuring Pooh Shiesty', NULL),
-  ('Gravity', 'Brent Faiyaz & DJ Dahi Featuring Tyler, The Creator', NULL),
-  ('Baila Conmigo', 'Selena Gomez With Rauw Alejandro', NULL),
-  ('Kanye Krazy', 'Lil Durk', NULL),
-  ('Fake Woke', 'Tom MacDonald', NULL)
+  ('Up', 'Cardi B', NULL),
+  ('Time Today', 'Moneybagg Yo', NULL),
+  ('Neighbors', 'Pooh Shiesty Featuring BIG30', NULL),
+  ('GNF (OKOKOK)', 'Polo G', NULL),
+  ('Glad You Exist', 'Dan + Shay', NULL),
+  ('Provide', 'G-Eazy Featuring Chris Brown & Mark Morrison', NULL),
+  ('Box Of Churches', 'Pooh Shiesty Featuring 21 Savage', NULL),
+  ('My Head And My Heart', 'Ava Max', NULL),
+  ('No More Parties', 'Coi Leray', NULL),
+  ('Bandido', 'Myke Towers & Juhn', NULL),
+  ('Lifestyle', 'Jason Derulo Featuring Adam Levine', NULL),
+  ('Quicksand', 'Morray', NULL)
   ;
 
    // Update to song table
@@ -201,7 +261,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9773; // SELECT last_insert_rowid();
+  song_id = 9785; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -241,12 +301,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-02-27 08:23:17.500500', '770', '9768'),
-  ('2021-02-27 08:23:17.501501', '770', '9769'),
-  ('2021-02-27 08:23:17.502502', '770', '9770'),
-  ('2021-02-27 08:23:17.502502', '770', '9771'),
-  ('2021-02-27 08:23:17.503503', '770', '9772'),
-  ('2021-02-27 08:23:17.503503', '770', '9773')
+  ('2021-02-27 08:29:25.097097', '771', '9774'),
+  ('2021-02-27 08:29:25.101101', '771', '9775'),
+  ('2021-02-27 08:29:25.101101', '771', '9776'),
+  ('2021-02-27 08:29:25.102102', '771', '9777'),
+  ('2021-02-27 08:29:25.102102', '771', '9778'),
+  ('2021-02-27 08:29:25.102102', '771', '9779'),
+  ('2021-02-27 08:29:25.102102', '771', '9780'),
+  ('2021-02-27 08:29:25.102102', '771', '9781'),
+  ('2021-02-27 08:29:25.102102', '771', '9782'),
+  ('2021-02-27 08:29:25.103103', '771', '9783'),
+  ('2021-02-27 08:29:25.103103', '771', '9784'),
+  ('2021-02-27 08:29:25.103103', '771', '9785')
   ;
 
   // Update to source_song table
