@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of January 16, 2021', '2021-01-16 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-01-16');
+    ('Billboard', 'The Hot 100', 'Week of January 23, 2021', '2021-01-23 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-01-23');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 766; // SELECT last_insert_rowid();
+  source_id = 767; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -93,83 +93,173 @@
   songsData =
   [
     {
-        "title": "Anyone",
-        "artist_name": "Justin Bieber",
+        "title": "Drivers License",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2021-02-27 05:01:20.636636",
-        "source_id": 766,
+        "capture_date": "2021-02-27 07:48:12.406406",
+        "source_id": 767,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Long Live",
-        "artist_name": "Florida Georgia Line",
+        "title": "Wasted On You",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2021-02-27 05:01:20.639639",
-        "source_id": 766,
+        "capture_date": "2021-02-27 07:48:12.407407",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sand In My Boots",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.408408",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Best Friend",
+        "artist_name": "Saweetie Featuring Doja Cat",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.408408",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Warning",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.408408",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "865",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.408408",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dangerous",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.409409",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Neon Eyes",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.409409",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "More Surprised Than Me",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.409409",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Whiskey'd My Way",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.409409",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Your Bartender",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.409409",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Outlaw",
+        "artist_name": "Morgan Wallen Featuring Ben Burgess",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.409409",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Only Thing That's Gone",
+        "artist_name": "Morgan Wallen Featuring Chris Stapleton",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.410410",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Streets",
+        "artist_name": "Doja Cat",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.410410",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "This Bar",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.410410",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wonderin' Bout The Wind",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.410410",
+        "source_id": 767,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pick Up Your Feelings",
+        "artist_name": "Jazmine Sullivan",
+        "video_id": null,
+        "capture_date": "2021-02-27 07:48:12.410410",
+        "source_id": 767,
         "song_id": null,
         "duplicate": false
     },
     {
         "title": "Girl Like Me",
-        "artist_name": "Black Eyed Peas X Shakira",
+        "artist_name": "Jazmine Sullivan Featuring H.E.R.",
         "video_id": null,
-        "capture_date": "2021-02-27 05:01:20.639639",
-        "source_id": 766,
+        "capture_date": "2021-02-27 07:48:12.410410",
+        "source_id": 767,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Momma's House",
-        "artist_name": "Dustin Lynch",
+        "title": "Buss It",
+        "artist_name": "Erica Banks",
         "video_id": null,
-        "capture_date": "2021-02-27 05:01:20.639639",
-        "source_id": 766,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Back In Blood",
-        "artist_name": "Pooh Shiesty Featuring Lil Durk",
-        "video_id": null,
-        "capture_date": "2021-02-27 05:01:20.639639",
-        "source_id": 766,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hell Of A View",
-        "artist_name": "Eric Church",
-        "video_id": null,
-        "capture_date": "2021-02-27 05:01:20.639639",
-        "source_id": 766,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Almost Maybes",
-        "artist_name": "Jordan Davis",
-        "video_id": null,
-        "capture_date": "2021-02-27 05:01:20.639639",
-        "source_id": 766,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lady",
-        "artist_name": "Brett Young",
-        "video_id": null,
-        "capture_date": "2021-02-27 05:01:20.639639",
-        "source_id": 766,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Heat Waves",
-        "artist_name": "Glass Animals",
-        "video_id": null,
-        "capture_date": "2021-02-27 05:01:20.639639",
-        "source_id": 766,
+        "capture_date": "2021-02-27 07:48:12.410410",
+        "source_id": 767,
         "song_id": null,
         "duplicate": false
     }
@@ -212,15 +302,25 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Anyone', 'Justin Bieber', NULL),
-  ('Long Live', 'Florida Georgia Line', NULL),
-  ('Girl Like Me', 'Black Eyed Peas X Shakira', NULL),
-  ('Momma’s House', 'Dustin Lynch', NULL),
-  ('Back In Blood', 'Pooh Shiesty Featuring Lil Durk', NULL),
-  ('Hell Of A View', 'Eric Church', NULL),
-  ('Almost Maybes', 'Jordan Davis', NULL),
-  ('Lady', 'Brett Young', NULL),
-  ('Heat Waves', 'Glass Animals', NULL)
+  ('Drivers License', 'Olivia Rodrigo', NULL),
+  ('Wasted On You', 'Morgan Wallen', NULL),
+  ('Sand In My Boots', 'Morgan Wallen', NULL),
+  ('Best Friend', 'Saweetie Featuring Doja Cat', NULL),
+  ('Warning', 'Morgan Wallen', NULL),
+  ('865', 'Morgan Wallen', NULL),
+  ('Dangerous', 'Morgan Wallen', NULL),
+  ('Neon Eyes', 'Morgan Wallen', NULL),
+  ('More Surprised Than Me', 'Morgan Wallen', NULL),
+  ('Whiskey’d My Way', 'Morgan Wallen', NULL),
+  ('Your Bartender', 'Morgan Wallen', NULL),
+  ('Outlaw', 'Morgan Wallen Featuring Ben Burgess', NULL),
+  ('Only Thing That’s Gone', 'Morgan Wallen Featuring Chris Stapleton', NULL),
+  ('Streets', 'Doja Cat', NULL),
+  ('This Bar', 'Morgan Wallen', NULL),
+  ('Wonderin’ Bout The Wind', 'Morgan Wallen', NULL),
+  ('Pick Up Your Feelings', 'Jazmine Sullivan', NULL),
+  ('Girl Like Me', 'Jazmine Sullivan Featuring H.E.R.', NULL),
+  ('Buss It', 'Erica Banks', NULL)
   ;
 
    // Update to song table
@@ -231,7 +331,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9737; // SELECT last_insert_rowid();
+  song_id = 9756; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -271,15 +371,25 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-02-27 05:01:20.636636', '766', '9729'),
-  ('2021-02-27 05:01:20.639639', '766', '9730'),
-  ('2021-02-27 05:01:20.639639', '766', '9731'),
-  ('2021-02-27 05:01:20.639639', '766', '9732'),
-  ('2021-02-27 05:01:20.639639', '766', '9733'),
-  ('2021-02-27 05:01:20.639639', '766', '9734'),
-  ('2021-02-27 05:01:20.639639', '766', '9735'),
-  ('2021-02-27 05:01:20.639639', '766', '9736'),
-  ('2021-02-27 05:01:20.639639', '766', '9737')
+  ('2021-02-27 07:48:12.406406', '767', '9738'),
+  ('2021-02-27 07:48:12.407407', '767', '9739'),
+  ('2021-02-27 07:48:12.408408', '767', '9740'),
+  ('2021-02-27 07:48:12.408408', '767', '9741'),
+  ('2021-02-27 07:48:12.408408', '767', '9742'),
+  ('2021-02-27 07:48:12.408408', '767', '9743'),
+  ('2021-02-27 07:48:12.409409', '767', '9744'),
+  ('2021-02-27 07:48:12.409409', '767', '9745'),
+  ('2021-02-27 07:48:12.409409', '767', '9746'),
+  ('2021-02-27 07:48:12.409409', '767', '9747'),
+  ('2021-02-27 07:48:12.409409', '767', '9748'),
+  ('2021-02-27 07:48:12.409409', '767', '9749'),
+  ('2021-02-27 07:48:12.410410', '767', '9750'),
+  ('2021-02-27 07:48:12.410410', '767', '9751'),
+  ('2021-02-27 07:48:12.410410', '767', '9752'),
+  ('2021-02-27 07:48:12.410410', '767', '9753'),
+  ('2021-02-27 07:48:12.410410', '767', '9754'),
+  ('2021-02-27 07:48:12.410410', '767', '9755'),
+  ('2021-02-27 07:48:12.410410', '767', '9756')
   ;
 
   // Update to source_song table
