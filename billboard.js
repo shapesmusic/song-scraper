@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of January 30, 2021', '2021-01-30 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-01-30');
+    ('Billboard', 'The Hot 100', 'Week of February 6, 2021', '2021-02-06 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-02-06');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 768; // SELECT last_insert_rowid();
+  source_id = 769; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -93,74 +93,38 @@
   songsData =
   [
     {
-        "title": "Bad Boy",
-        "artist_name": "Juice WRLD & Young Thug",
+        "title": "Skin",
+        "artist_name": "Sabrina Carpenter",
         "video_id": null,
-        "capture_date": "2021-02-27 08:00:48.001001",
-        "source_id": 768,
+        "capture_date": "2021-02-27 08:17:07.873873",
+        "source_id": 769,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Masterpiece",
-        "artist_name": "DaBaby",
+        "title": "Lo Vas A Olvidar",
+        "artist_name": "Billie Eilish & ROSALIA",
         "video_id": null,
-        "capture_date": "2021-02-27 08:00:48.002002",
-        "source_id": 768,
+        "capture_date": "2021-02-27 08:17:07.873873",
+        "source_id": 769,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Undivided",
-        "artist_name": "Tim McGraw & Tyler Hubbard",
+        "title": "Opp Stoppa",
+        "artist_name": "YBN Nahmir Featuring 21 Savage",
         "video_id": null,
-        "capture_date": "2021-02-27 08:00:48.003003",
-        "source_id": 768,
+        "capture_date": "2021-02-27 08:17:07.880880",
+        "source_id": 769,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Beat Box",
-        "artist_name": "SpotemGottem",
+        "title": "Antes",
+        "artist_name": "Anuel AA & Ozuna",
         "video_id": null,
-        "capture_date": "2021-02-27 08:00:48.003003",
-        "source_id": 768,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Goosebumps (Remix)",
-        "artist_name": "Travis Scott & HVME",
-        "video_id": null,
-        "capture_date": "2021-02-27 08:00:48.003003",
-        "source_id": 768,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "De Una Vez",
-        "artist_name": "Selena Gomez",
-        "video_id": null,
-        "capture_date": "2021-02-27 08:00:48.003003",
-        "source_id": 768,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Better Days",
-        "artist_name": "Ant Clemons Featuring Justin Timberlake",
-        "video_id": null,
-        "capture_date": "2021-02-27 08:00:48.003003",
-        "source_id": 768,
-        "song_id": 9701,
-        "duplicate": true
-    },
-    {
-        "title": "Somebody Like That",
-        "artist_name": "Tenille Arts",
-        "video_id": null,
-        "capture_date": "2021-02-27 08:00:48.003003",
-        "source_id": 768,
+        "capture_date": "2021-02-27 08:17:07.881881",
+        "source_id": 769,
         "song_id": null,
         "duplicate": false
     }
@@ -203,13 +167,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Bad Boy', 'Juice WRLD & Young Thug', NULL),
-  ('Masterpiece', 'DaBaby', NULL),
-  ('Undivided', 'Tim McGraw & Tyler Hubbard', NULL),
-  ('Beat Box', 'SpotemGottem', NULL),
-  ('Goosebumps (Remix)', 'Travis Scott & HVME', NULL),
-  ('De Una Vez', 'Selena Gomez', NULL),
-  ('Somebody Like That', 'Tenille Arts', NULL)
+  ('Skin', 'Sabrina Carpenter', NULL),
+  ('Lo Vas A Olvidar', 'Billie Eilish & ROSALIA', NULL),
+  ('Opp Stoppa', 'YBN Nahmir Featuring 21 Savage', NULL),
+  ('Antes', 'Anuel AA & Ozuna', NULL)
   ;
 
    // Update to song table
@@ -220,7 +181,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9763; // SELECT last_insert_rowid();
+  song_id = 9767; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -260,14 +221,10 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-02-27 08:00:48.001001', '768', '9757'),
-  ('2021-02-27 08:00:48.002002', '768', '9758'),
-  ('2021-02-27 08:00:48.003003', '768', '9759'),
-  ('2021-02-27 08:00:48.003003', '768', '9760'),
-  ('2021-02-27 08:00:48.003003', '768', '9761'),
-  ('2021-02-27 08:00:48.003003', '768', '9762'),
-  ('2021-02-27 08:00:48.003003', '768', '9701'),
-  ('2021-02-27 08:00:48.003003', '768', '9763')
+  ('2021-02-27 08:17:07.873873', '769', '9764'),
+  ('2021-02-27 08:17:07.873873', '769', '9765'),
+  ('2021-02-27 08:17:07.880880', '769', '9766'),
+  ('2021-02-27 08:17:07.881881', '769', '9767')
   ;
 
   // Update to source_song table
