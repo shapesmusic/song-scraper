@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Gwen Stefani’s Ska-Pop Flashback, and 10 More New Songs', '2020-12-11 09:27:22.000000', 'https://www.nytimes.com/2020/12/11/arts/music/playlist-gwen-stefani-sturgill-simpson.html');
+    ('New York Times', 'The Playlist', 'Taylor Swift’s Ode to Moving On, and 9 More New Songs', '2021-01-08 08:19:33.000000', 'https://www.nytimes.com/2021/01/08/arts/music/playlist-taylor-swift-saweetie-doja-cat.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 760; // SELECT last_insert_rowid();
+  source_id = 793; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -95,92 +95,74 @@
   songsData =
   [
     {
-        "title": "Let Me Reintroduce Myself",
-        "artist_name": "Gwen Stefani",
+        "title": "It’s Time to Go",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2020-12-22 03:17:03.257257",
-        "source_id": 760,
+        "capture_date": "2021-03-01 03:31:22.258258",
+        "source_id": 793,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Easy",
-        "artist_name": "Troye Sivan, Kacey Musgraves and Mark Ronson",
+        "title": "Love Is Back",
+        "artist_name": "Celeste",
         "video_id": null,
-        "capture_date": "2020-12-22 03:17:03.259259",
-        "source_id": 760,
+        "capture_date": "2021-03-01 03:31:22.259259",
+        "source_id": 793,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Dead Walk",
-        "artist_name": "John Carpenter",
+        "title": "Best Friend",
+        "artist_name": "Saweetie featuring Doja Cat",
         "video_id": null,
-        "capture_date": "2020-12-22 03:17:03.259259",
-        "source_id": 760,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lurkin",
-        "artist_name": "Funkmaster Flex featuring King Von",
-        "video_id": null,
-        "capture_date": "2020-12-22 03:17:03.259259",
-        "source_id": 760,
-        "song_id": 9676,
+        "capture_date": "2021-03-01 03:31:22.259259",
+        "source_id": 793,
+        "song_id": 9741,
         "duplicate": true
     },
     {
-        "title": "3:30 in Houston",
-        "artist_name": "Benny the Butcher",
+        "title": "Come in Closer",
+        "artist_name": "Rhye",
         "video_id": null,
-        "capture_date": "2020-12-22 03:17:03.259259",
-        "source_id": 760,
-        "song_id": 9674,
-        "duplicate": true
-    },
-    {
-        "title": "Pain",
-        "artist_name": "King Princess",
-        "video_id": null,
-        "capture_date": "2020-12-22 03:17:03.259259",
-        "source_id": 760,
+        "capture_date": "2021-03-01 03:31:22.259259",
+        "source_id": 793,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Oh Sarah",
-        "artist_name": "Sturgill Simpson",
+        "title": "Delicate Limbs",
+        "artist_name": "Virgil Abloh featuring serpentwithfeet",
         "video_id": null,
-        "capture_date": "2020-12-22 03:17:03.259259",
-        "source_id": 760,
+        "capture_date": "2021-03-01 03:31:22.259259",
+        "source_id": 793,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Another You",
-        "artist_name": "Elle King",
+        "title": "Words",
+        "artist_name": "Barry Gibb featuring Dolly Parton",
         "video_id": null,
-        "capture_date": "2020-12-22 03:17:03.259259",
-        "source_id": 760,
+        "capture_date": "2021-03-01 03:31:22.259259",
+        "source_id": 793,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Alone in Halls",
-        "artist_name": "El Perro del Mar featuring Blood Orange",
+        "title": "Everything I Had",
+        "artist_name": "Sun June",
         "video_id": null,
-        "capture_date": "2020-12-22 03:17:03.259259",
-        "source_id": 760,
+        "capture_date": "2021-03-01 03:31:22.259259",
+        "source_id": 793,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ferry",
-        "artist_name": "Moontype",
+        "title": "Weeping in the Promised Land",
+        "artist_name": "John Fogerty",
         "video_id": null,
-        "capture_date": "2020-12-22 03:17:03.259259",
-        "source_id": 760,
+        "capture_date": "2021-03-01 03:31:22.259259",
+        "source_id": 793,
         "song_id": null,
         "duplicate": false
     }
@@ -223,14 +205,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Let Me Reintroduce Myself', 'Gwen Stefani', NULL),
-    ('Easy', 'Troye Sivan, Kacey Musgraves and Mark Ronson', NULL),
-    ('The Dead Walk', 'John Carpenter', NULL),
-    ('Pain', 'King Princess', NULL),
-    ('Oh Sarah', 'Sturgill Simpson', NULL),
-    ('Another You', 'Elle King', NULL),
-    ('Alone in Halls', 'El Perro del Mar featuring Blood Orange', NULL),
-    ('Ferry', 'Moontype', NULL)
+  ('It’s Time to Go', 'Taylor Swift', NULL),
+  ('Love Is Back', 'Celeste', NULL),
+  ('Come in Closer', 'Rhye', NULL),
+  ('Delicate Limbs', 'Virgil Abloh featuring serpentwithfeet', NULL),
+  ('Words', 'Barry Gibb featuring Dolly Parton', NULL),
+  ('Everything I Had', 'Sun June', NULL),
+  ('Weeping in the Promised Land', 'John Fogerty', NULL)
   ;
 
    // Update to song table
@@ -241,7 +222,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9709; // SELECT last_insert_rowid();
+  song_id = 9857; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -281,16 +262,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-12-22 03:17:03.257257', '760', '9702'),
-    ('2020-12-22 03:17:03.259259', '760', '9703'),
-    ('2020-12-22 03:17:03.259259', '760', '9704'),
-    ('2020-12-22 03:17:03.259259', '760', '9676'),
-    ('2020-12-22 03:17:03.259259', '760', '9674'),
-    ('2020-12-22 03:17:03.259259', '760', '9705'),
-    ('2020-12-22 03:17:03.259259', '760', '9706'),
-    ('2020-12-22 03:17:03.259259', '760', '9707'),
-    ('2020-12-22 03:17:03.259259', '760', '9708'),
-    ('2020-12-22 03:17:03.259259', '760', '9709')
+  ('2021-03-01 03:31:22.258258', '793', '9851'),
+  ('2021-03-01 03:31:22.259259', '793', '9852'),
+  ('2021-03-01 03:31:22.259259', '793', '9741'),
+  ('2021-03-01 03:31:22.259259', '793', '9853'),
+  ('2021-03-01 03:31:22.259259', '793', '9854'),
+  ('2021-03-01 03:31:22.259259', '793', '9855'),
+  ('2021-03-01 03:31:22.259259', '793', '9856'),
+  ('2021-03-01 03:31:22.259259', '793', '9857')
   ;
 
   // Update to source_song table
