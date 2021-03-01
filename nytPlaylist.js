@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'The Blockbuster ‘Drivers License,’ a Possible Reply and 7 More New Songs', '2021-01-15 08:16:31.000000', 'https://www.nytimes.com/2021/01/15/arts/music/playlist-drivers-license-lana-del-rey.html');
+    ('New York Times', 'The Playlist', 'Billie Eilish and Rosalía Join Eccentric Forces, and 12 More New Songs', '2021-01-22 10:13:12.000000', 'https://www.nytimes.com/2021/01/22/arts/music/playlist-billie-eilish-rosalia.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 794; // SELECT last_insert_rowid();
+  source_id = 795; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -95,74 +95,101 @@
   songsData =
   [
     {
-        "title": "Drivers License",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Lo Vas A Olvidar",
+        "artist_name": "Billie Eilish and Rosalía",
         "video_id": null,
-        "capture_date": "2021-03-01 03:41:45.605605",
-        "source_id": 794,
-        "song_id": 9738,
+        "capture_date": "2021-03-01 03:51:04.306306",
+        "source_id": 795,
+        "song_id": 9765,
         "duplicate": true
     },
     {
-        "title": "Lie Lie Lie",
-        "artist_name": "Joshua Bassett",
+        "title": "All My Favorite Songs",
+        "artist_name": "Weezer",
         "video_id": null,
-        "capture_date": "2021-03-01 03:41:45.605605",
-        "source_id": 794,
+        "capture_date": "2021-03-01 03:51:04.307307",
+        "source_id": 795,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Chemtrails Over the Country Club",
-        "artist_name": "Lana Del Rey",
+        "title": "21st Century Vampire",
+        "artist_name": "Lilhuddy",
         "video_id": null,
-        "capture_date": "2021-03-01 03:41:45.607607",
-        "source_id": 794,
+        "capture_date": "2021-03-01 03:51:04.307307",
+        "source_id": 795,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In Quiet Moments",
-        "artist_name": "Lost Horizons featuring Ural Thomas",
+        "title": "Kash App",
+        "artist_name": "BRS Kash featuring Mulatto",
         "video_id": null,
-        "capture_date": "2021-03-01 03:41:45.607607",
-        "source_id": 794,
+        "capture_date": "2021-03-01 03:51:04.307307",
+        "source_id": 795,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Roaring 20s",
-        "artist_name": "Flo Milli",
+        "title": "Real Lovin’",
+        "artist_name": "King Klavé featuring J. Hoard",
         "video_id": null,
-        "capture_date": "2021-03-01 03:41:45.607607",
-        "source_id": 794,
-        "song_id": 9801,
-        "duplicate": true
-    },
-    {
-        "title": "Listen!!!",
-        "artist_name": "Aly & AJ",
-        "video_id": null,
-        "capture_date": "2021-03-01 03:41:45.607607",
-        "source_id": 794,
+        "capture_date": "2021-03-01 03:51:04.307307",
+        "source_id": 795,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tough to Let Go",
-        "artist_name": "Drive-By Truckers",
+        "title": "Find Light",
+        "artist_name": "Simon Dufour and Aaron Day featuring J. Hoard",
         "video_id": null,
-        "capture_date": "2021-03-01 03:41:45.607607",
-        "source_id": 794,
+        "capture_date": "2021-03-01 03:51:04.307307",
+        "source_id": 795,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Te Quiero Olvidar",
-        "artist_name": "Salt Cathedral featuring Ximena Sariñana",
+        "title": "Ropa Cara",
+        "artist_name": "Camilo",
         "video_id": null,
-        "capture_date": "2021-03-01 03:41:45.607607",
-        "source_id": 794,
+        "capture_date": "2021-03-01 03:51:04.307307",
+        "source_id": 795,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Badibaba",
+        "artist_name": "Goat Girl",
+        "video_id": null,
+        "capture_date": "2021-03-01 03:51:04.307307",
+        "source_id": 795,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Crushed Velvet",
+        "artist_name": "Sheer Mag",
+        "video_id": null,
+        "capture_date": "2021-03-01 03:51:04.307307",
+        "source_id": 795,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Already Gone",
+        "artist_name": "Carm featuring Georgia Hubley and Ira Kaplan",
+        "video_id": null,
+        "capture_date": "2021-03-01 03:51:04.307307",
+        "source_id": 795,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Someone Else",
+        "artist_name": "Deb Never",
+        "video_id": null,
+        "capture_date": "2021-03-01 03:51:04.307307",
+        "source_id": 795,
         "song_id": null,
         "duplicate": false
     }
@@ -205,12 +232,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Lie Lie Lie', 'Joshua Bassett', NULL),
-  ('Chemtrails Over the Country Club', 'Lana Del Rey', NULL),
-  ('In Quiet Moments', 'Lost Horizons featuring Ural Thomas', NULL),
-  ('Listen!!!', 'Aly & AJ', NULL),
-  ('Tough to Let Go', 'Drive-By Truckers', NULL),
-  ('Te Quiero Olvidar', 'Salt Cathedral featuring Ximena Sariñana', NULL)
+  ('All My Favorite Songs', 'Weezer', NULL),
+  ('21st Century Vampire', 'Lilhuddy', NULL),
+  ('Kash App', 'BRS Kash featuring Mulatto', NULL),
+  ('Real Lovin’', 'King Klavé featuring J. Hoard', NULL),
+  ('Find Light', 'Simon Dufour and Aaron Day featuring J. Hoard', NULL),
+  ('Ropa Cara', 'Camilo', NULL),
+  ('Badibaba', 'Goat Girl', NULL),
+  ('Crushed Velvet', 'Sheer Mag', NULL),
+  ('Already Gone', 'Carm featuring Georgia Hubley and Ira Kaplan', NULL),
+  ('Someone Else', 'Deb Never', NULL)
   ;
 
    // Update to song table
@@ -221,7 +252,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9863; // SELECT last_insert_rowid();
+  song_id = 9873; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -261,14 +292,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-01 03:41:45.605605', '794', '9738'),
-  ('2021-03-01 03:41:45.605605', '794', '9858'),
-  ('2021-03-01 03:41:45.607607', '794', '9859'),
-  ('2021-03-01 03:41:45.607607', '794', '9860'),
-  ('2021-03-01 03:41:45.607607', '794', '9801'),
-  ('2021-03-01 03:41:45.607607', '794', '9861'),
-  ('2021-03-01 03:41:45.607607', '794', '9862'),
-  ('2021-03-01 03:41:45.607607', '794', '9863')
+  ('2021-03-01 03:51:04.306306', '795', '9765'),
+  ('2021-03-01 03:51:04.307307', '795', '9864'),
+  ('2021-03-01 03:51:04.307307', '795', '9865'),
+  ('2021-03-01 03:51:04.307307', '795', '9866'),
+  ('2021-03-01 03:51:04.307307', '795', '9867'),
+  ('2021-03-01 03:51:04.307307', '795', '9868'),
+  ('2021-03-01 03:51:04.307307', '795', '9869'),
+  ('2021-03-01 03:51:04.307307', '795', '9870'),
+  ('2021-03-01 03:51:04.307307', '795', '9871'),
+  ('2021-03-01 03:51:04.307307', '795', '9872'),
+  ('2021-03-01 03:51:04.307307', '795', '9873')
   ;
 
   // Update to source_song table
