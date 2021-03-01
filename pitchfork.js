@@ -68,13 +68,25 @@
   console.log(String(sources));
 
 
-  // Paste sources into the SQL statement, but keep only new sources
+  // Paste sources into the SQL statement, and prune out existing sources
+  // If necessary, remove page numbers (ex: ?page=2) from location
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Pitchfork', 'Track Reviews', NULL, '2020-12-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2020-12-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2020-10-30 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-01-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-01-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-01-25 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-01-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-01-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-01-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-01-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-01-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-01-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-01-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-01-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -116,39 +128,165 @@
 
 
 //
-// Step 3: Stage new songs, find & set any duplicate songs to true, and add song_ids for duplicates
+// Step 3: Stage new songs only, find & set any duplicate songs to true, and add song_ids for duplicates
 //
 
   songsData =
   [
     {
-        "title": "For Your Consideration (Sauna Mix)",
-        "artist_name": "Henzo",
+        "title": "Xiu",
+        "artist_name": "Yu Su",
         "video_id": null,
-        "capture_date": "2020-12-22 04:12:53.529529",
-        "source_id": 761,
+        "capture_date": "2021-03-01 07:24:10.182182",
+        "source_id": "779",
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "His Rope",
-        "artist_name": "Burial, Four Tet, Thom Yorke",
+        "title": "All Futures",
+        "artist_name": "The Armed",
         "video_id": null,
-        "capture_date": "2020-12-22 04:12:53.531531",
-        "source_id": 762,
+        "capture_date": "2021-03-01 07:24:10.184184",
+        "source_id": "779",
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "pov",
-        "artist_name": "Ariana Grande",
+        "title": "The Holding Hand",
+        "artist_name": "Iceage",
         "video_id": null,
-        "capture_date": "2020-12-22 04:12:53.532532",
-        "source_id": 763,
-        "song_id": 9528,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "780",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "ACTION",
+        "artist_name": "CHAI",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "781",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Don’t Judge Me",
+        "artist_name": "FKA twigsHeadie OneFred again..",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "781",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "hold yourself.",
+        "artist_name": "Tune-Yards",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "782",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Schatze",
+        "artist_name": "Ohtis",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "783",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Madre",
+        "artist_name": "Arca",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "784",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lo Vas a Olvidar",
+        "artist_name": "Billie Eilish & Rosalía",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "785",
+        "song_id": 9765,
         "duplicate": true
+    },
+    {
+        "title": "Hard Drive",
+        "artist_name": "Cassandra Jenkins",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "785",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Salvaged Copper",
+        "artist_name": "Heathered Pearls",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "786",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "ULTIMA",
+        "artist_name": "Body Meat",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "787",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mai",
+        "artist_name": "Donato Dozzy",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "788",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Trembling of Glass",
+        "artist_name": "Rachika Nayar",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.185185",
+        "source_id": "789",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ballroom Dance Scene",
+        "artist_name": "Horsegirl",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.186186",
+        "source_id": "790",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Groove Elation",
+        "artist_name": "Bernice",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.186186",
+        "source_id": "791",
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Atlantic",
+        "artist_name": "The Weather Station",
+        "video_id": null,
+        "capture_date": "2021-03-01 07:24:10.186186",
+        "source_id": "792",
+        "song_id": null,
+        "duplicate": false
     }
-  ]
+]
 
   // To check for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -162,6 +300,7 @@
 //
 
   // get source_ids and dates for newly added sources
+  // increase LIMIT number if necessary
   SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 3;
 
   // manually add source_ids in songsData above.
@@ -196,8 +335,22 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('For Your Consideration (Sauna Mix)', 'Henzo', NULL),
-    ('His Rope', 'Burial, Four Tet, Thom Yorke', NULL)
+  ('Xiu', 'Yu Su', NULL),
+  ('All Futures', 'The Armed', NULL),
+  ('The Holding Hand', 'Iceage', NULL),
+  ('ACTION', 'CHAI', NULL),
+  ('Don’t Judge Me', 'FKA twigsHeadie OneFred again..', NULL),
+  ('hold yourself.', 'Tune-Yards', NULL),
+  ('Schatze', 'Ohtis', NULL),
+  ('Madre', 'Arca', NULL),
+  ('Hard Drive', 'Cassandra Jenkins', NULL),
+  ('Salvaged Copper', 'Heathered Pearls', NULL),
+  ('ULTIMA', 'Body Meat', NULL),
+  ('Mai', 'Donato Dozzy', NULL),
+  ('The Trembling of Glass', 'Rachika Nayar', NULL),
+  ('Ballroom Dance Scene', 'Horsegirl', NULL),
+  ('Groove Elation', 'Bernice', NULL),
+  ('Atlantic', 'The Weather Station', NULL)
   ;
 
    // Update to song table
@@ -208,7 +361,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 9711; // SELECT last_insert_rowid();
+  song_id = 9850; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -248,9 +401,23 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2020-12-22 04:12:53.529529', '761', '9710'),
-    ('2020-12-22 04:12:53.531531', '762', '9711'),
-    ('2020-12-22 04:12:53.532532', '763', '9528')
+  ('2021-03-01 07:24:10.182182', '779', '9835'),
+  ('2021-03-01 07:24:10.184184', '779', '9836'),
+  ('2021-03-01 07:24:10.185185', '780', '9837'),
+  ('2021-03-01 07:24:10.185185', '781', '9838'),
+  ('2021-03-01 07:24:10.185185', '781', '9839'),
+  ('2021-03-01 07:24:10.185185', '782', '9840'),
+  ('2021-03-01 07:24:10.185185', '783', '9841'),
+  ('2021-03-01 07:24:10.185185', '784', '9842'),
+  ('2021-03-01 07:24:10.185185', '785', '9765'),
+  ('2021-03-01 07:24:10.185185', '785', '9843'),
+  ('2021-03-01 07:24:10.185185', '786', '9844'),
+  ('2021-03-01 07:24:10.185185', '787', '9845'),
+  ('2021-03-01 07:24:10.185185', '788', '9846'),
+  ('2021-03-01 07:24:10.185185', '789', '9847'),
+  ('2021-03-01 07:24:10.186186', '790', '9848'),
+  ('2021-03-01 07:24:10.186186', '791', '9849'),
+  ('2021-03-01 07:24:10.186186', '792', '9850')
   ;
 
   // Update to source_song table
