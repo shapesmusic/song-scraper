@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Taylor Swift’s New Old ‘Love Story,’ and 12 More Songs', '2021-03-01 09:46:20.000000', 'https://www.nytimes.com/2021/02/12/arts/music/playlist-taylor-swift-dua-lipa.html');
+    ('New York Times', 'The Playlist', 'Dawn Richard Honors New Orleans Second Lines, and 7 More New Songs', '2021-02-19 07:53:57.000000', 'https://www.nytimes.com/2021/02/19/arts/music/playlist-dawn-richard-24kgoldn-lil-yachty.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 798; // SELECT last_insert_rowid();
+  source_id = 799; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -95,92 +95,65 @@
   songsData =
   [
     {
-        "title": "Love Story (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
+        "title": "Bussifame",
+        "artist_name": "Dawn Richard",
         "video_id": null,
-        "capture_date": "2021-03-01 04:20:31.921921",
-        "source_id": 798,
-        "song_id": 9787,
+        "capture_date": "2021-03-01 04:30:59.543543",
+        "source_id": 799,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Black Myself",
+        "artist_name": "Amythyst Kiah",
+        "video_id": null,
+        "capture_date": "2021-03-01 04:30:59.544544",
+        "source_id": 799,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Madiba",
+        "artist_name": "Michael Wimberly, featuring Theresa Thomason",
+        "video_id": null,
+        "capture_date": "2021-03-01 04:30:59.544544",
+        "source_id": 799,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "3, 2, 1",
+        "artist_name": "24kGoldn",
+        "video_id": null,
+        "capture_date": "2021-03-01 04:30:59.544544",
+        "source_id": 799,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hit Bout It",
+        "artist_name": "Lil Yachty featuring Kodak Black",
+        "video_id": null,
+        "capture_date": "2021-03-01 04:30:59.544544",
+        "source_id": 799,
+        "song_id": 9827,
         "duplicate": true
     },
     {
-        "title": "Friday (Remix)",
-        "artist_name": "Rebecca Black featuring Dorian Electra, Big Freedia and 3OH!3",
+        "title": "Royal Rumble",
+        "artist_name": "Lil Yachty, KrispyLife Kidd, RMC Mike, Babyface Ray, Rio Da Yung OG, DC2Trill and Icewear Vezzo",
         "video_id": null,
-        "capture_date": "2021-03-01 04:20:31.922922",
-        "source_id": 798,
+        "capture_date": "2021-03-01 04:30:59.544544",
+        "source_id": 799,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "We’re Good",
-        "artist_name": "Dua Lipa",
+        "title": "Jealous",
+        "artist_name": "Mahalia featuring Rico Nasty",
         "video_id": null,
-        "capture_date": "2021-03-01 04:20:31.922922",
-        "source_id": 798,
-        "song_id": 9788,
-        "duplicate": true
-    },
-    {
-        "title": "Fan de Tus Fotos",
-        "artist_name": "Nicky Jam and Romeo Santos",
-        "video_id": null,
-        "capture_date": "2021-03-01 04:20:31.922922",
-        "source_id": 798,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Big Bang",
-        "artist_name": "Cherry Glazerr",
-        "video_id": null,
-        "capture_date": "2021-03-01 04:20:31.922922",
-        "source_id": 798,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "One + One",
-        "artist_name": "Death From Above 1979",
-        "video_id": null,
-        "capture_date": "2021-03-01 04:20:31.922922",
-        "source_id": 798,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hall of Death",
-        "artist_name": "Matt Sweeney and Bonnie ‘Prince’ Billy",
-        "video_id": null,
-        "capture_date": "2021-03-01 04:20:31.922922",
-        "source_id": 798,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Calling My Phone",
-        "artist_name": "Lil Tjay featuring 6lack",
-        "video_id": null,
-        "capture_date": "2021-03-01 04:20:31.922922",
-        "source_id": 798,
-        "song_id": 9786,
-        "duplicate": true
-    },
-    {
-        "title": "Portals",
-        "artist_name": "Katy Kirby",
-        "video_id": null,
-        "capture_date": "2021-03-01 04:20:31.922922",
-        "source_id": 798,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Circles",
-        "artist_name": "Brent Faiyaz featuring Purr",
-        "video_id": null,
-        "capture_date": "2021-03-01 04:20:31.922922",
-        "source_id": 798,
+        "capture_date": "2021-03-01 04:30:59.544544",
+        "source_id": 799,
         "song_id": null,
         "duplicate": false
     }
@@ -223,13 +196,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Friday (Remix)', 'Rebecca Black featuring Dorian Electra, Big Freedia and 3OH!3', NULL),
-  ('Fan de Tus Fotos', 'Nicky Jam and Romeo Santos', NULL),
-  ('Big Bang', 'Cherry Glazerr', NULL),
-  ('One + One', 'Death From Above 1979', NULL),
-  ('Hall of Death', 'Matt Sweeney and Bonnie ‘Prince’ Billy', NULL),
-  ('Portals', 'Katy Kirby', NULL),
-  ('Circles', 'Brent Faiyaz featuring Purr', NULL)
+  ('Bussifame', 'Dawn Richard', NULL),
+  ('Black Myself', 'Amythyst Kiah', NULL),
+  ('Madiba', 'Michael Wimberly, featuring Theresa Thomason', NULL),
+  ('3, 2, 1', '24kGoldn', NULL),
+  ('Royal Rumble', 'Lil Yachty, KrispyLife Kidd, RMC Mike, Babyface Ray, Rio Da Yung OG, DC2Trill and Icewear Vezzo', NULL),
+  ('Jealous', 'Mahalia featuring Rico Nasty', NULL)
   ;
 
    // Update to song table
@@ -240,7 +212,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9896; // SELECT last_insert_rowid();
+  song_id = 9902; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -280,16 +252,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-01 04:20:31.921921', '798', '9787'),
-  ('2021-03-01 04:20:31.922922', '798', '9890'),
-  ('2021-03-01 04:20:31.922922', '798', '9788'),
-  ('2021-03-01 04:20:31.922922', '798', '9891'),
-  ('2021-03-01 04:20:31.922922', '798', '9892'),
-  ('2021-03-01 04:20:31.922922', '798', '9893'),
-  ('2021-03-01 04:20:31.922922', '798', '9894'),
-  ('2021-03-01 04:20:31.922922', '798', '9786'),
-  ('2021-03-01 04:20:31.922922', '798', '9895'),
-  ('2021-03-01 04:20:31.922922', '798', '9896')
+  ('2021-03-01 04:30:59.543543', '799', '9897'),
+  ('2021-03-01 04:30:59.544544', '799', '9898'),
+  ('2021-03-01 04:30:59.544544', '799', '9899'),
+  ('2021-03-01 04:30:59.544544', '799', '9900'),
+  ('2021-03-01 04:30:59.544544', '799', '9827'),
+  ('2021-03-01 04:30:59.544544', '799', '9901'),
+  ('2021-03-01 04:30:59.544544', '799', '9902')
   ;
 
   // Update to source_song table
