@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Cardi B’s Gleefully Relentless ‘Up,’ and 12 More New Songs', '2021-02-05 08:48:49.000000', 'https://www.nytimes.com/2021/02/05/arts/music/playlist-cardi-b-sia-vic-mensa.html');
+    ('New York Times', 'The Playlist', 'Taylor Swift’s New Old ‘Love Story,’ and 12 More Songs', '2021-03-01 09:46:20.000000', 'https://www.nytimes.com/2021/02/12/arts/music/playlist-taylor-swift-dua-lipa.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 797; // SELECT last_insert_rowid();
+  source_id = 798; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -95,83 +95,92 @@
   songsData =
   [
     {
-        "title": "Up",
-        "artist_name": "Cardi B",
+        "title": "Love Story (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-03-01 04:10:34.337337",
-        "source_id": 797,
-        "song_id": 9774,
+        "capture_date": "2021-03-01 04:20:31.921921",
+        "source_id": 798,
+        "song_id": 9787,
         "duplicate": true
     },
     {
-        "title": "One More",
-        "artist_name": "SG Lewis featuring Nile Rodgers",
+        "title": "Friday (Remix)",
+        "artist_name": "Rebecca Black featuring Dorian Electra, Big Freedia and 3OH!3",
         "video_id": null,
-        "capture_date": "2021-03-01 04:10:34.337337",
-        "source_id": 797,
+        "capture_date": "2021-03-01 04:20:31.922922",
+        "source_id": 798,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Floating Through Space",
-        "artist_name": "Sia and David Guetta",
+        "title": "We’re Good",
+        "artist_name": "Dua Lipa",
         "video_id": null,
-        "capture_date": "2021-03-01 04:10:34.337337",
-        "source_id": 797,
+        "capture_date": "2021-03-01 04:20:31.922922",
+        "source_id": 798,
+        "song_id": 9788,
+        "duplicate": true
+    },
+    {
+        "title": "Fan de Tus Fotos",
+        "artist_name": "Nicky Jam and Romeo Santos",
+        "video_id": null,
+        "capture_date": "2021-03-01 04:20:31.922922",
+        "source_id": 798,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Grow Up To",
-        "artist_name": "Miss Grit",
+        "title": "Big Bang",
+        "artist_name": "Cherry Glazerr",
         "video_id": null,
-        "capture_date": "2021-03-01 04:10:34.337337",
-        "source_id": 797,
+        "capture_date": "2021-03-01 04:20:31.922922",
+        "source_id": 798,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Agua",
-        "artist_name": "Bomba Estéreo featuring Okan and Lido Pimienta",
+        "title": "One + One",
+        "artist_name": "Death From Above 1979",
         "video_id": null,
-        "capture_date": "2021-03-01 04:10:34.338338",
-        "source_id": 797,
+        "capture_date": "2021-03-01 04:20:31.922922",
+        "source_id": 798,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Two",
-        "artist_name": "Flock of Dimes",
+        "title": "Hall of Death",
+        "artist_name": "Matt Sweeney and Bonnie ‘Prince’ Billy",
         "video_id": null,
-        "capture_date": "2021-03-01 04:10:34.338338",
-        "source_id": 797,
+        "capture_date": "2021-03-01 04:20:31.922922",
+        "source_id": 798,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shelter",
-        "artist_name": "Vic Mensa featuring Wyclef Jean and Chance the Rapper",
+        "title": "Calling My Phone",
+        "artist_name": "Lil Tjay featuring 6lack",
         "video_id": null,
-        "capture_date": "2021-03-01 04:10:34.338338",
-        "source_id": 797,
+        "capture_date": "2021-03-01 04:20:31.922922",
+        "source_id": 798,
+        "song_id": 9786,
+        "duplicate": true
+    },
+    {
+        "title": "Portals",
+        "artist_name": "Katy Kirby",
+        "video_id": null,
+        "capture_date": "2021-03-01 04:20:31.922922",
+        "source_id": 798,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fight for You",
-        "artist_name": "H.E.R.",
+        "title": "Circles",
+        "artist_name": "Brent Faiyaz featuring Purr",
         "video_id": null,
-        "capture_date": "2021-03-01 04:10:34.338338",
-        "source_id": 797,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Notice",
-        "artist_name": "Jimmy Edgar featuring 24hrs",
-        "video_id": null,
-        "capture_date": "2021-03-01 04:10:34.338338",
-        "source_id": 797,
+        "capture_date": "2021-03-01 04:20:31.922922",
+        "source_id": 798,
         "song_id": null,
         "duplicate": false
     }
@@ -214,14 +223,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('One More', 'SG Lewis featuring Nile Rodgers', NULL),
-  ('Floating Through Space', 'Sia and David Guetta', NULL),
-  ('Grow Up To', 'Miss Grit', NULL),
-  ('Agua', 'Bomba Estéreo featuring Okan and Lido Pimienta', NULL),
-  ('Two', 'Flock of Dimes', NULL),
-  ('Shelter', 'Vic Mensa featuring Wyclef Jean and Chance the Rapper', NULL),
-  ('Fight for You', 'H.E.R.', NULL),
-  ('Notice', 'Jimmy Edgar featuring 24hrs', NULL)
+  ('Friday (Remix)', 'Rebecca Black featuring Dorian Electra, Big Freedia and 3OH!3', NULL),
+  ('Fan de Tus Fotos', 'Nicky Jam and Romeo Santos', NULL),
+  ('Big Bang', 'Cherry Glazerr', NULL),
+  ('One + One', 'Death From Above 1979', NULL),
+  ('Hall of Death', 'Matt Sweeney and Bonnie ‘Prince’ Billy', NULL),
+  ('Portals', 'Katy Kirby', NULL),
+  ('Circles', 'Brent Faiyaz featuring Purr', NULL)
   ;
 
    // Update to song table
@@ -232,7 +240,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9889; // SELECT last_insert_rowid();
+  song_id = 9896; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -272,15 +280,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-01 04:10:34.337337', '797', '9774'),
-  ('2021-03-01 04:10:34.337337', '797', '9882'),
-  ('2021-03-01 04:10:34.337337', '797', '9883'),
-  ('2021-03-01 04:10:34.337337', '797', '9884'),
-  ('2021-03-01 04:10:34.338338', '797', '9885'),
-  ('2021-03-01 04:10:34.338338', '797', '9886'),
-  ('2021-03-01 04:10:34.338338', '797', '9887'),
-  ('2021-03-01 04:10:34.338338', '797', '9888'),
-  ('2021-03-01 04:10:34.338338', '797', '9889')
+  ('2021-03-01 04:20:31.921921', '798', '9787'),
+  ('2021-03-01 04:20:31.922922', '798', '9890'),
+  ('2021-03-01 04:20:31.922922', '798', '9788'),
+  ('2021-03-01 04:20:31.922922', '798', '9891'),
+  ('2021-03-01 04:20:31.922922', '798', '9892'),
+  ('2021-03-01 04:20:31.922922', '798', '9893'),
+  ('2021-03-01 04:20:31.922922', '798', '9894'),
+  ('2021-03-01 04:20:31.922922', '798', '9786'),
+  ('2021-03-01 04:20:31.922922', '798', '9895'),
+  ('2021-03-01 04:20:31.922922', '798', '9896')
   ;
 
   // Update to source_song table
