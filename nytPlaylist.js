@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Kodak Black Celebrates Clemency From Trump, and 10 More New Songs', '2021-01-29 09:14:18.000000', 'https://www.nytimes.com/2021/01/29/arts/music/playlist-kodak-black-jensen-mcrae.html');
+    ('New York Times', 'The Playlist', 'Cardi B’s Gleefully Relentless ‘Up,’ and 12 More New Songs', '2021-02-05 08:48:49.000000', 'https://www.nytimes.com/2021/02/05/arts/music/playlist-cardi-b-sia-vic-mensa.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 796; // SELECT last_insert_rowid();
+  source_id = 797; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -95,83 +95,83 @@
   songsData =
   [
     {
-        "title": "Last Day In",
-        "artist_name": "Kodak Black",
+        "title": "Up",
+        "artist_name": "Cardi B",
         "video_id": null,
-        "capture_date": "2021-03-01 03:59:49.170170",
-        "source_id": 796,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Don’t Judge Me",
-        "artist_name": "FKA twigs featuring Headie One and Fred again..",
-        "video_id": null,
-        "capture_date": "2021-03-01 03:59:49.171171",
-        "source_id": 796,
-        "song_id": 9839,
+        "capture_date": "2021-03-01 04:10:34.337337",
+        "source_id": 797,
+        "song_id": 9774,
         "duplicate": true
     },
     {
-        "title": "Immune",
-        "artist_name": "Jensen McRae",
+        "title": "One More",
+        "artist_name": "SG Lewis featuring Nile Rodgers",
         "video_id": null,
-        "capture_date": "2021-03-01 03:59:49.171171",
-        "source_id": 796,
+        "capture_date": "2021-03-01 04:10:34.337337",
+        "source_id": 797,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You Sold Me a Dream",
-        "artist_name": "Jupiter & Okwess featuring Ana Tijoux",
+        "title": "Floating Through Space",
+        "artist_name": "Sia and David Guetta",
         "video_id": null,
-        "capture_date": "2021-03-01 03:59:49.171171",
-        "source_id": 796,
+        "capture_date": "2021-03-01 04:10:34.337337",
+        "source_id": 797,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Minus Me",
-        "artist_name": "Alostmen featuring Ambolley",
+        "title": "Grow Up To",
+        "artist_name": "Miss Grit",
         "video_id": null,
-        "capture_date": "2021-03-01 03:59:49.171171",
-        "source_id": 796,
+        "capture_date": "2021-03-01 04:10:34.337337",
+        "source_id": 797,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "It’s Time to Rock",
-        "artist_name": "Tes X & Mario Judah",
+        "title": "Agua",
+        "artist_name": "Bomba Estéreo featuring Okan and Lido Pimienta",
         "video_id": null,
-        "capture_date": "2021-03-01 03:59:49.171171",
-        "source_id": 796,
+        "capture_date": "2021-03-01 04:10:34.338338",
+        "source_id": 797,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Garden of Eden",
-        "artist_name": "Billie Marten",
+        "title": "Two",
+        "artist_name": "Flock of Dimes",
         "video_id": null,
-        "capture_date": "2021-03-01 03:59:49.171171",
-        "source_id": 796,
+        "capture_date": "2021-03-01 04:10:34.338338",
+        "source_id": 797,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Free",
-        "artist_name": "Prettymuch",
+        "title": "Shelter",
+        "artist_name": "Vic Mensa featuring Wyclef Jean and Chance the Rapper",
         "video_id": null,
-        "capture_date": "2021-03-01 03:59:49.171171",
-        "source_id": 796,
+        "capture_date": "2021-03-01 04:10:34.338338",
+        "source_id": 797,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bad Dream",
-        "artist_name": "Ani DiFranco",
+        "title": "Fight for You",
+        "artist_name": "H.E.R.",
         "video_id": null,
-        "capture_date": "2021-03-01 03:59:49.171171",
-        "source_id": 796,
+        "capture_date": "2021-03-01 04:10:34.338338",
+        "source_id": 797,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Notice",
+        "artist_name": "Jimmy Edgar featuring 24hrs",
+        "video_id": null,
+        "capture_date": "2021-03-01 04:10:34.338338",
+        "source_id": 797,
         "song_id": null,
         "duplicate": false
     }
@@ -179,8 +179,8 @@
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
-    title LIKE '%Stay Down%'
-    AND artist_name LIKE '%durk%'
+    title LIKE '%Up%'
+    AND artist_name LIKE '%Cardi%'
   ;
 
   // If any changes:
@@ -214,14 +214,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Last Day In', 'Kodak Black', NULL),
-  ('Immune', 'Jensen McRae', NULL),
-  ('You Sold Me a Dream', 'Jupiter & Okwess featuring Ana Tijoux', NULL),
-  ('Minus Me', 'Alostmen featuring Ambolley', NULL),
-  ('It’s Time to Rock', 'Tes X & Mario Judah', NULL),
-  ('Garden of Eden', 'Billie Marten', NULL),
-  ('Free', 'Prettymuch', NULL),
-  ('Bad Dream', 'Ani DiFranco', NULL)
+  ('One More', 'SG Lewis featuring Nile Rodgers', NULL),
+  ('Floating Through Space', 'Sia and David Guetta', NULL),
+  ('Grow Up To', 'Miss Grit', NULL),
+  ('Agua', 'Bomba Estéreo featuring Okan and Lido Pimienta', NULL),
+  ('Two', 'Flock of Dimes', NULL),
+  ('Shelter', 'Vic Mensa featuring Wyclef Jean and Chance the Rapper', NULL),
+  ('Fight for You', 'H.E.R.', NULL),
+  ('Notice', 'Jimmy Edgar featuring 24hrs', NULL)
   ;
 
    // Update to song table
@@ -232,7 +232,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9881; // SELECT last_insert_rowid();
+  song_id = 9889; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -272,15 +272,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-01 03:59:49.170170', '796', '9874'),
-  ('2021-03-01 03:59:49.171171', '796', '9839'),
-  ('2021-03-01 03:59:49.171171', '796', '9875'),
-  ('2021-03-01 03:59:49.171171', '796', '9876'),
-  ('2021-03-01 03:59:49.171171', '796', '9877'),
-  ('2021-03-01 03:59:49.171171', '796', '9878'),
-  ('2021-03-01 03:59:49.171171', '796', '9879'),
-  ('2021-03-01 03:59:49.171171', '796', '9880'),
-  ('2021-03-01 03:59:49.171171', '796', '9881')
+  ('2021-03-01 04:10:34.337337', '797', '9774'),
+  ('2021-03-01 04:10:34.337337', '797', '9882'),
+  ('2021-03-01 04:10:34.337337', '797', '9883'),
+  ('2021-03-01 04:10:34.337337', '797', '9884'),
+  ('2021-03-01 04:10:34.338338', '797', '9885'),
+  ('2021-03-01 04:10:34.338338', '797', '9886'),
+  ('2021-03-01 04:10:34.338338', '797', '9887'),
+  ('2021-03-01 04:10:34.338338', '797', '9888'),
+  ('2021-03-01 04:10:34.338338', '797', '9889')
   ;
 
   // Update to source_song table
