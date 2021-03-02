@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Dawn Richard Honors New Orleans Second Lines, and 7 More New Songs', '2021-02-19 07:53:57.000000', 'https://www.nytimes.com/2021/02/19/arts/music/playlist-dawn-richard-24kgoldn-lil-yachty.html');
+    ('New York Times', 'The Playlist', 'Post Malone Covers Hootie & the Blowfish, and 10 More New Songs', '2021-02-26 08:00:48.000000', 'https://www.nytimes.com/2021/02/26/arts/music/playlist-post-malone-hootie-blowfish-pop-smoke.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 799; // SELECT last_insert_rowid();
+  source_id = 800; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -95,65 +95,74 @@
   songsData =
   [
     {
-        "title": "Bussifame",
-        "artist_name": "Dawn Richard",
+        "title": "Only Wanna Be With You (Pokémon 25 Version)",
+        "artist_name": "Post Malone",
         "video_id": null,
-        "capture_date": "2021-03-01 04:30:59.543543",
-        "source_id": 799,
+        "capture_date": "2021-03-01 04:38:58.492492",
+        "source_id": 800,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Black Myself",
-        "artist_name": "Amythyst Kiah",
+        "title": "Open Up the Heavens",
+        "artist_name": "Jade Bird",
         "video_id": null,
-        "capture_date": "2021-03-01 04:30:59.544544",
-        "source_id": 799,
+        "capture_date": "2021-03-01 04:38:58.494494",
+        "source_id": 800,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Madiba",
-        "artist_name": "Michael Wimberly, featuring Theresa Thomason",
+        "title": "Anything at All",
+        "artist_name": "Bachelor",
         "video_id": null,
-        "capture_date": "2021-03-01 04:30:59.544544",
-        "source_id": 799,
+        "capture_date": "2021-03-01 04:38:58.494494",
+        "source_id": 800,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "3, 2, 1",
-        "artist_name": "24kGoldn",
+        "title": "AP",
+        "artist_name": "Pop Smoke",
         "video_id": null,
-        "capture_date": "2021-03-01 04:30:59.544544",
-        "source_id": 799,
+        "capture_date": "2021-03-01 04:38:58.494494",
+        "source_id": 800,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hit Bout It",
-        "artist_name": "Lil Yachty featuring Kodak Black",
+        "title": "Rainforest",
+        "artist_name": "Noname",
         "video_id": null,
-        "capture_date": "2021-03-01 04:30:59.544544",
-        "source_id": 799,
-        "song_id": 9827,
-        "duplicate": true
-    },
-    {
-        "title": "Royal Rumble",
-        "artist_name": "Lil Yachty, KrispyLife Kidd, RMC Mike, Babyface Ray, Rio Da Yung OG, DC2Trill and Icewear Vezzo",
-        "video_id": null,
-        "capture_date": "2021-03-01 04:30:59.544544",
-        "source_id": 799,
+        "capture_date": "2021-03-01 04:38:58.494494",
+        "source_id": 800,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Jealous",
-        "artist_name": "Mahalia featuring Rico Nasty",
+        "title": "Quién Podrá Saberlo",
+        "artist_name": "Dom la Nena and Julieta Venegas",
         "video_id": null,
-        "capture_date": "2021-03-01 04:30:59.544544",
-        "source_id": 799,
+        "capture_date": "2021-03-01 04:38:58.494494",
+        "source_id": 800,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cross Country",
+        "artist_name": "Breland",
+        "video_id": null,
+        "capture_date": "2021-03-01 04:38:58.494494",
+        "source_id": 800,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Spaceman",
+        "artist_name": "Nick Jonas",
+        "video_id": null,
+        "capture_date": "2021-03-01 04:38:58.494494",
+        "source_id": 800,
         "song_id": null,
         "duplicate": false
     }
@@ -161,8 +170,8 @@
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
-    title LIKE '%Up%'
-    AND artist_name LIKE '%Cardi%'
+    title LIKE '%AP%'
+    AND artist_name LIKE '%Pop Smoke%'
   ;
 
   // If any changes:
@@ -196,12 +205,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Bussifame', 'Dawn Richard', NULL),
-  ('Black Myself', 'Amythyst Kiah', NULL),
-  ('Madiba', 'Michael Wimberly, featuring Theresa Thomason', NULL),
-  ('3, 2, 1', '24kGoldn', NULL),
-  ('Royal Rumble', 'Lil Yachty, KrispyLife Kidd, RMC Mike, Babyface Ray, Rio Da Yung OG, DC2Trill and Icewear Vezzo', NULL),
-  ('Jealous', 'Mahalia featuring Rico Nasty', NULL)
+  ('Only Wanna Be With You (Pokémon 25 Version)', 'Post Malone', NULL),
+  ('Open Up the Heavens', 'Jade Bird', NULL),
+  ('Anything at All', 'Bachelor', NULL),
+  ('AP', 'Pop Smoke', NULL),
+  ('Rainforest', 'Noname', NULL),
+  ('Quién Podrá Saberlo', 'Dom la Nena and Julieta Venegas', NULL),
+  ('Cross Country', 'Breland', NULL),
+  ('Spaceman', 'Nick Jonas', NULL)
   ;
 
    // Update to song table
@@ -212,7 +223,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9902; // SELECT last_insert_rowid();
+  song_id = 9910; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -252,13 +263,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-01 04:30:59.543543', '799', '9897'),
-  ('2021-03-01 04:30:59.544544', '799', '9898'),
-  ('2021-03-01 04:30:59.544544', '799', '9899'),
-  ('2021-03-01 04:30:59.544544', '799', '9900'),
-  ('2021-03-01 04:30:59.544544', '799', '9827'),
-  ('2021-03-01 04:30:59.544544', '799', '9901'),
-  ('2021-03-01 04:30:59.544544', '799', '9902')
+  ('2021-03-01 04:38:58.492492', '800', '9903'),
+  ('2021-03-01 04:38:58.494494', '800', '9904'),
+  ('2021-03-01 04:38:58.494494', '800', '9905'),
+  ('2021-03-01 04:38:58.494494', '800', '9906'),
+  ('2021-03-01 04:38:58.494494', '800', '9907'),
+  ('2021-03-01 04:38:58.494494', '800', '9908'),
+  ('2021-03-01 04:38:58.494494', '800', '9909'),
+  ('2021-03-01 04:38:58.494494', '800', '9910')
   ;
 
   // Update to source_song table
