@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Billie Eilish and Rosalía Join Eccentric Forces, and 12 More New Songs', '2021-01-22 10:13:12.000000', 'https://www.nytimes.com/2021/01/22/arts/music/playlist-billie-eilish-rosalia.html');
+    ('New York Times', 'The Playlist', 'Kodak Black Celebrates Clemency From Trump, and 10 More New Songs', '2021-01-29 09:14:18.000000', 'https://www.nytimes.com/2021/01/29/arts/music/playlist-kodak-black-jensen-mcrae.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 795; // SELECT last_insert_rowid();
+  source_id = 796; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -95,101 +95,83 @@
   songsData =
   [
     {
-        "title": "Lo Vas A Olvidar",
-        "artist_name": "Billie Eilish and Rosalía",
+        "title": "Last Day In",
+        "artist_name": "Kodak Black",
         "video_id": null,
-        "capture_date": "2021-03-01 03:51:04.306306",
-        "source_id": 795,
-        "song_id": 9765,
+        "capture_date": "2021-03-01 03:59:49.170170",
+        "source_id": 796,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Don’t Judge Me",
+        "artist_name": "FKA twigs featuring Headie One and Fred again..",
+        "video_id": null,
+        "capture_date": "2021-03-01 03:59:49.171171",
+        "source_id": 796,
+        "song_id": 9839,
         "duplicate": true
     },
     {
-        "title": "All My Favorite Songs",
-        "artist_name": "Weezer",
+        "title": "Immune",
+        "artist_name": "Jensen McRae",
         "video_id": null,
-        "capture_date": "2021-03-01 03:51:04.307307",
-        "source_id": 795,
+        "capture_date": "2021-03-01 03:59:49.171171",
+        "source_id": 796,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "21st Century Vampire",
-        "artist_name": "Lilhuddy",
+        "title": "You Sold Me a Dream",
+        "artist_name": "Jupiter & Okwess featuring Ana Tijoux",
         "video_id": null,
-        "capture_date": "2021-03-01 03:51:04.307307",
-        "source_id": 795,
+        "capture_date": "2021-03-01 03:59:49.171171",
+        "source_id": 796,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kash App",
-        "artist_name": "BRS Kash featuring Mulatto",
+        "title": "Minus Me",
+        "artist_name": "Alostmen featuring Ambolley",
         "video_id": null,
-        "capture_date": "2021-03-01 03:51:04.307307",
-        "source_id": 795,
+        "capture_date": "2021-03-01 03:59:49.171171",
+        "source_id": 796,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Real Lovin’",
-        "artist_name": "King Klavé featuring J. Hoard",
+        "title": "It’s Time to Rock",
+        "artist_name": "Tes X & Mario Judah",
         "video_id": null,
-        "capture_date": "2021-03-01 03:51:04.307307",
-        "source_id": 795,
+        "capture_date": "2021-03-01 03:59:49.171171",
+        "source_id": 796,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Find Light",
-        "artist_name": "Simon Dufour and Aaron Day featuring J. Hoard",
+        "title": "Garden of Eden",
+        "artist_name": "Billie Marten",
         "video_id": null,
-        "capture_date": "2021-03-01 03:51:04.307307",
-        "source_id": 795,
+        "capture_date": "2021-03-01 03:59:49.171171",
+        "source_id": 796,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ropa Cara",
-        "artist_name": "Camilo",
+        "title": "Free",
+        "artist_name": "Prettymuch",
         "video_id": null,
-        "capture_date": "2021-03-01 03:51:04.307307",
-        "source_id": 795,
+        "capture_date": "2021-03-01 03:59:49.171171",
+        "source_id": 796,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Badibaba",
-        "artist_name": "Goat Girl",
+        "title": "Bad Dream",
+        "artist_name": "Ani DiFranco",
         "video_id": null,
-        "capture_date": "2021-03-01 03:51:04.307307",
-        "source_id": 795,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Crushed Velvet",
-        "artist_name": "Sheer Mag",
-        "video_id": null,
-        "capture_date": "2021-03-01 03:51:04.307307",
-        "source_id": 795,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Already Gone",
-        "artist_name": "Carm featuring Georgia Hubley and Ira Kaplan",
-        "video_id": null,
-        "capture_date": "2021-03-01 03:51:04.307307",
-        "source_id": 795,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Someone Else",
-        "artist_name": "Deb Never",
-        "video_id": null,
-        "capture_date": "2021-03-01 03:51:04.307307",
-        "source_id": 795,
+        "capture_date": "2021-03-01 03:59:49.171171",
+        "source_id": 796,
         "song_id": null,
         "duplicate": false
     }
@@ -232,16 +214,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('All My Favorite Songs', 'Weezer', NULL),
-  ('21st Century Vampire', 'Lilhuddy', NULL),
-  ('Kash App', 'BRS Kash featuring Mulatto', NULL),
-  ('Real Lovin’', 'King Klavé featuring J. Hoard', NULL),
-  ('Find Light', 'Simon Dufour and Aaron Day featuring J. Hoard', NULL),
-  ('Ropa Cara', 'Camilo', NULL),
-  ('Badibaba', 'Goat Girl', NULL),
-  ('Crushed Velvet', 'Sheer Mag', NULL),
-  ('Already Gone', 'Carm featuring Georgia Hubley and Ira Kaplan', NULL),
-  ('Someone Else', 'Deb Never', NULL)
+  ('Last Day In', 'Kodak Black', NULL),
+  ('Immune', 'Jensen McRae', NULL),
+  ('You Sold Me a Dream', 'Jupiter & Okwess featuring Ana Tijoux', NULL),
+  ('Minus Me', 'Alostmen featuring Ambolley', NULL),
+  ('It’s Time to Rock', 'Tes X & Mario Judah', NULL),
+  ('Garden of Eden', 'Billie Marten', NULL),
+  ('Free', 'Prettymuch', NULL),
+  ('Bad Dream', 'Ani DiFranco', NULL)
   ;
 
    // Update to song table
@@ -252,7 +232,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9873; // SELECT last_insert_rowid();
+  song_id = 9881; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -292,17 +272,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-01 03:51:04.306306', '795', '9765'),
-  ('2021-03-01 03:51:04.307307', '795', '9864'),
-  ('2021-03-01 03:51:04.307307', '795', '9865'),
-  ('2021-03-01 03:51:04.307307', '795', '9866'),
-  ('2021-03-01 03:51:04.307307', '795', '9867'),
-  ('2021-03-01 03:51:04.307307', '795', '9868'),
-  ('2021-03-01 03:51:04.307307', '795', '9869'),
-  ('2021-03-01 03:51:04.307307', '795', '9870'),
-  ('2021-03-01 03:51:04.307307', '795', '9871'),
-  ('2021-03-01 03:51:04.307307', '795', '9872'),
-  ('2021-03-01 03:51:04.307307', '795', '9873')
+  ('2021-03-01 03:59:49.170170', '796', '9874'),
+  ('2021-03-01 03:59:49.171171', '796', '9839'),
+  ('2021-03-01 03:59:49.171171', '796', '9875'),
+  ('2021-03-01 03:59:49.171171', '796', '9876'),
+  ('2021-03-01 03:59:49.171171', '796', '9877'),
+  ('2021-03-01 03:59:49.171171', '796', '9878'),
+  ('2021-03-01 03:59:49.171171', '796', '9879'),
+  ('2021-03-01 03:59:49.171171', '796', '9880'),
+  ('2021-03-01 03:59:49.171171', '796', '9881')
   ;
 
   // Update to source_song table
