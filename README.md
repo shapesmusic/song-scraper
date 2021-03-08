@@ -30,7 +30,7 @@ ORDER BY parent_entity;
 |Shazam|Top 200 Global|[current chart](https://www.shazam.com/charts/top-200/world)|😸Not as many duplicates as you'd think. |Weekly|Can also filter by country|
 |Complex|Best New Music This Week|[this list](https://www.complex.com/music/cat/lists)|[complex.js](https://github.com/davidforrest/Song-Scraper/blob/master/complex.js)|Weekly|Complex absorbed Pigeons & Planes|
 |New York Times|Playlist|[this list](https://www.nytimes.com/column/playlist)|[nytPlaylist.js](https://github.com/davidforrest/Song-Scraper/blob/master/nytPlaylist.js)|Weekly|But weed out [the jazz](https://github.com/davidforrest/devJournal/blob/main/2020-05-12-1-new-music-tuesday.md#the-new-york-times-playlist)|
-|Pitchfork|Track Reviews|[current chart](https://pitchfork.com/reviews/tracks/)|[pitchfork.js](https://github.com/davidforrest/Song-Scraper/blob/master/pitchfork.js)|Monthly|Includes Best New Tracks|
+|Pitchfork|Track Reviews|[current chart](https://pitchfork.com/reviews/tracks/)|[pitchfork.js](https://github.com/davidforrest/Song-Scraper/blob/master/pitchfork.js)|Monthly|Includes Best New Tracks. Also see [Pitchfork Selects](https://pitchfork.com/search/?query=Pitchfork%20Selects)|
 |The Fader|10 songs you need in your life this week|[this list](https://www.thefader.com/search?query=10+songs+you+need+in+your+life+this+week)|😸|Weekly||
 |Popjustice|New Music Friday: The Popjustice Edit|[this list](https://www.popjustice.com/?s=New+Music) or [Spotify](https://open.spotify.com/playlist/5s7cNVeGfehrRfCatNN43P)|😸|Weekly||
 |Stereogum|The 5 Best Songs Of The Week|[this list](https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/)|😸|Weekly||
