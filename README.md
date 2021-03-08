@@ -25,7 +25,7 @@ ORDER BY parent_entity;
 |Entity|Stream|Where|Scraper|Frequency|Notes|
 |---|---|---|---|---|---|
 |Billboard|Hot 100|[current chart](https://www.billboard.com/charts/hot-100)|[billboard.js](https://github.com/davidforrest/Song-Scraper/blob/master/billboard.js)|Weekly|Billboard also has several [other charts](https://www.billboard.com/charts#id-chart-category-overallpopularity)|
-|YouTube|Global Top Songs|[current chart](https://charts.youtube.com/charts/TopSongs/global)|😸(new songs "-")|Weekly|YouTube also has several [other charts](https://charts.youtube.com/)|
+|YouTube|Global Top Songs|[current chart](https://charts.youtube.com/charts/TopSongs/global)|[yt.js](https://github.com/davidforrest/Song-Scraper/blob/master/yt.js)|Weekly|Works for YT's [other charts](https://charts.youtube.com/) too|
 |Spotify|Viral 50 Global|[current chart](https://spotifycharts.com/viral/global/weekly)|😸|Weekly|New additions (`-`)|
 |Shazam|Top 200 Global|[current chart](https://www.shazam.com/charts/top-200/world)|😸Not as many duplicates as you'd think. |Weekly|Can also filter by country|
 |Complex|Best New Music This Week|[this list](https://www.complex.com/music/cat/lists)|[complex.js](https://github.com/davidforrest/Song-Scraper/blob/master/complex.js)|Weekly|Complex absorbed Pigeons & Planes|

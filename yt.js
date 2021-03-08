@@ -32,10 +32,10 @@ pastChartLocation = window.location.href;
   console.log(
     "INSERT INTO "
     + "source \n  (parent_entity, parent_stream, instance_name, publication_date, location) "
-    + "\nVALUES \n  (\'YouTube\', \'Global Top Songs\', \'Week of "
+    + "\nVALUES \n  (\'YouTube\', \'Global Top Songs\', \'Week of " // Change instance_name 'Global Top Songs' if scraping a different YT chart
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
+    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   )
 
 
@@ -45,7 +45,7 @@ pastChartLocation = window.location.href;
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('YouTube', 'Global Top Songs', 'Week of Feb 25, 2021', '2021-02-25 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210219-20210225');
+    ('YouTube', 'Global Top Songs', 'Week of Mar 4, 2021', '2021-03-04 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210226-20210304');
 
   // Update to source table
 
@@ -54,14 +54,14 @@ pastChartLocation = window.location.href;
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 801; // SELECT last_insert_rowid();
+  source_id = 802; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-table-row style-scope ytmc-chart-table');
 
   songsData = [];
 
-  for (var i=0; i<elements.length; i++){ // if artist_name error, set i to scrape up to the problem song, then after the problem song.
+  for (var i=0; i<elements.length; i++){ // if artist_name error, set i < [last successful i + 1], scrape to there, then continue from the next new song through elements.length.
       element = elements[i];
 
       isNew = element.getElementsByClassName("style-scope ytmc-chart-table")[0].getElementsByClassName("style-scope ytmc-chart-table")[4].getElementsByClassName("style-scope ytmc-chart-table")[1].innerText;
@@ -105,139 +105,148 @@ pastChartLocation = window.location.href;
   songsData =
   [
     {
-        "title": "ZAZA",
-        "artist_name": "6ix9ine",
+        "title": "Shor Machega",
+        "artist_name": "Honey Singh & Hommie Dilliwala",
         "video_id": null,
-        "capture_date": "2021-03-08 08:54:18.284284",
-        "source_id": 801,
+        "capture_date": "2021-03-08 09:27:08.502502",
+        "source_id": 802,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sira E Hou",
-        "artist_name": "Amrit Maan & Nimrat Khaira",
+        "title": "Saranga Dariya",
+        "artist_name": "Mangli",
         "video_id": null,
-        "capture_date": "2021-03-08 08:54:18.286286",
-        "source_id": 801,
+        "capture_date": "2021-03-08 09:27:08.502502",
+        "source_id": 802,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "telepatía",
-        "artist_name": "Kali Uchis",
+        "title": "Kill This Love",
+        "artist_name": "BLACKPINK",
         "video_id": null,
-        "capture_date": "2021-03-08 08:54:18.287287",
-        "source_id": 801,
-        "song_id": 9695,
+        "capture_date": "2021-03-08 09:27:08.503503",
+        "source_id": 802,
+        "song_id": 978,
         "duplicate": true
     },
     {
-        "title": "Don't Call Me",
-        "artist_name": "SHINee",
+        "title": "Jatt Te Jawani",
+        "artist_name": "Dilpreet Dhillon & Karan Aujla",
         "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.627627",
-        "source_id": 801,
+        "capture_date": "2021-03-08 09:27:08.503503",
+        "source_id": 802,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Panghat",
-        "artist_name": "Asees Kaur, Divya Kumar, Sachin–Jigar & Mellow D",
+        "title": "PROBLEMA",
+        "artist_name": "Daddy Yankee",
         "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.628628",
-        "source_id": 801,
+        "capture_date": "2021-03-08 09:27:08.504504",
+        "source_id": 802,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lahangwa Las Las Karta",
-        "artist_name": "Pawan Singh",
+        "title": "Machu Picchu",
+        "artist_name": "Camilo & Evaluna Montaner",
         "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.628628",
-        "source_id": 801,
+        "capture_date": "2021-03-08 09:27:08.504504",
+        "source_id": 802,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Back In Blood",
-        "artist_name": "Pooh Shiesty feat. Lil Durk",
+        "title": "Nadiyon Paar (Let the Music Play Again)",
+        "artist_name": "Sachin–Jigar, Rashmeet Kaur, Shamur & IP Singh",
         "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.628628",
-        "source_id": 801,
-        "song_id": 9733,
+        "capture_date": "2021-03-08 09:27:08.504504",
+        "source_id": 802,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "M4",
+        "artist_name": "Matuê",
+        "video_id": null,
+        "capture_date": "2021-03-08 09:27:08.505505",
+        "source_id": 802,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "群青",
+        "artist_name": "Yoasobi",
+        "video_id": null,
+        "capture_date": "2021-03-08 09:27:08.505505",
+        "source_id": 802,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Jerusalema (Remix)",
+        "artist_name": "Ponifasio Samoa",
+        "video_id": null,
+        "capture_date": "2021-03-08 09:27:08.505505",
+        "source_id": 802,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Aur Pyaar Karna Hai",
+        "artist_name": "Neha Kakkar, Guru Randhawa & Sachet–Parampara",
+        "video_id": null,
+        "capture_date": "2021-03-08 09:27:08.505505",
+        "source_id": 802,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Peşimde",
+        "artist_name": "Kerimcan Durmaz",
+        "video_id": null,
+        "capture_date": "2021-03-08 09:27:08.505505",
+        "source_id": 802,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Guilty",
+        "artist_name": "Inder Chahal & Karan Aujla",
+        "video_id": null,
+        "capture_date": "2021-03-08 09:27:08.506506",
+        "source_id": 802,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hot N*gga",
+        "artist_name": "Bobby Shmurda",
+        "video_id": null,
+        "capture_date": "2021-03-08 09:27:08.506506",
+        "source_id": 802,
+        "song_id": 4262,
         "duplicate": true
     },
     {
-        "title": "Okey Oka Lokam",
-        "artist_name": "Arun Chiluveru & Sid Sriram",
+        "title": "Love Is Gone (Acoustic)",
+        "artist_name": "SLANDER feat. Dylan Matthew",
         "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.629629",
-        "source_id": 801,
+        "capture_date": "2021-03-08 09:29:26.841841",
+        "source_id": 802,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rabba Mehar Kari",
-        "artist_name": "Darshan Raval",
+        "title": "ROCKSTAR",
+        "artist_name": "DaBaby feat. Roddy Ricch",
         "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.629629",
-        "source_id": 801,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tery Nal Payar Ho Gia",
-        "artist_name": "Zaheer Lohar feat. Samina Parizad",
-        "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.629629",
-        "source_id": 801,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dhund Di Khushboo",
-        "artist_name": "Kaka Ji & Adaab Kharound",
-        "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.630630",
-        "source_id": 801,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Acaso",
-        "artist_name": "Vitor Fernandes",
-        "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.630630",
-        "source_id": 801,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Jala Jala Jalapaatham Nuvvu",
-        "artist_name": "Jaspreet Jasz & Shreya Ghoshal",
-        "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.630630",
-        "source_id": 801,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Raule",
-        "artist_name": "Jassa Dhillon, Gurlez Akhtar & Gur Sidhu",
-        "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.630630",
-        "source_id": 801,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "dil mang raha hai maholat tere sath jine ki",
-        "artist_name": "Yasser Desai",
-        "video_id": null,
-        "capture_date": "2021-03-08 08:58:26.631631",
-        "source_id": 801,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2021-03-08 09:29:26.842842",
+        "source_id": 802,
+        "song_id": 8276,
+        "duplicate": true
     }
 ]
 
@@ -278,19 +287,19 @@ pastChartLocation = window.location.href;
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('ZAZA', '6ix9ine', NULL),
-  ('Sira E Hou', 'Amrit Maan & Nimrat Khaira', NULL),
-  ('Don’t Call Me', 'SHINee', NULL),
-  ('Panghat', 'Asees Kaur, Divya Kumar, Sachin–Jigar & Mellow D', NULL),
-  ('Lahangwa Las Las Karta', 'Pawan Singh', NULL),
-  ('Okey Oka Lokam', 'Arun Chiluveru & Sid Sriram', NULL),
-  ('Rabba Mehar Kari', 'Darshan Raval', NULL),
-  ('Tery Nal Payar Ho Gia', 'Zaheer Lohar feat. Samina Parizad', NULL),
-  ('Dhund Di Khushboo', 'Kaka Ji & Adaab Kharound', NULL),
-  ('Acaso', 'Vitor Fernandes', NULL),
-  ('Jala Jala Jalapaatham Nuvvu', 'Jaspreet Jasz & Shreya Ghoshal', NULL),
-  ('Raule', 'Jassa Dhillon, Gurlez Akhtar & Gur Sidhu', NULL),
-  ('dil mang raha hai maholat tere sath jine ki', 'Yasser Desai', NULL)
+  ('Shor Machega', 'Honey Singh & Hommie Dilliwala', NULL),
+  ('Saranga Dariya', 'Mangli', NULL),
+  ('Jatt Te Jawani', 'Dilpreet Dhillon & Karan Aujla', NULL),
+  ('PROBLEMA', 'Daddy Yankee', NULL),
+  ('Machu Picchu', 'Camilo & Evaluna Montaner', NULL),
+  ('Nadiyon Paar (Let the Music Play Again)', 'Sachin–Jigar, Rashmeet Kaur, Shamur & IP Singh', NULL),
+  ('M4', 'Matuê', NULL),
+  ('群青', 'Yoasobi', NULL),
+  ('Jerusalema (Remix)', 'Ponifasio Samoa', NULL),
+  ('Aur Pyaar Karna Hai', 'Neha Kakkar, Guru Randhawa & Sachet–Parampara', NULL),
+  ('Peşimde', 'Kerimcan Durmaz', NULL),
+  ('Guilty', 'Inder Chahal & Karan Aujla', NULL),
+  ('Love Is Gone (Acoustic)', 'SLANDER feat. Dylan Matthew', NULL)
   ;
 
    // Update to song table
@@ -301,7 +310,7 @@ pastChartLocation = window.location.href;
  //
 
   // Get the last song_id inserted
-  song_id = 9923; // SELECT last_insert_rowid();
+  song_id = 9936; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -341,21 +350,22 @@ pastChartLocation = window.location.href;
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-08 08:54:18.284284', '801', '9911'),
-  ('2021-03-08 08:54:18.286286', '801', '9912'),
-  ('2021-03-08 08:54:18.287287', '801', '9695'),
-  ('2021-03-08 08:58:26.627627', '801', '9913'),
-  ('2021-03-08 08:58:26.628628', '801', '9914'),
-  ('2021-03-08 08:58:26.628628', '801', '9915'),
-  ('2021-03-08 08:58:26.628628', '801', '9733'),
-  ('2021-03-08 08:58:26.629629', '801', '9916'),
-  ('2021-03-08 08:58:26.629629', '801', '9917'),
-  ('2021-03-08 08:58:26.629629', '801', '9918'),
-  ('2021-03-08 08:58:26.630630', '801', '9919'),
-  ('2021-03-08 08:58:26.630630', '801', '9920'),
-  ('2021-03-08 08:58:26.630630', '801', '9921'),
-  ('2021-03-08 08:58:26.630630', '801', '9922'),
-  ('2021-03-08 08:58:26.631631', '801', '9923')
+  ('2021-03-08 09:27:08.502502', '802', '9924'),
+  ('2021-03-08 09:27:08.502502', '802', '9925'),
+  ('2021-03-08 09:27:08.503503', '802', '978'),
+  ('2021-03-08 09:27:08.503503', '802', '9926'),
+  ('2021-03-08 09:27:08.504504', '802', '9927'),
+  ('2021-03-08 09:27:08.504504', '802', '9928'),
+  ('2021-03-08 09:27:08.504504', '802', '9929'),
+  ('2021-03-08 09:27:08.505505', '802', '9930'),
+  ('2021-03-08 09:27:08.505505', '802', '9931'),
+  ('2021-03-08 09:27:08.505505', '802', '9932'),
+  ('2021-03-08 09:27:08.505505', '802', '9933'),
+  ('2021-03-08 09:27:08.505505', '802', '9934'),
+  ('2021-03-08 09:27:08.506506', '802', '9935'),
+  ('2021-03-08 09:27:08.506506', '802', '4262'),
+  ('2021-03-08 09:29:26.841841', '802', '9936'),
+  ('2021-03-08 09:29:26.842842', '802', '8276')
   ;
 
   // Update to source_song table
