@@ -70,23 +70,27 @@
 
   // Paste sources into the SQL statement, and prune out existing sources
   // If necessary, remove page numbers (ex: ?page=2) from location
+
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2021-02-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-02-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-02-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-01-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-01-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-01-25 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-01-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-01-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-01-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-01-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-01-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-01-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-01-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-01-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ('Pitchfork', 'Track Reviews', NULL, '2021-03-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-03-05 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-03-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-03-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-03-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-03-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-24 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-23 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-22 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-18 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-10 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-02-05 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -134,164 +138,200 @@
   songsData =
   [
     {
-        "title": "Xiu",
-        "artist_name": "Yu Su",
+        "title": "Zero",
+        "artist_name": "John Roberts",
         "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.182182",
-        "source_id": "779",
+        "capture_date": "2021-03-09 03:28:40.008008",
+        "source_id": 807,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "All Futures",
-        "artist_name": "The Armed",
+        "title": "Leave the Door Open",
+        "artist_name": "Bruno Mars, Anderson .Paak, Silk Sonic",
         "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.184184",
-        "source_id": "779",
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Holding Hand",
-        "artist_name": "Iceage",
-        "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "780",
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "ACTION",
-        "artist_name": "CHAI",
-        "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "781",
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Don’t Judge Me",
-        "artist_name": "FKA twigsHeadie OneFred again..",
-        "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "781",
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "hold yourself.",
-        "artist_name": "Tune-Yards",
-        "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "782",
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Schatze",
-        "artist_name": "Ohtis",
-        "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "783",
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Madre",
-        "artist_name": "Arca",
-        "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "784",
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lo Vas a Olvidar",
-        "artist_name": "Billie Eilish & Rosalía",
-        "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "785",
-        "song_id": 9765,
+        "capture_date": "2021-03-09 03:28:40.011011",
+        "source_id": 808,
+        "song_id": 9951,
         "duplicate": true
     },
     {
-        "title": "Hard Drive",
-        "artist_name": "Cassandra Jenkins",
+        "title": "Lemon Pepper Freestyle",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "785",
+        "capture_date": "2021-03-09 03:28:40.011011",
+        "source_id": 808,
+        "song_id": 9948,
+        "duplicate": true
+    },
+    {
+        "title": "Pay Your Way in Pain",
+        "artist_name": "St. Vincent",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:28:40.011011",
+        "source_id": 809,
+        "song_id": 9961,
+        "duplicate": true
+    },
+    {
+        "title": "Drama",
+        "artist_name": "Erika de Casier",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:28:40.011011",
+        "source_id": 809,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Salvaged Copper",
-        "artist_name": "Heathered Pearls",
+        "title": "Open Eyes",
+        "artist_name": "duendita",
         "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "786",
+        "capture_date": "2021-03-09 03:28:40.011011",
+        "source_id": 809,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "ULTIMA",
-        "artist_name": "Body Meat",
+        "title": "Human Thing",
+        "artist_name": "Mattie",
         "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "787",
+        "capture_date": "2021-03-09 03:28:40.011011",
+        "source_id": 810,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mai",
-        "artist_name": "Donato Dozzy",
+        "title": "Be Sweet",
+        "artist_name": "Japanese Breakfast",
         "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "788",
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 811,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Trembling of Glass",
-        "artist_name": "Rachika Nayar",
+        "title": "Michelle Pfeiffer",
+        "artist_name": "Ethel Cain",
         "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.185185",
-        "source_id": "789",
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 812,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ballroom Dance Scene",
-        "artist_name": "Horsegirl",
+        "title": "Rainforest",
+        "artist_name": "Noname",
         "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.186186",
-        "source_id": "790",
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 813,
+        "song_id": 9907,
+        "duplicate": true
+    },
+    {
+        "title": "White Elephant",
+        "artist_name": "Nick CaveWarren Ellis",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 813,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Groove Elation",
-        "artist_name": "Bernice",
+        "title": "Devil’s Rain",
+        "artist_name": "Maria BC",
         "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.186186",
-        "source_id": "791",
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 814,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Atlantic",
-        "artist_name": "The Weather Station",
+        "title": "Now (Forever Momentary Space)",
+        "artist_name": "Damon LocksBlack Monument Ensemble",
         "video_id": null,
-        "capture_date": "2021-03-01 07:24:10.186186",
-        "source_id": "792",
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 815,
         "song_id": null,
         "duplicate": false
+    },
+    {
+        "title": "Runnin",
+        "artist_name": "Debby Friday",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 816,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Strong Feelings",
+        "artist_name": "Dry Cleaning",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 817,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Love Story (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 818,
+        "song_id": 9787,
+        "duplicate": true
+    },
+    {
+        "title": "La Perla",
+        "artist_name": "Sofia Kourtesis",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 819,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Jayu",
+        "artist_name": "Se So Neon",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 820,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dreams of the Imagination",
+        "artist_name": "Sandy Chamoun",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 821,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "There’s Nothing You Can’t Do",
+        "artist_name": "Spirit of the Beehive",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 822,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Up",
+        "artist_name": "Cardi B",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:28:40.012012",
+        "source_id": 823,
+        "song_id": 9774,
+        "duplicate": true
     }
 ]
 
   // To check for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
-    title LIKE '%pov%'
-    AND artist_name LIKE '%Ariana Grande%'
+    title LIKE '%Up%'
+    AND artist_name LIKE '%Cardi%'
   ;
 
 
@@ -303,7 +343,7 @@
   // increase LIMIT number if necessary
   SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 3;
 
-  // manually add source_ids in songsData above.
+  // manually add source_ids in songsData above (INT without quotation marks).
 
   // Update var songsData = the array above.
 
@@ -331,26 +371,26 @@
 
   // Stage SQL statement
   // Replace any ' in strings with ’
+  // check artist name formatting
 
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Xiu', 'Yu Su', NULL),
-  ('All Futures', 'The Armed', NULL),
-  ('The Holding Hand', 'Iceage', NULL),
-  ('ACTION', 'CHAI', NULL),
-  ('Don’t Judge Me', 'FKA twigsHeadie OneFred again..', NULL),
-  ('hold yourself.', 'Tune-Yards', NULL),
-  ('Schatze', 'Ohtis', NULL),
-  ('Madre', 'Arca', NULL),
-  ('Hard Drive', 'Cassandra Jenkins', NULL),
-  ('Salvaged Copper', 'Heathered Pearls', NULL),
-  ('ULTIMA', 'Body Meat', NULL),
-  ('Mai', 'Donato Dozzy', NULL),
-  ('The Trembling of Glass', 'Rachika Nayar', NULL),
-  ('Ballroom Dance Scene', 'Horsegirl', NULL),
-  ('Groove Elation', 'Bernice', NULL),
-  ('Atlantic', 'The Weather Station', NULL)
+  ('Zero', 'John Roberts', NULL),
+  ('Drama', 'Erika de Casier', NULL),
+  ('Open Eyes', 'duendita', NULL),
+  ('Human Thing', 'Mattie', NULL),
+  ('Be Sweet', 'Japanese Breakfast', NULL),
+  ('Michelle Pfeiffer', 'Ethel Cain', NULL),
+  ('White Elephant', 'Nick Cave, Warren Ellis', NULL),
+  ('Devil’s Rain', 'Maria BC', NULL),
+  ('Now (Forever Momentary Space)', 'Damon Locks, Black Monument Ensemble', NULL),
+  ('Runnin', 'Debby Friday', NULL),
+  ('Strong Feelings', 'Dry Cleaning', NULL),
+  ('La Perla', 'Sofia Kourtesis', NULL),
+  ('Jayu', 'Se So Neon', NULL),
+  ('Dreams of the Imagination', 'Sandy Chamoun', NULL),
+  ('There’s Nothing You Can’t Do', 'Spirit of the Beehive', NULL)
   ;
 
    // Update to song table
@@ -361,7 +401,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 9850; // SELECT last_insert_rowid();
+  song_id = 9981; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -401,23 +441,27 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-01 07:24:10.182182', '779', '9835'),
-  ('2021-03-01 07:24:10.184184', '779', '9836'),
-  ('2021-03-01 07:24:10.185185', '780', '9837'),
-  ('2021-03-01 07:24:10.185185', '781', '9838'),
-  ('2021-03-01 07:24:10.185185', '781', '9839'),
-  ('2021-03-01 07:24:10.185185', '782', '9840'),
-  ('2021-03-01 07:24:10.185185', '783', '9841'),
-  ('2021-03-01 07:24:10.185185', '784', '9842'),
-  ('2021-03-01 07:24:10.185185', '785', '9765'),
-  ('2021-03-01 07:24:10.185185', '785', '9843'),
-  ('2021-03-01 07:24:10.185185', '786', '9844'),
-  ('2021-03-01 07:24:10.185185', '787', '9845'),
-  ('2021-03-01 07:24:10.185185', '788', '9846'),
-  ('2021-03-01 07:24:10.185185', '789', '9847'),
-  ('2021-03-01 07:24:10.186186', '790', '9848'),
-  ('2021-03-01 07:24:10.186186', '791', '9849'),
-  ('2021-03-01 07:24:10.186186', '792', '9850')
+  ('2021-03-09 03:28:40.008008', '807', '9967'),
+  ('2021-03-09 03:28:40.011011', '808', '9951'),
+  ('2021-03-09 03:28:40.011011', '808', '9948'),
+  ('2021-03-09 03:28:40.011011', '809', '9961'),
+  ('2021-03-09 03:28:40.011011', '809', '9968'),
+  ('2021-03-09 03:28:40.011011', '809', '9969'),
+  ('2021-03-09 03:28:40.011011', '810', '9970'),
+  ('2021-03-09 03:28:40.012012', '811', '9971'),
+  ('2021-03-09 03:28:40.012012', '812', '9972'),
+  ('2021-03-09 03:28:40.012012', '813', '9907'),
+  ('2021-03-09 03:28:40.012012', '813', '9973'),
+  ('2021-03-09 03:28:40.012012', '814', '9974'),
+  ('2021-03-09 03:28:40.012012', '815', '9975'),
+  ('2021-03-09 03:28:40.012012', '816', '9976'),
+  ('2021-03-09 03:28:40.012012', '817', '9977'),
+  ('2021-03-09 03:28:40.012012', '818', '9787'),
+  ('2021-03-09 03:28:40.012012', '819', '9978'),
+  ('2021-03-09 03:28:40.012012', '820', '9979'),
+  ('2021-03-09 03:28:40.012012', '821', '9980'),
+  ('2021-03-09 03:28:40.012012', '822', '9981'),
+  ('2021-03-09 03:28:40.012012', '823', '9774')
   ;
 
   // Update to source_song table

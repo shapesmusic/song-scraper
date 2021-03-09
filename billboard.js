@@ -29,7 +29,7 @@
     + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'Week of "
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
+    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   )
 
 
@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of March 6, 2021', '2021-03-06 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-03-06');
+    ('Billboard', 'The Hot 100', 'Week of March 13, 2021', '2021-03-13 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-03-13');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 803; // SELECT last_insert_rowid();
+  source_id = 804; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -93,92 +93,56 @@
   songsData =
   [
     {
-        "title": "Clouds",
-        "artist_name": "NF",
+        "title": "AP",
+        "artist_name": "Pop Smoke",
         "video_id": null,
-        "capture_date": "2021-03-09 02:53:19.242242",
-        "source_id": 803,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Telepatia",
-        "artist_name": "Kali Uchis",
-        "video_id": null,
-        "capture_date": "2021-03-09 02:53:19.242242",
-        "source_id": 803,
-        "song_id": 9695,
+        "capture_date": "2021-03-09 02:59:50.337337",
+        "source_id": 804,
+        "song_id": 9906,
         "duplicate": true
     },
     {
-        "title": "Test Drive",
-        "artist_name": "Ariana Grande",
+        "title": "Only Wanna Be With You",
+        "artist_name": "Post Malone",
         "video_id": null,
-        "capture_date": "2021-03-09 02:53:19.242242",
-        "source_id": 803,
-        "song_id": 9830,
+        "capture_date": "2021-03-09 02:59:50.337337",
+        "source_id": 804,
+        "song_id": 9903,
         "duplicate": true
     },
     {
-        "title": "Hit Bout It",
-        "artist_name": "Lil Yachty Featuring Kodak Black",
+        "title": "Drunk (And I Don't Wanna Go Home)",
+        "artist_name": "Elle King & Miranda Lambert",
         "video_id": null,
-        "capture_date": "2021-03-09 02:53:19.242242",
-        "source_id": 803,
-        "song_id": 9827,
-        "duplicate": true
-    },
-    {
-        "title": "Chicken Tendies",
-        "artist_name": "Clinton Kane",
-        "video_id": null,
-        "capture_date": "2021-03-09 02:53:19.242242",
-        "source_id": 803,
+        "capture_date": "2021-03-09 02:59:50.338338",
+        "source_id": 804,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "ZaZa",
-        "artist_name": "6ix9ine",
+        "title": "Breaking Up Was Easy In The 90's",
+        "artist_name": "Sam Hunt",
         "video_id": null,
-        "capture_date": "2021-03-09 02:53:19.242242",
-        "source_id": 803,
+        "capture_date": "2021-03-09 02:59:50.338338",
+        "source_id": 804,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Made For You",
-        "artist_name": "Jake Owen",
+        "title": "Nobody",
+        "artist_name": "Dylan Scott",
         "video_id": null,
-        "capture_date": "2021-03-09 02:53:19.242242",
-        "source_id": 803,
+        "capture_date": "2021-03-09 02:59:50.338338",
+        "source_id": 804,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Business",
-        "artist_name": "Tiesto",
+        "title": "Gone",
+        "artist_name": "Dierks Bentley",
         "video_id": null,
-        "capture_date": "2021-03-09 02:53:19.243243",
-        "source_id": 803,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hello",
-        "artist_name": "Pop Smoke Featuring A Boogie Wit da Hoodie",
-        "video_id": null,
-        "capture_date": "2021-03-09 02:53:19.243243",
-        "source_id": 803,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Track Star",
-        "artist_name": "Mooski",
-        "video_id": null,
-        "capture_date": "2021-03-09 02:53:19.243243",
-        "source_id": 803,
+        "capture_date": "2021-03-09 02:59:50.338338",
+        "source_id": 804,
         "song_id": null,
         "duplicate": false
     }
@@ -221,13 +185,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Clouds', 'NF', NULL),
-  ('Chicken Tendies', 'Clinton Kane', NULL),
-  ('ZaZa', '6ix9ine', NULL),
-  ('Made For You', 'Jake Owen', NULL),
-  ('The Business', 'Tiesto', NULL),
-  ('Hello', 'Pop Smoke Featuring A Boogie Wit da Hoodie', NULL),
-  ('Track Star', 'Mooski', NULL)
+  ('Drunk (And I Don’t Wanna Go Home)', 'Elle King & Miranda Lambert', NULL),
+  ('Breaking Up Was Easy In The 90’s', 'Sam Hunt', NULL),
+  ('Nobody', 'Dylan Scott', NULL),
+  ('Gone', 'Dierks Bentley', NULL)
   ;
 
    // Update to song table
@@ -238,7 +199,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9943; // SELECT last_insert_rowid();
+  song_id = 9947; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -278,16 +239,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-09 02:53:19.242242', '803', '9937'),
-  ('2021-03-09 02:53:19.242242', '803', '9695'),
-  ('2021-03-09 02:53:19.242242', '803', '9830'),
-  ('2021-03-09 02:53:19.242242', '803', '9827'),
-  ('2021-03-09 02:53:19.242242', '803', '9938'),
-  ('2021-03-09 02:53:19.242242', '803', '9939'),
-  ('2021-03-09 02:53:19.242242', '803', '9940'),
-  ('2021-03-09 02:53:19.243243', '803', '9941'),
-  ('2021-03-09 02:53:19.243243', '803', '9942'),
-  ('2021-03-09 02:53:19.243243', '803', '9943')
+  ('2021-03-09 02:59:50.337337', '804', '9906'),
+  ('2021-03-09 02:59:50.337337', '804', '9903'),
+  ('2021-03-09 02:59:50.338338', '804', '9944'),
+  ('2021-03-09 02:59:50.338338', '804', '9945'),
+  ('2021-03-09 02:59:50.338338', '804', '9946'),
+  ('2021-03-09 02:59:50.338338', '804', '9947')
   ;
 
   // Update to source_song table

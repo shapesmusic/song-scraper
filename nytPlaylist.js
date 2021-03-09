@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Post Malone Covers Hootie & the Blowfish, and 10 More New Songs', '2021-02-26 08:00:48.000000', 'https://www.nytimes.com/2021/02/26/arts/music/playlist-post-malone-hootie-blowfish-pop-smoke.html');
+    ('New York Times', 'The Playlist', 'St. Vincent’s Synth-Funk ‘Pain,’ and 9 More New Songs', '2021-03-05 09:09:36.000000', 'https://www.nytimes.com/2021/03/05/arts/music/playlist-drake-bruno-mars-st-vincent.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 800; // SELECT last_insert_rowid();
+  source_id = 806; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -89,80 +89,83 @@
 
 
 //
-// Step 3: Stage songsData, preview chart and prune songs, find & set any duplicate songs to true, and add song_ids for duplicates
+// Step 3:  Stage songsData,
+//          preview chart and prune songs,
+//          find & set any duplicate songs to true,
+//          add song_ids for duplicates
 //
 
   songsData =
   [
     {
-        "title": "Only Wanna Be With You (Pokémon 25 Version)",
-        "artist_name": "Post Malone",
+        "title": "Pay Your Way in Pain",
+        "artist_name": "St. Vincent",
         "video_id": null,
-        "capture_date": "2021-03-01 04:38:58.492492",
-        "source_id": 800,
+        "capture_date": "2021-03-09 03:18:33.479479",
+        "source_id": 806,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Open Up the Heavens",
-        "artist_name": "Jade Bird",
+        "title": "Spinning",
+        "artist_name": "No Rome featuring Charli XCX and the 1975",
         "video_id": null,
-        "capture_date": "2021-03-01 04:38:58.494494",
-        "source_id": 800,
+        "capture_date": "2021-03-09 03:18:33.480480",
+        "source_id": 806,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Anything at All",
-        "artist_name": "Bachelor",
+        "title": "Leave the Door Open",
+        "artist_name": "Bruno Mars, Anderson .Paak, Silk Sonic",
         "video_id": null,
-        "capture_date": "2021-03-01 04:38:58.494494",
-        "source_id": 800,
+        "capture_date": "2021-03-09 03:18:33.480480",
+        "source_id": 806,
+        "song_id": 9951,
+        "duplicate": true
+    },
+    {
+        "title": "Lemon Pepper Freestyle",
+        "artist_name": "Drake featuring Rick Ross",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:18:33.480480",
+        "source_id": 806,
+        "song_id": 9948,
+        "duplicate": true
+    },
+    {
+        "title": "Sacrifice",
+        "artist_name": "Bebe Rexha",
+        "video_id": null,
+        "capture_date": "2021-03-09 03:18:33.480480",
+        "source_id": 806,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "AP",
-        "artist_name": "Pop Smoke",
+        "title": "Can’t Let It Show",
+        "artist_name": "Tank",
         "video_id": null,
-        "capture_date": "2021-03-01 04:38:58.494494",
-        "source_id": 800,
+        "capture_date": "2021-03-09 03:18:33.480480",
+        "source_id": 806,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rainforest",
-        "artist_name": "Noname",
+        "title": "Beautiful Mistakes",
+        "artist_name": "Maroon 5 featuring Megan Thee Stallion",
         "video_id": null,
-        "capture_date": "2021-03-01 04:38:58.494494",
-        "source_id": 800,
+        "capture_date": "2021-03-09 03:18:33.480480",
+        "source_id": 806,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Quién Podrá Saberlo",
-        "artist_name": "Dom la Nena and Julieta Venegas",
+        "title": "Til Forever Falls Apart",
+        "artist_name": "Ashe and Finneas",
         "video_id": null,
-        "capture_date": "2021-03-01 04:38:58.494494",
-        "source_id": 800,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cross Country",
-        "artist_name": "Breland",
-        "video_id": null,
-        "capture_date": "2021-03-01 04:38:58.494494",
-        "source_id": 800,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Spaceman",
-        "artist_name": "Nick Jonas",
-        "video_id": null,
-        "capture_date": "2021-03-01 04:38:58.494494",
-        "source_id": 800,
+        "capture_date": "2021-03-09 03:18:33.480480",
+        "source_id": 806,
         "song_id": null,
         "duplicate": false
     }
@@ -205,14 +208,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Only Wanna Be With You (Pokémon 25 Version)', 'Post Malone', NULL),
-  ('Open Up the Heavens', 'Jade Bird', NULL),
-  ('Anything at All', 'Bachelor', NULL),
-  ('AP', 'Pop Smoke', NULL),
-  ('Rainforest', 'Noname', NULL),
-  ('Quién Podrá Saberlo', 'Dom la Nena and Julieta Venegas', NULL),
-  ('Cross Country', 'Breland', NULL),
-  ('Spaceman', 'Nick Jonas', NULL)
+  ('Pay Your Way in Pain', 'St. Vincent', NULL),
+  ('Spinning', 'No Rome featuring Charli XCX and the 1975', NULL),
+  ('Sacrifice', 'Bebe Rexha', NULL),
+  ('Can’t Let It Show', 'Tank', NULL),
+  ('Beautiful Mistakes', 'Maroon 5 featuring Megan Thee Stallion', NULL),
+  ('Til Forever Falls Apart', 'Ashe and Finneas', NULL)
   ;
 
    // Update to song table
@@ -223,7 +224,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9910; // SELECT last_insert_rowid();
+  song_id = 9966; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -263,14 +264,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-01 04:38:58.492492', '800', '9903'),
-  ('2021-03-01 04:38:58.494494', '800', '9904'),
-  ('2021-03-01 04:38:58.494494', '800', '9905'),
-  ('2021-03-01 04:38:58.494494', '800', '9906'),
-  ('2021-03-01 04:38:58.494494', '800', '9907'),
-  ('2021-03-01 04:38:58.494494', '800', '9908'),
-  ('2021-03-01 04:38:58.494494', '800', '9909'),
-  ('2021-03-01 04:38:58.494494', '800', '9910')
+  ('2021-03-09 03:18:33.479479', '806', '9961'),
+  ('2021-03-09 03:18:33.480480', '806', '9962'),
+  ('2021-03-09 03:18:33.480480', '806', '9951'),
+  ('2021-03-09 03:18:33.480480', '806', '9948'),
+  ('2021-03-09 03:18:33.480480', '806', '9963'),
+  ('2021-03-09 03:18:33.480480', '806', '9964'),
+  ('2021-03-09 03:18:33.480480', '806', '9965'),
+  ('2021-03-09 03:18:33.480480', '806', '9966')
   ;
 
   // Update to source_song table
