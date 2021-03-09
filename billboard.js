@@ -29,7 +29,7 @@
     + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'Week of "
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
+    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   )
 
 
@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of February 27, 2021', '2021-02-27 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-02-27');
+    ('Billboard', 'The Hot 100', 'Week of March 6, 2021', '2021-03-06 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-03-06');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 772; // SELECT last_insert_rowid();
+  source_id = 803; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -93,74 +93,92 @@
   songsData =
   [
     {
-        "title": "Calling My Phone",
-        "artist_name": "Lil Tjay Featuring 6LACK",
+        "title": "Clouds",
+        "artist_name": "NF",
         "video_id": null,
-        "capture_date": "2021-02-27 08:35:22.167167",
-        "source_id": 772,
+        "capture_date": "2021-03-09 02:53:19.242242",
+        "source_id": 803,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Love Story (Taylor's Version)",
-        "artist_name": "Taylor Swift",
+        "title": "Telepatia",
+        "artist_name": "Kali Uchis",
         "video_id": null,
-        "capture_date": "2021-02-27 08:35:22.167167",
-        "source_id": 772,
+        "capture_date": "2021-03-09 02:53:19.242242",
+        "source_id": 803,
+        "song_id": 9695,
+        "duplicate": true
+    },
+    {
+        "title": "Test Drive",
+        "artist_name": "Ariana Grande",
+        "video_id": null,
+        "capture_date": "2021-03-09 02:53:19.242242",
+        "source_id": 803,
+        "song_id": 9830,
+        "duplicate": true
+    },
+    {
+        "title": "Hit Bout It",
+        "artist_name": "Lil Yachty Featuring Kodak Black",
+        "video_id": null,
+        "capture_date": "2021-03-09 02:53:19.242242",
+        "source_id": 803,
+        "song_id": 9827,
+        "duplicate": true
+    },
+    {
+        "title": "Chicken Tendies",
+        "artist_name": "Clinton Kane",
+        "video_id": null,
+        "capture_date": "2021-03-09 02:53:19.242242",
+        "source_id": 803,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "We're Good",
-        "artist_name": "Dua Lipa",
+        "title": "ZaZa",
+        "artist_name": "6ix9ine",
         "video_id": null,
-        "capture_date": "2021-02-27 08:35:22.169169",
-        "source_id": 772,
+        "capture_date": "2021-03-09 02:53:19.242242",
+        "source_id": 803,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "What It Feels Like",
-        "artist_name": "Nipsey Hussle & JAY-Z",
+        "title": "Made For You",
+        "artist_name": "Jake Owen",
         "video_id": null,
-        "capture_date": "2021-02-27 08:35:22.169169",
-        "source_id": 772,
+        "capture_date": "2021-03-09 02:53:19.242242",
+        "source_id": 803,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Astronaut In The Ocean",
-        "artist_name": "Masked Wolf",
+        "title": "The Business",
+        "artist_name": "Tiesto",
         "video_id": null,
-        "capture_date": "2021-02-27 08:35:22.170170",
-        "source_id": 772,
+        "capture_date": "2021-03-09 02:53:19.243243",
+        "source_id": 803,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Heartbreak Anniversary",
-        "artist_name": "Giveon",
+        "title": "Hello",
+        "artist_name": "Pop Smoke Featuring A Boogie Wit da Hoodie",
         "video_id": null,
-        "capture_date": "2021-02-27 08:35:22.170170",
-        "source_id": 772,
+        "capture_date": "2021-03-09 02:53:19.243243",
+        "source_id": 803,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Like I Want You",
-        "artist_name": "Giveon",
+        "title": "Track Star",
+        "artist_name": "Mooski",
         "video_id": null,
-        "capture_date": "2021-02-27 08:35:22.171171",
-        "source_id": 772,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "How They Remember You",
-        "artist_name": "Rascal Flatts",
-        "video_id": null,
-        "capture_date": "2021-02-27 08:35:22.171171",
-        "source_id": 772,
+        "capture_date": "2021-03-09 02:53:19.243243",
+        "source_id": 803,
         "song_id": null,
         "duplicate": false
     }
@@ -203,14 +221,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Calling My Phone', 'Lil Tjay Featuring 6LACK', NULL),
-  ('Love Story (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('We’re Good', 'Dua Lipa', NULL),
-  ('What It Feels Like', 'Nipsey Hussle & JAY-Z', NULL),
-  ('Astronaut In The Ocean', 'Masked Wolf', NULL),
-  ('Heartbreak Anniversary', 'Giveon', NULL),
-  ('Like I Want You', 'Giveon', NULL),
-  ('How They Remember You', 'Rascal Flatts', NULL)
+  ('Clouds', 'NF', NULL),
+  ('Chicken Tendies', 'Clinton Kane', NULL),
+  ('ZaZa', '6ix9ine', NULL),
+  ('Made For You', 'Jake Owen', NULL),
+  ('The Business', 'Tiesto', NULL),
+  ('Hello', 'Pop Smoke Featuring A Boogie Wit da Hoodie', NULL),
+  ('Track Star', 'Mooski', NULL)
   ;
 
    // Update to song table
@@ -221,7 +238,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9793; // SELECT last_insert_rowid();
+  song_id = 9943; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -261,14 +278,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-02-27 08:35:22.167167', '772', '9786'),
-  ('2021-02-27 08:35:22.167167', '772', '9787'),
-  ('2021-02-27 08:35:22.169169', '772', '9788'),
-  ('2021-02-27 08:35:22.169169', '772', '9789'),
-  ('2021-02-27 08:35:22.170170', '772', '9790'),
-  ('2021-02-27 08:35:22.170170', '772', '9791'),
-  ('2021-02-27 08:35:22.171171', '772', '9792'),
-  ('2021-02-27 08:35:22.171171', '772', '9793')
+  ('2021-03-09 02:53:19.242242', '803', '9937'),
+  ('2021-03-09 02:53:19.242242', '803', '9695'),
+  ('2021-03-09 02:53:19.242242', '803', '9830'),
+  ('2021-03-09 02:53:19.242242', '803', '9827'),
+  ('2021-03-09 02:53:19.242242', '803', '9938'),
+  ('2021-03-09 02:53:19.242242', '803', '9939'),
+  ('2021-03-09 02:53:19.242242', '803', '9940'),
+  ('2021-03-09 02:53:19.243243', '803', '9941'),
+  ('2021-03-09 02:53:19.243243', '803', '9942'),
+  ('2021-03-09 02:53:19.243243', '803', '9943')
   ;
 
   // Update to source_song table
