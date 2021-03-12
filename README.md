@@ -38,11 +38,6 @@ ORDER BY parent_entity;
 |Hype Machine|Stack|[current chart](https://hypem.com/stack)|😸|Weekly|Also [Popular Now](https://hypem.com/popular) updated realtime|
 
 
+**Manual Additions**
 
-**Add a non-recurring source:**
-
-How?
-
-**Add a single song:**
-
-How?
+Use [manual-add.js](https://github.com/davidforrest/Song-Scraper/blob/master/manual-add.js) to add single songs and non-recurring sources.
