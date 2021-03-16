@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of March 13, 2021', '2021-03-13 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-03-13');
+    ('Billboard', 'The Hot 100', 'Week of March 20, 2021', '2021-03-20 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-03-20');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 804; // SELECT last_insert_rowid();
+  source_id = 848; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -87,66 +87,105 @@
 
 
 //
-// Step 3: Stage songsData, prune unwanted songs, find & set any duplicate songs to true, and add song_ids for duplicates
+// Step 3:  Stage songsData,
+//          prune unwanted songs,
+//          find & set any duplicate songs to true,
+//          add song_ids for duplicates
 //
 
   songsData =
   [
-    {
-        "title": "AP",
-        "artist_name": "Pop Smoke",
-        "video_id": null,
-        "capture_date": "2021-03-09 02:59:50.337337",
-        "source_id": 804,
-        "song_id": 9906,
-        "duplicate": true
-    },
-    {
-        "title": "Only Wanna Be With You",
-        "artist_name": "Post Malone",
-        "video_id": null,
-        "capture_date": "2021-03-09 02:59:50.337337",
-        "source_id": 804,
-        "song_id": 9903,
-        "duplicate": true
-    },
-    {
-        "title": "Drunk (And I Don't Wanna Go Home)",
-        "artist_name": "Elle King & Miranda Lambert",
-        "video_id": null,
-        "capture_date": "2021-03-09 02:59:50.338338",
-        "source_id": 804,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Breaking Up Was Easy In The 90's",
-        "artist_name": "Sam Hunt",
-        "video_id": null,
-        "capture_date": "2021-03-09 02:59:50.338338",
-        "source_id": 804,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nobody",
-        "artist_name": "Dylan Scott",
-        "video_id": null,
-        "capture_date": "2021-03-09 02:59:50.338338",
-        "source_id": 804,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gone",
-        "artist_name": "Dierks Bentley",
-        "video_id": null,
-        "capture_date": "2021-03-09 02:59:50.338338",
-        "source_id": 804,
-        "song_id": null,
-        "duplicate": false
-    }
-]
+      {
+          "title": "What's Next",
+          "artist_name": "Drake",
+          "video_id": null,
+          "capture_date": "2021-03-16 08:50:09.437437",
+          "source_id": 848,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Wants And Needs",
+          "artist_name": "Drake Featuring Lil Baby",
+          "video_id": null,
+          "capture_date": "2021-03-16 08:50:09.438438",
+          "source_id": 848,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Lemon Pepper Freestyle",
+          "artist_name": "Drake Featuring Rick Ross",
+          "video_id": null,
+          "capture_date": "2021-03-16 08:50:09.438438",
+          "source_id": 848,
+          "song_id": 9948,
+          "duplicate": true
+      },
+      {
+          "title": "Leave The Door Open",
+          "artist_name": "Silk Sonic (Bruno Mars & Anderson .Paak)",
+          "video_id": null,
+          "capture_date": "2021-03-16 08:50:09.438438",
+          "source_id": 848,
+          "song_id": 9951,
+          "duplicate": true
+      },
+      {
+          "title": "Hold On",
+          "artist_name": "Justin Bieber",
+          "video_id": null,
+          "capture_date": "2021-03-16 08:50:09.439439",
+          "source_id": 848,
+          "song_id": 9952,
+          "duplicate": true
+      },
+      {
+          "title": "Real As It Gets",
+          "artist_name": "Lil Baby Featuring EST Gee",
+          "video_id": null,
+          "capture_date": "2021-03-16 08:50:09.439439",
+          "source_id": 848,
+          "song_id": 9949,
+          "duplicate": true
+      },
+      {
+          "title": "Beautiful Mistakes",
+          "artist_name": "Maroon 5 Featuring Megan Thee Stallion",
+          "video_id": null,
+          "capture_date": "2021-03-16 08:50:09.439439",
+          "source_id": 848,
+          "song_id": 9965,
+          "duplicate": true
+      },
+      {
+          "title": "Hellcats & Trackhawks",
+          "artist_name": "Lil Durk",
+          "video_id": null,
+          "capture_date": "2021-03-16 08:50:09.440440",
+          "source_id": 848,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Life's A Mess II",
+          "artist_name": "Juice WRLD, Clever & Post Malone",
+          "video_id": null,
+          "capture_date": "2021-03-16 08:50:09.440440",
+          "source_id": 848,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Lil Bit",
+          "artist_name": "Nelly & Florida Georgia Line",
+          "video_id": null,
+          "capture_date": "2021-03-16 08:50:09.440440",
+          "source_id": 848,
+          "song_id": null,
+          "duplicate": false
+      }
+  ]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -185,10 +224,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Drunk (And I Don’t Wanna Go Home)', 'Elle King & Miranda Lambert', NULL),
-  ('Breaking Up Was Easy In The 90’s', 'Sam Hunt', NULL),
-  ('Nobody', 'Dylan Scott', NULL),
-  ('Gone', 'Dierks Bentley', NULL)
+  ('What’s Next', 'Drake', NULL),
+  ('Wants And Needs', 'Drake Featuring Lil Baby', NULL),
+  ('Hellcats & Trackhawks', 'Lil Durk', NULL),
+  ('Life’s A Mess II', 'Juice WRLD, Clever & Post Malone', NULL),
+  ('Lil Bit', 'Nelly & Florida Georgia Line', NULL)
   ;
 
    // Update to song table
@@ -199,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9947; // SELECT last_insert_rowid();
+  song_id = 9992; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -239,12 +279,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-09 02:59:50.337337', '804', '9906'),
-  ('2021-03-09 02:59:50.337337', '804', '9903'),
-  ('2021-03-09 02:59:50.338338', '804', '9944'),
-  ('2021-03-09 02:59:50.338338', '804', '9945'),
-  ('2021-03-09 02:59:50.338338', '804', '9946'),
-  ('2021-03-09 02:59:50.338338', '804', '9947')
+  ('2021-03-16 08:50:09.437437', '848', '9988'),
+  ('2021-03-16 08:50:09.438438', '848', '9989'),
+  ('2021-03-16 08:50:09.438438', '848', '9948'),
+  ('2021-03-16 08:50:09.438438', '848', '9951'),
+  ('2021-03-16 08:50:09.439439', '848', '9952'),
+  ('2021-03-16 08:50:09.439439', '848', '9949'),
+  ('2021-03-16 08:50:09.439439', '848', '9965'),
+  ('2021-03-16 08:50:09.440440', '848', '9990'),
+  ('2021-03-16 08:50:09.440440', '848', '9991'),
+  ('2021-03-16 08:50:09.440440', '848', '9992')
   ;
 
   // Update to source_song table

@@ -45,7 +45,7 @@ pastChartLocation = window.location.href;
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('YouTube', 'Global Top Songs', 'Week of Mar 4, 2021', '2021-03-04 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210226-20210304');
+    ('YouTube', 'Global Top Songs', 'Week of Mar 11, 2021', '2021-03-11 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210305-20210311');
 
   // Update to source table
 
@@ -54,14 +54,14 @@ pastChartLocation = window.location.href;
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 802; // SELECT last_insert_rowid();
+  source_id = 849; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-table-row style-scope ytmc-chart-table');
 
   songsData = [];
 
-  for (var i=0; i<elements.length; i++){ // if artist_name error, set i < [last successful i + 1], scrape to there, then continue from the next new song through elements.length.
+  for (var i=0; i<elements.length; i++){ // if artist_name error, set i < [last successful i + 1], scrape to there, then continue from the next new song through elements.length. (i=36; i<37; gets chart no 37)
       element = elements[i];
 
       isNew = element.getElementsByClassName("style-scope ytmc-chart-table")[0].getElementsByClassName("style-scope ytmc-chart-table")[4].getElementsByClassName("style-scope ytmc-chart-table")[1].innerText;
@@ -105,148 +105,175 @@ pastChartLocation = window.location.href;
   songsData =
   [
     {
-        "title": "Shor Machega",
-        "artist_name": "Honey Singh & Hommie Dilliwala",
+        "title": "Leave The Door Open",
+        "artist_name": "Bruno Mars, Anderson .Paak & Silk Sonic",
         "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.502502",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Saranga Dariya",
-        "artist_name": "Mangli",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.502502",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Kill This Love",
-        "artist_name": "BLACKPINK",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.503503",
-        "source_id": 802,
-        "song_id": 978,
+        "capture_date": "2021-03-16 10:33:21.198198",
+        "source_id": 849,
+        "song_id": 9951,
         "duplicate": true
     },
     {
-        "title": "Jatt Te Jawani",
-        "artist_name": "Dilpreet Dhillon & Karan Aujla",
+        "title": "Hold On",
+        "artist_name": "Justin Bieber",
         "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.503503",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "PROBLEMA",
-        "artist_name": "Daddy Yankee",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.504504",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Machu Picchu",
-        "artist_name": "Camilo & Evaluna Montaner",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.504504",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nadiyon Paar (Let the Music Play Again)",
-        "artist_name": "Sachin–Jigar, Rashmeet Kaur, Shamur & IP Singh",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.504504",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "M4",
-        "artist_name": "Matuê",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.505505",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "群青",
-        "artist_name": "Yoasobi",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.505505",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Jerusalema (Remix)",
-        "artist_name": "Ponifasio Samoa",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.505505",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Aur Pyaar Karna Hai",
-        "artist_name": "Neha Kakkar, Guru Randhawa & Sachet–Parampara",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.505505",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Peşimde",
-        "artist_name": "Kerimcan Durmaz",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.505505",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Guilty",
-        "artist_name": "Inder Chahal & Karan Aujla",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.506506",
-        "source_id": 802,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hot N*gga",
-        "artist_name": "Bobby Shmurda",
-        "video_id": null,
-        "capture_date": "2021-03-08 09:27:08.506506",
-        "source_id": 802,
-        "song_id": 4262,
+        "capture_date": "2021-03-16 10:33:21.199199",
+        "source_id": 849,
+        "song_id": 9952,
         "duplicate": true
     },
     {
-        "title": "Love Is Gone (Acoustic)",
-        "artist_name": "SLANDER feat. Dylan Matthew",
+        "title": "Además de Mí (Remix)",
+        "artist_name": "Rusherking, KHEA, Duki, Maria Becerra, Lit Killah & Tiago PZK",
         "video_id": null,
-        "capture_date": "2021-03-08 09:29:26.841841",
-        "source_id": 802,
+        "capture_date": "2021-03-16 10:33:21.199199",
+        "source_id": 849,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "ROCKSTAR",
-        "artist_name": "DaBaby feat. Roddy Ricch",
+        "title": "Mexico Koka",
+        "artist_name": "Karan Aujla",
         "video_id": null,
-        "capture_date": "2021-03-08 09:29:26.842842",
-        "source_id": 802,
-        "song_id": 8276,
+        "capture_date": "2021-03-16 10:33:21.200200",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "What’s Next",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:33:21.200200",
+        "source_id": 849,
+        "song_id": 9988,
         "duplicate": true
+    },
+    {
+        "title": "Tera Suit",
+        "artist_name": "Tony Kakkar",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:39:02.183183",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fly",
+        "artist_name": "Badshah & Uchana Amit",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:41:08.639639",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mi Niña (Remix)",
+        "artist_name": "Wisin, Myke Towers & Maluma feat. Anitta & Los Legendarios",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:41:08.640640",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "911",
+        "artist_name": "Sech",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:41:08.641641",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Não Pode Se Apaixonar",
+        "artist_name": "Xand Avião, DJ Ivis & MC Danny",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:41:08.641641",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "왜왜왜 (Why Why Why)",
+        "artist_name": "iKON",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:47:44.431431",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Chitti",
+        "artist_name": "Ram Miriyala",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:49:38.728728",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Kannau Hodiyaka",
+        "artist_name": "Shreya Ghoshal",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:49:38.728728",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "CHIAMAMI PER NOME",
+        "artist_name": "Francesca Michielin & Fedez",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:51:18.944944",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Namo Namo",
+        "artist_name": "Amit Trivedi",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:55:37.173173",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "She is beautiful",
+        "artist_name": "SP420",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:55:37.173173",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lavandiya London Se Layenge",
+        "artist_name": "Ritesh Pandey",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:57:06.764764",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sweater Weather",
+        "artist_name": "The Neighbourhood",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:57:06.764764",
+        "source_id": 849,
+        "song_id": 4778,
+        "duplicate": true
+    },
+    {
+        "title": "Bholenath",
+        "artist_name": "Kaka",
+        "video_id": null,
+        "capture_date": "2021-03-16 10:57:06.764764",
+        "source_id": 849,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -287,19 +314,21 @@ pastChartLocation = window.location.href;
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Shor Machega', 'Honey Singh & Hommie Dilliwala', NULL),
-  ('Saranga Dariya', 'Mangli', NULL),
-  ('Jatt Te Jawani', 'Dilpreet Dhillon & Karan Aujla', NULL),
-  ('PROBLEMA', 'Daddy Yankee', NULL),
-  ('Machu Picchu', 'Camilo & Evaluna Montaner', NULL),
-  ('Nadiyon Paar (Let the Music Play Again)', 'Sachin–Jigar, Rashmeet Kaur, Shamur & IP Singh', NULL),
-  ('M4', 'Matuê', NULL),
-  ('群青', 'Yoasobi', NULL),
-  ('Jerusalema (Remix)', 'Ponifasio Samoa', NULL),
-  ('Aur Pyaar Karna Hai', 'Neha Kakkar, Guru Randhawa & Sachet–Parampara', NULL),
-  ('Peşimde', 'Kerimcan Durmaz', NULL),
-  ('Guilty', 'Inder Chahal & Karan Aujla', NULL),
-  ('Love Is Gone (Acoustic)', 'SLANDER feat. Dylan Matthew', NULL)
+  ('Además de Mí (Remix)', 'Rusherking, KHEA, Duki, Maria Becerra, Lit Killah & Tiago PZK', NULL),
+  ('Mexico Koka', 'Karan Aujla', NULL),
+  ('Tera Suit', 'Tony Kakkar', NULL),
+  ('Fly', 'Badshah & Uchana Amit', NULL),
+  ('Mi Niña (Remix)', 'Wisin, Myke Towers & Maluma feat. Anitta & Los Legendarios', NULL),
+  ('911', 'Sech', NULL),
+  ('Não Pode Se Apaixonar', 'Xand Avião, DJ Ivis & MC Danny', NULL),
+  ('왜왜왜 (Why Why Why)', 'iKON', NULL),
+  ('Chitti', 'Ram Miriyala', NULL),
+  ('Kannau Hodiyaka', 'Shreya Ghoshal', NULL),
+  ('CHIAMAMI PER NOME', 'Francesca Michielin & Fedez', NULL),
+  ('Namo Namo', 'Amit Trivedi', NULL),
+  ('She is beautiful', 'SP420', NULL),
+  ('Lavandiya London Se Layenge', 'Ritesh Pandey', NULL),
+  ('Bholenath', 'Kaka', NULL)
   ;
 
    // Update to song table
@@ -310,7 +339,7 @@ pastChartLocation = window.location.href;
  //
 
   // Get the last song_id inserted
-  song_id = 9936; // SELECT last_insert_rowid();
+  song_id = 10007; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -350,22 +379,25 @@ pastChartLocation = window.location.href;
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-08 09:27:08.502502', '802', '9924'),
-  ('2021-03-08 09:27:08.502502', '802', '9925'),
-  ('2021-03-08 09:27:08.503503', '802', '978'),
-  ('2021-03-08 09:27:08.503503', '802', '9926'),
-  ('2021-03-08 09:27:08.504504', '802', '9927'),
-  ('2021-03-08 09:27:08.504504', '802', '9928'),
-  ('2021-03-08 09:27:08.504504', '802', '9929'),
-  ('2021-03-08 09:27:08.505505', '802', '9930'),
-  ('2021-03-08 09:27:08.505505', '802', '9931'),
-  ('2021-03-08 09:27:08.505505', '802', '9932'),
-  ('2021-03-08 09:27:08.505505', '802', '9933'),
-  ('2021-03-08 09:27:08.505505', '802', '9934'),
-  ('2021-03-08 09:27:08.506506', '802', '9935'),
-  ('2021-03-08 09:27:08.506506', '802', '4262'),
-  ('2021-03-08 09:29:26.841841', '802', '9936'),
-  ('2021-03-08 09:29:26.842842', '802', '8276')
+  ('2021-03-16 10:33:21.198198', '849', '9951'),
+  ('2021-03-16 10:33:21.199199', '849', '9952'),
+  ('2021-03-16 10:33:21.199199', '849', '9993'),
+  ('2021-03-16 10:33:21.200200', '849', '9994'),
+  ('2021-03-16 10:33:21.200200', '849', '9988'),
+  ('2021-03-16 10:39:02.183183', '849', '9995'),
+  ('2021-03-16 10:41:08.639639', '849', '9996'),
+  ('2021-03-16 10:41:08.640640', '849', '9997'),
+  ('2021-03-16 10:41:08.641641', '849', '9998'),
+  ('2021-03-16 10:41:08.641641', '849', '9999'),
+  ('2021-03-16 10:47:44.431431', '849', '10000'),
+  ('2021-03-16 10:49:38.728728', '849', '10001'),
+  ('2021-03-16 10:49:38.728728', '849', '10002'),
+  ('2021-03-16 10:51:18.944944', '849', '10003'),
+  ('2021-03-16 10:55:37.173173', '849', '10004'),
+  ('2021-03-16 10:55:37.173173', '849', '10005'),
+  ('2021-03-16 10:57:06.764764', '849', '10006'),
+  ('2021-03-16 10:57:06.764764', '849', '4778'),
+  ('2021-03-16 10:57:06.764764', '849', '10007')
   ;
 
   // Update to source_song table

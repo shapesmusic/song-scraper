@@ -7,7 +7,7 @@
 // Step 0: Check recent scraped
 //
 
-  SELECT instance_name, publication_date FROM source WHERE parent_entity = 'New York Times' ORDER BY publication_date DESC LIMIT 8;
+  SELECT instance_name, publication_date FROM source WHERE parent_entity = 'New York Times' ORDER BY publication_date DESC LIMIT 3;
 
 
 //
@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'St. Vincent’s Synth-Funk ‘Pain,’ and 9 More New Songs', '2021-03-05 09:09:36.000000', 'https://www.nytimes.com/2021/03/05/arts/music/playlist-drake-bruno-mars-st-vincent.html');
+    ('New York Times', 'The Playlist', 'SZA Teases What’s Next, and 11 More New Songs', '2021-03-12 08:58:56.000000', 'https://www.nytimes.com/2021/03/12/arts/music/playlist-sza-jorja-smith-rose.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 806; // SELECT last_insert_rowid();
+  source_id = 850; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -98,74 +98,92 @@
   songsData =
   [
     {
-        "title": "Pay Your Way in Pain",
-        "artist_name": "St. Vincent",
+        "title": "Good Days",
+        "artist_name": "SZA",
         "video_id": null,
-        "capture_date": "2021-03-09 03:18:33.479479",
-        "source_id": 806,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Spinning",
-        "artist_name": "No Rome featuring Charli XCX and the 1975",
-        "video_id": null,
-        "capture_date": "2021-03-09 03:18:33.480480",
-        "source_id": 806,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Leave the Door Open",
-        "artist_name": "Bruno Mars, Anderson .Paak, Silk Sonic",
-        "video_id": null,
-        "capture_date": "2021-03-09 03:18:33.480480",
-        "source_id": 806,
-        "song_id": 9951,
+        "capture_date": "2021-03-16 11:10:54.272272",
+        "source_id": 850,
+        "song_id": 9716,
         "duplicate": true
     },
     {
-        "title": "Lemon Pepper Freestyle",
-        "artist_name": "Drake featuring Rick Ross",
+        "title": "On the Ground",
+        "artist_name": "Rosé",
         "video_id": null,
-        "capture_date": "2021-03-09 03:18:33.480480",
-        "source_id": 806,
-        "song_id": 9948,
+        "capture_date": "2021-03-16 11:10:54.273273",
+        "source_id": 850,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Thumbs",
+        "artist_name": "Lucy Dacus",
+        "video_id": null,
+        "capture_date": "2021-03-16 11:10:54.273273",
+        "source_id": 850,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Addicted",
+        "artist_name": "Jorja Smith",
+        "video_id": null,
+        "capture_date": "2021-03-16 11:10:54.273273",
+        "source_id": 850,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "FWB",
+        "artist_name": "Chika",
+        "video_id": null,
+        "capture_date": "2021-03-16 11:10:54.274274",
+        "source_id": 850,
+        "song_id": 9675,
         "duplicate": true
     },
     {
-        "title": "Sacrifice",
-        "artist_name": "Bebe Rexha",
+        "title": "Storm in Summer",
+        "artist_name": "Skullcrusher",
         "video_id": null,
-        "capture_date": "2021-03-09 03:18:33.480480",
-        "source_id": 806,
+        "capture_date": "2021-03-16 11:10:54.274274",
+        "source_id": 850,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Can’t Let It Show",
-        "artist_name": "Tank",
+        "title": "Outside the Party, Inside the Dream",
+        "artist_name": "cehryl",
         "video_id": null,
-        "capture_date": "2021-03-09 03:18:33.480480",
-        "source_id": 806,
+        "capture_date": "2021-03-16 11:10:54.274274",
+        "source_id": 850,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Beautiful Mistakes",
-        "artist_name": "Maroon 5 featuring Megan Thee Stallion",
+        "title": "Breakdown",
+        "artist_name": "Spoon",
         "video_id": null,
-        "capture_date": "2021-03-09 03:18:33.480480",
-        "source_id": 806,
+        "capture_date": "2021-03-16 11:10:54.274274",
+        "source_id": 850,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Til Forever Falls Apart",
-        "artist_name": "Ashe and Finneas",
+        "title": "A Face in the Crowd",
+        "artist_name": "Spoon",
         "video_id": null,
-        "capture_date": "2021-03-09 03:18:33.480480",
-        "source_id": 806,
+        "capture_date": "2021-03-16 11:10:54.274274",
+        "source_id": 850,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Budem Tantsevat / Listo Pa Bailar",
+        "artist_name": "Bajofondo feat. Natalia Oreiro",
+        "video_id": null,
+        "capture_date": "2021-03-16 11:10:54.274274",
+        "source_id": 850,
         "song_id": null,
         "duplicate": false
     }
@@ -208,12 +226,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Pay Your Way in Pain', 'St. Vincent', NULL),
-  ('Spinning', 'No Rome featuring Charli XCX and the 1975', NULL),
-  ('Sacrifice', 'Bebe Rexha', NULL),
-  ('Can’t Let It Show', 'Tank', NULL),
-  ('Beautiful Mistakes', 'Maroon 5 featuring Megan Thee Stallion', NULL),
-  ('Til Forever Falls Apart', 'Ashe and Finneas', NULL)
+  ('On the Ground', 'Rosé', NULL),
+  ('Thumbs', 'Lucy Dacus', NULL),
+  ('Addicted', 'Jorja Smith', NULL),
+  ('Storm in Summer', 'Skullcrusher', NULL),
+  ('Outside the Party, Inside the Dream', 'cehryl', NULL),
+  ('Breakdown', 'Spoon', NULL),
+  ('A Face in the Crowd', 'Spoon', NULL),
+  ('Budem Tantsevat / Listo Pa Bailar', 'Bajofondo feat. Natalia Oreiro', NULL)
   ;
 
    // Update to song table
@@ -224,7 +244,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9966; // SELECT last_insert_rowid();
+  song_id = 10015; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -264,14 +284,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-09 03:18:33.479479', '806', '9961'),
-  ('2021-03-09 03:18:33.480480', '806', '9962'),
-  ('2021-03-09 03:18:33.480480', '806', '9951'),
-  ('2021-03-09 03:18:33.480480', '806', '9948'),
-  ('2021-03-09 03:18:33.480480', '806', '9963'),
-  ('2021-03-09 03:18:33.480480', '806', '9964'),
-  ('2021-03-09 03:18:33.480480', '806', '9965'),
-  ('2021-03-09 03:18:33.480480', '806', '9966')
+  ('2021-03-16 11:10:54.272272', '850', '9716'),
+  ('2021-03-16 11:10:54.273273', '850', '10008'),
+  ('2021-03-16 11:10:54.273273', '850', '10009'),
+  ('2021-03-16 11:10:54.273273', '850', '10010'),
+  ('2021-03-16 11:10:54.274274', '850', '9675'),
+  ('2021-03-16 11:10:54.274274', '850', '10011'),
+  ('2021-03-16 11:10:54.274274', '850', '10012'),
+  ('2021-03-16 11:10:54.274274', '850', '10013'),
+  ('2021-03-16 11:10:54.274274', '850', '10014'),
+  ('2021-03-16 11:10:54.274274', '850', '10015')
   ;
 
   // Update to source_song table
