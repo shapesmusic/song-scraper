@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of March 20, 2021', '2021-03-20 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-03-20');
+    ('Billboard', 'The Hot 100', 'Week of March 27, 2021', '2021-03-27 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-03-27');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 848; // SELECT last_insert_rowid();
+  source_id = 853; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -95,97 +95,61 @@
 
   songsData =
   [
-      {
-          "title": "What's Next",
-          "artist_name": "Drake",
-          "video_id": null,
-          "capture_date": "2021-03-16 08:50:09.437437",
-          "source_id": 848,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Wants And Needs",
-          "artist_name": "Drake Featuring Lil Baby",
-          "video_id": null,
-          "capture_date": "2021-03-16 08:50:09.438438",
-          "source_id": 848,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Lemon Pepper Freestyle",
-          "artist_name": "Drake Featuring Rick Ross",
-          "video_id": null,
-          "capture_date": "2021-03-16 08:50:09.438438",
-          "source_id": 848,
-          "song_id": 9948,
-          "duplicate": true
-      },
-      {
-          "title": "Leave The Door Open",
-          "artist_name": "Silk Sonic (Bruno Mars & Anderson .Paak)",
-          "video_id": null,
-          "capture_date": "2021-03-16 08:50:09.438438",
-          "source_id": 848,
-          "song_id": 9951,
-          "duplicate": true
-      },
-      {
-          "title": "Hold On",
-          "artist_name": "Justin Bieber",
-          "video_id": null,
-          "capture_date": "2021-03-16 08:50:09.439439",
-          "source_id": 848,
-          "song_id": 9952,
-          "duplicate": true
-      },
-      {
-          "title": "Real As It Gets",
-          "artist_name": "Lil Baby Featuring EST Gee",
-          "video_id": null,
-          "capture_date": "2021-03-16 08:50:09.439439",
-          "source_id": 848,
-          "song_id": 9949,
-          "duplicate": true
-      },
-      {
-          "title": "Beautiful Mistakes",
-          "artist_name": "Maroon 5 Featuring Megan Thee Stallion",
-          "video_id": null,
-          "capture_date": "2021-03-16 08:50:09.439439",
-          "source_id": 848,
-          "song_id": 9965,
-          "duplicate": true
-      },
-      {
-          "title": "Hellcats & Trackhawks",
-          "artist_name": "Lil Durk",
-          "video_id": null,
-          "capture_date": "2021-03-16 08:50:09.440440",
-          "source_id": 848,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Life's A Mess II",
-          "artist_name": "Juice WRLD, Clever & Post Malone",
-          "video_id": null,
-          "capture_date": "2021-03-16 08:50:09.440440",
-          "source_id": 848,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Lil Bit",
-          "artist_name": "Nelly & Florida Georgia Line",
-          "video_id": null,
-          "capture_date": "2021-03-16 08:50:09.440440",
-          "source_id": 848,
-          "song_id": null,
-          "duplicate": false
-      }
-  ]
+    {
+        "title": "Street Runner",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:06:11.729729",
+        "source_id": 853,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "On The Ground",
+        "artist_name": "ROSE",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:06:11.730730",
+        "source_id": 853,
+        "song_id": 10008,
+        "duplicate": true
+    },
+    {
+        "title": "Lost",
+        "artist_name": "NF Featuring Hopsin",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:06:11.730730",
+        "source_id": 853,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Follow You",
+        "artist_name": "Imagine Dragons",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:06:11.731731",
+        "source_id": 853,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Daywalker!",
+        "artist_name": "Machine Gun Kelly & CORPSE",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:06:11.731731",
+        "source_id": 853,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Settling Down",
+        "artist_name": "Miranda Lambert",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:06:11.731731",
+        "source_id": 853,
+        "song_id": null,
+        "duplicate": false
+    }
+]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -224,11 +188,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('What’s Next', 'Drake', NULL),
-  ('Wants And Needs', 'Drake Featuring Lil Baby', NULL),
-  ('Hellcats & Trackhawks', 'Lil Durk', NULL),
-  ('Life’s A Mess II', 'Juice WRLD, Clever & Post Malone', NULL),
-  ('Lil Bit', 'Nelly & Florida Georgia Line', NULL)
+  ('Street Runner', 'Rod Wave', NULL),
+  ('Lost', 'NF Featuring Hopsin', NULL),
+  ('Follow You', 'Imagine Dragons', NULL),
+  ('Daywalker!', 'Machine Gun Kelly & CORPSE', NULL),
+  ('Settling Down', 'Miranda Lambert', NULL)
   ;
 
    // Update to song table
@@ -239,7 +203,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9992; // SELECT last_insert_rowid();
+  song_id = 10022; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,16 +243,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-16 08:50:09.437437', '848', '9988'),
-  ('2021-03-16 08:50:09.438438', '848', '9989'),
-  ('2021-03-16 08:50:09.438438', '848', '9948'),
-  ('2021-03-16 08:50:09.438438', '848', '9951'),
-  ('2021-03-16 08:50:09.439439', '848', '9952'),
-  ('2021-03-16 08:50:09.439439', '848', '9949'),
-  ('2021-03-16 08:50:09.439439', '848', '9965'),
-  ('2021-03-16 08:50:09.440440', '848', '9990'),
-  ('2021-03-16 08:50:09.440440', '848', '9991'),
-  ('2021-03-16 08:50:09.440440', '848', '9992')
+  ('2021-03-23 09:06:11.729729', '853', '10018'),
+  ('2021-03-23 09:06:11.730730', '853', '10008'),
+  ('2021-03-23 09:06:11.730730', '853', '10019'),
+  ('2021-03-23 09:06:11.731731', '853', '10020'),
+  ('2021-03-23 09:06:11.731731', '853', '10021'),
+  ('2021-03-23 09:06:11.731731', '853', '10022')
   ;
 
   // Update to source_song table

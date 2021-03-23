@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'SZA Teases What’s Next, and 11 More New Songs', '2021-03-12 08:58:56.000000', 'https://www.nytimes.com/2021/03/12/arts/music/playlist-sza-jorja-smith-rose.html');
+    ('New York Times', 'The Playlist', 'Addison Rae’s Pulsing Pop Debut, and 10 More New Songs', '2021-03-19 09:05:09.000000', 'https://www.nytimes.com/2021/03/19/arts/music/playlist-addison-rae-glaive-lil-tjay.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 850; // SELECT last_insert_rowid();
+  source_id = 855; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -98,92 +98,83 @@
   songsData =
   [
     {
-        "title": "Good Days",
-        "artist_name": "SZA",
+        "title": "Obsessed",
+        "artist_name": "Addison Rae",
         "video_id": null,
-        "capture_date": "2021-03-16 11:10:54.272272",
-        "source_id": 850,
-        "song_id": 9716,
+        "capture_date": "2021-03-23 09:22:31.122122",
+        "source_id": 855,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Wanna Slam My Head Against the Wall",
+        "artist_name": "glaive",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:22:31.123123",
+        "source_id": 855,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Anymore",
+        "artist_name": "Lake Street Dive",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:22:31.123123",
+        "source_id": 855,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Nightflyer",
+        "artist_name": "Allison Russell",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:22:31.123123",
+        "source_id": 855,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ain’t Gon Stop Me",
+        "artist_name": "Reggie",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:22:31.123123",
+        "source_id": 855,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Moonman",
+        "artist_name": "Nick Hakim and Roy Nathanson",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:22:31.123123",
+        "source_id": 855,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Headshot",
+        "artist_name": "Lil Tjay featuring Polo G and Fivio Foreign",
+        "video_id": null,
+        "capture_date": "2021-03-23 09:22:31.123123",
+        "source_id": 855,
+        "song_id": 10028,
         "duplicate": true
     },
     {
-        "title": "On the Ground",
-        "artist_name": "Rosé",
+        "title": "Separate",
+        "artist_name": "Sorry",
         "video_id": null,
-        "capture_date": "2021-03-16 11:10:54.273273",
-        "source_id": 850,
+        "capture_date": "2021-03-23 09:22:31.123123",
+        "source_id": 855,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Thumbs",
-        "artist_name": "Lucy Dacus",
+        "title": "Simple Stuff",
+        "artist_name": "Loraine James",
         "video_id": null,
-        "capture_date": "2021-03-16 11:10:54.273273",
-        "source_id": 850,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Addicted",
-        "artist_name": "Jorja Smith",
-        "video_id": null,
-        "capture_date": "2021-03-16 11:10:54.273273",
-        "source_id": 850,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "FWB",
-        "artist_name": "Chika",
-        "video_id": null,
-        "capture_date": "2021-03-16 11:10:54.274274",
-        "source_id": 850,
-        "song_id": 9675,
-        "duplicate": true
-    },
-    {
-        "title": "Storm in Summer",
-        "artist_name": "Skullcrusher",
-        "video_id": null,
-        "capture_date": "2021-03-16 11:10:54.274274",
-        "source_id": 850,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Outside the Party, Inside the Dream",
-        "artist_name": "cehryl",
-        "video_id": null,
-        "capture_date": "2021-03-16 11:10:54.274274",
-        "source_id": 850,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Breakdown",
-        "artist_name": "Spoon",
-        "video_id": null,
-        "capture_date": "2021-03-16 11:10:54.274274",
-        "source_id": 850,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "A Face in the Crowd",
-        "artist_name": "Spoon",
-        "video_id": null,
-        "capture_date": "2021-03-16 11:10:54.274274",
-        "source_id": 850,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Budem Tantsevat / Listo Pa Bailar",
-        "artist_name": "Bajofondo feat. Natalia Oreiro",
-        "video_id": null,
-        "capture_date": "2021-03-16 11:10:54.274274",
-        "source_id": 850,
+        "capture_date": "2021-03-23 09:22:31.123123",
+        "source_id": 855,
         "song_id": null,
         "duplicate": false
     }
@@ -226,14 +217,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('On the Ground', 'Rosé', NULL),
-  ('Thumbs', 'Lucy Dacus', NULL),
-  ('Addicted', 'Jorja Smith', NULL),
-  ('Storm in Summer', 'Skullcrusher', NULL),
-  ('Outside the Party, Inside the Dream', 'cehryl', NULL),
-  ('Breakdown', 'Spoon', NULL),
-  ('A Face in the Crowd', 'Spoon', NULL),
-  ('Budem Tantsevat / Listo Pa Bailar', 'Bajofondo feat. Natalia Oreiro', NULL)
+  ('Obsessed', 'Addison Rae', NULL),
+  ('I Wanna Slam My Head Against the Wall', 'glaive', NULL),
+  ('Anymore', 'Lake Street Dive', NULL),
+  ('Nightflyer', 'Allison Russell', NULL),
+  ('Ain’t Gon Stop Me', 'Reggie', NULL),
+  ('Moonman', 'Nick Hakim and Roy Nathanson', NULL),
+  ('Separate', 'Sorry', NULL),
+  ('Simple Stuff', 'Loraine James', NULL)
   ;
 
    // Update to song table
@@ -244,7 +235,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10015; // SELECT last_insert_rowid();
+  song_id = 10039; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -284,16 +275,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-16 11:10:54.272272', '850', '9716'),
-  ('2021-03-16 11:10:54.273273', '850', '10008'),
-  ('2021-03-16 11:10:54.273273', '850', '10009'),
-  ('2021-03-16 11:10:54.273273', '850', '10010'),
-  ('2021-03-16 11:10:54.274274', '850', '9675'),
-  ('2021-03-16 11:10:54.274274', '850', '10011'),
-  ('2021-03-16 11:10:54.274274', '850', '10012'),
-  ('2021-03-16 11:10:54.274274', '850', '10013'),
-  ('2021-03-16 11:10:54.274274', '850', '10014'),
-  ('2021-03-16 11:10:54.274274', '850', '10015')
+  ('2021-03-23 09:22:31.122122', '855', '10032'),
+  ('2021-03-23 09:22:31.123123', '855', '10033'),
+  ('2021-03-23 09:22:31.123123', '855', '10034'),
+  ('2021-03-23 09:22:31.123123', '855', '10035'),
+  ('2021-03-23 09:22:31.123123', '855', '10036'),
+  ('2021-03-23 09:22:31.123123', '855', '10037'),
+  ('2021-03-23 09:22:31.123123', '855', '10028'),
+  ('2021-03-23 09:22:31.123123', '855', '10038'),
+  ('2021-03-23 09:22:31.123123', '855', '10039')
   ;
 
   // Update to source_song table

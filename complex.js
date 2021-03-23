@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Drake, Baby Keem, Bruno Mars, Anderson .Paak, and More', '2021-03-05 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-drake-baby-keem-bruno-mars-anderson-paak/denzel-curry-benny-the-butcher-diet-1.5');
+    ('Complex', 'Best New Music This Week', 'Roddy Ricch, Benny the Butcher, Justin Bieber, and More', '2021-03-19 12:00:00.000000', 'https://www.complex.com/music/best-new-music-roddy-benny-bieber/');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 805; // SELECT last_insert_rowid();
+  source_id = 854; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -90,125 +90,92 @@
 
 
 //
-// Step 3: Stage songsData, prune unwanted songs, find & set any duplicate songs to true, and add song_ids for duplicates
+// Step 3:  Stage songsData,
+//          prune unwanted songs,
+//          find & set any duplicate songs to true,
+//          add song_ids for duplicates
 //
 
   songsData =
   [
     {
-        "title": "Lemon Pepper Freestyle",
-        "artist_name": "Drake & Rick Ross",
-        "video_id": "YvkHPdsjQQs",
-        "capture_date": "2021-03-09 03:06:49.287287",
-        "source_id": 805,
+        "title": "Heartless (Live From LA)",
+        "artist_name": "Roddy Ricch",
+        "video_id": "bmP7TaTIdMQ",
+        "capture_date": "2021-03-23 09:15:39.907907",
+        "source_id": 854,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Real As It Gets",
-        "artist_name": "Lil Baby f/ EST Gee",
-        "video_id": "yhoGtNiNX40",
-        "capture_date": "2021-03-09 03:06:49.288288",
-        "source_id": 805,
+        "title": "When Tony Met Sosa",
+        "artist_name": "Benny the Butcher & Harry Fraud",
+        "video_id": "2bI8XsdNb-c",
+        "capture_date": "2021-03-23 09:15:39.908908",
+        "source_id": 854,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Sense",
-        "artist_name": "Baby Keem",
-        "video_id": "qLqk4bgq6wI",
-        "capture_date": "2021-03-09 03:06:49.288288",
-        "source_id": 805,
+        "title": "Peaches",
+        "artist_name": "Justin Bieber f/ Giveon & Daniel Caesar",
+        "video_id": "tQ0yjYUFKAE",
+        "capture_date": "2021-03-23 09:15:39.908908",
+        "source_id": 854,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Leave the Door Open",
-        "artist_name": "Bruno Mars & Anderson .Paak",
-        "video_id": "adLGHcj_fmA",
-        "capture_date": "2021-03-09 03:06:49.288288",
-        "source_id": 805,
+        "title": "Marigold",
+        "artist_name": "Jelani Aryeh",
+        "video_id": "phGdPoBcxqs",
+        "capture_date": "2021-03-23 09:15:39.908908",
+        "source_id": 854,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hold On",
-        "artist_name": "Justin Bieber",
-        "video_id": "LWeiydKl0mU",
-        "capture_date": "2021-03-09 03:06:49.289289",
-        "source_id": 805,
+        "title": "Twirlanta",
+        "artist_name": "22Gz",
+        "video_id": "63FjrdZZfp4",
+        "capture_date": "2021-03-23 09:15:39.908908",
+        "source_id": 854,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Really Like That",
-        "artist_name": "G Herbo",
-        "video_id": "K0WYlMip5IQ",
-        "capture_date": "2021-03-09 03:06:49.289289",
-        "source_id": 805,
+        "title": "Headshot",
+        "artist_name": "Lil Tjay, Polo G, & Fivio Foreign",
+        "video_id": "aT_nFiTkxy8",
+        "capture_date": "2021-03-23 09:15:39.908908",
+        "source_id": 854,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Heart & The Tongue",
-        "artist_name": "Chance the Rapper",
-        "video_id": "xnO2HDmT1D8",
-        "capture_date": "2021-03-09 03:06:49.289289",
-        "source_id": 805,
+        "title": "Chicken Adobo",
+        "artist_name": "Guapdad 4000 & !llmind",
+        "video_id": "1DaovaJgytE",
+        "capture_date": "2021-03-23 09:15:39.908908",
+        "source_id": 854,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Life’s a Mess II",
-        "artist_name": "Juice WRLD, Post Malone, & Clever",
-        "video_id": "ig1idOx6SrE",
-        "capture_date": "2021-03-09 03:06:49.289289",
-        "source_id": 805,
+        "title": "Wolves",
+        "artist_name": "Kota the Friend & Statik Selektah",
+        "video_id": "k9i3nQO5adc",
+        "capture_date": "2021-03-23 09:15:39.908908",
+        "source_id": 854,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Let It Blow",
-        "artist_name": "OTF f/ Lil Uzi Vert",
-        "video_id": "mhKmuDhvZbE",
-        "capture_date": "2021-03-09 03:06:49.289289",
-        "source_id": 805,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tell Me How",
-        "artist_name": "Tyler, the Creator",
-        "video_id": "P1sl-wOiwSc",
-        "capture_date": "2021-03-09 03:06:49.289289",
-        "source_id": 805,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Best Friend (Remix)",
-        "artist_name": "Saweetie & Doja Cat f/ Stefflon Don",
-        "video_id": "lg1uk7Wtg4E",
-        "capture_date": "2021-03-09 03:06:49.289289",
-        "source_id": 805,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Thugged Out",
-        "artist_name": "YNW Melly f/ Kodak Black",
-        "video_id": "69RrVdbjrHM",
-        "capture_date": "2021-03-09 03:06:49.289289",
-        "source_id": 805,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "DIET_1.5",
-        "artist_name": "Denzel Curry f/ Benny the Butcher",
-        "video_id": "Z9hvQGWskUA",
-        "capture_date": "2021-03-09 03:06:49.289289",
-        "source_id": 805,
+        "title": "Calabasas",
+        "artist_name": "SSGKobe & $NOT",
+        "video_id": "yFZR03xYb78",
+        "capture_date": "2021-03-23 09:15:39.908908",
+        "source_id": 854,
         "song_id": null,
         "duplicate": false
     }
@@ -251,19 +218,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Lemon Pepper Freestyle', 'Drake & Rick Ross', NULL),
-  ('Real As It Gets', 'Lil Baby f/ EST Gee', NULL),
-  ('No Sense', 'Baby Keem', NULL),
-  ('Leave the Door Open', 'Bruno Mars & Anderson .Paak', NULL),
-  ('Hold On', 'Justin Bieber', NULL),
-  ('Really Like That', 'G Herbo', NULL),
-  ('The Heart & The Tongue', 'Chance the Rapper', NULL),
-  ('Life’s a Mess II', 'Juice WRLD, Post Malone, & Clever', NULL),
-  ('Let It Blow', 'OTF f/ Lil Uzi Vert', NULL),
-  ('Tell Me How', 'Tyler, the Creator', NULL),
-  ('Best Friend (Remix)', 'Saweetie & Doja Cat f/ Stefflon Don', NULL),
-  ('Thugged Out', 'YNW Melly f/ Kodak Black', NULL),
-  ('DIET_1.5', 'Denzel Curry f/ Benny the Butcher', NULL)
+  ('Heartless (Live From LA)', 'Roddy Ricch', NULL),
+  ('When Tony Met Sosa', 'Benny the Butcher & Harry Fraud', NULL),
+  ('Peaches', 'Justin Bieber f/ Giveon & Daniel Caesar', NULL),
+  ('Marigold', 'Jelani Aryeh', NULL),
+  ('Twirlanta', '22Gz', NULL),
+  ('Headshot', 'Lil Tjay, Polo G, & Fivio Foreign', NULL),
+  ('Chicken Adobo', 'Guapdad 4000 & !llmind', NULL),
+  ('Wolves', 'Kota the Friend & Statik Selektah', NULL),
+  ('Calabasas', 'SSGKobe & $NOT', NULL)
   ;
 
    // Update to song table
@@ -274,7 +237,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 9960; // SELECT last_insert_rowid();
+  song_id = 10031; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -314,19 +277,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-09 03:06:49.287287', '805', '9948'),
-  ('2021-03-09 03:06:49.288288', '805', '9949'),
-  ('2021-03-09 03:06:49.288288', '805', '9950'),
-  ('2021-03-09 03:06:49.288288', '805', '9951'),
-  ('2021-03-09 03:06:49.289289', '805', '9952'),
-  ('2021-03-09 03:06:49.289289', '805', '9953'),
-  ('2021-03-09 03:06:49.289289', '805', '9954'),
-  ('2021-03-09 03:06:49.289289', '805', '9955'),
-  ('2021-03-09 03:06:49.289289', '805', '9956'),
-  ('2021-03-09 03:06:49.289289', '805', '9957'),
-  ('2021-03-09 03:06:49.289289', '805', '9958'),
-  ('2021-03-09 03:06:49.289289', '805', '9959'),
-  ('2021-03-09 03:06:49.289289', '805', '9960')
+  ('2021-03-23 09:15:39.907907', '854', '10023'),
+  ('2021-03-23 09:15:39.908908', '854', '10024'),
+  ('2021-03-23 09:15:39.908908', '854', '10025'),
+  ('2021-03-23 09:15:39.908908', '854', '10026'),
+  ('2021-03-23 09:15:39.908908', '854', '10027'),
+  ('2021-03-23 09:15:39.908908', '854', '10028'),
+  ('2021-03-23 09:15:39.908908', '854', '10029'),
+  ('2021-03-23 09:15:39.908908', '854', '10030'),
+  ('2021-03-23 09:15:39.908908', '854', '10031')
   ;
 
   // Update to source_song table
