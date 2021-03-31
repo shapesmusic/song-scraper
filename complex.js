@@ -6,7 +6,7 @@
 // Step 0: Check recent scraped
 //
 
-  SELECT instance_name, publication_date FROM source WHERE parent_entity = 'Complex' ORDER BY publication_date DESC LIMIT 8;
+  SELECT publication_date, instance_name FROM source WHERE parent_entity = 'Complex' ORDER BY publication_date DESC LIMIT 8;
 
 
 //

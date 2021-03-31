@@ -7,7 +7,7 @@
 // Step 0: Check recent scraped
 //
 
-  SELECT instance_name, publication_date FROM source WHERE parent_entity = 'New York Times' ORDER BY publication_date DESC LIMIT 3;
+  SELECT publication_date, instance_name FROM source WHERE parent_entity = 'New York Times' ORDER BY publication_date DESC LIMIT 3;
 
 
 //
@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Addison Rae’s Pulsing Pop Debut, and 10 More New Songs', '2021-03-19 09:05:09.000000', 'https://www.nytimes.com/2021/03/19/arts/music/playlist-addison-rae-glaive-lil-tjay.html');
+    ('New York Times', 'The Playlist', 'Lil Nas X Makes a Coming-Out Statement, and 9 More New Songs', '2021-03-26 10:05:30.000000', 'https://www.nytimes.com/2021/03/26/arts/music/playlist-lil-nas-x-taylor-swift.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 855; // SELECT last_insert_rowid();
+  source_id = 859; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -98,83 +98,83 @@
   songsData =
   [
     {
-        "title": "Obsessed",
-        "artist_name": "Addison Rae",
+        "title": "Montero (Call Me by Your Name)",
+        "artist_name": "Lil Nas X",
         "video_id": null,
-        "capture_date": "2021-03-23 09:22:31.122122",
-        "source_id": 855,
+        "capture_date": "2021-03-31 08:40:40.424424",
+        "source_id": 859,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Wanna Slam My Head Against the Wall",
-        "artist_name": "glaive",
+        "title": "You All Over Me",
+        "artist_name": "Taylor Swift featuring Maren Morris",
         "video_id": null,
-        "capture_date": "2021-03-23 09:22:31.123123",
-        "source_id": 855,
+        "capture_date": "2021-03-31 08:40:40.426426",
+        "source_id": 859,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Anymore",
-        "artist_name": "Lake Street Dive",
+        "title": "All Your Exes",
+        "artist_name": "Julia Michaels",
         "video_id": null,
-        "capture_date": "2021-03-23 09:22:31.123123",
-        "source_id": 855,
+        "capture_date": "2021-03-31 08:40:40.426426",
+        "source_id": 859,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nightflyer",
-        "artist_name": "Allison Russell",
+        "title": "Dignity",
+        "artist_name": "Angelique Kidjo and Yemi Alade",
         "video_id": null,
-        "capture_date": "2021-03-23 09:22:31.123123",
-        "source_id": 855,
+        "capture_date": "2021-03-31 08:40:40.426426",
+        "source_id": 859,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ain’t Gon Stop Me",
-        "artist_name": "Reggie",
+        "title": "Why Can’t We Live Together",
+        "artist_name": "Dr. Lonnie Smith featuring Iggy Pop",
         "video_id": null,
-        "capture_date": "2021-03-23 09:22:31.123123",
-        "source_id": 855,
+        "capture_date": "2021-03-31 08:40:40.427427",
+        "source_id": 859,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Moonman",
-        "artist_name": "Nick Hakim and Roy Nathanson",
+        "title": "Jetski",
+        "artist_name": "Internet Money featuring Lil Mosey and Lil Tecca",
         "video_id": null,
-        "capture_date": "2021-03-23 09:22:31.123123",
-        "source_id": 855,
+        "capture_date": "2021-03-31 08:40:40.427427",
+        "source_id": 859,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Headshot",
-        "artist_name": "Lil Tjay featuring Polo G and Fivio Foreign",
+        "title": "Buzzcut",
+        "artist_name": "Brockhampton featuring Danny Brown",
         "video_id": null,
-        "capture_date": "2021-03-23 09:22:31.123123",
-        "source_id": 855,
-        "song_id": 10028,
+        "capture_date": "2021-03-31 08:40:40.427427",
+        "source_id": 859,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Tombstone",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:40:40.427427",
+        "source_id": 859,
+        "song_id": 10062,
         "duplicate": true
     },
     {
-        "title": "Separate",
-        "artist_name": "Sorry",
+        "title": "Night Singing",
+        "artist_name": "Sara Watkins",
         "video_id": null,
-        "capture_date": "2021-03-23 09:22:31.123123",
-        "source_id": 855,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Simple Stuff",
-        "artist_name": "Loraine James",
-        "video_id": null,
-        "capture_date": "2021-03-23 09:22:31.123123",
-        "source_id": 855,
+        "capture_date": "2021-03-31 08:40:40.427427",
+        "source_id": 859,
         "song_id": null,
         "duplicate": false
     }
@@ -217,14 +217,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Obsessed', 'Addison Rae', NULL),
-  ('I Wanna Slam My Head Against the Wall', 'glaive', NULL),
-  ('Anymore', 'Lake Street Dive', NULL),
-  ('Nightflyer', 'Allison Russell', NULL),
-  ('Ain’t Gon Stop Me', 'Reggie', NULL),
-  ('Moonman', 'Nick Hakim and Roy Nathanson', NULL),
-  ('Separate', 'Sorry', NULL),
-  ('Simple Stuff', 'Loraine James', NULL)
+  ('Montero (Call Me by Your Name)', 'Lil Nas X', NULL),
+  ('You All Over Me', 'Taylor Swift featuring Maren Morris', NULL),
+  ('All Your Exes', 'Julia Michaels', NULL),
+  ('Dignity', 'Angelique Kidjo and Yemi Alade', NULL),
+  ('Why Can’t We Live Together', 'Dr. Lonnie Smith featuring Iggy Pop', NULL),
+  ('Jetski', 'Internet Money featuring Lil Mosey and Lil Tecca', NULL),
+  ('Buzzcut', 'Brockhampton featuring Danny Brown', NULL),
+  ('Night Singing', 'Sara Watkins', NULL)
   ;
 
    // Update to song table
@@ -235,7 +235,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10039; // SELECT last_insert_rowid();
+  song_id = 10089; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -275,15 +275,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-23 09:22:31.122122', '855', '10032'),
-  ('2021-03-23 09:22:31.123123', '855', '10033'),
-  ('2021-03-23 09:22:31.123123', '855', '10034'),
-  ('2021-03-23 09:22:31.123123', '855', '10035'),
-  ('2021-03-23 09:22:31.123123', '855', '10036'),
-  ('2021-03-23 09:22:31.123123', '855', '10037'),
-  ('2021-03-23 09:22:31.123123', '855', '10028'),
-  ('2021-03-23 09:22:31.123123', '855', '10038'),
-  ('2021-03-23 09:22:31.123123', '855', '10039')
+  ('2021-03-31 08:40:40.424424', '859', '10082'),
+  ('2021-03-31 08:40:40.426426', '859', '10083'),
+  ('2021-03-31 08:40:40.426426', '859', '10084'),
+  ('2021-03-31 08:40:40.426426', '859', '10085'),
+  ('2021-03-31 08:40:40.427427', '859', '10086'),
+  ('2021-03-31 08:40:40.427427', '859', '10087'),
+  ('2021-03-31 08:40:40.427427', '859', '10088'),
+  ('2021-03-31 08:40:40.427427', '859', '10062'),
+  ('2021-03-31 08:40:40.427427', '859', '10089')
   ;
 
   // Update to source_song table

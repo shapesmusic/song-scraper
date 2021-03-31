@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of March 27, 2021', '2021-03-27 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-03-27');
+    ('Billboard', 'The Hot 100', 'Week of April 3, 2021', '2021-04-03 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-04-03');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 853; // SELECT last_insert_rowid();
+  source_id = 857; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,56 +96,128 @@
   songsData =
   [
     {
-        "title": "Street Runner",
-        "artist_name": "Rod Wave",
+        "title": "Peaches",
+        "artist_name": "Justin Bieber Featuring Daniel Caesar & Giveon",
         "video_id": null,
-        "capture_date": "2021-03-23 09:06:11.729729",
-        "source_id": 853,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "On The Ground",
-        "artist_name": "ROSE",
-        "video_id": null,
-        "capture_date": "2021-03-23 09:06:11.730730",
-        "source_id": 853,
-        "song_id": 10008,
+        "capture_date": "2021-03-31 08:12:01.262262",
+        "source_id": 857,
+        "song_id": 10025,
         "duplicate": true
     },
     {
-        "title": "Lost",
-        "artist_name": "NF Featuring Hopsin",
+        "title": "Headshot",
+        "artist_name": "Lil Tjay, Polo G & Fivio Foreign",
         "video_id": null,
-        "capture_date": "2021-03-23 09:06:11.730730",
-        "source_id": 853,
+        "capture_date": "2021-03-31 08:12:01.265265",
+        "source_id": 857,
+        "song_id": 10028,
+        "duplicate": true
+    },
+    {
+        "title": "As I Am",
+        "artist_name": "Justin Bieber Featuring Khalid",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:12:01.265265",
+        "source_id": 857,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Follow You",
-        "artist_name": "Imagine Dragons",
+        "title": "Unstable",
+        "artist_name": "Justin Bieber Featuring The Kid LAROI",
         "video_id": null,
-        "capture_date": "2021-03-23 09:06:11.731731",
-        "source_id": 853,
+        "capture_date": "2021-03-31 08:12:01.265265",
+        "source_id": 857,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Daywalker!",
-        "artist_name": "Machine Gun Kelly & CORPSE",
+        "title": "Off My Face",
+        "artist_name": "Justin Bieber",
         "video_id": null,
-        "capture_date": "2021-03-23 09:06:11.731731",
-        "source_id": 853,
+        "capture_date": "2021-03-31 08:12:01.265265",
+        "source_id": 857,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Settling Down",
-        "artist_name": "Miranda Lambert",
+        "title": "Ghost",
+        "artist_name": "Justin Bieber",
         "video_id": null,
-        "capture_date": "2021-03-23 09:06:11.731731",
-        "source_id": 853,
+        "capture_date": "2021-03-31 08:12:01.265265",
+        "source_id": 857,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "2 Much",
+        "artist_name": "Justin Bieber",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:12:01.265265",
+        "source_id": 857,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Deserve You",
+        "artist_name": "Justin Bieber",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:12:01.266266",
+        "source_id": 857,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Die For You",
+        "artist_name": "Justin Bieber Featuring Dominic Fike",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:12:01.266266",
+        "source_id": 857,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Tombstone",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:12:01.266266",
+        "source_id": 857,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Love You Different",
+        "artist_name": "Justin Bieber Featuring BEAM",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:12:01.266266",
+        "source_id": 857,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Loved By You",
+        "artist_name": "Justin Bieber Featuring Burna Boy",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:12:01.266266",
+        "source_id": 857,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Somebody",
+        "artist_name": "Justin Bieber",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:12:01.266266",
+        "source_id": 857,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Famous Friends",
+        "artist_name": "Chris Young + Kane Brown",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:12:01.266266",
+        "source_id": 857,
         "song_id": null,
         "duplicate": false
     }
@@ -188,11 +260,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Street Runner', 'Rod Wave', NULL),
-  ('Lost', 'NF Featuring Hopsin', NULL),
-  ('Follow You', 'Imagine Dragons', NULL),
-  ('Daywalker!', 'Machine Gun Kelly & CORPSE', NULL),
-  ('Settling Down', 'Miranda Lambert', NULL)
+  ('As I Am', 'Justin Bieber Featuring Khalid', NULL),
+  ('Unstable', 'Justin Bieber Featuring The Kid LAROI', NULL),
+  ('Off My Face', 'Justin Bieber', NULL),
+  ('Ghost', 'Justin Bieber', NULL),
+  ('2 Much', 'Justin Bieber', NULL),
+  ('Deserve You', 'Justin Bieber', NULL),
+  ('Die For You', 'Justin Bieber Featuring Dominic Fike', NULL),
+  ('Tombstone', 'Rod Wave', NULL),
+  ('Love You Different', 'Justin Bieber Featuring BEAM', NULL),
+  ('Loved By You', 'Justin Bieber Featuring Burna Boy', NULL),
+  ('Somebody', 'Justin Bieber', NULL),
+  ('Famous Friends', 'Chris Young + Kane Brown', NULL)
   ;
 
    // Update to song table
@@ -203,7 +282,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10022; // SELECT last_insert_rowid();
+  song_id = 10066; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -243,12 +322,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-23 09:06:11.729729', '853', '10018'),
-  ('2021-03-23 09:06:11.730730', '853', '10008'),
-  ('2021-03-23 09:06:11.730730', '853', '10019'),
-  ('2021-03-23 09:06:11.731731', '853', '10020'),
-  ('2021-03-23 09:06:11.731731', '853', '10021'),
-  ('2021-03-23 09:06:11.731731', '853', '10022')
+  ('2021-03-31 08:12:01.262262', '857', '10025'),
+  ('2021-03-31 08:12:01.265265', '857', '10028'),
+  ('2021-03-31 08:12:01.265265', '857', '10055'),
+  ('2021-03-31 08:12:01.265265', '857', '10056'),
+  ('2021-03-31 08:12:01.265265', '857', '10057'),
+  ('2021-03-31 08:12:01.265265', '857', '10058'),
+  ('2021-03-31 08:12:01.265265', '857', '10059'),
+  ('2021-03-31 08:12:01.266266', '857', '10060'),
+  ('2021-03-31 08:12:01.266266', '857', '10061'),
+  ('2021-03-31 08:12:01.266266', '857', '10062'),
+  ('2021-03-31 08:12:01.266266', '857', '10063'),
+  ('2021-03-31 08:12:01.266266', '857', '10064'),
+  ('2021-03-31 08:12:01.266266', '857', '10065'),
+  ('2021-03-31 08:12:01.266266', '857', '10066')
   ;
 
   // Update to source_song table

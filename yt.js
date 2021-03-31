@@ -45,7 +45,7 @@ pastChartLocation = window.location.href;
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('YouTube', 'Global Top Songs', 'Week of Mar 18, 2021', '2021-03-18 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210312-20210318');
+    ('YouTube', 'Global Top Songs', 'Week of Mar 25, 2021', '2021-03-25 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210319-20210325');
 
   // Update to source table
 
@@ -54,7 +54,7 @@ pastChartLocation = window.location.href;
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 856; // SELECT last_insert_rowid();
+  source_id = 858; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-table-row style-scope ytmc-chart-table');
@@ -105,166 +105,166 @@ pastChartLocation = window.location.href;
   songsData =
   [
     {
-        "title": "On The Ground",
-        "artist_name": "Rosé",
+        "title": "Lut Gaye",
+        "artist_name": "Jubin Nautiyal feat. Emraan Hashmi",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.036036",
-        "source_id": 856,
-        "song_id": 10008,
+        "capture_date": "2021-03-31 08:21:15.248248",
+        "source_id": 858,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Peaches",
+        "artist_name": "Justin Bieber feat. Daniel Caesar & Giveon",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:21:15.250250",
+        "source_id": 858,
+        "song_id": 10025,
         "duplicate": true
     },
     {
-        "title": "GONE",
-        "artist_name": "Rosé",
+        "title": "Aashiq Purana",
+        "artist_name": "Kaka",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.039039",
-        "source_id": 856,
+        "capture_date": "2021-03-31 08:21:15.252252",
+        "source_id": 858,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bzrp Music Sessions, Vol.38",
-        "artist_name": "Bizarrap & L-gante",
+        "title": "Marjaneya",
+        "artist_name": "Neha Kakkar",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.040040",
-        "source_id": 856,
+        "capture_date": "2021-03-31 08:21:15.252252",
+        "source_id": 858,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Har Funn Maula",
-        "artist_name": "Vishal Dadlani & Zara Khan",
+        "title": "Prisionera",
+        "artist_name": "NewNak",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.041041",
-        "source_id": 856,
+        "capture_date": "2021-03-31 08:21:15.254254",
+        "source_id": 858,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Oye Hoye Hoye",
-        "artist_name": "Jassi Gill & Simar Kaur",
+        "title": "ROCKSTAR",
+        "artist_name": "DaBaby feat. Roddy Ricch",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.041041",
-        "source_id": 856,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Batom de Cereja (Ao Vivo)",
-        "artist_name": "Israel & Rodolffo",
-        "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.042042",
-        "source_id": 856,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Travesuras",
-        "artist_name": "Nio Garcia & Casper Magico",
-        "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.042042",
-        "source_id": 856,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tu Shayar Banaagi",
-        "artist_name": "Parry Sidhu, Isha Sharma, MixSingh",
-        "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.043043",
-        "source_id": 856,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "To the Bone",
-        "artist_name": "Pamungkas",
-        "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.043043",
-        "source_id": 856,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ali Baba",
-        "artist_name": "Mankirt Aulakh feat. Japji Khaira",
-        "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.043043",
-        "source_id": 856,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "No More Parties",
-        "artist_name": "Coi Leray feat. Lil Durk",
-        "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.044044",
-        "source_id": 856,
-        "song_id": 9782,
+        "capture_date": "2021-03-31 08:21:15.254254",
+        "source_id": 858,
+        "song_id": 8276,
         "duplicate": true
     },
     {
-        "title": "भतार मोर टेम्पू के ड्राइवर",
+        "title": "Obsessed",
+        "artist_name": "Addison Rae",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:21:15.255255",
+        "source_id": 858,
+        "song_id": 10032,
+        "duplicate": true
+    },
+    {
+        "title": "Sugar Crash",
+        "artist_name": "ElyOtto",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:21:15.255255",
+        "source_id": 858,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fiel",
+        "artist_name": "Los Legendarios, Wisin & Jhay Cortez",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:21:15.256256",
+        "source_id": 858,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lavandiya London Se Layenge",
         "artist_name": "Khesari Lal Yadav",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.044044",
-        "source_id": 856,
+        "capture_date": "2021-03-31 08:21:15.256256",
+        "source_id": 858,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Teri Aadat",
-        "artist_name": "Abhi Dutt",
+        "title": "Disco Arranhado (Funk Remix)",
+        "artist_name": "Malu & DJ Lucas Beat",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.045045",
-        "source_id": 856,
+        "capture_date": "2021-03-31 08:21:15.257257",
+        "source_id": 858,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Jugni Jugni",
-        "artist_name": "Anuradha Paudwal, Sukhwinder Singh, Jaspinder Narula & Anmol Malik",
+        "title": "어떤X (What Type of X)",
+        "artist_name": "Jessi",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.045045",
-        "source_id": 856,
+        "capture_date": "2021-03-31 08:21:15.257257",
+        "source_id": 858,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "MIC Drop (Steve Aoki Remix)",
-        "artist_name": "BTS feat. Steve Aoki",
+        "title": "Preta do Cabelo Cacheado",
+        "artist_name": "Th CDM",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.046046",
-        "source_id": 856,
+        "capture_date": "2021-03-31 08:21:15.258258",
+        "source_id": 858,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "En Tu Cuerpo (Remix)",
-        "artist_name": "Lyanno, Rauw Alejandro, Lenny Tavárez & Maria Becerra",
+        "title": "롤린 (Rollin')",
+        "artist_name": "브레이브걸스",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.046046",
-        "source_id": 856,
+        "capture_date": "2021-03-31 08:21:15.259259",
+        "source_id": 858,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wellerman",
-        "artist_name": "Nathan Evans",
+        "title": "Ah Ellerim Kırılaydı",
+        "artist_name": "Tuğçe Kandemir",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.046046",
-        "source_id": 856,
+        "capture_date": "2021-03-31 08:21:15.259259",
+        "source_id": 858,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Beautiful Mistakes",
-        "artist_name": "Maroon 5 feat. Megan Thee Stallion",
+        "title": "Talking to the Moon",
+        "artist_name": "Bruno Mars",
         "video_id": null,
-        "capture_date": "2021-03-23 09:47:17.047047",
-        "source_id": 856,
-        "song_id": 9965,
-        "duplicate": true
+        "capture_date": "2021-03-31 08:21:15.260260",
+        "source_id": 858,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "¿Quién Te Crees?",
+        "artist_name": "MC Davo feat. Calibre 50",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:21:15.260260",
+        "source_id": 858,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Radha",
+        "artist_name": "Dhvani Bhanushali & Abhijit Vaghani",
+        "video_id": null,
+        "capture_date": "2021-03-31 08:21:15.261261",
+        "source_id": 858,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -305,21 +305,21 @@ pastChartLocation = window.location.href;
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('GONE', 'Rosé', NULL),
-  ('Bzrp Music Sessions, Vol.38', 'Bizarrap & L-gante', NULL),
-  ('Har Funn Maula', 'Vishal Dadlani & Zara Khan', NULL),
-  ('Oye Hoye Hoye', 'Jassi Gill & Simar Kaur', NULL),
-  ('Batom de Cereja (Ao Vivo)', 'Israel & Rodolffo', NULL),
-  ('Travesuras', 'Nio Garcia & Casper Magico', NULL),
-  ('Tu Shayar Banaagi', 'Parry Sidhu, Isha Sharma, MixSingh', NULL),
-  ('To the Bone', 'Pamungkas', NULL),
-  ('Ali Baba', 'Mankirt Aulakh feat. Japji Khaira', NULL),
-  ('भतार मोर टेम्पू के ड्राइवर', 'Khesari Lal Yadav', NULL),
-  ('Teri Aadat', 'Abhi Dutt', NULL),
-  ('Jugni Jugni', 'Anuradha Paudwal, Sukhwinder Singh, Jaspinder Narula & Anmol Malik', NULL),
-  ('MIC Drop (Steve Aoki Remix)', 'BTS feat. Steve Aoki', NULL),
-  ('En Tu Cuerpo (Remix)', 'Lyanno, Rauw Alejandro, Lenny Tavárez & Maria Becerra', NULL),
-  ('Wellerman', 'Nathan Evans', NULL)
+  ('Lut Gaye', 'Jubin Nautiyal feat. Emraan Hashmi', NULL),
+  ('Aashiq Purana', 'Kaka', NULL),
+  ('Marjaneya', 'Neha Kakkar', NULL),
+  ('Prisionera', 'NewNak', NULL),
+  ('Sugar Crash', 'ElyOtto', NULL),
+  ('Fiel', 'Los Legendarios, Wisin & Jhay Cortez', NULL),
+  ('Lavandiya London Se Layenge', 'Khesari Lal Yadav', NULL),
+  ('Disco Arranhado (Funk Remix)', 'Malu & DJ Lucas Beat', NULL),
+  ('어떤X (What Type of X)', 'Jessi', NULL),
+  ('Preta do Cabelo Cacheado', 'Th CDM', NULL),
+  ('롤린 (Rollin’)', '브레이브걸스', NULL),
+  ('Ah Ellerim Kırılaydı', 'Tuğçe Kandemir', NULL),
+  ('Talking to the Moon', 'Bruno Mars', NULL),
+  ('¿Quién Te Crees?', 'MC Davo feat. Calibre 50', NULL),
+  ('Radha', 'Dhvani Bhanushali & Abhijit Vaghani', NULL)
   ;
 
    // Update to song table
@@ -330,7 +330,7 @@ pastChartLocation = window.location.href;
  //
 
   // Get the last song_id inserted
-  song_id = 10054; // SELECT last_insert_rowid();
+  song_id = 10081; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -370,24 +370,24 @@ pastChartLocation = window.location.href;
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-23 09:47:17.036036', '856', '10008'),
-  ('2021-03-23 09:47:17.039039', '856', '10040'),
-  ('2021-03-23 09:47:17.040040', '856', '10041'),
-  ('2021-03-23 09:47:17.041041', '856', '10042'),
-  ('2021-03-23 09:47:17.041041', '856', '10043'),
-  ('2021-03-23 09:47:17.042042', '856', '10044'),
-  ('2021-03-23 09:47:17.042042', '856', '10045'),
-  ('2021-03-23 09:47:17.043043', '856', '10046'),
-  ('2021-03-23 09:47:17.043043', '856', '10047'),
-  ('2021-03-23 09:47:17.043043', '856', '10048'),
-  ('2021-03-23 09:47:17.044044', '856', '9782'),
-  ('2021-03-23 09:47:17.044044', '856', '10049'),
-  ('2021-03-23 09:47:17.045045', '856', '10050'),
-  ('2021-03-23 09:47:17.045045', '856', '10051'),
-  ('2021-03-23 09:47:17.046046', '856', '10052'),
-  ('2021-03-23 09:47:17.046046', '856', '10053'),
-  ('2021-03-23 09:47:17.046046', '856', '10054'),
-  ('2021-03-23 09:47:17.047047', '856', '9965')
+  ('2021-03-31 08:21:15.248248', '858', '10067'),
+  ('2021-03-31 08:21:15.250250', '858', '10025'),
+  ('2021-03-31 08:21:15.252252', '858', '10068'),
+  ('2021-03-31 08:21:15.252252', '858', '10069'),
+  ('2021-03-31 08:21:15.254254', '858', '10070'),
+  ('2021-03-31 08:21:15.254254', '858', '8276'),
+  ('2021-03-31 08:21:15.255255', '858', '10032'),
+  ('2021-03-31 08:21:15.255255', '858', '10071'),
+  ('2021-03-31 08:21:15.256256', '858', '10072'),
+  ('2021-03-31 08:21:15.256256', '858', '10073'),
+  ('2021-03-31 08:21:15.257257', '858', '10074'),
+  ('2021-03-31 08:21:15.257257', '858', '10075'),
+  ('2021-03-31 08:21:15.258258', '858', '10076'),
+  ('2021-03-31 08:21:15.259259', '858', '10077'),
+  ('2021-03-31 08:21:15.259259', '858', '10078'),
+  ('2021-03-31 08:21:15.260260', '858', '10079'),
+  ('2021-03-31 08:21:15.260260', '858', '10080'),
+  ('2021-03-31 08:21:15.261261', '858', '10081')
   ;
 
   // Update to source_song table
