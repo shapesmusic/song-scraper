@@ -29,6 +29,7 @@
     parent_entity = 'Pitchfork'
     AND NOT parent_stream = 'Track Reviews'
     AND NOT parent_stream = 'Best New Tracks'
+    OR parent_stream is NULL
   ORDER BY
     publication_date DESC LIMIT 8;
 
@@ -50,9 +51,9 @@
 
   parent_entity = "Pitchfork" // the entity is an individual user
   parent_stream = null // a non-recurring source usually has no parent_stream
-  instance_name = "The 7 Best Music Videos of February 2021" // title of the source
-  publication_date = "2021-03-02 00:00:00.000000" // publication date of the source
-  chart_location = "https://pitchfork.com/thepitch/best-music-videos-of-february-2021/" // URL for the instance, or if there isn't one, null
+  instance_name = "The 7 Best Music Videos of March 2021" // title of the source
+  publication_date = "2021-04-01 00:00:00.000000" // publication date of the source
+  chart_location = "https://pitchfork.com/thepitch/the-7-best-music-videos-of-march-2021/" // URL for the instance, or if there isn't one, null
 
 
   // Build the INSERT statement
@@ -74,7 +75,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Pitchfork', NULL, 'The 7 Best Music Videos of February 2021', '2021-03-02 00:00:00.000000', 'https://pitchfork.com/thepitch/best-music-videos-of-february-2021/');
+    ('Pitchfork', NULL, 'The 7 Best Music Videos of March 2021', '2021-04-01 00:00:00.000000', 'https://pitchfork.com/thepitch/the-7-best-music-videos-of-march-2021/');
 
   // Update to source table
 
@@ -83,12 +84,12 @@
   // Step 2: Enter song data into an array
   //
 
-    source_id = 847; // SELECT last_insert_rowid();
+    source_id = 865; // SELECT last_insert_rowid();
 
     // Add info for the first song only
-    title = "Tweety"
-    artist_name = "Raveena"
-    video_id = "U4t37sXE_N0" // if not adding video_id, set to null
+    title = "Be Sweet"
+    artist_name = "Japanese Breakfast"
+    video_id = "2ZfcZEIo6Bw" // if not adding video_id, set to null
 
     song_id = null;
 
@@ -127,69 +128,69 @@
 
     songsData =
     [
-        {
-            "title": "Tweety",
-            "artist_name": "Raveena",
-            "video_id": "U4t37sXE_N0",
-            "capture_date": "2021-03-12 09:05:08.554554",
-            "source_id": 847,
-            "song_id": null,
-            "duplicate": false
-        },
-        {
-            "title": "Cry Baby",
-            "artist_name": "Megan Thee Stallion ft. DaBaby",
-            "video_id": null,
-            "capture_date": "2021-03-12 09:05:08.554554",
-            "source_id": 847,
-            "song_id": 9601,
-            "duplicate": true
-        },
-        {
-            "title": "Ungodly Hour",
-            "artist_name": "Chloe x Halle",
-            "video_id": null,
-            "capture_date": "2021-03-12 09:05:08.554554",
-            "source_id": 847,
-            "song_id": null,
-            "duplicate": false
-        },
-        {
-            "title": "F.U.C.K.",
-            "artist_name": "Victoria Monét",
-            "video_id": null,
-            "capture_date": "2021-03-12 09:05:08.554554",
-            "source_id": 847,
-            "song_id": null,
-            "duplicate": false
-        },
-        {
-            "title": "Up",
-            "artist_name": "Cardi B",
-            "video_id": null,
-            "capture_date": "2021-03-12 09:05:08.554554",
-            "source_id": 847,
-            "song_id": 9774,
-            "duplicate": true
-        },
-        {
-            "title": "KIM",
-            "artist_name": "Tkay Maidza ft. Yung Baby Tate",
-            "video_id": null,
-            "capture_date": "2021-03-12 09:05:08.554554",
-            "source_id": 847,
-            "song_id": null,
-            "duplicate": false
-        },
-        {
-            "title": "AGUA",
-            "artist_name": "Bomba Estéreo",
-            "video_id": null,
-            "capture_date": "2021-03-12 09:05:08.554554",
-            "source_id": 847,
-            "song_id": 9885,
-            "duplicate": true
-        }
+      {
+        "title": "Be Sweet",
+        "artist_name": "Japanese Breakfast",
+        "video_id": "2ZfcZEIo6Bw",
+        "capture_date": "2021-04-02 08:06:01.104104",
+        "source_id": 865,
+        "song_id": 9971,
+        "duplicate": true
+      },
+      {
+        "title": "I Am",
+        "artist_name": "Yung Baby Tate ft. Flo Milli",
+        "video_id": "WL1XNyTSPfk",
+        "capture_date": "2021-04-02 08:06:01.104104",
+        "source_id": 865,
+        "song_id": null,
+        "duplicate": false
+      },
+      {
+        "title": "Average Death",
+        "artist_name": "The Armed",
+        "video_id": "O1TvrYAwrBY",
+        "capture_date": "2021-04-02 08:06:01.104104",
+        "source_id": 865,
+        "song_id": null,
+        "duplicate": false
+      },
+      {
+        "title": "Pussy Poppin",
+        "artist_name": "Rico Nasty",
+        "video_id": "0BmtH4hcw38",
+        "capture_date": "2021-04-02 08:06:01.104104",
+        "source_id": 865,
+        "song_id": null,
+        "duplicate": false
+      },
+      {
+        "title": "Streets",
+        "artist_name": "Doja Cat",
+        "video_id": "jJdlgKzVsnI",
+        "capture_date": "2021-04-02 08:06:01.104104",
+        "source_id": 865,
+        "song_id": 9751,
+        "duplicate": true
+      },
+      {
+        "title": "John L",
+        "artist_name": "black midi",
+        "video_id": "GT0nSp8lUws",
+        "capture_date": "2021-04-02 08:06:01.104104",
+        "source_id": 865,
+        "song_id": 10091,
+        "duplicate": true
+      },
+      {
+        "title": "MONTERO (Call Me by Your Name)",
+        "artist_name": "Lil Nas X",
+        "video_id": "6swmTBVI83k",
+        "capture_date": "2021-04-02 08:06:01.104104",
+        "source_id": 865,
+        "song_id": 10082,
+        "duplicate": true
+      }
     ]
 
     // Check each song for duplicates in the database
@@ -198,8 +199,7 @@
       AND artist_name LIKE '%Cardi%'
     ;
 
-    // If any changes:
-    // Update var songsData = the deduplicated list above
+    // Add var songsData = the deduplicated list above
 
 
   //
@@ -230,10 +230,9 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Tweety', 'Raveena', 'U4t37sXE_N0'),
-    ('Ungodly Hour', 'Chloe x Halle', NULL),
-    ('F.U.C.K.', 'Victoria Monét', NULL),
-    ('KIM', 'Tkay Maidza ft. Yung Baby Tate', NULL)
+    ('I Am', 'Yung Baby Tate ft. Flo Milli', 'WL1XNyTSPfk'),
+    ('Average Death', 'The Armed', 'O1TvrYAwrBY'),
+    ('Pussy Poppin', 'Rico Nasty', '0BmtH4hcw38')
     ;
 
      // Update to song table
@@ -244,7 +243,7 @@
    //
 
     // Get the last song_id inserted
-    song_id = 9987; // SELECT last_insert_rowid();
+    song_id = 10097; // SELECT last_insert_rowid();
 
     // Calculate the number of nonduplicate songs added
     nonduplicates = 0;
@@ -284,13 +283,13 @@
     INSERT INTO source_song
       (capture_date, source_id, song_id)
     VALUES
-    ('2021-03-12 09:05:08.554554', '847', '9984'),
-    ('2021-03-12 09:05:08.554554', '847', '9601'),
-    ('2021-03-12 09:05:08.554554', '847', '9985'),
-    ('2021-03-12 09:05:08.554554', '847', '9986'),
-    ('2021-03-12 09:05:08.554554', '847', '9774'),
-    ('2021-03-12 09:05:08.554554', '847', '9987'),
-    ('2021-03-12 09:05:08.554554', '847', '9885')
+    ('2021-04-02 08:06:01.104104', '865', '9971'),
+    ('2021-04-02 08:06:01.104104', '865', '10095'),
+    ('2021-04-02 08:06:01.104104', '865', '10096'),
+    ('2021-04-02 08:06:01.104104', '865', '10097'),
+    ('2021-04-02 08:06:01.104104', '865', '9751'),
+    ('2021-04-02 08:06:01.104104', '865', '10091'),
+    ('2021-04-02 08:06:01.104104', '865', '10082')
     ;
 
     // Update to source_song table
