@@ -42,8 +42,8 @@
 
   parent_entity = "User" // the entity is an individual user
   parent_stream = "davidforrest" // the username of the person adding the song
-  instance_name = "heard it on the radio and realized how great it is" // a description of where you found out about the song
-  publication_date = "2021-03-04 00:00:00.000000" // the date of the source, otherwise, the date the song was added
+  instance_name = "My Shazams" // a description of where you found out about the song
+  publication_date = "2021-04-03 00:00:00.000000" // the date of the source, otherwise, the date the song was added
   chart_location = null // URL for the instance, or if there isn't one, null
 
 
@@ -75,7 +75,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Pitchfork', NULL, 'The 7 Best Music Videos of March 2021', '2021-04-01 00:00:00.000000', 'https://pitchfork.com/thepitch/the-7-best-music-videos-of-march-2021/');
+    ('User', 'davidforrest', 'My Shazams', '2020-11-10 00:00:00.000000', NULL);
 
   // Update to source table
 
@@ -129,67 +129,101 @@
     songsData =
     [
       {
-        "title": "Be Sweet",
-        "artist_name": "Japanese Breakfast",
-        "video_id": "2ZfcZEIo6Bw",
-        "capture_date": "2021-04-02 08:06:01.104104",
-        "source_id": 865,
-        "song_id": 9971,
+        "title": "Put Your Records On",
+        "artist_name": "Ritt Momney",
+        "video_id": null,
+        "capture_date": "2021-04-03 00:00:00.000000",
+        "source_id": 866,
+        "song_id": 9348,
         "duplicate": true
-      },
-      {
-        "title": "I Am",
-        "artist_name": "Yung Baby Tate ft. Flo Milli",
-        "video_id": "WL1XNyTSPfk",
-        "capture_date": "2021-04-02 08:06:01.104104",
-        "source_id": 865,
+      },{
+        "title": "Without Me",
+        "artist_name": "Halsey",
+        "video_id": null,
+        "capture_date": "2021-02-07 00:00:00.000000",
+        "source_id": 867,
+        "song_id": 1371,
+        "duplicate": true
+      },{
+        "title": "34+35",
+        "artist_name": "Ariana Grande",
+        "video_id": null,
+        "capture_date": "2021-02-05 00:00:00.000000",
+        "source_id": 868,
+        "song_id": 9524,
+        "duplicate": true
+      },{
+        "title": "Holy",
+        "artist_name": "Justin Bieber ft. Chance the Rapper",
+        "video_id": null,
+        "capture_date": "2021-02-05 00:00:00.000000",
+        "source_id": 868,
+        "song_id": 9301,
+        "duplicate": true
+      },{
+        "title": "What You Know Bout Love",
+        "artist_name": "Pop Smoke",
+        "video_id": null,
+        "capture_date": "2021-02-05 00:00:00.000000",
+        "source_id": 868,
+        "song_id": 8943,
+        "duplicate": true
+      },{
+        "title": "Disorder",
+        "artist_name": "Joy Division",
+        "video_id": "fhCLalLXHP4",
+        "capture_date": "2021-01-21 00:00:00.000000",
+        "source_id": 869,
         "song_id": null,
         "duplicate": false
-      },
-      {
-        "title": "Average Death",
-        "artist_name": "The Armed",
-        "video_id": "O1TvrYAwrBY",
-        "capture_date": "2021-04-02 08:06:01.104104",
-        "source_id": 865,
+      },{
+        "title": "Amber",
+        "artist_name": "311",
+        "video_id": "SUFSB2plwzM",
+        "capture_date": "2021-01-19 00:00:00.000000",
+        "source_id": 870,
         "song_id": null,
         "duplicate": false
-      },
-      {
-        "title": "Pussy Poppin",
-        "artist_name": "Rico Nasty",
-        "video_id": "0BmtH4hcw38",
-        "capture_date": "2021-04-02 08:06:01.104104",
-        "source_id": 865,
+      },{
+        "title": "Minnesota, WI",
+        "artist_name": "Bon Iver",
+        "video_id": "gt8gG9iEjpM",
+        "capture_date": "2020-12-17 00:00:00.000000",
+        "source_id": 871,
         "song_id": null,
         "duplicate": false
-      },
-      {
-        "title": "Streets",
-        "artist_name": "Doja Cat",
-        "video_id": "jJdlgKzVsnI",
-        "capture_date": "2021-04-02 08:06:01.104104",
-        "source_id": 865,
-        "song_id": 9751,
+      },{
+        "title": "My Possession",
+        "artist_name": "Dirty Projectors",
+        "video_id": "aR20j39ja4k",
+        "capture_date": "2020-11-28 00:00:00.000000",
+        "source_id": 872,
+        "song_id": null,
+        "duplicate": false
+      },{
+        "title": "Mercedes Boy",
+        "artist_name": "Pebbles",
+        "video_id": "lQS0t5Hdc6M",
+        "capture_date": "2020-11-28 00:00:00.000000",
+        "source_id": 872,
+        "song_id": null,
+        "duplicate": false
+      },{
+        "title": "Leave Me Alone",
+        "artist_name": "Flipp Dinero",
+        "video_id": null,
+        "capture_date": "2020-11-14 00:00:00.000000",
+        "source_id": 873,
+        "song_id": 1327,
         "duplicate": true
-      },
-      {
-        "title": "John L",
-        "artist_name": "black midi",
-        "video_id": "GT0nSp8lUws",
-        "capture_date": "2021-04-02 08:06:01.104104",
-        "source_id": 865,
-        "song_id": 10091,
-        "duplicate": true
-      },
-      {
-        "title": "MONTERO (Call Me by Your Name)",
-        "artist_name": "Lil Nas X",
-        "video_id": "6swmTBVI83k",
-        "capture_date": "2021-04-02 08:06:01.104104",
-        "source_id": 865,
-        "song_id": 10082,
-        "duplicate": true
+      },{
+        "title": "On Your Marks",
+        "artist_name": "Bonobo",
+        "video_id": "bGGb9kumcv8",
+        "capture_date": "2020-11-10 00:00:00.000000",
+        "source_id": 874,
+        "song_id": null,
+        "duplicate": false
       }
     ]
 
@@ -230,9 +264,12 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('I Am', 'Yung Baby Tate ft. Flo Milli', 'WL1XNyTSPfk'),
-    ('Average Death', 'The Armed', 'O1TvrYAwrBY'),
-    ('Pussy Poppin', 'Rico Nasty', '0BmtH4hcw38')
+      ('Disorder', 'Joy Division', 'fhCLalLXHP4'),
+      ('Amber', '311', 'SUFSB2plwzM'),
+      ('Minnesota, WI', 'Bon Iver', 'gt8gG9iEjpM'),
+      ('My Possession', 'Dirty Projectors', 'aR20j39ja4k'),
+      ('Mercedes Boy', 'Pebbles', 'lQS0t5Hdc6M'),
+      ('On Your Marks', 'Bonobo', 'bGGb9kumcv8')
     ;
 
      // Update to song table
@@ -243,7 +280,7 @@
    //
 
     // Get the last song_id inserted
-    song_id = 10097; // SELECT last_insert_rowid();
+    song_id = 10103; // SELECT last_insert_rowid();
 
     // Calculate the number of nonduplicate songs added
     nonduplicates = 0;
@@ -283,13 +320,18 @@
     INSERT INTO source_song
       (capture_date, source_id, song_id)
     VALUES
-    ('2021-04-02 08:06:01.104104', '865', '9971'),
-    ('2021-04-02 08:06:01.104104', '865', '10095'),
-    ('2021-04-02 08:06:01.104104', '865', '10096'),
-    ('2021-04-02 08:06:01.104104', '865', '10097'),
-    ('2021-04-02 08:06:01.104104', '865', '9751'),
-    ('2021-04-02 08:06:01.104104', '865', '10091'),
-    ('2021-04-02 08:06:01.104104', '865', '10082')
+      ('2021-04-03 00:00:00.000000', '866', '9348'),
+      ('2021-02-07 00:00:00.000000', '867', '1371'),
+      ('2021-02-05 00:00:00.000000', '868', '9524'),
+      ('2021-02-05 00:00:00.000000', '868', '9301'),
+      ('2021-02-05 00:00:00.000000', '868', '8943'),
+      ('2021-01-21 00:00:00.000000', '869', '10098'),
+      ('2021-01-19 00:00:00.000000', '870', '10099'),
+      ('2020-12-17 00:00:00.000000', '871', '10100'),
+      ('2020-11-28 00:00:00.000000', '872', '10101'),
+      ('2020-11-28 00:00:00.000000', '872', '10102'),
+      ('2020-11-14 00:00:00.000000', '873', '1327'),
+      ('2020-11-10 00:00:00.000000', '874', '10103')
     ;
 
     // Update to source_song table
