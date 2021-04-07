@@ -45,7 +45,7 @@ pastChartLocation = window.location.href;
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('YouTube', 'Global Top Songs', 'Week of Mar 25, 2021', '2021-03-25 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210319-20210325');
+    ('YouTube', 'Global Top Songs', 'Week of Apr 1, 2021', '2021-04-01 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210326-20210401');
 
   // Update to source table
 
@@ -54,7 +54,7 @@ pastChartLocation = window.location.href;
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 858; // SELECT last_insert_rowid();
+  source_id = 876; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-table-row style-scope ytmc-chart-table');
@@ -64,7 +64,7 @@ pastChartLocation = window.location.href;
   for (var i=0; i<elements.length; i++){
       element = elements[i];
 
-      isNew = element.getElementsByClassName("style-scope ytmc-chart-table")[0].getElementsByClassName("style-scope ytmc-chart-table")[4].getElementsByClassName("style-scope ytmc-chart-table")[1].innerText;
+      isNew = element.getElementsByClassName("style-scope ytmc-chart-table")[0].getElementsByClassName("style-scope ytmc-chart-table")[4].getElementsByClassName("style-scope ytmc-chart-table")[2].innerText
 
       title = element.getElementsByClassName("ytmc-ellipsis-text style-scope")[0].innerText.trim();
       artist_name = element.getElementsByClassName("ytmc-artist-name style-scope ytmc-artists-list")[0].innerText.trim();
@@ -105,164 +105,182 @@ pastChartLocation = window.location.href;
   songsData =
   [
     {
-        "title": "Lut Gaye",
-        "artist_name": "Jubin Nautiyal feat. Emraan Hashmi",
+        "title": "MONTERO (Call Me By Your Name)",
+        "artist_name": "Lil Nas X",
         "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.248248",
-        "source_id": 858,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Peaches",
-        "artist_name": "Justin Bieber feat. Daniel Caesar & Giveon",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.250250",
-        "source_id": 858,
-        "song_id": 10025,
+        "capture_date": "2021-04-06 08:12:10.912912",
+        "source_id": 876,
+        "song_id": 10082,
         "duplicate": true
     },
     {
-        "title": "Aashiq Purana",
-        "artist_name": "Kaka",
+        "title": "Hori Khele Raghuveera",
+        "artist_name": "Alka Yagnik, Udit Narayan, Amitabh Bachchan & Sukhwinder Singh",
         "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.252252",
-        "source_id": 858,
+        "capture_date": "2021-04-06 08:12:10.913913",
+        "source_id": 876,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Marjaneya",
-        "artist_name": "Neha Kakkar",
+        "title": "EL MAKINON",
+        "artist_name": "Karol G & Mariah Angeliq",
         "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.252252",
-        "source_id": 858,
+        "capture_date": "2021-04-06 08:12:10.914914",
+        "source_id": 876,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Prisionera",
-        "artist_name": "NewNak",
+        "title": "Baarish Ki Jaaye",
+        "artist_name": "B Praak feat. Nawazuddin Siddiqui & Sunanda Sharma",
         "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.254254",
-        "source_id": 858,
+        "capture_date": "2021-04-06 08:12:10.914914",
+        "source_id": 876,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "ROCKSTAR",
-        "artist_name": "DaBaby feat. Roddy Ricch",
+        "title": "Film out",
+        "artist_name": "BTS",
         "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.254254",
-        "source_id": 858,
-        "song_id": 8276,
+        "capture_date": "2021-04-06 08:12:10.916916",
+        "source_id": 876,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "CHO MÌNH EM",
+        "artist_name": "Binz & Đen",
+        "video_id": null,
+        "capture_date": "2021-04-06 08:12:10.916916",
+        "source_id": 876,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Kismat Teri",
+        "artist_name": "Inder Chahal",
+        "video_id": null,
+        "capture_date": "2021-04-06 08:12:10.916916",
+        "source_id": 876,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Kekra Sang Khelme Holiya Ge Jaan",
+        "artist_name": "Prabha Raj",
+        "video_id": null,
+        "capture_date": "2021-04-06 08:12:10.916916",
+        "source_id": 876,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Balam Pichkari",
+        "artist_name": "Shalmali Kholgade & Vishal Dadlani",
+        "video_id": null,
+        "capture_date": "2021-04-06 08:12:10.917917",
+        "source_id": 876,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Loot Liya",
+        "artist_name": "Khasa Aala Chahar",
+        "video_id": null,
+        "capture_date": "2021-04-06 08:12:10.917917",
+        "source_id": 876,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "MUSAFIR",
+        "artist_name": "Korala Maan & Gurlez Akhtar",
+        "video_id": null,
+        "capture_date": "2021-04-06 08:12:10.917917",
+        "source_id": 876,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Rang Barse",
+        "artist_name": "Amitabh Bachchan",
+        "video_id": null,
+        "capture_date": "2021-04-06 08:12:10.918918",
+        "source_id": 876,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Tujhe Bhoolna Toh Chaaha",
+        "artist_name": "Rochak Kohli & Jubin Nautiyal",
+        "video_id": null,
+        "capture_date": "2021-04-06 08:12:10.918918",
+        "source_id": 876,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "No Hago Coro",
+        "artist_name": "GhettoSPM, Farruko & Nino Freestyle",
+        "video_id": null,
+        "capture_date": "2021-04-06 08:12:10.918918",
+        "source_id": 876,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "EL BARCO",
+        "artist_name": "Karol G",
+        "video_id": null,
+        "capture_date": "2021-04-06 08:12:10.919919",
+        "source_id": 876,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Tombstone",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2021-04-06 08:12:10.919919",
+        "source_id": 876,
+        "song_id": 10062,
         "duplicate": true
     },
     {
-        "title": "Obsessed",
-        "artist_name": "Addison Rae",
+        "title": "La Llevo Al Cielo",
+        "artist_name": "Kallde \"El Rey Del Placer\" feat. Chencho Corleone",
         "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.255255",
-        "source_id": 858,
-        "song_id": 10032,
-        "duplicate": true
-    },
-    {
-        "title": "Sugar Crash",
-        "artist_name": "ElyOtto",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.255255",
-        "source_id": 858,
+        "capture_date": "2021-04-06 08:12:10.919919",
+        "source_id": 876,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fiel",
-        "artist_name": "Los Legendarios, Wisin & Jhay Cortez",
+        "title": "Take a picture",
+        "artist_name": "NiziU",
         "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.256256",
-        "source_id": 858,
+        "capture_date": "2021-04-06 08:12:10.919919",
+        "source_id": 876,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lavandiya London Se Layenge",
-        "artist_name": "Khesari Lal Yadav",
+        "title": "Kutty Pattas",
+        "artist_name": "Santhosh Dhayanidhi & Rakshitha Suresh",
         "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.256256",
-        "source_id": 858,
+        "capture_date": "2021-04-06 08:12:10.919919",
+        "source_id": 876,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Disco Arranhado (Funk Remix)",
-        "artist_name": "Malu & DJ Lucas Beat",
+        "title": "廻廻奇譚",
+        "artist_name": "Eve",
         "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.257257",
-        "source_id": 858,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "어떤X (What Type of X)",
-        "artist_name": "Jessi",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.257257",
-        "source_id": 858,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Preta do Cabelo Cacheado",
-        "artist_name": "Th CDM",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.258258",
-        "source_id": 858,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "롤린 (Rollin')",
-        "artist_name": "브레이브걸스",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.259259",
-        "source_id": 858,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ah Ellerim Kırılaydı",
-        "artist_name": "Tuğçe Kandemir",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.259259",
-        "source_id": 858,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Talking to the Moon",
-        "artist_name": "Bruno Mars",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.260260",
-        "source_id": 858,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "¿Quién Te Crees?",
-        "artist_name": "MC Davo feat. Calibre 50",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.260260",
-        "source_id": 858,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Radha",
-        "artist_name": "Dhvani Bhanushali & Abhijit Vaghani",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:21:15.261261",
-        "source_id": 858,
+        "capture_date": "2021-04-06 08:12:10.920920",
+        "source_id": 876,
         "song_id": null,
         "duplicate": false
     }
@@ -305,21 +323,24 @@ pastChartLocation = window.location.href;
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Lut Gaye', 'Jubin Nautiyal feat. Emraan Hashmi', NULL),
-  ('Aashiq Purana', 'Kaka', NULL),
-  ('Marjaneya', 'Neha Kakkar', NULL),
-  ('Prisionera', 'NewNak', NULL),
-  ('Sugar Crash', 'ElyOtto', NULL),
-  ('Fiel', 'Los Legendarios, Wisin & Jhay Cortez', NULL),
-  ('Lavandiya London Se Layenge', 'Khesari Lal Yadav', NULL),
-  ('Disco Arranhado (Funk Remix)', 'Malu & DJ Lucas Beat', NULL),
-  ('어떤X (What Type of X)', 'Jessi', NULL),
-  ('Preta do Cabelo Cacheado', 'Th CDM', NULL),
-  ('롤린 (Rollin’)', '브레이브걸스', NULL),
-  ('Ah Ellerim Kırılaydı', 'Tuğçe Kandemir', NULL),
-  ('Talking to the Moon', 'Bruno Mars', NULL),
-  ('¿Quién Te Crees?', 'MC Davo feat. Calibre 50', NULL),
-  ('Radha', 'Dhvani Bhanushali & Abhijit Vaghani', NULL)
+  ('Hori Khele Raghuveera', 'Alka Yagnik, Udit Narayan, Amitabh Bachchan & Sukhwinder Singh', NULL),
+  ('EL MAKINON', 'Karol G & Mariah Angeliq', NULL),
+  ('Baarish Ki Jaaye', 'B Praak feat. Nawazuddin Siddiqui & Sunanda Sharma', NULL),
+  ('Film out', 'BTS', NULL),
+  ('CHO MÌNH EM', 'Binz & Đen', NULL),
+  ('Kismat Teri', 'Inder Chahal', NULL),
+  ('Kekra Sang Khelme Holiya Ge Jaan', 'Prabha Raj', NULL),
+  ('Balam Pichkari', 'Shalmali Kholgade & Vishal Dadlani', NULL),
+  ('Loot Liya', 'Khasa Aala Chahar', NULL),
+  ('MUSAFIR', 'Korala Maan & Gurlez Akhtar', NULL),
+  ('Rang Barse', 'Amitabh Bachchan', NULL),
+  ('Tujhe Bhoolna Toh Chaaha', 'Rochak Kohli & Jubin Nautiyal', NULL),
+  ('No Hago Coro', 'GhettoSPM, Farruko & Nino Freestyle', NULL),
+  ('EL BARCO', 'Karol G', NULL),
+  ('La Llevo Al Cielo', 'Kallde "El Rey Del Placer" feat. Chencho Corleone', NULL),
+  ('Take a picture', 'NiziU', NULL),
+  ('Kutty Pattas', 'Santhosh Dhayanidhi & Rakshitha Suresh', NULL),
+  ('廻廻奇譚', 'Eve', NULL)
   ;
 
    // Update to song table
@@ -330,7 +351,7 @@ pastChartLocation = window.location.href;
  //
 
   // Get the last song_id inserted
-  song_id = 10081; // SELECT last_insert_rowid();
+  song_id = 10135; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -370,24 +391,26 @@ pastChartLocation = window.location.href;
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-31 08:21:15.248248', '858', '10067'),
-  ('2021-03-31 08:21:15.250250', '858', '10025'),
-  ('2021-03-31 08:21:15.252252', '858', '10068'),
-  ('2021-03-31 08:21:15.252252', '858', '10069'),
-  ('2021-03-31 08:21:15.254254', '858', '10070'),
-  ('2021-03-31 08:21:15.254254', '858', '8276'),
-  ('2021-03-31 08:21:15.255255', '858', '10032'),
-  ('2021-03-31 08:21:15.255255', '858', '10071'),
-  ('2021-03-31 08:21:15.256256', '858', '10072'),
-  ('2021-03-31 08:21:15.256256', '858', '10073'),
-  ('2021-03-31 08:21:15.257257', '858', '10074'),
-  ('2021-03-31 08:21:15.257257', '858', '10075'),
-  ('2021-03-31 08:21:15.258258', '858', '10076'),
-  ('2021-03-31 08:21:15.259259', '858', '10077'),
-  ('2021-03-31 08:21:15.259259', '858', '10078'),
-  ('2021-03-31 08:21:15.260260', '858', '10079'),
-  ('2021-03-31 08:21:15.260260', '858', '10080'),
-  ('2021-03-31 08:21:15.261261', '858', '10081')
+  ('2021-04-06 08:12:10.912912', '876', '10082'),
+  ('2021-04-06 08:12:10.913913', '876', '10118'),
+  ('2021-04-06 08:12:10.914914', '876', '10119'),
+  ('2021-04-06 08:12:10.914914', '876', '10120'),
+  ('2021-04-06 08:12:10.916916', '876', '10121'),
+  ('2021-04-06 08:12:10.916916', '876', '10122'),
+  ('2021-04-06 08:12:10.916916', '876', '10123'),
+  ('2021-04-06 08:12:10.916916', '876', '10124'),
+  ('2021-04-06 08:12:10.917917', '876', '10125'),
+  ('2021-04-06 08:12:10.917917', '876', '10126'),
+  ('2021-04-06 08:12:10.917917', '876', '10127'),
+  ('2021-04-06 08:12:10.918918', '876', '10128'),
+  ('2021-04-06 08:12:10.918918', '876', '10129'),
+  ('2021-04-06 08:12:10.918918', '876', '10130'),
+  ('2021-04-06 08:12:10.919919', '876', '10131'),
+  ('2021-04-06 08:12:10.919919', '876', '10062'),
+  ('2021-04-06 08:12:10.919919', '876', '10132'),
+  ('2021-04-06 08:12:10.919919', '876', '10133'),
+  ('2021-04-06 08:12:10.919919', '876', '10134'),
+  ('2021-04-06 08:12:10.920920', '876', '10135')
   ;
 
   // Update to source_song table

@@ -33,7 +33,7 @@ ORDER BY parent_entity;
 |Pitchfork|Track Reviews|[current chart](https://pitchfork.com/reviews/tracks/)|[pitchfork.js](https://github.com/davidforrest/Song-Scraper/blob/master/pitchfork.js)|Monthly|Includes Best New Tracks. Also see [Pitchfork Selects](https://pitchfork.com/search/?query=Pitchfork%20Selects)|
 |The Fader|10 songs you need in your life this week|[this list](https://www.thefader.com/search?query=10+songs+you+need+in+your+life+this+week)|😸|Weekly||
 |Popjustice|New Music Friday: The Popjustice Edit|[this list](https://www.popjustice.com/?s=New+Music) or [Spotify](https://open.spotify.com/playlist/5s7cNVeGfehrRfCatNN43P)|😸|Weekly||
-|Stereogum|The 5 Best Songs Of The Week|[this list](https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/)|😸|Weekly||
+|Stereogum|The 5 Best Songs Of The Week|[this list](https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/)|😸|Weekly|Also see [Top 45 singles](https://www.popjustice.com/?s=Top+45+singles) of the year|
 |SoundCloud|Top 50 Global|[current chart](https://soundcloud.com/charts/top?genre=all-music&country=all-countries)|😸|Weekly|Also ["New & Hot"](https://soundcloud.com/charts/new?genre=all-music&country=all-countries) and filter by country|
 |Hype Machine|Stack|[current chart](https://hypem.com/stack)|😸|Weekly|Also [Popular Now](https://hypem.com/popular) updated realtime|
 

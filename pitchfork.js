@@ -11,6 +11,7 @@
   INNER JOIN source
     ON source.id = source_song.source_id
   WHERE source.parent_entity = 'Pitchfork'
+    AND source.parent_stream = 'Track Reviews'
   ORDER BY source.publication_date DESC LIMIT 8;
 
 
@@ -74,11 +75,9 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2021-03-30 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-03-24 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-03-23 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-03-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-03-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-03-31 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -128,47 +127,29 @@
   songsData =
   [
     {
-        "title": "Currents",
-        "artist_name": "JAB",
+        "title": "Afrique Victime",
+        "artist_name": "Mdou Moctar",
         "video_id": null,
-        "capture_date": "2021-03-31 08:49:45.227227",
-        "source_id": 860,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2021-04-06 07:08:44.154154",
+        "source_id": 879,
+        "song_id": 10149,
+        "duplicate": true
     },
     {
-        "title": "John L",
-        "artist_name": "black midi",
+        "title": "deja vu",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2021-03-31 08:49:45.231231",
-        "source_id": 861,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2021-04-06 07:08:44.157157",
+        "source_id": 880,
+        "song_id": 10142,
+        "duplicate": true
     },
     {
-        "title": "Losing Something",
-        "artist_name": "Lost Girls",
+        "title": "Hustle",
+        "artist_name": "Sons of Kemet",
         "video_id": null,
-        "capture_date": "2021-03-31 08:49:45.231231",
-        "source_id": 862,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Teenage Situation",
-        "artist_name": "Rodeola",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:49:45.231231",
-        "source_id": 863,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mohabbat",
-        "artist_name": "Arooj Aftab",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:49:45.231231",
-        "source_id": 864,
+        "capture_date": "2021-04-06 07:08:44.157157",
+        "source_id": 881,
         "song_id": null,
         "duplicate": false
     }
@@ -222,11 +203,7 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Currents', 'JAB', NULL),
-  ('John L', 'black midi', NULL),
-  ('Losing Something', 'Lost Girls', NULL),
-  ('Teenage Situation', 'Rodeola', NULL),
-  ('Mohabbat', 'Arooj Aftab', NULL)
+    ('Hustle', 'Sons of Kemet', NULL)
   ;
 
    // Update to song table
@@ -237,7 +214,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 10094; // SELECT last_insert_rowid();
+  song_id = 10151; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -277,11 +254,9 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-31 08:49:45.227227', '860', '10090'),
-  ('2021-03-31 08:49:45.231231', '861', '10091'),
-  ('2021-03-31 08:49:45.231231', '862', '10092'),
-  ('2021-03-31 08:49:45.231231', '863', '10093'),
-  ('2021-03-31 08:49:45.231231', '864', '10094')
+  ('2021-04-06 07:08:44.154154', '879', '10149'),
+  ('2021-04-06 07:08:44.157157', '880', '10142'),
+  ('2021-04-06 07:08:44.157157', '881', '10151')
   ;
 
   // Update to source_song table

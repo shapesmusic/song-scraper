@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Roddy Ricch, Benny the Butcher, Justin Bieber, and More', '2021-03-19 12:00:00.000000', 'https://www.complex.com/music/best-new-music-roddy-benny-bieber/');
+    ('Complex', 'Best New Music This Week', 'Freddie Gibbs, 42 Dugg, Brockhampton, More', '2021-04-02 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-april-2/lil-tjay-offset-moneybagg-yo-run-it-up');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 854; // SELECT last_insert_rowid();
+  source_id = 877; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -99,83 +99,74 @@
   songsData =
   [
     {
-        "title": "Heartless (Live From LA)",
-        "artist_name": "Roddy Ricch",
-        "video_id": "bmP7TaTIdMQ",
-        "capture_date": "2021-03-23 09:15:39.907907",
-        "source_id": 854,
+        "title": "Count on Me",
+        "artist_name": "Brockhampton feat. ASAP Rocky & SoGone SoFlexy",
+        "video_id": "78dEK21wI2g",
+        "capture_date": "2021-04-06 06:47:00.715715",
+        "source_id": 877,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "When Tony Met Sosa",
-        "artist_name": "Benny the Butcher & Harry Fraud",
-        "video_id": "2bI8XsdNb-c",
-        "capture_date": "2021-03-23 09:15:39.908908",
-        "source_id": 854,
+        "title": "Big Boss Rabbit",
+        "artist_name": "Freddie Gibbs",
+        "video_id": "NabmJWtYK5c",
+        "capture_date": "2021-04-06 06:47:00.716716",
+        "source_id": 877,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Peaches",
-        "artist_name": "Justin Bieber f/ Giveon & Daniel Caesar",
-        "video_id": "tQ0yjYUFKAE",
-        "capture_date": "2021-03-23 09:15:39.908908",
-        "source_id": 854,
+        "title": "4 Da Gang",
+        "artist_name": "42 Dugg f/ Roddy Ricch",
+        "video_id": "x6LBEoIF1mk",
+        "capture_date": "2021-04-06 06:47:00.716716",
+        "source_id": 877,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Marigold",
-        "artist_name": "Jelani Aryeh",
-        "video_id": "phGdPoBcxqs",
-        "capture_date": "2021-03-23 09:15:39.908908",
-        "source_id": 854,
+        "title": "Rih",
+        "artist_name": "Kenny Mason",
+        "video_id": "S9mjXP9X8_M",
+        "capture_date": "2021-04-06 06:47:00.716716",
+        "source_id": 877,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Twirlanta",
-        "artist_name": "22Gz",
-        "video_id": "63FjrdZZfp4",
-        "capture_date": "2021-03-23 09:15:39.908908",
-        "source_id": 854,
+        "title": "4U",
+        "artist_name": "Pi’erre Bourne",
+        "video_id": "2TTR1v6WJOw",
+        "capture_date": "2021-04-06 06:47:00.716716",
+        "source_id": 877,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Headshot",
-        "artist_name": "Lil Tjay, Polo G, & Fivio Foreign",
-        "video_id": "aT_nFiTkxy8",
-        "capture_date": "2021-03-23 09:15:39.908908",
-        "source_id": 854,
+        "title": "Yeah Kool",
+        "artist_name": "FXXXXY f/ Lil Uzi Vert",
+        "video_id": "rKhQEjh1fjE",
+        "capture_date": "2021-04-06 06:47:00.716716",
+        "source_id": 877,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Chicken Adobo",
-        "artist_name": "Guapdad 4000 & !llmind",
-        "video_id": "1DaovaJgytE",
-        "capture_date": "2021-03-23 09:15:39.908908",
-        "source_id": 854,
+        "title": "Deja Vu",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": "cii6ruuycQA",
+        "capture_date": "2021-04-06 06:47:00.716716",
+        "source_id": 877,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wolves",
-        "artist_name": "Kota the Friend & Statik Selektah",
-        "video_id": "k9i3nQO5adc",
-        "capture_date": "2021-03-23 09:15:39.908908",
-        "source_id": 854,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Calabasas",
-        "artist_name": "SSGKobe & $NOT",
-        "video_id": "yFZR03xYb78",
-        "capture_date": "2021-03-23 09:15:39.908908",
-        "source_id": 854,
+        "title": "Run It Up",
+        "artist_name": "Lil Tjay f/ Offset and Moneybagg Yo",
+        "video_id": "ML-iBsCUDg8",
+        "capture_date": "2021-04-06 06:47:00.716716",
+        "source_id": 877,
         "song_id": null,
         "duplicate": false
     }
@@ -218,15 +209,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Heartless (Live From LA)', 'Roddy Ricch', NULL),
-  ('When Tony Met Sosa', 'Benny the Butcher & Harry Fraud', NULL),
-  ('Peaches', 'Justin Bieber f/ Giveon & Daniel Caesar', NULL),
-  ('Marigold', 'Jelani Aryeh', NULL),
-  ('Twirlanta', '22Gz', NULL),
-  ('Headshot', 'Lil Tjay, Polo G, & Fivio Foreign', NULL),
-  ('Chicken Adobo', 'Guapdad 4000 & !llmind', NULL),
-  ('Wolves', 'Kota the Friend & Statik Selektah', NULL),
-  ('Calabasas', 'SSGKobe & $NOT', NULL)
+  ('Count on Me', 'Brockhampton feat. ASAP Rocky & SoGone SoFlexy', NULL),
+  ('Big Boss Rabbit', 'Freddie Gibbs', NULL),
+  ('4 Da Gang', '42 Dugg f/ Roddy Ricch', NULL),
+  ('Rih', 'Kenny Mason', NULL),
+  ('4U', 'Pi’erre Bourne', NULL),
+  ('Yeah Kool', 'FXXXXY f/ Lil Uzi Vert', NULL),
+  ('Deja Vu', 'Olivia Rodrigo', NULL),
+  ('Run It Up', 'Lil Tjay f/ Offset and Moneybagg Yo', NULL)
   ;
 
    // Update to song table
@@ -237,7 +227,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10031; // SELECT last_insert_rowid();
+  song_id = 10143; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -277,15 +267,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-23 09:15:39.907907', '854', '10023'),
-  ('2021-03-23 09:15:39.908908', '854', '10024'),
-  ('2021-03-23 09:15:39.908908', '854', '10025'),
-  ('2021-03-23 09:15:39.908908', '854', '10026'),
-  ('2021-03-23 09:15:39.908908', '854', '10027'),
-  ('2021-03-23 09:15:39.908908', '854', '10028'),
-  ('2021-03-23 09:15:39.908908', '854', '10029'),
-  ('2021-03-23 09:15:39.908908', '854', '10030'),
-  ('2021-03-23 09:15:39.908908', '854', '10031')
+  ('2021-04-06 06:47:00.715715', '877', '10136'),
+  ('2021-04-06 06:47:00.716716', '877', '10137'),
+  ('2021-04-06 06:47:00.716716', '877', '10138'),
+  ('2021-04-06 06:47:00.716716', '877', '10139'),
+  ('2021-04-06 06:47:00.716716', '877', '10140'),
+  ('2021-04-06 06:47:00.716716', '877', '10141'),
+  ('2021-04-06 06:47:00.716716', '877', '10142'),
+  ('2021-04-06 06:47:00.716716', '877', '10143')
   ;
 
   // Update to source_song table

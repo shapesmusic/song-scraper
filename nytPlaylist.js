@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Lil Nas X Makes a Coming-Out Statement, and 9 More New Songs', '2021-03-26 10:05:30.000000', 'https://www.nytimes.com/2021/03/26/arts/music/playlist-lil-nas-x-taylor-swift.html');
+    ('New York Times', 'The Playlist', 'Olivia Rodrigo’s Emotional Road Trip, and 8 More New Songs', '2021-04-02 08:50:11.000000', 'https://www.nytimes.com/2021/04/02/arts/music/playlist-olivia-rodrigo-westside-gunn.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 859; // SELECT last_insert_rowid();
+  source_id = 878; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -90,7 +90,7 @@
 
 //
 // Step 3:  Stage songsData,
-//          preview chart and prune songs,
+//          preview chart and prune songs (add video_id later),
 //          find & set any duplicate songs to true,
 //          add song_ids for duplicates
 //
@@ -98,83 +98,74 @@
   songsData =
   [
     {
-        "title": "Montero (Call Me by Your Name)",
-        "artist_name": "Lil Nas X",
+        "title": "Deja Vu",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2021-03-31 08:40:40.424424",
-        "source_id": 859,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "You All Over Me",
-        "artist_name": "Taylor Swift featuring Maren Morris",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:40:40.426426",
-        "source_id": 859,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "All Your Exes",
-        "artist_name": "Julia Michaels",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:40:40.426426",
-        "source_id": 859,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dignity",
-        "artist_name": "Angelique Kidjo and Yemi Alade",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:40:40.426426",
-        "source_id": 859,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Why Can’t We Live Together",
-        "artist_name": "Dr. Lonnie Smith featuring Iggy Pop",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:40:40.427427",
-        "source_id": 859,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Jetski",
-        "artist_name": "Internet Money featuring Lil Mosey and Lil Tecca",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:40:40.427427",
-        "source_id": 859,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Buzzcut",
-        "artist_name": "Brockhampton featuring Danny Brown",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:40:40.427427",
-        "source_id": 859,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tombstone",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2021-03-31 08:40:40.427427",
-        "source_id": 859,
-        "song_id": 10062,
+        "capture_date": "2021-04-06 06:54:29.123123",
+        "source_id": 878,
+        "song_id": 10142,
         "duplicate": true
     },
     {
-        "title": "Night Singing",
-        "artist_name": "Sara Watkins",
+        "title": "Julia Lang",
+        "artist_name": "Westside Gunn",
+        "video_id": "z6YtIGg79h8",
+        "capture_date": "2021-04-06 06:54:29.125125",
+        "source_id": 878,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Killing Fields",
+        "artist_name": "Rosanne Cash featuring John Leventhal",
+        "video_id": "DCbPgN3LWTw",
+        "capture_date": "2021-04-06 06:54:29.125125",
+        "source_id": 878,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Take Away the Ache",
+        "artist_name": "Half Waif",
         "video_id": null,
-        "capture_date": "2021-03-31 08:40:40.427427",
-        "source_id": 859,
+        "capture_date": "2021-04-06 06:54:29.125125",
+        "source_id": 878,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Energy",
+        "artist_name": "Naomi Cowan",
+        "video_id": null,
+        "capture_date": "2021-04-06 06:54:29.125125",
+        "source_id": 878,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Unsmart Lady",
+        "artist_name": "Dry Cleaning",
+        "video_id": "--gEZsKFoj0",
+        "capture_date": "2021-04-06 06:54:29.125125",
+        "source_id": 878,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Afrique Victime",
+        "artist_name": "Mdou Moctar",
+        "video_id": null,
+        "capture_date": "2021-04-06 06:54:29.125125",
+        "source_id": 878,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Noho",
+        "artist_name": "AG Club feat. Icecoldbishop",
+        "video_id": null,
+        "capture_date": "2021-04-06 06:54:29.125125",
+        "source_id": 878,
         "song_id": null,
         "duplicate": false
     }
@@ -217,14 +208,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Montero (Call Me by Your Name)', 'Lil Nas X', NULL),
-  ('You All Over Me', 'Taylor Swift featuring Maren Morris', NULL),
-  ('All Your Exes', 'Julia Michaels', NULL),
-  ('Dignity', 'Angelique Kidjo and Yemi Alade', NULL),
-  ('Why Can’t We Live Together', 'Dr. Lonnie Smith featuring Iggy Pop', NULL),
-  ('Jetski', 'Internet Money featuring Lil Mosey and Lil Tecca', NULL),
-  ('Buzzcut', 'Brockhampton featuring Danny Brown', NULL),
-  ('Night Singing', 'Sara Watkins', NULL)
+  ('Julia Lang', 'Westside Gunn', NULL),
+  ('The Killing Fields', 'Rosanne Cash featuring John Leventhal', NULL),
+  ('Take Away the Ache', 'Half Waif', NULL),
+  ('Energy', 'Naomi Cowan', NULL),
+  ('Unsmart Lady', 'Dry Cleaning', NULL),
+  ('Afrique Victime', 'Mdou Moctar', NULL),
+  ('Noho', 'AG Club feat. Icecoldbishop', NULL)
   ;
 
    // Update to song table
@@ -235,7 +225,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10089; // SELECT last_insert_rowid();
+  song_id = 10150; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -275,15 +265,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-03-31 08:40:40.424424', '859', '10082'),
-  ('2021-03-31 08:40:40.426426', '859', '10083'),
-  ('2021-03-31 08:40:40.426426', '859', '10084'),
-  ('2021-03-31 08:40:40.426426', '859', '10085'),
-  ('2021-03-31 08:40:40.427427', '859', '10086'),
-  ('2021-03-31 08:40:40.427427', '859', '10087'),
-  ('2021-03-31 08:40:40.427427', '859', '10088'),
-  ('2021-03-31 08:40:40.427427', '859', '10062'),
-  ('2021-03-31 08:40:40.427427', '859', '10089')
+  ('2021-04-06 06:54:29.123123', '878', '10142'),
+  ('2021-04-06 06:54:29.125125', '878', '10144'),
+  ('2021-04-06 06:54:29.125125', '878', '10145'),
+  ('2021-04-06 06:54:29.125125', '878', '10146'),
+  ('2021-04-06 06:54:29.125125', '878', '10147'),
+  ('2021-04-06 06:54:29.125125', '878', '10148'),
+  ('2021-04-06 06:54:29.125125', '878', '10149'),
+  ('2021-04-06 06:54:29.125125', '878', '10150')
   ;
 
   // Update to source_song table
