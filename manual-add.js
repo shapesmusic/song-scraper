@@ -49,7 +49,7 @@
 
   // For non-recurring sources
 
-  parent_entity = "Stereogum" // the entity is an individual user
+  parent_entity = "Popjustice" // the entity is an individual user
   parent_stream = null // a non-recurring source usually has no parent_stream
   instance_name = "The Top 45 Singles Of 2020" // title of the source
   publication_date = "2020-12-31 00:00:00.000000" // publication date of the source
@@ -75,7 +75,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'null', 'The Top 45 Singles Of 2020', '2020-12-31 00:00:00.000000', 'https://www.popjustice.com/articles/the-top-45-singles-of-2020/');
+    ('Popjustice', 'null', 'The Top 45 Singles Of 2020', '2020-12-31 00:00:00.000000', 'https://www.popjustice.com/articles/the-top-45-singles-of-2020/');
 
   // Update to source table
 
