@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Freddie Gibbs, 42 Dugg, Brockhampton, More', '2021-04-02 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-april-2/lil-tjay-offset-moneybagg-yo-run-it-up');
+    ('Complex', 'Best New Music This Week', 'Polo G, Brockhampton, $NOT, and More', '2021-04-09 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-snot-polo-g-brockhampton/spinabeez-whoppa-wit-da-choppa-yungeen-ace-fastmoney-goon-who-i-smoke');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 877; // SELECT last_insert_rowid();
+  source_id = 885; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -99,74 +99,83 @@
   songsData =
   [
     {
-        "title": "Count on Me",
-        "artist_name": "Brockhampton feat. ASAP Rocky & SoGone SoFlexy",
-        "video_id": "78dEK21wI2g",
-        "capture_date": "2021-04-06 06:47:00.715715",
-        "source_id": 877,
+        "title": "RAPSTAR",
+        "artist_name": "Polo G",
+        "video_id": "w2IhccXakkE",
+        "capture_date": "2021-04-22 04:02:19.076076",
+        "source_id": 885,
+        "song_id": 10187,
+        "duplicate": true
+    },
+    {
+        "title": "What’s the Occasion?",
+        "artist_name": "Brockhampton",
+        "video_id": "aAjfDCqe_cc",
+        "capture_date": "2021-04-22 04:02:19.078078",
+        "source_id": 885,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Big Boss Rabbit",
-        "artist_name": "Freddie Gibbs",
-        "video_id": "NabmJWtYK5c",
-        "capture_date": "2021-04-06 06:47:00.716716",
-        "source_id": 877,
+        "title": "Whipski",
+        "artist_name": "$not f/ Lil Skies & Internet Money",
+        "video_id": "Et6RbSRQsps",
+        "capture_date": "2021-04-22 04:02:19.078078",
+        "source_id": 885,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "4 Da Gang",
-        "artist_name": "42 Dugg f/ Roddy Ricch",
-        "video_id": "x6LBEoIF1mk",
-        "capture_date": "2021-04-06 06:47:00.716716",
-        "source_id": 877,
+        "title": "Kiss Me More",
+        "artist_name": "Doja Cat f/ SZA",
+        "video_id": "0EVVKs6DQLo",
+        "capture_date": "2021-04-22 04:02:19.078078",
+        "source_id": 885,
+        "song_id": 10188,
+        "duplicate": true
+    },
+    {
+        "title": "Waves of Blue",
+        "artist_name": "Majid Jordan",
+        "video_id": "vq24zYNUTpE",
+        "capture_date": "2021-04-22 04:02:19.078078",
+        "source_id": 885,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rih",
-        "artist_name": "Kenny Mason",
-        "video_id": "S9mjXP9X8_M",
-        "capture_date": "2021-04-06 06:47:00.716716",
-        "source_id": 877,
+        "title": "Purple",
+        "artist_name": "Unusual Demont",
+        "video_id": "aAidpU4fVWM",
+        "capture_date": "2021-04-22 04:02:19.079079",
+        "source_id": 885,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "4U",
-        "artist_name": "Pi’erre Bourne",
-        "video_id": "2TTR1v6WJOw",
-        "capture_date": "2021-04-06 06:47:00.716716",
-        "source_id": 877,
+        "title": "That’s When",
+        "artist_name": "Taylor Swift f/ Keith Urban",
+        "video_id": "aOa6D6ku3dM",
+        "capture_date": "2021-04-22 04:02:19.079079",
+        "source_id": 885,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Yeah Kool",
-        "artist_name": "FXXXXY f/ Lil Uzi Vert",
-        "video_id": "rKhQEjh1fjE",
-        "capture_date": "2021-04-06 06:47:00.716716",
-        "source_id": 877,
+        "title": "Slow Clap",
+        "artist_name": "Gwen Stefani & Saweetie",
+        "video_id": "iKyna2mbL8k",
+        "capture_date": "2021-04-22 04:02:19.079079",
+        "source_id": 885,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Deja Vu",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": "cii6ruuycQA",
-        "capture_date": "2021-04-06 06:47:00.716716",
-        "source_id": 877,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Run It Up",
-        "artist_name": "Lil Tjay f/ Offset and Moneybagg Yo",
-        "video_id": "ML-iBsCUDg8",
-        "capture_date": "2021-04-06 06:47:00.716716",
-        "source_id": 877,
+        "title": "Who I Smoke",
+        "artist_name": "Spinabenz, Whoppa Wit Da Choppa, Yungeen Ace, & FastMoney Goon",
+        "video_id": "YFfGgeddAc4",
+        "capture_date": "2021-04-22 04:02:19.079079",
+        "source_id": 885,
         "song_id": null,
         "duplicate": false
     }
@@ -209,14 +218,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Count on Me', 'Brockhampton feat. ASAP Rocky & SoGone SoFlexy', NULL),
-  ('Big Boss Rabbit', 'Freddie Gibbs', NULL),
-  ('4 Da Gang', '42 Dugg f/ Roddy Ricch', NULL),
-  ('Rih', 'Kenny Mason', NULL),
-  ('4U', 'Pi’erre Bourne', NULL),
-  ('Yeah Kool', 'FXXXXY f/ Lil Uzi Vert', NULL),
-  ('Deja Vu', 'Olivia Rodrigo', NULL),
-  ('Run It Up', 'Lil Tjay f/ Offset and Moneybagg Yo', NULL)
+  ('What’s the Occasion?', 'Brockhampton', NULL),
+  ('Whipski', '$not f/ Lil Skies & Internet Money', NULL),
+  ('Waves of Blue', 'Majid Jordan', NULL),
+  ('Purple', 'Unusual Demont', NULL),
+  ('That’s When', 'Taylor Swift f/ Keith Urban', NULL),
+  ('Slow Clap', 'Gwen Stefani & Saweetie', NULL),
+  ('Who I Smoke', 'Spinabenz, Whoppa Wit Da Choppa, Yungeen Ace, & FastMoney Goon', NULL)
   ;
 
    // Update to song table
@@ -227,7 +235,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10143; // SELECT last_insert_rowid();
+  song_id = 10202; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -267,14 +275,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-06 06:47:00.715715', '877', '10136'),
-  ('2021-04-06 06:47:00.716716', '877', '10137'),
-  ('2021-04-06 06:47:00.716716', '877', '10138'),
-  ('2021-04-06 06:47:00.716716', '877', '10139'),
-  ('2021-04-06 06:47:00.716716', '877', '10140'),
-  ('2021-04-06 06:47:00.716716', '877', '10141'),
-  ('2021-04-06 06:47:00.716716', '877', '10142'),
-  ('2021-04-06 06:47:00.716716', '877', '10143')
+  ('2021-04-22 04:02:19.076076', '885', '10187'),
+  ('2021-04-22 04:02:19.078078', '885', '10196'),
+  ('2021-04-22 04:02:19.078078', '885', '10197'),
+  ('2021-04-22 04:02:19.078078', '885', '10188'),
+  ('2021-04-22 04:02:19.078078', '885', '10198'),
+  ('2021-04-22 04:02:19.079079', '885', '10199'),
+  ('2021-04-22 04:02:19.079079', '885', '10200'),
+  ('2021-04-22 04:02:19.079079', '885', '10201'),
+  ('2021-04-22 04:02:19.079079', '885', '10202')
   ;
 
   // Update to source_song table
