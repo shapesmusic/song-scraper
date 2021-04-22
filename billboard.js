@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of April 17, 2021', '2021-04-17 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-04-17/2021-04-17');
+    ('Billboard', 'The Hot 100', 'Week of April 24, 2021', '2021-04-24 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-04-24');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 883; // SELECT last_insert_rowid();
+  source_id = 884; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,74 +96,83 @@
   songsData =
   [
     {
-        "title": "Deja Vu",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Rapstar",
+        "artist_name": "Polo G",
         "video_id": null,
-        "capture_date": "2021-04-22 02:42:28.563563",
-        "source_id": 883,
-        "song_id": 10142,
-        "duplicate": true
-    },
-    {
-        "title": "Run It Up",
-        "artist_name": "Lil Tjay Featuring Offset & Moneybagg Yo",
-        "video_id": null,
-        "capture_date": "2021-04-22 02:42:28.566566",
-        "source_id": 883,
-        "song_id": 10143,
-        "duplicate": true
-    },
-    {
-        "title": "Dancing With The Devil",
-        "artist_name": "Demi Lovato",
-        "video_id": null,
-        "capture_date": "2021-04-22 02:42:28.566566",
-        "source_id": 883,
+        "capture_date": "2021-04-22 03:52:59.700700",
+        "source_id": 884,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Met Him Last Night",
-        "artist_name": "Demi Lovato Featuring Ariana Grande",
+        "title": "Kiss Me More",
+        "artist_name": "Doja Cat Featuring SZA",
         "video_id": null,
-        "capture_date": "2021-04-22 02:42:28.566566",
-        "source_id": 883,
+        "capture_date": "2021-04-22 03:52:59.705705",
+        "source_id": 884,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "4 Da Gang",
-        "artist_name": "42 Dugg & Roddy Ricch",
-        "video_id": null,
-        "capture_date": "2021-04-22 02:42:28.567567",
-        "source_id": 883,
-        "song_id": 10138,
-        "duplicate": true
-    },
-    {
-        "title": "Film Out",
-        "artist_name": "BTS",
-        "video_id": null,
-        "capture_date": "2021-04-22 02:42:28.568568",
-        "source_id": 883,
-        "song_id": 10121,
-        "duplicate": true
-    },
-    {
-        "title": "Mr. Perfectly Fine (Taylor's Version)",
+        "title": "Forever & Always (Taylor's Version)",
         "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-04-22 02:42:28.568568",
-        "source_id": 883,
+        "capture_date": "2021-04-22 03:52:59.708708",
+        "source_id": 884,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Arcade",
-        "artist_name": "Duncan Laurence",
+        "title": "Fearless (Taylor's Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-04-22 02:42:28.568568",
-        "source_id": 883,
+        "capture_date": "2021-04-22 03:52:59.708708",
+        "source_id": 884,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "You Belong With Me (Taylor's Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-04-22 03:52:59.709709",
+        "source_id": 884,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Big Gangsta",
+        "artist_name": "Kevin Gates",
+        "video_id": null,
+        "capture_date": "2021-04-22 03:52:59.709709",
+        "source_id": 884,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Shy Away",
+        "artist_name": "twenty one pilots",
+        "video_id": null,
+        "capture_date": "2021-04-22 03:52:59.709709",
+        "source_id": 884,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fifteen (Taylor's Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-04-22 03:52:59.709709",
+        "source_id": 884,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Way I Loved You (Taylor's Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-04-22 03:52:59.709709",
+        "source_id": 884,
         "song_id": null,
         "duplicate": false
     }
@@ -206,10 +215,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Dancing With The Devil', 'Demi Lovato', NULL),
-  ('Met Him Last Night', 'Demi Lovato Featuring Ariana Grande', NULL),
-  ('Mr. Perfectly Fine (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Arcade', 'Duncan Laurence', NULL)
+  ('Rapstar', 'Polo G', NULL),
+  ('Kiss Me More', 'Doja Cat Featuring SZA', NULL),
+  ('Forever & Always (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Fearless (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('You Belong With Me (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Big Gangsta', 'Kevin Gates', NULL),
+  ('Shy Away', 'twenty one pilots', NULL),
+  ('Fifteen (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('The Way I Loved You (Taylor’s Version)', 'Taylor Swift', NULL)
   ;
 
    // Update to song table
@@ -220,7 +234,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10186; // SELECT last_insert_rowid();
+  song_id = 10195; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -260,14 +274,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-22 02:42:28.563563', '883', '10142'),
-  ('2021-04-22 02:42:28.566566', '883', '10143'),
-  ('2021-04-22 02:42:28.566566', '883', '10183'),
-  ('2021-04-22 02:42:28.566566', '883', '10184'),
-  ('2021-04-22 02:42:28.567567', '883', '10138'),
-  ('2021-04-22 02:42:28.568568', '883', '10121'),
-  ('2021-04-22 02:42:28.568568', '883', '10185'),
-  ('2021-04-22 02:42:28.568568', '883', '10186')
+  ('2021-04-22 03:52:59.700700', '884', '10187'),
+  ('2021-04-22 03:52:59.705705', '884', '10188'),
+  ('2021-04-22 03:52:59.708708', '884', '10189'),
+  ('2021-04-22 03:52:59.708708', '884', '10190'),
+  ('2021-04-22 03:52:59.709709', '884', '10191'),
+  ('2021-04-22 03:52:59.709709', '884', '10192'),
+  ('2021-04-22 03:52:59.709709', '884', '10193'),
+  ('2021-04-22 03:52:59.709709', '884', '10194'),
+  ('2021-04-22 03:52:59.709709', '884', '10195')
   ;
 
   // Update to source_song table
