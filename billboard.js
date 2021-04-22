@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of April 10, 2021', '2021-04-10 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-04-10');
+    ('Billboard', 'The Hot 100', 'Week of April 17, 2021', '2021-04-17 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-04-17/2021-04-17');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 875; // SELECT last_insert_rowid();
+  source_id = 883; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -83,7 +83,7 @@
       };
   };
 
-  JSON.stringify(songsData, null, 4);
+  JSON.stringify(songsData, null, 4)
 
 
 //
@@ -96,146 +96,74 @@
   songsData =
   [
     {
-        "title": "Montero (Call Me By Your Name)",
-        "artist_name": "Lil Nas X",
+        "title": "Deja Vu",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.445445",
-        "source_id": 875,
-        "song_id": 10082,
+        "capture_date": "2021-04-22 02:42:28.563563",
+        "source_id": 883,
+        "song_id": 10142,
         "duplicate": true
     },
     {
-        "title": "Richer",
-        "artist_name": "Rod Wave Featuring Polo G",
+        "title": "Run It Up",
+        "artist_name": "Lil Tjay Featuring Offset & Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.447447",
-        "source_id": 875,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hard For The Next",
-        "artist_name": "Moneybagg Yo & Future",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.447447",
-        "source_id": 875,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "You All Over Me (Taylor's Version) (From The Vault)",
-        "artist_name": "Taylor Swift Featuring Maren Morris",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.448448",
-        "source_id": 875,
-        "song_id": 10083,
+        "capture_date": "2021-04-22 02:42:28.566566",
+        "source_id": 883,
+        "song_id": 10143,
         "duplicate": true
     },
     {
-        "title": "SoulFly",
-        "artist_name": "Rod Wave",
+        "title": "Dancing With The Devil",
+        "artist_name": "Demi Lovato",
         "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.448448",
-        "source_id": 875,
+        "capture_date": "2021-04-22 02:42:28.566566",
+        "source_id": 883,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gone Till November",
-        "artist_name": "Rod Wave",
+        "title": "Met Him Last Night",
+        "artist_name": "Demi Lovato Featuring Ariana Grande",
         "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.448448",
-        "source_id": 875,
+        "capture_date": "2021-04-22 02:42:28.566566",
+        "source_id": 883,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Don't Forget",
-        "artist_name": "Rod Wave",
+        "title": "4 Da Gang",
+        "artist_name": "42 Dugg & Roddy Ricch",
         "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.448448",
-        "source_id": 875,
+        "capture_date": "2021-04-22 02:42:28.567567",
+        "source_id": 883,
+        "song_id": 10138,
+        "duplicate": true
+    },
+    {
+        "title": "Film Out",
+        "artist_name": "BTS",
+        "video_id": null,
+        "capture_date": "2021-04-22 02:42:28.568568",
+        "source_id": 883,
+        "song_id": 10121,
+        "duplicate": true
+    },
+    {
+        "title": "Mr. Perfectly Fine (Taylor's Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-04-22 02:42:28.568568",
+        "source_id": 883,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Blame On You",
-        "artist_name": "Rod Wave",
+        "title": "Arcade",
+        "artist_name": "Duncan Laurence",
         "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.448448",
-        "source_id": 875,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Big Purr (Prrdd)",
-        "artist_name": "Coi Leray & Pooh Shiesty",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.448448",
-        "source_id": 875,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "All I Got",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.448448",
-        "source_id": 875,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pills & Billz",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.448448",
-        "source_id": 875,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "How The Game Go",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.448448",
-        "source_id": 875,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "OMDB",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.448448",
-        "source_id": 875,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "What's Love??",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.449449",
-        "source_id": 875,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Shock Da World",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.449449",
-        "source_id": 875,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sneaky Links",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:46:48.449449",
-        "source_id": 875,
+        "capture_date": "2021-04-22 02:42:28.568568",
+        "source_id": 883,
         "song_id": null,
         "duplicate": false
     }
@@ -278,20 +206,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Richer', 'Rod Wave Featuring Polo G', NULL),
-  ('Hard For The Next', 'Moneybagg Yo & Future', NULL),
-  ('SoulFly', 'Rod Wave', NULL),
-  ('Gone Till November', 'Rod Wave', NULL),
-  ('Don’t Forget', 'Rod Wave', NULL),
-  ('Blame On You', 'Rod Wave', NULL),
-  ('Big Purr (Prrdd)', 'Coi Leray & Pooh Shiesty', NULL),
-  ('All I Got', 'Rod Wave', NULL),
-  ('Pills & Billz', 'Rod Wave', NULL),
-  ('How The Game Go', 'Rod Wave', NULL),
-  ('OMDB', 'Rod Wave', NULL),
-  ('What’s Love??', 'Rod Wave', NULL),
-  ('Shock Da World', 'Rod Wave', NULL),
-  ('Sneaky Links', 'Rod Wave', NULL)
+  ('Dancing With The Devil', 'Demi Lovato', NULL),
+  ('Met Him Last Night', 'Demi Lovato Featuring Ariana Grande', NULL),
+  ('Mr. Perfectly Fine (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Arcade', 'Duncan Laurence', NULL)
   ;
 
    // Update to song table
@@ -302,7 +220,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10117; // SELECT last_insert_rowid();
+  song_id = 10186; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -342,22 +260,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-06 07:46:48.445445', '875', '10082'),
-  ('2021-04-06 07:46:48.447447', '875', '10104'),
-  ('2021-04-06 07:46:48.447447', '875', '10105'),
-  ('2021-04-06 07:46:48.448448', '875', '10083'),
-  ('2021-04-06 07:46:48.448448', '875', '10106'),
-  ('2021-04-06 07:46:48.448448', '875', '10107'),
-  ('2021-04-06 07:46:48.448448', '875', '10108'),
-  ('2021-04-06 07:46:48.448448', '875', '10109'),
-  ('2021-04-06 07:46:48.448448', '875', '10110'),
-  ('2021-04-06 07:46:48.448448', '875', '10111'),
-  ('2021-04-06 07:46:48.448448', '875', '10112'),
-  ('2021-04-06 07:46:48.448448', '875', '10113'),
-  ('2021-04-06 07:46:48.448448', '875', '10114'),
-  ('2021-04-06 07:46:48.449449', '875', '10115'),
-  ('2021-04-06 07:46:48.449449', '875', '10116'),
-  ('2021-04-06 07:46:48.449449', '875', '10117')
+  ('2021-04-22 02:42:28.563563', '883', '10142'),
+  ('2021-04-22 02:42:28.566566', '883', '10143'),
+  ('2021-04-22 02:42:28.566566', '883', '10183'),
+  ('2021-04-22 02:42:28.566566', '883', '10184'),
+  ('2021-04-22 02:42:28.567567', '883', '10138'),
+  ('2021-04-22 02:42:28.568568', '883', '10121'),
+  ('2021-04-22 02:42:28.568568', '883', '10185'),
+  ('2021-04-22 02:42:28.568568', '883', '10186')
   ;
 
   // Update to source_song table
