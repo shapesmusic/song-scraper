@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Prince’s Unearthed, Disillusioned Funk, and 10 More New Songs', '2021-04-09 12:37:16.000000', 'https://www.nytimes.com/2021/04/09/arts/music/playlist-prince-doja-cat-twenty-one-pilots.html');
+    ('New York Times', 'The Playlist', 'Phoebe Bridgers Reworks Paul McCartney, and 11 More New Songs', '2021-04-16 10:06:12.000000', 'https://www.nytimes.com/2021/04/16/arts/music/playlist-paul-mccartney-dave-grohl-saweetie.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 888; // SELECT last_insert_rowid();
+  source_id = 889; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -98,83 +98,83 @@
   songsData =
   [
     {
-        "title": "Welcome 2 America",
-        "artist_name": "Prince",
+        "title": "Seize the Day",
+        "artist_name": "Paul McCartney featuring Phoebe Bridgers",
         "video_id": null,
-        "capture_date": "2021-04-22 09:44:05.686686",
-        "source_id": 888,
+        "capture_date": "2021-04-22 09:53:17.650650",
+        "source_id": 889,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kiss Me More",
-        "artist_name": "Doja Cat featuring SZA",
+        "title": "Hot & Heavy",
+        "artist_name": "Lucy Dacus",
         "video_id": null,
-        "capture_date": "2021-04-22 09:44:05.687687",
-        "source_id": 888,
-        "song_id": 10188,
-        "duplicate": true
-    },
-    {
-        "title": "Waves of Blue",
-        "artist_name": "Majid Jordan",
-        "video_id": null,
-        "capture_date": "2021-04-22 09:44:05.687687",
-        "source_id": 888,
-        "song_id": 10198,
-        "duplicate": true
-    },
-    {
-        "title": "Shy Away",
-        "artist_name": "Twenty One Pilots",
-        "video_id": null,
-        "capture_date": "2021-04-22 09:44:05.687687",
-        "source_id": 888,
-        "song_id": 10193,
-        "duplicate": true
-    },
-    {
-        "title": "So I Lie",
-        "artist_name": "Miguel",
-        "video_id": null,
-        "capture_date": "2021-04-22 09:44:05.687687",
-        "source_id": 888,
+        "capture_date": "2021-04-22 09:53:17.651651",
+        "source_id": 889,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Calling Me Home",
-        "artist_name": "Rhiannon Giddens with Francesco Turrisi",
+        "title": "Love More",
+        "artist_name": "Fiona Apple",
         "video_id": null,
-        "capture_date": "2021-04-22 09:44:05.687687",
-        "source_id": 888,
+        "capture_date": "2021-04-22 09:53:17.651651",
+        "source_id": 889,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Heartbreak Tour",
-        "artist_name": "Kat & Alex",
+        "title": "Phone Dies",
+        "artist_name": "Andra Day",
         "video_id": null,
-        "capture_date": "2021-04-22 09:44:05.687687",
-        "source_id": 888,
+        "capture_date": "2021-04-22 09:53:17.651651",
+        "source_id": 889,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "La Mujer",
-        "artist_name": "Mon Laferte featuring Gloria Trevi",
+        "title": "Send Me",
+        "artist_name": "Tirzah",
         "video_id": null,
-        "capture_date": "2021-04-22 09:44:05.687687",
-        "source_id": 888,
+        "capture_date": "2021-04-22 09:53:17.651651",
+        "source_id": 889,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Set Him Up",
-        "artist_name": "Queen Naija featuring Ari Lennox",
+        "title": "Risky",
+        "artist_name": "Saweetie and Drakeo the Ruler",
         "video_id": null,
-        "capture_date": "2021-04-22 09:44:05.687687",
-        "source_id": 888,
+        "capture_date": "2021-04-22 09:53:17.651651",
+        "source_id": 889,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Eazy Sleazy",
+        "artist_name": "Mick Jagger with Dave Grohl",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:53:17.651651",
+        "source_id": 889,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lord It’s a Feeling",
+        "artist_name": "London Grammar",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:53:17.651651",
+        "source_id": 889,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Rapid & Complete Recovery",
+        "artist_name": "Spirit of the Beehive",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:53:17.651651",
+        "source_id": 889,
         "song_id": null,
         "duplicate": false
     }
@@ -217,12 +217,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Welcome 2 America', 'Prince', NULL),
-  ('So I Lie', 'Miguel', NULL),
-  ('Calling Me Home', 'Rhiannon Giddens with Francesco Turrisi', NULL),
-  ('Heartbreak Tour', 'Kat & Alex', NULL),
-  ('La Mujer', 'Mon Laferte featuring Gloria Trevi', NULL),
-  ('Set Him Up', 'Queen Naija featuring Ari Lennox', NULL)
+  ('Seize the Day', 'Paul McCartney featuring Phoebe Bridgers', NULL),
+  ('Hot & Heavy', 'Lucy Dacus', NULL),
+  ('Love More', 'Fiona Apple', NULL),
+  ('Phone Dies', 'Andra Day', NULL),
+  ('Send Me', 'Tirzah', NULL),
+  ('Risky', 'Saweetie and Drakeo the Ruler', NULL),
+  ('Eazy Sleazy', 'Mick Jagger with Dave Grohl', NULL),
+  ('Lord It’s a Feeling', 'London Grammar', NULL),
+  ('Rapid & Complete Recovery', 'Spirit of the Beehive', NULL)
   ;
 
    // Update to song table
@@ -233,7 +236,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10240; // SELECT last_insert_rowid();
+  song_id = 10249; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -273,15 +276,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-22 09:44:05.686686', '888', '10235'),
-  ('2021-04-22 09:44:05.687687', '888', '10188'),
-  ('2021-04-22 09:44:05.687687', '888', '10198'),
-  ('2021-04-22 09:44:05.687687', '888', '10193'),
-  ('2021-04-22 09:44:05.687687', '888', '10236'),
-  ('2021-04-22 09:44:05.687687', '888', '10237'),
-  ('2021-04-22 09:44:05.687687', '888', '10238'),
-  ('2021-04-22 09:44:05.687687', '888', '10239'),
-  ('2021-04-22 09:44:05.687687', '888', '10240')
+  ('2021-04-22 09:53:17.650650', '889', '10241'),
+  ('2021-04-22 09:53:17.651651', '889', '10242'),
+  ('2021-04-22 09:53:17.651651', '889', '10243'),
+  ('2021-04-22 09:53:17.651651', '889', '10244'),
+  ('2021-04-22 09:53:17.651651', '889', '10245'),
+  ('2021-04-22 09:53:17.651651', '889', '10246'),
+  ('2021-04-22 09:53:17.651651', '889', '10247'),
+  ('2021-04-22 09:53:17.651651', '889', '10248'),
+  ('2021-04-22 09:53:17.651651', '889', '10249')
   ;
 
   // Update to source_song table
