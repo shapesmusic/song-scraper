@@ -36,7 +36,7 @@ pastChartLocation = window.location.href;
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
     + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
-  )
+  );
 
 
   // Stage the SQL statement
@@ -45,7 +45,7 @@ pastChartLocation = window.location.href;
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('YouTube', 'Global Top Songs', 'Week of Apr 8, 2021', '2021-04-08 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210402-20210408');
+    ('YouTube', 'Global Top Songs', 'Week of Apr 15, 2021', '2021-04-15 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210409-20210415');
 
   // Update to source table
 
@@ -54,7 +54,7 @@ pastChartLocation = window.location.href;
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 886; // SELECT last_insert_rowid();
+  source_id = 887; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-table-row style-scope ytmc-chart-table');
@@ -105,211 +105,202 @@ pastChartLocation = window.location.href;
   songsData =
   [
     {
-        "title": "deja vu",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Dame Tu Cosita",
+        "artist_name": "El Chombo",
         "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.032032",
-        "source_id": 886,
-        "song_id": 10142,
+        "capture_date": "2021-04-22 09:33:25.822822",
+        "source_id": 887,
+        "song_id": 1872,
         "duplicate": true
     },
     {
-        "title": "Pani Di Gal",
-        "artist_name": "Maninder Buttar",
+        "title": "Kiss Me More",
+        "artist_name": "Doja Cat feat. SZA",
         "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.033033",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Galat",
-        "artist_name": "Asees Kaur",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.033033",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lehja",
-        "artist_name": "Abhi Dutt",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.034034",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "La Curiosidad",
-        "artist_name": "Jay Wheeler",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.034034",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "CHỈ LÀ KHÔNG CÙNG NHAU (Live)",
-        "artist_name": "Tăng Phúc feat. Trương Thảo Nhi",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.034034",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dancing With the Devil",
-        "artist_name": "Demi Lovato",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.035035",
-        "source_id": 886,
-        "song_id": 10183,
+        "capture_date": "2021-04-22 09:33:25.822822",
+        "source_id": 887,
+        "song_id": 10188,
         "duplicate": true
     },
     {
-        "title": "Runaway",
-        "artist_name": "AURORA",
+        "title": "RAPSTAR",
+        "artist_name": "Polo G",
         "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.035035",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nishaan",
-        "artist_name": "Kaka",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.035035",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "WACHA",
-        "artist_name": "KHEA",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.036036",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Новая Волна",
-        "artist_name": "DJ Smash",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.036036",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Thoda Thoda Pyaar",
-        "artist_name": "Stebin Ben",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.036036",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Talking to the Moon",
-        "artist_name": "Bruno Mars",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.036036",
-        "source_id": 886,
-        "song_id": 10079,
+        "capture_date": "2021-04-22 09:33:25.823823",
+        "source_id": 887,
+        "song_id": 10187,
         "duplicate": true
     },
     {
-        "title": "El Efecto",
-        "artist_name": "Rauw Alejandro",
+        "title": "Time To Rise",
+        "artist_name": "VannDa-វណ្ណដា",
         "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.037037",
-        "source_id": 886,
+        "capture_date": "2021-04-22 09:33:25.826826",
+        "source_id": 887,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Calling My Phone",
-        "artist_name": "Lil Tjay feat. 6LACK",
+        "title": "Jamaica to India",
+        "artist_name": "Emiway Bantai",
         "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.037037",
-        "source_id": 886,
-        "song_id": 9786,
+        "capture_date": "2021-04-22 09:33:25.826826",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ruff Ryders' Anthem",
+        "artist_name": "DMX",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.826826",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Vida Louca",
+        "artist_name": "Mc Poze do Rodo",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.829829",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Volta Bebê, Volta Neném",
+        "artist_name": "Dj Guuga feat. DJ Ivis",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.829829",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Is Qadar",
+        "artist_name": "Tulsi Kumar",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.830830",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mood",
+        "artist_name": "24kGoldn feat. Iann Dior",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.831831",
+        "source_id": 887,
+        "song_id": 9007,
         "duplicate": true
     },
     {
-        "title": "Vroum Vroum",
-        "artist_name": "Moha K",
+        "title": "Am",
+        "artist_name": "Nio Garcia",
         "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.037037",
-        "source_id": 886,
+        "capture_date": "2021-04-22 09:33:25.832832",
+        "source_id": 887,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "First Day Out (Beat Box)",
-        "artist_name": "NLE Choppa",
+        "title": "EL BARCO",
+        "artist_name": "Karol G",
         "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.037037",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bismillah Cinta",
-        "artist_name": "Ungu, Lesti",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.038038",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Patoreakcja",
-        "artist_name": "Mata",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.038038",
-        "source_id": 886,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Somebody That I Used To Know",
-        "artist_name": "Gotye",
-        "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.038038",
-        "source_id": 886,
-        "song_id": 5580,
+        "capture_date": "2021-04-22 09:33:25.832832",
+        "source_id": 887,
+        "song_id": 10131,
         "duplicate": true
     },
     {
-        "title": "Wellerman (Sea Shanty)",
-        "artist_name": "Nathan Evans",
+        "title": "Liberdade (Quando o Grave Bate Forte)",
+        "artist_name": "Alok",
         "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.038038",
-        "source_id": 886,
+        "capture_date": "2021-04-22 09:33:25.833833",
+        "source_id": 887,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Track Star",
-        "artist_name": "Mooski",
+        "title": "Rasputin (Live)",
+        "artist_name": "Boney M",
         "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.038038",
-        "source_id": 886,
-        "song_id": 9943,
+        "capture_date": "2021-04-22 09:33:25.833833",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Oh Sanam",
+        "artist_name": "Tony Kakkar",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.834834",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Vou Falar Que Não Quero",
+        "artist_name": "DJ Lucas Beat",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.834834",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Otra Noche Sin Ti",
+        "artist_name": "J Balvin",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.834834",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "X Gon' Give It To Ya",
+        "artist_name": "DMX",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.835835",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Travesuras (Remix)",
+        "artist_name": "Nio Garcia",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.835835",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Agg Att Koka Kehar",
+        "artist_name": "Baani Sandhu",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.836836",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Take Me To Church",
+        "artist_name": "Hozier",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:33:25.836836",
+        "source_id": 887,
+        "song_id": 4100,
         "duplicate": true
     },
     {
-        "title": "Sweater Weather",
-        "artist_name": "The Neighbourhood",
+        "title": "Millones",
+        "artist_name": "Camilo",
         "video_id": null,
-        "capture_date": "2021-04-22 05:28:47.039039",
-        "source_id": 886,
-        "song_id": 4778,
-        "duplicate": true
+        "capture_date": "2021-04-22 09:33:25.836836",
+        "source_id": 887,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -350,22 +341,22 @@ pastChartLocation = window.location.href;
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Pani Di Gal', 'Maninder Buttar', NULL),
-  ('Galat', 'Asees Kaur', NULL),
-  ('Lehja', 'Abhi Dutt', NULL),
-  ('La Curiosidad', 'Jay Wheeler', NULL),
-  ('CHỈ LÀ KHÔNG CÙNG NHAU (Live)', 'Tăng Phúc feat. Trương Thảo Nhi', NULL),
-  ('Runaway', 'AURORA', NULL),
-  ('Nishaan', 'Kaka', NULL),
-  ('WACHA', 'KHEA', NULL),
-  ('Новая Волна', 'DJ Smash', NULL),
-  ('Thoda Thoda Pyaar', 'Stebin Ben', NULL),
-  ('El Efecto', 'Rauw Alejandro', NULL),
-  ('Vroum Vroum', 'Moha K', NULL),
-  ('First Day Out (Beat Box)', 'NLE Choppa', NULL),
-  ('Bismillah Cinta', 'Ungu, Lesti', NULL),
-  ('Patoreakcja', 'Mata', NULL),
-  ('Wellerman (Sea Shanty)', 'Nathan Evans', NULL)
+  ('Time To Rise', 'VannDa-វណ្ណដា', NULL),
+  ('Jamaica to India', 'Emiway Bantai', NULL),
+  ('Ruff Ryders’ Anthem', 'DMX', NULL),
+  ('Vida Louca', 'Mc Poze do Rodo', NULL),
+  ('Volta Bebê, Volta Neném', 'Dj Guuga feat. DJ Ivis', NULL),
+  ('Is Qadar', 'Tulsi Kumar', NULL),
+  ('Am', 'Nio Garcia', NULL),
+  ('Liberdade (Quando o Grave Bate Forte)', 'Alok', NULL),
+  ('Rasputin (Live)', 'Boney M', NULL),
+  ('Oh Sanam', 'Tony Kakkar', NULL),
+  ('Vou Falar Que Não Quero', 'DJ Lucas Beat', NULL),
+  ('Otra Noche Sin Ti', 'J Balvin', NULL),
+  ('X Gon’ Give It To Ya', 'DMX', NULL),
+  ('Travesuras (Remix)', 'Nio Garcia', NULL),
+  ('Agg Att Koka Kehar', 'Baani Sandhu', NULL),
+  ('Millones', 'Camilo', NULL)
   ;
 
    // Update to song table
@@ -376,7 +367,7 @@ pastChartLocation = window.location.href;
  //
 
   // Get the last song_id inserted
-  song_id = 10218; // SELECT last_insert_rowid();
+  song_id = 10234; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -416,29 +407,28 @@ pastChartLocation = window.location.href;
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-22 05:28:47.032032', '886', '10142'),
-  ('2021-04-22 05:28:47.033033', '886', '10203'),
-  ('2021-04-22 05:28:47.033033', '886', '10204'),
-  ('2021-04-22 05:28:47.034034', '886', '10205'),
-  ('2021-04-22 05:28:47.034034', '886', '10206'),
-  ('2021-04-22 05:28:47.034034', '886', '10207'),
-  ('2021-04-22 05:28:47.035035', '886', '10183'),
-  ('2021-04-22 05:28:47.035035', '886', '10208'),
-  ('2021-04-22 05:28:47.035035', '886', '10209'),
-  ('2021-04-22 05:28:47.036036', '886', '10210'),
-  ('2021-04-22 05:28:47.036036', '886', '10211'),
-  ('2021-04-22 05:28:47.036036', '886', '10212'),
-  ('2021-04-22 05:28:47.036036', '886', '10079'),
-  ('2021-04-22 05:28:47.037037', '886', '10213'),
-  ('2021-04-22 05:28:47.037037', '886', '9786'),
-  ('2021-04-22 05:28:47.037037', '886', '10214'),
-  ('2021-04-22 05:28:47.037037', '886', '10215'),
-  ('2021-04-22 05:28:47.038038', '886', '10216'),
-  ('2021-04-22 05:28:47.038038', '886', '10217'),
-  ('2021-04-22 05:28:47.038038', '886', '5580'),
-  ('2021-04-22 05:28:47.038038', '886', '10218'),
-  ('2021-04-22 05:28:47.038038', '886', '9943'),
-  ('2021-04-22 05:28:47.039039', '886', '4778')
+  ('2021-04-22 09:33:25.822822', '887', '1872'),
+  ('2021-04-22 09:33:25.822822', '887', '10188'),
+  ('2021-04-22 09:33:25.823823', '887', '10187'),
+  ('2021-04-22 09:33:25.826826', '887', '10219'),
+  ('2021-04-22 09:33:25.826826', '887', '10220'),
+  ('2021-04-22 09:33:25.826826', '887', '10221'),
+  ('2021-04-22 09:33:25.829829', '887', '10222'),
+  ('2021-04-22 09:33:25.829829', '887', '10223'),
+  ('2021-04-22 09:33:25.830830', '887', '10224'),
+  ('2021-04-22 09:33:25.831831', '887', '9007'),
+  ('2021-04-22 09:33:25.832832', '887', '10225'),
+  ('2021-04-22 09:33:25.832832', '887', '10131'),
+  ('2021-04-22 09:33:25.833833', '887', '10226'),
+  ('2021-04-22 09:33:25.833833', '887', '10227'),
+  ('2021-04-22 09:33:25.834834', '887', '10228'),
+  ('2021-04-22 09:33:25.834834', '887', '10229'),
+  ('2021-04-22 09:33:25.834834', '887', '10230'),
+  ('2021-04-22 09:33:25.835835', '887', '10231'),
+  ('2021-04-22 09:33:25.835835', '887', '10232'),
+  ('2021-04-22 09:33:25.836836', '887', '10233'),
+  ('2021-04-22 09:33:25.836836', '887', '4100'),
+  ('2021-04-22 09:33:25.836836', '887', '10234')
   ;
 
   // Update to source_song table
