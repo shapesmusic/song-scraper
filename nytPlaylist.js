@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Olivia Rodrigo’s Emotional Road Trip, and 8 More New Songs', '2021-04-02 08:50:11.000000', 'https://www.nytimes.com/2021/04/02/arts/music/playlist-olivia-rodrigo-westside-gunn.html');
+    ('New York Times', 'The Playlist', 'Prince’s Unearthed, Disillusioned Funk, and 10 More New Songs', '2021-04-09 12:37:16.000000', 'https://www.nytimes.com/2021/04/09/arts/music/playlist-prince-doja-cat-twenty-one-pilots.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 878; // SELECT last_insert_rowid();
+  source_id = 888; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -98,74 +98,83 @@
   songsData =
   [
     {
-        "title": "Deja Vu",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Welcome 2 America",
+        "artist_name": "Prince",
         "video_id": null,
-        "capture_date": "2021-04-06 06:54:29.123123",
-        "source_id": 878,
-        "song_id": 10142,
+        "capture_date": "2021-04-22 09:44:05.686686",
+        "source_id": 888,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Kiss Me More",
+        "artist_name": "Doja Cat featuring SZA",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:44:05.687687",
+        "source_id": 888,
+        "song_id": 10188,
         "duplicate": true
     },
     {
-        "title": "Julia Lang",
-        "artist_name": "Westside Gunn",
-        "video_id": "z6YtIGg79h8",
-        "capture_date": "2021-04-06 06:54:29.125125",
-        "source_id": 878,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Killing Fields",
-        "artist_name": "Rosanne Cash featuring John Leventhal",
-        "video_id": "DCbPgN3LWTw",
-        "capture_date": "2021-04-06 06:54:29.125125",
-        "source_id": 878,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Take Away the Ache",
-        "artist_name": "Half Waif",
+        "title": "Waves of Blue",
+        "artist_name": "Majid Jordan",
         "video_id": null,
-        "capture_date": "2021-04-06 06:54:29.125125",
-        "source_id": 878,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2021-04-22 09:44:05.687687",
+        "source_id": 888,
+        "song_id": 10198,
+        "duplicate": true
     },
     {
-        "title": "Energy",
-        "artist_name": "Naomi Cowan",
+        "title": "Shy Away",
+        "artist_name": "Twenty One Pilots",
         "video_id": null,
-        "capture_date": "2021-04-06 06:54:29.125125",
-        "source_id": 878,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2021-04-22 09:44:05.687687",
+        "source_id": 888,
+        "song_id": 10193,
+        "duplicate": true
     },
     {
-        "title": "Unsmart Lady",
-        "artist_name": "Dry Cleaning",
-        "video_id": "--gEZsKFoj0",
-        "capture_date": "2021-04-06 06:54:29.125125",
-        "source_id": 878,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Afrique Victime",
-        "artist_name": "Mdou Moctar",
+        "title": "So I Lie",
+        "artist_name": "Miguel",
         "video_id": null,
-        "capture_date": "2021-04-06 06:54:29.125125",
-        "source_id": 878,
+        "capture_date": "2021-04-22 09:44:05.687687",
+        "source_id": 888,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Noho",
-        "artist_name": "AG Club feat. Icecoldbishop",
+        "title": "Calling Me Home",
+        "artist_name": "Rhiannon Giddens with Francesco Turrisi",
         "video_id": null,
-        "capture_date": "2021-04-06 06:54:29.125125",
-        "source_id": 878,
+        "capture_date": "2021-04-22 09:44:05.687687",
+        "source_id": 888,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Heartbreak Tour",
+        "artist_name": "Kat & Alex",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:44:05.687687",
+        "source_id": 888,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "La Mujer",
+        "artist_name": "Mon Laferte featuring Gloria Trevi",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:44:05.687687",
+        "source_id": 888,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Set Him Up",
+        "artist_name": "Queen Naija featuring Ari Lennox",
+        "video_id": null,
+        "capture_date": "2021-04-22 09:44:05.687687",
+        "source_id": 888,
         "song_id": null,
         "duplicate": false
     }
@@ -208,13 +217,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Julia Lang', 'Westside Gunn', NULL),
-  ('The Killing Fields', 'Rosanne Cash featuring John Leventhal', NULL),
-  ('Take Away the Ache', 'Half Waif', NULL),
-  ('Energy', 'Naomi Cowan', NULL),
-  ('Unsmart Lady', 'Dry Cleaning', NULL),
-  ('Afrique Victime', 'Mdou Moctar', NULL),
-  ('Noho', 'AG Club feat. Icecoldbishop', NULL)
+  ('Welcome 2 America', 'Prince', NULL),
+  ('So I Lie', 'Miguel', NULL),
+  ('Calling Me Home', 'Rhiannon Giddens with Francesco Turrisi', NULL),
+  ('Heartbreak Tour', 'Kat & Alex', NULL),
+  ('La Mujer', 'Mon Laferte featuring Gloria Trevi', NULL),
+  ('Set Him Up', 'Queen Naija featuring Ari Lennox', NULL)
   ;
 
    // Update to song table
@@ -225,7 +233,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10150; // SELECT last_insert_rowid();
+  song_id = 10240; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -265,14 +273,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-06 06:54:29.123123', '878', '10142'),
-  ('2021-04-06 06:54:29.125125', '878', '10144'),
-  ('2021-04-06 06:54:29.125125', '878', '10145'),
-  ('2021-04-06 06:54:29.125125', '878', '10146'),
-  ('2021-04-06 06:54:29.125125', '878', '10147'),
-  ('2021-04-06 06:54:29.125125', '878', '10148'),
-  ('2021-04-06 06:54:29.125125', '878', '10149'),
-  ('2021-04-06 06:54:29.125125', '878', '10150')
+  ('2021-04-22 09:44:05.686686', '888', '10235'),
+  ('2021-04-22 09:44:05.687687', '888', '10188'),
+  ('2021-04-22 09:44:05.687687', '888', '10198'),
+  ('2021-04-22 09:44:05.687687', '888', '10193'),
+  ('2021-04-22 09:44:05.687687', '888', '10236'),
+  ('2021-04-22 09:44:05.687687', '888', '10237'),
+  ('2021-04-22 09:44:05.687687', '888', '10238'),
+  ('2021-04-22 09:44:05.687687', '888', '10239'),
+  ('2021-04-22 09:44:05.687687', '888', '10240')
   ;
 
   // Update to source_song table
