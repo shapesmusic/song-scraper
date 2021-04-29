@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of April 24, 2021', '2021-04-24 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-04-24');
+    ('Billboard', 'The Hot 100', 'Week of May 1, 2021', '2021-05-01 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-05-01');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 884; // SELECT last_insert_rowid();
+  source_id = 890; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -83,7 +83,7 @@
       };
   };
 
-  JSON.stringify(songsData, null, 4)
+  console.log(JSON.stringify(songsData, null, 4));
 
 
 //
@@ -96,83 +96,83 @@
   songsData =
   [
     {
-        "title": "Rapstar",
-        "artist_name": "Polo G",
+        "title": "Solid",
+        "artist_name": "Young Thug & Gunna Featuring Drake",
         "video_id": null,
-        "capture_date": "2021-04-22 03:52:59.700700",
-        "source_id": 884,
+        "capture_date": "2021-04-29 08:38:27.701701",
+        "source_id": 890,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kiss Me More",
-        "artist_name": "Doja Cat Featuring SZA",
+        "title": "Ski",
+        "artist_name": "Young Thug & Gunna",
         "video_id": null,
-        "capture_date": "2021-04-22 03:52:59.705705",
-        "source_id": 884,
+        "capture_date": "2021-04-29 08:38:27.701701",
+        "source_id": 890,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Forever & Always (Taylor's Version)",
-        "artist_name": "Taylor Swift",
+        "title": "Diamonds Dancing",
+        "artist_name": "Young Thug & Gunna Featuring Travis Scott",
         "video_id": null,
-        "capture_date": "2021-04-22 03:52:59.708708",
-        "source_id": 884,
+        "capture_date": "2021-04-29 08:38:27.702702",
+        "source_id": 890,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fearless (Taylor's Version)",
-        "artist_name": "Taylor Swift",
+        "title": "Proud Of You",
+        "artist_name": "Young Thug Featuring Lil Uzi Vert & Yung Kayo",
         "video_id": null,
-        "capture_date": "2021-04-22 03:52:59.708708",
-        "source_id": 884,
+        "capture_date": "2021-04-29 08:38:27.702702",
+        "source_id": 890,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You Belong With Me (Taylor's Version)",
-        "artist_name": "Taylor Swift",
+        "title": "Came And Saw",
+        "artist_name": "Young Thug Featuring Rowdy Rebel",
         "video_id": null,
-        "capture_date": "2021-04-22 03:52:59.709709",
-        "source_id": 884,
+        "capture_date": "2021-04-29 08:38:27.703703",
+        "source_id": 890,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Big Gangsta",
-        "artist_name": "Kevin Gates",
+        "title": "Paid The Fine",
+        "artist_name": "Young Thug & Gunna Featuring Lil Baby & YTB Trench",
         "video_id": null,
-        "capture_date": "2021-04-22 03:52:59.709709",
-        "source_id": 884,
+        "capture_date": "2021-04-29 08:38:27.703703",
+        "source_id": 890,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shy Away",
-        "artist_name": "twenty one pilots",
+        "title": "Chasing After You",
+        "artist_name": "Ryan Hurd With Maren Morris",
         "video_id": null,
-        "capture_date": "2021-04-22 03:52:59.709709",
-        "source_id": 884,
+        "capture_date": "2021-04-29 08:38:27.703703",
+        "source_id": 890,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fifteen (Taylor's Version)",
-        "artist_name": "Taylor Swift",
+        "title": "Go!",
+        "artist_name": "Moneybagg Yo Featuring BIG30",
         "video_id": null,
-        "capture_date": "2021-04-22 03:52:59.709709",
-        "source_id": 884,
+        "capture_date": "2021-04-29 08:38:27.703703",
+        "source_id": 890,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Way I Loved You (Taylor's Version)",
-        "artist_name": "Taylor Swift",
+        "title": "Slatty",
+        "artist_name": "Young Thug & Gunna Featuring Yak Gotti & Lil Duke",
         "video_id": null,
-        "capture_date": "2021-04-22 03:52:59.709709",
-        "source_id": 884,
+        "capture_date": "2021-04-29 08:38:27.704704",
+        "source_id": 890,
         "song_id": null,
         "duplicate": false
     }
@@ -215,15 +215,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Rapstar', 'Polo G', NULL),
-  ('Kiss Me More', 'Doja Cat Featuring SZA', NULL),
-  ('Forever & Always (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Fearless (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('You Belong With Me (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Big Gangsta', 'Kevin Gates', NULL),
-  ('Shy Away', 'twenty one pilots', NULL),
-  ('Fifteen (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('The Way I Loved You (Taylor’s Version)', 'Taylor Swift', NULL)
+  ('Solid', 'Young Thug & Gunna Featuring Drake', NULL),
+  ('Ski', 'Young Thug & Gunna', NULL),
+  ('Diamonds Dancing', 'Young Thug & Gunna Featuring Travis Scott', NULL),
+  ('Proud Of You', 'Young Thug Featuring Lil Uzi Vert & Yung Kayo', NULL),
+  ('Came And Saw', 'Young Thug Featuring Rowdy Rebel', NULL),
+  ('Paid The Fine', 'Young Thug & Gunna Featuring Lil Baby & YTB Trench', NULL),
+  ('Chasing After You', 'Ryan Hurd With Maren Morris', NULL),
+  ('Go!', 'Moneybagg Yo Featuring BIG30', NULL),
+  ('Slatty', 'Young Thug & Gunna Featuring Yak Gotti & Lil Duke', NULL)
   ;
 
    // Update to song table
@@ -234,7 +234,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10195; // SELECT last_insert_rowid();
+  song_id = 10258; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -274,15 +274,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-22 03:52:59.700700', '884', '10187'),
-  ('2021-04-22 03:52:59.705705', '884', '10188'),
-  ('2021-04-22 03:52:59.708708', '884', '10189'),
-  ('2021-04-22 03:52:59.708708', '884', '10190'),
-  ('2021-04-22 03:52:59.709709', '884', '10191'),
-  ('2021-04-22 03:52:59.709709', '884', '10192'),
-  ('2021-04-22 03:52:59.709709', '884', '10193'),
-  ('2021-04-22 03:52:59.709709', '884', '10194'),
-  ('2021-04-22 03:52:59.709709', '884', '10195')
+  ('2021-04-29 08:38:27.701701', '890', '10250'),
+  ('2021-04-29 08:38:27.701701', '890', '10251'),
+  ('2021-04-29 08:38:27.702702', '890', '10252'),
+  ('2021-04-29 08:38:27.702702', '890', '10253'),
+  ('2021-04-29 08:38:27.703703', '890', '10254'),
+  ('2021-04-29 08:38:27.703703', '890', '10255'),
+  ('2021-04-29 08:38:27.703703', '890', '10256'),
+  ('2021-04-29 08:38:27.703703', '890', '10257'),
+  ('2021-04-29 08:38:27.704704', '890', '10258')
   ;
 
   // Update to source_song table

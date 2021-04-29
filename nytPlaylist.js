@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Phoebe Bridgers Reworks Paul McCartney, and 11 More New Songs', '2021-04-16 10:06:12.000000', 'https://www.nytimes.com/2021/04/16/arts/music/playlist-paul-mccartney-dave-grohl-saweetie.html');
+    ('New York Times', 'The Playlist', 'Weezer’s Rock ’n’ Roll Nostalgia Trip, and 10 More New Songs', '2021-04-23 08:55:51.000000', 'https://www.nytimes.com/2021/04/23/arts/music/playlist-weezer-youngboy-yola.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 889; // SELECT last_insert_rowid();
+  source_id = 893; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -85,7 +85,7 @@
 
   };
 
-  JSON.stringify(songsData, null, 4);
+  console.log(JSON.stringify(songsData, null, 4));
 
 
 //
@@ -98,85 +98,94 @@
   songsData =
   [
     {
-        "title": "Seize the Day",
-        "artist_name": "Paul McCartney featuring Phoebe Bridgers",
+        "title": "I Need Some of That",
+        "artist_name": "Weezer",
         "video_id": null,
-        "capture_date": "2021-04-22 09:53:17.650650",
-        "source_id": 889,
+        "capture_date": "2021-04-29 09:10:10.789789",
+        "source_id": 893,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hot & Heavy",
-        "artist_name": "Lucy Dacus",
+        "title": "Telejayi",
+        "artist_name": "Jupiter & Okwess featuring Marcelo D2",
         "video_id": null,
-        "capture_date": "2021-04-22 09:53:17.651651",
-        "source_id": 889,
+        "capture_date": "2021-04-29 09:10:10.790790",
+        "source_id": 893,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Love More",
-        "artist_name": "Fiona Apple",
+        "title": "Diamond Studded Shoes",
+        "artist_name": "Yola",
         "video_id": null,
-        "capture_date": "2021-04-22 09:53:17.651651",
-        "source_id": 889,
+        "capture_date": "2021-04-29 09:10:10.790790",
+        "source_id": 893,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Phone Dies",
-        "artist_name": "Andra Day",
+        "title": "More Life",
+        "artist_name": "Cordae featuring Q-Tip",
         "video_id": null,
-        "capture_date": "2021-04-22 09:53:17.651651",
-        "source_id": 889,
+        "capture_date": "2021-04-29 09:10:10.790790",
+        "source_id": 893,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Send Me",
-        "artist_name": "Tirzah",
+        "title": "Trenches",
+        "artist_name": "Morray",
         "video_id": null,
-        "capture_date": "2021-04-22 09:53:17.651651",
-        "source_id": 889,
+        "capture_date": "2021-04-29 09:10:10.790790",
+        "source_id": 893,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Risky",
-        "artist_name": "Saweetie and Drakeo the Ruler",
+        "title": "Territorial",
+        "artist_name": "YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2021-04-22 09:53:17.651651",
-        "source_id": 889,
+        "capture_date": "2021-04-29 09:10:10.790790",
+        "source_id": 893,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Eazy Sleazy",
-        "artist_name": "Mick Jagger with Dave Grohl",
+        "title": "Gone",
+        "artist_name": "Jorja Smith",
         "video_id": null,
-        "capture_date": "2021-04-22 09:53:17.651651",
-        "source_id": 889,
+        "capture_date": "2021-04-29 09:10:10.790790",
+        "source_id": 893,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lord It’s a Feeling",
-        "artist_name": "London Grammar",
+        "title": "When Was It Over?",
+        "artist_name": "Sasha Sloan featuring Sam Hunt",
         "video_id": null,
-        "capture_date": "2021-04-22 09:53:17.651651",
-        "source_id": 889,
+        "capture_date": "2021-04-29 09:10:10.790790",
+        "source_id": 893,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rapid & Complete Recovery",
-        "artist_name": "Spirit of the Beehive",
+        "title": "Rhetorical Figure",
+        "artist_name": "John Grant",
         "video_id": null,
-        "capture_date": "2021-04-22 09:53:17.651651",
-        "source_id": 889,
+        "capture_date": "2021-04-29 09:10:10.790790",
+        "source_id": 893,
         "song_id": null,
         "duplicate": false
+    },
+    {
+        "title": "Mohabbat",
+        "artist_name": "Arooj Aftab",
+        "video_id": null,
+        "capture_date": "2021-04-29 09:10:10.790790",
+        "source_id": 893,
+        "song_id": 10094,
+        "duplicate": true
     }
 ]
 
@@ -217,15 +226,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Seize the Day', 'Paul McCartney featuring Phoebe Bridgers', NULL),
-  ('Hot & Heavy', 'Lucy Dacus', NULL),
-  ('Love More', 'Fiona Apple', NULL),
-  ('Phone Dies', 'Andra Day', NULL),
-  ('Send Me', 'Tirzah', NULL),
-  ('Risky', 'Saweetie and Drakeo the Ruler', NULL),
-  ('Eazy Sleazy', 'Mick Jagger with Dave Grohl', NULL),
-  ('Lord It’s a Feeling', 'London Grammar', NULL),
-  ('Rapid & Complete Recovery', 'Spirit of the Beehive', NULL)
+  ('I Need Some of That', 'Weezer', NULL),
+  ('Telejayi', 'Jupiter & Okwess featuring Marcelo D2', NULL),
+  ('Diamond Studded Shoes', 'Yola', NULL),
+  ('More Life', 'Cordae featuring Q-Tip', NULL),
+  ('Trenches', 'Morray', NULL),
+  ('Territorial', 'YoungBoy Never Broke Again', NULL),
+  ('Gone', 'Jorja Smith', NULL),
+  ('When Was It Over?', 'Sasha Sloan featuring Sam Hunt', NULL),
+  ('Rhetorical Figure', 'John Grant', NULL)
   ;
 
    // Update to song table
@@ -236,7 +245,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10249; // SELECT last_insert_rowid();
+  song_id = 10287; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -276,15 +285,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-22 09:53:17.650650', '889', '10241'),
-  ('2021-04-22 09:53:17.651651', '889', '10242'),
-  ('2021-04-22 09:53:17.651651', '889', '10243'),
-  ('2021-04-22 09:53:17.651651', '889', '10244'),
-  ('2021-04-22 09:53:17.651651', '889', '10245'),
-  ('2021-04-22 09:53:17.651651', '889', '10246'),
-  ('2021-04-22 09:53:17.651651', '889', '10247'),
-  ('2021-04-22 09:53:17.651651', '889', '10248'),
-  ('2021-04-22 09:53:17.651651', '889', '10249')
+  ('2021-04-29 09:10:10.789789', '893', '10279'),
+  ('2021-04-29 09:10:10.790790', '893', '10280'),
+  ('2021-04-29 09:10:10.790790', '893', '10281'),
+  ('2021-04-29 09:10:10.790790', '893', '10282'),
+  ('2021-04-29 09:10:10.790790', '893', '10283'),
+  ('2021-04-29 09:10:10.790790', '893', '10284'),
+  ('2021-04-29 09:10:10.790790', '893', '10285'),
+  ('2021-04-29 09:10:10.790790', '893', '10286'),
+  ('2021-04-29 09:10:10.790790', '893', '10287'),
+  ('2021-04-29 09:10:10.790790', '893', '10094')
   ;
 
   // Update to source_song table

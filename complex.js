@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Polo G, Brockhampton, $NOT, and More', '2021-04-09 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-snot-polo-g-brockhampton/spinabeez-whoppa-wit-da-choppa-yungeen-ace-fastmoney-goon-who-i-smoke');
+    ('Complex', 'Best New Music This Week', 'Young Thug, Lil Yachty, the Weeknd, and More', '2021-04-23 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-lil-yachty-cordae-young-thug/ssgkobe-angels');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 885; // SELECT last_insert_rowid();
+  source_id = 892; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -86,7 +86,7 @@
 
   };
 
-  JSON.stringify(songsData, null, 4);
+  console.log(JSON.stringify(songsData, null, 4));
 
 
 //
@@ -99,83 +99,56 @@
   songsData =
   [
     {
-        "title": "RAPSTAR",
-        "artist_name": "Polo G",
-        "video_id": "w2IhccXakkE",
-        "capture_date": "2021-04-22 04:02:19.076076",
-        "source_id": 885,
-        "song_id": 10187,
-        "duplicate": true
-    },
-    {
-        "title": "What’s the Occasion?",
-        "artist_name": "Brockhampton",
-        "video_id": "aAjfDCqe_cc",
-        "capture_date": "2021-04-22 04:02:19.078078",
-        "source_id": 885,
+        "title": "Dynamic Duo",
+        "artist_name": "Lil Yatchy f/ Tee Grizzley",
+        "video_id": "mbDWCJE-X7s",
+        "capture_date": "2021-04-29 08:58:49.655655",
+        "source_id": 892,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Whipski",
-        "artist_name": "$not f/ Lil Skies & Internet Money",
-        "video_id": "Et6RbSRQsps",
-        "capture_date": "2021-04-22 04:02:19.078078",
-        "source_id": 885,
+        "title": "Litty",
+        "artist_name": "Young Thug f/ DaBaby",
+        "video_id": "lRPV7nxsQ8E",
+        "capture_date": "2021-04-29 08:58:49.656656",
+        "source_id": 892,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kiss Me More",
-        "artist_name": "Doja Cat f/ SZA",
-        "video_id": "0EVVKs6DQLo",
-        "capture_date": "2021-04-22 04:02:19.078078",
-        "source_id": 885,
-        "song_id": 10188,
-        "duplicate": true
-    },
-    {
-        "title": "Waves of Blue",
-        "artist_name": "Majid Jordan",
-        "video_id": "vq24zYNUTpE",
-        "capture_date": "2021-04-22 04:02:19.078078",
-        "source_id": 885,
+        "title": "Wassup",
+        "artist_name": "Cordae f/ Young Thug",
+        "video_id": "QHwmdFKJ9-Q",
+        "capture_date": "2021-04-29 08:58:49.656656",
+        "source_id": 892,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Purple",
-        "artist_name": "Unusual Demont",
-        "video_id": "aAidpU4fVWM",
-        "capture_date": "2021-04-22 04:02:19.079079",
-        "source_id": 885,
+        "title": "You Know",
+        "artist_name": "Funk Flex f/ CJ",
+        "video_id": "9Py7zENpYvQ",
+        "capture_date": "2021-04-29 08:58:49.656656",
+        "source_id": 892,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "That’s When",
-        "artist_name": "Taylor Swift f/ Keith Urban",
-        "video_id": "aOa6D6ku3dM",
-        "capture_date": "2021-04-22 04:02:19.079079",
-        "source_id": 885,
+        "title": "Save Your Tears (Remix)",
+        "artist_name": "The Weeknd f/ Ariana Grande",
+        "video_id": "LIIDh-qI9oI",
+        "capture_date": "2021-04-29 08:58:49.656656",
+        "source_id": 892,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Slow Clap",
-        "artist_name": "Gwen Stefani & Saweetie",
-        "video_id": "iKyna2mbL8k",
-        "capture_date": "2021-04-22 04:02:19.079079",
-        "source_id": 885,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Who I Smoke",
-        "artist_name": "Spinabenz, Whoppa Wit Da Choppa, Yungeen Ace, & FastMoney Goon",
-        "video_id": "YFfGgeddAc4",
-        "capture_date": "2021-04-22 04:02:19.079079",
-        "source_id": 885,
+        "title": "Angels",
+        "artist_name": "SSGKobe",
+        "video_id": "c1IvZTWQ-_A",
+        "capture_date": "2021-04-29 08:58:49.656656",
+        "source_id": 892,
         "song_id": null,
         "duplicate": false
     }
@@ -218,13 +191,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('What’s the Occasion?', 'Brockhampton', NULL),
-  ('Whipski', '$not f/ Lil Skies & Internet Money', NULL),
-  ('Waves of Blue', 'Majid Jordan', NULL),
-  ('Purple', 'Unusual Demont', NULL),
-  ('That’s When', 'Taylor Swift f/ Keith Urban', NULL),
-  ('Slow Clap', 'Gwen Stefani & Saweetie', NULL),
-  ('Who I Smoke', 'Spinabenz, Whoppa Wit Da Choppa, Yungeen Ace, & FastMoney Goon', NULL)
+  ('Dynamic Duo', 'Lil Yatchy f/ Tee Grizzley', NULL),
+  ('Litty', 'Young Thug f/ DaBaby', NULL),
+  ('Wassup', 'Cordae f/ Young Thug', NULL),
+  ('You Know', 'Funk Flex f/ CJ', NULL),
+  ('Save Your Tears (Remix)', 'The Weeknd f/ Ariana Grande', NULL),
+  ('Angels', 'SSGKobe', NULL)
   ;
 
    // Update to song table
@@ -235,7 +207,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10202; // SELECT last_insert_rowid();
+  song_id = 10278; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -275,15 +247,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-22 04:02:19.076076', '885', '10187'),
-  ('2021-04-22 04:02:19.078078', '885', '10196'),
-  ('2021-04-22 04:02:19.078078', '885', '10197'),
-  ('2021-04-22 04:02:19.078078', '885', '10188'),
-  ('2021-04-22 04:02:19.078078', '885', '10198'),
-  ('2021-04-22 04:02:19.079079', '885', '10199'),
-  ('2021-04-22 04:02:19.079079', '885', '10200'),
-  ('2021-04-22 04:02:19.079079', '885', '10201'),
-  ('2021-04-22 04:02:19.079079', '885', '10202')
+  ('2021-04-29 08:58:49.655655', '892', '10273'),
+  ('2021-04-29 08:58:49.656656', '892', '10274'),
+  ('2021-04-29 08:58:49.656656', '892', '10275'),
+  ('2021-04-29 08:58:49.656656', '892', '10276'),
+  ('2021-04-29 08:58:49.656656', '892', '10277'),
+  ('2021-04-29 08:58:49.656656', '892', '10278')
   ;
 
   // Update to source_song table

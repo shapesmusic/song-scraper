@@ -75,9 +75,16 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-03-31 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-23 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-04-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -115,7 +122,7 @@
 
   };
 
-  JSON.stringify(songsData, null, 4);
+  console.log(JSON.stringify(songsData, null, 4));
 
 
 //
@@ -127,31 +134,103 @@
   songsData =
   [
     {
-        "title": "Afrique Victime",
-        "artist_name": "Mdou Moctar",
+        "title": "Cheers",
+        "artist_name": "Faye Webster",
         "video_id": null,
-        "capture_date": "2021-04-06 07:08:44.154154",
-        "source_id": 879,
-        "song_id": 10149,
-        "duplicate": true
-    },
-    {
-        "title": "deja vu",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:08:44.157157",
-        "source_id": 880,
-        "song_id": 10142,
-        "duplicate": true
-    },
-    {
-        "title": "Hustle",
-        "artist_name": "Sons of Kemet",
-        "video_id": null,
-        "capture_date": "2021-04-06 07:08:44.157157",
-        "source_id": 881,
+        "capture_date": "2021-04-29 09:18:01.895895",
+        "source_id": 894,
         "song_id": null,
         "duplicate": false
+    },
+    {
+        "title": "Find Home",
+        "artist_name": "Green-House",
+        "video_id": null,
+        "capture_date": "2021-04-29 09:18:01.898898",
+        "source_id": 895,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "MMMOOOAAAAAYAYA",
+        "artist_name": "Illuminati Hotties",
+        "video_id": null,
+        "capture_date": "2021-04-29 09:18:01.898898",
+        "source_id": 896,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Moscow",
+        "artist_name": "03CAS",
+        "video_id": null,
+        "capture_date": "2021-04-29 09:18:01.898898",
+        "source_id": 896,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Introvert",
+        "artist_name": "Little Simz",
+        "video_id": null,
+        "capture_date": "2021-04-29 09:18:01.898898",
+        "source_id": 897,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Little Deer",
+        "artist_name": "SPELLLING",
+        "video_id": null,
+        "capture_date": "2021-04-29 09:18:01.898898",
+        "source_id": 898,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Send Me",
+        "artist_name": "Tirzah",
+        "video_id": null,
+        "capture_date": "2021-04-29 09:18:01.898898",
+        "source_id": 899,
+        "song_id": 10245,
+        "duplicate": true
+    },
+    {
+        "title": "Red Flag",
+        "artist_name": "Suzanne Kraft",
+        "video_id": null,
+        "capture_date": "2021-04-29 09:18:01.899899",
+        "source_id": 900,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sick Bitch",
+        "artist_name": "LSDXOXO",
+        "video_id": null,
+        "capture_date": "2021-04-29 09:18:01.899899",
+        "source_id": 901,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "formwela 3",
+        "artist_name": "Esperanza Spalding",
+        "video_id": null,
+        "capture_date": "2021-04-29 09:18:01.899899",
+        "source_id": 902,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "4U",
+        "artist_name": "Pi’erre Bourne",
+        "video_id": null,
+        "capture_date": "2021-04-29 09:18:01.899899",
+        "source_id": 903,
+        "song_id": 10140,
+        "duplicate": true
     }
 ]
 
@@ -203,7 +282,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Hustle', 'Sons of Kemet', NULL)
+    ('Cheers', 'Faye Webster', NULL),
+    ('Find Home', 'Green-House', NULL),
+    ('MMMOOOAAAAAYAYA', 'Illuminati Hotties', NULL),
+    ('Moscow', '03CAS', NULL),
+    ('Introvert', 'Little Simz', NULL),
+    ('Little Deer', 'SPELLLING', NULL),
+    ('Red Flag', 'Suzanne Kraft', NULL),
+    ('Sick Bitch', 'LSDXOXO', NULL),
+    ('formwela 3', 'Esperanza Spalding', NULL)
   ;
 
    // Update to song table
@@ -214,7 +301,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 10151; // SELECT last_insert_rowid();
+  song_id = 10296; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -254,9 +341,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-06 07:08:44.154154', '879', '10149'),
-  ('2021-04-06 07:08:44.157157', '880', '10142'),
-  ('2021-04-06 07:08:44.157157', '881', '10151')
+  ('2021-04-29 09:18:01.895895', '894', '10288'),
+  ('2021-04-29 09:18:01.898898', '895', '10289'),
+  ('2021-04-29 09:18:01.898898', '896', '10290'),
+  ('2021-04-29 09:18:01.898898', '896', '10291'),
+  ('2021-04-29 09:18:01.898898', '897', '10292'),
+  ('2021-04-29 09:18:01.898898', '898', '10293'),
+  ('2021-04-29 09:18:01.898898', '899', '10245'),
+  ('2021-04-29 09:18:01.899899', '900', '10294'),
+  ('2021-04-29 09:18:01.899899', '901', '10295'),
+  ('2021-04-29 09:18:01.899899', '902', '10296'),
+  ('2021-04-29 09:18:01.899899', '903', '10140')
   ;
 
   // Update to source_song table
