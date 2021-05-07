@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Weezer’s Rock ’n’ Roll Nostalgia Trip, and 10 More New Songs', '2021-04-23 08:55:51.000000', 'https://www.nytimes.com/2021/04/23/arts/music/playlist-weezer-youngboy-yola.html');
+    ('New York Times', 'The Playlist', 'Billie Eilish’s Portrait of Power Abuse, and 11 More New Songs', '2021-05-03 07:44:15.000000', 'https://www.nytimes.com/2021/04/30/arts/music/playlist-billie-eilish-cardi-b-willow.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 893; // SELECT last_insert_rowid();
+  source_id = 907; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -98,94 +98,94 @@
   songsData =
   [
     {
-        "title": "I Need Some of That",
-        "artist_name": "Weezer",
+        "title": "Your Power",
+        "artist_name": "Billie Eilish",
         "video_id": null,
-        "capture_date": "2021-04-29 09:10:10.789789",
-        "source_id": 893,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Telejayi",
-        "artist_name": "Jupiter & Okwess featuring Marcelo D2",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:10:10.790790",
-        "source_id": 893,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Diamond Studded Shoes",
-        "artist_name": "Yola",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:10:10.790790",
-        "source_id": 893,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "More Life",
-        "artist_name": "Cordae featuring Q-Tip",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:10:10.790790",
-        "source_id": 893,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Trenches",
-        "artist_name": "Morray",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:10:10.790790",
-        "source_id": 893,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Territorial",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:10:10.790790",
-        "source_id": 893,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gone",
-        "artist_name": "Jorja Smith",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:10:10.790790",
-        "source_id": 893,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "When Was It Over?",
-        "artist_name": "Sasha Sloan featuring Sam Hunt",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:10:10.790790",
-        "source_id": 893,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Rhetorical Figure",
-        "artist_name": "John Grant",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:10:10.790790",
-        "source_id": 893,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mohabbat",
-        "artist_name": "Arooj Aftab",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:10:10.790790",
-        "source_id": 893,
-        "song_id": 10094,
+        "capture_date": "2021-05-07 06:22:27.747747",
+        "source_id": 907,
+        "song_id": 10313,
         "duplicate": true
+    },
+    {
+        "title": "Transparentsoul",
+        "artist_name": "Willow featuring Travis Barker",
+        "video_id": null,
+        "capture_date": "2021-05-07 06:22:27.748748",
+        "source_id": 907,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Serotonin",
+        "artist_name": "girl in red",
+        "video_id": null,
+        "capture_date": "2021-05-07 06:22:27.749749",
+        "source_id": 907,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Big Paper",
+        "artist_name": "DJ Khaled featuring Cardi B",
+        "video_id": null,
+        "capture_date": "2021-05-07 06:22:27.749749",
+        "source_id": 907,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "If You Care",
+        "artist_name": "Q",
+        "video_id": null,
+        "capture_date": "2021-05-07 06:22:27.749749",
+        "source_id": 907,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sad Girls Do Sad Things",
+        "artist_name": "Priscilla Block",
+        "video_id": null,
+        "capture_date": "2021-05-07 06:22:27.749749",
+        "source_id": 907,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I’d Rather Be Alone",
+        "artist_name": "Brye",
+        "video_id": null,
+        "capture_date": "2021-05-07 06:22:27.749749",
+        "source_id": 907,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Swimmer",
+        "artist_name": "Half Waif",
+        "video_id": null,
+        "capture_date": "2021-05-07 06:22:27.749749",
+        "source_id": 907,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Space Cadet",
+        "artist_name": "Burial",
+        "video_id": null,
+        "capture_date": "2021-05-07 06:22:27.749749",
+        "source_id": 907,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "La Otra",
+        "artist_name": "Sofía Rei",
+        "video_id": null,
+        "capture_date": "2021-05-07 06:22:27.749749",
+        "source_id": 907,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -226,15 +226,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('I Need Some of That', 'Weezer', NULL),
-  ('Telejayi', 'Jupiter & Okwess featuring Marcelo D2', NULL),
-  ('Diamond Studded Shoes', 'Yola', NULL),
-  ('More Life', 'Cordae featuring Q-Tip', NULL),
-  ('Trenches', 'Morray', NULL),
-  ('Territorial', 'YoungBoy Never Broke Again', NULL),
-  ('Gone', 'Jorja Smith', NULL),
-  ('When Was It Over?', 'Sasha Sloan featuring Sam Hunt', NULL),
-  ('Rhetorical Figure', 'John Grant', NULL)
+  ('Transparentsoul', 'Willow featuring Travis Barker', NULL),
+  ('Serotonin', 'girl in red', NULL),
+  ('Big Paper', 'DJ Khaled featuring Cardi B', NULL),
+  ('If You Care', 'Q', NULL),
+  ('Sad Girls Do Sad Things', 'Priscilla Block', NULL),
+  ('I’d Rather Be Alone', 'Brye', NULL),
+  ('Swimmer', 'Half Waif', NULL),
+  ('Space Cadet', 'Burial', NULL),
+  ('La Otra', 'Sofía Rei', NULL)
   ;
 
    // Update to song table
@@ -245,7 +245,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10287; // SELECT last_insert_rowid();
+  song_id = 10337; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -285,16 +285,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-29 09:10:10.789789', '893', '10279'),
-  ('2021-04-29 09:10:10.790790', '893', '10280'),
-  ('2021-04-29 09:10:10.790790', '893', '10281'),
-  ('2021-04-29 09:10:10.790790', '893', '10282'),
-  ('2021-04-29 09:10:10.790790', '893', '10283'),
-  ('2021-04-29 09:10:10.790790', '893', '10284'),
-  ('2021-04-29 09:10:10.790790', '893', '10285'),
-  ('2021-04-29 09:10:10.790790', '893', '10286'),
-  ('2021-04-29 09:10:10.790790', '893', '10287'),
-  ('2021-04-29 09:10:10.790790', '893', '10094')
+  ('2021-05-07 06:22:27.747747', '907', '10313'),
+  ('2021-05-07 06:22:27.748748', '907', '10329'),
+  ('2021-05-07 06:22:27.749749', '907', '10330'),
+  ('2021-05-07 06:22:27.749749', '907', '10331'),
+  ('2021-05-07 06:22:27.749749', '907', '10332'),
+  ('2021-05-07 06:22:27.749749', '907', '10333'),
+  ('2021-05-07 06:22:27.749749', '907', '10334'),
+  ('2021-05-07 06:22:27.749749', '907', '10335'),
+  ('2021-05-07 06:22:27.749749', '907', '10336'),
+  ('2021-05-07 06:22:27.749749', '907', '10337')
   ;
 
   // Update to source_song table

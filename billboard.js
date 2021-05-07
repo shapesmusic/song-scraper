@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of May 1, 2021', '2021-05-01 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-05-01');
+    ('Billboard', 'The Hot 100', 'Week of May 8, 2021', '2021-05-08 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-05-08');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 890; // SELECT last_insert_rowid();
+  source_id = 904; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,83 +96,92 @@
   songsData =
   [
     {
-        "title": "Solid",
-        "artist_name": "Young Thug & Gunna Featuring Drake",
+        "title": "Shottas (Lala)",
+        "artist_name": "Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2021-04-29 08:38:27.701701",
-        "source_id": 890,
+        "capture_date": "2021-05-07 05:50:37.430430",
+        "source_id": 904,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ski",
-        "artist_name": "Young Thug & Gunna",
+        "title": "If Pain Was A Person",
+        "artist_name": "Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2021-04-29 08:38:27.701701",
-        "source_id": 890,
+        "capture_date": "2021-05-07 05:50:37.431431",
+        "source_id": 904,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Diamonds Dancing",
-        "artist_name": "Young Thug & Gunna Featuring Travis Scott",
+        "title": "Wockesha",
+        "artist_name": "Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2021-04-29 08:38:27.702702",
-        "source_id": 890,
+        "capture_date": "2021-05-07 05:50:37.431431",
+        "source_id": 904,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Proud Of You",
-        "artist_name": "Young Thug Featuring Lil Uzi Vert & Yung Kayo",
+        "title": "Botella Tras Botella",
+        "artist_name": "Gera MX + Christian Nodal",
         "video_id": null,
-        "capture_date": "2021-04-29 08:38:27.702702",
-        "source_id": 890,
+        "capture_date": "2021-05-07 05:50:37.431431",
+        "source_id": 904,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Came And Saw",
-        "artist_name": "Young Thug Featuring Rowdy Rebel",
+        "title": "Come Through",
+        "artist_name": "H.E.R. Featuring Chris Brown",
         "video_id": null,
-        "capture_date": "2021-04-29 08:38:27.703703",
-        "source_id": 890,
+        "capture_date": "2021-05-07 05:50:37.431431",
+        "source_id": 904,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Paid The Fine",
-        "artist_name": "Young Thug & Gunna Featuring Lil Baby & YTB Trench",
+        "title": "Free Promo",
+        "artist_name": "Moneybagg Yo Featuring Polo G & Lil Durk",
         "video_id": null,
-        "capture_date": "2021-04-29 08:38:27.703703",
-        "source_id": 890,
+        "capture_date": "2021-05-07 05:50:37.431431",
+        "source_id": 904,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Chasing After You",
-        "artist_name": "Ryan Hurd With Maren Morris",
+        "title": "Just Say Det",
+        "artist_name": "Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2021-04-29 08:38:27.703703",
-        "source_id": 890,
+        "capture_date": "2021-05-07 05:50:37.432432",
+        "source_id": 904,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Go!",
-        "artist_name": "Moneybagg Yo Featuring BIG30",
+        "title": "Blame It On You",
+        "artist_name": "Jason Aldean",
         "video_id": null,
-        "capture_date": "2021-04-29 08:38:27.703703",
-        "source_id": 890,
+        "capture_date": "2021-05-07 05:50:37.432432",
+        "source_id": 904,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Slatty",
-        "artist_name": "Young Thug & Gunna Featuring Yak Gotti & Lil Duke",
+        "title": "Way Less Sad",
+        "artist_name": "AJR",
         "video_id": null,
-        "capture_date": "2021-04-29 08:38:27.704704",
-        "source_id": 890,
+        "capture_date": "2021-05-07 05:50:37.432432",
+        "source_id": 904,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Clear Da Air",
+        "artist_name": "Moneybagg Yo",
+        "video_id": null,
+        "capture_date": "2021-05-07 05:50:37.432432",
+        "source_id": 904,
         "song_id": null,
         "duplicate": false
     }
@@ -215,15 +224,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Solid', 'Young Thug & Gunna Featuring Drake', NULL),
-  ('Ski', 'Young Thug & Gunna', NULL),
-  ('Diamonds Dancing', 'Young Thug & Gunna Featuring Travis Scott', NULL),
-  ('Proud Of You', 'Young Thug Featuring Lil Uzi Vert & Yung Kayo', NULL),
-  ('Came And Saw', 'Young Thug Featuring Rowdy Rebel', NULL),
-  ('Paid The Fine', 'Young Thug & Gunna Featuring Lil Baby & YTB Trench', NULL),
-  ('Chasing After You', 'Ryan Hurd With Maren Morris', NULL),
-  ('Go!', 'Moneybagg Yo Featuring BIG30', NULL),
-  ('Slatty', 'Young Thug & Gunna Featuring Yak Gotti & Lil Duke', NULL)
+  ('Shottas (Lala)', 'Moneybagg Yo', NULL),
+  ('If Pain Was A Person', 'Moneybagg Yo', NULL),
+  ('Wockesha', 'Moneybagg Yo', NULL),
+  ('Botella Tras Botella', 'Gera MX + Christian Nodal', NULL),
+  ('Come Through', 'H.E.R. Featuring Chris Brown', NULL),
+  ('Free Promo', 'Moneybagg Yo Featuring Polo G & Lil Durk', NULL),
+  ('Just Say Det', 'Moneybagg Yo', NULL),
+  ('Blame It On You', 'Jason Aldean', NULL),
+  ('Way Less Sad', 'AJR', NULL),
+  ('Clear Da Air', 'Moneybagg Yo', NULL)
   ;
 
    // Update to song table
@@ -234,7 +244,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10258; // SELECT last_insert_rowid();
+  song_id = 10306; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -274,15 +284,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-29 08:38:27.701701', '890', '10250'),
-  ('2021-04-29 08:38:27.701701', '890', '10251'),
-  ('2021-04-29 08:38:27.702702', '890', '10252'),
-  ('2021-04-29 08:38:27.702702', '890', '10253'),
-  ('2021-04-29 08:38:27.703703', '890', '10254'),
-  ('2021-04-29 08:38:27.703703', '890', '10255'),
-  ('2021-04-29 08:38:27.703703', '890', '10256'),
-  ('2021-04-29 08:38:27.703703', '890', '10257'),
-  ('2021-04-29 08:38:27.704704', '890', '10258')
+  ('2021-05-07 05:50:37.430430', '904', '10297'),
+  ('2021-05-07 05:50:37.431431', '904', '10298'),
+  ('2021-05-07 05:50:37.431431', '904', '10299'),
+  ('2021-05-07 05:50:37.431431', '904', '10300'),
+  ('2021-05-07 05:50:37.431431', '904', '10301'),
+  ('2021-05-07 05:50:37.431431', '904', '10302'),
+  ('2021-05-07 05:50:37.432432', '904', '10303'),
+  ('2021-05-07 05:50:37.432432', '904', '10304'),
+  ('2021-05-07 05:50:37.432432', '904', '10305'),
+  ('2021-05-07 05:50:37.432432', '904', '10306')
   ;
 
   // Update to source_song table

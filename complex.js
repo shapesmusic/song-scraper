@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Young Thug, Lil Yachty, the Weeknd, and More', '2021-04-23 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-lil-yachty-cordae-young-thug/ssgkobe-angels');
+    ('Complex', 'Best New Music This Week', 'Baby Keem, Morray, DJ Khaled, and More', '2021-04-30 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-baby-keem-morray-dj-khaled/lil-eazzyy-ride-together');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 892; // SELECT last_insert_rowid();
+  source_id = 905; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -99,56 +99,74 @@
   songsData =
   [
     {
-        "title": "Dynamic Duo",
-        "artist_name": "Lil Yatchy f/ Tee Grizzley",
-        "video_id": "mbDWCJE-X7s",
-        "capture_date": "2021-04-29 08:58:49.655655",
-        "source_id": 892,
+        "title": "Durag Activity",
+        "artist_name": "Baby Keem & Travis Scott",
+        "video_id": "YbgT-H39cnQ",
+        "capture_date": "2021-05-07 05:58:19.014014",
+        "source_id": 905,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Litty",
-        "artist_name": "Young Thug f/ DaBaby",
-        "video_id": "lRPV7nxsQ8E",
-        "capture_date": "2021-04-29 08:58:49.656656",
-        "source_id": 892,
+        "title": "Can’t Use Me",
+        "artist_name": "Morray",
+        "video_id": "NrlZ4t_rIIA",
+        "capture_date": "2021-05-07 05:58:19.015015",
+        "source_id": 905,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wassup",
-        "artist_name": "Cordae f/ Young Thug",
-        "video_id": "QHwmdFKJ9-Q",
-        "capture_date": "2021-04-29 08:58:49.656656",
-        "source_id": 892,
+        "title": "Sorry Not Sorry",
+        "artist_name": "DJ Khaled f/ Jay-Z, Nas, James Fauntleroy, and The Hive",
+        "video_id": "mON6_EQfQFI",
+        "capture_date": "2021-05-07 05:58:19.015015",
+        "source_id": 905,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You Know",
-        "artist_name": "Funk Flex f/ CJ",
-        "video_id": "9Py7zENpYvQ",
-        "capture_date": "2021-04-29 08:58:49.656656",
-        "source_id": 892,
+        "title": "All Pride Aside",
+        "artist_name": "Shelley f/ Summer Walker",
+        "video_id": "s7xL9RVncfA",
+        "capture_date": "2021-05-07 05:58:19.015015",
+        "source_id": 905,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Save Your Tears (Remix)",
-        "artist_name": "The Weeknd f/ Ariana Grande",
-        "video_id": "LIIDh-qI9oI",
-        "capture_date": "2021-04-29 08:58:49.656656",
-        "source_id": 892,
+        "title": "Spiral",
+        "artist_name": "21 Savage",
+        "video_id": "g59R3fMnUuc",
+        "capture_date": "2021-05-07 05:58:19.015015",
+        "source_id": 905,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Angels",
-        "artist_name": "SSGKobe",
-        "video_id": "c1IvZTWQ-_A",
-        "capture_date": "2021-04-29 08:58:49.656656",
-        "source_id": 892,
+        "title": "On Me (Remix)",
+        "artist_name": "Lil Baby f/ Megan Thee Stallion",
+        "video_id": "8BlQPORtSsQ",
+        "capture_date": "2021-05-07 05:58:19.015015",
+        "source_id": 905,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Your Power",
+        "artist_name": "Billie Eilish",
+        "video_id": "fzeWc3zh01g",
+        "capture_date": "2021-05-07 05:58:19.015015",
+        "source_id": 905,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ride Together",
+        "artist_name": "Lil Eazzyy",
+        "video_id": "p0yvZx7zPvU",
+        "capture_date": "2021-05-07 05:58:19.015015",
+        "source_id": 905,
         "song_id": null,
         "duplicate": false
     }
@@ -191,12 +209,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Dynamic Duo', 'Lil Yatchy f/ Tee Grizzley', NULL),
-  ('Litty', 'Young Thug f/ DaBaby', NULL),
-  ('Wassup', 'Cordae f/ Young Thug', NULL),
-  ('You Know', 'Funk Flex f/ CJ', NULL),
-  ('Save Your Tears (Remix)', 'The Weeknd f/ Ariana Grande', NULL),
-  ('Angels', 'SSGKobe', NULL)
+  ('Durag Activity', 'Baby Keem & Travis Scott', NULL),
+  ('Can’t Use Me', 'Morray', NULL),
+  ('Sorry Not Sorry', 'DJ Khaled f/ Jay-Z, Nas, James Fauntleroy, and The Hive', NULL),
+  ('All Pride Aside', 'Shelley f/ Summer Walker', NULL),
+  ('Spiral', '21 Savage', NULL),
+  ('On Me (Remix)', 'Lil Baby f/ Megan Thee Stallion', NULL),
+  ('Your Power', 'Billie Eilish', NULL),
+  ('Ride Together', 'Lil Eazzyy', NULL)
   ;
 
    // Update to song table
@@ -207,7 +227,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10278; // SELECT last_insert_rowid();
+  song_id = 10314; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -247,12 +267,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-29 08:58:49.655655', '892', '10273'),
-  ('2021-04-29 08:58:49.656656', '892', '10274'),
-  ('2021-04-29 08:58:49.656656', '892', '10275'),
-  ('2021-04-29 08:58:49.656656', '892', '10276'),
-  ('2021-04-29 08:58:49.656656', '892', '10277'),
-  ('2021-04-29 08:58:49.656656', '892', '10278')
+  ('2021-05-07 05:58:19.014014', '905', '10307'),
+  ('2021-05-07 05:58:19.015015', '905', '10308'),
+  ('2021-05-07 05:58:19.015015', '905', '10309'),
+  ('2021-05-07 05:58:19.015015', '905', '10310'),
+  ('2021-05-07 05:58:19.015015', '905', '10311'),
+  ('2021-05-07 05:58:19.015015', '905', '10312'),
+  ('2021-05-07 05:58:19.015015', '905', '10313'),
+  ('2021-05-07 05:58:19.015015', '905', '10314')
   ;
 
   // Update to source_song table
