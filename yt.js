@@ -45,7 +45,7 @@ pastChartLocation = window.location.href;
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('YouTube', 'Global Top Songs', 'Week of Apr 29, 2021', '2021-04-29 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210423-20210429');
+    ('YouTube', 'Global Top Songs', 'Week of May 6, 2021', '2021-05-06 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210430-20210506');
 
   // Update to source table
 
@@ -54,7 +54,7 @@ pastChartLocation = window.location.href;
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 906; // SELECT last_insert_rowid();
+  source_id = 912; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-table-row style-scope ytmc-chart-table');
@@ -105,164 +105,164 @@ pastChartLocation = window.location.href;
   songsData =
   [
     {
-        "title": "Botella Tras Botella",
-        "artist_name": "Gera Mx",
+        "title": "In the morning",
+        "artist_name": "ITZY",
         "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.631631",
-        "source_id": 906,
-        "song_id": 10300,
+        "capture_date": "2021-05-14 07:52:11.216216",
+        "source_id": 912,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Your Power",
+        "artist_name": "Billie Eilish",
+        "video_id": null,
+        "capture_date": "2021-05-14 07:52:11.218218",
+        "source_id": 912,
+        "song_id": 10313,
         "duplicate": true
     },
     {
-        "title": "Wafa Na Raas Aayee",
-        "artist_name": "Jubin Nautiyal",
+        "title": "Muộn Rồi Mà Sao Còn",
+        "artist_name": "Sơn Tùng M-TP",
         "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.634634",
-        "source_id": 906,
+        "capture_date": "2021-05-14 07:52:11.219219",
+        "source_id": 912,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Doob Gaye",
+        "artist_name": "Guru Randhawa",
+        "video_id": null,
+        "capture_date": "2021-05-14 07:52:11.220220",
+        "source_id": 912,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bipolar",
+        "artist_name": "MC Don Juan",
+        "video_id": null,
+        "capture_date": "2021-05-14 07:52:11.220220",
+        "source_id": 912,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dil De Diya",
+        "artist_name": "Kamaal Khan",
+        "video_id": null,
+        "capture_date": "2021-05-14 07:52:11.221221",
+        "source_id": 912,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Miénteme",
+        "artist_name": "TINI",
+        "video_id": null,
+        "capture_date": "2021-05-14 07:52:11.221221",
+        "source_id": 912,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "ทน",
+        "artist_name": "Sprite",
+        "video_id": null,
+        "capture_date": "2021-05-14 07:52:11.222222",
+        "source_id": 912,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "SORRY NOT SORRY (feat. Nas, JAY-Z & James Fauntleroy)",
+        "artist_name": "DJ Khaled",
+        "video_id": null,
+        "capture_date": "2021-05-14 07:52:11.222222",
+        "source_id": 912,
+        "song_id": 10309,
+        "duplicate": true
+    },
+    {
+        "title": "Girl From Rio",
+        "artist_name": "Anitta",
+        "video_id": null,
+        "capture_date": "2021-05-14 07:52:11.223223",
+        "source_id": 912,
         "song_id": null,
         "duplicate": false
     },
     {
         "title": "Seeti Maar",
-        "artist_name": "Kamaal Khan",
+        "artist_name": "Jaspreet Jasz",
         "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.635635",
-        "source_id": 906,
+        "capture_date": "2021-05-14 07:52:11.223223",
+        "source_id": 912,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Drunk-Dazed",
-        "artist_name": "ENHYPEN",
+        "title": "8 Raflaan (feat. Gurlez Akhtar)",
+        "artist_name": "Mankirt Aulakh",
         "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.637637",
-        "source_id": 906,
+        "capture_date": "2021-05-14 07:52:11.223223",
+        "source_id": 912,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ram Pam Pam",
-        "artist_name": "Natti Natasha",
+        "title": "Confetti (feat. Saweetie)",
+        "artist_name": "Little Mix",
         "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.637637",
-        "source_id": 906,
+        "capture_date": "2021-05-14 07:52:11.224224",
+        "source_id": 912,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Is Qadar",
-        "artist_name": "Tulsi Kumar",
+        "title": "Dick (feat. Doja Cat)",
+        "artist_name": "StarBoi3",
         "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.638638",
-        "source_id": 906,
-        "song_id": 10224,
+        "capture_date": "2021-05-14 07:52:11.225225",
+        "source_id": 912,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "ແພງອ້າຍ (feat. NUTDAO, แบกือ & BigYai)",
+        "artist_name": "Sophana",
+        "video_id": null,
+        "capture_date": "2021-05-14 07:52:11.225225",
+        "source_id": 912,
+        "song_id": 10271,
         "duplicate": true
     },
     {
-        "title": "Lavandiya London Se Layenge",
-        "artist_name": "Ritesh Pandey",
+        "title": "L-Gante Rkt",
+        "artist_name": "Papu DJ",
         "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.638638",
-        "source_id": 906,
-        "song_id": 10073,
-        "duplicate": true
-    },
-    {
-        "title": "EL PONY",
-        "artist_name": "Daddy Yankee",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.638638",
-        "source_id": 906,
+        "capture_date": "2021-05-14 07:52:11.226226",
+        "source_id": 912,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "On Me",
-        "artist_name": "Lil Baby",
+        "title": "踊",
+        "artist_name": "Ado",
         "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.639639",
-        "source_id": 906,
-        "song_id": 9624,
-        "duplicate": true
-    },
-    {
-        "title": "Tu Bhi Sataya Jayega",
-        "artist_name": "Vishal Mishra",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.639639",
-        "source_id": 906,
+        "capture_date": "2021-05-14 07:52:11.226226",
+        "source_id": 912,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kura Kura",
-        "artist_name": "TWICE",
+        "title": "After School",
+        "artist_name": "Weeekly",
         "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.639639",
-        "source_id": 906,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mencari Cinta",
-        "artist_name": "NOAH feat. Bunga Citra Lestari",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.640640",
-        "source_id": 906,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Body",
-        "artist_name": "Russ",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.640640",
-        "source_id": 906,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sona Kitna Sona Hai",
-        "artist_name": "Udit Narayan Jha",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.640640",
-        "source_id": 906,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Aquí Abajo",
-        "artist_name": "Christian Nodal",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.640640",
-        "source_id": 906,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Chumma Lebau Othava Pe",
-        "artist_name": "Gunjan Singh",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.641641",
-        "source_id": 906,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Volta Comigo BB",
-        "artist_name": "Zé Vaqueiro",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.641641",
-        "source_id": 906,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bzrp Music Sessions, Vol. 39",
-        "artist_name": "Bizarrap",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:03:30.641641",
-        "source_id": 906,
+        "capture_date": "2021-05-14 07:52:11.226226",
+        "source_id": 912,
         "song_id": null,
         "duplicate": false
     }
@@ -305,20 +305,21 @@ pastChartLocation = window.location.href;
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Wafa Na Raas Aayee', 'Jubin Nautiyal', NULL),
-  ('Seeti Maar', 'Kamaal Khan', NULL),
-  ('Drunk-Dazed', 'ENHYPEN', NULL),
-  ('Ram Pam Pam', 'Natti Natasha', NULL),
-  ('EL PONY', 'Daddy Yankee', NULL),
-  ('Tu Bhi Sataya Jayega', 'Vishal Mishra', NULL),
-  ('Kura Kura', 'TWICE', NULL),
-  ('Mencari Cinta', 'NOAH feat. Bunga Citra Lestari', NULL),
-  ('Body', 'Russ', NULL),
-  ('Sona Kitna Sona Hai', 'Udit Narayan Jha', NULL),
-  ('Aquí Abajo', 'Christian Nodal', NULL),
-  ('Chumma Lebau Othava Pe', 'Gunjan Singh', NULL),
-  ('Volta Comigo BB', 'Zé Vaqueiro', NULL),
-  ('Bzrp Music Sessions, Vol. 39', 'Bizarrap', NULL)
+  ('In the morning', 'ITZY', NULL),
+  ('Muộn Rồi Mà Sao Còn', 'Sơn Tùng M-TP', NULL),
+  ('Doob Gaye', 'Guru Randhawa', NULL),
+  ('Bipolar', 'MC Don Juan', NULL),
+  ('Dil De Diya', 'Kamaal Khan', NULL),
+  ('Miénteme', 'TINI', NULL),
+  ('ทน', 'Sprite', NULL),
+  ('Girl From Rio', 'Anitta', NULL),
+  ('Seeti Maar', 'Jaspreet Jasz', NULL),
+  ('8 Raflaan (feat. Gurlez Akhtar)', 'Mankirt Aulakh', NULL),
+  ('Confetti (feat. Saweetie)', 'Little Mix', NULL),
+  ('Dick (feat. Doja Cat)', 'StarBoi3', NULL),
+  ('L-Gante Rkt', 'Papu DJ', NULL),
+  ('踊', 'Ado', NULL),
+  ('After School', 'Weeekly', NULL)
   ;
 
    // Update to song table
@@ -329,7 +330,7 @@ pastChartLocation = window.location.href;
  //
 
   // Get the last song_id inserted
-  song_id = 10328; // SELECT last_insert_rowid();
+  song_id = 10379; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -369,24 +370,24 @@ pastChartLocation = window.location.href;
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-07 06:03:30.631631', '906', '10300'),
-  ('2021-05-07 06:03:30.634634', '906', '10315'),
-  ('2021-05-07 06:03:30.635635', '906', '10316'),
-  ('2021-05-07 06:03:30.637637', '906', '10317'),
-  ('2021-05-07 06:03:30.637637', '906', '10318'),
-  ('2021-05-07 06:03:30.638638', '906', '10224'),
-  ('2021-05-07 06:03:30.638638', '906', '10073'),
-  ('2021-05-07 06:03:30.638638', '906', '10319'),
-  ('2021-05-07 06:03:30.639639', '906', '9624'),
-  ('2021-05-07 06:03:30.639639', '906', '10320'),
-  ('2021-05-07 06:03:30.639639', '906', '10321'),
-  ('2021-05-07 06:03:30.640640', '906', '10322'),
-  ('2021-05-07 06:03:30.640640', '906', '10323'),
-  ('2021-05-07 06:03:30.640640', '906', '10324'),
-  ('2021-05-07 06:03:30.640640', '906', '10325'),
-  ('2021-05-07 06:03:30.641641', '906', '10326'),
-  ('2021-05-07 06:03:30.641641', '906', '10327'),
-  ('2021-05-07 06:03:30.641641', '906', '10328')
+  ('2021-05-14 07:52:11.216216', '912', '10365'),
+  ('2021-05-14 07:52:11.218218', '912', '10313'),
+  ('2021-05-14 07:52:11.219219', '912', '10366'),
+  ('2021-05-14 07:52:11.220220', '912', '10367'),
+  ('2021-05-14 07:52:11.220220', '912', '10368'),
+  ('2021-05-14 07:52:11.221221', '912', '10369'),
+  ('2021-05-14 07:52:11.221221', '912', '10370'),
+  ('2021-05-14 07:52:11.222222', '912', '10371'),
+  ('2021-05-14 07:52:11.222222', '912', '10309'),
+  ('2021-05-14 07:52:11.223223', '912', '10372'),
+  ('2021-05-14 07:52:11.223223', '912', '10373'),
+  ('2021-05-14 07:52:11.223223', '912', '10374'),
+  ('2021-05-14 07:52:11.224224', '912', '10375'),
+  ('2021-05-14 07:52:11.225225', '912', '10376'),
+  ('2021-05-14 07:52:11.225225', '912', '10271'),
+  ('2021-05-14 07:52:11.226226', '912', '10377'),
+  ('2021-05-14 07:52:11.226226', '912', '10378'),
+  ('2021-05-14 07:52:11.226226', '912', '10379')
   ;
 
   // Update to source_song table

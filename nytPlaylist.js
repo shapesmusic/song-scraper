@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Billie Eilish’s Portrait of Power Abuse, and 11 More New Songs', '2021-05-03 07:44:15.000000', 'https://www.nytimes.com/2021/04/30/arts/music/playlist-billie-eilish-cardi-b-willow.html');
+    ('New York Times', 'The Playlist', 'An Anthem About Hugging Your Friends Again, and 10 More New Songs', '2021-05-07 08:40:38.000000', 'https://www.nytimes.com/2021/05/07/arts/music/playlist-trippie-red-rostam-big-freedia.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 907; // SELECT last_insert_rowid();
+  source_id = 911; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -97,97 +97,79 @@
 
   songsData =
   [
-    {
-        "title": "Your Power",
-        "artist_name": "Billie Eilish",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:22:27.747747",
-        "source_id": 907,
-        "song_id": 10313,
-        "duplicate": true
-    },
-    {
-        "title": "Transparentsoul",
-        "artist_name": "Willow featuring Travis Barker",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:22:27.748748",
-        "source_id": 907,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Serotonin",
-        "artist_name": "girl in red",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:22:27.749749",
-        "source_id": 907,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Big Paper",
-        "artist_name": "DJ Khaled featuring Cardi B",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:22:27.749749",
-        "source_id": 907,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "If You Care",
-        "artist_name": "Q",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:22:27.749749",
-        "source_id": 907,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sad Girls Do Sad Things",
-        "artist_name": "Priscilla Block",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:22:27.749749",
-        "source_id": 907,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I’d Rather Be Alone",
-        "artist_name": "Brye",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:22:27.749749",
-        "source_id": 907,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Swimmer",
-        "artist_name": "Half Waif",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:22:27.749749",
-        "source_id": 907,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Space Cadet",
-        "artist_name": "Burial",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:22:27.749749",
-        "source_id": 907,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "La Otra",
-        "artist_name": "Sofía Rei",
-        "video_id": null,
-        "capture_date": "2021-05-07 06:22:27.749749",
-        "source_id": 907,
-        "song_id": null,
-        "duplicate": false
-    }
-]
+      {
+          "title": "The Gathering",
+          "artist_name": "Frank Turner",
+          "video_id": null,
+          "capture_date": "2021-05-14 07:39:05.931931",
+          "source_id": 911,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Animal",
+          "artist_name": "Lump",
+          "video_id": null,
+          "capture_date": "2021-05-14 07:39:05.932932",
+          "source_id": 911,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "From the Back of a Cab",
+          "artist_name": "Rostam",
+          "video_id": null,
+          "capture_date": "2021-05-14 07:39:05.932932",
+          "source_id": 911,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Maré",
+          "artist_name": "Rodrigo Amarante",
+          "video_id": null,
+          "capture_date": "2021-05-14 07:39:05.932932",
+          "source_id": 911,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Kora (Cornelius Remix)",
+          "artist_name": "Gogo Penguin featuring Cornelius",
+          "video_id": null,
+          "capture_date": "2021-05-14 07:39:05.932932",
+          "source_id": 911,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Wrong",
+          "artist_name": "Marcellus Juvann",
+          "video_id": null,
+          "capture_date": "2021-05-14 07:39:05.932932",
+          "source_id": 911,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Miss the Rage",
+          "artist_name": "Trippie Redd featuring Playboi Carti",
+          "video_id": null,
+          "capture_date": "2021-05-14 07:39:05.932932",
+          "source_id": 911,
+          "song_id": 10352,
+          "duplicate": true
+      },
+      {
+          "title": "Strut",
+          "artist_name": "Elohim and Big Freedia",
+          "video_id": null,
+          "capture_date": "2021-05-14 07:39:05.932932",
+          "source_id": 911,
+          "song_id": null,
+          "duplicate": false
+      }
+  ]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -226,15 +208,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Transparentsoul', 'Willow featuring Travis Barker', NULL),
-  ('Serotonin', 'girl in red', NULL),
-  ('Big Paper', 'DJ Khaled featuring Cardi B', NULL),
-  ('If You Care', 'Q', NULL),
-  ('Sad Girls Do Sad Things', 'Priscilla Block', NULL),
-  ('I’d Rather Be Alone', 'Brye', NULL),
-  ('Swimmer', 'Half Waif', NULL),
-  ('Space Cadet', 'Burial', NULL),
-  ('La Otra', 'Sofía Rei', NULL)
+  ('The Gathering', 'Frank Turner', NULL),
+  ('Animal', 'Lump', NULL),
+  ('From the Back of a Cab', 'Rostam', NULL),
+  ('Maré', 'Rodrigo Amarante', NULL),
+  ('Kora (Cornelius Remix)', 'Gogo Penguin featuring Cornelius', NULL),
+  ('Wrong', 'Marcellus Juvann', NULL),
+  ('Strut', 'Elohim and Big Freedia', NULL)
   ;
 
    // Update to song table
@@ -245,7 +225,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10337; // SELECT last_insert_rowid();
+  song_id = 10364; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -285,16 +265,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-07 06:22:27.747747', '907', '10313'),
-  ('2021-05-07 06:22:27.748748', '907', '10329'),
-  ('2021-05-07 06:22:27.749749', '907', '10330'),
-  ('2021-05-07 06:22:27.749749', '907', '10331'),
-  ('2021-05-07 06:22:27.749749', '907', '10332'),
-  ('2021-05-07 06:22:27.749749', '907', '10333'),
-  ('2021-05-07 06:22:27.749749', '907', '10334'),
-  ('2021-05-07 06:22:27.749749', '907', '10335'),
-  ('2021-05-07 06:22:27.749749', '907', '10336'),
-  ('2021-05-07 06:22:27.749749', '907', '10337')
+  ('2021-05-14 07:39:05.931931', '911', '10358'),
+  ('2021-05-14 07:39:05.932932', '911', '10359'),
+  ('2021-05-14 07:39:05.932932', '911', '10360'),
+  ('2021-05-14 07:39:05.932932', '911', '10361'),
+  ('2021-05-14 07:39:05.932932', '911', '10362'),
+  ('2021-05-14 07:39:05.932932', '911', '10363'),
+  ('2021-05-14 07:39:05.932932', '911', '10352'),
+  ('2021-05-14 07:39:05.932932', '911', '10364')
   ;
 
   // Update to source_song table

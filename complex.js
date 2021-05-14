@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Baby Keem, Morray, DJ Khaled, and More', '2021-04-30 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-baby-keem-morray-dj-khaled/lil-eazzyy-ride-together');
+    ('Complex', 'Best New Music This Week', 'J. Cole, Isaiah Rashad, Don Toliver, and More', '2021-05-07 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-j-cole-isaiah-rashad/');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 905; // SELECT last_insert_rowid();
+  source_id = 910; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -99,74 +99,92 @@
   songsData =
   [
     {
-        "title": "Durag Activity",
-        "artist_name": "Baby Keem & Travis Scott",
-        "video_id": "YbgT-H39cnQ",
-        "capture_date": "2021-05-07 05:58:19.014014",
-        "source_id": 905,
+        "title": "Interlude",
+        "artist_name": "J. Cole",
+        "video_id": "XK60CAyxqfE",
+        "capture_date": "2021-05-14 07:28:30.751751",
+        "source_id": 910,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Can’t Use Me",
-        "artist_name": "Morray",
-        "video_id": "NrlZ4t_rIIA",
-        "capture_date": "2021-05-07 05:58:19.015015",
-        "source_id": 905,
+        "title": "Lean Wit Ya",
+        "artist_name": "Isaiah Rashad f/ Duke Deuce",
+        "video_id": "dzrQCsJzr70",
+        "capture_date": "2021-05-14 07:28:30.752752",
+        "source_id": 910,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sorry Not Sorry",
-        "artist_name": "DJ Khaled f/ Jay-Z, Nas, James Fauntleroy, and The Hive",
-        "video_id": "mON6_EQfQFI",
-        "capture_date": "2021-05-07 05:58:19.015015",
-        "source_id": 905,
+        "title": "What You Need",
+        "artist_name": "Don Toliver",
+        "video_id": "qFIJHaylMu4",
+        "capture_date": "2021-05-14 07:28:30.752752",
+        "source_id": 910,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "All Pride Aside",
-        "artist_name": "Shelley f/ Summer Walker",
-        "video_id": "s7xL9RVncfA",
-        "capture_date": "2021-05-07 05:58:19.015015",
-        "source_id": 905,
+        "title": "Bout Me",
+        "artist_name": "Coi Leray",
+        "video_id": "wLKbKYDmonk",
+        "capture_date": "2021-05-14 07:28:30.752752",
+        "source_id": 910,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Spiral",
-        "artist_name": "21 Savage",
-        "video_id": "g59R3fMnUuc",
-        "capture_date": "2021-05-07 05:58:19.015015",
-        "source_id": 905,
+        "title": "Miss the Rage",
+        "artist_name": "Trippie Redd f/ Playboi Carti",
+        "video_id": "lqrVRKlVLXM",
+        "capture_date": "2021-05-14 07:28:30.752752",
+        "source_id": 910,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "On Me (Remix)",
-        "artist_name": "Lil Baby f/ Megan Thee Stallion",
-        "video_id": "8BlQPORtSsQ",
-        "capture_date": "2021-05-07 05:58:19.015015",
-        "source_id": 905,
+        "title": "Purple Baby",
+        "artist_name": "Quando Rondo",
+        "video_id": "d56G9W4n4vQ",
+        "capture_date": "2021-05-14 07:28:30.752752",
+        "source_id": 910,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Your Power",
-        "artist_name": "Billie Eilish",
-        "video_id": "fzeWc3zh01g",
-        "capture_date": "2021-05-07 05:58:19.015015",
-        "source_id": 905,
+        "title": "Grizzley Talk",
+        "artist_name": "Tee Grizzley",
+        "video_id": "wxPr1rFLVDs",
+        "capture_date": "2021-05-14 07:28:30.752752",
+        "source_id": 910,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ride Together",
-        "artist_name": "Lil Eazzyy",
-        "video_id": "p0yvZx7zPvU",
-        "capture_date": "2021-05-07 05:58:19.015015",
-        "source_id": 905,
+        "title": "Fast (Motion)",
+        "artist_name": "Saweetie",
+        "video_id": "mkiA9tuJ-xM",
+        "capture_date": "2021-05-14 07:28:30.752752",
+        "source_id": 910,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Czarwyn’s Theory of People Getting Loose",
+        "artist_name": "MF DOOM & Czarface f/ Kendra Morris",
+        "video_id": "JMvjBLxOAHk",
+        "capture_date": "2021-05-14 07:28:30.752752",
+        "source_id": 910,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "On Gang",
+        "artist_name": "Chief Keef, Tadoe, & Ballout",
+        "video_id": "kKaDyKx_9II",
+        "capture_date": "2021-05-14 07:28:30.752752",
+        "source_id": 910,
         "song_id": null,
         "duplicate": false
     }
@@ -209,14 +227,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Durag Activity', 'Baby Keem & Travis Scott', NULL),
-  ('Can’t Use Me', 'Morray', NULL),
-  ('Sorry Not Sorry', 'DJ Khaled f/ Jay-Z, Nas, James Fauntleroy, and The Hive', NULL),
-  ('All Pride Aside', 'Shelley f/ Summer Walker', NULL),
-  ('Spiral', '21 Savage', NULL),
-  ('On Me (Remix)', 'Lil Baby f/ Megan Thee Stallion', NULL),
-  ('Your Power', 'Billie Eilish', NULL),
-  ('Ride Together', 'Lil Eazzyy', NULL)
+  ('Interlude', 'J. Cole', NULL),
+  ('Lean Wit Ya', 'Isaiah Rashad f/ Duke Deuce', NULL),
+  ('What You Need', 'Don Toliver', NULL),
+  ('Bout Me', 'Coi Leray', NULL),
+  ('Miss the Rage', 'Trippie Redd f/ Playboi Carti', NULL),
+  ('Purple Baby', 'Quando Rondo', NULL),
+  ('Grizzley Talk', 'Tee Grizzley', NULL),
+  ('Fast (Motion)', 'Saweetie', NULL),
+  ('Czarwyn’s Theory of People Getting Loose', 'MF DOOM & Czarface f/ Kendra Morris', NULL),
+  ('On Gang', 'Chief Keef, Tadoe, & Ballout', NULL)
   ;
 
    // Update to song table
@@ -227,7 +247,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10314; // SELECT last_insert_rowid();
+  song_id = 10357; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -267,14 +287,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-07 05:58:19.014014', '905', '10307'),
-  ('2021-05-07 05:58:19.015015', '905', '10308'),
-  ('2021-05-07 05:58:19.015015', '905', '10309'),
-  ('2021-05-07 05:58:19.015015', '905', '10310'),
-  ('2021-05-07 05:58:19.015015', '905', '10311'),
-  ('2021-05-07 05:58:19.015015', '905', '10312'),
-  ('2021-05-07 05:58:19.015015', '905', '10313'),
-  ('2021-05-07 05:58:19.015015', '905', '10314')
+  ('2021-05-14 07:28:30.751751', '910', '10348'),
+  ('2021-05-14 07:28:30.752752', '910', '10349'),
+  ('2021-05-14 07:28:30.752752', '910', '10350'),
+  ('2021-05-14 07:28:30.752752', '910', '10351'),
+  ('2021-05-14 07:28:30.752752', '910', '10352'),
+  ('2021-05-14 07:28:30.752752', '910', '10353'),
+  ('2021-05-14 07:28:30.752752', '910', '10354'),
+  ('2021-05-14 07:28:30.752752', '910', '10355'),
+  ('2021-05-14 07:28:30.752752', '910', '10356'),
+  ('2021-05-14 07:28:30.752752', '910', '10357')
   ;
 
   // Update to source_song table
