@@ -75,16 +75,15 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-23 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-04-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ('Pitchfork', 'Track Reviews', NULL, '2021-05-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-05-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-05-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-05-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-05-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-05-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-05-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-05-05 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2021-05-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -134,103 +133,94 @@
   songsData =
   [
     {
-        "title": "Cheers",
-        "artist_name": "Faye Webster",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:18:01.895895",
-        "source_id": 894,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Find Home",
-        "artist_name": "Green-House",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:18:01.898898",
-        "source_id": 895,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "MMMOOOAAAAAYAYA",
-        "artist_name": "Illuminati Hotties",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:18:01.898898",
-        "source_id": 896,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Moscow",
-        "artist_name": "03CAS",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:18:01.898898",
-        "source_id": 896,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Introvert",
-        "artist_name": "Little Simz",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:18:01.898898",
-        "source_id": 897,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Little Deer",
-        "artist_name": "SPELLLING",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:18:01.898898",
-        "source_id": 898,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Send Me",
+        "title": "Sink In",
         "artist_name": "Tirzah",
         "video_id": null,
-        "capture_date": "2021-04-29 09:18:01.898898",
-        "source_id": 899,
-        "song_id": 10245,
+        "capture_date": "2021-05-27 07:16:03.752752",
+        "source_id": 921,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "VBS",
+        "artist_name": "Lucy Dacus",
+        "video_id": null,
+        "capture_date": "2021-05-27 07:16:03.755755",
+        "source_id": 922,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Like I Used To",
+        "artist_name": "Sharon Van Etten & Angel Olsen",
+        "video_id": null,
+        "capture_date": "2021-05-27 07:16:03.755755",
+        "source_id": 922,
+        "song_id": 10454,
         "duplicate": true
     },
     {
-        "title": "Red Flag",
-        "artist_name": "Suzanne Kraft",
+        "title": "Nothing’s Special",
+        "artist_name": "Oneohtrix Point Never & Rosalía",
         "video_id": null,
-        "capture_date": "2021-04-29 09:18:01.899899",
-        "source_id": 900,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sick Bitch",
-        "artist_name": "LSDXOXO",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:18:01.899899",
-        "source_id": 901,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "formwela 3",
-        "artist_name": "Esperanza Spalding",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:18:01.899899",
-        "source_id": 902,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "4U",
-        "artist_name": "Pi’erre Bourne",
-        "video_id": null,
-        "capture_date": "2021-04-29 09:18:01.899899",
-        "source_id": 903,
-        "song_id": 10140,
+        "capture_date": "2021-05-27 07:16:03.755755",
+        "source_id": 923,
+        "song_id": 10458,
         "duplicate": true
+    },
+    {
+        "title": "Lay Wit Ya",
+        "artist_name": "Isaiah Rashad",
+        "video_id": null,
+        "capture_date": "2021-05-27 07:16:03.755755",
+        "source_id": 924,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Rare to Wake",
+        "artist_name": "Shannon Lay",
+        "video_id": null,
+        "capture_date": "2021-05-27 07:16:03.756756",
+        "source_id": 925,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Worry With You",
+        "artist_name": "Sleater-Kinney",
+        "video_id": null,
+        "capture_date": "2021-05-27 07:16:03.756756",
+        "source_id": 926,
+        "song_id": 10410,
+        "duplicate": true
+    },
+    {
+        "title": "Blame Me",
+        "artist_name": "L’Rain",
+        "video_id": null,
+        "capture_date": "2021-05-27 07:16:03.756756",
+        "source_id": 927,
+        "song_id": 10413,
+        "duplicate": true
+    },
+    {
+        "title": "Wake-Up (Loraine James Remix)",
+        "artist_name": "Kelly Lee Owens",
+        "video_id": null,
+        "capture_date": "2021-05-27 07:16:03.756756",
+        "source_id": 928,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Damaged",
+        "artist_name": "Leo Bhanji",
+        "video_id": null,
+        "capture_date": "2021-05-27 07:16:03.756756",
+        "source_id": 929,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -247,7 +237,7 @@
 
   // get source_ids and dates for newly added sources
   // increase LIMIT number if necessary
-  SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 8;
+  SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 10;
 
   // manually add source_ids in songsData above (INT without quotation marks).
 
@@ -282,15 +272,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Cheers', 'Faye Webster', NULL),
-    ('Find Home', 'Green-House', NULL),
-    ('MMMOOOAAAAAYAYA', 'Illuminati Hotties', NULL),
-    ('Moscow', '03CAS', NULL),
-    ('Introvert', 'Little Simz', NULL),
-    ('Little Deer', 'SPELLLING', NULL),
-    ('Red Flag', 'Suzanne Kraft', NULL),
-    ('Sick Bitch', 'LSDXOXO', NULL),
-    ('formwela 3', 'Esperanza Spalding', NULL)
+  ('Sink In', 'Tirzah', NULL),
+  ('VBS', 'Lucy Dacus', NULL),
+  ('Lay Wit Ya', 'Isaiah Rashad', NULL),
+  ('Rare to Wake', 'Shannon Lay', NULL),
+  ('Wake-Up (Loraine James Remix)', 'Kelly Lee Owens', NULL),
+  ('Damaged', 'Leo Bhanji', NULL)
   ;
 
    // Update to song table
@@ -301,7 +288,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 10296; // SELECT last_insert_rowid();
+  song_id = 10465; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -341,17 +328,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-04-29 09:18:01.895895', '894', '10288'),
-  ('2021-04-29 09:18:01.898898', '895', '10289'),
-  ('2021-04-29 09:18:01.898898', '896', '10290'),
-  ('2021-04-29 09:18:01.898898', '896', '10291'),
-  ('2021-04-29 09:18:01.898898', '897', '10292'),
-  ('2021-04-29 09:18:01.898898', '898', '10293'),
-  ('2021-04-29 09:18:01.898898', '899', '10245'),
-  ('2021-04-29 09:18:01.899899', '900', '10294'),
-  ('2021-04-29 09:18:01.899899', '901', '10295'),
-  ('2021-04-29 09:18:01.899899', '902', '10296'),
-  ('2021-04-29 09:18:01.899899', '903', '10140')
+  ('2021-05-27 07:16:03.752752', '921', '10460'),
+  ('2021-05-27 07:16:03.755755', '922', '10461'),
+  ('2021-05-27 07:16:03.755755', '922', '10454'),
+  ('2021-05-27 07:16:03.755755', '923', '10458'),
+  ('2021-05-27 07:16:03.755755', '924', '10462'),
+  ('2021-05-27 07:16:03.756756', '925', '10463'),
+  ('2021-05-27 07:16:03.756756', '926', '10410'),
+  ('2021-05-27 07:16:03.756756', '927', '10413'),
+  ('2021-05-27 07:16:03.756756', '928', '10464'),
+  ('2021-05-27 07:16:03.756756', '929', '10465')
   ;
 
   // Update to source_song table

@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'J. Cole, 21 Savage, Nicki Minaj, and More', '2021-05-14 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-j-cole-21-savage-nicki-minaj/jorja-smith-time');
+    ('Complex', 'Best New Music This Week', 'Polo G, 42 Dugg, Latto, and More', '2021-05-21 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-polo-g-42-dugg-latto/city-girls-twerkulator');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 914; // SELECT last_insert_rowid();
+  source_id = 918; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -99,110 +99,83 @@
   songsData =
   [
     {
-        "title": "Amari",
-        "artist_name": "J. Cole",
-        "video_id": "gK07p6RGbtg",
-        "capture_date": "2021-05-27 05:56:54.108108",
-        "source_id": 914,
+        "title": "Gang Gang",
+        "artist_name": "Polo G f/ Lil Wayne",
+        "video_id": "HQE456q4n5U",
+        "capture_date": "2021-05-27 06:52:30.734734",
+        "source_id": 918,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Emergency",
-        "artist_name": "21 Savage f/ Young Thug & Gunna",
-        "video_id": "kMDOCRHBh7c",
-        "capture_date": "2021-05-27 05:56:54.109109",
-        "source_id": 914,
+        "title": "Stunnaman",
+        "artist_name": "Birdman & Roddy Ricch f/ Lil Wayne",
+        "video_id": "F5cCfs1COCc",
+        "capture_date": "2021-05-27 06:52:30.735735",
+        "source_id": 918,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Seeing Green",
-        "artist_name": "Nicki Minaj f/ Drake & Lil Wayne",
-        "video_id": "_Q7rcUm0Dro",
-        "capture_date": "2021-05-27 05:56:54.109109",
-        "source_id": 914,
+        "title": "Maybach",
+        "artist_name": "42 Dugg f/ Future",
+        "video_id": "gVGRIBWy6ig",
+        "capture_date": "2021-05-27 06:52:30.736736",
+        "source_id": 918,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Straightenin",
-        "artist_name": "Migos",
-        "video_id": "E553AnMAvlU",
-        "capture_date": "2021-05-27 05:56:54.109109",
-        "source_id": 914,
+        "title": "The Biggest",
+        "artist_name": "Latto",
+        "video_id": "jnu18ElApyc",
+        "capture_date": "2021-05-27 06:52:30.736736",
+        "source_id": 918,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "His & Hers",
-        "artist_name": "Internet Money f/ Lil Uzi Vert, Gunna, & Don Toliver",
-        "video_id": "mz-FT8Z3Hu8",
-        "capture_date": "2021-05-27 05:56:54.110110",
-        "source_id": 914,
+        "title": "We Win",
+        "artist_name": "Kirk Franklin & Lil Baby",
+        "video_id": "C_hmHcoleYo",
+        "capture_date": "2021-05-27 06:52:30.736736",
+        "source_id": 918,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Like Dat",
-        "artist_name": "Kehlani & T-Pain",
-        "video_id": "nel6zLnYrSw",
-        "capture_date": "2021-05-27 05:56:54.110110",
-        "source_id": 914,
+        "title": "Sun Goes Down",
+        "artist_name": "Lil Nas X",
+        "video_id": "U3BVFY9wnTw",
+        "capture_date": "2021-05-27 06:52:30.736736",
+        "source_id": 918,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "9 Bridge",
-        "artist_name": "A Boogie & Rowdy Rebel",
-        "video_id": "wXnJN2uAyOg",
-        "capture_date": "2021-05-27 05:56:54.110110",
-        "source_id": 914,
+        "title": "24 Hours",
+        "artist_name": "A Boogie f/ Lil Durk",
+        "video_id": "1x_pngHLhRk",
+        "capture_date": "2021-05-27 06:52:30.736736",
+        "source_id": 918,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "White Teeth",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": "V2GhUGSOhEc",
-        "capture_date": "2021-05-27 05:56:54.110110",
-        "source_id": 914,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "From These Heights",
-        "artist_name": "Jelani Aryeh",
-        "video_id": "DkzG2IV8vms",
-        "capture_date": "2021-05-27 05:56:54.110110",
-        "source_id": 914,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Good 4 U",
+        "title": "Traitor",
         "artist_name": "Olivia Rodrigo",
-        "video_id": "gNi_6U5Pm_o",
-        "capture_date": "2021-05-27 05:56:54.110110",
-        "source_id": 914,
+        "video_id": "6tsu2oeZJgo",
+        "capture_date": "2021-05-27 06:52:30.736736",
+        "source_id": 918,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "NEW BUGATTI",
-        "artist_name": "Lil Gnar f/ Ski Mask The Slump God, Chief Keef, and DJ Scheme",
-        "video_id": "xC3dnTLTRe8",
-        "capture_date": "2021-05-27 05:56:54.110110",
-        "source_id": 914,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Time",
-        "artist_name": "Jorja Smith",
-        "video_id": "DMLSvu_zVcc",
-        "capture_date": "2021-05-27 05:56:54.110110",
-        "source_id": 914,
+        "title": "Twerkulator",
+        "artist_name": "City Girls",
+        "video_id": "j8CCx7O8PAY",
+        "capture_date": "2021-05-27 06:52:30.736736",
+        "source_id": 918,
         "song_id": null,
         "duplicate": false
     }
@@ -245,18 +218,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Amari', 'J. Cole', NULL),
-  ('Emergency', '21 Savage f/ Young Thug & Gunna', NULL),
-  ('Seeing Green', 'Nicki Minaj f/ Drake & Lil Wayne', NULL),
-  ('Straightenin', 'Migos', NULL),
-  ('His & Hers', 'Internet Money f/ Lil Uzi Vert, Gunna, & Don Toliver', NULL),
-  ('Like Dat', 'Kehlani & T-Pain', NULL),
-  ('9 Bridge', 'A Boogie & Rowdy Rebel', NULL),
-  ('White Teeth', 'YoungBoy Never Broke Again', NULL),
-  ('From These Heights', 'Jelani Aryeh', NULL),
-  ('Good 4 U', 'Olivia Rodrigo', NULL),
-  ('NEW BUGATTI', 'Lil Gnar f/ Ski Mask The Slump God, Chief Keef, and DJ Scheme', NULL),
-  ('Time', 'Jorja Smith', NULL)
+  ('Gang Gang', 'Polo G f/ Lil Wayne', NULL),
+  ('Stunnaman', 'Birdman & Roddy Ricch f/ Lil Wayne', NULL),
+  ('Maybach', '42 Dugg f/ Future', NULL),
+  ('The Biggest', 'Latto', NULL),
+  ('We Win', 'Kirk Franklin & Lil Baby', NULL),
+  ('Sun Goes Down', 'Lil Nas X', NULL),
+  ('24 Hours', 'A Boogie f/ Lil Durk', NULL),
+  ('Traitor', 'Olivia Rodrigo', NULL),
+  ('Twerkulator', 'City Girls', NULL)
   ;
 
    // Update to song table
@@ -267,7 +237,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10395; // SELECT last_insert_rowid();
+  song_id = 10438; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -307,18 +277,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-27 05:56:54.108108', '914', '10384'),
-  ('2021-05-27 05:56:54.109109', '914', '10385'),
-  ('2021-05-27 05:56:54.109109', '914', '10386'),
-  ('2021-05-27 05:56:54.109109', '914', '10387'),
-  ('2021-05-27 05:56:54.110110', '914', '10388'),
-  ('2021-05-27 05:56:54.110110', '914', '10389'),
-  ('2021-05-27 05:56:54.110110', '914', '10390'),
-  ('2021-05-27 05:56:54.110110', '914', '10391'),
-  ('2021-05-27 05:56:54.110110', '914', '10392'),
-  ('2021-05-27 05:56:54.110110', '914', '10393'),
-  ('2021-05-27 05:56:54.110110', '914', '10394'),
-  ('2021-05-27 05:56:54.110110', '914', '10395')
+  ('2021-05-27 06:52:30.734734', '918', '10430'),
+  ('2021-05-27 06:52:30.735735', '918', '10431'),
+  ('2021-05-27 06:52:30.736736', '918', '10432'),
+  ('2021-05-27 06:52:30.736736', '918', '10433'),
+  ('2021-05-27 06:52:30.736736', '918', '10434'),
+  ('2021-05-27 06:52:30.736736', '918', '10435'),
+  ('2021-05-27 06:52:30.736736', '918', '10436'),
+  ('2021-05-27 06:52:30.736736', '918', '10437'),
+  ('2021-05-27 06:52:30.736736', '918', '10438')
   ;
 
   // Update to source_song table

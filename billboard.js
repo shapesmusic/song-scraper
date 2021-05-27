@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of May 22, 2021', '2021-05-22 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-05-22');
+    ('Billboard', 'The Hot 100', 'Week of May 29, 2021', '2021-05-29 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-05-29');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 913; // SELECT last_insert_rowid();
+  source_id = 917; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,65 +96,182 @@
   songsData =
   [
     {
-        "title": "interlude",
+        "title": "Good 4 U",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.199199",
+        "source_id": 917,
+        "song_id": 10393,
+        "duplicate": true
+    },
+    {
+        "title": "my.life",
+        "artist_name": "J. Cole, 21 Savage & Morray",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.201201",
+        "source_id": 917,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "amari",
         "artist_name": "J. Cole",
         "video_id": null,
-        "capture_date": "2021-05-27 05:47:10.329329",
-        "source_id": 913,
-        "song_id": 10348,
+        "capture_date": "2021-05-27 06:43:12.202202",
+        "source_id": 917,
+        "song_id": 10384,
         "duplicate": true
     },
     {
-        "title": "Miss The Rage",
-        "artist_name": "Trippie Redd & Playboi Carti",
+        "title": "pride.is.the.devil",
+        "artist_name": "J. Cole & Lil Baby",
         "video_id": null,
-        "capture_date": "2021-05-27 05:47:10.329329",
-        "source_id": 913,
-        "song_id": 10352,
-        "duplicate": true
-    },
-    {
-        "title": "Higher Power",
-        "artist_name": "Coldplay",
-        "video_id": null,
-        "capture_date": "2021-05-27 05:47:10.336336",
-        "source_id": 913,
+        "capture_date": "2021-05-27 06:43:12.203203",
+        "source_id": 917,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Never Left",
-        "artist_name": "Lil Tecca",
+        "title": "95.south",
+        "artist_name": "J. Cole",
         "video_id": null,
-        "capture_date": "2021-05-27 05:47:10.337337",
-        "source_id": 913,
+        "capture_date": "2021-05-27 06:43:12.203203",
+        "source_id": 917,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "All I Know So Far",
-        "artist_name": "P!nk",
+        "title": "Seeing Green",
+        "artist_name": "Nicki Minaj, Drake & Lil Wayne",
         "video_id": null,
-        "capture_date": "2021-05-27 05:47:10.339339",
-        "source_id": 913,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "What You Need",
-        "artist_name": "Don Toliver",
-        "video_id": null,
-        "capture_date": "2021-05-27 05:47:10.339339",
-        "source_id": 913,
-        "song_id": 10350,
+        "capture_date": "2021-05-27 06:43:12.203203",
+        "source_id": 917,
+        "song_id": 10386,
         "duplicate": true
     },
     {
-        "title": "Minimum Wage",
-        "artist_name": "Blake Shelton",
+        "title": "applying.pressure",
+        "artist_name": "J. Cole",
         "video_id": null,
-        "capture_date": "2021-05-27 05:47:10.340340",
-        "source_id": 913,
+        "capture_date": "2021-05-27 06:43:12.204204",
+        "source_id": 917,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "100.mil'",
+        "artist_name": "J. Cole & Bas",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.204204",
+        "source_id": 917,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "let.go.my.hand",
+        "artist_name": "J. Cole, Bas & 6LACK",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.206206",
+        "source_id": 917,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "punchin'.the.clock",
+        "artist_name": "J. Cole",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.207207",
+        "source_id": 917,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "hunger.on.hillside",
+        "artist_name": "J. Cole & Bas",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.210210",
+        "source_id": 917,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "close",
+        "artist_name": "J. Cole",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.211211",
+        "source_id": 917,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Straightenin",
+        "artist_name": "Migos",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.212212",
+        "source_id": 917,
+        "song_id": 10387,
+        "duplicate": true
+    },
+    {
+        "title": "Fractions",
+        "artist_name": "Nicki Minaj",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.214214",
+        "source_id": 917,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Build A Bitch",
+        "artist_name": "Bella Poarch",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.215215",
+        "source_id": 917,
+        "song_id": 10409,
+        "duplicate": true
+    },
+    {
+        "title": "His & Hers",
+        "artist_name": "Internet Money, Don Toliver & Lil Uzi Vert Featuring Gunna",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.216216",
+        "source_id": 917,
+        "song_id": 10388,
+        "duplicate": true
+    },
+    {
+        "title": "White Teeth",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.217217",
+        "source_id": 917,
+        "song_id": 10391,
+        "duplicate": true
+    },
+    {
+        "title": "Itty Bitty Piggy",
+        "artist_name": "Nicki Minaj",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.217217",
+        "source_id": 917,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Things A Man Oughta Know",
+        "artist_name": "Lainey Wilson",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.217217",
+        "source_id": 917,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Crocodile Teeth",
+        "artist_name": "Nicki Minaj & Skillibeng",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:43:12.218218",
+        "source_id": 917,
         "song_id": null,
         "duplicate": false
     }
@@ -197,10 +314,19 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Higher Power', 'Coldplay', NULL),
-  ('Never Left', 'Lil Tecca', NULL),
-  ('All I Know So Far', 'P!nk', NULL),
-  ('Minimum Wage', 'Blake Shelton', NULL)
+  ('my.life', 'J. Cole, 21 Savage & Morray', NULL),
+  ('pride.is.the.devil', 'J. Cole & Lil Baby', NULL),
+  ('95.south', 'J. Cole', NULL),
+  ('applying.pressure', 'J. Cole', NULL),
+  ('100.mil’', 'J. Cole & Bas', NULL),
+  ('let.go.my.hand', 'J. Cole, Bas & 6LACK', NULL),
+  ('punchin’.the.clock', 'J. Cole', NULL),
+  ('hunger.on.hillside', 'J. Cole & Bas', NULL),
+  ('close', 'J. Cole', NULL),
+  ('Fractions', 'Nicki Minaj', NULL),
+  ('Itty Bitty Piggy', 'Nicki Minaj', NULL),
+  ('Things A Man Oughta Know', 'Lainey Wilson', NULL),
+  ('Crocodile Teeth', 'Nicki Minaj & Skillibeng', NULL)
   ;
 
    // Update to song table
@@ -211,7 +337,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10383; // SELECT last_insert_rowid();
+  song_id = 10429; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -251,13 +377,26 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-27 05:47:10.329329', '913', '10348'),
-  ('2021-05-27 05:47:10.329329', '913', '10352'),
-  ('2021-05-27 05:47:10.336336', '913', '10380'),
-  ('2021-05-27 05:47:10.337337', '913', '10381'),
-  ('2021-05-27 05:47:10.339339', '913', '10382'),
-  ('2021-05-27 05:47:10.339339', '913', '10350'),
-  ('2021-05-27 05:47:10.340340', '913', '10383')
+  ('2021-05-27 06:43:12.199199', '917', '10393'),
+  ('2021-05-27 06:43:12.201201', '917', '10417'),
+  ('2021-05-27 06:43:12.202202', '917', '10384'),
+  ('2021-05-27 06:43:12.203203', '917', '10418'),
+  ('2021-05-27 06:43:12.203203', '917', '10419'),
+  ('2021-05-27 06:43:12.203203', '917', '10386'),
+  ('2021-05-27 06:43:12.204204', '917', '10420'),
+  ('2021-05-27 06:43:12.204204', '917', '10421'),
+  ('2021-05-27 06:43:12.206206', '917', '10422'),
+  ('2021-05-27 06:43:12.207207', '917', '10423'),
+  ('2021-05-27 06:43:12.210210', '917', '10424'),
+  ('2021-05-27 06:43:12.211211', '917', '10425'),
+  ('2021-05-27 06:43:12.212212', '917', '10387'),
+  ('2021-05-27 06:43:12.214214', '917', '10426'),
+  ('2021-05-27 06:43:12.215215', '917', '10409'),
+  ('2021-05-27 06:43:12.216216', '917', '10388'),
+  ('2021-05-27 06:43:12.217217', '917', '10391'),
+  ('2021-05-27 06:43:12.217217', '917', '10427'),
+  ('2021-05-27 06:43:12.217217', '917', '10428'),
+  ('2021-05-27 06:43:12.218218', '917', '10429')
   ;
 
   // Update to source_song table

@@ -45,7 +45,7 @@ pastChartLocation = window.location.href;
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('YouTube', 'Global Top Songs', 'Week of May 13, 2021', '2021-05-13 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210507-20210513');
+    ('YouTube', 'Global Top Songs', 'Week of May 20, 2021', '2021-05-20 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210514-20210520');
 
   // Update to source table
 
@@ -54,7 +54,7 @@ pastChartLocation = window.location.href;
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 915; // SELECT last_insert_rowid();
+  source_id = 919; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-table-row style-scope ytmc-chart-table');
@@ -107,139 +107,211 @@ pastChartLocation = window.location.href;
   songsData =
   [
     {
-        "title": "맛 (Hot Sauce)",
-        "artist_name": "NCT DREAM",
+        "title": "Build a Bitch",
+        "artist_name": "Bella Poarch",
         "video_id": null,
-        "capture_date": "2021-05-27 06:03:58",
-        "source_id": 915,
+        "capture_date": "2021-05-27 06:55:58.414414",
+        "source_id": 919,
+        "song_id": 10409,
+        "duplicate": true
+    },
+    {
+        "title": "good 4 u",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.419419",
+        "source_id": 919,
+        "song_id": 10393,
+        "duplicate": true
+    },
+    {
+        "title": "Next Level",
+        "artist_name": "aespa",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.421421",
+        "source_id": 919,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "नदी बिचे नईया डोले",
+        "title": "Trốn Tìm (feat. MTV BAND)",
+        "artist_name": "Đen",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.429429",
+        "source_id": 919,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bitch I'm Back",
+        "artist_name": "Sidhu Moose Wala",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.430430",
+        "source_id": 919,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "चित बदली (Chit Badali)",
         "artist_name": "Shilpi Raj",
         "video_id": null,
-        "capture_date": "2021-05-27 06:03:58",
-        "source_id": 915,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Miss The Rage",
-        "artist_name": "Trippie Redd feat. Playboi Carti",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:03:58",
-        "source_id": 915,
-        "song_id": 10352,
+        "capture_date": "2021-05-27 06:55:58.432432",
+        "source_id": 919,
+        "song_id": 10259,
         "duplicate": true
     },
     {
-        "title": "कुँवारे में गंगा नहईले बानी 2",
-        "artist_name": "Ankush Raja & Shilpi Raj",
-        "video_id": "MQLSxKwVmJU",
-        "capture_date": "2021-05-27 06:03:58",
-        "source_id": 915,
+        "title": "Raja Tani Jai Na Bahariya",
+        "artist_name": "Rakesh Mishra",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.434434",
+        "source_id": 919,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "La Mamá de la Mamá",
-        "artist_name": "El Alfa, Chael Produciendo, CJ & El Cherry Scom",
-        "video_id": "s5yRZOQ3EWI",
-        "capture_date": "2021-05-27 06:03:58",
-        "source_id": 915,
+        "title": "Grandes Ligas",
+        "artist_name": "Lupillo Rivera",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.434434",
+        "source_id": 919,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "LET IT GO",
-        "artist_name": "DJ Khaled feat. Justin Bieber & 21 Savage",
-        "video_id": "QRZJNqoJQFY",
-        "capture_date": "2021-05-27 06:03:58",
-        "source_id": 915,
-        "song_id": 10340,
+        "title": "Samne Aa Jao",
+        "artist_name": "Pritam Dholiya",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.435435",
+        "source_id": 919,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Libaas",
+        "artist_name": "Kaka",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.435435",
+        "source_id": 919,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "a m a r i",
+        "artist_name": "J. Cole",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.436436",
+        "source_id": 919,
+        "song_id": 10384,
         "duplicate": true
     },
     {
-        "title": "Radhe Title Track",
-        "artist_name": "Sajid–Wajid",
-        "video_id": "jA3XkD8k8-A",
-        "capture_date": "2021-05-27 06:03:58",
-        "source_id": 915,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Krvn",
-        "artist_name": "Uzi",
-        "video_id": "8OQMEeOXGWI",
-        "capture_date": "2021-05-27 06:03:58",
-        "source_id": 915,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Calling My Phone",
-        "artist_name": "Lil Tjay & 6LACK",
-        "video_id": "zzd4ydafGR0",
-        "capture_date": "2021-05-27 06:03:58",
-        "source_id": 915,
-        "song_id": 9786,
+        "title": "Straightenin",
+        "artist_name": "Migos",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.436436",
+        "source_id": 919,
+        "song_id": 10387,
         "duplicate": true
     },
     {
-        "title": "2/Catorce",
-        "artist_name": "Rauw Alejandro",
+        "title": "Electric",
+        "artist_name": "Katy Perry",
         "video_id": null,
-        "capture_date": "2021-05-27 06:03:58.384384",
-        "source_id": 915,
+        "capture_date": "2021-05-27 06:55:58.436436",
+        "source_id": 919,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Poblado",
-        "artist_name": "Crissin",
+        "title": "Te Necesito",
+        "artist_name": "KHEA",
         "video_id": null,
-        "capture_date": "2021-05-27 06:03:58.385385",
-        "source_id": 915,
+        "capture_date": "2021-05-27 06:55:58.437437",
+        "source_id": 919,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rod Roast Yourself",
-        "artist_name": "Rod Contreras",
+        "title": "Machayenge 3",
+        "artist_name": "Emiway Bantai",
         "video_id": null,
-        "capture_date": "2021-05-27 06:03:58.385385",
-        "source_id": 915,
+        "capture_date": "2021-05-27 06:55:58.438438",
+        "source_id": 919,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mood",
-        "artist_name": "24kGoldn feat. Iann Dior",
+        "title": "Burberry",
+        "artist_name": "Sidhu Moose Wala",
         "video_id": null,
-        "capture_date": "2021-05-27 06:03:58.386386",
-        "source_id": 915,
-        "song_id": 9007,
+        "capture_date": "2021-05-27 06:55:58.438438",
+        "source_id": 919,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "คิดฮอดรู้หม้าย",
+        "artist_name": "คิว สราวุฒิ",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.438438",
+        "source_id": 919,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "EL BARCO",
+        "artist_name": "Karol G",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.439439",
+        "source_id": 919,
+        "song_id": 10131,
         "duplicate": true
     },
     {
-        "title": "Tipo Gin (Ao Vivo)",
-        "artist_name": "MC Kevin o Chris",
+        "title": "Dil De Diya",
+        "artist_name": "Kamaal Khan",
         "video_id": null,
-        "capture_date": "2021-05-27 06:03:58.386386",
-        "source_id": 915,
+        "capture_date": "2021-05-27 06:55:58.440440",
+        "source_id": 919,
+        "song_id": 10369,
+        "duplicate": true
+    },
+    {
+        "title": "Chhor Denge",
+        "artist_name": "Parampara Thakur",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.441441",
+        "source_id": 919,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "दुई रूपया",
-        "artist_name": "Khesari Lal Yadav",
+        "title": "m y . l i f e",
+        "artist_name": "J. Cole feat. 21 Savage & Morray",
         "video_id": null,
-        "capture_date": "2021-05-27 06:03:58.386386",
-        "source_id": 915,
+        "capture_date": "2021-05-27 06:55:58.441441",
+        "source_id": 919,
+        "song_id": 10417,
+        "duplicate": true
+    },
+    {
+        "title": "Sal y Perrea",
+        "artist_name": "Sech",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.441441",
+        "source_id": 919,
         "song_id": null,
         "duplicate": false
+    },
+    {
+        "title": "Kutty Pattas",
+        "artist_name": "Santhosh Dhayanidhi",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:55:58.443443",
+        "source_id": 919,
+        "song_id": 10134,
+        "duplicate": true
     }
 ]
 
@@ -280,17 +352,20 @@ pastChartLocation = window.location.href;
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('맛 (Hot Sauce)', 'NCT DREAM', NULL),
-  ('नदी बिचे नईया डोले', 'Shilpi Raj', NULL),
-  ('कुँवारे में गंगा नहईले बानी 2', 'Ankush Raja & Shilpi Raj', NULL),
-  ('La Mamá de la Mamá', 'El Alfa, Chael Produciendo, CJ & El Cherry Scom', NULL),
-  ('Radhe Title Track', 'Sajid–Wajid', NULL),
-  ('Krvn', 'Uzi', NULL),
-  ('2/Catorce', 'Rauw Alejandro', NULL),
-  ('Poblado', 'Crissin', NULL),
-  ('Rod Roast Yourself', 'Rod Contreras', NULL),
-  ('Tipo Gin (Ao Vivo)', 'MC Kevin o Chris', NULL),
-  ('दुई रूपया', 'Khesari Lal Yadav', NULL)
+  ('Next Level', 'aespa', NULL),
+  ('Trốn Tìm (feat. MTV BAND)', 'Đen', NULL),
+  ('Bitch I’m Back', 'Sidhu Moose Wala', NULL),
+  ('Raja Tani Jai Na Bahariya', 'Rakesh Mishra', NULL),
+  ('Grandes Ligas', 'Lupillo Rivera', NULL),
+  ('Samne Aa Jao', 'Pritam Dholiya', NULL),
+  ('Libaas', 'Kaka', NULL),
+  ('Electric', 'Katy Perry', NULL),
+  ('Te Necesito', 'KHEA', NULL),
+  ('Machayenge 3', 'Emiway Bantai', NULL),
+  ('Burberry', 'Sidhu Moose Wala', NULL),
+  ('คิดฮอดรู้หม้าย', 'คิว สราวุฒิ', NULL),
+  ('Chhor Denge', 'Parampara Thakur', NULL),
+  ('Sal y Perrea', 'Sech', NULL)
   ;
 
    // Update to song table
@@ -301,7 +376,7 @@ pastChartLocation = window.location.href;
  //
 
   // Get the last song_id inserted
-  song_id = 10406; // SELECT last_insert_rowid();
+  song_id = 10452; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -341,21 +416,29 @@ pastChartLocation = window.location.href;
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-27 06:03:58', '915', '10396'),
-  ('2021-05-27 06:03:58', '915', '10397'),
-  ('2021-05-27 06:03:58', '915', '10352'),
-  ('2021-05-27 06:03:58', '915', '10398'),
-  ('2021-05-27 06:03:58', '915', '10399'),
-  ('2021-05-27 06:03:58', '915', '10340'),
-  ('2021-05-27 06:03:58', '915', '10400'),
-  ('2021-05-27 06:03:58', '915', '10401'),
-  ('2021-05-27 06:03:58', '915', '9786'),
-  ('2021-05-27 06:03:58.384384', '915', '10402'),
-  ('2021-05-27 06:03:58.385385', '915', '10403'),
-  ('2021-05-27 06:03:58.385385', '915', '10404'),
-  ('2021-05-27 06:03:58.386386', '915', '9007'),
-  ('2021-05-27 06:03:58.386386', '915', '10405'),
-  ('2021-05-27 06:03:58.386386', '915', '10406')
+  ('2021-05-27 06:55:58.414414', '919', '10409'),
+  ('2021-05-27 06:55:58.419419', '919', '10393'),
+  ('2021-05-27 06:55:58.421421', '919', '10439'),
+  ('2021-05-27 06:55:58.429429', '919', '10440'),
+  ('2021-05-27 06:55:58.430430', '919', '10441'),
+  ('2021-05-27 06:55:58.432432', '919', '10259'),
+  ('2021-05-27 06:55:58.434434', '919', '10442'),
+  ('2021-05-27 06:55:58.434434', '919', '10443'),
+  ('2021-05-27 06:55:58.435435', '919', '10444'),
+  ('2021-05-27 06:55:58.435435', '919', '10445'),
+  ('2021-05-27 06:55:58.436436', '919', '10384'),
+  ('2021-05-27 06:55:58.436436', '919', '10387'),
+  ('2021-05-27 06:55:58.436436', '919', '10446'),
+  ('2021-05-27 06:55:58.437437', '919', '10447'),
+  ('2021-05-27 06:55:58.438438', '919', '10448'),
+  ('2021-05-27 06:55:58.438438', '919', '10449'),
+  ('2021-05-27 06:55:58.438438', '919', '10450'),
+  ('2021-05-27 06:55:58.439439', '919', '10131'),
+  ('2021-05-27 06:55:58.440440', '919', '10369'),
+  ('2021-05-27 06:55:58.441441', '919', '10451'),
+  ('2021-05-27 06:55:58.441441', '919', '10417'),
+  ('2021-05-27 06:55:58.441441', '919', '10452'),
+  ('2021-05-27 06:55:58.443443', '919', '10134')
   ;
 
   // Update to source_song table
