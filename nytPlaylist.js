@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'An Anthem About Hugging Your Friends Again, and 10 More New Songs', '2021-05-07 08:40:38.000000', 'https://www.nytimes.com/2021/05/07/arts/music/playlist-trippie-red-rostam-big-freedia.html');
+    ('New York Times', 'The Playlist', 'Nicki Minaj Reunites With Lil Wayne and Drake, and 13 More New Songs', '2021-05-14 08:13:34.000000', 'https://www.nytimes.com/2021/05/14/arts/music/playlist-nicki-minaj-drake-lil-wayne.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 911; // SELECT last_insert_rowid();
+  source_id = 916; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -97,79 +97,115 @@
 
   songsData =
   [
-      {
-          "title": "The Gathering",
-          "artist_name": "Frank Turner",
-          "video_id": null,
-          "capture_date": "2021-05-14 07:39:05.931931",
-          "source_id": 911,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Animal",
-          "artist_name": "Lump",
-          "video_id": null,
-          "capture_date": "2021-05-14 07:39:05.932932",
-          "source_id": 911,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "From the Back of a Cab",
-          "artist_name": "Rostam",
-          "video_id": null,
-          "capture_date": "2021-05-14 07:39:05.932932",
-          "source_id": 911,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Maré",
-          "artist_name": "Rodrigo Amarante",
-          "video_id": null,
-          "capture_date": "2021-05-14 07:39:05.932932",
-          "source_id": 911,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Kora (Cornelius Remix)",
-          "artist_name": "Gogo Penguin featuring Cornelius",
-          "video_id": null,
-          "capture_date": "2021-05-14 07:39:05.932932",
-          "source_id": 911,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Wrong",
-          "artist_name": "Marcellus Juvann",
-          "video_id": null,
-          "capture_date": "2021-05-14 07:39:05.932932",
-          "source_id": 911,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Miss the Rage",
-          "artist_name": "Trippie Redd featuring Playboi Carti",
-          "video_id": null,
-          "capture_date": "2021-05-14 07:39:05.932932",
-          "source_id": 911,
-          "song_id": 10352,
-          "duplicate": true
-      },
-      {
-          "title": "Strut",
-          "artist_name": "Elohim and Big Freedia",
-          "video_id": null,
-          "capture_date": "2021-05-14 07:39:05.932932",
-          "source_id": 911,
-          "song_id": null,
-          "duplicate": false
-      }
-  ]
+    {
+        "title": "Seeing Green",
+        "artist_name": "Nicki Minaj with Drake and Lil Wayne",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.105105",
+        "source_id": 916,
+        "song_id": 10386,
+        "duplicate": true
+    },
+    {
+        "title": "Good 4 U",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.107107",
+        "source_id": 916,
+        "song_id": 10393,
+        "duplicate": true
+    },
+    {
+        "title": "Don’t Go Puttin Wishes in My Head",
+        "artist_name": "Torres",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.107107",
+        "source_id": 916,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mau Mau",
+        "artist_name": "Tony Allen",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.107107",
+        "source_id": 916,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Build a Bitch",
+        "artist_name": "Bella Poarch",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.107107",
+        "source_id": 916,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Worry With You",
+        "artist_name": "Sleater-Kinney",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.107107",
+        "source_id": 916,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "We Are the People",
+        "artist_name": "Martin Garrix featuring Bono & The Edge",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.107107",
+        "source_id": 916,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "You Can Do Better",
+        "artist_name": "Holly Macve",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.107107",
+        "source_id": 916,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Blame Me",
+        "artist_name": "L’Rain",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.107107",
+        "source_id": 916,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Right Now",
+        "artist_name": "Elaine",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.107107",
+        "source_id": 916,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Where Have You Gone",
+        "artist_name": "Alan Jackson",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.107107",
+        "source_id": 916,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Particle Of …",
+        "artist_name": "Erika Dohi",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:28:36.107107",
+        "source_id": 916,
+        "song_id": null,
+        "duplicate": false
+    }
+]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -208,13 +244,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Gathering', 'Frank Turner', NULL),
-  ('Animal', 'Lump', NULL),
-  ('From the Back of a Cab', 'Rostam', NULL),
-  ('Maré', 'Rodrigo Amarante', NULL),
-  ('Kora (Cornelius Remix)', 'Gogo Penguin featuring Cornelius', NULL),
-  ('Wrong', 'Marcellus Juvann', NULL),
-  ('Strut', 'Elohim and Big Freedia', NULL)
+  ('Don’t Go Puttin Wishes in My Head', 'Torres', NULL),
+  ('Mau Mau', 'Tony Allen', NULL),
+  ('Build a Bitch', 'Bella Poarch', NULL),
+  ('Worry With You', 'Sleater-Kinney', NULL),
+  ('We Are the People', 'Martin Garrix featuring Bono & The Edge', NULL),
+  ('You Can Do Better', 'Holly Macve', NULL),
+  ('Blame Me', 'L’Rain', NULL),
+  ('Right Now', 'Elaine', NULL),
+  ('Where Have You Gone', 'Alan Jackson', NULL),
+  ('Particle Of …', 'Erika Dohi', NULL)
   ;
 
    // Update to song table
@@ -225,7 +264,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10364; // SELECT last_insert_rowid();
+  song_id = 10416; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -265,14 +304,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-14 07:39:05.931931', '911', '10358'),
-  ('2021-05-14 07:39:05.932932', '911', '10359'),
-  ('2021-05-14 07:39:05.932932', '911', '10360'),
-  ('2021-05-14 07:39:05.932932', '911', '10361'),
-  ('2021-05-14 07:39:05.932932', '911', '10362'),
-  ('2021-05-14 07:39:05.932932', '911', '10363'),
-  ('2021-05-14 07:39:05.932932', '911', '10352'),
-  ('2021-05-14 07:39:05.932932', '911', '10364')
+  ('2021-05-27 06:28:36.105105', '916', '10386'),
+  ('2021-05-27 06:28:36.107107', '916', '10393'),
+  ('2021-05-27 06:28:36.107107', '916', '10407'),
+  ('2021-05-27 06:28:36.107107', '916', '10408'),
+  ('2021-05-27 06:28:36.107107', '916', '10409'),
+  ('2021-05-27 06:28:36.107107', '916', '10410'),
+  ('2021-05-27 06:28:36.107107', '916', '10411'),
+  ('2021-05-27 06:28:36.107107', '916', '10412'),
+  ('2021-05-27 06:28:36.107107', '916', '10413'),
+  ('2021-05-27 06:28:36.107107', '916', '10414'),
+  ('2021-05-27 06:28:36.107107', '916', '10415'),
+  ('2021-05-27 06:28:36.107107', '916', '10416')
   ;
 
   // Update to source_song table

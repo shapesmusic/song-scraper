@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of May 15, 2021', '2021-05-15 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-05-15');
+    ('Billboard', 'The Hot 100', 'Week of May 22, 2021', '2021-05-22 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-05-22');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 909; // SELECT last_insert_rowid();
+  source_id = 913; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,128 +96,65 @@
   songsData =
   [
     {
-        "title": "Your Power",
-        "artist_name": "Billie Eilish",
+        "title": "interlude",
+        "artist_name": "J. Cole",
         "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.988988",
-        "source_id": 909,
-        "song_id": 10313,
+        "capture_date": "2021-05-27 05:47:10.329329",
+        "source_id": 913,
+        "song_id": 10348,
         "duplicate": true
     },
     {
-        "title": "Every Chance I Get",
-        "artist_name": "DJ Khaled Featuring Lil Baby & Lil Durk",
+        "title": "Miss The Rage",
+        "artist_name": "Trippie Redd & Playboi Carti",
         "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.988988",
-        "source_id": 909,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sorry Not Sorry",
-        "artist_name": "DJ Khaled Featuring Nas, JAY-Z & James Fauntleroy",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.988988",
-        "source_id": 909,
-        "song_id": 10309,
+        "capture_date": "2021-05-27 05:47:10.329329",
+        "source_id": 913,
+        "song_id": 10352,
         "duplicate": true
     },
     {
-        "title": "I Did It",
-        "artist_name": "DJ Khaled Featuring Post Malone, Megan Thee Stallion, Lil Baby & DaBaby",
+        "title": "Higher Power",
+        "artist_name": "Coldplay",
         "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.989989",
-        "source_id": 909,
+        "capture_date": "2021-05-27 05:47:10.336336",
+        "source_id": 913,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Let It Go",
-        "artist_name": "DJ Khaled Featuring Justin Bieber & 21 Savage",
+        "title": "Never Left",
+        "artist_name": "Lil Tecca",
         "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.989989",
-        "source_id": 909,
+        "capture_date": "2021-05-27 05:47:10.337337",
+        "source_id": 913,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ramen & OJ",
-        "artist_name": "Joyner Lucas & Lil Baby",
+        "title": "All I Know So Far",
+        "artist_name": "P!nk",
         "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.989989",
-        "source_id": 909,
+        "capture_date": "2021-05-27 05:47:10.339339",
+        "source_id": 913,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Country Again",
-        "artist_name": "Thomas Rhett",
+        "title": "What You Need",
+        "artist_name": "Don Toliver",
         "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.989989",
-        "source_id": 909,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Body In Motion",
-        "artist_name": "DJ Khaled Featuring Bryson Tiller, Lil Baby & Roddy Ricch",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.989989",
-        "source_id": 909,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Big Paper",
-        "artist_name": "DJ Khaled Featuring Cardi B",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.990990",
-        "source_id": 909,
-        "song_id": 10331,
+        "capture_date": "2021-05-27 05:47:10.339339",
+        "source_id": 913,
+        "song_id": 10350,
         "duplicate": true
     },
     {
-        "title": "Durag Activity",
-        "artist_name": "Baby Keem & Travis Scott",
+        "title": "Minimum Wage",
+        "artist_name": "Blake Shelton",
         "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.990990",
-        "source_id": 909,
-        "song_id": 10307,
-        "duplicate": true
-    },
-    {
-        "title": "Final Warning",
-        "artist_name": "NLE Choppa",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.990990",
-        "source_id": 909,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Single Saturday Night",
-        "artist_name": "Cole Swindell",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.990990",
-        "source_id": 909,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tampa",
-        "artist_name": "Cico P",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.990990",
-        "source_id": 909,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Thankful",
-        "artist_name": "DJ Khaled Featuring Lil Wayne & Jeremih",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:20:32.990990",
-        "source_id": 909,
+        "capture_date": "2021-05-27 05:47:10.340340",
+        "source_id": 913,
         "song_id": null,
         "duplicate": false
     }
@@ -260,16 +197,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Every Chance I Get', 'DJ Khaled Featuring Lil Baby & Lil Durk', NULL),
-  ('I Did It', 'DJ Khaled Featuring Post Malone, Megan Thee Stallion, Lil Baby & DaBaby', NULL),
-  ('Let It Go', 'DJ Khaled Featuring Justin Bieber & 21 Savage', NULL),
-  ('Ramen & OJ', 'Joyner Lucas & Lil Baby', NULL),
-  ('Country Again', 'Thomas Rhett', NULL),
-  ('Body In Motion', 'DJ Khaled Featuring Bryson Tiller, Lil Baby & Roddy Ricch', NULL),
-  ('Final Warning', 'NLE Choppa', NULL),
-  ('Single Saturday Night', 'Cole Swindell', NULL),
-  ('Tampa', 'Cico P', NULL),
-  ('Thankful', 'DJ Khaled Featuring Lil Wayne & Jeremih', NULL)
+  ('Higher Power', 'Coldplay', NULL),
+  ('Never Left', 'Lil Tecca', NULL),
+  ('All I Know So Far', 'P!nk', NULL),
+  ('Minimum Wage', 'Blake Shelton', NULL)
   ;
 
    // Update to song table
@@ -280,7 +211,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10347; // SELECT last_insert_rowid();
+  song_id = 10383; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -320,20 +251,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-14 07:20:32.988988', '909', '10313'),
-  ('2021-05-14 07:20:32.988988', '909', '10338'),
-  ('2021-05-14 07:20:32.988988', '909', '10309'),
-  ('2021-05-14 07:20:32.989989', '909', '10339'),
-  ('2021-05-14 07:20:32.989989', '909', '10340'),
-  ('2021-05-14 07:20:32.989989', '909', '10341'),
-  ('2021-05-14 07:20:32.989989', '909', '10342'),
-  ('2021-05-14 07:20:32.989989', '909', '10343'),
-  ('2021-05-14 07:20:32.990990', '909', '10331'),
-  ('2021-05-14 07:20:32.990990', '909', '10307'),
-  ('2021-05-14 07:20:32.990990', '909', '10344'),
-  ('2021-05-14 07:20:32.990990', '909', '10345'),
-  ('2021-05-14 07:20:32.990990', '909', '10346'),
-  ('2021-05-14 07:20:32.990990', '909', '10347')
+  ('2021-05-27 05:47:10.329329', '913', '10348'),
+  ('2021-05-27 05:47:10.329329', '913', '10352'),
+  ('2021-05-27 05:47:10.336336', '913', '10380'),
+  ('2021-05-27 05:47:10.337337', '913', '10381'),
+  ('2021-05-27 05:47:10.339339', '913', '10382'),
+  ('2021-05-27 05:47:10.339339', '913', '10350'),
+  ('2021-05-27 05:47:10.340340', '913', '10383')
   ;
 
   // Update to source_song table

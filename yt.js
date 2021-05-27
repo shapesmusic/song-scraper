@@ -45,7 +45,7 @@ pastChartLocation = window.location.href;
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('YouTube', 'Global Top Songs', 'Week of May 6, 2021', '2021-05-06 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210430-20210506');
+    ('YouTube', 'Global Top Songs', 'Week of May 13, 2021', '2021-05-13 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210507-20210513');
 
   // Update to source table
 
@@ -54,7 +54,7 @@ pastChartLocation = window.location.href;
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 912; // SELECT last_insert_rowid();
+  source_id = 915; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-table-row style-scope ytmc-chart-table');
@@ -93,6 +93,8 @@ pastChartLocation = window.location.href;
 
   console.log(JSON.stringify(songsData, null, 4));
 
+  // check that this grabbed all the new songs
+
 
 //
 // Step 3:  Stage songsData,
@@ -105,164 +107,137 @@ pastChartLocation = window.location.href;
   songsData =
   [
     {
-        "title": "In the morning",
-        "artist_name": "ITZY",
+        "title": "맛 (Hot Sauce)",
+        "artist_name": "NCT DREAM",
         "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.216216",
-        "source_id": 912,
+        "capture_date": "2021-05-27 06:03:58",
+        "source_id": 915,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Your Power",
-        "artist_name": "Billie Eilish",
+        "title": "नदी बिचे नईया डोले",
+        "artist_name": "Shilpi Raj",
         "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.218218",
-        "source_id": 912,
-        "song_id": 10313,
+        "capture_date": "2021-05-27 06:03:58",
+        "source_id": 915,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Miss The Rage",
+        "artist_name": "Trippie Redd feat. Playboi Carti",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:03:58",
+        "source_id": 915,
+        "song_id": 10352,
         "duplicate": true
     },
     {
-        "title": "Muộn Rồi Mà Sao Còn",
-        "artist_name": "Sơn Tùng M-TP",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.219219",
-        "source_id": 912,
+        "title": "कुँवारे में गंगा नहईले बानी 2",
+        "artist_name": "Ankush Raja & Shilpi Raj",
+        "video_id": "MQLSxKwVmJU",
+        "capture_date": "2021-05-27 06:03:58",
+        "source_id": 915,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Doob Gaye",
-        "artist_name": "Guru Randhawa",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.220220",
-        "source_id": 912,
+        "title": "La Mamá de la Mamá",
+        "artist_name": "El Alfa, Chael Produciendo, CJ & El Cherry Scom",
+        "video_id": "s5yRZOQ3EWI",
+        "capture_date": "2021-05-27 06:03:58",
+        "source_id": 915,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bipolar",
-        "artist_name": "MC Don Juan",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.220220",
-        "source_id": 912,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dil De Diya",
-        "artist_name": "Kamaal Khan",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.221221",
-        "source_id": 912,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Miénteme",
-        "artist_name": "TINI",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.221221",
-        "source_id": 912,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "ทน",
-        "artist_name": "Sprite",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.222222",
-        "source_id": 912,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "SORRY NOT SORRY (feat. Nas, JAY-Z & James Fauntleroy)",
-        "artist_name": "DJ Khaled",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.222222",
-        "source_id": 912,
-        "song_id": 10309,
+        "title": "LET IT GO",
+        "artist_name": "DJ Khaled feat. Justin Bieber & 21 Savage",
+        "video_id": "QRZJNqoJQFY",
+        "capture_date": "2021-05-27 06:03:58",
+        "source_id": 915,
+        "song_id": 10340,
         "duplicate": true
     },
     {
-        "title": "Girl From Rio",
-        "artist_name": "Anitta",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.223223",
-        "source_id": 912,
+        "title": "Radhe Title Track",
+        "artist_name": "Sajid–Wajid",
+        "video_id": "jA3XkD8k8-A",
+        "capture_date": "2021-05-27 06:03:58",
+        "source_id": 915,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Seeti Maar",
-        "artist_name": "Jaspreet Jasz",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.223223",
-        "source_id": 912,
+        "title": "Krvn",
+        "artist_name": "Uzi",
+        "video_id": "8OQMEeOXGWI",
+        "capture_date": "2021-05-27 06:03:58",
+        "source_id": 915,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "8 Raflaan (feat. Gurlez Akhtar)",
-        "artist_name": "Mankirt Aulakh",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.223223",
-        "source_id": 912,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Confetti (feat. Saweetie)",
-        "artist_name": "Little Mix",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.224224",
-        "source_id": 912,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dick (feat. Doja Cat)",
-        "artist_name": "StarBoi3",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.225225",
-        "source_id": 912,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "ແພງອ້າຍ (feat. NUTDAO, แบกือ & BigYai)",
-        "artist_name": "Sophana",
-        "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.225225",
-        "source_id": 912,
-        "song_id": 10271,
+        "title": "Calling My Phone",
+        "artist_name": "Lil Tjay & 6LACK",
+        "video_id": "zzd4ydafGR0",
+        "capture_date": "2021-05-27 06:03:58",
+        "source_id": 915,
+        "song_id": 9786,
         "duplicate": true
     },
     {
-        "title": "L-Gante Rkt",
-        "artist_name": "Papu DJ",
+        "title": "2/Catorce",
+        "artist_name": "Rauw Alejandro",
         "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.226226",
-        "source_id": 912,
+        "capture_date": "2021-05-27 06:03:58.384384",
+        "source_id": 915,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "踊",
-        "artist_name": "Ado",
+        "title": "Poblado",
+        "artist_name": "Crissin",
         "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.226226",
-        "source_id": 912,
+        "capture_date": "2021-05-27 06:03:58.385385",
+        "source_id": 915,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "After School",
-        "artist_name": "Weeekly",
+        "title": "Rod Roast Yourself",
+        "artist_name": "Rod Contreras",
         "video_id": null,
-        "capture_date": "2021-05-14 07:52:11.226226",
-        "source_id": 912,
+        "capture_date": "2021-05-27 06:03:58.385385",
+        "source_id": 915,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mood",
+        "artist_name": "24kGoldn feat. Iann Dior",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:03:58.386386",
+        "source_id": 915,
+        "song_id": 9007,
+        "duplicate": true
+    },
+    {
+        "title": "Tipo Gin (Ao Vivo)",
+        "artist_name": "MC Kevin o Chris",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:03:58.386386",
+        "source_id": 915,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "दुई रूपया",
+        "artist_name": "Khesari Lal Yadav",
+        "video_id": null,
+        "capture_date": "2021-05-27 06:03:58.386386",
+        "source_id": 915,
         "song_id": null,
         "duplicate": false
     }
@@ -305,21 +280,17 @@ pastChartLocation = window.location.href;
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('In the morning', 'ITZY', NULL),
-  ('Muộn Rồi Mà Sao Còn', 'Sơn Tùng M-TP', NULL),
-  ('Doob Gaye', 'Guru Randhawa', NULL),
-  ('Bipolar', 'MC Don Juan', NULL),
-  ('Dil De Diya', 'Kamaal Khan', NULL),
-  ('Miénteme', 'TINI', NULL),
-  ('ทน', 'Sprite', NULL),
-  ('Girl From Rio', 'Anitta', NULL),
-  ('Seeti Maar', 'Jaspreet Jasz', NULL),
-  ('8 Raflaan (feat. Gurlez Akhtar)', 'Mankirt Aulakh', NULL),
-  ('Confetti (feat. Saweetie)', 'Little Mix', NULL),
-  ('Dick (feat. Doja Cat)', 'StarBoi3', NULL),
-  ('L-Gante Rkt', 'Papu DJ', NULL),
-  ('踊', 'Ado', NULL),
-  ('After School', 'Weeekly', NULL)
+  ('맛 (Hot Sauce)', 'NCT DREAM', NULL),
+  ('नदी बिचे नईया डोले', 'Shilpi Raj', NULL),
+  ('कुँवारे में गंगा नहईले बानी 2', 'Ankush Raja & Shilpi Raj', NULL),
+  ('La Mamá de la Mamá', 'El Alfa, Chael Produciendo, CJ & El Cherry Scom', NULL),
+  ('Radhe Title Track', 'Sajid–Wajid', NULL),
+  ('Krvn', 'Uzi', NULL),
+  ('2/Catorce', 'Rauw Alejandro', NULL),
+  ('Poblado', 'Crissin', NULL),
+  ('Rod Roast Yourself', 'Rod Contreras', NULL),
+  ('Tipo Gin (Ao Vivo)', 'MC Kevin o Chris', NULL),
+  ('दुई रूपया', 'Khesari Lal Yadav', NULL)
   ;
 
    // Update to song table
@@ -330,7 +301,7 @@ pastChartLocation = window.location.href;
  //
 
   // Get the last song_id inserted
-  song_id = 10379; // SELECT last_insert_rowid();
+  song_id = 10406; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -370,24 +341,21 @@ pastChartLocation = window.location.href;
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-14 07:52:11.216216', '912', '10365'),
-  ('2021-05-14 07:52:11.218218', '912', '10313'),
-  ('2021-05-14 07:52:11.219219', '912', '10366'),
-  ('2021-05-14 07:52:11.220220', '912', '10367'),
-  ('2021-05-14 07:52:11.220220', '912', '10368'),
-  ('2021-05-14 07:52:11.221221', '912', '10369'),
-  ('2021-05-14 07:52:11.221221', '912', '10370'),
-  ('2021-05-14 07:52:11.222222', '912', '10371'),
-  ('2021-05-14 07:52:11.222222', '912', '10309'),
-  ('2021-05-14 07:52:11.223223', '912', '10372'),
-  ('2021-05-14 07:52:11.223223', '912', '10373'),
-  ('2021-05-14 07:52:11.223223', '912', '10374'),
-  ('2021-05-14 07:52:11.224224', '912', '10375'),
-  ('2021-05-14 07:52:11.225225', '912', '10376'),
-  ('2021-05-14 07:52:11.225225', '912', '10271'),
-  ('2021-05-14 07:52:11.226226', '912', '10377'),
-  ('2021-05-14 07:52:11.226226', '912', '10378'),
-  ('2021-05-14 07:52:11.226226', '912', '10379')
+  ('2021-05-27 06:03:58', '915', '10396'),
+  ('2021-05-27 06:03:58', '915', '10397'),
+  ('2021-05-27 06:03:58', '915', '10352'),
+  ('2021-05-27 06:03:58', '915', '10398'),
+  ('2021-05-27 06:03:58', '915', '10399'),
+  ('2021-05-27 06:03:58', '915', '10340'),
+  ('2021-05-27 06:03:58', '915', '10400'),
+  ('2021-05-27 06:03:58', '915', '10401'),
+  ('2021-05-27 06:03:58', '915', '9786'),
+  ('2021-05-27 06:03:58.384384', '915', '10402'),
+  ('2021-05-27 06:03:58.385385', '915', '10403'),
+  ('2021-05-27 06:03:58.385385', '915', '10404'),
+  ('2021-05-27 06:03:58.386386', '915', '9007'),
+  ('2021-05-27 06:03:58.386386', '915', '10405'),
+  ('2021-05-27 06:03:58.386386', '915', '10406')
   ;
 
   // Update to source_song table
