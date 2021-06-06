@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of May 29, 2021', '2021-05-29 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-05-29');
+    ('Billboard', 'The Hot 100', 'Week of June 5, 2021', '2021-06-05 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-06-05');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 917; // SELECT last_insert_rowid();
+  source_id = 930; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,184 +96,139 @@
   songsData =
   [
     {
-        "title": "Good 4 U",
+        "title": "Butter",
+        "artist_name": "BTS",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:17:39.698698",
+        "source_id": 930,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Traitor",
         "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.199199",
-        "source_id": 917,
-        "song_id": 10393,
+        "capture_date": "2021-06-06 03:17:39.700700",
+        "source_id": 930,
+        "song_id": 10437,
         "duplicate": true
     },
     {
-        "title": "my.life",
-        "artist_name": "J. Cole, 21 Savage & Morray",
+        "title": "Brutal",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.201201",
-        "source_id": 917,
+        "capture_date": "2021-06-06 03:17:39.700700",
+        "source_id": 930,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "amari",
-        "artist_name": "J. Cole",
+        "title": "Enough For You",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.202202",
-        "source_id": 917,
-        "song_id": 10384,
+        "capture_date": "2021-06-06 03:17:39.700700",
+        "source_id": 930,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Happier",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:17:39.700700",
+        "source_id": 930,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Favorite Crime",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:17:39.701701",
+        "source_id": 930,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "1 Step Forward, 3 Steps Back",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:17:39.701701",
+        "source_id": 930,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Jealousy, Jealousy",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:17:39.701701",
+        "source_id": 930,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hope Ur OK",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:17:39.701701",
+        "source_id": 930,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Gang Gang",
+        "artist_name": "Polo G & Lil Wayne",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:17:39.701701",
+        "source_id": 930,
+        "song_id": 10430,
         "duplicate": true
     },
     {
-        "title": "pride.is.the.devil",
-        "artist_name": "J. Cole & Lil Baby",
+        "title": "Twerkulator",
+        "artist_name": "City Girls",
         "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.203203",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "95.south",
-        "artist_name": "J. Cole",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.203203",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Seeing Green",
-        "artist_name": "Nicki Minaj, Drake & Lil Wayne",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.203203",
-        "source_id": 917,
-        "song_id": 10386,
+        "capture_date": "2021-06-06 03:17:39.702702",
+        "source_id": 930,
+        "song_id": 10438,
         "duplicate": true
     },
     {
-        "title": "applying.pressure",
-        "artist_name": "J. Cole",
+        "title": "Sun Goes Down",
+        "artist_name": "Lil Nas X",
         "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.204204",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "100.mil'",
-        "artist_name": "J. Cole & Bas",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.204204",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "let.go.my.hand",
-        "artist_name": "J. Cole, Bas & 6LACK",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.206206",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "punchin'.the.clock",
-        "artist_name": "J. Cole",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.207207",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "hunger.on.hillside",
-        "artist_name": "J. Cole & Bas",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.210210",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "close",
-        "artist_name": "J. Cole",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.211211",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Straightenin",
-        "artist_name": "Migos",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.212212",
-        "source_id": 917,
-        "song_id": 10387,
+        "capture_date": "2021-06-06 03:17:39.702702",
+        "source_id": 930,
+        "song_id": 10435,
         "duplicate": true
     },
     {
-        "title": "Fractions",
-        "artist_name": "Nicki Minaj",
+        "title": "Maybach",
+        "artist_name": "42 Dugg Featuring Future",
         "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.214214",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Build A Bitch",
-        "artist_name": "Bella Poarch",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.215215",
-        "source_id": 917,
-        "song_id": 10409,
+        "capture_date": "2021-06-06 03:17:39.702702",
+        "source_id": 930,
+        "song_id": 10432,
         "duplicate": true
     },
     {
-        "title": "His & Hers",
-        "artist_name": "Internet Money, Don Toliver & Lil Uzi Vert Featuring Gunna",
+        "title": "Leave Before You Love Me",
+        "artist_name": "Marshmello X Jonas Brothers",
         "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.216216",
-        "source_id": 917,
-        "song_id": 10388,
+        "capture_date": "2021-06-06 03:17:39.703703",
+        "source_id": 930,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "24 Hours",
+        "artist_name": "A Boogie Wit da Hoodie Featuring Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:17:39.703703",
+        "source_id": 930,
+        "song_id": 10436,
         "duplicate": true
-    },
-    {
-        "title": "White Teeth",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.217217",
-        "source_id": 917,
-        "song_id": 10391,
-        "duplicate": true
-    },
-    {
-        "title": "Itty Bitty Piggy",
-        "artist_name": "Nicki Minaj",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.217217",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Things A Man Oughta Know",
-        "artist_name": "Lainey Wilson",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.217217",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Crocodile Teeth",
-        "artist_name": "Nicki Minaj & Skillibeng",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:43:12.218218",
-        "source_id": 917,
-        "song_id": null,
-        "duplicate": false
     }
 ]
 
@@ -314,19 +269,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('my.life', 'J. Cole, 21 Savage & Morray', NULL),
-  ('pride.is.the.devil', 'J. Cole & Lil Baby', NULL),
-  ('95.south', 'J. Cole', NULL),
-  ('applying.pressure', 'J. Cole', NULL),
-  ('100.mil’', 'J. Cole & Bas', NULL),
-  ('let.go.my.hand', 'J. Cole, Bas & 6LACK', NULL),
-  ('punchin’.the.clock', 'J. Cole', NULL),
-  ('hunger.on.hillside', 'J. Cole & Bas', NULL),
-  ('close', 'J. Cole', NULL),
-  ('Fractions', 'Nicki Minaj', NULL),
-  ('Itty Bitty Piggy', 'Nicki Minaj', NULL),
-  ('Things A Man Oughta Know', 'Lainey Wilson', NULL),
-  ('Crocodile Teeth', 'Nicki Minaj & Skillibeng', NULL)
+  ('Butter', 'BTS', NULL),
+  ('Brutal', 'Olivia Rodrigo', NULL),
+  ('Enough For You', 'Olivia Rodrigo', NULL),
+  ('Happier', 'Olivia Rodrigo', NULL),
+  ('Favorite Crime', 'Olivia Rodrigo', NULL),
+  ('1 Step Forward, 3 Steps Back', 'Olivia Rodrigo', NULL),
+  ('Jealousy, Jealousy', 'Olivia Rodrigo', NULL),
+  ('Hope Ur OK', 'Olivia Rodrigo', NULL),
+  ('Leave Before You Love Me', 'Marshmello X Jonas Brothers', NULL)
   ;
 
    // Update to song table
@@ -337,7 +288,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10429; // SELECT last_insert_rowid();
+  song_id = 10474; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -377,26 +328,21 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-27 06:43:12.199199', '917', '10393'),
-  ('2021-05-27 06:43:12.201201', '917', '10417'),
-  ('2021-05-27 06:43:12.202202', '917', '10384'),
-  ('2021-05-27 06:43:12.203203', '917', '10418'),
-  ('2021-05-27 06:43:12.203203', '917', '10419'),
-  ('2021-05-27 06:43:12.203203', '917', '10386'),
-  ('2021-05-27 06:43:12.204204', '917', '10420'),
-  ('2021-05-27 06:43:12.204204', '917', '10421'),
-  ('2021-05-27 06:43:12.206206', '917', '10422'),
-  ('2021-05-27 06:43:12.207207', '917', '10423'),
-  ('2021-05-27 06:43:12.210210', '917', '10424'),
-  ('2021-05-27 06:43:12.211211', '917', '10425'),
-  ('2021-05-27 06:43:12.212212', '917', '10387'),
-  ('2021-05-27 06:43:12.214214', '917', '10426'),
-  ('2021-05-27 06:43:12.215215', '917', '10409'),
-  ('2021-05-27 06:43:12.216216', '917', '10388'),
-  ('2021-05-27 06:43:12.217217', '917', '10391'),
-  ('2021-05-27 06:43:12.217217', '917', '10427'),
-  ('2021-05-27 06:43:12.217217', '917', '10428'),
-  ('2021-05-27 06:43:12.218218', '917', '10429')
+  ('2021-06-06 03:17:39.698698', '930', '10466'),
+  ('2021-06-06 03:17:39.700700', '930', '10437'),
+  ('2021-06-06 03:17:39.700700', '930', '10467'),
+  ('2021-06-06 03:17:39.700700', '930', '10468'),
+  ('2021-06-06 03:17:39.700700', '930', '10469'),
+  ('2021-06-06 03:17:39.701701', '930', '10470'),
+  ('2021-06-06 03:17:39.701701', '930', '10471'),
+  ('2021-06-06 03:17:39.701701', '930', '10472'),
+  ('2021-06-06 03:17:39.701701', '930', '10473'),
+  ('2021-06-06 03:17:39.701701', '930', '10430'),
+  ('2021-06-06 03:17:39.702702', '930', '10438'),
+  ('2021-06-06 03:17:39.702702', '930', '10435'),
+  ('2021-06-06 03:17:39.702702', '930', '10432'),
+  ('2021-06-06 03:17:39.703703', '930', '10474'),
+  ('2021-06-06 03:17:39.703703', '930', '10436')
   ;
 
   // Update to source_song table

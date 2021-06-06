@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Polo G, 42 Dugg, Latto, and More', '2021-05-21 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-polo-g-42-dugg-latto/city-girls-twerkulator');
+    ('Complex', 'Best New Music This Week', 'DMX, EarthGang, Bun B, and More', '2021-05-27 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-dmx-earthgang-bun-b/yn-jay-louie-ray-the-fawk-up');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 918; // SELECT last_insert_rowid();
+  source_id = 931; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -99,83 +99,47 @@
   songsData =
   [
     {
-        "title": "Gang Gang",
-        "artist_name": "Polo G f/ Lil Wayne",
-        "video_id": "HQE456q4n5U",
-        "capture_date": "2021-05-27 06:52:30.734734",
-        "source_id": 918,
+        "title": "Hood Blues",
+        "artist_name": "DMX f/ Westside Gunn, Benny the Butcher, & Conway the Machine",
+        "video_id": "xZwvK_dSMUo",
+        "capture_date": "2021-06-06 03:30:57.608608",
+        "source_id": 931,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Stunnaman",
-        "artist_name": "Birdman & Roddy Ricch f/ Lil Wayne",
-        "video_id": "F5cCfs1COCc",
-        "capture_date": "2021-05-27 06:52:30.735735",
-        "source_id": 918,
+        "title": "Aretha",
+        "artist_name": "EarthGang",
+        "video_id": "_8YM1Y9VzQs",
+        "capture_date": "2021-06-06 03:30:57.609609",
+        "source_id": 931,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Maybach",
-        "artist_name": "42 Dugg f/ Future",
-        "video_id": "gVGRIBWy6ig",
-        "capture_date": "2021-05-27 06:52:30.736736",
-        "source_id": 918,
+        "title": "This World",
+        "artist_name": "Bun B f/ Trae tha Truth, Raheem DeVaughn, & Big K.R.I.T.",
+        "video_id": "QWncl4ZTIWw",
+        "capture_date": "2021-06-06 03:30:57.609609",
+        "source_id": 931,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Biggest",
-        "artist_name": "Latto",
-        "video_id": "jnu18ElApyc",
-        "capture_date": "2021-05-27 06:52:30.736736",
-        "source_id": 918,
+        "title": "California",
+        "artist_name": "Rich Brian & NIKI f/ Warren Hue",
+        "video_id": "_KzHGbpxMOY",
+        "capture_date": "2021-06-06 03:30:57.610610",
+        "source_id": 931,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "We Win",
-        "artist_name": "Kirk Franklin & Lil Baby",
-        "video_id": "C_hmHcoleYo",
-        "capture_date": "2021-05-27 06:52:30.736736",
-        "source_id": 918,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sun Goes Down",
-        "artist_name": "Lil Nas X",
-        "video_id": "U3BVFY9wnTw",
-        "capture_date": "2021-05-27 06:52:30.736736",
-        "source_id": 918,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "24 Hours",
-        "artist_name": "A Boogie f/ Lil Durk",
-        "video_id": "1x_pngHLhRk",
-        "capture_date": "2021-05-27 06:52:30.736736",
-        "source_id": 918,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Traitor",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": "6tsu2oeZJgo",
-        "capture_date": "2021-05-27 06:52:30.736736",
-        "source_id": 918,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Twerkulator",
-        "artist_name": "City Girls",
-        "video_id": "j8CCx7O8PAY",
-        "capture_date": "2021-05-27 06:52:30.736736",
-        "source_id": 918,
+        "title": "The Fawk Up",
+        "artist_name": "YN Jay & Louie Ray",
+        "video_id": "aspGGxC9hzs",
+        "capture_date": "2021-06-06 03:30:57.610610",
+        "source_id": 931,
         "song_id": null,
         "duplicate": false
     }
@@ -218,15 +182,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Gang Gang', 'Polo G f/ Lil Wayne', NULL),
-  ('Stunnaman', 'Birdman & Roddy Ricch f/ Lil Wayne', NULL),
-  ('Maybach', '42 Dugg f/ Future', NULL),
-  ('The Biggest', 'Latto', NULL),
-  ('We Win', 'Kirk Franklin & Lil Baby', NULL),
-  ('Sun Goes Down', 'Lil Nas X', NULL),
-  ('24 Hours', 'A Boogie f/ Lil Durk', NULL),
-  ('Traitor', 'Olivia Rodrigo', NULL),
-  ('Twerkulator', 'City Girls', NULL)
+  ('Hood Blues', 'DMX f/ Westside Gunn, Benny the Butcher, & Conway the Machine', NULL),
+  ('Aretha', 'EarthGang', NULL),
+  ('This World', 'Bun B f/ Trae tha Truth, Raheem DeVaughn, & Big K.R.I.T.', NULL),
+  ('California', 'Rich Brian & NIKI f/ Warren Hue', NULL),
+  ('The Fawk Up', 'YN Jay & Louie Ray', NULL)
   ;
 
    // Update to song table
@@ -237,7 +197,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10438; // SELECT last_insert_rowid();
+  song_id = 10479; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -277,15 +237,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-27 06:52:30.734734', '918', '10430'),
-  ('2021-05-27 06:52:30.735735', '918', '10431'),
-  ('2021-05-27 06:52:30.736736', '918', '10432'),
-  ('2021-05-27 06:52:30.736736', '918', '10433'),
-  ('2021-05-27 06:52:30.736736', '918', '10434'),
-  ('2021-05-27 06:52:30.736736', '918', '10435'),
-  ('2021-05-27 06:52:30.736736', '918', '10436'),
-  ('2021-05-27 06:52:30.736736', '918', '10437'),
-  ('2021-05-27 06:52:30.736736', '918', '10438')
+  ('2021-06-06 03:30:57.608608', '931', '10475'),
+  ('2021-06-06 03:30:57.609609', '931', '10476'),
+  ('2021-06-06 03:30:57.609609', '931', '10477'),
+  ('2021-06-06 03:30:57.610610', '931', '10478'),
+  ('2021-06-06 03:30:57.610610', '931', '10479')
   ;
 
   // Update to source_song table

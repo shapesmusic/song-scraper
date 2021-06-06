@@ -45,7 +45,7 @@ pastChartLocation = window.location.href;
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('YouTube', 'Global Top Songs', 'Week of May 20, 2021', '2021-05-20 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210514-20210520');
+    ('YouTube', 'Global Top Songs', 'Week of May 27, 2021', '2021-05-27 12:00:00.000000', 'https://charts.youtube.com/charts/TopSongs/global/20210521-20210527');
 
   // Update to source table
 
@@ -54,7 +54,7 @@ pastChartLocation = window.location.href;
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 919; // SELECT last_insert_rowid();
+  source_id = 932; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-table-row style-scope ytmc-chart-table');
@@ -104,213 +104,295 @@ pastChartLocation = window.location.href;
 //          add song_ids for duplicates
 //
 
+
   songsData =
   [
     {
-        "title": "Build a Bitch",
-        "artist_name": "Bella Poarch",
+        "title": "Butter",
+        "artist_name": "BTS",
         "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.414414",
-        "source_id": 919,
-        "song_id": 10409,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": 10466,
         "duplicate": true
     },
     {
-        "title": "good 4 u",
+        "title": "Todo De Ti",
+        "artist_name": "Rauw Alejandro",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Razzi Bolja",
+        "artist_name": "Harjeet Deewana",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Coco Cola",
+        "artist_name": "Ruchika Jangid",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "SHUM (Live)",
+        "artist_name": "Go_A",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Voilà",
+        "artist_name": "Barbara Pravi",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27.613613",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "SUN GOES DOWN",
+        "artist_name": "Lil Nas X",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": 10435,
+        "duplicate": true
+    },
+    {
+        "title": "RUSSIAN WOMAN (Live)",
+        "artist_name": "Manizha",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Life Goes On",
+        "artist_name": "BTS",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": 9591,
+        "duplicate": true
+    },
+    {
+        "title": "US",
+        "artist_name": "Sidhu Moose Wala feat. Raja Kumari",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "MIC Drop (Steve Aoki Remix)",
+        "artist_name": "BTS ft. Steve Aoki",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": 10052,
+        "duplicate": true
+    },
+    {
+        "title": "Mata Hari",
+        "artist_name": "Samira Efendi",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27.615615",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "malibu",
+        "artist_name": "Sangiovanni",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Film out",
+        "artist_name": "BTS",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": 10121,
+        "duplicate": true
+    },
+    {
+        "title": "traitor",
         "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.419419",
-        "source_id": 919,
-        "song_id": 10393,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": 10437,
         "duplicate": true
     },
     {
-        "title": "Next Level",
-        "artist_name": "aespa",
+        "title": "enough for you",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.421421",
-        "source_id": 919,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Trốn Tìm (feat. MTV BAND)",
-        "artist_name": "Đen",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.429429",
-        "source_id": 919,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bitch I'm Back",
-        "artist_name": "Sidhu Moose Wala",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.430430",
-        "source_id": 919,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "चित बदली (Chit Badali)",
-        "artist_name": "Shilpi Raj",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.432432",
-        "source_id": 919,
-        "song_id": 10259,
+        "capture_date": "2021-06-06 03:35:27.616616",
+        "source_id": 932,
+        "song_id": 10468,
         "duplicate": true
     },
     {
-        "title": "Raja Tani Jai Na Bahariya",
-        "artist_name": "Rakesh Mishra",
+        "title": "ZITTI E BUONI",
+        "artist_name": "Måneskin",
         "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.434434",
-        "source_id": 919,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Grandes Ligas",
-        "artist_name": "Lupillo Rivera",
+        "title": "IDOL",
+        "artist_name": "BTS",
         "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.434434",
-        "source_id": 919,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Samne Aa Jao",
-        "artist_name": "Pritam Dholiya",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.435435",
-        "source_id": 919,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Libaas",
-        "artist_name": "Kaka",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.435435",
-        "source_id": 919,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "a m a r i",
-        "artist_name": "J. Cole",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.436436",
-        "source_id": 919,
-        "song_id": 10384,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": 1294,
         "duplicate": true
     },
     {
-        "title": "Straightenin",
-        "artist_name": "Migos",
+        "title": "Pretty Savage",
+        "artist_name": "BLACKPINK",
         "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.436436",
-        "source_id": 919,
-        "song_id": 10387,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Doutora 3",
+        "artist_name": "Mc Kevin",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27.618618",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Saturno",
+        "artist_name": "Pablo Alborán",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Me Rehúso",
+        "artist_name": "Danny Ocean",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": 2816,
         "duplicate": true
     },
     {
-        "title": "Electric",
-        "artist_name": "Katy Perry",
+        "title": "GANG GANG",
+        "artist_name": "Polo G & Lil Wayne",
         "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.436436",
-        "source_id": 919,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Te Necesito",
-        "artist_name": "KHEA",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.437437",
-        "source_id": 919,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Machayenge 3",
-        "artist_name": "Emiway Bantai",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.438438",
-        "source_id": 919,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Burberry",
-        "artist_name": "Sidhu Moose Wala",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.438438",
-        "source_id": 919,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "คิดฮอดรู้หม้าย",
-        "artist_name": "คิว สราวุฒิ",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.438438",
-        "source_id": 919,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "EL BARCO",
-        "artist_name": "Karol G",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.439439",
-        "source_id": 919,
-        "song_id": 10131,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": 10430,
         "duplicate": true
     },
     {
-        "title": "Dil De Diya",
-        "artist_name": "Kamaal Khan",
+        "title": "Na Ponta do Pé (Brega Funk)",
+        "artist_name": "Nadson O Ferinha",
         "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.440440",
-        "source_id": 919,
-        "song_id": 10369,
-        "duplicate": true
-    },
-    {
-        "title": "Chhor Denge",
-        "artist_name": "Parampara Thakur",
-        "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.441441",
-        "source_id": 919,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "m y . l i f e",
-        "artist_name": "J. Cole feat. 21 Savage & Morray",
+        "title": "ON",
+        "artist_name": "BTS",
         "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.441441",
-        "source_id": 919,
-        "song_id": 10417,
+        "capture_date": "2021-06-06 03:35:27.620620",
+        "source_id": 932,
+        "song_id": 8147,
         "duplicate": true
     },
     {
-        "title": "Sal y Perrea",
-        "artist_name": "Sech",
+        "title": "Dile a Él",
+        "artist_name": "Rauw Alejandro",
         "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.441441",
-        "source_id": 919,
+        "capture_date": "2021-06-06 03:35:27.620620",
+        "source_id": 932,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kutty Pattas",
-        "artist_name": "Santhosh Dhayanidhi",
+        "title": "Pardesia",
+        "artist_name": "Khesari Lal Yadav & Shilpi Raj",
         "video_id": null,
-        "capture_date": "2021-05-27 06:55:58.443443",
-        "source_id": 919,
-        "song_id": 10134,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Baby Me Atende",
+        "artist_name": "Matheus Fernandes & Dilsinho",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "PROBLEMA",
+        "artist_name": "Daddy Yankee",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27.621621",
+        "source_id": 932,
+        "song_id": 9927,
+        "duplicate": true
+    },
+    {
+        "title": "Jalebi Baby",
+        "artist_name": "Tesher",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27.621621",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "10 Years (Live)",
+        "artist_name": "Daði Freyr",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27.621621",
+        "source_id": 932,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Calling My Phone",
+        "artist_name": "Lil Tjay & 6LACK",
+        "video_id": null,
+        "capture_date": "2021-06-06 03:35:27",
+        "source_id": 932,
+        "song_id": 9786,
         "duplicate": true
     }
 ]
@@ -352,20 +434,25 @@ pastChartLocation = window.location.href;
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Next Level', 'aespa', NULL),
-  ('Trốn Tìm (feat. MTV BAND)', 'Đen', NULL),
-  ('Bitch I’m Back', 'Sidhu Moose Wala', NULL),
-  ('Raja Tani Jai Na Bahariya', 'Rakesh Mishra', NULL),
-  ('Grandes Ligas', 'Lupillo Rivera', NULL),
-  ('Samne Aa Jao', 'Pritam Dholiya', NULL),
-  ('Libaas', 'Kaka', NULL),
-  ('Electric', 'Katy Perry', NULL),
-  ('Te Necesito', 'KHEA', NULL),
-  ('Machayenge 3', 'Emiway Bantai', NULL),
-  ('Burberry', 'Sidhu Moose Wala', NULL),
-  ('คิดฮอดรู้หม้าย', 'คิว สราวุฒิ', NULL),
-  ('Chhor Denge', 'Parampara Thakur', NULL),
-  ('Sal y Perrea', 'Sech', NULL)
+  ('Todo De Ti', 'Rauw Alejandro', NULL),
+  ('Razzi Bolja', 'Harjeet Deewana', NULL),
+  ('Coco Cola', 'Ruchika Jangid', NULL),
+  ('SHUM (Live)', 'Go_A', NULL),
+  ('Voilà', 'Barbara Pravi', NULL),
+  ('RUSSIAN WOMAN (Live)', 'Manizha', NULL),
+  ('US', 'Sidhu Moose Wala feat. Raja Kumari', NULL),
+  ('Mata Hari', 'Samira Efendi', NULL),
+  ('malibu', 'Sangiovanni', NULL),
+  ('ZITTI E BUONI', 'Måneskin', NULL),
+  ('Pretty Savage', 'BLACKPINK', NULL),
+  ('Doutora 3', 'Mc Kevin', NULL),
+  ('Saturno', 'Pablo Alborán', NULL),
+  ('Na Ponta do Pé (Brega Funk)', 'Nadson O Ferinha', NULL),
+  ('Dile a Él', 'Rauw Alejandro', NULL),
+  ('Pardesia', 'Khesari Lal Yadav & Shilpi Raj', NULL),
+  ('Baby Me Atende', 'Matheus Fernandes & Dilsinho', NULL),
+  ('Jalebi Baby', 'Tesher', NULL),
+  ('10 Years (Live)', 'Daði Freyr', NULL)
   ;
 
    // Update to song table
@@ -376,7 +463,7 @@ pastChartLocation = window.location.href;
  //
 
   // Get the last song_id inserted
-  song_id = 10452; // SELECT last_insert_rowid();
+  song_id = 10498; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -416,29 +503,38 @@ pastChartLocation = window.location.href;
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-27 06:55:58.414414', '919', '10409'),
-  ('2021-05-27 06:55:58.419419', '919', '10393'),
-  ('2021-05-27 06:55:58.421421', '919', '10439'),
-  ('2021-05-27 06:55:58.429429', '919', '10440'),
-  ('2021-05-27 06:55:58.430430', '919', '10441'),
-  ('2021-05-27 06:55:58.432432', '919', '10259'),
-  ('2021-05-27 06:55:58.434434', '919', '10442'),
-  ('2021-05-27 06:55:58.434434', '919', '10443'),
-  ('2021-05-27 06:55:58.435435', '919', '10444'),
-  ('2021-05-27 06:55:58.435435', '919', '10445'),
-  ('2021-05-27 06:55:58.436436', '919', '10384'),
-  ('2021-05-27 06:55:58.436436', '919', '10387'),
-  ('2021-05-27 06:55:58.436436', '919', '10446'),
-  ('2021-05-27 06:55:58.437437', '919', '10447'),
-  ('2021-05-27 06:55:58.438438', '919', '10448'),
-  ('2021-05-27 06:55:58.438438', '919', '10449'),
-  ('2021-05-27 06:55:58.438438', '919', '10450'),
-  ('2021-05-27 06:55:58.439439', '919', '10131'),
-  ('2021-05-27 06:55:58.440440', '919', '10369'),
-  ('2021-05-27 06:55:58.441441', '919', '10451'),
-  ('2021-05-27 06:55:58.441441', '919', '10417'),
-  ('2021-05-27 06:55:58.441441', '919', '10452'),
-  ('2021-05-27 06:55:58.443443', '919', '10134')
+  ('2021-06-06 03:35:27', '932', '10466'),
+  ('2021-06-06 03:35:27', '932', '10480'),
+  ('2021-06-06 03:35:27', '932', '10481'),
+  ('2021-06-06 03:35:27', '932', '10482'),
+  ('2021-06-06 03:35:27', '932', '10483'),
+  ('2021-06-06 03:35:27.613613', '932', '10484'),
+  ('2021-06-06 03:35:27', '932', '10435'),
+  ('2021-06-06 03:35:27', '932', '10485'),
+  ('2021-06-06 03:35:27', '932', '9591'),
+  ('2021-06-06 03:35:27', '932', '10486'),
+  ('2021-06-06 03:35:27', '932', '10052'),
+  ('2021-06-06 03:35:27.615615', '932', '10487'),
+  ('2021-06-06 03:35:27', '932', '10488'),
+  ('2021-06-06 03:35:27', '932', '10121'),
+  ('2021-06-06 03:35:27', '932', '10437'),
+  ('2021-06-06 03:35:27.616616', '932', '10468'),
+  ('2021-06-06 03:35:27', '932', '10489'),
+  ('2021-06-06 03:35:27', '932', '1294'),
+  ('2021-06-06 03:35:27', '932', '10490'),
+  ('2021-06-06 03:35:27.618618', '932', '10491'),
+  ('2021-06-06 03:35:27', '932', '10492'),
+  ('2021-06-06 03:35:27', '932', '2816'),
+  ('2021-06-06 03:35:27', '932', '10430'),
+  ('2021-06-06 03:35:27', '932', '10493'),
+  ('2021-06-06 03:35:27.620620', '932', '8147'),
+  ('2021-06-06 03:35:27.620620', '932', '10494'),
+  ('2021-06-06 03:35:27', '932', '10495'),
+  ('2021-06-06 03:35:27', '932', '10496'),
+  ('2021-06-06 03:35:27.621621', '932', '9927'),
+  ('2021-06-06 03:35:27.621621', '932', '10497'),
+  ('2021-06-06 03:35:27.621621', '932', '10498'),
+  ('2021-06-06 03:35:27', '932', '9786')
   ;
 
   // Update to source_song table

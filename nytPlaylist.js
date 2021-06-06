@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Punk-Rock Teens’ Anti-Hate Anthem, and 10 More New Songs', '2021-05-21 08:11:18.000000', 'https://www.nytimes.com/2021/05/21/arts/music/playlist-linda-lindas-city-girls-lil-baby.html');
+    ('New York Times', 'The Playlist', 'DMX’s Posthumous All-Star Track, and 9 More New Songs', '2021-05-28 07:49:53.000000', 'https://www.nytimes.com/2021/05/28/arts/music/playlist-dmx-jay-z-nas-dababy.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 920; // SELECT last_insert_rowid();
+  source_id = 933; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -98,65 +98,83 @@
   songsData =
   [
     {
-        "title": "Africa, One of a Kind",
-        "artist_name": "Angelique Kidjo featuring Mr Eazi and Salif Keita",
+        "title": "Bath Salts",
+        "artist_name": "DMX featuring Jay-Z and Nas",
         "video_id": null,
-        "capture_date": "2021-05-27 07:05:57.196196",
-        "source_id": 920,
+        "capture_date": "2021-06-06 04:01:04.191191",
+        "source_id": 933,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Like I Used To",
-        "artist_name": "Sharon Van Etten & Angel Olsen",
+        "title": "Mon Cheri",
+        "artist_name": "Sofi Tukker and Amadou & Mariam",
         "video_id": null,
-        "capture_date": "2021-05-27 07:05:57.196196",
-        "source_id": 920,
+        "capture_date": "2021-06-06 04:01:04.192192",
+        "source_id": 933,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Party at the End of the World",
-        "artist_name": "Carsie Blanton",
+        "title": "Message From the Streets",
+        "artist_name": "Melvin Gibbs featuring Kokayi",
         "video_id": null,
-        "capture_date": "2021-05-27 07:05:57.197197",
-        "source_id": 920,
+        "capture_date": "2021-06-06 04:01:04.192192",
+        "source_id": 933,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "We Win (Space Jam: A New Legacy)",
-        "artist_name": "Lil Baby and Kirk Franklin",
+        "title": "Love Song #5",
+        "artist_name": "Upper Wilds",
         "video_id": null,
-        "capture_date": "2021-05-27 07:05:57.197197",
-        "source_id": 920,
+        "capture_date": "2021-06-06 04:01:04.192192",
+        "source_id": 933,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Twerkulator",
-        "artist_name": "City Girls",
+        "title": "One Foot in Front of the Other",
+        "artist_name": "Griff",
         "video_id": null,
-        "capture_date": "2021-05-27 07:05:57.197197",
-        "source_id": 920,
+        "capture_date": "2021-06-06 04:01:04.192192",
+        "source_id": 933,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nothing’s Special",
-        "artist_name": "Oneohtrix Point Never & Rosalía",
+        "title": "Break Up Song",
+        "artist_name": "Kidd G",
         "video_id": null,
-        "capture_date": "2021-05-27 07:05:57.197197",
-        "source_id": 920,
+        "capture_date": "2021-06-06 04:01:04.192192",
+        "source_id": 933,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sun Goes Down",
-        "artist_name": "Lil Nas X",
+        "title": "Sapling",
+        "artist_name": "Foy Vance",
         "video_id": null,
-        "capture_date": "2021-05-27 07:05:57.197197",
-        "source_id": 920,
+        "capture_date": "2021-06-06 04:01:04.192192",
+        "source_id": 933,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Get Fly",
+        "artist_name": "OhGeesy featuring DaBaby",
+        "video_id": null,
+        "capture_date": "2021-06-06 04:01:04.192192",
+        "source_id": 933,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Morocco",
+        "artist_name": "Masayoshi Fujita",
+        "video_id": null,
+        "capture_date": "2021-06-06 04:01:04.192192",
+        "source_id": 933,
         "song_id": null,
         "duplicate": false
     }
@@ -199,13 +217,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Africa, One of a Kind', 'Angelique Kidjo featuring Mr Eazi and Salif Keita', NULL),
-  ('Like I Used To', 'Sharon Van Etten & Angel Olsen', NULL),
-  ('Party at the End of the World', 'Carsie Blanton', NULL),
-  ('We Win (Space Jam: A New Legacy)', 'Lil Baby and Kirk Franklin', NULL),
-  ('Twerkulator', 'City Girls', NULL),
-  ('Nothing’s Special', 'Oneohtrix Point Never & Rosalía', NULL),
-  ('Sun Goes Down', 'Lil Nas X', NULL)
+  ('Bath Salts', 'DMX featuring Jay-Z and Nas', NULL),
+  ('Mon Cheri', 'Sofi Tukker and Amadou & Mariam', NULL),
+  ('Message From the Streets', 'Melvin Gibbs featuring Kokayi', NULL),
+  ('Love Song #5', 'Upper Wilds', NULL),
+  ('One Foot in Front of the Other', 'Griff', NULL),
+  ('Break Up Song', 'Kidd G', NULL),
+  ('Sapling', 'Foy Vance', NULL),
+  ('Get Fly', 'OhGeesy featuring DaBaby', NULL),
+  ('Morocco', 'Masayoshi Fujita', NULL)
   ;
 
    // Update to song table
@@ -216,7 +236,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10459; // SELECT last_insert_rowid();
+  song_id = 10507; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -256,13 +276,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-05-27 07:05:57.196196', '920', '10453'),
-  ('2021-05-27 07:05:57.196196', '920', '10454'),
-  ('2021-05-27 07:05:57.197197', '920', '10455'),
-  ('2021-05-27 07:05:57.197197', '920', '10456'),
-  ('2021-05-27 07:05:57.197197', '920', '10457'),
-  ('2021-05-27 07:05:57.197197', '920', '10458'),
-  ('2021-05-27 07:05:57.197197', '920', '10459')
+  ('2021-06-06 04:01:04.191191', '933', '10499'),
+  ('2021-06-06 04:01:04.192192', '933', '10500'),
+  ('2021-06-06 04:01:04.192192', '933', '10501'),
+  ('2021-06-06 04:01:04.192192', '933', '10502'),
+  ('2021-06-06 04:01:04.192192', '933', '10503'),
+  ('2021-06-06 04:01:04.192192', '933', '10504'),
+  ('2021-06-06 04:01:04.192192', '933', '10505'),
+  ('2021-06-06 04:01:04.192192', '933', '10506'),
+  ('2021-06-06 04:01:04.192192', '933', '10507')
   ;
 
   // Update to source_song table
