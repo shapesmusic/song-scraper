@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of June 5, 2021', '2021-06-05 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-06-05');
+    ('Billboard', 'The Hot 100', 'Week of June 12, 2021', '2021-06-12 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-06-12');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 930; // SELECT last_insert_rowid();
+  source_id = 934; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,139 +96,58 @@
   songsData =
   [
     {
-        "title": "Butter",
-        "artist_name": "BTS",
+        "title": "Killer",
+        "artist_name": "Eminem Featuring Jack Harlow & Cordae",
         "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.698698",
-        "source_id": 930,
+        "capture_date": "2021-06-11 05:22:29.846846",
+        "source_id": 934,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Traitor",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Tell Em",
+        "artist_name": "Cochise & $NOT",
         "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.700700",
-        "source_id": 930,
-        "song_id": 10437,
+        "capture_date": "2021-06-11 05:22:29.846846",
+        "source_id": 934,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Todo de Ti",
+        "artist_name": "Rauw Alejandro",
+        "video_id": null,
+        "capture_date": "2021-06-11 05:22:29.846846",
+        "source_id": 934,
+        "song_id": 10480,
         "duplicate": true
     },
     {
-        "title": "Brutal",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Drinkin' Beer. Talkin' God. Amen.",
+        "artist_name": "Chase Rice Featuring Florida Georgia Line",
         "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.700700",
-        "source_id": 930,
+        "capture_date": "2021-06-11 05:22:29.846846",
+        "source_id": 934,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Enough For You",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Voice Of The Heroes",
+        "artist_name": "Lil Baby & Lil Durk",
         "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.700700",
-        "source_id": 930,
+        "capture_date": "2021-06-11 05:22:29.847847",
+        "source_id": 934,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Happier",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Outside",
+        "artist_name": "MO3 X OG Bobby Billions",
         "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.700700",
-        "source_id": 930,
+        "capture_date": "2021-06-11 05:22:29.847847",
+        "source_id": 934,
         "song_id": null,
         "duplicate": false
-    },
-    {
-        "title": "Favorite Crime",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.701701",
-        "source_id": 930,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "1 Step Forward, 3 Steps Back",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.701701",
-        "source_id": 930,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Jealousy, Jealousy",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.701701",
-        "source_id": 930,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hope Ur OK",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.701701",
-        "source_id": 930,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gang Gang",
-        "artist_name": "Polo G & Lil Wayne",
-        "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.701701",
-        "source_id": 930,
-        "song_id": 10430,
-        "duplicate": true
-    },
-    {
-        "title": "Twerkulator",
-        "artist_name": "City Girls",
-        "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.702702",
-        "source_id": 930,
-        "song_id": 10438,
-        "duplicate": true
-    },
-    {
-        "title": "Sun Goes Down",
-        "artist_name": "Lil Nas X",
-        "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.702702",
-        "source_id": 930,
-        "song_id": 10435,
-        "duplicate": true
-    },
-    {
-        "title": "Maybach",
-        "artist_name": "42 Dugg Featuring Future",
-        "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.702702",
-        "source_id": 930,
-        "song_id": 10432,
-        "duplicate": true
-    },
-    {
-        "title": "Leave Before You Love Me",
-        "artist_name": "Marshmello X Jonas Brothers",
-        "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.703703",
-        "source_id": 930,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "24 Hours",
-        "artist_name": "A Boogie Wit da Hoodie Featuring Lil Durk",
-        "video_id": null,
-        "capture_date": "2021-06-06 03:17:39.703703",
-        "source_id": 930,
-        "song_id": 10436,
-        "duplicate": true
     }
 ]
 
@@ -269,15 +188,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Butter', 'BTS', NULL),
-  ('Brutal', 'Olivia Rodrigo', NULL),
-  ('Enough For You', 'Olivia Rodrigo', NULL),
-  ('Happier', 'Olivia Rodrigo', NULL),
-  ('Favorite Crime', 'Olivia Rodrigo', NULL),
-  ('1 Step Forward, 3 Steps Back', 'Olivia Rodrigo', NULL),
-  ('Jealousy, Jealousy', 'Olivia Rodrigo', NULL),
-  ('Hope Ur OK', 'Olivia Rodrigo', NULL),
-  ('Leave Before You Love Me', 'Marshmello X Jonas Brothers', NULL)
+  ('Killer', 'Eminem Featuring Jack Harlow & Cordae', NULL),
+  ('Tell Em’', 'Cochise & $NOT', NULL),
+  ('Drinkin’ Beer. Talkin’ God. Amen.', 'Chase Rice Featuring Florida Georgia Line', NULL),
+  ('Voice Of The Heroes', 'Lil Baby & Lil Durk', NULL),
+  ('Outside', 'MO3 X OG Bobby Billions', NULL)
   ;
 
    // Update to song table
@@ -288,7 +203,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10474; // SELECT last_insert_rowid();
+  song_id = 10512; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -328,21 +243,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-06-06 03:17:39.698698', '930', '10466'),
-  ('2021-06-06 03:17:39.700700', '930', '10437'),
-  ('2021-06-06 03:17:39.700700', '930', '10467'),
-  ('2021-06-06 03:17:39.700700', '930', '10468'),
-  ('2021-06-06 03:17:39.700700', '930', '10469'),
-  ('2021-06-06 03:17:39.701701', '930', '10470'),
-  ('2021-06-06 03:17:39.701701', '930', '10471'),
-  ('2021-06-06 03:17:39.701701', '930', '10472'),
-  ('2021-06-06 03:17:39.701701', '930', '10473'),
-  ('2021-06-06 03:17:39.701701', '930', '10430'),
-  ('2021-06-06 03:17:39.702702', '930', '10438'),
-  ('2021-06-06 03:17:39.702702', '930', '10435'),
-  ('2021-06-06 03:17:39.702702', '930', '10432'),
-  ('2021-06-06 03:17:39.703703', '930', '10474'),
-  ('2021-06-06 03:17:39.703703', '930', '10436')
+  ('2021-06-11 05:22:29.846846', '934', '10508'),
+  ('2021-06-11 05:22:29.846846', '934', '10509'),
+  ('2021-06-11 05:22:29.846846', '934', '10480'),
+  ('2021-06-11 05:22:29.846846', '934', '10510'),
+  ('2021-06-11 05:22:29.847847', '934', '10511'),
+  ('2021-06-11 05:22:29.847847', '934', '10512')
   ;
 
   // Update to source_song table

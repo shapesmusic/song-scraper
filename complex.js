@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'DMX, EarthGang, Bun B, and More', '2021-05-27 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-dmx-earthgang-bun-b/yn-jay-louie-ray-the-fawk-up');
+    ('Complex', 'Best New Music This Week', 'Lil Baby, Lil Durk, Roddy Ricch, Tinashe, and More', '2021-06-04 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-lil-baby-lil-durk/peter-rosenberg-styles-p-ransom-smoke-dza-srd');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 931; // SELECT last_insert_rowid();
+  source_id = 935; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -99,47 +99,83 @@
   songsData =
   [
     {
-        "title": "Hood Blues",
-        "artist_name": "DMX f/ Westside Gunn, Benny the Butcher, & Conway the Machine",
-        "video_id": "xZwvK_dSMUo",
-        "capture_date": "2021-06-06 03:30:57.608608",
-        "source_id": 931,
+        "title": "Hats Off",
+        "artist_name": "Lil Baby & Lil Durk f/ Travis Scott",
+        "video_id": "f1LO1_3-cVI",
+        "capture_date": "2021-06-11 05:31:06.592592",
+        "source_id": 935,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Aretha",
-        "artist_name": "EarthGang",
-        "video_id": "_8YM1Y9VzQs",
-        "capture_date": "2021-06-06 03:30:57.609609",
-        "source_id": 931,
+        "title": "Late at Night",
+        "artist_name": "Roddy Ricch",
+        "video_id": "sJDRfZJFAk0",
+        "capture_date": "2021-06-11 05:31:06.593593",
+        "source_id": 935,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "This World",
-        "artist_name": "Bun B f/ Trae tha Truth, Raheem DeVaughn, & Big K.R.I.T.",
-        "video_id": "QWncl4ZTIWw",
-        "capture_date": "2021-06-06 03:30:57.609609",
-        "source_id": 931,
+        "title": "Pasadena",
+        "artist_name": "Tinashe & Buddy",
+        "video_id": "nCfL5zCyyto",
+        "capture_date": "2021-06-11 05:31:06.593593",
+        "source_id": 935,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "California",
-        "artist_name": "Rich Brian & NIKI f/ Warren Hue",
-        "video_id": "_KzHGbpxMOY",
-        "capture_date": "2021-06-06 03:30:57.610610",
-        "source_id": 931,
+        "title": "I Won",
+        "artist_name": "Ty Dolla Sign f/ Jack Harlow & 24kGoldn",
+        "video_id": "0tQDja1Z944",
+        "capture_date": "2021-06-11 05:31:06.593593",
+        "source_id": 935,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Fawk Up",
-        "artist_name": "YN Jay & Louie Ray",
-        "video_id": "aspGGxC9hzs",
-        "capture_date": "2021-06-06 03:30:57.610610",
-        "source_id": 931,
+        "title": "Yonaguni",
+        "artist_name": "Bad Bunny",
+        "video_id": "doLMt10ytHY",
+        "capture_date": "2021-06-11 05:31:06.593593",
+        "source_id": 935,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Last Train Home",
+        "artist_name": "John Mayer",
+        "video_id": "66Ne5dVDfLM",
+        "capture_date": "2021-06-11 05:31:06.593593",
+        "source_id": 935,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Can They Hear Us",
+        "artist_name": "Dua Lipa",
+        "video_id": "RecnSmIrV4E",
+        "capture_date": "2021-06-11 05:31:06.593593",
+        "source_id": 935,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pressure / Bow Wow",
+        "artist_name": "Brockhampton f/ ssgkobe",
+        "video_id": "rmFklGwvVR0",
+        "capture_date": "2021-06-11 05:31:06.593593",
+        "source_id": 935,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "S.R.D",
+        "artist_name": "Peter Rosenberg f/ Styles P, Ransom, & Smoke DZA",
+        "video_id": "wzu0ABnDl6o",
+        "capture_date": "2021-06-11 05:31:06.593593",
+        "source_id": 935,
         "song_id": null,
         "duplicate": false
     }
@@ -182,11 +218,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Hood Blues', 'DMX f/ Westside Gunn, Benny the Butcher, & Conway the Machine', NULL),
-  ('Aretha', 'EarthGang', NULL),
-  ('This World', 'Bun B f/ Trae tha Truth, Raheem DeVaughn, & Big K.R.I.T.', NULL),
-  ('California', 'Rich Brian & NIKI f/ Warren Hue', NULL),
-  ('The Fawk Up', 'YN Jay & Louie Ray', NULL)
+  ('Hats Off', 'Lil Baby & Lil Durk f/ Travis Scott', NULL),
+  ('Late at Night', 'Roddy Ricch', NULL),
+  ('Pasadena', 'Tinashe & Buddy', NULL),
+  ('I Won', 'Ty Dolla Sign f/ Jack Harlow & 24kGoldn', NULL),
+  ('Yonaguni', 'Bad Bunny', NULL),
+  ('Last Train Home', 'John Mayer', NULL),
+  ('Can They Hear Us', 'Dua Lipa', NULL),
+  ('Pressure / Bow Wow', 'Brockhampton f/ ssgkobe', NULL),
+  ('S.R.D', 'Peter Rosenberg f/ Styles P, Ransom, & Smoke DZA', NULL)
   ;
 
    // Update to song table
@@ -197,7 +237,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10479; // SELECT last_insert_rowid();
+  song_id = 10521; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -237,11 +277,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-06-06 03:30:57.608608', '931', '10475'),
-  ('2021-06-06 03:30:57.609609', '931', '10476'),
-  ('2021-06-06 03:30:57.609609', '931', '10477'),
-  ('2021-06-06 03:30:57.610610', '931', '10478'),
-  ('2021-06-06 03:30:57.610610', '931', '10479')
+  ('2021-06-11 05:31:06.592592', '935', '10513'),
+  ('2021-06-11 05:31:06.593593', '935', '10514'),
+  ('2021-06-11 05:31:06.593593', '935', '10515'),
+  ('2021-06-11 05:31:06.593593', '935', '10516'),
+  ('2021-06-11 05:31:06.593593', '935', '10517'),
+  ('2021-06-11 05:31:06.593593', '935', '10518'),
+  ('2021-06-11 05:31:06.593593', '935', '10519'),
+  ('2021-06-11 05:31:06.593593', '935', '10520'),
+  ('2021-06-11 05:31:06.593593', '935', '10521')
   ;
 
   // Update to source_song table

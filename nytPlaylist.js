@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'DMX’s Posthumous All-Star Track, and 9 More New Songs', '2021-05-28 07:49:53.000000', 'https://www.nytimes.com/2021/05/28/arts/music/playlist-dmx-jay-z-nas-dababy.html');
+    ('New York Times', 'The Playlist', 'John Mayer’s Retro Moper, and 10 More New Songs', '2021-06-04 09:00:43.000000', 'https://www.nytimes.com/2021/06/04/arts/music/playlist-john-mayer-billie-eilish.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 933; // SELECT last_insert_rowid();
+  source_id = 936; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -98,83 +98,101 @@
   songsData =
   [
     {
-        "title": "Bath Salts",
-        "artist_name": "DMX featuring Jay-Z and Nas",
+        "title": "Last Train Home",
+        "artist_name": "John Mayer",
         "video_id": null,
-        "capture_date": "2021-06-06 04:01:04.191191",
-        "source_id": 933,
+        "capture_date": "2021-06-11 05:39:50.622622",
+        "source_id": 936,
+        "song_id": 10518,
+        "duplicate": true
+    },
+    {
+        "title": "Don’t You Wanna Know",
+        "artist_name": "Noah Schnacky featuring Jimmie Allen",
+        "video_id": null,
+        "capture_date": "2021-06-11 05:39:50.624624",
+        "source_id": 936,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mon Cheri",
-        "artist_name": "Sofi Tukker and Amadou & Mariam",
+        "title": "In There",
+        "artist_name": "Liz Phair",
         "video_id": null,
-        "capture_date": "2021-06-06 04:01:04.192192",
-        "source_id": 933,
+        "capture_date": "2021-06-11 05:39:50.624624",
+        "source_id": 936,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Message From the Streets",
-        "artist_name": "Melvin Gibbs featuring Kokayi",
+        "title": "Lipstick on the Glass",
+        "artist_name": "Wolf Alice",
         "video_id": null,
-        "capture_date": "2021-06-06 04:01:04.192192",
-        "source_id": 933,
+        "capture_date": "2021-06-11 05:39:50.624624",
+        "source_id": 936,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Love Song #5",
-        "artist_name": "Upper Wilds",
+        "title": "Lost Cause",
+        "artist_name": "Billie Eilish",
         "video_id": null,
-        "capture_date": "2021-06-06 04:01:04.192192",
-        "source_id": 933,
+        "capture_date": "2021-06-11 05:39:50.624624",
+        "source_id": 936,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "One Foot in Front of the Other",
-        "artist_name": "Griff",
+        "title": "Un Mismo Cielo",
+        "artist_name": "Sofia Rei",
         "video_id": null,
-        "capture_date": "2021-06-06 04:01:04.192192",
-        "source_id": 933,
+        "capture_date": "2021-06-11 05:39:50.624624",
+        "source_id": 936,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Break Up Song",
-        "artist_name": "Kidd G",
+        "title": "Sweet Dreams",
+        "artist_name": "Seinabo Sey",
         "video_id": null,
-        "capture_date": "2021-06-06 04:01:04.192192",
-        "source_id": 933,
+        "capture_date": "2021-06-11 05:39:50.624624",
+        "source_id": 936,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sapling",
-        "artist_name": "Foy Vance",
+        "title": "3Hands / Divine Hand I",
+        "artist_name": "Mndsgn",
         "video_id": null,
-        "capture_date": "2021-06-06 04:01:04.192192",
-        "source_id": 933,
+        "capture_date": "2021-06-11 05:39:50.624624",
+        "source_id": 936,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Get Fly",
-        "artist_name": "OhGeesy featuring DaBaby",
+        "title": "Ya",
+        "artist_name": "Yendry",
         "video_id": null,
-        "capture_date": "2021-06-06 04:01:04.192192",
-        "source_id": 933,
+        "capture_date": "2021-06-11 05:39:50.624624",
+        "source_id": 936,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Morocco",
-        "artist_name": "Masayoshi Fujita",
+        "title": "Ur Gonna Wish U Believed Me",
+        "artist_name": "Cavetown",
         "video_id": null,
-        "capture_date": "2021-06-06 04:01:04.192192",
-        "source_id": 933,
+        "capture_date": "2021-06-11 05:39:50.624624",
+        "source_id": 936,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Galaxy Faruq (for Faruq Z. Bey)",
+        "artist_name": "Gerald Cleaver",
+        "video_id": null,
+        "capture_date": "2021-06-11 05:39:50.624624",
+        "source_id": 936,
         "song_id": null,
         "duplicate": false
     }
@@ -217,15 +235,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Bath Salts', 'DMX featuring Jay-Z and Nas', NULL),
-  ('Mon Cheri', 'Sofi Tukker and Amadou & Mariam', NULL),
-  ('Message From the Streets', 'Melvin Gibbs featuring Kokayi', NULL),
-  ('Love Song #5', 'Upper Wilds', NULL),
-  ('One Foot in Front of the Other', 'Griff', NULL),
-  ('Break Up Song', 'Kidd G', NULL),
-  ('Sapling', 'Foy Vance', NULL),
-  ('Get Fly', 'OhGeesy featuring DaBaby', NULL),
-  ('Morocco', 'Masayoshi Fujita', NULL)
+  ('Don’t You Wanna Know', 'Noah Schnacky featuring Jimmie Allen', NULL),
+  ('In There', 'Liz Phair', NULL),
+  ('Lipstick on the Glass', 'Wolf Alice', NULL),
+  ('Lost Cause', 'Billie Eilish', NULL),
+  ('Un Mismo Cielo', 'Sofia Rei', NULL),
+  ('Sweet Dreams', 'Seinabo Sey', NULL),
+  ('3Hands / Divine Hand I', 'Mndsgn', NULL),
+  ('Ya', 'Yendry', NULL),
+  ('Ur Gonna Wish U Believed Me', 'Cavetown', NULL),
+  ('Galaxy Faruq (for Faruq Z. Bey)', 'Gerald Cleaver', NULL)
   ;
 
    // Update to song table
@@ -236,7 +255,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10507; // SELECT last_insert_rowid();
+  song_id = 10542; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -276,15 +295,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-06-06 04:01:04.191191', '933', '10499'),
-  ('2021-06-06 04:01:04.192192', '933', '10500'),
-  ('2021-06-06 04:01:04.192192', '933', '10501'),
-  ('2021-06-06 04:01:04.192192', '933', '10502'),
-  ('2021-06-06 04:01:04.192192', '933', '10503'),
-  ('2021-06-06 04:01:04.192192', '933', '10504'),
-  ('2021-06-06 04:01:04.192192', '933', '10505'),
-  ('2021-06-06 04:01:04.192192', '933', '10506'),
-  ('2021-06-06 04:01:04.192192', '933', '10507')
+  ('2021-06-11 05:39:50.622622', '936', '10518'),
+  ('2021-06-11 05:39:50.624624', '936', '10533'),
+  ('2021-06-11 05:39:50.624624', '936', '10534'),
+  ('2021-06-11 05:39:50.624624', '936', '10535'),
+  ('2021-06-11 05:39:50.624624', '936', '10536'),
+  ('2021-06-11 05:39:50.624624', '936', '10537'),
+  ('2021-06-11 05:39:50.624624', '936', '10538'),
+  ('2021-06-11 05:39:50.624624', '936', '10539'),
+  ('2021-06-11 05:39:50.624624', '936', '10540'),
+  ('2021-06-11 05:39:50.624624', '936', '10541'),
+  ('2021-06-11 05:39:50.624624', '936', '10542')
   ;
 
   // Update to source_song table
