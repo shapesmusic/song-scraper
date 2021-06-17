@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of June 12, 2021', '2021-06-12 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-06-12');
+    ('Billboard', 'The Hot 100', 'Week of June 19, 2021', '2021-06-19 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-06-19');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 934; // SELECT last_insert_rowid();
+  source_id = 938; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,56 +96,173 @@
   songsData =
   [
     {
-        "title": "Killer",
-        "artist_name": "Eminem Featuring Jack Harlow & Cordae",
+        "title": "Yonaguni",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2021-06-11 05:22:29.846846",
-        "source_id": 934,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tell Em",
-        "artist_name": "Cochise & $NOT",
-        "video_id": null,
-        "capture_date": "2021-06-11 05:22:29.846846",
-        "source_id": 934,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Todo de Ti",
-        "artist_name": "Rauw Alejandro",
-        "video_id": null,
-        "capture_date": "2021-06-11 05:22:29.846846",
-        "source_id": 934,
-        "song_id": 10480,
+        "capture_date": "2021-06-17 11:58:18.687687",
+        "source_id": 938,
+        "song_id": 10517,
         "duplicate": true
     },
     {
-        "title": "Drinkin' Beer. Talkin' God. Amen.",
-        "artist_name": "Chase Rice Featuring Florida Georgia Line",
+        "title": "Hats Off",
+        "artist_name": "Lil Baby, Lil Durk & Travis Scott",
         "video_id": null,
-        "capture_date": "2021-06-11 05:22:29.846846",
-        "source_id": 934,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2021-06-17 11:58:18.687687",
+        "source_id": 938,
+        "song_id": 10513,
+        "duplicate": true
     },
     {
-        "title": "Voice Of The Heroes",
+        "title": "Late At Night",
+        "artist_name": "Roddy Ricch",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.687687",
+        "source_id": 938,
+        "song_id": 10514,
+        "duplicate": true
+    },
+    {
+        "title": "Lost Cause",
+        "artist_name": "Billie Eilish",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.687687",
+        "source_id": 938,
+        "song_id": 10536,
+        "duplicate": true
+    },
+    {
+        "title": "2040",
         "artist_name": "Lil Baby & Lil Durk",
         "video_id": null,
-        "capture_date": "2021-06-11 05:22:29.847847",
-        "source_id": 934,
+        "capture_date": "2021-06-17 11:58:18.688688",
+        "source_id": 938,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Outside",
-        "artist_name": "MO3 X OG Bobby Billions",
+        "title": "How It Feels",
+        "artist_name": "Lil Baby & Lil Durk",
         "video_id": null,
-        "capture_date": "2021-06-11 05:22:29.847847",
-        "source_id": 934,
+        "capture_date": "2021-06-17 11:58:18.688688",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Still Runnin",
+        "artist_name": "Lil Baby, Lil Durk & Meek Mill",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.688688",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Who I Want",
+        "artist_name": "Lil Baby & Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.688688",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Still Hood",
+        "artist_name": "Lil Baby & Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.688688",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Okay",
+        "artist_name": "Lil Baby & Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.688688",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Man Of My Word",
+        "artist_name": "Lil Baby & Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.689689",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Medical",
+        "artist_name": "Lil Baby & Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.689689",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Rich Off Pain",
+        "artist_name": "Lil Baby, Lil Durk & Rod Wave",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.689689",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lying",
+        "artist_name": "Lil Baby & Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.689689",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Snowflakes",
+        "artist_name": "Tom MacDonald",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.689689",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "That's Facts",
+        "artist_name": "Lil Baby & Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.689689",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Please",
+        "artist_name": "Lil Baby & Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.689689",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Up The Side",
+        "artist_name": "Lil Baby, Lil Durk & Young Thug",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.689689",
+        "source_id": 938,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "If You Want To",
+        "artist_name": "Lil Baby & Lil Durk",
+        "video_id": null,
+        "capture_date": "2021-06-17 11:58:18.690690",
+        "source_id": 938,
         "song_id": null,
         "duplicate": false
     }
@@ -188,11 +305,21 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Killer', 'Eminem Featuring Jack Harlow & Cordae', NULL),
-  ('Tell Em’', 'Cochise & $NOT', NULL),
-  ('Drinkin’ Beer. Talkin’ God. Amen.', 'Chase Rice Featuring Florida Georgia Line', NULL),
-  ('Voice Of The Heroes', 'Lil Baby & Lil Durk', NULL),
-  ('Outside', 'MO3 X OG Bobby Billions', NULL)
+  ('2040', 'Lil Baby & Lil Durk', NULL),
+  ('How It Feels', 'Lil Baby & Lil Durk', NULL),
+  ('Still Runnin', 'Lil Baby, Lil Durk & Meek Mill', NULL),
+  ('Who I Want', 'Lil Baby & Lil Durk', NULL),
+  ('Still Hood', 'Lil Baby & Lil Durk', NULL),
+  ('Okay', 'Lil Baby & Lil Durk', NULL),
+  ('Man Of My Word', 'Lil Baby & Lil Durk', NULL),
+  ('Medical', 'Lil Baby & Lil Durk', NULL),
+  ('Rich Off Pain', 'Lil Baby, Lil Durk & Rod Wave', NULL),
+  ('Lying', 'Lil Baby & Lil Durk', NULL),
+  ('Snowflakes', 'Tom MacDonald', NULL),
+  ('That’s Facts', 'Lil Baby & Lil Durk', NULL),
+  ('Please', 'Lil Baby & Lil Durk', NULL),
+  ('Up The Side', 'Lil Baby, Lil Durk & Young Thug', NULL),
+  ('If You Want To', 'Lil Baby & Lil Durk', NULL)
   ;
 
    // Update to song table
@@ -203,7 +330,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10512; // SELECT last_insert_rowid();
+  song_id = 10571; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -243,12 +370,25 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-06-11 05:22:29.846846', '934', '10508'),
-  ('2021-06-11 05:22:29.846846', '934', '10509'),
-  ('2021-06-11 05:22:29.846846', '934', '10480'),
-  ('2021-06-11 05:22:29.846846', '934', '10510'),
-  ('2021-06-11 05:22:29.847847', '934', '10511'),
-  ('2021-06-11 05:22:29.847847', '934', '10512')
+  ('2021-06-17 11:58:18.687687', '938', '10517'),
+  ('2021-06-17 11:58:18.687687', '938', '10513'),
+  ('2021-06-17 11:58:18.687687', '938', '10514'),
+  ('2021-06-17 11:58:18.687687', '938', '10536'),
+  ('2021-06-17 11:58:18.688688', '938', '10557'),
+  ('2021-06-17 11:58:18.688688', '938', '10558'),
+  ('2021-06-17 11:58:18.688688', '938', '10559'),
+  ('2021-06-17 11:58:18.688688', '938', '10560'),
+  ('2021-06-17 11:58:18.688688', '938', '10561'),
+  ('2021-06-17 11:58:18.688688', '938', '10562'),
+  ('2021-06-17 11:58:18.689689', '938', '10563'),
+  ('2021-06-17 11:58:18.689689', '938', '10564'),
+  ('2021-06-17 11:58:18.689689', '938', '10565'),
+  ('2021-06-17 11:58:18.689689', '938', '10566'),
+  ('2021-06-17 11:58:18.689689', '938', '10567'),
+  ('2021-06-17 11:58:18.689689', '938', '10568'),
+  ('2021-06-17 11:58:18.689689', '938', '10569'),
+  ('2021-06-17 11:58:18.689689', '938', '10570'),
+  ('2021-06-17 11:58:18.690690', '938', '10571')
   ;
 
   // Update to source_song table

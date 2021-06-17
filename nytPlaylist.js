@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'John Mayer’s Retro Moper, and 10 More New Songs', '2021-06-04 09:00:43.000000', 'https://www.nytimes.com/2021/06/04/arts/music/playlist-john-mayer-billie-eilish.html');
+    ('New York Times', 'The Playlist', 'Lorde’s Sunburst, and 10 More New Songs', '2021-06-11 08:42:21.000000', 'https://www.nytimes.com/2021/06/11/arts/music/playlist-lorde-sza-pmbata.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 936; // SELECT last_insert_rowid();
+  source_id = 941; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -98,101 +98,101 @@
   songsData =
   [
     {
-        "title": "Last Train Home",
-        "artist_name": "John Mayer",
+        "title": "Solar Power",
+        "artist_name": "Lorde",
         "video_id": null,
-        "capture_date": "2021-06-11 05:39:50.622622",
-        "source_id": 936,
-        "song_id": 10518,
+        "capture_date": "2021-06-17 12:24:08.203203",
+        "source_id": 941,
+        "song_id": 10581,
         "duplicate": true
     },
     {
-        "title": "Don’t You Wanna Know",
-        "artist_name": "Noah Schnacky featuring Jimmie Allen",
+        "title": "EveryTime I Cry",
+        "artist_name": "Ava Max",
         "video_id": null,
-        "capture_date": "2021-06-11 05:39:50.624624",
-        "source_id": 936,
+        "capture_date": "2021-06-17 12:24:08.204204",
+        "source_id": 941,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In There",
-        "artist_name": "Liz Phair",
+        "title": "Just for Me",
+        "artist_name": "Saint Jhn and SZA",
         "video_id": null,
-        "capture_date": "2021-06-11 05:39:50.624624",
-        "source_id": 936,
+        "capture_date": "2021-06-17 12:24:08.204204",
+        "source_id": 941,
+        "song_id": 10578,
+        "duplicate": true
+    },
+    {
+        "title": "Favorite Song",
+        "artist_name": "PmBata",
+        "video_id": null,
+        "capture_date": "2021-06-17 12:24:08.204204",
+        "source_id": 941,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lipstick on the Glass",
-        "artist_name": "Wolf Alice",
+        "title": "Nest",
+        "artist_name": "Jomoro featuring Sharon Van Etten",
         "video_id": null,
-        "capture_date": "2021-06-11 05:39:50.624624",
-        "source_id": 936,
+        "capture_date": "2021-06-17 12:24:08.204204",
+        "source_id": 941,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lost Cause",
-        "artist_name": "Billie Eilish",
+        "title": "Blouse",
+        "artist_name": "Clairo",
         "video_id": null,
-        "capture_date": "2021-06-11 05:39:50.624624",
-        "source_id": 936,
+        "capture_date": "2021-06-17 12:24:08.204204",
+        "source_id": 941,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Un Mismo Cielo",
-        "artist_name": "Sofia Rei",
+        "title": "Formwela 4",
+        "artist_name": "Esperanza Spalding featuring Corey King",
         "video_id": null,
-        "capture_date": "2021-06-11 05:39:50.624624",
-        "source_id": 936,
+        "capture_date": "2021-06-17 12:24:08.204204",
+        "source_id": 941,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sweet Dreams",
-        "artist_name": "Seinabo Sey",
+        "title": "A Fullness of Light in Your Soul",
+        "artist_name": "Hypnotic Brass Ensemble featuring Perfume Genius",
         "video_id": null,
-        "capture_date": "2021-06-11 05:39:50.624624",
-        "source_id": 936,
+        "capture_date": "2021-06-17 12:24:08.205205",
+        "source_id": 941,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "3Hands / Divine Hand I",
-        "artist_name": "Mndsgn",
+        "title": "Squint",
+        "artist_name": "Julian Lage",
         "video_id": null,
-        "capture_date": "2021-06-11 05:39:50.624624",
-        "source_id": 936,
+        "capture_date": "2021-06-17 12:24:08.205205",
+        "source_id": 941,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ya",
-        "artist_name": "Yendry",
+        "title": "The Day You Left",
+        "artist_name": "Poo Bear",
         "video_id": null,
-        "capture_date": "2021-06-11 05:39:50.624624",
-        "source_id": 936,
+        "capture_date": "2021-06-17 12:24:08.205205",
+        "source_id": 941,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ur Gonna Wish U Believed Me",
-        "artist_name": "Cavetown",
+        "title": "Time Speed",
+        "artist_name": "NoCap",
         "video_id": null,
-        "capture_date": "2021-06-11 05:39:50.624624",
-        "source_id": 936,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Galaxy Faruq (for Faruq Z. Bey)",
-        "artist_name": "Gerald Cleaver",
-        "video_id": null,
-        "capture_date": "2021-06-11 05:39:50.624624",
-        "source_id": 936,
+        "capture_date": "2021-06-17 12:24:08.205205",
+        "source_id": 941,
         "song_id": null,
         "duplicate": false
     }
@@ -235,16 +235,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Don’t You Wanna Know', 'Noah Schnacky featuring Jimmie Allen', NULL),
-  ('In There', 'Liz Phair', NULL),
-  ('Lipstick on the Glass', 'Wolf Alice', NULL),
-  ('Lost Cause', 'Billie Eilish', NULL),
-  ('Un Mismo Cielo', 'Sofia Rei', NULL),
-  ('Sweet Dreams', 'Seinabo Sey', NULL),
-  ('3Hands / Divine Hand I', 'Mndsgn', NULL),
-  ('Ya', 'Yendry', NULL),
-  ('Ur Gonna Wish U Believed Me', 'Cavetown', NULL),
-  ('Galaxy Faruq (for Faruq Z. Bey)', 'Gerald Cleaver', NULL)
+  ('EveryTime I Cry', 'Ava Max', NULL),
+  ('Favorite Song', 'PmBata', NULL),
+  ('Nest', 'Jomoro featuring Sharon Van Etten', NULL),
+  ('Blouse', 'Clairo', NULL),
+  ('Formwela 4', 'Esperanza Spalding featuring Corey King', NULL),
+  ('A Fullness of Light in Your Soul', 'Hypnotic Brass Ensemble featuring Perfume Genius', NULL),
+  ('Squint', 'Julian Lage', NULL),
+  ('The Day You Left', 'Poo Bear', NULL),
+  ('Time Speed', 'NoCap', NULL)
   ;
 
    // Update to song table
@@ -255,7 +254,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10542; // SELECT last_insert_rowid();
+  song_id = 10607; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -295,17 +294,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-06-11 05:39:50.622622', '936', '10518'),
-  ('2021-06-11 05:39:50.624624', '936', '10533'),
-  ('2021-06-11 05:39:50.624624', '936', '10534'),
-  ('2021-06-11 05:39:50.624624', '936', '10535'),
-  ('2021-06-11 05:39:50.624624', '936', '10536'),
-  ('2021-06-11 05:39:50.624624', '936', '10537'),
-  ('2021-06-11 05:39:50.624624', '936', '10538'),
-  ('2021-06-11 05:39:50.624624', '936', '10539'),
-  ('2021-06-11 05:39:50.624624', '936', '10540'),
-  ('2021-06-11 05:39:50.624624', '936', '10541'),
-  ('2021-06-11 05:39:50.624624', '936', '10542')
+  ('2021-06-17 12:24:08.203203', '941', '10581'),
+  ('2021-06-17 12:24:08.204204', '941', '10599'),
+  ('2021-06-17 12:24:08.204204', '941', '10578'),
+  ('2021-06-17 12:24:08.204204', '941', '10600'),
+  ('2021-06-17 12:24:08.204204', '941', '10601'),
+  ('2021-06-17 12:24:08.204204', '941', '10602'),
+  ('2021-06-17 12:24:08.204204', '941', '10603'),
+  ('2021-06-17 12:24:08.205205', '941', '10604'),
+  ('2021-06-17 12:24:08.205205', '941', '10605'),
+  ('2021-06-17 12:24:08.205205', '941', '10606'),
+  ('2021-06-17 12:24:08.205205', '941', '10607')
   ;
 
   // Update to source_song table

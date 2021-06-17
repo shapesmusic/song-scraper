@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Lil Baby, Lil Durk, Roddy Ricch, Tinashe, and More', '2021-06-04 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-lil-baby-lil-durk/peter-rosenberg-styles-p-ransom-smoke-dza-srd');
+    ('Complex', 'Best New Music This Week', 'Migos, Megan Thee Stallion, Polo G, and More', '2021-06-11 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-june-11/');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 935; // SELECT last_insert_rowid();
+  source_id = 939; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -99,83 +99,110 @@
   songsData =
   [
     {
-        "title": "Hats Off",
-        "artist_name": "Lil Baby & Lil Durk f/ Travis Scott",
-        "video_id": "f1LO1_3-cVI",
-        "capture_date": "2021-06-11 05:31:06.592592",
-        "source_id": 935,
+        "title": "Modern Day",
+        "artist_name": "Migos",
+        "video_id": "sFRF5tUgfes",
+        "capture_date": "2021-06-17 12:06:09.161161",
+        "source_id": 939,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Late at Night",
-        "artist_name": "Roddy Ricch",
-        "video_id": "sJDRfZJFAk0",
-        "capture_date": "2021-06-11 05:31:06.593593",
-        "source_id": 935,
+        "title": "Thot Sh*t",
+        "artist_name": "Megan Thee Stallion",
+        "video_id": "KynkMn5Hv3Q",
+        "capture_date": "2021-06-17 12:06:09.162162",
+        "source_id": 939,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pasadena",
-        "artist_name": "Tinashe & Buddy",
-        "video_id": "nCfL5zCyyto",
-        "capture_date": "2021-06-11 05:31:06.593593",
-        "source_id": 935,
+        "title": "Black Hearted",
+        "artist_name": "Polo G",
+        "video_id": "SZpdP4YjMx8",
+        "capture_date": "2021-06-17 12:06:09.163163",
+        "source_id": 939,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Won",
-        "artist_name": "Ty Dolla Sign f/ Jack Harlow & 24kGoldn",
-        "video_id": "0tQDja1Z944",
-        "capture_date": "2021-06-11 05:31:06.593593",
-        "source_id": 935,
+        "title": "Switching Lanes",
+        "artist_name": "Pi’erre Bourne f/ Playboi Carti",
+        "video_id": "Jgg2Q_5YSxY",
+        "capture_date": "2021-06-17 12:06:09.163163",
+        "source_id": 939,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Yonaguni",
-        "artist_name": "Bad Bunny",
-        "video_id": "doLMt10ytHY",
-        "capture_date": "2021-06-11 05:31:06.593593",
-        "source_id": 935,
+        "title": "Fast Lane",
+        "artist_name": "Don Toliver, Lil Durk, and Latto",
+        "video_id": "P4q2_DGsixI",
+        "capture_date": "2021-06-17 12:06:09.163163",
+        "source_id": 939,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Last Train Home",
-        "artist_name": "John Mayer",
-        "video_id": "66Ne5dVDfLM",
-        "capture_date": "2021-06-11 05:31:06.593593",
-        "source_id": 935,
+        "title": "Need to Know",
+        "artist_name": "Doja Cat",
+        "video_id": "dI3xkL7qUAc",
+        "capture_date": "2021-06-17 12:06:09.163163",
+        "source_id": 939,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Can They Hear Us",
-        "artist_name": "Dua Lipa",
-        "video_id": "RecnSmIrV4E",
-        "capture_date": "2021-06-11 05:31:06.593593",
-        "source_id": 935,
+        "title": "Just For Me",
+        "artist_name": "SAINt JHN & SZA",
+        "video_id": "ehrER-GHJLs",
+        "capture_date": "2021-06-17 12:06:09.163163",
+        "source_id": 939,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pressure / Bow Wow",
-        "artist_name": "Brockhampton f/ ssgkobe",
-        "video_id": "rmFklGwvVR0",
-        "capture_date": "2021-06-11 05:31:06.593593",
-        "source_id": 935,
+        "title": "Splash",
+        "artist_name": "Tyga f/ Moneybagg Yo",
+        "video_id": "zUrYkfHCV60",
+        "capture_date": "2021-06-17 12:06:09.163163",
+        "source_id": 939,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "S.R.D",
-        "artist_name": "Peter Rosenberg f/ Styles P, Ransom, & Smoke DZA",
-        "video_id": "wzu0ABnDl6o",
-        "capture_date": "2021-06-11 05:31:06.593593",
-        "source_id": 935,
+        "title": "Peloton",
+        "artist_name": "IDK",
+        "video_id": "QuyLQaEUBq4",
+        "capture_date": "2021-06-17 12:06:09.163163",
+        "source_id": 939,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Solar Power",
+        "artist_name": "Lorde",
+        "video_id": "wvsP_lzh2-8",
+        "capture_date": "2021-06-17 12:06:09.163163",
+        "source_id": 939,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bigger Than Life or Death",
+        "artist_name": "EST Gee",
+        "video_id": "IK87gdZxCRo",
+        "capture_date": "2021-06-17 12:06:09.163163",
+        "source_id": 939,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Back & Forth",
+        "artist_name": "Emotional Oranges f/ Vince Staples",
+        "video_id": "ar_049WbvHE",
+        "capture_date": "2021-06-17 12:06:09.163163",
+        "source_id": 939,
         "song_id": null,
         "duplicate": false
     }
@@ -218,15 +245,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Hats Off', 'Lil Baby & Lil Durk f/ Travis Scott', NULL),
-  ('Late at Night', 'Roddy Ricch', NULL),
-  ('Pasadena', 'Tinashe & Buddy', NULL),
-  ('I Won', 'Ty Dolla Sign f/ Jack Harlow & 24kGoldn', NULL),
-  ('Yonaguni', 'Bad Bunny', NULL),
-  ('Last Train Home', 'John Mayer', NULL),
-  ('Can They Hear Us', 'Dua Lipa', NULL),
-  ('Pressure / Bow Wow', 'Brockhampton f/ ssgkobe', NULL),
-  ('S.R.D', 'Peter Rosenberg f/ Styles P, Ransom, & Smoke DZA', NULL)
+  ('Modern Day', 'Migos', NULL),
+  ('Thot Sh*t', 'Megan Thee Stallion', NULL),
+  ('Black Hearted', 'Polo G', NULL),
+  ('Switching Lanes', 'Pi’erre Bourne f/ Playboi Carti', NULL),
+  ('Fast Lane', 'Don Toliver, Lil Durk, and Latto', NULL),
+  ('Need to Know', 'Doja Cat', NULL),
+  ('Just For Me', 'SAINt JHN & SZA', NULL),
+  ('Splash', 'Tyga f/ Moneybagg Yo', NULL),
+  ('Peloton', 'IDK', NULL),
+  ('Solar Power', 'Lorde', NULL),
+  ('Bigger Than Life or Death', 'EST Gee', NULL),
+  ('Back & Forth', 'Emotional Oranges f/ Vince Staples', NULL)
   ;
 
    // Update to song table
@@ -237,7 +267,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10521; // SELECT last_insert_rowid();
+  song_id = 10583; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -277,15 +307,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-06-11 05:31:06.592592', '935', '10513'),
-  ('2021-06-11 05:31:06.593593', '935', '10514'),
-  ('2021-06-11 05:31:06.593593', '935', '10515'),
-  ('2021-06-11 05:31:06.593593', '935', '10516'),
-  ('2021-06-11 05:31:06.593593', '935', '10517'),
-  ('2021-06-11 05:31:06.593593', '935', '10518'),
-  ('2021-06-11 05:31:06.593593', '935', '10519'),
-  ('2021-06-11 05:31:06.593593', '935', '10520'),
-  ('2021-06-11 05:31:06.593593', '935', '10521')
+  ('2021-06-17 12:06:09.161161', '939', '10572'),
+  ('2021-06-17 12:06:09.162162', '939', '10573'),
+  ('2021-06-17 12:06:09.163163', '939', '10574'),
+  ('2021-06-17 12:06:09.163163', '939', '10575'),
+  ('2021-06-17 12:06:09.163163', '939', '10576'),
+  ('2021-06-17 12:06:09.163163', '939', '10577'),
+  ('2021-06-17 12:06:09.163163', '939', '10578'),
+  ('2021-06-17 12:06:09.163163', '939', '10579'),
+  ('2021-06-17 12:06:09.163163', '939', '10580'),
+  ('2021-06-17 12:06:09.163163', '939', '10581'),
+  ('2021-06-17 12:06:09.163163', '939', '10582'),
+  ('2021-06-17 12:06:09.163163', '939', '10583')
   ;
 
   // Update to source_song table
