@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of September 11, 2021', '2021-09-11 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-09-11/2021-09-11');
+    ('Billboard', 'The Hot 100', 'Week of September 18, 2021', '2021-09-18 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-09-18/2021-09-18');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 953; // SELECT last_insert_rowid();
+  source_id = 954; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -97,245 +97,200 @@
   songsData =
   [
       {
-          "title": "Hurricane",
-          "artist_name": "Kanye West",
+          "title": "Way 2 Sexy",
+          "artist_name": "Drake ft. Future & Young Thug",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.165165",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.402402",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Jail",
-          "artist_name": "Kanye West",
+          "title": "Girls Want Girls",
+          "artist_name": "Drake ft. Lil Baby",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.166166",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.403403",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Off The Grid",
-          "artist_name": "Kanye West",
+          "title": "Fair Trade",
+          "artist_name": "Drake ft. Travis Scott",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.166166",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.404404",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Ok Ok",
-          "artist_name": "Kanye West",
+          "title": "Champagne Poetry",
+          "artist_name": "Drake",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.166166",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.404404",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Junya",
-          "artist_name": "Kanye West",
+          "title": "Knife Talk",
+          "artist_name": "Drake ft. 21 Savage & Project Pat",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.167167",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.404404",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Moon",
-          "artist_name": "Kanye West",
+          "title": "In The Bible",
+          "artist_name": "Drake ft. Lil Durk & Giveon",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.167167",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.404404",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Family Ties",
-          "artist_name": "Baby Keem & Kendrick Lamar",
+          "title": "Papi's Home",
+          "artist_name": "Drake",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.167167",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.404404",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Praise God",
-          "artist_name": "Kanye West",
+          "title": "TSU",
+          "artist_name": "Drake",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.167167",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.404404",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Sharing Locations",
-          "artist_name": "Meek Mill ft. Lil Baby & Lil Durk",
+          "title": "Love All",
+          "artist_name": "Drake ft. JAY-Z",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.167167",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.404404",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Jesus Lord",
-          "artist_name": "Kanye West",
+          "title": "No Friends In The Industry",
+          "artist_name": "Drake",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.167167",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.405405",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Jonah",
-          "artist_name": "Kanye West",
+          "title": "N 2 Deep",
+          "artist_name": "Drake ft. Future",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.167167",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.405405",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Believe What I Say",
-          "artist_name": "Kanye West",
+          "title": "Pipe Down",
+          "artist_name": "Drake",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.167167",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.405405",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "God Breathed",
-          "artist_name": "Kanye West",
+          "title": "7am On Bridle Path",
+          "artist_name": "Drake",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.167167",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.405405",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Remote Control",
-          "artist_name": "Kanye West",
+          "title": "Race My Mind",
+          "artist_name": "Drake",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.168168",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.405405",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Heaven And Hell",
-          "artist_name": "Kanye West",
+          "title": "IMY2",
+          "artist_name": "Drake ft. Kid Cudi",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.168168",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.405405",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "24",
-          "artist_name": "Kanye West",
+          "title": "Yebba's Heartbreak",
+          "artist_name": "Drake & Yebba",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.168168",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.405405",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Pure Souls",
-          "artist_name": "Kanye West",
+          "title": "You Only Live Twice",
+          "artist_name": "Drake ft. Lil Wayne & Rick Ross",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.169169",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.405405",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "No Child Left Behind",
-          "artist_name": "Kanye West",
+          "title": "Fountains",
+          "artist_name": "Drake ft. Tems",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.169169",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.405405",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Donda",
-          "artist_name": "Kanye West",
+          "title": "Get Along Better",
+          "artist_name": "Drake ft. Ty Dolla $ign",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.169169",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.405405",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Keep My Spirit Alive",
-          "artist_name": "Kanye West",
+          "title": "Fucking Fans",
+          "artist_name": "Drake",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.169169",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.406406",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Jail Pt 2",
-          "artist_name": "Kanye West",
+          "title": "The Remorse",
+          "artist_name": "Drake",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.169169",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.406406",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "I Am Not A Woman, I'm A God",
-          "artist_name": "Halsey",
+          "title": "Blue Note$ II",
+          "artist_name": "Meek Mill ft. Lil Uzi Vert",
           "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.169169",
-          "source_id": 953,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "New Again",
-          "artist_name": "Kanye West",
-          "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.169169",
-          "source_id": 953,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Lord I Need You",
-          "artist_name": "Kanye West",
-          "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.169169",
-          "source_id": 953,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Come To Life",
-          "artist_name": "Kanye West",
-          "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.169169",
-          "source_id": 953,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Tell The Vision",
-          "artist_name": "Kanye West",
-          "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.170170",
-          "source_id": 953,
-          "song_id": 10668,
-          "duplicate": true
-      },
-      {
-          "title": "In Da Getto",
-          "artist_name": "J Balvin & Skrillex",
-          "video_id": null,
-          "capture_date": "2021-10-11 11:21:38.170170",
-          "source_id": 953,
+          "capture_date": "2021-10-11 11:58:55.408408",
+          "source_id": 954,
           "song_id": null,
           "duplicate": false
       }
@@ -378,32 +333,28 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Hurricane', 'Kanye West', NULL),
-  ('Jail', 'Kanye West', NULL),
-  ('Off The Grid', 'Kanye West', NULL),
-  ('Ok Ok', 'Kanye West', NULL),
-  ('Junya', 'Kanye West', NULL),
-  ('Moon', 'Kanye West', NULL),
-  ('Family Ties', 'Baby Keem & Kendrick Lamar', NULL),
-  ('Praise God', 'Kanye West', NULL),
-  ('Sharing Locations', 'Meek Mill ft. Lil Baby & Lil Durk', NULL),
-  ('Jesus Lord', 'Kanye West', NULL),
-  ('Jonah', 'Kanye West', NULL),
-  ('Believe What I Say', 'Kanye West', NULL),
-  ('God Breathed', 'Kanye West', NULL),
-  ('Remote Control', 'Kanye West', NULL),
-  ('Heaven And Hell', 'Kanye West', NULL),
-  ('24', 'Kanye West', NULL),
-  ('Pure Souls', 'Kanye West', NULL),
-  ('No Child Left Behind', 'Kanye West', NULL),
-  ('Donda', 'Kanye West', NULL),
-  ('Keep My Spirit Alive', 'Kanye West', NULL),
-  ('Jail Pt 2', 'Kanye West', NULL),
-  ('I Am Not A Woman, I’m A God', 'Halsey', NULL),
-  ('New Again', 'Kanye West', NULL),
-  ('Lord I Need You', 'Kanye West', NULL),
-  ('Come To Life', 'Kanye West', NULL),
-  ('In Da Getto', 'J Balvin & Skrillex', NULL)
+  ('Way 2 Sexy', 'Drake ft. Future & Young Thug', NULL),
+  ('Girls Want Girls', 'Drake ft. Lil Baby', NULL),
+  ('Fair Trade', 'Drake ft. Travis Scott', NULL),
+  ('Champagne Poetry', 'Drake', NULL),
+  ('Knife Talk', 'Drake ft. 21 Savage & Project Pat', NULL),
+  ('In The Bible', 'Drake ft. Lil Durk & Giveon', NULL),
+  ('Papi’s Home', 'Drake', NULL),
+  ('TSU', 'Drake', NULL),
+  ('Love All', 'Drake ft. JAY-Z', NULL),
+  ('No Friends In The Industry', 'Drake', NULL),
+  ('N 2 Deep', 'Drake ft. Future', NULL),
+  ('Pipe Down', 'Drake', NULL),
+  ('7am On Bridle Path', 'Drake', NULL),
+  ('Race My Mind', 'Drake', NULL),
+  ('IMY2', 'Drake ft. Kid Cudi', NULL),
+  ('Yebba’s Heartbreak', 'Drake & Yebba', NULL),
+  ('You Only Live Twice', 'Drake ft. Lil Wayne & Rick Ross', NULL),
+  ('Fountains', 'Drake ft. Tems', NULL),
+  ('Get Along Better', 'Drake ft. Ty Dolla $ign', NULL),
+  ('Fucking Fans', 'Drake', NULL),
+  ('The Remorse', 'Drake', NULL),
+  ('Blue Note$ II', 'Meek Mill ft. Lil Uzi Vert', NULL)
   ;
 
    // Update to song table
@@ -414,7 +365,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10760; // SELECT last_insert_rowid();
+  song_id = 10782; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -454,33 +405,28 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-11 11:21:38.165165', '953', '10735'),
-  ('2021-10-11 11:21:38.166166', '953', '10736'),
-  ('2021-10-11 11:21:38.166166', '953', '10737'),
-  ('2021-10-11 11:21:38.166166', '953', '10738'),
-  ('2021-10-11 11:21:38.167167', '953', '10739'),
-  ('2021-10-11 11:21:38.167167', '953', '10740'),
-  ('2021-10-11 11:21:38.167167', '953', '10741'),
-  ('2021-10-11 11:21:38.167167', '953', '10742'),
-  ('2021-10-11 11:21:38.167167', '953', '10743'),
-  ('2021-10-11 11:21:38.167167', '953', '10744'),
-  ('2021-10-11 11:21:38.167167', '953', '10745'),
-  ('2021-10-11 11:21:38.167167', '953', '10746'),
-  ('2021-10-11 11:21:38.167167', '953', '10747'),
-  ('2021-10-11 11:21:38.168168', '953', '10748'),
-  ('2021-10-11 11:21:38.168168', '953', '10749'),
-  ('2021-10-11 11:21:38.168168', '953', '10750'),
-  ('2021-10-11 11:21:38.169169', '953', '10751'),
-  ('2021-10-11 11:21:38.169169', '953', '10752'),
-  ('2021-10-11 11:21:38.169169', '953', '10753'),
-  ('2021-10-11 11:21:38.169169', '953', '10754'),
-  ('2021-10-11 11:21:38.169169', '953', '10755'),
-  ('2021-10-11 11:21:38.169169', '953', '10756'),
-  ('2021-10-11 11:21:38.169169', '953', '10757'),
-  ('2021-10-11 11:21:38.169169', '953', '10758'),
-  ('2021-10-11 11:21:38.169169', '953', '10759'),
-  ('2021-10-11 11:21:38.170170', '953', '10668'),
-  ('2021-10-11 11:21:38.170170', '953', '10760')
+  ('2021-10-11 11:58:55.402402', '954', '10761'),
+  ('2021-10-11 11:58:55.403403', '954', '10762'),
+  ('2021-10-11 11:58:55.404404', '954', '10763'),
+  ('2021-10-11 11:58:55.404404', '954', '10764'),
+  ('2021-10-11 11:58:55.404404', '954', '10765'),
+  ('2021-10-11 11:58:55.404404', '954', '10766'),
+  ('2021-10-11 11:58:55.404404', '954', '10767'),
+  ('2021-10-11 11:58:55.404404', '954', '10768'),
+  ('2021-10-11 11:58:55.404404', '954', '10769'),
+  ('2021-10-11 11:58:55.405405', '954', '10770'),
+  ('2021-10-11 11:58:55.405405', '954', '10771'),
+  ('2021-10-11 11:58:55.405405', '954', '10772'),
+  ('2021-10-11 11:58:55.405405', '954', '10773'),
+  ('2021-10-11 11:58:55.405405', '954', '10774'),
+  ('2021-10-11 11:58:55.405405', '954', '10775'),
+  ('2021-10-11 11:58:55.405405', '954', '10776'),
+  ('2021-10-11 11:58:55.405405', '954', '10777'),
+  ('2021-10-11 11:58:55.405405', '954', '10778'),
+  ('2021-10-11 11:58:55.405405', '954', '10779'),
+  ('2021-10-11 11:58:55.406406', '954', '10780'),
+  ('2021-10-11 11:58:55.406406', '954', '10781'),
+  ('2021-10-11 11:58:55.408408', '954', '10782')
   ;
 
   // Update to source_song table
