@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of August 21, 2021', '2021-08-21 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-08-21/2021-08-21');
+    ('Billboard', 'The Hot 100', 'Week of August 28, 2021', '2021-08-28 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-08-28/2021-08-28');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 950; // SELECT last_insert_rowid();
+  source_id = 951; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -97,83 +97,83 @@
   songsData =
   [
       {
-          "title": "Take My Breath",
-          "artist_name": "The Weeknd",
+          "title": "Rumors",
+          "artist_name": "Lizzo ft. Cardi B",
           "video_id": null,
-          "capture_date": "2021-10-11 10:51:00.306306",
-          "source_id": 950,
+          "capture_date": "2021-10-11 10:55:40.113113",
+          "source_id": 951,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "SUVs (Black On Black)",
-          "artist_name": "Jack Harlow & Pooh Shiesty",
+          "title": "Paralyzed",
+          "artist_name": "Sueco",
           "video_id": null,
-          "capture_date": "2021-10-11 10:51:00.309309",
-          "source_id": 950,
+          "capture_date": "2021-10-11 10:55:40.115115",
+          "source_id": 951,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "EPMD 2",
-          "artist_name": "Nas ft. Eminem & EPMD",
+          "title": "Mind Of Melvin",
+          "artist_name": "YNW Melly ft. Lil Uzi Vert",
           "video_id": null,
-          "capture_date": "2021-10-11 10:51:00.309309",
-          "source_id": 950,
+          "capture_date": "2021-10-11 10:55:40.116116",
+          "source_id": 951,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Repeat It",
-          "artist_name": "Lil Tecca & Gunna",
+          "title": "Papercuts",
+          "artist_name": "Machine Gun Kelly",
           "video_id": null,
-          "capture_date": "2021-10-11 10:51:00.309309",
-          "source_id": 950,
+          "capture_date": "2021-10-11 10:55:40.116116",
+          "source_id": 951,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Buy Dirt",
-          "artist_name": "Jordan Davis ft. Luke Bryan",
+          "title": "Cold Heart (PNAU Remix)",
+          "artist_name": "Elton John & Dua Lipa",
           "video_id": null,
-          "capture_date": "2021-10-11 10:51:00.309309",
-          "source_id": 950,
+          "capture_date": "2021-10-11 10:55:40.116116",
+          "source_id": 951,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Lose",
-          "artist_name": "KSI x Lil Wayne",
+          "title": "Brainwashed",
+          "artist_name": "Tom MacDonald",
           "video_id": null,
-          "capture_date": "2021-10-11 10:51:00.309309",
-          "source_id": 950,
+          "capture_date": "2021-10-11 10:55:40.117117",
+          "source_id": 951,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "I Hope Ur Miserable Until Ur Dead",
-          "artist_name": "Nessa Barrett",
+          "title": "Thinking 'Bout You",
+          "artist_name": "Dustin Lynch ft. Lauren Alaina Or MacKenzie Porter",
           "video_id": null,
-          "capture_date": "2021-10-11 10:51:00.309309",
-          "source_id": 950,
+          "capture_date": "2021-10-11 10:55:40.117117",
+          "source_id": 951,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Knowing You",
-          "artist_name": "Kenny Chesney",
+          "title": "I Like Dat",
+          "artist_name": "T-Pain & Kehlani",
           "video_id": null,
-          "capture_date": "2021-10-11 10:51:00.310310",
-          "source_id": 950,
+          "capture_date": "2021-10-11 10:55:40.117117",
+          "source_id": 951,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Rare",
-          "artist_name": "Nas",
+          "title": "Steal My Love",
+          "artist_name": "Dan + Shay",
           "video_id": null,
-          "capture_date": "2021-10-11 10:51:00.310310",
-          "source_id": 950,
+          "capture_date": "2021-10-11 10:55:40.117117",
+          "source_id": 951,
           "song_id": null,
           "duplicate": false
       }
@@ -216,15 +216,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Take My Breath', 'The Weeknd', NULL),
-  ('SUVs (Black On Black)', 'Jack Harlow & Pooh Shiesty', NULL),
-  ('EPMD 2', 'Nas ft. Eminem & EPMD', NULL),
-  ('Repeat It', 'Lil Tecca & Gunna', NULL),
-  ('Buy Dirt', 'Jordan Davis ft. Luke Bryan', NULL),
-  ('Lose', 'KSI x Lil Wayne', NULL),
-  ('I Hope Ur Miserable Until Ur Dead', 'Nessa Barrett', NULL),
-  ('Knowing You', 'Kenny Chesney', NULL),
-  ('Rare', 'Nas', NULL)
+  ('Rumors', 'Lizzo ft. Cardi B', NULL),
+  ('Paralyzed', 'Sueco', NULL),
+  ('Mind Of Melvin', 'YNW Melly ft. Lil Uzi Vert', NULL),
+  ('Papercuts', 'Machine Gun Kelly', NULL),
+  ('Cold Heart (PNAU Remix)', 'Elton John & Dua Lipa', NULL),
+  ('Brainwashed', 'Tom MacDonald', NULL),
+  ('Thinking ’Bout You', 'Dustin Lynch ft. Lauren Alaina Or MacKenzie Porter', NULL),
+  ('I Like Dat', 'T-Pain & Kehlani', NULL),
+  ('Steal My Love', 'Dan + Shay', NULL)
   ;
 
    // Update to song table
@@ -235,7 +235,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10709; // SELECT last_insert_rowid();
+  song_id = 10718; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -275,15 +275,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-11 10:51:00.306306', '950', '10701'),
-  ('2021-10-11 10:51:00.309309', '950', '10702'),
-  ('2021-10-11 10:51:00.309309', '950', '10703'),
-  ('2021-10-11 10:51:00.309309', '950', '10704'),
-  ('2021-10-11 10:51:00.309309', '950', '10705'),
-  ('2021-10-11 10:51:00.309309', '950', '10706'),
-  ('2021-10-11 10:51:00.309309', '950', '10707'),
-  ('2021-10-11 10:51:00.310310', '950', '10708'),
-  ('2021-10-11 10:51:00.310310', '950', '10709')
+  ('2021-10-11 10:55:40.113113', '951', '10710'),
+  ('2021-10-11 10:55:40.115115', '951', '10711'),
+  ('2021-10-11 10:55:40.116116', '951', '10712'),
+  ('2021-10-11 10:55:40.116116', '951', '10713'),
+  ('2021-10-11 10:55:40.116116', '951', '10714'),
+  ('2021-10-11 10:55:40.117117', '951', '10715'),
+  ('2021-10-11 10:55:40.117117', '951', '10716'),
+  ('2021-10-11 10:55:40.117117', '951', '10717'),
+  ('2021-10-11 10:55:40.117117', '951', '10718')
   ;
 
   // Update to source_song table
