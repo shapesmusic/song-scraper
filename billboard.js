@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of August 7, 2021', '2021-08-07 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-08-07/2021-08-07');
+    ('Billboard', 'The Hot 100', 'Week of August 14, 2021', '2021-08-14 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-08-14/2021-08-14');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 948; // SELECT last_insert_rowid();
+  source_id = 949; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,101 +96,110 @@
   songsData =
   [
       {
-          "title": "Industry Baby",
-          "artist_name": "Lil Nas X & Jack Harlow",
+          "title": "Happier Than Ever",
+          "artist_name": "Billie Eilish",
           "video_id": null,
-          "capture_date": "2021-10-11 08:47:55.017017",
-          "source_id": 948,
+          "capture_date": "2021-10-11 10:45:11.257257",
+          "source_id": 949,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "If I Didn't Love You",
-          "artist_name": "Jason Aldean & Carrie Underwood",
+          "title": "Skate",
+          "artist_name": "Silk Sonic (Bruno Mars & Anderson .Paak)",
           "video_id": null,
-          "capture_date": "2021-10-11 08:47:55.018018",
-          "source_id": 948,
+          "capture_date": "2021-10-11 10:45:11.257257",
+          "source_id": 949,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Not Sober",
-          "artist_name": "The Kid LAROI ft. Polo G & Stunna Gambino",
+          "title": "Volvi",
+          "artist_name": "Aventura x Bad Bunny",
           "video_id": null,
-          "capture_date": "2021-10-11 08:47:55.019019",
-          "source_id": 948,
+          "capture_date": "2021-10-11 10:45:11.259259",
+          "source_id": 949,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Don't Go Yet",
-          "artist_name": "Camila Cabello",
+          "title": "Getting Older",
+          "artist_name": "Billie Eilish",
           "video_id": null,
-          "capture_date": "2021-10-11 08:47:55.019019",
-          "source_id": 948,
+          "capture_date": "2021-10-11 10:45:11.260260",
+          "source_id": 949,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Over The Top",
-          "artist_name": "Smiley ft. Drake",
+          "title": "Billie Bossa Nova",
+          "artist_name": "Billie Eilish",
           "video_id": null,
-          "capture_date": "2021-10-11 08:47:55.020020",
-          "source_id": 948,
+          "capture_date": "2021-10-11 10:45:11.260260",
+          "source_id": 949,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Pepas",
-          "artist_name": "Farruko",
+          "title": "Oxytocin",
+          "artist_name": "Billie Eilish",
           "video_id": null,
-          "capture_date": "2021-10-11 08:47:55.020020",
-          "source_id": 948,
+          "capture_date": "2021-10-11 10:45:11.260260",
+          "source_id": 949,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Better Believe",
-          "artist_name": "Belly, The Weeknd & Young Thug",
+          "title": "I Didn't Change My Number",
+          "artist_name": "Billie Eilish",
           "video_id": null,
-          "capture_date": "2021-10-11 08:47:55.020020",
-          "source_id": 948,
+          "capture_date": "2021-10-11 10:45:11.260260",
+          "source_id": 949,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Lick Back",
-          "artist_name": "EST Gee",
+          "title": "Baddest",
+          "artist_name": "Yung Bleu, Chris Brown & 2 Chainz",
           "video_id": null,
-          "capture_date": "2021-10-11 08:47:55.021021",
-          "source_id": 948,
+          "capture_date": "2021-10-11 10:45:11.260260",
+          "source_id": 949,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Memory I Don't Mess With",
-          "artist_name": "Lee Brice",
+          "title": "Halley's Comet",
+          "artist_name": "Billie Eilish",
           "video_id": null,
-          "capture_date": "2021-10-11 08:47:55.021021",
-          "source_id": 948,
+          "capture_date": "2021-10-11 10:45:11.260260",
+          "source_id": 949,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "5500 Degrees",
-          "artist_name": "EST Gee ft. Lil Baby, 42 Dugg & Rylo Rodriguez",
+          "title": "Gyalis",
+          "artist_name": "Capella Grey",
           "video_id": null,
-          "capture_date": "2021-10-11 08:47:55.021021",
-          "source_id": 948,
+          "capture_date": "2021-10-11 10:45:11.260260",
+          "source_id": 949,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Still Chose You",
-          "artist_name": "The Kid LAROI ft. Mustard",
+          "title": "You Time",
+          "artist_name": "Scotty McCreery",
           "video_id": null,
-          "capture_date": "2021-10-11 08:47:55.021021",
-          "source_id": 948,
+          "capture_date": "2021-10-11 10:45:11.260260",
+          "source_id": 949,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "From The Garden",
+          "artist_name": "Isaiah Rashad ft. Lil Uzi Vert",
+          "video_id": null,
+          "capture_date": "2021-10-11 10:45:11.261261",
+          "source_id": 949,
           "song_id": null,
           "duplicate": false
       }
@@ -233,17 +242,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Industry Baby', 'Lil Nas X & Jack Harlow', NULL),
-  ('If I Didn’t Love You', 'Jason Aldean & Carrie Underwood', NULL),
-  ('Not Sober', 'The Kid LAROI ft. Polo G & Stunna Gambino', NULL),
-  ('Don’t Go Yet', 'Camila Cabello', NULL),
-  ('Over The Top', 'Smiley ft. Drake', NULL),
-  ('Pepas', 'Farruko', NULL),
-  ('Better Believe', 'Belly, The Weeknd & Young Thug', NULL),
-  ('Lick Back', 'EST Gee', NULL),
-  ('Memory I Don’t Mess With', 'Lee Brice', NULL),
-  ('5500 Degrees', 'EST Gee ft. Lil Baby, 42 Dugg & Rylo Rodriguez', NULL),
-  ('Still Chose You', 'The Kid LAROI ft. Mustard', NULL)
+  ('Happier Than Ever', 'Billie Eilish', NULL),
+  ('Skate', 'Silk Sonic (Bruno Mars & Anderson .Paak)', NULL),
+  ('Volvi', 'Aventura x Bad Bunny', NULL),
+  ('Getting Older', 'Billie Eilish', NULL),
+  ('Billie Bossa Nova', 'Billie Eilish', NULL),
+  ('Oxytocin', 'Billie Eilish', NULL),
+  ('I Didn’t Change My Number', 'Billie Eilish', NULL),
+  ('Baddest', 'Yung Bleu, Chris Brown & 2 Chainz', NULL),
+  ('Halley’s Comet', 'Billie Eilish', NULL),
+  ('Gyalis', 'Capella Grey', NULL),
+  ('You Time', 'Scotty McCreery', NULL),
+  ('From The Garden', 'Isaiah Rashad ft. Lil Uzi Vert', NULL)
   ;
 
    // Update to song table
@@ -254,7 +264,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10688; // SELECT last_insert_rowid();
+  song_id = 10700; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -294,17 +304,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-11 08:47:55.017017', '948', '10678'),
-  ('2021-10-11 08:47:55.018018', '948', '10679'),
-  ('2021-10-11 08:47:55.019019', '948', '10680'),
-  ('2021-10-11 08:47:55.019019', '948', '10681'),
-  ('2021-10-11 08:47:55.020020', '948', '10682'),
-  ('2021-10-11 08:47:55.020020', '948', '10683'),
-  ('2021-10-11 08:47:55.020020', '948', '10684'),
-  ('2021-10-11 08:47:55.021021', '948', '10685'),
-  ('2021-10-11 08:47:55.021021', '948', '10686'),
-  ('2021-10-11 08:47:55.021021', '948', '10687'),
-  ('2021-10-11 08:47:55.021021', '948', '10688')
+  ('2021-10-11 10:45:11.257257', '949', '10689'),
+  ('2021-10-11 10:45:11.257257', '949', '10690'),
+  ('2021-10-11 10:45:11.259259', '949', '10691'),
+  ('2021-10-11 10:45:11.260260', '949', '10692'),
+  ('2021-10-11 10:45:11.260260', '949', '10693'),
+  ('2021-10-11 10:45:11.260260', '949', '10694'),
+  ('2021-10-11 10:45:11.260260', '949', '10695'),
+  ('2021-10-11 10:45:11.260260', '949', '10696'),
+  ('2021-10-11 10:45:11.260260', '949', '10697'),
+  ('2021-10-11 10:45:11.260260', '949', '10698'),
+  ('2021-10-11 10:45:11.260260', '949', '10699'),
+  ('2021-10-11 10:45:11.261261', '949', '10700')
   ;
 
   // Update to source_song table
