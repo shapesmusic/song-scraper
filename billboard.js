@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of August 28, 2021', '2021-08-28 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-08-28/2021-08-28');
+    ('Billboard', 'The Hot 100', 'Week of September 4, 2021', '2021-09-04 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-09-04/2021-09-04');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 951; // SELECT last_insert_rowid();
+  source_id = 952; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -97,83 +97,146 @@
   songsData =
   [
       {
-          "title": "Rumors",
-          "artist_name": "Lizzo ft. Cardi B",
+          "title": "Summer Of Love",
+          "artist_name": "Shawn Mendes & Tainy",
           "video_id": null,
-          "capture_date": "2021-10-11 10:55:40.113113",
-          "source_id": 951,
+          "capture_date": "2021-10-11 11:00:22.499499",
+          "source_id": 952,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Paralyzed",
-          "artist_name": "Sueco",
+          "title": "Matt Hardy 999",
+          "artist_name": "Trippie Redd ft. Juice WRLD",
           "video_id": null,
-          "capture_date": "2021-10-11 10:55:40.115115",
-          "source_id": 951,
+          "capture_date": "2021-10-11 11:00:22.499499",
+          "source_id": 952,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Mind Of Melvin",
-          "artist_name": "YNW Melly ft. Lil Uzi Vert",
+          "title": "Rich MF",
+          "artist_name": "Trippie Redd ft. Lil Durk & Polo G",
           "video_id": null,
-          "capture_date": "2021-10-11 10:55:40.116116",
-          "source_id": 951,
+          "capture_date": "2021-10-11 11:00:22.499499",
+          "source_id": 952,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Papercuts",
-          "artist_name": "Machine Gun Kelly",
+          "title": "Already Won",
+          "artist_name": "Rod Wave ft. Lil Durk",
           "video_id": null,
-          "capture_date": "2021-10-11 10:55:40.116116",
-          "source_id": 951,
+          "capture_date": "2021-10-11 11:00:22.499499",
+          "source_id": 952,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Cold Heart (PNAU Remix)",
-          "artist_name": "Elton John & Dua Lipa",
+          "title": "Betrayal",
+          "artist_name": "Trippie Redd ft. Drake",
           "video_id": null,
-          "capture_date": "2021-10-11 10:55:40.116116",
-          "source_id": 951,
+          "capture_date": "2021-10-11 11:00:22.499499",
+          "source_id": 952,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Brainwashed",
-          "artist_name": "Tom MacDonald",
+          "title": "Don't Go",
+          "artist_name": "Skrillex, Justin Bieber & Don Toliver",
           "video_id": null,
-          "capture_date": "2021-10-11 10:55:40.117117",
-          "source_id": 951,
+          "capture_date": "2021-10-11 11:00:22.499499",
+          "source_id": 952,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Thinking 'Bout You",
-          "artist_name": "Dustin Lynch ft. Lauren Alaina Or MacKenzie Porter",
+          "title": "One Mississippi",
+          "artist_name": "Kane Brown",
           "video_id": null,
-          "capture_date": "2021-10-11 10:55:40.117117",
-          "source_id": 951,
+          "capture_date": "2021-10-11 11:00:22.500500",
+          "source_id": 952,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "I Like Dat",
-          "artist_name": "T-Pain & Kehlani",
+          "title": "Visiting Hours",
+          "artist_name": "Ed Sheeran",
           "video_id": null,
-          "capture_date": "2021-10-11 10:55:40.117117",
-          "source_id": 951,
+          "capture_date": "2021-10-11 11:00:22.500500",
+          "source_id": 952,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Steal My Love",
-          "artist_name": "Dan + Shay",
+          "title": "MP5",
+          "artist_name": "Trippie Redd ft. SoFaygo",
           "video_id": null,
-          "capture_date": "2021-10-11 10:55:40.117117",
-          "source_id": 951,
+          "capture_date": "2021-10-11 11:00:22.500500",
+          "source_id": 952,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "I Guess I'm In Love",
+          "artist_name": "Clinton Kane",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:00:22.500500",
+          "source_id": 952,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Get Ready",
+          "artist_name": "Rod Wave ft. Kodak Black",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:00:22.500500",
+          "source_id": 952,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Danny Phantom",
+          "artist_name": "Trippie Redd ft. XXXTENTACION",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:00:22.500500",
+          "source_id": 952,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "What's Wrong",
+          "artist_name": "Rod Wave",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:00:22.500500",
+          "source_id": 952,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Demon Time",
+          "artist_name": "Trippie Redd ft. Ski Mask The Slump God",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:00:22.500500",
+          "source_id": 952,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Tick Tock",
+          "artist_name": "Young Thug",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:00:22.500500",
+          "source_id": 952,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Time Heals",
+          "artist_name": "Rod Wave",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:00:22.500500",
+          "source_id": 952,
           "song_id": null,
           "duplicate": false
       }
@@ -216,15 +279,22 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Rumors', 'Lizzo ft. Cardi B', NULL),
-  ('Paralyzed', 'Sueco', NULL),
-  ('Mind Of Melvin', 'YNW Melly ft. Lil Uzi Vert', NULL),
-  ('Papercuts', 'Machine Gun Kelly', NULL),
-  ('Cold Heart (PNAU Remix)', 'Elton John & Dua Lipa', NULL),
-  ('Brainwashed', 'Tom MacDonald', NULL),
-  ('Thinking ’Bout You', 'Dustin Lynch ft. Lauren Alaina Or MacKenzie Porter', NULL),
-  ('I Like Dat', 'T-Pain & Kehlani', NULL),
-  ('Steal My Love', 'Dan + Shay', NULL)
+  ('Summer Of Love', 'Shawn Mendes & Tainy', NULL),
+  ('Matt Hardy 999', 'Trippie Redd ft. Juice WRLD', NULL),
+  ('Rich MF', 'Trippie Redd ft. Lil Durk & Polo G', NULL),
+  ('Already Won', 'Rod Wave ft. Lil Durk', NULL),
+  ('Betrayal', 'Trippie Redd ft. Drake', NULL),
+  ('Don’t Go', 'Skrillex, Justin Bieber & Don Toliver', NULL),
+  ('One Mississippi', 'Kane Brown', NULL),
+  ('Visiting Hours', 'Ed Sheeran', NULL),
+  ('MP5', 'Trippie Redd ft. SoFaygo', NULL),
+  ('I Guess I’m In Love', 'Clinton Kane', NULL),
+  ('Get Ready', 'Rod Wave ft. Kodak Black', NULL),
+  ('Danny Phantom', 'Trippie Redd ft. XXXTENTACION', NULL),
+  ('What’s Wrong', 'Rod Wave', NULL),
+  ('Demon Time', 'Trippie Redd ft. Ski Mask The Slump God', NULL),
+  ('Tick Tock', 'Young Thug', NULL),
+  ('Time Heals', 'Rod Wave', NULL)
   ;
 
    // Update to song table
@@ -235,7 +305,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10718; // SELECT last_insert_rowid();
+  song_id = 10734; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -275,15 +345,22 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-11 10:55:40.113113', '951', '10710'),
-  ('2021-10-11 10:55:40.115115', '951', '10711'),
-  ('2021-10-11 10:55:40.116116', '951', '10712'),
-  ('2021-10-11 10:55:40.116116', '951', '10713'),
-  ('2021-10-11 10:55:40.116116', '951', '10714'),
-  ('2021-10-11 10:55:40.117117', '951', '10715'),
-  ('2021-10-11 10:55:40.117117', '951', '10716'),
-  ('2021-10-11 10:55:40.117117', '951', '10717'),
-  ('2021-10-11 10:55:40.117117', '951', '10718')
+  ('2021-10-11 11:00:22.499499', '952', '10719'),
+  ('2021-10-11 11:00:22.499499', '952', '10720'),
+  ('2021-10-11 11:00:22.499499', '952', '10721'),
+  ('2021-10-11 11:00:22.499499', '952', '10722'),
+  ('2021-10-11 11:00:22.499499', '952', '10723'),
+  ('2021-10-11 11:00:22.499499', '952', '10724'),
+  ('2021-10-11 11:00:22.500500', '952', '10725'),
+  ('2021-10-11 11:00:22.500500', '952', '10726'),
+  ('2021-10-11 11:00:22.500500', '952', '10727'),
+  ('2021-10-11 11:00:22.500500', '952', '10728'),
+  ('2021-10-11 11:00:22.500500', '952', '10729'),
+  ('2021-10-11 11:00:22.500500', '952', '10730'),
+  ('2021-10-11 11:00:22.500500', '952', '10731'),
+  ('2021-10-11 11:00:22.500500', '952', '10732'),
+  ('2021-10-11 11:00:22.500500', '952', '10733'),
+  ('2021-10-11 11:00:22.500500', '952', '10734')
   ;
 
   // Update to source_song table
