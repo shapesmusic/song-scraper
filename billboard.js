@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 2, 2021', '2021-10-02 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-10-02/2021-10-02');
+    ('Billboard', 'The Hot 100', 'Week of October 9, 2021', '2021-10-09 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-10-09/2021-10-09');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 956; // SELECT last_insert_rowid();
+  source_id = 957; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -97,112 +97,166 @@
   songsData =
   [
       {
-          "title": "Thats What I Want",
-          "artist_name": "Lil Nas X",
+          "title": "My Universe",
+          "artist_name": "Coldplay x BTS",
           "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.417417",
-          "source_id": 956,
+          "capture_date": "2021-10-11 12:15:16.154154",
+          "source_id": 957,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Wildest Dreams (Taylor's Version)",
-          "artist_name": "Taylor Swift",
-          "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.419419",
-          "source_id": 956,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Scoop",
-          "artist_name": "Lil Nas X ft. Doja Cat",
-          "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.419419",
-          "source_id": 956,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Dolla Sign Slime",
-          "artist_name": "Lil Nas X ft. Megan Thee Stallion",
-          "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.419419",
-          "source_id": 956,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "On My Side",
+          "title": "Bad Morning",
           "artist_name": "YoungBoy Never Broke Again",
           "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.420420",
-          "source_id": 956,
+          "capture_date": "2021-10-11 12:15:16.158158",
+          "source_id": 957,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Dead Right Now",
-          "artist_name": "Lil Nas X",
+          "title": "Your Heart",
+          "artist_name": "Joyner Lucas & J. Cole",
           "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.420420",
-          "source_id": 956,
+          "capture_date": "2021-10-11 12:15:16.158158",
+          "source_id": 957,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Love Nwantiti (Ah Ah Ah)",
-          "artist_name": "CKay",
+          "title": "Too Easy",
+          "artist_name": "Gunna & Future",
           "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.420420",
-          "source_id": 956,
+          "capture_date": "2021-10-11 12:15:16.158158",
+          "source_id": 957,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Tales Of Dominica",
-          "artist_name": "Lil Nas X",
+          "title": "No Where",
+          "artist_name": "YoungBoy Never Broke Again",
           "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.420420",
-          "source_id": 956,
+          "capture_date": "2021-10-11 12:15:16.158158",
+          "source_id": 957,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "One Of Me",
-          "artist_name": "Lil Nas X ft. Elton John",
+          "title": "Hold Me Down",
+          "artist_name": "YoungBoy Never Broke Again",
           "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.420420",
-          "source_id": 956,
+          "capture_date": "2021-10-11 12:15:16.159159",
+          "source_id": 957,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Lost In The Citadel",
-          "artist_name": "Lil Nas X",
+          "title": "Nevada",
+          "artist_name": "YoungBoy Never Broke Again",
           "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.420420",
-          "source_id": 956,
+          "capture_date": "2021-10-11 12:15:16.159159",
+          "source_id": 957,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Am I Dreaming",
-          "artist_name": "Lil Nas X ft. Miley Cyrus",
+          "title": "50 Shots",
+          "artist_name": "YoungBoy Never Broke Again",
           "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.421421",
-          "source_id": 956,
+          "capture_date": "2021-10-11 12:15:16.159159",
+          "source_id": 957,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Same Boat",
-          "artist_name": "Zac Brown Band",
+          "title": "Smoke Strong",
+          "artist_name": "YoungBoy Never Broke Again",
           "video_id": null,
-          "capture_date": "2021-10-11 12:08:16.421421",
-          "source_id": 956,
+          "capture_date": "2021-10-11 12:15:16.159159",
+          "source_id": 957,
           "song_id": null,
           "duplicate": false
+      },
+      {
+          "title": "Break Or Make Me",
+          "artist_name": "YoungBoy Never Broke Again",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:15:16.159159",
+          "source_id": 957,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Sincerely",
+          "artist_name": "YoungBoy Never Broke Again",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:15:16.160160",
+          "source_id": 957,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "I Can't Take It Back",
+          "artist_name": "YoungBoy Never Broke Again",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:15:16.160160",
+          "source_id": 957,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Forgiato",
+          "artist_name": "YoungBoy Never Broke Again",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:15:16.160160",
+          "source_id": 957,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Rich Shit",
+          "artist_name": "YoungBoy Never Broke Again",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:15:16.160160",
+          "source_id": 957,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "For Tonight",
+          "artist_name": "Giveon",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:15:16.161161",
+          "source_id": 957,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Baddest Thing",
+          "artist_name": "YoungBoy Never Broke Again",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:15:16.161161",
+          "source_id": 957,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Chosen",
+          "artist_name": "Blxst & Tyga ft. Ty Dolla $ign",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:15:16.161161",
+          "source_id": 957,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Toxic Punk",
+          "artist_name": "YoungBoy Never Broke Again",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:15:16.161161",
+          "source_id": 957,
+          "song_id": 9821,
+          "duplicate": true
       }
   ]
 
@@ -243,18 +297,23 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Thats What I Want', 'Lil Nas X', NULL),
-  ('Wildest Dreams (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Scoop', 'Lil Nas X ft. Doja Cat', NULL),
-  ('Dolla Sign Slime', 'Lil Nas X ft. Megan Thee Stallion', NULL),
-  ('On My Side', 'YoungBoy Never Broke Again', NULL),
-  ('Dead Right Now', 'Lil Nas X', NULL),
-  ('Love Nwantiti (Ah Ah Ah)', 'CKay', NULL),
-  ('Tales Of Dominica', 'Lil Nas X', NULL),
-  ('One Of Me', 'Lil Nas X ft. Elton John', NULL),
-  ('Lost In The Citadel', 'Lil Nas X', NULL),
-  ('Am I Dreaming', 'Lil Nas X ft. Miley Cyrus', NULL),
-  ('Same Boat', 'Zac Brown Band', NULL)
+  ('My Universe', 'Coldplay x BTS', NULL),
+  ('Bad Morning', 'YoungBoy Never Broke Again', NULL),
+  ('Your Heart', 'Joyner Lucas & J. Cole', NULL),
+  ('Too Easy', 'Gunna & Future', NULL),
+  ('No Where', 'YoungBoy Never Broke Again', NULL),
+  ('Hold Me Down', 'YoungBoy Never Broke Again', NULL),
+  ('Nevada', 'YoungBoy Never Broke Again', NULL),
+  ('50 Shots', 'YoungBoy Never Broke Again', NULL),
+  ('Smoke Strong', 'YoungBoy Never Broke Again', NULL),
+  ('Break Or Make Me', 'YoungBoy Never Broke Again', NULL),
+  ('Sincerely', 'YoungBoy Never Broke Again', NULL),
+  ('I Can’t Take It Back', 'YoungBoy Never Broke Again', NULL),
+  ('Forgiato', 'YoungBoy Never Broke Again', NULL),
+  ('Rich Shit', 'YoungBoy Never Broke Again', NULL),
+  ('For Tonight', 'Giveon', NULL),
+  ('Baddest Thing', 'YoungBoy Never Broke Again', NULL),
+  ('Chosen', 'Blxst & Tyga ft. Ty Dolla $ign', NULL)
   ;
 
    // Update to song table
@@ -265,7 +324,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10801; // SELECT last_insert_rowid();
+  song_id = 10818; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -305,18 +364,24 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-11 12:08:16.417417', '956', '10790'),
-  ('2021-10-11 12:08:16.419419', '956', '10791'),
-  ('2021-10-11 12:08:16.419419', '956', '10792'),
-  ('2021-10-11 12:08:16.419419', '956', '10793'),
-  ('2021-10-11 12:08:16.420420', '956', '10794'),
-  ('2021-10-11 12:08:16.420420', '956', '10795'),
-  ('2021-10-11 12:08:16.420420', '956', '10796'),
-  ('2021-10-11 12:08:16.420420', '956', '10797'),
-  ('2021-10-11 12:08:16.420420', '956', '10798'),
-  ('2021-10-11 12:08:16.420420', '956', '10799'),
-  ('2021-10-11 12:08:16.421421', '956', '10800'),
-  ('2021-10-11 12:08:16.421421', '956', '10801')
+  ('2021-10-11 12:15:16.154154', '957', '10802'),
+  ('2021-10-11 12:15:16.158158', '957', '10803'),
+  ('2021-10-11 12:15:16.158158', '957', '10804'),
+  ('2021-10-11 12:15:16.158158', '957', '10805'),
+  ('2021-10-11 12:15:16.158158', '957', '10806'),
+  ('2021-10-11 12:15:16.159159', '957', '10807'),
+  ('2021-10-11 12:15:16.159159', '957', '10808'),
+  ('2021-10-11 12:15:16.159159', '957', '10809'),
+  ('2021-10-11 12:15:16.159159', '957', '10810'),
+  ('2021-10-11 12:15:16.159159', '957', '10811'),
+  ('2021-10-11 12:15:16.160160', '957', '10812'),
+  ('2021-10-11 12:15:16.160160', '957', '10813'),
+  ('2021-10-11 12:15:16.160160', '957', '10814'),
+  ('2021-10-11 12:15:16.160160', '957', '10815'),
+  ('2021-10-11 12:15:16.161161', '957', '10816'),
+  ('2021-10-11 12:15:16.161161', '957', '10817'),
+  ('2021-10-11 12:15:16.161161', '957', '10818'),
+  ('2021-10-11 12:15:16.161161', '957', '9821')
   ;
 
   // Update to source_song table
