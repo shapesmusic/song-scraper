@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 10, 2021', '2021-07-10 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-07-10/2021-07-10');
+    ('Billboard', 'The Hot 100', 'Week of July 17, 2021', '2021-07-17 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-07-17/2021-07-17');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 944; // SELECT last_insert_rowid();
+  source_id = 945; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,191 +96,83 @@
   songsData =
   [
     {
-        "title": "Bad Habits",
-        "artist_name": "Ed Sheeran",
+        "title": "Am I The Only One",
+        "artist_name": "Aaron Lewis",
         "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.978978",
-        "source_id": 944,
+        "capture_date": "2021-10-11 08:28:40.161161",
+        "source_id": 945,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You Right",
-        "artist_name": "Doja Cat & The Weeknd",
+        "title": "Wasting Time",
+        "artist_name": "Brent Faiyaz ft. Drake",
         "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.979979",
-        "source_id": 944,
+        "capture_date": "2021-10-11 08:28:40.163163",
+        "source_id": 945,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "WUSYANAME",
-        "artist_name": "Tyler, The Creator ft. YoungBoy Never Broke Again & Ty Dolla $ign",
+        "title": "Renegade",
+        "artist_name": "Big Red Machine ft. Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.979979",
-        "source_id": 944,
+        "capture_date": "2021-10-11 08:28:40.164164",
+        "source_id": 945,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ain't Shit",
-        "artist_name": "Doja Cat",
+        "title": "Cry No More",
+        "artist_name": "G Herbo ft. Polo G & Lil Tjay",
         "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.979979",
-        "source_id": 944,
+        "capture_date": "2021-10-11 08:28:40.164164",
+        "source_id": 945,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Juggernaut",
-        "artist_name": "Tyler, The Creator ft. Lil Uzi Vert & Pharrell Williams",
+        "title": "Essence",
+        "artist_name": "Wizkid ft. Justin Bieber & Tems",
         "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.980980",
-        "source_id": 944,
+        "capture_date": "2021-10-11 08:28:40.164164",
+        "source_id": 945,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "AM",
-        "artist_name": "Nio Garcia X J Balvin X Bad Bunny",
+        "title": "A-O-K",
+        "artist_name": "Tai Verdes",
         "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.980980",
-        "source_id": 944,
-        "song_id": 10225,
+        "capture_date": "2021-10-11 08:28:40.164164",
+        "source_id": 945,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "You Should Probably Leave",
+        "artist_name": "Chris Stapleton",
+        "video_id": null,
+        "capture_date": "2021-10-11 08:28:40.164164",
+        "source_id": 945,
+        "song_id": 9578,
         "duplicate": true
     },
     {
-        "title": "Lemonhead",
-        "artist_name": "Tyler, The Creator ft. 42 Dugg",
+        "title": "I Was On A Boat That Day",
+        "artist_name": "Old Dominion",
         "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.980980",
-        "source_id": 944,
+        "capture_date": "2021-10-11 08:28:40.164164",
+        "source_id": 945,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hot Wind Blows",
-        "artist_name": "Tyler, The Creator ft. Lil Wayne",
+        "title": "Cold Beer Calling My Name",
+        "artist_name": "Jameson Rodgers ft. Luke Combs",
         "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.980980",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Red Light Green Light",
-        "artist_name": "DaBaby",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.981981",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Corso",
-        "artist_name": "Tyler, The Creator",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.981981",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I Don't Do Drugs",
-        "artist_name": "Doja Cat ft. Ariana Grande",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.981981",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sir Baudelaire",
-        "artist_name": "Tyler, The Creator ft. DJ Drama",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.981981",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sweet / I Thought You Wanted To Dance",
-        "artist_name": "Tyler, The Creator ft. Brent Faiyaz & Fana Hues",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.981981",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Massa",
-        "artist_name": "Tyler, The Creator",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.981981",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "RunItUp",
-        "artist_name": "Tyler, The Creator ft. Teezo Touchdown",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.981981",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Beggin'",
-        "artist_name": "Maneskin",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.982982",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Manifesto",
-        "artist_name": "Tyler, The Creator ft. Domo Genesis",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.982982",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Woman",
-        "artist_name": "Doja Cat",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.983983",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Get Into It (Yuh)",
-        "artist_name": "Doja Cat",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.983983",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Wilshire",
-        "artist_name": "Tyler, The Creator",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.983983",
-        "source_id": 944,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Rise!",
-        "artist_name": "Tyler, The Creator ft. Daisy World",
-        "video_id": null,
-        "capture_date": "2021-10-10 11:02:27.984984",
-        "source_id": 944,
+        "capture_date": "2021-10-11 08:28:40.164164",
+        "source_id": 945,
         "song_id": null,
         "duplicate": false
     }
@@ -323,26 +215,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Bad Habits', 'Ed Sheeran', NULL),
-  ('You Right', 'Doja Cat & The Weeknd', NULL),
-  ('WUSYANAME', 'Tyler, The Creator ft. YoungBoy Never Broke Again & Ty Dolla $ign', NULL),
-  ('Ain’t Shit', 'Doja Cat', NULL),
-  ('Juggernaut', 'Tyler, The Creator ft. Lil Uzi Vert & Pharrell Williams', NULL),
-  ('Lemonhead', 'Tyler, The Creator ft. 42 Dugg', NULL),
-  ('Hot Wind Blows', 'Tyler, The Creator ft. Lil Wayne', NULL),
-  ('Red Light Green Light', 'DaBaby', NULL),
-  ('Corso', 'Tyler, The Creator', NULL),
-  ('I Don’t Do Drugs', 'Doja Cat ft. Ariana Grande', NULL),
-  ('Sir Baudelaire', 'Tyler, The Creator ft. DJ Drama', NULL),
-  ('Sweet / I Thought You Wanted To Dance', 'Tyler, The Creator ft. Brent Faiyaz & Fana Hues', NULL),
-  ('Massa', 'Tyler, The Creator', NULL),
-  ('RunItUp', 'Tyler, The Creator ft. Teezo Touchdown', NULL),
-  ('Beggin’', 'Maneskin', NULL),
-  ('Manifesto', 'Tyler, The Creator ft. Domo Genesis', NULL),
-  ('Woman', 'Doja Cat', NULL),
-  ('Get Into It (Yuh)', 'Doja Cat', NULL),
-  ('Wilshire', 'Tyler, The Creator', NULL),
-  ('Rise!', 'Tyler, The Creator ft. Daisy World', NULL)
+  ('Am I The Only One', 'Aaron Lewis', NULL),
+  ('Wasting Time', 'Brent Faiyaz ft. Drake', NULL),
+  ('Renegade', 'Big Red Machine ft. Taylor Swift', NULL),
+  ('Cry No More', 'G Herbo ft. Polo G & Lil Tjay', NULL),
+  ('Essence', 'Wizkid ft. Justin Bieber & Tems', NULL),
+  ('A-O-K', 'Tai Verdes', NULL),
+  ('I Was On A Boat That Day', 'Old Dominion', NULL),
+  ('Cold Beer Calling My Name', 'Jameson Rodgers ft. Luke Combs', NULL)
   ;
 
    // Update to song table
@@ -353,7 +233,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10648; // SELECT last_insert_rowid();
+  song_id = 10656; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -393,27 +273,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-10 11:02:27.978978', '944', '10629'),
-  ('2021-10-10 11:02:27.979979', '944', '10630'),
-  ('2021-10-10 11:02:27.979979', '944', '10631'),
-  ('2021-10-10 11:02:27.979979', '944', '10632'),
-  ('2021-10-10 11:02:27.980980', '944', '10633'),
-  ('2021-10-10 11:02:27.980980', '944', '10225'),
-  ('2021-10-10 11:02:27.980980', '944', '10634'),
-  ('2021-10-10 11:02:27.980980', '944', '10635'),
-  ('2021-10-10 11:02:27.981981', '944', '10636'),
-  ('2021-10-10 11:02:27.981981', '944', '10637'),
-  ('2021-10-10 11:02:27.981981', '944', '10638'),
-  ('2021-10-10 11:02:27.981981', '944', '10639'),
-  ('2021-10-10 11:02:27.981981', '944', '10640'),
-  ('2021-10-10 11:02:27.981981', '944', '10641'),
-  ('2021-10-10 11:02:27.981981', '944', '10642'),
-  ('2021-10-10 11:02:27.982982', '944', '10643'),
-  ('2021-10-10 11:02:27.982982', '944', '10644'),
-  ('2021-10-10 11:02:27.983983', '944', '10645'),
-  ('2021-10-10 11:02:27.983983', '944', '10646'),
-  ('2021-10-10 11:02:27.983983', '944', '10647'),
-  ('2021-10-10 11:02:27.984984', '944', '10648')
+  ('2021-10-11 08:28:40.161161', '945', '10649'),
+  ('2021-10-11 08:28:40.163163', '945', '10650'),
+  ('2021-10-11 08:28:40.164164', '945', '10651'),
+  ('2021-10-11 08:28:40.164164', '945', '10652'),
+  ('2021-10-11 08:28:40.164164', '945', '10653'),
+  ('2021-10-11 08:28:40.164164', '945', '10654'),
+  ('2021-10-11 08:28:40.164164', '945', '9578'),
+  ('2021-10-11 08:28:40.164164', '945', '10655'),
+  ('2021-10-11 08:28:40.164164', '945', '10656')
   ;
 
   // Update to source_song table
