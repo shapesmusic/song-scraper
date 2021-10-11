@@ -37,9 +37,9 @@
   // Replace any ' in strings with ’
 
   INSERT INTO source
-    (parent_entity, parent_stream, instance_name, publication_date, location)
+    (parent_entity, parent_stream, instance_name, publication_date, location) 
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of June 26, 2021', '2021-06-26 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-06-26/2021-06-26');
+    ('Billboard', 'The Hot 100', 'Week of July 3, 2021', '2021-07-03 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-07-03/2021-07-03');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 942; // SELECT last_insert_rowid();
+  source_id = 943; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,191 +96,65 @@
   songsData =
   [
     {
-        "title": "Having Our Way",
-        "artist_name": "Migos ft. Drake",
+        "title": "Ball If I Want To",
+        "artist_name": "DaBaby",
         "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.378378",
-        "source_id": 942,
+        "capture_date": "2021-10-10 10:57:25.571571",
+        "source_id": 943,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Thot Shit",
-        "artist_name": "Megan Thee Stallion",
+        "title": "Fancy Like",
+        "artist_name": "Walker Hayes",
         "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.378378",
-        "source_id": 942,
-        "song_id": 10573,
-        "duplicate": true
-    },
-    {
-        "title": "No Return",
-        "artist_name": "Polo G ft. The Kid LAROI & Lil Durk",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.379379",
-        "source_id": 942,
+        "capture_date": "2021-10-10 10:57:25.571571",
+        "source_id": 943,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Avalanche",
-        "artist_name": "Migos",
+        "title": "We Didn't Have Much",
+        "artist_name": "Justin Moore",
         "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.379379",
-        "source_id": 942,
+        "capture_date": "2021-10-10 10:57:25.572572",
+        "source_id": 943,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Need To Know",
-        "artist_name": "Doja Cat",
+        "title": "Waves",
+        "artist_name": "Luke Bryan",
         "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.380380",
-        "source_id": 942,
-        "song_id": 10577,
-        "duplicate": true
-    },
-    {
-        "title": "Black Hearted",
-        "artist_name": "Polo G",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.380380",
-        "source_id": 942,
-        "song_id": 10574,
-        "duplicate": true
-    },
-    {
-        "title": "Painting Pictures",
-        "artist_name": "Polo G",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.381381",
-        "source_id": 942,
+        "capture_date": "2021-10-10 10:57:25.572572",
+        "source_id": 943,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Modern Day",
-        "artist_name": "Migos",
+        "title": "Lumberjack",
+        "artist_name": "Tyler, The Creator",
         "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.381381",
-        "source_id": 942,
-        "song_id": 10572,
-        "duplicate": true
-    },
-    {
-        "title": "Toxic",
-        "artist_name": "Polo G",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.381381",
-        "source_id": 942,
+        "capture_date": "2021-10-10 10:57:25.573573",
+        "source_id": 943,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Solar Power",
-        "artist_name": "Lorde",
+        "title": "Working",
+        "artist_name": "Tate McRae X Khalid",
         "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.381381",
-        "source_id": 942,
-        "song_id": 10581,
-        "duplicate": true
-    },
-    {
-        "title": "Malibu",
-        "artist_name": "Migos ft. Polo G",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.381381",
-        "source_id": 942,
+        "capture_date": "2021-10-10 10:57:25.573573",
+        "source_id": 943,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Type Shit",
-        "artist_name": "Migos & Cardi B",
+        "title": "My Boy",
+        "artist_name": "Elvie Shane",
         "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.381381",
-        "source_id": 942,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Clueless",
-        "artist_name": "Polo G ft. Pop Smoke & Fivio Foreign",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.382382",
-        "source_id": 942,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Heart Of A Giant",
-        "artist_name": "Polo G ft. Rod Wave",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.382382",
-        "source_id": 942,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Party Lyfe",
-        "artist_name": "Polo G ft. DaBaby",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.382382",
-        "source_id": 942,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Go Part 1",
-        "artist_name": "Polo G ft. G Herbo",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.382382",
-        "source_id": 942,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "transparentsoul",
-        "artist_name": "Willow ft. Travis Barker",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.382382",
-        "source_id": 942,
-        "song_id": 10329,
-        "duplicate": true
-    },
-    {
-        "title": "Boom",
-        "artist_name": "Polo G",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.382382",
-        "source_id": 942,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fiel",
-        "artist_name": "Los Legendarios, Wisin & Jhay Cortez",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.382382",
-        "source_id": 942,
-        "song_id": 10072,
-        "duplicate": true
-    },
-    {
-        "title": "Bloody Canvas",
-        "artist_name": "Polo G",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.383383",
-        "source_id": 942,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "You",
-        "artist_name": "Regard x Troye Sivan x Tate McRae",
-        "video_id": null,
-        "capture_date": "2021-10-10 10:44:03.383383",
-        "source_id": 942,
+        "capture_date": "2021-10-10 10:57:25.573573",
+        "source_id": 943,
         "song_id": null,
         "duplicate": false
     }
@@ -323,20 +197,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Having Our Way', 'Migos ft. Drake', NULL),
-  ('No Return', 'Polo G ft. The Kid LAROI & Lil Durk', NULL),
-  ('Avalanche', 'Migos', NULL),
-  ('Painting Pictures', 'Polo G', NULL),
-  ('Toxic', 'Polo G', NULL),
-  ('Malibu', 'Migos ft. Polo G', NULL),
-  ('Type Shit', 'Migos & Cardi B', NULL),
-  ('Clueless', 'Polo G ft. Pop Smoke & Fivio Foreign', NULL),
-  ('Heart Of A Giant', 'Polo G ft. Rod Wave', NULL),
-  ('Party Lyfe', 'Polo G ft. DaBaby', NULL),
-  ('Go Part 1', 'Polo G ft. G Herbo', NULL),
-  ('Boom', 'Polo G', NULL),
-  ('Bloody Canvas', 'Polo G', NULL),
-  ('You', 'Regard x Troye Sivan x Tate McRae', NULL)
+  ('Ball If I Want To', 'DaBaby', NULL),
+  ('Fancy Like', 'Walker Hayes', NULL),
+  ('We Didn’t Have Much', 'Justin Moore', NULL),
+  ('Waves', 'Luke Bryan', NULL),
+  ('Lumberjack', 'Tyler, The Creator', NULL),
+  ('Working', 'Tate McRae X Khalid', NULL),
+  ('My Boy', 'Elvie Shane', NULL)
   ;
 
    // Update to song table
@@ -347,7 +214,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10621; // SELECT last_insert_rowid();
+  song_id = 10628; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -387,27 +254,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-10 10:44:03.378378', '942', '10608'),
-  ('2021-10-10 10:44:03.378378', '942', '10573'),
-  ('2021-10-10 10:44:03.379379', '942', '10609'),
-  ('2021-10-10 10:44:03.379379', '942', '10610'),
-  ('2021-10-10 10:44:03.380380', '942', '10577'),
-  ('2021-10-10 10:44:03.380380', '942', '10574'),
-  ('2021-10-10 10:44:03.381381', '942', '10611'),
-  ('2021-10-10 10:44:03.381381', '942', '10572'),
-  ('2021-10-10 10:44:03.381381', '942', '10612'),
-  ('2021-10-10 10:44:03.381381', '942', '10581'),
-  ('2021-10-10 10:44:03.381381', '942', '10613'),
-  ('2021-10-10 10:44:03.381381', '942', '10614'),
-  ('2021-10-10 10:44:03.382382', '942', '10615'),
-  ('2021-10-10 10:44:03.382382', '942', '10616'),
-  ('2021-10-10 10:44:03.382382', '942', '10617'),
-  ('2021-10-10 10:44:03.382382', '942', '10618'),
-  ('2021-10-10 10:44:03.382382', '942', '10329'),
-  ('2021-10-10 10:44:03.382382', '942', '10619'),
-  ('2021-10-10 10:44:03.382382', '942', '10072'),
-  ('2021-10-10 10:44:03.383383', '942', '10620'),
-  ('2021-10-10 10:44:03.383383', '942', '10621')
+  ('2021-10-10 10:57:25.571571', '943', '10622'),
+  ('2021-10-10 10:57:25.571571', '943', '10623'),
+  ('2021-10-10 10:57:25.572572', '943', '10624'),
+  ('2021-10-10 10:57:25.572572', '943', '10625'),
+  ('2021-10-10 10:57:25.573573', '943', '10626'),
+  ('2021-10-10 10:57:25.573573', '943', '10627'),
+  ('2021-10-10 10:57:25.573573', '943', '10628')
   ;
 
   // Update to source_song table
