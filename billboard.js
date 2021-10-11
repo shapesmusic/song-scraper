@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 24, 2021', '2021-07-24 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-07-24/2021-07-24');
+    ('Billboard', 'The Hot 100', 'Week of July 31, 2021', '2021-07-31 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-07-31/2021-07-31');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 946; // SELECT last_insert_rowid();
+  source_id = 947; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -96,92 +96,110 @@
   songsData =
   [
       {
-          "title": "Permission To Dance",
-          "artist_name": "BTS",
+          "title": "Wild Side",
+          "artist_name": "Normani ft. Cardi B",
           "video_id": null,
-          "capture_date": "2021-10-11 08:33:41.988988",
-          "source_id": 946,
+          "capture_date": "2021-10-11 08:38:58.176176",
+          "source_id": 947,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Stay",
-          "artist_name": "The Kid LAROI & Justin Bieber",
+          "title": "Tell The Vision",
+          "artist_name": "Pop Smoke ft. Kanye West & Pusha T",
           "video_id": null,
-          "capture_date": "2021-10-11 08:33:41.989989",
-          "source_id": 946,
+          "capture_date": "2021-10-11 08:38:58.177177",
+          "source_id": 947,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Motley Crew",
-          "artist_name": "Post Malone",
+          "title": "Holy Smokes",
+          "artist_name": "Trippie Redd ft. Lil Uzi Vert",
           "video_id": null,
-          "capture_date": "2021-10-11 08:33:41.990990",
-          "source_id": 946,
+          "capture_date": "2021-10-11 08:38:58.177177",
+          "source_id": 947,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Whole Lotta Money",
-          "artist_name": "BIA ft. Nicki Minaj",
+          "title": "Bout A Million",
+          "artist_name": "Pop Smoke ft. 21 Savage & 42 Dugg",
           "video_id": null,
-          "capture_date": "2021-10-11 08:33:41.990990",
-          "source_id": 946,
+          "capture_date": "2021-10-11 08:38:58.177177",
+          "source_id": 947,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "NDA",
-          "artist_name": "Billie Eilish",
+          "title": "Woo Baby",
+          "artist_name": "Pop Smoke ft. Chris Brown",
           "video_id": null,
-          "capture_date": "2021-10-11 08:33:41.991991",
-          "source_id": 946,
+          "capture_date": "2021-10-11 08:38:58.178178",
+          "source_id": 947,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Memory",
-          "artist_name": "Kane Brown X blackbear",
+          "title": "Mr. Jones",
+          "artist_name": "Pop Smoke ft. Future",
           "video_id": null,
-          "capture_date": "2021-10-11 08:33:41.991991",
-          "source_id": 946,
+          "capture_date": "2021-10-11 08:38:58.178178",
+          "source_id": 947,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "The Jackie",
-          "artist_name": "Bas With J. Cole & Lil TJay",
+          "title": "More Time",
+          "artist_name": "Pop Smoke",
           "video_id": null,
-          "capture_date": "2021-10-11 08:33:41.991991",
-          "source_id": 946,
+          "capture_date": "2021-10-11 08:38:58.178178",
+          "source_id": 947,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Volando",
-          "artist_name": "Mora, Bad Bunny & Sech",
+          "title": "Manslaughter",
+          "artist_name": "Pop Smoke ft. Rick Ross & The-Dream",
           "video_id": null,
-          "capture_date": "2021-10-11 08:33:41.992992",
-          "source_id": 946,
+          "capture_date": "2021-10-11 08:38:58.178178",
+          "source_id": 947,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "De Museo",
-          "artist_name": "Bad Bunny",
+          "title": "Demeanor",
+          "artist_name": "Pop Smoke ft. Dua Lipa",
           "video_id": null,
-          "capture_date": "2021-10-11 08:33:41.992992",
-          "source_id": 946,
+          "capture_date": "2021-10-11 08:38:58.178178",
+          "source_id": 947,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Next Girl",
-          "artist_name": "Carly Pearce",
+          "title": "2055",
+          "artist_name": "Sleepy Hallow",
           "video_id": null,
-          "capture_date": "2021-10-11 08:33:41.992992",
-          "source_id": 946,
+          "capture_date": "2021-10-11 08:38:58.178178",
+          "source_id": 947,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Love Again",
+          "artist_name": "Dua Lipa",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:38:58.178178",
+          "source_id": 947,
+          "song_id": 10587,
+          "duplicate": true
+      },
+      {
+          "title": "30",
+          "artist_name": "Pop Smoke ft. Bizzy Banks",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:38:58.178178",
+          "source_id": 947,
           "song_id": null,
           "duplicate": false
       }
@@ -224,16 +242,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Permission To Dance', 'BTS', NULL),
-  ('Stay', 'The Kid LAROI & Justin Bieber', NULL),
-  ('Motley Crew', 'Post Malone', NULL),
-  ('Whole Lotta Money', 'BIA ft. Nicki Minaj', NULL),
-  ('NDA', 'Billie Eilish', NULL),
-  ('Memory', 'Kane Brown X blackbear', NULL),
-  ('The Jackie', 'Bas With J. Cole & Lil TJay', NULL),
-  ('Volando', 'Mora, Bad Bunny & Sech', NULL),
-  ('De Museo', 'Bad Bunny', NULL),
-  ('Next Girl', 'Carly Pearce', NULL)
+  ('Wild Side', 'Normani ft. Cardi B', NULL),
+  ('Tell The Vision', 'Pop Smoke ft. Kanye West & Pusha T', NULL),
+  ('Holy Smokes', 'Trippie Redd ft. Lil Uzi Vert', NULL),
+  ('Bout A Million', 'Pop Smoke ft. 21 Savage & 42 Dugg', NULL),
+  ('Woo Baby', 'Pop Smoke ft. Chris Brown', NULL),
+  ('Mr. Jones', 'Pop Smoke ft. Future', NULL),
+  ('More Time', 'Pop Smoke', NULL),
+  ('Manslaughter', 'Pop Smoke ft. Rick Ross & The-Dream', NULL),
+  ('Demeanor', 'Pop Smoke ft. Dua Lipa', NULL),
+  ('2055', 'Sleepy Hallow', NULL),
+  ('30', 'Pop Smoke ft. Bizzy Banks', NULL)
   ;
 
    // Update to song table
@@ -244,7 +263,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10666; // SELECT last_insert_rowid();
+  song_id = 10677; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -284,16 +303,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-11 08:33:41.988988', '946', '10657'),
-  ('2021-10-11 08:33:41.989989', '946', '10658'),
-  ('2021-10-11 08:33:41.990990', '946', '10659'),
-  ('2021-10-11 08:33:41.990990', '946', '10660'),
-  ('2021-10-11 08:33:41.991991', '946', '10661'),
-  ('2021-10-11 08:33:41.991991', '946', '10662'),
-  ('2021-10-11 08:33:41.991991', '946', '10663'),
-  ('2021-10-11 08:33:41.992992', '946', '10664'),
-  ('2021-10-11 08:33:41.992992', '946', '10665'),
-  ('2021-10-11 08:33:41.992992', '946', '10666')
+  ('2021-10-11 08:38:58.176176', '947', '10667'),
+  ('2021-10-11 08:38:58.177177', '947', '10668'),
+  ('2021-10-11 08:38:58.177177', '947', '10669'),
+  ('2021-10-11 08:38:58.177177', '947', '10670'),
+  ('2021-10-11 08:38:58.178178', '947', '10671'),
+  ('2021-10-11 08:38:58.178178', '947', '10672'),
+  ('2021-10-11 08:38:58.178178', '947', '10673'),
+  ('2021-10-11 08:38:58.178178', '947', '10674'),
+  ('2021-10-11 08:38:58.178178', '947', '10675'),
+  ('2021-10-11 08:38:58.178178', '947', '10676'),
+  ('2021-10-11 08:38:58.178178', '947', '10587'),
+  ('2021-10-11 08:38:58.178178', '947', '10677')
   ;
 
   // Update to source_song table
