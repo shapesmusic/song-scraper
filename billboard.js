@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of September 25, 2021', '2021-09-25 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-09-25/2021-09-25');
+    ('Billboard', 'The Hot 100', 'Week of October 2, 2021', '2021-10-02 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-10-02/2021-10-02');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 955; // SELECT last_insert_rowid();
+  source_id = 956; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -97,65 +97,110 @@
   songsData =
   [
       {
-          "title": "Shivers",
-          "artist_name": "Ed Sheeran",
+          "title": "Thats What I Want",
+          "artist_name": "Lil Nas X",
           "video_id": null,
-          "capture_date": "2021-10-11 12:05:00.176176",
-          "source_id": 955,
+          "capture_date": "2021-10-11 12:08:16.417417",
+          "source_id": 956,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Have Mercy",
-          "artist_name": "Chloe",
+          "title": "Wildest Dreams (Taylor's Version)",
+          "artist_name": "Taylor Swift",
           "video_id": null,
-          "capture_date": "2021-10-11 12:05:00.177177",
-          "source_id": 955,
+          "capture_date": "2021-10-11 12:08:16.419419",
+          "source_id": 956,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Range Brothers",
-          "artist_name": "Baby Keem & Kendrick Lamar",
+          "title": "Scoop",
+          "artist_name": "Lil Nas X ft. Doja Cat",
           "video_id": null,
-          "capture_date": "2021-10-11 12:05:00.178178",
-          "source_id": 955,
+          "capture_date": "2021-10-11 12:08:16.419419",
+          "source_id": 956,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Life Support",
+          "title": "Dolla Sign Slime",
+          "artist_name": "Lil Nas X ft. Megan Thee Stallion",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:08:16.419419",
+          "source_id": 956,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "On My Side",
           "artist_name": "YoungBoy Never Broke Again",
           "video_id": null,
-          "capture_date": "2021-10-11 12:05:00.178178",
-          "source_id": 955,
+          "capture_date": "2021-10-11 12:08:16.420420",
+          "source_id": 956,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Meet Me At Our Spot",
-          "artist_name": "THE ANXIETY: WILLOW & Tyler Cole",
+          "title": "Dead Right Now",
+          "artist_name": "Lil Nas X",
           "video_id": null,
-          "capture_date": "2021-10-11 12:05:00.178178",
-          "source_id": 955,
+          "capture_date": "2021-10-11 12:08:16.420420",
+          "source_id": 956,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Lonely",
-          "artist_name": "DaBaby X Lil Wayne",
+          "title": "Love Nwantiti (Ah Ah Ah)",
+          "artist_name": "CKay",
           "video_id": null,
-          "capture_date": "2021-10-11 12:05:00.178178",
-          "source_id": 955,
+          "capture_date": "2021-10-11 12:08:16.420420",
+          "source_id": 956,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Lalisa",
-          "artist_name": "Lisa",
+          "title": "Tales Of Dominica",
+          "artist_name": "Lil Nas X",
           "video_id": null,
-          "capture_date": "2021-10-11 12:05:00.179179",
-          "source_id": 955,
+          "capture_date": "2021-10-11 12:08:16.420420",
+          "source_id": 956,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "One Of Me",
+          "artist_name": "Lil Nas X ft. Elton John",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:08:16.420420",
+          "source_id": 956,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Lost In The Citadel",
+          "artist_name": "Lil Nas X",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:08:16.420420",
+          "source_id": 956,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Am I Dreaming",
+          "artist_name": "Lil Nas X ft. Miley Cyrus",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:08:16.421421",
+          "source_id": 956,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Same Boat",
+          "artist_name": "Zac Brown Band",
+          "video_id": null,
+          "capture_date": "2021-10-11 12:08:16.421421",
+          "source_id": 956,
           "song_id": null,
           "duplicate": false
       }
@@ -198,13 +243,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Shivers', 'Ed Sheeran', NULL),
-  ('Have Mercy', 'Chloe', NULL),
-  ('Range Brothers', 'Baby Keem & Kendrick Lamar', NULL),
-  ('Life Support', 'YoungBoy Never Broke Again', NULL),
-  ('Meet Me At Our Spot', 'THE ANXIETY: WILLOW & Tyler Cole', NULL),
-  ('Lonely', 'DaBaby X Lil Wayne', NULL),
-  ('Lalisa', 'Lisa', NULL)
+  ('Thats What I Want', 'Lil Nas X', NULL),
+  ('Wildest Dreams (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Scoop', 'Lil Nas X ft. Doja Cat', NULL),
+  ('Dolla Sign Slime', 'Lil Nas X ft. Megan Thee Stallion', NULL),
+  ('On My Side', 'YoungBoy Never Broke Again', NULL),
+  ('Dead Right Now', 'Lil Nas X', NULL),
+  ('Love Nwantiti (Ah Ah Ah)', 'CKay', NULL),
+  ('Tales Of Dominica', 'Lil Nas X', NULL),
+  ('One Of Me', 'Lil Nas X ft. Elton John', NULL),
+  ('Lost In The Citadel', 'Lil Nas X', NULL),
+  ('Am I Dreaming', 'Lil Nas X ft. Miley Cyrus', NULL),
+  ('Same Boat', 'Zac Brown Band', NULL)
   ;
 
    // Update to song table
@@ -215,7 +265,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10789; // SELECT last_insert_rowid();
+  song_id = 10801; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -255,13 +305,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-11 12:05:00.176176', '955', '10783'),
-  ('2021-10-11 12:05:00.177177', '955', '10784'),
-  ('2021-10-11 12:05:00.178178', '955', '10785'),
-  ('2021-10-11 12:05:00.178178', '955', '10786'),
-  ('2021-10-11 12:05:00.178178', '955', '10787'),
-  ('2021-10-11 12:05:00.178178', '955', '10788'),
-  ('2021-10-11 12:05:00.179179', '955', '10789')
+  ('2021-10-11 12:08:16.417417', '956', '10790'),
+  ('2021-10-11 12:08:16.419419', '956', '10791'),
+  ('2021-10-11 12:08:16.419419', '956', '10792'),
+  ('2021-10-11 12:08:16.419419', '956', '10793'),
+  ('2021-10-11 12:08:16.420420', '956', '10794'),
+  ('2021-10-11 12:08:16.420420', '956', '10795'),
+  ('2021-10-11 12:08:16.420420', '956', '10796'),
+  ('2021-10-11 12:08:16.420420', '956', '10797'),
+  ('2021-10-11 12:08:16.420420', '956', '10798'),
+  ('2021-10-11 12:08:16.420420', '956', '10799'),
+  ('2021-10-11 12:08:16.421421', '956', '10800'),
+  ('2021-10-11 12:08:16.421421', '956', '10801')
   ;
 
   // Update to source_song table
