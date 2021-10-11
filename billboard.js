@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 17, 2021', '2021-07-17 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-07-17/2021-07-17');
+    ('Billboard', 'The Hot 100', 'Week of July 24, 2021', '2021-07-24 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-07-24/2021-07-24');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 945; // SELECT last_insert_rowid();
+  source_id = 946; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -95,88 +95,97 @@
 
   songsData =
   [
-    {
-        "title": "Am I The Only One",
-        "artist_name": "Aaron Lewis",
-        "video_id": null,
-        "capture_date": "2021-10-11 08:28:40.161161",
-        "source_id": 945,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Wasting Time",
-        "artist_name": "Brent Faiyaz ft. Drake",
-        "video_id": null,
-        "capture_date": "2021-10-11 08:28:40.163163",
-        "source_id": 945,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Renegade",
-        "artist_name": "Big Red Machine ft. Taylor Swift",
-        "video_id": null,
-        "capture_date": "2021-10-11 08:28:40.164164",
-        "source_id": 945,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cry No More",
-        "artist_name": "G Herbo ft. Polo G & Lil Tjay",
-        "video_id": null,
-        "capture_date": "2021-10-11 08:28:40.164164",
-        "source_id": 945,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Essence",
-        "artist_name": "Wizkid ft. Justin Bieber & Tems",
-        "video_id": null,
-        "capture_date": "2021-10-11 08:28:40.164164",
-        "source_id": 945,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "A-O-K",
-        "artist_name": "Tai Verdes",
-        "video_id": null,
-        "capture_date": "2021-10-11 08:28:40.164164",
-        "source_id": 945,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "You Should Probably Leave",
-        "artist_name": "Chris Stapleton",
-        "video_id": null,
-        "capture_date": "2021-10-11 08:28:40.164164",
-        "source_id": 945,
-        "song_id": 9578,
-        "duplicate": true
-    },
-    {
-        "title": "I Was On A Boat That Day",
-        "artist_name": "Old Dominion",
-        "video_id": null,
-        "capture_date": "2021-10-11 08:28:40.164164",
-        "source_id": 945,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cold Beer Calling My Name",
-        "artist_name": "Jameson Rodgers ft. Luke Combs",
-        "video_id": null,
-        "capture_date": "2021-10-11 08:28:40.164164",
-        "source_id": 945,
-        "song_id": null,
-        "duplicate": false
-    }
-]
+      {
+          "title": "Permission To Dance",
+          "artist_name": "BTS",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:33:41.988988",
+          "source_id": 946,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Stay",
+          "artist_name": "The Kid LAROI & Justin Bieber",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:33:41.989989",
+          "source_id": 946,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Motley Crew",
+          "artist_name": "Post Malone",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:33:41.990990",
+          "source_id": 946,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Whole Lotta Money",
+          "artist_name": "BIA ft. Nicki Minaj",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:33:41.990990",
+          "source_id": 946,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "NDA",
+          "artist_name": "Billie Eilish",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:33:41.991991",
+          "source_id": 946,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Memory",
+          "artist_name": "Kane Brown X blackbear",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:33:41.991991",
+          "source_id": 946,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "The Jackie",
+          "artist_name": "Bas With J. Cole & Lil TJay",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:33:41.991991",
+          "source_id": 946,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Volando",
+          "artist_name": "Mora, Bad Bunny & Sech",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:33:41.992992",
+          "source_id": 946,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "De Museo",
+          "artist_name": "Bad Bunny",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:33:41.992992",
+          "source_id": 946,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Next Girl",
+          "artist_name": "Carly Pearce",
+          "video_id": null,
+          "capture_date": "2021-10-11 08:33:41.992992",
+          "source_id": 946,
+          "song_id": null,
+          "duplicate": false
+      }
+  ]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -215,14 +224,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Am I The Only One', 'Aaron Lewis', NULL),
-  ('Wasting Time', 'Brent Faiyaz ft. Drake', NULL),
-  ('Renegade', 'Big Red Machine ft. Taylor Swift', NULL),
-  ('Cry No More', 'G Herbo ft. Polo G & Lil Tjay', NULL),
-  ('Essence', 'Wizkid ft. Justin Bieber & Tems', NULL),
-  ('A-O-K', 'Tai Verdes', NULL),
-  ('I Was On A Boat That Day', 'Old Dominion', NULL),
-  ('Cold Beer Calling My Name', 'Jameson Rodgers ft. Luke Combs', NULL)
+  ('Permission To Dance', 'BTS', NULL),
+  ('Stay', 'The Kid LAROI & Justin Bieber', NULL),
+  ('Motley Crew', 'Post Malone', NULL),
+  ('Whole Lotta Money', 'BIA ft. Nicki Minaj', NULL),
+  ('NDA', 'Billie Eilish', NULL),
+  ('Memory', 'Kane Brown X blackbear', NULL),
+  ('The Jackie', 'Bas With J. Cole & Lil TJay', NULL),
+  ('Volando', 'Mora, Bad Bunny & Sech', NULL),
+  ('De Museo', 'Bad Bunny', NULL),
+  ('Next Girl', 'Carly Pearce', NULL)
   ;
 
    // Update to song table
@@ -233,7 +244,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10656; // SELECT last_insert_rowid();
+  song_id = 10666; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -273,15 +284,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-11 08:28:40.161161', '945', '10649'),
-  ('2021-10-11 08:28:40.163163', '945', '10650'),
-  ('2021-10-11 08:28:40.164164', '945', '10651'),
-  ('2021-10-11 08:28:40.164164', '945', '10652'),
-  ('2021-10-11 08:28:40.164164', '945', '10653'),
-  ('2021-10-11 08:28:40.164164', '945', '10654'),
-  ('2021-10-11 08:28:40.164164', '945', '9578'),
-  ('2021-10-11 08:28:40.164164', '945', '10655'),
-  ('2021-10-11 08:28:40.164164', '945', '10656')
+  ('2021-10-11 08:33:41.988988', '946', '10657'),
+  ('2021-10-11 08:33:41.989989', '946', '10658'),
+  ('2021-10-11 08:33:41.990990', '946', '10659'),
+  ('2021-10-11 08:33:41.990990', '946', '10660'),
+  ('2021-10-11 08:33:41.991991', '946', '10661'),
+  ('2021-10-11 08:33:41.991991', '946', '10662'),
+  ('2021-10-11 08:33:41.991991', '946', '10663'),
+  ('2021-10-11 08:33:41.992992', '946', '10664'),
+  ('2021-10-11 08:33:41.992992', '946', '10665'),
+  ('2021-10-11 08:33:41.992992', '946', '10666')
   ;
 
   // Update to source_song table
