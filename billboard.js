@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of September 4, 2021', '2021-09-04 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-09-04/2021-09-04');
+    ('Billboard', 'The Hot 100', 'Week of September 11, 2021', '2021-09-11 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-09-11/2021-09-11');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 952; // SELECT last_insert_rowid();
+  source_id = 953; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -97,146 +97,245 @@
   songsData =
   [
       {
-          "title": "Summer Of Love",
-          "artist_name": "Shawn Mendes & Tainy",
+          "title": "Hurricane",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.499499",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.165165",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Matt Hardy 999",
-          "artist_name": "Trippie Redd ft. Juice WRLD",
+          "title": "Jail",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.499499",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.166166",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Rich MF",
-          "artist_name": "Trippie Redd ft. Lil Durk & Polo G",
+          "title": "Off The Grid",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.499499",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.166166",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Already Won",
-          "artist_name": "Rod Wave ft. Lil Durk",
+          "title": "Ok Ok",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.499499",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.166166",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Betrayal",
-          "artist_name": "Trippie Redd ft. Drake",
+          "title": "Junya",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.499499",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.167167",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Don't Go",
-          "artist_name": "Skrillex, Justin Bieber & Don Toliver",
+          "title": "Moon",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.499499",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.167167",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "One Mississippi",
-          "artist_name": "Kane Brown",
+          "title": "Family Ties",
+          "artist_name": "Baby Keem & Kendrick Lamar",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.500500",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.167167",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Visiting Hours",
-          "artist_name": "Ed Sheeran",
+          "title": "Praise God",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.500500",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.167167",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "MP5",
-          "artist_name": "Trippie Redd ft. SoFaygo",
+          "title": "Sharing Locations",
+          "artist_name": "Meek Mill ft. Lil Baby & Lil Durk",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.500500",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.167167",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "I Guess I'm In Love",
-          "artist_name": "Clinton Kane",
+          "title": "Jesus Lord",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.500500",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.167167",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Get Ready",
-          "artist_name": "Rod Wave ft. Kodak Black",
+          "title": "Jonah",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.500500",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.167167",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Danny Phantom",
-          "artist_name": "Trippie Redd ft. XXXTENTACION",
+          "title": "Believe What I Say",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.500500",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.167167",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "What's Wrong",
-          "artist_name": "Rod Wave",
+          "title": "God Breathed",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.500500",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.167167",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Demon Time",
-          "artist_name": "Trippie Redd ft. Ski Mask The Slump God",
+          "title": "Remote Control",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.500500",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.168168",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Tick Tock",
-          "artist_name": "Young Thug",
+          "title": "Heaven And Hell",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.500500",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.168168",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Time Heals",
-          "artist_name": "Rod Wave",
+          "title": "24",
+          "artist_name": "Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-11 11:00:22.500500",
-          "source_id": 952,
+          "capture_date": "2021-10-11 11:21:38.168168",
+          "source_id": 953,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Pure Souls",
+          "artist_name": "Kanye West",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:21:38.169169",
+          "source_id": 953,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "No Child Left Behind",
+          "artist_name": "Kanye West",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:21:38.169169",
+          "source_id": 953,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Donda",
+          "artist_name": "Kanye West",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:21:38.169169",
+          "source_id": 953,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Keep My Spirit Alive",
+          "artist_name": "Kanye West",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:21:38.169169",
+          "source_id": 953,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Jail Pt 2",
+          "artist_name": "Kanye West",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:21:38.169169",
+          "source_id": 953,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "I Am Not A Woman, I'm A God",
+          "artist_name": "Halsey",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:21:38.169169",
+          "source_id": 953,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "New Again",
+          "artist_name": "Kanye West",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:21:38.169169",
+          "source_id": 953,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Lord I Need You",
+          "artist_name": "Kanye West",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:21:38.169169",
+          "source_id": 953,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Come To Life",
+          "artist_name": "Kanye West",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:21:38.169169",
+          "source_id": 953,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Tell The Vision",
+          "artist_name": "Kanye West",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:21:38.170170",
+          "source_id": 953,
+          "song_id": 10668,
+          "duplicate": true
+      },
+      {
+          "title": "In Da Getto",
+          "artist_name": "J Balvin & Skrillex",
+          "video_id": null,
+          "capture_date": "2021-10-11 11:21:38.170170",
+          "source_id": 953,
           "song_id": null,
           "duplicate": false
       }
@@ -279,22 +378,32 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Summer Of Love', 'Shawn Mendes & Tainy', NULL),
-  ('Matt Hardy 999', 'Trippie Redd ft. Juice WRLD', NULL),
-  ('Rich MF', 'Trippie Redd ft. Lil Durk & Polo G', NULL),
-  ('Already Won', 'Rod Wave ft. Lil Durk', NULL),
-  ('Betrayal', 'Trippie Redd ft. Drake', NULL),
-  ('Don’t Go', 'Skrillex, Justin Bieber & Don Toliver', NULL),
-  ('One Mississippi', 'Kane Brown', NULL),
-  ('Visiting Hours', 'Ed Sheeran', NULL),
-  ('MP5', 'Trippie Redd ft. SoFaygo', NULL),
-  ('I Guess I’m In Love', 'Clinton Kane', NULL),
-  ('Get Ready', 'Rod Wave ft. Kodak Black', NULL),
-  ('Danny Phantom', 'Trippie Redd ft. XXXTENTACION', NULL),
-  ('What’s Wrong', 'Rod Wave', NULL),
-  ('Demon Time', 'Trippie Redd ft. Ski Mask The Slump God', NULL),
-  ('Tick Tock', 'Young Thug', NULL),
-  ('Time Heals', 'Rod Wave', NULL)
+  ('Hurricane', 'Kanye West', NULL),
+  ('Jail', 'Kanye West', NULL),
+  ('Off The Grid', 'Kanye West', NULL),
+  ('Ok Ok', 'Kanye West', NULL),
+  ('Junya', 'Kanye West', NULL),
+  ('Moon', 'Kanye West', NULL),
+  ('Family Ties', 'Baby Keem & Kendrick Lamar', NULL),
+  ('Praise God', 'Kanye West', NULL),
+  ('Sharing Locations', 'Meek Mill ft. Lil Baby & Lil Durk', NULL),
+  ('Jesus Lord', 'Kanye West', NULL),
+  ('Jonah', 'Kanye West', NULL),
+  ('Believe What I Say', 'Kanye West', NULL),
+  ('God Breathed', 'Kanye West', NULL),
+  ('Remote Control', 'Kanye West', NULL),
+  ('Heaven And Hell', 'Kanye West', NULL),
+  ('24', 'Kanye West', NULL),
+  ('Pure Souls', 'Kanye West', NULL),
+  ('No Child Left Behind', 'Kanye West', NULL),
+  ('Donda', 'Kanye West', NULL),
+  ('Keep My Spirit Alive', 'Kanye West', NULL),
+  ('Jail Pt 2', 'Kanye West', NULL),
+  ('I Am Not A Woman, I’m A God', 'Halsey', NULL),
+  ('New Again', 'Kanye West', NULL),
+  ('Lord I Need You', 'Kanye West', NULL),
+  ('Come To Life', 'Kanye West', NULL),
+  ('In Da Getto', 'J Balvin & Skrillex', NULL)
   ;
 
    // Update to song table
@@ -305,7 +414,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10734; // SELECT last_insert_rowid();
+  song_id = 10760; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -345,22 +454,33 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-11 11:00:22.499499', '952', '10719'),
-  ('2021-10-11 11:00:22.499499', '952', '10720'),
-  ('2021-10-11 11:00:22.499499', '952', '10721'),
-  ('2021-10-11 11:00:22.499499', '952', '10722'),
-  ('2021-10-11 11:00:22.499499', '952', '10723'),
-  ('2021-10-11 11:00:22.499499', '952', '10724'),
-  ('2021-10-11 11:00:22.500500', '952', '10725'),
-  ('2021-10-11 11:00:22.500500', '952', '10726'),
-  ('2021-10-11 11:00:22.500500', '952', '10727'),
-  ('2021-10-11 11:00:22.500500', '952', '10728'),
-  ('2021-10-11 11:00:22.500500', '952', '10729'),
-  ('2021-10-11 11:00:22.500500', '952', '10730'),
-  ('2021-10-11 11:00:22.500500', '952', '10731'),
-  ('2021-10-11 11:00:22.500500', '952', '10732'),
-  ('2021-10-11 11:00:22.500500', '952', '10733'),
-  ('2021-10-11 11:00:22.500500', '952', '10734')
+  ('2021-10-11 11:21:38.165165', '953', '10735'),
+  ('2021-10-11 11:21:38.166166', '953', '10736'),
+  ('2021-10-11 11:21:38.166166', '953', '10737'),
+  ('2021-10-11 11:21:38.166166', '953', '10738'),
+  ('2021-10-11 11:21:38.167167', '953', '10739'),
+  ('2021-10-11 11:21:38.167167', '953', '10740'),
+  ('2021-10-11 11:21:38.167167', '953', '10741'),
+  ('2021-10-11 11:21:38.167167', '953', '10742'),
+  ('2021-10-11 11:21:38.167167', '953', '10743'),
+  ('2021-10-11 11:21:38.167167', '953', '10744'),
+  ('2021-10-11 11:21:38.167167', '953', '10745'),
+  ('2021-10-11 11:21:38.167167', '953', '10746'),
+  ('2021-10-11 11:21:38.167167', '953', '10747'),
+  ('2021-10-11 11:21:38.168168', '953', '10748'),
+  ('2021-10-11 11:21:38.168168', '953', '10749'),
+  ('2021-10-11 11:21:38.168168', '953', '10750'),
+  ('2021-10-11 11:21:38.169169', '953', '10751'),
+  ('2021-10-11 11:21:38.169169', '953', '10752'),
+  ('2021-10-11 11:21:38.169169', '953', '10753'),
+  ('2021-10-11 11:21:38.169169', '953', '10754'),
+  ('2021-10-11 11:21:38.169169', '953', '10755'),
+  ('2021-10-11 11:21:38.169169', '953', '10756'),
+  ('2021-10-11 11:21:38.169169', '953', '10757'),
+  ('2021-10-11 11:21:38.169169', '953', '10758'),
+  ('2021-10-11 11:21:38.169169', '953', '10759'),
+  ('2021-10-11 11:21:38.170170', '953', '10668'),
+  ('2021-10-11 11:21:38.170170', '953', '10760')
   ;
 
   // Update to source_song table
