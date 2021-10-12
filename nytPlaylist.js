@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Lil Nas X and Jack Harlow’s Prison Break, and 13 More New Songs', '2021-09-21 01:05:21.000000', 'https://www.nytimes.com/2021/07/23/arts/music/playlist-lil-nas-x-camila-cabello.html');
+    ('New York Times', 'The Playlist', 'Silk Sonic’s Retro Roller Jam, and 12 More New Songs', '2021-07-30 12:47:40.000000', 'https://www.nytimes.com/2021/07/30/arts/music/playlist-silk-sonic-bomba-estereo.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 965; // SELECT last_insert_rowid();
+  source_id = 966; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,101 +99,101 @@
   songsData =
   [
       {
-          "title": "Industry Baby",
-          "artist_name": "Lil Nas X ft. Jack Harlow",
+          "title": "Skate",
+          "artist_name": "Silk Sonic",
           "video_id": null,
-          "capture_date": "2021-10-12 01:11:23.313313",
-          "source_id": 965,
-          "song_id": 10678,
+          "capture_date": "2021-10-12 01:16:45.414414",
+          "source_id": 966,
+          "song_id": 10690,
           "duplicate": true
       },
       {
-          "title": "Liquor Store",
-          "artist_name": "Remi Wolf",
+          "title": "Conexión Total",
+          "artist_name": "Bomba Estéreo ft. Yemi Alade",
           "video_id": null,
-          "capture_date": "2021-10-12 01:11:23.314314",
-          "source_id": 965,
+          "capture_date": "2021-10-12 01:16:45.416416",
+          "source_id": 966,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Don’t Go Yet",
-          "artist_name": "Camila Cabello",
+          "title": "Pond House",
+          "artist_name": "Saint Etienne",
           "video_id": null,
-          "capture_date": "2021-10-12 01:11:23.314314",
-          "source_id": 965,
-          "song_id": 10681,
-          "duplicate": true
-      },
-      {
-          "title": "Spirit_X",
-          "artist_name": "Alewya",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:11:23.314314",
-          "source_id": 965,
+          "capture_date": "2021-10-12 01:16:45.416416",
+          "source_id": 966,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Thula Thula",
-          "artist_name": "Kamo Mphela",
+          "title": "Los Chucos Suaves",
+          "artist_name": "Los Lobos",
           "video_id": null,
-          "capture_date": "2021-10-12 01:11:23.314314",
-          "source_id": 965,
+          "capture_date": "2021-10-12 01:16:45.416416",
+          "source_id": 966,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Stoned at the Nail Salon",
-          "artist_name": "Lorde",
+          "title": "Tony Speaks!",
+          "artist_name": "Dry Cleaning",
           "video_id": null,
-          "capture_date": "2021-10-12 01:11:23.314314",
-          "source_id": 965,
+          "capture_date": "2021-10-12 01:16:45.416416",
+          "source_id": 966,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "U V V P",
-          "artist_name": "Illuminati Hotties",
+          "title": "Damn",
+          "artist_name": "Ada Lea",
           "video_id": null,
-          "capture_date": "2021-10-12 01:11:23.315315",
-          "source_id": 965,
+          "capture_date": "2021-10-12 01:16:45.416416",
+          "source_id": 966,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Hold U",
-          "artist_name": "Indigo De Souza",
+          "title": "Oh Dje",
+          "artist_name": "Ekyu",
           "video_id": null,
-          "capture_date": "2021-10-12 01:11:23.315315",
-          "source_id": 965,
+          "capture_date": "2021-10-12 01:16:45.416416",
+          "source_id": 966,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Right on Time",
-          "artist_name": "Brandi Carlile",
+          "title": "And Then Life Was Beautiful",
+          "artist_name": "Nao",
           "video_id": null,
-          "capture_date": "2021-10-12 01:11:23.315315",
-          "source_id": 965,
+          "capture_date": "2021-10-12 01:16:45.416416",
+          "source_id": 966,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Living Proof",
-          "artist_name": "The War on Drugs",
+          "title": "Marchita",
+          "artist_name": "Silvana Estrada",
           "video_id": null,
-          "capture_date": "2021-10-12 01:11:23.315315",
-          "source_id": 965,
+          "capture_date": "2021-10-12 01:16:45.417417",
+          "source_id": 966,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Burn",
-          "artist_name": "Jordyn Simone",
+          "title": "Unclean Mind",
+          "artist_name": "Grouper",
           "video_id": null,
-          "capture_date": "2021-10-12 01:11:23.315315",
-          "source_id": 965,
+          "capture_date": "2021-10-12 01:16:45.417417",
+          "source_id": 966,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Long Exposure",
+          "artist_name": "Dot Allison",
+          "video_id": null,
+          "capture_date": "2021-10-12 01:16:45.417417",
+          "source_id": 966,
           "song_id": null,
           "duplicate": false
       }
@@ -236,15 +236,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Liquor Store', 'Remi Wolf', NULL),
-  ('Spirit_X', 'Alewya', NULL),
-  ('Thula Thula', 'Kamo Mphela', NULL),
-  ('Stoned at the Nail Salon', 'Lorde', NULL),
-  ('U V V P', 'Illuminati Hotties', NULL),
-  ('Hold U', 'Indigo De Souza', NULL),
-  ('Right on Time', 'Brandi Carlile', NULL),
-  ('Living Proof', 'The War on Drugs', NULL),
-  ('Burn', 'Jordyn Simone', NULL)
+  ('Conexión Total', 'Bomba Estéreo ft. Yemi Alade', NULL),
+  ('Pond House', 'Saint Etienne', NULL),
+  ('Los Chucos Suaves', 'Los Lobos', NULL),
+  ('Tony Speaks!', 'Dry Cleaning', NULL),
+  ('Damn', 'Ada Lea', NULL),
+  ('Oh Dje', 'Ekyu', NULL),
+  ('And Then Life Was Beautiful', 'Nao', NULL),
+  ('Marchita', 'Silvana Estrada', NULL),
+  ('Unclean Mind', 'Grouper', NULL),
+  ('Long Exposure', 'Dot Allison', NULL)
   ;
 
    // Update to song table
@@ -255,7 +256,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10889; // SELECT last_insert_rowid();
+  song_id = 10899; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -295,17 +296,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 01:11:23.313313', '965', '10678'),
-  ('2021-10-12 01:11:23.314314', '965', '10881'),
-  ('2021-10-12 01:11:23.314314', '965', '10681'),
-  ('2021-10-12 01:11:23.314314', '965', '10882'),
-  ('2021-10-12 01:11:23.314314', '965', '10883'),
-  ('2021-10-12 01:11:23.314314', '965', '10884'),
-  ('2021-10-12 01:11:23.315315', '965', '10885'),
-  ('2021-10-12 01:11:23.315315', '965', '10886'),
-  ('2021-10-12 01:11:23.315315', '965', '10887'),
-  ('2021-10-12 01:11:23.315315', '965', '10888'),
-  ('2021-10-12 01:11:23.315315', '965', '10889')
+  ('2021-10-12 01:16:45.414414', '966', '10690'),
+  ('2021-10-12 01:16:45.416416', '966', '10890'),
+  ('2021-10-12 01:16:45.416416', '966', '10891'),
+  ('2021-10-12 01:16:45.416416', '966', '10892'),
+  ('2021-10-12 01:16:45.416416', '966', '10893'),
+  ('2021-10-12 01:16:45.416416', '966', '10894'),
+  ('2021-10-12 01:16:45.416416', '966', '10895'),
+  ('2021-10-12 01:16:45.416416', '966', '10896'),
+  ('2021-10-12 01:16:45.417417', '966', '10897'),
+  ('2021-10-12 01:16:45.417417', '966', '10898'),
+  ('2021-10-12 01:16:45.417417', '966', '10899')
   ;
 
   // Update to source_song table
