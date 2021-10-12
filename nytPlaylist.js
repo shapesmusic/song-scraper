@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Pop Smoke’s Memory Lives On, and 14 More New Songs', '2021-08-03 10:30:23.000000', 'https://www.nytimes.com/2021/07/16/arts/music/playlist-pop-smoke-swedish-house-mafia.html');
+    ('New York Times', 'The Playlist', 'Lil Nas X and Jack Harlow’s Prison Break, and 13 More New Songs', '2021-09-21 01:05:21.000000', 'https://www.nytimes.com/2021/07/23/arts/music/playlist-lil-nas-x-camila-cabello.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 964; // SELECT last_insert_rowid();
+  source_id = 965; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,119 +99,101 @@
   songsData =
   [
       {
-          "title": "More Time",
-          "artist_name": "Pop Smoke",
+          "title": "Industry Baby",
+          "artist_name": "Lil Nas X ft. Jack Harlow",
           "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.119119",
-          "source_id": 964,
-          "song_id": 10673,
+          "capture_date": "2021-10-12 01:11:23.313313",
+          "source_id": 965,
+          "song_id": 10678,
           "duplicate": true
       },
       {
-          "title": "Working All the Time",
-          "artist_name": "Xenia Rubinos",
+          "title": "Liquor Store",
+          "artist_name": "Remi Wolf",
           "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.120120",
-          "source_id": 964,
+          "capture_date": "2021-10-12 01:11:23.314314",
+          "source_id": 965,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "It Gets Better",
-          "artist_name": "Swedish House Mafia",
+          "title": "Don’t Go Yet",
+          "artist_name": "Camila Cabello",
           "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.121121",
-          "source_id": 964,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Whenever You’re Ready",
-          "artist_name": "Mahalia",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.121121",
-          "source_id": 964,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Bunny Is a Rider",
-          "artist_name": "Caroline Polachek",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.121121",
-          "source_id": 964,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Rom Com 2004",
-          "artist_name": "Soccer Mommy",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.121121",
-          "source_id": 964,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Alien Love Call",
-          "artist_name": "Turnstile ft. Blood Orange",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.121121",
-          "source_id": 964,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Swimmer",
-          "artist_name": "Half Waif",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.121121",
-          "source_id": 964,
-          "song_id": 10335,
+          "capture_date": "2021-10-12 01:11:23.314314",
+          "source_id": 965,
+          "song_id": 10681,
           "duplicate": true
       },
       {
-          "title": "Idea of You",
-          "artist_name": "Yas",
+          "title": "Spirit_X",
+          "artist_name": "Alewya",
           "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.121121",
-          "source_id": 964,
+          "capture_date": "2021-10-12 01:11:23.314314",
+          "source_id": 965,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "White Picket Fence",
-          "artist_name": "Koreless",
+          "title": "Thula Thula",
+          "artist_name": "Kamo Mphela",
           "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.121121",
-          "source_id": 964,
+          "capture_date": "2021-10-12 01:11:23.314314",
+          "source_id": 965,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "200 Copas",
-          "artist_name": "Karol G",
+          "title": "Stoned at the Nail Salon",
+          "artist_name": "Lorde",
           "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.121121",
-          "source_id": 964,
+          "capture_date": "2021-10-12 01:11:23.314314",
+          "source_id": 965,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "El Plan",
-          "artist_name": "Tainy and Yandel",
+          "title": "U V V P",
+          "artist_name": "Illuminati Hotties",
           "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.121121",
-          "source_id": 964,
+          "capture_date": "2021-10-12 01:11:23.315315",
+          "source_id": 965,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Momento Presente",
-          "artist_name": "Mas Aya",
+          "title": "Hold U",
+          "artist_name": "Indigo De Souza",
           "video_id": null,
-          "capture_date": "2021-10-12 01:01:01.121121",
-          "source_id": 964,
+          "capture_date": "2021-10-12 01:11:23.315315",
+          "source_id": 965,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Right on Time",
+          "artist_name": "Brandi Carlile",
+          "video_id": null,
+          "capture_date": "2021-10-12 01:11:23.315315",
+          "source_id": 965,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Living Proof",
+          "artist_name": "The War on Drugs",
+          "video_id": null,
+          "capture_date": "2021-10-12 01:11:23.315315",
+          "source_id": 965,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Burn",
+          "artist_name": "Jordyn Simone",
+          "video_id": null,
+          "capture_date": "2021-10-12 01:11:23.315315",
+          "source_id": 965,
           "song_id": null,
           "duplicate": false
       }
@@ -254,17 +236,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Working All the Time', 'Xenia Rubinos', NULL),
-  ('It Gets Better', 'Swedish House Mafia', NULL),
-  ('Whenever You’re Ready', 'Mahalia', NULL),
-  ('Bunny Is a Rider', 'Caroline Polachek', NULL),
-  ('Rom Com 2004', 'Soccer Mommy', NULL),
-  ('Alien Love Call', 'Turnstile ft. Blood Orange', NULL),
-  ('Idea of You', 'Yas', NULL),
-  ('White Picket Fence', 'Koreless', NULL),
-  ('200 Copas', 'Karol G', NULL),
-  ('El Plan', 'Tainy and Yandel', NULL),
-  ('Momento Presente', 'Mas Aya', NULL)
+  ('Liquor Store', 'Remi Wolf', NULL),
+  ('Spirit_X', 'Alewya', NULL),
+  ('Thula Thula', 'Kamo Mphela', NULL),
+  ('Stoned at the Nail Salon', 'Lorde', NULL),
+  ('U V V P', 'Illuminati Hotties', NULL),
+  ('Hold U', 'Indigo De Souza', NULL),
+  ('Right on Time', 'Brandi Carlile', NULL),
+  ('Living Proof', 'The War on Drugs', NULL),
+  ('Burn', 'Jordyn Simone', NULL)
   ;
 
    // Update to song table
@@ -275,7 +255,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10880; // SELECT last_insert_rowid();
+  song_id = 10889; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -315,19 +295,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 01:01:01.119119', '964', '10673'),
-  ('2021-10-12 01:01:01.120120', '964', '10870'),
-  ('2021-10-12 01:01:01.121121', '964', '10871'),
-  ('2021-10-12 01:01:01.121121', '964', '10872'),
-  ('2021-10-12 01:01:01.121121', '964', '10873'),
-  ('2021-10-12 01:01:01.121121', '964', '10874'),
-  ('2021-10-12 01:01:01.121121', '964', '10875'),
-  ('2021-10-12 01:01:01.121121', '964', '10335'),
-  ('2021-10-12 01:01:01.121121', '964', '10876'),
-  ('2021-10-12 01:01:01.121121', '964', '10877'),
-  ('2021-10-12 01:01:01.121121', '964', '10878'),
-  ('2021-10-12 01:01:01.121121', '964', '10879'),
-  ('2021-10-12 01:01:01.121121', '964', '10880')
+  ('2021-10-12 01:11:23.313313', '965', '10678'),
+  ('2021-10-12 01:11:23.314314', '965', '10881'),
+  ('2021-10-12 01:11:23.314314', '965', '10681'),
+  ('2021-10-12 01:11:23.314314', '965', '10882'),
+  ('2021-10-12 01:11:23.314314', '965', '10883'),
+  ('2021-10-12 01:11:23.314314', '965', '10884'),
+  ('2021-10-12 01:11:23.315315', '965', '10885'),
+  ('2021-10-12 01:11:23.315315', '965', '10886'),
+  ('2021-10-12 01:11:23.315315', '965', '10887'),
+  ('2021-10-12 01:11:23.315315', '965', '10888'),
+  ('2021-10-12 01:11:23.315315', '965', '10889')
   ;
 
   // Update to source_song table
