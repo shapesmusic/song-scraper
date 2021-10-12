@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Silk Sonic’s Retro Roller Jam, and 12 More New Songs', '2021-07-30 12:47:40.000000', 'https://www.nytimes.com/2021/07/30/arts/music/playlist-silk-sonic-bomba-estereo.html');
+    ('New York Times', 'The Playlist', 'The Weeknd’s Disco Fever, and 9 More New Songs', '2021-08-09 12:56:40.000000', 'https://www.nytimes.com/2021/08/06/arts/music/playlist-weeknd-bad-bunny-nelly.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 966; // SELECT last_insert_rowid();
+  source_id = 967; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,101 +99,83 @@
   songsData =
   [
       {
-          "title": "Skate",
-          "artist_name": "Silk Sonic",
+          "title": "Take My Breath",
+          "artist_name": "The Weeknd",
           "video_id": null,
-          "capture_date": "2021-10-12 01:16:45.414414",
-          "source_id": 966,
-          "song_id": 10690,
+          "capture_date": "2021-10-12 01:27:33.008008",
+          "source_id": 967,
+          "song_id": 10701,
           "duplicate": true
       },
       {
-          "title": "Conexión Total",
-          "artist_name": "Bomba Estéreo ft. Yemi Alade",
+          "title": "Volví",
+          "artist_name": "Aventura and Bad Bunny",
           "video_id": null,
-          "capture_date": "2021-10-12 01:16:45.416416",
-          "source_id": 966,
+          "capture_date": "2021-10-12 01:27:33.010010",
+          "source_id": 967,
+          "song_id": 10691,
+          "duplicate": true
+      },
+      {
+          "title": "Absurd",
+          "artist_name": "Guns N’ Roses",
+          "video_id": null,
+          "capture_date": "2021-10-12 01:27:33.010010",
+          "source_id": 967,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Pond House",
-          "artist_name": "Saint Etienne",
+          "title": "High Horse",
+          "artist_name": "Nelly ft. Breland and Blanco Brown",
           "video_id": null,
-          "capture_date": "2021-10-12 01:16:45.416416",
-          "source_id": 966,
+          "capture_date": "2021-10-12 01:27:33.010010",
+          "source_id": 967,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Los Chucos Suaves",
-          "artist_name": "Los Lobos",
+          "title": "Vuelta",
+          "artist_name": "Isabella Lovestory",
           "video_id": null,
-          "capture_date": "2021-10-12 01:16:45.416416",
-          "source_id": 966,
+          "capture_date": "2021-10-12 01:27:33.010010",
+          "source_id": 967,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Tony Speaks!",
-          "artist_name": "Dry Cleaning",
+          "title": "Bade Zile",
+          "artist_name": "Lakou Mizik and Joseph Ray",
           "video_id": null,
-          "capture_date": "2021-10-12 01:16:45.416416",
-          "source_id": 966,
+          "capture_date": "2021-10-12 01:27:33.010010",
+          "source_id": 967,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Damn",
-          "artist_name": "Ada Lea",
+          "title": "Armageddon",
+          "artist_name": "Red 6xteen",
           "video_id": null,
-          "capture_date": "2021-10-12 01:16:45.416416",
-          "source_id": 966,
+          "capture_date": "2021-10-12 01:27:33.010010",
+          "source_id": 967,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Oh Dje",
-          "artist_name": "Ekyu",
+          "title": "Suicide Is Murder",
+          "artist_name": "Aimee Mann",
           "video_id": null,
-          "capture_date": "2021-10-12 01:16:45.416416",
-          "source_id": 966,
+          "capture_date": "2021-10-12 01:27:33.010010",
+          "source_id": 967,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "And Then Life Was Beautiful",
-          "artist_name": "Nao",
+          "title": "Neon Blue",
+          "artist_name": "Amelia Meath and Blake Mills",
           "video_id": null,
-          "capture_date": "2021-10-12 01:16:45.416416",
-          "source_id": 966,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Marchita",
-          "artist_name": "Silvana Estrada",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:16:45.417417",
-          "source_id": 966,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Unclean Mind",
-          "artist_name": "Grouper",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:16:45.417417",
-          "source_id": 966,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Long Exposure",
-          "artist_name": "Dot Allison",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:16:45.417417",
-          "source_id": 966,
+          "capture_date": "2021-10-12 01:27:33.010010",
+          "source_id": 967,
           "song_id": null,
           "duplicate": false
       }
@@ -236,16 +218,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Conexión Total', 'Bomba Estéreo ft. Yemi Alade', NULL),
-  ('Pond House', 'Saint Etienne', NULL),
-  ('Los Chucos Suaves', 'Los Lobos', NULL),
-  ('Tony Speaks!', 'Dry Cleaning', NULL),
-  ('Damn', 'Ada Lea', NULL),
-  ('Oh Dje', 'Ekyu', NULL),
-  ('And Then Life Was Beautiful', 'Nao', NULL),
-  ('Marchita', 'Silvana Estrada', NULL),
-  ('Unclean Mind', 'Grouper', NULL),
-  ('Long Exposure', 'Dot Allison', NULL)
+  ('Absurd', 'Guns N’ Roses', NULL),
+  ('High Horse', 'Nelly ft. Breland and Blanco Brown', NULL),
+  ('Vuelta', 'Isabella Lovestory', NULL),
+  ('Bade Zile', 'Lakou Mizik and Joseph Ray', NULL),
+  ('Armageddon', 'Red 6xteen', NULL),
+  ('Suicide Is Murder', 'Aimee Mann', NULL),
+  ('Neon Blue', 'Amelia Meath and Blake Mills', NULL)
   ;
 
    // Update to song table
@@ -256,7 +235,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10899; // SELECT last_insert_rowid();
+  song_id = 10906; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -296,17 +275,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 01:16:45.414414', '966', '10690'),
-  ('2021-10-12 01:16:45.416416', '966', '10890'),
-  ('2021-10-12 01:16:45.416416', '966', '10891'),
-  ('2021-10-12 01:16:45.416416', '966', '10892'),
-  ('2021-10-12 01:16:45.416416', '966', '10893'),
-  ('2021-10-12 01:16:45.416416', '966', '10894'),
-  ('2021-10-12 01:16:45.416416', '966', '10895'),
-  ('2021-10-12 01:16:45.416416', '966', '10896'),
-  ('2021-10-12 01:16:45.417417', '966', '10897'),
-  ('2021-10-12 01:16:45.417417', '966', '10898'),
-  ('2021-10-12 01:16:45.417417', '966', '10899')
+  ('2021-10-12 01:27:33.008008', '967', '10701'),
+  ('2021-10-12 01:27:33.010010', '967', '10691'),
+  ('2021-10-12 01:27:33.010010', '967', '10900'),
+  ('2021-10-12 01:27:33.010010', '967', '10901'),
+  ('2021-10-12 01:27:33.010010', '967', '10902'),
+  ('2021-10-12 01:27:33.010010', '967', '10903'),
+  ('2021-10-12 01:27:33.010010', '967', '10904'),
+  ('2021-10-12 01:27:33.010010', '967', '10905'),
+  ('2021-10-12 01:27:33.010010', '967', '10906')
   ;
 
   // Update to source_song table
