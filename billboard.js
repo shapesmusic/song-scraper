@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 9, 2021', '2021-10-09 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-10-09/2021-10-09');
+    ('Billboard', 'The Hot 100', 'Week of October 16, 2021', '2021-10-16 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-10-16');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 957; // SELECT last_insert_rowid();
+  source_id = 960; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -97,166 +97,130 @@
   songsData =
   [
       {
-          "title": "My Universe",
-          "artist_name": "Coldplay x BTS",
+          "title": "Intro (Hate On Me)",
+          "artist_name": "Meek Mill",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.154154",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.722722",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Bad Morning",
-          "artist_name": "YoungBoy Never Broke Again",
+          "title": "Hot",
+          "artist_name": "Meek Mill ft. Moneybagg Yo",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.158158",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.722722",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Your Heart",
-          "artist_name": "Joyner Lucas & J. Cole",
+          "title": "Expensive Pain",
+          "artist_name": "Meek Mill",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.158158",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Too Easy",
-          "artist_name": "Gunna & Future",
+          "title": "On My Soul",
+          "artist_name": "Meek Mill",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.158158",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "No Where",
-          "artist_name": "YoungBoy Never Broke Again",
+          "title": "Jugaste y Sufri",
+          "artist_name": "Eslabon Armado ft. DannyLux",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.158158",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Hold Me Down",
-          "artist_name": "YoungBoy Never Broke Again",
+          "title": "Outside (100 MPH)",
+          "artist_name": "Meek Mill",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.159159",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Nevada",
-          "artist_name": "YoungBoy Never Broke Again",
+          "title": "Last One Standing",
+          "artist_name": "Skylar Grey, Polo G, Mozzy & Eminem",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.159159",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "50 Shots",
-          "artist_name": "YoungBoy Never Broke Again",
+          "title": "The Feels",
+          "artist_name": "TWICE",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.159159",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Smoke Strong",
-          "artist_name": "YoungBoy Never Broke Again",
+          "title": "Me (FWM)",
+          "artist_name": "Meek Mill ft. A$AP Ferg",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.159159",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Break Or Make Me",
-          "artist_name": "YoungBoy Never Broke Again",
+          "title": "Love Train",
+          "artist_name": "Meek Mill",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.159159",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Sincerely",
-          "artist_name": "YoungBoy Never Broke Again",
+          "title": "Feelin Like Tunechi",
+          "artist_name": "Lil Wayne ft. Rich The Kid",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.160160",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "I Can't Take It Back",
-          "artist_name": "YoungBoy Never Broke Again",
+          "title": "Ride For You",
+          "artist_name": "Meek Mill ft. Kehlani",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.160160",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Forgiato",
-          "artist_name": "YoungBoy Never Broke Again",
+          "title": "Esta Danada",
+          "artist_name": "Ivan Cornejo",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.160160",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Rich Shit",
-          "artist_name": "YoungBoy Never Broke Again",
+          "title": "Whiskey And Rain",
+          "artist_name": "Michael Ray",
           "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.160160",
-          "source_id": 957,
+          "capture_date": "2021-10-12 09:22:11.723723",
+          "source_id": 960,
           "song_id": null,
           "duplicate": false
-      },
-      {
-          "title": "For Tonight",
-          "artist_name": "Giveon",
-          "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.161161",
-          "source_id": 957,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Baddest Thing",
-          "artist_name": "YoungBoy Never Broke Again",
-          "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.161161",
-          "source_id": 957,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Chosen",
-          "artist_name": "Blxst & Tyga ft. Ty Dolla $ign",
-          "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.161161",
-          "source_id": 957,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Toxic Punk",
-          "artist_name": "YoungBoy Never Broke Again",
-          "video_id": null,
-          "capture_date": "2021-10-11 12:15:16.161161",
-          "source_id": 957,
-          "song_id": 9821,
-          "duplicate": true
       }
   ]
 
@@ -297,23 +261,20 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('My Universe', 'Coldplay x BTS', NULL),
-  ('Bad Morning', 'YoungBoy Never Broke Again', NULL),
-  ('Your Heart', 'Joyner Lucas & J. Cole', NULL),
-  ('Too Easy', 'Gunna & Future', NULL),
-  ('No Where', 'YoungBoy Never Broke Again', NULL),
-  ('Hold Me Down', 'YoungBoy Never Broke Again', NULL),
-  ('Nevada', 'YoungBoy Never Broke Again', NULL),
-  ('50 Shots', 'YoungBoy Never Broke Again', NULL),
-  ('Smoke Strong', 'YoungBoy Never Broke Again', NULL),
-  ('Break Or Make Me', 'YoungBoy Never Broke Again', NULL),
-  ('Sincerely', 'YoungBoy Never Broke Again', NULL),
-  ('I Can’t Take It Back', 'YoungBoy Never Broke Again', NULL),
-  ('Forgiato', 'YoungBoy Never Broke Again', NULL),
-  ('Rich Shit', 'YoungBoy Never Broke Again', NULL),
-  ('For Tonight', 'Giveon', NULL),
-  ('Baddest Thing', 'YoungBoy Never Broke Again', NULL),
-  ('Chosen', 'Blxst & Tyga ft. Ty Dolla $ign', NULL)
+  ('Intro (Hate On Me)', 'Meek Mill', NULL),
+  ('Hot', 'Meek Mill ft. Moneybagg Yo', NULL),
+  ('Expensive Pain', 'Meek Mill', NULL),
+  ('On My Soul', 'Meek Mill', NULL),
+  ('Jugaste y Sufri', 'Eslabon Armado ft. DannyLux', NULL),
+  ('Outside (100 MPH)', 'Meek Mill', NULL),
+  ('Last One Standing', 'Skylar Grey, Polo G, Mozzy & Eminem', NULL),
+  ('The Feels', 'TWICE', NULL),
+  ('Me (FWM)', 'Meek Mill ft. A$AP Ferg', NULL),
+  ('Love Train', 'Meek Mill', NULL),
+  ('Feelin Like Tunechi', 'Lil Wayne ft. Rich The Kid', NULL),
+  ('Ride For You', 'Meek Mill ft. Kehlani', NULL),
+  ('Esta Danada', 'Ivan Cornejo', NULL),
+  ('Whiskey And Rain', 'Michael Ray', NULL)
   ;
 
    // Update to song table
@@ -324,7 +285,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10818; // SELECT last_insert_rowid();
+  song_id = 10841; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -364,24 +325,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-11 12:15:16.154154', '957', '10802'),
-  ('2021-10-11 12:15:16.158158', '957', '10803'),
-  ('2021-10-11 12:15:16.158158', '957', '10804'),
-  ('2021-10-11 12:15:16.158158', '957', '10805'),
-  ('2021-10-11 12:15:16.158158', '957', '10806'),
-  ('2021-10-11 12:15:16.159159', '957', '10807'),
-  ('2021-10-11 12:15:16.159159', '957', '10808'),
-  ('2021-10-11 12:15:16.159159', '957', '10809'),
-  ('2021-10-11 12:15:16.159159', '957', '10810'),
-  ('2021-10-11 12:15:16.159159', '957', '10811'),
-  ('2021-10-11 12:15:16.160160', '957', '10812'),
-  ('2021-10-11 12:15:16.160160', '957', '10813'),
-  ('2021-10-11 12:15:16.160160', '957', '10814'),
-  ('2021-10-11 12:15:16.160160', '957', '10815'),
-  ('2021-10-11 12:15:16.161161', '957', '10816'),
-  ('2021-10-11 12:15:16.161161', '957', '10817'),
-  ('2021-10-11 12:15:16.161161', '957', '10818'),
-  ('2021-10-11 12:15:16.161161', '957', '9821')
+  ('2021-10-12 09:22:11.722722', '960', '10828'),
+  ('2021-10-12 09:22:11.722722', '960', '10829'),
+  ('2021-10-12 09:22:11.723723', '960', '10830'),
+  ('2021-10-12 09:22:11.723723', '960', '10831'),
+  ('2021-10-12 09:22:11.723723', '960', '10832'),
+  ('2021-10-12 09:22:11.723723', '960', '10833'),
+  ('2021-10-12 09:22:11.723723', '960', '10834'),
+  ('2021-10-12 09:22:11.723723', '960', '10835'),
+  ('2021-10-12 09:22:11.723723', '960', '10836'),
+  ('2021-10-12 09:22:11.723723', '960', '10837'),
+  ('2021-10-12 09:22:11.723723', '960', '10838'),
+  ('2021-10-12 09:22:11.723723', '960', '10839'),
+  ('2021-10-12 09:22:11.723723', '960', '10840'),
+  ('2021-10-12 09:22:11.723723', '960', '10841')
   ;
 
   // Update to source_song table
