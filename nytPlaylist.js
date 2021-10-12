@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Shawn Mendes and Tainy’s Summer Breeze, and 12 More New Songs', '2021-08-20 11:56:07.000000', 'https://www.nytimes.com/2021/08/20/arts/music/playlist-shawn-mendes-rolling-stones.html');
+    ('New York Times', 'The Playlist', 'John Coltrane’s Unearthed Live ‘A Love Supreme,’ and 12 More New Songs', '2021-08-27 12:48:41.000000', 'https://www.nytimes.com/2021/08/27/arts/music/playlist-john-coltrane-sza.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 969; // SELECT last_insert_rowid();
+  source_id = 970; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,101 +99,92 @@
   songsData =
   [
       {
-          "title": "Summer of Love",
-          "artist_name": "Shawn Mendes and Tainy",
+          "title": "Nightbird",
+          "artist_name": "SZA",
           "video_id": null,
-          "capture_date": "2021-10-12 04:53:01.607607",
-          "source_id": 969,
-          "song_id": 10719,
-          "duplicate": true
-      },
-      {
-          "title": "Living in the Heart of Love",
-          "artist_name": "The Rolling Stones",
-          "video_id": null,
-          "capture_date": "2021-10-12 04:53:01.609609",
-          "source_id": 969,
+          "capture_date": "2021-10-12 05:00:06.183183",
+          "source_id": 970,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Walking at a Downtown Pace",
-          "artist_name": "Parquet Courts",
+          "title": "Rolling Through California",
+          "artist_name": "Fantastic Negrito ft. Miko Marks",
           "video_id": null,
-          "capture_date": "2021-10-12 04:53:01.609609",
-          "source_id": 969,
+          "capture_date": "2021-10-12 05:00:06.183183",
+          "source_id": 970,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "That’s The Way I Like It",
-          "artist_name": "Lily Konigsberg",
+          "title": "To-Do List",
+          "artist_name": "The Felice Brothers",
           "video_id": null,
-          "capture_date": "2021-10-12 04:53:01.609609",
-          "source_id": 969,
+          "capture_date": "2021-10-12 05:00:06.183183",
+          "source_id": 970,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Dogma",
-          "artist_name": "Circuit des Yeux",
+          "title": "Ain’t No Use",
+          "artist_name": "Randy Travis",
           "video_id": null,
-          "capture_date": "2021-10-12 04:53:01.609609",
-          "source_id": 969,
+          "capture_date": "2021-10-12 05:00:06.183183",
+          "source_id": 970,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Funk Aspirin",
-          "artist_name": "Cimafunk and George Clinton",
+          "title": "Plant Thief",
+          "artist_name": "Deerhoof",
           "video_id": null,
-          "capture_date": "2021-10-12 04:53:01.609609",
-          "source_id": 969,
+          "capture_date": "2021-10-12 05:00:06.183183",
+          "source_id": 970,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Quien Paga",
-          "artist_name": "Pieri",
+          "title": "999",
+          "artist_name": "Selena Gomez and Camilo",
           "video_id": null,
-          "capture_date": "2021-10-12 04:53:01.609609",
-          "source_id": 969,
+          "capture_date": "2021-10-12 05:00:06.183183",
+          "source_id": 970,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Kanpai",
-          "artist_name": "Alice Longyu Gao",
+          "title": "Know The Difference",
+          "artist_name": "Icewear Vezzo ft. Lil Baby",
           "video_id": null,
-          "capture_date": "2021-10-12 04:53:01.609609",
-          "source_id": 969,
+          "capture_date": "2021-10-12 05:00:06.183183",
+          "source_id": 970,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "B1",
-          "artist_name": "Topdown Dialectic",
+          "title": "Zambololo",
+          "artist_name": "​​Umu Obiligbo",
           "video_id": null,
-          "capture_date": "2021-10-12 04:53:01.609609",
-          "source_id": 969,
+          "capture_date": "2021-10-12 05:00:06.184184",
+          "source_id": 970,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "For Your Consideration",
-          "artist_name": "Maggie Rose",
+          "title": "We Wave From Our Boats",
+          "artist_name": "Mary Lattimore",
           "video_id": null,
-          "capture_date": "2021-10-12 04:53:01.609609",
-          "source_id": 969,
+          "capture_date": "2021-10-12 05:00:06.184184",
+          "source_id": 970,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Things That I’ve Learned",
-          "artist_name": "Orla Gartland",
+          "title": "Anymore",
+          "artist_name": "Nite Jewel",
           "video_id": null,
-          "capture_date": "2021-10-12 04:53:01.609609",
-          "source_id": 969,
+          "capture_date": "2021-10-12 05:00:06.184184",
+          "source_id": 970,
           "song_id": null,
           "duplicate": false
       }
@@ -236,16 +227,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Living in the Heart of Love', 'The Rolling Stones', NULL),
-  ('Walking at a Downtown Pace', 'Parquet Courts', NULL),
-  ('That’s The Way I Like It', 'Lily Konigsberg', NULL),
-  ('Dogma', 'Circuit des Yeux', NULL),
-  ('Funk Aspirin', 'Cimafunk and George Clinton', NULL),
-  ('Quien Paga', 'Pieri', NULL),
-  ('Kanpai', 'Alice Longyu Gao', NULL),
-  ('B1', 'Topdown Dialectic', NULL),
-  ('For Your Consideration', 'Maggie Rose', NULL),
-  ('Things That I’ve Learned', 'Orla Gartland', NULL)
+  ('Nightbird', 'SZA', NULL),
+  ('Rolling Through California', 'Fantastic Negrito ft. Miko Marks', NULL),
+  ('To-Do List', 'The Felice Brothers', NULL),
+  ('Ain’t No Use', 'Randy Travis', NULL),
+  ('Plant Thief', 'Deerhoof', NULL),
+  ('999', 'Selena Gomez and Camilo', NULL),
+  ('Know The Difference', 'Icewear Vezzo ft. Lil Baby', NULL),
+  ('Zambololo', '​​Umu Obiligbo', NULL),
+  ('We Wave From Our Boats', 'Mary Lattimore', NULL),
+  ('Anymore', 'Nite Jewel', NULL)
   ;
 
    // Update to song table
@@ -256,7 +247,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10923; // SELECT last_insert_rowid();
+  song_id = 10933; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -296,17 +287,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 04:53:01.607607', '969', '10719'),
-  ('2021-10-12 04:53:01.609609', '969', '10914'),
-  ('2021-10-12 04:53:01.609609', '969', '10915'),
-  ('2021-10-12 04:53:01.609609', '969', '10916'),
-  ('2021-10-12 04:53:01.609609', '969', '10917'),
-  ('2021-10-12 04:53:01.609609', '969', '10918'),
-  ('2021-10-12 04:53:01.609609', '969', '10919'),
-  ('2021-10-12 04:53:01.609609', '969', '10920'),
-  ('2021-10-12 04:53:01.609609', '969', '10921'),
-  ('2021-10-12 04:53:01.609609', '969', '10922'),
-  ('2021-10-12 04:53:01.609609', '969', '10923')
+  ('2021-10-12 05:00:06.183183', '970', '10924'),
+  ('2021-10-12 05:00:06.183183', '970', '10925'),
+  ('2021-10-12 05:00:06.183183', '970', '10926'),
+  ('2021-10-12 05:00:06.183183', '970', '10927'),
+  ('2021-10-12 05:00:06.183183', '970', '10928'),
+  ('2021-10-12 05:00:06.183183', '970', '10929'),
+  ('2021-10-12 05:00:06.183183', '970', '10930'),
+  ('2021-10-12 05:00:06.184184', '970', '10931'),
+  ('2021-10-12 05:00:06.184184', '970', '10932'),
+  ('2021-10-12 05:00:06.184184', '970', '10933')
   ;
 
   // Update to source_song table
