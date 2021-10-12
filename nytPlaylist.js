@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Lorde’s Sunburst, and 10 More New Songs', '2021-06-11 08:42:21.000000', 'https://www.nytimes.com/2021/06/11/arts/music/playlist-lorde-sza-pmbata.html');
+    ('New York Times', 'The Playlist', 'H.E.R.’s Soulful Suspicions, and 11 More New Songs', '2021-06-18 02:00:54.000000', 'https://www.nytimes.com/2021/06/18/arts/music/playlist-her-tyler-the-creator.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 941; // SELECT last_insert_rowid();
+  source_id = 959; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -93,110 +93,102 @@
 //          preview chart and prune songs (add video_id later),
 //          find & set any duplicate songs to true,
 //          add song_ids for duplicates
+//          find and replace "Featured" with "ft."
 //
 
   songsData =
   [
-    {
-        "title": "Solar Power",
-        "artist_name": "Lorde",
-        "video_id": null,
-        "capture_date": "2021-06-17 12:24:08.203203",
-        "source_id": 941,
-        "song_id": 10581,
-        "duplicate": true
-    },
-    {
-        "title": "EveryTime I Cry",
-        "artist_name": "Ava Max",
-        "video_id": null,
-        "capture_date": "2021-06-17 12:24:08.204204",
-        "source_id": 941,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Just for Me",
-        "artist_name": "Saint Jhn and SZA",
-        "video_id": null,
-        "capture_date": "2021-06-17 12:24:08.204204",
-        "source_id": 941,
-        "song_id": 10578,
-        "duplicate": true
-    },
-    {
-        "title": "Favorite Song",
-        "artist_name": "PmBata",
-        "video_id": null,
-        "capture_date": "2021-06-17 12:24:08.204204",
-        "source_id": 941,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nest",
-        "artist_name": "Jomoro featuring Sharon Van Etten",
-        "video_id": null,
-        "capture_date": "2021-06-17 12:24:08.204204",
-        "source_id": 941,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Blouse",
-        "artist_name": "Clairo",
-        "video_id": null,
-        "capture_date": "2021-06-17 12:24:08.204204",
-        "source_id": 941,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Formwela 4",
-        "artist_name": "Esperanza Spalding featuring Corey King",
-        "video_id": null,
-        "capture_date": "2021-06-17 12:24:08.204204",
-        "source_id": 941,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "A Fullness of Light in Your Soul",
-        "artist_name": "Hypnotic Brass Ensemble featuring Perfume Genius",
-        "video_id": null,
-        "capture_date": "2021-06-17 12:24:08.205205",
-        "source_id": 941,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Squint",
-        "artist_name": "Julian Lage",
-        "video_id": null,
-        "capture_date": "2021-06-17 12:24:08.205205",
-        "source_id": 941,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Day You Left",
-        "artist_name": "Poo Bear",
-        "video_id": null,
-        "capture_date": "2021-06-17 12:24:08.205205",
-        "source_id": 941,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Time Speed",
-        "artist_name": "NoCap",
-        "video_id": null,
-        "capture_date": "2021-06-17 12:24:08.205205",
-        "source_id": 941,
-        "song_id": null,
-        "duplicate": false
-    }
-]
+      {
+          "title": "Cheat Code",
+          "artist_name": "H.E.R.",
+          "video_id": null,
+          "capture_date": "2021-10-12 09:06:39.944944",
+          "source_id": 959,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Sober & Skinny",
+          "artist_name": "Brittney Spencer",
+          "video_id": null,
+          "capture_date": "2021-10-12 09:06:39.945945",
+          "source_id": 959,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Old Peel",
+          "artist_name": "Aldous Harding",
+          "video_id": null,
+          "capture_date": "2021-10-12 09:06:39.945945",
+          "source_id": 959,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Jackie",
+          "artist_name": "Yves Tumor",
+          "video_id": null,
+          "capture_date": "2021-10-12 09:06:39.945945",
+          "source_id": 959,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Lumberjack",
+          "artist_name": "Tyler, the Creator",
+          "video_id": null,
+          "capture_date": "2021-10-12 09:06:39.945945",
+          "source_id": 959,
+          "song_id": 10626,
+          "duplicate": true
+      },
+      {
+          "title": "Riders on the Storm",
+          "artist_name": "Stiff Pap ft. BCUC",
+          "video_id": null,
+          "capture_date": "2021-10-12 09:06:39.946946",
+          "source_id": 959,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Diri",
+          "artist_name": "Chucky73",
+          "video_id": null,
+          "capture_date": "2021-10-12 09:06:39.946946",
+          "source_id": 959,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Like This",
+          "artist_name": "Young Devyn",
+          "video_id": null,
+          "capture_date": "2021-10-12 09:06:39.946946",
+          "source_id": 959,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Mimbreños",
+          "artist_name": "Cochemea",
+          "video_id": null,
+          "capture_date": "2021-10-12 09:06:39.946946",
+          "source_id": 959,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Why Don’t You Touch Me",
+          "artist_name": "Leon Bridges",
+          "video_id": null,
+          "capture_date": "2021-10-12 09:06:39.946946",
+          "source_id": 959,
+          "song_id": null,
+          "duplicate": false
+      }
+  ]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -235,15 +227,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('EveryTime I Cry', 'Ava Max', NULL),
-  ('Favorite Song', 'PmBata', NULL),
-  ('Nest', 'Jomoro featuring Sharon Van Etten', NULL),
-  ('Blouse', 'Clairo', NULL),
-  ('Formwela 4', 'Esperanza Spalding featuring Corey King', NULL),
-  ('A Fullness of Light in Your Soul', 'Hypnotic Brass Ensemble featuring Perfume Genius', NULL),
-  ('Squint', 'Julian Lage', NULL),
-  ('The Day You Left', 'Poo Bear', NULL),
-  ('Time Speed', 'NoCap', NULL)
+  ('Cheat Code', 'H.E.R.', NULL),
+  ('Sober & Skinny', 'Brittney Spencer', NULL),
+  ('Old Peel', 'Aldous Harding', NULL),
+  ('Jackie', 'Yves Tumor', NULL),
+  ('Riders on the Storm', 'Stiff Pap ft. BCUC', NULL),
+  ('Diri', 'Chucky73', NULL),
+  ('Like This', 'Young Devyn', NULL),
+  ('Mimbreños', 'Cochemea', NULL),
+  ('Why Don’t You Touch Me', 'Leon Bridges', NULL)
   ;
 
    // Update to song table
@@ -254,7 +246,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10607; // SELECT last_insert_rowid();
+  song_id = 10827; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -294,17 +286,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-06-17 12:24:08.203203', '941', '10581'),
-  ('2021-06-17 12:24:08.204204', '941', '10599'),
-  ('2021-06-17 12:24:08.204204', '941', '10578'),
-  ('2021-06-17 12:24:08.204204', '941', '10600'),
-  ('2021-06-17 12:24:08.204204', '941', '10601'),
-  ('2021-06-17 12:24:08.204204', '941', '10602'),
-  ('2021-06-17 12:24:08.204204', '941', '10603'),
-  ('2021-06-17 12:24:08.205205', '941', '10604'),
-  ('2021-06-17 12:24:08.205205', '941', '10605'),
-  ('2021-06-17 12:24:08.205205', '941', '10606'),
-  ('2021-06-17 12:24:08.205205', '941', '10607')
+  ('2021-10-12 09:06:39.944944', '959', '10819'),
+  ('2021-10-12 09:06:39.945945', '959', '10820'),
+  ('2021-10-12 09:06:39.945945', '959', '10821'),
+  ('2021-10-12 09:06:39.945945', '959', '10822'),
+  ('2021-10-12 09:06:39.945945', '959', '10626'),
+  ('2021-10-12 09:06:39.946946', '959', '10823'),
+  ('2021-10-12 09:06:39.946946', '959', '10824'),
+  ('2021-10-12 09:06:39.946946', '959', '10825'),
+  ('2021-10-12 09:06:39.946946', '959', '10826'),
+  ('2021-10-12 09:06:39.946946', '959', '10827')
   ;
 
   // Update to source_song table
