@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'The Kid Laroi and Justin Bieber’s Bouncy Plea, and 14 More New Songs', '2021-10-07 08:45:53.000000', 'https://www.nytimes.com/2021/07/09/arts/music/playlist-justin-bieber-kid-laroi-maluma.html');
+    ('New York Times', 'The Playlist', 'Pop Smoke’s Memory Lives On, and 14 More New Songs', '2021-08-03 10:30:23.000000', 'https://www.nytimes.com/2021/07/16/arts/music/playlist-pop-smoke-swedish-house-mafia.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 963; // SELECT last_insert_rowid();
+  source_id = 964; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,110 +99,119 @@
   songsData =
   [
       {
-          "title": "Stay",
-          "artist_name": "The Kid Laroi ft. Justin Bieber",
+          "title": "More Time",
+          "artist_name": "Pop Smoke",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.287287",
-          "source_id": 963,
-          "song_id": 10658,
+          "capture_date": "2021-10-12 01:01:01.119119",
+          "source_id": 964,
+          "song_id": 10673,
           "duplicate": true
       },
       {
-          "title": "She Doesn’t Love You",
-          "artist_name": "The Kondi Band ft. Mariama",
+          "title": "Working All the Time",
+          "artist_name": "Xenia Rubinos",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.287287",
-          "source_id": 963,
+          "capture_date": "2021-10-12 01:01:01.120120",
+          "source_id": 964,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "I Love You, I Hate You",
-          "artist_name": "Little Simz",
+          "title": "It Gets Better",
+          "artist_name": "Swedish House Mafia",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.287287",
-          "source_id": 963,
+          "capture_date": "2021-10-12 01:01:01.121121",
+          "source_id": 964,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Vax That Thang Up",
-          "artist_name": "BLK presents Juvenile, Mannie Fresh and Mia X",
+          "title": "Whenever You’re Ready",
+          "artist_name": "Mahalia",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.288288",
-          "source_id": 963,
+          "capture_date": "2021-10-12 01:01:01.121121",
+          "source_id": 964,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Nyumba Ndogo",
-          "artist_name": "Zuchu",
+          "title": "Bunny Is a Rider",
+          "artist_name": "Caroline Polachek",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.288288",
-          "source_id": 963,
+          "capture_date": "2021-10-12 01:01:01.121121",
+          "source_id": 964,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Dumb Dumb",
-          "artist_name": "mazie",
+          "title": "Rom Com 2004",
+          "artist_name": "Soccer Mommy",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.288288",
-          "source_id": 963,
+          "capture_date": "2021-10-12 01:01:01.121121",
+          "source_id": 964,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Rae Street",
-          "artist_name": "Courtney Barnett",
+          "title": "Alien Love Call",
+          "artist_name": "Turnstile ft. Blood Orange",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.288288",
-          "source_id": 963,
+          "capture_date": "2021-10-12 01:01:01.121121",
+          "source_id": 964,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Gloria",
-          "artist_name": "Angel Olsen",
+          "title": "Swimmer",
+          "artist_name": "Half Waif",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.288288",
-          "source_id": 963,
+          "capture_date": "2021-10-12 01:01:01.121121",
+          "source_id": 964,
+          "song_id": 10335,
+          "duplicate": true
+      },
+      {
+          "title": "Idea of You",
+          "artist_name": "Yas",
+          "video_id": null,
+          "capture_date": "2021-10-12 01:01:01.121121",
+          "source_id": 964,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Glad Ur Gone",
-          "artist_name": "gglum",
+          "title": "White Picket Fence",
+          "artist_name": "Koreless",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.288288",
-          "source_id": 963,
+          "capture_date": "2021-10-12 01:01:01.121121",
+          "source_id": 964,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Mafiosa",
-          "artist_name": "Nathy Peluso",
+          "title": "200 Copas",
+          "artist_name": "Karol G",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.288288",
-          "source_id": 963,
+          "capture_date": "2021-10-12 01:01:01.121121",
+          "source_id": 964,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Sobrio",
-          "artist_name": "Maluma",
+          "title": "El Plan",
+          "artist_name": "Tainy and Yandel",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.288288",
-          "source_id": 963,
+          "capture_date": "2021-10-12 01:01:01.121121",
+          "source_id": 964,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Reach Out",
-          "artist_name": "Sufjan Stevens and Angelo De Augustine",
+          "title": "Momento Presente",
+          "artist_name": "Mas Aya",
           "video_id": null,
-          "capture_date": "2021-10-12 12:43:32.288288",
-          "source_id": 963,
+          "capture_date": "2021-10-12 01:01:01.121121",
+          "source_id": 964,
           "song_id": null,
           "duplicate": false
       }
@@ -245,17 +254,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('She Doesn’t Love You', 'The Kondi Band ft. Mariama', NULL),
-  ('I Love You, I Hate You', 'Little Simz', NULL),
-  ('Vax That Thang Up', 'BLK presents Juvenile, Mannie Fresh and Mia X', NULL),
-  ('Nyumba Ndogo', 'Zuchu', NULL),
-  ('Dumb Dumb', 'mazie', NULL),
-  ('Rae Street', 'Courtney Barnett', NULL),
-  ('Gloria', 'Angel Olsen', NULL),
-  ('Glad Ur Gone', 'gglum', NULL),
-  ('Mafiosa', 'Nathy Peluso', NULL),
-  ('Sobrio', 'Maluma', NULL),
-  ('Reach Out', 'Sufjan Stevens and Angelo De Augustine', NULL)
+  ('Working All the Time', 'Xenia Rubinos', NULL),
+  ('It Gets Better', 'Swedish House Mafia', NULL),
+  ('Whenever You’re Ready', 'Mahalia', NULL),
+  ('Bunny Is a Rider', 'Caroline Polachek', NULL),
+  ('Rom Com 2004', 'Soccer Mommy', NULL),
+  ('Alien Love Call', 'Turnstile ft. Blood Orange', NULL),
+  ('Idea of You', 'Yas', NULL),
+  ('White Picket Fence', 'Koreless', NULL),
+  ('200 Copas', 'Karol G', NULL),
+  ('El Plan', 'Tainy and Yandel', NULL),
+  ('Momento Presente', 'Mas Aya', NULL)
   ;
 
    // Update to song table
@@ -266,7 +275,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10869; // SELECT last_insert_rowid();
+  song_id = 10880; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -306,18 +315,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 12:43:32.287287', '963', '10658'),
-  ('2021-10-12 12:43:32.287287', '963', '10859'),
-  ('2021-10-12 12:43:32.287287', '963', '10860'),
-  ('2021-10-12 12:43:32.288288', '963', '10861'),
-  ('2021-10-12 12:43:32.288288', '963', '10862'),
-  ('2021-10-12 12:43:32.288288', '963', '10863'),
-  ('2021-10-12 12:43:32.288288', '963', '10864'),
-  ('2021-10-12 12:43:32.288288', '963', '10865'),
-  ('2021-10-12 12:43:32.288288', '963', '10866'),
-  ('2021-10-12 12:43:32.288288', '963', '10867'),
-  ('2021-10-12 12:43:32.288288', '963', '10868'),
-  ('2021-10-12 12:43:32.288288', '963', '10869')
+  ('2021-10-12 01:01:01.119119', '964', '10673'),
+  ('2021-10-12 01:01:01.120120', '964', '10870'),
+  ('2021-10-12 01:01:01.121121', '964', '10871'),
+  ('2021-10-12 01:01:01.121121', '964', '10872'),
+  ('2021-10-12 01:01:01.121121', '964', '10873'),
+  ('2021-10-12 01:01:01.121121', '964', '10874'),
+  ('2021-10-12 01:01:01.121121', '964', '10875'),
+  ('2021-10-12 01:01:01.121121', '964', '10335'),
+  ('2021-10-12 01:01:01.121121', '964', '10876'),
+  ('2021-10-12 01:01:01.121121', '964', '10877'),
+  ('2021-10-12 01:01:01.121121', '964', '10878'),
+  ('2021-10-12 01:01:01.121121', '964', '10879'),
+  ('2021-10-12 01:01:01.121121', '964', '10880')
   ;
 
   // Update to source_song table
