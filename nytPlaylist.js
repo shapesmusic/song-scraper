@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'The Weeknd’s Disco Fever, and 9 More New Songs', '2021-08-09 12:56:40.000000', 'https://www.nytimes.com/2021/08/06/arts/music/playlist-weeknd-bad-bunny-nelly.html');
+    ('New York Times', 'The Playlist', 'Robert Plant and Alison Krauss Team Up Again, and 10 More New Songs', '2021-08-13 11:55:24.000000', 'https://www.nytimes.com/2021/08/13/arts/music/playlist-cardi-b-lizzo-machine-gun-kelly.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 967; // SELECT last_insert_rowid();
+  source_id = 968; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,83 +99,83 @@
   songsData =
   [
       {
-          "title": "Take My Breath",
-          "artist_name": "The Weeknd",
+          "title": "Can’t Let Go",
+          "artist_name": "Robert Plant and Alison Krauss",
           "video_id": null,
-          "capture_date": "2021-10-12 01:27:33.008008",
-          "source_id": 967,
-          "song_id": 10701,
+          "capture_date": "2021-10-12 04:46:38.038038",
+          "source_id": 968,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Candidate",
+          "artist_name": "Jade Bird",
+          "video_id": null,
+          "capture_date": "2021-10-12 04:46:38.039039",
+          "source_id": 968,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Think About You",
+          "artist_name": "Ladyhawke",
+          "video_id": null,
+          "capture_date": "2021-10-12 04:46:38.039039",
+          "source_id": 968,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Under My Skin",
+          "artist_name": "Katy B",
+          "video_id": null,
+          "capture_date": "2021-10-12 04:46:38.039039",
+          "source_id": 968,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Rumors",
+          "artist_name": "Lizzo ft. Cardi B",
+          "video_id": null,
+          "capture_date": "2021-10-12 04:46:38.039039",
+          "source_id": 968,
+          "song_id": 10710,
           "duplicate": true
       },
       {
-          "title": "Volví",
-          "artist_name": "Aventura and Bad Bunny",
+          "title": "Nobody",
+          "artist_name": "Nas ft. Ms. Lauryn Hill",
           "video_id": null,
-          "capture_date": "2021-10-12 01:27:33.010010",
-          "source_id": 967,
-          "song_id": 10691,
+          "capture_date": "2021-10-12 04:46:38.039039",
+          "source_id": 968,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Before I Go",
+          "artist_name": "Kodak Black ft. Rod Wave",
+          "video_id": null,
+          "capture_date": "2021-10-12 04:46:38.039039",
+          "source_id": 968,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Papercuts",
+          "artist_name": "Machine Gun Kelly",
+          "video_id": null,
+          "capture_date": "2021-10-12 04:46:38.039039",
+          "source_id": 968,
+          "song_id": 10713,
           "duplicate": true
       },
       {
-          "title": "Absurd",
-          "artist_name": "Guns N’ Roses",
+          "title": "Little Things",
+          "artist_name": "Big Thief",
           "video_id": null,
-          "capture_date": "2021-10-12 01:27:33.010010",
-          "source_id": 967,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "High Horse",
-          "artist_name": "Nelly ft. Breland and Blanco Brown",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:27:33.010010",
-          "source_id": 967,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Vuelta",
-          "artist_name": "Isabella Lovestory",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:27:33.010010",
-          "source_id": 967,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Bade Zile",
-          "artist_name": "Lakou Mizik and Joseph Ray",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:27:33.010010",
-          "source_id": 967,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Armageddon",
-          "artist_name": "Red 6xteen",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:27:33.010010",
-          "source_id": 967,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Suicide Is Murder",
-          "artist_name": "Aimee Mann",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:27:33.010010",
-          "source_id": 967,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Neon Blue",
-          "artist_name": "Amelia Meath and Blake Mills",
-          "video_id": null,
-          "capture_date": "2021-10-12 01:27:33.010010",
-          "source_id": 967,
+          "capture_date": "2021-10-12 04:46:38.039039",
+          "source_id": 968,
           "song_id": null,
           "duplicate": false
       }
@@ -218,13 +218,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Absurd', 'Guns N’ Roses', NULL),
-  ('High Horse', 'Nelly ft. Breland and Blanco Brown', NULL),
-  ('Vuelta', 'Isabella Lovestory', NULL),
-  ('Bade Zile', 'Lakou Mizik and Joseph Ray', NULL),
-  ('Armageddon', 'Red 6xteen', NULL),
-  ('Suicide Is Murder', 'Aimee Mann', NULL),
-  ('Neon Blue', 'Amelia Meath and Blake Mills', NULL)
+  ('Can’t Let Go', 'Robert Plant and Alison Krauss', NULL),
+  ('Candidate', 'Jade Bird', NULL),
+  ('Think About You', 'Ladyhawke', NULL),
+  ('Under My Skin', 'Katy B', NULL),
+  ('Nobody', 'Nas ft. Ms. Lauryn Hill', NULL),
+  ('Before I Go', 'Kodak Black ft. Rod Wave', NULL),
+  ('Little Things', 'Big Thief', NULL)
   ;
 
    // Update to song table
@@ -235,7 +235,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10906; // SELECT last_insert_rowid();
+  song_id = 10913; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -275,15 +275,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 01:27:33.008008', '967', '10701'),
-  ('2021-10-12 01:27:33.010010', '967', '10691'),
-  ('2021-10-12 01:27:33.010010', '967', '10900'),
-  ('2021-10-12 01:27:33.010010', '967', '10901'),
-  ('2021-10-12 01:27:33.010010', '967', '10902'),
-  ('2021-10-12 01:27:33.010010', '967', '10903'),
-  ('2021-10-12 01:27:33.010010', '967', '10904'),
-  ('2021-10-12 01:27:33.010010', '967', '10905'),
-  ('2021-10-12 01:27:33.010010', '967', '10906')
+  ('2021-10-12 04:46:38.038038', '968', '10907'),
+  ('2021-10-12 04:46:38.039039', '968', '10908'),
+  ('2021-10-12 04:46:38.039039', '968', '10909'),
+  ('2021-10-12 04:46:38.039039', '968', '10910'),
+  ('2021-10-12 04:46:38.039039', '968', '10710'),
+  ('2021-10-12 04:46:38.039039', '968', '10911'),
+  ('2021-10-12 04:46:38.039039', '968', '10912'),
+  ('2021-10-12 04:46:38.039039', '968', '10713'),
+  ('2021-10-12 04:46:38.039039', '968', '10913')
   ;
 
   // Update to source_song table
