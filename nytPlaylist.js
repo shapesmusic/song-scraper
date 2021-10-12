@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Taylor Swift Rejoins Her ‘Folklore’ Crew, and 8 More New Songs', '2021-10-11 01:03:52.000000', 'https://www.nytimes.com/2021/07/02/arts/music/playlist-taylor-swift-drake-j-balvin.html');
+    ('New York Times', 'The Playlist', 'The Kid Laroi and Justin Bieber’s Bouncy Plea, and 14 More New Songs', '2021-10-07 08:45:53.000000', 'https://www.nytimes.com/2021/07/09/arts/music/playlist-justin-bieber-kid-laroi-maluma.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 962; // SELECT last_insert_rowid();
+  source_id = 963; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,83 +99,110 @@
   songsData =
   [
       {
-          "title": "Renegade",
-          "artist_name": "Big Red Machine ft. Taylor Swift",
+          "title": "Stay",
+          "artist_name": "The Kid Laroi ft. Justin Bieber",
           "video_id": null,
-          "capture_date": "2021-10-12 12:36:49.283283",
-          "source_id": 962,
-          "song_id": 10651,
+          "capture_date": "2021-10-12 12:43:32.287287",
+          "source_id": 963,
+          "song_id": 10658,
           "duplicate": true
       },
       {
-          "title": "Wasting Time",
-          "artist_name": "Brent Faiyaz ft. Drake",
+          "title": "She Doesn’t Love You",
+          "artist_name": "The Kondi Band ft. Mariama",
           "video_id": null,
-          "capture_date": "2021-10-12 12:36:49.284284",
-          "source_id": 962,
-          "song_id": 10650,
-          "duplicate": true
-      },
-      {
-          "title": "In da Getto",
-          "artist_name": "J. Balvin and Skrillex",
-          "video_id": null,
-          "capture_date": "2021-10-12 12:36:49.284284",
-          "source_id": 962,
-          "song_id": 10760,
-          "duplicate": true
-      },
-      {
-          "title": "Nu Ga Je Dansen",
-          "artist_name": "De Schuurman",
-          "video_id": null,
-          "capture_date": "2021-10-12 12:36:49.284284",
-          "source_id": 962,
+          "capture_date": "2021-10-12 12:43:32.287287",
+          "source_id": 963,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Dark Star",
-          "artist_name": "Chicano Batman",
+          "title": "I Love You, I Hate You",
+          "artist_name": "Little Simz",
           "video_id": null,
-          "capture_date": "2021-10-12 12:36:49.284284",
-          "source_id": 962,
+          "capture_date": "2021-10-12 12:43:32.287287",
+          "source_id": 963,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Kudzana Dzana",
-          "artist_name": "Ti Gonzi",
+          "title": "Vax That Thang Up",
+          "artist_name": "BLK presents Juvenile, Mannie Fresh and Mia X",
           "video_id": null,
-          "capture_date": "2021-10-12 12:36:49.284284",
-          "source_id": 962,
+          "capture_date": "2021-10-12 12:43:32.288288",
+          "source_id": 963,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Heartbreak Anniversary",
-          "artist_name": "Tarrus Riley",
+          "title": "Nyumba Ndogo",
+          "artist_name": "Zuchu",
           "video_id": null,
-          "capture_date": "2021-10-12 12:36:49.284284",
-          "source_id": 962,
+          "capture_date": "2021-10-12 12:43:32.288288",
+          "source_id": 963,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Worse",
-          "artist_name": "Sarah Proctor",
+          "title": "Dumb Dumb",
+          "artist_name": "mazie",
           "video_id": null,
-          "capture_date": "2021-10-12 12:36:49.284284",
-          "source_id": 962,
+          "capture_date": "2021-10-12 12:43:32.288288",
+          "source_id": 963,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Iowa 146",
-          "artist_name": "Squirrel Flower",
+          "title": "Rae Street",
+          "artist_name": "Courtney Barnett",
           "video_id": null,
-          "capture_date": "2021-10-12 12:36:49.284284",
-          "source_id": 962,
+          "capture_date": "2021-10-12 12:43:32.288288",
+          "source_id": 963,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Gloria",
+          "artist_name": "Angel Olsen",
+          "video_id": null,
+          "capture_date": "2021-10-12 12:43:32.288288",
+          "source_id": 963,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Glad Ur Gone",
+          "artist_name": "gglum",
+          "video_id": null,
+          "capture_date": "2021-10-12 12:43:32.288288",
+          "source_id": 963,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Mafiosa",
+          "artist_name": "Nathy Peluso",
+          "video_id": null,
+          "capture_date": "2021-10-12 12:43:32.288288",
+          "source_id": 963,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Sobrio",
+          "artist_name": "Maluma",
+          "video_id": null,
+          "capture_date": "2021-10-12 12:43:32.288288",
+          "source_id": 963,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Reach Out",
+          "artist_name": "Sufjan Stevens and Angelo De Augustine",
+          "video_id": null,
+          "capture_date": "2021-10-12 12:43:32.288288",
+          "source_id": 963,
           "song_id": null,
           "duplicate": false
       }
@@ -218,12 +245,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Nu Ga Je Dansen', 'De Schuurman', NULL),
-  ('Dark Star', 'Chicano Batman', NULL),
-  ('Kudzana Dzana', 'Ti Gonzi', NULL),
-  ('Heartbreak Anniversary', 'Tarrus Riley', NULL),
-  ('Worse', 'Sarah Proctor', NULL),
-  ('Iowa 146', 'Squirrel Flower', NULL)
+  ('She Doesn’t Love You', 'The Kondi Band ft. Mariama', NULL),
+  ('I Love You, I Hate You', 'Little Simz', NULL),
+  ('Vax That Thang Up', 'BLK presents Juvenile, Mannie Fresh and Mia X', NULL),
+  ('Nyumba Ndogo', 'Zuchu', NULL),
+  ('Dumb Dumb', 'mazie', NULL),
+  ('Rae Street', 'Courtney Barnett', NULL),
+  ('Gloria', 'Angel Olsen', NULL),
+  ('Glad Ur Gone', 'gglum', NULL),
+  ('Mafiosa', 'Nathy Peluso', NULL),
+  ('Sobrio', 'Maluma', NULL),
+  ('Reach Out', 'Sufjan Stevens and Angelo De Augustine', NULL)
   ;
 
    // Update to song table
@@ -234,7 +266,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10858; // SELECT last_insert_rowid();
+  song_id = 10869; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -274,15 +306,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 12:36:49.283283', '962', '10651'),
-  ('2021-10-12 12:36:49.284284', '962', '10650'),
-  ('2021-10-12 12:36:49.284284', '962', '10760'),
-  ('2021-10-12 12:36:49.284284', '962', '10853'),
-  ('2021-10-12 12:36:49.284284', '962', '10854'),
-  ('2021-10-12 12:36:49.284284', '962', '10855'),
-  ('2021-10-12 12:36:49.284284', '962', '10856'),
-  ('2021-10-12 12:36:49.284284', '962', '10857'),
-  ('2021-10-12 12:36:49.284284', '962', '10858')
+  ('2021-10-12 12:43:32.287287', '963', '10658'),
+  ('2021-10-12 12:43:32.287287', '963', '10859'),
+  ('2021-10-12 12:43:32.287287', '963', '10860'),
+  ('2021-10-12 12:43:32.288288', '963', '10861'),
+  ('2021-10-12 12:43:32.288288', '963', '10862'),
+  ('2021-10-12 12:43:32.288288', '963', '10863'),
+  ('2021-10-12 12:43:32.288288', '963', '10864'),
+  ('2021-10-12 12:43:32.288288', '963', '10865'),
+  ('2021-10-12 12:43:32.288288', '963', '10866'),
+  ('2021-10-12 12:43:32.288288', '963', '10867'),
+  ('2021-10-12 12:43:32.288288', '963', '10868'),
+  ('2021-10-12 12:43:32.288288', '963', '10869')
   ;
 
   // Update to source_song table
