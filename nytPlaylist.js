@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'H.E.R.’s Soulful Suspicions, and 11 More New Songs', '2021-06-18 02:00:54.000000', 'https://www.nytimes.com/2021/06/18/arts/music/playlist-her-tyler-the-creator.html');
+    ('New York Times', 'The Playlist', 'Ed Sheeran’s Glossy Late-Night Pop, and 12 More New Songs', '2021-06-25 12:20:56.000000', 'https://www.nytimes.com/2021/06/25/arts/music/playlist-ed-sheeran-willow.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 959; // SELECT last_insert_rowid();
+  source_id = 961; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,92 +99,110 @@
   songsData =
   [
       {
-          "title": "Cheat Code",
-          "artist_name": "H.E.R.",
+          "title": "Bad Habits",
+          "artist_name": "Ed Sheeran",
           "video_id": null,
-          "capture_date": "2021-10-12 09:06:39.944944",
-          "source_id": 959,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Sober & Skinny",
-          "artist_name": "Brittney Spencer",
-          "video_id": null,
-          "capture_date": "2021-10-12 09:06:39.945945",
-          "source_id": 959,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Old Peel",
-          "artist_name": "Aldous Harding",
-          "video_id": null,
-          "capture_date": "2021-10-12 09:06:39.945945",
-          "source_id": 959,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Jackie",
-          "artist_name": "Yves Tumor",
-          "video_id": null,
-          "capture_date": "2021-10-12 09:06:39.945945",
-          "source_id": 959,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Lumberjack",
-          "artist_name": "Tyler, the Creator",
-          "video_id": null,
-          "capture_date": "2021-10-12 09:06:39.945945",
-          "source_id": 959,
-          "song_id": 10626,
+          "capture_date": "2021-10-12 12:28:52.264264",
+          "source_id": 961,
+          "song_id": 10629,
           "duplicate": true
       },
       {
-          "title": "Riders on the Storm",
-          "artist_name": "Stiff Pap ft. BCUC",
+          "title": "Lipstick",
+          "artist_name": "Willow",
           "video_id": null,
-          "capture_date": "2021-10-12 09:06:39.946946",
-          "source_id": 959,
+          "capture_date": "2021-10-12 12:28:52.265265",
+          "source_id": 961,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Diri",
-          "artist_name": "Chucky73",
+          "title": "I Wanna Be a Dog",
+          "artist_name": "Colleen Green",
           "video_id": null,
-          "capture_date": "2021-10-12 09:06:39.946946",
-          "source_id": 959,
+          "capture_date": "2021-10-12 12:28:52.265265",
+          "source_id": 961,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Like This",
-          "artist_name": "Young Devyn",
+          "title": "Its Way With Me",
+          "artist_name": "Wye Oak",
           "video_id": null,
-          "capture_date": "2021-10-12 09:06:39.946946",
-          "source_id": 959,
+          "capture_date": "2021-10-12 12:28:52.266266",
+          "source_id": 961,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Mimbreños",
-          "artist_name": "Cochemea",
+          "title": "Chaise Longue",
+          "artist_name": "Wet Leg",
           "video_id": null,
-          "capture_date": "2021-10-12 09:06:39.946946",
-          "source_id": 959,
+          "capture_date": "2021-10-12 12:28:52.266266",
+          "source_id": 961,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Why Don’t You Touch Me",
-          "artist_name": "Leon Bridges",
+          "title": "Gemini and Leo",
+          "artist_name": "Helado Negro",
           "video_id": null,
-          "capture_date": "2021-10-12 09:06:39.946946",
-          "source_id": 959,
+          "capture_date": "2021-10-12 12:28:52.266266",
+          "source_id": 961,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Dan Mi (Pass Me the Lighter)",
+          "artist_name": "Hyzah",
+          "video_id": null,
+          "capture_date": "2021-10-12 12:28:52.266266",
+          "source_id": 961,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Days Like These",
+          "artist_name": "Low",
+          "video_id": null,
+          "capture_date": "2021-10-12 12:28:52.266266",
+          "source_id": 961,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Tragic",
+          "artist_name": "Jazmine Sullivan",
+          "video_id": null,
+          "capture_date": "2021-10-12 12:28:52.266266",
+          "source_id": 961,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Memory",
+          "artist_name": "Jim Lauderdale",
+          "video_id": null,
+          "capture_date": "2021-10-12 12:28:52.266266",
+          "source_id": 961,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Nadie Sabe",
+          "artist_name": "Mabe Fratti",
+          "video_id": null,
+          "capture_date": "2021-10-12 12:28:52.266266",
+          "source_id": 961,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "The Accident",
+          "artist_name": "Eli Keszler",
+          "video_id": null,
+          "capture_date": "2021-10-12 12:28:52.266266",
+          "source_id": 961,
           "song_id": null,
           "duplicate": false
       }
@@ -227,15 +245,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Cheat Code', 'H.E.R.', NULL),
-  ('Sober & Skinny', 'Brittney Spencer', NULL),
-  ('Old Peel', 'Aldous Harding', NULL),
-  ('Jackie', 'Yves Tumor', NULL),
-  ('Riders on the Storm', 'Stiff Pap ft. BCUC', NULL),
-  ('Diri', 'Chucky73', NULL),
-  ('Like This', 'Young Devyn', NULL),
-  ('Mimbreños', 'Cochemea', NULL),
-  ('Why Don’t You Touch Me', 'Leon Bridges', NULL)
+  ('Lipstick', 'Willow', NULL),
+  ('I Wanna Be a Dog', 'Colleen Green', NULL),
+  ('Its Way With Me', 'Wye Oak', NULL),
+  ('Chaise Longue', 'Wet Leg', NULL),
+  ('Gemini and Leo', 'Helado Negro', NULL),
+  ('Dan Mi (Pass Me the Lighter)', 'Hyzah', NULL),
+  ('Days Like These', 'Low', NULL),
+  ('Tragic', 'Jazmine Sullivan', NULL),
+  ('Memory', 'Jim Lauderdale', NULL),
+  ('Nadie Sabe', 'Mabe Fratti', NULL),
+  ('The Accident', 'Eli Keszler', NULL)
   ;
 
    // Update to song table
@@ -246,7 +266,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10827; // SELECT last_insert_rowid();
+  song_id = 10852; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -286,16 +306,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 09:06:39.944944', '959', '10819'),
-  ('2021-10-12 09:06:39.945945', '959', '10820'),
-  ('2021-10-12 09:06:39.945945', '959', '10821'),
-  ('2021-10-12 09:06:39.945945', '959', '10822'),
-  ('2021-10-12 09:06:39.945945', '959', '10626'),
-  ('2021-10-12 09:06:39.946946', '959', '10823'),
-  ('2021-10-12 09:06:39.946946', '959', '10824'),
-  ('2021-10-12 09:06:39.946946', '959', '10825'),
-  ('2021-10-12 09:06:39.946946', '959', '10826'),
-  ('2021-10-12 09:06:39.946946', '959', '10827')
+  ('2021-10-12 12:28:52.264264', '961', '10629'),
+  ('2021-10-12 12:28:52.265265', '961', '10842'),
+  ('2021-10-12 12:28:52.265265', '961', '10843'),
+  ('2021-10-12 12:28:52.266266', '961', '10844'),
+  ('2021-10-12 12:28:52.266266', '961', '10845'),
+  ('2021-10-12 12:28:52.266266', '961', '10846'),
+  ('2021-10-12 12:28:52.266266', '961', '10847'),
+  ('2021-10-12 12:28:52.266266', '961', '10848'),
+  ('2021-10-12 12:28:52.266266', '961', '10849'),
+  ('2021-10-12 12:28:52.266266', '961', '10850'),
+  ('2021-10-12 12:28:52.266266', '961', '10851'),
+  ('2021-10-12 12:28:52.266266', '961', '10852')
   ;
 
   // Update to source_song table
