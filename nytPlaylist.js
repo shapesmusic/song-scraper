@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'John Coltrane’s Unearthed Live ‘A Love Supreme,’ and 12 More New Songs', '2021-08-27 12:48:41.000000', 'https://www.nytimes.com/2021/08/27/arts/music/playlist-john-coltrane-sza.html');
+    ('New York Times', 'The Playlist', 'Abba Previews First Album in 40 Years, and 11 More New Songs', '2021-09-03 11:38:06.000000', 'https://www.nytimes.com/2021/09/03/arts/music/playlist-abba-bobby-shmurda.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 970; // SELECT last_insert_rowid();
+  source_id = 971; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,92 +99,101 @@
   songsData =
   [
       {
-          "title": "Nightbird",
-          "artist_name": "SZA",
+          "title": "Don’t Shut Me Down",
+          "artist_name": "Abba",
           "video_id": null,
-          "capture_date": "2021-10-12 05:00:06.183183",
-          "source_id": 970,
+          "capture_date": "2021-10-12 05:06:42.026026",
+          "source_id": 971,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Rolling Through California",
-          "artist_name": "Fantastic Negrito ft. Miko Marks",
+          "title": "Good Ones",
+          "artist_name": "Charli XCX",
           "video_id": null,
-          "capture_date": "2021-10-12 05:00:06.183183",
-          "source_id": 970,
+          "capture_date": "2021-10-12 05:06:42.027027",
+          "source_id": 971,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "To-Do List",
-          "artist_name": "The Felice Brothers",
+          "title": "Love Me",
+          "artist_name": "Juls ft. Niniola",
           "video_id": null,
-          "capture_date": "2021-10-12 05:00:06.183183",
-          "source_id": 970,
+          "capture_date": "2021-10-12 05:06:42.027027",
+          "source_id": 971,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Ain’t No Use",
-          "artist_name": "Randy Travis",
+          "title": "Billie (Loving Arms)",
+          "artist_name": "Fred again..",
           "video_id": null,
-          "capture_date": "2021-10-12 05:00:06.183183",
-          "source_id": 970,
+          "capture_date": "2021-10-12 05:06:42.027027",
+          "source_id": 971,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Plant Thief",
-          "artist_name": "Deerhoof",
+          "title": "Linda",
+          "artist_name": "Tokischa and Rosalía",
           "video_id": null,
-          "capture_date": "2021-10-12 05:00:06.183183",
-          "source_id": 970,
+          "capture_date": "2021-10-12 05:06:42.027027",
+          "source_id": 971,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "999",
-          "artist_name": "Selena Gomez and Camilo",
+          "title": "No Time for Sleep (Freestyle)",
+          "artist_name": "Bobby Shmurda",
           "video_id": null,
-          "capture_date": "2021-10-12 05:00:06.183183",
-          "source_id": 970,
+          "capture_date": "2021-10-12 05:06:42.027027",
+          "source_id": 971,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Know The Difference",
-          "artist_name": "Icewear Vezzo ft. Lil Baby",
+          "title": "Pausa",
+          "artist_name": "Martox ft. Gian Rojas",
           "video_id": null,
-          "capture_date": "2021-10-12 05:00:06.183183",
-          "source_id": 970,
+          "capture_date": "2021-10-12 05:06:42.027027",
+          "source_id": 971,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Zambololo",
-          "artist_name": "​​Umu Obiligbo",
+          "title": "Tokyo",
+          "artist_name": "Jhay Cortez",
           "video_id": null,
-          "capture_date": "2021-10-12 05:00:06.184184",
-          "source_id": 970,
+          "capture_date": "2021-10-12 05:06:42.027027",
+          "source_id": 971,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "We Wave From Our Boats",
-          "artist_name": "Mary Lattimore",
+          "title": "Glider",
+          "artist_name": "Japanese Breakfast",
           "video_id": null,
-          "capture_date": "2021-10-12 05:00:06.184184",
-          "source_id": 970,
+          "capture_date": "2021-10-12 05:06:42.027027",
+          "source_id": 971,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Anymore",
-          "artist_name": "Nite Jewel",
+          "title": "Reason to Believe",
+          "artist_name": "Aoife O’Donovan",
           "video_id": null,
-          "capture_date": "2021-10-12 05:00:06.184184",
-          "source_id": 970,
+          "capture_date": "2021-10-12 05:06:42.028028",
+          "source_id": 971,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Pt. 1",
+          "artist_name": "Ruby Landen",
+          "video_id": null,
+          "capture_date": "2021-10-12 05:06:42.028028",
+          "source_id": 971,
           "song_id": null,
           "duplicate": false
       }
@@ -227,16 +236,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Nightbird', 'SZA', NULL),
-  ('Rolling Through California', 'Fantastic Negrito ft. Miko Marks', NULL),
-  ('To-Do List', 'The Felice Brothers', NULL),
-  ('Ain’t No Use', 'Randy Travis', NULL),
-  ('Plant Thief', 'Deerhoof', NULL),
-  ('999', 'Selena Gomez and Camilo', NULL),
-  ('Know The Difference', 'Icewear Vezzo ft. Lil Baby', NULL),
-  ('Zambololo', '​​Umu Obiligbo', NULL),
-  ('We Wave From Our Boats', 'Mary Lattimore', NULL),
-  ('Anymore', 'Nite Jewel', NULL)
+  ('Don’t Shut Me Down', 'Abba', NULL),
+  ('Good Ones', 'Charli XCX', NULL),
+  ('Love Me', 'Juls ft. Niniola', NULL),
+  ('Billie (Loving Arms)', 'Fred again..', NULL),
+  ('Linda', 'Tokischa and Rosalía', NULL),
+  ('No Time for Sleep (Freestyle)', 'Bobby Shmurda', NULL),
+  ('Pausa', 'Martox ft. Gian Rojas', NULL),
+  ('Tokyo', 'Jhay Cortez', NULL),
+  ('Glider', 'Japanese Breakfast', NULL),
+  ('Reason to Believe', 'Aoife O’Donovan', NULL),
+  ('Pt. 1', 'Ruby Landen', NULL)
   ;
 
    // Update to song table
@@ -247,7 +257,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10933; // SELECT last_insert_rowid();
+  song_id = 10944; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -287,16 +297,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 05:00:06.183183', '970', '10924'),
-  ('2021-10-12 05:00:06.183183', '970', '10925'),
-  ('2021-10-12 05:00:06.183183', '970', '10926'),
-  ('2021-10-12 05:00:06.183183', '970', '10927'),
-  ('2021-10-12 05:00:06.183183', '970', '10928'),
-  ('2021-10-12 05:00:06.183183', '970', '10929'),
-  ('2021-10-12 05:00:06.183183', '970', '10930'),
-  ('2021-10-12 05:00:06.184184', '970', '10931'),
-  ('2021-10-12 05:00:06.184184', '970', '10932'),
-  ('2021-10-12 05:00:06.184184', '970', '10933')
+  ('2021-10-12 05:06:42.026026', '971', '10934'),
+  ('2021-10-12 05:06:42.027027', '971', '10935'),
+  ('2021-10-12 05:06:42.027027', '971', '10936'),
+  ('2021-10-12 05:06:42.027027', '971', '10937'),
+  ('2021-10-12 05:06:42.027027', '971', '10938'),
+  ('2021-10-12 05:06:42.027027', '971', '10939'),
+  ('2021-10-12 05:06:42.027027', '971', '10940'),
+  ('2021-10-12 05:06:42.027027', '971', '10941'),
+  ('2021-10-12 05:06:42.027027', '971', '10942'),
+  ('2021-10-12 05:06:42.028028', '971', '10943'),
+  ('2021-10-12 05:06:42.028028', '971', '10944')
   ;
 
   // Update to source_song table
