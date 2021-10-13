@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Tyler, the Creator, Doja Cat, Ski Mask the Slump God, and More', '2021-06-25 12:00:00.000000', 'https://www.complex.com/music/best-new-music-tyler-the-creator-doja-cat-ski-mask/');
+    ('Complex', 'Best New Music This Week', 'Brent Faiyaz, Drake, Nas, Rico Nasty, and More', '2021-07-01 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-brent-faiyaz-drake-nas-rico-nasty/');
   // Update to source table
 
 
@@ -55,7 +55,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1035; // SELECT last_insert_rowid();
+  source_id = 1036; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -100,67 +100,49 @@
   songsData =
   [
       {
-          "title": "Wusyaname",
-          "artist_name": "Tyler, the Creator ft. NBA YoungBoy",
+          "title": "Wasting Time",
+          "artist_name": "Brent Faiyaz ft. Drake",
           "video_id": null,
-          "capture_date": "2021-10-13 01:53:55.836836",
-          "source_id": 1035,
-          "song_id": 10631,
+          "capture_date": "2021-10-13 03:23:08.766766",
+          "source_id": 1036,
+          "song_id": 10650,
           "duplicate": true
       },
       {
-          "title": "You Right",
-          "artist_name": "Doja Cat ft. The Weeknd",
+          "title": "I Believed It",
+          "artist_name": "DVSN & Ty Dolla Sign ft. Mac Miller",
           "video_id": null,
-          "capture_date": "2021-10-13 01:53:55.837837",
-          "source_id": 1035,
-          "song_id": 10630,
-          "duplicate": true
-      },
-      {
-          "title": "The Matrix",
-          "artist_name": "Ski Mask the Slump God",
-          "video_id": null,
-          "capture_date": "2021-10-13 01:53:55.837837",
-          "source_id": 1035,
+          "capture_date": "2021-10-13 03:23:08.768768",
+          "source_id": 1036,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Bad Habits",
-          "artist_name": "Ed Sheeran",
+          "title": "Life Is Like a Dice Game",
+          "artist_name": "Nas ft. Freddie Gibbs & Cordae",
           "video_id": null,
-          "capture_date": "2021-10-13 01:53:55.837837",
-          "source_id": 1035,
-          "song_id": 10629,
-          "duplicate": true
-      },
-      {
-          "title": "Lost You",
-          "artist_name": "Snoh Aalegra",
-          "video_id": null,
-          "capture_date": "2021-10-13 01:53:55.837837",
-          "source_id": 1035,
+          "capture_date": "2021-10-13 03:23:08.768768",
+          "source_id": 1036,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Messy Love",
-          "artist_name": "Nao",
+          "title": "Magic",
+          "artist_name": "Rico Nasty",
           "video_id": null,
-          "capture_date": "2021-10-13 01:53:55.837837",
-          "source_id": 1035,
+          "capture_date": "2021-10-13 03:23:08.768768",
+          "source_id": 1036,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Red Light Green Light",
-          "artist_name": "DaBaby",
+          "title": "Love Music",
+          "artist_name": "Lil Yachty",
           "video_id": null,
-          "capture_date": "2021-10-13 01:53:55.837837",
-          "source_id": 1035,
-          "song_id": 10636,
-          "duplicate": true
+          "capture_date": "2021-10-13 03:23:08.768768",
+          "source_id": 1036,
+          "song_id": null,
+          "duplicate": false
       }
   ]
 
@@ -201,9 +183,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Matrix', 'Ski Mask the Slump God', NULL),
-  ('Lost You', 'Snoh Aalegra', NULL),
-  ('Messy Love', 'Nao', NULL)
+  ('I Believed It', 'DVSN & Ty Dolla Sign ft. Mac Miller', NULL),
+  ('Life Is Like a Dice Game', 'Nas ft. Freddie Gibbs & Cordae', NULL),
+  ('Magic', 'Rico Nasty', NULL),
+  ('Love Music', 'Lil Yachty', NULL)
   ;
 
    // Update to song table
@@ -214,7 +197,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11048; // SELECT last_insert_rowid();
+  song_id = 11052; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -254,13 +237,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 01:53:55.836836', '1035', '10631'),
-  ('2021-10-13 01:53:55.837837', '1035', '10630'),
-  ('2021-10-13 01:53:55.837837', '1035', '11046'),
-  ('2021-10-13 01:53:55.837837', '1035', '10629'),
-  ('2021-10-13 01:53:55.837837', '1035', '11047'),
-  ('2021-10-13 01:53:55.837837', '1035', '11048'),
-  ('2021-10-13 01:53:55.837837', '1035', '10636')
+  ('2021-10-13 03:23:08.766766', '1036', '10650'),
+  ('2021-10-13 03:23:08.768768', '1036', '11049'),
+  ('2021-10-13 03:23:08.768768', '1036', '11050'),
+  ('2021-10-13 03:23:08.768768', '1036', '11051'),
+  ('2021-10-13 03:23:08.768768', '1036', '11052')
   ;
 
   // Update to source_song table
