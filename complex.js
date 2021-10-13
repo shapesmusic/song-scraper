@@ -47,8 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Tyler, the Creator, Vince Staples, Don Toliver, and More', '2021-06-18 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-tyler-the-creator-vince-staples-don-toliver/her-dont');
-
+    ('Complex', 'Best New Music This Week', 'Tyler, the Creator, Doja Cat, Ski Mask the Slump God, and More', '2021-06-25 12:00:00.000000', 'https://www.complex.com/music/best-new-music-tyler-the-creator-doja-cat-ski-mask/');
   // Update to source table
 
 
@@ -56,19 +55,21 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1034; // SELECT last_insert_rowid();
+  source_id = 1035; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
   element = elements[0].getElementsByTagName("h2"); // sometimes h2 or h3
-  videoUrl = document.getElementsByClassName("video-lazyload");
+  // videoUrl = document.getElementsByClassName("video-lazyload");
 
   songsData = [];
 
   for (var i=0; i<element.length; i++){
     title = element[i].innerText.match(/, “(.*?)”/)[1]; // may need " or “” type quotation marks, or a comma after the artist name, or may have an &nbsp; instead of a space
     artist_name = element[i].innerText.match(/.+?(?=, “)/)[0]; // may need " or “ type quotation marks
-    video_id = videoUrl[i].style.backgroundImage.match(/(?<=vi\/)(.*)(?=\/)/)[0]; // example: url("https://i.ytimg.com/vi/gejbbL1AaJk/hqdefault.jpg")
+    video_id = null
+      // replace null with below to grab video IDs (when all songs are YT)
+      // videoUrl[i].style.backgroundImage.match(/(?<=vi\/)(.*)(?=\/)/)[0];
 
     capture_date = moment(new Date()).format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
 
@@ -99,85 +100,67 @@
   songsData =
   [
       {
-          "title": "Lumberjack",
-          "artist_name": "Tyler, the Creator",
-          "video_id": "R4Y7JIQlv20",
-          "capture_date": "2021-10-13 09:56:08.625625",
-          "source_id": 1034,
-          "song_id": 10626,
+          "title": "Wusyaname",
+          "artist_name": "Tyler, the Creator ft. NBA YoungBoy",
+          "video_id": null,
+          "capture_date": "2021-10-13 01:53:55.836836",
+          "source_id": 1035,
+          "song_id": 10631,
           "duplicate": true
       },
       {
-          "title": "Drugs N Hella Melodies",
-          "artist_name": "Don Toliver ft. Kali Uchis",
-          "video_id": "i_PYqIZoGvo",
-          "capture_date": "2021-10-13 09:56:08.627627",
-          "source_id": 1034,
+          "title": "You Right",
+          "artist_name": "Doja Cat ft. The Weeknd",
+          "video_id": null,
+          "capture_date": "2021-10-13 01:53:55.837837",
+          "source_id": 1035,
+          "song_id": 10630,
+          "duplicate": true
+      },
+      {
+          "title": "The Matrix",
+          "artist_name": "Ski Mask the Slump God",
+          "video_id": null,
+          "capture_date": "2021-10-13 01:53:55.837837",
+          "source_id": 1035,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Law of Averages",
-          "artist_name": "Vince Staples",
-          "video_id": "oTri3zbX-R8",
-          "capture_date": "2021-10-13 09:56:08.627627",
-          "source_id": 1034,
+          "title": "Bad Habits",
+          "artist_name": "Ed Sheeran",
+          "video_id": null,
+          "capture_date": "2021-10-13 01:53:55.837837",
+          "source_id": 1035,
+          "song_id": 10629,
+          "duplicate": true
+      },
+      {
+          "title": "Lost You",
+          "artist_name": "Snoh Aalegra",
+          "video_id": null,
+          "capture_date": "2021-10-13 01:53:55.837837",
+          "source_id": 1035,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "How We Coming",
-          "artist_name": "Migos",
-          "video_id": "TEx7uNCoskg",
-          "capture_date": "2021-10-13 09:56:08.628628",
-          "source_id": 1034,
+          "title": "Messy Love",
+          "artist_name": "Nao",
+          "video_id": null,
+          "capture_date": "2021-10-13 01:53:55.837837",
+          "source_id": 1035,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Ball If I Want To",
+          "title": "Red Light Green Light",
           "artist_name": "DaBaby",
-          "video_id": "_Rzm7cPzVUo",
-          "capture_date": "2021-10-13 09:56:08.628628",
-          "source_id": 1034,
-          "song_id": 10622,
+          "video_id": null,
+          "capture_date": "2021-10-13 01:53:55.837837",
+          "source_id": 1035,
+          "song_id": 10636,
           "duplicate": true
-      },
-      {
-          "title": "Headshots (4r Da Locals)",
-          "artist_name": "Isaiah Rashad",
-          "video_id": "cRQRmFhL_vo",
-          "capture_date": "2021-10-13 09:56:08.703703",
-          "source_id": 1034,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Raindrops",
-          "artist_name": "GoldLink ft. Flo Milli",
-          "video_id": "oNMXSdAIPBU",
-          "capture_date": "2021-10-13 09:56:08.703703",
-          "source_id": 1034,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "I Got It",
-          "artist_name": "Gucci Mane ft. Lil Uzi Vert",
-          "video_id": "mL9EJBv-iII",
-          "capture_date": "2021-10-13 09:56:08.703703",
-          "source_id": 1034,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Don’t",
-          "artist_name": "H.E.R.",
-          "video_id": "fdp4hWrpRyI",
-          "capture_date": "2021-10-13 09:56:08.704704",
-          "source_id": 1034,
-          "song_id": null,
-          "duplicate": false
       }
   ]
 
@@ -218,13 +201,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Drugs N Hella Melodies', 'Don Toliver ft. Kali Uchis', NULL),
-  ('Law of Averages', 'Vince Staples', NULL),
-  ('How We Coming', 'Migos', NULL),
-  ('Headshots (4r Da Locals)', 'Isaiah Rashad', NULL),
-  ('Raindrops', 'GoldLink ft. Flo Milli', NULL),
-  ('I Got It', 'Gucci Mane ft. Lil Uzi Vert', NULL),
-  ('Don’t', 'H.E.R.', NULL)
+  ('The Matrix', 'Ski Mask the Slump God', NULL),
+  ('Lost You', 'Snoh Aalegra', NULL),
+  ('Messy Love', 'Nao', NULL)
   ;
 
    // Update to song table
@@ -235,7 +214,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11045; // SELECT last_insert_rowid();
+  song_id = 11048; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -275,15 +254,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 09:56:08.625625', '1034', '10626'),
-  ('2021-10-13 09:56:08.627627', '1034', '11039'),
-  ('2021-10-13 09:56:08.627627', '1034', '11040'),
-  ('2021-10-13 09:56:08.628628', '1034', '11041'),
-  ('2021-10-13 09:56:08.628628', '1034', '10622'),
-  ('2021-10-13 09:56:08.703703', '1034', '11042'),
-  ('2021-10-13 09:56:08.703703', '1034', '11043'),
-  ('2021-10-13 09:56:08.703703', '1034', '11044'),
-  ('2021-10-13 09:56:08.704704', '1034', '11045')
+  ('2021-10-13 01:53:55.836836', '1035', '10631'),
+  ('2021-10-13 01:53:55.837837', '1035', '10630'),
+  ('2021-10-13 01:53:55.837837', '1035', '11046'),
+  ('2021-10-13 01:53:55.837837', '1035', '10629'),
+  ('2021-10-13 01:53:55.837837', '1035', '11047'),
+  ('2021-10-13 01:53:55.837837', '1035', '11048'),
+  ('2021-10-13 01:53:55.837837', '1035', '10636')
   ;
 
   // Update to source_song table
