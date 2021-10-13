@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'The Weeknd, Nas, Tinashe, and More', '2021-08-06 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-the-weeknd-nas-tinashe/lil-tecca-gunna-repeat-it');
+    ('Complex', 'Best New Music This Week', 'Denzel Curry, Benny the Butcher, YNW Melly, and More', '2021-08-13 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-benny-the-butcher-denzel-curry/pinkpanthress-just-for-me');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1040; // SELECT last_insert_rowid();
+  source_id = 1041; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,83 +101,92 @@
   songsData =
   [
       {
-          "title": "Take My Breath",
-          "artist_name": "The Weeknd",
+          "title": "The Game",
+          "artist_name": "Denzel Curry",
           "video_id": null,
-          "capture_date": "2021-10-13 07:35:45.194194",
-          "source_id": 1040,
-          "song_id": 10701,
-          "duplicate": true
-      },
-      {
-          "title": "SUVs (Black on Black)",
-          "artist_name": "Jack Harlow & Pooh Shiesty",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:35:45.196196",
-          "source_id": 1040,
-          "song_id": 10702,
-          "duplicate": true
-      },
-      {
-          "title": "Rare",
-          "artist_name": "Nas",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:35:45.197197",
-          "source_id": 1040,
-          "song_id": 10709,
-          "duplicate": true
-      },
-      {
-          "title": "The Brenda Song",
-          "artist_name": "Abstract Mindstate ft. Kanye West",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:35:45.197197",
-          "source_id": 1040,
+          "capture_date": "2021-10-13 07:47:04.850850",
+          "source_id": 1041,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "X",
-          "artist_name": "Tinashe ft. Jeremih",
+          "title": "Fly With Me",
+          "artist_name": "Benny the Butcher ft. Conway the Machine",
           "video_id": null,
-          "capture_date": "2021-10-13 07:35:45.197197",
-          "source_id": 1040,
+          "capture_date": "2021-10-13 07:47:04.852852",
+          "source_id": 1041,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Flew By You",
-          "artist_name": "KayCyy",
+          "title": "Rumors",
+          "artist_name": "Lizzo ft. Cardi B",
           "video_id": null,
-          "capture_date": "2021-10-13 07:35:45.197197",
-          "source_id": 1040,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Buss",
-          "artist_name": "Rico Nasty",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:35:45.197197",
-          "source_id": 1040,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Repeat It",
-          "artist_name": "Lil Tecca ft. Gunna",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:35:45.197197",
-          "source_id": 1040,
-          "song_id": 10704,
+          "capture_date": "2021-10-13 07:47:04.852852",
+          "source_id": 1041,
+          "song_id": 10710,
           "duplicate": true
       },
       {
-          "title": "Bodies on Bodies",
-          "artist_name": "Young Nudy",
+          "title": "Mind of Melvin",
+          "artist_name": "YNW Melly ft. Lil Uzi Vert",
           "video_id": null,
-          "capture_date": "2021-10-13 07:35:45.197197",
-          "source_id": 1040,
+          "capture_date": "2021-10-13 07:47:04.852852",
+          "source_id": 1041,
+          "song_id": 10712,
+          "duplicate": true
+      },
+      {
+          "title": "Ball is Life",
+          "artist_name": "Swae Lee ft. Jack Harlow",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:47:04.852852",
+          "source_id": 1041,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Photographic Memories",
+          "artist_name": "Boldy James & The Alchemist ft. Roc Marciano & Earl Sweatshirt",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:47:04.852852",
+          "source_id": 1041,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Essence (Remix)",
+          "artist_name": "WizKid ft. Justin Bieber & Tems",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:47:04.852852",
+          "source_id": 1041,
+          "song_id": 10653,
+          "duplicate": true
+      },
+      {
+          "title": "Down South",
+          "artist_name": "Wale, Yella Beezy, & Maxo Kream",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:47:04.852852",
+          "source_id": 1041,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Trim the Fat",
+          "artist_name": "Flee Lord & Roc Marciano ft. Stove God Cooks",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:47:04.852852",
+          "source_id": 1041,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Just For Me",
+          "artist_name": "PinkPantheress",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:47:04.853853",
+          "source_id": 1041,
           "song_id": null,
           "duplicate": false
       }
@@ -220,11 +229,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Brenda Song', 'Abstract Mindstate ft. Kanye West', NULL),
-  ('X', 'Tinashe ft. Jeremih', NULL),
-  ('Flew By You', 'KayCyy', NULL),
-  ('Buss', 'Rico Nasty', NULL),
-  ('Bodies on Bodies', 'Young Nudy', NULL)
+  ('The Game', 'Denzel Curry', NULL),
+  ('Fly With Me', 'Benny the Butcher ft. Conway the Machine', NULL),
+  ('Ball is Life', 'Swae Lee ft. Jack Harlow', NULL),
+  ('Photographic Memories', 'Boldy James & The Alchemist ft. Roc Marciano & Earl Sweatshirt', NULL),
+  ('Down South', 'Wale, Yella Beezy, & Maxo Kream', NULL),
+  ('Trim the Fat', 'Flee Lord & Roc Marciano ft. Stove God Cooks', NULL),
+  ('Just For Me', 'PinkPantheress', NULL)
   ;
 
    // Update to song table
@@ -235,7 +246,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11068; // SELECT last_insert_rowid();
+  song_id = 11075; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -275,15 +286,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 07:35:45.194194', '1040', '10701'),
-  ('2021-10-13 07:35:45.196196', '1040', '10702'),
-  ('2021-10-13 07:35:45.197197', '1040', '10709'),
-  ('2021-10-13 07:35:45.197197', '1040', '11064'),
-  ('2021-10-13 07:35:45.197197', '1040', '11065'),
-  ('2021-10-13 07:35:45.197197', '1040', '11066'),
-  ('2021-10-13 07:35:45.197197', '1040', '11067'),
-  ('2021-10-13 07:35:45.197197', '1040', '10704'),
-  ('2021-10-13 07:35:45.197197', '1040', '11068')
+  ('2021-10-13 07:47:04.850850', '1041', '11069'),
+  ('2021-10-13 07:47:04.852852', '1041', '11070'),
+  ('2021-10-13 07:47:04.852852', '1041', '10710'),
+  ('2021-10-13 07:47:04.852852', '1041', '10712'),
+  ('2021-10-13 07:47:04.852852', '1041', '11071'),
+  ('2021-10-13 07:47:04.852852', '1041', '11072'),
+  ('2021-10-13 07:47:04.852852', '1041', '10653'),
+  ('2021-10-13 07:47:04.852852', '1041', '11073'),
+  ('2021-10-13 07:47:04.852852', '1041', '11074'),
+  ('2021-10-13 07:47:04.853853', '1041', '11075')
   ;
 
   // Update to source_song table
