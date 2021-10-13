@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Kane Brown and H.E.R.’s Genre-Melting Duet, and 11 More New Songs', '2021-10-01 11:06:05.000000', 'https://www.nytimes.com/2021/10/01/arts/music/playlist-kane-brown-her-springsteen-mellencamp.html');
+    ('New York Times', 'The Playlist', 'Mitski’s Sharp Take on a Creative Life, and 12 More New Songs', '2021-10-08 12:29:07.000000', 'https://www.nytimes.com/2021/10/08/arts/music/playlist-mitski-arca-bad-bunny.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 975; // SELECT last_insert_rowid();
+  source_id = 976; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,101 +99,110 @@
   songsData =
   [
       {
-          "title": "Blessed & Free",
-          "artist_name": "Kane Brown and H.E.R.",
+          "title": "Working for the Knife",
+          "artist_name": "Mitski",
           "video_id": null,
-          "capture_date": "2021-10-12 10:28:55.477477",
-          "source_id": 975,
+          "capture_date": "2021-10-12 10:34:10.989989",
+          "source_id": 976,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Wasted Days",
-          "artist_name": "John Mellencamp and Bruce Springsteen",
+          "title": "Born Yesterday",
+          "artist_name": "Arca ft. Sia",
           "video_id": null,
-          "capture_date": "2021-10-12 10:28:55.479479",
-          "source_id": 975,
+          "capture_date": "2021-10-12 10:34:10.990990",
+          "source_id": 976,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Panic Attacks in Paradise",
-          "artist_name": "Ashnikko",
+          "title": "Lo Siento BB:/",
+          "artist_name": "Tainy with Bad Bunny and Julieta Venegas",
           "video_id": null,
-          "capture_date": "2021-10-12 10:28:55.479479",
-          "source_id": 975,
+          "capture_date": "2021-10-12 10:34:10.990990",
+          "source_id": 976,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "The Distance",
-          "artist_name": "Totally Enormous Extinct Dinosaurs",
+          "title": "Shine",
+          "artist_name": "Robert Glasper ft. D Smoke & Tiffany Gouché",
           "video_id": null,
-          "capture_date": "2021-10-12 10:28:55.480480",
-          "source_id": 975,
+          "capture_date": "2021-10-12 10:34:10.990990",
+          "source_id": 976,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Dad Vibes",
-          "artist_name": "Limp Bizkit",
+          "title": "Mental Anguish",
+          "artist_name": "glaive and ericdoa",
           "video_id": null,
-          "capture_date": "2021-10-12 10:28:55.480480",
-          "source_id": 975,
+          "capture_date": "2021-10-12 10:34:10.990990",
+          "source_id": 976,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Negra Del Alma",
+          "title": "Coming Back",
+          "artist_name": "James Blake ft. SZA",
+          "video_id": null,
+          "capture_date": "2021-10-12 10:34:10.990990",
+          "source_id": 976,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Red Eye",
+          "artist_name": "Justin Bieber ft. TroyBoi",
+          "video_id": null,
+          "capture_date": "2021-10-12 10:34:10.991991",
+          "source_id": 976,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Ateo",
+          "artist_name": "C. Tangana and Nathy Peluso",
+          "video_id": null,
+          "capture_date": "2021-10-12 10:34:10.991991",
+          "source_id": 976,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Midnight Snacks",
+          "artist_name": "Kelis",
+          "video_id": null,
+          "capture_date": "2021-10-12 10:34:10.991991",
+          "source_id": 976,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Estos Días",
+          "artist_name": "Tambino",
+          "video_id": null,
+          "capture_date": "2021-10-12 10:34:10.991991",
+          "source_id": 976,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Negra del Alma",
           "artist_name": "Susana Baca",
           "video_id": null,
-          "capture_date": "2021-10-12 10:28:55.480480",
-          "source_id": 975,
-          "song_id": null,
-          "duplicate": false
+          "capture_date": "2021-10-12 10:34:10.991991",
+          "source_id": 976,
+          "song_id": 10982,
+          "duplicate": true
       },
       {
-          "title": "Angel on My Shoulder",
-          "artist_name": "Sega Bodega",
+          "title": "Morning Spring",
+          "artist_name": "Suzanne Ciani",
           "video_id": null,
-          "capture_date": "2021-10-12 10:28:55.480480",
-          "source_id": 975,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Skin 2 Skin",
-          "artist_name": "Hyd",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:28:55.480480",
-          "source_id": 975,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Go Easy Kid",
-          "artist_name": "Monica Martin",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:28:55.480480",
-          "source_id": 975,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Count the Tear Drops",
-          "artist_name": "Corrina Repp",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:28:55.480480",
-          "source_id": 975,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Lieve",
-          "artist_name": "Holy Other",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:28:55.480480",
-          "source_id": 975,
+          "capture_date": "2021-10-12 10:34:10.991991",
+          "source_id": 976,
           "song_id": null,
           "duplicate": false
       }
@@ -236,17 +245,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Blessed & Free', 'Kane Brown and H.E.R.', NULL),
-  ('Wasted Days', 'John Mellencamp and Bruce Springsteen', NULL),
-  ('Panic Attacks in Paradise', 'Ashnikko', NULL),
-  ('The Distance', 'Totally Enormous Extinct Dinosaurs', NULL),
-  ('Dad Vibes', 'Limp Bizkit', NULL),
-  ('Negra Del Alma', 'Susana Baca', NULL),
-  ('Angel on My Shoulder', 'Sega Bodega', NULL),
-  ('Skin 2 Skin', 'Hyd', NULL),
-  ('Go Easy Kid', 'Monica Martin', NULL),
-  ('Count the Tear Drops', 'Corrina Repp', NULL),
-  ('Lieve', 'Holy Other', NULL)
+  ('Working for the Knife', 'Mitski', NULL),
+  ('Born Yesterday', 'Arca ft. Sia', NULL),
+  ('Lo Siento BB:/', 'Tainy with Bad Bunny and Julieta Venegas', NULL),
+  ('Shine', 'Robert Glasper ft. D Smoke & Tiffany Gouché', NULL),
+  ('Mental Anguish', 'glaive and ericdoa', NULL),
+  ('Coming Back', 'James Blake ft. SZA', NULL),
+  ('Red Eye', 'Justin Bieber ft. TroyBoi', NULL),
+  ('Ateo', 'C. Tangana and Nathy Peluso', NULL),
+  ('Midnight Snacks', 'Kelis', NULL),
+  ('Estos Días', 'Tambino', NULL),
+  ('Morning Spring', 'Suzanne Ciani', NULL)
   ;
 
    // Update to song table
@@ -257,7 +266,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10987; // SELECT last_insert_rowid();
+  song_id = 10998; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -297,17 +306,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 10:28:55.477477', '975', '10977'),
-  ('2021-10-12 10:28:55.479479', '975', '10978'),
-  ('2021-10-12 10:28:55.479479', '975', '10979'),
-  ('2021-10-12 10:28:55.480480', '975', '10980'),
-  ('2021-10-12 10:28:55.480480', '975', '10981'),
-  ('2021-10-12 10:28:55.480480', '975', '10982'),
-  ('2021-10-12 10:28:55.480480', '975', '10983'),
-  ('2021-10-12 10:28:55.480480', '975', '10984'),
-  ('2021-10-12 10:28:55.480480', '975', '10985'),
-  ('2021-10-12 10:28:55.480480', '975', '10986'),
-  ('2021-10-12 10:28:55.480480', '975', '10987')
+  ('2021-10-12 10:34:10.989989', '976', '10988'),
+  ('2021-10-12 10:34:10.990990', '976', '10989'),
+  ('2021-10-12 10:34:10.990990', '976', '10990'),
+  ('2021-10-12 10:34:10.990990', '976', '10991'),
+  ('2021-10-12 10:34:10.990990', '976', '10992'),
+  ('2021-10-12 10:34:10.990990', '976', '10993'),
+  ('2021-10-12 10:34:10.991991', '976', '10994'),
+  ('2021-10-12 10:34:10.991991', '976', '10995'),
+  ('2021-10-12 10:34:10.991991', '976', '10996'),
+  ('2021-10-12 10:34:10.991991', '976', '10997'),
+  ('2021-10-12 10:34:10.991991', '976', '10982'),
+  ('2021-10-12 10:34:10.991991', '976', '10998')
   ;
 
   // Update to source_song table
