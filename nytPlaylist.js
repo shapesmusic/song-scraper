@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Abba Previews First Album in 40 Years, and 11 More New Songs', '2021-09-03 11:38:06.000000', 'https://www.nytimes.com/2021/09/03/arts/music/playlist-abba-bobby-shmurda.html');
+    ('New York Times', 'The Playlist', 'Radiohead’s ‘Kid A’ Era Outtake, and 13 More New Songs', '2021-09-13 11:55:46.000000', 'https://www.nytimes.com/2021/09/10/arts/music/playlist-radiohead-ed-sheeran-lisa.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 971; // SELECT last_insert_rowid();
+  source_id = 972; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,101 +99,110 @@
   songsData =
   [
       {
-          "title": "Don’t Shut Me Down",
-          "artist_name": "Abba",
+          "title": "If You Say the Word",
+          "artist_name": "Radiohead",
           "video_id": null,
-          "capture_date": "2021-10-12 05:06:42.026026",
-          "source_id": 971,
+          "capture_date": "2021-10-12 10:08:18.340340",
+          "source_id": 972,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Good Ones",
-          "artist_name": "Charli XCX",
+          "title": "Shivers",
+          "artist_name": "Ed Sheeran",
           "video_id": null,
-          "capture_date": "2021-10-12 05:06:42.027027",
-          "source_id": 971,
+          "capture_date": "2021-10-12 10:08:18.341341",
+          "source_id": 972,
+          "song_id": 10783,
+          "duplicate": true
+      },
+      {
+          "title": "23",
+          "artist_name": "Sam Hunt",
+          "video_id": null,
+          "capture_date": "2021-10-12 10:08:18.342342",
+          "source_id": 972,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Love Me",
-          "artist_name": "Juls ft. Niniola",
+          "title": "Lalisa",
+          "artist_name": "Lisa",
           "video_id": null,
-          "capture_date": "2021-10-12 05:06:42.027027",
-          "source_id": 971,
+          "capture_date": "2021-10-12 10:08:18.342342",
+          "source_id": 972,
+          "song_id": 10789,
+          "duplicate": true
+      },
+      {
+          "title": "Boomerang",
+          "artist_name": "Yebba",
+          "video_id": null,
+          "capture_date": "2021-10-12 10:08:18.342342",
+          "source_id": 972,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Billie (Loving Arms)",
-          "artist_name": "Fred again..",
+          "title": "True Seekers",
+          "artist_name": "Sleigh Bells",
           "video_id": null,
-          "capture_date": "2021-10-12 05:06:42.027027",
-          "source_id": 971,
+          "capture_date": "2021-10-12 10:08:18.342342",
+          "source_id": 972,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Linda",
-          "artist_name": "Tokischa and Rosalía",
+          "title": "Fake Blood",
+          "artist_name": "Ìfé",
           "video_id": null,
-          "capture_date": "2021-10-12 05:06:42.027027",
-          "source_id": 971,
+          "capture_date": "2021-10-12 10:08:18.342342",
+          "source_id": 972,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "No Time for Sleep (Freestyle)",
-          "artist_name": "Bobby Shmurda",
+          "title": "Story Time",
+          "artist_name": "Fivio Foreign",
           "video_id": null,
-          "capture_date": "2021-10-12 05:06:42.027027",
-          "source_id": 971,
+          "capture_date": "2021-10-12 10:08:18.342342",
+          "source_id": 972,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Pausa",
-          "artist_name": "Martox ft. Gian Rojas",
+          "title": "Hive Mind",
+          "artist_name": "Tirzah ft. Coby Sey",
           "video_id": null,
-          "capture_date": "2021-10-12 05:06:42.027027",
-          "source_id": 971,
+          "capture_date": "2021-10-12 10:08:18.343343",
+          "source_id": 972,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Tokyo",
-          "artist_name": "Jhay Cortez",
+          "title": "Pond House",
+          "artist_name": "St. Etienne",
           "video_id": null,
-          "capture_date": "2021-10-12 05:06:42.027027",
-          "source_id": 971,
+          "capture_date": "2021-10-12 10:08:18.343343",
+          "source_id": 972,
+          "song_id": 10891,
+          "duplicate": true
+      },
+      {
+          "title": "Sculpting the Exodus",
+          "artist_name": "Circuit des Yeux",
+          "video_id": null,
+          "capture_date": "2021-10-12 10:08:18.343343",
+          "source_id": 972,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Glider",
-          "artist_name": "Japanese Breakfast",
+          "title": "Abeyant",
+          "artist_name": "Sarah Davachi",
           "video_id": null,
-          "capture_date": "2021-10-12 05:06:42.027027",
-          "source_id": 971,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Reason to Believe",
-          "artist_name": "Aoife O’Donovan",
-          "video_id": null,
-          "capture_date": "2021-10-12 05:06:42.028028",
-          "source_id": 971,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Pt. 1",
-          "artist_name": "Ruby Landen",
-          "video_id": null,
-          "capture_date": "2021-10-12 05:06:42.028028",
-          "source_id": 971,
+          "capture_date": "2021-10-12 10:08:18.343343",
+          "source_id": 972,
           "song_id": null,
           "duplicate": false
       }
@@ -236,17 +245,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Don’t Shut Me Down', 'Abba', NULL),
-  ('Good Ones', 'Charli XCX', NULL),
-  ('Love Me', 'Juls ft. Niniola', NULL),
-  ('Billie (Loving Arms)', 'Fred again..', NULL),
-  ('Linda', 'Tokischa and Rosalía', NULL),
-  ('No Time for Sleep (Freestyle)', 'Bobby Shmurda', NULL),
-  ('Pausa', 'Martox ft. Gian Rojas', NULL),
-  ('Tokyo', 'Jhay Cortez', NULL),
-  ('Glider', 'Japanese Breakfast', NULL),
-  ('Reason to Believe', 'Aoife O’Donovan', NULL),
-  ('Pt. 1', 'Ruby Landen', NULL)
+  ('If You Say the Word', 'Radiohead', NULL),
+  ('23', 'Sam Hunt', NULL),
+  ('Boomerang', 'Yebba', NULL),
+  ('True Seekers', 'Sleigh Bells', NULL),
+  ('Fake Blood', 'Ìfé', NULL),
+  ('Story Time', 'Fivio Foreign', NULL),
+  ('Hive Mind', 'Tirzah ft. Coby Sey', NULL),
+  ('Sculpting the Exodus', 'Circuit des Yeux', NULL),
+  ('Abeyant', 'Sarah Davachi', NULL)
   ;
 
    // Update to song table
@@ -257,7 +264,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10944; // SELECT last_insert_rowid();
+  song_id = 10953; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -297,17 +304,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 05:06:42.026026', '971', '10934'),
-  ('2021-10-12 05:06:42.027027', '971', '10935'),
-  ('2021-10-12 05:06:42.027027', '971', '10936'),
-  ('2021-10-12 05:06:42.027027', '971', '10937'),
-  ('2021-10-12 05:06:42.027027', '971', '10938'),
-  ('2021-10-12 05:06:42.027027', '971', '10939'),
-  ('2021-10-12 05:06:42.027027', '971', '10940'),
-  ('2021-10-12 05:06:42.027027', '971', '10941'),
-  ('2021-10-12 05:06:42.027027', '971', '10942'),
-  ('2021-10-12 05:06:42.028028', '971', '10943'),
-  ('2021-10-12 05:06:42.028028', '971', '10944')
+  ('2021-10-12 10:08:18.340340', '972', '10945'),
+  ('2021-10-12 10:08:18.341341', '972', '10783'),
+  ('2021-10-12 10:08:18.342342', '972', '10946'),
+  ('2021-10-12 10:08:18.342342', '972', '10789'),
+  ('2021-10-12 10:08:18.342342', '972', '10947'),
+  ('2021-10-12 10:08:18.342342', '972', '10948'),
+  ('2021-10-12 10:08:18.342342', '972', '10949'),
+  ('2021-10-12 10:08:18.342342', '972', '10950'),
+  ('2021-10-12 10:08:18.343343', '972', '10951'),
+  ('2021-10-12 10:08:18.343343', '972', '10891'),
+  ('2021-10-12 10:08:18.343343', '972', '10952'),
+  ('2021-10-12 10:08:18.343343', '972', '10953')
   ;
 
   // Update to source_song table
