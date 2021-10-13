@@ -43,7 +43,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'A Rare Look at Bob Dylan in the Studio, and 13 More New Songs', '2021-09-21 09:04:44.000000', 'https://www.nytimes.com/2021/09/17/arts/music/playlist-bob-dylan-tems.html');
+    ('New York Times', 'The Playlist', 'Alessia Cara’s Bouncy Ode to Single Life, and 12 More New Songs', '2021-09-24 12:33:27.000000', 'https://www.nytimes.com/2021/09/24/arts/music/playlist-alessia-cara-coldplay-bts.html');
 
   // Update to source table
 
@@ -52,7 +52,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 973; // SELECT last_insert_rowid();
+  source_id = 974; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -99,119 +99,110 @@
   songsData =
   [
       {
-          "title": "Don’t Fall Apart on Me Tonight (Version 2)",
-          "artist_name": "Bob Dylan",
+          "title": "Apartment Song",
+          "artist_name": "Alessia Cara",
           "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.612612",
-          "source_id": 973,
+          "capture_date": "2021-10-12 10:22:14.344344",
+          "source_id": 974,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "I Don’t Live Here Anymore",
-          "artist_name": "The War on Drugs ft. Lucius",
+          "title": "Heaven’s EP",
+          "artist_name": "J. Cole",
           "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.613613",
-          "source_id": 973,
+          "capture_date": "2021-10-12 10:22:14.346346",
+          "source_id": 974,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Found",
-          "artist_name": "Tems ft. Brent Faiyaz",
+          "title": "Can’t Do This Alone",
+          "artist_name": "Wiki ft. Navy Blue",
           "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.613613",
-          "source_id": 973,
+          "capture_date": "2021-10-12 10:22:14.346346",
+          "source_id": 974,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Never Wanted to Be That Girl",
-          "artist_name": "Carly Pearce and Ashley McBryde",
+          "title": "My Universe",
+          "artist_name": "Coldplay and BTS",
           "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.613613",
-          "source_id": 973,
+          "capture_date": "2021-10-12 10:22:14.346346",
+          "source_id": 974,
+          "song_id": 10802,
+          "duplicate": true
+      },
+      {
+          "title": "Thank You",
+          "artist_name": "Charlotte Adigéry and Bolis Pupul",
+          "video_id": null,
+          "capture_date": "2021-10-12 10:22:14.346346",
+          "source_id": 974,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Mean-Hearted Woman",
-          "artist_name": "Adia Victoria",
+          "title": "Lucifer",
+          "artist_name": "DJ Lag ft. Lady Du",
           "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.613613",
-          "source_id": 973,
+          "capture_date": "2021-10-12 10:22:14.346346",
+          "source_id": 974,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Under the Sun",
-          "artist_name": "Cuco",
+          "title": "Boys Are From Mars",
+          "artist_name": "Princess Nokia ft. Yung Baby Tate",
           "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.613613",
-          "source_id": 973,
+          "capture_date": "2021-10-12 10:22:14.346346",
+          "source_id": 974,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Valentine",
-          "artist_name": "Snail Mail",
+          "title": "Toxic Punk",
+          "artist_name": "YoungBoy Never Broke Again",
           "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.613613",
-          "source_id": 973,
+          "capture_date": "2021-10-12 10:22:14.346346",
+          "source_id": 974,
+          "song_id": 9821,
+          "duplicate": true
+      },
+      {
+          "title": "Soul Call || Vibrate",
+          "artist_name": "Theo Croker",
+          "video_id": null,
+          "capture_date": "2021-10-12 10:22:14.346346",
+          "source_id": 974,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Rogue Waves",
-          "artist_name": "Moor Mother",
+          "title": "You Give Death a Bad Name",
+          "artist_name": "Sufjan Stevens and Angelo De Augustine",
           "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.613613",
-          "source_id": 973,
+          "capture_date": "2021-10-12 10:22:14.346346",
+          "source_id": 974,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Tales From the Trash Stratum",
-          "artist_name": "Oneohtrix Point Never and Elizabeth Fraser",
+          "title": "Emergency",
+          "artist_name": "Lotic",
           "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.613613",
-          "source_id": 973,
+          "capture_date": "2021-10-12 10:22:14.346346",
+          "source_id": 974,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Sad Girlz Luv Money (Official Remix)",
-          "artist_name": "Amaarae ft. Kali Uchis",
+          "title": "The Loved One",
+          "artist_name": "FPA",
           "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.613613",
-          "source_id": 973,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Swan Song",
-          "artist_name": "Lindsey Buckingham",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.614614",
-          "source_id": 973,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "V12",
-          "artist_name": "Iann Dior ft. Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.614614",
-          "source_id": 973,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Chains",
-          "artist_name": "Ouri",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:14:59.614614",
-          "source_id": 973,
+          "capture_date": "2021-10-12 10:22:14.346346",
+          "source_id": 974,
           "song_id": null,
           "duplicate": false
       }
@@ -254,19 +245,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Don’t Fall Apart on Me Tonight (Version 2)', 'Bob Dylan', NULL),
-  ('I Don’t Live Here Anymore', 'The War on Drugs ft. Lucius', NULL),
-  ('Found', 'Tems ft. Brent Faiyaz', NULL),
-  ('Never Wanted to Be That Girl', 'Carly Pearce and Ashley McBryde', NULL),
-  ('Mean-Hearted Woman', 'Adia Victoria', NULL),
-  ('Under the Sun', 'Cuco', NULL),
-  ('Valentine', 'Snail Mail', NULL),
-  ('Rogue Waves', 'Moor Mother', NULL),
-  ('Tales From the Trash Stratum', 'Oneohtrix Point Never and Elizabeth Fraser', NULL),
-  ('Sad Girlz Luv Money (Official Remix)', 'Amaarae ft. Kali Uchis', NULL),
-  ('Swan Song', 'Lindsey Buckingham', NULL),
-  ('V12', 'Iann Dior ft. Lil Uzi Vert', NULL),
-  ('Chains', 'Ouri', NULL)
+  ('Apartment Song', 'Alessia Cara', NULL),
+  ('Heaven’s EP', 'J. Cole', NULL),
+  ('Can’t Do This Alone', 'Wiki ft. Navy Blue', NULL),
+  ('Thank You', 'Charlotte Adigéry and Bolis Pupul', NULL),
+  ('Lucifer', 'DJ Lag ft. Lady Du', NULL),
+  ('Boys Are From Mars', 'Princess Nokia ft. Yung Baby Tate', NULL),
+  ('Soul Call || Vibrate', 'Theo Croker', NULL),
+  ('You Give Death a Bad Name', 'Sufjan Stevens and Angelo De Augustine', NULL),
+  ('Emergency', 'Lotic', NULL),
+  ('The Loved One', 'FPA', NULL)
   ;
 
    // Update to song table
@@ -277,7 +265,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10966; // SELECT last_insert_rowid();
+  song_id = 10976; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -317,19 +305,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 10:14:59.612612', '973', '10954'),
-  ('2021-10-12 10:14:59.613613', '973', '10955'),
-  ('2021-10-12 10:14:59.613613', '973', '10956'),
-  ('2021-10-12 10:14:59.613613', '973', '10957'),
-  ('2021-10-12 10:14:59.613613', '973', '10958'),
-  ('2021-10-12 10:14:59.613613', '973', '10959'),
-  ('2021-10-12 10:14:59.613613', '973', '10960'),
-  ('2021-10-12 10:14:59.613613', '973', '10961'),
-  ('2021-10-12 10:14:59.613613', '973', '10962'),
-  ('2021-10-12 10:14:59.613613', '973', '10963'),
-  ('2021-10-12 10:14:59.614614', '973', '10964'),
-  ('2021-10-12 10:14:59.614614', '973', '10965'),
-  ('2021-10-12 10:14:59.614614', '973', '10966')
+  ('2021-10-12 10:22:14.344344', '974', '10967'),
+  ('2021-10-12 10:22:14.346346', '974', '10968'),
+  ('2021-10-12 10:22:14.346346', '974', '10969'),
+  ('2021-10-12 10:22:14.346346', '974', '10802'),
+  ('2021-10-12 10:22:14.346346', '974', '10970'),
+  ('2021-10-12 10:22:14.346346', '974', '10971'),
+  ('2021-10-12 10:22:14.346346', '974', '10972'),
+  ('2021-10-12 10:22:14.346346', '974', '9821'),
+  ('2021-10-12 10:22:14.346346', '974', '10973'),
+  ('2021-10-12 10:22:14.346346', '974', '10974'),
+  ('2021-10-12 10:22:14.346346', '974', '10975'),
+  ('2021-10-12 10:22:14.346346', '974', '10976')
   ;
 
   // Update to source_song table
