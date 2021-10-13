@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Vince Staples, Snoh Aalegra, Post Malone, and More', '2021-07-09 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-vince-staples-snoh-aalegra-post-malone/bia-nicki-minaj-whole-lotta-money-remix');
+    ('Complex', 'Best New Music This Week', 'Pop Smoke, Normani, Kevin Abstract, and More', '2021-07-16 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-pop-smoke/john-mayer-shot-in-the-dark');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1037; // SELECT last_insert_rowid();
+  source_id = 1038; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,85 +101,85 @@
   songsData =
   [
       {
-          "title": "Mhm",
-          "artist_name": "Vince Staples",
+          "title": "Tell the Vision",
+          "artist_name": "Pop Smoke ft. Pusha-T & Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-13 07:04:34.611611",
-          "source_id": 1037,
+          "capture_date": "2021-10-13 07:10:19.236236",
+          "source_id": 1038,
+          "song_id": 10668,
+          "duplicate": true
+      },
+      {
+          "title": "Wild Side",
+          "artist_name": "Normani ft. Cardi",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:10:19.238238",
+          "source_id": 1038,
+          "song_id": 10667,
+          "duplicate": true
+      },
+      {
+          "title": "SLUGGER",
+          "artist_name": "Kevin Abstract ft. $NOT & Slowthai",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:10:19.239239",
+          "source_id": 1038,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Neon Peach",
-          "artist_name": "Snoh Aalegra ft. Tyler, the Creator",
+          "title": "I Mean It",
+          "artist_name": "Remble ft. Mozzy",
           "video_id": null,
-          "capture_date": "2021-10-13 07:04:34.613613",
-          "source_id": 1037,
+          "capture_date": "2021-10-13 07:10:19.239239",
+          "source_id": 1038,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "RED",
-          "artist_name": "IDK ft. MF DOOM, Jay Electronica, & Westside Gunn",
+          "title": "GROW",
+          "artist_name": "Willow ft. Avril Lavigne & Travis Barker",
           "video_id": null,
-          "capture_date": "2021-10-13 07:04:34.613613",
-          "source_id": 1037,
+          "capture_date": "2021-10-13 07:10:19.239239",
+          "source_id": 1038,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Motley Crew",
-          "artist_name": "Post Malone",
+          "title": "Holy Smokes",
+          "artist_name": "Trippie Redd ft. Lil Uzi Vert",
           "video_id": null,
-          "capture_date": "2021-10-13 07:04:34.613613",
-          "source_id": 1037,
-          "song_id": 10659,
+          "capture_date": "2021-10-13 07:10:19.239239",
+          "source_id": 1038,
+          "song_id": 10669,
           "duplicate": true
       },
       {
-          "title": "The Jackie",
-          "artist_name": "Bas ft. J. Cole & Lil Tjay",
+          "title": "MIA",
+          "artist_name": "SSGKobe",
           "video_id": null,
-          "capture_date": "2021-10-13 07:04:34.613613",
-          "source_id": 1037,
-          "song_id": 10663,
-          "duplicate": true
-      },
-      {
-          "title": "Bouncin",
-          "artist_name": "Tinashe",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:04:34.613613",
-          "source_id": 1037,
+          "capture_date": "2021-10-13 07:10:19.239239",
+          "source_id": 1038,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Stay",
-          "artist_name": "The Kid Laroi & Justin Bieber",
+          "title": "Tricky Ball Play",
+          "artist_name": "Drakeo The Ruler ft. EST Gee",
           "video_id": null,
-          "capture_date": "2021-10-13 07:04:34.613613",
-          "source_id": 1037,
-          "song_id": 10658,
-          "duplicate": true
+          "capture_date": "2021-10-13 07:10:19.239239",
+          "source_id": 1038,
+          "song_id": null,
+          "duplicate": false
       },
       {
-          "title": "NDA",
-          "artist_name": "Billie Eilish",
+          "title": "Shot in the Dark",
+          "artist_name": "John Mayer",
           "video_id": null,
-          "capture_date": "2021-10-13 07:04:34.613613",
-          "source_id": 1037,
-          "song_id": 10661,
-          "duplicate": true
-      },
-      {
-          "title": "Whole Lotta Money (Remix)",
-          "artist_name": "BIA ft. Nicki Minaj",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:04:34.614614",
-          "source_id": 1037,
-          "song_id": 10660,
-          "duplicate": true
+          "capture_date": "2021-10-13 07:10:19.239239",
+          "source_id": 1038,
+          "song_id": null,
+          "duplicate": false
       }
   ]
 
@@ -220,10 +220,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Mhm', 'Vince Staples', NULL),
-  ('Neon Peach', 'Snoh Aalegra ft. Tyler, the Creator', NULL),
-  ('RED', 'IDK ft. MF DOOM, Jay Electronica, & Westside Gunn', NULL),
-  ('Bouncin', 'Tinashe', NULL)
+  ('SLUGGER', 'Kevin Abstract ft. $NOT & Slowthai', NULL),
+  ('I Mean It', 'Remble ft. Mozzy', NULL),
+  ('GROW', 'Willow ft. Avril Lavigne & Travis Barker', NULL),
+  ('MIA', 'SSGKobe', NULL),
+  ('Tricky Ball Play', 'Drakeo The Ruler ft. EST Gee', NULL),
+  ('Shot in the Dark', 'John Mayer', NULL)
   ;
 
    // Update to song table
@@ -234,7 +236,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11056; // SELECT last_insert_rowid();
+  song_id = 11062; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -274,15 +276,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 07:04:34.611611', '1037', '11053'),
-  ('2021-10-13 07:04:34.613613', '1037', '11054'),
-  ('2021-10-13 07:04:34.613613', '1037', '11055'),
-  ('2021-10-13 07:04:34.613613', '1037', '10659'),
-  ('2021-10-13 07:04:34.613613', '1037', '10663'),
-  ('2021-10-13 07:04:34.613613', '1037', '11056'),
-  ('2021-10-13 07:04:34.613613', '1037', '10658'),
-  ('2021-10-13 07:04:34.613613', '1037', '10661'),
-  ('2021-10-13 07:04:34.614614', '1037', '10660')
+  ('2021-10-13 07:10:19.236236', '1038', '10668'),
+  ('2021-10-13 07:10:19.238238', '1038', '10667'),
+  ('2021-10-13 07:10:19.239239', '1038', '11057'),
+  ('2021-10-13 07:10:19.239239', '1038', '11058'),
+  ('2021-10-13 07:10:19.239239', '1038', '11059'),
+  ('2021-10-13 07:10:19.239239', '1038', '10669'),
+  ('2021-10-13 07:10:19.239239', '1038', '11060'),
+  ('2021-10-13 07:10:19.239239', '1038', '11061'),
+  ('2021-10-13 07:10:19.239239', '1038', '11062')
   ;
 
   // Update to source_song table
