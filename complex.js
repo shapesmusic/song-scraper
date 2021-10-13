@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Isaiah Rashad, Silk Sonic, Billie Eilish, and More', '2021-07-30 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-isaiah-rashad-silk-sonic/morray-polo-g-trenches-remix');
+    ('Complex', 'Best New Music This Week', 'The Weeknd, Nas, Tinashe, and More', '2021-08-06 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-the-weeknd-nas-tinashe/lil-tecca-gunna-repeat-it');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1039; // SELECT last_insert_rowid();
+  source_id = 1040; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,47 +101,83 @@
   songsData =
   [
       {
-          "title": "From The Garden",
-          "artist_name": "Isaiah Rashad ft. Lil Uzi Vert",
+          "title": "Take My Breath",
+          "artist_name": "The Weeknd",
           "video_id": null,
-          "capture_date": "2021-10-13 07:14:48.329329",
-          "source_id": 1039,
-          "song_id": 10700,
+          "capture_date": "2021-10-13 07:35:45.194194",
+          "source_id": 1040,
+          "song_id": 10701,
           "duplicate": true
       },
       {
-          "title": "Skate",
-          "artist_name": "Silk Sonic",
+          "title": "SUVs (Black on Black)",
+          "artist_name": "Jack Harlow & Pooh Shiesty",
           "video_id": null,
-          "capture_date": "2021-10-13 07:14:48.339339",
-          "source_id": 1039,
-          "song_id": 10690,
+          "capture_date": "2021-10-13 07:35:45.196196",
+          "source_id": 1040,
+          "song_id": 10702,
           "duplicate": true
       },
       {
-          "title": "Happier Than Ever",
-          "artist_name": "Billie Eilish",
+          "title": "Rare",
+          "artist_name": "Nas",
           "video_id": null,
-          "capture_date": "2021-10-13 07:14:48.339339",
-          "source_id": 1039,
-          "song_id": 10689,
+          "capture_date": "2021-10-13 07:35:45.197197",
+          "source_id": 1040,
+          "song_id": 10709,
           "duplicate": true
       },
       {
-          "title": "Trenches (Remix)",
-          "artist_name": "Morray & Polo G",
+          "title": "The Brenda Song",
+          "artist_name": "Abstract Mindstate ft. Kanye West",
           "video_id": null,
-          "capture_date": "2021-10-13 07:14:48.340340",
-          "source_id": 1039,
-          "song_id": 10283,
+          "capture_date": "2021-10-13 07:35:45.197197",
+          "source_id": 1040,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "X",
+          "artist_name": "Tinashe ft. Jeremih",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:35:45.197197",
+          "source_id": 1040,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Flew By You",
+          "artist_name": "KayCyy",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:35:45.197197",
+          "source_id": 1040,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Buss",
+          "artist_name": "Rico Nasty",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:35:45.197197",
+          "source_id": 1040,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Repeat It",
+          "artist_name": "Lil Tecca ft. Gunna",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:35:45.197197",
+          "source_id": 1040,
+          "song_id": 10704,
           "duplicate": true
       },
       {
-          "title": "Love Dies at Dawn",
-          "artist_name": "Jelani Aryeh",
+          "title": "Bodies on Bodies",
+          "artist_name": "Young Nudy",
           "video_id": null,
-          "capture_date": "2021-10-13 07:14:48.340340",
-          "source_id": 1039,
+          "capture_date": "2021-10-13 07:35:45.197197",
+          "source_id": 1040,
           "song_id": null,
           "duplicate": false
       }
@@ -184,7 +220,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Love Dies at Dawn', 'Jelani Aryeh', NULL)
+  ('The Brenda Song', 'Abstract Mindstate ft. Kanye West', NULL),
+  ('X', 'Tinashe ft. Jeremih', NULL),
+  ('Flew By You', 'KayCyy', NULL),
+  ('Buss', 'Rico Nasty', NULL),
+  ('Bodies on Bodies', 'Young Nudy', NULL)
   ;
 
    // Update to song table
@@ -195,7 +235,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11063; // SELECT last_insert_rowid();
+  song_id = 11068; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -235,11 +275,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 07:14:48.329329', '1039', '10700'),
-  ('2021-10-13 07:14:48.339339', '1039', '10690'),
-  ('2021-10-13 07:14:48.339339', '1039', '10689'),
-  ('2021-10-13 07:14:48.340340', '1039', '10283'),
-  ('2021-10-13 07:14:48.340340', '1039', '11063')
+  ('2021-10-13 07:35:45.194194', '1040', '10701'),
+  ('2021-10-13 07:35:45.196196', '1040', '10702'),
+  ('2021-10-13 07:35:45.197197', '1040', '10709'),
+  ('2021-10-13 07:35:45.197197', '1040', '11064'),
+  ('2021-10-13 07:35:45.197197', '1040', '11065'),
+  ('2021-10-13 07:35:45.197197', '1040', '11066'),
+  ('2021-10-13 07:35:45.197197', '1040', '11067'),
+  ('2021-10-13 07:35:45.197197', '1040', '10704'),
+  ('2021-10-13 07:35:45.197197', '1040', '11068')
   ;
 
   // Update to source_song table
