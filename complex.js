@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Pop Smoke, Normani, Kevin Abstract, and More', '2021-07-16 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-pop-smoke/john-mayer-shot-in-the-dark');
+    ('Complex', 'Best New Music This Week', 'Isaiah Rashad, Silk Sonic, Billie Eilish, and More', '2021-07-30 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-isaiah-rashad-silk-sonic/morray-polo-g-trenches-remix');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1038; // SELECT last_insert_rowid();
+  source_id = 1039; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,83 +101,47 @@
   songsData =
   [
       {
-          "title": "Tell the Vision",
-          "artist_name": "Pop Smoke ft. Pusha-T & Kanye West",
+          "title": "From The Garden",
+          "artist_name": "Isaiah Rashad ft. Lil Uzi Vert",
           "video_id": null,
-          "capture_date": "2021-10-13 07:10:19.236236",
-          "source_id": 1038,
-          "song_id": 10668,
+          "capture_date": "2021-10-13 07:14:48.329329",
+          "source_id": 1039,
+          "song_id": 10700,
           "duplicate": true
       },
       {
-          "title": "Wild Side",
-          "artist_name": "Normani ft. Cardi",
+          "title": "Skate",
+          "artist_name": "Silk Sonic",
           "video_id": null,
-          "capture_date": "2021-10-13 07:10:19.238238",
-          "source_id": 1038,
-          "song_id": 10667,
+          "capture_date": "2021-10-13 07:14:48.339339",
+          "source_id": 1039,
+          "song_id": 10690,
           "duplicate": true
       },
       {
-          "title": "SLUGGER",
-          "artist_name": "Kevin Abstract ft. $NOT & Slowthai",
+          "title": "Happier Than Ever",
+          "artist_name": "Billie Eilish",
           "video_id": null,
-          "capture_date": "2021-10-13 07:10:19.239239",
-          "source_id": 1038,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "I Mean It",
-          "artist_name": "Remble ft. Mozzy",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:10:19.239239",
-          "source_id": 1038,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "GROW",
-          "artist_name": "Willow ft. Avril Lavigne & Travis Barker",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:10:19.239239",
-          "source_id": 1038,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Holy Smokes",
-          "artist_name": "Trippie Redd ft. Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:10:19.239239",
-          "source_id": 1038,
-          "song_id": 10669,
+          "capture_date": "2021-10-13 07:14:48.339339",
+          "source_id": 1039,
+          "song_id": 10689,
           "duplicate": true
       },
       {
-          "title": "MIA",
-          "artist_name": "SSGKobe",
+          "title": "Trenches (Remix)",
+          "artist_name": "Morray & Polo G",
           "video_id": null,
-          "capture_date": "2021-10-13 07:10:19.239239",
-          "source_id": 1038,
-          "song_id": null,
-          "duplicate": false
+          "capture_date": "2021-10-13 07:14:48.340340",
+          "source_id": 1039,
+          "song_id": 10283,
+          "duplicate": true
       },
       {
-          "title": "Tricky Ball Play",
-          "artist_name": "Drakeo The Ruler ft. EST Gee",
+          "title": "Love Dies at Dawn",
+          "artist_name": "Jelani Aryeh",
           "video_id": null,
-          "capture_date": "2021-10-13 07:10:19.239239",
-          "source_id": 1038,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Shot in the Dark",
-          "artist_name": "John Mayer",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:10:19.239239",
-          "source_id": 1038,
+          "capture_date": "2021-10-13 07:14:48.340340",
+          "source_id": 1039,
           "song_id": null,
           "duplicate": false
       }
@@ -220,12 +184,7 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('SLUGGER', 'Kevin Abstract ft. $NOT & Slowthai', NULL),
-  ('I Mean It', 'Remble ft. Mozzy', NULL),
-  ('GROW', 'Willow ft. Avril Lavigne & Travis Barker', NULL),
-  ('MIA', 'SSGKobe', NULL),
-  ('Tricky Ball Play', 'Drakeo The Ruler ft. EST Gee', NULL),
-  ('Shot in the Dark', 'John Mayer', NULL)
+    ('Love Dies at Dawn', 'Jelani Aryeh', NULL)
   ;
 
    // Update to song table
@@ -236,7 +195,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11062; // SELECT last_insert_rowid();
+  song_id = 11063; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -276,15 +235,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 07:10:19.236236', '1038', '10668'),
-  ('2021-10-13 07:10:19.238238', '1038', '10667'),
-  ('2021-10-13 07:10:19.239239', '1038', '11057'),
-  ('2021-10-13 07:10:19.239239', '1038', '11058'),
-  ('2021-10-13 07:10:19.239239', '1038', '11059'),
-  ('2021-10-13 07:10:19.239239', '1038', '10669'),
-  ('2021-10-13 07:10:19.239239', '1038', '11060'),
-  ('2021-10-13 07:10:19.239239', '1038', '11061'),
-  ('2021-10-13 07:10:19.239239', '1038', '11062')
+  ('2021-10-13 07:14:48.329329', '1039', '10700'),
+  ('2021-10-13 07:14:48.339339', '1039', '10690'),
+  ('2021-10-13 07:14:48.339339', '1039', '10689'),
+  ('2021-10-13 07:14:48.340340', '1039', '10283'),
+  ('2021-10-13 07:14:48.340340', '1039', '11063')
   ;
 
   // Update to source_song table
