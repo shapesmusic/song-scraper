@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Migos, Megan Thee Stallion, Polo G, and More', '2021-06-11 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-june-11/');
+    ('Complex', 'Best New Music This Week', 'Tyler, the Creator, Vince Staples, Don Toliver, and More', '2021-06-18 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-tyler-the-creator-vince-staples-don-toliver/her-dont');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 939; // SELECT last_insert_rowid();
+  source_id = 1034; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -91,122 +91,95 @@
 
 //
 // Step 3:  Stage songsData,
-//          prune unwanted songs,
 //          find & set any duplicate songs to true,
 //          add song_ids for duplicates
+//          find and replace f[slash] with "ft."
 //
 
   songsData =
   [
-    {
-        "title": "Modern Day",
-        "artist_name": "Migos",
-        "video_id": "sFRF5tUgfes",
-        "capture_date": "2021-06-17 12:06:09.161161",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Thot Sh*t",
-        "artist_name": "Megan Thee Stallion",
-        "video_id": "KynkMn5Hv3Q",
-        "capture_date": "2021-06-17 12:06:09.162162",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Black Hearted",
-        "artist_name": "Polo G",
-        "video_id": "SZpdP4YjMx8",
-        "capture_date": "2021-06-17 12:06:09.163163",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Switching Lanes",
-        "artist_name": "Pi’erre Bourne f/ Playboi Carti",
-        "video_id": "Jgg2Q_5YSxY",
-        "capture_date": "2021-06-17 12:06:09.163163",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fast Lane",
-        "artist_name": "Don Toliver, Lil Durk, and Latto",
-        "video_id": "P4q2_DGsixI",
-        "capture_date": "2021-06-17 12:06:09.163163",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Need to Know",
-        "artist_name": "Doja Cat",
-        "video_id": "dI3xkL7qUAc",
-        "capture_date": "2021-06-17 12:06:09.163163",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Just For Me",
-        "artist_name": "SAINt JHN & SZA",
-        "video_id": "ehrER-GHJLs",
-        "capture_date": "2021-06-17 12:06:09.163163",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Splash",
-        "artist_name": "Tyga f/ Moneybagg Yo",
-        "video_id": "zUrYkfHCV60",
-        "capture_date": "2021-06-17 12:06:09.163163",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Peloton",
-        "artist_name": "IDK",
-        "video_id": "QuyLQaEUBq4",
-        "capture_date": "2021-06-17 12:06:09.163163",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Solar Power",
-        "artist_name": "Lorde",
-        "video_id": "wvsP_lzh2-8",
-        "capture_date": "2021-06-17 12:06:09.163163",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bigger Than Life or Death",
-        "artist_name": "EST Gee",
-        "video_id": "IK87gdZxCRo",
-        "capture_date": "2021-06-17 12:06:09.163163",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Back & Forth",
-        "artist_name": "Emotional Oranges f/ Vince Staples",
-        "video_id": "ar_049WbvHE",
-        "capture_date": "2021-06-17 12:06:09.163163",
-        "source_id": 939,
-        "song_id": null,
-        "duplicate": false
-    }
-]
+      {
+          "title": "Lumberjack",
+          "artist_name": "Tyler, the Creator",
+          "video_id": "R4Y7JIQlv20",
+          "capture_date": "2021-10-13 09:56:08.625625",
+          "source_id": 1034,
+          "song_id": 10626,
+          "duplicate": true
+      },
+      {
+          "title": "Drugs N Hella Melodies",
+          "artist_name": "Don Toliver ft. Kali Uchis",
+          "video_id": "i_PYqIZoGvo",
+          "capture_date": "2021-10-13 09:56:08.627627",
+          "source_id": 1034,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Law of Averages",
+          "artist_name": "Vince Staples",
+          "video_id": "oTri3zbX-R8",
+          "capture_date": "2021-10-13 09:56:08.627627",
+          "source_id": 1034,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "How We Coming",
+          "artist_name": "Migos",
+          "video_id": "TEx7uNCoskg",
+          "capture_date": "2021-10-13 09:56:08.628628",
+          "source_id": 1034,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Ball If I Want To",
+          "artist_name": "DaBaby",
+          "video_id": "_Rzm7cPzVUo",
+          "capture_date": "2021-10-13 09:56:08.628628",
+          "source_id": 1034,
+          "song_id": 10622,
+          "duplicate": true
+      },
+      {
+          "title": "Headshots (4r Da Locals)",
+          "artist_name": "Isaiah Rashad",
+          "video_id": "cRQRmFhL_vo",
+          "capture_date": "2021-10-13 09:56:08.703703",
+          "source_id": 1034,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Raindrops",
+          "artist_name": "GoldLink ft. Flo Milli",
+          "video_id": "oNMXSdAIPBU",
+          "capture_date": "2021-10-13 09:56:08.703703",
+          "source_id": 1034,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "I Got It",
+          "artist_name": "Gucci Mane ft. Lil Uzi Vert",
+          "video_id": "mL9EJBv-iII",
+          "capture_date": "2021-10-13 09:56:08.703703",
+          "source_id": 1034,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Don’t",
+          "artist_name": "H.E.R.",
+          "video_id": "fdp4hWrpRyI",
+          "capture_date": "2021-10-13 09:56:08.704704",
+          "source_id": 1034,
+          "song_id": null,
+          "duplicate": false
+      }
+  ]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -245,18 +218,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Modern Day', 'Migos', NULL),
-  ('Thot Sh*t', 'Megan Thee Stallion', NULL),
-  ('Black Hearted', 'Polo G', NULL),
-  ('Switching Lanes', 'Pi’erre Bourne f/ Playboi Carti', NULL),
-  ('Fast Lane', 'Don Toliver, Lil Durk, and Latto', NULL),
-  ('Need to Know', 'Doja Cat', NULL),
-  ('Just For Me', 'SAINt JHN & SZA', NULL),
-  ('Splash', 'Tyga f/ Moneybagg Yo', NULL),
-  ('Peloton', 'IDK', NULL),
-  ('Solar Power', 'Lorde', NULL),
-  ('Bigger Than Life or Death', 'EST Gee', NULL),
-  ('Back & Forth', 'Emotional Oranges f/ Vince Staples', NULL)
+  ('Drugs N Hella Melodies', 'Don Toliver ft. Kali Uchis', NULL),
+  ('Law of Averages', 'Vince Staples', NULL),
+  ('How We Coming', 'Migos', NULL),
+  ('Headshots (4r Da Locals)', 'Isaiah Rashad', NULL),
+  ('Raindrops', 'GoldLink ft. Flo Milli', NULL),
+  ('I Got It', 'Gucci Mane ft. Lil Uzi Vert', NULL),
+  ('Don’t', 'H.E.R.', NULL)
   ;
 
    // Update to song table
@@ -267,7 +235,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10583; // SELECT last_insert_rowid();
+  song_id = 11045; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -307,18 +275,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-06-17 12:06:09.161161', '939', '10572'),
-  ('2021-06-17 12:06:09.162162', '939', '10573'),
-  ('2021-06-17 12:06:09.163163', '939', '10574'),
-  ('2021-06-17 12:06:09.163163', '939', '10575'),
-  ('2021-06-17 12:06:09.163163', '939', '10576'),
-  ('2021-06-17 12:06:09.163163', '939', '10577'),
-  ('2021-06-17 12:06:09.163163', '939', '10578'),
-  ('2021-06-17 12:06:09.163163', '939', '10579'),
-  ('2021-06-17 12:06:09.163163', '939', '10580'),
-  ('2021-06-17 12:06:09.163163', '939', '10581'),
-  ('2021-06-17 12:06:09.163163', '939', '10582'),
-  ('2021-06-17 12:06:09.163163', '939', '10583')
+  ('2021-10-13 09:56:08.625625', '1034', '10626'),
+  ('2021-10-13 09:56:08.627627', '1034', '11039'),
+  ('2021-10-13 09:56:08.627627', '1034', '11040'),
+  ('2021-10-13 09:56:08.628628', '1034', '11041'),
+  ('2021-10-13 09:56:08.628628', '1034', '10622'),
+  ('2021-10-13 09:56:08.703703', '1034', '11042'),
+  ('2021-10-13 09:56:08.703703', '1034', '11043'),
+  ('2021-10-13 09:56:08.703703', '1034', '11044'),
+  ('2021-10-13 09:56:08.704704', '1034', '11045')
   ;
 
   // Update to source_song table
