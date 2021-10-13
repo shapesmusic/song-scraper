@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Denzel Curry, Benny the Butcher, YNW Melly, and More', '2021-08-13 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-benny-the-butcher-denzel-curry/pinkpanthress-just-for-me');
+    ('Complex', 'Best New Music This Week', 'Young Thug, Kevin Abstract, Lorde, and More', '2021-08-20 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-young-thug-kevin-abstract-lorde/jaden-summer');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1041; // SELECT last_insert_rowid();
+  source_id = 1042; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,92 +101,92 @@
   songsData =
   [
       {
-          "title": "The Game",
-          "artist_name": "Denzel Curry",
+          "title": "Tick Tock",
+          "artist_name": "Young Thug",
           "video_id": null,
-          "capture_date": "2021-10-13 07:47:04.850850",
-          "source_id": 1041,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Fly With Me",
-          "artist_name": "Benny the Butcher ft. Conway the Machine",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:47:04.852852",
-          "source_id": 1041,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Rumors",
-          "artist_name": "Lizzo ft. Cardi B",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:47:04.852852",
-          "source_id": 1041,
-          "song_id": 10710,
+          "capture_date": "2021-10-13 07:51:31.962962",
+          "source_id": 1042,
+          "song_id": 10733,
           "duplicate": true
       },
       {
-          "title": "Mind of Melvin",
-          "artist_name": "YNW Melly ft. Lil Uzi Vert",
+          "title": "Sierra Nights",
+          "artist_name": "Kevin Abstract ft. Ryan Beatty",
           "video_id": null,
-          "capture_date": "2021-10-13 07:47:04.852852",
-          "source_id": 1041,
-          "song_id": 10712,
+          "capture_date": "2021-10-13 07:51:31.964964",
+          "source_id": 1042,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Mood Ring",
+          "artist_name": "Lorde",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:51:31.964964",
+          "source_id": 1042,
+          "song_id": 11012,
           "duplicate": true
       },
       {
-          "title": "Ball is Life",
-          "artist_name": "Swae Lee ft. Jack Harlow",
+          "title": "Already Won",
+          "artist_name": "Rod Wave & Lil Durk",
           "video_id": null,
-          "capture_date": "2021-10-13 07:47:04.852852",
-          "source_id": 1041,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Photographic Memories",
-          "artist_name": "Boldy James & The Alchemist ft. Roc Marciano & Earl Sweatshirt",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:47:04.852852",
-          "source_id": 1041,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Essence (Remix)",
-          "artist_name": "WizKid ft. Justin Bieber & Tems",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:47:04.852852",
-          "source_id": 1041,
-          "song_id": 10653,
+          "capture_date": "2021-10-13 07:51:31.964964",
+          "source_id": 1042,
+          "song_id": 10722,
           "duplicate": true
       },
       {
-          "title": "Down South",
-          "artist_name": "Wale, Yella Beezy, & Maxo Kream",
+          "title": "Memories",
+          "artist_name": "Dvsn & Ty Dolla Sign",
           "video_id": null,
-          "capture_date": "2021-10-13 07:47:04.852852",
-          "source_id": 1041,
+          "capture_date": "2021-10-13 07:51:31.964964",
+          "source_id": 1042,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Trim the Fat",
-          "artist_name": "Flee Lord & Roc Marciano ft. Stove God Cooks",
+          "title": "Don’t Go",
+          "artist_name": "Skrillex, Justin Bieber & Don Toliver",
           "video_id": null,
-          "capture_date": "2021-10-13 07:47:04.852852",
-          "source_id": 1041,
+          "capture_date": "2021-10-13 07:51:31.965965",
+          "source_id": 1042,
+          "song_id": 10724,
+          "duplicate": true
+      },
+      {
+          "title": "Life Is Not the Same",
+          "artist_name": "James Blake",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:51:31.965965",
+          "source_id": 1042,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Just For Me",
-          "artist_name": "PinkPantheress",
+          "title": "Rich MF",
+          "artist_name": "Trippie Redd ft. Polo G & Lil Durk",
           "video_id": null,
-          "capture_date": "2021-10-13 07:47:04.853853",
-          "source_id": 1041,
+          "capture_date": "2021-10-13 07:51:31.965965",
+          "source_id": 1042,
+          "song_id": 10721,
+          "duplicate": true
+      },
+      {
+          "title": "Run It Up",
+          "artist_name": "Sheff G ft. Sleepy Hallow & A Boogie wit da Hoodie",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:51:31.965965",
+          "source_id": 1042,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Summer",
+          "artist_name": "Jaden",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:51:31.965965",
+          "source_id": 1042,
           "song_id": null,
           "duplicate": false
       }
@@ -229,13 +229,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Game', 'Denzel Curry', NULL),
-  ('Fly With Me', 'Benny the Butcher ft. Conway the Machine', NULL),
-  ('Ball is Life', 'Swae Lee ft. Jack Harlow', NULL),
-  ('Photographic Memories', 'Boldy James & The Alchemist ft. Roc Marciano & Earl Sweatshirt', NULL),
-  ('Down South', 'Wale, Yella Beezy, & Maxo Kream', NULL),
-  ('Trim the Fat', 'Flee Lord & Roc Marciano ft. Stove God Cooks', NULL),
-  ('Just For Me', 'PinkPantheress', NULL)
+  ('Sierra Nights', 'Kevin Abstract ft. Ryan Beatty', NULL),
+  ('Memories', 'Dvsn & Ty Dolla Sign', NULL),
+  ('Life Is Not the Same', 'James Blake', NULL),
+  ('Run It Up', 'Sheff G ft. Sleepy Hallow & A Boogie wit da Hoodie', NULL),
+  ('Summer', 'Jaden', NULL)
   ;
 
    // Update to song table
@@ -246,7 +244,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11075; // SELECT last_insert_rowid();
+  song_id = 11080; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -286,16 +284,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 07:47:04.850850', '1041', '11069'),
-  ('2021-10-13 07:47:04.852852', '1041', '11070'),
-  ('2021-10-13 07:47:04.852852', '1041', '10710'),
-  ('2021-10-13 07:47:04.852852', '1041', '10712'),
-  ('2021-10-13 07:47:04.852852', '1041', '11071'),
-  ('2021-10-13 07:47:04.852852', '1041', '11072'),
-  ('2021-10-13 07:47:04.852852', '1041', '10653'),
-  ('2021-10-13 07:47:04.852852', '1041', '11073'),
-  ('2021-10-13 07:47:04.852852', '1041', '11074'),
-  ('2021-10-13 07:47:04.853853', '1041', '11075')
+  ('2021-10-13 07:51:31.962962', '1042', '10733'),
+  ('2021-10-13 07:51:31.964964', '1042', '11076'),
+  ('2021-10-13 07:51:31.964964', '1042', '11012'),
+  ('2021-10-13 07:51:31.964964', '1042', '10722'),
+  ('2021-10-13 07:51:31.964964', '1042', '11077'),
+  ('2021-10-13 07:51:31.965965', '1042', '10724'),
+  ('2021-10-13 07:51:31.965965', '1042', '11078'),
+  ('2021-10-13 07:51:31.965965', '1042', '10721'),
+  ('2021-10-13 07:51:31.965965', '1042', '11079'),
+  ('2021-10-13 07:51:31.965965', '1042', '11080')
   ;
 
   // Update to source_song table
