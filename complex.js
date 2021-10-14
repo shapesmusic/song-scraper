@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Young Thug, Kevin Abstract, Lorde, and More', '2021-08-20 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-young-thug-kevin-abstract-lorde/jaden-summer');
+    ('Complex', 'Best New Music This Week', 'Baby Keem, Chloe Bailey, Fivio Foreign, and More', '2021-09-10 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-september-10/ed-sheeran-shivers');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1042; // SELECT last_insert_rowid();
+  source_id = 1043; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,94 +101,85 @@
   songsData =
   [
       {
-          "title": "Tick Tock",
-          "artist_name": "Young Thug",
+          "title": "South Africa",
+          "artist_name": "Baby Keem",
           "video_id": null,
-          "capture_date": "2021-10-13 07:51:31.962962",
-          "source_id": 1042,
-          "song_id": 10733,
-          "duplicate": true
-      },
-      {
-          "title": "Sierra Nights",
-          "artist_name": "Kevin Abstract ft. Ryan Beatty",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:51:31.964964",
-          "source_id": 1042,
+          "capture_date": "2021-10-13 07:57:40.307307",
+          "source_id": 1043,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Mood Ring",
-          "artist_name": "Lorde",
+          "title": "Have Mercy",
+          "artist_name": "Chloe Bailey",
           "video_id": null,
-          "capture_date": "2021-10-13 07:51:31.964964",
-          "source_id": 1042,
-          "song_id": 11012,
+          "capture_date": "2021-10-13 07:57:40.309309",
+          "source_id": 1043,
+          "song_id": 10784,
           "duplicate": true
       },
       {
-          "title": "Already Won",
-          "artist_name": "Rod Wave & Lil Durk",
+          "title": "Story Time",
+          "artist_name": "Fivio Foreign",
           "video_id": null,
-          "capture_date": "2021-10-13 07:51:31.964964",
-          "source_id": 1042,
-          "song_id": 10722,
+          "capture_date": "2021-10-13 07:57:40.309309",
+          "source_id": 1043,
+          "song_id": 10950,
           "duplicate": true
       },
       {
-          "title": "Memories",
-          "artist_name": "Dvsn & Ty Dolla Sign",
+          "title": "Lonely",
+          "artist_name": "DaBaby & Lil Wayne",
           "video_id": null,
-          "capture_date": "2021-10-13 07:51:31.964964",
-          "source_id": 1042,
+          "capture_date": "2021-10-13 07:57:40.309309",
+          "source_id": 1043,
+          "song_id": 10788,
+          "duplicate": true
+      },
+      {
+          "title": "Pressure",
+          "artist_name": "Ari Lennox",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:57:40.309309",
+          "source_id": 1043,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Don’t Go",
-          "artist_name": "Skrillex, Justin Bieber & Don Toliver",
+          "title": "WTF",
+          "artist_name": "Duke Deuce",
           "video_id": null,
-          "capture_date": "2021-10-13 07:51:31.965965",
-          "source_id": 1042,
-          "song_id": 10724,
+          "capture_date": "2021-10-13 07:57:40.309309",
+          "source_id": 1043,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "The Anonymous Ones",
+          "artist_name": "SZA",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:57:40.309309",
+          "source_id": 1043,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Arcadia",
+          "artist_name": "Lana Del Rey",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:57:40.309309",
+          "source_id": 1043,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Shivers",
+          "artist_name": "Ed Sheeran",
+          "video_id": null,
+          "capture_date": "2021-10-13 07:57:40.309309",
+          "source_id": 1043,
+          "song_id": 10783,
           "duplicate": true
-      },
-      {
-          "title": "Life Is Not the Same",
-          "artist_name": "James Blake",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:51:31.965965",
-          "source_id": 1042,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Rich MF",
-          "artist_name": "Trippie Redd ft. Polo G & Lil Durk",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:51:31.965965",
-          "source_id": 1042,
-          "song_id": 10721,
-          "duplicate": true
-      },
-      {
-          "title": "Run It Up",
-          "artist_name": "Sheff G ft. Sleepy Hallow & A Boogie wit da Hoodie",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:51:31.965965",
-          "source_id": 1042,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Summer",
-          "artist_name": "Jaden",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:51:31.965965",
-          "source_id": 1042,
-          "song_id": null,
-          "duplicate": false
       }
   ]
 
@@ -229,11 +220,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Sierra Nights', 'Kevin Abstract ft. Ryan Beatty', NULL),
-  ('Memories', 'Dvsn & Ty Dolla Sign', NULL),
-  ('Life Is Not the Same', 'James Blake', NULL),
-  ('Run It Up', 'Sheff G ft. Sleepy Hallow & A Boogie wit da Hoodie', NULL),
-  ('Summer', 'Jaden', NULL)
+  ('South Africa', 'Baby Keem', NULL),
+  ('Pressure', 'Ari Lennox', NULL),
+  ('WTF', 'Duke Deuce', NULL),
+  ('The Anonymous Ones', 'SZA', NULL),
+  ('Arcadia', 'Lana Del Rey', NULL)
   ;
 
    // Update to song table
@@ -244,7 +235,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11080; // SELECT last_insert_rowid();
+  song_id = 11085; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -284,16 +275,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 07:51:31.962962', '1042', '10733'),
-  ('2021-10-13 07:51:31.964964', '1042', '11076'),
-  ('2021-10-13 07:51:31.964964', '1042', '11012'),
-  ('2021-10-13 07:51:31.964964', '1042', '10722'),
-  ('2021-10-13 07:51:31.964964', '1042', '11077'),
-  ('2021-10-13 07:51:31.965965', '1042', '10724'),
-  ('2021-10-13 07:51:31.965965', '1042', '11078'),
-  ('2021-10-13 07:51:31.965965', '1042', '10721'),
-  ('2021-10-13 07:51:31.965965', '1042', '11079'),
-  ('2021-10-13 07:51:31.965965', '1042', '11080')
+  ('2021-10-13 07:57:40.307307', '1043', '11081'),
+  ('2021-10-13 07:57:40.309309', '1043', '10784'),
+  ('2021-10-13 07:57:40.309309', '1043', '10950'),
+  ('2021-10-13 07:57:40.309309', '1043', '10788'),
+  ('2021-10-13 07:57:40.309309', '1043', '11082'),
+  ('2021-10-13 07:57:40.309309', '1043', '11083'),
+  ('2021-10-13 07:57:40.309309', '1043', '11084'),
+  ('2021-10-13 07:57:40.309309', '1043', '11085'),
+  ('2021-10-13 07:57:40.309309', '1043', '10783')
   ;
 
   // Update to source_song table
