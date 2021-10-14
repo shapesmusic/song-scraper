@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Gunna, NBA YoungBoy, Latto, and More', '2021-09-24 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-gunna-youngboy-latto/westside-gunn-jay-electronica-free-kutter');
+    ('Complex', 'Best New Music This Week', 'Meek Mill, Wale, Kali Uchis, and More', '2021-10-01 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-meek-mill-wale-kali-uchis/roddy-ricch-bino-rideaux-lemme-find-out');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1045; // SELECT last_insert_rowid();
+  source_id = 1046; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,92 +101,74 @@
   songsData =
   [
       {
-          "title": "Too Easy",
-          "artist_name": "Gunna & Future",
+          "title": "Intro (Hate On Me)",
+          "artist_name": "Meek Mill",
           "video_id": null,
-          "capture_date": "2021-10-13 08:16:50.396396",
-          "source_id": 1045,
-          "song_id": 10805,
+          "capture_date": "2021-10-13 08:21:34.816816",
+          "source_id": 1046,
+          "song_id": 10828,
           "duplicate": true
       },
       {
-          "title": "Big Energy",
-          "artist_name": "Latto",
+          "title": "Poke It Out",
+          "artist_name": "Wale ft. J. Cole",
           "video_id": null,
-          "capture_date": "2021-10-13 08:16:50.398398",
-          "source_id": 1045,
+          "capture_date": "2021-10-13 08:21:34.819819",
+          "source_id": 1046,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Bad Situations",
-          "artist_name": "Morray",
+          "title": "Feelin Like Tunechi",
+          "artist_name": "Lil Wayne & Rich the Kid",
           "video_id": null,
-          "capture_date": "2021-10-13 08:16:50.398398",
-          "source_id": 1045,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Rocc Climbing",
-          "artist_name": "Remble ft. Lil Yachty",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:16:50.399399",
-          "source_id": 1045,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "No Where",
-          "artist_name": "YoungBoy Never Broke Again",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:16:50.399399",
-          "source_id": 1045,
-          "song_id": 10806,
+          "capture_date": "2021-10-13 08:21:34.819819",
+          "source_id": 1046,
+          "song_id": 10838,
           "duplicate": true
       },
       {
-          "title": "For Tonight",
-          "artist_name": "Giveon",
+          "title": "For the Record",
+          "artist_name": "Yo Gotti",
           "video_id": null,
-          "capture_date": "2021-10-13 08:16:50.399399",
-          "source_id": 1045,
-          "song_id": 10816,
+          "capture_date": "2021-10-13 08:21:34.819819",
+          "source_id": 1046,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Fue Mejor",
+          "artist_name": "Kali Uchis & SZA",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:21:34.819819",
+          "source_id": 1046,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "LEMME FIND OUT",
+          "artist_name": "Bino Rideaux & Roddy Ricch",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:21:34.819819",
+          "source_id": 1046,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Want It All",
+          "artist_name": "Burna Boy & Polo G",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:21:34.820820",
+          "source_id": 1046,
+          "song_id": 11001,
           "duplicate": true
       },
       {
-          "title": "Free Kutter",
-          "artist_name": "Westside Gunn ft. Jay Electronica",
+          "title": "Ambition for Cash",
+          "artist_name": "Key Glock",
           "video_id": null,
-          "capture_date": "2021-10-13 08:16:50.399399",
-          "source_id": 1045,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Retaliation",
-          "artist_name": "22Gz",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:16:50.399399",
-          "source_id": 1045,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "OH LORD",
-          "artist_name": "Marlon Craft",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:16:50.399399",
-          "source_id": 1045,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Twinnem",
-          "artist_name": "Coi Leray",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:16:50.399399",
-          "source_id": 1045,
+          "capture_date": "2021-10-13 08:21:34.820820",
+          "source_id": 1046,
           "song_id": null,
           "duplicate": false
       }
@@ -229,13 +211,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Big Energy', 'Latto', NULL),
-  ('Bad Situations', 'Morray', NULL),
-  ('Rocc Climbing', 'Remble ft. Lil Yachty', NULL),
-  ('Free Kutter', 'Westside Gunn ft. Jay Electronica', NULL),
-  ('Retaliation', '22Gz', NULL),
-  ('OH LORD', 'Marlon Craft', NULL),
-  ('Twinnem', 'Coi Leray', NULL)
+  ('Poke It Out', 'Wale ft. J. Cole', NULL),
+  ('For the Record', 'Yo Gotti', NULL),
+  ('Fue Mejor', 'Kali Uchis & SZA', NULL),
+  ('LEMME FIND OUT', 'Bino Rideaux & Roddy Ricch', NULL),
+  ('Ambition for Cash', 'Key Glock', NULL)
   ;
 
    // Update to song table
@@ -246,7 +226,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11098; // SELECT last_insert_rowid();
+  song_id = 11103; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -286,16 +266,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 08:16:50.396396', '1045', '10805'),
-  ('2021-10-13 08:16:50.398398', '1045', '11092'),
-  ('2021-10-13 08:16:50.398398', '1045', '11093'),
-  ('2021-10-13 08:16:50.399399', '1045', '11094'),
-  ('2021-10-13 08:16:50.399399', '1045', '10806'),
-  ('2021-10-13 08:16:50.399399', '1045', '10816'),
-  ('2021-10-13 08:16:50.399399', '1045', '11095'),
-  ('2021-10-13 08:16:50.399399', '1045', '11096'),
-  ('2021-10-13 08:16:50.399399', '1045', '11097'),
-  ('2021-10-13 08:16:50.399399', '1045', '11098')
+  ('2021-10-13 08:21:34.816816', '1046', '10828'),
+  ('2021-10-13 08:21:34.819819', '1046', '11099'),
+  ('2021-10-13 08:21:34.819819', '1046', '10838'),
+  ('2021-10-13 08:21:34.819819', '1046', '11100'),
+  ('2021-10-13 08:21:34.819819', '1046', '11101'),
+  ('2021-10-13 08:21:34.819819', '1046', '11102'),
+  ('2021-10-13 08:21:34.820820', '1046', '11001'),
+  ('2021-10-13 08:21:34.820820', '1046', '11103')
   ;
 
   // Update to source_song table
