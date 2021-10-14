@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Baby Keem, Chloe Bailey, Fivio Foreign, and More', '2021-09-10 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-september-10/ed-sheeran-shivers');
+    ('Complex', 'Best New Music This Week', 'Lil Nas X, Kehlani, Majid Jordan, and More', '2021-09-17 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-lil-nas-x-kehlani-majid-jordan/mozzy-est-gee-babyface-ray-beat-the-case');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1043; // SELECT last_insert_rowid();
+  source_id = 1044; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,84 +101,84 @@
   songsData =
   [
       {
-          "title": "South Africa",
-          "artist_name": "Baby Keem",
+          "title": "That’s What I Want",
+          "artist_name": "Lil Nas X",
           "video_id": null,
-          "capture_date": "2021-10-13 07:57:40.307307",
-          "source_id": 1043,
+          "capture_date": "2021-10-13 08:03:17.096096",
+          "source_id": 1044,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Have Mercy",
-          "artist_name": "Chloe Bailey",
+          "title": "Altar",
+          "artist_name": "Kehlani",
           "video_id": null,
-          "capture_date": "2021-10-13 07:57:40.309309",
-          "source_id": 1043,
-          "song_id": 10784,
+          "capture_date": "2021-10-13 08:03:17.099099",
+          "source_id": 1044,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Found",
+          "artist_name": "Tems ft. Brent Faiyaz",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:03:17.100100",
+          "source_id": 1044,
+          "song_id": 10956,
           "duplicate": true
       },
       {
-          "title": "Story Time",
-          "artist_name": "Fivio Foreign",
+          "title": "Summer Rain",
+          "artist_name": "Majid Jordan",
           "video_id": null,
-          "capture_date": "2021-10-13 07:57:40.309309",
-          "source_id": 1043,
-          "song_id": 10950,
+          "capture_date": "2021-10-13 08:03:17.100100",
+          "source_id": 1044,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Famous Last Words",
+          "artist_name": "James Blake",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:03:17.100100",
+          "source_id": 1044,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "On My Side",
+          "artist_name": "NBA YoungBoy",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:03:17.100100",
+          "source_id": 1044,
+          "song_id": 10794,
           "duplicate": true
       },
       {
-          "title": "Lonely",
-          "artist_name": "DaBaby & Lil Wayne",
+          "title": "Beat the Case",
+          "artist_name": "Mozzy ft. EST Gee & Babyface Ray",
           "video_id": null,
-          "capture_date": "2021-10-13 07:57:40.309309",
-          "source_id": 1043,
-          "song_id": 10788,
-          "duplicate": true
-      },
-      {
-          "title": "Pressure",
-          "artist_name": "Ari Lennox",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:57:40.309309",
-          "source_id": 1043,
+          "capture_date": "2021-10-13 08:03:17.100100",
+          "source_id": 1044,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "WTF",
-          "artist_name": "Duke Deuce",
+          "title": "313-414",
+          "artist_name": "Lakeyah ft. Tee Grizzley",
           "video_id": null,
-          "capture_date": "2021-10-13 07:57:40.309309",
-          "source_id": 1043,
+          "capture_date": "2021-10-13 08:03:17.100100",
+          "source_id": 1044,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "The Anonymous Ones",
-          "artist_name": "SZA",
+          "title": "V12",
+          "artist_name": "Iann Dior ft. Lil Uzi Vert",
           "video_id": null,
-          "capture_date": "2021-10-13 07:57:40.309309",
-          "source_id": 1043,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Arcadia",
-          "artist_name": "Lana Del Rey",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:57:40.309309",
-          "source_id": 1043,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Shivers",
-          "artist_name": "Ed Sheeran",
-          "video_id": null,
-          "capture_date": "2021-10-13 07:57:40.309309",
-          "source_id": 1043,
-          "song_id": 10783,
+          "capture_date": "2021-10-13 08:03:17.100100",
+          "source_id": 1044,
+          "song_id": 10965,
           "duplicate": true
       }
   ]
@@ -220,11 +220,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('South Africa', 'Baby Keem', NULL),
-  ('Pressure', 'Ari Lennox', NULL),
-  ('WTF', 'Duke Deuce', NULL),
-  ('The Anonymous Ones', 'SZA', NULL),
-  ('Arcadia', 'Lana Del Rey', NULL)
+  ('That’s What I Want', 'Lil Nas X', NULL),
+  ('Altar', 'Kehlani', NULL),
+  ('Summer Rain', 'Majid Jordan', NULL),
+  ('Famous Last Words', 'James Blake', NULL),
+  ('Beat the Case', 'Mozzy ft. EST Gee & Babyface Ray', NULL),
+  ('313-414', 'Lakeyah ft. Tee Grizzley', NULL)
   ;
 
    // Update to song table
@@ -235,7 +236,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11085; // SELECT last_insert_rowid();
+  song_id = 11091; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -275,15 +276,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 07:57:40.307307', '1043', '11081'),
-  ('2021-10-13 07:57:40.309309', '1043', '10784'),
-  ('2021-10-13 07:57:40.309309', '1043', '10950'),
-  ('2021-10-13 07:57:40.309309', '1043', '10788'),
-  ('2021-10-13 07:57:40.309309', '1043', '11082'),
-  ('2021-10-13 07:57:40.309309', '1043', '11083'),
-  ('2021-10-13 07:57:40.309309', '1043', '11084'),
-  ('2021-10-13 07:57:40.309309', '1043', '11085'),
-  ('2021-10-13 07:57:40.309309', '1043', '10783')
+  ('2021-10-13 08:03:17.096096', '1044', '11086'),
+  ('2021-10-13 08:03:17.099099', '1044', '11087'),
+  ('2021-10-13 08:03:17.100100', '1044', '10956'),
+  ('2021-10-13 08:03:17.100100', '1044', '11088'),
+  ('2021-10-13 08:03:17.100100', '1044', '11089'),
+  ('2021-10-13 08:03:17.100100', '1044', '10794'),
+  ('2021-10-13 08:03:17.100100', '1044', '11090'),
+  ('2021-10-13 08:03:17.100100', '1044', '11091'),
+  ('2021-10-13 08:03:17.100100', '1044', '10965')
   ;
 
   // Update to source_song table
