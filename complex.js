@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Meek Mill, Wale, Kali Uchis, and More', '2021-10-01 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-meek-mill-wale-kali-uchis/roddy-ricch-bino-rideaux-lemme-find-out');
+    ('Complex', 'Best New Music This Week', 'Don Toliver, Lil Wayne, Nas, and More', '2021-10-08 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-don-toliver-lil-wayne-nas/kelis-midnight-snacks');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1046; // SELECT last_insert_rowid();
+  source_id = 1047; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,74 +101,101 @@
   songsData =
   [
       {
-          "title": "Intro (Hate On Me)",
-          "artist_name": "Meek Mill",
+          "title": "Ya Dig",
+          "artist_name": "Lil Wayne",
           "video_id": null,
-          "capture_date": "2021-10-13 08:21:34.816816",
-          "source_id": 1046,
-          "song_id": 10828,
+          "capture_date": "2021-10-13 08:33:28.149149",
+          "source_id": 1047,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Swangin On Westheimer",
+          "artist_name": "Don Toliver",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:33:28.149149",
+          "source_id": 1047,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Big Nas",
+          "artist_name": "Nas & Hit-Boy",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:33:28.149149",
+          "source_id": 1047,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Who Want Smoke??",
+          "artist_name": "Nardo Wick ft. Lil Durk, 21 Savage, & G Herbo",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:33:28.149149",
+          "source_id": 1047,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Super",
+          "artist_name": "Cordae",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:33:28.150150",
+          "source_id": 1047,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Piano Love",
+          "artist_name": "Conway the Machine",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:33:28.150150",
+          "source_id": 1047,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Foot Forward",
+          "artist_name": "James Blake",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:33:28.150150",
+          "source_id": 1047,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Play Stupid",
+          "artist_name": "Strick ft. Swae Lee",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:33:28.150150",
+          "source_id": 1047,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Hands Up",
+          "artist_name": "Tyla Yaweh ft. Morray",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:33:28.150150",
+          "source_id": 1047,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Midnight Snacks",
+          "artist_name": "Kelis",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:33:28.150150",
+          "source_id": 1047,
+          "song_id": 10996,
           "duplicate": true
       },
       {
-          "title": "Poke It Out",
-          "artist_name": "Wale ft. J. Cole",
+          "title": "Hitman",
+          "artist_name": "Sleepy Hallow",
           "video_id": null,
-          "capture_date": "2021-10-13 08:21:34.819819",
-          "source_id": 1046,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Feelin Like Tunechi",
-          "artist_name": "Lil Wayne & Rich the Kid",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:21:34.819819",
-          "source_id": 1046,
-          "song_id": 10838,
-          "duplicate": true
-      },
-      {
-          "title": "For the Record",
-          "artist_name": "Yo Gotti",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:21:34.819819",
-          "source_id": 1046,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Fue Mejor",
-          "artist_name": "Kali Uchis & SZA",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:21:34.819819",
-          "source_id": 1046,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "LEMME FIND OUT",
-          "artist_name": "Bino Rideaux & Roddy Ricch",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:21:34.819819",
-          "source_id": 1046,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Want It All",
-          "artist_name": "Burna Boy & Polo G",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:21:34.820820",
-          "source_id": 1046,
-          "song_id": 11001,
-          "duplicate": true
-      },
-      {
-          "title": "Ambition for Cash",
-          "artist_name": "Key Glock",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:21:34.820820",
-          "source_id": 1046,
+          "capture_date": "2021-10-13 08:33:28.150150",
+          "source_id": 1047,
           "song_id": null,
           "duplicate": false
       }
@@ -211,11 +238,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Poke It Out', 'Wale ft. J. Cole', NULL),
-  ('For the Record', 'Yo Gotti', NULL),
-  ('Fue Mejor', 'Kali Uchis & SZA', NULL),
-  ('LEMME FIND OUT', 'Bino Rideaux & Roddy Ricch', NULL),
-  ('Ambition for Cash', 'Key Glock', NULL)
+  ('Ya Dig', 'Lil Wayne', NULL),
+  ('Swangin On Westheimer', 'Don Toliver', NULL),
+  ('Big Nas', 'Nas & Hit-Boy', NULL),
+  ('Who Want Smoke??', 'Nardo Wick ft. Lil Durk, 21 Savage, & G Herbo', NULL),
+  ('Super', 'Cordae', NULL),
+  ('Piano Love', 'Conway the Machine', NULL),
+  ('Foot Forward', 'James Blake', NULL),
+  ('Play Stupid', 'Strick ft. Swae Lee', NULL),
+  ('Hands Up', 'Tyla Yaweh ft. Morray', NULL),
+  ('Hitman', 'Sleepy Hallow', NULL)
   ;
 
    // Update to song table
@@ -226,7 +258,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11103; // SELECT last_insert_rowid();
+  song_id = 11113; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -266,14 +298,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 08:21:34.816816', '1046', '10828'),
-  ('2021-10-13 08:21:34.819819', '1046', '11099'),
-  ('2021-10-13 08:21:34.819819', '1046', '10838'),
-  ('2021-10-13 08:21:34.819819', '1046', '11100'),
-  ('2021-10-13 08:21:34.819819', '1046', '11101'),
-  ('2021-10-13 08:21:34.819819', '1046', '11102'),
-  ('2021-10-13 08:21:34.820820', '1046', '11001'),
-  ('2021-10-13 08:21:34.820820', '1046', '11103')
+  ('2021-10-13 08:33:28.149149', '1047', '11104'),
+  ('2021-10-13 08:33:28.149149', '1047', '11105'),
+  ('2021-10-13 08:33:28.149149', '1047', '11106'),
+  ('2021-10-13 08:33:28.149149', '1047', '11107'),
+  ('2021-10-13 08:33:28.150150', '1047', '11108'),
+  ('2021-10-13 08:33:28.150150', '1047', '11109'),
+  ('2021-10-13 08:33:28.150150', '1047', '11110'),
+  ('2021-10-13 08:33:28.150150', '1047', '11111'),
+  ('2021-10-13 08:33:28.150150', '1047', '11112'),
+  ('2021-10-13 08:33:28.150150', '1047', '10996'),
+  ('2021-10-13 08:33:28.150150', '1047', '11113')
   ;
 
   // Update to source_song table
