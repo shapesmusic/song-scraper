@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Lil Nas X, Kehlani, Majid Jordan, and More', '2021-09-17 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-lil-nas-x-kehlani-majid-jordan/mozzy-est-gee-babyface-ray-beat-the-case');
+    ('Complex', 'Best New Music This Week', 'Gunna, NBA YoungBoy, Latto, and More', '2021-09-24 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-gunna-youngboy-latto/westside-gunn-jay-electronica-free-kutter');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1044; // SELECT last_insert_rowid();
+  source_id = 1045; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,85 +101,94 @@
   songsData =
   [
       {
-          "title": "That’s What I Want",
-          "artist_name": "Lil Nas X",
+          "title": "Too Easy",
+          "artist_name": "Gunna & Future",
           "video_id": null,
-          "capture_date": "2021-10-13 08:03:17.096096",
-          "source_id": 1044,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Altar",
-          "artist_name": "Kehlani",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:03:17.099099",
-          "source_id": 1044,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Found",
-          "artist_name": "Tems ft. Brent Faiyaz",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:03:17.100100",
-          "source_id": 1044,
-          "song_id": 10956,
+          "capture_date": "2021-10-13 08:16:50.396396",
+          "source_id": 1045,
+          "song_id": 10805,
           "duplicate": true
       },
       {
-          "title": "Summer Rain",
-          "artist_name": "Majid Jordan",
+          "title": "Big Energy",
+          "artist_name": "Latto",
           "video_id": null,
-          "capture_date": "2021-10-13 08:03:17.100100",
-          "source_id": 1044,
+          "capture_date": "2021-10-13 08:16:50.398398",
+          "source_id": 1045,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Famous Last Words",
-          "artist_name": "James Blake",
+          "title": "Bad Situations",
+          "artist_name": "Morray",
           "video_id": null,
-          "capture_date": "2021-10-13 08:03:17.100100",
-          "source_id": 1044,
+          "capture_date": "2021-10-13 08:16:50.398398",
+          "source_id": 1045,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "On My Side",
-          "artist_name": "NBA YoungBoy",
+          "title": "Rocc Climbing",
+          "artist_name": "Remble ft. Lil Yachty",
           "video_id": null,
-          "capture_date": "2021-10-13 08:03:17.100100",
-          "source_id": 1044,
-          "song_id": 10794,
+          "capture_date": "2021-10-13 08:16:50.399399",
+          "source_id": 1045,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "No Where",
+          "artist_name": "YoungBoy Never Broke Again",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:16:50.399399",
+          "source_id": 1045,
+          "song_id": 10806,
           "duplicate": true
       },
       {
-          "title": "Beat the Case",
-          "artist_name": "Mozzy ft. EST Gee & Babyface Ray",
+          "title": "For Tonight",
+          "artist_name": "Giveon",
           "video_id": null,
-          "capture_date": "2021-10-13 08:03:17.100100",
-          "source_id": 1044,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "313-414",
-          "artist_name": "Lakeyah ft. Tee Grizzley",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:03:17.100100",
-          "source_id": 1044,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "V12",
-          "artist_name": "Iann Dior ft. Lil Uzi Vert",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:03:17.100100",
-          "source_id": 1044,
-          "song_id": 10965,
+          "capture_date": "2021-10-13 08:16:50.399399",
+          "source_id": 1045,
+          "song_id": 10816,
           "duplicate": true
+      },
+      {
+          "title": "Free Kutter",
+          "artist_name": "Westside Gunn ft. Jay Electronica",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:16:50.399399",
+          "source_id": 1045,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Retaliation",
+          "artist_name": "22Gz",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:16:50.399399",
+          "source_id": 1045,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "OH LORD",
+          "artist_name": "Marlon Craft",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:16:50.399399",
+          "source_id": 1045,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Twinnem",
+          "artist_name": "Coi Leray",
+          "video_id": null,
+          "capture_date": "2021-10-13 08:16:50.399399",
+          "source_id": 1045,
+          "song_id": null,
+          "duplicate": false
       }
   ]
 
@@ -220,12 +229,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('That’s What I Want', 'Lil Nas X', NULL),
-  ('Altar', 'Kehlani', NULL),
-  ('Summer Rain', 'Majid Jordan', NULL),
-  ('Famous Last Words', 'James Blake', NULL),
-  ('Beat the Case', 'Mozzy ft. EST Gee & Babyface Ray', NULL),
-  ('313-414', 'Lakeyah ft. Tee Grizzley', NULL)
+  ('Big Energy', 'Latto', NULL),
+  ('Bad Situations', 'Morray', NULL),
+  ('Rocc Climbing', 'Remble ft. Lil Yachty', NULL),
+  ('Free Kutter', 'Westside Gunn ft. Jay Electronica', NULL),
+  ('Retaliation', '22Gz', NULL),
+  ('OH LORD', 'Marlon Craft', NULL),
+  ('Twinnem', 'Coi Leray', NULL)
   ;
 
    // Update to song table
@@ -236,7 +246,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11091; // SELECT last_insert_rowid();
+  song_id = 11098; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -276,15 +286,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 08:03:17.096096', '1044', '11086'),
-  ('2021-10-13 08:03:17.099099', '1044', '11087'),
-  ('2021-10-13 08:03:17.100100', '1044', '10956'),
-  ('2021-10-13 08:03:17.100100', '1044', '11088'),
-  ('2021-10-13 08:03:17.100100', '1044', '11089'),
-  ('2021-10-13 08:03:17.100100', '1044', '10794'),
-  ('2021-10-13 08:03:17.100100', '1044', '11090'),
-  ('2021-10-13 08:03:17.100100', '1044', '11091'),
-  ('2021-10-13 08:03:17.100100', '1044', '10965')
+  ('2021-10-13 08:16:50.396396', '1045', '10805'),
+  ('2021-10-13 08:16:50.398398', '1045', '11092'),
+  ('2021-10-13 08:16:50.398398', '1045', '11093'),
+  ('2021-10-13 08:16:50.399399', '1045', '11094'),
+  ('2021-10-13 08:16:50.399399', '1045', '10806'),
+  ('2021-10-13 08:16:50.399399', '1045', '10816'),
+  ('2021-10-13 08:16:50.399399', '1045', '11095'),
+  ('2021-10-13 08:16:50.399399', '1045', '11096'),
+  ('2021-10-13 08:16:50.399399', '1045', '11097'),
+  ('2021-10-13 08:16:50.399399', '1045', '11098')
   ;
 
   // Update to source_song table
