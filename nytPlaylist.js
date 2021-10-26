@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Adele Returns With Power and Restraint, and 11 More New Songs', '2021-10-15 03:50:58.000000', 'https://www.nytimes.com/2021/10/15/arts/music/playlist-adele-easy-on-me.html');
+    ('New York Times', 'The Playlist', 'Lana Del Rey’s Sisterly Solidarity, and 10 More New Songs', '2021-10-22 01:34:32.000000', 'https://www.nytimes.com/2021/10/22/arts/music/playlist-lana-del-rey-summer-walker.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1050; // SELECT last_insert_rowid();
+  source_id = 1052; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,101 +100,83 @@
   songsData =
   [
       {
-          "title": "Easy on Me",
-          "artist_name": "Adele",
+          "title": "Blue Banisters",
+          "artist_name": "Lana Del Rey",
           "video_id": null,
-          "capture_date": "2021-10-26 01:02:24.201201",
-          "source_id": 1050,
-          "song_id": 11115,
-          "duplicate": true
-      },
-      {
-          "title": "Love Is Pain",
-          "artist_name": "Finneas",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:02:24.202202",
-          "source_id": 1050,
+          "capture_date": "2021-10-26 01:39:44.605605",
+          "source_id": 1052,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Down Nuh River",
-          "artist_name": "serpentwithfeet",
+          "title": "If I Was a Cowboy",
+          "artist_name": "Miranda Lambert",
           "video_id": null,
-          "capture_date": "2021-10-26 01:02:24.202202",
-          "source_id": 1050,
+          "capture_date": "2021-10-26 01:39:44.606606",
+          "source_id": 1052,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Santé",
-          "artist_name": "Stromae",
+          "title": "Lucky to Be Alive",
+          "artist_name": "My Morning Jacket",
           "video_id": null,
-          "capture_date": "2021-10-26 01:02:24.203203",
-          "source_id": 1050,
+          "capture_date": "2021-10-26 01:39:44.606606",
+          "source_id": 1052,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Intentionally",
-          "artist_name": "Juls ft. Fireboy DML",
+          "title": "Spike the Punch",
+          "artist_name": "Alex Lahey",
           "video_id": null,
-          "capture_date": "2021-10-26 01:02:24.203203",
-          "source_id": 1050,
+          "capture_date": "2021-10-26 01:39:44.607607",
+          "source_id": 1052,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Run Ricky",
-          "artist_name": "Nikara Warren",
+          "title": "Ben Franklin",
+          "artist_name": "Snail Mail",
           "video_id": null,
-          "capture_date": "2021-10-26 01:02:24.203203",
-          "source_id": 1050,
+          "capture_date": "2021-10-26 01:39:44.607607",
+          "source_id": 1052,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Alma Cósmica",
-          "artist_name": "Dos Santos",
+          "title": "Ex for a Reason",
+          "artist_name": "Summer Walker ft. JT from City Girls",
           "video_id": null,
-          "capture_date": "2021-10-26 01:02:24.203203",
-          "source_id": 1050,
+          "capture_date": "2021-10-26 01:39:44.607607",
+          "source_id": 1052,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "U Gurl",
-          "artist_name": "Walker Hayes",
+          "title": "Problemón",
+          "artist_name": "Álvaro Díaz ft. Rauw Alejandro",
           "video_id": null,
-          "capture_date": "2021-10-26 01:02:24.203203",
-          "source_id": 1050,
+          "capture_date": "2021-10-26 01:39:44.607607",
+          "source_id": 1052,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Piss Drunk Kids",
-          "artist_name": "Blackstarkids",
+          "title": "Embryo",
+          "artist_name": "Jlin",
           "video_id": null,
-          "capture_date": "2021-10-26 01:02:24.203203",
-          "source_id": 1050,
+          "capture_date": "2021-10-26 01:39:44.607607",
+          "source_id": 1052,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Good Night on Earth",
-          "artist_name": "Eels",
+          "title": "Prester John",
+          "artist_name": "Animal Collective",
           "video_id": null,
-          "capture_date": "2021-10-26 01:02:24.203203",
-          "source_id": 1050,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Índigo",
-          "artist_name": "Camilo and Evaluna Montaner",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:02:24.203203",
-          "source_id": 1050,
+          "capture_date": "2021-10-26 01:39:44.607607",
+          "source_id": 1052,
           "song_id": null,
           "duplicate": false
       }
@@ -237,16 +219,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Love Is Pain', 'Finneas', NULL),
-  ('Down Nuh River', 'serpentwithfeet', NULL),
-  ('Santé', 'Stromae', NULL),
-  ('Intentionally', 'Juls ft. Fireboy DML', NULL),
-  ('Run Ricky', 'Nikara Warren', NULL),
-  ('Alma Cósmica', 'Dos Santos', NULL),
-  ('U Gurl', 'Walker Hayes', NULL),
-  ('Piss Drunk Kids', 'Blackstarkids', NULL),
-  ('Good Night on Earth', 'Eels', NULL),
-  ('Índigo', 'Camilo and Evaluna Montaner', NULL)
+  ('Blue Banisters', 'Lana Del Rey', NULL),
+  ('If I Was a Cowboy', 'Miranda Lambert', NULL),
+  ('Lucky to Be Alive', 'My Morning Jacket', NULL),
+  ('Spike the Punch', 'Alex Lahey', NULL),
+  ('Ben Franklin', 'Snail Mail', NULL),
+  ('Ex for a Reason', 'Summer Walker ft. JT from City Girls', NULL),
+  ('Problemón', 'Álvaro Díaz ft. Rauw Alejandro', NULL),
+  ('Embryo', 'Jlin', NULL),
+  ('Prester John', 'Animal Collective', NULL)
   ;
 
    // Update to song table
@@ -257,7 +238,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11138; // SELECT last_insert_rowid();
+  song_id = 11154; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -297,17 +278,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-26 01:02:24.201201', '1050', '11115'),
-  ('2021-10-26 01:02:24.202202', '1050', '11129'),
-  ('2021-10-26 01:02:24.202202', '1050', '11130'),
-  ('2021-10-26 01:02:24.203203', '1050', '11131'),
-  ('2021-10-26 01:02:24.203203', '1050', '11132'),
-  ('2021-10-26 01:02:24.203203', '1050', '11133'),
-  ('2021-10-26 01:02:24.203203', '1050', '11134'),
-  ('2021-10-26 01:02:24.203203', '1050', '11135'),
-  ('2021-10-26 01:02:24.203203', '1050', '11136'),
-  ('2021-10-26 01:02:24.203203', '1050', '11137'),
-  ('2021-10-26 01:02:24.203203', '1050', '11138')
+  ('2021-10-26 01:39:44.605605', '1052', '11146'),
+  ('2021-10-26 01:39:44.606606', '1052', '11147'),
+  ('2021-10-26 01:39:44.606606', '1052', '11148'),
+  ('2021-10-26 01:39:44.607607', '1052', '11149'),
+  ('2021-10-26 01:39:44.607607', '1052', '11150'),
+  ('2021-10-26 01:39:44.607607', '1052', '11151'),
+  ('2021-10-26 01:39:44.607607', '1052', '11152'),
+  ('2021-10-26 01:39:44.607607', '1052', '11153'),
+  ('2021-10-26 01:39:44.607607', '1052', '11154')
   ;
 
   // Update to source_song table

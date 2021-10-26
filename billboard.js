@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 23, 2021', '2021-10-23 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-10-23');
+    ('Billboard', 'The Hot 100', 'Week of October 30, 2021', '2021-10-30 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-10-30');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1048; // SELECT last_insert_rowid();
+  source_id = 1051; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -97,110 +97,101 @@
   songsData =
   [
       {
-          "title": "Who Want Smoke??",
-          "artist_name": "Nardo Wick ft. G Herbo, Lil Durk & 21 Savage",
+          "title": "Bubbly",
+          "artist_name": "Young Thug With Drake & Travis Scott",
           "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.280280",
-          "source_id": 1048,
-          "song_id": 11107,
+          "capture_date": "2021-10-26 01:34:31.828828",
+          "source_id": 1051,
+          "song_id": 11124,
           "duplicate": true
       },
       {
-          "title": "Lo Siento BB:/",
-          "artist_name": "Tainy, Bad Bunny & Julieta Venegas",
+          "title": "Pissed Me Off",
+          "artist_name": "Lil Durk",
           "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.281281",
-          "source_id": 1048,
-          "song_id": 10990,
+          "capture_date": "2021-10-26 01:34:31.829829",
+          "source_id": 1051,
+          "song_id": 11125,
           "duplicate": true
       },
       {
-          "title": "Flocky Flocky",
-          "artist_name": "Don Toliver ft. Travis Scott",
+          "title": "Lets Go Brandon",
+          "artist_name": "Loza Alexander",
           "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.281281",
-          "source_id": 1048,
+          "capture_date": "2021-10-26 01:34:31.829829",
+          "source_id": 1051,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Easy On Me",
-          "artist_name": "Adele",
+          "title": "Ex For A Reason",
+          "artist_name": "Summer Walker & JT",
           "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.281281",
-          "source_id": 1048,
+          "capture_date": "2021-10-26 01:34:31.830830",
+          "source_id": 1051,
+          "song_id": 11126,
+          "duplicate": true
+      },
+      {
+          "title": "Better Days",
+          "artist_name": "NEIKED X Mae Muller X Polo G",
+          "video_id": null,
+          "capture_date": "2021-10-26 01:34:31.830830",
+          "source_id": 1051,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "WFM",
-          "artist_name": "Realestk",
+          "title": "Livin It Up",
+          "artist_name": "Young Thug With Post Malone & A$AP Rocky",
           "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.282282",
-          "source_id": 1048,
+          "capture_date": "2021-10-26 01:34:31.831831",
+          "source_id": 1051,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Tequila Little Time",
-          "artist_name": "Jon Pardi",
+          "title": "Stressed",
+          "artist_name": "Young Thug With J. Cole & T-Shyne",
           "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.282282",
-          "source_id": 1048,
+          "capture_date": "2021-10-26 01:34:31.831831",
+          "source_id": 1051,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Freedom Was A Highway",
-          "artist_name": "Jimmie Allen & Brad Paisley",
+          "title": "Rich N***a Shit",
+          "artist_name": "Young Thug With Juice WRLD",
           "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.282282",
-          "source_id": 1048,
+          "capture_date": "2021-10-26 01:34:31.831831",
+          "source_id": 1051,
+          "song_id": 9372,
+          "duplicate": true
+      },
+      {
+          "title": "Let Somebody Go",
+          "artist_name": "Coldplay X Selena Gomez",
+          "video_id": null,
+          "capture_date": "2021-10-26 01:34:31.832832",
+          "source_id": 1051,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Like A Lady",
-          "artist_name": "Lady A",
+          "title": "Ya Superame (En Vivo Desde Culiacan, Sinaloa)",
+          "artist_name": "Grupo Firme",
           "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.282282",
-          "source_id": 1048,
+          "capture_date": "2021-10-26 01:34:31.832832",
+          "source_id": 1051,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Life Goes On",
-          "artist_name": "Oliver Tree",
+          "title": "Peepin Out The Window",
+          "artist_name": "Young Thug With Future & BSlime",
           "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.282282",
-          "source_id": 1048,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "'Til You Can't",
-          "artist_name": "Cody Johnson",
-          "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.282282",
-          "source_id": 1048,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Who's In Your Head",
-          "artist_name": "Jonas Brothers",
-          "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.282282",
-          "source_id": 1048,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Just About Over You",
-          "artist_name": "Priscilla Block",
-          "video_id": null,
-          "capture_date": "2021-10-19 05:11:32.282282",
-          "source_id": 1048,
+          "capture_date": "2021-10-26 01:34:31.832832",
+          "source_id": 1051,
           "song_id": null,
           "duplicate": false
       }
@@ -243,16 +234,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Flocky Flocky', 'Don Toliver ft. Travis Scott', NULL),
-  ('Easy On Me', 'Adele', NULL),
-  ('WFM', 'Realestk', NULL),
-  ('Tequila Little Time', 'Jon Pardi', NULL),
-  ('Freedom Was A Highway', 'Jimmie Allen & Brad Paisley', NULL),
-  ('Like A Lady', 'Lady A', NULL),
-  ('Life Goes On', 'Oliver Tree', NULL),
-  ('’Til You Can’t', 'Cody Johnson', NULL),
-  ('Who’s In Your Head', 'Jonas Brothers', NULL),
-  ('Just About Over You', 'Priscilla Block', NULL)
+  ('Lets Go Brandon', 'Loza Alexander', NULL),
+  ('Better Days', 'NEIKED X Mae Muller X Polo G', NULL),
+  ('Livin It Up', 'Young Thug With Post Malone & A$AP Rocky', NULL),
+  ('Stressed', 'Young Thug With J. Cole & T-Shyne', NULL),
+  ('Let Somebody Go', 'Coldplay X Selena Gomez', NULL),
+  ('Ya Superame (En Vivo Desde Culiacan, Sinaloa)', 'Grupo Firme', NULL),
+  ('Peepin Out The Window', 'Young Thug With Future & BSlime', NULL)
   ;
 
    // Update to song table
@@ -263,7 +251,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11123; // SELECT last_insert_rowid();
+  song_id = 11145; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -303,18 +291,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-19 05:11:32.280280', '1048', '11107'),
-  ('2021-10-19 05:11:32.281281', '1048', '10990'),
-  ('2021-10-19 05:11:32.281281', '1048', '11114'),
-  ('2021-10-19 05:11:32.281281', '1048', '11115'),
-  ('2021-10-19 05:11:32.282282', '1048', '11116'),
-  ('2021-10-19 05:11:32.282282', '1048', '11117'),
-  ('2021-10-19 05:11:32.282282', '1048', '11118'),
-  ('2021-10-19 05:11:32.282282', '1048', '11119'),
-  ('2021-10-19 05:11:32.282282', '1048', '11120'),
-  ('2021-10-19 05:11:32.282282', '1048', '11121'),
-  ('2021-10-19 05:11:32.282282', '1048', '11122'),
-  ('2021-10-19 05:11:32.282282', '1048', '11123')
+  ('2021-10-26 01:34:31.828828', '1051', '11124'),
+  ('2021-10-26 01:34:31.829829', '1051', '11125'),
+  ('2021-10-26 01:34:31.829829', '1051', '11139'),
+  ('2021-10-26 01:34:31.830830', '1051', '11126'),
+  ('2021-10-26 01:34:31.830830', '1051', '11140'),
+  ('2021-10-26 01:34:31.831831', '1051', '11141'),
+  ('2021-10-26 01:34:31.831831', '1051', '11142'),
+  ('2021-10-26 01:34:31.831831', '1051', '9372'),
+  ('2021-10-26 01:34:31.832832', '1051', '11143'),
+  ('2021-10-26 01:34:31.832832', '1051', '11144'),
+  ('2021-10-26 01:34:31.832832', '1051', '11145')
   ;
 
   // Update to source_song table
