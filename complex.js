@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Don Toliver, Lil Wayne, Nas, and More', '2021-10-08 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-don-toliver-lil-wayne-nas/kelis-midnight-snacks');
+    ('Complex', 'Best New Music This Week', 'Young Thug, Adele, Lil Durk, and More', '2021-10-15 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-young-thug-adele-lil-durk/pinkpantheress-all-my-friends-know');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1047; // SELECT last_insert_rowid();
+  source_id = 1049; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,101 +101,56 @@
   songsData =
   [
       {
-          "title": "Ya Dig",
-          "artist_name": "Lil Wayne",
+          "title": "Bubbly",
+          "artist_name": "Young Thug ft. Drake & Travis Scott",
           "video_id": null,
-          "capture_date": "2021-10-13 08:33:28.149149",
-          "source_id": 1047,
+          "capture_date": "2021-10-26 12:15:43.530530",
+          "source_id": 1049,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Swangin On Westheimer",
-          "artist_name": "Don Toliver",
+          "title": "Easy On Me",
+          "artist_name": "Adele",
           "video_id": null,
-          "capture_date": "2021-10-13 08:33:28.149149",
-          "source_id": 1047,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Big Nas",
-          "artist_name": "Nas & Hit-Boy",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:33:28.149149",
-          "source_id": 1047,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Who Want Smoke??",
-          "artist_name": "Nardo Wick ft. Lil Durk, 21 Savage, & G Herbo",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:33:28.149149",
-          "source_id": 1047,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Super",
-          "artist_name": "Cordae",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:33:28.150150",
-          "source_id": 1047,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Piano Love",
-          "artist_name": "Conway the Machine",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:33:28.150150",
-          "source_id": 1047,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Foot Forward",
-          "artist_name": "James Blake",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:33:28.150150",
-          "source_id": 1047,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Play Stupid",
-          "artist_name": "Strick ft. Swae Lee",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:33:28.150150",
-          "source_id": 1047,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Hands Up",
-          "artist_name": "Tyla Yaweh ft. Morray",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:33:28.150150",
-          "source_id": 1047,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Midnight Snacks",
-          "artist_name": "Kelis",
-          "video_id": null,
-          "capture_date": "2021-10-13 08:33:28.150150",
-          "source_id": 1047,
-          "song_id": 10996,
+          "capture_date": "2021-10-26 12:15:43.532532",
+          "source_id": 1049,
+          "song_id": 11115,
           "duplicate": true
       },
       {
-          "title": "Hitman",
-          "artist_name": "Sleepy Hallow",
+          "title": "Pissed Me Off",
+          "artist_name": "Lil Durk",
           "video_id": null,
-          "capture_date": "2021-10-13 08:33:28.150150",
-          "source_id": 1047,
+          "capture_date": "2021-10-26 12:15:43.532532",
+          "source_id": 1049,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Ex for a Reason",
+          "artist_name": "Summer Waker ft. JT",
+          "video_id": null,
+          "capture_date": "2021-10-26 12:15:43.532532",
+          "source_id": 1049,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Buzz Me In",
+          "artist_name": "Remi Wolf",
+          "video_id": null,
+          "capture_date": "2021-10-26 12:15:43.532532",
+          "source_id": 1049,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "All my friends know",
+          "artist_name": "PinkPanthreess",
+          "video_id": null,
+          "capture_date": "2021-10-26 12:15:43.532532",
+          "source_id": 1049,
           "song_id": null,
           "duplicate": false
       }
@@ -238,16 +193,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Ya Dig', 'Lil Wayne', NULL),
-  ('Swangin On Westheimer', 'Don Toliver', NULL),
-  ('Big Nas', 'Nas & Hit-Boy', NULL),
-  ('Who Want Smoke??', 'Nardo Wick ft. Lil Durk, 21 Savage, & G Herbo', NULL),
-  ('Super', 'Cordae', NULL),
-  ('Piano Love', 'Conway the Machine', NULL),
-  ('Foot Forward', 'James Blake', NULL),
-  ('Play Stupid', 'Strick ft. Swae Lee', NULL),
-  ('Hands Up', 'Tyla Yaweh ft. Morray', NULL),
-  ('Hitman', 'Sleepy Hallow', NULL)
+  ('Bubbly', 'Young Thug ft. Drake & Travis Scott', NULL),
+  ('Pissed Me Off', 'Lil Durk', NULL),
+  ('Ex for a Reason', 'Summer Waker ft. JT', NULL),
+  ('Buzz Me In', 'Remi Wolf', NULL),
+  ('All my friends know', 'PinkPanthreess', NULL)
   ;
 
    // Update to song table
@@ -258,7 +208,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11113; // SELECT last_insert_rowid();
+  song_id = 11128; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +248,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-13 08:33:28.149149', '1047', '11104'),
-  ('2021-10-13 08:33:28.149149', '1047', '11105'),
-  ('2021-10-13 08:33:28.149149', '1047', '11106'),
-  ('2021-10-13 08:33:28.149149', '1047', '11107'),
-  ('2021-10-13 08:33:28.150150', '1047', '11108'),
-  ('2021-10-13 08:33:28.150150', '1047', '11109'),
-  ('2021-10-13 08:33:28.150150', '1047', '11110'),
-  ('2021-10-13 08:33:28.150150', '1047', '11111'),
-  ('2021-10-13 08:33:28.150150', '1047', '11112'),
-  ('2021-10-13 08:33:28.150150', '1047', '10996'),
-  ('2021-10-13 08:33:28.150150', '1047', '11113')
+  ('2021-10-26 12:15:43.530530', '1049', '11124'),
+  ('2021-10-26 12:15:43.532532', '1049', '11115'),
+  ('2021-10-26 12:15:43.532532', '1049', '11125'),
+  ('2021-10-26 12:15:43.532532', '1049', '11126'),
+  ('2021-10-26 12:15:43.532532', '1049', '11127'),
+  ('2021-10-26 12:15:43.532532', '1049', '11128')
   ;
 
   // Update to source_song table

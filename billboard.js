@@ -39,7 +39,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 16, 2021', '2021-10-16 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-10-16');
+    ('Billboard', 'The Hot 100', 'Week of October 23, 2021', '2021-10-23 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-10-23');
 
   // Update to source table
 
@@ -48,7 +48,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 960; // SELECT last_insert_rowid();
+  source_id = 1048; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -91,134 +91,116 @@
 //          prune unwanted songs,
 //          find & set any duplicate songs to true,
 //          add song_ids for duplicates
-//          find and replace "Featured" with "ft."
+//          find and replace "Featur~ing" with "ft."
 //
 
   songsData =
   [
       {
-          "title": "Intro (Hate On Me)",
-          "artist_name": "Meek Mill",
+          "title": "Who Want Smoke??",
+          "artist_name": "Nardo Wick ft. G Herbo, Lil Durk & 21 Savage",
           "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.722722",
-          "source_id": 960,
+          "capture_date": "2021-10-19 05:11:32.280280",
+          "source_id": 1048,
+          "song_id": 11107,
+          "duplicate": true
+      },
+      {
+          "title": "Lo Siento BB:/",
+          "artist_name": "Tainy, Bad Bunny & Julieta Venegas",
+          "video_id": null,
+          "capture_date": "2021-10-19 05:11:32.281281",
+          "source_id": 1048,
+          "song_id": 10990,
+          "duplicate": true
+      },
+      {
+          "title": "Flocky Flocky",
+          "artist_name": "Don Toliver ft. Travis Scott",
+          "video_id": null,
+          "capture_date": "2021-10-19 05:11:32.281281",
+          "source_id": 1048,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Hot",
-          "artist_name": "Meek Mill ft. Moneybagg Yo",
+          "title": "Easy On Me",
+          "artist_name": "Adele",
           "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.722722",
-          "source_id": 960,
+          "capture_date": "2021-10-19 05:11:32.281281",
+          "source_id": 1048,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Expensive Pain",
-          "artist_name": "Meek Mill",
+          "title": "WFM",
+          "artist_name": "Realestk",
           "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
+          "capture_date": "2021-10-19 05:11:32.282282",
+          "source_id": 1048,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "On My Soul",
-          "artist_name": "Meek Mill",
+          "title": "Tequila Little Time",
+          "artist_name": "Jon Pardi",
           "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
+          "capture_date": "2021-10-19 05:11:32.282282",
+          "source_id": 1048,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Jugaste y Sufri",
-          "artist_name": "Eslabon Armado ft. DannyLux",
+          "title": "Freedom Was A Highway",
+          "artist_name": "Jimmie Allen & Brad Paisley",
           "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
+          "capture_date": "2021-10-19 05:11:32.282282",
+          "source_id": 1048,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Outside (100 MPH)",
-          "artist_name": "Meek Mill",
+          "title": "Like A Lady",
+          "artist_name": "Lady A",
           "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
+          "capture_date": "2021-10-19 05:11:32.282282",
+          "source_id": 1048,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Last One Standing",
-          "artist_name": "Skylar Grey, Polo G, Mozzy & Eminem",
+          "title": "Life Goes On",
+          "artist_name": "Oliver Tree",
           "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
+          "capture_date": "2021-10-19 05:11:32.282282",
+          "source_id": 1048,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "The Feels",
-          "artist_name": "TWICE",
+          "title": "'Til You Can't",
+          "artist_name": "Cody Johnson",
           "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
+          "capture_date": "2021-10-19 05:11:32.282282",
+          "source_id": 1048,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Me (FWM)",
-          "artist_name": "Meek Mill ft. A$AP Ferg",
+          "title": "Who's In Your Head",
+          "artist_name": "Jonas Brothers",
           "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
+          "capture_date": "2021-10-19 05:11:32.282282",
+          "source_id": 1048,
           "song_id": null,
           "duplicate": false
       },
       {
-          "title": "Love Train",
-          "artist_name": "Meek Mill",
+          "title": "Just About Over You",
+          "artist_name": "Priscilla Block",
           "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Feelin Like Tunechi",
-          "artist_name": "Lil Wayne ft. Rich The Kid",
-          "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Ride For You",
-          "artist_name": "Meek Mill ft. Kehlani",
-          "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Esta Danada",
-          "artist_name": "Ivan Cornejo",
-          "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Whiskey And Rain",
-          "artist_name": "Michael Ray",
-          "video_id": null,
-          "capture_date": "2021-10-12 09:22:11.723723",
-          "source_id": 960,
+          "capture_date": "2021-10-19 05:11:32.282282",
+          "source_id": 1048,
           "song_id": null,
           "duplicate": false
       }
@@ -261,20 +243,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Intro (Hate On Me)', 'Meek Mill', NULL),
-  ('Hot', 'Meek Mill ft. Moneybagg Yo', NULL),
-  ('Expensive Pain', 'Meek Mill', NULL),
-  ('On My Soul', 'Meek Mill', NULL),
-  ('Jugaste y Sufri', 'Eslabon Armado ft. DannyLux', NULL),
-  ('Outside (100 MPH)', 'Meek Mill', NULL),
-  ('Last One Standing', 'Skylar Grey, Polo G, Mozzy & Eminem', NULL),
-  ('The Feels', 'TWICE', NULL),
-  ('Me (FWM)', 'Meek Mill ft. A$AP Ferg', NULL),
-  ('Love Train', 'Meek Mill', NULL),
-  ('Feelin Like Tunechi', 'Lil Wayne ft. Rich The Kid', NULL),
-  ('Ride For You', 'Meek Mill ft. Kehlani', NULL),
-  ('Esta Danada', 'Ivan Cornejo', NULL),
-  ('Whiskey And Rain', 'Michael Ray', NULL)
+  ('Flocky Flocky', 'Don Toliver ft. Travis Scott', NULL),
+  ('Easy On Me', 'Adele', NULL),
+  ('WFM', 'Realestk', NULL),
+  ('Tequila Little Time', 'Jon Pardi', NULL),
+  ('Freedom Was A Highway', 'Jimmie Allen & Brad Paisley', NULL),
+  ('Like A Lady', 'Lady A', NULL),
+  ('Life Goes On', 'Oliver Tree', NULL),
+  ('’Til You Can’t', 'Cody Johnson', NULL),
+  ('Who’s In Your Head', 'Jonas Brothers', NULL),
+  ('Just About Over You', 'Priscilla Block', NULL)
   ;
 
    // Update to song table
@@ -285,7 +263,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10841; // SELECT last_insert_rowid();
+  song_id = 11123; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -325,20 +303,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 09:22:11.722722', '960', '10828'),
-  ('2021-10-12 09:22:11.722722', '960', '10829'),
-  ('2021-10-12 09:22:11.723723', '960', '10830'),
-  ('2021-10-12 09:22:11.723723', '960', '10831'),
-  ('2021-10-12 09:22:11.723723', '960', '10832'),
-  ('2021-10-12 09:22:11.723723', '960', '10833'),
-  ('2021-10-12 09:22:11.723723', '960', '10834'),
-  ('2021-10-12 09:22:11.723723', '960', '10835'),
-  ('2021-10-12 09:22:11.723723', '960', '10836'),
-  ('2021-10-12 09:22:11.723723', '960', '10837'),
-  ('2021-10-12 09:22:11.723723', '960', '10838'),
-  ('2021-10-12 09:22:11.723723', '960', '10839'),
-  ('2021-10-12 09:22:11.723723', '960', '10840'),
-  ('2021-10-12 09:22:11.723723', '960', '10841')
+  ('2021-10-19 05:11:32.280280', '1048', '11107'),
+  ('2021-10-19 05:11:32.281281', '1048', '10990'),
+  ('2021-10-19 05:11:32.281281', '1048', '11114'),
+  ('2021-10-19 05:11:32.281281', '1048', '11115'),
+  ('2021-10-19 05:11:32.282282', '1048', '11116'),
+  ('2021-10-19 05:11:32.282282', '1048', '11117'),
+  ('2021-10-19 05:11:32.282282', '1048', '11118'),
+  ('2021-10-19 05:11:32.282282', '1048', '11119'),
+  ('2021-10-19 05:11:32.282282', '1048', '11120'),
+  ('2021-10-19 05:11:32.282282', '1048', '11121'),
+  ('2021-10-19 05:11:32.282282', '1048', '11122'),
+  ('2021-10-19 05:11:32.282282', '1048', '11123')
   ;
 
   // Update to source_song table

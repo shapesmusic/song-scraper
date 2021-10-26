@@ -39,11 +39,12 @@
 
   // Stage the SQL statement
   // Replace any ' in strings with ’
+  // Make sure the publication_date matches the URL's date
 
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Mitski’s Sharp Take on a Creative Life, and 12 More New Songs', '2021-10-08 12:29:07.000000', 'https://www.nytimes.com/2021/10/08/arts/music/playlist-mitski-arca-bad-bunny.html');
+    ('New York Times', 'The Playlist', 'Adele Returns With Power and Restraint, and 11 More New Songs', '2021-10-15 03:50:58.000000', 'https://www.nytimes.com/2021/10/15/arts/music/playlist-adele-easy-on-me.html');
 
   // Update to source table
 
@@ -52,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 976; // SELECT last_insert_rowid();
+  source_id = 1050; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -93,116 +94,107 @@
 //          preview chart and prune songs (add video_id later),
 //          find & set any duplicate songs to true,
 //          add song_ids for duplicates
-//          find and replace "Featured" with "ft."
+//          find and replace "Featur~ing" with "ft."
 //
 
   songsData =
   [
       {
-          "title": "Working for the Knife",
-          "artist_name": "Mitski",
+          "title": "Easy on Me",
+          "artist_name": "Adele",
           "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.989989",
-          "source_id": 976,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Born Yesterday",
-          "artist_name": "Arca ft. Sia",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.990990",
-          "source_id": 976,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Lo Siento BB:/",
-          "artist_name": "Tainy with Bad Bunny and Julieta Venegas",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.990990",
-          "source_id": 976,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Shine",
-          "artist_name": "Robert Glasper ft. D Smoke & Tiffany Gouché",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.990990",
-          "source_id": 976,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Mental Anguish",
-          "artist_name": "glaive and ericdoa",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.990990",
-          "source_id": 976,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Coming Back",
-          "artist_name": "James Blake ft. SZA",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.990990",
-          "source_id": 976,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Red Eye",
-          "artist_name": "Justin Bieber ft. TroyBoi",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.991991",
-          "source_id": 976,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Ateo",
-          "artist_name": "C. Tangana and Nathy Peluso",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.991991",
-          "source_id": 976,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Midnight Snacks",
-          "artist_name": "Kelis",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.991991",
-          "source_id": 976,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Estos Días",
-          "artist_name": "Tambino",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.991991",
-          "source_id": 976,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Negra del Alma",
-          "artist_name": "Susana Baca",
-          "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.991991",
-          "source_id": 976,
-          "song_id": 10982,
+          "capture_date": "2021-10-26 01:02:24.201201",
+          "source_id": 1050,
+          "song_id": 11115,
           "duplicate": true
       },
       {
-          "title": "Morning Spring",
-          "artist_name": "Suzanne Ciani",
+          "title": "Love Is Pain",
+          "artist_name": "Finneas",
           "video_id": null,
-          "capture_date": "2021-10-12 10:34:10.991991",
-          "source_id": 976,
+          "capture_date": "2021-10-26 01:02:24.202202",
+          "source_id": 1050,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Down Nuh River",
+          "artist_name": "serpentwithfeet",
+          "video_id": null,
+          "capture_date": "2021-10-26 01:02:24.202202",
+          "source_id": 1050,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Santé",
+          "artist_name": "Stromae",
+          "video_id": null,
+          "capture_date": "2021-10-26 01:02:24.203203",
+          "source_id": 1050,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Intentionally",
+          "artist_name": "Juls ft. Fireboy DML",
+          "video_id": null,
+          "capture_date": "2021-10-26 01:02:24.203203",
+          "source_id": 1050,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Run Ricky",
+          "artist_name": "Nikara Warren",
+          "video_id": null,
+          "capture_date": "2021-10-26 01:02:24.203203",
+          "source_id": 1050,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Alma Cósmica",
+          "artist_name": "Dos Santos",
+          "video_id": null,
+          "capture_date": "2021-10-26 01:02:24.203203",
+          "source_id": 1050,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "U Gurl",
+          "artist_name": "Walker Hayes",
+          "video_id": null,
+          "capture_date": "2021-10-26 01:02:24.203203",
+          "source_id": 1050,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Piss Drunk Kids",
+          "artist_name": "Blackstarkids",
+          "video_id": null,
+          "capture_date": "2021-10-26 01:02:24.203203",
+          "source_id": 1050,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Good Night on Earth",
+          "artist_name": "Eels",
+          "video_id": null,
+          "capture_date": "2021-10-26 01:02:24.203203",
+          "source_id": 1050,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Índigo",
+          "artist_name": "Camilo and Evaluna Montaner",
+          "video_id": null,
+          "capture_date": "2021-10-26 01:02:24.203203",
+          "source_id": 1050,
           "song_id": null,
           "duplicate": false
       }
@@ -245,17 +237,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Working for the Knife', 'Mitski', NULL),
-  ('Born Yesterday', 'Arca ft. Sia', NULL),
-  ('Lo Siento BB:/', 'Tainy with Bad Bunny and Julieta Venegas', NULL),
-  ('Shine', 'Robert Glasper ft. D Smoke & Tiffany Gouché', NULL),
-  ('Mental Anguish', 'glaive and ericdoa', NULL),
-  ('Coming Back', 'James Blake ft. SZA', NULL),
-  ('Red Eye', 'Justin Bieber ft. TroyBoi', NULL),
-  ('Ateo', 'C. Tangana and Nathy Peluso', NULL),
-  ('Midnight Snacks', 'Kelis', NULL),
-  ('Estos Días', 'Tambino', NULL),
-  ('Morning Spring', 'Suzanne Ciani', NULL)
+  ('Love Is Pain', 'Finneas', NULL),
+  ('Down Nuh River', 'serpentwithfeet', NULL),
+  ('Santé', 'Stromae', NULL),
+  ('Intentionally', 'Juls ft. Fireboy DML', NULL),
+  ('Run Ricky', 'Nikara Warren', NULL),
+  ('Alma Cósmica', 'Dos Santos', NULL),
+  ('U Gurl', 'Walker Hayes', NULL),
+  ('Piss Drunk Kids', 'Blackstarkids', NULL),
+  ('Good Night on Earth', 'Eels', NULL),
+  ('Índigo', 'Camilo and Evaluna Montaner', NULL)
   ;
 
    // Update to song table
@@ -266,7 +257,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 10998; // SELECT last_insert_rowid();
+  song_id = 11138; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -306,18 +297,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-12 10:34:10.989989', '976', '10988'),
-  ('2021-10-12 10:34:10.990990', '976', '10989'),
-  ('2021-10-12 10:34:10.990990', '976', '10990'),
-  ('2021-10-12 10:34:10.990990', '976', '10991'),
-  ('2021-10-12 10:34:10.990990', '976', '10992'),
-  ('2021-10-12 10:34:10.990990', '976', '10993'),
-  ('2021-10-12 10:34:10.991991', '976', '10994'),
-  ('2021-10-12 10:34:10.991991', '976', '10995'),
-  ('2021-10-12 10:34:10.991991', '976', '10996'),
-  ('2021-10-12 10:34:10.991991', '976', '10997'),
-  ('2021-10-12 10:34:10.991991', '976', '10982'),
-  ('2021-10-12 10:34:10.991991', '976', '10998')
+  ('2021-10-26 01:02:24.201201', '1050', '11115'),
+  ('2021-10-26 01:02:24.202202', '1050', '11129'),
+  ('2021-10-26 01:02:24.202202', '1050', '11130'),
+  ('2021-10-26 01:02:24.203203', '1050', '11131'),
+  ('2021-10-26 01:02:24.203203', '1050', '11132'),
+  ('2021-10-26 01:02:24.203203', '1050', '11133'),
+  ('2021-10-26 01:02:24.203203', '1050', '11134'),
+  ('2021-10-26 01:02:24.203203', '1050', '11135'),
+  ('2021-10-26 01:02:24.203203', '1050', '11136'),
+  ('2021-10-26 01:02:24.203203', '1050', '11137'),
+  ('2021-10-26 01:02:24.203203', '1050', '11138')
   ;
 
   // Update to source_song table
