@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of December 11, 2021', '2021-12-11 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-12-11/');
+    ('Billboard', 'The Hot 100', 'Week of December 18, 2021', '2021-12-18 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-12-18/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1058; // SELECT last_insert_rowid();
+  source_id = 1059; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -95,7 +95,7 @@
 //
 // Step 3:  Stage songsData,
 //          prune unwanted songs,
-//          find & set any duplicate songs to true (use ’ type apostrophe in searches),
+//          find & set any duplicate songs to true,
 //          add song_ids for duplicates,
 //          find and replace "Featur~ing" with "ft."
 //
@@ -103,27 +103,80 @@
   songsData =
   [
     {
-        "title": "By Your Side",
-        "artist_name": "Rod Wave",
+        "title": "I Hate U",
+        "artist_name": "SZA",
         "video_id": null,
-        "capture_date": "2021-12-30 06:49:01.728728",
-        "source_id": 1058,
+        "capture_date": "2021-12-30 06:53:35.953953",
+        "source_id": 1059,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Always Been You",
-        "artist_name": "Jessie Murph",
+        "title": "Wandered To LA.",
+        "artist_name": "Juice WRLD & Justin Bieber",
         "video_id": null,
-        "capture_date": "2021-12-30 06:49:01.729729",
-        "source_id": 1058,
+        "capture_date": "2021-12-30 06:53:35.954954",
+        "source_id": 1059,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Don't Play",
+        "artist_name": "Polo G Featuring Lil Baby",
+        "video_id": null,
+        "capture_date": "2021-12-30 06:53:35.955955",
+        "source_id": 1059,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Me Or Sum",
+        "artist_name": "Nardo Wick, Lil Baby & Future",
+        "video_id": null,
+        "capture_date": "2021-12-30 06:53:35.956956",
+        "source_id": 1059,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Young N Dumb",
+        "artist_name": "Polo G",
+        "video_id": null,
+        "capture_date": "2021-12-30 06:53:35.956956",
+        "source_id": 1059,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Start Up Again",
+        "artist_name": "Polo G Featuring Moneybagg Yo",
+        "video_id": null,
+        "capture_date": "2021-12-30 06:53:35.956956",
+        "source_id": 1059,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mercedes",
+        "artist_name": "Brent Faiyaz",
+        "video_id": null,
+        "capture_date": "2021-12-30 06:53:35.956956",
+        "source_id": 1059,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Partin Ways",
+        "artist_name": "Polo G",
+        "video_id": null,
+        "capture_date": "2021-12-30 06:53:35.956956",
+        "source_id": 1059,
         "song_id": null,
         "duplicate": false
     }
 ]
 
   // Check each song for duplicates in the database
-  // Remember: use ’ type apostrophe in searches
   SELECT id, title, artist_name FROM song WHERE
     title LIKE '%Up%'
     AND artist_name LIKE '%Cardi%'
@@ -160,8 +213,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('By Your Side', 'Rod Wave', NULL),
-  ('Always Been You', 'Jessie Murph', NULL)
+  ('I Hate U', 'SZA', NULL),
+  ('Wandered To LA.', 'Juice WRLD & Justin Bieber', NULL),
+  ('Don’t Play', 'Polo G Featuring Lil Baby', NULL),
+  ('Me Or Sum', 'Nardo Wick, Lil Baby & Future', NULL),
+  ('Young N Dumb', 'Polo G', NULL),
+  ('Start Up Again', 'Polo G Featuring Moneybagg Yo', NULL),
+  ('Mercedes', 'Brent Faiyaz', NULL),
+  ('Partin Ways', 'Polo G', NULL)
   ;
 
    // Update to song table
@@ -172,7 +231,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11241; // SELECT last_insert_rowid();
+  song_id = 11249; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -212,8 +271,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-12-30 06:49:01.728728', '1058', '11240'),
-  ('2021-12-30 06:49:01.729729', '1058', '11241')
+  ('2021-12-30 06:53:35.953953', '1059', '11242'),
+  ('2021-12-30 06:53:35.954954', '1059', '11243'),
+  ('2021-12-30 06:53:35.955955', '1059', '11244'),
+  ('2021-12-30 06:53:35.956956', '1059', '11245'),
+  ('2021-12-30 06:53:35.956956', '1059', '11246'),
+  ('2021-12-30 06:53:35.956956', '1059', '11247'),
+  ('2021-12-30 06:53:35.956956', '1059', '11248'),
+  ('2021-12-30 06:53:35.956956', '1059', '11249')
   ;
 
   // Update to source_song table
