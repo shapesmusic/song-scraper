@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of November 6, 2021', '2021-11-06 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-11-06/');
+    ('Billboard', 'The Hot 100', 'Week of November 13, 2021', '2021-11-13 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-11-13/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1053; // SELECT last_insert_rowid();
+  source_id = 1054; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -103,92 +103,47 @@
   songsData =
   [
     {
-        "title": "Moth To A Flame",
-        "artist_name": "Swedish House Mafia & The Weeknd",
+        "title": "Overpass Graffiti",
+        "artist_name": "Ed Sheeran",
         "video_id": null,
-        "capture_date": "2021-12-29 05:55:29.761761",
-        "source_id": 1053,
+        "capture_date": "2021-12-30 09:35:49.718718",
+        "source_id": 1054,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Let's Go Brandon",
-        "artist_name": "Bryson Gray Featuring Tyson James & Chandler Crump",
+        "title": "Demon High",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2021-12-29 05:55:29.761761",
-        "source_id": 1053,
+        "capture_date": "2021-12-30 09:35:49.719719",
+        "source_id": 1054,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Not In The Mood",
-        "artist_name": "Lil Tjay, Fivio Foreign & Kay Flock",
+        "title": "Rap Freaks",
+        "artist_name": "Yung Miami",
         "video_id": null,
-        "capture_date": "2021-12-29 05:55:29.762762",
-        "source_id": 1053,
+        "capture_date": "2021-12-30 09:35:49.719719",
+        "source_id": 1054,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Switches & Dracs",
-        "artist_name": "Moneybagg Yo Featuring Lil Durk & EST Gee",
+        "title": "Eat It",
+        "artist_name": "Megan Thee Stallion",
         "video_id": null,
-        "capture_date": "2021-12-29 05:55:29.763763",
-        "source_id": 1053,
+        "capture_date": "2021-12-30 09:35:49.719719",
+        "source_id": 1054,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Poke It Out",
-        "artist_name": "Wale Featuring J. Cole",
+        "title": "Ghost Town",
+        "artist_name": "Benson Boone",
         "video_id": null,
-        "capture_date": "2021-12-29 05:55:29.763763",
-        "source_id": 1053,
-        "song_id": 11099,
-        "duplicate": true
-    },
-    {
-        "title": "Scorpio",
-        "artist_name": "Moneybagg Yo",
-        "video_id": null,
-        "capture_date": "2021-12-29 05:55:29.763763",
-        "source_id": 1053,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Big Energy",
-        "artist_name": "Latto",
-        "video_id": null,
-        "capture_date": "2021-12-29 05:55:29.763763",
-        "source_id": 1053,
-        "song_id": 11092,
-        "duplicate": true
-    },
-    {
-        "title": "Half Of My Hometown",
-        "artist_name": "Kelsea Ballerini Featuring Kenny Chesney",
-        "video_id": null,
-        "capture_date": "2021-12-29 05:55:29.763763",
-        "source_id": 1053,
-        "song_id": 8751,
-        "duplicate": true
-    },
-    {
-        "title": "Money",
-        "artist_name": "Lisa",
-        "video_id": null,
-        "capture_date": "2021-12-29 05:55:29.763763",
-        "source_id": 1053,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "To Be Loved By You",
-        "artist_name": "Parker McCollum",
-        "video_id": null,
-        "capture_date": "2021-12-29 05:55:29.764764",
-        "source_id": 1053,
+        "capture_date": "2021-12-30 09:35:49.720720",
+        "source_id": 1054,
         "song_id": null,
         "duplicate": false
     }
@@ -232,13 +187,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Moth To A Flame', 'Swedish House Mafia & The Weeknd', NULL),
-  ('Let’s Go Brandon', 'Bryson Gray Featuring Tyson James & Chandler Crump', NULL),
-  ('Not In The Mood', 'Lil Tjay, Fivio Foreign & Kay Flock', NULL),
-  ('Switches & Dracs', 'Moneybagg Yo Featuring Lil Durk & EST Gee', NULL),
-  ('Scorpio', 'Moneybagg Yo', NULL),
-  ('Money', 'Lisa', NULL),
-  ('To Be Loved By You', 'Parker McCollum', NULL)
+  ('Overpass Graffiti', 'Ed Sheeran', NULL),
+  ('Demon High', 'Lil Uzi Vert', NULL),
+  ('Rap Freaks', 'Yung Miami', NULL),
+  ('Eat It', 'Megan Thee Stallion', NULL),
+  ('Ghost Town', 'Benson Boone', NULL)
   ;
 
    // Update to song table
@@ -249,7 +202,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11161; // SELECT last_insert_rowid();
+  song_id = 11166; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +242,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-12-29 05:55:29.761761', '1053', '11155'),
-  ('2021-12-29 05:55:29.761761', '1053', '11156'),
-  ('2021-12-29 05:55:29.762762', '1053', '11157'),
-  ('2021-12-29 05:55:29.763763', '1053', '11158'),
-  ('2021-12-29 05:55:29.763763', '1053', '11099'),
-  ('2021-12-29 05:55:29.763763', '1053', '11159'),
-  ('2021-12-29 05:55:29.763763', '1053', '11092'),
-  ('2021-12-29 05:55:29.763763', '1053', '8751'),
-  ('2021-12-29 05:55:29.763763', '1053', '11160'),
-  ('2021-12-29 05:55:29.764764', '1053', '11161')
+  ('2021-12-30 09:35:49.718718', '1054', '11162'),
+  ('2021-12-30 09:35:49.719719', '1054', '11163'),
+  ('2021-12-30 09:35:49.719719', '1054', '11164'),
+  ('2021-12-30 09:35:49.719719', '1054', '11165'),
+  ('2021-12-30 09:35:49.720720', '1054', '11166')
   ;
 
   // Update to source_song table
