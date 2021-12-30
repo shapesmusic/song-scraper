@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of December 4, 2021', '2021-12-04 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-12-04/');
+    ('Billboard', 'The Hot 100', 'Week of December 11, 2021', '2021-12-11 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-12-11/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1057; // SELECT last_insert_rowid();
+  source_id = 1058; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -103,137 +103,20 @@
   songsData =
   [
     {
-        "title": "Oh My God",
-        "artist_name": "Adele",
+        "title": "By Your Side",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.685685",
-        "source_id": 1057,
+        "capture_date": "2021-12-30 06:49:01.728728",
+        "source_id": 1058,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Drink Wine",
-        "artist_name": "Adele",
+        "title": "Always Been You",
+        "artist_name": "Jessie Murph",
         "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.686686",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "My Little Love",
-        "artist_name": "Adele",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.686686",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Can I Get It",
-        "artist_name": "Adele",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.687687",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "To Be Loved",
-        "artist_name": "Adele",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.687687",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Strangers By Nature",
-        "artist_name": "Adele",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.687687",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cry Your Heart Out",
-        "artist_name": "Adele",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.687687",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hold On",
-        "artist_name": "Adele",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.687687",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "abcdefu",
-        "artist_name": "GAYLE",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.687687",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "All Night Parking (Interlude)",
-        "artist_name": "Adele With Erroll Garner",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.688688",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Woman Like Me",
-        "artist_name": "Adele",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.688688",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Love Is A Game",
-        "artist_name": "Adele",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.688688",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "God's Country",
-        "artist_name": "State Of Mine & Drew Jacobs",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.688688",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Enemy",
-        "artist_name": "Imagine Dragons X JID",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.688688",
-        "source_id": 1057,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Heart On Fire",
-        "artist_name": "Eric Church",
-        "video_id": null,
-        "capture_date": "2021-12-30 01:54:50.689689",
-        "source_id": 1057,
+        "capture_date": "2021-12-30 06:49:01.729729",
+        "source_id": 1058,
         "song_id": null,
         "duplicate": false
     }
@@ -277,21 +160,8 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Oh My God', 'Adele', NULL),
-  ('I Drink Wine', 'Adele', NULL),
-  ('My Little Love', 'Adele', NULL),
-  ('Can I Get It', 'Adele', NULL),
-  ('To Be Loved', 'Adele', NULL),
-  ('Strangers By Nature', 'Adele', NULL),
-  ('Cry Your Heart Out', 'Adele', NULL),
-  ('Hold On', 'Adele', NULL),
-  ('abcdefu', 'GAYLE', NULL),
-  ('All Night Parking (Interlude)', 'Adele With Erroll Garner', NULL),
-  ('Woman Like Me', 'Adele', NULL),
-  ('Love Is A Game', 'Adele', NULL),
-  ('God’s Country', 'State Of Mine & Drew Jacobs', NULL),
-  ('Enemy', 'Imagine Dragons X JID', NULL),
-  ('Heart On Fire', 'Eric Church', NULL)
+  ('By Your Side', 'Rod Wave', NULL),
+  ('Always Been You', 'Jessie Murph', NULL)
   ;
 
    // Update to song table
@@ -302,7 +172,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11239; // SELECT last_insert_rowid();
+  song_id = 11241; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -342,21 +212,8 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-12-30 01:54:50.685685', '1057', '11225'),
-  ('2021-12-30 01:54:50.686686', '1057', '11226'),
-  ('2021-12-30 01:54:50.686686', '1057', '11227'),
-  ('2021-12-30 01:54:50.687687', '1057', '11228'),
-  ('2021-12-30 01:54:50.687687', '1057', '11229'),
-  ('2021-12-30 01:54:50.687687', '1057', '11230'),
-  ('2021-12-30 01:54:50.687687', '1057', '11231'),
-  ('2021-12-30 01:54:50.687687', '1057', '11232'),
-  ('2021-12-30 01:54:50.687687', '1057', '11233'),
-  ('2021-12-30 01:54:50.688688', '1057', '11234'),
-  ('2021-12-30 01:54:50.688688', '1057', '11235'),
-  ('2021-12-30 01:54:50.688688', '1057', '11236'),
-  ('2021-12-30 01:54:50.688688', '1057', '11237'),
-  ('2021-12-30 01:54:50.688688', '1057', '11238'),
-  ('2021-12-30 01:54:50.689689', '1057', '11239')
+  ('2021-12-30 06:49:01.728728', '1058', '11240'),
+  ('2021-12-30 06:49:01.729729', '1058', '11241')
   ;
 
   // Update to source_song table
