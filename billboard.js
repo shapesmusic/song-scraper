@@ -15,8 +15,11 @@
   document.head.appendChild(momentjs);
 
   // Get and format publicationDate
-  publicationDate = document.getElementsByClassName('date-selector__button button--link')[0].innerText.trim();
-  publicationDateFormatted = moment(publicationDate, "MMM DD, YYYY").format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
+  pubDateUpper = document.getElementsByClassName('c-tagline  a-font-primary-medium-xs u-font-size-11@mobile-max u-letter-spacing-0106 u-letter-spacing-0089@mobile-max lrv-u-line-height-copy lrv-u-text-transform-uppercase lrv-u-margin-a-00 lrv-u-padding-l-075 lrv-u-padding-l-00@mobile-max')[0].innerText.trim();
+  pubDateLower = pubDateUpper.toLowerCase();
+  publicationDate = pubDateLower.charAt(0).toUpperCase() + pubDateLower.slice(1, 8) + pubDateLower.charAt(8).toUpperCase() + pubDateLower.slice(9);
+
+  publicationDateFormatted = moment(publicationDate.slice(8), "MMM DD, YYYY").format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
 
   // Get location and format for current or past chart status
   currentChartLocation = window.location.href + "/" + moment(publicationDate, "MMM DD, YYYY").format("YYYY-MM-DD");
@@ -26,10 +29,10 @@
   console.log(
     "INSERT INTO "
     + "source \n  (parent_entity, parent_stream, instance_name, publication_date, location) "
-    + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'Week of "
+    + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'"
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
+    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   );
 
 
@@ -39,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 30, 2021', '2021-10-30 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-10-30');
+    ('Billboard', 'The Hot 100', 'Week of November 6, 2021', '2021-11-06 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-11-06/');
 
   // Update to source table
 
@@ -48,18 +51,21 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1051; // SELECT last_insert_rowid();
+  source_id = 1053; // SELECT last_insert_rowid();
   song_id = null;
 
-  elements = document.getElementsByClassName('chart-list__element display--flex');
+  // elements = document.getElementsByClassName('chart-list__element display--flex');
+  elements = document.getElementsByClassName('o-chart-results-list-row-container');
+
 
   songsData = [];
 
-  for (var i=0; i<elements.length; i++){
+  for (var i=1; i<elements.length; i++){ // does not include the No. 1 song
       element = elements[i];
-      isNew = element.getElementsByClassName('chart-element__trend chart-element__trend--new color--accent');
-      songName = element.getElementsByClassName('chart-element__information__song text--truncate color--primary')[0];
-      artistName = element.getElementsByClassName('chart-element__information__artist text--truncate color--secondary')[0];
+      isNew = element.getElementsByClassName('c-label  u-width-40 a-font-primary-bold-xxs lrv-u-color-grey-darkest u-background-color-yellow lrv-u-text-align-center');
+
+      songName = element.getElementsByClassName('c-title  a-no-trucate a-font-primary-bold-s u-letter-spacing-0021 lrv-u-font-size-18@tablet lrv-u-font-size-16 u-line-height-125 u-line-height-normal@mobile-max a-truncate-ellipsis u-max-width-330 u-max-width-230@tablet-only')[0];
+      artistName = element.getElementsByClassName('c-label  a-no-trucate a-font-primary-s lrv-u-font-size-14@mobile-max u-line-height-normal@mobile-max u-letter-spacing-0021 lrv-u-display-block a-truncate-ellipsis-2line u-max-width-330 u-max-width-230@tablet-only')[0];
 
       title = songName.innerText.trim();
       artist_name = artistName.innerText.trim();
@@ -76,7 +82,7 @@
         'duplicate' : false
       };
 
-      if(isNew.length == 1 && isNew[0].innerText == "New"){ // because innerText can also be "Re-Enter"
+      if(isNew.length == 1 && isNew[0].innerText == "NEW"){
 
         songsData.push(songData);
 
@@ -89,115 +95,107 @@
 //
 // Step 3:  Stage songsData,
 //          prune unwanted songs,
-//          find & set any duplicate songs to true,
-//          add song_ids for duplicates
+//          find & set any duplicate songs to true (use ’ type apostrophe in searches),
+//          add song_ids for duplicates,
 //          find and replace "Featur~ing" with "ft."
 //
 
   songsData =
   [
-      {
-          "title": "Bubbly",
-          "artist_name": "Young Thug With Drake & Travis Scott",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:34:31.828828",
-          "source_id": 1051,
-          "song_id": 11124,
-          "duplicate": true
-      },
-      {
-          "title": "Pissed Me Off",
-          "artist_name": "Lil Durk",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:34:31.829829",
-          "source_id": 1051,
-          "song_id": 11125,
-          "duplicate": true
-      },
-      {
-          "title": "Lets Go Brandon",
-          "artist_name": "Loza Alexander",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:34:31.829829",
-          "source_id": 1051,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Ex For A Reason",
-          "artist_name": "Summer Walker & JT",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:34:31.830830",
-          "source_id": 1051,
-          "song_id": 11126,
-          "duplicate": true
-      },
-      {
-          "title": "Better Days",
-          "artist_name": "NEIKED X Mae Muller X Polo G",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:34:31.830830",
-          "source_id": 1051,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Livin It Up",
-          "artist_name": "Young Thug With Post Malone & A$AP Rocky",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:34:31.831831",
-          "source_id": 1051,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Stressed",
-          "artist_name": "Young Thug With J. Cole & T-Shyne",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:34:31.831831",
-          "source_id": 1051,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Rich N***a Shit",
-          "artist_name": "Young Thug With Juice WRLD",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:34:31.831831",
-          "source_id": 1051,
-          "song_id": 9372,
-          "duplicate": true
-      },
-      {
-          "title": "Let Somebody Go",
-          "artist_name": "Coldplay X Selena Gomez",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:34:31.832832",
-          "source_id": 1051,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Ya Superame (En Vivo Desde Culiacan, Sinaloa)",
-          "artist_name": "Grupo Firme",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:34:31.832832",
-          "source_id": 1051,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Peepin Out The Window",
-          "artist_name": "Young Thug With Future & BSlime",
-          "video_id": null,
-          "capture_date": "2021-10-26 01:34:31.832832",
-          "source_id": 1051,
-          "song_id": null,
-          "duplicate": false
-      }
-  ]
+    {
+        "title": "Moth To A Flame",
+        "artist_name": "Swedish House Mafia & The Weeknd",
+        "video_id": null,
+        "capture_date": "2021-12-29 05:55:29.761761",
+        "source_id": 1053,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Let's Go Brandon",
+        "artist_name": "Bryson Gray Featuring Tyson James & Chandler Crump",
+        "video_id": null,
+        "capture_date": "2021-12-29 05:55:29.761761",
+        "source_id": 1053,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Not In The Mood",
+        "artist_name": "Lil Tjay, Fivio Foreign & Kay Flock",
+        "video_id": null,
+        "capture_date": "2021-12-29 05:55:29.762762",
+        "source_id": 1053,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Switches & Dracs",
+        "artist_name": "Moneybagg Yo Featuring Lil Durk & EST Gee",
+        "video_id": null,
+        "capture_date": "2021-12-29 05:55:29.763763",
+        "source_id": 1053,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Poke It Out",
+        "artist_name": "Wale Featuring J. Cole",
+        "video_id": null,
+        "capture_date": "2021-12-29 05:55:29.763763",
+        "source_id": 1053,
+        "song_id": 11099,
+        "duplicate": true
+    },
+    {
+        "title": "Scorpio",
+        "artist_name": "Moneybagg Yo",
+        "video_id": null,
+        "capture_date": "2021-12-29 05:55:29.763763",
+        "source_id": 1053,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Big Energy",
+        "artist_name": "Latto",
+        "video_id": null,
+        "capture_date": "2021-12-29 05:55:29.763763",
+        "source_id": 1053,
+        "song_id": 11092,
+        "duplicate": true
+    },
+    {
+        "title": "Half Of My Hometown",
+        "artist_name": "Kelsea Ballerini Featuring Kenny Chesney",
+        "video_id": null,
+        "capture_date": "2021-12-29 05:55:29.763763",
+        "source_id": 1053,
+        "song_id": 8751,
+        "duplicate": true
+    },
+    {
+        "title": "Money",
+        "artist_name": "Lisa",
+        "video_id": null,
+        "capture_date": "2021-12-29 05:55:29.763763",
+        "source_id": 1053,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "To Be Loved By You",
+        "artist_name": "Parker McCollum",
+        "video_id": null,
+        "capture_date": "2021-12-29 05:55:29.764764",
+        "source_id": 1053,
+        "song_id": null,
+        "duplicate": false
+    }
+]
 
   // Check each song for duplicates in the database
+  // Remember: use ’ type apostrophe in searches
   SELECT id, title, artist_name FROM song WHERE
     title LIKE '%Up%'
     AND artist_name LIKE '%Cardi%'
@@ -234,13 +232,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Lets Go Brandon', 'Loza Alexander', NULL),
-  ('Better Days', 'NEIKED X Mae Muller X Polo G', NULL),
-  ('Livin It Up', 'Young Thug With Post Malone & A$AP Rocky', NULL),
-  ('Stressed', 'Young Thug With J. Cole & T-Shyne', NULL),
-  ('Let Somebody Go', 'Coldplay X Selena Gomez', NULL),
-  ('Ya Superame (En Vivo Desde Culiacan, Sinaloa)', 'Grupo Firme', NULL),
-  ('Peepin Out The Window', 'Young Thug With Future & BSlime', NULL)
+  ('Moth To A Flame', 'Swedish House Mafia & The Weeknd', NULL),
+  ('Let’s Go Brandon', 'Bryson Gray Featuring Tyson James & Chandler Crump', NULL),
+  ('Not In The Mood', 'Lil Tjay, Fivio Foreign & Kay Flock', NULL),
+  ('Switches & Dracs', 'Moneybagg Yo Featuring Lil Durk & EST Gee', NULL),
+  ('Scorpio', 'Moneybagg Yo', NULL),
+  ('Money', 'Lisa', NULL),
+  ('To Be Loved By You', 'Parker McCollum', NULL)
   ;
 
    // Update to song table
@@ -251,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11145; // SELECT last_insert_rowid();
+  song_id = 11161; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -291,17 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-26 01:34:31.828828', '1051', '11124'),
-  ('2021-10-26 01:34:31.829829', '1051', '11125'),
-  ('2021-10-26 01:34:31.829829', '1051', '11139'),
-  ('2021-10-26 01:34:31.830830', '1051', '11126'),
-  ('2021-10-26 01:34:31.830830', '1051', '11140'),
-  ('2021-10-26 01:34:31.831831', '1051', '11141'),
-  ('2021-10-26 01:34:31.831831', '1051', '11142'),
-  ('2021-10-26 01:34:31.831831', '1051', '9372'),
-  ('2021-10-26 01:34:31.832832', '1051', '11143'),
-  ('2021-10-26 01:34:31.832832', '1051', '11144'),
-  ('2021-10-26 01:34:31.832832', '1051', '11145')
+  ('2021-12-29 05:55:29.761761', '1053', '11155'),
+  ('2021-12-29 05:55:29.761761', '1053', '11156'),
+  ('2021-12-29 05:55:29.762762', '1053', '11157'),
+  ('2021-12-29 05:55:29.763763', '1053', '11158'),
+  ('2021-12-29 05:55:29.763763', '1053', '11099'),
+  ('2021-12-29 05:55:29.763763', '1053', '11159'),
+  ('2021-12-29 05:55:29.763763', '1053', '11092'),
+  ('2021-12-29 05:55:29.763763', '1053', '8751'),
+  ('2021-12-29 05:55:29.763763', '1053', '11160'),
+  ('2021-12-29 05:55:29.764764', '1053', '11161')
   ;
 
   // Update to source_song table
