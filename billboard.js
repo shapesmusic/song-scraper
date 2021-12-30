@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of November 20, 2021', '2021-11-20 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-11-20/');
+    ('Billboard', 'The Hot 100', 'Week of November 27, 2021', '2021-11-27 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-11-27/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1055; // SELECT last_insert_rowid();
+  source_id = 1056; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -103,227 +103,308 @@
   songsData =
   [
     {
-        "title": "One Right Now",
-        "artist_name": "Post Malone & The Weeknd",
+        "title": "All Too Well (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.596596",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.168168",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Smokin Out The Window",
+        "title": "State Of Grace (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.168168",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Already Dead",
+        "artist_name": "Juice WRLD",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.168168",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Bet You Think About Me (Taylor’s Version)",
+        "artist_name": "Taylor Swift Featuring Chris Stapleton",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.168168",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Red (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.168168",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Nothing New (Taylor’s Version)",
+        "artist_name": "Taylor Swift Featuring Phoebe Bridgers",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Message In A Bottle (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Knew You Were Trouble (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Run (Taylor’s Version)",
+        "artist_name": "Taylor Swift Featuring Ed Sheeran",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bad Man (Smooth Criminal)",
+        "artist_name": "Polo G",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Better Man (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "22 (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Doin’ This",
+        "artist_name": "Luke Combs",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Treacherous (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "We Are Never Ever Getting Back Together (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Almost Do (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Very First Night (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Everything Has Changed (Taylor’s Version)",
+        "artist_name": "Taylor Swift Featuring Ed Sheeran",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.169169",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Last Time (Taylor’s Version)",
+        "artist_name": "Taylor Swift Featuring Gary Lightbody Of Snow Patrol",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Stay Stay Stay (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "After Last Night",
+        "artist_name": "Silk Sonic (Bruno Mars & Anderson .Paak) With Thundercat & Bootsy Collins",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Babe (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Blast Off",
         "artist_name": "Silk Sonic (Bruno Mars & Anderson .Paak)",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.596596",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Escape Plan",
-        "artist_name": "Travis Scott",
+        "title": "Holy Ground (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.596596",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Love",
-        "artist_name": "Summer Walker & SZA",
+        "title": "Begin Again (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.597597",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bitter",
-        "artist_name": "Summer Walker & Cardi B",
+        "title": "Put On A Smile",
+        "artist_name": "Silk Sonic (Bruno Mars & Anderson .Paak)",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.597597",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mafia",
-        "artist_name": "Travis Scott",
+        "title": "Forever Winter (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.597597",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Throw It Away",
-        "artist_name": "Summer Walker",
+        "title": "Fly As Me",
+        "artist_name": "Silk Sonic (Bruno Mars & Anderson .Paak)",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.598598",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Reciprocate",
-        "artist_name": "Summer Walker",
+        "title": "The Moment I Knew (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.598598",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Toxic",
-        "artist_name": "Summer Walker Featuring Lil Durk",
+        "title": "The Lucky One (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.598598",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Unloyal",
-        "artist_name": "Summer Walker & Ari Lennox",
+        "title": "Sad Beautiful Tragic (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.598598",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Constant Bulls**t",
-        "artist_name": "Summer Walker",
+        "title": "Come Back...Be Here (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.598598",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.170170",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You Don't Know Me",
-        "artist_name": "Summer Walker",
+        "title": "Starlight (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.598598",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.171171",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Insane",
-        "artist_name": "Summer Walker",
+        "title": "La Fama",
+        "artist_name": "Rosalia Featuring The Weeknd",
         "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.599599",
-        "source_id": 1055,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Circus",
-        "artist_name": "Summer Walker",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.599599",
-        "source_id": 1055,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "4th Baby Mama",
-        "artist_name": "Summer Walker",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.599599",
-        "source_id": 1055,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Switch A N*gga Out",
-        "artist_name": "Summer Walker",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.599599",
-        "source_id": 1055,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Closure",
-        "artist_name": "Summer Walker",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.599599",
-        "source_id": 1055,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Session 33",
-        "artist_name": "Summer Walker",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.599599",
-        "source_id": 1055,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Screwin",
-        "artist_name": "Summer Walker & Omarion",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.600600",
-        "source_id": 1055,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Broken Promises",
-        "artist_name": "Summer Walker",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.600600",
-        "source_id": 1055,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dat Right There",
-        "artist_name": "Summer Walker, Pharrell Williams & The Neptunes",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.600600",
-        "source_id": 1055,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sad Girlz Luv Money",
-        "artist_name": "Amaarae & Moliy Featuring Kali Uchis",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.600600",
-        "source_id": 1055,
-        "song_id": 10963,
-        "duplicate": true
-    },
-    {
-        "title": "Slow Down Summer",
-        "artist_name": "Thomas Rhett",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.600600",
-        "source_id": 1055,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Jumpin",
-        "artist_name": "NLE Choppa Featuring Polo G",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.600600",
-        "source_id": 1055,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Super Gremlin",
-        "artist_name": "Kodak Black",
-        "video_id": null,
-        "capture_date": "2021-12-30 09:42:00.600600",
-        "source_id": 1055,
+        "capture_date": "2021-12-30 01:14:46.171171",
+        "source_id": 1056,
         "song_id": null,
         "duplicate": false
     }
@@ -367,30 +448,40 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('One Right Now', 'Post Malone & The Weeknd', NULL),
-  ('Smokin Out The Window', 'Silk Sonic (Bruno Mars & Anderson .Paak)', NULL),
-  ('Escape Plan', 'Travis Scott', NULL),
-  ('No Love', 'Summer Walker & SZA', NULL),
-  ('Bitter', 'Summer Walker & Cardi B', NULL),
-  ('Mafia', 'Travis Scott', NULL),
-  ('Throw It Away', 'Summer Walker', NULL),
-  ('Reciprocate', 'Summer Walker', NULL),
-  ('Toxic', 'Summer Walker Featuring Lil Durk', NULL),
-  ('Unloyal', 'Summer Walker & Ari Lennox', NULL),
-  ('Constant Bulls**t', 'Summer Walker', NULL),
-  ('You Don’t Know Me', 'Summer Walker', NULL),
-  ('Insane', 'Summer Walker', NULL),
-  ('Circus', 'Summer Walker', NULL),
-  ('4th Baby Mama', 'Summer Walker', NULL),
-  ('Switch A N*gga Out', 'Summer Walker', NULL),
-  ('Closure', 'Summer Walker', NULL),
-  ('Session 33', 'Summer Walker', NULL),
-  ('Screwin', 'Summer Walker & Omarion', NULL),
-  ('Broken Promises', 'Summer Walker', NULL),
-  ('Dat Right There', 'Summer Walker, Pharrell Williams & The Neptunes', NULL),
-  ('Slow Down Summer', 'Thomas Rhett', NULL),
-  ('Jumpin', 'NLE Choppa Featuring Polo G', NULL),
-  ('Super Gremlin', 'Kodak Black', NULL)
+  ('All Too Well (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('State Of Grace (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Already Dead', 'Juice WRLD', NULL),
+  ('I Bet You Think About Me (Taylor’s Version)', 'Taylor Swift Featuring Chris Stapleton', NULL),
+  ('Red (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Nothing New (Taylor’s Version)', 'Taylor Swift Featuring Phoebe Bridgers', NULL),
+  ('Message In A Bottle (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('I Knew You Were Trouble (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Run (Taylor’s Version)', 'Taylor Swift Featuring Ed Sheeran', NULL),
+  ('Bad Man (Smooth Criminal)', 'Polo G', NULL),
+  ('Better Man (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('22 (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Doin’ This', 'Luke Combs', NULL),
+  ('Treacherous (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('We Are Never Ever Getting Back Together (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('I Almost Do (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('The Very First Night (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Everything Has Changed (Taylor’s Version)', 'Taylor Swift Featuring Ed Sheeran', NULL),
+  ('The Last Time (Taylor’s Version)', 'Taylor Swift Featuring Gary Lightbody Of Snow Patrol', NULL),
+  ('Stay Stay Stay (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('After Last Night', 'Silk Sonic (Bruno Mars & Anderson .Paak) With Thundercat & Bootsy Collins', NULL),
+  ('Babe (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Blast Off', 'Silk Sonic (Bruno Mars & Anderson .Paak)', NULL),
+  ('Holy Ground (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Begin Again (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Put On A Smile', 'Silk Sonic (Bruno Mars & Anderson .Paak)', NULL),
+  ('Forever Winter (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Fly As Me', 'Silk Sonic (Bruno Mars & Anderson .Paak)', NULL),
+  ('The Moment I Knew (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('The Lucky One (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Sad Beautiful Tragic (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Come Back...Be Here (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Starlight (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('La Fama', 'Rosalia Featuring The Weeknd', NULL)
   ;
 
    // Update to song table
@@ -401,7 +492,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11190; // SELECT last_insert_rowid();
+  song_id = 11224; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -441,31 +532,40 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-12-30 09:42:00.596596', '1055', '11167'),
-  ('2021-12-30 09:42:00.596596', '1055', '11168'),
-  ('2021-12-30 09:42:00.596596', '1055', '11169'),
-  ('2021-12-30 09:42:00.597597', '1055', '11170'),
-  ('2021-12-30 09:42:00.597597', '1055', '11171'),
-  ('2021-12-30 09:42:00.597597', '1055', '11172'),
-  ('2021-12-30 09:42:00.598598', '1055', '11173'),
-  ('2021-12-30 09:42:00.598598', '1055', '11174'),
-  ('2021-12-30 09:42:00.598598', '1055', '11175'),
-  ('2021-12-30 09:42:00.598598', '1055', '11176'),
-  ('2021-12-30 09:42:00.598598', '1055', '11177'),
-  ('2021-12-30 09:42:00.598598', '1055', '11178'),
-  ('2021-12-30 09:42:00.599599', '1055', '11179'),
-  ('2021-12-30 09:42:00.599599', '1055', '11180'),
-  ('2021-12-30 09:42:00.599599', '1055', '11181'),
-  ('2021-12-30 09:42:00.599599', '1055', '11182'),
-  ('2021-12-30 09:42:00.599599', '1055', '11183'),
-  ('2021-12-30 09:42:00.599599', '1055', '11184'),
-  ('2021-12-30 09:42:00.600600', '1055', '11185'),
-  ('2021-12-30 09:42:00.600600', '1055', '11186'),
-  ('2021-12-30 09:42:00.600600', '1055', '11187'),
-  ('2021-12-30 09:42:00.600600', '1055', '10963'),
-  ('2021-12-30 09:42:00.600600', '1055', '11188'),
-  ('2021-12-30 09:42:00.600600', '1055', '11189'),
-  ('2021-12-30 09:42:00.600600', '1055', '11190')
+  ('2021-12-30 01:14:46.168168', '1056', '11191'),
+  ('2021-12-30 01:14:46.168168', '1056', '11192'),
+  ('2021-12-30 01:14:46.168168', '1056', '11193'),
+  ('2021-12-30 01:14:46.168168', '1056', '11194'),
+  ('2021-12-30 01:14:46.168168', '1056', '11195'),
+  ('2021-12-30 01:14:46.169169', '1056', '11196'),
+  ('2021-12-30 01:14:46.169169', '1056', '11197'),
+  ('2021-12-30 01:14:46.169169', '1056', '11198'),
+  ('2021-12-30 01:14:46.169169', '1056', '11199'),
+  ('2021-12-30 01:14:46.169169', '1056', '11200'),
+  ('2021-12-30 01:14:46.169169', '1056', '11201'),
+  ('2021-12-30 01:14:46.169169', '1056', '11202'),
+  ('2021-12-30 01:14:46.169169', '1056', '11203'),
+  ('2021-12-30 01:14:46.169169', '1056', '11204'),
+  ('2021-12-30 01:14:46.169169', '1056', '11205'),
+  ('2021-12-30 01:14:46.169169', '1056', '11206'),
+  ('2021-12-30 01:14:46.169169', '1056', '11207'),
+  ('2021-12-30 01:14:46.169169', '1056', '11208'),
+  ('2021-12-30 01:14:46.170170', '1056', '11209'),
+  ('2021-12-30 01:14:46.170170', '1056', '11210'),
+  ('2021-12-30 01:14:46.170170', '1056', '11211'),
+  ('2021-12-30 01:14:46.170170', '1056', '11212'),
+  ('2021-12-30 01:14:46.170170', '1056', '11213'),
+  ('2021-12-30 01:14:46.170170', '1056', '11214'),
+  ('2021-12-30 01:14:46.170170', '1056', '11215'),
+  ('2021-12-30 01:14:46.170170', '1056', '11216'),
+  ('2021-12-30 01:14:46.170170', '1056', '11217'),
+  ('2021-12-30 01:14:46.170170', '1056', '11218'),
+  ('2021-12-30 01:14:46.170170', '1056', '11219'),
+  ('2021-12-30 01:14:46.170170', '1056', '11220'),
+  ('2021-12-30 01:14:46.170170', '1056', '11221'),
+  ('2021-12-30 01:14:46.170170', '1056', '11222'),
+  ('2021-12-30 01:14:46.171171', '1056', '11223'),
+  ('2021-12-30 01:14:46.171171', '1056', '11224')
   ;
 
   // Update to source_song table
