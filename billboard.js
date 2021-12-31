@@ -22,7 +22,7 @@
   publicationDateFormatted = moment(publicationDate.slice(8), "MMM DD, YYYY").format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
 
   // Get location and format for current or past chart status
-  currentChartLocation = window.location.href + "/" + moment(publicationDate, "MMM DD, YYYY").format("YYYY-MM-DD");
+  currentChartLocation = window.location.href + moment(publicationDate, "MMM DD, YYYY").format("YYYY-MM-DD");
   pastChartLocation = window.location.href;
 
   // Build the INSERT statement
@@ -32,7 +32,7 @@
     + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'"
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
+    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   );
 
 
@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of December 25, 2021', '2021-12-25 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2021-12-25/');
+    ('Billboard', 'The Hot 100', 'Week of January 1, 2022', '2022-01-01 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-01');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1060; // SELECT last_insert_rowid();
+  source_id = 1061; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -103,110 +103,56 @@
   songsData =
   [
     {
-        "title": "Girl Of My Dreams",
-        "artist_name": "Juice WRLD & SUGA",
+        "title": "Broadway Girls",
+        "artist_name": "Lil Durk ft. Morgan Wallen",
         "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.811811",
-        "source_id": 1060,
+        "capture_date": "2021-12-30 07:09:07.684684",
+        "source_id": 1061,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Burn",
-        "artist_name": "Juice WRLD",
+        "title": "25 Million",
+        "artist_name": "Roddy Ricch",
         "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.811811",
-        "source_id": 1060,
+        "capture_date": "2021-12-30 07:09:07.686686",
+        "source_id": 1061,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Feline",
-        "artist_name": "Juice WRLD, Polo G & Trippie Redd",
+        "title": "Moved To Miami",
+        "artist_name": "Roddy Ricch ft. Lil Baby",
         "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.812812",
-        "source_id": 1060,
+        "capture_date": "2021-12-30 07:09:07.686686",
+        "source_id": 1061,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rockstar In His Prime",
-        "artist_name": "Juice WRLD",
+        "title": "Hibachi",
+        "artist_name": "Roddy Ricch ft. Kodak Black & 21 Savage",
         "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.812812",
-        "source_id": 1060,
+        "capture_date": "2021-12-30 07:09:07.686686",
+        "source_id": 1061,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You Wouldn't Understand",
-        "artist_name": "Juice WRLD",
+        "title": "Thailand",
+        "artist_name": "Roddy Ricch",
         "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.812812",
-        "source_id": 1060,
+        "capture_date": "2021-12-30 07:09:07.686686",
+        "source_id": 1061,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Doom",
-        "artist_name": "Juice WRLD",
+        "title": "Do It To It",
+        "artist_name": "Acraze ft. Cherish",
         "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.812812",
-        "source_id": 1060,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Go Hard",
-        "artist_name": "Juice WRLD",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.812812",
-        "source_id": 1060,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Not Enough",
-        "artist_name": "Juice WRLD",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.812812",
-        "source_id": 1060,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Man In The Mirror",
-        "artist_name": "A Boogie Wit da Hoodie",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.813813",
-        "source_id": 1060,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "From My Window",
-        "artist_name": "Juice WRLD",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.813813",
-        "source_id": 1060,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Relocate",
-        "artist_name": "Juice WRLD",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.813813",
-        "source_id": 1060,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Feel Alone",
-        "artist_name": "Juice WRLD",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:00:34.813813",
-        "source_id": 1060,
+        "capture_date": "2021-12-30 07:09:07.686686",
+        "source_id": 1061,
         "song_id": null,
         "duplicate": false
     }
@@ -249,18 +195,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Girl Of My Dreams', 'Juice WRLD & SUGA', NULL),
-  ('Burn', 'Juice WRLD', NULL),
-  ('Feline', 'Juice WRLD, Polo G & Trippie Redd', NULL),
-  ('Rockstar In His Prime', 'Juice WRLD', NULL),
-  ('You Wouldn’t Understand', 'Juice WRLD', NULL),
-  ('Doom', 'Juice WRLD', NULL),
-  ('Go Hard', 'Juice WRLD', NULL),
-  ('Not Enough', 'Juice WRLD', NULL),
-  ('Man In The Mirror', 'A Boogie Wit da Hoodie', NULL),
-  ('From My Window', 'Juice WRLD', NULL),
-  ('Relocate', 'Juice WRLD', NULL),
-  ('Feel Alone', 'Juice WRLD', NULL)
+  ('Broadway Girls', 'Lil Durk ft. Morgan Wallen', NULL),
+  ('25 Million', 'Roddy Ricch', NULL),
+  ('Moved To Miami', 'Roddy Ricch ft. Lil Baby', NULL),
+  ('Hibachi', 'Roddy Ricch ft. Kodak Black & 21 Savage', NULL),
+  ('Thailand', 'Roddy Ricch', NULL),
+  ('Do It To It', 'Acraze ft. Cherish', NULL)
   ;
 
    // Update to song table
@@ -271,7 +211,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11261; // SELECT last_insert_rowid();
+  song_id = 11267; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -311,18 +251,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-12-30 07:00:34.811811', '1060', '11250'),
-  ('2021-12-30 07:00:34.811811', '1060', '11251'),
-  ('2021-12-30 07:00:34.812812', '1060', '11252'),
-  ('2021-12-30 07:00:34.812812', '1060', '11253'),
-  ('2021-12-30 07:00:34.812812', '1060', '11254'),
-  ('2021-12-30 07:00:34.812812', '1060', '11255'),
-  ('2021-12-30 07:00:34.812812', '1060', '11256'),
-  ('2021-12-30 07:00:34.812812', '1060', '11257'),
-  ('2021-12-30 07:00:34.813813', '1060', '11258'),
-  ('2021-12-30 07:00:34.813813', '1060', '11259'),
-  ('2021-12-30 07:00:34.813813', '1060', '11260'),
-  ('2021-12-30 07:00:34.813813', '1060', '11261')
+  ('2021-12-30 07:09:07.684684', '1061', '11262'),
+  ('2021-12-30 07:09:07.686686', '1061', '11263'),
+  ('2021-12-30 07:09:07.686686', '1061', '11264'),
+  ('2021-12-30 07:09:07.686686', '1061', '11265'),
+  ('2021-12-30 07:09:07.686686', '1061', '11266'),
+  ('2021-12-30 07:09:07.686686', '1061', '11267')
   ;
 
   // Update to source_song table
