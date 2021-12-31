@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Alicia Keys’s Hypnotic Love Jam, and 12 More New Songs', '2021-10-29 11:30:05.000000', 'https://www.nytimes.com/2021/10/29/arts/music/playlist-alicia-keys-asap-rocky.html');
+    ('New York Times', 'The Playlist', 'Post Malone and the Weeknd’s Emo Synth-Pop, and 12 More New Songs', '2021-11-05 10:59:18.000000', 'https://www.nytimes.com/2021/11/05/arts/music/playlist-post-malone-the-weeknd-kendrick-lamar.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1062; // SELECT last_insert_rowid();
+  source_id = 1063; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,92 +100,110 @@
   songsData =
   [
     {
-        "title": "Best of Me",
-        "artist_name": "Alicia Keys",
+        "title": "One Right Now",
+        "artist_name": "Post Malone and the Weeknd",
         "video_id": null,
-        "capture_date": "2021-12-30 07:27:41.306306",
-        "source_id": 1062,
+        "capture_date": "2021-12-31 11:20:39.222222",
+        "source_id": 1063,
+        "song_id": 11167,
+        "duplicate": true
+    },
+    {
+        "title": "New Shapes",
+        "artist_name": "Charli XCX ft. Christine and the Queens and Caroline Polachek",
+        "video_id": null,
+        "capture_date": "2021-12-31 11:20:39.222222",
+        "source_id": 1063,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rhododendron",
-        "artist_name": "Hurray for the Riff Raff",
+        "title": "Drones",
+        "artist_name": "Terrace Martin ft. Kendrick Lamar, Snoop Dogg, Ty Dolla Sign and James Fauntleroy",
         "video_id": null,
-        "capture_date": "2021-12-30 07:27:41.307307",
-        "source_id": 1062,
+        "capture_date": "2021-12-31 11:20:39.223223",
+        "source_id": 1063,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kiss of Life",
-        "artist_name": "Kylie Minogue and Jessie Ware",
+        "title": "Loose Your Mind",
+        "artist_name": "Dawn Richard",
         "video_id": null,
-        "capture_date": "2021-12-30 07:27:41.307307",
-        "source_id": 1062,
+        "capture_date": "2021-12-31 11:20:39.223223",
+        "source_id": 1063,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Vaccine",
-        "artist_name": "Baba Harare ft. Kae Chaps and Joseph Tivafire",
+        "title": "Tums",
+        "artist_name": "TNGHT",
         "video_id": null,
-        "capture_date": "2021-12-30 07:27:41.307307",
-        "source_id": 1062,
+        "capture_date": "2021-12-31 11:20:39.223223",
+        "source_id": 1063,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sandman",
-        "artist_name": "ASAP Rocky",
+        "title": "Woman",
+        "artist_name": "Simi",
         "video_id": null,
-        "capture_date": "2021-12-30 07:27:41.307307",
-        "source_id": 1062,
+        "capture_date": "2021-12-31 11:20:39.223223",
+        "source_id": 1063,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "L’Appel du Mali Kura",
-        "artist_name": "Collectif Mali Kura",
+        "title": "Puppy and a Truck",
+        "artist_name": "Jenny Lewis",
         "video_id": null,
-        "capture_date": "2021-12-30 07:27:41.307307",
-        "source_id": 1062,
+        "capture_date": "2021-12-31 11:20:39.223223",
+        "source_id": 1063,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tocarte",
-        "artist_name": "Jorge Drexler and C. Tangana",
+        "title": "Fear",
+        "artist_name": "Chastity Belt",
         "video_id": null,
-        "capture_date": "2021-12-30 07:27:41.307307",
-        "source_id": 1062,
+        "capture_date": "2021-12-31 11:20:39.223223",
+        "source_id": 1063,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nice Things",
-        "artist_name": "Hayes Carll",
+        "title": "Follow Me Around",
+        "artist_name": "Radiohead",
         "video_id": null,
-        "capture_date": "2021-12-30 07:27:41.307307",
-        "source_id": 1062,
+        "capture_date": "2021-12-31 11:20:39.223223",
+        "source_id": 1063,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bright Star",
-        "artist_name": "Anaïs Mitchell",
+        "title": "Hold No Grudge",
+        "artist_name": "Lorde",
         "video_id": null,
-        "capture_date": "2021-12-30 07:27:41.307307",
-        "source_id": 1062,
+        "capture_date": "2021-12-31 11:20:39.223223",
+        "source_id": 1063,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bessie, Did You Make It?",
-        "artist_name": "Marissa Nadler",
+        "title": "Bad Life",
+        "artist_name": "Omar Apollo ft. Kali Uchis",
         "video_id": null,
-        "capture_date": "2021-12-30 07:27:41.307307",
-        "source_id": 1062,
+        "capture_date": "2021-12-31 11:20:39.223223",
+        "source_id": 1063,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Get Better",
+        "artist_name": "Alt-J",
+        "video_id": null,
+        "capture_date": "2021-12-31 11:20:39.223223",
+        "source_id": 1063,
         "song_id": null,
         "duplicate": false
     }
@@ -228,16 +246,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Best of Me', 'Alicia Keys', NULL),
-  ('Rhododendron', 'Hurray for the Riff Raff', NULL),
-  ('Kiss of Life', 'Kylie Minogue and Jessie Ware', NULL),
-  ('Vaccine', 'Baba Harare ft. Kae Chaps and Joseph Tivafire', NULL),
-  ('Sandman', 'ASAP Rocky', NULL),
-  ('L’Appel du Mali Kura', 'Collectif Mali Kura', NULL),
-  ('Tocarte', 'Jorge Drexler and C. Tangana', NULL),
-  ('Nice Things', 'Hayes Carll', NULL),
-  ('Bright Star', 'Anaïs Mitchell', NULL),
-  ('Bessie, Did You Make It?', 'Marissa Nadler', NULL)
+  ('New Shapes', 'Charli XCX ft. Christine and the Queens and Caroline Polachek', NULL),
+  ('Drones', 'Terrace Martin ft. Kendrick Lamar, Snoop Dogg, Ty Dolla Sign and James Fauntleroy', NULL),
+  ('Loose Your Mind', 'Dawn Richard', NULL),
+  ('Tums', 'TNGHT', NULL),
+  ('Woman', 'Simi', NULL),
+  ('Puppy and a Truck', 'Jenny Lewis', NULL),
+  ('Fear', 'Chastity Belt', NULL),
+  ('Follow Me Around', 'Radiohead', NULL),
+  ('Hold No Grudge', 'Lorde', NULL),
+  ('Bad Life', 'Omar Apollo ft. Kali Uchis', NULL),
+  ('Get Better', 'Alt-J', NULL)
   ;
 
    // Update to song table
@@ -248,7 +267,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11277; // SELECT last_insert_rowid();
+  song_id = 11288; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -288,16 +307,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-12-30 07:27:41.306306', '1062', '11268'),
-  ('2021-12-30 07:27:41.307307', '1062', '11269'),
-  ('2021-12-30 07:27:41.307307', '1062', '11270'),
-  ('2021-12-30 07:27:41.307307', '1062', '11271'),
-  ('2021-12-30 07:27:41.307307', '1062', '11272'),
-  ('2021-12-30 07:27:41.307307', '1062', '11273'),
-  ('2021-12-30 07:27:41.307307', '1062', '11274'),
-  ('2021-12-30 07:27:41.307307', '1062', '11275'),
-  ('2021-12-30 07:27:41.307307', '1062', '11276'),
-  ('2021-12-30 07:27:41.307307', '1062', '11277')
+  ('2021-12-31 11:20:39.222222', '1063', '11167'),
+  ('2021-12-31 11:20:39.222222', '1063', '11278'),
+  ('2021-12-31 11:20:39.223223', '1063', '11279'),
+  ('2021-12-31 11:20:39.223223', '1063', '11280'),
+  ('2021-12-31 11:20:39.223223', '1063', '11281'),
+  ('2021-12-31 11:20:39.223223', '1063', '11282'),
+  ('2021-12-31 11:20:39.223223', '1063', '11283'),
+  ('2021-12-31 11:20:39.223223', '1063', '11284'),
+  ('2021-12-31 11:20:39.223223', '1063', '11285'),
+  ('2021-12-31 11:20:39.223223', '1063', '11286'),
+  ('2021-12-31 11:20:39.223223', '1063', '11287'),
+  ('2021-12-31 11:20:39.223223', '1063', '11288')
   ;
 
   // Update to source_song table
