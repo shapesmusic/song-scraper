@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Adele, Freddie Gibbs, Isaiah Rashad, and More', '2021-11-19 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-adele/');
+    ('Complex', 'Best New Music This Week', 'Polo G, SZA, Nardo Wick, and More', '2021-12-03 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-december-3/pierre-bourne-tm88-block-boy');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1088; // SELECT last_insert_rowid();
+  source_id = 1089; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,92 +101,101 @@
   songsData =
   [
     {
-        "title": "Oh My God",
-        "artist_name": "Adele",
+        "title": "Don’t Play",
+        "artist_name": "Polo G ft. Lil Baby",
         "video_id": null,
-        "capture_date": "2022-01-01 04:13:31.895895",
-        "source_id": 1088,
-        "song_id": 11225,
+        "capture_date": "2022-01-01 04:18:21.291291",
+        "source_id": 1089,
+        "song_id": 11244,
         "duplicate": true
     },
     {
-        "title": "Black Illuminati",
-        "artist_name": "Freddie Gibbs ft. Jadakiss",
+        "title": "I Hate U",
+        "artist_name": "SZA",
         "video_id": null,
-        "capture_date": "2022-01-01 04:13:31.896896",
-        "source_id": 1088,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Deep Blue",
-        "artist_name": "Isaiah Rashad ft. Young Nudy",
-        "video_id": null,
-        "capture_date": "2022-01-01 04:13:31.896896",
-        "source_id": 1088,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Money",
-        "artist_name": "Rico Nasty ft. Flo Milli",
-        "video_id": null,
-        "capture_date": "2022-01-01 04:13:31.896896",
-        "source_id": 1088,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Never Fail",
-        "artist_name": "Morray ft. Benny the Butcher",
-        "video_id": null,
-        "capture_date": "2022-01-01 04:13:31.896896",
-        "source_id": 1088,
-        "song_id": 11303,
+        "capture_date": "2022-01-01 04:18:21.292292",
+        "source_id": 1089,
+        "song_id": 11242,
         "duplicate": true
     },
     {
-        "title": "Go to War",
-        "artist_name": "Snoop Dogg ft. Blxst",
+        "title": "Me or Sum",
+        "artist_name": "Nardo Wick ft. Future & Lil Baby",
         "video_id": null,
-        "capture_date": "2022-01-01 04:13:31.896896",
-        "source_id": 1088,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Handstand",
-        "artist_name": "French Montana ft. Doja Cat & Saweetie",
-        "video_id": null,
-        "capture_date": "2022-01-01 04:13:31.896896",
-        "source_id": 1088,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "2010",
-        "artist_name": "Earl Sweatshirt",
-        "video_id": null,
-        "capture_date": "2022-01-01 04:13:31.896896",
-        "source_id": 1088,
-        "song_id": 11297,
+        "capture_date": "2022-01-01 04:18:21.292292",
+        "source_id": 1089,
+        "song_id": 11245,
         "duplicate": true
     },
     {
-        "title": "Transparent Soul (Remix)",
-        "artist_name": "Willow ft. Kid Cudi& Travis Barker",
+        "title": "Heart & Soul",
+        "artist_name": "Youngboy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-01-01 04:13:31.896896",
-        "source_id": 1088,
+        "capture_date": "2022-01-01 04:18:21.292292",
+        "source_id": 1089,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Intimidated",
-        "artist_name": "Kaytranada ft. H.E.R.",
+        "title": "Just Look Up",
+        "artist_name": "Ariana Grande & Kid Cudi",
         "video_id": null,
-        "capture_date": "2022-01-01 04:13:31.896896",
-        "source_id": 1088,
+        "capture_date": "2022-01-01 04:18:21.292292",
+        "source_id": 1089,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fan",
+        "artist_name": "EST Gee",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:18:21.292292",
+        "source_id": 1089,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mercedes",
+        "artist_name": "Brent Faiyaz",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:18:21.292292",
+        "source_id": 1089,
+        "song_id": 11248,
+        "duplicate": true
+    },
+    {
+        "title": "Sinister",
+        "artist_name": "Cordae ft. Lil Wayne",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:18:21.292292",
+        "source_id": 1089,
+        "song_id": 11318,
+        "duplicate": true
+    },
+    {
+        "title": "Stand Up",
+        "artist_name": "Tierra Whack",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:18:21.292292",
+        "source_id": 1089,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Too Easy (Remix)",
+        "artist_name": "Gunna ft. Future & Roddy Ricch",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:18:21.292292",
+        "source_id": 1089,
+        "song_id": 10805,
+        "duplicate": true
+    },
+    {
+        "title": "Block Boy",
+        "artist_name": "Pi’erre Bourne & TM88",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:18:21.292292",
+        "source_id": 1089,
         "song_id": null,
         "duplicate": false
     }
@@ -229,13 +238,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Black Illuminati', 'Freddie Gibbs ft. Jadakiss', NULL),
-  ('Deep Blue', 'Isaiah Rashad ft. Young Nudy', NULL),
-  ('Money', 'Rico Nasty ft. Flo Milli', NULL),
-  ('Go to War', 'Snoop Dogg ft. Blxst', NULL),
-  ('Handstand', 'French Montana ft. Doja Cat & Saweetie', NULL),
-  ('Transparent Soul (Remix)', 'Willow ft. Kid Cudi& Travis Barker', NULL),
-  ('Intimidated', 'Kaytranada ft. H.E.R.', NULL)
+  ('Heart & Soul', 'Youngboy Never Broke Again', NULL),
+  ('Just Look Up', 'Ariana Grande & Kid Cudi', NULL),
+  ('Fan', 'EST Gee', NULL),
+  ('Stand Up', 'Tierra Whack', NULL),
+  ('Block Boy', 'Pi’erre Bourne & TM88', NULL)
   ;
 
    // Update to song table
@@ -246,7 +253,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11356; // SELECT last_insert_rowid();
+  song_id = 11361; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -286,16 +293,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-01 04:13:31.895895', '1088', '11225'),
-  ('2022-01-01 04:13:31.896896', '1088', '11350'),
-  ('2022-01-01 04:13:31.896896', '1088', '11351'),
-  ('2022-01-01 04:13:31.896896', '1088', '11352'),
-  ('2022-01-01 04:13:31.896896', '1088', '11303'),
-  ('2022-01-01 04:13:31.896896', '1088', '11353'),
-  ('2022-01-01 04:13:31.896896', '1088', '11354'),
-  ('2022-01-01 04:13:31.896896', '1088', '11297'),
-  ('2022-01-01 04:13:31.896896', '1088', '11355'),
-  ('2022-01-01 04:13:31.896896', '1088', '11356')
+  ('2022-01-01 04:18:21.291291', '1089', '11244'),
+  ('2022-01-01 04:18:21.292292', '1089', '11242'),
+  ('2022-01-01 04:18:21.292292', '1089', '11245'),
+  ('2022-01-01 04:18:21.292292', '1089', '11357'),
+  ('2022-01-01 04:18:21.292292', '1089', '11358'),
+  ('2022-01-01 04:18:21.292292', '1089', '11359'),
+  ('2022-01-01 04:18:21.292292', '1089', '11248'),
+  ('2022-01-01 04:18:21.292292', '1089', '11318'),
+  ('2022-01-01 04:18:21.292292', '1089', '11360'),
+  ('2022-01-01 04:18:21.292292', '1089', '10805'),
+  ('2022-01-01 04:18:21.292292', '1089', '11361')
   ;
 
   // Update to source_song table
