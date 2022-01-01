@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Silk Sonic, Beyoncé, Juice WRLD, and More', '2021-11-12 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-silk-sonic-beyonce-juice-wrld/lil-durk-lion-eyes');
+    ('Complex', 'Best New Music This Week', 'Adele, Freddie Gibbs, Isaiah Rashad, and More', '2021-11-19 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-adele/');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1087; // SELECT last_insert_rowid();
+  source_id = 1088; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,83 +101,92 @@
   songsData =
   [
     {
-        "title": "Be Alive",
-        "artist_name": "Beyoncé",
+        "title": "Oh My God",
+        "artist_name": "Adele",
         "video_id": null,
-        "capture_date": "2022-01-01 04:07:25.848848",
-        "source_id": 1087,
-        "song_id": 11290,
+        "capture_date": "2022-01-01 04:13:31.895895",
+        "source_id": 1088,
+        "song_id": 11225,
         "duplicate": true
     },
     {
-        "title": "After Last Night",
-        "artist_name": "Silk Sonic ft. Bootsy Collins & Thundercat",
+        "title": "Black Illuminati",
+        "artist_name": "Freddie Gibbs ft. Jadakiss",
         "video_id": null,
-        "capture_date": "2022-01-01 04:07:25.848848",
-        "source_id": 1087,
-        "song_id": 11211,
-        "duplicate": true
-    },
-    {
-        "title": "Already Dead",
-        "artist_name": "Juice WRLD",
-        "video_id": null,
-        "capture_date": "2022-01-01 04:07:25.848848",
-        "source_id": 1087,
-        "song_id": 11193,
-        "duplicate": true
-    },
-    {
-        "title": "Bad Man (Smooth Criminal)",
-        "artist_name": "Polo G",
-        "video_id": null,
-        "capture_date": "2022-01-01 04:07:25.849849",
-        "source_id": 1087,
-        "song_id": 11200,
-        "duplicate": true
-    },
-    {
-        "title": "Outlawz",
-        "artist_name": "Rick Ross ft. Jazmine Sullivan & 21 Savage",
-        "video_id": null,
-        "capture_date": "2022-01-01 04:07:25.849849",
-        "source_id": 1087,
+        "capture_date": "2022-01-01 04:13:31.896896",
+        "source_id": 1088,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "La Fama",
-        "artist_name": "Rosalía ft. The Weeknd",
+        "title": "Deep Blue",
+        "artist_name": "Isaiah Rashad ft. Young Nudy",
         "video_id": null,
-        "capture_date": "2022-01-01 04:07:25.849849",
-        "source_id": 1087,
-        "song_id": 11224,
+        "capture_date": "2022-01-01 04:13:31.896896",
+        "source_id": 1088,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Money",
+        "artist_name": "Rico Nasty ft. Flo Milli",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:13:31.896896",
+        "source_id": 1088,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Never Fail",
+        "artist_name": "Morray ft. Benny the Butcher",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:13:31.896896",
+        "source_id": 1088,
+        "song_id": 11303,
         "duplicate": true
     },
     {
-        "title": "Squeeze",
-        "artist_name": "Fivio Foreign",
+        "title": "Go to War",
+        "artist_name": "Snoop Dogg ft. Blxst",
         "video_id": null,
-        "capture_date": "2022-01-01 04:07:25.849849",
-        "source_id": 1087,
+        "capture_date": "2022-01-01 04:13:31.896896",
+        "source_id": 1088,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sticked Up",
-        "artist_name": "DaBaby ft. 21 Savage",
+        "title": "Handstand",
+        "artist_name": "French Montana ft. Doja Cat & Saweetie",
         "video_id": null,
-        "capture_date": "2022-01-01 04:07:25.849849",
-        "source_id": 1087,
+        "capture_date": "2022-01-01 04:13:31.896896",
+        "source_id": 1088,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lion Eyes",
-        "artist_name": "Lil Durk",
+        "title": "2010",
+        "artist_name": "Earl Sweatshirt",
         "video_id": null,
-        "capture_date": "2022-01-01 04:07:25.849849",
-        "source_id": 1087,
+        "capture_date": "2022-01-01 04:13:31.896896",
+        "source_id": 1088,
+        "song_id": 11297,
+        "duplicate": true
+    },
+    {
+        "title": "Transparent Soul (Remix)",
+        "artist_name": "Willow ft. Kid Cudi& Travis Barker",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:13:31.896896",
+        "source_id": 1088,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Intimidated",
+        "artist_name": "Kaytranada ft. H.E.R.",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:13:31.896896",
+        "source_id": 1088,
         "song_id": null,
         "duplicate": false
     }
@@ -220,10 +229,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Outlawz', 'Rick Ross ft. Jazmine Sullivan & 21 Savage', NULL),
-  ('Squeeze', 'Fivio Foreign', NULL),
-  ('Sticked Up', 'DaBaby ft. 21 Savage', NULL),
-  ('Lion Eyes', 'Lil Durk', NULL)
+  ('Black Illuminati', 'Freddie Gibbs ft. Jadakiss', NULL),
+  ('Deep Blue', 'Isaiah Rashad ft. Young Nudy', NULL),
+  ('Money', 'Rico Nasty ft. Flo Milli', NULL),
+  ('Go to War', 'Snoop Dogg ft. Blxst', NULL),
+  ('Handstand', 'French Montana ft. Doja Cat & Saweetie', NULL),
+  ('Transparent Soul (Remix)', 'Willow ft. Kid Cudi& Travis Barker', NULL),
+  ('Intimidated', 'Kaytranada ft. H.E.R.', NULL)
   ;
 
    // Update to song table
@@ -234,7 +246,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11349; // SELECT last_insert_rowid();
+  song_id = 11356; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -274,15 +286,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-01 04:07:25.848848', '1087', '11290'),
-  ('2022-01-01 04:07:25.848848', '1087', '11211'),
-  ('2022-01-01 04:07:25.848848', '1087', '11193'),
-  ('2022-01-01 04:07:25.849849', '1087', '11200'),
-  ('2022-01-01 04:07:25.849849', '1087', '11346'),
-  ('2022-01-01 04:07:25.849849', '1087', '11224'),
-  ('2022-01-01 04:07:25.849849', '1087', '11347'),
-  ('2022-01-01 04:07:25.849849', '1087', '11348'),
-  ('2022-01-01 04:07:25.849849', '1087', '11349')
+  ('2022-01-01 04:13:31.895895', '1088', '11225'),
+  ('2022-01-01 04:13:31.896896', '1088', '11350'),
+  ('2022-01-01 04:13:31.896896', '1088', '11351'),
+  ('2022-01-01 04:13:31.896896', '1088', '11352'),
+  ('2022-01-01 04:13:31.896896', '1088', '11303'),
+  ('2022-01-01 04:13:31.896896', '1088', '11353'),
+  ('2022-01-01 04:13:31.896896', '1088', '11354'),
+  ('2022-01-01 04:13:31.896896', '1088', '11297'),
+  ('2022-01-01 04:13:31.896896', '1088', '11355'),
+  ('2022-01-01 04:13:31.896896', '1088', '11356')
   ;
 
   // Update to source_song table
