@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Taylor Swift and Phoebe Bridgers’s ‘Red’ Duet, and 14 More New Songs', '2021-11-12 11:05:59.000000', 'https://www.nytimes.com/2021/11/12/arts/music/taylor-swift-red.html');
+    ('New York Times', 'The Playlist', 'Earl Sweatshirt Exhibits His Evolution, and 14 More New Songs', '2021-12-01 03:37:57.000000', 'https://www.nytimes.com/2021/11/19/arts/music/playlist-earl-sweatshirt-cardi-b.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1064; // SELECT last_insert_rowid();
+  source_id = 1065; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,92 +100,128 @@
   songsData =
   [
     {
-        "title": "Nothing New",
-        "artist_name": "Taylor Swift ft. Phoebe Bridgers",
+        "title": "2010",
+        "artist_name": "Earl Sweatshirt",
         "video_id": null,
-        "capture_date": "2022-01-01 09:36:44.630630",
-        "source_id": 1064,
-        "song_id": 11196,
-        "duplicate": true
-    },
-    {
-        "title": "Superstar",
-        "artist_name": "Beach House",
-        "video_id": null,
-        "capture_date": "2022-01-01 09:36:44.631631",
-        "source_id": 1064,
+        "capture_date": "2022-01-01 09:45:33.795795",
+        "source_id": 1065,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Be Alive",
-        "artist_name": "Beyoncé",
+        "title": "Measure of a Man",
+        "artist_name": "FKA twigs featuring Central Cee",
         "video_id": null,
-        "capture_date": "2022-01-01 09:36:44.631631",
-        "source_id": 1064,
+        "capture_date": "2022-01-01 09:45:33.796796",
+        "source_id": 1065,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Open the Gates",
-        "artist_name": "Irreversible Entanglements",
+        "title": "Nine Stories",
+        "artist_name": "Hazel English",
         "video_id": null,
-        "capture_date": "2022-01-01 09:36:44.631631",
-        "source_id": 1064,
-        "song_id": 11010,
-        "duplicate": true
-    },
-    {
-        "title": "Amores de Droga",
-        "artist_name": "Girl Ultra",
-        "video_id": null,
-        "capture_date": "2022-01-01 09:36:44.631631",
-        "source_id": 1064,
+        "capture_date": "2022-01-01 09:45:33.796796",
+        "source_id": 1065,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cisgender",
-        "artist_name": "Shamir",
+        "title": "Billy",
+        "artist_name": "Horsegirl",
         "video_id": null,
-        "capture_date": "2022-01-01 09:36:44.631631",
-        "source_id": 1064,
+        "capture_date": "2022-01-01 09:45:33.796796",
+        "source_id": 1065,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Only Heartbreaker",
-        "artist_name": "Mitski",
+        "title": "Touch. Don’t Scroll",
+        "artist_name": "Ben LaMar Gay featuring Ayanna Woods",
         "video_id": null,
-        "capture_date": "2022-01-01 09:36:44.631631",
-        "source_id": 1064,
+        "capture_date": "2022-01-01 09:45:33.796796",
+        "source_id": 1065,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Alaska",
-        "artist_name": "Pinegrove",
+        "title": "Bet It",
+        "artist_name": "Cardi B",
         "video_id": null,
-        "capture_date": "2022-01-01 09:36:44.631631",
-        "source_id": 1064,
+        "capture_date": "2022-01-01 09:45:33.796796",
+        "source_id": 1065,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Blue",
-        "artist_name": "Camp Cope",
+        "title": "Never Fail",
+        "artist_name": "Morray featuring Benny the Butcher",
         "video_id": null,
-        "capture_date": "2022-01-01 09:36:44.631631",
-        "source_id": 1064,
+        "capture_date": "2022-01-01 09:45:33.796796",
+        "source_id": 1065,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Two Ribbons",
-        "artist_name": "Let’s Eat Grandma",
+        "title": "Likkle Prince",
+        "artist_name": "Frank Dukes",
         "video_id": null,
-        "capture_date": "2022-01-01 09:36:44.631631",
-        "source_id": 1064,
+        "capture_date": "2022-01-01 09:45:33.797797",
+        "source_id": 1065,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Everybody’s Dead!",
+        "artist_name": "underscores",
+        "video_id": null,
+        "capture_date": "2022-01-01 09:45:33.797797",
+        "source_id": 1065,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Spooky Actions",
+        "artist_name": "Microhm",
+        "video_id": null,
+        "capture_date": "2022-01-01 09:45:33.797797",
+        "source_id": 1065,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Summer Rain",
+        "artist_name": "Leon Bridges featuring Jazmine Sullivan",
+        "video_id": null,
+        "capture_date": "2022-01-01 09:45:33.797797",
+        "source_id": 1065,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Made of Gold",
+        "artist_name": "Ibeyi featuring Pa Salieu",
+        "video_id": null,
+        "capture_date": "2022-01-01 09:45:33.797797",
+        "source_id": 1065,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Loving You",
+        "artist_name": "Sting",
+        "video_id": null,
+        "capture_date": "2022-01-01 09:45:33.797797",
+        "source_id": 1065,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Scared to Move",
+        "artist_name": "Single Girl, Married Girl",
+        "video_id": null,
+        "capture_date": "2022-01-01 09:45:33.797797",
+        "source_id": 1065,
         "song_id": null,
         "duplicate": false
     }
@@ -228,14 +264,20 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Superstar', 'Beach House', NULL),
-  ('Be Alive', 'Beyoncé', NULL),
-  ('Amores de Droga', 'Girl Ultra', NULL),
-  ('Cisgender', 'Shamir', NULL),
-  ('The Only Heartbreaker', 'Mitski', NULL),
-  ('Alaska', 'Pinegrove', NULL),
-  ('Blue', 'Camp Cope', NULL),
-  ('Two Ribbons', 'Let’s Eat Grandma', NULL)
+  ('2010', 'Earl Sweatshirt', NULL),
+  ('Measure of a Man', 'FKA twigs featuring Central Cee', NULL),
+  ('Nine Stories', 'Hazel English', NULL),
+  ('Billy', 'Horsegirl', NULL),
+  ('Touch. Don’t Scroll', 'Ben LaMar Gay featuring Ayanna Woods', NULL),
+  ('Bet It', 'Cardi B', NULL),
+  ('Never Fail', 'Morray featuring Benny the Butcher', NULL),
+  ('Likkle Prince', 'Frank Dukes', NULL),
+  ('Everybody’s Dead!', 'underscores', NULL),
+  ('Spooky Actions', 'Microhm', NULL),
+  ('Summer Rain', 'Leon Bridges featuring Jazmine Sullivan', NULL),
+  ('Made of Gold', 'Ibeyi featuring Pa Salieu', NULL),
+  ('Loving You', 'Sting', NULL),
+  ('Scared to Move', 'Single Girl, Married Girl', NULL)
   ;
 
    // Update to song table
@@ -246,7 +288,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11296; // SELECT last_insert_rowid();
+  song_id = 11310; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -286,16 +328,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-01 09:36:44.630630', '1064', '11196'),
-  ('2022-01-01 09:36:44.631631', '1064', '11289'),
-  ('2022-01-01 09:36:44.631631', '1064', '11290'),
-  ('2022-01-01 09:36:44.631631', '1064', '11010'),
-  ('2022-01-01 09:36:44.631631', '1064', '11291'),
-  ('2022-01-01 09:36:44.631631', '1064', '11292'),
-  ('2022-01-01 09:36:44.631631', '1064', '11293'),
-  ('2022-01-01 09:36:44.631631', '1064', '11294'),
-  ('2022-01-01 09:36:44.631631', '1064', '11295'),
-  ('2022-01-01 09:36:44.631631', '1064', '11296')
+  ('2022-01-01 09:45:33.795795', '1065', '11297'),
+  ('2022-01-01 09:45:33.796796', '1065', '11298'),
+  ('2022-01-01 09:45:33.796796', '1065', '11299'),
+  ('2022-01-01 09:45:33.796796', '1065', '11300'),
+  ('2022-01-01 09:45:33.796796', '1065', '11301'),
+  ('2022-01-01 09:45:33.796796', '1065', '11302'),
+  ('2022-01-01 09:45:33.796796', '1065', '11303'),
+  ('2022-01-01 09:45:33.797797', '1065', '11304'),
+  ('2022-01-01 09:45:33.797797', '1065', '11305'),
+  ('2022-01-01 09:45:33.797797', '1065', '11306'),
+  ('2022-01-01 09:45:33.797797', '1065', '11307'),
+  ('2022-01-01 09:45:33.797797', '1065', '11308'),
+  ('2022-01-01 09:45:33.797797', '1065', '11309'),
+  ('2022-01-01 09:45:33.797797', '1065', '11310')
   ;
 
   // Update to source_song table
