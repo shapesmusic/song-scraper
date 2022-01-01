@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Mary J. Blige’s Daily Affirmation, and 12 More New Songs', '2021-12-03 11:30:33.000000', 'https://www.nytimes.com/2021/12/03/arts/music/playlist-mary-j-blige-grimes-cordae.html');
+    ('New York Times', 'The Playlist', 'Tame Impala’s Disco-Prog Shrug, and 9 More New Songs', '2021-12-10 12:46:36.000000', 'https://www.nytimes.com/2021/12/10/arts/music/tame-impala-mitski-playlist.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1066; // SELECT last_insert_rowid();
+  source_id = 1067; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,92 +100,83 @@
   songsData =
   [
     {
-        "title": "Good Morning Gorgeous",
-        "artist_name": "Mary J. Blige",
+        "title": "No Choice",
+        "artist_name": "Tame Impala",
         "video_id": null,
-        "capture_date": "2022-01-01 01:23:19.636636",
-        "source_id": 1066,
+        "capture_date": "2022-01-01 01:31:47.008008",
+        "source_id": 1067,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Jupiter’s Dance",
-        "artist_name": "Hurray for the Riff Raff",
+        "title": "Fair Game",
+        "artist_name": "Alice Glass",
         "video_id": null,
-        "capture_date": "2022-01-01 01:23:19.637637",
-        "source_id": 1066,
+        "capture_date": "2022-01-01 01:31:47.008008",
+        "source_id": 1067,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Another Day in America",
-        "artist_name": "Kali Uchis and Ozuna",
+        "title": "Menthol",
+        "artist_name": "Jean Dawson and Mac DeMarco",
         "video_id": null,
-        "capture_date": "2022-01-01 01:23:19.637637",
-        "source_id": 1066,
+        "capture_date": "2022-01-01 01:31:47.008008",
+        "source_id": 1067,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Heathens",
-        "artist_name": "Aurora",
+        "title": "Growing Up Is _____",
+        "artist_name": "Ruel",
         "video_id": null,
-        "capture_date": "2022-01-01 01:23:19.637637",
-        "source_id": 1066,
+        "capture_date": "2022-01-01 01:31:47.008008",
+        "source_id": 1067,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Player of Games",
-        "artist_name": "Grimes",
+        "title": "Heat Lightning",
+        "artist_name": "Mitski",
         "video_id": null,
-        "capture_date": "2022-01-01 01:23:19.637637",
-        "source_id": 1066,
+        "capture_date": "2022-01-01 01:31:47.009009",
+        "source_id": 1067,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Coconuts",
-        "artist_name": "Kim Petras",
+        "title": "Drifting Out",
+        "artist_name": "Little Dragon",
         "video_id": null,
-        "capture_date": "2022-01-01 01:23:19.637637",
-        "source_id": 1066,
+        "capture_date": "2022-01-01 01:31:47.009009",
+        "source_id": 1067,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Motivation",
-        "artist_name": "Kerozen",
+        "title": "Fools Gold",
+        "artist_name": "Flores",
         "video_id": null,
-        "capture_date": "2022-01-01 01:23:19.637637",
-        "source_id": 1066,
+        "capture_date": "2022-01-01 01:31:47.009009",
+        "source_id": 1067,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sinister",
-        "artist_name": "Cordae featuring Lil Wayne",
+        "title": "Faultline",
+        "artist_name": "Girlpool",
         "video_id": null,
-        "capture_date": "2022-01-01 01:23:19.637637",
-        "source_id": 1066,
+        "capture_date": "2022-01-01 01:31:47.009009",
+        "source_id": 1067,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Socio",
-        "artist_name": "Eladio Carrión and Luar la L",
+        "title": "Gestures",
+        "artist_name": "Carmen Villain with Arve Henriksen",
         "video_id": null,
-        "capture_date": "2022-01-01 01:23:19.637637",
-        "source_id": 1066,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Can’t Do Without Me",
-        "artist_name": "Chayce Beckham and Lindsay Ell",
-        "video_id": null,
-        "capture_date": "2022-01-01 01:23:19.637637",
-        "source_id": 1066,
+        "capture_date": "2022-01-01 01:31:47.009009",
+        "source_id": 1067,
         "song_id": null,
         "duplicate": false
     }
@@ -228,16 +219,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Good Morning Gorgeous', 'Mary J. Blige', NULL),
-  ('Jupiter’s Dance', 'Hurray for the Riff Raff', NULL),
-  ('Another Day in America', 'Kali Uchis and Ozuna', NULL),
-  ('Heathens', 'Aurora', NULL),
-  ('Player of Games', 'Grimes', NULL),
-  ('Coconuts', 'Kim Petras', NULL),
-  ('Motivation', 'Kerozen', NULL),
-  ('Sinister', 'Cordae featuring Lil Wayne', NULL),
-  ('Socio', 'Eladio Carrión and Luar la L', NULL),
-  ('Can’t Do Without Me', 'Chayce Beckham and Lindsay Ell', NULL)
+  ('No Choice', 'Tame Impala', NULL),
+  ('Fair Game', 'Alice Glass', NULL),
+  ('Menthol', 'Jean Dawson and Mac DeMarco', NULL),
+  ('Growing Up Is _____', 'Ruel', NULL),
+  ('Heat Lightning', 'Mitski', NULL),
+  ('Drifting Out', 'Little Dragon', NULL),
+  ('Fools Gold', 'Flores', NULL),
+  ('Faultline', 'Girlpool', NULL),
+  ('Gestures', 'Carmen Villain with Arve Henriksen', NULL)
   ;
 
    // Update to song table
@@ -248,7 +238,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11320; // SELECT last_insert_rowid();
+  song_id = 11329; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -288,16 +278,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-01 01:23:19.636636', '1066', '11311'),
-  ('2022-01-01 01:23:19.637637', '1066', '11312'),
-  ('2022-01-01 01:23:19.637637', '1066', '11313'),
-  ('2022-01-01 01:23:19.637637', '1066', '11314'),
-  ('2022-01-01 01:23:19.637637', '1066', '11315'),
-  ('2022-01-01 01:23:19.637637', '1066', '11316'),
-  ('2022-01-01 01:23:19.637637', '1066', '11317'),
-  ('2022-01-01 01:23:19.637637', '1066', '11318'),
-  ('2022-01-01 01:23:19.637637', '1066', '11319'),
-  ('2022-01-01 01:23:19.637637', '1066', '11320')
+  ('2022-01-01 01:31:47.008008', '1067', '11321'),
+  ('2022-01-01 01:31:47.008008', '1067', '11322'),
+  ('2022-01-01 01:31:47.008008', '1067', '11323'),
+  ('2022-01-01 01:31:47.008008', '1067', '11324'),
+  ('2022-01-01 01:31:47.009009', '1067', '11325'),
+  ('2022-01-01 01:31:47.009009', '1067', '11326'),
+  ('2022-01-01 01:31:47.009009', '1067', '11327'),
+  ('2022-01-01 01:31:47.009009', '1067', '11328'),
+  ('2022-01-01 01:31:47.009009', '1067', '11329')
   ;
 
   // Update to source_song table
