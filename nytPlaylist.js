@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Post Malone and the Weeknd’s Emo Synth-Pop, and 12 More New Songs', '2021-11-05 10:59:18.000000', 'https://www.nytimes.com/2021/11/05/arts/music/playlist-post-malone-the-weeknd-kendrick-lamar.html');
+    ('New York Times', 'The Playlist', 'Taylor Swift and Phoebe Bridgers’s ‘Red’ Duet, and 14 More New Songs', '2021-11-12 11:05:59.000000', 'https://www.nytimes.com/2021/11/12/arts/music/taylor-swift-red.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1063; // SELECT last_insert_rowid();
+  source_id = 1064; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,110 +100,92 @@
   songsData =
   [
     {
-        "title": "One Right Now",
-        "artist_name": "Post Malone and the Weeknd",
+        "title": "Nothing New",
+        "artist_name": "Taylor Swift ft. Phoebe Bridgers",
         "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.222222",
-        "source_id": 1063,
-        "song_id": 11167,
+        "capture_date": "2022-01-01 09:36:44.630630",
+        "source_id": 1064,
+        "song_id": 11196,
         "duplicate": true
     },
     {
-        "title": "New Shapes",
-        "artist_name": "Charli XCX ft. Christine and the Queens and Caroline Polachek",
+        "title": "Superstar",
+        "artist_name": "Beach House",
         "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.222222",
-        "source_id": 1063,
+        "capture_date": "2022-01-01 09:36:44.631631",
+        "source_id": 1064,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Drones",
-        "artist_name": "Terrace Martin ft. Kendrick Lamar, Snoop Dogg, Ty Dolla Sign and James Fauntleroy",
+        "title": "Be Alive",
+        "artist_name": "Beyoncé",
         "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.223223",
-        "source_id": 1063,
+        "capture_date": "2022-01-01 09:36:44.631631",
+        "source_id": 1064,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Loose Your Mind",
-        "artist_name": "Dawn Richard",
+        "title": "Open the Gates",
+        "artist_name": "Irreversible Entanglements",
         "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.223223",
-        "source_id": 1063,
+        "capture_date": "2022-01-01 09:36:44.631631",
+        "source_id": 1064,
+        "song_id": 11010,
+        "duplicate": true
+    },
+    {
+        "title": "Amores de Droga",
+        "artist_name": "Girl Ultra",
+        "video_id": null,
+        "capture_date": "2022-01-01 09:36:44.631631",
+        "source_id": 1064,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tums",
-        "artist_name": "TNGHT",
+        "title": "Cisgender",
+        "artist_name": "Shamir",
         "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.223223",
-        "source_id": 1063,
+        "capture_date": "2022-01-01 09:36:44.631631",
+        "source_id": 1064,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Woman",
-        "artist_name": "Simi",
+        "title": "The Only Heartbreaker",
+        "artist_name": "Mitski",
         "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.223223",
-        "source_id": 1063,
+        "capture_date": "2022-01-01 09:36:44.631631",
+        "source_id": 1064,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Puppy and a Truck",
-        "artist_name": "Jenny Lewis",
+        "title": "Alaska",
+        "artist_name": "Pinegrove",
         "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.223223",
-        "source_id": 1063,
+        "capture_date": "2022-01-01 09:36:44.631631",
+        "source_id": 1064,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fear",
-        "artist_name": "Chastity Belt",
+        "title": "Blue",
+        "artist_name": "Camp Cope",
         "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.223223",
-        "source_id": 1063,
+        "capture_date": "2022-01-01 09:36:44.631631",
+        "source_id": 1064,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Follow Me Around",
-        "artist_name": "Radiohead",
+        "title": "Two Ribbons",
+        "artist_name": "Let’s Eat Grandma",
         "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.223223",
-        "source_id": 1063,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hold No Grudge",
-        "artist_name": "Lorde",
-        "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.223223",
-        "source_id": 1063,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bad Life",
-        "artist_name": "Omar Apollo ft. Kali Uchis",
-        "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.223223",
-        "source_id": 1063,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Get Better",
-        "artist_name": "Alt-J",
-        "video_id": null,
-        "capture_date": "2021-12-31 11:20:39.223223",
-        "source_id": 1063,
+        "capture_date": "2022-01-01 09:36:44.631631",
+        "source_id": 1064,
         "song_id": null,
         "duplicate": false
     }
@@ -246,17 +228,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('New Shapes', 'Charli XCX ft. Christine and the Queens and Caroline Polachek', NULL),
-  ('Drones', 'Terrace Martin ft. Kendrick Lamar, Snoop Dogg, Ty Dolla Sign and James Fauntleroy', NULL),
-  ('Loose Your Mind', 'Dawn Richard', NULL),
-  ('Tums', 'TNGHT', NULL),
-  ('Woman', 'Simi', NULL),
-  ('Puppy and a Truck', 'Jenny Lewis', NULL),
-  ('Fear', 'Chastity Belt', NULL),
-  ('Follow Me Around', 'Radiohead', NULL),
-  ('Hold No Grudge', 'Lorde', NULL),
-  ('Bad Life', 'Omar Apollo ft. Kali Uchis', NULL),
-  ('Get Better', 'Alt-J', NULL)
+  ('Superstar', 'Beach House', NULL),
+  ('Be Alive', 'Beyoncé', NULL),
+  ('Amores de Droga', 'Girl Ultra', NULL),
+  ('Cisgender', 'Shamir', NULL),
+  ('The Only Heartbreaker', 'Mitski', NULL),
+  ('Alaska', 'Pinegrove', NULL),
+  ('Blue', 'Camp Cope', NULL),
+  ('Two Ribbons', 'Let’s Eat Grandma', NULL)
   ;
 
    // Update to song table
@@ -267,7 +246,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11288; // SELECT last_insert_rowid();
+  song_id = 11296; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -307,18 +286,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-12-31 11:20:39.222222', '1063', '11167'),
-  ('2021-12-31 11:20:39.222222', '1063', '11278'),
-  ('2021-12-31 11:20:39.223223', '1063', '11279'),
-  ('2021-12-31 11:20:39.223223', '1063', '11280'),
-  ('2021-12-31 11:20:39.223223', '1063', '11281'),
-  ('2021-12-31 11:20:39.223223', '1063', '11282'),
-  ('2021-12-31 11:20:39.223223', '1063', '11283'),
-  ('2021-12-31 11:20:39.223223', '1063', '11284'),
-  ('2021-12-31 11:20:39.223223', '1063', '11285'),
-  ('2021-12-31 11:20:39.223223', '1063', '11286'),
-  ('2021-12-31 11:20:39.223223', '1063', '11287'),
-  ('2021-12-31 11:20:39.223223', '1063', '11288')
+  ('2022-01-01 09:36:44.630630', '1064', '11196'),
+  ('2022-01-01 09:36:44.631631', '1064', '11289'),
+  ('2022-01-01 09:36:44.631631', '1064', '11290'),
+  ('2022-01-01 09:36:44.631631', '1064', '11010'),
+  ('2022-01-01 09:36:44.631631', '1064', '11291'),
+  ('2022-01-01 09:36:44.631631', '1064', '11292'),
+  ('2022-01-01 09:36:44.631631', '1064', '11293'),
+  ('2022-01-01 09:36:44.631631', '1064', '11294'),
+  ('2022-01-01 09:36:44.631631', '1064', '11295'),
+  ('2022-01-01 09:36:44.631631', '1064', '11296')
   ;
 
   // Update to source_song table
