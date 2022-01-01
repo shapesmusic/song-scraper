@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Young Thug, Adele, Lil Durk, and More', '2021-10-15 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-young-thug-adele-lil-durk/pinkpantheress-all-my-friends-know');
+    ('Complex', 'Best New Music This Week', 'Silk Sonic, Beyoncé, Juice WRLD, and More', '2021-11-12 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-silk-sonic-beyonce-juice-wrld/lil-durk-lion-eyes');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1049; // SELECT last_insert_rowid();
+  source_id = 1087; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -100,61 +100,88 @@
 
   songsData =
   [
-      {
-          "title": "Bubbly",
-          "artist_name": "Young Thug ft. Drake & Travis Scott",
-          "video_id": null,
-          "capture_date": "2021-10-26 12:15:43.530530",
-          "source_id": 1049,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Easy On Me",
-          "artist_name": "Adele",
-          "video_id": null,
-          "capture_date": "2021-10-26 12:15:43.532532",
-          "source_id": 1049,
-          "song_id": 11115,
-          "duplicate": true
-      },
-      {
-          "title": "Pissed Me Off",
-          "artist_name": "Lil Durk",
-          "video_id": null,
-          "capture_date": "2021-10-26 12:15:43.532532",
-          "source_id": 1049,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Ex for a Reason",
-          "artist_name": "Summer Waker ft. JT",
-          "video_id": null,
-          "capture_date": "2021-10-26 12:15:43.532532",
-          "source_id": 1049,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Buzz Me In",
-          "artist_name": "Remi Wolf",
-          "video_id": null,
-          "capture_date": "2021-10-26 12:15:43.532532",
-          "source_id": 1049,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "All my friends know",
-          "artist_name": "PinkPanthreess",
-          "video_id": null,
-          "capture_date": "2021-10-26 12:15:43.532532",
-          "source_id": 1049,
-          "song_id": null,
-          "duplicate": false
-      }
-  ]
+    {
+        "title": "Be Alive",
+        "artist_name": "Beyoncé",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:07:25.848848",
+        "source_id": 1087,
+        "song_id": 11290,
+        "duplicate": true
+    },
+    {
+        "title": "After Last Night",
+        "artist_name": "Silk Sonic ft. Bootsy Collins & Thundercat",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:07:25.848848",
+        "source_id": 1087,
+        "song_id": 11211,
+        "duplicate": true
+    },
+    {
+        "title": "Already Dead",
+        "artist_name": "Juice WRLD",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:07:25.848848",
+        "source_id": 1087,
+        "song_id": 11193,
+        "duplicate": true
+    },
+    {
+        "title": "Bad Man (Smooth Criminal)",
+        "artist_name": "Polo G",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:07:25.849849",
+        "source_id": 1087,
+        "song_id": 11200,
+        "duplicate": true
+    },
+    {
+        "title": "Outlawz",
+        "artist_name": "Rick Ross ft. Jazmine Sullivan & 21 Savage",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:07:25.849849",
+        "source_id": 1087,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "La Fama",
+        "artist_name": "Rosalía ft. The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:07:25.849849",
+        "source_id": 1087,
+        "song_id": 11224,
+        "duplicate": true
+    },
+    {
+        "title": "Squeeze",
+        "artist_name": "Fivio Foreign",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:07:25.849849",
+        "source_id": 1087,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sticked Up",
+        "artist_name": "DaBaby ft. 21 Savage",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:07:25.849849",
+        "source_id": 1087,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lion Eyes",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2022-01-01 04:07:25.849849",
+        "source_id": 1087,
+        "song_id": null,
+        "duplicate": false
+    }
+]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -193,11 +220,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Bubbly', 'Young Thug ft. Drake & Travis Scott', NULL),
-  ('Pissed Me Off', 'Lil Durk', NULL),
-  ('Ex for a Reason', 'Summer Waker ft. JT', NULL),
-  ('Buzz Me In', 'Remi Wolf', NULL),
-  ('All my friends know', 'PinkPanthreess', NULL)
+  ('Outlawz', 'Rick Ross ft. Jazmine Sullivan & 21 Savage', NULL),
+  ('Squeeze', 'Fivio Foreign', NULL),
+  ('Sticked Up', 'DaBaby ft. 21 Savage', NULL),
+  ('Lion Eyes', 'Lil Durk', NULL)
   ;
 
    // Update to song table
@@ -208,7 +234,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11128; // SELECT last_insert_rowid();
+  song_id = 11349; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -248,12 +274,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-10-26 12:15:43.530530', '1049', '11124'),
-  ('2021-10-26 12:15:43.532532', '1049', '11115'),
-  ('2021-10-26 12:15:43.532532', '1049', '11125'),
-  ('2021-10-26 12:15:43.532532', '1049', '11126'),
-  ('2021-10-26 12:15:43.532532', '1049', '11127'),
-  ('2021-10-26 12:15:43.532532', '1049', '11128')
+  ('2022-01-01 04:07:25.848848', '1087', '11290'),
+  ('2022-01-01 04:07:25.848848', '1087', '11211'),
+  ('2022-01-01 04:07:25.848848', '1087', '11193'),
+  ('2022-01-01 04:07:25.849849', '1087', '11200'),
+  ('2022-01-01 04:07:25.849849', '1087', '11346'),
+  ('2022-01-01 04:07:25.849849', '1087', '11224'),
+  ('2022-01-01 04:07:25.849849', '1087', '11347'),
+  ('2022-01-01 04:07:25.849849', '1087', '11348'),
+  ('2022-01-01 04:07:25.849849', '1087', '11349')
   ;
 
   // Update to source_song table
