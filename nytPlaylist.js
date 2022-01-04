@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Cécile McLorin Salvant Branches Out, and 7 More New Songs', '2021-12-17 12:15:46.000000', 'https://www.nytimes.com/2021/12/17/arts/music/playlist-cecile-mclorin-salvant-fka-twigs-weeknd.html');
+    ('New York Times', 'The Playlist', '15 Songs We Almost Missed This Year', '2022-01-04 01:21:14.000000', 'https://www.nytimes.com/2021/12/31/arts/music/playlist-songs-almost-missed.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1068; // SELECT last_insert_rowid();
+  source_id = 1092; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,65 +100,92 @@
   songsData =
   [
     {
-        "title": "B-Side",
-        "artist_name": "Leon Bridges and Khruangbin",
+        "title": "La Perla",
+        "artist_name": "Sofia Kourtesis",
         "video_id": null,
-        "capture_date": "2022-01-01 01:38:17.227227",
-        "source_id": 1068,
+        "capture_date": "2022-01-04 02:45:02.465465",
+        "source_id": 1092,
+        "song_id": 9978,
+        "duplicate": true
+    },
+    {
+        "title": "Adiwele",
+        "artist_name": "Young Stunna featuring Kabza De Small and DJ Maphorisa",
+        "video_id": null,
+        "capture_date": "2022-01-04 02:45:02.466466",
+        "source_id": 1092,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Walker",
-        "artist_name": "Animal Collective",
+        "title": "Paul Bearer",
+        "artist_name": "BabyTron",
         "video_id": null,
-        "capture_date": "2022-01-01 01:38:17.227227",
-        "source_id": 1068,
+        "capture_date": "2022-01-04 02:45:02.466466",
+        "source_id": 1092,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sorry",
-        "artist_name": "Tierra Whack",
+        "title": "Wow",
+        "artist_name": "Mabiland",
         "video_id": null,
-        "capture_date": "2022-01-01 01:38:17.227227",
-        "source_id": 1068,
+        "capture_date": "2022-01-04 02:45:02.466466",
+        "source_id": 1092,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tears in the Club",
-        "artist_name": "FKA twigs featuring the Weeknd",
+        "title": "Touchable",
+        "artist_name": "Remble",
         "video_id": null,
-        "capture_date": "2022-01-01 01:38:17.227227",
-        "source_id": 1068,
+        "capture_date": "2022-01-04 02:45:02.466466",
+        "source_id": 1092,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "M&M",
-        "artist_name": "Rvssian and Future featuring Lil Baby",
+        "title": "Wilder Days",
+        "artist_name": "Morgan Wade",
         "video_id": null,
-        "capture_date": "2022-01-01 01:38:17.228228",
-        "source_id": 1068,
+        "capture_date": "2022-01-04 02:45:02.466466",
+        "source_id": 1092,
+        "song_id": 11414,
+        "duplicate": true
+    },
+    {
+        "title": "Anjos Tronchos",
+        "artist_name": "Caetano Veloso",
+        "video_id": null,
+        "capture_date": "2022-01-04 02:45:02.466466",
+        "source_id": 1092,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dia",
-        "artist_name": "Tyondai Braxton",
+        "title": "Tampa",
+        "artist_name": "Cico P",
         "video_id": null,
-        "capture_date": "2022-01-01 01:38:17.228228",
-        "source_id": 1068,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-01-04 02:45:02.466466",
+        "source_id": 1092,
+        "song_id": 10346,
+        "duplicate": true
     },
     {
-        "title": "More Than Friends",
-        "artist_name": "24kGoldn",
+        "title": "Hard Drive",
+        "artist_name": "Cassandra Jenkins",
         "video_id": null,
-        "capture_date": "2022-01-01 01:38:17.228228",
-        "source_id": 1068,
+        "capture_date": "2022-01-04 02:45:02.467467",
+        "source_id": 1092,
+        "song_id": 9843,
+        "duplicate": true
+    },
+    {
+        "title": "Aztec Glue",
+        "artist_name": "Ran Cap Duoi",
+        "video_id": null,
+        "capture_date": "2022-01-04 02:45:02.467467",
+        "source_id": 1092,
         "song_id": null,
         "duplicate": false
     }
@@ -201,13 +228,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('B-Side', 'Leon Bridges and Khruangbin', NULL),
-  ('Walker', 'Animal Collective', NULL),
-  ('Sorry', 'Tierra Whack', NULL),
-  ('Tears in the Club', 'FKA twigs featuring the Weeknd', NULL),
-  ('M&M', 'Rvssian and Future featuring Lil Baby', NULL),
-  ('Dia', 'Tyondai Braxton', NULL),
-  ('More Than Friends', '24kGoldn', NULL)
+  ('Adiwele', 'Young Stunna featuring Kabza De Small and DJ Maphorisa', NULL),
+  ('Paul Bearer', 'BabyTron', NULL),
+  ('Wow', 'Mabiland', NULL),
+  ('Touchable', 'Remble', NULL),
+  ('Anjos Tronchos', 'Caetano Veloso', NULL),
+  ('Aztec Glue', 'Ran Cap Duoi', NULL)
   ;
 
    // Update to song table
@@ -218,7 +244,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11336; // SELECT last_insert_rowid();
+  song_id = 11435; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -258,13 +284,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-01 01:38:17.227227', '1068', '11330'),
-  ('2022-01-01 01:38:17.227227', '1068', '11331'),
-  ('2022-01-01 01:38:17.227227', '1068', '11332'),
-  ('2022-01-01 01:38:17.227227', '1068', '11333'),
-  ('2022-01-01 01:38:17.228228', '1068', '11334'),
-  ('2022-01-01 01:38:17.228228', '1068', '11335'),
-  ('2022-01-01 01:38:17.228228', '1068', '11336')
+  ('2022-01-04 02:45:02.465465', '1092', '9978'),
+  ('2022-01-04 02:45:02.466466', '1092', '11430'),
+  ('2022-01-04 02:45:02.466466', '1092', '11431'),
+  ('2022-01-04 02:45:02.466466', '1092', '11432'),
+  ('2022-01-04 02:45:02.466466', '1092', '11433'),
+  ('2022-01-04 02:45:02.466466', '1092', '11414'),
+  ('2022-01-04 02:45:02.466466', '1092', '11434'),
+  ('2022-01-04 02:45:02.466466', '1092', '10346'),
+  ('2022-01-04 02:45:02.467467', '1092', '9843'),
+  ('2022-01-04 02:45:02.467467', '1092', '11435')
   ;
 
   // Update to source_song table
