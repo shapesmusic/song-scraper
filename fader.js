@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'Week of December 22, 2021', '2021-12-22 12:00:00.000000', 'https://www.thefader.com/2021/12/22/songs-you-need-fka-twigs-tierra-whack-chief-keef');
+    ('The Fader', '10 songs you need in your life this week', 'Week of January 05, 2022', '2022-01-05 12:00:00.000000', 'https://www.thefader.com/2022/01/05/songs-you-need-zannie-mike-ethan-flynn');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1091; // SELECT last_insert_rowid();
+  source_id = 1097; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -65,7 +65,7 @@
   songsData = [];
 
   for (var i=0; i<elements.length; i++){
-    title = elements[i].innerText.match(/"(.*?)"/)[1]; // may need " or “” type quotation marks
+    title = elements[i].innerText.match(/“(.*?)”/)[1]; // may need " or “” type quotation marks
     artist_name = elements[i].innerText.match(/– ([\s\S]*)$/)[1] // may need " or “ type quotation marks
     video_id = null
       // replace null with below to grab video IDs (when all songs are YT)
@@ -94,98 +94,98 @@
 // Step 3:  Stage songsData,
 //          find & set any duplicate songs to true,
 //          add song_ids for duplicates
-//          find and replace with "ft."
+//          find and replace fe~at. with "ft."
 //
 
   songsData =
   [
     {
-        "title": "Tears In The Club",
-        "artist_name": "FKA twigs ft. The Weeknd",
+        "title": "mechanical bull",
+        "artist_name": "zannie",
         "video_id": null,
-        "capture_date": "2022-01-04 11:59:21.481481",
-        "source_id": 1091,
-        "song_id": 11333,
-        "duplicate": true
-    },
-    {
-        "title": "Tuxedo",
-        "artist_name": "Chief Keef ft. Tadoe",
-        "video_id": null,
-        "capture_date": "2022-01-04 11:59:21.481481",
-        "source_id": 1091,
+        "capture_date": "2022-01-12 09:23:12.827827",
+        "source_id": 1097,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Butterflies",
-        "artist_name": "MAX featuring FLETCHER",
+        "title": "same",
+        "artist_name": "Claire Rousay and More Eaze",
         "video_id": null,
-        "capture_date": "2022-01-04 11:59:21.481481",
-        "source_id": 1091,
+        "capture_date": "2022-01-12 09:23:12.828828",
+        "source_id": 1097,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "On Call",
-        "artist_name": "Nija",
+        "title": "In My World",
+        "artist_name": "MIKE",
         "video_id": null,
-        "capture_date": "2022-01-04 11:59:21.481481",
-        "source_id": 1091,
+        "capture_date": "2022-01-12 09:23:12.828828",
+        "source_id": 1097,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cutting Onions",
-        "artist_name": "Tierra Whack",
+        "title": "99 Cent",
+        "artist_name": "Valee & CHASETHEMONEY ft. Lil Stl",
         "video_id": null,
-        "capture_date": "2022-01-04 11:59:21.482482",
-        "source_id": 1091,
+        "capture_date": "2022-01-12 09:23:12.828828",
+        "source_id": 1097,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Moth In The Flame",
-        "artist_name": "Boldy James & The Alchemist",
+        "title": "The Killing Womb",
+        "artist_name": "Vein.fm",
         "video_id": null,
-        "capture_date": "2022-01-04 11:59:21.482482",
-        "source_id": 1091,
+        "capture_date": "2022-01-12 09:23:12.828828",
+        "source_id": 1097,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Les Cerfs",
-        "artist_name": "Nick Cave & Warren Ellis",
+        "title": "4th & Cherry",
+        "artist_name": "Seafood Sam",
         "video_id": null,
-        "capture_date": "2022-01-04 11:59:21.482482",
-        "source_id": 1091,
+        "capture_date": "2022-01-12 09:23:12.828828",
+        "source_id": 1097,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dollar Signs",
-        "artist_name": "YGTUT ft. Michael da Vinci",
+        "title": "Happy New Year",
+        "artist_name": "Let's Eat Grandma",
         "video_id": null,
-        "capture_date": "2022-01-04 11:59:21.482482",
-        "source_id": 1091,
+        "capture_date": "2022-01-12 09:23:12.828828",
+        "source_id": 1097,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Will You Be? (CFCF Remix)",
-        "artist_name": "Baltra",
+        "title": "No Signal",
+        "artist_name": "Muni Long",
         "video_id": null,
-        "capture_date": "2022-01-04 11:59:21.482482",
-        "source_id": 1091,
+        "capture_date": "2022-01-12 09:23:12.828828",
+        "source_id": 1097,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fastest Star (Julia Holter Remix)",
-        "artist_name": "Beverly Glenn-Copeland",
+        "title": "Superstition",
+        "artist_name": "Ethan P. Flynn and Vegyn",
         "video_id": null,
-        "capture_date": "2022-01-04 11:59:21.482482",
-        "source_id": 1091,
+        "capture_date": "2022-01-12 09:23:12.828828",
+        "source_id": 1097,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Inhalation of God",
+        "artist_name": "Prolaps",
+        "video_id": null,
+        "capture_date": "2022-01-12 09:23:12.828828",
+        "source_id": 1097,
         "song_id": null,
         "duplicate": false
     }
@@ -228,15 +228,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Tuxedo', 'Chief Keef ft. Tadoe', NULL),
-  ('Butterflies', 'MAX featuring FLETCHER', NULL),
-  ('On Call', 'Nija', NULL),
-  ('Cutting Onions', 'Tierra Whack', NULL),
-  ('Moth In The Flame', 'Boldy James & The Alchemist', NULL),
-  ('Les Cerfs', 'Nick Cave & Warren Ellis', NULL),
-  ('Dollar Signs', 'YGTUT ft. Michael da Vinci', NULL),
-  ('Will You Be? (CFCF Remix)', 'Baltra', NULL),
-  ('Fastest Star (Julia Holter Remix)', 'Beverly Glenn-Copeland', NULL)
+  ('mechanical bull', 'zannie', NULL),
+  ('same', 'Claire Rousay and More Eaze', NULL),
+  ('In My World', 'MIKE', NULL),
+  ('99 Cent', 'Valee & CHASETHEMONEY feat. Lil Stl', NULL),
+  ('The Killing Womb', 'Vein.fm', NULL),
+  ('4th & Cherry', 'Seafood Sam', NULL),
+  ('Happy New Year', 'Let’s Eat Grandma', NULL),
+  ('No Signal', 'Muni Long', NULL),
+  ('Superstition', 'Ethan P. Flynn and Vegyn', NULL),
+  ('Inhalation of God', 'Prolaps', NULL)
   ;
 
    // Update to song table
@@ -247,7 +248,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11429; // SELECT last_insert_rowid();
+  song_id = 11476; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -287,16 +288,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-04 11:59:21.481481', '1091', '11333'),
-  ('2022-01-04 11:59:21.481481', '1091', '11421'),
-  ('2022-01-04 11:59:21.481481', '1091', '11422'),
-  ('2022-01-04 11:59:21.481481', '1091', '11423'),
-  ('2022-01-04 11:59:21.482482', '1091', '11424'),
-  ('2022-01-04 11:59:21.482482', '1091', '11425'),
-  ('2022-01-04 11:59:21.482482', '1091', '11426'),
-  ('2022-01-04 11:59:21.482482', '1091', '11427'),
-  ('2022-01-04 11:59:21.482482', '1091', '11428'),
-  ('2022-01-04 11:59:21.482482', '1091', '11429')
+  ('2022-01-12 09:23:12.827827', '1097', '11467'),
+  ('2022-01-12 09:23:12.828828', '1097', '11468'),
+  ('2022-01-12 09:23:12.828828', '1097', '11469'),
+  ('2022-01-12 09:23:12.828828', '1097', '11470'),
+  ('2022-01-12 09:23:12.828828', '1097', '11471'),
+  ('2022-01-12 09:23:12.828828', '1097', '11472'),
+  ('2022-01-12 09:23:12.828828', '1097', '11473'),
+  ('2022-01-12 09:23:12.828828', '1097', '11474'),
+  ('2022-01-12 09:23:12.828828', '1097', '11475'),
+  ('2022-01-12 09:23:12.828828', '1097', '11476')
   ;
 
   // Update to source_song table
