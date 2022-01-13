@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', '15 Songs We Almost Missed This Year', '2022-01-04 01:21:14.000000', 'https://www.nytimes.com/2021/12/31/arts/music/playlist-songs-almost-missed.html');
+    ('New York Times', 'The Playlist', 'A Radiohead Spinoff’s Snarling Single, and 8 More New Songs', '2022-01-07 11:35:38.000000', 'https://www.nytimes.com/2022/01/07/arts/music/playlist-thom-yorke-amber-mark.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1092; // SELECT last_insert_rowid();
+  source_id = 1095; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,92 +100,65 @@
   songsData =
   [
     {
-        "title": "La Perla",
-        "artist_name": "Sofia Kourtesis",
+        "title": "You Will Never Work in Television Again",
+        "artist_name": "The Smile",
         "video_id": null,
-        "capture_date": "2022-01-04 02:45:02.465465",
-        "source_id": 1092,
-        "song_id": 9978,
-        "duplicate": true
-    },
-    {
-        "title": "Adiwele",
-        "artist_name": "Young Stunna featuring Kabza De Small and DJ Maphorisa",
-        "video_id": null,
-        "capture_date": "2022-01-04 02:45:02.466466",
-        "source_id": 1092,
+        "capture_date": "2022-01-12 09:05:40.106106",
+        "source_id": 1095,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Paul Bearer",
-        "artist_name": "BabyTron",
+        "title": "Most Men (A Colors Show)",
+        "artist_name": "Amber Mark",
         "video_id": null,
-        "capture_date": "2022-01-04 02:45:02.466466",
-        "source_id": 1092,
+        "capture_date": "2022-01-12 09:05:40.108108",
+        "source_id": 1095,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wow",
-        "artist_name": "Mabiland",
+        "title": "Champagne Problems",
+        "artist_name": "Inna",
         "video_id": null,
-        "capture_date": "2022-01-04 02:45:02.466466",
-        "source_id": 1092,
+        "capture_date": "2022-01-12 09:05:40.108108",
+        "source_id": 1095,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Touchable",
-        "artist_name": "Remble",
+        "title": "Los Illuminaty",
+        "artist_name": "Rochy RD and Anuel AA",
         "video_id": null,
-        "capture_date": "2022-01-04 02:45:02.466466",
-        "source_id": 1092,
+        "capture_date": "2022-01-12 09:05:40.108108",
+        "source_id": 1095,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wilder Days",
-        "artist_name": "Morgan Wade",
+        "title": "Who Has Seen the Wind?",
+        "artist_name": "David Byrne and Yo La Tengo",
         "video_id": null,
-        "capture_date": "2022-01-04 02:45:02.466466",
-        "source_id": 1092,
-        "song_id": 11414,
-        "duplicate": true
-    },
-    {
-        "title": "Anjos Tronchos",
-        "artist_name": "Caetano Veloso",
-        "video_id": null,
-        "capture_date": "2022-01-04 02:45:02.466466",
-        "source_id": 1092,
+        "capture_date": "2022-01-12 09:05:40.108108",
+        "source_id": 1095,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tampa",
-        "artist_name": "Cico P",
+        "title": "J’s Lullaby (Darlin’ I’d Wait for You)",
+        "artist_name": "Delaney Bailey",
         "video_id": null,
-        "capture_date": "2022-01-04 02:45:02.466466",
-        "source_id": 1092,
-        "song_id": 10346,
-        "duplicate": true
+        "capture_date": "2022-01-12 09:05:40.108108",
+        "source_id": 1095,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Hard Drive",
-        "artist_name": "Cassandra Jenkins",
+        "title": "Upstairs Flat",
+        "artist_name": "Burial",
         "video_id": null,
-        "capture_date": "2022-01-04 02:45:02.467467",
-        "source_id": 1092,
-        "song_id": 9843,
-        "duplicate": true
-    },
-    {
-        "title": "Aztec Glue",
-        "artist_name": "Ran Cap Duoi",
-        "video_id": null,
-        "capture_date": "2022-01-04 02:45:02.467467",
-        "source_id": 1092,
+        "capture_date": "2022-01-12 09:05:40.108108",
+        "source_id": 1095,
         "song_id": null,
         "duplicate": false
     }
@@ -228,12 +201,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Adiwele', 'Young Stunna featuring Kabza De Small and DJ Maphorisa', NULL),
-  ('Paul Bearer', 'BabyTron', NULL),
-  ('Wow', 'Mabiland', NULL),
-  ('Touchable', 'Remble', NULL),
-  ('Anjos Tronchos', 'Caetano Veloso', NULL),
-  ('Aztec Glue', 'Ran Cap Duoi', NULL)
+  ('You Will Never Work in Television Again', 'The Smile', NULL),
+  ('Most Men (A Colors Show)', 'Amber Mark', NULL),
+  ('Champagne Problems', 'Inna', NULL),
+  ('Los Illuminaty', 'Rochy RD and Anuel AA', NULL),
+  ('Who Has Seen the Wind?', 'David Byrne and Yo La Tengo', NULL),
+  ('J’s Lullaby (Darlin’ I’d Wait for You)', 'Delaney Bailey', NULL),
+  ('Upstairs Flat', 'Burial', NULL)
   ;
 
    // Update to song table
@@ -244,7 +218,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11435; // SELECT last_insert_rowid();
+  song_id = 11459; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -284,16 +258,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-04 02:45:02.465465', '1092', '9978'),
-  ('2022-01-04 02:45:02.466466', '1092', '11430'),
-  ('2022-01-04 02:45:02.466466', '1092', '11431'),
-  ('2022-01-04 02:45:02.466466', '1092', '11432'),
-  ('2022-01-04 02:45:02.466466', '1092', '11433'),
-  ('2022-01-04 02:45:02.466466', '1092', '11414'),
-  ('2022-01-04 02:45:02.466466', '1092', '11434'),
-  ('2022-01-04 02:45:02.466466', '1092', '10346'),
-  ('2022-01-04 02:45:02.467467', '1092', '9843'),
-  ('2022-01-04 02:45:02.467467', '1092', '11435')
+  ('2022-01-12 09:05:40.106106', '1095', '11453'),
+  ('2022-01-12 09:05:40.108108', '1095', '11454'),
+  ('2022-01-12 09:05:40.108108', '1095', '11455'),
+  ('2022-01-12 09:05:40.108108', '1095', '11456'),
+  ('2022-01-12 09:05:40.108108', '1095', '11457'),
+  ('2022-01-12 09:05:40.108108', '1095', '11458'),
+  ('2022-01-12 09:05:40.108108', '1095', '11459')
   ;
 
   // Update to source_song table

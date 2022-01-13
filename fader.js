@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'Week of January 05, 2022', '2022-01-05 12:00:00.000000', 'https://www.thefader.com/2022/01/05/songs-you-need-zannie-mike-ethan-flynn');
+    ('The Fader', '10 songs you need in your life this week', 'Week of January 12, 2022', '2022-01-12 12:00:00.000000', 'https://www.thefader.com/2022/01/12/songs-you-need-kae-tempest-destroyer-sasami');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1097; // SELECT last_insert_rowid();
+  source_id = 1098; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -65,7 +65,7 @@
   songsData = [];
 
   for (var i=0; i<elements.length; i++){
-    title = elements[i].innerText.match(/“(.*?)”/)[1]; // may need " or “” type quotation marks
+    title = elements[i].innerText.match(/"(.*?)"/)[1]; // may need " or “” type quotation marks (usually "), and – style dash
     artist_name = elements[i].innerText.match(/– ([\s\S]*)$/)[1] // may need " or “ type quotation marks
     video_id = null
       // replace null with below to grab video IDs (when all songs are YT)
@@ -100,92 +100,92 @@
   songsData =
   [
     {
-        "title": "mechanical bull",
-        "artist_name": "zannie",
+        "title": "Tintoretto, It's for You",
+        "artist_name": "Destroyer",
         "video_id": null,
-        "capture_date": "2022-01-12 09:23:12.827827",
-        "source_id": 1097,
+        "capture_date": "2022-01-12 09:31:27.516516",
+        "source_id": 1098,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "same",
-        "artist_name": "Claire Rousay and More Eaze",
+        "title": "Say It",
+        "artist_name": "SASAMI",
         "video_id": null,
-        "capture_date": "2022-01-12 09:23:12.828828",
-        "source_id": 1097,
+        "capture_date": "2022-01-12 09:31:27.516516",
+        "source_id": 1098,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In My World",
-        "artist_name": "MIKE",
+        "title": "Doctor, My Eyes",
+        "artist_name": "Khamari",
         "video_id": null,
-        "capture_date": "2022-01-12 09:23:12.828828",
-        "source_id": 1097,
+        "capture_date": "2022-01-12 09:31:27.516516",
+        "source_id": 1098,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "99 Cent",
-        "artist_name": "Valee & CHASETHEMONEY ft. Lil Stl",
+        "title": "Expiration Date",
+        "artist_name": "MICHELLE",
         "video_id": null,
-        "capture_date": "2022-01-12 09:23:12.828828",
-        "source_id": 1097,
+        "capture_date": "2022-01-12 09:31:27.516516",
+        "source_id": 1098,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Killing Womb",
-        "artist_name": "Vein.fm",
+        "title": "Less Than Zero",
+        "artist_name": "The Weeknd",
         "video_id": null,
-        "capture_date": "2022-01-12 09:23:12.828828",
-        "source_id": 1097,
+        "capture_date": "2022-01-12 09:31:27.516516",
+        "source_id": 1098,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "4th & Cherry",
-        "artist_name": "Seafood Sam",
+        "title": "More Pressure",
+        "artist_name": "Kae Tempest ft. Kevin Abstract",
         "video_id": null,
-        "capture_date": "2022-01-12 09:23:12.828828",
-        "source_id": 1097,
+        "capture_date": "2022-01-12 09:31:27.517517",
+        "source_id": 1098,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Happy New Year",
-        "artist_name": "Let's Eat Grandma",
+        "title": "One Way Lover",
+        "artist_name": "Eric Nam",
         "video_id": null,
-        "capture_date": "2022-01-12 09:23:12.828828",
-        "source_id": 1097,
+        "capture_date": "2022-01-12 09:31:27.517517",
+        "source_id": 1098,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Signal",
-        "artist_name": "Muni Long",
+        "title": "Spin-Off",
+        "artist_name": "Big Cheeko ft. Mach-Hommy",
         "video_id": null,
-        "capture_date": "2022-01-12 09:23:12.828828",
-        "source_id": 1097,
+        "capture_date": "2022-01-12 09:31:27.517517",
+        "source_id": 1098,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Superstition",
-        "artist_name": "Ethan P. Flynn and Vegyn",
+        "title": "Lonely",
+        "artist_name": "CMAT",
         "video_id": null,
-        "capture_date": "2022-01-12 09:23:12.828828",
-        "source_id": 1097,
+        "capture_date": "2022-01-12 09:31:27.517517",
+        "source_id": 1098,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Inhalation of God",
-        "artist_name": "Prolaps",
+        "title": "Gameboy",
+        "artist_name": "Hook",
         "video_id": null,
-        "capture_date": "2022-01-12 09:23:12.828828",
-        "source_id": 1097,
+        "capture_date": "2022-01-12 09:31:27.517517",
+        "source_id": 1098,
         "song_id": null,
         "duplicate": false
     }
@@ -228,16 +228,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('mechanical bull', 'zannie', NULL),
-  ('same', 'Claire Rousay and More Eaze', NULL),
-  ('In My World', 'MIKE', NULL),
-  ('99 Cent', 'Valee & CHASETHEMONEY feat. Lil Stl', NULL),
-  ('The Killing Womb', 'Vein.fm', NULL),
-  ('4th & Cherry', 'Seafood Sam', NULL),
-  ('Happy New Year', 'Let’s Eat Grandma', NULL),
-  ('No Signal', 'Muni Long', NULL),
-  ('Superstition', 'Ethan P. Flynn and Vegyn', NULL),
-  ('Inhalation of God', 'Prolaps', NULL)
+  ('Tintoretto, It’s for You', 'Destroyer', NULL),
+  ('Say It', 'SASAMI', NULL),
+  ('Doctor, My Eyes', 'Khamari', NULL),
+  ('Expiration Date', 'MICHELLE', NULL),
+  ('Less Than Zero', 'The Weeknd', NULL),
+  ('More Pressure', 'Kae Tempest ft. Kevin Abstract', NULL),
+  ('One Way Lover', 'Eric Nam', NULL),
+  ('Spin-Off', 'Big Cheeko ft. Mach-Hommy', NULL),
+  ('Lonely', 'CMAT', NULL),
+  ('Gameboy', 'Hook', NULL)
   ;
 
    // Update to song table
@@ -248,7 +248,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11476; // SELECT last_insert_rowid();
+  song_id = 11486; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -288,16 +288,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-12 09:23:12.827827', '1097', '11467'),
-  ('2022-01-12 09:23:12.828828', '1097', '11468'),
-  ('2022-01-12 09:23:12.828828', '1097', '11469'),
-  ('2022-01-12 09:23:12.828828', '1097', '11470'),
-  ('2022-01-12 09:23:12.828828', '1097', '11471'),
-  ('2022-01-12 09:23:12.828828', '1097', '11472'),
-  ('2022-01-12 09:23:12.828828', '1097', '11473'),
-  ('2022-01-12 09:23:12.828828', '1097', '11474'),
-  ('2022-01-12 09:23:12.828828', '1097', '11475'),
-  ('2022-01-12 09:23:12.828828', '1097', '11476')
+  ('2022-01-12 09:31:27.516516', '1098', '11477'),
+  ('2022-01-12 09:31:27.516516', '1098', '11478'),
+  ('2022-01-12 09:31:27.516516', '1098', '11479'),
+  ('2022-01-12 09:31:27.516516', '1098', '11480'),
+  ('2022-01-12 09:31:27.516516', '1098', '11481'),
+  ('2022-01-12 09:31:27.517517', '1098', '11482'),
+  ('2022-01-12 09:31:27.517517', '1098', '11483'),
+  ('2022-01-12 09:31:27.517517', '1098', '11484'),
+  ('2022-01-12 09:31:27.517517', '1098', '11485'),
+  ('2022-01-12 09:31:27.517517', '1098', '11486')
   ;
 
   // Update to source_song table

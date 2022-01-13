@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of January 8, 2022', '2022-01-08 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-08');
+    ('Billboard', 'The Hot 100', 'Week of January 15, 2022', '2022-01-15 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-15');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1093; // SELECT last_insert_rowid();
+  source_id = 1094; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -102,79 +102,115 @@
 
   songsData =
   [
-      {
-          "title": "We Don't Talk About Bruno",
-          "artist_name": "Carolina Gaitan, Mauro Castillo, Adassa, Rhenzy Feliz, Diane Guerrero, Stephanie Beatriz & Encanto Cast",
-          "video_id": null,
-          "capture_date": "2022-01-12 08:21:05.628628",
-          "source_id": 1093,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Surface Pressure",
-          "artist_name": "Jessica Darrow",
-          "video_id": null,
-          "capture_date": "2022-01-12 08:21:05.628628",
-          "source_id": 1093,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Christmas Tree",
-          "artist_name": "V",
-          "video_id": null,
-          "capture_date": "2022-01-12 08:21:05.629629",
-          "source_id": 1093,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Hrs And Hrs",
-          "artist_name": "Muni Long",
-          "video_id": null,
-          "capture_date": "2022-01-12 08:21:05.629629",
-          "source_id": 1093,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "I Am Woman",
-          "artist_name": "Emmy Meli",
-          "video_id": null,
-          "capture_date": "2022-01-12 08:21:05.629629",
-          "source_id": 1093,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Pressure",
-          "artist_name": "Ari Lennox",
-          "video_id": null,
-          "capture_date": "2022-01-12 08:21:05.629629",
-          "source_id": 1093,
-          "song_id": 11082,
-          "duplicate": true
-      },
-      {
-          "title": "Beers On Me",
-          "artist_name": "Dierks Bentley, Breland & HARDY",
-          "video_id": null,
-          "capture_date": "2022-01-12 08:21:05.630630",
-          "source_id": 1093,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "23",
-          "artist_name": "Sam Hunt",
-          "video_id": null,
-          "capture_date": "2022-01-12 08:21:05.630630",
-          "source_id": 1093,
-          "song_id": 10946,
-          "duplicate": true
-      }
-  ]
+    {
+        "title": "The Family Madrigal",
+        "artist_name": "Stephanie Beatriz, Olga Merediz & Encanto Cast",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.006006",
+        "source_id": 1094,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "What Else Can I Do?",
+        "artist_name": "Diane Guerrero & Stephanie Beatriz",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.007007",
+        "source_id": 1094,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Flower Shops",
+        "artist_name": "ERNEST ft. Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.007007",
+        "source_id": 1094,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fingers Crossed",
+        "artist_name": "Lauren Spencer-Smith",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.007007",
+        "source_id": 1094,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Waiting On A Miracle",
+        "artist_name": "Stephanie Beatriz",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.007007",
+        "source_id": 1094,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dos Oruguitas",
+        "artist_name": "Sebastian Yatra",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.007007",
+        "source_id": 1094,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "AA",
+        "artist_name": "Walker Hayes",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.007007",
+        "source_id": 1094,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Home Sweet",
+        "artist_name": "Russell Dickerson",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.007007",
+        "source_id": 1094,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Come Back As A Country Boy",
+        "artist_name": "Blake Shelton",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.008008",
+        "source_id": 1094,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Black Ball",
+        "artist_name": "YoungBoy Never Broke Again & Birdman",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.008008",
+        "source_id": 1094,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Love You So",
+        "artist_name": "The Walters",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.008008",
+        "source_id": 1094,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Never Wanted To Be That Girl",
+        "artist_name": "Carly Pearce & Ashley McBryde",
+        "video_id": null,
+        "capture_date": "2022-01-12 08:57:39.008008",
+        "source_id": 1094,
+        "song_id": 10957,
+        "duplicate": true
+    }
+]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -213,12 +249,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('We Don’t Talk About Bruno', 'Carolina Gaitan, Mauro Castillo, Adassa, Rhenzy Feliz, Diane Guerrero, Stephanie Beatriz & Encanto Cast', NULL),
-  ('Surface Pressure', 'Jessica Darrow', NULL),
-  ('Christmas Tree', 'V', NULL),
-  ('Hrs And Hrs', 'Muni Long', NULL),
-  ('I Am Woman', 'Emmy Meli', NULL),
-  ('Beers On Me', 'Dierks Bentley, Breland & HARDY', NULL)
+  ('The Family Madrigal', 'Stephanie Beatriz, Olga Merediz & Encanto Cast', NULL),
+  ('What Else Can I Do?', 'Diane Guerrero & Stephanie Beatriz', NULL),
+  ('Flower Shops', 'ERNEST ft. Morgan Wallen', NULL),
+  ('Fingers Crossed', 'Lauren Spencer-Smith', NULL),
+  ('Waiting On A Miracle', 'Stephanie Beatriz', NULL),
+  ('Dos Oruguitas', 'Sebastian Yatra', NULL),
+  ('AA', 'Walker Hayes', NULL),
+  ('Home Sweet', 'Russell Dickerson', NULL),
+  ('Come Back As A Country Boy', 'Blake Shelton', NULL),
+  ('Black Ball', 'YoungBoy Never Broke Again & Birdman', NULL),
+  ('I Love You So', 'The Walters', NULL)
   ;
 
    // Update to song table
@@ -229,7 +270,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11441; // SELECT last_insert_rowid();
+  song_id = 11452; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -269,14 +310,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-12 08:21:05.628628', '1093', '11436'),
-  ('2022-01-12 08:21:05.628628', '1093', '11437'),
-  ('2022-01-12 08:21:05.629629', '1093', '11438'),
-  ('2022-01-12 08:21:05.629629', '1093', '11439'),
-  ('2022-01-12 08:21:05.629629', '1093', '11440'),
-  ('2022-01-12 08:21:05.629629', '1093', '11082'),
-  ('2022-01-12 08:21:05.630630', '1093', '11441'),
-  ('2022-01-12 08:21:05.630630', '1093', '10946')
+  ('2022-01-12 08:57:39.006006', '1094', '11442'),
+  ('2022-01-12 08:57:39.007007', '1094', '11443'),
+  ('2022-01-12 08:57:39.007007', '1094', '11444'),
+  ('2022-01-12 08:57:39.007007', '1094', '11445'),
+  ('2022-01-12 08:57:39.007007', '1094', '11446'),
+  ('2022-01-12 08:57:39.007007', '1094', '11447'),
+  ('2022-01-12 08:57:39.007007', '1094', '11448'),
+  ('2022-01-12 08:57:39.007007', '1094', '11449'),
+  ('2022-01-12 08:57:39.008008', '1094', '11450'),
+  ('2022-01-12 08:57:39.008008', '1094', '11451'),
+  ('2022-01-12 08:57:39.008008', '1094', '11452'),
+  ('2022-01-12 08:57:39.008008', '1094', '10957')
   ;
 
   // Update to source_song table
