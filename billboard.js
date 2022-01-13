@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of January 1, 2022', '2022-01-01 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-01');
+    ('Billboard', 'The Hot 100', 'Week of January 8, 2022', '2022-01-08 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-08');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1061; // SELECT last_insert_rowid();
+  source_id = 1093; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -102,61 +102,79 @@
 
   songsData =
   [
-    {
-        "title": "Broadway Girls",
-        "artist_name": "Lil Durk ft. Morgan Wallen",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:09:07.684684",
-        "source_id": 1061,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "25 Million",
-        "artist_name": "Roddy Ricch",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:09:07.686686",
-        "source_id": 1061,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Moved To Miami",
-        "artist_name": "Roddy Ricch ft. Lil Baby",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:09:07.686686",
-        "source_id": 1061,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hibachi",
-        "artist_name": "Roddy Ricch ft. Kodak Black & 21 Savage",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:09:07.686686",
-        "source_id": 1061,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Thailand",
-        "artist_name": "Roddy Ricch",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:09:07.686686",
-        "source_id": 1061,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Do It To It",
-        "artist_name": "Acraze ft. Cherish",
-        "video_id": null,
-        "capture_date": "2021-12-30 07:09:07.686686",
-        "source_id": 1061,
-        "song_id": null,
-        "duplicate": false
-    }
-]
+      {
+          "title": "We Don't Talk About Bruno",
+          "artist_name": "Carolina Gaitan, Mauro Castillo, Adassa, Rhenzy Feliz, Diane Guerrero, Stephanie Beatriz & Encanto Cast",
+          "video_id": null,
+          "capture_date": "2022-01-12 08:21:05.628628",
+          "source_id": 1093,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Surface Pressure",
+          "artist_name": "Jessica Darrow",
+          "video_id": null,
+          "capture_date": "2022-01-12 08:21:05.628628",
+          "source_id": 1093,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Christmas Tree",
+          "artist_name": "V",
+          "video_id": null,
+          "capture_date": "2022-01-12 08:21:05.629629",
+          "source_id": 1093,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Hrs And Hrs",
+          "artist_name": "Muni Long",
+          "video_id": null,
+          "capture_date": "2022-01-12 08:21:05.629629",
+          "source_id": 1093,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "I Am Woman",
+          "artist_name": "Emmy Meli",
+          "video_id": null,
+          "capture_date": "2022-01-12 08:21:05.629629",
+          "source_id": 1093,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Pressure",
+          "artist_name": "Ari Lennox",
+          "video_id": null,
+          "capture_date": "2022-01-12 08:21:05.629629",
+          "source_id": 1093,
+          "song_id": 11082,
+          "duplicate": true
+      },
+      {
+          "title": "Beers On Me",
+          "artist_name": "Dierks Bentley, Breland & HARDY",
+          "video_id": null,
+          "capture_date": "2022-01-12 08:21:05.630630",
+          "source_id": 1093,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "23",
+          "artist_name": "Sam Hunt",
+          "video_id": null,
+          "capture_date": "2022-01-12 08:21:05.630630",
+          "source_id": 1093,
+          "song_id": 10946,
+          "duplicate": true
+      }
+  ]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -195,12 +213,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Broadway Girls', 'Lil Durk ft. Morgan Wallen', NULL),
-  ('25 Million', 'Roddy Ricch', NULL),
-  ('Moved To Miami', 'Roddy Ricch ft. Lil Baby', NULL),
-  ('Hibachi', 'Roddy Ricch ft. Kodak Black & 21 Savage', NULL),
-  ('Thailand', 'Roddy Ricch', NULL),
-  ('Do It To It', 'Acraze ft. Cherish', NULL)
+  ('We Don’t Talk About Bruno', 'Carolina Gaitan, Mauro Castillo, Adassa, Rhenzy Feliz, Diane Guerrero, Stephanie Beatriz & Encanto Cast', NULL),
+  ('Surface Pressure', 'Jessica Darrow', NULL),
+  ('Christmas Tree', 'V', NULL),
+  ('Hrs And Hrs', 'Muni Long', NULL),
+  ('I Am Woman', 'Emmy Meli', NULL),
+  ('Beers On Me', 'Dierks Bentley, Breland & HARDY', NULL)
   ;
 
    // Update to song table
@@ -211,7 +229,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11267; // SELECT last_insert_rowid();
+  song_id = 11441; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -251,12 +269,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2021-12-30 07:09:07.684684', '1061', '11262'),
-  ('2021-12-30 07:09:07.686686', '1061', '11263'),
-  ('2021-12-30 07:09:07.686686', '1061', '11264'),
-  ('2021-12-30 07:09:07.686686', '1061', '11265'),
-  ('2021-12-30 07:09:07.686686', '1061', '11266'),
-  ('2021-12-30 07:09:07.686686', '1061', '11267')
+  ('2022-01-12 08:21:05.628628', '1093', '11436'),
+  ('2022-01-12 08:21:05.628628', '1093', '11437'),
+  ('2022-01-12 08:21:05.629629', '1093', '11438'),
+  ('2022-01-12 08:21:05.629629', '1093', '11439'),
+  ('2022-01-12 08:21:05.629629', '1093', '11440'),
+  ('2022-01-12 08:21:05.629629', '1093', '11082'),
+  ('2022-01-12 08:21:05.630630', '1093', '11441'),
+  ('2022-01-12 08:21:05.630630', '1093', '10946')
   ;
 
   // Update to source_song table
