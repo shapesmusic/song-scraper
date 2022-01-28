@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Gunna, Earl Sweatshirt, JID, and More', '2022-01-14 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-gunna-earl-jid/');
+    ('Complex', 'Best New Music This Week', '2 Chainz, YoungBoy Never Broke Again, Key Glock, and More', '2022-01-21 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-2-chainz-youngboy/rod-wave-cold-december');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1102; // SELECT last_insert_rowid();
+  source_id = 1119; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,85 +101,58 @@
   songsData =
   [
     {
-        "title": "P Power",
-        "artist_name": "Gunna ft. Drake",
+        "title": "Pop Music",
+        "artist_name": "2 Chainz ft. Moneybagg Yo & BeatKing",
         "video_id": null,
-        "capture_date": "2022-01-27 06:21:58.125125",
-        "source_id": 1102,
+        "capture_date": "2022-01-27 10:22:31.528528",
+        "source_id": 1119,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fire in the Hole",
-        "artist_name": "Earl Sweatshirt",
+        "title": "Flossin",
+        "artist_name": "YoungBoy Never Broke Again & Internet Money",
         "video_id": null,
-        "capture_date": "2022-01-27 06:21:58.126126",
-        "source_id": 1102,
+        "capture_date": "2022-01-27 10:22:31.529529",
+        "source_id": 1119,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Champagne Glasses",
-        "artist_name": "Cordae ft. Freddie Gibbs & Stevie Wonder",
+        "title": "Proud",
+        "artist_name": "Key Glock & Paper Route Empire",
         "video_id": null,
-        "capture_date": "2022-01-27 06:21:58.126126",
-        "source_id": 1102,
+        "capture_date": "2022-01-27 10:22:31.529529",
+        "source_id": 1119,
+        "song_id": 11558,
+        "duplicate": true
+    },
+    {
+        "title": "So Cool",
+        "artist_name": "Big K.R.I.T",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:22:31.529529",
+        "source_id": 1119,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Surround Sound",
-        "artist_name": "JID ft. 21 Savage & Baby Tate",
+        "title": "Lick",
+        "artist_name": "Shenseea ft. Megan Thee Stallion",
         "video_id": null,
-        "capture_date": "2022-01-27 06:21:58.127127",
-        "source_id": 1102,
+        "capture_date": "2022-01-27 10:22:31.529529",
+        "source_id": 1119,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Rev3nge",
-        "artist_name": "Joey Badass",
+        "title": "Cold December",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-01-27 06:21:58.127127",
-        "source_id": 1102,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "One Shot",
-        "artist_name": "Murda Beatz ft. Wale & Blxst",
-        "video_id": null,
-        "capture_date": "2022-01-27 06:21:58.127127",
-        "source_id": 1102,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Iffy",
-        "artist_name": "Chris Brown",
-        "video_id": null,
-        "capture_date": "2022-01-27 06:21:58.127127",
-        "source_id": 1102,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Come My Way",
-        "artist_name": "Saba ft. Krayzie Bone",
-        "video_id": null,
-        "capture_date": "2022-01-27 06:21:58.127127",
-        "source_id": 1102,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "All Eyes On Me",
-        "artist_name": "EarthGang",
-        "video_id": null,
-        "capture_date": "2022-01-27 06:21:58.127127",
-        "source_id": 1102,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-01-27 10:22:31.529529",
+        "source_id": 1119,
+        "song_id": 11547,
+        "duplicate": true
     }
 ]
 
@@ -220,15 +193,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('P Power', 'Gunna ft. Drake', NULL),
-  ('Fire in the Hole', 'Earl Sweatshirt', NULL),
-  ('Champagne Glasses', 'Cordae ft. Freddie Gibbs & Stevie Wonder', NULL),
-  ('Surround Sound', 'JID ft. 21 Savage & Baby Tate', NULL),
-  ('The Rev3nge', 'Joey Badass', NULL),
-  ('One Shot', 'Murda Beatz ft. Wale & Blxst', NULL),
-  ('Iffy', 'Chris Brown', NULL),
-  ('Come My Way', 'Saba ft. Krayzie Bone', NULL),
-  ('All Eyes On Me', 'EarthGang', NULL)
+  ('Pop Music', '2 Chainz ft. Moneybagg Yo & BeatKing', NULL),
+  ('Flossin', 'YoungBoy Never Broke Again & Internet Money', NULL),
+  ('So Cool', 'Big K.R.I.T', NULL),
+  ('Lick', 'Shenseea ft. Megan Thee Stallion', NULL)
   ;
 
    // Update to song table
@@ -239,7 +207,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11532; // SELECT last_insert_rowid();
+  song_id = 11577; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +247,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-27 06:21:58.125125', '1102', '11524'),
-  ('2022-01-27 06:21:58.126126', '1102', '11525'),
-  ('2022-01-27 06:21:58.126126', '1102', '11526'),
-  ('2022-01-27 06:21:58.127127', '1102', '11527'),
-  ('2022-01-27 06:21:58.127127', '1102', '11528'),
-  ('2022-01-27 06:21:58.127127', '1102', '11529'),
-  ('2022-01-27 06:21:58.127127', '1102', '11530'),
-  ('2022-01-27 06:21:58.127127', '1102', '11531'),
-  ('2022-01-27 06:21:58.127127', '1102', '11532')
+  ('2022-01-27 10:22:31.528528', '1119', '11574'),
+  ('2022-01-27 10:22:31.529529', '1119', '11575'),
+  ('2022-01-27 10:22:31.529529', '1119', '11558'),
+  ('2022-01-27 10:22:31.529529', '1119', '11576'),
+  ('2022-01-27 10:22:31.529529', '1119', '11577'),
+  ('2022-01-27 10:22:31.529529', '1119', '11547')
   ;
 
   // Update to source_song table

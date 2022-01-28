@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 237 // from the chart page
+  fader_no = 238 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 237 Week of January 19, 2022', '2022-01-19 12:00:00.000000', 'https://www.thefader.com/2022/01/19/songs-you-need-gunna-molly-nilsson-jenny-hval');
+    ('The Fader', '10 songs you need in your life this week', 'No. 238 Week of January 26, 2022', '2022-01-26 12:00:00.000000', 'https://www.thefader.com/2022/01/26/songs-you-need-baby-face-ray-rod-wave-toro-t-moy');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1103; // SELECT last_insert_rowid();
+  source_id = 1120; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -67,7 +67,7 @@
   songsData = [];
 
   for (var i=0; i<elements.length; i++){
-    title = elements[i].innerText.match(/"(.*?)"/)[1]; // may need " or “” type quotation marks (usually "), and – style dash
+    title = elements[i].innerText.match(/“(.*?)”/)[1]; // may need " or “” type quotation marks (usually "), and – style dash
     artist_name = elements[i].innerText.match(/– ([\s\S]*)$/)[1] // may need " or “ type quotation marks
     video_id = null
       // replace null with below to grab video IDs (when all songs are YT)
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Avoid Heaven",
-        "artist_name": "Molly Nilsson",
+        "title": "Cold December",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-01-27 06:31:52.369369",
-        "source_id": 1103,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Call Me",
-        "artist_name": "Ivy Sole",
-        "video_id": null,
-        "capture_date": "2022-01-27 06:31:52.370370",
-        "source_id": 1103,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "pushin P",
-        "artist_name": "Gunna ft. Young Thug and Future",
-        "video_id": null,
-        "capture_date": "2022-01-27 06:31:52.370370",
-        "source_id": 1103,
-        "song_id": 11461,
+        "capture_date": "2022-01-27 10:29:57.520520",
+        "source_id": 1120,
+        "song_id": 11547,
         "duplicate": true
     },
     {
-        "title": "Year of Love",
-        "artist_name": "Jenny Hval",
+        "title": "Postman",
+        "artist_name": "Toro Y Moi",
         "video_id": null,
-        "capture_date": "2022-01-27 06:31:52.370370",
-        "source_id": 1103,
+        "capture_date": "2022-01-27 10:29:57.522522",
+        "source_id": 1120,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Best Wishes",
-        "artist_name": "find-joy",
+        "title": "Sincerely Face",
+        "artist_name": "Babyface Ray",
         "video_id": null,
-        "capture_date": "2022-01-27 06:31:52.370370",
-        "source_id": 1103,
+        "capture_date": "2022-01-27 10:29:57.522522",
+        "source_id": 1120,
+        "song_id": 11566,
+        "duplicate": true
+    },
+    {
+        "title": "BOY DESTROYER",
+        "artist_name": "LustSickPuppy",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:29:57.522522",
+        "source_id": 1120,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Beyond Good and Evil",
-        "artist_name": "Boris",
+        "title": "Amygdala",
+        "artist_name": "Ecco2k and Bladee",
         "video_id": null,
-        "capture_date": "2022-01-27 06:31:52.370370",
-        "source_id": 1103,
+        "capture_date": "2022-01-27 10:29:57.522522",
+        "source_id": 1120,
+        "song_id": 11556,
+        "duplicate": true
+    },
+    {
+        "title": "How Long",
+        "artist_name": "Tove Lo",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:29:57.522522",
+        "source_id": 1120,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Packs and Potions",
-        "artist_name": "HAZEY",
+        "title": "home",
+        "artist_name": "Two Shell",
         "video_id": null,
-        "capture_date": "2022-01-27 06:31:52.370370",
-        "source_id": 1103,
+        "capture_date": "2022-01-27 10:29:57.522522",
+        "source_id": 1120,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "An Open",
-        "artist_name": "Sideshow ft. Mavi",
+        "title": "Not In The Mood",
+        "artist_name": "Hikaru Utada",
         "video_id": null,
-        "capture_date": "2022-01-27 06:31:52.370370",
-        "source_id": 1103,
+        "capture_date": "2022-01-27 10:29:57.522522",
+        "source_id": 1120,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "If By Chance ( Slowed + Reverb)",
-        "artist_name": "Ruth B",
+        "title": "Snow Globes",
+        "artist_name": "Black Country, New Road",
         "video_id": null,
-        "capture_date": "2022-01-27 06:31:52.370370",
-        "source_id": 1103,
+        "capture_date": "2022-01-27 10:29:57.522522",
+        "source_id": 1120,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Vanity",
-        "artist_name": "Iceboy Violet",
+        "title": "Consequences",
+        "artist_name": "Years & Years",
         "video_id": null,
-        "capture_date": "2022-01-27 06:31:52.370370",
-        "source_id": 1103,
+        "capture_date": "2022-01-27 10:29:57.522522",
+        "source_id": 1120,
         "song_id": null,
         "duplicate": false
     }
@@ -230,15 +230,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Avoid Heaven', 'Molly Nilsson', NULL),
-  ('Call Me', 'Ivy Sole', NULL),
-  ('Year of Love', 'Jenny Hval', NULL),
-  ('Best Wishes', 'find-joy', NULL),
-  ('Beyond Good and Evil', 'Boris', NULL),
-  ('Packs and Potions', 'HAZEY', NULL),
-  ('An Open', 'Sideshow ft. Mavi', NULL),
-  ('If By Chance ( Slowed + Reverb)', 'Ruth B', NULL),
-  ('Vanity', 'Iceboy Violet', NULL)
+  ('Postman', 'Toro Y Moi', NULL),
+  ('BOY DESTROYER', 'LustSickPuppy', NULL),
+  ('How Long', 'Tove Lo', NULL),
+  ('home', 'Two Shell', NULL),
+  ('Not In The Mood', 'Hikaru Utada', NULL),
+  ('Snow Globes', 'Black Country, New Road', NULL),
+  ('Consequences', 'Years & Years', NULL)
   ;
 
    // Update to song table
@@ -249,7 +247,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11541; // SELECT last_insert_rowid();
+  song_id = 11584; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +287,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-27 06:31:52.369369', '1103', '11533'),
-  ('2022-01-27 06:31:52.370370', '1103', '11534'),
-  ('2022-01-27 06:31:52.370370', '1103', '11461'),
-  ('2022-01-27 06:31:52.370370', '1103', '11535'),
-  ('2022-01-27 06:31:52.370370', '1103', '11536'),
-  ('2022-01-27 06:31:52.370370', '1103', '11537'),
-  ('2022-01-27 06:31:52.370370', '1103', '11538'),
-  ('2022-01-27 06:31:52.370370', '1103', '11539'),
-  ('2022-01-27 06:31:52.370370', '1103', '11540'),
-  ('2022-01-27 06:31:52.370370', '1103', '11541')
+  ('2022-01-27 10:29:57.520520', '1120', '11547'),
+  ('2022-01-27 10:29:57.522522', '1120', '11578'),
+  ('2022-01-27 10:29:57.522522', '1120', '11566'),
+  ('2022-01-27 10:29:57.522522', '1120', '11579'),
+  ('2022-01-27 10:29:57.522522', '1120', '11556'),
+  ('2022-01-27 10:29:57.522522', '1120', '11580'),
+  ('2022-01-27 10:29:57.522522', '1120', '11581'),
+  ('2022-01-27 10:29:57.522522', '1120', '11582'),
+  ('2022-01-27 10:29:57.522522', '1120', '11583'),
+  ('2022-01-27 10:29:57.522522', '1120', '11584')
   ;
 
   // Update to source_song table

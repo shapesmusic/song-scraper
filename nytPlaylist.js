@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'FKA twigs Seeks Angelic Intervention, and 10 More New Songs', '2022-01-14 08:25:26.000000', 'https://www.nytimes.com/2022/01/14/arts/music/playlist-fka-twigs-maren-morris.html');
+    ('New York Times', 'The Playlist', 'A Knockout Country-Rap Crossover, and 13 More New Songs', '2022-01-23 08:09:34.000000', 'https://www.nytimes.com/2022/01/21/arts/music/playlist-kidd-g-ynw-bslime-charlie-puth.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1101; // SELECT last_insert_rowid();
+  source_id = 1106; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,92 +100,101 @@
   songsData =
   [
     {
-        "title": "Meta Angel",
-        "artist_name": "FKA twigs",
+        "title": "Left Me",
+        "artist_name": "Kidd G featuring YNW BSlime",
         "video_id": null,
-        "capture_date": "2022-01-27 05:13:30.486486",
-        "source_id": 1101,
+        "capture_date": "2022-01-27 10:00:57.170170",
+        "source_id": 1106,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "L’enfer",
-        "artist_name": "Stromae",
+        "title": "Light Switch",
+        "artist_name": "Charlie Puth",
         "video_id": null,
-        "capture_date": "2022-01-27 05:13:30.488488",
-        "source_id": 1101,
+        "capture_date": "2022-01-27 10:00:57.172172",
+        "source_id": 1106,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lawn",
-        "artist_name": "Aldous Harding",
+        "title": "Midnight Sun",
+        "artist_name": "Nilüfer Yanya",
         "video_id": null,
-        "capture_date": "2022-01-27 05:13:30.489489",
-        "source_id": 1101,
+        "capture_date": "2022-01-27 10:00:57.173173",
+        "source_id": 1106,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Circles Around This Town",
-        "artist_name": "Maren Morris",
+        "title": "Ur Just Horny",
+        "artist_name": "Gayle",
         "video_id": null,
-        "capture_date": "2022-01-27 05:13:30.489489",
-        "source_id": 1101,
-        "song_id": 11505,
-        "duplicate": true
-    },
-    {
-        "title": "Be the Hook",
-        "artist_name": "Pavement",
-        "video_id": null,
-        "capture_date": "2022-01-27 05:13:30.489489",
-        "source_id": 1101,
+        "capture_date": "2022-01-27 10:00:57.173173",
+        "source_id": 1106,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Little Bother",
-        "artist_name": "King Princess featuring Fousheé",
+        "title": "Amygdala",
+        "artist_name": "Ecco2K and Bladee",
         "video_id": null,
-        "capture_date": "2022-01-27 05:13:30.489489",
-        "source_id": 1101,
+        "capture_date": "2022-01-27 10:00:57.173173",
+        "source_id": 1106,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Black Superhero",
-        "artist_name": "Robert Glasper featuring Killer Mike, Big K.R.I.T. and BJ the Chicago Kid",
+        "title": "Anaconda",
+        "artist_name": "INVT",
         "video_id": null,
-        "capture_date": "2022-01-27 05:13:30.489489",
-        "source_id": 1101,
+        "capture_date": "2022-01-27 10:00:57.173173",
+        "source_id": 1106,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Angel",
-        "artist_name": "DJ Python",
+        "title": "Proud",
+        "artist_name": "Key Glock",
         "video_id": null,
-        "capture_date": "2022-01-27 05:13:30.489489",
-        "source_id": 1101,
+        "capture_date": "2022-01-27 10:00:57.173173",
+        "source_id": 1106,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Taurus",
-        "artist_name": "Jacques Greene",
+        "title": "Shadow in the Frame",
+        "artist_name": "Daniel Rossen",
         "video_id": null,
-        "capture_date": "2022-01-27 05:13:30.489489",
-        "source_id": 1101,
+        "capture_date": "2022-01-27 10:00:57.173173",
+        "source_id": 1106,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kurunba",
-        "artist_name": "Rokia Koné & Jacknife Lee",
+        "title": "Do You See the Light Around Me?",
+        "artist_name": "Uwade",
         "video_id": null,
-        "capture_date": "2022-01-27 05:13:30.489489",
-        "source_id": 1101,
+        "capture_date": "2022-01-27 10:00:57.173173",
+        "source_id": 1106,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Jordan",
+        "artist_name": "Jana Horn",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:00:57.173173",
+        "source_id": 1106,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sembrá El Maíz",
+        "artist_name": "Kiko Villamizar",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:00:57.173173",
+        "source_id": 1106,
         "song_id": null,
         "duplicate": false
     }
@@ -228,15 +237,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Meta Angel', 'FKA twigs', NULL),
-  ('L’enfer', 'Stromae', NULL),
-  ('Lawn', 'Aldous Harding', NULL),
-  ('Be the Hook', 'Pavement', NULL),
-  ('Little Bother', 'King Princess featuring Fousheé', NULL),
-  ('Black Superhero', 'Robert Glasper featuring Killer Mike, Big K.R.I.T. and BJ the Chicago Kid', NULL),
-  ('Angel', 'DJ Python', NULL),
-  ('Taurus', 'Jacques Greene', NULL),
-  ('Kurunba', 'Rokia Koné & Jacknife Lee', NULL)
+  ('Left Me', 'Kidd G featuring YNW BSlime', NULL),
+  ('Light Switch', 'Charlie Puth', NULL),
+  ('Midnight Sun', 'Nilüfer Yanya', NULL),
+  ('Ur Just Horny', 'Gayle', NULL),
+  ('Amygdala', 'Ecco2K and Bladee', NULL),
+  ('Anaconda', 'INVT', NULL),
+  ('Proud', 'Key Glock', NULL),
+  ('Shadow in the Frame', 'Daniel Rossen', NULL),
+  ('Do You See the Light Around Me?', 'Uwade', NULL),
+  ('Jordan', 'Jana Horn', NULL),
+  ('Sembrá El Maíz', 'Kiko Villamizar', NULL)
   ;
 
    // Update to song table
@@ -247,7 +258,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11523; // SELECT last_insert_rowid();
+  song_id = 11562; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -287,16 +298,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-27 05:13:30.486486', '1101', '11515'),
-  ('2022-01-27 05:13:30.488488', '1101', '11516'),
-  ('2022-01-27 05:13:30.489489', '1101', '11517'),
-  ('2022-01-27 05:13:30.489489', '1101', '11505'),
-  ('2022-01-27 05:13:30.489489', '1101', '11518'),
-  ('2022-01-27 05:13:30.489489', '1101', '11519'),
-  ('2022-01-27 05:13:30.489489', '1101', '11520'),
-  ('2022-01-27 05:13:30.489489', '1101', '11521'),
-  ('2022-01-27 05:13:30.489489', '1101', '11522'),
-  ('2022-01-27 05:13:30.489489', '1101', '11523')
+  ('2022-01-27 10:00:57.170170', '1106', '11552'),
+  ('2022-01-27 10:00:57.172172', '1106', '11553'),
+  ('2022-01-27 10:00:57.173173', '1106', '11554'),
+  ('2022-01-27 10:00:57.173173', '1106', '11555'),
+  ('2022-01-27 10:00:57.173173', '1106', '11556'),
+  ('2022-01-27 10:00:57.173173', '1106', '11557'),
+  ('2022-01-27 10:00:57.173173', '1106', '11558'),
+  ('2022-01-27 10:00:57.173173', '1106', '11559'),
+  ('2022-01-27 10:00:57.173173', '1106', '11560'),
+  ('2022-01-27 10:00:57.173173', '1106', '11561'),
+  ('2022-01-27 10:00:57.173173', '1106', '11562')
   ;
 
   // Update to source_song table

@@ -70,29 +70,23 @@
 
 
   // Paste sources into the SQL statement, and prune out existing sources
-  // If necessary, remove page numbers (ex: ?page=2) from location
+  // If necessary, remove page numbers (ex: ) from location
 
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2021-12-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-12-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-11-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-11-18 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-11-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-11-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-11-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-11-10 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-11-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-11-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-11-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-10-29 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-10-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-10-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-10-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-10-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-10-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2021-10-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-25 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-18 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-05 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -142,203 +136,158 @@
   songsData =
   [
     {
-      "title": "Faultline",
-      "artist_name": "Girlpool",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.630630",
-      "source_id": 1069,
-      "song_id": 11328,
-      "duplicate": true
-  },
-  {
-      "title": "Gestures",
-      "artist_name": "Carmen Villain",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.632632",
-      "source_id": 1070,
-      "song_id": 11329,
-      "duplicate": true
-  },
-  {
-      "title": "2010",
-      "artist_name": "Earl Sweatshirt",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.633633",
-      "source_id": 1071,
-      "song_id": 11297,
-      "duplicate": true
-  },
-  {
-      "title": "To Be Loved",
-      "artist_name": "Adele",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.633633",
-      "source_id": 1071,
-      "song_id": 11229,
-      "duplicate": true
-  },
-  {
-      "title": "search party",
-      "artist_name": "dltzk",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.633633",
-      "source_id": 1072,
-      "song_id": null,
-      "duplicate": false
-  },
-  {
-      "title": "Two Ribbons",
-      "artist_name": "Let’s Eat Grandma",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.633633",
-      "source_id": 1073,
-      "song_id": 11296,
-      "duplicate": true
-  },
-  {
-      "title": "All Too Well (10 Minute Version) (Taylor’s Version)",
-      "artist_name": "Taylor Swift",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.633633",
-      "source_id": 1074,
-      "song_id": 11191,
-      "duplicate": true
-  },
-  {
-      "title": "La Fama",
-      "artist_name": "Rosalía",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.633633",
-      "source_id": 1075,
-      "song_id": 11224,
-      "duplicate": true
-  },
-  {
-      "title": "Jupiter",
-      "artist_name": "Jenny Hval",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.633633",
-      "source_id": 1075,
-      "song_id": null,
-      "duplicate": false
-  },
-  {
-      "title": "Once Twice Melody",
-      "artist_name": "Beach House",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1076,
-      "song_id": null,
-      "duplicate": false
-  },
-  {
-      "title": "The Only Heartbreaker",
-      "artist_name": "Mitski",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1077,
-      "song_id": 11293,
-      "duplicate": true
-  },
-  {
-      "title": "New Shapes",
-      "artist_name": "Charli XCX",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1078,
-      "song_id": 11278,
-      "duplicate": true
-  },
-  {
-      "title": "29",
-      "artist_name": "YaejiOh Hyuk",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1079,
-      "song_id": null,
-      "duplicate": false
-  },
-  {
-      "title": "Gucci Tried to Tell Me",
-      "artist_name": "Mick Jenkins",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1080,
-      "song_id": null,
-      "duplicate": false
-  },
-  {
-      "title": "Cleo",
-      "artist_name": "Shygirl",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1081,
-      "song_id": null,
-      "duplicate": false
-  },
-  {
-      "title": "Message in a Hammer",
-      "artist_name": "Obongjayar",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1082,
-      "song_id": null,
-      "duplicate": false
-  },
-  {
-      "title": "Embryo",
-      "artist_name": "Jlin",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1083,
-      "song_id": 11153,
-      "duplicate": false
-  },
-  {
-      "title": "Ben Franklin",
-      "artist_name": "Snail Mail",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1083,
-      "song_id": 11150,
-      "duplicate": true
-  },
-  {
-      "title": "Easy on Me",
-      "artist_name": "Adele",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1084,
-      "song_id": 11115,
-      "duplicate": true
-  },
-  {
-      "title": "Running Away",
-      "artist_name": "Cate Le Bon",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1085,
-      "song_id": null,
-      "duplicate": false
-  },
-  {
-      "title": "Piano Love",
-      "artist_name": "Conway the Machine",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.634634",
-      "source_id": 1086,
-      "song_id": 11109,
-      "duplicate": true
-  },
-  {
-      "title": "Working for the Knife",
-      "artist_name": "Mitski",
-      "video_id": null,
-      "capture_date": "2022-01-01 03:37:21.635635",
-      "source_id": 978,
-      "song_id": 10988,
-      "duplicate": true
-  }
+        "title": "Equator Song",
+        "artist_name": "Nyokabi Kariũki",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.535535",
+        "source_id": 1107,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "home",
+        "artist_name": "Two Shell",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.537537",
+        "source_id": 1107,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "GRAVE YARD",
+        "artist_name": "Jon E Cash",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.537537",
+        "source_id": 1108,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sincerely Face",
+        "artist_name": "Babyface Ray",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.537537",
+        "source_id": 1108,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Estación Esperanza",
+        "artist_name": "Sofia Kourtesis",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.537537",
+        "source_id": 1109,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Simulation Swarm",
+        "artist_name": "Big Thief",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.537537",
+        "source_id": 1110,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Midnight Sun",
+        "artist_name": "Nilüfer Yanya",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.538538",
+        "source_id": 1110,
+        "song_id": 11554,
+        "duplicate": true
+    },
+    {
+        "title": "Good morning (red)",
+        "artist_name": "caroline",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.538538",
+        "source_id": 1111,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Rush",
+        "artist_name": "Raveena",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.538538",
+        "source_id": 1112,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Come My Way",
+        "artist_name": "Saba",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.538538",
+        "source_id": 1113,
+        "song_id": 11531,
+        "duplicate": true
+    },
+    {
+        "title": "Jump!! (Or Get Jumped!!!)((By the Future))",
+        "artist_name": "Soul Glo",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.538538",
+        "source_id": 1113,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Accelerometer Overdose",
+        "artist_name": "Binker and Moses",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.538538",
+        "source_id": 1114,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lawn",
+        "artist_name": "Aldous Harding",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.538538",
+        "source_id": 1115,
+        "song_id": 11517,
+        "duplicate": true
+    },
+    {
+        "title": "Tintoretto, It’s for You",
+        "artist_name": "Destroyer",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.538538",
+        "source_id": 1116,
+        "song_id": 11477,
+        "duplicate": true
+    },
+    {
+        "title": "Say It",
+        "artist_name": "SASAMI",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.538538",
+        "source_id": 1117,
+        "song_id": 11478,
+        "duplicate": true
+    },
+    {
+        "title": "Funny Girl",
+        "artist_name": "Father John Misty",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.538538",
+        "source_id": 1118,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "You Will Never Work in Television Again",
+        "artist_name": "The Smile",
+        "video_id": null,
+        "capture_date": "2022-01-27 10:12:09.539539",
+        "source_id": 1118,
+        "song_id": 11453,
+        "duplicate": true
+    }
   ]
 
   // To check for duplicates in the database
@@ -389,15 +338,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('search party', 'dltzk', NULL),
-  ('Jupiter', 'Jenny Hval', NULL),
-  ('Once Twice Melody', 'Beach House', NULL),
-  ('29', 'YaejiOh Hyuk', NULL),
-  ('Gucci Tried to Tell Me', 'Mick Jenkins', NULL),
-  ('Cleo', 'Shygirl', NULL),
-  ('Message in a Hammer', 'Obongjayar', NULL),
-  ('Embryo', 'Jlin', NULL),
-  ('Running Away', 'Cate Le Bon', NULL)
+  ('Equator Song', 'Nyokabi Kariũki', NULL),
+  ('home', 'Two Shell', NULL),
+  ('GRAVE YARD', 'Jon E Cash', NULL),
+  ('Sincerely Face', 'Babyface Ray', NULL),
+  ('Estación Esperanza', 'Sofia Kourtesis', NULL),
+  ('Simulation Swarm', 'Big Thief', NULL),
+  ('Good morning (red)', 'caroline', NULL),
+  ('Rush', 'Raveena', NULL),
+  ('Jump!! (Or Get Jumped!!!)((By the Future))', 'Soul Glo', NULL),
+  ('Accelerometer Overdose', 'Binker and Moses', NULL),
+  ('Funny Girl', 'Father John Misty', NULL)
   ;
 
    // Update to song table
@@ -408,7 +359,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 11345; // SELECT last_insert_rowid();
+  song_id = 11573; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -448,28 +399,23 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-01 03:37:21.630630', '1069', '11328'),
-  ('2022-01-01 03:37:21.632632', '1070', '11329'),
-  ('2022-01-01 03:37:21.633633', '1071', '11297'),
-  ('2022-01-01 03:37:21.633633', '1071', '11229'),
-  ('2022-01-01 03:37:21.633633', '1072', '11337'),
-  ('2022-01-01 03:37:21.633633', '1073', '11296'),
-  ('2022-01-01 03:37:21.633633', '1074', '11191'),
-  ('2022-01-01 03:37:21.633633', '1075', '11224'),
-  ('2022-01-01 03:37:21.633633', '1075', '11338'),
-  ('2022-01-01 03:37:21.634634', '1076', '11339'),
-  ('2022-01-01 03:37:21.634634', '1077', '11293'),
-  ('2022-01-01 03:37:21.634634', '1078', '11278'),
-  ('2022-01-01 03:37:21.634634', '1079', '11340'),
-  ('2022-01-01 03:37:21.634634', '1080', '11341'),
-  ('2022-01-01 03:37:21.634634', '1081', '11342'),
-  ('2022-01-01 03:37:21.634634', '1082', '11343'),
-  ('2022-01-01 03:37:21.634634', '1083', '11344'),
-  ('2022-01-01 03:37:21.634634', '1083', '11150'),
-  ('2022-01-01 03:37:21.634634', '1084', '11115'),
-  ('2022-01-01 03:37:21.634634', '1085', '11345'),
-  ('2022-01-01 03:37:21.634634', '1086', '11109'),
-  ('2022-01-01 03:37:21.635635', '978', '10988')
+  ('2022-01-27 10:12:09.535535', '1107', '11563'),
+  ('2022-01-27 10:12:09.537537', '1107', '11564'),
+  ('2022-01-27 10:12:09.537537', '1108', '11565'),
+  ('2022-01-27 10:12:09.537537', '1108', '11566'),
+  ('2022-01-27 10:12:09.537537', '1109', '11567'),
+  ('2022-01-27 10:12:09.537537', '1110', '11568'),
+  ('2022-01-27 10:12:09.538538', '1110', '11554'),
+  ('2022-01-27 10:12:09.538538', '1111', '11569'),
+  ('2022-01-27 10:12:09.538538', '1112', '11570'),
+  ('2022-01-27 10:12:09.538538', '1113', '11531'),
+  ('2022-01-27 10:12:09.538538', '1113', '11571'),
+  ('2022-01-27 10:12:09.538538', '1114', '11572'),
+  ('2022-01-27 10:12:09.538538', '1115', '11517'),
+  ('2022-01-27 10:12:09.538538', '1116', '11477'),
+  ('2022-01-27 10:12:09.538538', '1117', '11478'),
+  ('2022-01-27 10:12:09.538538', '1118', '11573'),
+  ('2022-01-27 10:12:09.539539', '1118', '11453')
   ;
 
   // Update to source_song table
