@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of January 7, 2022', '2022-01-07 12:00:00.000000', 'https://www.stereogum.com/2172203/the-5-best-songs-of-the-week-415/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of January 14, 2022', '2022-01-14 12:00:00.000000', 'https://www.stereogum.com/2172880/the-5-best-songs-of-the-week-416/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1099; // SELECT last_insert_rowid();
+  source_id = 1104; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -99,52 +99,52 @@
 
   songsData =
   [
-      {
-          "title": "Alien Sex",
-          "artist_name": "Ski Mask The Slump God ",
-          "video_id": null,
-          "capture_date": "2022-01-12 10:04:19.635635",
-          "source_id": 1099,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Hard Drive",
-          "artist_name": "Thanks For Coming ",
-          "video_id": null,
-          "capture_date": "2022-01-12 10:04:19.636636",
-          "source_id": 1099,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Everything Is Simple",
-          "artist_name": "Widowspeak ",
-          "video_id": null,
-          "capture_date": "2022-01-12 10:04:19.637637",
-          "source_id": 1099,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Happy New Year",
-          "artist_name": "Let's Eat Grandma ",
-          "video_id": null,
-          "capture_date": "2022-01-12 10:04:19.637637",
-          "source_id": 1099,
-          "song_id": 11473,
-          "duplicate": true
-      },
-      {
-          "title": "You Will Never Work In Television Again",
-          "artist_name": "The Smile ",
-          "video_id": null,
-          "capture_date": "2022-01-12 10:04:19.637637",
-          "source_id": 1099,
-          "song_id": 11453,
-          "duplicate": true
-      }
-  ]
+    {
+        "title": "World Impact",
+        "artist_name": "Drug Church ",
+        "video_id": null,
+        "capture_date": "2022-01-27 06:36:32.444444",
+        "source_id": 1104,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Titanic",
+        "artist_name": "Earl Sweatshirt ",
+        "video_id": null,
+        "capture_date": "2022-01-27 06:36:32.446446",
+        "source_id": 1104,
+        "song_id": 11465,
+        "duplicate": true
+    },
+    {
+        "title": "Cannibal Capital",
+        "artist_name": "Guerilla Toss ",
+        "video_id": null,
+        "capture_date": "2022-01-27 06:36:32.446446",
+        "source_id": 1104,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Jackie Down The Line",
+        "artist_name": "Fontaines D.C. ",
+        "video_id": null,
+        "capture_date": "2022-01-27 06:36:32.446446",
+        "source_id": 1104,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wild",
+        "artist_name": "Spoon ",
+        "video_id": null,
+        "capture_date": "2022-01-27 06:36:32.446446",
+        "source_id": 1104,
+        "song_id": null,
+        "duplicate": false
+    }
+]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -183,9 +183,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Alien Sex', 'Ski Mask The Slump God ', NULL),
-  ('Hard Drive', 'Thanks For Coming ', NULL),
-  ('Everything Is Simple', 'Widowspeak ', NULL)
+  ('World Impact', 'Drug Church ', NULL),
+  ('Cannibal Capital', 'Guerilla Toss ', NULL),
+  ('Jackie Down The Line', 'Fontaines D.C. ', NULL),
+  ('Wild', 'Spoon ', NULL)
   ;
 
    // Update to song table
@@ -196,7 +197,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11489; // SELECT last_insert_rowid();
+  song_id = 11545; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -236,11 +237,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-12 10:04:19.635635', '1099', '11487'),
-  ('2022-01-12 10:04:19.636636', '1099', '11488'),
-  ('2022-01-12 10:04:19.637637', '1099', '11489'),
-  ('2022-01-12 10:04:19.637637', '1099', '11473'),
-  ('2022-01-12 10:04:19.637637', '1099', '11453')
+  ('2022-01-27 06:36:32.444444', '1104', '11542'),
+  ('2022-01-27 06:36:32.446446', '1104', '11465'),
+  ('2022-01-27 06:36:32.446446', '1104', '11543'),
+  ('2022-01-27 06:36:32.446446', '1104', '11544'),
+  ('2022-01-27 06:36:32.446446', '1104', '11545')
   ;
 
   // Update to source_song table

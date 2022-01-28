@@ -13,6 +13,8 @@
 // Step 1: Scrape source data
 //
 
+  fader_no = 237 // from the chart page
+
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
   momentjs.src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.2.1/moment.min.js";
@@ -25,7 +27,7 @@
   // Get source name info
   chartTitle = document.getElementsByTagName("h1")[0].innerText;
   parentStream = chartTitle;
-  instanceName = "Week of " + publicationDate;
+  instanceName = "No. " + fader_no + " Week of " + publicationDate;
 
   // Get and format location
   chartLocation = window.location.href; // "location" is a reserved word
@@ -48,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'Week of January 12, 2022', '2022-01-12 12:00:00.000000', 'https://www.thefader.com/2022/01/12/songs-you-need-kae-tempest-destroyer-sasami');
+    ('The Fader', '10 songs you need in your life this week', 'No. 237 Week of January 19, 2022', '2022-01-19 12:00:00.000000', 'https://www.thefader.com/2022/01/19/songs-you-need-gunna-molly-nilsson-jenny-hval');
 
   // Update to source table
 
@@ -57,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1098; // SELECT last_insert_rowid();
+  source_id = 1103; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -100,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Tintoretto, It's for You",
-        "artist_name": "Destroyer",
+        "title": "Avoid Heaven",
+        "artist_name": "Molly Nilsson",
         "video_id": null,
-        "capture_date": "2022-01-12 09:31:27.516516",
-        "source_id": 1098,
+        "capture_date": "2022-01-27 06:31:52.369369",
+        "source_id": 1103,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Say It",
-        "artist_name": "SASAMI",
+        "title": "Call Me",
+        "artist_name": "Ivy Sole",
         "video_id": null,
-        "capture_date": "2022-01-12 09:31:27.516516",
-        "source_id": 1098,
+        "capture_date": "2022-01-27 06:31:52.370370",
+        "source_id": 1103,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Doctor, My Eyes",
-        "artist_name": "Khamari",
+        "title": "pushin P",
+        "artist_name": "Gunna ft. Young Thug and Future",
         "video_id": null,
-        "capture_date": "2022-01-12 09:31:27.516516",
-        "source_id": 1098,
+        "capture_date": "2022-01-27 06:31:52.370370",
+        "source_id": 1103,
+        "song_id": 11461,
+        "duplicate": true
+    },
+    {
+        "title": "Year of Love",
+        "artist_name": "Jenny Hval",
+        "video_id": null,
+        "capture_date": "2022-01-27 06:31:52.370370",
+        "source_id": 1103,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Expiration Date",
-        "artist_name": "MICHELLE",
+        "title": "Best Wishes",
+        "artist_name": "find-joy",
         "video_id": null,
-        "capture_date": "2022-01-12 09:31:27.516516",
-        "source_id": 1098,
+        "capture_date": "2022-01-27 06:31:52.370370",
+        "source_id": 1103,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Less Than Zero",
-        "artist_name": "The Weeknd",
+        "title": "Beyond Good and Evil",
+        "artist_name": "Boris",
         "video_id": null,
-        "capture_date": "2022-01-12 09:31:27.516516",
-        "source_id": 1098,
+        "capture_date": "2022-01-27 06:31:52.370370",
+        "source_id": 1103,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "More Pressure",
-        "artist_name": "Kae Tempest ft. Kevin Abstract",
+        "title": "Packs and Potions",
+        "artist_name": "HAZEY",
         "video_id": null,
-        "capture_date": "2022-01-12 09:31:27.517517",
-        "source_id": 1098,
+        "capture_date": "2022-01-27 06:31:52.370370",
+        "source_id": 1103,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "One Way Lover",
-        "artist_name": "Eric Nam",
+        "title": "An Open",
+        "artist_name": "Sideshow ft. Mavi",
         "video_id": null,
-        "capture_date": "2022-01-12 09:31:27.517517",
-        "source_id": 1098,
+        "capture_date": "2022-01-27 06:31:52.370370",
+        "source_id": 1103,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Spin-Off",
-        "artist_name": "Big Cheeko ft. Mach-Hommy",
+        "title": "If By Chance ( Slowed + Reverb)",
+        "artist_name": "Ruth B",
         "video_id": null,
-        "capture_date": "2022-01-12 09:31:27.517517",
-        "source_id": 1098,
+        "capture_date": "2022-01-27 06:31:52.370370",
+        "source_id": 1103,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lonely",
-        "artist_name": "CMAT",
+        "title": "Vanity",
+        "artist_name": "Iceboy Violet",
         "video_id": null,
-        "capture_date": "2022-01-12 09:31:27.517517",
-        "source_id": 1098,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gameboy",
-        "artist_name": "Hook",
-        "video_id": null,
-        "capture_date": "2022-01-12 09:31:27.517517",
-        "source_id": 1098,
+        "capture_date": "2022-01-27 06:31:52.370370",
+        "source_id": 1103,
         "song_id": null,
         "duplicate": false
     }
@@ -228,16 +230,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Tintoretto, It’s for You', 'Destroyer', NULL),
-  ('Say It', 'SASAMI', NULL),
-  ('Doctor, My Eyes', 'Khamari', NULL),
-  ('Expiration Date', 'MICHELLE', NULL),
-  ('Less Than Zero', 'The Weeknd', NULL),
-  ('More Pressure', 'Kae Tempest ft. Kevin Abstract', NULL),
-  ('One Way Lover', 'Eric Nam', NULL),
-  ('Spin-Off', 'Big Cheeko ft. Mach-Hommy', NULL),
-  ('Lonely', 'CMAT', NULL),
-  ('Gameboy', 'Hook', NULL)
+  ('Avoid Heaven', 'Molly Nilsson', NULL),
+  ('Call Me', 'Ivy Sole', NULL),
+  ('Year of Love', 'Jenny Hval', NULL),
+  ('Best Wishes', 'find-joy', NULL),
+  ('Beyond Good and Evil', 'Boris', NULL),
+  ('Packs and Potions', 'HAZEY', NULL),
+  ('An Open', 'Sideshow ft. Mavi', NULL),
+  ('If By Chance ( Slowed + Reverb)', 'Ruth B', NULL),
+  ('Vanity', 'Iceboy Violet', NULL)
   ;
 
    // Update to song table
@@ -248,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11486; // SELECT last_insert_rowid();
+  song_id = 11541; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -288,16 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-12 09:31:27.516516', '1098', '11477'),
-  ('2022-01-12 09:31:27.516516', '1098', '11478'),
-  ('2022-01-12 09:31:27.516516', '1098', '11479'),
-  ('2022-01-12 09:31:27.516516', '1098', '11480'),
-  ('2022-01-12 09:31:27.516516', '1098', '11481'),
-  ('2022-01-12 09:31:27.517517', '1098', '11482'),
-  ('2022-01-12 09:31:27.517517', '1098', '11483'),
-  ('2022-01-12 09:31:27.517517', '1098', '11484'),
-  ('2022-01-12 09:31:27.517517', '1098', '11485'),
-  ('2022-01-12 09:31:27.517517', '1098', '11486')
+  ('2022-01-27 06:31:52.369369', '1103', '11533'),
+  ('2022-01-27 06:31:52.370370', '1103', '11534'),
+  ('2022-01-27 06:31:52.370370', '1103', '11461'),
+  ('2022-01-27 06:31:52.370370', '1103', '11535'),
+  ('2022-01-27 06:31:52.370370', '1103', '11536'),
+  ('2022-01-27 06:31:52.370370', '1103', '11537'),
+  ('2022-01-27 06:31:52.370370', '1103', '11538'),
+  ('2022-01-27 06:31:52.370370', '1103', '11539'),
+  ('2022-01-27 06:31:52.370370', '1103', '11540'),
+  ('2022-01-27 06:31:52.370370', '1103', '11541')
   ;
 
   // Update to source_song table

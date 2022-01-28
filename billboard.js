@@ -23,7 +23,7 @@
 
   // Get location and format for current or past chart status
   currentChartLocation = window.location.href + moment(publicationDate, "MMM DD, YYYY").format("YYYY-MM-DD");
-  pastChartLocation = window.location.href;
+  currentChartLocation = window.location.href;
 
   // Build the INSERT statement
   console.log(
@@ -32,7 +32,7 @@
     + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'"
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
+    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   );
 
 
@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of January 15, 2022', '2022-01-15 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-15');
+    ('Billboard', 'The Hot 100', 'Week of January 22, 2022', '2022-01-22 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-22/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1094; // SELECT last_insert_rowid();
+  source_id = 1100; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -103,112 +103,256 @@
   songsData =
   [
     {
-        "title": "The Family Madrigal",
-        "artist_name": "Stephanie Beatriz, Olga Merediz & Encanto Cast",
+        "title": "Pushin P",
+        "artist_name": "Gunna & Future ft. Young Thug",
         "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.006006",
-        "source_id": 1094,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "What Else Can I Do?",
-        "artist_name": "Diane Guerrero & Stephanie Beatriz",
-        "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.007007",
-        "source_id": 1094,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Flower Shops",
-        "artist_name": "ERNEST ft. Morgan Wallen",
-        "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.007007",
-        "source_id": 1094,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fingers Crossed",
-        "artist_name": "Lauren Spencer-Smith",
-        "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.007007",
-        "source_id": 1094,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Waiting On A Miracle",
-        "artist_name": "Stephanie Beatriz",
-        "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.007007",
-        "source_id": 1094,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dos Oruguitas",
-        "artist_name": "Sebastian Yatra",
-        "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.007007",
-        "source_id": 1094,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "AA",
-        "artist_name": "Walker Hayes",
-        "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.007007",
-        "source_id": 1094,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Home Sweet",
-        "artist_name": "Russell Dickerson",
-        "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.007007",
-        "source_id": 1094,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Come Back As A Country Boy",
-        "artist_name": "Blake Shelton",
-        "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.008008",
-        "source_id": 1094,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Black Ball",
-        "artist_name": "YoungBoy Never Broke Again & Birdman",
-        "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.008008",
-        "source_id": 1094,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I Love You So",
-        "artist_name": "The Walters",
-        "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.008008",
-        "source_id": 1094,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Never Wanted To Be That Girl",
-        "artist_name": "Carly Pearce & Ashley McBryde",
-        "video_id": null,
-        "capture_date": "2022-01-12 08:57:39.008008",
-        "source_id": 1094,
-        "song_id": 10957,
+        "capture_date": "2022-01-27 05:04:35.538538",
+        "source_id": 1100,
+        "song_id": 11461,
         "duplicate": true
+    },
+    {
+        "title": "Sacrifice",
+        "artist_name": "The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.538538",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Thought I Was Playing",
+        "artist_name": "Gunna & 21 Savage",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.539539",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "25k Jacket",
+        "artist_name": "Gunna ft. Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.539539",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Gasoline",
+        "artist_name": "The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.540540",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Is There Someone Else?",
+        "artist_name": "The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.540540",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Out Of Time",
+        "artist_name": "The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.540540",
+        "source_id": 1100,
+        "song_id": 11460,
+        "duplicate": true
+    },
+    {
+        "title": "How Do I Make You Love Me?",
+        "artist_name": "The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.540540",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Poochie Gown",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.540540",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mop",
+        "artist_name": "Gunna ft. Young Thug",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.540540",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Alotta Cake",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.540540",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "How You Did That",
+        "artist_name": "Gunna ft. Kodak Black",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.540540",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Here We Go... Again",
+        "artist_name": "The Weeknd ft. Tyler, The Creator",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.540540",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Less Than Zero",
+        "artist_name": "The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.541541",
+        "source_id": 1100,
+        "song_id": 11481,
+        "duplicate": true
+    },
+    {
+        "title": "IDK That Bitch",
+        "artist_name": "Gunna ft. G Herbo",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.541541",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Best Friends",
+        "artist_name": "The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.541541",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Livin Wild",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.541541",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Heard You're Married",
+        "artist_name": "The Weeknd ft. Lil Wayne",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.541541",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Circles Around This Town",
+        "artist_name": "Maren Morris",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.541541",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dawn FM",
+        "artist_name": "The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.541541",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Private Island",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.541541",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "South To West",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.541541",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "You & Me",
+        "artist_name": "Gunna & Chloe",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.541541",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Starry Eyes",
+        "artist_name": "The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.542542",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Don't Break My Heart",
+        "artist_name": "The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.542542",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Flooded",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.542542",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Die Alone",
+        "artist_name": "Gunna & Chris Brown ft. Yung Bleu",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.542542",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Every Angel Is Terrifying",
+        "artist_name": "The Weeknd",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:04:35.542542",
+        "source_id": 1100,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -249,17 +393,31 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Family Madrigal', 'Stephanie Beatriz, Olga Merediz & Encanto Cast', NULL),
-  ('What Else Can I Do?', 'Diane Guerrero & Stephanie Beatriz', NULL),
-  ('Flower Shops', 'ERNEST ft. Morgan Wallen', NULL),
-  ('Fingers Crossed', 'Lauren Spencer-Smith', NULL),
-  ('Waiting On A Miracle', 'Stephanie Beatriz', NULL),
-  ('Dos Oruguitas', 'Sebastian Yatra', NULL),
-  ('AA', 'Walker Hayes', NULL),
-  ('Home Sweet', 'Russell Dickerson', NULL),
-  ('Come Back As A Country Boy', 'Blake Shelton', NULL),
-  ('Black Ball', 'YoungBoy Never Broke Again & Birdman', NULL),
-  ('I Love You So', 'The Walters', NULL)
+  ('Sacrifice', 'The Weeknd', NULL),
+  ('Thought I Was Playing', 'Gunna & 21 Savage', NULL),
+  ('25k Jacket', 'Gunna ft. Lil Baby', NULL),
+  ('Gasoline', 'The Weeknd', NULL),
+  ('Is There Someone Else?', 'The Weeknd', NULL),
+  ('How Do I Make You Love Me?', 'The Weeknd', NULL),
+  ('Poochie Gown', 'Gunna', NULL),
+  ('Mop', 'Gunna ft. Young Thug', NULL),
+  ('Alotta Cake', 'Gunna', NULL),
+  ('How You Did That', 'Gunna ft. Kodak Black', NULL),
+  ('Here We Go... Again', 'The Weeknd ft. Tyler, The Creator', NULL),
+  ('IDK That Bitch', 'Gunna ft. G Herbo', NULL),
+  ('Best Friends', 'The Weeknd', NULL),
+  ('Livin Wild', 'Gunna', NULL),
+  ('I Heard You’re Married', 'The Weeknd ft. Lil Wayne', NULL),
+  ('Circles Around This Town', 'Maren Morris', NULL),
+  ('Dawn FM', 'The Weeknd', NULL),
+  ('Private Island', 'Gunna', NULL),
+  ('South To West', 'Gunna', NULL),
+  ('You & Me', 'Gunna & Chloe', NULL),
+  ('Starry Eyes', 'The Weeknd', NULL),
+  ('Don’t Break My Heart', 'The Weeknd', NULL),
+  ('Flooded', 'Gunna', NULL),
+  ('Die Alone', 'Gunna & Chris Brown ft. Yung Bleu', NULL),
+  ('Every Angel Is Terrifying', 'The Weeknd', NULL)
   ;
 
    // Update to song table
@@ -270,7 +428,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11452; // SELECT last_insert_rowid();
+  song_id = 11514; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -310,18 +468,34 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-12 08:57:39.006006', '1094', '11442'),
-  ('2022-01-12 08:57:39.007007', '1094', '11443'),
-  ('2022-01-12 08:57:39.007007', '1094', '11444'),
-  ('2022-01-12 08:57:39.007007', '1094', '11445'),
-  ('2022-01-12 08:57:39.007007', '1094', '11446'),
-  ('2022-01-12 08:57:39.007007', '1094', '11447'),
-  ('2022-01-12 08:57:39.007007', '1094', '11448'),
-  ('2022-01-12 08:57:39.007007', '1094', '11449'),
-  ('2022-01-12 08:57:39.008008', '1094', '11450'),
-  ('2022-01-12 08:57:39.008008', '1094', '11451'),
-  ('2022-01-12 08:57:39.008008', '1094', '11452'),
-  ('2022-01-12 08:57:39.008008', '1094', '10957')
+  ('2022-01-27 05:04:35.538538', '1100', '11461'),
+  ('2022-01-27 05:04:35.538538', '1100', '11490'),
+  ('2022-01-27 05:04:35.539539', '1100', '11491'),
+  ('2022-01-27 05:04:35.539539', '1100', '11492'),
+  ('2022-01-27 05:04:35.540540', '1100', '11493'),
+  ('2022-01-27 05:04:35.540540', '1100', '11494'),
+  ('2022-01-27 05:04:35.540540', '1100', '11460'),
+  ('2022-01-27 05:04:35.540540', '1100', '11495'),
+  ('2022-01-27 05:04:35.540540', '1100', '11496'),
+  ('2022-01-27 05:04:35.540540', '1100', '11497'),
+  ('2022-01-27 05:04:35.540540', '1100', '11498'),
+  ('2022-01-27 05:04:35.540540', '1100', '11499'),
+  ('2022-01-27 05:04:35.540540', '1100', '11500'),
+  ('2022-01-27 05:04:35.541541', '1100', '11481'),
+  ('2022-01-27 05:04:35.541541', '1100', '11501'),
+  ('2022-01-27 05:04:35.541541', '1100', '11502'),
+  ('2022-01-27 05:04:35.541541', '1100', '11503'),
+  ('2022-01-27 05:04:35.541541', '1100', '11504'),
+  ('2022-01-27 05:04:35.541541', '1100', '11505'),
+  ('2022-01-27 05:04:35.541541', '1100', '11506'),
+  ('2022-01-27 05:04:35.541541', '1100', '11507'),
+  ('2022-01-27 05:04:35.541541', '1100', '11508'),
+  ('2022-01-27 05:04:35.541541', '1100', '11509'),
+  ('2022-01-27 05:04:35.542542', '1100', '11510'),
+  ('2022-01-27 05:04:35.542542', '1100', '11511'),
+  ('2022-01-27 05:04:35.542542', '1100', '11512'),
+  ('2022-01-27 05:04:35.542542', '1100', '11513'),
+  ('2022-01-27 05:04:35.542542', '1100', '11514')
   ;
 
   // Update to source_song table

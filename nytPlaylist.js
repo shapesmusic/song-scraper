@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'A Radiohead Spinoff’s Snarling Single, and 8 More New Songs', '2022-01-07 11:35:38.000000', 'https://www.nytimes.com/2022/01/07/arts/music/playlist-thom-yorke-amber-mark.html');
+    ('New York Times', 'The Playlist', 'FKA twigs Seeks Angelic Intervention, and 10 More New Songs', '2022-01-14 08:25:26.000000', 'https://www.nytimes.com/2022/01/14/arts/music/playlist-fka-twigs-maren-morris.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1095; // SELECT last_insert_rowid();
+  source_id = 1101; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,65 +100,92 @@
   songsData =
   [
     {
-        "title": "You Will Never Work in Television Again",
-        "artist_name": "The Smile",
+        "title": "Meta Angel",
+        "artist_name": "FKA twigs",
         "video_id": null,
-        "capture_date": "2022-01-12 09:05:40.106106",
-        "source_id": 1095,
+        "capture_date": "2022-01-27 05:13:30.486486",
+        "source_id": 1101,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Most Men (A Colors Show)",
-        "artist_name": "Amber Mark",
+        "title": "L’enfer",
+        "artist_name": "Stromae",
         "video_id": null,
-        "capture_date": "2022-01-12 09:05:40.108108",
-        "source_id": 1095,
+        "capture_date": "2022-01-27 05:13:30.488488",
+        "source_id": 1101,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Champagne Problems",
-        "artist_name": "Inna",
+        "title": "Lawn",
+        "artist_name": "Aldous Harding",
         "video_id": null,
-        "capture_date": "2022-01-12 09:05:40.108108",
-        "source_id": 1095,
+        "capture_date": "2022-01-27 05:13:30.489489",
+        "source_id": 1101,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Los Illuminaty",
-        "artist_name": "Rochy RD and Anuel AA",
+        "title": "Circles Around This Town",
+        "artist_name": "Maren Morris",
         "video_id": null,
-        "capture_date": "2022-01-12 09:05:40.108108",
-        "source_id": 1095,
+        "capture_date": "2022-01-27 05:13:30.489489",
+        "source_id": 1101,
+        "song_id": 11505,
+        "duplicate": true
+    },
+    {
+        "title": "Be the Hook",
+        "artist_name": "Pavement",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:13:30.489489",
+        "source_id": 1101,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Who Has Seen the Wind?",
-        "artist_name": "David Byrne and Yo La Tengo",
+        "title": "Little Bother",
+        "artist_name": "King Princess featuring Fousheé",
         "video_id": null,
-        "capture_date": "2022-01-12 09:05:40.108108",
-        "source_id": 1095,
+        "capture_date": "2022-01-27 05:13:30.489489",
+        "source_id": 1101,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "J’s Lullaby (Darlin’ I’d Wait for You)",
-        "artist_name": "Delaney Bailey",
+        "title": "Black Superhero",
+        "artist_name": "Robert Glasper featuring Killer Mike, Big K.R.I.T. and BJ the Chicago Kid",
         "video_id": null,
-        "capture_date": "2022-01-12 09:05:40.108108",
-        "source_id": 1095,
+        "capture_date": "2022-01-27 05:13:30.489489",
+        "source_id": 1101,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Upstairs Flat",
-        "artist_name": "Burial",
+        "title": "Angel",
+        "artist_name": "DJ Python",
         "video_id": null,
-        "capture_date": "2022-01-12 09:05:40.108108",
-        "source_id": 1095,
+        "capture_date": "2022-01-27 05:13:30.489489",
+        "source_id": 1101,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Taurus",
+        "artist_name": "Jacques Greene",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:13:30.489489",
+        "source_id": 1101,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Kurunba",
+        "artist_name": "Rokia Koné & Jacknife Lee",
+        "video_id": null,
+        "capture_date": "2022-01-27 05:13:30.489489",
+        "source_id": 1101,
         "song_id": null,
         "duplicate": false
     }
@@ -201,13 +228,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('You Will Never Work in Television Again', 'The Smile', NULL),
-  ('Most Men (A Colors Show)', 'Amber Mark', NULL),
-  ('Champagne Problems', 'Inna', NULL),
-  ('Los Illuminaty', 'Rochy RD and Anuel AA', NULL),
-  ('Who Has Seen the Wind?', 'David Byrne and Yo La Tengo', NULL),
-  ('J’s Lullaby (Darlin’ I’d Wait for You)', 'Delaney Bailey', NULL),
-  ('Upstairs Flat', 'Burial', NULL)
+  ('Meta Angel', 'FKA twigs', NULL),
+  ('L’enfer', 'Stromae', NULL),
+  ('Lawn', 'Aldous Harding', NULL),
+  ('Be the Hook', 'Pavement', NULL),
+  ('Little Bother', 'King Princess featuring Fousheé', NULL),
+  ('Black Superhero', 'Robert Glasper featuring Killer Mike, Big K.R.I.T. and BJ the Chicago Kid', NULL),
+  ('Angel', 'DJ Python', NULL),
+  ('Taurus', 'Jacques Greene', NULL),
+  ('Kurunba', 'Rokia Koné & Jacknife Lee', NULL)
   ;
 
    // Update to song table
@@ -218,7 +247,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11459; // SELECT last_insert_rowid();
+  song_id = 11523; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -258,13 +287,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-12 09:05:40.106106', '1095', '11453'),
-  ('2022-01-12 09:05:40.108108', '1095', '11454'),
-  ('2022-01-12 09:05:40.108108', '1095', '11455'),
-  ('2022-01-12 09:05:40.108108', '1095', '11456'),
-  ('2022-01-12 09:05:40.108108', '1095', '11457'),
-  ('2022-01-12 09:05:40.108108', '1095', '11458'),
-  ('2022-01-12 09:05:40.108108', '1095', '11459')
+  ('2022-01-27 05:13:30.486486', '1101', '11515'),
+  ('2022-01-27 05:13:30.488488', '1101', '11516'),
+  ('2022-01-27 05:13:30.489489', '1101', '11517'),
+  ('2022-01-27 05:13:30.489489', '1101', '11505'),
+  ('2022-01-27 05:13:30.489489', '1101', '11518'),
+  ('2022-01-27 05:13:30.489489', '1101', '11519'),
+  ('2022-01-27 05:13:30.489489', '1101', '11520'),
+  ('2022-01-27 05:13:30.489489', '1101', '11521'),
+  ('2022-01-27 05:13:30.489489', '1101', '11522'),
+  ('2022-01-27 05:13:30.489489', '1101', '11523')
   ;
 
   // Update to source_song table
