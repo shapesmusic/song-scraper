@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', '2 Chainz, YoungBoy Never Broke Again, Key Glock, and More', '2022-01-21 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-2-chainz-youngboy/rod-wave-cold-december');
+    ('Complex', 'Best New Music This Week', '2 Chainz, YoungBoy Never Broke Again, Key Glock, and More', '2022-01-21 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-2-chainz-youngboy/key-glock-paper-route-empire-proud');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1119; // SELECT last_insert_rowid();
+  source_id = 1124; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -104,26 +104,26 @@
         "title": "Pop Music",
         "artist_name": "2 Chainz ft. Moneybagg Yo & BeatKing",
         "video_id": null,
-        "capture_date": "2022-01-27 10:22:31.528528",
-        "source_id": 1119,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-02-05 05:34:49.794794",
+        "source_id": 1124,
+        "song_id": 11574,
+        "duplicate": true
     },
     {
         "title": "Flossin",
         "artist_name": "YoungBoy Never Broke Again & Internet Money",
         "video_id": null,
-        "capture_date": "2022-01-27 10:22:31.529529",
-        "source_id": 1119,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-02-05 05:34:49.808808",
+        "source_id": 1124,
+        "song_id": 11575,
+        "duplicate": true
     },
     {
         "title": "Proud",
         "artist_name": "Key Glock & Paper Route Empire",
         "video_id": null,
-        "capture_date": "2022-01-27 10:22:31.529529",
-        "source_id": 1119,
+        "capture_date": "2022-02-05 05:34:49.808808",
+        "source_id": 1124,
         "song_id": 11558,
         "duplicate": true
     },
@@ -131,26 +131,26 @@
         "title": "So Cool",
         "artist_name": "Big K.R.I.T",
         "video_id": null,
-        "capture_date": "2022-01-27 10:22:31.529529",
-        "source_id": 1119,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-02-05 05:34:49.808808",
+        "source_id": 1124,
+        "song_id": 11576,
+        "duplicate": true
     },
     {
         "title": "Lick",
         "artist_name": "Shenseea ft. Megan Thee Stallion",
         "video_id": null,
-        "capture_date": "2022-01-27 10:22:31.529529",
-        "source_id": 1119,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-02-05 05:34:49.809809",
+        "source_id": 1124,
+        "song_id": 11577,
+        "duplicate": true
     },
     {
         "title": "Cold December",
         "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-01-27 10:22:31.529529",
-        "source_id": 1119,
+        "capture_date": "2022-02-05 05:34:49.809809",
+        "source_id": 1124,
         "song_id": 11547,
         "duplicate": true
     }
@@ -193,10 +193,7 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Pop Music', '2 Chainz ft. Moneybagg Yo & BeatKing', NULL),
-  ('Flossin', 'YoungBoy Never Broke Again & Internet Money', NULL),
-  ('So Cool', 'Big K.R.I.T', NULL),
-  ('Lick', 'Shenseea ft. Megan Thee Stallion', NULL)
+  <<no nonduplicates this week>>
   ;
 
    // Update to song table
@@ -247,12 +244,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-27 10:22:31.528528', '1119', '11574'),
-  ('2022-01-27 10:22:31.529529', '1119', '11575'),
-  ('2022-01-27 10:22:31.529529', '1119', '11558'),
-  ('2022-01-27 10:22:31.529529', '1119', '11576'),
-  ('2022-01-27 10:22:31.529529', '1119', '11577'),
-  ('2022-01-27 10:22:31.529529', '1119', '11547')
+  ('2022-02-05 05:34:49.794794', '1124', '11574'),
+  ('2022-02-05 05:34:49.808808', '1124', '11575'),
+  ('2022-02-05 05:34:49.808808', '1124', '11558'),
+  ('2022-02-05 05:34:49.808808', '1124', '11576'),
+  ('2022-02-05 05:34:49.809809', '1124', '11577'),
+  ('2022-02-05 05:34:49.809809', '1124', '11547')
   ;
 
   // Update to source_song table

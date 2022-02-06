@@ -19,7 +19,8 @@
   document.head.appendChild(momentjs);
 
   // Get and format publicationDate
-  publicationDate = document.getElementsByClassName("date")[0].innerText.trim();
+  publicationDateUpper = document.getElementsByClassName("date")[0].innerText.trim();
+  publicationDate = publicationDateUpper.slice(0, 1) + publicationDateUpper.slice(1).toLowerCase();
   publicationDateFormatted = moment(publicationDate, "MMM DD, YYYY").format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
 
   // Get source name info
@@ -48,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of JANUARY 21, 2022', '2022-01-21 12:00:00.000000', 'https://www.stereogum.com/2173610/the-5-best-songs-of-the-week-417/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of JANUARY 28, 2022', '2022-01-28 12:00:00.000000', 'https://www.stereogum.com/2174298/the-5-best-songs-of-the-week-418/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -57,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1121; // SELECT last_insert_rowid();
+  source_id = 1126; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -100,49 +101,49 @@
   songsData =
   [
     {
-        "title": "Lights Out",
-        "artist_name": "Fred again.. ",
+        "title": "Hangover Game",
+        "artist_name": "MJ Lenderman ",
         "video_id": null,
-        "capture_date": "2022-01-27 10:36:12.935935",
-        "source_id": 1121,
+        "capture_date": "2022-02-05 05:51:38.442442",
+        "source_id": 1126,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sunset",
-        "artist_name": "Beach House ",
+        "title": "Postman",
+        "artist_name": "Toro y Moi ",
         "video_id": null,
-        "capture_date": "2022-01-27 10:36:12.937937",
-        "source_id": 1121,
+        "capture_date": "2022-02-05 05:51:38.444444",
+        "source_id": 1126,
+        "song_id": 11578,
+        "duplicate": true
+    },
+    {
+        "title": "The Smoke",
+        "artist_name": "The Smile ",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:51:38.444444",
+        "source_id": 1126,
+        "song_id": 11596,
+        "duplicate": true
+    },
+    {
+        "title": "Walkin",
+        "artist_name": "Denzel Curry ",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:51:38.444444",
+        "source_id": 1126,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Simulation Swarm",
-        "artist_name": "Big Thief ",
+        "title": "Champion",
+        "artist_name": "Warpaint ",
         "video_id": null,
-        "capture_date": "2022-01-27 10:36:12.937937",
-        "source_id": 1121,
-        "song_id": 11568,
-        "duplicate": true
-    },
-    {
-        "title": "Year Of Love",
-        "artist_name": "Jenny Hval ",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:36:12.937937",
-        "source_id": 1121,
-        "song_id": 11535,
-        "duplicate": true
-    },
-    {
-        "title": "Surround Sound",
-        "artist_name": "J.I.D ",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:36:12.937937",
-        "source_id": 1121,
-        "song_id": 11527,
-        "duplicate": true
+        "capture_date": "2022-02-05 05:51:38.444444",
+        "source_id": 1126,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -183,8 +184,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Lights Out', 'Fred again.. ', NULL),
-  ('Sunset', 'Beach House ', NULL)
+  ('Hangover Game', 'MJ Lenderman ', NULL),
+  ('Walkin', 'Denzel Curry ', NULL),
+  ('Champion', 'Warpaint ', NULL)
   ;
 
    // Update to song table
@@ -195,7 +197,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11586; // SELECT last_insert_rowid();
+  song_id = 11619; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -235,11 +237,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-27 10:36:12.935935', '1121', '11585'),
-  ('2022-01-27 10:36:12.937937', '1121', '11586'),
-  ('2022-01-27 10:36:12.937937', '1121', '11568'),
-  ('2022-01-27 10:36:12.937937', '1121', '11535'),
-  ('2022-01-27 10:36:12.937937', '1121', '11527')
+  ('2022-02-05 05:51:38.442442', '1126', '11617'),
+  ('2022-02-05 05:51:38.444444', '1126', '11578'),
+  ('2022-02-05 05:51:38.444444', '1126', '11596'),
+  ('2022-02-05 05:51:38.444444', '1126', '11618'),
+  ('2022-02-05 05:51:38.444444', '1126', '11619')
   ;
 
   // Update to source_song table

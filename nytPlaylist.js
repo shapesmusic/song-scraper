@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'A Knockout Country-Rap Crossover, and 13 More New Songs', '2022-01-23 08:09:34.000000', 'https://www.nytimes.com/2022/01/21/arts/music/playlist-kidd-g-ynw-bslime-charlie-puth.html');
+    ('New York Times', 'The Playlist', 'glaive Showcases His Less Hyper Pop, and 13 More New Songs', '2022-01-28 09:23:21.000000', 'https://www.nytimes.com/2022/01/28/arts/music/playlist-glaive-the-smile.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1106; // SELECT last_insert_rowid();
+  source_id = 1123; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,101 +100,110 @@
   songsData =
   [
     {
-        "title": "Left Me",
-        "artist_name": "Kidd G featuring YNW BSlime",
+        "title": "Icarus",
+        "artist_name": "glaive",
         "video_id": null,
-        "capture_date": "2022-01-27 10:00:57.170170",
-        "source_id": 1106,
+        "capture_date": "2022-02-05 05:28:21.725725",
+        "source_id": 1123,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Light Switch",
-        "artist_name": "Charlie Puth",
+        "title": "The Smoke",
+        "artist_name": "The Smile",
         "video_id": null,
-        "capture_date": "2022-01-27 10:00:57.172172",
-        "source_id": 1106,
+        "capture_date": "2022-02-05 05:28:21.726726",
+        "source_id": 1123,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Midnight Sun",
-        "artist_name": "Nilüfer Yanya",
+        "title": "Papa Wemba",
+        "artist_name": "Pierre Kwenders",
         "video_id": null,
-        "capture_date": "2022-01-27 10:00:57.173173",
-        "source_id": 1106,
+        "capture_date": "2022-02-05 05:28:21.726726",
+        "source_id": 1123,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ur Just Horny",
-        "artist_name": "Gayle",
+        "title": "Secret",
+        "artist_name": "Raveena featuring Vince Staples",
         "video_id": null,
-        "capture_date": "2022-01-27 10:00:57.173173",
-        "source_id": 1106,
+        "capture_date": "2022-02-05 05:28:21.726726",
+        "source_id": 1123,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Amygdala",
-        "artist_name": "Ecco2K and Bladee",
+        "title": "Survivor’s Guilt",
+        "artist_name": "Saba featuring G Herbo",
         "video_id": null,
-        "capture_date": "2022-01-27 10:00:57.173173",
-        "source_id": 1106,
+        "capture_date": "2022-02-05 05:28:21.726726",
+        "source_id": 1123,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Anaconda",
-        "artist_name": "INVT",
+        "title": "Churchyard",
+        "artist_name": "Ex-Void",
         "video_id": null,
-        "capture_date": "2022-01-27 10:00:57.173173",
-        "source_id": 1106,
+        "capture_date": "2022-02-05 05:28:21.726726",
+        "source_id": 1123,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Proud",
-        "artist_name": "Key Glock",
+        "title": "Happy Birthday Forever",
+        "artist_name": "Tess Parks",
         "video_id": null,
-        "capture_date": "2022-01-27 10:00:57.173173",
-        "source_id": 1106,
+        "capture_date": "2022-02-05 05:28:21.726726",
+        "source_id": 1123,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shadow in the Frame",
-        "artist_name": "Daniel Rossen",
+        "title": "Lagoon",
+        "artist_name": "Dora Jar",
         "video_id": null,
-        "capture_date": "2022-01-27 10:00:57.173173",
-        "source_id": 1106,
+        "capture_date": "2022-02-05 05:28:21.726726",
+        "source_id": 1123,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Do You See the Light Around Me?",
-        "artist_name": "Uwade",
+        "title": "Endless Time",
+        "artist_name": "The Weather Station",
         "video_id": null,
-        "capture_date": "2022-01-27 10:00:57.173173",
-        "source_id": 1106,
+        "capture_date": "2022-02-05 05:28:21.726726",
+        "source_id": 1123,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Jordan",
-        "artist_name": "Jana Horn",
+        "title": "Insecure",
+        "artist_name": "Donna Missal",
         "video_id": null,
-        "capture_date": "2022-01-27 10:00:57.173173",
-        "source_id": 1106,
+        "capture_date": "2022-02-05 05:28:21.727727",
+        "source_id": 1123,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sembrá El Maíz",
-        "artist_name": "Kiko Villamizar",
+        "title": "Real Love",
+        "artist_name": "Katie Dey",
         "video_id": null,
-        "capture_date": "2022-01-27 10:00:57.173173",
-        "source_id": 1106,
+        "capture_date": "2022-02-05 05:28:21.727727",
+        "source_id": 1123,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "A Call for All Demons",
+        "artist_name": "Tyler Mitchell featuring Marshall Allen",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:28:21.727727",
+        "source_id": 1123,
         "song_id": null,
         "duplicate": false
     }
@@ -237,17 +246,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Left Me', 'Kidd G featuring YNW BSlime', NULL),
-  ('Light Switch', 'Charlie Puth', NULL),
-  ('Midnight Sun', 'Nilüfer Yanya', NULL),
-  ('Ur Just Horny', 'Gayle', NULL),
-  ('Amygdala', 'Ecco2K and Bladee', NULL),
-  ('Anaconda', 'INVT', NULL),
-  ('Proud', 'Key Glock', NULL),
-  ('Shadow in the Frame', 'Daniel Rossen', NULL),
-  ('Do You See the Light Around Me?', 'Uwade', NULL),
-  ('Jordan', 'Jana Horn', NULL),
-  ('Sembrá El Maíz', 'Kiko Villamizar', NULL)
+  ('Icarus', 'glaive', NULL),
+  ('The Smoke', 'The Smile', NULL),
+  ('Papa Wemba', 'Pierre Kwenders', NULL),
+  ('Secret', 'Raveena featuring Vince Staples', NULL),
+  ('Survivor’s Guilt', 'Saba featuring G Herbo', NULL),
+  ('Churchyard', 'Ex-Void', NULL),
+  ('Happy Birthday Forever', 'Tess Parks', NULL),
+  ('Lagoon', 'Dora Jar', NULL),
+  ('Endless Time', 'The Weather Station', NULL),
+  ('Insecure', 'Donna Missal', NULL),
+  ('Real Love', 'Katie Dey', NULL),
+  ('A Call for All Demons', 'Tyler Mitchell featuring Marshall Allen', NULL)
   ;
 
    // Update to song table
@@ -258,7 +268,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11562; // SELECT last_insert_rowid();
+  song_id = 11606; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +308,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-27 10:00:57.170170', '1106', '11552'),
-  ('2022-01-27 10:00:57.172172', '1106', '11553'),
-  ('2022-01-27 10:00:57.173173', '1106', '11554'),
-  ('2022-01-27 10:00:57.173173', '1106', '11555'),
-  ('2022-01-27 10:00:57.173173', '1106', '11556'),
-  ('2022-01-27 10:00:57.173173', '1106', '11557'),
-  ('2022-01-27 10:00:57.173173', '1106', '11558'),
-  ('2022-01-27 10:00:57.173173', '1106', '11559'),
-  ('2022-01-27 10:00:57.173173', '1106', '11560'),
-  ('2022-01-27 10:00:57.173173', '1106', '11561'),
-  ('2022-01-27 10:00:57.173173', '1106', '11562')
+  ('2022-02-05 05:28:21.725725', '1123', '11595'),
+  ('2022-02-05 05:28:21.726726', '1123', '11596'),
+  ('2022-02-05 05:28:21.726726', '1123', '11597'),
+  ('2022-02-05 05:28:21.726726', '1123', '11598'),
+  ('2022-02-05 05:28:21.726726', '1123', '11599'),
+  ('2022-02-05 05:28:21.726726', '1123', '11600'),
+  ('2022-02-05 05:28:21.726726', '1123', '11601'),
+  ('2022-02-05 05:28:21.726726', '1123', '11602'),
+  ('2022-02-05 05:28:21.726726', '1123', '11603'),
+  ('2022-02-05 05:28:21.727727', '1123', '11604'),
+  ('2022-02-05 05:28:21.727727', '1123', '11605'),
+  ('2022-02-05 05:28:21.727727', '1123', '11606')
   ;
 
   // Update to source_song table

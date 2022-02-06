@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of January 29, 2022', '2022-01-29 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-29');
+    ('Billboard', 'The Hot 100', 'Week of February 5, 2022', '2022-02-05 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-05');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1105; // SELECT last_insert_rowid();
+  source_id = 1122; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -103,92 +103,101 @@
   songsData =
   [
     {
-          "title": "P Power",
-        "artist_name": "Gunna ft. Drake",
+        "title": "Light Switch",
+        "artist_name": "Charlie Puth",
         "video_id": null,
-        "capture_date": "2022-01-27 09:51:59.566566",
-        "source_id": 1105,
-        "song_id": 11524,
+        "capture_date": "2022-02-05 05:22:49.423423",
+        "source_id": 1122,
+        "song_id": 11553,
         "duplicate": true
     },
     {
-        "title": "Eazy",
-        "artist_name": "The Game & Kanye West",
-        "video_id": null,
-        "capture_date": "2022-01-27 09:51:59.568568",
-        "source_id": 1105,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cold December",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2022-01-27 09:51:59.568568",
-        "source_id": 1105,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bring The Hook",
+        "title": "No Switch",
         "artist_name": "YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-01-27 09:51:59.568568",
-        "source_id": 1105,
+        "capture_date": "2022-02-05 05:22:49.423423",
+        "source_id": 1122,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Iffy",
-        "artist_name": "Chris Brown",
-        "video_id": null,
-        "capture_date": "2022-01-27 09:51:59.568568",
-        "source_id": 1105,
-        "song_id": 11530,
-        "duplicate": true
-    },
-    {
-        "title": "Never Say Never",
-        "artist_name": "Cole Swindell / Lainey Wilson",
-        "video_id": null,
-        "capture_date": "2022-01-27 09:51:59.569569",
-        "source_id": 1105,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fish Scale",
+        "title": "Bring It On",
         "artist_name": "YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-01-27 09:51:59.569569",
-        "source_id": 1105,
-        "song_id": 11464,
-        "duplicate": true
-    },
-    {
-        "title": "Trouble With A Heartbreak",
-        "artist_name": "Jason Aldean",
-        "video_id": null,
-        "capture_date": "2022-01-27 09:51:59.569569",
-        "source_id": 1105,
+        "capture_date": "2022-02-05 05:22:49.423423",
+        "source_id": 1122,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Surround Sound",
-        "artist_name": "JID ft. 21 Savage & Baby Tate",
+        "title": "Flossin'",
+        "artist_name": "Internet Money ft. YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-01-27 09:51:59.569569",
-        "source_id": 1105,
-        "song_id": 11527,
+        "capture_date": "2022-02-05 05:22:49.424424",
+        "source_id": 1122,
+        "song_id": 11575,
         "duplicate": true
     },
     {
-        "title": "All Of You",
-        "artist_name": "Stephanie Beatriz, Olga Merediz, John Leguizamo, Adassa, Maluma & Encanto Cast",
+        "title": "Proud",
+        "artist_name": "Key Glock",
         "video_id": null,
-        "capture_date": "2022-01-27 09:51:59.570570",
-        "source_id": 1105,
+        "capture_date": "2022-02-05 05:22:49.424424",
+        "source_id": 1122,
+        "song_id": 11558,
+        "duplicate": true
+    },
+    {
+        "title": "Know Like I Know",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:22:49.424424",
+        "source_id": 1122,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "2Hoo",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:22:49.425425",
+        "source_id": 1122,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Long Live",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:22:49.425425",
+        "source_id": 1122,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dis & That",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:22:49.425425",
+        "source_id": 1122,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Beautiful Lies",
+        "artist_name": "Yung Bleu & Kehlani",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:22:49.425425",
+        "source_id": 1122,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Smoke One",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:22:49.426426",
+        "source_id": 1122,
         "song_id": null,
         "duplicate": false
     }
@@ -231,12 +240,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Eazy', 'The Game & Kanye West', NULL),
-  ('Cold December', 'Rod Wave', NULL),
-  ('Bring The Hook', 'YoungBoy Never Broke Again', NULL),
-  ('Never Say Never', 'Cole Swindell / Lainey Wilson', NULL),
-  ('Trouble With A Heartbreak', 'Jason Aldean', NULL),
-  ('All Of You', 'Stephanie Beatriz, Olga Merediz, John Leguizamo, Adassa, Maluma & Encanto Cast', NULL)
+  ('No Switch', 'YoungBoy Never Broke Again', NULL),
+  ('Bring It On', 'YoungBoy Never Broke Again', NULL),
+  ('Know Like I Know', 'YoungBoy Never Broke Again', NULL),
+  ('2Hoo', 'YoungBoy Never Broke Again', NULL),
+  ('Long Live', 'YoungBoy Never Broke Again', NULL),
+  ('Dis & That', 'YoungBoy Never Broke Again', NULL),
+  ('Beautiful Lies', 'Yung Bleu & Kehlani', NULL),
+  ('Smoke One', 'YoungBoy Never Broke Again', NULL)
   ;
 
    // Update to song table
@@ -247,7 +258,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11551; // SELECT last_insert_rowid();
+  song_id = 11594; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -287,16 +298,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-27 09:51:59.566566', '1105', '11524'),
-  ('2022-01-27 09:51:59.568568', '1105', '11546'),
-  ('2022-01-27 09:51:59.568568', '1105', '11547'),
-  ('2022-01-27 09:51:59.568568', '1105', '11548'),
-  ('2022-01-27 09:51:59.568568', '1105', '11530'),
-  ('2022-01-27 09:51:59.569569', '1105', '11549'),
-  ('2022-01-27 09:51:59.569569', '1105', '11464'),
-  ('2022-01-27 09:51:59.569569', '1105', '11550'),
-  ('2022-01-27 09:51:59.569569', '1105', '11527'),
-  ('2022-01-27 09:51:59.570570', '1105', '11551')
+  ('2022-02-05 05:22:49.423423', '1122', '11553'),
+  ('2022-02-05 05:22:49.423423', '1122', '11587'),
+  ('2022-02-05 05:22:49.423423', '1122', '11588'),
+  ('2022-02-05 05:22:49.424424', '1122', '11575'),
+  ('2022-02-05 05:22:49.424424', '1122', '11558'),
+  ('2022-02-05 05:22:49.424424', '1122', '11589'),
+  ('2022-02-05 05:22:49.425425', '1122', '11590'),
+  ('2022-02-05 05:22:49.425425', '1122', '11591'),
+  ('2022-02-05 05:22:49.425425', '1122', '11592'),
+  ('2022-02-05 05:22:49.425425', '1122', '11593'),
+  ('2022-02-05 05:22:49.426426', '1122', '11594')
   ;
 
   // Update to source_song table

@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 238 // from the chart page
+  fader_no = 239 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 238 Week of January 26, 2022', '2022-01-26 12:00:00.000000', 'https://www.thefader.com/2022/01/26/songs-you-need-baby-face-ray-rod-wave-toro-t-moy');
+    ('The Fader', '10 songs you need in your life this week', 'No. 239 Week of February 02, 2022', '2022-02-02 12:00:00.000000', 'https://www.thefader.com/2022/02/04/watch-the-full-trailer-for-the-kanye-west-doc-jeen-yus');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1120; // SELECT last_insert_rowid();
+  source_id = 1125; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Cold December",
-        "artist_name": "Rod Wave",
+        "title": "One",
+        "artist_name": "Amber Mark",
         "video_id": null,
-        "capture_date": "2022-01-27 10:29:57.520520",
-        "source_id": 1120,
-        "song_id": 11547,
-        "duplicate": true
-    },
-    {
-        "title": "Postman",
-        "artist_name": "Toro Y Moi",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:29:57.522522",
-        "source_id": 1120,
+        "capture_date": "2022-02-05 05:47:33.964964",
+        "source_id": 1125,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sincerely Face",
-        "artist_name": "Babyface Ray",
+        "title": "Who Hotter Than Gee",
+        "artist_name": "EST Gee",
         "video_id": null,
-        "capture_date": "2022-01-27 10:29:57.522522",
-        "source_id": 1120,
-        "song_id": 11566,
-        "duplicate": true
-    },
-    {
-        "title": "BOY DESTROYER",
-        "artist_name": "LustSickPuppy",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:29:57.522522",
-        "source_id": 1120,
+        "capture_date": "2022-02-05 05:47:33.965965",
+        "source_id": 1125,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Amygdala",
-        "artist_name": "Ecco2k and Bladee",
+        "title": "King of the Galaxy",
+        "artist_name": "BabyTron",
         "video_id": null,
-        "capture_date": "2022-01-27 10:29:57.522522",
-        "source_id": 1120,
-        "song_id": 11556,
-        "duplicate": true
-    },
-    {
-        "title": "How Long",
-        "artist_name": "Tove Lo",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:29:57.522522",
-        "source_id": 1120,
+        "capture_date": "2022-02-05 05:47:33.965965",
+        "source_id": 1125,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "home",
-        "artist_name": "Two Shell",
+        "title": "Beg For You",
+        "artist_name": "Charli XCX featuring Rina Sawayama",
         "video_id": null,
-        "capture_date": "2022-01-27 10:29:57.522522",
-        "source_id": 1120,
+        "capture_date": "2022-02-05 05:47:33.965965",
+        "source_id": 1125,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Not In The Mood",
-        "artist_name": "Hikaru Utada",
+        "title": "Cry Mfer",
+        "artist_name": "My Idea",
         "video_id": null,
-        "capture_date": "2022-01-27 10:29:57.522522",
-        "source_id": 1120,
+        "capture_date": "2022-02-05 05:47:33.965965",
+        "source_id": 1125,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Snow Globes",
-        "artist_name": "Black Country, New Road",
+        "title": "New Tricks: Art, Aesthetics, and Money",
+        "artist_name": "Kilo Kish ft. Vince Staples",
         "video_id": null,
-        "capture_date": "2022-01-27 10:29:57.522522",
-        "source_id": 1120,
+        "capture_date": "2022-02-05 05:47:33.965965",
+        "source_id": 1125,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Consequences",
-        "artist_name": "Years & Years",
+        "title": "Sugar Slip (The Lick)",
+        "artist_name": "Leon Vynehall",
         "video_id": null,
-        "capture_date": "2022-01-27 10:29:57.522522",
-        "source_id": 1120,
+        "capture_date": "2022-02-05 05:47:33.965965",
+        "source_id": 1125,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Anxiety",
+        "artist_name": "Coi Leray",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:47:33.965965",
+        "source_id": 1125,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Impossible",
+        "artist_name": "Röyksopp ft. Alison Goldfrapp",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:47:33.965965",
+        "source_id": 1125,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fortune Teller",
+        "artist_name": "NoCap",
+        "video_id": null,
+        "capture_date": "2022-02-05 05:47:33.965965",
+        "source_id": 1125,
         "song_id": null,
         "duplicate": false
     }
@@ -230,13 +230,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Postman', 'Toro Y Moi', NULL),
-  ('BOY DESTROYER', 'LustSickPuppy', NULL),
-  ('How Long', 'Tove Lo', NULL),
-  ('home', 'Two Shell', NULL),
-  ('Not In The Mood', 'Hikaru Utada', NULL),
-  ('Snow Globes', 'Black Country, New Road', NULL),
-  ('Consequences', 'Years & Years', NULL)
+  ('One', 'Amber Mark', NULL),
+  ('Who Hotter Than Gee', 'EST Gee', NULL),
+  ('King of the Galaxy', 'BabyTron', NULL),
+  ('Beg For You', 'Charli XCX featuring Rina Sawayama', NULL),
+  ('Cry Mfer', 'My Idea', NULL),
+  ('New Tricks: Art, Aesthetics, and Money', 'Kilo Kish ft. Vince Staples', NULL),
+  ('Sugar Slip (The Lick)', 'Leon Vynehall', NULL),
+  ('Anxiety', 'Coi Leray', NULL),
+  ('Impossible', 'Röyksopp ft. Alison Goldfrapp', NULL),
+  ('Fortune Teller', 'NoCap', NULL)
   ;
 
    // Update to song table
@@ -247,7 +250,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11584; // SELECT last_insert_rowid();
+  song_id = 11616; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -287,16 +290,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-27 10:29:57.520520', '1120', '11547'),
-  ('2022-01-27 10:29:57.522522', '1120', '11578'),
-  ('2022-01-27 10:29:57.522522', '1120', '11566'),
-  ('2022-01-27 10:29:57.522522', '1120', '11579'),
-  ('2022-01-27 10:29:57.522522', '1120', '11556'),
-  ('2022-01-27 10:29:57.522522', '1120', '11580'),
-  ('2022-01-27 10:29:57.522522', '1120', '11581'),
-  ('2022-01-27 10:29:57.522522', '1120', '11582'),
-  ('2022-01-27 10:29:57.522522', '1120', '11583'),
-  ('2022-01-27 10:29:57.522522', '1120', '11584')
+  ('2022-02-05 05:47:33.964964', '1125', '11607'),
+  ('2022-02-05 05:47:33.965965', '1125', '11608'),
+  ('2022-02-05 05:47:33.965965', '1125', '11609'),
+  ('2022-02-05 05:47:33.965965', '1125', '11610'),
+  ('2022-02-05 05:47:33.965965', '1125', '11611'),
+  ('2022-02-05 05:47:33.965965', '1125', '11612'),
+  ('2022-02-05 05:47:33.965965', '1125', '11613'),
+  ('2022-02-05 05:47:33.965965', '1125', '11614'),
+  ('2022-02-05 05:47:33.965965', '1125', '11615'),
+  ('2022-02-05 05:47:33.965965', '1125', '11616')
   ;
 
   // Update to source_song table
