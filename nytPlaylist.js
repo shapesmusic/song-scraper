@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'glaive Showcases His Less Hyper Pop, and 13 More New Songs', '2022-01-28 09:23:21.000000', 'https://www.nytimes.com/2022/01/28/arts/music/playlist-glaive-the-smile.html');
+    ('New York Times', 'The Playlist', 'Kamasi Washington Blasts Into a Fresh Era, and 13 More New Songs', '2022-02-04 09:53:13.000000', 'https://www.nytimes.com/2022/02/04/arts/music/playlist-kamasi-washington-koffee.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1123; // SELECT last_insert_rowid();
+  source_id = 1128; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,110 +100,128 @@
   songsData =
   [
     {
-        "title": "Icarus",
-        "artist_name": "glaive",
+        "title": "The Garden Path",
+        "artist_name": "Kamasi Washington",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.725725",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.290290",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Smoke",
-        "artist_name": "The Smile",
+        "title": "Pull Up",
+        "artist_name": "Koffee",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.726726",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.291291",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Papa Wemba",
-        "artist_name": "Pierre Kwenders",
+        "title": "Emo Girl",
+        "artist_name": "Machine Gun Kelly featuring Willow",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.726726",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.291291",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Secret",
-        "artist_name": "Raveena featuring Vince Staples",
+        "title": "Kissing Lessons",
+        "artist_name": "Lucy Dacus",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.726726",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.291291",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Survivor’s Guilt",
-        "artist_name": "Saba featuring G Herbo",
+        "title": "She’s All I Wanna Be",
+        "artist_name": "Tate McRae",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.726726",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.291291",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Churchyard",
-        "artist_name": "Ex-Void",
+        "title": "Call Me Home",
+        "artist_name": "Sasami",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.726726",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.291291",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Happy Birthday Forever",
-        "artist_name": "Tess Parks",
+        "title": "Softly",
+        "artist_name": "Arlo Parks",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.726726",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.291291",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lagoon",
-        "artist_name": "Dora Jar",
+        "title": "Dates in Pickup Trucks",
+        "artist_name": "Kassi Ashton",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.726726",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.292292",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Endless Time",
-        "artist_name": "The Weather Station",
+        "title": "Try",
+        "artist_name": "Obongjayar",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.726726",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.292292",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Insecure",
-        "artist_name": "Donna Missal",
+        "title": "Cry Mfer",
+        "artist_name": "My Idea",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.727727",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.292292",
+        "source_id": 1128,
+        "song_id": 11611,
+        "duplicate": true
+    },
+    {
+        "title": "Sandwich Sharer",
+        "artist_name": "Illuminati Hotties",
+        "video_id": null,
+        "capture_date": "2022-02-12 01:28:49.292292",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Real Love",
-        "artist_name": "Katie Dey",
+        "title": "17ºC",
+        "artist_name": "Whatever the Weather",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.727727",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.292292",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "A Call for All Demons",
-        "artist_name": "Tyler Mitchell featuring Marshall Allen",
+        "title": "Reconciliación Con la Vida",
+        "artist_name": "Ayver",
         "video_id": null,
-        "capture_date": "2022-02-05 05:28:21.727727",
-        "source_id": 1123,
+        "capture_date": "2022-02-12 01:28:49.292292",
+        "source_id": 1128,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Historic Music Past Tense Future, Side C",
+        "artist_name": "Peter Brötzmann, Milford Graves, William Parker",
+        "video_id": null,
+        "capture_date": "2022-02-12 01:28:49.292292",
+        "source_id": 1128,
         "song_id": null,
         "duplicate": false
     }
@@ -246,18 +264,19 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Icarus', 'glaive', NULL),
-  ('The Smoke', 'The Smile', NULL),
-  ('Papa Wemba', 'Pierre Kwenders', NULL),
-  ('Secret', 'Raveena featuring Vince Staples', NULL),
-  ('Survivor’s Guilt', 'Saba featuring G Herbo', NULL),
-  ('Churchyard', 'Ex-Void', NULL),
-  ('Happy Birthday Forever', 'Tess Parks', NULL),
-  ('Lagoon', 'Dora Jar', NULL),
-  ('Endless Time', 'The Weather Station', NULL),
-  ('Insecure', 'Donna Missal', NULL),
-  ('Real Love', 'Katie Dey', NULL),
-  ('A Call for All Demons', 'Tyler Mitchell featuring Marshall Allen', NULL)
+  ('The Garden Path', 'Kamasi Washington', NULL),
+  ('Pull Up', 'Koffee', NULL),
+  ('Emo Girl', 'Machine Gun Kelly featuring Willow', NULL),
+  ('Kissing Lessons', 'Lucy Dacus', NULL),
+  ('She’s All I Wanna Be', 'Tate McRae', NULL),
+  ('Call Me Home', 'Sasami', NULL),
+  ('Softly', 'Arlo Parks', NULL),
+  ('Dates in Pickup Trucks', 'Kassi Ashton', NULL),
+  ('Try', 'Obongjayar', NULL),
+  ('Sandwich Sharer', 'Illuminati Hotties', NULL),
+  ('17ºC', 'Whatever the Weather', NULL),
+  ('Reconciliación Con la Vida', 'Ayver', NULL),
+  ('Historic Music Past Tense Future, Side C', 'Peter Brötzmann, Milford Graves, William Parker', NULL)
   ;
 
    // Update to song table
@@ -268,7 +287,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11606; // SELECT last_insert_rowid();
+  song_id = 11643; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -308,18 +327,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-05 05:28:21.725725', '1123', '11595'),
-  ('2022-02-05 05:28:21.726726', '1123', '11596'),
-  ('2022-02-05 05:28:21.726726', '1123', '11597'),
-  ('2022-02-05 05:28:21.726726', '1123', '11598'),
-  ('2022-02-05 05:28:21.726726', '1123', '11599'),
-  ('2022-02-05 05:28:21.726726', '1123', '11600'),
-  ('2022-02-05 05:28:21.726726', '1123', '11601'),
-  ('2022-02-05 05:28:21.726726', '1123', '11602'),
-  ('2022-02-05 05:28:21.726726', '1123', '11603'),
-  ('2022-02-05 05:28:21.727727', '1123', '11604'),
-  ('2022-02-05 05:28:21.727727', '1123', '11605'),
-  ('2022-02-05 05:28:21.727727', '1123', '11606')
+  ('2022-02-12 01:28:49.290290', '1128', '11631'),
+  ('2022-02-12 01:28:49.291291', '1128', '11632'),
+  ('2022-02-12 01:28:49.291291', '1128', '11633'),
+  ('2022-02-12 01:28:49.291291', '1128', '11634'),
+  ('2022-02-12 01:28:49.291291', '1128', '11635'),
+  ('2022-02-12 01:28:49.291291', '1128', '11636'),
+  ('2022-02-12 01:28:49.291291', '1128', '11637'),
+  ('2022-02-12 01:28:49.292292', '1128', '11638'),
+  ('2022-02-12 01:28:49.292292', '1128', '11639'),
+  ('2022-02-12 01:28:49.292292', '1128', '11611'),
+  ('2022-02-12 01:28:49.292292', '1128', '11640'),
+  ('2022-02-12 01:28:49.292292', '1128', '11641'),
+  ('2022-02-12 01:28:49.292292', '1128', '11642'),
+  ('2022-02-12 01:28:49.292292', '1128', '11643')
   ;
 
   // Update to source_song table

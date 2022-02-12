@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', '2 Chainz, YoungBoy Never Broke Again, Key Glock, and More', '2022-01-21 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-2-chainz-youngboy/key-glock-paper-route-empire-proud');
+    ('Complex', 'Best New Music This Week', 'Nicki Minaj, 2 Chainz, $NOT, and More', '2022-02-04 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-nicki-minaj-2-chainz-snot/');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1124; // SELECT last_insert_rowid();
+  source_id = 1129; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,58 +101,85 @@
   songsData =
   [
     {
-        "title": "Pop Music",
-        "artist_name": "2 Chainz ft. Moneybagg Yo & BeatKing",
+        "title": "Do We Have A Problem?",
+        "artist_name": "Nicki Minaj ft. Lil Baby",
         "video_id": null,
-        "capture_date": "2022-02-05 05:34:49.794794",
-        "source_id": 1124,
-        "song_id": 11574,
-        "duplicate": true
+        "capture_date": "2022-02-12 01:39:05.378378",
+        "source_id": 1129,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Flossin",
-        "artist_name": "YoungBoy Never Broke Again & Internet Money",
+        "title": "Scared Money",
+        "artist_name": "YG ft. J. Cole & Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2022-02-05 05:34:49.808808",
-        "source_id": 1124,
-        "song_id": 11575,
-        "duplicate": true
+        "capture_date": "2022-02-12 01:39:05.379379",
+        "source_id": 1129,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Proud",
-        "artist_name": "Key Glock & Paper Route Empire",
+        "title": "Outstanding",
+        "artist_name": "2 Chainz ft. Roddy Ricch",
         "video_id": null,
-        "capture_date": "2022-02-05 05:34:49.808808",
-        "source_id": 1124,
-        "song_id": 11558,
-        "duplicate": true
+        "capture_date": "2022-02-12 01:39:05.379379",
+        "source_id": 1129,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "So Cool",
-        "artist_name": "Big K.R.I.T",
+        "title": "Doja",
+        "artist_name": "$NOT ft. A$AP Rocky",
         "video_id": null,
-        "capture_date": "2022-02-05 05:34:49.808808",
-        "source_id": 1124,
-        "song_id": 11576,
-        "duplicate": true
+        "capture_date": "2022-02-12 01:39:05.379379",
+        "source_id": 1129,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Lick",
-        "artist_name": "Shenseea ft. Megan Thee Stallion",
+        "title": "Still",
+        "artist_name": "Saba ft. 6LACK & Smino",
         "video_id": null,
-        "capture_date": "2022-02-05 05:34:49.809809",
-        "source_id": 1124,
-        "song_id": 11577,
-        "duplicate": true
+        "capture_date": "2022-02-12 01:39:05.379379",
+        "source_id": 1129,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Cold December",
-        "artist_name": "Rod Wave",
+        "title": "John Woo Flick",
+        "artist_name": "Conway the Machine ft. Benny the Butcher & Westside Gunn",
         "video_id": null,
-        "capture_date": "2022-02-05 05:34:49.809809",
-        "source_id": 1124,
-        "song_id": 11547,
-        "duplicate": true
+        "capture_date": "2022-02-12 01:39:05.379379",
+        "source_id": 1129,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cold Gangsta",
+        "artist_name": "Yo Gotti ft. 42 Dugg",
+        "video_id": null,
+        "capture_date": "2022-02-12 01:39:05.380380",
+        "source_id": 1129,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Locked In",
+        "artist_name": "G Herbo",
+        "video_id": null,
+        "capture_date": "2022-02-12 01:39:05.380380",
+        "source_id": 1129,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Don’t Play That",
+        "artist_name": "King Von ft. 21 Savage",
+        "video_id": null,
+        "capture_date": "2022-02-12 01:39:05.380380",
+        "source_id": 1129,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -193,7 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  <<no nonduplicates this week>>
+  ('Do We Have A Problem?', 'Nicki Minaj ft. Lil Baby', NULL),
+  ('Scared Money', 'YG ft. J. Cole & Moneybagg Yo', NULL),
+  ('Outstanding', '2 Chainz ft. Roddy Ricch', NULL),
+  ('Doja', '$NOT ft. A$AP Rocky', NULL),
+  ('Still', 'Saba ft. 6LACK & Smino', NULL),
+  ('John Woo Flick', 'Conway the Machine ft. Benny the Butcher & Westside Gunn', NULL),
+  ('Cold Gangsta', 'Yo Gotti ft. 42 Dugg', NULL),
+  ('Locked In', 'G Herbo', NULL),
+  ('Don’t Play That', 'King Von ft. 21 Savage', NULL)
   ;
 
    // Update to song table
@@ -204,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11577; // SELECT last_insert_rowid();
+  song_id = 11652; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -244,12 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-05 05:34:49.794794', '1124', '11574'),
-  ('2022-02-05 05:34:49.808808', '1124', '11575'),
-  ('2022-02-05 05:34:49.808808', '1124', '11558'),
-  ('2022-02-05 05:34:49.808808', '1124', '11576'),
-  ('2022-02-05 05:34:49.809809', '1124', '11577'),
-  ('2022-02-05 05:34:49.809809', '1124', '11547')
+  ('2022-02-12 01:39:05.378378', '1129', '11644'),
+  ('2022-02-12 01:39:05.379379', '1129', '11645'),
+  ('2022-02-12 01:39:05.379379', '1129', '11646'),
+  ('2022-02-12 01:39:05.379379', '1129', '11647'),
+  ('2022-02-12 01:39:05.379379', '1129', '11648'),
+  ('2022-02-12 01:39:05.379379', '1129', '11649'),
+  ('2022-02-12 01:39:05.380380', '1129', '11650'),
+  ('2022-02-12 01:39:05.380380', '1129', '11651'),
+  ('2022-02-12 01:39:05.380380', '1129', '11652')
   ;
 
   // Update to source_song table

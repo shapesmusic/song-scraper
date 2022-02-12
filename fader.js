@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 239 // from the chart page
+  fader_no = 240 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 239 Week of February 02, 2022', '2022-02-02 12:00:00.000000', 'https://www.thefader.com/2022/02/04/watch-the-full-trailer-for-the-kanye-west-doc-jeen-yus');
+    ('The Fader', '10 songs you need in your life this week', 'No. 240 Week of February 09, 2022', '2022-02-09 12:00:00.000000', 'https://www.thefader.com/2022/02/09/songs-you-need-mitski-pusha-t-skiifall');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1125; // SELECT last_insert_rowid();
+  source_id = 1130; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -67,7 +67,7 @@
   songsData = [];
 
   for (var i=0; i<elements.length; i++){
-    title = elements[i].innerText.match(/“(.*?)”/)[1]; // may need " or “” type quotation marks (usually "), and – style dash
+    title = elements[i].innerText.match(/"(.*?)"/)[1]; // may need " or “” type quotation marks (usually "), and – style dash
     artist_name = elements[i].innerText.match(/– ([\s\S]*)$/)[1] // may need " or “ type quotation marks
     video_id = null
       // replace null with below to grab video IDs (when all songs are YT)
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "One",
-        "artist_name": "Amber Mark",
+        "title": "Diet Coke",
+        "artist_name": "Pusha T",
         "video_id": null,
-        "capture_date": "2022-02-05 05:47:33.964964",
-        "source_id": 1125,
+        "capture_date": "2022-02-12 01:50:10.211211",
+        "source_id": 1130,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Who Hotter Than Gee",
-        "artist_name": "EST Gee",
+        "title": "Billie Jean",
+        "artist_name": "Lil Bean",
         "video_id": null,
-        "capture_date": "2022-02-05 05:47:33.965965",
-        "source_id": 1125,
+        "capture_date": "2022-02-12 01:50:10.212212",
+        "source_id": 1130,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "King of the Galaxy",
-        "artist_name": "BabyTron",
+        "title": "Should've Been Me",
+        "artist_name": "Mitski",
         "video_id": null,
-        "capture_date": "2022-02-05 05:47:33.965965",
-        "source_id": 1125,
+        "capture_date": "2022-02-12 01:50:10.212212",
+        "source_id": 1130,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Beg For You",
-        "artist_name": "Charli XCX featuring Rina Sawayama",
+        "title": "Saoko",
+        "artist_name": "Rosalía",
         "video_id": null,
-        "capture_date": "2022-02-05 05:47:33.965965",
-        "source_id": 1125,
+        "capture_date": "2022-02-12 01:50:10.212212",
+        "source_id": 1130,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cry Mfer",
-        "artist_name": "My Idea",
+        "title": "Satan",
+        "artist_name": "Andy Shauf",
         "video_id": null,
-        "capture_date": "2022-02-05 05:47:33.965965",
-        "source_id": 1125,
+        "capture_date": "2022-02-12 01:50:10.212212",
+        "source_id": 1130,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "New Tricks: Art, Aesthetics, and Money",
-        "artist_name": "Kilo Kish ft. Vince Staples",
+        "title": "FOREIGN EXCHANGE",
+        "artist_name": "Junglepussy",
         "video_id": null,
-        "capture_date": "2022-02-05 05:47:33.965965",
-        "source_id": 1125,
+        "capture_date": "2022-02-12 01:50:10.212212",
+        "source_id": 1130,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sugar Slip (The Lick)",
-        "artist_name": "Leon Vynehall",
+        "title": "Softly",
+        "artist_name": "Arlo Parks",
         "video_id": null,
-        "capture_date": "2022-02-05 05:47:33.965965",
-        "source_id": 1125,
+        "capture_date": "2022-02-12 01:50:10.212212",
+        "source_id": 1130,
+        "song_id": 11637,
+        "duplicate": true
+    },
+    {
+        "title": "Royal and Desire",
+        "artist_name": "Animal Collective",
+        "video_id": null,
+        "capture_date": "2022-02-12 01:50:10.212212",
+        "source_id": 1130,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Anxiety",
-        "artist_name": "Coi Leray",
+        "title": "Bandthoven",
+        "artist_name": "Bandmanrill",
         "video_id": null,
-        "capture_date": "2022-02-05 05:47:33.965965",
-        "source_id": 1125,
+        "capture_date": "2022-02-12 01:50:10.212212",
+        "source_id": 1130,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Impossible",
-        "artist_name": "Röyksopp ft. Alison Goldfrapp",
+        "title": "Bloodclarrt Business",
+        "artist_name": "Skiifall",
         "video_id": null,
-        "capture_date": "2022-02-05 05:47:33.965965",
-        "source_id": 1125,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fortune Teller",
-        "artist_name": "NoCap",
-        "video_id": null,
-        "capture_date": "2022-02-05 05:47:33.965965",
-        "source_id": 1125,
+        "capture_date": "2022-02-12 01:50:10.212212",
+        "source_id": 1130,
         "song_id": null,
         "duplicate": false
     }
@@ -230,16 +230,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('One', 'Amber Mark', NULL),
-  ('Who Hotter Than Gee', 'EST Gee', NULL),
-  ('King of the Galaxy', 'BabyTron', NULL),
-  ('Beg For You', 'Charli XCX featuring Rina Sawayama', NULL),
-  ('Cry Mfer', 'My Idea', NULL),
-  ('New Tricks: Art, Aesthetics, and Money', 'Kilo Kish ft. Vince Staples', NULL),
-  ('Sugar Slip (The Lick)', 'Leon Vynehall', NULL),
-  ('Anxiety', 'Coi Leray', NULL),
-  ('Impossible', 'Röyksopp ft. Alison Goldfrapp', NULL),
-  ('Fortune Teller', 'NoCap', NULL)
+  ('Diet Coke', 'Pusha T', NULL),
+  ('Billie Jean', 'Lil Bean', NULL),
+  ('Should’ve Been Me', 'Mitski', NULL),
+  ('Saoko', 'Rosalía', NULL),
+  ('Satan', 'Andy Shauf', NULL),
+  ('FOREIGN EXCHANGE', 'Junglepussy', NULL),
+  ('Royal and Desire', 'Animal Collective', NULL),
+  ('Bandthoven', 'Bandmanrill', NULL),
+  ('Bloodclarrt Business', 'Skiifall', NULL)
   ;
 
    // Update to song table
@@ -250,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11616; // SELECT last_insert_rowid();
+  song_id = 11661; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -290,16 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-05 05:47:33.964964', '1125', '11607'),
-  ('2022-02-05 05:47:33.965965', '1125', '11608'),
-  ('2022-02-05 05:47:33.965965', '1125', '11609'),
-  ('2022-02-05 05:47:33.965965', '1125', '11610'),
-  ('2022-02-05 05:47:33.965965', '1125', '11611'),
-  ('2022-02-05 05:47:33.965965', '1125', '11612'),
-  ('2022-02-05 05:47:33.965965', '1125', '11613'),
-  ('2022-02-05 05:47:33.965965', '1125', '11614'),
-  ('2022-02-05 05:47:33.965965', '1125', '11615'),
-  ('2022-02-05 05:47:33.965965', '1125', '11616')
+  ('2022-02-12 01:50:10.211211', '1130', '11653'),
+  ('2022-02-12 01:50:10.212212', '1130', '11654'),
+  ('2022-02-12 01:50:10.212212', '1130', '11655'),
+  ('2022-02-12 01:50:10.212212', '1130', '11656'),
+  ('2022-02-12 01:50:10.212212', '1130', '11657'),
+  ('2022-02-12 01:50:10.212212', '1130', '11658'),
+  ('2022-02-12 01:50:10.212212', '1130', '11637'),
+  ('2022-02-12 01:50:10.212212', '1130', '11659'),
+  ('2022-02-12 01:50:10.212212', '1130', '11660'),
+  ('2022-02-12 01:50:10.212212', '1130', '11661')
   ;
 
   // Update to source_song table

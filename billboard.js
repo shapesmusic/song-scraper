@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of February 5, 2022', '2022-02-05 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-05');
+    ('Billboard', 'The Hot 100', 'Week of February 12, 2022', '2022-02-12 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-12');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1122; // SELECT last_insert_rowid();
+  source_id = 1127; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -103,101 +103,110 @@
   songsData =
   [
     {
-        "title": "Light Switch",
-        "artist_name": "Charlie Puth",
+        "title": "Rumors",
+        "artist_name": "Gucci Mane Ft. Lil Durk",
         "video_id": null,
-        "capture_date": "2022-02-05 05:22:49.423423",
-        "source_id": 1122,
-        "song_id": 11553,
+        "capture_date": "2022-02-12 01:17:48.738738",
+        "source_id": 1127,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "High",
+        "artist_name": "The Chainsmokers",
+        "video_id": null,
+        "capture_date": "2022-02-12 01:17:48.738738",
+        "source_id": 1127,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Johnny P's Caddy",
+        "artist_name": "Benny The Butcher & J. Cole",
+        "video_id": null,
+        "capture_date": "2022-02-12 01:17:48.738738",
+        "source_id": 1127,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Peru",
+        "artist_name": "Fireboy DML & Ed Sheeran",
+        "video_id": null,
+        "capture_date": "2022-02-12 01:17:48.739739",
+        "source_id": 1127,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "If I Was A Cowboy",
+        "artist_name": "Miranda Lambert",
+        "video_id": null,
+        "capture_date": "2022-02-12 01:17:48.739739",
+        "source_id": 1127,
+        "song_id": 11147,
         "duplicate": true
     },
     {
-        "title": "No Switch",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Shotta Flow 6",
+        "artist_name": "NLE Choppa",
         "video_id": null,
-        "capture_date": "2022-02-05 05:22:49.423423",
-        "source_id": 1122,
+        "capture_date": "2022-02-12 01:17:48.739739",
+        "source_id": 1127,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bring It On",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Vice City",
+        "artist_name": "XXXTENTACION",
         "video_id": null,
-        "capture_date": "2022-02-05 05:22:49.423423",
-        "source_id": 1122,
+        "capture_date": "2022-02-12 01:17:48.739739",
+        "source_id": 1127,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Flossin'",
-        "artist_name": "Internet Money ft. YoungBoy Never Broke Again",
+        "title": "Numb Little Bug",
+        "artist_name": "Em Beihold",
         "video_id": null,
-        "capture_date": "2022-02-05 05:22:49.424424",
-        "source_id": 1122,
-        "song_id": 11575,
-        "duplicate": true
-    },
-    {
-        "title": "Proud",
-        "artist_name": "Key Glock",
-        "video_id": null,
-        "capture_date": "2022-02-05 05:22:49.424424",
-        "source_id": 1122,
-        "song_id": 11558,
-        "duplicate": true
-    },
-    {
-        "title": "Know Like I Know",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": null,
-        "capture_date": "2022-02-05 05:22:49.424424",
-        "source_id": 1122,
+        "capture_date": "2022-02-12 01:17:48.739739",
+        "source_id": 1127,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "2Hoo",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Infinity",
+        "artist_name": "Jaymes Young",
         "video_id": null,
-        "capture_date": "2022-02-05 05:22:49.425425",
-        "source_id": 1122,
+        "capture_date": "2022-02-12 01:17:48.739739",
+        "source_id": 1127,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Long Live",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "The Motto",
+        "artist_name": "Tiesto & Ava Max",
         "video_id": null,
-        "capture_date": "2022-02-05 05:22:49.425425",
-        "source_id": 1122,
+        "capture_date": "2022-02-12 01:17:48.739739",
+        "source_id": 1127,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dis & That",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Megan's Piano",
+        "artist_name": "Megan Thee Stallion",
         "video_id": null,
-        "capture_date": "2022-02-05 05:22:49.425425",
-        "source_id": 1122,
+        "capture_date": "2022-02-12 01:17:48.739739",
+        "source_id": 1127,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Beautiful Lies",
-        "artist_name": "Yung Bleu & Kehlani",
+        "title": "Colombia, Mi Encanto",
+        "artist_name": "Carlos Vives",
         "video_id": null,
-        "capture_date": "2022-02-05 05:22:49.425425",
-        "source_id": 1122,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Smoke One",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": null,
-        "capture_date": "2022-02-05 05:22:49.426426",
-        "source_id": 1122,
+        "capture_date": "2022-02-12 01:17:48.739739",
+        "source_id": 1127,
         "song_id": null,
         "duplicate": false
     }
@@ -240,14 +249,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('No Switch', 'YoungBoy Never Broke Again', NULL),
-  ('Bring It On', 'YoungBoy Never Broke Again', NULL),
-  ('Know Like I Know', 'YoungBoy Never Broke Again', NULL),
-  ('2Hoo', 'YoungBoy Never Broke Again', NULL),
-  ('Long Live', 'YoungBoy Never Broke Again', NULL),
-  ('Dis & That', 'YoungBoy Never Broke Again', NULL),
-  ('Beautiful Lies', 'Yung Bleu & Kehlani', NULL),
-  ('Smoke One', 'YoungBoy Never Broke Again', NULL)
+  ('Rumors', 'Gucci Mane Ft. Lil Durk', NULL),
+  ('High', 'The Chainsmokers', NULL),
+  ('Johnny P’s Caddy', 'Benny The Butcher & J. Cole', NULL),
+  ('Peru', 'Fireboy DML & Ed Sheeran', NULL),
+  ('Shotta Flow 6', 'NLE Choppa', NULL),
+  ('Vice City', 'XXXTENTACION', NULL),
+  ('Numb Little Bug', 'Em Beihold', NULL),
+  ('Infinity', 'Jaymes Young', NULL),
+  ('The Motto', 'Tiesto & Ava Max', NULL),
+  ('Megan’s Piano', 'Megan Thee Stallion', NULL),
+  ('Colombia, Mi Encanto', 'Carlos Vives', NULL)
   ;
 
    // Update to song table
@@ -258,7 +270,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11594; // SELECT last_insert_rowid();
+  song_id = 11630; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +310,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-05 05:22:49.423423', '1122', '11553'),
-  ('2022-02-05 05:22:49.423423', '1122', '11587'),
-  ('2022-02-05 05:22:49.423423', '1122', '11588'),
-  ('2022-02-05 05:22:49.424424', '1122', '11575'),
-  ('2022-02-05 05:22:49.424424', '1122', '11558'),
-  ('2022-02-05 05:22:49.424424', '1122', '11589'),
-  ('2022-02-05 05:22:49.425425', '1122', '11590'),
-  ('2022-02-05 05:22:49.425425', '1122', '11591'),
-  ('2022-02-05 05:22:49.425425', '1122', '11592'),
-  ('2022-02-05 05:22:49.425425', '1122', '11593'),
-  ('2022-02-05 05:22:49.426426', '1122', '11594')
+  ('2022-02-12 01:17:48.738738', '1127', '11620'),
+  ('2022-02-12 01:17:48.738738', '1127', '11621'),
+  ('2022-02-12 01:17:48.738738', '1127', '11622'),
+  ('2022-02-12 01:17:48.739739', '1127', '11623'),
+  ('2022-02-12 01:17:48.739739', '1127', '11147'),
+  ('2022-02-12 01:17:48.739739', '1127', '11624'),
+  ('2022-02-12 01:17:48.739739', '1127', '11625'),
+  ('2022-02-12 01:17:48.739739', '1127', '11626'),
+  ('2022-02-12 01:17:48.739739', '1127', '11627'),
+  ('2022-02-12 01:17:48.739739', '1127', '11628'),
+  ('2022-02-12 01:17:48.739739', '1127', '11629'),
+  ('2022-02-12 01:17:48.739739', '1127', '11630')
   ;
 
   // Update to source_song table
