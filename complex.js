@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Nicki Minaj, 2 Chainz, $NOT, and More', '2022-02-04 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-nicki-minaj-2-chainz-snot/');
+    ('Complex', 'Best New Music This Week', 'Fivio Foreign, Pusha-T, SNOT, and More', '2022-02-11 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-fivio-foreign-pusha-t-snot/duke-deuce-rico-nasty-falling-off');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1129; // SELECT last_insert_rowid();
+  source_id = 1134; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,83 +101,101 @@
   songsData =
   [
     {
-        "title": "Do We Have A Problem?",
+        "title": "City of Gods",
+        "artist_name": "Fivio Foreign, Kanye West & Alicia Keys",
+        "video_id": null,
+        "capture_date": "2022-02-20 04:13:11.287287",
+        "source_id": 1134,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Diet Coke",
+        "artist_name": "Pusha-T",
+        "video_id": null,
+        "capture_date": "2022-02-20 04:13:11.288288",
+        "source_id": 1134,
+        "song_id": 11653,
+        "duplicate": true
+    },
+    {
+        "title": "Still Countin",
+        "artist_name": "Yeat",
+        "video_id": null,
+        "capture_date": "2022-02-20 04:13:11.288288",
+        "source_id": 1134,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Worst Day",
+        "artist_name": "Future",
+        "video_id": null,
+        "capture_date": "2022-02-20 04:13:11.288288",
+        "source_id": 1134,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bussin",
         "artist_name": "Nicki Minaj ft. Lil Baby",
         "video_id": null,
-        "capture_date": "2022-02-12 01:39:05.378378",
-        "source_id": 1129,
+        "capture_date": "2022-02-20 04:13:11.288288",
+        "source_id": 1134,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Scared Money",
-        "artist_name": "YG ft. J. Cole & Moneybagg Yo",
+        "title": "Glory",
+        "artist_name": "Ace Hood",
         "video_id": null,
-        "capture_date": "2022-02-12 01:39:05.379379",
-        "source_id": 1129,
+        "capture_date": "2022-02-20 04:13:11.288288",
+        "source_id": 1134,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Outstanding",
-        "artist_name": "2 Chainz ft. Roddy Ricch",
+        "title": "Conflicted",
+        "artist_name": "Snoop Dogg ft. Nas",
         "video_id": null,
-        "capture_date": "2022-02-12 01:39:05.379379",
-        "source_id": 1129,
+        "capture_date": "2022-02-20 04:13:11.288288",
+        "source_id": 1134,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Doja",
-        "artist_name": "$NOT ft. A$AP Rocky",
+        "title": "EYE EYE EYE",
+        "artist_name": "SNOT ft. Kevin Abstract",
         "video_id": null,
-        "capture_date": "2022-02-12 01:39:05.379379",
-        "source_id": 1129,
+        "capture_date": "2022-02-20 04:13:11.288288",
+        "source_id": 1134,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Still",
-        "artist_name": "Saba ft. 6LACK & Smino",
+        "title": "Invincible",
+        "artist_name": "Omar Apollo ft. Daniel Caesar",
         "video_id": null,
-        "capture_date": "2022-02-12 01:39:05.379379",
-        "source_id": 1129,
+        "capture_date": "2022-02-20 04:13:11.288288",
+        "source_id": 1134,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "John Woo Flick",
-        "artist_name": "Conway the Machine ft. Benny the Butcher & Westside Gunn",
+        "title": "Closer",
+        "artist_name": "Saweetie ft. H.E.R",
         "video_id": null,
-        "capture_date": "2022-02-12 01:39:05.379379",
-        "source_id": 1129,
+        "capture_date": "2022-02-20 04:13:11.288288",
+        "source_id": 1134,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cold Gangsta",
-        "artist_name": "Yo Gotti ft. 42 Dugg",
+        "title": "Falling Off",
+        "artist_name": "Duke Deuce ft. Rico Nasty",
         "video_id": null,
-        "capture_date": "2022-02-12 01:39:05.380380",
-        "source_id": 1129,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Locked In",
-        "artist_name": "G Herbo",
-        "video_id": null,
-        "capture_date": "2022-02-12 01:39:05.380380",
-        "source_id": 1129,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Don’t Play That",
-        "artist_name": "King Von ft. 21 Savage",
-        "video_id": null,
-        "capture_date": "2022-02-12 01:39:05.380380",
-        "source_id": 1129,
+        "capture_date": "2022-02-20 04:13:11.288288",
+        "source_id": 1134,
         "song_id": null,
         "duplicate": false
     }
@@ -220,15 +238,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Do We Have A Problem?', 'Nicki Minaj ft. Lil Baby', NULL),
-  ('Scared Money', 'YG ft. J. Cole & Moneybagg Yo', NULL),
-  ('Outstanding', '2 Chainz ft. Roddy Ricch', NULL),
-  ('Doja', '$NOT ft. A$AP Rocky', NULL),
-  ('Still', 'Saba ft. 6LACK & Smino', NULL),
-  ('John Woo Flick', 'Conway the Machine ft. Benny the Butcher & Westside Gunn', NULL),
-  ('Cold Gangsta', 'Yo Gotti ft. 42 Dugg', NULL),
-  ('Locked In', 'G Herbo', NULL),
-  ('Don’t Play That', 'King Von ft. 21 Savage', NULL)
+  ('City of Gods', 'Fivio Foreign, Kanye West & Alicia Keys', NULL),
+  ('Still Countin', 'Yeat', NULL),
+  ('Worst Day', 'Future', NULL),
+  ('Bussin', 'Nicki Minaj ft. Lil Baby', NULL),
+  ('Glory', 'Ace Hood', NULL),
+  ('Conflicted', 'Snoop Dogg ft. Nas', NULL),
+  ('EYE EYE EYE', 'SNOT ft. Kevin Abstract', NULL),
+  ('Invincible', 'Omar Apollo ft. Daniel Caesar', NULL),
+  ('Closer', 'Saweetie ft. H.E.R', NULL),
+  ('Falling Off', 'Duke Deuce ft. Rico Nasty', NULL)
   ;
 
    // Update to song table
@@ -239,7 +258,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11652; // SELECT last_insert_rowid();
+  song_id = 11690; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +298,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-12 01:39:05.378378', '1129', '11644'),
-  ('2022-02-12 01:39:05.379379', '1129', '11645'),
-  ('2022-02-12 01:39:05.379379', '1129', '11646'),
-  ('2022-02-12 01:39:05.379379', '1129', '11647'),
-  ('2022-02-12 01:39:05.379379', '1129', '11648'),
-  ('2022-02-12 01:39:05.379379', '1129', '11649'),
-  ('2022-02-12 01:39:05.380380', '1129', '11650'),
-  ('2022-02-12 01:39:05.380380', '1129', '11651'),
-  ('2022-02-12 01:39:05.380380', '1129', '11652')
+  ('2022-02-20 04:13:11.287287', '1134', '11681'),
+  ('2022-02-20 04:13:11.288288', '1134', '11653'),
+  ('2022-02-20 04:13:11.288288', '1134', '11682'),
+  ('2022-02-20 04:13:11.288288', '1134', '11683'),
+  ('2022-02-20 04:13:11.288288', '1134', '11684'),
+  ('2022-02-20 04:13:11.288288', '1134', '11685'),
+  ('2022-02-20 04:13:11.288288', '1134', '11686'),
+  ('2022-02-20 04:13:11.288288', '1134', '11687'),
+  ('2022-02-20 04:13:11.288288', '1134', '11688'),
+  ('2022-02-20 04:13:11.288288', '1134', '11689'),
+  ('2022-02-20 04:13:11.288288', '1134', '11690')
   ;
 
   // Update to source_song table

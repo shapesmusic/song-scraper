@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of February 12, 2022', '2022-02-12 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-12');
+    ('Billboard', 'The Hot 100', 'Week of February 19, 2022', '2022-02-19 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-19');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1127; // SELECT last_insert_rowid();
+  source_id = 1132; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -103,110 +103,92 @@
   songsData =
   [
     {
-        "title": "Rumors",
-        "artist_name": "Gucci Mane Ft. Lil Durk",
+        "title": "Do We Have A Problem?",
+        "artist_name": "Nicki Minaj X Lil Baby",
         "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.738738",
-        "source_id": 1127,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "High",
-        "artist_name": "The Chainsmokers",
-        "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.738738",
-        "source_id": 1127,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Johnny P's Caddy",
-        "artist_name": "Benny The Butcher & J. Cole",
-        "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.738738",
-        "source_id": 1127,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Peru",
-        "artist_name": "Fireboy DML & Ed Sheeran",
-        "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.739739",
-        "source_id": 1127,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "If I Was A Cowboy",
-        "artist_name": "Miranda Lambert",
-        "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.739739",
-        "source_id": 1127,
-        "song_id": 11147,
+        "capture_date": "2022-02-20 03:44:11.272272",
+        "source_id": 1132,
+        "song_id": 11644,
         "duplicate": true
     },
     {
-        "title": "Shotta Flow 6",
-        "artist_name": "NLE Choppa",
+        "title": "Don't Play That",
+        "artist_name": "King Von & 21 Savage",
         "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.739739",
-        "source_id": 1127,
+        "capture_date": "2022-02-20 03:44:11.274274",
+        "source_id": 1132,
+        "song_id": 11652,
+        "duplicate": true
+    },
+    {
+        "title": "Cigarettes",
+        "artist_name": "Juice WRLD",
+        "video_id": null,
+        "capture_date": "2022-02-20 03:44:11.275275",
+        "source_id": 1132,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Vice City",
-        "artist_name": "XXXTENTACION",
+        "title": "She's All I Wanna Be",
+        "artist_name": "Tate McRae",
         "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.739739",
-        "source_id": 1127,
+        "capture_date": "2022-02-20 03:44:11.275275",
+        "source_id": 1132,
+        "song_id": 11635,
+        "duplicate": true
+    },
+    {
+        "title": "Scared Money",
+        "artist_name": "YG ft. J. Cole & Moneybagg Yo",
+        "video_id": null,
+        "capture_date": "2022-02-20 03:44:11.276276",
+        "source_id": 1132,
+        "song_id": 11645,
+        "duplicate": true
+    },
+    {
+        "title": "Emo Girl",
+        "artist_name": "Machine Gun Kelly & WILLOW",
+        "video_id": null,
+        "capture_date": "2022-02-20 03:44:11.276276",
+        "source_id": 1132,
+        "song_id": 11633,
+        "duplicate": true
+    },
+    {
+        "title": "Black Summer",
+        "artist_name": "Red Hot Chili Peppers",
+        "video_id": null,
+        "capture_date": "2022-02-20 03:44:11.276276",
+        "source_id": 1132,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Numb Little Bug",
-        "artist_name": "Em Beihold",
+        "title": "Doja",
+        "artist_name": "$NOT & A$AP Rocky",
         "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.739739",
-        "source_id": 1127,
+        "capture_date": "2022-02-20 03:44:11.276276",
+        "source_id": 1132,
+        "song_id": 11647,
+        "duplicate": true
+    },
+    {
+        "title": "Hate Our Love",
+        "artist_name": "Queen Naija & Big Sean",
+        "video_id": null,
+        "capture_date": "2022-02-20 03:44:11.276276",
+        "source_id": 1132,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Infinity",
-        "artist_name": "Jaymes Young",
+        "title": "When I'm Gone",
+        "artist_name": "Alesso / Katy Perry",
         "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.739739",
-        "source_id": 1127,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Motto",
-        "artist_name": "Tiesto & Ava Max",
-        "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.739739",
-        "source_id": 1127,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Megan's Piano",
-        "artist_name": "Megan Thee Stallion",
-        "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.739739",
-        "source_id": 1127,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Colombia, Mi Encanto",
-        "artist_name": "Carlos Vives",
-        "video_id": null,
-        "capture_date": "2022-02-12 01:17:48.739739",
-        "source_id": 1127,
+        "capture_date": "2022-02-20 03:44:11.277277",
+        "source_id": 1132,
         "song_id": null,
         "duplicate": false
     }
@@ -249,17 +231,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Rumors', 'Gucci Mane Ft. Lil Durk', NULL),
-  ('High', 'The Chainsmokers', NULL),
-  ('Johnny P’s Caddy', 'Benny The Butcher & J. Cole', NULL),
-  ('Peru', 'Fireboy DML & Ed Sheeran', NULL),
-  ('Shotta Flow 6', 'NLE Choppa', NULL),
-  ('Vice City', 'XXXTENTACION', NULL),
-  ('Numb Little Bug', 'Em Beihold', NULL),
-  ('Infinity', 'Jaymes Young', NULL),
-  ('The Motto', 'Tiesto & Ava Max', NULL),
-  ('Megan’s Piano', 'Megan Thee Stallion', NULL),
-  ('Colombia, Mi Encanto', 'Carlos Vives', NULL)
+  ('Cigarettes', 'Juice WRLD', NULL),
+  ('Black Summer', 'Red Hot Chili Peppers', NULL),
+  ('Hate Our Love', 'Queen Naija & Big Sean', NULL),
+  ('When I’m Gone', 'Alesso / Katy Perry', NULL)
   ;
 
    // Update to song table
@@ -270,7 +245,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11630; // SELECT last_insert_rowid();
+  song_id = 11667; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -310,18 +285,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-12 01:17:48.738738', '1127', '11620'),
-  ('2022-02-12 01:17:48.738738', '1127', '11621'),
-  ('2022-02-12 01:17:48.738738', '1127', '11622'),
-  ('2022-02-12 01:17:48.739739', '1127', '11623'),
-  ('2022-02-12 01:17:48.739739', '1127', '11147'),
-  ('2022-02-12 01:17:48.739739', '1127', '11624'),
-  ('2022-02-12 01:17:48.739739', '1127', '11625'),
-  ('2022-02-12 01:17:48.739739', '1127', '11626'),
-  ('2022-02-12 01:17:48.739739', '1127', '11627'),
-  ('2022-02-12 01:17:48.739739', '1127', '11628'),
-  ('2022-02-12 01:17:48.739739', '1127', '11629'),
-  ('2022-02-12 01:17:48.739739', '1127', '11630')
+  ('2022-02-20 03:44:11.272272', '1132', '11644'),
+  ('2022-02-20 03:44:11.274274', '1132', '11652'),
+  ('2022-02-20 03:44:11.275275', '1132', '11664'),
+  ('2022-02-20 03:44:11.275275', '1132', '11635'),
+  ('2022-02-20 03:44:11.276276', '1132', '11645'),
+  ('2022-02-20 03:44:11.276276', '1132', '11633'),
+  ('2022-02-20 03:44:11.276276', '1132', '11665'),
+  ('2022-02-20 03:44:11.276276', '1132', '11647'),
+  ('2022-02-20 03:44:11.276276', '1132', '11666'),
+  ('2022-02-20 03:44:11.277277', '1132', '11667')
   ;
 
   // Update to source_song table
