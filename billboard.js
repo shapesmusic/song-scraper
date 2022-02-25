@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of February 19, 2022', '2022-02-19 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-19');
+    ('Billboard', 'The Hot 100', 'Week of February 26, 2022', '2022-02-26 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-26');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1132; // SELECT last_insert_rowid();
+  source_id = 1153; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -62,6 +62,7 @@
 
   for (var i=1; i<elements.length; i++){ // does not include the No. 1 song
       element = elements[i];
+
       isNew = element.getElementsByClassName('c-label  u-width-40 a-font-primary-bold-xxs lrv-u-color-grey-darkest u-background-color-yellow lrv-u-text-align-center');
 
       songName = element.getElementsByClassName('c-title  a-no-trucate a-font-primary-bold-s u-letter-spacing-0021 lrv-u-font-size-18@tablet lrv-u-font-size-16 u-line-height-125 u-line-height-normal@mobile-max a-truncate-ellipsis u-max-width-330 u-max-width-230@tablet-only')[0];
@@ -103,92 +104,83 @@
   songsData =
   [
     {
-        "title": "Do We Have A Problem?",
+        "title": "MAMIII",
+        "artist_name": "Becky G X Karol G",
+        "video_id": null,
+        "capture_date": "2022-02-25 01:02:05.477477",
+        "source_id": 1153,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bussin",
         "artist_name": "Nicki Minaj X Lil Baby",
         "video_id": null,
-        "capture_date": "2022-02-20 03:44:11.272272",
-        "source_id": 1132,
-        "song_id": 11644,
+        "capture_date": "2022-02-25 01:02:05.477477",
+        "source_id": 1153,
+        "song_id": 11684,
         "duplicate": true
     },
     {
-        "title": "Don't Play That",
-        "artist_name": "King Von & 21 Savage",
+        "title": "The Joker And The Queen",
+        "artist_name": "Ed Sheeran ft. Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-02-20 03:44:11.274274",
-        "source_id": 1132,
-        "song_id": 11652,
+        "capture_date": "2022-02-25 01:02:05.477477",
+        "source_id": 1153,
+        "song_id": 11668,
         "duplicate": true
     },
     {
-        "title": "Cigarettes",
-        "artist_name": "Juice WRLD",
+        "title": "Worst Day",
+        "artist_name": "Future",
         "video_id": null,
-        "capture_date": "2022-02-20 03:44:11.275275",
-        "source_id": 1132,
+        "capture_date": "2022-02-25 01:02:05.478478",
+        "source_id": 1153,
+        "song_id": 11683,
+        "duplicate": true
+    },
+    {
+        "title": "City Of Gods",
+        "artist_name": "Fivio Foreign, Kanye West & Alicia Keys",
+        "video_id": null,
+        "capture_date": "2022-02-25 01:02:05.478478",
+        "source_id": 1153,
+        "song_id": 11681,
+        "duplicate": true
+    },
+    {
+        "title": "Boyfriend",
+        "artist_name": "Dove Cameron",
+        "video_id": null,
+        "capture_date": "2022-02-25 01:02:05.479479",
+        "source_id": 1153,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "She's All I Wanna Be",
-        "artist_name": "Tate McRae",
+        "title": "Good Morning Gorgeous",
+        "artist_name": "Mary J. Blige",
         "video_id": null,
-        "capture_date": "2022-02-20 03:44:11.275275",
-        "source_id": 1132,
-        "song_id": 11635,
+        "capture_date": "2022-02-25 01:02:05.479479",
+        "source_id": 1153,
+        "song_id": 11311,
         "duplicate": true
     },
     {
-        "title": "Scared Money",
-        "artist_name": "YG ft. J. Cole & Moneybagg Yo",
+        "title": "Closer",
+        "artist_name": "Saweetie ft. H.E.R.",
         "video_id": null,
-        "capture_date": "2022-02-20 03:44:11.276276",
-        "source_id": 1132,
-        "song_id": 11645,
+        "capture_date": "2022-02-25 01:02:05.479479",
+        "source_id": 1153,
+        "song_id": 11689,
         "duplicate": true
     },
     {
-        "title": "Emo Girl",
-        "artist_name": "Machine Gun Kelly & WILLOW",
+        "title": "Stay Alive",
+        "artist_name": "Jung Kook",
         "video_id": null,
-        "capture_date": "2022-02-20 03:44:11.276276",
-        "source_id": 1132,
-        "song_id": 11633,
-        "duplicate": true
-    },
-    {
-        "title": "Black Summer",
-        "artist_name": "Red Hot Chili Peppers",
-        "video_id": null,
-        "capture_date": "2022-02-20 03:44:11.276276",
-        "source_id": 1132,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Doja",
-        "artist_name": "$NOT & A$AP Rocky",
-        "video_id": null,
-        "capture_date": "2022-02-20 03:44:11.276276",
-        "source_id": 1132,
-        "song_id": 11647,
-        "duplicate": true
-    },
-    {
-        "title": "Hate Our Love",
-        "artist_name": "Queen Naija & Big Sean",
-        "video_id": null,
-        "capture_date": "2022-02-20 03:44:11.276276",
-        "source_id": 1132,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "When I'm Gone",
-        "artist_name": "Alesso / Katy Perry",
-        "video_id": null,
-        "capture_date": "2022-02-20 03:44:11.277277",
-        "source_id": 1132,
+        "capture_date": "2022-02-25 01:02:05.479479",
+        "source_id": 1153,
         "song_id": null,
         "duplicate": false
     }
@@ -231,10 +223,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Cigarettes', 'Juice WRLD', NULL),
-  ('Black Summer', 'Red Hot Chili Peppers', NULL),
-  ('Hate Our Love', 'Queen Naija & Big Sean', NULL),
-  ('When I’m Gone', 'Alesso / Katy Perry', NULL)
+  ('MAMIII', 'Becky G X Karol G', NULL),
+  ('Boyfriend', 'Dove Cameron', NULL),
+  ('Stay Alive', 'Jung Kook', NULL)
   ;
 
    // Update to song table
@@ -245,7 +236,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11667; // SELECT last_insert_rowid();
+  song_id = 11738; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -285,16 +276,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-20 03:44:11.272272', '1132', '11644'),
-  ('2022-02-20 03:44:11.274274', '1132', '11652'),
-  ('2022-02-20 03:44:11.275275', '1132', '11664'),
-  ('2022-02-20 03:44:11.275275', '1132', '11635'),
-  ('2022-02-20 03:44:11.276276', '1132', '11645'),
-  ('2022-02-20 03:44:11.276276', '1132', '11633'),
-  ('2022-02-20 03:44:11.276276', '1132', '11665'),
-  ('2022-02-20 03:44:11.276276', '1132', '11647'),
-  ('2022-02-20 03:44:11.276276', '1132', '11666'),
-  ('2022-02-20 03:44:11.277277', '1132', '11667')
+  ('2022-02-25 01:02:05.477477', '1153', '11736'),
+  ('2022-02-25 01:02:05.477477', '1153', '11684'),
+  ('2022-02-25 01:02:05.477477', '1153', '11668'),
+  ('2022-02-25 01:02:05.478478', '1153', '11683'),
+  ('2022-02-25 01:02:05.478478', '1153', '11681'),
+  ('2022-02-25 01:02:05.479479', '1153', '11737'),
+  ('2022-02-25 01:02:05.479479', '1153', '11311'),
+  ('2022-02-25 01:02:05.479479', '1153', '11689'),
+  ('2022-02-25 01:02:05.479479', '1153', '11738')
   ;
 
   // Update to source_song table

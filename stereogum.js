@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of February 11, 2022', '2022-02-11 12:00:00.000000', 'https://www.stereogum.com/2175907/the-5-best-songs-of-the-week-420/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of February 18, 2022', '2022-02-18 12:00:00.000000', 'https://www.stereogum.com/2176730/the-5-best-songs-of-the-week-421/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1136; // SELECT last_insert_rowid();
+  source_id = 1139; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,47 +101,47 @@
   songsData =
   [
     {
-        "title": "Porta",
-        "artist_name": "Sharon Van Etten ",
+        "title": "Naturally",
+        "artist_name": "Tinashe ",
         "video_id": null,
-        "capture_date": "2022-02-20 04:38:21.751751",
-        "source_id": 1136,
+        "capture_date": "2022-02-22 08:39:31.568568",
+        "source_id": 1139,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "An Oral History Of My First Kiss",
-        "artist_name": "Real Lies ",
+        "title": "Famously Alive",
+        "artist_name": "Guerilla Toss ",
         "video_id": null,
-        "capture_date": "2022-02-20 04:38:21.753753",
-        "source_id": 1136,
+        "capture_date": "2022-02-22 08:39:31.569569",
+        "source_id": 1139,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Saoko",
-        "artist_name": "Rosalía ",
+        "title": "I Love You",
+        "artist_name": "Fontaines D.C. ",
         "video_id": null,
-        "capture_date": "2022-02-20 04:38:21.753753",
-        "source_id": 1136,
-        "song_id": 11656,
-        "duplicate": true
+        "capture_date": "2022-02-22 08:39:31.569569",
+        "source_id": 1139,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Diet Coke",
-        "artist_name": "Pusha T ",
+        "title": "Like Exploding Stones",
+        "artist_name": "Kurt Vile ",
         "video_id": null,
-        "capture_date": "2022-02-20 04:38:21.753753",
-        "source_id": 1136,
-        "song_id": 11653,
-        "duplicate": true
+        "capture_date": "2022-02-22 08:39:31.569569",
+        "source_id": 1139,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "My Babe",
-        "artist_name": "Spoon ",
+        "title": "happy accident",
+        "artist_name": "Tomberlin ",
         "video_id": null,
-        "capture_date": "2022-02-20 04:38:21.753753",
-        "source_id": 1136,
+        "capture_date": "2022-02-22 08:39:31.569569",
+        "source_id": 1139,
         "song_id": null,
         "duplicate": false
     }
@@ -184,9 +184,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Porta', 'Sharon Van Etten ', NULL),
-  ('An Oral History Of My First Kiss', 'Real Lies ', NULL),
-  ('My Babe', 'Spoon ', NULL)
+  ('Naturally', 'Tinashe ', NULL),
+  ('Famously Alive', 'Guerilla Toss ', NULL),
+  ('I Love You', 'Fontaines D.C. ', NULL),
+  ('Like Exploding Stones', 'Kurt Vile ', NULL),
+  ('happy accident', 'Tomberlin ', NULL)
   ;
 
    // Update to song table
@@ -197,7 +199,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11701; // SELECT last_insert_rowid();
+  song_id = 11723; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -237,11 +239,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-20 04:38:21.751751', '1136', '11699'),
-  ('2022-02-20 04:38:21.753753', '1136', '11700'),
-  ('2022-02-20 04:38:21.753753', '1136', '11656'),
-  ('2022-02-20 04:38:21.753753', '1136', '11653'),
-  ('2022-02-20 04:38:21.753753', '1136', '11701')
+  ('2022-02-22 08:39:31.568568', '1139', '11719'),
+  ('2022-02-22 08:39:31.569569', '1139', '11720'),
+  ('2022-02-22 08:39:31.569569', '1139', '11721'),
+  ('2022-02-22 08:39:31.569569', '1139', '11722'),
+  ('2022-02-22 08:39:31.569569', '1139', '11723')
   ;
 
   // Update to source_song table

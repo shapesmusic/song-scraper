@@ -71,22 +71,24 @@
 
   // Paste sources into the SQL statement, and prune out existing sources
   // If necessary, remove page numbers (ex: ) from location
+  // May need to manually fill in date for the most recent song
 
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-25 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-18 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-05 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-22 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-10 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-31 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-01-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -136,157 +138,139 @@
   songsData =
   [
     {
-        "title": "Equator Song",
-        "artist_name": "Nyokabi Kariũki",
+        "title": "Back to the Radio",
+        "artist_name": "Porridge Radio",
         "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.535535",
-        "source_id": 1107,
+        "capture_date": "2022-02-22 08:44:25.087087",
+        "source_id": 1140,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "home",
-        "artist_name": "Two Shell",
+        "title": "Punish",
+        "artist_name": "4s4ki",
         "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.537537",
-        "source_id": 1107,
+        "capture_date": "2022-02-22 08:44:25.089089",
+        "source_id": 1141,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "GRAVE YARD",
-        "artist_name": "Jon E Cash",
+        "title": "Like Exploding Stones",
+        "artist_name": "Kurt Vile",
         "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.537537",
-        "source_id": 1108,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sincerely Face",
-        "artist_name": "Babyface Ray",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.537537",
-        "source_id": 1108,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Estación Esperanza",
-        "artist_name": "Sofia Kourtesis",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.537537",
-        "source_id": 1109,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Simulation Swarm",
-        "artist_name": "Big Thief",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.537537",
-        "source_id": 1110,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Midnight Sun",
-        "artist_name": "Nilüfer Yanya",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.538538",
-        "source_id": 1110,
-        "song_id": 11554,
+        "capture_date": "2022-02-22 08:44:25.090090",
+        "source_id": 1142,
+        "song_id": 11722,
         "duplicate": true
     },
     {
-        "title": "Good morning (red)",
-        "artist_name": "caroline",
+        "title": "Black Be the Source",
+        "artist_name": "Fly Anakin",
         "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.538538",
-        "source_id": 1111,
+        "capture_date": "2022-02-22 08:44:25.090090",
+        "source_id": 1143,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rush",
-        "artist_name": "Raveena",
+        "title": "Finger Pies (Maral At The Controls Dub Mix)",
+        "artist_name": "Anika",
         "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.538538",
-        "source_id": 1112,
+        "capture_date": "2022-02-22 08:44:25.090090",
+        "source_id": 1144,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Come My Way",
-        "artist_name": "Saba",
+        "title": "Billions",
+        "artist_name": "Caroline Polachek",
         "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.538538",
-        "source_id": 1113,
-        "song_id": 11531,
+        "capture_date": "2022-02-22 08:44:25.090090",
+        "source_id": 1145,
+        "song_id": 11671,
         "duplicate": true
     },
     {
-        "title": "Jump!! (Or Get Jumped!!!)((By the Future))",
-        "artist_name": "Soul Glo",
+        "title": "Porta",
+        "artist_name": "Sharon Van Etten",
         "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.538538",
-        "source_id": 1113,
+        "capture_date": "2022-02-22 08:44:25.090090",
+        "source_id": 1146,
+        "song_id": 11699,
+        "duplicate": true
+    },
+    {
+        "title": "Bites on My Neck",
+        "artist_name": "yeule",
+        "video_id": null,
+        "capture_date": "2022-02-22 08:44:25.090090",
+        "source_id": 1147,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Accelerometer Overdose",
-        "artist_name": "Binker and Moses",
+        "title": "Luv Like",
+        "artist_name": "Nia Archives",
         "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.538538",
-        "source_id": 1114,
+        "capture_date": "2022-02-22 08:44:25.090090",
+        "source_id": 1147,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lawn",
-        "artist_name": "Aldous Harding",
+        "title": "The Manatee (A Story of This World Pt. III)",
+        "artist_name": "Circuit des Yeux",
         "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.538538",
-        "source_id": 1115,
-        "song_id": 11517,
-        "duplicate": true
-    },
-    {
-        "title": "Tintoretto, It’s for You",
-        "artist_name": "Destroyer",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.538538",
-        "source_id": 1116,
-        "song_id": 11477,
-        "duplicate": true
-    },
-    {
-        "title": "Say It",
-        "artist_name": "SASAMI",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.538538",
-        "source_id": 1117,
-        "song_id": 11478,
-        "duplicate": true
-    },
-    {
-        "title": "Funny Girl",
-        "artist_name": "Father John Misty",
-        "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.538538",
-        "source_id": 1118,
+        "capture_date": "2022-02-22 08:44:25.091091",
+        "source_id": 1148,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You Will Never Work in Television Again",
-        "artist_name": "The Smile",
+        "title": "Don’t Forget You’re Precious",
+        "artist_name": "Alabaster dePlume",
         "video_id": null,
-        "capture_date": "2022-01-27 10:12:09.539539",
-        "source_id": 1118,
-        "song_id": 11453,
-        "duplicate": true
+        "capture_date": "2022-02-22 08:44:25.091091",
+        "source_id": 1149,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cities on Fire",
+        "artist_name": "Shitbots",
+        "video_id": null,
+        "capture_date": "2022-02-22 08:44:25.091091",
+        "source_id": 1150,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Madeso",
+        "artist_name": "DJ Nigga Fox",
+        "video_id": null,
+        "capture_date": "2022-02-22 08:44:25.091091",
+        "source_id": 1151,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Slow Crash",
+        "artist_name": "Tony Shhnow",
+        "video_id": null,
+        "capture_date": "2022-02-22 08:44:25.091091",
+        "source_id": 1152,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Falnukmel",
+        "artist_name": "Julmud",
+        "video_id": null,
+        "capture_date": "2022-02-22 08:44:25.091091",
+        "source_id": 1152,
+        "song_id": null,
+        "duplicate": false
     }
   ]
 
@@ -303,7 +287,7 @@
 
   // get source_ids and dates for newly added sources
   // increase LIMIT number if necessary
-  SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 10;
+  SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 20;
 
   // manually add source_ids in songsData above (INT without quotation marks).
 
@@ -338,17 +322,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Equator Song', 'Nyokabi Kariũki', NULL),
-  ('home', 'Two Shell', NULL),
-  ('GRAVE YARD', 'Jon E Cash', NULL),
-  ('Sincerely Face', 'Babyface Ray', NULL),
-  ('Estación Esperanza', 'Sofia Kourtesis', NULL),
-  ('Simulation Swarm', 'Big Thief', NULL),
-  ('Good morning (red)', 'caroline', NULL),
-  ('Rush', 'Raveena', NULL),
-  ('Jump!! (Or Get Jumped!!!)((By the Future))', 'Soul Glo', NULL),
-  ('Accelerometer Overdose', 'Binker and Moses', NULL),
-  ('Funny Girl', 'Father John Misty', NULL)
+  ('Back to the Radio', 'Porridge Radio', NULL),
+  ('Punish', '4s4ki', NULL),
+  ('Black Be the Source', 'Fly Anakin', NULL),
+  ('Finger Pies (Maral At The Controls Dub Mix)', 'Anika', NULL),
+  ('Bites on My Neck', 'yeule', NULL),
+  ('Luv Like', 'Nia Archives', NULL),
+  ('The Manatee (A Story of This World Pt. III)', 'Circuit des Yeux', NULL),
+  ('Don’t Forget You’re Precious', 'Alabaster dePlume', NULL),
+  ('Cities on Fire', 'Shitbots', NULL),
+  ('Madeso', 'DJ Nigga Fox', NULL),
+  ('Slow Crash', 'Tony Shhnow', NULL),
+  ('Falnukmel', 'Julmud', NULL)
   ;
 
    // Update to song table
@@ -359,7 +344,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 11573; // SELECT last_insert_rowid();
+  song_id = 11735; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -399,23 +384,21 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-01-27 10:12:09.535535', '1107', '11563'),
-  ('2022-01-27 10:12:09.537537', '1107', '11564'),
-  ('2022-01-27 10:12:09.537537', '1108', '11565'),
-  ('2022-01-27 10:12:09.537537', '1108', '11566'),
-  ('2022-01-27 10:12:09.537537', '1109', '11567'),
-  ('2022-01-27 10:12:09.537537', '1110', '11568'),
-  ('2022-01-27 10:12:09.538538', '1110', '11554'),
-  ('2022-01-27 10:12:09.538538', '1111', '11569'),
-  ('2022-01-27 10:12:09.538538', '1112', '11570'),
-  ('2022-01-27 10:12:09.538538', '1113', '11531'),
-  ('2022-01-27 10:12:09.538538', '1113', '11571'),
-  ('2022-01-27 10:12:09.538538', '1114', '11572'),
-  ('2022-01-27 10:12:09.538538', '1115', '11517'),
-  ('2022-01-27 10:12:09.538538', '1116', '11477'),
-  ('2022-01-27 10:12:09.538538', '1117', '11478'),
-  ('2022-01-27 10:12:09.538538', '1118', '11573'),
-  ('2022-01-27 10:12:09.539539', '1118', '11453')
+  ('2022-02-22 08:44:25.087087', '1140', '11724'),
+  ('2022-02-22 08:44:25.089089', '1141', '11725'),
+  ('2022-02-22 08:44:25.090090', '1142', '11722'),
+  ('2022-02-22 08:44:25.090090', '1143', '11726'),
+  ('2022-02-22 08:44:25.090090', '1144', '11727'),
+  ('2022-02-22 08:44:25.090090', '1145', '11671'),
+  ('2022-02-22 08:44:25.090090', '1146', '11699'),
+  ('2022-02-22 08:44:25.090090', '1147', '11728'),
+  ('2022-02-22 08:44:25.090090', '1147', '11729'),
+  ('2022-02-22 08:44:25.091091', '1148', '11730'),
+  ('2022-02-22 08:44:25.091091', '1149', '11731'),
+  ('2022-02-22 08:44:25.091091', '1150', '11732'),
+  ('2022-02-22 08:44:25.091091', '1151', '11733'),
+  ('2022-02-22 08:44:25.091091', '1152', '11734'),
+  ('2022-02-22 08:44:25.091091', '1152', '11735')
   ;
 
   // Update to source_song table

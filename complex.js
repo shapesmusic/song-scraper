@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Fivio Foreign, Pusha-T, SNOT, and More', '2022-02-11 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-fivio-foreign-pusha-t-snot/duke-deuce-rico-nasty-falling-off');
+    ('Complex', 'Best New Music This Week', 'Kid Cudi, NIGO, Yeat, Jack Harlow, and More', '2022-02-18 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-cudi-nigo-yeat-jack-harlow/baby-tate-sho-slut-him-out');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1134; // SELECT last_insert_rowid();
+  source_id = 1138; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,101 +101,65 @@
   songsData =
   [
     {
-        "title": "City of Gods",
-        "artist_name": "Fivio Foreign, Kanye West & Alicia Keys",
+        "title": "Want It Bad",
+        "artist_name": "NIGO & Kid Cudi",
         "video_id": null,
-        "capture_date": "2022-02-20 04:13:11.287287",
-        "source_id": 1134,
+        "capture_date": "2022-02-22 08:33:01.459459",
+        "source_id": 1138,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Diet Coke",
-        "artist_name": "Pusha-T",
+        "title": "Nail Tech",
+        "artist_name": "Jack Harlow",
         "video_id": null,
-        "capture_date": "2022-02-20 04:13:11.288288",
-        "source_id": 1134,
-        "song_id": 11653,
+        "capture_date": "2022-02-22 08:33:01.460460",
+        "source_id": 1138,
+        "song_id": 11703,
         "duplicate": true
     },
     {
-        "title": "Still Countin",
-        "artist_name": "Yeat",
+        "title": "Outside",
+        "artist_name": "Yeat ft. Young Thug",
         "video_id": null,
-        "capture_date": "2022-02-20 04:13:11.288288",
-        "source_id": 1134,
+        "capture_date": "2022-02-22 08:33:01.460460",
+        "source_id": 1138,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Worst Day",
-        "artist_name": "Future",
+        "title": "Magic",
+        "artist_name": "Vince Staples & Mustard",
         "video_id": null,
-        "capture_date": "2022-02-20 04:13:11.288288",
-        "source_id": 1134,
+        "capture_date": "2022-02-22 08:33:01.460460",
+        "source_id": 1138,
+        "song_id": 11693,
+        "duplicate": true
+    },
+    {
+        "title": "Banking on Me",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2022-02-22 08:33:01.460460",
+        "source_id": 1138,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bussin",
-        "artist_name": "Nicki Minaj ft. Lil Baby",
+        "title": "Southside of the Moon",
+        "artist_name": "Big K.R.I.T.",
         "video_id": null,
-        "capture_date": "2022-02-20 04:13:11.288288",
-        "source_id": 1134,
+        "capture_date": "2022-02-22 08:33:01.460460",
+        "source_id": 1138,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Glory",
-        "artist_name": "Ace Hood",
+        "title": "S.H.O (Sl*t Him Out)",
+        "artist_name": "Baby Tate",
         "video_id": null,
-        "capture_date": "2022-02-20 04:13:11.288288",
-        "source_id": 1134,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Conflicted",
-        "artist_name": "Snoop Dogg ft. Nas",
-        "video_id": null,
-        "capture_date": "2022-02-20 04:13:11.288288",
-        "source_id": 1134,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "EYE EYE EYE",
-        "artist_name": "SNOT ft. Kevin Abstract",
-        "video_id": null,
-        "capture_date": "2022-02-20 04:13:11.288288",
-        "source_id": 1134,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Invincible",
-        "artist_name": "Omar Apollo ft. Daniel Caesar",
-        "video_id": null,
-        "capture_date": "2022-02-20 04:13:11.288288",
-        "source_id": 1134,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Closer",
-        "artist_name": "Saweetie ft. H.E.R",
-        "video_id": null,
-        "capture_date": "2022-02-20 04:13:11.288288",
-        "source_id": 1134,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Falling Off",
-        "artist_name": "Duke Deuce ft. Rico Nasty",
-        "video_id": null,
-        "capture_date": "2022-02-20 04:13:11.288288",
-        "source_id": 1134,
+        "capture_date": "2022-02-22 08:33:01.460460",
+        "source_id": 1138,
         "song_id": null,
         "duplicate": false
     }
@@ -238,16 +202,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('City of Gods', 'Fivio Foreign, Kanye West & Alicia Keys', NULL),
-  ('Still Countin', 'Yeat', NULL),
-  ('Worst Day', 'Future', NULL),
-  ('Bussin', 'Nicki Minaj ft. Lil Baby', NULL),
-  ('Glory', 'Ace Hood', NULL),
-  ('Conflicted', 'Snoop Dogg ft. Nas', NULL),
-  ('EYE EYE EYE', 'SNOT ft. Kevin Abstract', NULL),
-  ('Invincible', 'Omar Apollo ft. Daniel Caesar', NULL),
-  ('Closer', 'Saweetie ft. H.E.R', NULL),
-  ('Falling Off', 'Duke Deuce ft. Rico Nasty', NULL)
+  ('Want It Bad', 'NIGO & Kid Cudi', NULL),
+  ('Outside', 'Yeat ft. Young Thug', NULL),
+  ('Banking on Me', 'Gunna', NULL),
+  ('Southside of the Moon', 'Big K.R.I.T.', NULL),
+  ('S.H.O (Sl*t Him Out)', 'Baby Tate', NULL)
   ;
 
    // Update to song table
@@ -258,7 +217,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11690; // SELECT last_insert_rowid();
+  song_id = 11718; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +257,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-20 04:13:11.287287', '1134', '11681'),
-  ('2022-02-20 04:13:11.288288', '1134', '11653'),
-  ('2022-02-20 04:13:11.288288', '1134', '11682'),
-  ('2022-02-20 04:13:11.288288', '1134', '11683'),
-  ('2022-02-20 04:13:11.288288', '1134', '11684'),
-  ('2022-02-20 04:13:11.288288', '1134', '11685'),
-  ('2022-02-20 04:13:11.288288', '1134', '11686'),
-  ('2022-02-20 04:13:11.288288', '1134', '11687'),
-  ('2022-02-20 04:13:11.288288', '1134', '11688'),
-  ('2022-02-20 04:13:11.288288', '1134', '11689'),
-  ('2022-02-20 04:13:11.288288', '1134', '11690')
+  ('2022-02-22 08:33:01.459459', '1138', '11714'),
+  ('2022-02-22 08:33:01.460460', '1138', '11703'),
+  ('2022-02-22 08:33:01.460460', '1138', '11715'),
+  ('2022-02-22 08:33:01.460460', '1138', '11693'),
+  ('2022-02-22 08:33:01.460460', '1138', '11716'),
+  ('2022-02-22 08:33:01.460460', '1138', '11717'),
+  ('2022-02-22 08:33:01.460460', '1138', '11718')
   ;
 
   // Update to source_song table

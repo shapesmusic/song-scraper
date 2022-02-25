@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Taylor Swift and Ed Sheeran Up the Ante, and 13 More New Songs', '2022-02-15 07:39:02.000000', 'https://www.nytimes.com/2022/02/11/arts/music/playlist-taylor-swift-ed-sheeran-doja-cat.html');
+    ('New York Times', 'The Playlist', 'Romeo Santos’s Melodramatic Return, and 13 More New Songs', '2022-02-18 08:10:11.000000', 'https://www.nytimes.com/2022/02/18/arts/music/playlist-jack-harlow-romeo-santos.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1133; // SELECT last_insert_rowid();
+  source_id = 1137; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -94,134 +94,134 @@
 //          preview chart and prune songs (add video_id later),
 //          find & set any duplicate songs to true,
 //          add song_ids for duplicates
-//          find and replace "Featur~ing" with "ft."
+//          find and replace "featur~ing" with "ft."
 //
 
   songsData =
   [
     {
-        "title": "The Joker and the Queen",
-        "artist_name": "Ed Sheeran featuring Taylor Swift",
+        "title": "Sus Huellas",
+        "artist_name": "Romeo Santos",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.036036",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.037037",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Roster",
-        "artist_name": "Jazmine Sullivan",
+        "title": "Nail Tech",
+        "artist_name": "Jack Harlow",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.037037",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sister 2 Sister",
-        "artist_name": "Ibeyi",
+        "title": "La Culpa",
+        "artist_name": "C. Tangana, Omar Montes, Daviles de Novelda and Canelita",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.037037",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Billions",
-        "artist_name": "Caroline Polachek",
+        "title": "The Boat I Row",
+        "artist_name": "Tame Impala",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.037037",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Celebrity Skin",
-        "artist_name": "Doja Cat",
+        "title": "Pure Love",
+        "artist_name": "Flock of Dimes",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.037037",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Last Goodbye",
-        "artist_name": "Odesza featuring Bettye LaVette",
+        "title": "Ocean",
+        "artist_name": "Asa",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.037037",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "All Talk",
-        "artist_name": "Brian Jackson",
+        "title": "Outsidë",
+        "artist_name": "Yeat ft. Young Thug",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.037037",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Banza Banza",
-        "artist_name": "Congotronics International",
+        "title": "The Presentation Dance",
+        "artist_name": "Sigurd Hole",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.038038",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Diet Coke",
-        "artist_name": "Pusha T",
+        "title": "Bad Habits",
+        "artist_name": "Ed Sheeran ft. Bring Me the Horizon",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.038038",
-        "source_id": 1133,
-        "song_id": 11653,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
+        "song_id": 10629,
         "duplicate": true
     },
     {
-        "title": "Khabib",
-        "artist_name": "Central Cee",
+        "title": "Parade",
+        "artist_name": "Frontperson",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.038038",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Unrest II",
-        "artist_name": "Brandee Younger",
+        "title": "Dead Leaves",
+        "artist_name": "Ambar Lucid",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.038038",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "What, Me Worry?",
-        "artist_name": "Portugal. the Man",
+        "title": "Jupiter’s Dance",
+        "artist_name": "Hurray for the Riff Raff",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.038038",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
+        "song_id": 11312,
+        "duplicate": true
+    },
+    {
+        "title": "Night Song",
+        "artist_name": "Javon Jackson ft. Nikki Giovanni",
+        "video_id": null,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Swimmer",
-        "artist_name": "Helena Deland",
+        "title": "Silently Beneath the Waves",
+        "artist_name": "Chris Dingman",
         "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.038038",
-        "source_id": 1133,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Eternal Verities",
-        "artist_name": "Ethan Iverson",
-        "video_id": null,
-        "capture_date": "2022-02-20 03:50:02.038038",
-        "source_id": 1133,
+        "capture_date": "2022-02-22 08:26:21.039039",
+        "source_id": 1137,
         "song_id": null,
         "duplicate": false
     }
@@ -264,19 +264,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Joker and the Queen', 'Ed Sheeran featuring Taylor Swift', NULL),
-  ('Roster', 'Jazmine Sullivan', NULL),
-  ('Sister 2 Sister', 'Ibeyi', NULL),
-  ('Billions', 'Caroline Polachek', NULL),
-  ('Celebrity Skin', 'Doja Cat', NULL),
-  ('The Last Goodbye', 'Odesza featuring Bettye LaVette', NULL),
-  ('All Talk', 'Brian Jackson', NULL),
-  ('Banza Banza', 'Congotronics International', NULL),
-  ('Khabib', 'Central Cee', NULL),
-  ('Unrest II', 'Brandee Younger', NULL),
-  ('What, Me Worry?', 'Portugal. the Man', NULL),
-  ('Swimmer', 'Helena Deland', NULL),
-  ('The Eternal Verities', 'Ethan Iverson', NULL)
+  ('Sus Huellas', 'Romeo Santos', NULL),
+  ('Nail Tech', 'Jack Harlow', NULL),
+  ('La Culpa', 'C. Tangana, Omar Montes, Daviles de Novelda and Canelita', NULL),
+  ('The Boat I Row', 'Tame Impala', NULL),
+  ('Pure Love', 'Flock of Dimes', NULL),
+  ('Ocean', 'Asa', NULL),
+  ('Outsidë', 'Yeat ft. Young Thug', NULL),
+  ('The Presentation Dance', 'Sigurd Hole', NULL),
+  ('Parade', 'Frontperson', NULL),
+  ('Dead Leaves', 'Ambar Lucid', NULL),
+  ('Night Song', 'Javon Jackson ft. Nikki Giovanni', NULL),
+  ('Silently Beneath the Waves', 'Chris Dingman', NULL)
   ;
 
    // Update to song table
@@ -287,7 +286,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11680; // SELECT last_insert_rowid();
+  song_id = 11713; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -327,20 +326,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-20 03:50:02.036036', '1133', '11668'),
-  ('2022-02-20 03:50:02.037037', '1133', '11669'),
-  ('2022-02-20 03:50:02.037037', '1133', '11670'),
-  ('2022-02-20 03:50:02.037037', '1133', '11671'),
-  ('2022-02-20 03:50:02.037037', '1133', '11672'),
-  ('2022-02-20 03:50:02.037037', '1133', '11673'),
-  ('2022-02-20 03:50:02.037037', '1133', '11674'),
-  ('2022-02-20 03:50:02.038038', '1133', '11675'),
-  ('2022-02-20 03:50:02.038038', '1133', '11653'),
-  ('2022-02-20 03:50:02.038038', '1133', '11676'),
-  ('2022-02-20 03:50:02.038038', '1133', '11677'),
-  ('2022-02-20 03:50:02.038038', '1133', '11678'),
-  ('2022-02-20 03:50:02.038038', '1133', '11679'),
-  ('2022-02-20 03:50:02.038038', '1133', '11680')
+  ('2022-02-22 08:26:21.037037', '1137', '11702'),
+  ('2022-02-22 08:26:21.039039', '1137', '11703'),
+  ('2022-02-22 08:26:21.039039', '1137', '11704'),
+  ('2022-02-22 08:26:21.039039', '1137', '11705'),
+  ('2022-02-22 08:26:21.039039', '1137', '11706'),
+  ('2022-02-22 08:26:21.039039', '1137', '11707'),
+  ('2022-02-22 08:26:21.039039', '1137', '11708'),
+  ('2022-02-22 08:26:21.039039', '1137', '11709'),
+  ('2022-02-22 08:26:21.039039', '1137', '10629'),
+  ('2022-02-22 08:26:21.039039', '1137', '11710'),
+  ('2022-02-22 08:26:21.039039', '1137', '11711'),
+  ('2022-02-22 08:26:21.039039', '1137', '11312'),
+  ('2022-02-22 08:26:21.039039', '1137', '11712'),
+  ('2022-02-22 08:26:21.039039', '1137', '11713')
   ;
 
   // Update to source_song table
