@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Kid Cudi, NIGO, Yeat, Jack Harlow, and More', '2022-02-18 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-cudi-nigo-yeat-jack-harlow/baby-tate-sho-slut-him-out');
+    ('Complex', 'Best New Music This Week', 'Kanye West, Conway the Machine, EarthGang, & More', '2022-02-25 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-kanye-conway-earthgang/kodak-black-i-wish');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1138; // SELECT last_insert_rowid();
+  source_id = 1156; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,65 +101,74 @@
   songsData =
   [
     {
-        "title": "Want It Bad",
-        "artist_name": "NIGO & Kid Cudi",
+        "title": "We Did It Kid",
+        "artist_name": "Kanye West ft. Baby Keem & Migos",
         "video_id": null,
-        "capture_date": "2022-02-22 08:33:01.459459",
-        "source_id": 1138,
+        "capture_date": "2022-03-06 09:17:36.315315",
+        "source_id": 1156,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nail Tech",
-        "artist_name": "Jack Harlow",
+        "title": "Stressed",
+        "artist_name": "Conway the Machine ft. Wallo267",
         "video_id": null,
-        "capture_date": "2022-02-22 08:33:01.460460",
-        "source_id": 1138,
-        "song_id": 11703,
+        "capture_date": "2022-03-06 09:17:36.316316",
+        "source_id": 1156,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "WATERBOYZ",
+        "artist_name": "EarthGang, JID, & J. Cole",
+        "video_id": null,
+        "capture_date": "2022-03-06 09:17:36.316316",
+        "source_id": 1156,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Freaky Deaky",
+        "artist_name": "Doja Cat & Tyga",
+        "video_id": null,
+        "capture_date": "2022-03-06 09:17:36.316316",
+        "source_id": 1156,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Little Story",
+        "artist_name": "Kehlani",
+        "video_id": null,
+        "capture_date": "2022-03-06 09:17:36.316316",
+        "source_id": 1156,
+        "song_id": 11745,
         "duplicate": true
     },
     {
-        "title": "Outside",
-        "artist_name": "Yeat ft. Young Thug",
+        "title": "PBC",
+        "artist_name": "Flo Milli",
         "video_id": null,
-        "capture_date": "2022-02-22 08:33:01.460460",
-        "source_id": 1138,
+        "capture_date": "2022-03-06 09:17:36.316316",
+        "source_id": 1156,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Magic",
-        "artist_name": "Vince Staples & Mustard",
+        "title": "Zatoichi",
+        "artist_name": "Denzel Curry ft. slowthai",
         "video_id": null,
-        "capture_date": "2022-02-22 08:33:01.460460",
-        "source_id": 1138,
-        "song_id": 11693,
-        "duplicate": true
-    },
-    {
-        "title": "Banking on Me",
-        "artist_name": "Gunna",
-        "video_id": null,
-        "capture_date": "2022-02-22 08:33:01.460460",
-        "source_id": 1138,
+        "capture_date": "2022-03-06 09:17:36.316316",
+        "source_id": 1156,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Southside of the Moon",
-        "artist_name": "Big K.R.I.T.",
+        "title": "I Wish",
+        "artist_name": "Kodak Black",
         "video_id": null,
-        "capture_date": "2022-02-22 08:33:01.460460",
-        "source_id": 1138,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "S.H.O (Sl*t Him Out)",
-        "artist_name": "Baby Tate",
-        "video_id": null,
-        "capture_date": "2022-02-22 08:33:01.460460",
-        "source_id": 1138,
+        "capture_date": "2022-03-06 09:17:36.316316",
+        "source_id": 1156,
         "song_id": null,
         "duplicate": false
     }
@@ -202,11 +211,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Want It Bad', 'NIGO & Kid Cudi', NULL),
-  ('Outside', 'Yeat ft. Young Thug', NULL),
-  ('Banking on Me', 'Gunna', NULL),
-  ('Southside of the Moon', 'Big K.R.I.T.', NULL),
-  ('S.H.O (Sl*t Him Out)', 'Baby Tate', NULL)
+  ('We Did It Kid', 'Kanye West ft. Baby Keem & Migos', NULL),
+  ('Stressed', 'Conway the Machine ft. Wallo267', NULL),
+  ('WATERBOYZ', 'EarthGang, JID, & J. Cole', NULL),
+  ('Freaky Deaky', 'Doja Cat & Tyga', NULL),
+  ('PBC', 'Flo Milli', NULL),
+  ('Zatoichi', 'Denzel Curry ft. slowthai', NULL),
+  ('I Wish', 'Kodak Black', NULL)
   ;
 
    // Update to song table
@@ -217,7 +228,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11718; // SELECT last_insert_rowid();
+  song_id = 11760; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -257,13 +268,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-22 08:33:01.459459', '1138', '11714'),
-  ('2022-02-22 08:33:01.460460', '1138', '11703'),
-  ('2022-02-22 08:33:01.460460', '1138', '11715'),
-  ('2022-02-22 08:33:01.460460', '1138', '11693'),
-  ('2022-02-22 08:33:01.460460', '1138', '11716'),
-  ('2022-02-22 08:33:01.460460', '1138', '11717'),
-  ('2022-02-22 08:33:01.460460', '1138', '11718')
+  ('2022-03-06 09:17:36.315315', '1156', '11754'),
+  ('2022-03-06 09:17:36.316316', '1156', '11755'),
+  ('2022-03-06 09:17:36.316316', '1156', '11756'),
+  ('2022-03-06 09:17:36.316316', '1156', '11757'),
+  ('2022-03-06 09:17:36.316316', '1156', '11745'),
+  ('2022-03-06 09:17:36.316316', '1156', '11758'),
+  ('2022-03-06 09:17:36.316316', '1156', '11759'),
+  ('2022-03-06 09:17:36.316316', '1156', '11760')
   ;
 
   // Update to source_song table

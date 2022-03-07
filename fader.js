@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 241 // from the chart page
+  fader_no = 242 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 241 Week of February 16, 2022', '2022-02-16 12:00:00.000000', 'https://www.thefader.com/2022/02/16/songs-you-need-in-your-life-vince-staples-doja-cat-caroline-polachek');
+    ('The Fader', '10 songs you need in your life this week', 'No. 242 Week of February 23, 2022', '2022-02-23 12:00:00.000000', 'https://www.thefader.com/2022/02/23/songs-you-need-mura-masa-dead-meat-iayze');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1135; // SELECT last_insert_rowid();
+  source_id = 1157; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Billions",
-        "artist_name": "Caroline Polachek",
+        "title": "Trouble",
+        "artist_name": "Troye Sivan and Jay Som",
         "video_id": null,
-        "capture_date": "2022-02-20 04:31:26.486486",
-        "source_id": 1135,
-        "song_id": 11671,
+        "capture_date": "2022-03-06 09:28:26.269269",
+        "source_id": 1157,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "MMaso",
+        "artist_name": "Ecko Bazz",
+        "video_id": null,
+        "capture_date": "2022-03-06 09:28:26.271271",
+        "source_id": 1157,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "death insurance",
+        "artist_name": "dead meat",
+        "video_id": null,
+        "capture_date": "2022-03-06 09:28:26.271271",
+        "source_id": 1157,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "BLEACH",
+        "artist_name": "Isaac Dunbar",
+        "video_id": null,
+        "capture_date": "2022-03-06 09:28:26.271271",
+        "source_id": 1157,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Asymmetrical Bangs Pt. I",
+        "artist_name": "Fat Randy",
+        "video_id": null,
+        "capture_date": "2022-03-06 09:28:26.271271",
+        "source_id": 1157,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bbycakes",
+        "artist_name": "Mura Masa featuring Lil Uzi Vert, PinkPantheress, Shygirl",
+        "video_id": null,
+        "capture_date": "2022-03-06 09:28:26.271271",
+        "source_id": 1157,
+        "song_id": 11750,
         "duplicate": true
     },
     {
-        "title": "Growing On Me",
-        "artist_name": "Foxes",
+        "title": "556 (Green Tip)",
+        "artist_name": "iayze",
         "video_id": null,
-        "capture_date": "2022-02-20 04:31:26.486486",
-        "source_id": 1135,
+        "capture_date": "2022-03-06 09:28:26.271271",
+        "source_id": 1157,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Calm Down",
-        "artist_name": "Rema",
+        "title": "Always Be My Baby Boy",
+        "artist_name": "Bad Boy Chiller Crew",
         "video_id": null,
-        "capture_date": "2022-02-20 04:31:26.486486",
-        "source_id": 1135,
+        "capture_date": "2022-03-06 09:28:26.272272",
+        "source_id": 1157,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Magic",
-        "artist_name": "Vince Staples and Mustard",
+        "title": "fuck it, i’m the man",
+        "artist_name": "SEB",
         "video_id": null,
-        "capture_date": "2022-02-20 04:31:26.486486",
-        "source_id": 1135,
+        "capture_date": "2022-03-06 09:28:26.272272",
+        "source_id": 1157,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "We’ll live through the long, long days and through the long nights (different ways)",
-        "artist_name": "Eiko Ishibashi",
+        "title": "Everything We Need",
+        "artist_name": "RealYungPhil",
         "video_id": null,
-        "capture_date": "2022-02-20 04:31:26.486486",
-        "source_id": 1135,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Celebrity Skin",
-        "artist_name": "Doja Cat",
-        "video_id": null,
-        "capture_date": "2022-02-20 04:31:26.486486",
-        "source_id": 1135,
-        "song_id": 11672,
-        "duplicate": true
-    },
-    {
-        "title": "Heartbeat On Me",
-        "artist_name": "Kiana V",
-        "video_id": null,
-        "capture_date": "2022-02-20 04:31:26.486486",
-        "source_id": 1135,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Admit It (U Don’t Want 2)",
-        "artist_name": "Fred again.. and India Jordan",
-        "video_id": null,
-        "capture_date": "2022-02-20 04:31:26.486486",
-        "source_id": 1135,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Everywhere We Go",
-        "artist_name": "J Billz",
-        "video_id": null,
-        "capture_date": "2022-02-20 04:31:26.486486",
-        "source_id": 1135,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Inner Beam",
-        "artist_name": "Kill Alters",
-        "video_id": null,
-        "capture_date": "2022-02-20 04:31:26.486486",
-        "source_id": 1135,
+        "capture_date": "2022-03-06 09:28:26.272272",
+        "source_id": 1157,
         "song_id": null,
         "duplicate": false
     }
@@ -230,14 +230,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Growing On Me', 'Foxes', NULL),
-  ('Calm Down', 'Rema', NULL),
-  ('Magic', 'Vince Staples and Mustard', NULL),
-  ('We’ll live through the long, long days and through the long nights (different ways)', 'Eiko Ishibashi', NULL),
-  ('Heartbeat On Me', 'Kiana V', NULL),
-  ('Admit It (U Don’t Want 2)', 'Fred again.. and India Jordan', NULL),
-  ('Everywhere We Go', 'J Billz', NULL),
-  ('Inner Beam', 'Kill Alters', NULL)
+  ('Trouble', 'Troye Sivan and Jay Som', NULL),
+  ('MMaso', 'Ecko Bazz', NULL),
+  ('death insurance', 'dead meat', NULL),
+  ('BLEACH', 'Isaac Dunbar', NULL),
+  ('Asymmetrical Bangs Pt. I', 'Fat Randy', NULL),
+  ('556 (Green Tip)', 'iayze', NULL),
+  ('Always Be My Baby Boy', 'Bad Boy Chiller Crew', NULL),
+  ('fuck it, i’m the man', 'SEB', NULL),
+  ('Everything We Need', 'RealYungPhil', NULL)
   ;
 
    // Update to song table
@@ -248,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11698; // SELECT last_insert_rowid();
+  song_id = 11769; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -288,16 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-20 04:31:26.486486', '1135', '11671'),
-  ('2022-02-20 04:31:26.486486', '1135', '11691'),
-  ('2022-02-20 04:31:26.486486', '1135', '11692'),
-  ('2022-02-20 04:31:26.486486', '1135', '11693'),
-  ('2022-02-20 04:31:26.486486', '1135', '11694'),
-  ('2022-02-20 04:31:26.486486', '1135', '11672'),
-  ('2022-02-20 04:31:26.486486', '1135', '11695'),
-  ('2022-02-20 04:31:26.486486', '1135', '11696'),
-  ('2022-02-20 04:31:26.486486', '1135', '11697'),
-  ('2022-02-20 04:31:26.486486', '1135', '11698')
+  ('2022-03-06 09:28:26.269269', '1157', '11761'),
+  ('2022-03-06 09:28:26.271271', '1157', '11762'),
+  ('2022-03-06 09:28:26.271271', '1157', '11763'),
+  ('2022-03-06 09:28:26.271271', '1157', '11764'),
+  ('2022-03-06 09:28:26.271271', '1157', '11765'),
+  ('2022-03-06 09:28:26.271271', '1157', '11750'),
+  ('2022-03-06 09:28:26.271271', '1157', '11766'),
+  ('2022-03-06 09:28:26.272272', '1157', '11767'),
+  ('2022-03-06 09:28:26.272272', '1157', '11768'),
+  ('2022-03-06 09:28:26.272272', '1157', '11769')
   ;
 
   // Update to source_song table

@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Romeo Santos’s Melodramatic Return, and 13 More New Songs', '2022-02-18 08:10:11.000000', 'https://www.nytimes.com/2022/02/18/arts/music/playlist-jack-harlow-romeo-santos.html');
+    ('New York Times', 'The Playlist', 'Florence + the Machine’s Conflicted Coronation, and 12 More New Songs', '2022-02-25 10:18:19.000000', 'https://www.nytimes.com/2022/02/25/arts/music/playlist-florence-the-machine-kehlani.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1137; // SELECT last_insert_rowid();
+  source_id = 1155; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,128 +100,119 @@
   songsData =
   [
     {
-        "title": "Sus Huellas",
-        "artist_name": "Romeo Santos",
+        "title": "King",
+        "artist_name": "Florence + the Machine",
         "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.037037",
-        "source_id": 1137,
+        "capture_date": "2022-03-06 09:10:55.939939",
+        "source_id": 1155,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nail Tech",
-        "artist_name": "Jack Harlow",
+        "title": "Made Up Mind",
+        "artist_name": "Bonnie Raitt",
         "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "La Culpa",
-        "artist_name": "C. Tangana, Omar Montes, Daviles de Novelda and Canelita",
+        "title": "Little Story",
+        "artist_name": "Kehlani",
         "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Boat I Row",
-        "artist_name": "Tame Impala",
+        "title": "Greener Pasture",
+        "artist_name": "Carter Faith",
         "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pure Love",
-        "artist_name": "Flock of Dimes",
+        "title": "Come Away With Me (Alternate Version)",
+        "artist_name": "Norah Jones",
         "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ocean",
-        "artist_name": "Asa",
+        "title": "Back to the Radio",
+        "artist_name": "Porridge Radio",
         "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Outsidë",
-        "artist_name": "Yeat ft. Young Thug",
-        "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Presentation Dance",
-        "artist_name": "Sigurd Hole",
-        "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bad Habits",
-        "artist_name": "Ed Sheeran ft. Bring Me the Horizon",
-        "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
-        "song_id": 10629,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
+        "song_id": 11724,
         "duplicate": true
     },
     {
-        "title": "Parade",
-        "artist_name": "Frontperson",
+        "title": "Letter to Ur Ex",
+        "artist_name": "Mahalia",
         "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dead Leaves",
-        "artist_name": "Ambar Lucid",
+        "title": "Pegao!!!",
+        "artist_name": "Esty",
         "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Jupiter’s Dance",
-        "artist_name": "Hurray for the Riff Raff",
+        "title": "Bbycakes",
+        "artist_name": "Mura Masa ft. Lil Uzi Vert, PinkPantheress and Shygirl",
         "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
-        "song_id": 11312,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Put Your Hands On My ____ (Original Phonk Version)",
+        "artist_name": "R3hab ft. Saucy Santana",
+        "video_id": null,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ahhh Ha",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
+        "song_id": 11739,
         "duplicate": true
     },
     {
-        "title": "Night Song",
-        "artist_name": "Javon Jackson ft. Nikki Giovanni",
+        "title": "Comandante",
+        "artist_name": "Kiko El Crazy, Braulio Fogón and Randy",
         "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Silently Beneath the Waves",
-        "artist_name": "Chris Dingman",
+        "title": "Sequence of Events",
+        "artist_name": "Charles Goold",
         "video_id": null,
-        "capture_date": "2022-02-22 08:26:21.039039",
-        "source_id": 1137,
+        "capture_date": "2022-03-06 09:10:55.940940",
+        "source_id": 1155,
         "song_id": null,
         "duplicate": false
     }
@@ -264,18 +255,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Sus Huellas', 'Romeo Santos', NULL),
-  ('Nail Tech', 'Jack Harlow', NULL),
-  ('La Culpa', 'C. Tangana, Omar Montes, Daviles de Novelda and Canelita', NULL),
-  ('The Boat I Row', 'Tame Impala', NULL),
-  ('Pure Love', 'Flock of Dimes', NULL),
-  ('Ocean', 'Asa', NULL),
-  ('Outsidë', 'Yeat ft. Young Thug', NULL),
-  ('The Presentation Dance', 'Sigurd Hole', NULL),
-  ('Parade', 'Frontperson', NULL),
-  ('Dead Leaves', 'Ambar Lucid', NULL),
-  ('Night Song', 'Javon Jackson ft. Nikki Giovanni', NULL),
-  ('Silently Beneath the Waves', 'Chris Dingman', NULL)
+  ('King', 'Florence + the Machine', NULL),
+  ('Made Up Mind', 'Bonnie Raitt', NULL),
+  ('Little Story', 'Kehlani', NULL),
+  ('Greener Pasture', 'Carter Faith', NULL),
+  ('Come Away With Me (Alternate Version)', 'Norah Jones', NULL),
+  ('Letter to Ur Ex', 'Mahalia', NULL),
+  ('Pegao!!!', 'Esty', NULL),
+  ('Bbycakes', 'Mura Masa ft. Lil Uzi Vert, PinkPantheress and Shygirl', NULL),
+  ('Put Your Hands On My ____ (Original Phonk Version)', 'R3hab ft. Saucy Santana', NULL),
+  ('Comandante', 'Kiko El Crazy, Braulio Fogón and Randy', NULL),
+  ('Sequence of Events', 'Charles Goold', NULL)
   ;
 
    // Update to song table
@@ -286,7 +276,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11713; // SELECT last_insert_rowid();
+  song_id = 11753; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -326,20 +316,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-22 08:26:21.037037', '1137', '11702'),
-  ('2022-02-22 08:26:21.039039', '1137', '11703'),
-  ('2022-02-22 08:26:21.039039', '1137', '11704'),
-  ('2022-02-22 08:26:21.039039', '1137', '11705'),
-  ('2022-02-22 08:26:21.039039', '1137', '11706'),
-  ('2022-02-22 08:26:21.039039', '1137', '11707'),
-  ('2022-02-22 08:26:21.039039', '1137', '11708'),
-  ('2022-02-22 08:26:21.039039', '1137', '11709'),
-  ('2022-02-22 08:26:21.039039', '1137', '10629'),
-  ('2022-02-22 08:26:21.039039', '1137', '11710'),
-  ('2022-02-22 08:26:21.039039', '1137', '11711'),
-  ('2022-02-22 08:26:21.039039', '1137', '11312'),
-  ('2022-02-22 08:26:21.039039', '1137', '11712'),
-  ('2022-02-22 08:26:21.039039', '1137', '11713')
+  ('2022-03-06 09:10:55.939939', '1155', '11743'),
+  ('2022-03-06 09:10:55.940940', '1155', '11744'),
+  ('2022-03-06 09:10:55.940940', '1155', '11745'),
+  ('2022-03-06 09:10:55.940940', '1155', '11746'),
+  ('2022-03-06 09:10:55.940940', '1155', '11747'),
+  ('2022-03-06 09:10:55.940940', '1155', '11724'),
+  ('2022-03-06 09:10:55.940940', '1155', '11748'),
+  ('2022-03-06 09:10:55.940940', '1155', '11749'),
+  ('2022-03-06 09:10:55.940940', '1155', '11750'),
+  ('2022-03-06 09:10:55.940940', '1155', '11751'),
+  ('2022-03-06 09:10:55.940940', '1155', '11739'),
+  ('2022-03-06 09:10:55.940940', '1155', '11752'),
+  ('2022-03-06 09:10:55.940940', '1155', '11753')
   ;
 
   // Update to source_song table

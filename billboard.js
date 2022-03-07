@@ -22,7 +22,7 @@
   publicationDateFormatted = moment(publicationDate.slice(8), "MMM DD, YYYY").format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
 
   // Get location and format for current or past chart status
-  currentChartLocation = window.location.href + moment(publicationDate, "MMM DD, YYYY").format("YYYY-MM-DD");
+  currentChartLocation = window.location.href + moment(publicationDate.slice(8), "MMM DD, YYYY").format("YYYY-MM-DD");
   pastChartLocation = window.location.href;
 
   // Build the INSERT statement
@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of February 26, 2022', '2022-02-26 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-01-26');
+    ('Billboard', 'The Hot 100', 'Week of March 5, 2022', '2022-03-05 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-03-05');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1153; // SELECT last_insert_rowid();
+  source_id = 1154; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -60,6 +60,7 @@
 
   songsData = [];
 
+  // if this returns empty songsData[], try repeating, then try i<100 instead of elements.length. god knows why that made a difference, but it did.
   for (var i=1; i<elements.length; i++){ // does not include the No. 1 song
       element = elements[i];
 
@@ -104,83 +105,56 @@
   songsData =
   [
     {
-        "title": "MAMIII",
-        "artist_name": "Becky G X Karol G",
+        "title": "Nail Tech",
+        "artist_name": "Jack Harlow",
         "video_id": null,
-        "capture_date": "2022-02-25 01:02:05.477477",
-        "source_id": 1153,
+        "capture_date": "2022-03-06 08:59:55.058058",
+        "source_id": 1154,
+        "song_id": 11703,
+        "duplicate": true
+    },
+    {
+        "title": "Ahhh Ha",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2022-03-06 08:59:55.059059",
+        "source_id": 1154,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bussin",
-        "artist_name": "Nicki Minaj X Lil Baby",
+        "title": "Banking On Me",
+        "artist_name": "Gunna",
         "video_id": null,
-        "capture_date": "2022-02-25 01:02:05.477477",
-        "source_id": 1153,
-        "song_id": 11684,
+        "capture_date": "2022-03-06 08:59:55.059059",
+        "source_id": 1154,
+        "song_id": 11716,
         "duplicate": true
     },
     {
-        "title": "The Joker And The Queen",
-        "artist_name": "Ed Sheeran ft. Taylor Swift",
+        "title": "Poppin",
+        "artist_name": "Yeat",
         "video_id": null,
-        "capture_date": "2022-02-25 01:02:05.477477",
-        "source_id": 1153,
-        "song_id": 11668,
-        "duplicate": true
-    },
-    {
-        "title": "Worst Day",
-        "artist_name": "Future",
-        "video_id": null,
-        "capture_date": "2022-02-25 01:02:05.478478",
-        "source_id": 1153,
-        "song_id": 11683,
-        "duplicate": true
-    },
-    {
-        "title": "City Of Gods",
-        "artist_name": "Fivio Foreign, Kanye West & Alicia Keys",
-        "video_id": null,
-        "capture_date": "2022-02-25 01:02:05.478478",
-        "source_id": 1153,
-        "song_id": 11681,
-        "duplicate": true
-    },
-    {
-        "title": "Boyfriend",
-        "artist_name": "Dove Cameron",
-        "video_id": null,
-        "capture_date": "2022-02-25 01:02:05.479479",
-        "source_id": 1153,
+        "capture_date": "2022-03-06 08:59:55.059059",
+        "source_id": 1154,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Good Morning Gorgeous",
-        "artist_name": "Mary J. Blige",
+        "title": "Pray",
+        "artist_name": "Jessie Murph",
         "video_id": null,
-        "capture_date": "2022-02-25 01:02:05.479479",
-        "source_id": 1153,
-        "song_id": 11311,
-        "duplicate": true
+        "capture_date": "2022-03-06 08:59:55.059059",
+        "source_id": 1154,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Closer",
-        "artist_name": "Saweetie ft. H.E.R.",
+        "title": "Give Heaven Some Hell",
+        "artist_name": "HARDY",
         "video_id": null,
-        "capture_date": "2022-02-25 01:02:05.479479",
-        "source_id": 1153,
-        "song_id": 11689,
-        "duplicate": true
-    },
-    {
-        "title": "Stay Alive",
-        "artist_name": "Jung Kook",
-        "video_id": null,
-        "capture_date": "2022-02-25 01:02:05.479479",
-        "source_id": 1153,
+        "capture_date": "2022-03-06 08:59:55.059059",
+        "source_id": 1154,
         "song_id": null,
         "duplicate": false
     }
@@ -223,9 +197,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('MAMIII', 'Becky G X Karol G', NULL),
-  ('Boyfriend', 'Dove Cameron', NULL),
-  ('Stay Alive', 'Jung Kook', NULL)
+  ('Ahhh Ha', 'Lil Durk', NULL),
+  ('Poppin', 'Yeat', NULL),
+  ('Pray', 'Jessie Murph', NULL),
+  ('Give Heaven Some Hell', 'HARDY', NULL)
   ;
 
    // Update to song table
@@ -236,7 +211,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11738; // SELECT last_insert_rowid();
+  song_id = 11742; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -276,15 +251,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-25 01:02:05.477477', '1153', '11736'),
-  ('2022-02-25 01:02:05.477477', '1153', '11684'),
-  ('2022-02-25 01:02:05.477477', '1153', '11668'),
-  ('2022-02-25 01:02:05.478478', '1153', '11683'),
-  ('2022-02-25 01:02:05.478478', '1153', '11681'),
-  ('2022-02-25 01:02:05.479479', '1153', '11737'),
-  ('2022-02-25 01:02:05.479479', '1153', '11311'),
-  ('2022-02-25 01:02:05.479479', '1153', '11689'),
-  ('2022-02-25 01:02:05.479479', '1153', '11738')
+  ('2022-03-06 08:59:55.058058', '1154', '11703'),
+  ('2022-03-06 08:59:55.059059', '1154', '11739'),
+  ('2022-03-06 08:59:55.059059', '1154', '11716'),
+  ('2022-03-06 08:59:55.059059', '1154', '11740'),
+  ('2022-03-06 08:59:55.059059', '1154', '11741'),
+  ('2022-03-06 08:59:55.059059', '1154', '11742')
   ;
 
   // Update to source_song table
