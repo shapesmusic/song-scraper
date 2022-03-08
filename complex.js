@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Kanye West, Conway the Machine, EarthGang, & More', '2022-02-25 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-kanye-conway-earthgang/kodak-black-i-wish');
+    ('Complex', 'Best New Music This Week', 'King Von, Joey Badass, Pusha-T, NIGO, and More', '2022-03-04 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-king-von-joey-pusha-nigo/');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1156; // SELECT last_insert_rowid();
+  source_id = 1161; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,74 +101,56 @@
   songsData =
   [
     {
-        "title": "We Did It Kid",
-        "artist_name": "Kanye West ft. Baby Keem & Migos",
+        "title": "War",
+        "artist_name": "King Von",
         "video_id": null,
-        "capture_date": "2022-03-06 09:17:36.315315",
-        "source_id": 1156,
+        "capture_date": "2022-03-08 12:37:40.306306",
+        "source_id": 1161,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Stressed",
-        "artist_name": "Conway the Machine ft. Wallo267",
+        "title": "Hear Me Clearly",
+        "artist_name": "Pusha-T & NIGO",
         "video_id": null,
-        "capture_date": "2022-03-06 09:17:36.316316",
-        "source_id": 1156,
+        "capture_date": "2022-03-08 12:37:40.306306",
+        "source_id": 1161,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "WATERBOYZ",
-        "artist_name": "EarthGang, JID, & J. Cole",
+        "title": "Head High",
+        "artist_name": "Joey Badass",
         "video_id": null,
-        "capture_date": "2022-03-06 09:17:36.316316",
-        "source_id": 1156,
+        "capture_date": "2022-03-08 12:37:40.307307",
+        "source_id": 1161,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Freaky Deaky",
-        "artist_name": "Doja Cat & Tyga",
+        "title": "Head Off",
+        "artist_name": "DaBaby & YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-03-06 09:17:36.316316",
-        "source_id": 1156,
+        "capture_date": "2022-03-08 12:37:40.307307",
+        "source_id": 1161,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Little Story",
-        "artist_name": "Kehlani",
+        "title": "Still Here",
+        "artist_name": "Morray ft. Cordae",
         "video_id": null,
-        "capture_date": "2022-03-06 09:17:36.316316",
-        "source_id": 1156,
-        "song_id": 11745,
-        "duplicate": true
-    },
-    {
-        "title": "PBC",
-        "artist_name": "Flo Milli",
-        "video_id": null,
-        "capture_date": "2022-03-06 09:17:36.316316",
-        "source_id": 1156,
+        "capture_date": "2022-03-08 12:37:40.307307",
+        "source_id": 1161,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Zatoichi",
-        "artist_name": "Denzel Curry ft. slowthai",
+        "title": "Sometimes",
+        "artist_name": "Blxst & Zacari",
         "video_id": null,
-        "capture_date": "2022-03-06 09:17:36.316316",
-        "source_id": 1156,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I Wish",
-        "artist_name": "Kodak Black",
-        "video_id": null,
-        "capture_date": "2022-03-06 09:17:36.316316",
-        "source_id": 1156,
+        "capture_date": "2022-03-08 12:37:40.307307",
+        "source_id": 1161,
         "song_id": null,
         "duplicate": false
     }
@@ -211,13 +193,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('We Did It Kid', 'Kanye West ft. Baby Keem & Migos', NULL),
-  ('Stressed', 'Conway the Machine ft. Wallo267', NULL),
-  ('WATERBOYZ', 'EarthGang, JID, & J. Cole', NULL),
-  ('Freaky Deaky', 'Doja Cat & Tyga', NULL),
-  ('PBC', 'Flo Milli', NULL),
-  ('Zatoichi', 'Denzel Curry ft. slowthai', NULL),
-  ('I Wish', 'Kodak Black', NULL)
+  ('War', 'King Von', NULL),
+  ('Hear Me Clearly', 'Pusha-T & NIGO', NULL),
+  ('Head High', 'Joey Badass', NULL),
+  ('Head Off', 'DaBaby & YoungBoy Never Broke Again', NULL),
+  ('Still Here', 'Morray ft. Cordae', NULL),
+  ('Sometimes', 'Blxst & Zacari', NULL)
   ;
 
    // Update to song table
@@ -228,7 +209,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11760; // SELECT last_insert_rowid();
+  song_id = 11796; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -268,14 +249,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-06 09:17:36.315315', '1156', '11754'),
-  ('2022-03-06 09:17:36.316316', '1156', '11755'),
-  ('2022-03-06 09:17:36.316316', '1156', '11756'),
-  ('2022-03-06 09:17:36.316316', '1156', '11757'),
-  ('2022-03-06 09:17:36.316316', '1156', '11745'),
-  ('2022-03-06 09:17:36.316316', '1156', '11758'),
-  ('2022-03-06 09:17:36.316316', '1156', '11759'),
-  ('2022-03-06 09:17:36.316316', '1156', '11760')
+  ('2022-03-08 12:37:40.306306', '1161', '11791'),
+  ('2022-03-08 12:37:40.306306', '1161', '11792'),
+  ('2022-03-08 12:37:40.307307', '1161', '11793'),
+  ('2022-03-08 12:37:40.307307', '1161', '11794'),
+  ('2022-03-08 12:37:40.307307', '1161', '11795'),
+  ('2022-03-08 12:37:40.307307', '1161', '11796')
   ;
 
   // Update to source_song table

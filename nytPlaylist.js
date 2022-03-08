@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Florence + the Machine’s Conflicted Coronation, and 12 More New Songs', '2022-02-25 10:18:19.000000', 'https://www.nytimes.com/2022/02/25/arts/music/playlist-florence-the-machine-kehlani.html');
+    ('New York Times', 'The Playlist', 'The Buzzy Band Wet Leg Trips Out at a Party, and 13 More New Songs', '2022-03-04 09:11:33.000000', 'https://www.nytimes.com/2022/03/04/arts/music/playlist-wet-leg-justin-bieber-bartees-strange.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1155; // SELECT last_insert_rowid();
+  source_id = 1160; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,119 +100,128 @@
   songsData =
   [
     {
-        "title": "King",
-        "artist_name": "Florence + the Machine",
+        "title": "Angelica",
+        "artist_name": "Wet Leg",
         "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.939939",
-        "source_id": 1155,
+        "capture_date": "2022-03-08 12:29:00.614614",
+        "source_id": 1160,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Made Up Mind",
-        "artist_name": "Bonnie Raitt",
+        "title": "Heavy Heart",
+        "artist_name": "Bartees Strange",
         "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
+        "capture_date": "2022-03-08 12:29:00.615615",
+        "source_id": 1160,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Little Story",
-        "artist_name": "Kehlani",
+        "title": "This Is a Photograph",
+        "artist_name": "Kevin Morby",
         "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
+        "capture_date": "2022-03-08 12:29:00.615615",
+        "source_id": 1160,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Greener Pasture",
-        "artist_name": "Carter Faith",
+        "title": "I’m Tired",
+        "artist_name": "Labrinth and Zendaya",
         "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Come Away With Me (Alternate Version)",
-        "artist_name": "Norah Jones",
-        "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Back to the Radio",
-        "artist_name": "Porridge Radio",
-        "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
-        "song_id": 11724,
+        "capture_date": "2022-03-08 12:29:00.615615",
+        "source_id": 1160,
+        "song_id": 11773,
         "duplicate": true
     },
     {
-        "title": "Letter to Ur Ex",
-        "artist_name": "Mahalia",
+        "title": "Buffalo Stance",
+        "artist_name": "Robyn, Neneh Cherry and Maipei",
         "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
+        "capture_date": "2022-03-08 12:29:00.615615",
+        "source_id": 1160,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pegao!!!",
-        "artist_name": "Esty",
+        "title": "Used to It",
+        "artist_name": "Sharon Van Etten",
         "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
+        "capture_date": "2022-03-08 12:29:00.616616",
+        "source_id": 1160,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bbycakes",
-        "artist_name": "Mura Masa ft. Lil Uzi Vert, PinkPantheress and Shygirl",
+        "title": "Lost Track",
+        "artist_name": "Haim",
         "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
+        "capture_date": "2022-03-08 12:29:00.616616",
+        "source_id": 1160,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Put Your Hands On My ____ (Original Phonk Version)",
-        "artist_name": "R3hab ft. Saucy Santana",
+        "title": "Attention",
+        "artist_name": "Omah Lay and Justin Bieber",
         "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
+        "capture_date": "2022-03-08 12:29:00.616616",
+        "source_id": 1160,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ahhh Ha",
-        "artist_name": "Lil Durk",
+        "title": "Bring Back the Time",
+        "artist_name": "New Kids on the Block ft. Salt-N-Pepa, Rick Astley and En Vogue",
         "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
-        "song_id": 11739,
-        "duplicate": true
-    },
-    {
-        "title": "Comandante",
-        "artist_name": "Kiko El Crazy, Braulio Fogón and Randy",
-        "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
+        "capture_date": "2022-03-08 12:29:00.616616",
+        "source_id": 1160,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sequence of Events",
-        "artist_name": "Charles Goold",
+        "title": "Suéltame",
+        "artist_name": "La Marimba",
         "video_id": null,
-        "capture_date": "2022-03-06 09:10:55.940940",
-        "source_id": 1155,
+        "capture_date": "2022-03-08 12:29:00.616616",
+        "source_id": 1160,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Emelia",
+        "artist_name": "Melissa Aldana",
+        "video_id": null,
+        "capture_date": "2022-03-08 12:29:00.616616",
+        "source_id": 1160,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "To Talk About It",
+        "artist_name": "The Weather Station",
+        "video_id": null,
+        "capture_date": "2022-03-08 12:29:00.616616",
+        "source_id": 1160,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Subtle Bodies",
+        "artist_name": "Carmen Villain",
+        "video_id": null,
+        "capture_date": "2022-03-08 12:29:00.616616",
+        "source_id": 1160,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cuerpo que Flota",
+        "artist_name": "Lila Tirando a Violeta & Nicola Cruz",
+        "video_id": null,
+        "capture_date": "2022-03-08 12:29:00.616616",
+        "source_id": 1160,
         "song_id": null,
         "duplicate": false
     }
@@ -255,17 +264,19 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('King', 'Florence + the Machine', NULL),
-  ('Made Up Mind', 'Bonnie Raitt', NULL),
-  ('Little Story', 'Kehlani', NULL),
-  ('Greener Pasture', 'Carter Faith', NULL),
-  ('Come Away With Me (Alternate Version)', 'Norah Jones', NULL),
-  ('Letter to Ur Ex', 'Mahalia', NULL),
-  ('Pegao!!!', 'Esty', NULL),
-  ('Bbycakes', 'Mura Masa ft. Lil Uzi Vert, PinkPantheress and Shygirl', NULL),
-  ('Put Your Hands On My ____ (Original Phonk Version)', 'R3hab ft. Saucy Santana', NULL),
-  ('Comandante', 'Kiko El Crazy, Braulio Fogón and Randy', NULL),
-  ('Sequence of Events', 'Charles Goold', NULL)
+  ('Angelica', 'Wet Leg', NULL),
+  ('Heavy Heart', 'Bartees Strange', NULL),
+  ('This Is a Photograph', 'Kevin Morby', NULL),
+  ('Buffalo Stance', 'Robyn, Neneh Cherry and Maipei', NULL),
+  ('Used to It', 'Sharon Van Etten', NULL),
+  ('Lost Track', 'Haim', NULL),
+  ('Attention', 'Omah Lay and Justin Bieber', NULL),
+  ('Bring Back the Time', 'New Kids on the Block ft. Salt-N-Pepa, Rick Astley and En Vogue', NULL),
+  ('Suéltame', 'La Marimba', NULL),
+  ('Emelia', 'Melissa Aldana', NULL),
+  ('To Talk About It', 'The Weather Station', NULL),
+  ('Subtle Bodies', 'Carmen Villain', NULL),
+  ('Cuerpo que Flota', 'Lila Tirando a Violeta & Nicola Cruz', NULL)
   ;
 
    // Update to song table
@@ -276,7 +287,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11753; // SELECT last_insert_rowid();
+  song_id = 11790; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -316,19 +327,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-06 09:10:55.939939', '1155', '11743'),
-  ('2022-03-06 09:10:55.940940', '1155', '11744'),
-  ('2022-03-06 09:10:55.940940', '1155', '11745'),
-  ('2022-03-06 09:10:55.940940', '1155', '11746'),
-  ('2022-03-06 09:10:55.940940', '1155', '11747'),
-  ('2022-03-06 09:10:55.940940', '1155', '11724'),
-  ('2022-03-06 09:10:55.940940', '1155', '11748'),
-  ('2022-03-06 09:10:55.940940', '1155', '11749'),
-  ('2022-03-06 09:10:55.940940', '1155', '11750'),
-  ('2022-03-06 09:10:55.940940', '1155', '11751'),
-  ('2022-03-06 09:10:55.940940', '1155', '11739'),
-  ('2022-03-06 09:10:55.940940', '1155', '11752'),
-  ('2022-03-06 09:10:55.940940', '1155', '11753')
+  ('2022-03-08 12:29:00.614614', '1160', '11778'),
+  ('2022-03-08 12:29:00.615615', '1160', '11779'),
+  ('2022-03-08 12:29:00.615615', '1160', '11780'),
+  ('2022-03-08 12:29:00.615615', '1160', '11773'),
+  ('2022-03-08 12:29:00.615615', '1160', '11781'),
+  ('2022-03-08 12:29:00.616616', '1160', '11782'),
+  ('2022-03-08 12:29:00.616616', '1160', '11783'),
+  ('2022-03-08 12:29:00.616616', '1160', '11784'),
+  ('2022-03-08 12:29:00.616616', '1160', '11785'),
+  ('2022-03-08 12:29:00.616616', '1160', '11786'),
+  ('2022-03-08 12:29:00.616616', '1160', '11787'),
+  ('2022-03-08 12:29:00.616616', '1160', '11788'),
+  ('2022-03-08 12:29:00.616616', '1160', '11789'),
+  ('2022-03-08 12:29:00.616616', '1160', '11790')
   ;
 
   // Update to source_song table

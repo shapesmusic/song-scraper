@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of February 25, 2022', '2022-02-25 12:00:00.000000', 'https://www.stereogum.com/2177588/the-5-best-songs-of-the-week-422/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of March 4, 2022', '2022-03-04 12:00:00.000000', 'https://www.stereogum.com/2178474/the-5-best-songs-of-the-week-423/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1158; // SELECT last_insert_rowid();
+  source_id = 1162; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -100,52 +100,52 @@
 
   songsData =
   [
-    {
-        "title": "Still",
-        "artist_name": "Just Mustard ",
-        "video_id": null,
-        "capture_date": "2022-03-06 09:33:42.424424",
-        "source_id": 1158,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Any Day Now",
-        "artist_name": "Spice ",
-        "video_id": null,
-        "capture_date": "2022-03-06 09:33:42.425425",
-        "source_id": 1158,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "2002",
-        "artist_name": "Enumclaw ",
-        "video_id": null,
-        "capture_date": "2022-03-06 09:33:42.425425",
-        "source_id": 1158,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Zatoichi",
-        "artist_name": "Denzel Curry ",
-        "video_id": null,
-        "capture_date": "2022-03-06 09:33:42.425425",
-        "source_id": 1158,
-        "song_id": 11759,
-        "duplicate": true
-    },
-    {
-        "title": "Back To The Radio",
-        "artist_name": "Porridge Radio ",
-        "video_id": null,
-        "capture_date": "2022-03-06 09:33:42.425425",
-        "source_id": 1158,
-        "song_id": 11724,
-        "duplicate": true
-    }
-]
+      {
+          "title": "Matilda",
+          "artist_name": "PUP ",
+          "video_id": null,
+          "capture_date": "2022-03-08 12:44:20.261261",
+          "source_id": 1162,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Tidal River",
+          "artist_name": "Rolling Blackouts Coastal Fever ",
+          "video_id": null,
+          "capture_date": "2022-03-08 12:44:20.262262",
+          "source_id": 1162,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Concrete",
+          "artist_name": "Barrie ",
+          "video_id": null,
+          "capture_date": "2022-03-08 12:44:20.262262",
+          "source_id": 1162,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Heavy Heart",
+          "artist_name": "Bartees Strange ",
+          "video_id": null,
+          "capture_date": "2022-03-08 12:44:20.262262",
+          "source_id": 1162,
+          "song_id": 11779,
+          "duplicate": true
+      },
+      {
+          "title": "Lost Track",
+          "artist_name": "HAIM ",
+          "video_id": null,
+          "capture_date": "2022-03-08 12:44:20.262262",
+          "source_id": 1162,
+          "song_id": 11783,
+          "duplicate": true
+      }
+  ]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -184,9 +184,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Still', 'Just Mustard ', NULL),
-  ('Any Day Now', 'Spice ', NULL),
-  ('2002', 'Enumclaw ', NULL)
+  ('Matilda', 'PUP ', NULL),
+  ('Tidal River', 'Rolling Blackouts Coastal Fever ', NULL),
+  ('Concrete', 'Barrie ', NULL)
   ;
 
    // Update to song table
@@ -197,7 +197,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11772; // SELECT last_insert_rowid();
+  song_id = 11799; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -237,11 +237,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-06 09:33:42.424424', '1158', '11770'),
-  ('2022-03-06 09:33:42.425425', '1158', '11771'),
-  ('2022-03-06 09:33:42.425425', '1158', '11772'),
-  ('2022-03-06 09:33:42.425425', '1158', '11759'),
-  ('2022-03-06 09:33:42.425425', '1158', '11724')
+  ('2022-03-08 12:44:20.261261', '1162', '11797'),
+  ('2022-03-08 12:44:20.262262', '1162', '11798'),
+  ('2022-03-08 12:44:20.262262', '1162', '11799'),
+  ('2022-03-08 12:44:20.262262', '1162', '11779'),
+  ('2022-03-08 12:44:20.262262', '1162', '11783')
   ;
 
   // Update to source_song table

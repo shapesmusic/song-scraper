@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of March 5, 2022', '2022-03-05 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-03-05');
+    ('Billboard', 'The Hot 100', 'Week of March 12, 2022', '2022-03-12 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-03-12');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1154; // SELECT last_insert_rowid();
+  source_id = 1159; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,56 +105,65 @@
   songsData =
   [
     {
-        "title": "Nail Tech",
-        "artist_name": "Jack Harlow",
+        "title": "Freaky Deaky",
+        "artist_name": "Tyga X Doja Cat",
         "video_id": null,
-        "capture_date": "2022-03-06 08:59:55.058058",
-        "source_id": 1154,
-        "song_id": 11703,
+        "capture_date": "2022-03-08 12:24:25.123123",
+        "source_id": 1159,
+        "song_id": 11757,
         "duplicate": true
     },
     {
-        "title": "Ahhh Ha",
-        "artist_name": "Lil Durk",
+        "title": "I'm Tired",
+        "artist_name": "Labrinth & Zendaya",
         "video_id": null,
-        "capture_date": "2022-03-06 08:59:55.059059",
-        "source_id": 1154,
+        "capture_date": "2022-03-08 12:24:25.125125",
+        "source_id": 1159,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Banking On Me",
-        "artist_name": "Gunna",
+        "title": "I Hate YoungBoy",
+        "artist_name": "YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-03-06 08:59:55.059059",
-        "source_id": 1154,
-        "song_id": 11716,
+        "capture_date": "2022-03-08 12:24:25.125125",
+        "source_id": 1159,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Usain Boo",
+        "artist_name": "Kodak Black",
+        "video_id": null,
+        "capture_date": "2022-03-08 12:24:25.126126",
+        "source_id": 1159,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Wish",
+        "artist_name": "Kodak Black",
+        "video_id": null,
+        "capture_date": "2022-03-08 12:24:25.126126",
+        "source_id": 1159,
+        "song_id": 11760,
         "duplicate": true
     },
     {
-        "title": "Poppin",
-        "artist_name": "Yeat",
+        "title": "To The Moon!",
+        "artist_name": "JNR CHOI & Sam Tompkins",
         "video_id": null,
-        "capture_date": "2022-03-06 08:59:55.059059",
-        "source_id": 1154,
+        "capture_date": "2022-03-08 12:24:25.126126",
+        "source_id": 1159,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pray",
-        "artist_name": "Jessie Murph",
+        "title": "Rocking A Cardigan In Atlanta",
+        "artist_name": "Lil Shordie Scott",
         "video_id": null,
-        "capture_date": "2022-03-06 08:59:55.059059",
-        "source_id": 1154,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Give Heaven Some Hell",
-        "artist_name": "HARDY",
-        "video_id": null,
-        "capture_date": "2022-03-06 08:59:55.059059",
-        "source_id": 1154,
+        "capture_date": "2022-03-08 12:24:25.126126",
+        "source_id": 1159,
         "song_id": null,
         "duplicate": false
     }
@@ -197,10 +206,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Ahhh Ha', 'Lil Durk', NULL),
-  ('Poppin', 'Yeat', NULL),
-  ('Pray', 'Jessie Murph', NULL),
-  ('Give Heaven Some Hell', 'HARDY', NULL)
+  ('I’m Tired', 'Labrinth & Zendaya', NULL),
+  ('I Hate YoungBoy', 'YoungBoy Never Broke Again', NULL),
+  ('Usain Boo', 'Kodak Black', NULL),
+  ('To The Moon!', 'JNR CHOI & Sam Tompkins', NULL),
+  ('Rocking A Cardigan In Atlanta', 'Lil Shordie Scott', NULL)
   ;
 
    // Update to song table
@@ -211,7 +221,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11742; // SELECT last_insert_rowid();
+  song_id = 11777; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -251,12 +261,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-06 08:59:55.058058', '1154', '11703'),
-  ('2022-03-06 08:59:55.059059', '1154', '11739'),
-  ('2022-03-06 08:59:55.059059', '1154', '11716'),
-  ('2022-03-06 08:59:55.059059', '1154', '11740'),
-  ('2022-03-06 08:59:55.059059', '1154', '11741'),
-  ('2022-03-06 08:59:55.059059', '1154', '11742')
+  ('2022-03-08 12:24:25.123123', '1159', '11757'),
+  ('2022-03-08 12:24:25.125125', '1159', '11773'),
+  ('2022-03-08 12:24:25.125125', '1159', '11774'),
+  ('2022-03-08 12:24:25.126126', '1159', '11775'),
+  ('2022-03-08 12:24:25.126126', '1159', '11760'),
+  ('2022-03-08 12:24:25.126126', '1159', '11776'),
+  ('2022-03-08 12:24:25.126126', '1159', '11777')
   ;
 
   // Update to source_song table
