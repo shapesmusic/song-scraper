@@ -7,7 +7,7 @@
 1. Make sure the local copy of the `shapes.sqlite` database is up to date.
 1. Point the sqlite CLI to the database with (for example):
 ```
-sqlite3 /Users/davidforrest/david_local/development_local/Shapes-API/www/shapes.sqlite
+sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shapes.sqlite
 ```
 
 ### List of Sources
@@ -45,3 +45,21 @@ Use [manual-add.js](https://github.com/davidforrest/Song-Scraper/blob/master/man
 **One-Time Scrapes**
 
 Use [onetime-list.js](https://github.com/davidforrest/Song-Scraper/blob/master/onetime-list.js) to set up a large list scrape that you're only going to use once.
+
+
+### To dump the database to a text file (so commits are visible):
+
+Connect to the db
+```
+sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shapes.sqlite
+```
+
+Select the output location and name/create the file
+```
+.output /Users/davidforrest/david_local/development_local/shapes-backend/db/shapes.sqlite.txt
+```
+
+Dump the db into that file
+```
+.dump
+```
