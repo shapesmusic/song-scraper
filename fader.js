@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 243 // from the chart page
+  fader_no = 244 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 243 Week of March 02, 2022', '2022-03-02 12:00:00.000000', 'https://www.thefader.com/2022/03/15/tracklist-cover-art-phife-dawg-forever');
+    ('The Fader', '10 songs you need in your life this week', 'No. 244 Week of March 09, 2022', '2022-03-09 12:00:00.000000', 'https://www.thefader.com/2022/03/09/songs-you-need-superorganism-stromae-tinashe');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1166; // SELECT last_insert_rowid();
+  source_id = 1167; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Eurovision",
-        "artist_name": "Central Cee ft. Rondodasosa, Baby Gang, A2Anti, Morad, Beny Jr, Ashe 22, Freeze Corleone",
+        "title": "Teenager",
+        "artist_name": "Superorganism feat CHAI and Pi Ja Ma",
         "video_id": null,
-        "capture_date": "2022-03-16 08:46:52.825825",
-        "source_id": 1166,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Only Love From Now On",
-        "artist_name": "Carmen Villain",
-        "video_id": null,
-        "capture_date": "2022-03-16 08:46:52.827827",
-        "source_id": 1166,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I’m Tired",
-        "artist_name": "Labrinth and Zendaya",
-        "video_id": null,
-        "capture_date": "2022-03-16 08:46:52.827827",
-        "source_id": 1166,
-        "song_id": 11773,
+        "capture_date": "2022-03-16 08:56:25.183183",
+        "source_id": 1167,
+        "song_id": 11813,
         "duplicate": true
     },
     {
-        "title": "Garden of Our Neighbour",
-        "artist_name": "GOON",
+        "title": "La Solassitude",
+        "artist_name": "Stromae",
         "video_id": null,
-        "capture_date": "2022-03-16 08:46:52.827827",
-        "source_id": 1166,
+        "capture_date": "2022-03-16 08:56:25.183183",
+        "source_id": 1167,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "the sheesh battle",
-        "artist_name": "bbymutha",
+        "title": "This Animation",
+        "artist_name": "Kristine Leschper",
         "video_id": null,
-        "capture_date": "2022-03-16 08:46:52.827827",
-        "source_id": 1166,
+        "capture_date": "2022-03-16 08:56:25.183183",
+        "source_id": 1167,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bodies of Water",
-        "artist_name": "HAAi",
+        "title": "Starlight",
+        "artist_name": "Dave",
         "video_id": null,
-        "capture_date": "2022-03-16 08:46:52.827827",
-        "source_id": 1166,
+        "capture_date": "2022-03-16 08:56:25.183183",
+        "source_id": 1167,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Morning Man",
-        "artist_name": "Asa",
+        "title": "Swagger Back",
+        "artist_name": "Cruel Santino (ft. WifiGawd)",
         "video_id": null,
-        "capture_date": "2022-03-16 08:46:52.827827",
-        "source_id": 1166,
+        "capture_date": "2022-03-16 08:56:25.183183",
+        "source_id": 1167,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Baby",
-        "artist_name": "Charli XCX",
+        "title": "Something Like A Heartbreak",
+        "artist_name": "Tinashe",
         "video_id": null,
-        "capture_date": "2022-03-16 08:46:52.827827",
-        "source_id": 1166,
+        "capture_date": "2022-03-16 08:56:25.183183",
+        "source_id": 1167,
+        "song_id": 11815,
+        "duplicate": true
+    },
+    {
+        "title": "Gunk",
+        "artist_name": "Overmono",
+        "video_id": null,
+        "capture_date": "2022-03-16 08:56:25.183183",
+        "source_id": 1167,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "the dealer",
-        "artist_name": "Nilüfer Yanya",
+        "title": "Commercial",
+        "artist_name": "First Hate",
         "video_id": null,
-        "capture_date": "2022-03-16 08:46:52.827827",
-        "source_id": 1166,
+        "capture_date": "2022-03-16 08:56:25.183183",
+        "source_id": 1167,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Know",
-        "artist_name": "DJ Paypal",
+        "title": "Bounce Back/Street Nigga",
+        "artist_name": "Z Money",
         "video_id": null,
-        "capture_date": "2022-03-16 08:46:52.827827",
-        "source_id": 1166,
+        "capture_date": "2022-03-16 08:56:25.183183",
+        "source_id": 1167,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "poem about executive function",
+        "artist_name": "LEYA ft. Deli Girls",
+        "video_id": null,
+        "capture_date": "2022-03-16 08:56:25.183183",
+        "source_id": 1167,
         "song_id": null,
         "duplicate": false
     }
@@ -230,15 +230,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Eurovision', 'Central Cee ft. Rondodasosa, Baby Gang, A2Anti, Morad, Beny Jr, Ashe 22, Freeze Corleone', NULL),
-  ('Only Love From Now On', 'Carmen Villain', NULL),
-  ('Garden of Our Neighbour', 'GOON', NULL),
-  ('the sheesh battle', 'bbymutha', NULL),
-  ('Bodies of Water', 'HAAi', NULL),
-  ('Morning Man', 'Asa', NULL),
-  ('Baby', 'Charli XCX', NULL),
-  ('the dealer', 'Nilüfer Yanya', NULL),
-  ('I Know', 'DJ Paypal', NULL)
+  ('La Solassitude', 'Stromae', NULL),
+  ('This Animation', 'Kristine Leschper', NULL),
+  ('Starlight', 'Dave', NULL),
+  ('Swagger Back', 'Cruel Santino (ft. WifiGawd)', NULL),
+  ('Gunk', 'Overmono', NULL),
+  ('Commercial', 'First Hate', NULL),
+  ('Bounce Back/Street Nigga', 'Z Money', NULL),
+  ('poem about executive function', 'LEYA ft. Deli Girls', NULL)
   ;
 
    // Update to song table
@@ -249,7 +248,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11835; // SELECT last_insert_rowid();
+  song_id = 11843; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +288,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-16 08:46:52.825825', '1166', '11827'),
-  ('2022-03-16 08:46:52.827827', '1166', '11828'),
-  ('2022-03-16 08:46:52.827827', '1166', '11773'),
-  ('2022-03-16 08:46:52.827827', '1166', '11829'),
-  ('2022-03-16 08:46:52.827827', '1166', '11830'),
-  ('2022-03-16 08:46:52.827827', '1166', '11831'),
-  ('2022-03-16 08:46:52.827827', '1166', '11832'),
-  ('2022-03-16 08:46:52.827827', '1166', '11833'),
-  ('2022-03-16 08:46:52.827827', '1166', '11834'),
-  ('2022-03-16 08:46:52.827827', '1166', '11835')
+  ('2022-03-16 08:56:25.183183', '1167', '11813'),
+  ('2022-03-16 08:56:25.183183', '1167', '11836'),
+  ('2022-03-16 08:56:25.183183', '1167', '11837'),
+  ('2022-03-16 08:56:25.183183', '1167', '11838'),
+  ('2022-03-16 08:56:25.183183', '1167', '11839'),
+  ('2022-03-16 08:56:25.183183', '1167', '11815'),
+  ('2022-03-16 08:56:25.183183', '1167', '11840'),
+  ('2022-03-16 08:56:25.183183', '1167', '11841'),
+  ('2022-03-16 08:56:25.183183', '1167', '11842'),
+  ('2022-03-16 08:56:25.183183', '1167', '11843')
   ;
 
   // Update to source_song table

@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'The Buzzy Band Wet Leg Trips Out at a Party, and 13 More New Songs', '2022-03-04 09:11:33.000000', 'https://www.nytimes.com/2022/03/04/arts/music/playlist-wet-leg-justin-bieber-bartees-strange.html');
+    ('New York Times', 'The Playlist', 'Megan Thee Stallion and Dua Lipa’s Sultry Team-Up, and 10 More New Songs', '2022-03-11 09:16:54.000000', 'https://www.nytimes.com/2022/03/11/arts/music/playlist-megan-thee-stallion-dua-lipa.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1160; // SELECT last_insert_rowid();
+  source_id = 1164; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,128 +100,101 @@
   songsData =
   [
     {
-        "title": "Angelica",
-        "artist_name": "Wet Leg",
+        "title": "Sweetest Pie",
+        "artist_name": "Megan Thee Stallion and Dua Lipa",
         "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.614614",
-        "source_id": 1160,
+        "capture_date": "2022-03-16 08:28:33.161161",
+        "source_id": 1164,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Heavy Heart",
-        "artist_name": "Bartees Strange",
+        "title": "My Love",
+        "artist_name": "Florence + the Machine",
         "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.615615",
-        "source_id": 1160,
+        "capture_date": "2022-03-16 08:28:33.173173",
+        "source_id": 1164,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "This Is a Photograph",
-        "artist_name": "Kevin Morby",
+        "title": "Strange",
+        "artist_name": "Miranda Lambert",
         "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.615615",
-        "source_id": 1160,
+        "capture_date": "2022-03-16 08:28:33.173173",
+        "source_id": 1164,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I’m Tired",
-        "artist_name": "Labrinth and Zendaya",
+        "title": "Anti-Glory",
+        "artist_name": "Horsegirl",
         "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.615615",
-        "source_id": 1160,
-        "song_id": 11773,
-        "duplicate": true
-    },
-    {
-        "title": "Buffalo Stance",
-        "artist_name": "Robyn, Neneh Cherry and Maipei",
-        "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.615615",
-        "source_id": 1160,
+        "capture_date": "2022-03-16 08:28:33.173173",
+        "source_id": 1164,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Used to It",
-        "artist_name": "Sharon Van Etten",
+        "title": "Teenager",
+        "artist_name": "Superorganism ft. Chai and Pi Ja Ma",
         "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.616616",
-        "source_id": 1160,
+        "capture_date": "2022-03-16 08:28:33.173173",
+        "source_id": 1164,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lost Track",
-        "artist_name": "Haim",
+        "title": "Spillways",
+        "artist_name": "Ghost",
         "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.616616",
-        "source_id": 1160,
+        "capture_date": "2022-03-16 08:28:33.174174",
+        "source_id": 1164,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Attention",
-        "artist_name": "Omah Lay and Justin Bieber",
+        "title": "Something Like a Heartbreak",
+        "artist_name": "Tinashe",
         "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.616616",
-        "source_id": 1160,
+        "capture_date": "2022-03-16 08:28:33.174174",
+        "source_id": 1164,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bring Back the Time",
-        "artist_name": "New Kids on the Block ft. Salt-N-Pepa, Rick Astley and En Vogue",
+        "title": "Up 2 Me",
+        "artist_name": "Tess Roby",
         "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.616616",
-        "source_id": 1160,
+        "capture_date": "2022-03-16 08:28:33.174174",
+        "source_id": 1164,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Suéltame",
-        "artist_name": "La Marimba",
+        "title": "For Some Time",
+        "artist_name": "Walter Smith III and Matthew Stevens",
         "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.616616",
-        "source_id": 1160,
+        "capture_date": "2022-03-16 08:28:33.174174",
+        "source_id": 1164,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Emelia",
-        "artist_name": "Melissa Aldana",
+        "title": "Goodbye Mr. Blue",
+        "artist_name": "Father John Misty",
         "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.616616",
-        "source_id": 1160,
+        "capture_date": "2022-03-16 08:28:33.174174",
+        "source_id": 1164,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "To Talk About It",
-        "artist_name": "The Weather Station",
+        "title": "Vocoder",
+        "artist_name": "Floating Points",
         "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.616616",
-        "source_id": 1160,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Subtle Bodies",
-        "artist_name": "Carmen Villain",
-        "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.616616",
-        "source_id": 1160,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cuerpo que Flota",
-        "artist_name": "Lila Tirando a Violeta & Nicola Cruz",
-        "video_id": null,
-        "capture_date": "2022-03-08 12:29:00.616616",
-        "source_id": 1160,
+        "capture_date": "2022-03-16 08:28:33.174174",
+        "source_id": 1164,
         "song_id": null,
         "duplicate": false
     }
@@ -264,19 +237,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Angelica', 'Wet Leg', NULL),
-  ('Heavy Heart', 'Bartees Strange', NULL),
-  ('This Is a Photograph', 'Kevin Morby', NULL),
-  ('Buffalo Stance', 'Robyn, Neneh Cherry and Maipei', NULL),
-  ('Used to It', 'Sharon Van Etten', NULL),
-  ('Lost Track', 'Haim', NULL),
-  ('Attention', 'Omah Lay and Justin Bieber', NULL),
-  ('Bring Back the Time', 'New Kids on the Block ft. Salt-N-Pepa, Rick Astley and En Vogue', NULL),
-  ('Suéltame', 'La Marimba', NULL),
-  ('Emelia', 'Melissa Aldana', NULL),
-  ('To Talk About It', 'The Weather Station', NULL),
-  ('Subtle Bodies', 'Carmen Villain', NULL),
-  ('Cuerpo que Flota', 'Lila Tirando a Violeta & Nicola Cruz', NULL)
+  ('Sweetest Pie', 'Megan Thee Stallion and Dua Lipa', NULL),
+  ('My Love', 'Florence + the Machine', NULL),
+  ('Strange', 'Miranda Lambert', NULL),
+  ('Anti-Glory', 'Horsegirl', NULL),
+  ('Teenager', 'Superorganism ft. Chai and Pi Ja Ma', NULL),
+  ('Spillways', 'Ghost', NULL),
+  ('Something Like a Heartbreak', 'Tinashe', NULL),
+  ('Up 2 Me', 'Tess Roby', NULL),
+  ('For Some Time', 'Walter Smith III and Matthew Stevens', NULL),
+  ('Goodbye Mr. Blue', 'Father John Misty', NULL),
+  ('Vocoder', 'Floating Points', NULL)
   ;
 
    // Update to song table
@@ -287,7 +258,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11790; // SELECT last_insert_rowid();
+  song_id = 11819; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -327,20 +298,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-08 12:29:00.614614', '1160', '11778'),
-  ('2022-03-08 12:29:00.615615', '1160', '11779'),
-  ('2022-03-08 12:29:00.615615', '1160', '11780'),
-  ('2022-03-08 12:29:00.615615', '1160', '11773'),
-  ('2022-03-08 12:29:00.615615', '1160', '11781'),
-  ('2022-03-08 12:29:00.616616', '1160', '11782'),
-  ('2022-03-08 12:29:00.616616', '1160', '11783'),
-  ('2022-03-08 12:29:00.616616', '1160', '11784'),
-  ('2022-03-08 12:29:00.616616', '1160', '11785'),
-  ('2022-03-08 12:29:00.616616', '1160', '11786'),
-  ('2022-03-08 12:29:00.616616', '1160', '11787'),
-  ('2022-03-08 12:29:00.616616', '1160', '11788'),
-  ('2022-03-08 12:29:00.616616', '1160', '11789'),
-  ('2022-03-08 12:29:00.616616', '1160', '11790')
+  ('2022-03-16 08:28:33.161161', '1164', '11809'),
+  ('2022-03-16 08:28:33.173173', '1164', '11810'),
+  ('2022-03-16 08:28:33.173173', '1164', '11811'),
+  ('2022-03-16 08:28:33.173173', '1164', '11812'),
+  ('2022-03-16 08:28:33.173173', '1164', '11813'),
+  ('2022-03-16 08:28:33.174174', '1164', '11814'),
+  ('2022-03-16 08:28:33.174174', '1164', '11815'),
+  ('2022-03-16 08:28:33.174174', '1164', '11816'),
+  ('2022-03-16 08:28:33.174174', '1164', '11817'),
+  ('2022-03-16 08:28:33.174174', '1164', '11818'),
+  ('2022-03-16 08:28:33.174174', '1164', '11819')
   ;
 
   // Update to source_song table

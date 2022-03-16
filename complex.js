@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'King Von, Joey Badass, Pusha-T, NIGO, and More', '2022-03-04 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-king-von-joey-pusha-nigo/');
+    ('Complex', 'Best New Music This Week', 'Lil Durk, Megan Thee Stallion, Rex Orange County, and More', '2022-03-11 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-durk-megan-rex/latto-21-savage-wheelie');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1161; // SELECT last_insert_rowid();
+  source_id = 1165; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,56 +101,74 @@
   songsData =
   [
     {
-        "title": "War",
-        "artist_name": "King Von",
+        "title": "Petty Too",
+        "artist_name": "Lil Durk ft. Future",
         "video_id": null,
-        "capture_date": "2022-03-08 12:37:40.306306",
-        "source_id": 1161,
+        "capture_date": "2022-03-16 08:35:34.754754",
+        "source_id": 1165,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hear Me Clearly",
-        "artist_name": "Pusha-T & NIGO",
+        "title": "Open A Window",
+        "artist_name": "Rex Orange County ft. Tyler the Creator",
         "video_id": null,
-        "capture_date": "2022-03-08 12:37:40.306306",
-        "source_id": 1161,
+        "capture_date": "2022-03-16 08:35:34.755755",
+        "source_id": 1165,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Head High",
-        "artist_name": "Joey Badass",
+        "title": "Wheelie",
+        "artist_name": "Latto ft. 21 Savage",
         "video_id": null,
-        "capture_date": "2022-03-08 12:37:40.307307",
-        "source_id": 1161,
+        "capture_date": "2022-03-16 08:35:34.755755",
+        "source_id": 1165,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Head Off",
-        "artist_name": "DaBaby & YoungBoy Never Broke Again",
+        "title": "Sweetest Pie",
+        "artist_name": "Megan Thee Stallion & Dua Lipa",
         "video_id": null,
-        "capture_date": "2022-03-08 12:37:40.307307",
-        "source_id": 1161,
+        "capture_date": "2022-03-16 08:35:34.755755",
+        "source_id": 1165,
+        "song_id": 11809,
+        "duplicate": true
+    },
+    {
+        "title": "The Sun",
+        "artist_name": "KayCyy & Gesaffelstein",
+        "video_id": null,
+        "capture_date": "2022-03-16 08:35:34.755755",
+        "source_id": 1165,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Still Here",
-        "artist_name": "Morray ft. Cordae",
+        "title": "Killing Me",
+        "artist_name": "Omar Apollo",
         "video_id": null,
-        "capture_date": "2022-03-08 12:37:40.307307",
-        "source_id": 1161,
+        "capture_date": "2022-03-16 08:35:34.755755",
+        "source_id": 1165,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sometimes",
-        "artist_name": "Blxst & Zacari",
+        "title": "Weekend in the Perry’s",
+        "artist_name": "Benny the Butcher ft. Boldy James",
         "video_id": null,
-        "capture_date": "2022-03-08 12:37:40.307307",
-        "source_id": 1161,
+        "capture_date": "2022-03-16 08:35:34.755755",
+        "source_id": 1165,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pain Killers",
+        "artist_name": "Key Glock",
+        "video_id": null,
+        "capture_date": "2022-03-16 08:35:34.755755",
+        "source_id": 1165,
         "song_id": null,
         "duplicate": false
     }
@@ -193,12 +211,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('War', 'King Von', NULL),
-  ('Hear Me Clearly', 'Pusha-T & NIGO', NULL),
-  ('Head High', 'Joey Badass', NULL),
-  ('Head Off', 'DaBaby & YoungBoy Never Broke Again', NULL),
-  ('Still Here', 'Morray ft. Cordae', NULL),
-  ('Sometimes', 'Blxst & Zacari', NULL)
+  ('Petty Too', 'Lil Durk ft. Future', NULL),
+  ('Open A Window', 'Rex Orange County ft. Tyler the Creator', NULL),
+  ('Wheelie', 'Latto ft. 21 Savage', NULL),
+  ('The Sun', 'KayCyy & Gesaffelstein', NULL),
+  ('Killing Me', 'Omar Apollo', NULL),
+  ('Weekend in the Perry’s', 'Benny the Butcher ft. Boldy James', NULL),
+  ('Pain Killers', 'Key Glock', NULL)
   ;
 
    // Update to song table
@@ -209,7 +228,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11796; // SELECT last_insert_rowid();
+  song_id = 11826; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -249,12 +268,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-08 12:37:40.306306', '1161', '11791'),
-  ('2022-03-08 12:37:40.306306', '1161', '11792'),
-  ('2022-03-08 12:37:40.307307', '1161', '11793'),
-  ('2022-03-08 12:37:40.307307', '1161', '11794'),
-  ('2022-03-08 12:37:40.307307', '1161', '11795'),
-  ('2022-03-08 12:37:40.307307', '1161', '11796')
+  ('2022-03-16 08:35:34.754754', '1165', '11820'),
+  ('2022-03-16 08:35:34.755755', '1165', '11821'),
+  ('2022-03-16 08:35:34.755755', '1165', '11822'),
+  ('2022-03-16 08:35:34.755755', '1165', '11809'),
+  ('2022-03-16 08:35:34.755755', '1165', '11823'),
+  ('2022-03-16 08:35:34.755755', '1165', '11824'),
+  ('2022-03-16 08:35:34.755755', '1165', '11825'),
+  ('2022-03-16 08:35:34.755755', '1165', '11826')
   ;
 
   // Update to source_song table

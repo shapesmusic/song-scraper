@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of March 12, 2022', '2022-03-12 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-03-12');
+    ('Billboard', 'The Hot 100', 'Week of March 19, 2022', '2022-03-19 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-03-19');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1159; // SELECT last_insert_rowid();
+  source_id = 1163; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,65 +105,92 @@
   songsData =
   [
     {
-        "title": "Freaky Deaky",
-        "artist_name": "Tyga X Doja Cat",
+        "title": "Bam Bam",
+        "artist_name": "Camila Cabello ft. Ed Sheeran",
         "video_id": null,
-        "capture_date": "2022-03-08 12:24:25.123123",
-        "source_id": 1159,
-        "song_id": 11757,
+        "capture_date": "2022-03-16 08:22:42.494494",
+        "source_id": 1163,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Handsomer",
+        "artist_name": "Russ ft. Ktlyn",
+        "video_id": null,
+        "capture_date": "2022-03-16 08:22:42.495495",
+        "source_id": 1163,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Publicity Stunt",
+        "artist_name": "Gucci Mane",
+        "video_id": null,
+        "capture_date": "2022-03-16 08:22:42.495495",
+        "source_id": 1163,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "War",
+        "artist_name": "King Von",
+        "video_id": null,
+        "capture_date": "2022-03-16 08:22:42.495495",
+        "source_id": 1163,
+        "song_id": 11791,
         "duplicate": true
     },
     {
-        "title": "I'm Tired",
-        "artist_name": "Labrinth & Zendaya",
+        "title": "Ay!",
+        "artist_name": "Machine Gun Kelly & Lil Wayne",
         "video_id": null,
-        "capture_date": "2022-03-08 12:24:25.125125",
-        "source_id": 1159,
+        "capture_date": "2022-03-16 08:22:42.496496",
+        "source_id": 1163,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Hate YoungBoy",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Neighborhood Superstar",
+        "artist_name": "DaBaby & YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-03-08 12:24:25.125125",
-        "source_id": 1159,
+        "capture_date": "2022-03-16 08:22:42.496496",
+        "source_id": 1163,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Usain Boo",
-        "artist_name": "Kodak Black",
+        "title": "Facetime",
+        "artist_name": "King Von ft. G Herbo",
         "video_id": null,
-        "capture_date": "2022-03-08 12:24:25.126126",
-        "source_id": 1159,
+        "capture_date": "2022-03-16 08:22:42.496496",
+        "source_id": 1163,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Wish",
-        "artist_name": "Kodak Black",
+        "title": "Straight To It",
+        "artist_name": "King Von ft. Fivio Foreign",
         "video_id": null,
-        "capture_date": "2022-03-08 12:24:25.126126",
-        "source_id": 1159,
-        "song_id": 11760,
-        "duplicate": true
-    },
-    {
-        "title": "To The Moon!",
-        "artist_name": "JNR CHOI & Sam Tompkins",
-        "video_id": null,
-        "capture_date": "2022-03-08 12:24:25.126126",
-        "source_id": 1159,
+        "capture_date": "2022-03-16 08:22:42.496496",
+        "source_id": 1163,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rocking A Cardigan In Atlanta",
-        "artist_name": "Lil Shordie Scott",
+        "title": "Evil Twins",
+        "artist_name": "King Von & Lil Durk",
         "video_id": null,
-        "capture_date": "2022-03-08 12:24:25.126126",
-        "source_id": 1159,
+        "capture_date": "2022-03-16 08:22:42.496496",
+        "source_id": 1163,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Trust Nothing",
+        "artist_name": "King Von ft. Moneybagg Yo",
+        "video_id": null,
+        "capture_date": "2022-03-16 08:22:42.496496",
+        "source_id": 1163,
         "song_id": null,
         "duplicate": false
     }
@@ -206,11 +233,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('I’m Tired', 'Labrinth & Zendaya', NULL),
-  ('I Hate YoungBoy', 'YoungBoy Never Broke Again', NULL),
-  ('Usain Boo', 'Kodak Black', NULL),
-  ('To The Moon!', 'JNR CHOI & Sam Tompkins', NULL),
-  ('Rocking A Cardigan In Atlanta', 'Lil Shordie Scott', NULL)
+  ('Bam Bam', 'Camila Cabello ft. Ed Sheeran', NULL),
+  ('Handsomer', 'Russ ft. Ktlyn', NULL),
+  ('Publicity Stunt', 'Gucci Mane', NULL),
+  ('Ay!', 'Machine Gun Kelly & Lil Wayne', NULL),
+  ('Neighborhood Superstar', 'DaBaby & YoungBoy Never Broke Again', NULL),
+  ('Facetime', 'King Von ft. G Herbo', NULL),
+  ('Straight To It', 'King Von ft. Fivio Foreign', NULL),
+  ('Evil Twins', 'King Von & Lil Durk', NULL),
+  ('Trust Nothing', 'King Von ft. Moneybagg Yo', NULL)
   ;
 
    // Update to song table
@@ -221,7 +252,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11777; // SELECT last_insert_rowid();
+  song_id = 11808; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -261,13 +292,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-08 12:24:25.123123', '1159', '11757'),
-  ('2022-03-08 12:24:25.125125', '1159', '11773'),
-  ('2022-03-08 12:24:25.125125', '1159', '11774'),
-  ('2022-03-08 12:24:25.126126', '1159', '11775'),
-  ('2022-03-08 12:24:25.126126', '1159', '11760'),
-  ('2022-03-08 12:24:25.126126', '1159', '11776'),
-  ('2022-03-08 12:24:25.126126', '1159', '11777')
+  ('2022-03-16 08:22:42.494494', '1163', '11800'),
+  ('2022-03-16 08:22:42.495495', '1163', '11801'),
+  ('2022-03-16 08:22:42.495495', '1163', '11802'),
+  ('2022-03-16 08:22:42.495495', '1163', '11791'),
+  ('2022-03-16 08:22:42.496496', '1163', '11803'),
+  ('2022-03-16 08:22:42.496496', '1163', '11804'),
+  ('2022-03-16 08:22:42.496496', '1163', '11805'),
+  ('2022-03-16 08:22:42.496496', '1163', '11806'),
+  ('2022-03-16 08:22:42.496496', '1163', '11807'),
+  ('2022-03-16 08:22:42.496496', '1163', '11808')
   ;
 
   // Update to source_song table
