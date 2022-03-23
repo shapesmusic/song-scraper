@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Megan Thee Stallion and Dua Lipa’s Sultry Team-Up, and 10 More New Songs', '2022-03-11 09:16:54.000000', 'https://www.nytimes.com/2022/03/11/arts/music/playlist-megan-thee-stallion-dua-lipa.html');
+    ('New York Times', 'The Playlist', 'Arcade Fire Ignites a Fresh Era, and 11 More New Songs', '2022-03-18 08:45:02.000000', 'https://www.nytimes.com/2022/03/18/arts/music/playlist-arcade-fire-normani-rosalia.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1164; // SELECT last_insert_rowid();
+  source_id = 1170; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
@@ -100,101 +100,101 @@
   songsData =
   [
     {
-        "title": "Sweetest Pie",
-        "artist_name": "Megan Thee Stallion and Dua Lipa",
+        "title": "The Lightning I, II",
+        "artist_name": "Arcade Fire",
         "video_id": null,
-        "capture_date": "2022-03-16 08:28:33.161161",
-        "source_id": 1164,
+        "capture_date": "2022-03-22 08:27:32.729729",
+        "source_id": 1170,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "My Love",
-        "artist_name": "Florence + the Machine",
+        "title": "Wassulu Don",
+        "artist_name": "Oumou Sangaré",
         "video_id": null,
-        "capture_date": "2022-03-16 08:28:33.173173",
-        "source_id": 1164,
+        "capture_date": "2022-03-22 08:27:32.730730",
+        "source_id": 1170,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Strange",
-        "artist_name": "Miranda Lambert",
+        "title": "Fair",
+        "artist_name": "Normani",
         "video_id": null,
-        "capture_date": "2022-03-16 08:28:33.173173",
-        "source_id": 1164,
+        "capture_date": "2022-03-22 08:27:32.730730",
+        "source_id": 1170,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Anti-Glory",
-        "artist_name": "Horsegirl",
+        "title": "This Is Not America",
+        "artist_name": "Residente ft. Ibeyi",
         "video_id": null,
-        "capture_date": "2022-03-16 08:28:33.173173",
-        "source_id": 1164,
+        "capture_date": "2022-03-22 08:27:32.730730",
+        "source_id": 1170,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Teenager",
-        "artist_name": "Superorganism ft. Chai and Pi Ja Ma",
+        "title": "Cogs in Cogs, Pt. I: Dance",
+        "artist_name": "Brad Mehldau",
         "video_id": null,
-        "capture_date": "2022-03-16 08:28:33.173173",
-        "source_id": 1164,
+        "capture_date": "2022-03-22 08:27:32.730730",
+        "source_id": 1170,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Spillways",
-        "artist_name": "Ghost",
+        "title": "Good Mood",
+        "artist_name": "Donae’o ft. Terri Walker",
         "video_id": null,
-        "capture_date": "2022-03-16 08:28:33.174174",
-        "source_id": 1164,
+        "capture_date": "2022-03-22 08:27:32.730730",
+        "source_id": 1170,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Something Like a Heartbreak",
-        "artist_name": "Tinashe",
+        "title": "Cybah",
+        "artist_name": "Syd and Lucky Daye",
         "video_id": null,
-        "capture_date": "2022-03-16 08:28:33.174174",
-        "source_id": 1164,
+        "capture_date": "2022-03-22 08:27:32.730730",
+        "source_id": 1170,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Up 2 Me",
-        "artist_name": "Tess Roby",
+        "title": "Use Me",
+        "artist_name": "Valerie June",
         "video_id": null,
-        "capture_date": "2022-03-16 08:28:33.174174",
-        "source_id": 1164,
+        "capture_date": "2022-03-22 08:27:32.730730",
+        "source_id": 1170,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "For Some Time",
-        "artist_name": "Walter Smith III and Matthew Stevens",
+        "title": "Hentai",
+        "artist_name": "Rosalía",
         "video_id": null,
-        "capture_date": "2022-03-16 08:28:33.174174",
-        "source_id": 1164,
+        "capture_date": "2022-03-22 08:27:32.730730",
+        "source_id": 1170,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Goodbye Mr. Blue",
-        "artist_name": "Father John Misty",
+        "title": "So Unimportant",
+        "artist_name": "Ethan Gruska and Bon Iver",
         "video_id": null,
-        "capture_date": "2022-03-16 08:28:33.174174",
-        "source_id": 1164,
+        "capture_date": "2022-03-22 08:27:32.730730",
+        "source_id": 1170,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Vocoder",
-        "artist_name": "Floating Points",
+        "title": "Fronteras (Borders) Suite: Al-Musafir Blues",
+        "artist_name": "Danilo Pérez",
         "video_id": null,
-        "capture_date": "2022-03-16 08:28:33.174174",
-        "source_id": 1164,
+        "capture_date": "2022-03-22 08:27:32.730730",
+        "source_id": 1170,
         "song_id": null,
         "duplicate": false
     }
@@ -237,17 +237,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Sweetest Pie', 'Megan Thee Stallion and Dua Lipa', NULL),
-  ('My Love', 'Florence + the Machine', NULL),
-  ('Strange', 'Miranda Lambert', NULL),
-  ('Anti-Glory', 'Horsegirl', NULL),
-  ('Teenager', 'Superorganism ft. Chai and Pi Ja Ma', NULL),
-  ('Spillways', 'Ghost', NULL),
-  ('Something Like a Heartbreak', 'Tinashe', NULL),
-  ('Up 2 Me', 'Tess Roby', NULL),
-  ('For Some Time', 'Walter Smith III and Matthew Stevens', NULL),
-  ('Goodbye Mr. Blue', 'Father John Misty', NULL),
-  ('Vocoder', 'Floating Points', NULL)
+  ('The Lightning I, II', 'Arcade Fire', NULL),
+  ('Wassulu Don', 'Oumou Sangaré', NULL),
+  ('Fair', 'Normani', NULL),
+  ('This Is Not America', 'Residente ft. Ibeyi', NULL),
+  ('Cogs in Cogs, Pt. I: Dance', 'Brad Mehldau', NULL),
+  ('Good Mood', 'Donae’o ft. Terri Walker', NULL),
+  ('Cybah', 'Syd and Lucky Daye', NULL),
+  ('Use Me', 'Valerie June', NULL),
+  ('Hentai', 'Rosalía', NULL),
+  ('So Unimportant', 'Ethan Gruska and Bon Iver', NULL),
+  ('Fronteras (Borders) Suite: Al-Musafir Blues', 'Danilo Pérez', NULL)
   ;
 
    // Update to song table
@@ -258,7 +258,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11819; // SELECT last_insert_rowid();
+  song_id = 11871; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +298,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-16 08:28:33.161161', '1164', '11809'),
-  ('2022-03-16 08:28:33.173173', '1164', '11810'),
-  ('2022-03-16 08:28:33.173173', '1164', '11811'),
-  ('2022-03-16 08:28:33.173173', '1164', '11812'),
-  ('2022-03-16 08:28:33.173173', '1164', '11813'),
-  ('2022-03-16 08:28:33.174174', '1164', '11814'),
-  ('2022-03-16 08:28:33.174174', '1164', '11815'),
-  ('2022-03-16 08:28:33.174174', '1164', '11816'),
-  ('2022-03-16 08:28:33.174174', '1164', '11817'),
-  ('2022-03-16 08:28:33.174174', '1164', '11818'),
-  ('2022-03-16 08:28:33.174174', '1164', '11819')
+  ('2022-03-22 08:27:32.729729', '1170', '11861'),
+  ('2022-03-22 08:27:32.730730', '1170', '11862'),
+  ('2022-03-22 08:27:32.730730', '1170', '11863'),
+  ('2022-03-22 08:27:32.730730', '1170', '11864'),
+  ('2022-03-22 08:27:32.730730', '1170', '11865'),
+  ('2022-03-22 08:27:32.730730', '1170', '11866'),
+  ('2022-03-22 08:27:32.730730', '1170', '11867'),
+  ('2022-03-22 08:27:32.730730', '1170', '11868'),
+  ('2022-03-22 08:27:32.730730', '1170', '11869'),
+  ('2022-03-22 08:27:32.730730', '1170', '11870'),
+  ('2022-03-22 08:27:32.730730', '1170', '11871')
   ;
 
   // Update to source_song table

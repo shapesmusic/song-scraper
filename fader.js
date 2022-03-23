@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 244 // from the chart page
+  fader_no = 245 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 244 Week of March 09, 2022', '2022-03-09 12:00:00.000000', 'https://www.thefader.com/2022/03/09/songs-you-need-superorganism-stromae-tinashe');
+    ('The Fader', '10 songs you need in your life this week', 'No. 245 Week of March 16, 2022', '2022-03-16 12:00:00.000000', 'https://www.thefader.com/2022/03/16/songs-you-need-megan-thee-stallion-orion-sun-nia-archives');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1167; // SELECT last_insert_rowid();
+  source_id = 1172; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -67,8 +67,8 @@
   songsData = [];
 
   for (var i=0; i<elements.length; i++){
-    title = elements[i].innerText.match(/“(.*?)”/)[1]; // may need " or “” type quotation marks (usually "), and – style dash
-    artist_name = elements[i].innerText.match(/– ([\s\S]*)$/)[1] // may need " or “ type quotation marks
+    title = elements[i].innerText.match(/“|"(.*?)”|"/)[1];
+    artist_name = elements[i].innerText.match(/–|-|— ([\s\S]*)$/)[1]
     video_id = null
       // replace null with below to grab video IDs (when all songs are YT)
       // videoUrl[i].style.backgroundImage.match(/(?<=vi\/)(.*)(?=\/)/)[0];
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Teenager",
-        "artist_name": "Superorganism feat CHAI and Pi Ja Ma",
+        "title": "Sweetest Pie",
+        "artist_name": "Megan Thee Stallion & Dua Lipa",
         "video_id": null,
-        "capture_date": "2022-03-16 08:56:25.183183",
-        "source_id": 1167,
-        "song_id": 11813,
+        "capture_date": "2022-03-22 08:40:53.131131",
+        "source_id": 1172,
+        "song_id": 11809,
         "duplicate": true
     },
     {
-        "title": "La Solassitude",
-        "artist_name": "Stromae",
+        "title": "Intro",
+        "artist_name": "Orion Sun",
         "video_id": null,
-        "capture_date": "2022-03-16 08:56:25.183183",
-        "source_id": 1167,
+        "capture_date": "2022-03-22 08:40:53.132132",
+        "source_id": 1172,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "This Animation",
-        "artist_name": "Kristine Leschper",
+        "title": "Part of Me",
+        "artist_name": "Nia Archives",
         "video_id": null,
-        "capture_date": "2022-03-16 08:56:25.183183",
-        "source_id": 1167,
+        "capture_date": "2022-03-22 08:40:53.133133",
+        "source_id": 1172,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Starlight",
-        "artist_name": "Dave",
+        "title": "Zookies",
+        "artist_name": "8ruki",
         "video_id": null,
-        "capture_date": "2022-03-16 08:56:25.183183",
-        "source_id": 1167,
+        "capture_date": "2022-03-22 08:40:53.133133",
+        "source_id": 1172,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Swagger Back",
-        "artist_name": "Cruel Santino (ft. WifiGawd)",
+        "title": "Vocoder",
+        "artist_name": "Floating Points",
         "video_id": null,
-        "capture_date": "2022-03-16 08:56:25.183183",
-        "source_id": 1167,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Something Like A Heartbreak",
-        "artist_name": "Tinashe",
-        "video_id": null,
-        "capture_date": "2022-03-16 08:56:25.183183",
-        "source_id": 1167,
-        "song_id": 11815,
+        "capture_date": "2022-03-22 08:40:53.133133",
+        "source_id": 1172,
+        "song_id": 11819,
         "duplicate": true
     },
     {
-        "title": "Gunk",
-        "artist_name": "Overmono",
+        "title": "History Solved",
+        "artist_name": "La Neve",
         "video_id": null,
-        "capture_date": "2022-03-16 08:56:25.183183",
-        "source_id": 1167,
+        "capture_date": "2022-03-22 08:40:53.133133",
+        "source_id": 1172,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Commercial",
-        "artist_name": "First Hate",
+        "title": "aero3",
+        "artist_name": "seiji oda",
         "video_id": null,
-        "capture_date": "2022-03-16 08:56:25.183183",
-        "source_id": 1167,
+        "capture_date": "2022-03-22 08:40:53.133133",
+        "source_id": 1172,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bounce Back/Street Nigga",
-        "artist_name": "Z Money",
+        "title": "Cherry Forest",
+        "artist_name": "Lucky Daye",
         "video_id": null,
-        "capture_date": "2022-03-16 08:56:25.183183",
-        "source_id": 1167,
+        "capture_date": "2022-03-22 08:40:53.133133",
+        "source_id": 1172,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "poem about executive function",
-        "artist_name": "LEYA ft. Deli Girls",
+        "title": "Freaky",
+        "artist_name": "Lolingo x Elf",
         "video_id": null,
-        "capture_date": "2022-03-16 08:56:25.183183",
-        "source_id": 1167,
+        "capture_date": "2022-03-22 08:40:53.133133",
+        "source_id": 1172,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Last Laugh",
+        "artist_name": "Angelnumber 8",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:40:53.133133",
+        "source_id": 1172,
         "song_id": null,
         "duplicate": false
     }
@@ -230,14 +230,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('La Solassitude', 'Stromae', NULL),
-  ('This Animation', 'Kristine Leschper', NULL),
-  ('Starlight', 'Dave', NULL),
-  ('Swagger Back', 'Cruel Santino (ft. WifiGawd)', NULL),
-  ('Gunk', 'Overmono', NULL),
-  ('Commercial', 'First Hate', NULL),
-  ('Bounce Back/Street Nigga', 'Z Money', NULL),
-  ('poem about executive function', 'LEYA ft. Deli Girls', NULL)
+  ('Intro', 'Orion Sun', NULL),
+  ('Part of Me', 'Nia Archives', NULL),
+  ('Zookies', '8ruki', NULL),
+  ('History Solved', 'La Neve', NULL),
+  ('aero3', 'seiji oda', NULL),
+  ('Cherry Forest', 'Lucky Daye', NULL),
+  ('Freaky', 'Lolingo x Elf', NULL),
+  ('Last Laugh', 'Angelnumber 8', NULL)
   ;
 
    // Update to song table
@@ -248,7 +248,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11843; // SELECT last_insert_rowid();
+  song_id = 11885; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -288,16 +288,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-16 08:56:25.183183', '1167', '11813'),
-  ('2022-03-16 08:56:25.183183', '1167', '11836'),
-  ('2022-03-16 08:56:25.183183', '1167', '11837'),
-  ('2022-03-16 08:56:25.183183', '1167', '11838'),
-  ('2022-03-16 08:56:25.183183', '1167', '11839'),
-  ('2022-03-16 08:56:25.183183', '1167', '11815'),
-  ('2022-03-16 08:56:25.183183', '1167', '11840'),
-  ('2022-03-16 08:56:25.183183', '1167', '11841'),
-  ('2022-03-16 08:56:25.183183', '1167', '11842'),
-  ('2022-03-16 08:56:25.183183', '1167', '11843')
+  ('2022-03-22 08:40:53.131131', '1172', '11809'),
+  ('2022-03-22 08:40:53.132132', '1172', '11878'),
+  ('2022-03-22 08:40:53.133133', '1172', '11879'),
+  ('2022-03-22 08:40:53.133133', '1172', '11880'),
+  ('2022-03-22 08:40:53.133133', '1172', '11819'),
+  ('2022-03-22 08:40:53.133133', '1172', '11881'),
+  ('2022-03-22 08:40:53.133133', '1172', '11882'),
+  ('2022-03-22 08:40:53.133133', '1172', '11883'),
+  ('2022-03-22 08:40:53.133133', '1172', '11884'),
+  ('2022-03-22 08:40:53.133133', '1172', '11885')
   ;
 
   // Update to source_song table

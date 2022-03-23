@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of March 19, 2022', '2022-03-19 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-03-19');
+    ('Billboard', 'The Hot 100', 'Week of March 26, 2022', '2022-03-26 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-03-26');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1163; // SELECT last_insert_rowid();
+  source_id = 1169; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -60,8 +60,8 @@
 
   songsData = [];
 
-  // if this returns empty songsData[], try repeating, then try i<100 instead of elements.length. god knows why that made a difference, but it did.
-  for (var i=1; i<elements.length; i++){ // does not include the No. 1 song
+  // if this returns empty songsData[], scroll to the bottom of the page to get all lazyloads.
+  for (var i=1; i<elements.length; i++){ // does not include the No. 1 song.
       element = elements[i];
 
       isNew = element.getElementsByClassName('c-label  u-width-40 a-font-primary-bold-xxs lrv-u-color-grey-darkest u-background-color-yellow lrv-u-text-align-center');
@@ -105,92 +105,155 @@
   songsData =
   [
     {
-        "title": "Bam Bam",
-        "artist_name": "Camila Cabello ft. Ed Sheeran",
+        "title": "Sweetest Pie",
+        "artist_name": "Megan Thee Stallion & Dua Lipa",
         "video_id": null,
-        "capture_date": "2022-03-16 08:22:42.494494",
-        "source_id": 1163,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Handsomer",
-        "artist_name": "Russ ft. Ktlyn",
-        "video_id": null,
-        "capture_date": "2022-03-16 08:22:42.495495",
-        "source_id": 1163,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Publicity Stunt",
-        "artist_name": "Gucci Mane",
-        "video_id": null,
-        "capture_date": "2022-03-16 08:22:42.495495",
-        "source_id": 1163,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "War",
-        "artist_name": "King Von",
-        "video_id": null,
-        "capture_date": "2022-03-16 08:22:42.495495",
-        "source_id": 1163,
-        "song_id": 11791,
+        "capture_date": "2022-03-22 08:19:26.587587",
+        "source_id": 1169,
+        "song_id": 11809,
         "duplicate": true
     },
     {
-        "title": "Ay!",
-        "artist_name": "Machine Gun Kelly & Lil Wayne",
+        "title": "What Happened To Virgil",
+        "artist_name": "Lil Durk ft. Gunna",
         "video_id": null,
-        "capture_date": "2022-03-16 08:22:42.496496",
-        "source_id": 1163,
+        "capture_date": "2022-03-22 08:19:26.587587",
+        "source_id": 1169,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Neighborhood Superstar",
-        "artist_name": "DaBaby & YoungBoy Never Broke Again",
+        "title": "Petty Too",
+        "artist_name": "Lil Durk ft. Future",
         "video_id": null,
-        "capture_date": "2022-03-16 08:22:42.496496",
-        "source_id": 1163,
+        "capture_date": "2022-03-22 08:19:26.587587",
+        "source_id": 1169,
+        "song_id": 11820,
+        "duplicate": true
+    },
+    {
+        "title": "No Interviews",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:19:26.587587",
+        "source_id": 1169,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Facetime",
-        "artist_name": "King Von ft. G Herbo",
+        "title": "Golden Child",
+        "artist_name": "Lil Durk",
         "video_id": null,
-        "capture_date": "2022-03-16 08:22:42.496496",
-        "source_id": 1163,
+        "capture_date": "2022-03-22 08:19:26.587587",
+        "source_id": 1169,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Straight To It",
-        "artist_name": "King Von ft. Fivio Foreign",
+        "title": "Thinking With My Dick",
+        "artist_name": "Kevin Gates ft. Juicy J",
         "video_id": null,
-        "capture_date": "2022-03-16 08:22:42.496496",
-        "source_id": 1163,
+        "capture_date": "2022-03-22 08:19:26.587587",
+        "source_id": 1169,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Evil Twins",
-        "artist_name": "King Von & Lil Durk",
+        "title": "Something In The Way",
+        "artist_name": "Nirvana",
         "video_id": null,
-        "capture_date": "2022-03-16 08:22:42.496496",
-        "source_id": 1163,
+        "capture_date": "2022-03-22 08:19:26.587587",
+        "source_id": 1169,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Trust Nothing",
-        "artist_name": "King Von ft. Moneybagg Yo",
+        "title": "Barbarian",
+        "artist_name": "Lil Durk",
         "video_id": null,
-        "capture_date": "2022-03-16 08:22:42.496496",
-        "source_id": 1163,
+        "capture_date": "2022-03-22 08:19:26.587587",
+        "source_id": 1169,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Shootout @ My Crib",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:19:26.587587",
+        "source_id": 1169,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Started From",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:19:26.588588",
+        "source_id": 1169,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Headtaps",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:19:26.588588",
+        "source_id": 1169,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Smoking & Thinking",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:19:26.588588",
+        "source_id": 1169,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Grow Up/Keep It On Speaker",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:19:26.588588",
+        "source_id": 1169,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Blocklist",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:19:26.588588",
+        "source_id": 1169,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Difference Is",
+        "artist_name": "Lil Durk ft. Summer Walker",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:19:26.588588",
+        "source_id": 1169,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Federal Nightmares",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:19:26.588588",
+        "source_id": 1169,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bones",
+        "artist_name": "Imagine Dragons",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:19:26.588588",
+        "source_id": 1169,
         "song_id": null,
         "duplicate": false
     }
@@ -233,15 +296,21 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Bam Bam', 'Camila Cabello ft. Ed Sheeran', NULL),
-  ('Handsomer', 'Russ ft. Ktlyn', NULL),
-  ('Publicity Stunt', 'Gucci Mane', NULL),
-  ('Ay!', 'Machine Gun Kelly & Lil Wayne', NULL),
-  ('Neighborhood Superstar', 'DaBaby & YoungBoy Never Broke Again', NULL),
-  ('Facetime', 'King Von ft. G Herbo', NULL),
-  ('Straight To It', 'King Von ft. Fivio Foreign', NULL),
-  ('Evil Twins', 'King Von & Lil Durk', NULL),
-  ('Trust Nothing', 'King Von ft. Moneybagg Yo', NULL)
+  ('What Happened To Virgil', 'Lil Durk ft. Gunna', NULL),
+  ('No Interviews', 'Lil Durk', NULL),
+  ('Golden Child', 'Lil Durk', NULL),
+  ('Thinking With My Dick', 'Kevin Gates ft. Juicy J', NULL),
+  ('Something In The Way', 'Nirvana', NULL),
+  ('Barbarian', 'Lil Durk', NULL),
+  ('Shootout @ My Crib', 'Lil Durk', NULL),
+  ('Started From', 'Lil Durk', NULL),
+  ('Headtaps', 'Lil Durk', NULL),
+  ('Smoking & Thinking', 'Lil Durk', NULL),
+  ('Grow Up/Keep It On Speaker', 'Lil Durk', NULL),
+  ('Blocklist', 'Lil Durk', NULL),
+  ('Difference Is', 'Lil Durk ft. Summer Walker', NULL),
+  ('Federal Nightmares', 'Lil Durk', NULL),
+  ('Bones', 'Imagine Dragons', NULL)
   ;
 
    // Update to song table
@@ -252,7 +321,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11808; // SELECT last_insert_rowid();
+  song_id = 11860; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -292,16 +361,23 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-16 08:22:42.494494', '1163', '11800'),
-  ('2022-03-16 08:22:42.495495', '1163', '11801'),
-  ('2022-03-16 08:22:42.495495', '1163', '11802'),
-  ('2022-03-16 08:22:42.495495', '1163', '11791'),
-  ('2022-03-16 08:22:42.496496', '1163', '11803'),
-  ('2022-03-16 08:22:42.496496', '1163', '11804'),
-  ('2022-03-16 08:22:42.496496', '1163', '11805'),
-  ('2022-03-16 08:22:42.496496', '1163', '11806'),
-  ('2022-03-16 08:22:42.496496', '1163', '11807'),
-  ('2022-03-16 08:22:42.496496', '1163', '11808')
+  ('2022-03-22 08:19:26.587587', '1169', '11809'),
+  ('2022-03-22 08:19:26.587587', '1169', '11846'),
+  ('2022-03-22 08:19:26.587587', '1169', '11820'),
+  ('2022-03-22 08:19:26.587587', '1169', '11847'),
+  ('2022-03-22 08:19:26.587587', '1169', '11848'),
+  ('2022-03-22 08:19:26.587587', '1169', '11849'),
+  ('2022-03-22 08:19:26.587587', '1169', '11850'),
+  ('2022-03-22 08:19:26.587587', '1169', '11851'),
+  ('2022-03-22 08:19:26.587587', '1169', '11852'),
+  ('2022-03-22 08:19:26.588588', '1169', '11853'),
+  ('2022-03-22 08:19:26.588588', '1169', '11854'),
+  ('2022-03-22 08:19:26.588588', '1169', '11855'),
+  ('2022-03-22 08:19:26.588588', '1169', '11856'),
+  ('2022-03-22 08:19:26.588588', '1169', '11857'),
+  ('2022-03-22 08:19:26.588588', '1169', '11858'),
+  ('2022-03-22 08:19:26.588588', '1169', '11859'),
+  ('2022-03-22 08:19:26.588588', '1169', '11860')
   ;
 
   // Update to source_song table

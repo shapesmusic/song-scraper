@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Lil Durk, Megan Thee Stallion, Rex Orange County, and More', '2022-03-11 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-durk-megan-rex/latto-21-savage-wheelie');
+    ('Complex', 'Best New Music This Week', 'Lil Uzi Vert, Midwxst, Fivio Foreign, and More', '2022-03-18 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-uzi-midwxst-fivio-foreign/rosalia-hentai');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1165; // SELECT last_insert_rowid();
+  source_id = 1171; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,76 +101,67 @@
   songsData =
   [
     {
-        "title": "Petty Too",
-        "artist_name": "Lil Durk ft. Future",
+        "title": "Heavy",
+        "artist_name": "Lil Uzi Vert & NIGO",
         "video_id": null,
-        "capture_date": "2022-03-16 08:35:34.754754",
-        "source_id": 1165,
+        "capture_date": "2022-03-22 08:32:47.084084",
+        "source_id": 1171,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Open A Window",
-        "artist_name": "Rex Orange County ft. Tyler the Creator",
+        "title": "Step Back",
+        "artist_name": "Midwxst",
         "video_id": null,
-        "capture_date": "2022-03-16 08:35:34.755755",
-        "source_id": 1165,
+        "capture_date": "2022-03-22 08:32:47.085085",
+        "source_id": 1171,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wheelie",
-        "artist_name": "Latto ft. 21 Savage",
+        "title": "Magic City",
+        "artist_name": "Fivio Foreign ft. Quavo",
         "video_id": null,
-        "capture_date": "2022-03-16 08:35:34.755755",
-        "source_id": 1165,
+        "capture_date": "2022-03-22 08:32:47.085085",
+        "source_id": 1171,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sweetest Pie",
-        "artist_name": "Megan Thee Stallion & Dua Lipa",
+        "title": "Blick Blick",
+        "artist_name": "Coi Leray & Nicki Minaj",
         "video_id": null,
-        "capture_date": "2022-03-16 08:35:34.755755",
-        "source_id": 1165,
-        "song_id": 11809,
-        "duplicate": true
-    },
-    {
-        "title": "The Sun",
-        "artist_name": "KayCyy & Gesaffelstein",
-        "video_id": null,
-        "capture_date": "2022-03-16 08:35:34.755755",
-        "source_id": 1165,
+        "capture_date": "2022-03-22 08:32:47.085085",
+        "source_id": 1171,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Killing Me",
-        "artist_name": "Omar Apollo",
+        "title": "Sometimes",
+        "artist_name": "Juice WRLD",
         "video_id": null,
-        "capture_date": "2022-03-16 08:35:34.755755",
-        "source_id": 1165,
+        "capture_date": "2022-03-22 08:32:47.085085",
+        "source_id": 1171,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Weekend in the Perry’s",
-        "artist_name": "Benny the Butcher ft. Boldy James",
-        "video_id": null,
-        "capture_date": "2022-03-16 08:35:34.755755",
-        "source_id": 1165,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pain Killers",
+        "title": "Play for Keeps",
         "artist_name": "Key Glock",
         "video_id": null,
-        "capture_date": "2022-03-16 08:35:34.755755",
-        "source_id": 1165,
+        "capture_date": "2022-03-22 08:32:47.085085",
+        "source_id": 1171,
         "song_id": null,
         "duplicate": false
+    },
+    {
+        "title": "HENTAI",
+        "artist_name": "ROSALÍA",
+        "video_id": null,
+        "capture_date": "2022-03-22 08:32:47.085085",
+        "source_id": 1171,
+        "song_id": 11869,
+        "duplicate": true
     }
 ]
 
@@ -211,13 +202,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Petty Too', 'Lil Durk ft. Future', NULL),
-  ('Open A Window', 'Rex Orange County ft. Tyler the Creator', NULL),
-  ('Wheelie', 'Latto ft. 21 Savage', NULL),
-  ('The Sun', 'KayCyy & Gesaffelstein', NULL),
-  ('Killing Me', 'Omar Apollo', NULL),
-  ('Weekend in the Perry’s', 'Benny the Butcher ft. Boldy James', NULL),
-  ('Pain Killers', 'Key Glock', NULL)
+  ('Heavy', 'Lil Uzi Vert & NIGO', NULL),
+  ('Step Back', 'Midwxst', NULL),
+  ('Magic City', 'Fivio Foreign ft. Quavo', NULL),
+  ('Blick Blick', 'Coi Leray & Nicki Minaj', NULL),
+  ('Sometimes', 'Juice WRLD', NULL),
+  ('Play for Keeps', 'Key Glock', NULL)
   ;
 
    // Update to song table
@@ -228,7 +218,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11826; // SELECT last_insert_rowid();
+  song_id = 11877; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -268,14 +258,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-16 08:35:34.754754', '1165', '11820'),
-  ('2022-03-16 08:35:34.755755', '1165', '11821'),
-  ('2022-03-16 08:35:34.755755', '1165', '11822'),
-  ('2022-03-16 08:35:34.755755', '1165', '11809'),
-  ('2022-03-16 08:35:34.755755', '1165', '11823'),
-  ('2022-03-16 08:35:34.755755', '1165', '11824'),
-  ('2022-03-16 08:35:34.755755', '1165', '11825'),
-  ('2022-03-16 08:35:34.755755', '1165', '11826')
+  ('2022-03-22 08:32:47.084084', '1171', '11872'),
+  ('2022-03-22 08:32:47.085085', '1171', '11873'),
+  ('2022-03-22 08:32:47.085085', '1171', '11874'),
+  ('2022-03-22 08:32:47.085085', '1171', '11875'),
+  ('2022-03-22 08:32:47.085085', '1171', '11876'),
+  ('2022-03-22 08:32:47.085085', '1171', '11877'),
+  ('2022-03-22 08:32:47.085085', '1171', '11869')
   ;
 
   // Update to source_song table
