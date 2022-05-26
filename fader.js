@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 245 // from the chart page
+  fader_no = 246 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 245 Week of March 16, 2022', '2022-03-16 12:00:00.000000', 'https://www.thefader.com/2022/03/16/songs-you-need-megan-thee-stallion-orion-sun-nia-archives');
+    ('The Fader', '10 songs you need in your life this week', 'No. 246 Week of March 23, 2022', '2022-03-23 12:00:00.000000', 'https://www.thefader.com/2022/03/23/songs-you-need-normani-black-midi-sudan-archives');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1172; // SELECT last_insert_rowid();
+  source_id = 1177; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -67,8 +67,8 @@
   songsData = [];
 
   for (var i=0; i<elements.length; i++){
-    title = elements[i].innerText.match(/“|"(.*?)”|"/)[1];
-    artist_name = elements[i].innerText.match(/–|-|— ([\s\S]*)$/)[1]
+    title = elements[i].innerText.match(/[“"](.*?)[”"]/)[1];
+    artist_name = elements[i].innerText.match(/[–-—] ([\s\S]*)$/)[1]; // still gets stuck on &nbsp;
     video_id = null
       // replace null with below to grab video IDs (when all songs are YT)
       // videoUrl[i].style.backgroundImage.match(/(?<=vi\/)(.*)(?=\/)/)[0];
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Sweetest Pie",
-        "artist_name": "Megan Thee Stallion & Dua Lipa",
+        "title": "Fair",
+        "artist_name": "Normani",
         "video_id": null,
-        "capture_date": "2022-03-22 08:40:53.131131",
-        "source_id": 1172,
-        "song_id": 11809,
+        "capture_date": "2022-05-26 09:25:02.962962",
+        "source_id": 1177,
+        "song_id": 11863,
         "duplicate": true
     },
     {
-        "title": "Intro",
-        "artist_name": "Orion Sun",
+        "title": "IF THERE’S NO SEAT IN THE SKY (WILL YOU FORGIVE ME???)",
+        "artist_name": "Saya Gray",
         "video_id": null,
-        "capture_date": "2022-03-22 08:40:53.132132",
-        "source_id": 1172,
+        "capture_date": "2022-05-26 09:25:02.962962",
+        "source_id": 1177,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Part of Me",
-        "artist_name": "Nia Archives",
+        "title": "Home Maker",
+        "artist_name": "Sudan Archives",
         "video_id": null,
-        "capture_date": "2022-03-22 08:40:53.133133",
-        "source_id": 1172,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Zookies",
-        "artist_name": "8ruki",
-        "video_id": null,
-        "capture_date": "2022-03-22 08:40:53.133133",
-        "source_id": 1172,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Vocoder",
-        "artist_name": "Floating Points",
-        "video_id": null,
-        "capture_date": "2022-03-22 08:40:53.133133",
-        "source_id": 1172,
-        "song_id": 11819,
+        "capture_date": "2022-05-26 09:25:02.962962",
+        "source_id": 1177,
+        "song_id": 11887,
         "duplicate": true
     },
     {
-        "title": "History Solved",
-        "artist_name": "La Neve",
+        "title": "Iced Tea",
+        "artist_name": "Joyce Wrice and KAYTRANADA",
         "video_id": null,
-        "capture_date": "2022-03-22 08:40:53.133133",
-        "source_id": 1172,
+        "capture_date": "2022-05-26 09:25:02.962962",
+        "source_id": 1177,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "aero3",
-        "artist_name": "seiji oda",
+        "title": "Let It Fly",
+        "artist_name": "Veeze",
         "video_id": null,
-        "capture_date": "2022-03-22 08:40:53.133133",
-        "source_id": 1172,
+        "capture_date": "2022-05-26 09:25:02.962962",
+        "source_id": 1177,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cherry Forest",
-        "artist_name": "Lucky Daye",
+        "title": "pinky ring",
+        "artist_name": "Joy Orbison",
         "video_id": null,
-        "capture_date": "2022-03-22 08:40:53.133133",
-        "source_id": 1172,
+        "capture_date": "2022-05-26 09:25:02.962962",
+        "source_id": 1177,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Freaky",
-        "artist_name": "Lolingo x Elf",
+        "title": "Moonlight On Vermont",
+        "artist_name": "Black Midi",
         "video_id": null,
-        "capture_date": "2022-03-22 08:40:53.133133",
-        "source_id": 1172,
+        "capture_date": "2022-05-26 09:25:02.962962",
+        "source_id": 1177,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Last Laugh",
-        "artist_name": "Angelnumber 8",
+        "title": "2020",
+        "artist_name": "ZelooperZ feat. Apropos",
         "video_id": null,
-        "capture_date": "2022-03-22 08:40:53.133133",
-        "source_id": 1172,
+        "capture_date": "2022-05-26 09:25:02.962962",
+        "source_id": 1177,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sarcastic",
+        "artist_name": "Yayoyanoh",
+        "video_id": null,
+        "capture_date": "2022-05-26 09:25:02.962962",
+        "source_id": 1177,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Get On",
+        "artist_name": "Brandon Banks",
+        "video_id": null,
+        "capture_date": "2022-05-26 09:25:02.962962",
+        "source_id": 1177,
         "song_id": null,
         "duplicate": false
     }
@@ -230,14 +230,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Intro', 'Orion Sun', NULL),
-  ('Part of Me', 'Nia Archives', NULL),
-  ('Zookies', '8ruki', NULL),
-  ('History Solved', 'La Neve', NULL),
-  ('aero3', 'seiji oda', NULL),
-  ('Cherry Forest', 'Lucky Daye', NULL),
-  ('Freaky', 'Lolingo x Elf', NULL),
-  ('Last Laugh', 'Angelnumber 8', NULL)
+  ('IF THERE’S NO SEAT IN THE SKY (WILL YOU FORGIVE ME???)', 'Saya Gray', NULL),
+  ('Iced Tea', 'Joyce Wrice and KAYTRANADA', NULL),
+  ('Let It Fly', 'Veeze', NULL),
+  ('pinky ring', 'Joy Orbison', NULL),
+  ('Moonlight On Vermont', 'Black Midi', NULL),
+  ('2020', 'ZelooperZ feat. Apropos', NULL),
+  ('Sarcastic', 'Yayoyanoh', NULL),
+  ('Get On', 'Brandon Banks', NULL)
   ;
 
    // Update to song table
@@ -248,7 +248,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11885; // SELECT last_insert_rowid();
+  song_id = 11930; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -288,16 +288,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-22 08:40:53.131131', '1172', '11809'),
-  ('2022-03-22 08:40:53.132132', '1172', '11878'),
-  ('2022-03-22 08:40:53.133133', '1172', '11879'),
-  ('2022-03-22 08:40:53.133133', '1172', '11880'),
-  ('2022-03-22 08:40:53.133133', '1172', '11819'),
-  ('2022-03-22 08:40:53.133133', '1172', '11881'),
-  ('2022-03-22 08:40:53.133133', '1172', '11882'),
-  ('2022-03-22 08:40:53.133133', '1172', '11883'),
-  ('2022-03-22 08:40:53.133133', '1172', '11884'),
-  ('2022-03-22 08:40:53.133133', '1172', '11885')
+  ('2022-05-26 09:25:02.962962', '1177', '11863'),
+  ('2022-05-26 09:25:02.962962', '1177', '11923'),
+  ('2022-05-26 09:25:02.962962', '1177', '11887'),
+  ('2022-05-26 09:25:02.962962', '1177', '11924'),
+  ('2022-05-26 09:25:02.962962', '1177', '11925'),
+  ('2022-05-26 09:25:02.962962', '1177', '11926'),
+  ('2022-05-26 09:25:02.962962', '1177', '11927'),
+  ('2022-05-26 09:25:02.962962', '1177', '11928'),
+  ('2022-05-26 09:25:02.962962', '1177', '11929'),
+  ('2022-05-26 09:25:02.962962', '1177', '11930')
   ;
 
   // Update to source_song table

@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of March 18, 2022', '2022-03-18 12:00:00.000000', 'https://www.stereogum.com/2180144/the-5-best-songs-of-the-week-425/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of March 25, 2022', '2022-03-25 12:00:00.000000', 'https://www.stereogum.com/2181004/the-5-best-songs-of-the-week-426/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1173; // SELECT last_insert_rowid();
+  source_id = 1178; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,49 +101,49 @@
   songsData =
   [
     {
-        "title": "Anything But Me",
-        "artist_name": "MUNA ",
+        "title": "Lost",
+        "artist_name": "Zola Jesus ",
         "video_id": null,
-        "capture_date": "2022-03-22 09:01:59.679679",
-        "source_id": 1173,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Home Maker",
-        "artist_name": "Sudan Archives ",
-        "video_id": null,
-        "capture_date": "2022-03-22 09:01:59.680680",
-        "source_id": 1173,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Skrting On The Surface",
-        "artist_name": "The Smile ",
-        "video_id": null,
-        "capture_date": "2022-03-22 09:01:59.680680",
-        "source_id": 1173,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Lightning I, II",
-        "artist_name": "Arcade Fire ",
-        "video_id": null,
-        "capture_date": "2022-03-22 09:01:59.680680",
-        "source_id": 1173,
-        "song_id": 11861,
+        "capture_date": "2022-05-26 09:31:31.206206",
+        "source_id": 1178,
+        "song_id": 11909,
         "duplicate": true
     },
     {
-        "title": "Pressure Cooker",
-        "artist_name": "Dazy & Militarie Gun ",
+        "title": "Computer Exploder",
+        "artist_name": "Oso Oso ",
         "video_id": null,
-        "capture_date": "2022-03-22 09:01:59.680680",
-        "source_id": 1173,
+        "capture_date": "2022-05-26 09:31:31.234234",
+        "source_id": 1178,
         "song_id": null,
         "duplicate": false
+    },
+    {
+        "title": "2120",
+        "artist_name": "Jane Inc ",
+        "video_id": null,
+        "capture_date": "2022-05-26 09:31:31.234234",
+        "source_id": 1178,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Skinty Fia",
+        "artist_name": "Fontaines D.C. ",
+        "video_id": null,
+        "capture_date": "2022-05-26 09:31:31.234234",
+        "source_id": 1178,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Shotgun",
+        "artist_name": "Soccer Mommy ",
+        "video_id": null,
+        "capture_date": "2022-05-26 09:31:31.234234",
+        "source_id": 1178,
+        "song_id": 11899,
+        "duplicate": true
     }
 ]
 
@@ -184,10 +184,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Anything But Me', 'MUNA ', NULL),
-  ('Home Maker', 'Sudan Archives ', NULL),
-  ('Skrting On The Surface', 'The Smile ', NULL),
-  ('Pressure Cooker', 'Dazy & Militarie Gun ', NULL)
+  ('Computer Exploder', 'Oso Oso ', NULL),
+  ('2120', 'Jane Inc ', NULL),
+  ('Skinty Fia', 'Fontaines D.C. ', NULL)
   ;
 
    // Update to song table
@@ -198,7 +197,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11889; // SELECT last_insert_rowid();
+  song_id = 11933; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -238,11 +237,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-22 09:01:59.679679', '1173', '11886'),
-  ('2022-03-22 09:01:59.680680', '1173', '11887'),
-  ('2022-03-22 09:01:59.680680', '1173', '11888'),
-  ('2022-03-22 09:01:59.680680', '1173', '11861'),
-  ('2022-03-22 09:01:59.680680', '1173', '11889')
+  ('2022-05-26 09:31:31.206206', '1178', '11909'),
+  ('2022-05-26 09:31:31.234234', '1178', '11931'),
+  ('2022-05-26 09:31:31.234234', '1178', '11932'),
+  ('2022-05-26 09:31:31.234234', '1178', '11933'),
+  ('2022-05-26 09:31:31.234234', '1178', '11899')
   ;
 
   // Update to source_song table

@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Lil Uzi Vert, Midwxst, Fivio Foreign, and More', '2022-03-18 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-uzi-midwxst-fivio-foreign/rosalia-hentai');
+    ('Complex', 'Best New Music This Week', 'NIGO, Latto, Kid Cudi, and More', '2022-03-25 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-nigo-latto-kid-cudi/buddy-hoochie-mama');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1171; // SELECT last_insert_rowid();
+  source_id = 1176; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,67 +101,112 @@
   songsData =
   [
     {
-        "title": "Heavy",
-        "artist_name": "Lil Uzi Vert & NIGO",
+        "title": "Lost and Found Freestyle 2019",
+        "artist_name": "Tyler, the Creator, ASAP Rocky, & NIGO",
         "video_id": null,
-        "capture_date": "2022-03-22 08:32:47.084084",
-        "source_id": 1171,
+        "capture_date": "2022-05-26 08:21:30.129129",
+        "source_id": 1176,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Step Back",
-        "artist_name": "Midwxst",
+        "title": "Trust No Bitch",
+        "artist_name": "Latto",
         "video_id": null,
-        "capture_date": "2022-03-22 08:32:47.085085",
-        "source_id": 1171,
+        "capture_date": "2022-05-26 08:21:30.130130",
+        "source_id": 1176,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Magic City",
-        "artist_name": "Fivio Foreign ft. Quavo",
+        "title": "Tamagotchi",
+        "artist_name": "Omar Apollo",
         "video_id": null,
-        "capture_date": "2022-03-22 08:32:47.085085",
-        "source_id": 1171,
+        "capture_date": "2022-05-26 08:21:30.130130",
+        "source_id": 1176,
+        "song_id": 11906,
+        "duplicate": true
+    },
+    {
+        "title": "No Love (Extended)",
+        "artist_name": "Summer Walker & SZA f/ Cardi B",
+        "video_id": null,
+        "capture_date": "2022-05-26 08:21:30.130130",
+        "source_id": 1176,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Blick Blick",
-        "artist_name": "Coi Leray & Nicki Minaj",
+        "title": "Sanjuro",
+        "artist_name": "Denzel Curry f/ 454",
         "video_id": null,
-        "capture_date": "2022-03-22 08:32:47.085085",
-        "source_id": 1171,
+        "capture_date": "2022-05-26 08:21:30.130130",
+        "source_id": 1176,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sometimes",
-        "artist_name": "Juice WRLD",
+        "title": "We Go Up",
+        "artist_name": "Nicki Minaj f/ Fivio Foreign",
         "video_id": null,
-        "capture_date": "2022-03-22 08:32:47.085085",
-        "source_id": 1171,
+        "capture_date": "2022-05-26 08:21:30.130130",
+        "source_id": 1176,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Play for Keeps",
+        "title": "Stars in the Sky",
+        "artist_name": "Kid Cudi",
+        "video_id": null,
+        "capture_date": "2022-05-26 08:21:30.130130",
+        "source_id": 1176,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Child of God",
+        "artist_name": "Chance the Rapper",
+        "video_id": null,
+        "capture_date": "2022-05-26 08:21:30.130130",
+        "source_id": 1176,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "No Rap Cap",
         "artist_name": "Key Glock",
         "video_id": null,
-        "capture_date": "2022-03-22 08:32:47.085085",
-        "source_id": 1171,
+        "capture_date": "2022-05-26 08:21:30.130130",
+        "source_id": 1176,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "HENTAI",
-        "artist_name": "ROSALÍA",
+        "title": "Hoochie Mama",
+        "artist_name": "Buddy",
         "video_id": null,
-        "capture_date": "2022-03-22 08:32:47.085085",
-        "source_id": 1171,
-        "song_id": 11869,
-        "duplicate": true
+        "capture_date": "2022-05-26 08:21:30.130130",
+        "source_id": 1176,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Maybe the Next Time",
+        "artist_name": "Larry June & Jay Worthy f/ Roc Marciano",
+        "video_id": null,
+        "capture_date": "2022-05-26 08:21:30.130130",
+        "source_id": 1176,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "PEAKING",
+        "artist_name": "1 800 PAIN",
+        "video_id": null,
+        "capture_date": "2022-05-26 08:21:30.131131",
+        "source_id": 1176,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -202,12 +247,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Heavy', 'Lil Uzi Vert & NIGO', NULL),
-  ('Step Back', 'Midwxst', NULL),
-  ('Magic City', 'Fivio Foreign ft. Quavo', NULL),
-  ('Blick Blick', 'Coi Leray & Nicki Minaj', NULL),
-  ('Sometimes', 'Juice WRLD', NULL),
-  ('Play for Keeps', 'Key Glock', NULL)
+  ('Lost and Found Freestyle 2019', 'Tyler, the Creator, ASAP Rocky, & NIGO', NULL),
+  ('Trust No Bitch', 'Latto', NULL),
+  ('No Love (Extended)', 'Summer Walker & SZA f/ Cardi B', NULL),
+  ('Sanjuro', 'Denzel Curry f/ 454', NULL),
+  ('We Go Up', 'Nicki Minaj f/ Fivio Foreign', NULL),
+  ('Stars in the Sky', 'Kid Cudi', NULL),
+  ('Child of God', 'Chance the Rapper', NULL),
+  ('No Rap Cap', 'Key Glock', NULL),
+  ('Hoochie Mama', 'Buddy', NULL),
+  ('Maybe the Next Time', 'Larry June & Jay Worthy f/ Roc Marciano', NULL),
+  ('PEAKING', '1 800 PAIN', NULL)
   ;
 
    // Update to song table
@@ -218,7 +268,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11877; // SELECT last_insert_rowid();
+  song_id = 11922; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -258,13 +308,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-22 08:32:47.084084', '1171', '11872'),
-  ('2022-03-22 08:32:47.085085', '1171', '11873'),
-  ('2022-03-22 08:32:47.085085', '1171', '11874'),
-  ('2022-03-22 08:32:47.085085', '1171', '11875'),
-  ('2022-03-22 08:32:47.085085', '1171', '11876'),
-  ('2022-03-22 08:32:47.085085', '1171', '11877'),
-  ('2022-03-22 08:32:47.085085', '1171', '11869')
+  ('2022-05-26 08:21:30.129129', '1176', '11912'),
+  ('2022-05-26 08:21:30.130130', '1176', '11913'),
+  ('2022-05-26 08:21:30.130130', '1176', '11906'),
+  ('2022-05-26 08:21:30.130130', '1176', '11914'),
+  ('2022-05-26 08:21:30.130130', '1176', '11915'),
+  ('2022-05-26 08:21:30.130130', '1176', '11916'),
+  ('2022-05-26 08:21:30.130130', '1176', '11917'),
+  ('2022-05-26 08:21:30.130130', '1176', '11918'),
+  ('2022-05-26 08:21:30.130130', '1176', '11919'),
+  ('2022-05-26 08:21:30.130130', '1176', '11920'),
+  ('2022-05-26 08:21:30.130130', '1176', '11921'),
+  ('2022-05-26 08:21:30.131131', '1176', '11922')
   ;
 
   // Update to source_song table

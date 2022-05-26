@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Arcade Fire Ignites a Fresh Era, and 11 More New Songs', '2022-03-18 08:45:02.000000', 'https://www.nytimes.com/2022/03/18/arts/music/playlist-arcade-fire-normani-rosalia.html');
+    ('New York Times', 'The Playlist', 'Soccer Mommy Stretches Her Sound, and 12 More New Songs', '2022-03-25 08:03:05.000000', 'https://www.nytimes.com/2022/03/25/arts/music/playlist-soccer-mommy-phife-dawg.html');
 
   // Update to source table
 
@@ -53,10 +53,10 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1170; // SELECT last_insert_rowid();
+  source_id = 1175; // SELECT last_insert_rowid();
   song_id = null;
 
-  elements = document.getElementsByClassName("css-ow6j0y eoo0vm40"); // this class changes periodically
+  elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
 
   songsData = [];
 
@@ -100,101 +100,119 @@
   songsData =
   [
     {
-        "title": "The Lightning I, II",
-        "artist_name": "Arcade Fire",
+        "title": "Shotgun",
+        "artist_name": "Soccer Mommy",
         "video_id": null,
-        "capture_date": "2022-03-22 08:27:32.729729",
-        "source_id": 1170,
+        "capture_date": "2022-05-25 08:41:34.945945",
+        "source_id": 1175,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wassulu Don",
-        "artist_name": "Oumou Sangaré",
+        "title": "Humble Quest",
+        "artist_name": "Maren Morris",
         "video_id": null,
-        "capture_date": "2022-03-22 08:27:32.730730",
-        "source_id": 1170,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fair",
-        "artist_name": "Normani",
+        "title": "Mount Airy Hill (Way Gone)",
+        "artist_name": "Kurt Vile",
         "video_id": null,
-        "capture_date": "2022-03-22 08:27:32.730730",
-        "source_id": 1170,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "This Is Not America",
-        "artist_name": "Residente ft. Ibeyi",
+        "title": "It Just Goes On",
+        "artist_name": "Flock of Dimes",
         "video_id": null,
-        "capture_date": "2022-03-22 08:27:32.730730",
-        "source_id": 1170,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cogs in Cogs, Pt. I: Dance",
-        "artist_name": "Brad Mehldau",
+        "title": "Oblique Fantasy",
+        "artist_name": "Jane Weaver",
         "video_id": null,
-        "capture_date": "2022-03-22 08:27:32.730730",
-        "source_id": 1170,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Good Mood",
-        "artist_name": "Donae’o ft. Terri Walker",
+        "title": "Death Fantasy",
+        "artist_name": "Kilo Kish featuring Miguel",
         "video_id": null,
-        "capture_date": "2022-03-22 08:27:32.730730",
-        "source_id": 1170,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cybah",
-        "artist_name": "Syd and Lucky Daye",
+        "title": "Forever",
+        "artist_name": "Phife Dawg",
         "video_id": null,
-        "capture_date": "2022-03-22 08:27:32.730730",
-        "source_id": 1170,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Use Me",
-        "artist_name": "Valerie June",
+        "title": "Tamagotchi",
+        "artist_name": "Omar Apollo",
         "video_id": null,
-        "capture_date": "2022-03-22 08:27:32.730730",
-        "source_id": 1170,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hentai",
-        "artist_name": "Rosalía",
+        "title": "Changes",
+        "artist_name": "Frya",
         "video_id": null,
-        "capture_date": "2022-03-22 08:27:32.730730",
-        "source_id": 1170,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "So Unimportant",
-        "artist_name": "Ethan Gruska and Bon Iver",
+        "title": "Fence",
+        "artist_name": "Son Lux and Moses Sumney",
         "video_id": null,
-        "capture_date": "2022-03-22 08:27:32.730730",
-        "source_id": 1170,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fronteras (Borders) Suite: Al-Musafir Blues",
-        "artist_name": "Danilo Pérez",
+        "title": "Lost",
+        "artist_name": "Zola Jesus",
         "video_id": null,
-        "capture_date": "2022-03-22 08:27:32.730730",
-        "source_id": 1170,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "A Hero’s Journey",
+        "artist_name": "Marvin Sewell",
+        "video_id": null,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Waste Land",
+        "artist_name": "Mark Turner",
+        "video_id": null,
+        "capture_date": "2022-05-25 08:41:34.952952",
+        "source_id": 1175,
         "song_id": null,
         "duplicate": false
     }
@@ -237,17 +255,19 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Lightning I, II', 'Arcade Fire', NULL),
-  ('Wassulu Don', 'Oumou Sangaré', NULL),
-  ('Fair', 'Normani', NULL),
-  ('This Is Not America', 'Residente ft. Ibeyi', NULL),
-  ('Cogs in Cogs, Pt. I: Dance', 'Brad Mehldau', NULL),
-  ('Good Mood', 'Donae’o ft. Terri Walker', NULL),
-  ('Cybah', 'Syd and Lucky Daye', NULL),
-  ('Use Me', 'Valerie June', NULL),
-  ('Hentai', 'Rosalía', NULL),
-  ('So Unimportant', 'Ethan Gruska and Bon Iver', NULL),
-  ('Fronteras (Borders) Suite: Al-Musafir Blues', 'Danilo Pérez', NULL)
+  ('Shotgun', 'Soccer Mommy', NULL),
+  ('Humble Quest', 'Maren Morris', NULL),
+  ('Mount Airy Hill (Way Gone)', 'Kurt Vile', NULL),
+  ('It Just Goes On', 'Flock of Dimes', NULL),
+  ('Oblique Fantasy', 'Jane Weaver', NULL),
+  ('Death Fantasy', 'Kilo Kish featuring Miguel', NULL),
+  ('Forever', 'Phife Dawg', NULL),
+  ('Tamagotchi', 'Omar Apollo', NULL),
+  ('Changes', 'Frya', NULL),
+  ('Fence', 'Son Lux and Moses Sumney', NULL),
+  ('Lost', 'Zola Jesus', NULL),
+  ('A Hero’s Journey', 'Marvin Sewell', NULL),
+  ('Waste Land', 'Mark Turner', NULL)
   ;
 
    // Update to song table
@@ -258,7 +278,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11871; // SELECT last_insert_rowid();
+  song_id = 11911; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +318,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-22 08:27:32.729729', '1170', '11861'),
-  ('2022-03-22 08:27:32.730730', '1170', '11862'),
-  ('2022-03-22 08:27:32.730730', '1170', '11863'),
-  ('2022-03-22 08:27:32.730730', '1170', '11864'),
-  ('2022-03-22 08:27:32.730730', '1170', '11865'),
-  ('2022-03-22 08:27:32.730730', '1170', '11866'),
-  ('2022-03-22 08:27:32.730730', '1170', '11867'),
-  ('2022-03-22 08:27:32.730730', '1170', '11868'),
-  ('2022-03-22 08:27:32.730730', '1170', '11869'),
-  ('2022-03-22 08:27:32.730730', '1170', '11870'),
-  ('2022-03-22 08:27:32.730730', '1170', '11871')
+  ('2022-05-25 08:41:34.945945', '1175', '11899'),
+  ('2022-05-25 08:41:34.952952', '1175', '11900'),
+  ('2022-05-25 08:41:34.952952', '1175', '11901'),
+  ('2022-05-25 08:41:34.952952', '1175', '11902'),
+  ('2022-05-25 08:41:34.952952', '1175', '11903'),
+  ('2022-05-25 08:41:34.952952', '1175', '11904'),
+  ('2022-05-25 08:41:34.952952', '1175', '11905'),
+  ('2022-05-25 08:41:34.952952', '1175', '11906'),
+  ('2022-05-25 08:41:34.952952', '1175', '11907'),
+  ('2022-05-25 08:41:34.952952', '1175', '11908'),
+  ('2022-05-25 08:41:34.952952', '1175', '11909'),
+  ('2022-05-25 08:41:34.952952', '1175', '11910'),
+  ('2022-05-25 08:41:34.952952', '1175', '11911')
   ;
 
   // Update to source_song table

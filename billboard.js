@@ -32,7 +32,7 @@
     + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'"
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
+    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   );
 
 
@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of March 26, 2022', '2022-03-26 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-03-26');
+    ('Billboard', 'The Hot 100', 'Week of April 2, 2022', '2022-04-02 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-04-02/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1169; // SELECT last_insert_rowid();
+  source_id = 1174; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -60,7 +60,7 @@
 
   songsData = [];
 
-  // if this returns empty songsData[], scroll to the bottom of the page to get all lazyloads.
+  // if this returns empty songsData[], make sure responsive sizing is for browser, not tablet, etc.
   for (var i=1; i<elements.length; i++){ // does not include the No. 1 song.
       element = elements[i];
 
@@ -105,155 +105,101 @@
   songsData =
   [
     {
-        "title": "Sweetest Pie",
-        "artist_name": "Megan Thee Stallion & Dua Lipa",
+        "title": "Blick Blick!",
+        "artist_name": "Coi Leray & Nicki Minaj",
         "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.587587",
-        "source_id": 1169,
-        "song_id": 11809,
+        "capture_date": "2022-05-25 11:37:58.770770",
+        "source_id": 1174,
+        "song_id": 11875,
         "duplicate": true
     },
     {
-        "title": "What Happened To Virgil",
-        "artist_name": "Lil Durk ft. Gunna",
+        "title": "Nobody Like U",
+        "artist_name": "4*TOWN (From Disney And Pixar's Turning Red)",
         "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.587587",
-        "source_id": 1169,
+        "capture_date": "2022-05-25 11:37:58.771771",
+        "source_id": 1174,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Petty Too",
-        "artist_name": "Lil Durk ft. Future",
+        "title": "Sometimes",
+        "artist_name": "Juice WRLD",
         "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.587587",
-        "source_id": 1169,
-        "song_id": 11820,
+        "capture_date": "2022-05-25 11:37:58.771771",
+        "source_id": 1174,
+        "song_id": 11876,
         "duplicate": true
     },
     {
-        "title": "No Interviews",
+        "title": "Computer Murderers",
         "artist_name": "Lil Durk",
         "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.587587",
-        "source_id": 1169,
+        "capture_date": "2022-05-25 11:37:58.771771",
+        "source_id": 1174,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Golden Child",
-        "artist_name": "Lil Durk",
+        "title": "Ghost Story",
+        "artist_name": "Carrie Underwood",
         "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.587587",
-        "source_id": 1169,
+        "capture_date": "2022-05-25 11:37:58.771771",
+        "source_id": 1174,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Thinking With My Dick",
-        "artist_name": "Kevin Gates ft. Juicy J",
+        "title": "Tom's Diner",
+        "artist_name": "AnnenMayKantereit & Giant Rooks",
         "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.587587",
-        "source_id": 1169,
+        "capture_date": "2022-05-25 11:37:58.772772",
+        "source_id": 1174,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Something In The Way",
-        "artist_name": "Nirvana",
+        "title": "Maybe",
+        "artist_name": "Machine Gun Kelly & Bring Me The Horizon",
         "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.587587",
-        "source_id": 1169,
+        "capture_date": "2022-05-25 11:37:58.772772",
+        "source_id": 1174,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Barbarian",
-        "artist_name": "Lil Durk",
+        "title": "Over",
+        "artist_name": "Lucky Daye",
         "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.587587",
-        "source_id": 1169,
+        "capture_date": "2022-05-25 11:37:58.772772",
+        "source_id": 1174,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shootout @ My Crib",
-        "artist_name": "Lil Durk",
+        "title": "Money So Big",
+        "artist_name": "Yeat",
         "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.587587",
-        "source_id": 1169,
+        "capture_date": "2022-05-25 11:37:58.772772",
+        "source_id": 1174,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Started From",
-        "artist_name": "Lil Durk",
+        "title": "She Likes It",
+        "artist_name": "Russell Dickerson & Jake Scott",
         "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.588588",
-        "source_id": 1169,
+        "capture_date": "2022-05-25 11:37:58.772772",
+        "source_id": 1174,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Headtaps",
-        "artist_name": "Lil Durk",
+        "title": "IDGAF",
+        "artist_name": "BoyWithUke X blackbear",
         "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.588588",
-        "source_id": 1169,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Smoking & Thinking",
-        "artist_name": "Lil Durk",
-        "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.588588",
-        "source_id": 1169,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Grow Up/Keep It On Speaker",
-        "artist_name": "Lil Durk",
-        "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.588588",
-        "source_id": 1169,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Blocklist",
-        "artist_name": "Lil Durk",
-        "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.588588",
-        "source_id": 1169,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Difference Is",
-        "artist_name": "Lil Durk ft. Summer Walker",
-        "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.588588",
-        "source_id": 1169,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Federal Nightmares",
-        "artist_name": "Lil Durk",
-        "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.588588",
-        "source_id": 1169,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bones",
-        "artist_name": "Imagine Dragons",
-        "video_id": null,
-        "capture_date": "2022-03-22 08:19:26.588588",
-        "source_id": 1169,
+        "capture_date": "2022-05-25 11:37:58.772772",
+        "source_id": 1174,
         "song_id": null,
         "duplicate": false
     }
@@ -296,21 +242,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('What Happened To Virgil', 'Lil Durk ft. Gunna', NULL),
-  ('No Interviews', 'Lil Durk', NULL),
-  ('Golden Child', 'Lil Durk', NULL),
-  ('Thinking With My Dick', 'Kevin Gates ft. Juicy J', NULL),
-  ('Something In The Way', 'Nirvana', NULL),
-  ('Barbarian', 'Lil Durk', NULL),
-  ('Shootout @ My Crib', 'Lil Durk', NULL),
-  ('Started From', 'Lil Durk', NULL),
-  ('Headtaps', 'Lil Durk', NULL),
-  ('Smoking & Thinking', 'Lil Durk', NULL),
-  ('Grow Up/Keep It On Speaker', 'Lil Durk', NULL),
-  ('Blocklist', 'Lil Durk', NULL),
-  ('Difference Is', 'Lil Durk ft. Summer Walker', NULL),
-  ('Federal Nightmares', 'Lil Durk', NULL),
-  ('Bones', 'Imagine Dragons', NULL)
+  ('Nobody Like U', '4*TOWN (From Disney And Pixar’s Turning Red)', NULL),
+  ('Computer Murderers', 'Lil Durk', NULL),
+  ('Ghost Story', 'Carrie Underwood', NULL),
+  ('Tom’s Diner', 'AnnenMayKantereit & Giant Rooks', NULL),
+  ('Maybe', 'Machine Gun Kelly & Bring Me The Horizon', NULL),
+  ('Over', 'Lucky Daye', NULL),
+  ('Money So Big', 'Yeat', NULL),
+  ('She Likes It', 'Russell Dickerson & Jake Scott', NULL),
+  ('IDGAF', 'BoyWithUke X blackbear', NULL)
   ;
 
    // Update to song table
@@ -321,7 +261,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11860; // SELECT last_insert_rowid();
+  song_id = 11898; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -361,23 +301,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-03-22 08:19:26.587587', '1169', '11809'),
-  ('2022-03-22 08:19:26.587587', '1169', '11846'),
-  ('2022-03-22 08:19:26.587587', '1169', '11820'),
-  ('2022-03-22 08:19:26.587587', '1169', '11847'),
-  ('2022-03-22 08:19:26.587587', '1169', '11848'),
-  ('2022-03-22 08:19:26.587587', '1169', '11849'),
-  ('2022-03-22 08:19:26.587587', '1169', '11850'),
-  ('2022-03-22 08:19:26.587587', '1169', '11851'),
-  ('2022-03-22 08:19:26.587587', '1169', '11852'),
-  ('2022-03-22 08:19:26.588588', '1169', '11853'),
-  ('2022-03-22 08:19:26.588588', '1169', '11854'),
-  ('2022-03-22 08:19:26.588588', '1169', '11855'),
-  ('2022-03-22 08:19:26.588588', '1169', '11856'),
-  ('2022-03-22 08:19:26.588588', '1169', '11857'),
-  ('2022-03-22 08:19:26.588588', '1169', '11858'),
-  ('2022-03-22 08:19:26.588588', '1169', '11859'),
-  ('2022-03-22 08:19:26.588588', '1169', '11860')
+  ('2022-05-25 11:37:58.770770', '1174', '11875'),
+  ('2022-05-25 11:37:58.771771', '1174', '11890'),
+  ('2022-05-25 11:37:58.771771', '1174', '11876'),
+  ('2022-05-25 11:37:58.771771', '1174', '11891'),
+  ('2022-05-25 11:37:58.771771', '1174', '11892'),
+  ('2022-05-25 11:37:58.772772', '1174', '11893'),
+  ('2022-05-25 11:37:58.772772', '1174', '11894'),
+  ('2022-05-25 11:37:58.772772', '1174', '11895'),
+  ('2022-05-25 11:37:58.772772', '1174', '11896'),
+  ('2022-05-25 11:37:58.772772', '1174', '11897'),
+  ('2022-05-25 11:37:58.772772', '1174', '11898')
   ;
 
   // Update to source_song table
