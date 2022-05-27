@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of April 2, 2022', '2022-04-02 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-04-02/');
+    ('Billboard', 'The Hot 100', 'Week of April 9, 2022', '2022-04-09 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-04-09/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1174; // SELECT last_insert_rowid();
+  source_id = 1179; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,101 +105,65 @@
   songsData =
   [
     {
-        "title": "Blick Blick!",
-        "artist_name": "Coi Leray & Nicki Minaj",
+        "title": "Soy El Unico",
+        "artist_name": "Yahritza y Su Esencia",
         "video_id": null,
-        "capture_date": "2022-05-25 11:37:58.770770",
-        "source_id": 1174,
-        "song_id": 11875,
+        "capture_date": "2022-05-26 12:59:31.984984",
+        "source_id": 1179,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "We Go Up",
+        "artist_name": "Nicki Minaj & Fivio Foreign",
+        "video_id": null,
+        "capture_date": "2022-05-26 12:59:31.994994",
+        "source_id": 1179,
+        "song_id": 11916,
         "duplicate": true
     },
     {
-        "title": "Nobody Like U",
-        "artist_name": "4*TOWN (From Disney And Pixar's Turning Red)",
+        "title": "Make Up Sex",
+        "artist_name": "Machine Gun Kelly X blackbear",
         "video_id": null,
-        "capture_date": "2022-05-25 11:37:58.771771",
-        "source_id": 1174,
+        "capture_date": "2022-05-26 12:59:31.994994",
+        "source_id": 1179,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sometimes",
-        "artist_name": "Juice WRLD",
+        "title": "X Ultima Vez",
+        "artist_name": "Daddy Yankee & Bad Bunny",
         "video_id": null,
-        "capture_date": "2022-05-25 11:37:58.771771",
-        "source_id": 1174,
-        "song_id": 11876,
-        "duplicate": true
-    },
-    {
-        "title": "Computer Murderers",
-        "artist_name": "Lil Durk",
-        "video_id": null,
-        "capture_date": "2022-05-25 11:37:58.771771",
-        "source_id": 1174,
+        "capture_date": "2022-05-26 12:59:31.998998",
+        "source_id": 1179,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ghost Story",
-        "artist_name": "Carrie Underwood",
+        "title": "Envolver",
+        "artist_name": "Anitta",
         "video_id": null,
-        "capture_date": "2022-05-25 11:37:58.771771",
-        "source_id": 1174,
+        "capture_date": "2022-05-26 12:59:31.999999",
+        "source_id": 1179,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tom's Diner",
-        "artist_name": "AnnenMayKantereit & Giant Rooks",
+        "title": "Chaotic",
+        "artist_name": "Tate McRae",
         "video_id": null,
-        "capture_date": "2022-05-25 11:37:58.772772",
-        "source_id": 1174,
+        "capture_date": "2022-05-26 12:59:32.000000",
+        "source_id": 1179,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Maybe",
-        "artist_name": "Machine Gun Kelly & Bring Me The Horizon",
+        "title": "Sigue",
+        "artist_name": "J Balvin & Ed Sheeran",
         "video_id": null,
-        "capture_date": "2022-05-25 11:37:58.772772",
-        "source_id": 1174,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Over",
-        "artist_name": "Lucky Daye",
-        "video_id": null,
-        "capture_date": "2022-05-25 11:37:58.772772",
-        "source_id": 1174,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Money So Big",
-        "artist_name": "Yeat",
-        "video_id": null,
-        "capture_date": "2022-05-25 11:37:58.772772",
-        "source_id": 1174,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "She Likes It",
-        "artist_name": "Russell Dickerson & Jake Scott",
-        "video_id": null,
-        "capture_date": "2022-05-25 11:37:58.772772",
-        "source_id": 1174,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "IDGAF",
-        "artist_name": "BoyWithUke X blackbear",
-        "video_id": null,
-        "capture_date": "2022-05-25 11:37:58.772772",
-        "source_id": 1174,
+        "capture_date": "2022-05-26 12:59:32.002002",
+        "source_id": 1179,
         "song_id": null,
         "duplicate": false
     }
@@ -242,15 +206,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Nobody Like U', '4*TOWN (From Disney And Pixar’s Turning Red)', NULL),
-  ('Computer Murderers', 'Lil Durk', NULL),
-  ('Ghost Story', 'Carrie Underwood', NULL),
-  ('Tom’s Diner', 'AnnenMayKantereit & Giant Rooks', NULL),
-  ('Maybe', 'Machine Gun Kelly & Bring Me The Horizon', NULL),
-  ('Over', 'Lucky Daye', NULL),
-  ('Money So Big', 'Yeat', NULL),
-  ('She Likes It', 'Russell Dickerson & Jake Scott', NULL),
-  ('IDGAF', 'BoyWithUke X blackbear', NULL)
+  ('Soy El Unico', 'Yahritza y Su Esencia', NULL),
+  ('Make Up Sex', 'Machine Gun Kelly X blackbear', NULL),
+  ('X Ultima Vez', 'Daddy Yankee & Bad Bunny', NULL),
+  ('Envolver', 'Anitta', NULL),
+  ('Chaotic', 'Tate McRae', NULL),
+  ('Sigue', 'J Balvin & Ed Sheeran', NULL)
   ;
 
    // Update to song table
@@ -261,7 +222,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11898; // SELECT last_insert_rowid();
+  song_id = 11939; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -301,17 +262,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-25 11:37:58.770770', '1174', '11875'),
-  ('2022-05-25 11:37:58.771771', '1174', '11890'),
-  ('2022-05-25 11:37:58.771771', '1174', '11876'),
-  ('2022-05-25 11:37:58.771771', '1174', '11891'),
-  ('2022-05-25 11:37:58.771771', '1174', '11892'),
-  ('2022-05-25 11:37:58.772772', '1174', '11893'),
-  ('2022-05-25 11:37:58.772772', '1174', '11894'),
-  ('2022-05-25 11:37:58.772772', '1174', '11895'),
-  ('2022-05-25 11:37:58.772772', '1174', '11896'),
-  ('2022-05-25 11:37:58.772772', '1174', '11897'),
-  ('2022-05-25 11:37:58.772772', '1174', '11898')
+  ('2022-05-26 12:59:31.984984', '1179', '11934'),
+  ('2022-05-26 12:59:31.994994', '1179', '11916'),
+  ('2022-05-26 12:59:31.994994', '1179', '11935'),
+  ('2022-05-26 12:59:31.998998', '1179', '11936'),
+  ('2022-05-26 12:59:31.999999', '1179', '11937'),
+  ('2022-05-26 12:59:32.000000', '1179', '11938'),
+  ('2022-05-26 12:59:32.002002', '1179', '11939')
   ;
 
   // Update to source_song table

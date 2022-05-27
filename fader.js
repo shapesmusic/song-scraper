@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 246 // from the chart page
+  fader_no = 247 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 246 Week of March 23, 2022', '2022-03-23 12:00:00.000000', 'https://www.thefader.com/2022/03/23/songs-you-need-normani-black-midi-sudan-archives');
+    ('The Fader', '10 songs you need in your life this week', 'No. 247 Week of March 30, 2022', '2022-03-30 12:00:00.000000', 'https://www.thefader.com/2022/05/26/songs-you-need-emma-jean-thackray-wiki-golden-green');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1177; // SELECT last_insert_rowid();
+  source_id = 1181; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Fair",
-        "artist_name": "Normani",
+        "title": "Tamagotchi",
+        "artist_name": "Omar Apollo",
         "video_id": null,
-        "capture_date": "2022-05-26 09:25:02.962962",
-        "source_id": 1177,
-        "song_id": 11863,
+        "capture_date": "2022-05-26 05:53:16.090090",
+        "source_id": 1181,
+        "song_id": 11906,
         "duplicate": true
     },
     {
-        "title": "IF THERE’S NO SEAT IN THE SKY (WILL YOU FORGIVE ME???)",
-        "artist_name": "Saya Gray",
+        "title": "Somebody Like You",
+        "artist_name": "Bree Runway",
         "video_id": null,
-        "capture_date": "2022-05-26 09:25:02.962962",
-        "source_id": 1177,
+        "capture_date": "2022-05-26 05:53:16.090090",
+        "source_id": 1181,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Home Maker",
-        "artist_name": "Sudan Archives",
+        "title": "Warm Chris",
+        "artist_name": "Aldous Harding",
         "video_id": null,
-        "capture_date": "2022-05-26 09:25:02.962962",
-        "source_id": 1177,
-        "song_id": 11887,
-        "duplicate": true
-    },
-    {
-        "title": "Iced Tea",
-        "artist_name": "Joyce Wrice and KAYTRANADA",
-        "video_id": null,
-        "capture_date": "2022-05-26 09:25:02.962962",
-        "source_id": 1177,
+        "capture_date": "2022-05-26 05:53:16.090090",
+        "source_id": 1181,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Let It Fly",
-        "artist_name": "Veeze",
+        "title": "She’s Not Around / Maybe The Next Time",
+        "artist_name": "Jay Worthy & Larry June",
         "video_id": null,
-        "capture_date": "2022-05-26 09:25:02.962962",
-        "source_id": 1177,
+        "capture_date": "2022-05-26 05:53:16.091091",
+        "source_id": 1181,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "pinky ring",
-        "artist_name": "Joy Orbison",
+        "title": "Carry",
+        "artist_name": "Rema",
         "video_id": null,
-        "capture_date": "2022-05-26 09:25:02.962962",
-        "source_id": 1177,
+        "capture_date": "2022-05-26 05:53:16.091091",
+        "source_id": 1181,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Moonlight On Vermont",
-        "artist_name": "Black Midi",
+        "title": "Creative Source",
+        "artist_name": "Braxe + Falcon",
         "video_id": null,
-        "capture_date": "2022-05-26 09:25:02.962962",
-        "source_id": 1177,
+        "capture_date": "2022-05-26 05:53:16.091091",
+        "source_id": 1181,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "2020",
-        "artist_name": "ZelooperZ feat. Apropos",
+        "title": "AirMax’s",
+        "artist_name": "Meekz",
         "video_id": null,
-        "capture_date": "2022-05-26 09:25:02.962962",
-        "source_id": 1177,
+        "capture_date": "2022-05-26 05:53:16.091091",
+        "source_id": 1181,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sarcastic",
-        "artist_name": "Yayoyanoh",
+        "title": "Voice Of God",
+        "artist_name": "Crimeapple",
         "video_id": null,
-        "capture_date": "2022-05-26 09:25:02.962962",
-        "source_id": 1177,
+        "capture_date": "2022-05-26 05:53:16.091091",
+        "source_id": 1181,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Get On",
-        "artist_name": "Brandon Banks",
+        "title": "Acid In My Blood",
+        "artist_name": "Channel Tres",
         "video_id": null,
-        "capture_date": "2022-05-26 09:25:02.962962",
-        "source_id": 1177,
+        "capture_date": "2022-05-26 05:53:16.091091",
+        "source_id": 1181,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pardon?",
+        "artist_name": "Otoboke Beaver",
+        "video_id": null,
+        "capture_date": "2022-05-26 05:53:16.091091",
+        "source_id": 1181,
         "song_id": null,
         "duplicate": false
     }
@@ -230,14 +230,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('IF THERE’S NO SEAT IN THE SKY (WILL YOU FORGIVE ME???)', 'Saya Gray', NULL),
-  ('Iced Tea', 'Joyce Wrice and KAYTRANADA', NULL),
-  ('Let It Fly', 'Veeze', NULL),
-  ('pinky ring', 'Joy Orbison', NULL),
-  ('Moonlight On Vermont', 'Black Midi', NULL),
-  ('2020', 'ZelooperZ feat. Apropos', NULL),
-  ('Sarcastic', 'Yayoyanoh', NULL),
-  ('Get On', 'Brandon Banks', NULL)
+  ('Somebody Like You', 'Bree Runway', NULL),
+  ('Warm Chris', 'Aldous Harding', NULL),
+  ('She’s Not Around / Maybe The Next Time', 'Jay Worthy & Larry June', NULL),
+  ('Carry', 'Rema', NULL),
+  ('Creative Source', 'Braxe + Falcon', NULL),
+  ('AirMax’s', 'Meekz', NULL),
+  ('Voice Of God', 'Crimeapple', NULL),
+  ('Acid In My Blood', 'Channel Tres', NULL),
+  ('Pardon?', 'Otoboke Beaver', NULL)
   ;
 
    // Update to song table
@@ -248,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11930; // SELECT last_insert_rowid();
+  song_id = 11962; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -288,16 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-26 09:25:02.962962', '1177', '11863'),
-  ('2022-05-26 09:25:02.962962', '1177', '11923'),
-  ('2022-05-26 09:25:02.962962', '1177', '11887'),
-  ('2022-05-26 09:25:02.962962', '1177', '11924'),
-  ('2022-05-26 09:25:02.962962', '1177', '11925'),
-  ('2022-05-26 09:25:02.962962', '1177', '11926'),
-  ('2022-05-26 09:25:02.962962', '1177', '11927'),
-  ('2022-05-26 09:25:02.962962', '1177', '11928'),
-  ('2022-05-26 09:25:02.962962', '1177', '11929'),
-  ('2022-05-26 09:25:02.962962', '1177', '11930')
+  ('2022-05-26 05:53:16.090090', '1181', '11906'),
+  ('2022-05-26 05:53:16.090090', '1181', '11954'),
+  ('2022-05-26 05:53:16.090090', '1181', '11955'),
+  ('2022-05-26 05:53:16.091091', '1181', '11956'),
+  ('2022-05-26 05:53:16.091091', '1181', '11957'),
+  ('2022-05-26 05:53:16.091091', '1181', '11958'),
+  ('2022-05-26 05:53:16.091091', '1181', '11959'),
+  ('2022-05-26 05:53:16.091091', '1181', '11960'),
+  ('2022-05-26 05:53:16.091091', '1181', '11961'),
+  ('2022-05-26 05:53:16.091091', '1181', '11962')
   ;
 
   // Update to source_song table

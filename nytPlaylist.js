@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Soccer Mommy Stretches Her Sound, and 12 More New Songs', '2022-03-25 08:03:05.000000', 'https://www.nytimes.com/2022/03/25/arts/music/playlist-soccer-mommy-phife-dawg.html');
+    ('New York Times', 'The Playlist', 'Harry Styles Tries On Synth-Pop, and 13 More New Songs', '2022-04-01 07:59:24.000000', 'https://www.nytimes.com/2022/04/01/arts/music/playlist-harry-styles-angel-olsen.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1175; // SELECT last_insert_rowid();
+  source_id = 1180; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,119 +100,128 @@
   songsData =
   [
     {
-        "title": "Shotgun",
-        "artist_name": "Soccer Mommy",
+        "title": "As It Was",
+        "artist_name": "Harry Styles",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.945945",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.601601",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Humble Quest",
-        "artist_name": "Maren Morris",
+        "title": "Jersey",
+        "artist_name": "Barrie",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.607607",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mount Airy Hill (Way Gone)",
-        "artist_name": "Kurt Vile",
+        "title": "All the Good Times",
+        "artist_name": "Angel Olsen",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.613613",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "It Just Goes On",
-        "artist_name": "Flock of Dimes",
+        "title": "Take It Easy",
+        "artist_name": "Jensen McRae",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.616616",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Oblique Fantasy",
-        "artist_name": "Jane Weaver",
+        "title": "Where We Started",
+        "artist_name": "Thomas Rhett featuring Katy Perry",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.617617",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Death Fantasy",
-        "artist_name": "Kilo Kish featuring Miguel",
+        "title": "Lavender and Red Roses",
+        "artist_name": "Ibeyi featuring Jorja Smith",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.617617",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Forever",
-        "artist_name": "Phife Dawg",
+        "title": "Shut Him Down",
+        "artist_name": "Michael Leonhart Orchestra featuring Elvis Costello, Joshua Redman and JSWISS",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.617617",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tamagotchi",
-        "artist_name": "Omar Apollo",
+        "title": "Motema",
+        "artist_name": "Juanita Euka",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.617617",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Changes",
-        "artist_name": "Frya",
+        "title": "Where I’m From",
+        "artist_name": "Koffee",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.617617",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fence",
-        "artist_name": "Son Lux and Moses Sumney",
+        "title": "Rose Street",
+        "artist_name": "Vince Staples",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.617617",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lost",
-        "artist_name": "Zola Jesus",
+        "title": "Totally Fine",
+        "artist_name": "Pup",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.619619",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "A Hero’s Journey",
-        "artist_name": "Marvin Sewell",
+        "title": "Nowhere",
+        "artist_name": "sadie",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.619619",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Waste Land",
-        "artist_name": "Mark Turner",
+        "title": "Sirens",
+        "artist_name": "Flume featuring Caroline Polachek",
         "video_id": null,
-        "capture_date": "2022-05-25 08:41:34.952952",
-        "source_id": 1175,
+        "capture_date": "2022-05-26 01:34:59.619619",
+        "source_id": 1180,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Peace Invocation",
+        "artist_name": "Gerald Clayton featuring Charles Lloyd",
+        "video_id": null,
+        "capture_date": "2022-05-26 01:34:59.627627",
+        "source_id": 1180,
         "song_id": null,
         "duplicate": false
     }
@@ -255,19 +264,20 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Shotgun', 'Soccer Mommy', NULL),
-  ('Humble Quest', 'Maren Morris', NULL),
-  ('Mount Airy Hill (Way Gone)', 'Kurt Vile', NULL),
-  ('It Just Goes On', 'Flock of Dimes', NULL),
-  ('Oblique Fantasy', 'Jane Weaver', NULL),
-  ('Death Fantasy', 'Kilo Kish featuring Miguel', NULL),
-  ('Forever', 'Phife Dawg', NULL),
-  ('Tamagotchi', 'Omar Apollo', NULL),
-  ('Changes', 'Frya', NULL),
-  ('Fence', 'Son Lux and Moses Sumney', NULL),
-  ('Lost', 'Zola Jesus', NULL),
-  ('A Hero’s Journey', 'Marvin Sewell', NULL),
-  ('Waste Land', 'Mark Turner', NULL)
+  ('As It Was', 'Harry Styles', NULL),
+  ('Jersey', 'Barrie', NULL),
+  ('All the Good Times', 'Angel Olsen', NULL),
+  ('Take It Easy', 'Jensen McRae', NULL),
+  ('Where We Started', 'Thomas Rhett featuring Katy Perry', NULL),
+  ('Lavender and Red Roses', 'Ibeyi featuring Jorja Smith', NULL),
+  ('Shut Him Down', 'Michael Leonhart Orchestra featuring Elvis Costello, Joshua Redman and JSWISS', NULL),
+  ('Motema', 'Juanita Euka', NULL),
+  ('Where I’m From', 'Koffee', NULL),
+  ('Rose Street', 'Vince Staples', NULL),
+  ('Totally Fine', 'Pup', NULL),
+  ('Nowhere', 'sadie', NULL),
+  ('Sirens', 'Flume featuring Caroline Polachek', NULL),
+  ('Peace Invocation', 'Gerald Clayton featuring Charles Lloyd', NULL)
   ;
 
    // Update to song table
@@ -278,7 +288,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11911; // SELECT last_insert_rowid();
+  song_id = 11953; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -318,19 +328,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-25 08:41:34.945945', '1175', '11899'),
-  ('2022-05-25 08:41:34.952952', '1175', '11900'),
-  ('2022-05-25 08:41:34.952952', '1175', '11901'),
-  ('2022-05-25 08:41:34.952952', '1175', '11902'),
-  ('2022-05-25 08:41:34.952952', '1175', '11903'),
-  ('2022-05-25 08:41:34.952952', '1175', '11904'),
-  ('2022-05-25 08:41:34.952952', '1175', '11905'),
-  ('2022-05-25 08:41:34.952952', '1175', '11906'),
-  ('2022-05-25 08:41:34.952952', '1175', '11907'),
-  ('2022-05-25 08:41:34.952952', '1175', '11908'),
-  ('2022-05-25 08:41:34.952952', '1175', '11909'),
-  ('2022-05-25 08:41:34.952952', '1175', '11910'),
-  ('2022-05-25 08:41:34.952952', '1175', '11911')
+  ('2022-05-26 01:34:59.601601', '1180', '11940'),
+  ('2022-05-26 01:34:59.607607', '1180', '11941'),
+  ('2022-05-26 01:34:59.613613', '1180', '11942'),
+  ('2022-05-26 01:34:59.616616', '1180', '11943'),
+  ('2022-05-26 01:34:59.617617', '1180', '11944'),
+  ('2022-05-26 01:34:59.617617', '1180', '11945'),
+  ('2022-05-26 01:34:59.617617', '1180', '11946'),
+  ('2022-05-26 01:34:59.617617', '1180', '11947'),
+  ('2022-05-26 01:34:59.617617', '1180', '11948'),
+  ('2022-05-26 01:34:59.617617', '1180', '11949'),
+  ('2022-05-26 01:34:59.619619', '1180', '11950'),
+  ('2022-05-26 01:34:59.619619', '1180', '11951'),
+  ('2022-05-26 01:34:59.619619', '1180', '11952'),
+  ('2022-05-26 01:34:59.627627', '1180', '11953')
   ;
 
   // Update to source_song table
