@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of April 1, 2022', '2022-04-01 12:00:00.000000', 'https://www.stereogum.com/2181786/the-5-best-songs-of-the-week-427/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of April 8, 2022', '2022-04-08 12:00:00.000000', 'https://www.stereogum.com/2182785/the-5-best-songs-of-the-week-428/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1182; // SELECT last_insert_rowid();
+  source_id = 1187; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,49 +101,49 @@
   songsData =
   [
     {
-        "title": "Multi-Game Arcade Cabinet",
-        "artist_name": "Open Mike Eagle",
+        "title": "World Of Pots And Pans",
+        "artist_name": "Horsegirl",
         "video_id": null,
-        "capture_date": "2022-05-26 06:12:25.855855",
-        "source_id": 1182,
+        "capture_date": "2022-05-27 07:16:48.190190",
+        "source_id": 1187,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Step By Step",
-        "artist_name": "Braxe + Falcon Feat. Panda Bear",
+        "title": "New Directions",
+        "artist_name": "Duster",
         "video_id": null,
-        "capture_date": "2022-05-26 06:12:25.858858",
-        "source_id": 1182,
+        "capture_date": "2022-05-27 07:16:48.191191",
+        "source_id": 1187,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fire Escape",
-        "artist_name": "Beach Bunny",
+        "title": "Soccer Dad",
+        "artist_name": "Schoolboy Q",
         "video_id": null,
-        "capture_date": "2022-05-26 06:12:25.858858",
-        "source_id": 1182,
+        "capture_date": "2022-05-27 07:16:48.192192",
+        "source_id": 1187,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Acid In My Blood",
-        "artist_name": "Channel Tres",
+        "title": "Gotta Let It Go",
+        "artist_name": "Joyce Manor",
         "video_id": null,
-        "capture_date": "2022-05-26 06:12:25.858858",
-        "source_id": 1182,
-        "song_id": 11961,
+        "capture_date": "2022-05-27 07:16:48.192192",
+        "source_id": 1187,
+        "song_id": 11985,
         "duplicate": true
     },
     {
-        "title": "All The Good Times",
-        "artist_name": "Angel Olsen",
+        "title": "The Next 20th Century",
+        "artist_name": "Father John Misty",
         "video_id": null,
-        "capture_date": "2022-05-26 06:12:25.858858",
-        "source_id": 1182,
-        "song_id": 11942,
-        "duplicate": true
+        "capture_date": "2022-05-27 07:16:48.192192",
+        "source_id": 1187,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -184,9 +184,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Multi-Game Arcade Cabinet', 'Open Mike Eagle', NULL),
-  ('Step By Step', 'Braxe + Falcon Feat. Panda Bear', NULL),
-  ('Fire Escape', 'Beach Bunny', NULL)
+  ('World Of Pots And Pans', 'Horsegirl', NULL),
+  ('New Directions', 'Duster', NULL),
+  ('Soccer Dad', 'Schoolboy Q', NULL),
+  ('The Next 20th Century', 'Father John Misty', NULL)
   ;
 
    // Update to song table
@@ -197,7 +198,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11965; // SELECT last_insert_rowid();
+  song_id = 12013; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -237,11 +238,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-26 06:12:25.855855', '1182', '11963'),
-  ('2022-05-26 06:12:25.858858', '1182', '11964'),
-  ('2022-05-26 06:12:25.858858', '1182', '11965'),
-  ('2022-05-26 06:12:25.858858', '1182', '11961'),
-  ('2022-05-26 06:12:25.858858', '1182', '11942')
+  ('2022-05-27 07:16:48.190190', '1187', '12010'),
+  ('2022-05-27 07:16:48.191191', '1187', '12011'),
+  ('2022-05-27 07:16:48.192192', '1187', '12012'),
+  ('2022-05-27 07:16:48.192192', '1187', '11985'),
+  ('2022-05-27 07:16:48.192192', '1187', '12013')
   ;
 
   // Update to source_song table

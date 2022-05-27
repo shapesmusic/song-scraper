@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 247 // from the chart page
+  fader_no = 248 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 247 Week of March 30, 2022', '2022-03-30 12:00:00.000000', 'https://www.thefader.com/2022/05/26/songs-you-need-emma-jean-thackray-wiki-golden-green');
+    ('The Fader', '10 songs you need in your life this week', 'No. 248 Week of April 06, 2022', '2022-04-06 12:00:00.000000', 'https://www.thefader.com/2022/04/06/songs-you-need-kehlani-harry-styles-yeat');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1181; // SELECT last_insert_rowid();
+  source_id = 1186; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -68,7 +68,7 @@
 
   for (var i=0; i<elements.length; i++){
     title = elements[i].innerText.match(/[“"](.*?)[”"]/)[1];
-    artist_name = elements[i].innerText.match(/[–-—] ([\s\S]*)$/)[1]; // still gets stuck on &nbsp;
+    artist_name = elements[i].innerText.match(/[–-—-] ([\s\S]*)$/)[1]; // still gets stuck on &nbsp;
     video_id = null
       // replace null with below to grab video IDs (when all songs are YT)
       // videoUrl[i].style.backgroundImage.match(/(?<=vi\/)(.*)(?=\/)/)[0];
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Tamagotchi",
-        "artist_name": "Omar Apollo",
+        "title": "Big tonka",
+        "artist_name": "Yeat feat Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2022-05-26 05:53:16.090090",
-        "source_id": 1181,
-        "song_id": 11906,
+        "capture_date": "2022-05-27 07:11:58.955955",
+        "source_id": 1186,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "As It Was",
+        "artist_name": "Harry Styles",
+        "video_id": null,
+        "capture_date": "2022-05-27 07:11:58.962962",
+        "source_id": 1186,
+        "song_id": 11940,
         "duplicate": true
     },
     {
-        "title": "Somebody Like You",
-        "artist_name": "Bree Runway",
+        "title": "Coming Down",
+        "artist_name": "Ari Lennox",
         "video_id": null,
-        "capture_date": "2022-05-26 05:53:16.090090",
-        "source_id": 1181,
+        "capture_date": "2022-05-27 07:11:58.962962",
+        "source_id": 1186,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Warm Chris",
-        "artist_name": "Aldous Harding",
+        "title": "Nets vs 76ers",
+        "artist_name": "Papo2oo4",
         "video_id": null,
-        "capture_date": "2022-05-26 05:53:16.090090",
-        "source_id": 1181,
+        "capture_date": "2022-05-27 07:11:58.962962",
+        "source_id": 1186,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "She’s Not Around / Maybe The Next Time",
-        "artist_name": "Jay Worthy & Larry June",
+        "title": "Sirens",
+        "artist_name": "Flume feat. Caroline Polachek",
         "video_id": null,
-        "capture_date": "2022-05-26 05:53:16.091091",
-        "source_id": 1181,
+        "capture_date": "2022-05-27 07:11:58.962962",
+        "source_id": 1186,
+        "song_id": 11952,
+        "duplicate": true
+    },
+    {
+        "title": "The Science of Imaginary Solutions",
+        "artist_name": "James Krivchenia",
+        "video_id": null,
+        "capture_date": "2022-05-27 07:11:58.962962",
+        "source_id": 1186,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Carry",
-        "artist_name": "Rema",
+        "title": "Up At Night",
+        "artist_name": "Kehlani feat. Justin Bieber",
         "video_id": null,
-        "capture_date": "2022-05-26 05:53:16.091091",
-        "source_id": 1181,
+        "capture_date": "2022-05-27 07:11:58.962962",
+        "source_id": 1186,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Creative Source",
-        "artist_name": "Braxe + Falcon",
+        "title": "21212",
+        "artist_name": "DJ Travella",
         "video_id": null,
-        "capture_date": "2022-05-26 05:53:16.091091",
-        "source_id": 1181,
+        "capture_date": "2022-05-27 07:11:58.962962",
+        "source_id": 1186,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "AirMax’s",
-        "artist_name": "Meekz",
+        "title": "Fair",
+        "artist_name": "Bear1boss",
         "video_id": null,
-        "capture_date": "2022-05-26 05:53:16.091091",
-        "source_id": 1181,
+        "capture_date": "2022-05-27 07:11:58.962962",
+        "source_id": 1186,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Voice Of God",
-        "artist_name": "Crimeapple",
+        "title": "Eye Tell (!)",
+        "artist_name": "Jim Legxacy",
         "video_id": null,
-        "capture_date": "2022-05-26 05:53:16.091091",
-        "source_id": 1181,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Acid In My Blood",
-        "artist_name": "Channel Tres",
-        "video_id": null,
-        "capture_date": "2022-05-26 05:53:16.091091",
-        "source_id": 1181,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pardon?",
-        "artist_name": "Otoboke Beaver",
-        "video_id": null,
-        "capture_date": "2022-05-26 05:53:16.091091",
-        "source_id": 1181,
+        "capture_date": "2022-05-27 07:11:58.962962",
+        "source_id": 1186,
         "song_id": null,
         "duplicate": false
     }
@@ -230,15 +230,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Somebody Like You', 'Bree Runway', NULL),
-  ('Warm Chris', 'Aldous Harding', NULL),
-  ('She’s Not Around / Maybe The Next Time', 'Jay Worthy & Larry June', NULL),
-  ('Carry', 'Rema', NULL),
-  ('Creative Source', 'Braxe + Falcon', NULL),
-  ('AirMax’s', 'Meekz', NULL),
-  ('Voice Of God', 'Crimeapple', NULL),
-  ('Acid In My Blood', 'Channel Tres', NULL),
-  ('Pardon?', 'Otoboke Beaver', NULL)
+  ('Big tonka', 'Yeat feat Lil Uzi Vert', NULL),
+  ('Coming Down', 'Ari Lennox', NULL),
+  ('Nets vs 76ers', 'Papo2oo4', NULL),
+  ('The Science of Imaginary Solutions', 'James Krivchenia', NULL),
+  ('Up At Night', 'Kehlani feat. Justin Bieber', NULL),
+  ('21212', 'DJ Travella', NULL),
+  ('Fair', 'Bear1boss', NULL),
+  ('Eye Tell (!)', 'Jim Legxacy', NULL)
   ;
 
    // Update to song table
@@ -249,7 +248,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11962; // SELECT last_insert_rowid();
+  song_id = 12009; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +288,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-26 05:53:16.090090', '1181', '11906'),
-  ('2022-05-26 05:53:16.090090', '1181', '11954'),
-  ('2022-05-26 05:53:16.090090', '1181', '11955'),
-  ('2022-05-26 05:53:16.091091', '1181', '11956'),
-  ('2022-05-26 05:53:16.091091', '1181', '11957'),
-  ('2022-05-26 05:53:16.091091', '1181', '11958'),
-  ('2022-05-26 05:53:16.091091', '1181', '11959'),
-  ('2022-05-26 05:53:16.091091', '1181', '11960'),
-  ('2022-05-26 05:53:16.091091', '1181', '11961'),
-  ('2022-05-26 05:53:16.091091', '1181', '11962')
+  ('2022-05-27 07:11:58.955955', '1186', '12002'),
+  ('2022-05-27 07:11:58.962962', '1186', '11940'),
+  ('2022-05-27 07:11:58.962962', '1186', '12003'),
+  ('2022-05-27 07:11:58.962962', '1186', '12004'),
+  ('2022-05-27 07:11:58.962962', '1186', '11952'),
+  ('2022-05-27 07:11:58.962962', '1186', '12005'),
+  ('2022-05-27 07:11:58.962962', '1186', '12006'),
+  ('2022-05-27 07:11:58.962962', '1186', '12007'),
+  ('2022-05-27 07:11:58.962962', '1186', '12008'),
+  ('2022-05-27 07:11:58.962962', '1186', '12009')
   ;
 
   // Update to source_song table
