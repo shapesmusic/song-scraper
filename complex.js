@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Pusha-T, Jack Harlow, Fivio Foreign, and More', '2022-04-08 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-pusha-t-jack-harlow-fivio-foreign/idk-kaytranada-taco');
+    ('Complex', 'Best New Music This Week', 'Bas, Cardi B, Kay Flock, Quando Rondo, and More', '2022-04-15 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-cardi-b-bas-quando-rondo-and-more/ransom-the-game-circumstances');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1185; // SELECT last_insert_rowid();
+  source_id = 1190; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,92 +101,65 @@
   songsData =
   [
     {
-        "title": "Neck & Wrist",
-        "artist_name": "Pusha-T f/ Jay-Z",
+        "title": "Shake It",
+        "artist_name": "Kay Flock ft. Cardi B, Dougie B, & Bory300",
         "video_id": null,
-        "capture_date": "2022-05-27 06:59:03.215215",
-        "source_id": 1185,
+        "capture_date": "2022-05-27 09:21:01.924924",
+        "source_id": 1190,
+        "song_id": 12021,
+        "duplicate": true
+    },
+    {
+        "title": "The Others",
+        "artist_name": "Bas ft. Ari Lennox",
+        "video_id": null,
+        "capture_date": "2022-05-27 09:21:01.925925",
+        "source_id": 1190,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Through the Fire",
-        "artist_name": "Fivio Foreign f/ Quavo",
+        "title": "24",
+        "artist_name": "Quando Rondo",
         "video_id": null,
-        "capture_date": "2022-05-27 06:59:03.216216",
-        "source_id": 1185,
+        "capture_date": "2022-05-27 09:21:01.925925",
+        "source_id": 1190,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "First Class",
-        "artist_name": "Jack Harlow",
+        "title": "About Damn Time",
+        "artist_name": "Lizzo",
         "video_id": null,
-        "capture_date": "2022-05-27 06:59:03.216216",
-        "source_id": 1185,
+        "capture_date": "2022-05-27 09:21:01.925925",
+        "source_id": 1190,
+        "song_id": 12018,
+        "duplicate": true
+    },
+    {
+        "title": "Half Tee Half Beast",
+        "artist_name": "Tee Grizzley",
+        "video_id": null,
+        "capture_date": "2022-05-27 09:21:01.925925",
+        "source_id": 1190,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In A Minute",
-        "artist_name": "Lil Baby",
+        "title": "Last One Left",
+        "artist_name": "Fredo Bang ft. Roddy Ricch",
         "video_id": null,
-        "capture_date": "2022-05-27 06:59:03.216216",
-        "source_id": 1185,
+        "capture_date": "2022-05-27 09:21:01.925925",
+        "source_id": 1190,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "When Sparks Fly",
-        "artist_name": "Vince Staples",
+        "title": "Circumstances",
+        "artist_name": "Ransom ft. The Game",
         "video_id": null,
-        "capture_date": "2022-05-27 06:59:03.216216",
-        "source_id": 1185,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "London",
-        "artist_name": "BIA f/ J. Cole",
-        "video_id": null,
-        "capture_date": "2022-05-27 06:59:03.216216",
-        "source_id": 1185,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Evergreen",
-        "artist_name": "Omar Apollo",
-        "video_id": null,
-        "capture_date": "2022-05-27 06:59:03.217217",
-        "source_id": 1185,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "My Yungin",
-        "artist_name": "42 Dugg & EST Gee",
-        "video_id": null,
-        "capture_date": "2022-05-27 06:59:03.217217",
-        "source_id": 1185,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Box & Papers",
-        "artist_name": "Coi Leray",
-        "video_id": null,
-        "capture_date": "2022-05-27 06:59:03.217217",
-        "source_id": 1185,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Taco",
-        "artist_name": "IDK & Kaytranada",
-        "video_id": null,
-        "capture_date": "2022-05-27 06:59:03.217217",
-        "source_id": 1185,
+        "capture_date": "2022-05-27 09:21:01.925925",
+        "source_id": 1190,
         "song_id": null,
         "duplicate": false
     }
@@ -229,16 +202,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Neck & Wrist', 'Pusha-T f/ Jay-Z', NULL),
-  ('Through the Fire', 'Fivio Foreign f/ Quavo', NULL),
-  ('First Class', 'Jack Harlow', NULL),
-  ('In A Minute', 'Lil Baby', NULL),
-  ('When Sparks Fly', 'Vince Staples', NULL),
-  ('London', 'BIA f/ J. Cole', NULL),
-  ('Evergreen', 'Omar Apollo', NULL),
-  ('My Yungin', '42 Dugg & EST Gee', NULL),
-  ('Box & Papers', 'Coi Leray', NULL),
-  ('Taco', 'IDK & Kaytranada', NULL)
+  ('The Others', 'Bas ft. Ari Lennox', NULL),
+  ('24', 'Quando Rondo', NULL),
+  ('Half Tee Half Beast', 'Tee Grizzley', NULL),
+  ('Last One Left', 'Fredo Bang ft. Roddy Ricch', NULL),
+  ('Circumstances', 'Ransom ft. The Game', NULL)
   ;
 
    // Update to song table
@@ -249,7 +217,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12001; // SELECT last_insert_rowid();
+  song_id = 12034; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +257,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-27 06:59:03.215215', '1185', '11992'),
-  ('2022-05-27 06:59:03.216216', '1185', '11993'),
-  ('2022-05-27 06:59:03.216216', '1185', '11994'),
-  ('2022-05-27 06:59:03.216216', '1185', '11995'),
-  ('2022-05-27 06:59:03.216216', '1185', '11996'),
-  ('2022-05-27 06:59:03.216216', '1185', '11997'),
-  ('2022-05-27 06:59:03.217217', '1185', '11998'),
-  ('2022-05-27 06:59:03.217217', '1185', '11999'),
-  ('2022-05-27 06:59:03.217217', '1185', '12000'),
-  ('2022-05-27 06:59:03.217217', '1185', '12001')
+  ('2022-05-27 09:21:01.924924', '1190', '12021'),
+  ('2022-05-27 09:21:01.925925', '1190', '12030'),
+  ('2022-05-27 09:21:01.925925', '1190', '12031'),
+  ('2022-05-27 09:21:01.925925', '1190', '12018'),
+  ('2022-05-27 09:21:01.925925', '1190', '12032'),
+  ('2022-05-27 09:21:01.925925', '1190', '12033'),
+  ('2022-05-27 09:21:01.925925', '1190', '12034')
   ;
 
   // Update to source_song table

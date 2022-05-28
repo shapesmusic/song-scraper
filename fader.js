@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 248 // from the chart page
+  fader_no = 249 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 248 Week of April 06, 2022', '2022-04-06 12:00:00.000000', 'https://www.thefader.com/2022/04/06/songs-you-need-kehlani-harry-styles-yeat');
+    ('The Fader', '10 songs you need in your life this week', 'No. 249 Week of April 18, 2022', '2022-04-18 12:00:00.000000', 'https://www.thefader.com/2022/05/27/isaiah-rashad-comes-out-as-sexually-fluid-in-new-interview');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1186; // SELECT last_insert_rowid();
+  source_id = 1191; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Big tonka",
-        "artist_name": "Yeat feat Lil Uzi Vert",
+        "title": "Camille’s Daughter",
+        "artist_name": "KeiyaA",
         "video_id": null,
-        "capture_date": "2022-05-27 07:11:58.955955",
-        "source_id": 1186,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "As It Was",
-        "artist_name": "Harry Styles",
-        "video_id": null,
-        "capture_date": "2022-05-27 07:11:58.962962",
-        "source_id": 1186,
-        "song_id": 11940,
+        "capture_date": "2022-05-27 09:33:04.483483",
+        "source_id": 1191,
+        "song_id": 12023,
         "duplicate": true
     },
     {
-        "title": "Coming Down",
-        "artist_name": "Ari Lennox",
+        "title": "Things You Said",
+        "artist_name": "gglum",
         "video_id": null,
-        "capture_date": "2022-05-27 07:11:58.962962",
-        "source_id": 1186,
+        "capture_date": "2022-05-27 09:33:04.483483",
+        "source_id": 1191,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nets vs 76ers",
-        "artist_name": "Papo2oo4",
+        "title": "Neon Memories",
+        "artist_name": "death's dynamic shroud",
         "video_id": null,
-        "capture_date": "2022-05-27 07:11:58.962962",
-        "source_id": 1186,
+        "capture_date": "2022-05-27 09:33:04.483483",
+        "source_id": 1191,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sirens",
-        "artist_name": "Flume feat. Caroline Polachek",
+        "title": "Stitch",
+        "artist_name": "Alex G",
         "video_id": null,
-        "capture_date": "2022-05-27 07:11:58.962962",
-        "source_id": 1186,
-        "song_id": 11952,
+        "capture_date": "2022-05-27 09:33:04.483483",
+        "source_id": 1191,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Memories",
+        "artist_name": "Conan Gray",
+        "video_id": null,
+        "capture_date": "2022-05-27 09:33:04.483483",
+        "source_id": 1191,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sidelines",
+        "artist_name": "Phoebe Bridgers",
+        "video_id": null,
+        "capture_date": "2022-05-27 09:33:04.483483",
+        "source_id": 1191,
+        "song_id": 12025,
         "duplicate": true
     },
     {
-        "title": "The Science of Imaginary Solutions",
-        "artist_name": "James Krivchenia",
+        "title": "AYE! (Free The Homies)",
+        "artist_name": "Vince Staples",
         "video_id": null,
-        "capture_date": "2022-05-27 07:11:58.962962",
-        "source_id": 1186,
+        "capture_date": "2022-05-27 09:33:04.483483",
+        "source_id": 1191,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Up At Night",
-        "artist_name": "Kehlani feat. Justin Bieber",
+        "title": "Treat Me",
+        "artist_name": "Chlöe",
         "video_id": null,
-        "capture_date": "2022-05-27 07:11:58.962962",
-        "source_id": 1186,
+        "capture_date": "2022-05-27 09:33:04.483483",
+        "source_id": 1191,
+        "song_id": 12016,
+        "duplicate": true
+    },
+    {
+        "title": "Let's Do It Again",
+        "artist_name": "Jamie xx",
+        "video_id": null,
+        "capture_date": "2022-05-27 09:33:04.483483",
+        "source_id": 1191,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "21212",
-        "artist_name": "DJ Travella",
+        "title": "Alive Ain't Always Living",
+        "artist_name": "Quelle Chris",
         "video_id": null,
-        "capture_date": "2022-05-27 07:11:58.962962",
-        "source_id": 1186,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fair",
-        "artist_name": "Bear1boss",
-        "video_id": null,
-        "capture_date": "2022-05-27 07:11:58.962962",
-        "source_id": 1186,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Eye Tell (!)",
-        "artist_name": "Jim Legxacy",
-        "video_id": null,
-        "capture_date": "2022-05-27 07:11:58.962962",
-        "source_id": 1186,
+        "capture_date": "2022-05-27 09:33:04.483483",
+        "source_id": 1191,
         "song_id": null,
         "duplicate": false
     }
@@ -230,14 +230,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Big tonka', 'Yeat feat Lil Uzi Vert', NULL),
-  ('Coming Down', 'Ari Lennox', NULL),
-  ('Nets vs 76ers', 'Papo2oo4', NULL),
-  ('The Science of Imaginary Solutions', 'James Krivchenia', NULL),
-  ('Up At Night', 'Kehlani feat. Justin Bieber', NULL),
-  ('21212', 'DJ Travella', NULL),
-  ('Fair', 'Bear1boss', NULL),
-  ('Eye Tell (!)', 'Jim Legxacy', NULL)
+  ('Things You Said', 'gglum', NULL),
+  ('Neon Memories', 'death’s dynamic shroud', NULL),
+  ('Stitch', 'Alex G', NULL),
+  ('Memories', 'Conan Gray', NULL),
+  ('AYE! (Free The Homies)', 'Vince Staples', NULL),
+  ('Let’s Do It Again', 'Jamie xx', NULL),
+  ('Alive Ain’t Always Living', 'Quelle Chris', NULL)
   ;
 
    // Update to song table
@@ -248,7 +247,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12009; // SELECT last_insert_rowid();
+  song_id = 12041; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -288,16 +287,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-27 07:11:58.955955', '1186', '12002'),
-  ('2022-05-27 07:11:58.962962', '1186', '11940'),
-  ('2022-05-27 07:11:58.962962', '1186', '12003'),
-  ('2022-05-27 07:11:58.962962', '1186', '12004'),
-  ('2022-05-27 07:11:58.962962', '1186', '11952'),
-  ('2022-05-27 07:11:58.962962', '1186', '12005'),
-  ('2022-05-27 07:11:58.962962', '1186', '12006'),
-  ('2022-05-27 07:11:58.962962', '1186', '12007'),
-  ('2022-05-27 07:11:58.962962', '1186', '12008'),
-  ('2022-05-27 07:11:58.962962', '1186', '12009')
+  ('2022-05-27 09:33:04.483483', '1191', '12023'),
+  ('2022-05-27 09:33:04.483483', '1191', '12035'),
+  ('2022-05-27 09:33:04.483483', '1191', '12036'),
+  ('2022-05-27 09:33:04.483483', '1191', '12037'),
+  ('2022-05-27 09:33:04.483483', '1191', '12038'),
+  ('2022-05-27 09:33:04.483483', '1191', '12025'),
+  ('2022-05-27 09:33:04.483483', '1191', '12039'),
+  ('2022-05-27 09:33:04.483483', '1191', '12016'),
+  ('2022-05-27 09:33:04.483483', '1191', '12040'),
+  ('2022-05-27 09:33:04.483483', '1191', '12041')
   ;
 
   // Update to source_song table

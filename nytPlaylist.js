@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Camila Cabello Gets in Her Head, and 16 More New Songs', '2022-04-08 09:15:03.000000', 'https://www.nytimes.com/2022/04/08/arts/music/camila-cabello-pink-floyd-playlist.html');
+    ('New York Times', 'The Playlist', 'Lizzo’s Disco Dance Party, and 11 More New Songs', '2022-04-15 08:00:14.000000', 'https://www.nytimes.com/2022/04/15/arts/music/playlist-lizzo-cardi-b-kay-flock.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1184; // SELECT last_insert_rowid();
+  source_id = 1189; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,155 +100,110 @@
   songsData =
   [
     {
-        "title": "Psychofreak",
-        "artist_name": "Camila Cabello featuring Willow",
+        "title": "About Damn Time",
+        "artist_name": "Lizzo",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.057057",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.367367",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Actin’ Up",
-        "artist_name": "Miranda Lambert",
+        "title": "Crybaby",
+        "artist_name": "Amelia Moore",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.369369",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Heartfirst",
-        "artist_name": "Kelsea Ballerini",
+        "title": "Some Things Take Time",
+        "artist_name": "Cisco Swank and Luke Titus ft. Phoelix",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.369369",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Meteorite",
-        "artist_name": "Banks",
+        "title": "Shake It",
+        "artist_name": "Kay Flock ft. Cardi B, Dougie B and Bory300",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.369369",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Vente Pa Aca",
-        "artist_name": "Pieri",
+        "title": "Pandemonium",
+        "artist_name": "Edoheart",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.369369",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fast Car",
-        "artist_name": "Syd",
+        "title": "Camille’s Daughter",
+        "artist_name": "KeiyaA",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.369369",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fruit",
-        "artist_name": "Oliver Sim",
+        "title": "Giant Palm",
+        "artist_name": "Naima Bock",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.369369",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Red Bird Pt. 2 (Morning)",
-        "artist_name": "Florist",
+        "title": "Sidelines",
+        "artist_name": "Phoebe Bridgers",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.369369",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Unpeopled Space",
-        "artist_name": "Daniel Rossen",
+        "title": "Q. DeGraw",
+        "artist_name": "Wild Pink",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.369369",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hey, Hey Rise Up",
-        "artist_name": "Pink Floyd featuring Andriy Khlyvnyuk of Boombox",
+        "title": "Black Hole Era",
+        "artist_name": "Kisskadee",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.369369",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gotta Let It Go",
-        "artist_name": "Joyce Manor",
+        "title": "Playscape",
+        "artist_name": "FKA twigs",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.370370",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Máquina de Dinero",
-        "artist_name": "El Alfa, Braulio Fogón, French Montana and Kaly Ocho",
+        "title": "Benediction",
+        "artist_name": "Joel Ross",
         "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "City of Gods (Part II)",
-        "artist_name": "Alicia Keys",
-        "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Golden Air",
-        "artist_name": "Sun’s Signature",
-        "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.101101",
-        "source_id": 1184,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sunshower",
-        "artist_name": "S. Carey",
-        "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.102102",
-        "source_id": 1184,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Something Real",
-        "artist_name": "Sam Gendel and Antonia Cytrynowicz",
-        "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.102102",
-        "source_id": 1184,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "For the Love of Fire and Water: II.",
-        "artist_name": "Myra Melford’s Fire and Water Quintet",
-        "video_id": null,
-        "capture_date": "2022-05-27 06:45:23.102102",
-        "source_id": 1184,
+        "capture_date": "2022-05-27 09:15:39.370370",
+        "source_id": 1189,
         "song_id": null,
         "duplicate": false
     }
@@ -291,23 +246,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Psychofreak', 'Camila Cabello featuring Willow', NULL),
-  ('Actin’ Up', 'Miranda Lambert', NULL),
-  ('Heartfirst', 'Kelsea Ballerini', NULL),
-  ('Meteorite', 'Banks', NULL),
-  ('Vente Pa Aca', 'Pieri', NULL),
-  ('Fast Car', 'Syd', NULL),
-  ('Fruit', 'Oliver Sim', NULL),
-  ('Red Bird Pt. 2 (Morning)', 'Florist', NULL),
-  ('Unpeopled Space', 'Daniel Rossen', NULL),
-  ('Hey, Hey Rise Up', 'Pink Floyd featuring Andriy Khlyvnyuk of Boombox', NULL),
-  ('Gotta Let It Go', 'Joyce Manor', NULL),
-  ('Máquina de Dinero', 'El Alfa, Braulio Fogón, French Montana and Kaly Ocho', NULL),
-  ('City of Gods (Part II)', 'Alicia Keys', NULL),
-  ('Golden Air', 'Sun’s Signature', NULL),
-  ('Sunshower', 'S. Carey', NULL),
-  ('Something Real', 'Sam Gendel and Antonia Cytrynowicz', NULL),
-  ('For the Love of Fire and Water: II.', 'Myra Melford’s Fire and Water Quintet', NULL)
+  ('About Damn Time', 'Lizzo', NULL),
+  ('Crybaby', 'Amelia Moore', NULL),
+  ('Some Things Take Time', 'Cisco Swank and Luke Titus ft. Phoelix', NULL),
+  ('Shake It', 'Kay Flock ft. Cardi B, Dougie B and Bory300', NULL),
+  ('Pandemonium', 'Edoheart', NULL),
+  ('Camille’s Daughter', 'KeiyaA', NULL),
+  ('Giant Palm', 'Naima Bock', NULL),
+  ('Sidelines', 'Phoebe Bridgers', NULL),
+  ('Q. DeGraw', 'Wild Pink', NULL),
+  ('Black Hole Era', 'Kisskadee', NULL),
+  ('Playscape', 'FKA twigs', NULL),
+  ('Benediction', 'Joel Ross', NULL)
   ;
 
    // Update to song table
@@ -318,7 +268,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 11991; // SELECT last_insert_rowid();
+  song_id = 12029; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -358,23 +308,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-27 06:45:23.057057', '1184', '11975'),
-  ('2022-05-27 06:45:23.101101', '1184', '11976'),
-  ('2022-05-27 06:45:23.101101', '1184', '11977'),
-  ('2022-05-27 06:45:23.101101', '1184', '11978'),
-  ('2022-05-27 06:45:23.101101', '1184', '11979'),
-  ('2022-05-27 06:45:23.101101', '1184', '11980'),
-  ('2022-05-27 06:45:23.101101', '1184', '11981'),
-  ('2022-05-27 06:45:23.101101', '1184', '11982'),
-  ('2022-05-27 06:45:23.101101', '1184', '11983'),
-  ('2022-05-27 06:45:23.101101', '1184', '11984'),
-  ('2022-05-27 06:45:23.101101', '1184', '11985'),
-  ('2022-05-27 06:45:23.101101', '1184', '11986'),
-  ('2022-05-27 06:45:23.101101', '1184', '11987'),
-  ('2022-05-27 06:45:23.101101', '1184', '11988'),
-  ('2022-05-27 06:45:23.102102', '1184', '11989'),
-  ('2022-05-27 06:45:23.102102', '1184', '11990'),
-  ('2022-05-27 06:45:23.102102', '1184', '11991')
+  ('2022-05-27 09:15:39.367367', '1189', '12018'),
+  ('2022-05-27 09:15:39.369369', '1189', '12019'),
+  ('2022-05-27 09:15:39.369369', '1189', '12020'),
+  ('2022-05-27 09:15:39.369369', '1189', '12021'),
+  ('2022-05-27 09:15:39.369369', '1189', '12022'),
+  ('2022-05-27 09:15:39.369369', '1189', '12023'),
+  ('2022-05-27 09:15:39.369369', '1189', '12024'),
+  ('2022-05-27 09:15:39.369369', '1189', '12025'),
+  ('2022-05-27 09:15:39.369369', '1189', '12026'),
+  ('2022-05-27 09:15:39.369369', '1189', '12027'),
+  ('2022-05-27 09:15:39.370370', '1189', '12028'),
+  ('2022-05-27 09:15:39.370370', '1189', '12029')
   ;
 
   // Update to source_song table
