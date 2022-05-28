@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of April 23, 2022', '2022-04-23 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-04-23/');
+    ('Billboard', 'The Hot 100', 'Week of April 30, 2022', '2022-04-30 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-04-30/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1188; // SELECT last_insert_rowid();
+  source_id = 1193; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,74 +105,65 @@
   songsData =
   [
     {
-        "title": "Right On",
-        "artist_name": "Lil Baby",
+        "title": "Don't Think Jesus",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2022-05-27 09:08:39.799799",
-        "source_id": 1188,
+        "capture_date": "2022-05-28 07:43:28.088088",
+        "source_id": 1193,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In A Minute",
-        "artist_name": "Lil Baby",
+        "title": "About Damn Time",
+        "artist_name": "Lizzo",
         "video_id": null,
-        "capture_date": "2022-05-27 09:08:39.799799",
-        "source_id": 1188,
-        "song_id": 11995,
+        "capture_date": "2022-05-28 07:43:28.092092",
+        "source_id": 1193,
+        "song_id": 12018,
         "duplicate": true
     },
     {
-        "title": "London",
-        "artist_name": "BIA ft. J. Cole",
+        "title": "Shake It",
+        "artist_name": "Kay Flock, Cardi B, Dougie B & Bory300",
         "video_id": null,
-        "capture_date": "2022-05-27 09:08:39.803803",
-        "source_id": 1188,
-        "song_id": 11997,
+        "capture_date": "2022-05-28 07:43:28.092092",
+        "source_id": 1193,
+        "song_id": 12021,
         "duplicate": true
     },
     {
-        "title": "Psychofreak",
-        "artist_name": "Camila Cabello ft. WILLOW",
+        "title": "Flowers",
+        "artist_name": "Lauren Spencer-Smith",
         "video_id": null,
-        "capture_date": "2022-05-27 09:08:39.805805",
-        "source_id": 1188,
-        "song_id": 11975,
-        "duplicate": true
-    },
-    {
-        "title": "Thump Shit",
-        "artist_name": "42 Dugg & EST Gee",
-        "video_id": null,
-        "capture_date": "2022-05-27 09:08:39.808808",
-        "source_id": 1188,
+        "capture_date": "2022-05-28 07:43:28.092092",
+        "source_id": 1193,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Treat Me",
-        "artist_name": "Chloe",
+        "title": "GINE",
+        "artist_name": "6ix9ine",
         "video_id": null,
-        "capture_date": "2022-05-27 09:08:39.808808",
-        "source_id": 1188,
+        "capture_date": "2022-05-28 07:43:28.095095",
+        "source_id": 1193,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Neck & Wrist",
-        "artist_name": "Pusha T ft. JAY-Z & Pharrell Williams",
+        "title": "Leave You Alone",
+        "artist_name": "Kane Brown",
         "video_id": null,
-        "capture_date": "2022-05-27 09:08:39.810810",
-        "source_id": 1188,
-        "song_id": 11992,
-        "duplicate": true
+        "capture_date": "2022-05-28 07:43:28.095095",
+        "source_id": 1193,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Praise The Lord",
-        "artist_name": "BRELAND ft. Thomas Rhett",
+        "title": "Fall In Love",
+        "artist_name": "Bailey Zimmerman",
         "video_id": null,
-        "capture_date": "2022-05-27 09:08:39.811811",
-        "source_id": 1188,
+        "capture_date": "2022-05-28 07:43:28.096096",
+        "source_id": 1193,
         "song_id": null,
         "duplicate": false
     }
@@ -215,10 +206,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Right On', 'Lil Baby', NULL),
-  ('Thump Shit', '42 Dugg & EST Gee', NULL),
-  ('Treat Me', 'Chloe', NULL),
-  ('Praise The Lord', 'BRELAND ft. Thomas Rhett', NULL)
+  ('Don’t Think Jesus', 'Morgan Wallen', NULL),
+  ('Flowers', 'Lauren Spencer-Smith', NULL),
+  ('GINE', '6ix9ine', NULL),
+  ('Leave You Alone', 'Kane Brown', NULL),
+  ('Fall In Love', 'Bailey Zimmerman', NULL)
   ;
 
    // Update to song table
@@ -229,7 +221,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12017; // SELECT last_insert_rowid();
+  song_id = 12050; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -269,14 +261,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-27 09:08:39.799799', '1188', '12014'),
-  ('2022-05-27 09:08:39.799799', '1188', '11995'),
-  ('2022-05-27 09:08:39.803803', '1188', '11997'),
-  ('2022-05-27 09:08:39.805805', '1188', '11975'),
-  ('2022-05-27 09:08:39.808808', '1188', '12015'),
-  ('2022-05-27 09:08:39.808808', '1188', '12016'),
-  ('2022-05-27 09:08:39.810810', '1188', '11992'),
-  ('2022-05-27 09:08:39.811811', '1188', '12017')
+  ('2022-05-28 07:43:28.088088', '1193', '12046'),
+  ('2022-05-28 07:43:28.092092', '1193', '12018'),
+  ('2022-05-28 07:43:28.092092', '1193', '12021'),
+  ('2022-05-28 07:43:28.092092', '1193', '12047'),
+  ('2022-05-28 07:43:28.095095', '1193', '12048'),
+  ('2022-05-28 07:43:28.095095', '1193', '12049'),
+  ('2022-05-28 07:43:28.096096', '1193', '12050')
   ;
 
   // Update to source_song table

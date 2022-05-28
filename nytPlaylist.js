@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Lizzo’s Disco Dance Party, and 11 More New Songs', '2022-04-15 08:00:14.000000', 'https://www.nytimes.com/2022/04/15/arts/music/playlist-lizzo-cardi-b-kay-flock.html');
+    ('New York Times', 'The Playlist', 'Mavis Staples and Levon Helm’s Last Show, and 12 More New Songs', '2022-04-22 07:45:06.000000', 'https://www.nytimes.com/2022/04/22/arts/music/playlist-mavis-staples-pusha-t-shakira.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1189; // SELECT last_insert_rowid();
+  source_id = 1194; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,110 +100,119 @@
   songsData =
   [
     {
-        "title": "About Damn Time",
-        "artist_name": "Lizzo",
+        "title": "You Got to Move",
+        "artist_name": "Mavis Staples and Levon Helm",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.367367",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.080080",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Crybaby",
-        "artist_name": "Amelia Moore",
+        "title": "Dreamin of the Past",
+        "artist_name": "Pusha T ft. Ye",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.369369",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.089089",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Some Things Take Time",
-        "artist_name": "Cisco Swank and Luke Titus ft. Phoelix",
+        "title": "Te Felicito",
+        "artist_name": "Shakira and Rauw Alejandro",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.369369",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.089089",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shake It",
-        "artist_name": "Kay Flock ft. Cardi B, Dougie B and Bory300",
+        "title": "420",
+        "artist_name": "Midas the Jagaban ft. Liya",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.369369",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.089089",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pandemonium",
-        "artist_name": "Edoheart",
+        "title": "Where You Are",
+        "artist_name": "PinkPantheress ft. Willow",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.369369",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.089089",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Camille’s Daughter",
-        "artist_name": "KeiyaA",
+        "title": "Winter Windows",
+        "artist_name": "Laura Veirs",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.369369",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.089089",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Giant Palm",
-        "artist_name": "Naima Bock",
+        "title": "There’s So Many People That Want to Be Loved",
+        "artist_name": "Sorry",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.369369",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.089089",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sidelines",
-        "artist_name": "Phoebe Bridgers",
+        "title": "M.I.A.",
+        "artist_name": "Ravyn Lenae",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.369369",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.089089",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Q. DeGraw",
-        "artist_name": "Wild Pink",
+        "title": "Crimes",
+        "artist_name": "Ruth Radelet",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.369369",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.090090",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Black Hole Era",
-        "artist_name": "Kisskadee",
+        "title": "Ya No Estoy Aquí",
+        "artist_name": "Helado Negro",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.369369",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.090090",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Playscape",
-        "artist_name": "FKA twigs",
+        "title": "U.D.I.D.",
+        "artist_name": "Lou Roy",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.370370",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.090090",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Benediction",
-        "artist_name": "Joel Ross",
+        "title": "The Man Who Never Sleeps",
+        "artist_name": "Charles Mingus",
         "video_id": null,
-        "capture_date": "2022-05-27 09:15:39.370370",
-        "source_id": 1189,
+        "capture_date": "2022-05-28 07:55:11.090090",
+        "source_id": 1194,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Abolition of Art, the Abolition of Freedom, the Abolition of You and Me",
+        "artist_name": "Fred Moten, Brandon López and Gerald Cleaver",
+        "video_id": null,
+        "capture_date": "2022-05-28 07:55:11.090090",
+        "source_id": 1194,
         "song_id": null,
         "duplicate": false
     }
@@ -246,18 +255,19 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('About Damn Time', 'Lizzo', NULL),
-  ('Crybaby', 'Amelia Moore', NULL),
-  ('Some Things Take Time', 'Cisco Swank and Luke Titus ft. Phoelix', NULL),
-  ('Shake It', 'Kay Flock ft. Cardi B, Dougie B and Bory300', NULL),
-  ('Pandemonium', 'Edoheart', NULL),
-  ('Camille’s Daughter', 'KeiyaA', NULL),
-  ('Giant Palm', 'Naima Bock', NULL),
-  ('Sidelines', 'Phoebe Bridgers', NULL),
-  ('Q. DeGraw', 'Wild Pink', NULL),
-  ('Black Hole Era', 'Kisskadee', NULL),
-  ('Playscape', 'FKA twigs', NULL),
-  ('Benediction', 'Joel Ross', NULL)
+  ('You Got to Move', 'Mavis Staples and Levon Helm', NULL),
+  ('Dreamin of the Past', 'Pusha T ft. Ye', NULL),
+  ('Te Felicito', 'Shakira and Rauw Alejandro', NULL),
+  ('420', 'Midas the Jagaban ft. Liya', NULL),
+  ('Where You Are', 'PinkPantheress ft. Willow', NULL),
+  ('Winter Windows', 'Laura Veirs', NULL),
+  ('There’s So Many People That Want to Be Loved', 'Sorry', NULL),
+  ('M.I.A.', 'Ravyn Lenae', NULL),
+  ('Crimes', 'Ruth Radelet', NULL),
+  ('Ya No Estoy Aquí', 'Helado Negro', NULL),
+  ('U.D.I.D.', 'Lou Roy', NULL),
+  ('The Man Who Never Sleeps', 'Charles Mingus', NULL),
+  ('The Abolition of Art, the Abolition of Freedom, the Abolition of You and Me', 'Fred Moten, Brandon López and Gerald Cleaver', NULL)
   ;
 
    // Update to song table
@@ -268,7 +278,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12029; // SELECT last_insert_rowid();
+  song_id = 12063; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -308,18 +318,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-27 09:15:39.367367', '1189', '12018'),
-  ('2022-05-27 09:15:39.369369', '1189', '12019'),
-  ('2022-05-27 09:15:39.369369', '1189', '12020'),
-  ('2022-05-27 09:15:39.369369', '1189', '12021'),
-  ('2022-05-27 09:15:39.369369', '1189', '12022'),
-  ('2022-05-27 09:15:39.369369', '1189', '12023'),
-  ('2022-05-27 09:15:39.369369', '1189', '12024'),
-  ('2022-05-27 09:15:39.369369', '1189', '12025'),
-  ('2022-05-27 09:15:39.369369', '1189', '12026'),
-  ('2022-05-27 09:15:39.369369', '1189', '12027'),
-  ('2022-05-27 09:15:39.370370', '1189', '12028'),
-  ('2022-05-27 09:15:39.370370', '1189', '12029')
+  ('2022-05-28 07:55:11.080080', '1194', '12051'),
+  ('2022-05-28 07:55:11.089089', '1194', '12052'),
+  ('2022-05-28 07:55:11.089089', '1194', '12053'),
+  ('2022-05-28 07:55:11.089089', '1194', '12054'),
+  ('2022-05-28 07:55:11.089089', '1194', '12055'),
+  ('2022-05-28 07:55:11.089089', '1194', '12056'),
+  ('2022-05-28 07:55:11.089089', '1194', '12057'),
+  ('2022-05-28 07:55:11.089089', '1194', '12058'),
+  ('2022-05-28 07:55:11.090090', '1194', '12059'),
+  ('2022-05-28 07:55:11.090090', '1194', '12060'),
+  ('2022-05-28 07:55:11.090090', '1194', '12061'),
+  ('2022-05-28 07:55:11.090090', '1194', '12062'),
+  ('2022-05-28 07:55:11.090090', '1194', '12063')
   ;
 
   // Update to source_song table

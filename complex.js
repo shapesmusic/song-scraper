@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Bas, Cardi B, Kay Flock, Quando Rondo, and More', '2022-04-15 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-cardi-b-bas-quando-rondo-and-more/ransom-the-game-circumstances');
+    ('Complex', 'Best New Music This Week', 'Pusha-T, Megan Thee Stallion, Southside, and More', '2022-04-22 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-april-22/redveil-pg-baby');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1190; // SELECT last_insert_rowid();
+  source_id = 1195; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,65 +101,74 @@
   songsData =
   [
     {
-        "title": "Shake It",
-        "artist_name": "Kay Flock ft. Cardi B, Dougie B, & Bory300",
+        "title": "Dreamin’ of the Past",
+        "artist_name": "Pusha-T ft. Ye",
         "video_id": null,
-        "capture_date": "2022-05-27 09:21:01.924924",
-        "source_id": 1190,
-        "song_id": 12021,
+        "capture_date": "2022-05-28 08:02:59.417417",
+        "source_id": 1195,
+        "song_id": 12052,
         "duplicate": true
     },
     {
-        "title": "The Others",
-        "artist_name": "Bas ft. Ari Lennox",
+        "title": "Plan B",
+        "artist_name": "Megan Thee Stallion",
         "video_id": null,
-        "capture_date": "2022-05-27 09:21:01.925925",
-        "source_id": 1190,
+        "capture_date": "2022-05-28 08:02:59.421421",
+        "source_id": 1195,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "24",
-        "artist_name": "Quando Rondo",
+        "title": "Hold That Heat",
+        "artist_name": "Southside ft. Travis Scott & Future",
         "video_id": null,
-        "capture_date": "2022-05-27 09:21:01.925925",
-        "source_id": 1190,
+        "capture_date": "2022-05-28 08:02:59.421421",
+        "source_id": 1195,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "About Damn Time",
-        "artist_name": "Lizzo",
+        "title": "Lights Off",
+        "artist_name": "Tay Keith ft. Gunna & Lil Durk",
         "video_id": null,
-        "capture_date": "2022-05-27 09:21:01.925925",
-        "source_id": 1190,
-        "song_id": 12018,
-        "duplicate": true
-    },
-    {
-        "title": "Half Tee Half Beast",
-        "artist_name": "Tee Grizzley",
-        "video_id": null,
-        "capture_date": "2022-05-27 09:21:01.925925",
-        "source_id": 1190,
+        "capture_date": "2022-05-28 08:02:59.422422",
+        "source_id": 1195,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Last One Left",
-        "artist_name": "Fredo Bang ft. Roddy Ricch",
+        "title": "Please Do Not Lean",
+        "artist_name": "Daniel Caesar ft. BADBADNOTGOOD",
         "video_id": null,
-        "capture_date": "2022-05-27 09:21:01.925925",
-        "source_id": 1190,
+        "capture_date": "2022-05-28 08:02:59.422422",
+        "source_id": 1195,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Circumstances",
-        "artist_name": "Ransom ft. The Game",
+        "title": "Couldn’t Wait for It",
+        "artist_name": "Blxst ft. Rick Ross",
         "video_id": null,
-        "capture_date": "2022-05-27 09:21:01.925925",
-        "source_id": 1190,
+        "capture_date": "2022-05-28 08:02:59.422422",
+        "source_id": 1195,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "2Step (Remix)",
+        "artist_name": "Ed Sheeran ft. Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-05-28 08:02:59.422422",
+        "source_id": 1195,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "pg baby",
+        "artist_name": "Redveil",
+        "video_id": null,
+        "capture_date": "2022-05-28 08:02:59.422422",
+        "source_id": 1195,
         "song_id": null,
         "duplicate": false
     }
@@ -202,11 +211,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Others', 'Bas ft. Ari Lennox', NULL),
-  ('24', 'Quando Rondo', NULL),
-  ('Half Tee Half Beast', 'Tee Grizzley', NULL),
-  ('Last One Left', 'Fredo Bang ft. Roddy Ricch', NULL),
-  ('Circumstances', 'Ransom ft. The Game', NULL)
+  ('Plan B', 'Megan Thee Stallion', NULL),
+  ('Hold That Heat', 'Southside ft. Travis Scott & Future', NULL),
+  ('Lights Off', 'Tay Keith ft. Gunna & Lil Durk', NULL),
+  ('Please Do Not Lean', 'Daniel Caesar ft. BADBADNOTGOOD', NULL),
+  ('Couldn’t Wait for It', 'Blxst ft. Rick Ross', NULL),
+  ('2Step (Remix)', 'Ed Sheeran ft. Lil Baby', NULL),
+  ('pg baby', 'Redveil', NULL)
   ;
 
    // Update to song table
@@ -217,7 +228,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12034; // SELECT last_insert_rowid();
+  song_id = 12070; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -257,13 +268,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-27 09:21:01.924924', '1190', '12021'),
-  ('2022-05-27 09:21:01.925925', '1190', '12030'),
-  ('2022-05-27 09:21:01.925925', '1190', '12031'),
-  ('2022-05-27 09:21:01.925925', '1190', '12018'),
-  ('2022-05-27 09:21:01.925925', '1190', '12032'),
-  ('2022-05-27 09:21:01.925925', '1190', '12033'),
-  ('2022-05-27 09:21:01.925925', '1190', '12034')
+  ('2022-05-28 08:02:59.417417', '1195', '12052'),
+  ('2022-05-28 08:02:59.421421', '1195', '12064'),
+  ('2022-05-28 08:02:59.421421', '1195', '12065'),
+  ('2022-05-28 08:02:59.422422', '1195', '12066'),
+  ('2022-05-28 08:02:59.422422', '1195', '12067'),
+  ('2022-05-28 08:02:59.422422', '1195', '12068'),
+  ('2022-05-28 08:02:59.422422', '1195', '12069'),
+  ('2022-05-28 08:02:59.422422', '1195', '12070')
   ;
 
   // Update to source_song table

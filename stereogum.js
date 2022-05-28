@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of April 15, 2022', '2022-04-15 12:00:00.000000', 'https://www.stereogum.com/2183552/the-5-best-songs-of-the-week-429/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of April 22, 2022', '2022-04-22 12:00:00.000000', 'https://www.stereogum.com/2184454/the-5-best-songs-of-the-week-430/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1192; // SELECT last_insert_rowid();
+  source_id = 1197; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,47 +101,47 @@
   songsData =
   [
     {
-        "title": "Q. Degraw",
-        "artist_name": "Wild Pink",
+        "title": "Unholy Affliction",
+        "artist_name": "Soccer Mommy",
         "video_id": null,
-        "capture_date": "2022-05-27 09:38:46.503503",
-        "source_id": 1192,
-        "song_id": 12026,
+        "capture_date": "2022-05-28 08:22:07.681681",
+        "source_id": 1197,
+        "song_id": 12076,
         "duplicate": true
     },
     {
-        "title": "Four Walls",
-        "artist_name": "Warthog",
+        "title": "Spirit Liberation",
+        "artist_name": "Mutually Assured Destruction",
         "video_id": null,
-        "capture_date": "2022-05-27 09:38:46.505505",
-        "source_id": 1192,
+        "capture_date": "2022-05-28 08:22:07.682682",
+        "source_id": 1197,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Save Me",
-        "artist_name": "Empress Of",
+        "title": "Betelguese",
+        "artist_name": "Maria BC",
         "video_id": null,
-        "capture_date": "2022-05-27 09:38:46.505505",
-        "source_id": 1192,
+        "capture_date": "2022-05-28 08:22:07.682682",
+        "source_id": 1197,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bliss",
-        "artist_name": "Yung Lean",
+        "title": "Free In The Knowledge",
+        "artist_name": "The Smile",
         "video_id": null,
-        "capture_date": "2022-05-27 09:38:46.505505",
-        "source_id": 1192,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-05-28 08:22:07.682682",
+        "source_id": 1197,
+        "song_id": 12079,
+        "duplicate": true
     },
     {
-        "title": "Heavy Water",
-        "artist_name": "billy woods",
+        "title": "Talk For Hours",
+        "artist_name": "High Vis",
         "video_id": null,
-        "capture_date": "2022-05-27 09:38:46.505505",
-        "source_id": 1192,
+        "capture_date": "2022-05-28 08:22:07.682682",
+        "source_id": 1197,
         "song_id": null,
         "duplicate": false
     }
@@ -184,10 +184,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Four Walls', 'Warthog', NULL),
-  ('Save Me', 'Empress Of', NULL),
-  ('Bliss', 'Yung Lean', NULL),
-  ('Heavy Water', 'billy woods', NULL)
+  ('Spirit Liberation', 'Mutually Assured Destruction', NULL),
+  ('Betelguese', 'Maria BC', NULL),
+  ('Talk For Hours', 'High Vis', NULL)
   ;
 
    // Update to song table
@@ -198,7 +197,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12045; // SELECT last_insert_rowid();
+  song_id = 12082; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -238,11 +237,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-27 09:38:46.503503', '1192', '12026'),
-  ('2022-05-27 09:38:46.505505', '1192', '12042'),
-  ('2022-05-27 09:38:46.505505', '1192', '12043'),
-  ('2022-05-27 09:38:46.505505', '1192', '12044'),
-  ('2022-05-27 09:38:46.505505', '1192', '12045')
+  ('2022-05-28 08:22:07.681681', '1197', '12076'),
+  ('2022-05-28 08:22:07.682682', '1197', '12080'),
+  ('2022-05-28 08:22:07.682682', '1197', '12081'),
+  ('2022-05-28 08:22:07.682682', '1197', '12079'),
+  ('2022-05-28 08:22:07.682682', '1197', '12082')
   ;
 
   // Update to source_song table

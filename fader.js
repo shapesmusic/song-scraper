@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 249 // from the chart page
+  fader_no = 250 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -48,9 +48,9 @@
   // Replace any ' in strings with ’
 
   INSERT INTO source
-    (parent_entity, parent_stream, instance_name, publication_date, location)
-  VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 249 Week of April 18, 2022', '2022-04-18 12:00:00.000000', 'https://www.thefader.com/2022/05/27/isaiah-rashad-comes-out-as-sexually-fluid-in-new-interview');
+  (parent_entity, parent_stream, instance_name, publication_date, location)
+VALUES
+  ('The Fader', '10 songs you need in your life this week', 'No. 250 Week of April 25, 2022', '2022-04-25 12:00:00.000000', 'https://www.thefader.com/2022/04/25/songs-you-need-blackhaine-arin-ray-lil-poppa');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1191; // SELECT last_insert_rowid();
+  source_id = 1196; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Camille’s Daughter",
-        "artist_name": "KeiyaA",
+        "title": "Stained Materials",
+        "artist_name": "Blackhaine",
         "video_id": null,
-        "capture_date": "2022-05-27 09:33:04.483483",
-        "source_id": 1191,
-        "song_id": 12023,
+        "capture_date": "2022-05-28 08:11:23.145145",
+        "source_id": 1196,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "H Spot",
+        "artist_name": "Lil Poppa ft. Yo Gotti",
+        "video_id": null,
+        "capture_date": "2022-05-28 08:11:23.145145",
+        "source_id": 1196,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "VICES",
+        "artist_name": "Josh Levi",
+        "video_id": null,
+        "capture_date": "2022-05-28 08:11:23.145145",
+        "source_id": 1196,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "graves",
+        "artist_name": "Purity Ring",
+        "video_id": null,
+        "capture_date": "2022-05-28 08:11:23.145145",
+        "source_id": 1196,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Mood",
+        "artist_name": "Arin Ray ft. D Smoke",
+        "video_id": null,
+        "capture_date": "2022-05-28 08:11:23.145145",
+        "source_id": 1196,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Unholy Affliction",
+        "artist_name": "Soccer Mommy",
+        "video_id": null,
+        "capture_date": "2022-05-28 08:11:23.145145",
+        "source_id": 1196,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Audio",
+        "artist_name": "easyFun",
+        "video_id": null,
+        "capture_date": "2022-05-28 08:11:23.145145",
+        "source_id": 1196,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fool’s Paradise",
+        "artist_name": "Isaac Dunbar",
+        "video_id": null,
+        "capture_date": "2022-05-28 08:11:23.145145",
+        "source_id": 1196,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Mainline Song",
+        "artist_name": "Spiritualized",
+        "video_id": null,
+        "capture_date": "2022-05-28 08:11:23.145145",
+        "source_id": 1196,
+        "song_id": 11845,
         "duplicate": true
     },
     {
-        "title": "Things You Said",
-        "artist_name": "gglum",
+        "title": "Free In The Knowledge",
+        "artist_name": "The Smile",
         "video_id": null,
-        "capture_date": "2022-05-27 09:33:04.483483",
-        "source_id": 1191,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Neon Memories",
-        "artist_name": "death's dynamic shroud",
-        "video_id": null,
-        "capture_date": "2022-05-27 09:33:04.483483",
-        "source_id": 1191,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Stitch",
-        "artist_name": "Alex G",
-        "video_id": null,
-        "capture_date": "2022-05-27 09:33:04.483483",
-        "source_id": 1191,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Memories",
-        "artist_name": "Conan Gray",
-        "video_id": null,
-        "capture_date": "2022-05-27 09:33:04.483483",
-        "source_id": 1191,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sidelines",
-        "artist_name": "Phoebe Bridgers",
-        "video_id": null,
-        "capture_date": "2022-05-27 09:33:04.483483",
-        "source_id": 1191,
-        "song_id": 12025,
-        "duplicate": true
-    },
-    {
-        "title": "AYE! (Free The Homies)",
-        "artist_name": "Vince Staples",
-        "video_id": null,
-        "capture_date": "2022-05-27 09:33:04.483483",
-        "source_id": 1191,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Treat Me",
-        "artist_name": "Chlöe",
-        "video_id": null,
-        "capture_date": "2022-05-27 09:33:04.483483",
-        "source_id": 1191,
-        "song_id": 12016,
-        "duplicate": true
-    },
-    {
-        "title": "Let's Do It Again",
-        "artist_name": "Jamie xx",
-        "video_id": null,
-        "capture_date": "2022-05-27 09:33:04.483483",
-        "source_id": 1191,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Alive Ain't Always Living",
-        "artist_name": "Quelle Chris",
-        "video_id": null,
-        "capture_date": "2022-05-27 09:33:04.483483",
-        "source_id": 1191,
+        "capture_date": "2022-05-28 08:11:23.145145",
+        "source_id": 1196,
         "song_id": null,
         "duplicate": false
     }
@@ -230,13 +230,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Things You Said', 'gglum', NULL),
-  ('Neon Memories', 'death’s dynamic shroud', NULL),
-  ('Stitch', 'Alex G', NULL),
-  ('Memories', 'Conan Gray', NULL),
-  ('AYE! (Free The Homies)', 'Vince Staples', NULL),
-  ('Let’s Do It Again', 'Jamie xx', NULL),
-  ('Alive Ain’t Always Living', 'Quelle Chris', NULL)
+  ('Stained Materials', 'Blackhaine', NULL),
+  ('H Spot', 'Lil Poppa ft. Yo Gotti', NULL),
+  ('VICES', 'Josh Levi', NULL),
+  ('graves', 'Purity Ring', NULL),
+  ('The Mood', 'Arin Ray ft. D Smoke', NULL),
+  ('Unholy Affliction', 'Soccer Mommy', NULL),
+  ('Audio', 'easyFun', NULL),
+  ('Fool’s Paradise', 'Isaac Dunbar', NULL),
+  ('Free In The Knowledge', 'The Smile', NULL)
   ;
 
    // Update to song table
@@ -247,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12041; // SELECT last_insert_rowid();
+  song_id = 12079; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -287,16 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-27 09:33:04.483483', '1191', '12023'),
-  ('2022-05-27 09:33:04.483483', '1191', '12035'),
-  ('2022-05-27 09:33:04.483483', '1191', '12036'),
-  ('2022-05-27 09:33:04.483483', '1191', '12037'),
-  ('2022-05-27 09:33:04.483483', '1191', '12038'),
-  ('2022-05-27 09:33:04.483483', '1191', '12025'),
-  ('2022-05-27 09:33:04.483483', '1191', '12039'),
-  ('2022-05-27 09:33:04.483483', '1191', '12016'),
-  ('2022-05-27 09:33:04.483483', '1191', '12040'),
-  ('2022-05-27 09:33:04.483483', '1191', '12041')
+  ('2022-05-28 08:11:23.145145', '1196', '12071'),
+  ('2022-05-28 08:11:23.145145', '1196', '12072'),
+  ('2022-05-28 08:11:23.145145', '1196', '12073'),
+  ('2022-05-28 08:11:23.145145', '1196', '12074'),
+  ('2022-05-28 08:11:23.145145', '1196', '12075'),
+  ('2022-05-28 08:11:23.145145', '1196', '12076'),
+  ('2022-05-28 08:11:23.145145', '1196', '12077'),
+  ('2022-05-28 08:11:23.145145', '1196', '12078'),
+  ('2022-05-28 08:11:23.145145', '1196', '11845'),
+  ('2022-05-28 08:11:23.145145', '1196', '12079')
   ;
 
   // Update to source_song table
