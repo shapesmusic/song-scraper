@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Pusha-T, Megan Thee Stallion, Southside, and More', '2022-04-22 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-april-22/redveil-pg-baby');
+    ('Complex', 'Best New Music This Week', 'Future, Lil Baby, Giveon, and More', '2022-04-29 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-april-29/tanna-leone-fatal-attraction');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1195; // SELECT last_insert_rowid();
+  source_id = 1200; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,74 +101,119 @@
   songsData =
   [
     {
-        "title": "Dreamin’ of the Past",
-        "artist_name": "Pusha-T ft. Ye",
+        "title": "I’m On One",
+        "artist_name": "Future ft. Drake",
         "video_id": null,
-        "capture_date": "2022-05-28 08:02:59.417417",
-        "source_id": 1195,
-        "song_id": 12052,
+        "capture_date": "2022-05-28 05:31:18.953953",
+        "source_id": 1200,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Frozen",
+        "artist_name": "Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lie Again",
+        "artist_name": "Giveon",
+        "video_id": null,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
+        "song_id": 12098,
         "duplicate": true
     },
     {
-        "title": "Plan B",
-        "artist_name": "Megan Thee Stallion",
+        "title": "Everything",
+        "artist_name": "Kehlani",
         "video_id": null,
-        "capture_date": "2022-05-28 08:02:59.421421",
-        "source_id": 1195,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hold That Heat",
-        "artist_name": "Southside ft. Travis Scott & Future",
+        "title": "No Handoutz",
+        "artist_name": "Internet Money ft. Yeat",
         "video_id": null,
-        "capture_date": "2022-05-28 08:02:59.421421",
-        "source_id": 1195,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lights Off",
-        "artist_name": "Tay Keith ft. Gunna & Lil Durk",
+        "title": "Honest",
+        "artist_name": "Justin Bieber ft. Don Toliver",
         "video_id": null,
-        "capture_date": "2022-05-28 08:02:59.422422",
-        "source_id": 1195,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Please Do Not Lean",
-        "artist_name": "Daniel Caesar ft. BADBADNOTGOOD",
+        "title": "Ninety One",
+        "artist_name": "Action Bronson",
         "video_id": null,
-        "capture_date": "2022-05-28 08:02:59.422422",
-        "source_id": 1195,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Couldn’t Wait for It",
-        "artist_name": "Blxst ft. Rick Ross",
+        "title": "Goes By So Fast",
+        "artist_name": "Toro Y Moi",
         "video_id": null,
-        "capture_date": "2022-05-28 08:02:59.422422",
-        "source_id": 1195,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "2Step (Remix)",
-        "artist_name": "Ed Sheeran ft. Lil Baby",
+        "title": "They Don’t Know",
+        "artist_name": "Bobby Shmurda",
         "video_id": null,
-        "capture_date": "2022-05-28 08:02:59.422422",
-        "source_id": 1195,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "pg baby",
-        "artist_name": "Redveil",
+        "title": "Going Up",
+        "artist_name": "Lil Tjay",
         "video_id": null,
-        "capture_date": "2022-05-28 08:02:59.422422",
-        "source_id": 1195,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dog Food",
+        "artist_name": "IDK ft. Denzel Curry",
+        "video_id": null,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Butterfly Doors",
+        "artist_name": "Reuben Vincent",
+        "video_id": null,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fatal Attraction",
+        "artist_name": "Tanna Leone",
+        "video_id": null,
+        "capture_date": "2022-05-28 05:31:18.954954",
+        "source_id": 1200,
         "song_id": null,
         "duplicate": false
     }
@@ -211,13 +256,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Plan B', 'Megan Thee Stallion', NULL),
-  ('Hold That Heat', 'Southside ft. Travis Scott & Future', NULL),
-  ('Lights Off', 'Tay Keith ft. Gunna & Lil Durk', NULL),
-  ('Please Do Not Lean', 'Daniel Caesar ft. BADBADNOTGOOD', NULL),
-  ('Couldn’t Wait for It', 'Blxst ft. Rick Ross', NULL),
-  ('2Step (Remix)', 'Ed Sheeran ft. Lil Baby', NULL),
-  ('pg baby', 'Redveil', NULL)
+  ('I’m On One', 'Future ft. Drake', NULL),
+  ('Frozen', 'Lil Baby', NULL),
+  ('Everything', 'Kehlani', NULL),
+  ('No Handoutz', 'Internet Money ft. Yeat', NULL),
+  ('Honest', 'Justin Bieber ft. Don Toliver', NULL),
+  ('Ninety One', 'Action Bronson', NULL),
+  ('Goes By So Fast', 'Toro Y Moi', NULL),
+  ('They Don’t Know', 'Bobby Shmurda', NULL),
+  ('Going Up', 'Lil Tjay', NULL),
+  ('Dog Food', 'IDK ft. Denzel Curry', NULL),
+  ('Butterfly Doors', 'Reuben Vincent', NULL),
+  ('Fatal Attraction', 'Tanna Leone', NULL)
   ;
 
    // Update to song table
@@ -228,7 +278,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12070; // SELECT last_insert_rowid();
+  song_id = 12111; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -268,14 +318,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-28 08:02:59.417417', '1195', '12052'),
-  ('2022-05-28 08:02:59.421421', '1195', '12064'),
-  ('2022-05-28 08:02:59.421421', '1195', '12065'),
-  ('2022-05-28 08:02:59.422422', '1195', '12066'),
-  ('2022-05-28 08:02:59.422422', '1195', '12067'),
-  ('2022-05-28 08:02:59.422422', '1195', '12068'),
-  ('2022-05-28 08:02:59.422422', '1195', '12069'),
-  ('2022-05-28 08:02:59.422422', '1195', '12070')
+  ('2022-05-28 05:31:18.953953', '1200', '12100'),
+  ('2022-05-28 05:31:18.954954', '1200', '12101'),
+  ('2022-05-28 05:31:18.954954', '1200', '12098'),
+  ('2022-05-28 05:31:18.954954', '1200', '12102'),
+  ('2022-05-28 05:31:18.954954', '1200', '12103'),
+  ('2022-05-28 05:31:18.954954', '1200', '12104'),
+  ('2022-05-28 05:31:18.954954', '1200', '12105'),
+  ('2022-05-28 05:31:18.954954', '1200', '12106'),
+  ('2022-05-28 05:31:18.954954', '1200', '12107'),
+  ('2022-05-28 05:31:18.954954', '1200', '12108'),
+  ('2022-05-28 05:31:18.954954', '1200', '12109'),
+  ('2022-05-28 05:31:18.954954', '1200', '12110'),
+  ('2022-05-28 05:31:18.954954', '1200', '12111')
   ;
 
   // Update to source_song table

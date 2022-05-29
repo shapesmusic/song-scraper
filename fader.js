@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 250 // from the chart page
+  fader_no = 251 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -48,9 +48,9 @@
   // Replace any ' in strings with ’
 
   INSERT INTO source
-  (parent_entity, parent_stream, instance_name, publication_date, location)
-VALUES
-  ('The Fader', '10 songs you need in your life this week', 'No. 250 Week of April 25, 2022', '2022-04-25 12:00:00.000000', 'https://www.thefader.com/2022/04/25/songs-you-need-blackhaine-arin-ray-lil-poppa');
+    (parent_entity, parent_stream, instance_name, publication_date, location)
+  VALUES
+    ('The Fader', '10 songs you need in your life this week', 'No. 251 Week of May 02, 2022', '2022-05-02 12:00:00.000000', 'https://www.thefader.com/2022/05/02/songs-you-need-marry-lattimore-pooh-shiesty-jenevieve-future-holly-humberstone');
 
   // Update to source table
 
@@ -59,7 +59,7 @@ VALUES
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1196; // SELECT last_insert_rowid();
+  source_id = 1201; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -102,92 +102,92 @@ VALUES
   songsData =
   [
     {
-        "title": "Stained Materials",
-        "artist_name": "Blackhaine",
+        "title": "Sleep Tight",
+        "artist_name": "Holly Humberstone",
         "video_id": null,
-        "capture_date": "2022-05-28 08:11:23.145145",
-        "source_id": 1196,
+        "capture_date": "2022-05-28 05:36:07.396396",
+        "source_id": 1201,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "H Spot",
-        "artist_name": "Lil Poppa ft. Yo Gotti",
+        "title": "coyote (2015-2022)",
+        "artist_name": "Teen Suicide",
         "video_id": null,
-        "capture_date": "2022-05-28 08:11:23.145145",
-        "source_id": 1196,
+        "capture_date": "2022-05-28 05:36:07.397397",
+        "source_id": 1201,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "VICES",
-        "artist_name": "Josh Levi",
+        "title": "Medallion",
+        "artist_name": "Jenevieve ft. Ghostface Killah",
         "video_id": null,
-        "capture_date": "2022-05-28 08:11:23.145145",
-        "source_id": 1196,
+        "capture_date": "2022-05-28 05:36:07.397397",
+        "source_id": 1201,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "graves",
-        "artist_name": "Purity Ring",
+        "title": "Didn’t See The Comet",
+        "artist_name": "Mary Lattimore and Paul Sukeena",
         "video_id": null,
-        "capture_date": "2022-05-28 08:11:23.145145",
-        "source_id": 1196,
+        "capture_date": "2022-05-28 05:36:07.398398",
+        "source_id": 1201,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Mood",
-        "artist_name": "Arin Ray ft. D Smoke",
+        "title": "Everyday (sunshine)",
+        "artist_name": "V.C.R",
         "video_id": null,
-        "capture_date": "2022-05-28 08:11:23.145145",
-        "source_id": 1196,
+        "capture_date": "2022-05-28 05:36:07.398398",
+        "source_id": 1201,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Unholy Affliction",
-        "artist_name": "Soccer Mommy",
+        "title": "Wait For U",
+        "artist_name": "Future ft. Tems & Drake",
         "video_id": null,
-        "capture_date": "2022-05-28 08:11:23.145145",
-        "source_id": 1196,
+        "capture_date": "2022-05-28 05:36:07.398398",
+        "source_id": 1201,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Audio",
-        "artist_name": "easyFun",
+        "title": "Squeeze On Em",
+        "artist_name": "Pooh Shiesty ft. 42 Dugg",
         "video_id": null,
-        "capture_date": "2022-05-28 08:11:23.145145",
-        "source_id": 1196,
+        "capture_date": "2022-05-28 05:36:07.398398",
+        "source_id": 1201,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fool’s Paradise",
-        "artist_name": "Isaac Dunbar",
+        "title": "Quagen Tris & Chardonnay",
+        "artist_name": "YungManny",
         "video_id": null,
-        "capture_date": "2022-05-28 08:11:23.145145",
-        "source_id": 1196,
+        "capture_date": "2022-05-28 05:36:07.398398",
+        "source_id": 1201,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Mainline Song",
-        "artist_name": "Spiritualized",
+        "title": "Give Me A Kiss",
+        "artist_name": "Lolo Zouaï",
         "video_id": null,
-        "capture_date": "2022-05-28 08:11:23.145145",
-        "source_id": 1196,
-        "song_id": 11845,
-        "duplicate": true
+        "capture_date": "2022-05-28 05:36:07.398398",
+        "source_id": 1201,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Free In The Knowledge",
-        "artist_name": "The Smile",
+        "title": "Skyline",
+        "artist_name": "Khalid",
         "video_id": null,
-        "capture_date": "2022-05-28 08:11:23.145145",
-        "source_id": 1196,
+        "capture_date": "2022-05-28 05:36:07.398398",
+        "source_id": 1201,
         "song_id": null,
         "duplicate": false
     }
@@ -230,15 +230,16 @@ VALUES
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Stained Materials', 'Blackhaine', NULL),
-  ('H Spot', 'Lil Poppa ft. Yo Gotti', NULL),
-  ('VICES', 'Josh Levi', NULL),
-  ('graves', 'Purity Ring', NULL),
-  ('The Mood', 'Arin Ray ft. D Smoke', NULL),
-  ('Unholy Affliction', 'Soccer Mommy', NULL),
-  ('Audio', 'easyFun', NULL),
-  ('Fool’s Paradise', 'Isaac Dunbar', NULL),
-  ('Free In The Knowledge', 'The Smile', NULL)
+  ('Sleep Tight', 'Holly Humberstone', NULL),
+  ('coyote (2015-2022)', 'Teen Suicide', NULL),
+  ('Medallion', 'Jenevieve ft. Ghostface Killah', NULL),
+  ('Didn’t See The Comet', 'Mary Lattimore and Paul Sukeena', NULL),
+  ('Everyday (sunshine)', 'V.C.R', NULL),
+  ('Wait For U', 'Future ft. Tems & Drake', NULL),
+  ('Squeeze On Em', 'Pooh Shiesty ft. 42 Dugg', NULL),
+  ('Quagen Tris & Chardonnay', 'YungManny', NULL),
+  ('Give Me A Kiss', 'Lolo Zouaï', NULL),
+  ('Skyline', 'Khalid', NULL)
   ;
 
    // Update to song table
@@ -249,7 +250,7 @@ VALUES
  //
 
   // Get the last song_id inserted
-  song_id = 12079; // SELECT last_insert_rowid();
+  song_id = 12121; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +290,16 @@ VALUES
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-28 08:11:23.145145', '1196', '12071'),
-  ('2022-05-28 08:11:23.145145', '1196', '12072'),
-  ('2022-05-28 08:11:23.145145', '1196', '12073'),
-  ('2022-05-28 08:11:23.145145', '1196', '12074'),
-  ('2022-05-28 08:11:23.145145', '1196', '12075'),
-  ('2022-05-28 08:11:23.145145', '1196', '12076'),
-  ('2022-05-28 08:11:23.145145', '1196', '12077'),
-  ('2022-05-28 08:11:23.145145', '1196', '12078'),
-  ('2022-05-28 08:11:23.145145', '1196', '11845'),
-  ('2022-05-28 08:11:23.145145', '1196', '12079')
+  ('2022-05-28 05:36:07.396396', '1201', '12112'),
+  ('2022-05-28 05:36:07.397397', '1201', '12113'),
+  ('2022-05-28 05:36:07.397397', '1201', '12114'),
+  ('2022-05-28 05:36:07.398398', '1201', '12115'),
+  ('2022-05-28 05:36:07.398398', '1201', '12116'),
+  ('2022-05-28 05:36:07.398398', '1201', '12117'),
+  ('2022-05-28 05:36:07.398398', '1201', '12118'),
+  ('2022-05-28 05:36:07.398398', '1201', '12119'),
+  ('2022-05-28 05:36:07.398398', '1201', '12120'),
+  ('2022-05-28 05:36:07.398398', '1201', '12121')
   ;
 
   // Update to source_song table

@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Mavis Staples and Levon Helm’s Last Show, and 12 More New Songs', '2022-04-22 07:45:06.000000', 'https://www.nytimes.com/2022/04/22/arts/music/playlist-mavis-staples-pusha-t-shakira.html');
+    ('New York Times', 'The Playlist', 'Sam Smith’s Ode to Self-Acceptance, and 10 More New Songs', '2022-05-02 05:47:15.000000', 'https://www.nytimes.com/2022/04/29/arts/music/playlist-sam-smith-wilco.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1194; // SELECT last_insert_rowid();
+  source_id = 1199; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,119 +100,92 @@
   songsData =
   [
     {
-        "title": "You Got to Move",
-        "artist_name": "Mavis Staples and Levon Helm",
+        "title": "Love Me More",
+        "artist_name": "Sam Smith",
         "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.080080",
-        "source_id": 1194,
+        "capture_date": "2022-05-28 08:35:57.030030",
+        "source_id": 1199,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dreamin of the Past",
-        "artist_name": "Pusha T ft. Ye",
+        "title": "Up the Mountain",
+        "artist_name": "Regina Spektor",
         "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.089089",
-        "source_id": 1194,
+        "capture_date": "2022-05-28 08:35:57.036036",
+        "source_id": 1199,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Te Felicito",
-        "artist_name": "Shakira and Rauw Alejandro",
+        "title": "Falling Apart (Right Now)",
+        "artist_name": "Wilco",
         "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.089089",
-        "source_id": 1194,
+        "capture_date": "2022-05-28 08:35:57.036036",
+        "source_id": 1199,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "420",
-        "artist_name": "Midas the Jagaban ft. Liya",
+        "title": "Estilazo",
+        "artist_name": "Marshmello and Tokischa",
         "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.089089",
-        "source_id": 1194,
+        "capture_date": "2022-05-28 08:35:57.036036",
+        "source_id": 1199,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Where You Are",
-        "artist_name": "PinkPantheress ft. Willow",
+        "title": "Omniscient (Mycelium)",
+        "artist_name": "I Am",
         "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.089089",
-        "source_id": 1194,
+        "capture_date": "2022-05-28 08:35:57.036036",
+        "source_id": 1199,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Winter Windows",
-        "artist_name": "Laura Veirs",
+        "title": "El Paraguas",
+        "artist_name": "Adrian Quesada ft. Gabriel Garzón-Montano",
         "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.089089",
-        "source_id": 1194,
+        "capture_date": "2022-05-28 08:35:57.037037",
+        "source_id": 1199,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "There’s So Many People That Want to Be Loved",
-        "artist_name": "Sorry",
+        "title": "Vocé",
+        "artist_name": "Maria de Fátima",
         "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.089089",
-        "source_id": 1194,
+        "capture_date": "2022-05-28 08:35:57.038038",
+        "source_id": 1199,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "M.I.A.",
-        "artist_name": "Ravyn Lenae",
+        "title": "In Some Far Off Place",
+        "artist_name": "Miles Okazaki",
         "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.089089",
-        "source_id": 1194,
+        "capture_date": "2022-05-28 08:35:57.038038",
+        "source_id": 1199,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Crimes",
-        "artist_name": "Ruth Radelet",
+        "title": "Lie Again",
+        "artist_name": "Giveon",
         "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.090090",
-        "source_id": 1194,
+        "capture_date": "2022-05-28 08:35:57.039039",
+        "source_id": 1199,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ya No Estoy Aquí",
-        "artist_name": "Helado Negro",
+        "title": "Runaway",
+        "artist_name": "Skylar Grey",
         "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.090090",
-        "source_id": 1194,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "U.D.I.D.",
-        "artist_name": "Lou Roy",
-        "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.090090",
-        "source_id": 1194,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Man Who Never Sleeps",
-        "artist_name": "Charles Mingus",
-        "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.090090",
-        "source_id": 1194,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Abolition of Art, the Abolition of Freedom, the Abolition of You and Me",
-        "artist_name": "Fred Moten, Brandon López and Gerald Cleaver",
-        "video_id": null,
-        "capture_date": "2022-05-28 07:55:11.090090",
-        "source_id": 1194,
+        "capture_date": "2022-05-28 08:35:57.039039",
+        "source_id": 1199,
         "song_id": null,
         "duplicate": false
     }
@@ -255,19 +228,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('You Got to Move', 'Mavis Staples and Levon Helm', NULL),
-  ('Dreamin of the Past', 'Pusha T ft. Ye', NULL),
-  ('Te Felicito', 'Shakira and Rauw Alejandro', NULL),
-  ('420', 'Midas the Jagaban ft. Liya', NULL),
-  ('Where You Are', 'PinkPantheress ft. Willow', NULL),
-  ('Winter Windows', 'Laura Veirs', NULL),
-  ('There’s So Many People That Want to Be Loved', 'Sorry', NULL),
-  ('M.I.A.', 'Ravyn Lenae', NULL),
-  ('Crimes', 'Ruth Radelet', NULL),
-  ('Ya No Estoy Aquí', 'Helado Negro', NULL),
-  ('U.D.I.D.', 'Lou Roy', NULL),
-  ('The Man Who Never Sleeps', 'Charles Mingus', NULL),
-  ('The Abolition of Art, the Abolition of Freedom, the Abolition of You and Me', 'Fred Moten, Brandon López and Gerald Cleaver', NULL)
+  ('Love Me More', 'Sam Smith', NULL),
+  ('Up the Mountain', 'Regina Spektor', NULL),
+  ('Falling Apart (Right Now)', 'Wilco', NULL),
+  ('Estilazo', 'Marshmello and Tokischa', NULL),
+  ('Omniscient (Mycelium)', 'I Am', NULL),
+  ('El Paraguas', 'Adrian Quesada ft. Gabriel Garzón-Montano', NULL),
+  ('Vocé', 'Maria de Fátima', NULL),
+  ('In Some Far Off Place', 'Miles Okazaki', NULL),
+  ('Lie Again', 'Giveon', NULL),
+  ('Runaway', 'Skylar Grey', NULL)
   ;
 
    // Update to song table
@@ -278,7 +248,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12063; // SELECT last_insert_rowid();
+  song_id = 12099; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -318,19 +288,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-28 07:55:11.080080', '1194', '12051'),
-  ('2022-05-28 07:55:11.089089', '1194', '12052'),
-  ('2022-05-28 07:55:11.089089', '1194', '12053'),
-  ('2022-05-28 07:55:11.089089', '1194', '12054'),
-  ('2022-05-28 07:55:11.089089', '1194', '12055'),
-  ('2022-05-28 07:55:11.089089', '1194', '12056'),
-  ('2022-05-28 07:55:11.089089', '1194', '12057'),
-  ('2022-05-28 07:55:11.089089', '1194', '12058'),
-  ('2022-05-28 07:55:11.090090', '1194', '12059'),
-  ('2022-05-28 07:55:11.090090', '1194', '12060'),
-  ('2022-05-28 07:55:11.090090', '1194', '12061'),
-  ('2022-05-28 07:55:11.090090', '1194', '12062'),
-  ('2022-05-28 07:55:11.090090', '1194', '12063')
+  ('2022-05-28 08:35:57.030030', '1199', '12090'),
+  ('2022-05-28 08:35:57.036036', '1199', '12091'),
+  ('2022-05-28 08:35:57.036036', '1199', '12092'),
+  ('2022-05-28 08:35:57.036036', '1199', '12093'),
+  ('2022-05-28 08:35:57.036036', '1199', '12094'),
+  ('2022-05-28 08:35:57.037037', '1199', '12095'),
+  ('2022-05-28 08:35:57.038038', '1199', '12096'),
+  ('2022-05-28 08:35:57.038038', '1199', '12097'),
+  ('2022-05-28 08:35:57.039039', '1199', '12098'),
+  ('2022-05-28 08:35:57.039039', '1199', '12099')
   ;
 
   // Update to source_song table
