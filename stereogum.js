@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of April 29, 2022', '2022-04-29 12:00:00.000000', 'https://www.stereogum.com/2185181/the-5-best-songs-of-the-week-431/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of May 6, 2022', '2022-05-06 12:00:00.000000', 'https://www.stereogum.com/2185918/the-5-best-songs-of-the-week-432/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1202; // SELECT last_insert_rowid();
+  source_id = 1207; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,47 +101,47 @@
   songsData =
   [
     {
-        "title": "The Rhythm",
-        "artist_name": "Hatchie",
+        "title": "All The Way Out",
+        "artist_name": "Boldy James & Real Bad Man",
         "video_id": null,
-        "capture_date": "2022-05-28 05:39:42.533533",
-        "source_id": 1202,
+        "capture_date": "2022-05-29 07:49:10.771771",
+        "source_id": 1207,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Life Unknown",
-        "artist_name": "Praise",
+        "title": "Don't Try",
+        "artist_name": "Joyce Manor",
         "video_id": null,
-        "capture_date": "2022-05-28 05:39:42.534534",
-        "source_id": 1202,
+        "capture_date": "2022-05-29 07:49:10.773773",
+        "source_id": 1207,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Brambleton",
-        "artist_name": "Pusha T",
+        "title": "Amberlit Morning",
+        "artist_name": "Joan Shelley",
         "video_id": null,
-        "capture_date": "2022-05-28 05:39:42.534534",
-        "source_id": 1202,
-        "song_id": 12089,
-        "duplicate": true
+        "capture_date": "2022-05-29 07:49:10.773773",
+        "source_id": 1207,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Plan B",
-        "artist_name": "Megan Thee Stallion",
+        "title": "End Of Last Year",
+        "artist_name": "Porridge Radio",
         "video_id": null,
-        "capture_date": "2022-05-28 05:39:42.534534",
-        "source_id": 1202,
-        "song_id": 12064,
-        "duplicate": true
+        "capture_date": "2022-05-29 07:49:10.773773",
+        "source_id": 1207,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Big Time",
-        "artist_name": "Angel Olsen",
+        "title": "Dive Deep",
+        "artist_name": "Rolling Blackouts Coastal Fever",
         "video_id": null,
-        "capture_date": "2022-05-28 05:39:42.534534",
-        "source_id": 1202,
+        "capture_date": "2022-05-29 07:49:10.773773",
+        "source_id": 1207,
         "song_id": null,
         "duplicate": false
     }
@@ -184,9 +184,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Rhythm', 'Hatchie', NULL),
-  ('Life Unknown', 'Praise', NULL),
-  ('Big Time', 'Angel Olsen', NULL)
+  ('All The Way Out', 'Boldy James & Real Bad Man', NULL),
+  ('Don’t Try', 'Joyce Manor', NULL),
+  ('Amberlit Morning', 'Joan Shelley', NULL),
+  ('End Of Last Year', 'Porridge Radio', NULL),
+  ('Dive Deep', 'Rolling Blackouts Coastal Fever', NULL)
   ;
 
    // Update to song table
@@ -197,7 +199,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12124; // SELECT last_insert_rowid();
+  song_id = 12170; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -237,11 +239,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-28 05:39:42.533533', '1202', '12122'),
-  ('2022-05-28 05:39:42.534534', '1202', '12123'),
-  ('2022-05-28 05:39:42.534534', '1202', '12089'),
-  ('2022-05-28 05:39:42.534534', '1202', '12064'),
-  ('2022-05-28 05:39:42.534534', '1202', '12124')
+  ('2022-05-29 07:49:10.771771', '1207', '12166'),
+  ('2022-05-29 07:49:10.773773', '1207', '12167'),
+  ('2022-05-29 07:49:10.773773', '1207', '12168'),
+  ('2022-05-29 07:49:10.773773', '1207', '12169'),
+  ('2022-05-29 07:49:10.773773', '1207', '12170')
   ;
 
   // Update to source_song table

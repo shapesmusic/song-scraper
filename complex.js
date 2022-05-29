@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'Future, Lil Baby, Giveon, and More', '2022-04-29 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-april-29/tanna-leone-fatal-attraction');
+    ('Complex', 'Best New Music This Week', 'ASAP Rocky, Jack Harlow, Bad Bunny, and More', '2022-05-06 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-may-6/sir-satisfaction');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1200; // SELECT last_insert_rowid();
+  source_id = 1205; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,119 +101,65 @@
   songsData =
   [
     {
-        "title": "I’m On One",
-        "artist_name": "Future ft. Drake",
+        "title": "D.M.B.",
+        "artist_name": "ASAP Rocky",
         "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.953953",
-        "source_id": 1200,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Frozen",
-        "artist_name": "Lil Baby",
-        "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lie Again",
-        "artist_name": "Giveon",
-        "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
-        "song_id": 12098,
+        "capture_date": "2022-05-29 07:36:05.665665",
+        "source_id": 1205,
+        "song_id": 12149,
         "duplicate": true
     },
     {
-        "title": "Everything",
-        "artist_name": "Kehlani",
+        "title": "Churchill Downs",
+        "artist_name": "Jack Harlow ft. Drake",
         "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
+        "capture_date": "2022-05-29 07:36:05.673673",
+        "source_id": 1205,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Handoutz",
-        "artist_name": "Internet Money ft. Yeat",
+        "title": "Vegas",
+        "artist_name": "Doja Cat",
         "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
+        "capture_date": "2022-05-29 07:36:05.673673",
+        "source_id": 1205,
+        "song_id": 12142,
+        "duplicate": true
+    },
+    {
+        "title": "Moscow Mule",
+        "artist_name": "Bad Bunny",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:36:05.674674",
+        "source_id": 1205,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Honest",
-        "artist_name": "Justin Bieber ft. Don Toliver",
+        "title": "The Code",
+        "artist_name": "IDK ft. Mike Dimes",
         "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
+        "capture_date": "2022-05-29 07:36:05.674674",
+        "source_id": 1205,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ninety One",
-        "artist_name": "Action Bronson",
+        "title": "Crunkstarz",
+        "artist_name": "Duke Deuce",
         "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
+        "capture_date": "2022-05-29 07:36:05.674674",
+        "source_id": 1205,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Goes By So Fast",
-        "artist_name": "Toro Y Moi",
+        "title": "Satisfaction",
+        "artist_name": "SiR",
         "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "They Don’t Know",
-        "artist_name": "Bobby Shmurda",
-        "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Going Up",
-        "artist_name": "Lil Tjay",
-        "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dog Food",
-        "artist_name": "IDK ft. Denzel Curry",
-        "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Butterfly Doors",
-        "artist_name": "Reuben Vincent",
-        "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fatal Attraction",
-        "artist_name": "Tanna Leone",
-        "video_id": null,
-        "capture_date": "2022-05-28 05:31:18.954954",
-        "source_id": 1200,
+        "capture_date": "2022-05-29 07:36:05.674674",
+        "source_id": 1205,
         "song_id": null,
         "duplicate": false
     }
@@ -256,18 +202,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('I’m On One', 'Future ft. Drake', NULL),
-  ('Frozen', 'Lil Baby', NULL),
-  ('Everything', 'Kehlani', NULL),
-  ('No Handoutz', 'Internet Money ft. Yeat', NULL),
-  ('Honest', 'Justin Bieber ft. Don Toliver', NULL),
-  ('Ninety One', 'Action Bronson', NULL),
-  ('Goes By So Fast', 'Toro Y Moi', NULL),
-  ('They Don’t Know', 'Bobby Shmurda', NULL),
-  ('Going Up', 'Lil Tjay', NULL),
-  ('Dog Food', 'IDK ft. Denzel Curry', NULL),
-  ('Butterfly Doors', 'Reuben Vincent', NULL),
-  ('Fatal Attraction', 'Tanna Leone', NULL)
+  ('Churchill Downs', 'Jack Harlow ft. Drake', NULL),
+  ('Moscow Mule', 'Bad Bunny', NULL),
+  ('The Code', 'IDK ft. Mike Dimes', NULL),
+  ('Crunkstarz', 'Duke Deuce', NULL),
+  ('Satisfaction', 'SiR', NULL)
   ;
 
    // Update to song table
@@ -278,7 +217,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12111; // SELECT last_insert_rowid();
+  song_id = 12156; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -318,19 +257,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-28 05:31:18.953953', '1200', '12100'),
-  ('2022-05-28 05:31:18.954954', '1200', '12101'),
-  ('2022-05-28 05:31:18.954954', '1200', '12098'),
-  ('2022-05-28 05:31:18.954954', '1200', '12102'),
-  ('2022-05-28 05:31:18.954954', '1200', '12103'),
-  ('2022-05-28 05:31:18.954954', '1200', '12104'),
-  ('2022-05-28 05:31:18.954954', '1200', '12105'),
-  ('2022-05-28 05:31:18.954954', '1200', '12106'),
-  ('2022-05-28 05:31:18.954954', '1200', '12107'),
-  ('2022-05-28 05:31:18.954954', '1200', '12108'),
-  ('2022-05-28 05:31:18.954954', '1200', '12109'),
-  ('2022-05-28 05:31:18.954954', '1200', '12110'),
-  ('2022-05-28 05:31:18.954954', '1200', '12111')
+  ('2022-05-29 07:36:05.665665', '1205', '12149'),
+  ('2022-05-29 07:36:05.673673', '1205', '12152'),
+  ('2022-05-29 07:36:05.673673', '1205', '12142'),
+  ('2022-05-29 07:36:05.674674', '1205', '12153'),
+  ('2022-05-29 07:36:05.674674', '1205', '12154'),
+  ('2022-05-29 07:36:05.674674', '1205', '12155'),
+  ('2022-05-29 07:36:05.674674', '1205', '12156')
   ;
 
   // Update to source_song table

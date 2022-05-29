@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of May 7, 2022', '2022-05-07 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-05-07/');
+    ('Billboard', 'The Hot 100', 'Week of May 14, 2022', '2022-05-14 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-05-14/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1198; // SELECT last_insert_rowid();
+  source_id = 1203; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,103 +105,184 @@
   songsData =
   [
     {
-        "title": "Thousand Miles",
-        "artist_name": "The Kid LAROI",
+        "title": "Puffin On Zootiez",
+        "artist_name": "Future",
         "video_id": null,
-        "capture_date": "2022-05-28 08:29:18.083083",
-        "source_id": 1198,
+        "capture_date": "2022-05-29 07:19:20.082082",
+        "source_id": 1203,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Plan B",
-        "artist_name": "Megan Thee Stallion",
+        "title": "712PM",
+        "artist_name": "Future",
         "video_id": null,
-        "capture_date": "2022-05-28 08:29:18.083083",
-        "source_id": 1198,
-        "song_id": 12064,
+        "capture_date": "2022-05-29 07:19:20.082082",
+        "source_id": 1203,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I'm Dat N***a",
+        "artist_name": "Future",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:19:20.083083",
+        "source_id": 1203,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I'm On One",
+        "artist_name": "Future ft. Drake",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:19:20.083083",
+        "source_id": 1203,
+        "song_id": 12100,
         "duplicate": true
     },
     {
-        "title": "Provenza",
-        "artist_name": "Karol G",
+        "title": "Love You Better",
+        "artist_name": "Future",
         "video_id": null,
-        "capture_date": "2022-05-28 08:29:18.084084",
-        "source_id": 1198,
+        "capture_date": "2022-05-29 07:19:20.083083",
+        "source_id": 1203,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "2step",
-        "artist_name": "Ed Sheeran ft. Lil Baby",
+        "title": "Keep It Burnin",
+        "artist_name": "Future ft. Kanye West",
         "video_id": null,
-        "capture_date": "2022-05-28 08:29:18.084084",
-        "source_id": 1198,
-        "song_id": 12069,
+        "capture_date": "2022-05-29 07:19:20.083083",
+        "source_id": 1203,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Massaging Me",
+        "artist_name": "Future",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:19:20.084084",
+        "source_id": 1203,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "For A Nut",
+        "artist_name": "Future ft. Gunna & Young Thug",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:19:20.085085",
+        "source_id": 1203,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Chickens",
+        "artist_name": "Future ft. EST Gee",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:19:20.085085",
+        "source_id": 1203,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Gold Stacks",
+        "artist_name": "Future",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:19:20.086086",
+        "source_id": 1203,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Voodoo",
+        "artist_name": "Future ft. Kodak Black",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:19:20.086086",
+        "source_id": 1203,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Honest",
+        "artist_name": "Justin Bieber & Don Toliver",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:19:20.086086",
+        "source_id": 1203,
+        "song_id": 12104,
         "duplicate": true
     },
     {
-        "title": "Something In The Orange",
-        "artist_name": "Zach Bryan",
+        "title": "We Jus Wanna Get High",
+        "artist_name": "Future",
         "video_id": null,
-        "capture_date": "2022-05-28 08:29:18.084084",
-        "source_id": 1198,
+        "capture_date": "2022-05-29 07:19:20.087087",
+        "source_id": 1203,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hold That Heat",
-        "artist_name": "Southside, Travis Scott & Future",
+        "title": "Holy Ghost",
+        "artist_name": "Future",
         "video_id": null,
-        "capture_date": "2022-05-28 08:29:18.084084",
-        "source_id": 1198,
-        "song_id": 12065,
+        "capture_date": "2022-05-29 07:19:20.087087",
+        "source_id": 1203,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Frozen",
+        "artist_name": "Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:19:20.087087",
+        "source_id": 1203,
+        "song_id": 12101,
         "duplicate": true
     },
     {
-        "title": "Scrape It Off",
-        "artist_name": "Pusha T ft. Lil Uzi Vert & Don Toliver",
+        "title": "Back To The Basics",
+        "artist_name": "Future",
         "video_id": null,
-        "capture_date": "2022-05-28 08:29:18.086086",
-        "source_id": 1198,
+        "capture_date": "2022-05-29 07:19:20.087087",
+        "source_id": 1203,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tomorrow Me",
-        "artist_name": "Luke Combs",
+        "title": "The Way Things Going",
+        "artist_name": "Future",
         "video_id": null,
-        "capture_date": "2022-05-28 08:29:18.086086",
-        "source_id": 1198,
+        "capture_date": "2022-05-29 07:19:20.087087",
+        "source_id": 1203,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rock N Roll",
-        "artist_name": "Pusha T ft. Kanye West & Kid Cudi",
+        "title": "That That",
+        "artist_name": "PSY ft. SUGA",
         "video_id": null,
-        "capture_date": "2022-05-28 08:29:18.087087",
-        "source_id": 1198,
+        "capture_date": "2022-05-29 07:19:20.089089",
+        "source_id": 1203,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dreamin Of The Past",
-        "artist_name": "Pusha T ft. Kanye West",
+        "title": "In The Stars",
+        "artist_name": "Benson Boone",
         "video_id": null,
-        "capture_date": "2022-05-28 08:29:18.087087",
-        "source_id": 1198,
-        "song_id": 12052,
+        "capture_date": "2022-05-29 07:19:20.089089",
+        "source_id": 1203,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Love Me More",
+        "artist_name": "Sam Smith",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:19:20.089089",
+        "source_id": 1203,
+        "song_id": 12090,
         "duplicate": true
-    },
-    {
-        "title": "Brambleton",
-        "artist_name": "Pusha T",
-        "video_id": null,
-        "capture_date": "2022-05-28 08:29:18.087087",
-        "source_id": 1198,
-        "song_id": null,
-        "duplicate": false
     }
 ]
 
@@ -242,13 +323,22 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Thousand Miles', 'The Kid LAROI', NULL),
-  ('Provenza', 'Karol G', NULL),
-  ('Something In The Orange', 'Zach Bryan', NULL),
-  ('Scrape It Off', 'Pusha T ft. Lil Uzi Vert & Don Toliver', NULL),
-  ('Tomorrow Me', 'Luke Combs', NULL),
-  ('Rock N Roll', 'Pusha T ft. Kanye West & Kid Cudi', NULL),
-  ('Brambleton', 'Pusha T', NULL)
+  ('Puffin On Zootiez', 'Future', NULL),
+  ('712PM', 'Future', NULL),
+  ('I’m Dat N***a', 'Future', NULL),
+  ('Love You Better', 'Future', NULL),
+  ('Keep It Burnin', 'Future ft. Kanye West', NULL),
+  ('Massaging Me', 'Future', NULL),
+  ('For A Nut', 'Future ft. Gunna & Young Thug', NULL),
+  ('Chickens', 'Future ft. EST Gee', NULL),
+  ('Gold Stacks', 'Future', NULL),
+  ('Voodoo', 'Future ft. Kodak Black', NULL),
+  ('We Jus Wanna Get High', 'Future', NULL),
+  ('Holy Ghost', 'Future', NULL),
+  ('Back To The Basics', 'Future', NULL),
+  ('The Way Things Going', 'Future', NULL),
+  ('That That', 'PSY ft. SUGA', NULL),
+  ('In The Stars', 'Benson Boone', NULL)
   ;
 
    // Update to song table
@@ -259,7 +349,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12089; // SELECT last_insert_rowid();
+  song_id = 12140; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -299,17 +389,26 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-28 08:29:18.083083', '1198', '12083'),
-  ('2022-05-28 08:29:18.083083', '1198', '12064'),
-  ('2022-05-28 08:29:18.084084', '1198', '12084'),
-  ('2022-05-28 08:29:18.084084', '1198', '12069'),
-  ('2022-05-28 08:29:18.084084', '1198', '12085'),
-  ('2022-05-28 08:29:18.084084', '1198', '12065'),
-  ('2022-05-28 08:29:18.086086', '1198', '12086'),
-  ('2022-05-28 08:29:18.086086', '1198', '12087'),
-  ('2022-05-28 08:29:18.087087', '1198', '12088'),
-  ('2022-05-28 08:29:18.087087', '1198', '12052'),
-  ('2022-05-28 08:29:18.087087', '1198', '12089')
+  ('2022-05-29 07:19:20.082082', '1203', '12125'),
+  ('2022-05-29 07:19:20.082082', '1203', '12126'),
+  ('2022-05-29 07:19:20.083083', '1203', '12127'),
+  ('2022-05-29 07:19:20.083083', '1203', '12100'),
+  ('2022-05-29 07:19:20.083083', '1203', '12128'),
+  ('2022-05-29 07:19:20.083083', '1203', '12129'),
+  ('2022-05-29 07:19:20.084084', '1203', '12130'),
+  ('2022-05-29 07:19:20.085085', '1203', '12131'),
+  ('2022-05-29 07:19:20.085085', '1203', '12132'),
+  ('2022-05-29 07:19:20.086086', '1203', '12133'),
+  ('2022-05-29 07:19:20.086086', '1203', '12134'),
+  ('2022-05-29 07:19:20.086086', '1203', '12104'),
+  ('2022-05-29 07:19:20.087087', '1203', '12135'),
+  ('2022-05-29 07:19:20.087087', '1203', '12136'),
+  ('2022-05-29 07:19:20.087087', '1203', '12101'),
+  ('2022-05-29 07:19:20.087087', '1203', '12137'),
+  ('2022-05-29 07:19:20.087087', '1203', '12138'),
+  ('2022-05-29 07:19:20.089089', '1203', '12139'),
+  ('2022-05-29 07:19:20.089089', '1203', '12140'),
+  ('2022-05-29 07:19:20.089089', '1203', '12090')
   ;
 
   // Update to source_song table

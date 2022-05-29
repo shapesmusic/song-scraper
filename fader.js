@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 251 // from the chart page
+  fader_no = 252 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 251 Week of May 02, 2022', '2022-05-02 12:00:00.000000', 'https://www.thefader.com/2022/05/02/songs-you-need-marry-lattimore-pooh-shiesty-jenevieve-future-holly-humberstone');
+    ('The Fader', '10 songs you need in your life this week', 'No. 252 Week of May 09, 2022', '2022-05-09 12:00:00.000000', 'https://www.thefader.com/2022/05/09/songs-you-need-wu-lu-daboii-duke-deuce-muddymya');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1201; // SELECT last_insert_rowid();
+  source_id = 1206; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Sleep Tight",
-        "artist_name": "Holly Humberstone",
+        "title": "Blame",
+        "artist_name": "Wu-Lu",
         "video_id": null,
-        "capture_date": "2022-05-28 05:36:07.396396",
-        "source_id": 1201,
+        "capture_date": "2022-05-29 07:43:15.077077",
+        "source_id": 1206,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "coyote (2015-2022)",
-        "artist_name": "Teen Suicide",
+        "title": "Submission",
+        "artist_name": "Organ Tapes",
         "video_id": null,
-        "capture_date": "2022-05-28 05:36:07.397397",
-        "source_id": 1201,
+        "capture_date": "2022-05-29 07:43:15.077077",
+        "source_id": 1206,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Medallion",
-        "artist_name": "Jenevieve ft. Ghostface Killah",
+        "title": "Jealousy",
+        "artist_name": "George Riley",
         "video_id": null,
-        "capture_date": "2022-05-28 05:36:07.397397",
-        "source_id": 1201,
+        "capture_date": "2022-05-29 07:43:15.078078",
+        "source_id": 1206,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Didn’t See The Comet",
-        "artist_name": "Mary Lattimore and Paul Sukeena",
+        "title": "Drugs & Rovers",
+        "artist_name": "MuddyMya",
         "video_id": null,
-        "capture_date": "2022-05-28 05:36:07.398398",
-        "source_id": 1201,
+        "capture_date": "2022-05-29 07:43:15.078078",
+        "source_id": 1206,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Everyday (sunshine)",
-        "artist_name": "V.C.R",
+        "title": "Ojitos Lindos",
+        "artist_name": "Bad Bunny feat Bomba Estéreo",
         "video_id": null,
-        "capture_date": "2022-05-28 05:36:07.398398",
-        "source_id": 1201,
+        "capture_date": "2022-05-29 07:43:15.078078",
+        "source_id": 1206,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wait For U",
-        "artist_name": "Future ft. Tems & Drake",
+        "title": "Understand",
+        "artist_name": "Mall Grab ft. Turnstile's Brendan Yates",
         "video_id": null,
-        "capture_date": "2022-05-28 05:36:07.398398",
-        "source_id": 1201,
+        "capture_date": "2022-05-29 07:43:15.078078",
+        "source_id": 1206,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Squeeze On Em",
-        "artist_name": "Pooh Shiesty ft. 42 Dugg",
+        "title": "Mistakes",
+        "artist_name": "Sharon Van Etten",
         "video_id": null,
-        "capture_date": "2022-05-28 05:36:07.398398",
-        "source_id": 1201,
+        "capture_date": "2022-05-29 07:43:15.078078",
+        "source_id": 1206,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Quagen Tris & Chardonnay",
-        "artist_name": "YungManny",
+        "title": "CRUNKSTARZ",
+        "artist_name": "Duke Deuce",
         "video_id": null,
-        "capture_date": "2022-05-28 05:36:07.398398",
-        "source_id": 1201,
+        "capture_date": "2022-05-29 07:43:15.078078",
+        "source_id": 1206,
+        "song_id": 12155,
+        "duplicate": true
+    },
+    {
+        "title": "The Deal",
+        "artist_name": "DaBoii ft. Drakeo The Ruler",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:43:15.078078",
+        "source_id": 1206,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Give Me A Kiss",
-        "artist_name": "Lolo Zouaï",
+        "title": "Nascer, Viver, Morrer",
+        "artist_name": "Tim Bernardes",
         "video_id": null,
-        "capture_date": "2022-05-28 05:36:07.398398",
-        "source_id": 1201,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Skyline",
-        "artist_name": "Khalid",
-        "video_id": null,
-        "capture_date": "2022-05-28 05:36:07.398398",
-        "source_id": 1201,
+        "capture_date": "2022-05-29 07:43:15.078078",
+        "source_id": 1206,
         "song_id": null,
         "duplicate": false
     }
@@ -230,16 +230,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Sleep Tight', 'Holly Humberstone', NULL),
-  ('coyote (2015-2022)', 'Teen Suicide', NULL),
-  ('Medallion', 'Jenevieve ft. Ghostface Killah', NULL),
-  ('Didn’t See The Comet', 'Mary Lattimore and Paul Sukeena', NULL),
-  ('Everyday (sunshine)', 'V.C.R', NULL),
-  ('Wait For U', 'Future ft. Tems & Drake', NULL),
-  ('Squeeze On Em', 'Pooh Shiesty ft. 42 Dugg', NULL),
-  ('Quagen Tris & Chardonnay', 'YungManny', NULL),
-  ('Give Me A Kiss', 'Lolo Zouaï', NULL),
-  ('Skyline', 'Khalid', NULL)
+  ('Blame', 'Wu-Lu', NULL),
+  ('Submission', 'Organ Tapes', NULL),
+  ('Jealousy', 'George Riley', NULL),
+  ('Drugs & Rovers', 'MuddyMya', NULL),
+  ('Ojitos Lindos', 'Bad Bunny feat Bomba Estéreo', NULL),
+  ('Understand', 'Mall Grab ft. Turnstile’s Brendan Yates', NULL),
+  ('Mistakes', 'Sharon Van Etten', NULL),
+  ('The Deal', 'DaBoii ft. Drakeo The Ruler', NULL),
+  ('Nascer, Viver, Morrer', 'Tim Bernardes', NULL)
   ;
 
    // Update to song table
@@ -250,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12121; // SELECT last_insert_rowid();
+  song_id = 12165; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -290,16 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-28 05:36:07.396396', '1201', '12112'),
-  ('2022-05-28 05:36:07.397397', '1201', '12113'),
-  ('2022-05-28 05:36:07.397397', '1201', '12114'),
-  ('2022-05-28 05:36:07.398398', '1201', '12115'),
-  ('2022-05-28 05:36:07.398398', '1201', '12116'),
-  ('2022-05-28 05:36:07.398398', '1201', '12117'),
-  ('2022-05-28 05:36:07.398398', '1201', '12118'),
-  ('2022-05-28 05:36:07.398398', '1201', '12119'),
-  ('2022-05-28 05:36:07.398398', '1201', '12120'),
-  ('2022-05-28 05:36:07.398398', '1201', '12121')
+  ('2022-05-29 07:43:15.077077', '1206', '12157'),
+  ('2022-05-29 07:43:15.077077', '1206', '12158'),
+  ('2022-05-29 07:43:15.078078', '1206', '12159'),
+  ('2022-05-29 07:43:15.078078', '1206', '12160'),
+  ('2022-05-29 07:43:15.078078', '1206', '12161'),
+  ('2022-05-29 07:43:15.078078', '1206', '12162'),
+  ('2022-05-29 07:43:15.078078', '1206', '12163'),
+  ('2022-05-29 07:43:15.078078', '1206', '12155'),
+  ('2022-05-29 07:43:15.078078', '1206', '12164'),
+  ('2022-05-29 07:43:15.078078', '1206', '12165')
   ;
 
   // Update to source_song table

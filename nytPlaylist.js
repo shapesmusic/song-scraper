@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Sam Smith’s Ode to Self-Acceptance, and 10 More New Songs', '2022-05-02 05:47:15.000000', 'https://www.nytimes.com/2022/04/29/arts/music/playlist-sam-smith-wilco.html');
+    ('New York Times', 'The Playlist', 'Black Star’s First Album in 24 Years Arrives, and 11 More New Songs', '2022-05-06 08:50:08.000000', 'https://www.nytimes.com/2022/05/06/arts/music/playlist-black-star-lady-gaga-doja-cat.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1199; // SELECT last_insert_rowid();
+  source_id = 1204; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,92 +100,110 @@
   songsData =
   [
     {
-        "title": "Love Me More",
-        "artist_name": "Sam Smith",
+        "title": "O.G.",
+        "artist_name": "Black Star",
         "video_id": null,
-        "capture_date": "2022-05-28 08:35:57.030030",
-        "source_id": 1199,
+        "capture_date": "2022-05-29 07:31:08.255255",
+        "source_id": 1204,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Up the Mountain",
-        "artist_name": "Regina Spektor",
+        "title": "Vegas",
+        "artist_name": "Doja Cat",
         "video_id": null,
-        "capture_date": "2022-05-28 08:35:57.036036",
-        "source_id": 1199,
+        "capture_date": "2022-05-29 07:31:08.256256",
+        "source_id": 1204,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Falling Apart (Right Now)",
-        "artist_name": "Wilco",
+        "title": "Western Wind",
+        "artist_name": "Carly Rae Jepsen",
         "video_id": null,
-        "capture_date": "2022-05-28 08:35:57.036036",
-        "source_id": 1199,
+        "capture_date": "2022-05-29 07:31:08.256256",
+        "source_id": 1204,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Estilazo",
-        "artist_name": "Marshmello and Tokischa",
+        "title": "Sleep Tight",
+        "artist_name": "Holly Humberstone",
         "video_id": null,
-        "capture_date": "2022-05-28 08:35:57.036036",
-        "source_id": 1199,
+        "capture_date": "2022-05-29 07:31:08.256256",
+        "source_id": 1204,
+        "song_id": 12112,
+        "duplicate": true
+    },
+    {
+        "title": "Hold My Hand",
+        "artist_name": "Lady Gaga",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:31:08.256256",
+        "source_id": 1204,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Omniscient (Mycelium)",
-        "artist_name": "I Am",
+        "title": "Web",
+        "artist_name": "070 Shake",
         "video_id": null,
-        "capture_date": "2022-05-28 08:35:57.036036",
-        "source_id": 1199,
+        "capture_date": "2022-05-29 07:31:08.256256",
+        "source_id": 1204,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "El Paraguas",
-        "artist_name": "Adrian Quesada ft. Gabriel Garzón-Montano",
+        "title": "Come Back",
+        "artist_name": "Sharon Van Etten",
         "video_id": null,
-        "capture_date": "2022-05-28 08:35:57.037037",
-        "source_id": 1199,
+        "capture_date": "2022-05-29 07:31:08.256256",
+        "source_id": 1204,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Vocé",
-        "artist_name": "Maria de Fátima",
+        "title": "Mirrorball",
+        "artist_name": "Kathleen Hanna, Erica Dawn Lyle and Vice Cooler",
         "video_id": null,
-        "capture_date": "2022-05-28 08:35:57.038038",
-        "source_id": 1199,
+        "capture_date": "2022-05-29 07:31:08.256256",
+        "source_id": 1204,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In Some Far Off Place",
-        "artist_name": "Miles Okazaki",
+        "title": "Le Bal Est Fini",
+        "artist_name": "Leyla McCalla",
         "video_id": null,
-        "capture_date": "2022-05-28 08:35:57.038038",
-        "source_id": 1199,
+        "capture_date": "2022-05-29 07:31:08.256256",
+        "source_id": 1204,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lie Again",
-        "artist_name": "Giveon",
+        "title": "D.M.B.",
+        "artist_name": "ASAP Rocky",
         "video_id": null,
-        "capture_date": "2022-05-28 08:35:57.039039",
-        "source_id": 1199,
+        "capture_date": "2022-05-29 07:31:08.256256",
+        "source_id": 1204,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Runaway",
-        "artist_name": "Skylar Grey",
+        "title": "Ribs",
+        "artist_name": "Tirzah",
         "video_id": null,
-        "capture_date": "2022-05-28 08:35:57.039039",
-        "source_id": 1199,
+        "capture_date": "2022-05-29 07:31:08.257257",
+        "source_id": 1204,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "New Scars",
+        "artist_name": "Glasser",
+        "video_id": null,
+        "capture_date": "2022-05-29 07:31:08.257257",
+        "source_id": 1204,
         "song_id": null,
         "duplicate": false
     }
@@ -228,16 +246,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Love Me More', 'Sam Smith', NULL),
-  ('Up the Mountain', 'Regina Spektor', NULL),
-  ('Falling Apart (Right Now)', 'Wilco', NULL),
-  ('Estilazo', 'Marshmello and Tokischa', NULL),
-  ('Omniscient (Mycelium)', 'I Am', NULL),
-  ('El Paraguas', 'Adrian Quesada ft. Gabriel Garzón-Montano', NULL),
-  ('Vocé', 'Maria de Fátima', NULL),
-  ('In Some Far Off Place', 'Miles Okazaki', NULL),
-  ('Lie Again', 'Giveon', NULL),
-  ('Runaway', 'Skylar Grey', NULL)
+  ('O.G.', 'Black Star', NULL),
+  ('Vegas', 'Doja Cat', NULL),
+  ('Western Wind', 'Carly Rae Jepsen', NULL),
+  ('Hold My Hand', 'Lady Gaga', NULL),
+  ('Web', '070 Shake', NULL),
+  ('Come Back', 'Sharon Van Etten', NULL),
+  ('Mirrorball', 'Kathleen Hanna, Erica Dawn Lyle and Vice Cooler', NULL),
+  ('Le Bal Est Fini', 'Leyla McCalla', NULL),
+  ('D.M.B.', 'ASAP Rocky', NULL),
+  ('Ribs', 'Tirzah', NULL),
+  ('New Scars', 'Glasser', NULL)
   ;
 
    // Update to song table
@@ -248,7 +267,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12099; // SELECT last_insert_rowid();
+  song_id = 12151; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -288,16 +307,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-28 08:35:57.030030', '1199', '12090'),
-  ('2022-05-28 08:35:57.036036', '1199', '12091'),
-  ('2022-05-28 08:35:57.036036', '1199', '12092'),
-  ('2022-05-28 08:35:57.036036', '1199', '12093'),
-  ('2022-05-28 08:35:57.036036', '1199', '12094'),
-  ('2022-05-28 08:35:57.037037', '1199', '12095'),
-  ('2022-05-28 08:35:57.038038', '1199', '12096'),
-  ('2022-05-28 08:35:57.038038', '1199', '12097'),
-  ('2022-05-28 08:35:57.039039', '1199', '12098'),
-  ('2022-05-28 08:35:57.039039', '1199', '12099')
+  ('2022-05-29 07:31:08.255255', '1204', '12141'),
+  ('2022-05-29 07:31:08.256256', '1204', '12142'),
+  ('2022-05-29 07:31:08.256256', '1204', '12143'),
+  ('2022-05-29 07:31:08.256256', '1204', '12112'),
+  ('2022-05-29 07:31:08.256256', '1204', '12144'),
+  ('2022-05-29 07:31:08.256256', '1204', '12145'),
+  ('2022-05-29 07:31:08.256256', '1204', '12146'),
+  ('2022-05-29 07:31:08.256256', '1204', '12147'),
+  ('2022-05-29 07:31:08.256256', '1204', '12148'),
+  ('2022-05-29 07:31:08.256256', '1204', '12149'),
+  ('2022-05-29 07:31:08.257257', '1204', '12150'),
+  ('2022-05-29 07:31:08.257257', '1204', '12151')
   ;
 
   // Update to source_song table
