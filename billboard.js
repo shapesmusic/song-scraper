@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of May 21, 2022', '2022-05-21 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-05-21/');
+    ('Billboard', 'The Hot 100', 'Week of May 28, 2022', '2022-05-28 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-05-28/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1208; // SELECT last_insert_rowid();
+  source_id = 1213; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,290 +105,182 @@
   songsData =
   [
     {
-        "title": "Moscow Mule",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.783783",
-        "source_id": 1208,
-        "song_id": 12153,
-        "duplicate": true
-    },
-    {
-        "title": "Titi Me Pregunto",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.783783",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Despues de La Playa",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.784784",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Me Porto Bonito",
-        "artist_name": "Bad Bunny & Chencho Corleone",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.784784",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Thought You Should Know",
-        "artist_name": "Morgan Wallen",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.784784",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Party",
-        "artist_name": "Bad Bunny & Rauw Alejandro",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.784784",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Heart Part 5",
+        "title": "N95",
         "artist_name": "Kendrick Lamar",
         "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.784784",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Un Ratito",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.784784",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tarot",
-        "artist_name": "Bad Bunny & Jhay Cortez",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.784784",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dua Lipa",
-        "artist_name": "Jack Harlow",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.784784",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Yo No Soy Celoso",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.785785",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Churchill Downs",
-        "artist_name": "Jack Harlow ft. Drake",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.785785",
-        "source_id": 1208,
-        "song_id": 12152,
+        "capture_date": "2022-05-30 07:27:00.468468",
+        "source_id": 1213,
+        "song_id": 12211,
         "duplicate": true
     },
     {
-        "title": "Ojitos Lindos",
-        "artist_name": "Bad Bunny & Bomba Estereo",
+        "title": "Die Hard",
+        "artist_name": "Kendrick Lamar, Blxst & Amanda Reifer",
         "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.785785",
-        "source_id": 1208,
-        "song_id": 12161,
+        "capture_date": "2022-05-30 07:27:00.469469",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "You Proof",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.469469",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Silent Hill",
+        "artist_name": "Kendrick Lamar & Kodak Black",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.469469",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "United In Grief",
+        "artist_name": "Kendrick Lamar",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.469469",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Father Time",
+        "artist_name": "Kendrick Lamar ft. Sampha",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.469469",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Rich Spirit",
+        "artist_name": "Kendrick Lamar",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.469469",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "We Cry Together",
+        "artist_name": "Kendrick Lamar & Taylour Paige",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.470470",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Worldwide Steppers",
+        "artist_name": "Kendrick Lamar",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.470470",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Count Me Out",
+        "artist_name": "Kendrick Lamar",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.470470",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Purple Hearts",
+        "artist_name": "Kendrick Lamar, Summer Walker & Ghostface Killah",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.470470",
+        "source_id": 1213,
+        "song_id": 12225,
         "duplicate": true
     },
     {
-        "title": "Neverita",
-        "artist_name": "Bad Bunny",
+        "title": "Savior",
+        "artist_name": "Kendrick Lamar, Baby Keem, & Sam Dew",
         "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.785785",
-        "source_id": 1208,
+        "capture_date": "2022-05-30 07:27:00.470470",
+        "source_id": 1213,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "La Corriente",
-        "artist_name": "Bad Bunny & Tony Dize",
+        "title": "Cooped Up",
+        "artist_name": "Post Malone ft. Roddy Ricch",
         "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.785785",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Efecto",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.785785",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Aguacero",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.785785",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dos Mil 16",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.785785",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Otro Atardecer",
-        "artist_name": "Bad Bunny & The Marias",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.786786",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "This Love (Taylor's Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.786786",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Andrea",
-        "artist_name": "Bad Bunny & Buscabulla",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.786786",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "El Apagon",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.786786",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Un Verano Sin Ti",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.786786",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Un Coco",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.786786",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Me Fui de Vacaciones",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.786786",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ensename A Bailar",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.786786",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Agosto",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.786786",
-        "source_id": 1208,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hold My Hand",
-        "artist_name": "Lady Gaga",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.787787",
-        "source_id": 1208,
-        "song_id": 12144,
+        "capture_date": "2022-05-30 07:27:00.470470",
+        "source_id": 1213,
+        "song_id": 12212,
         "duplicate": true
     },
     {
-        "title": "Whiskey On You",
-        "artist_name": "Nate Smith",
+        "title": "Rich (Interlude)",
+        "artist_name": "Kendrick Lamar",
         "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.787787",
-        "source_id": 1208,
+        "capture_date": "2022-05-30 07:27:00.470470",
+        "source_id": 1213,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I'd Do Anything To Make You Smile",
-        "artist_name": "Jack Harlow",
+        "title": "Mr. Morale",
+        "artist_name": "Kendrick Lamar & Tanna Leone",
         "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.787787",
-        "source_id": 1208,
+        "capture_date": "2022-05-30 07:27:00.470470",
+        "source_id": 1213,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Young Harleezy",
-        "artist_name": "Jack Harlow",
+        "title": "Crown",
+        "artist_name": "Kendrick Lamar",
         "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.787787",
-        "source_id": 1208,
+        "capture_date": "2022-05-30 07:27:00.470470",
+        "source_id": 1213,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Poison",
-        "artist_name": "Jack Harlow ft. Lil Wayne",
+        "title": "Auntie Diaries",
+        "artist_name": "Kendrick Lamar",
         "video_id": null,
-        "capture_date": "2022-05-29 05:14:07.787787",
-        "source_id": 1208,
+        "capture_date": "2022-05-30 07:27:00.470470",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Savior (Interlude)",
+        "artist_name": "Kendrick Lamar",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.471471",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mirror",
+        "artist_name": "Kendrick Lamar",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.471471",
+        "source_id": 1213,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mother I Sober",
+        "artist_name": "Kendrick Lamar ft. Beth Gibbons",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:27:00.471471",
+        "source_id": 1213,
         "song_id": null,
         "duplicate": false
     }
@@ -431,34 +323,23 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Titi Me Pregunto', 'Bad Bunny', NULL),
-  ('Despues de La Playa', 'Bad Bunny', NULL),
-  ('Me Porto Bonito', 'Bad Bunny & Chencho Corleone', NULL),
-  ('Thought You Should Know', 'Morgan Wallen', NULL),
-  ('Party', 'Bad Bunny & Rauw Alejandro', NULL),
-  ('The Heart Part 5', 'Kendrick Lamar', NULL),
-  ('Un Ratito', 'Bad Bunny', NULL),
-  ('Tarot', 'Bad Bunny & Jhay Cortez', NULL),
-  ('Dua Lipa', 'Jack Harlow', NULL),
-  ('Yo No Soy Celoso', 'Bad Bunny', NULL),
-  ('Neverita', 'Bad Bunny', NULL),
-  ('La Corriente', 'Bad Bunny & Tony Dize', NULL),
-  ('Efecto', 'Bad Bunny', NULL),
-  ('Aguacero', 'Bad Bunny', NULL),
-  ('Dos Mil 16', 'Bad Bunny', NULL),
-  ('Otro Atardecer', 'Bad Bunny & The Marias', NULL),
-  ('This Love (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Andrea', 'Bad Bunny & Buscabulla', NULL),
-  ('El Apagon', 'Bad Bunny', NULL),
-  ('Un Verano Sin Ti', 'Bad Bunny', NULL),
-  ('Un Coco', 'Bad Bunny', NULL),
-  ('Me Fui de Vacaciones', 'Bad Bunny', NULL),
-  ('Ensename A Bailar', 'Bad Bunny', NULL),
-  ('Agosto', 'Bad Bunny', NULL),
-  ('Whiskey On You', 'Nate Smith', NULL),
-  ('I’d Do Anything To Make You Smile', 'Jack Harlow', NULL),
-  ('Young Harleezy', 'Jack Harlow', NULL),
-  ('Poison', 'Jack Harlow ft. Lil Wayne', NULL)
+  ('Die Hard', 'Kendrick Lamar, Blxst & Amanda Reifer', NULL),
+  ('You Proof', 'Morgan Wallen', NULL),
+  ('Silent Hill', 'Kendrick Lamar & Kodak Black', NULL),
+  ('United In Grief', 'Kendrick Lamar', NULL),
+  ('Father Time', 'Kendrick Lamar ft. Sampha', NULL),
+  ('Rich Spirit', 'Kendrick Lamar', NULL),
+  ('We Cry Together', 'Kendrick Lamar & Taylour Paige', NULL),
+  ('Worldwide Steppers', 'Kendrick Lamar', NULL),
+  ('Count Me Out', 'Kendrick Lamar', NULL),
+  ('Savior', 'Kendrick Lamar, Baby Keem, & Sam Dew', NULL),
+  ('Rich (Interlude)', 'Kendrick Lamar', NULL),
+  ('Mr. Morale', 'Kendrick Lamar & Tanna Leone', NULL),
+  ('Crown', 'Kendrick Lamar', NULL),
+  ('Auntie Diaries', 'Kendrick Lamar', NULL),
+  ('Savior (Interlude)', 'Kendrick Lamar', NULL),
+  ('Mirror', 'Kendrick Lamar', NULL),
+  ('Mother I Sober', 'Kendrick Lamar ft. Beth Gibbons', NULL)
   ;
 
    // Update to song table
@@ -469,7 +350,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12198; // SELECT last_insert_rowid();
+  song_id = 12245; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -509,38 +390,26 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-29 05:14:07.783783', '1208', '12153'),
-  ('2022-05-29 05:14:07.783783', '1208', '12171'),
-  ('2022-05-29 05:14:07.784784', '1208', '12172'),
-  ('2022-05-29 05:14:07.784784', '1208', '12173'),
-  ('2022-05-29 05:14:07.784784', '1208', '12174'),
-  ('2022-05-29 05:14:07.784784', '1208', '12175'),
-  ('2022-05-29 05:14:07.784784', '1208', '12176'),
-  ('2022-05-29 05:14:07.784784', '1208', '12177'),
-  ('2022-05-29 05:14:07.784784', '1208', '12178'),
-  ('2022-05-29 05:14:07.784784', '1208', '12179'),
-  ('2022-05-29 05:14:07.785785', '1208', '12180'),
-  ('2022-05-29 05:14:07.785785', '1208', '12152'),
-  ('2022-05-29 05:14:07.785785', '1208', '12161'),
-  ('2022-05-29 05:14:07.785785', '1208', '12181'),
-  ('2022-05-29 05:14:07.785785', '1208', '12182'),
-  ('2022-05-29 05:14:07.785785', '1208', '12183'),
-  ('2022-05-29 05:14:07.785785', '1208', '12184'),
-  ('2022-05-29 05:14:07.785785', '1208', '12185'),
-  ('2022-05-29 05:14:07.786786', '1208', '12186'),
-  ('2022-05-29 05:14:07.786786', '1208', '12187'),
-  ('2022-05-29 05:14:07.786786', '1208', '12188'),
-  ('2022-05-29 05:14:07.786786', '1208', '12189'),
-  ('2022-05-29 05:14:07.786786', '1208', '12190'),
-  ('2022-05-29 05:14:07.786786', '1208', '12191'),
-  ('2022-05-29 05:14:07.786786', '1208', '12192'),
-  ('2022-05-29 05:14:07.786786', '1208', '12193'),
-  ('2022-05-29 05:14:07.786786', '1208', '12194'),
-  ('2022-05-29 05:14:07.787787', '1208', '12144'),
-  ('2022-05-29 05:14:07.787787', '1208', '12195'),
-  ('2022-05-29 05:14:07.787787', '1208', '12196'),
-  ('2022-05-29 05:14:07.787787', '1208', '12197'),
-  ('2022-05-29 05:14:07.787787', '1208', '12198')
+  ('2022-05-30 07:27:00.468468', '1213', '12211'),
+  ('2022-05-30 07:27:00.469469', '1213', '12229'),
+  ('2022-05-30 07:27:00.469469', '1213', '12230'),
+  ('2022-05-30 07:27:00.469469', '1213', '12231'),
+  ('2022-05-30 07:27:00.469469', '1213', '12232'),
+  ('2022-05-30 07:27:00.469469', '1213', '12233'),
+  ('2022-05-30 07:27:00.469469', '1213', '12234'),
+  ('2022-05-30 07:27:00.470470', '1213', '12235'),
+  ('2022-05-30 07:27:00.470470', '1213', '12236'),
+  ('2022-05-30 07:27:00.470470', '1213', '12237'),
+  ('2022-05-30 07:27:00.470470', '1213', '12225'),
+  ('2022-05-30 07:27:00.470470', '1213', '12238'),
+  ('2022-05-30 07:27:00.470470', '1213', '12212'),
+  ('2022-05-30 07:27:00.470470', '1213', '12239'),
+  ('2022-05-30 07:27:00.470470', '1213', '12240'),
+  ('2022-05-30 07:27:00.470470', '1213', '12241'),
+  ('2022-05-30 07:27:00.470470', '1213', '12242'),
+  ('2022-05-30 07:27:00.471471', '1213', '12243'),
+  ('2022-05-30 07:27:00.471471', '1213', '12244'),
+  ('2022-05-30 07:27:00.471471', '1213', '12245')
   ;
 
   // Update to source_song table

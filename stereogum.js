@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of May 13, 2022', '2022-05-13 12:00:00.000000', 'https://www.stereogum.com/2186630/the-5-best-songs-of-the-week-433/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of May 20, 2022', '2022-05-20 12:00:00.000000', 'https://www.stereogum.com/2187277/the-5-best-songs-of-the-week-434/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1212; // SELECT last_insert_rowid();
+  source_id = 1217; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,48 +101,48 @@
   songsData =
   [
     {
-        "title": "No Gold Teeth",
-        "artist_name": "Danger Mouse & Black Thought",
+        "title": "(Herman's) House",
+        "artist_name": "Special Interest",
         "video_id": null,
-        "capture_date": "2022-05-29 05:46:30.696696",
-        "source_id": 1212,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Western Wind",
-        "artist_name": "Carly Rae Jepsen",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:46:30.716716",
-        "source_id": 1212,
-        "song_id": 12143,
+        "capture_date": "2022-05-30 07:47:40.516516",
+        "source_id": 1217,
+        "song_id": 12274,
         "duplicate": true
     },
     {
-        "title": "Thin Thing",
-        "artist_name": "The Smile",
+        "title": "Through The Fires",
+        "artist_name": "Angel Olsen",
         "video_id": null,
-        "capture_date": "2022-05-29 05:46:30.716716",
-        "source_id": 1212,
+        "capture_date": "2022-05-30 07:47:40.523523",
+        "source_id": 1217,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Born",
-        "artist_name": "Sharon Van Etten",
+        "title": "Toll",
+        "artist_name": "Naima Bock",
         "video_id": null,
-        "capture_date": "2022-05-29 05:46:30.716716",
-        "source_id": 1212,
+        "capture_date": "2022-05-30 07:47:40.523523",
+        "source_id": 1217,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Heart Part 5",
+        "title": "Selfish Soul",
+        "artist_name": "Sudan Archives",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:47:40.523523",
+        "source_id": 1217,
+        "song_id": 12251,
+        "duplicate": true
+    },
+    {
+        "title": "Mother I Sober",
         "artist_name": "Kendrick Lamar",
         "video_id": null,
-        "capture_date": "2022-05-29 05:46:30.716716",
-        "source_id": 1212,
-        "song_id": 12176,
+        "capture_date": "2022-05-30 07:47:40.523523",
+        "source_id": 1217,
+        "song_id": 12245,
         "duplicate": true
     }
 ]
@@ -184,9 +184,8 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('No Gold Teeth', 'Danger Mouse & Black Thought', NULL),
-  ('Thin Thing', 'The Smile', NULL),
-  ('Born', 'Sharon Van Etten', NULL)
+  ('Through The Fires', 'Angel Olsen', NULL),
+  ('Toll', 'Naima Bock', NULL)
   ;
 
    // Update to song table
@@ -197,7 +196,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12228; // SELECT last_insert_rowid();
+  song_id = 12279; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -237,11 +236,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-29 05:46:30.696696', '1212', '12226'),
-  ('2022-05-29 05:46:30.716716', '1212', '12143'),
-  ('2022-05-29 05:46:30.716716', '1212', '12227'),
-  ('2022-05-29 05:46:30.716716', '1212', '12228'),
-  ('2022-05-29 05:46:30.716716', '1212', '12176')
+  ('2022-05-30 07:47:40.516516', '1217', '12274'),
+  ('2022-05-30 07:47:40.523523', '1217', '12278'),
+  ('2022-05-30 07:47:40.523523', '1217', '12279'),
+  ('2022-05-30 07:47:40.523523', '1217', '12251'),
+  ('2022-05-30 07:47:40.523523', '1217', '12245')
   ;
 
   // Update to source_song table

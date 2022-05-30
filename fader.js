@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 253 // from the chart page
+  fader_no = 254 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 253 Week of May 16, 2022', '2022-05-16 12:00:00.000000', 'https://www.thefader.com/2022/05/16/songs-you-need-blunt-chunks-hitkdd-glorilla-crack-cloud');
+    ('The Fader', '10 songs you need in your life this week', 'No. 254 Week of May 23, 2022', '2022-05-23 12:00:00.000000', 'https://www.thefader.com/2022/05/23/10-songs-you-need-in-your-life-harry-styles-mozzy-shordie-four-tet-2022');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1211; // SELECT last_insert_rowid();
+  source_id = 1216; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "FNF (Let’s Go)",
-        "artist_name": "Hitkidd and Glorilla",
+        "title": "Pokke Koebês",
+        "artist_name": "Free Radicals and Jitsvinger",
         "video_id": null,
-        "capture_date": "2022-05-29 05:41:18.226226",
-        "source_id": 1211,
+        "capture_date": "2022-05-30 07:43:31.130130",
+        "source_id": 1216,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hieroglyphics",
-        "artist_name": "Editrix",
+        "title": "Selfish Soul",
+        "artist_name": "Sudan Archives",
         "video_id": null,
-        "capture_date": "2022-05-29 05:41:18.227227",
-        "source_id": 1211,
+        "capture_date": "2022-05-30 07:43:31.138138",
+        "source_id": 1216,
+        "song_id": 12251,
+        "duplicate": true
+    },
+    {
+        "title": "Idk What Love Is",
+        "artist_name": "Dazegxd",
+        "video_id": null,
+        "capture_date": "2022-05-30 07:43:31.139139",
+        "source_id": 1216,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Topside Freestyle",
-        "artist_name": "Shaudy Kash and Top$ide",
+        "title": "Frozen On Fire",
+        "artist_name": "Madonna and Sickick",
         "video_id": null,
-        "capture_date": "2022-05-29 05:41:18.227227",
-        "source_id": 1211,
+        "capture_date": "2022-05-30 07:43:31.139139",
+        "source_id": 1216,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Please Yourself",
-        "artist_name": "Crack Cloud",
+        "title": "Radiation",
+        "artist_name": "Lucy",
         "video_id": null,
-        "capture_date": "2022-05-29 05:41:18.227227",
-        "source_id": 1211,
+        "capture_date": "2022-05-30 07:43:31.139139",
+        "source_id": 1216,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Canção da Cura",
-        "artist_name": "Sessa",
+        "title": "Looking At Your Pager",
+        "artist_name": "KH",
         "video_id": null,
-        "capture_date": "2022-05-29 05:41:18.227227",
-        "source_id": 1211,
+        "capture_date": "2022-05-30 07:43:31.139139",
+        "source_id": 1216,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Part Of Me",
-        "artist_name": "Blunt Chunks",
+        "title": "(Herman's) House",
+        "artist_name": "Special Interest",
         "video_id": null,
-        "capture_date": "2022-05-29 05:41:18.227227",
-        "source_id": 1211,
+        "capture_date": "2022-05-30 07:43:31.139139",
+        "source_id": 1216,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wrong For It",
-        "artist_name": "Obongjayar ft. Nubya Garcia",
+        "title": "Tell The Truth",
+        "artist_name": "Mozzie and Shordie Shordie",
         "video_id": null,
-        "capture_date": "2022-05-29 05:41:18.227227",
-        "source_id": 1211,
+        "capture_date": "2022-05-30 07:43:31.139139",
+        "source_id": 1216,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In The Dark",
-        "artist_name": "MISZCZYK ft. Lætitia Sadler",
+        "title": "Love Of My Life",
+        "artist_name": "Harry Styles",
         "video_id": null,
-        "capture_date": "2022-05-29 05:41:18.227227",
-        "source_id": 1211,
+        "capture_date": "2022-05-30 07:43:31.139139",
+        "source_id": 1216,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ptolemaea",
-        "artist_name": "Ethel Cain",
+        "title": "Hit It Light It Twist It",
+        "artist_name": "Jim Legxacy",
         "video_id": null,
-        "capture_date": "2022-05-29 05:41:18.227227",
-        "source_id": 1211,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Purple Hearts",
-        "artist_name": "Kendrick Lamar ft. Summer Walker and Ghostface Killah",
-        "video_id": null,
-        "capture_date": "2022-05-29 05:41:18.227227",
-        "source_id": 1211,
+        "capture_date": "2022-05-30 07:43:31.139139",
+        "source_id": 1216,
         "song_id": null,
         "duplicate": false
     }
@@ -230,16 +230,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('FNF (Let’s Go)', 'Hitkidd and Glorilla', NULL),
-  ('Hieroglyphics', 'Editrix', NULL),
-  ('Topside Freestyle', 'Shaudy Kash and Top$ide', NULL),
-  ('Please Yourself', 'Crack Cloud', NULL),
-  ('Canção da Cura', 'Sessa', NULL),
-  ('Part Of Me', 'Blunt Chunks', NULL),
-  ('Wrong For It', 'Obongjayar ft. Nubya Garcia', NULL),
-  ('In The Dark', 'MISZCZYK ft. Lætitia Sadler', NULL),
-  ('Ptolemaea', 'Ethel Cain', NULL),
-  ('Purple Hearts', 'Kendrick Lamar ft. Summer Walker and Ghostface Killah', NULL)
+  ('Pokke Koebês', 'Free Radicals and Jitsvinger', NULL),
+  ('Idk What Love Is', 'Dazegxd', NULL),
+  ('Frozen On Fire', 'Madonna and Sickick', NULL),
+  ('Radiation', 'Lucy', NULL),
+  ('Looking At Your Pager', 'KH', NULL),
+  ('(Herman’s) House', 'Special Interest', NULL),
+  ('Tell The Truth', 'Mozzie and Shordie Shordie', NULL),
+  ('Love Of My Life', 'Harry Styles', NULL),
+  ('Hit It Light It Twist It', 'Jim Legxacy', NULL)
   ;
 
    // Update to song table
@@ -250,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12225; // SELECT last_insert_rowid();
+  song_id = 12277; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -290,16 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-29 05:41:18.226226', '1211', '12216'),
-  ('2022-05-29 05:41:18.227227', '1211', '12217'),
-  ('2022-05-29 05:41:18.227227', '1211', '12218'),
-  ('2022-05-29 05:41:18.227227', '1211', '12219'),
-  ('2022-05-29 05:41:18.227227', '1211', '12220'),
-  ('2022-05-29 05:41:18.227227', '1211', '12221'),
-  ('2022-05-29 05:41:18.227227', '1211', '12222'),
-  ('2022-05-29 05:41:18.227227', '1211', '12223'),
-  ('2022-05-29 05:41:18.227227', '1211', '12224'),
-  ('2022-05-29 05:41:18.227227', '1211', '12225')
+  ('2022-05-30 07:43:31.130130', '1216', '12269'),
+  ('2022-05-30 07:43:31.138138', '1216', '12251'),
+  ('2022-05-30 07:43:31.139139', '1216', '12270'),
+  ('2022-05-30 07:43:31.139139', '1216', '12271'),
+  ('2022-05-30 07:43:31.139139', '1216', '12272'),
+  ('2022-05-30 07:43:31.139139', '1216', '12273'),
+  ('2022-05-30 07:43:31.139139', '1216', '12274'),
+  ('2022-05-30 07:43:31.139139', '1216', '12275'),
+  ('2022-05-30 07:43:31.139139', '1216', '12276'),
+  ('2022-05-30 07:43:31.139139', '1216', '12277')
   ;
 
   // Update to source_song table

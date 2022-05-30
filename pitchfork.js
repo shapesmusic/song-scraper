@@ -76,19 +76,42 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2022-02-22 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-02-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-02-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-02-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-02-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-02-10 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-02-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-02-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-02-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-02-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-02-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-31 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-01-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-25 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-24 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-23 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-18 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-10 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-06 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-05 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-05-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-04-29 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-04-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-04-22 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-04-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-04-18 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-04-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-04-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-04-06 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-04-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-03-30 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-03-23 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-03-18 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-03-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-03-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-03-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-03-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-03-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-03-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-03-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-02-25 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -138,137 +161,362 @@
   songsData =
   [
     {
-        "title": "Back to the Radio",
-        "artist_name": "Porridge Radio",
+        "title": "Potion",
+        "artist_name": "Calvin Harris & Dua Lipa & Young Thug",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.087087",
-        "source_id": 1140,
+        "capture_date": "2022-05-30 08:12:32.392392",
+        "source_id": 1218,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Punish",
-        "artist_name": "4s4ki",
+        "title": "Don’t Forget",
+        "artist_name": "Sky Ferreira",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.089089",
-        "source_id": 1141,
+        "capture_date": "2022-05-30 08:12:32.398398",
+        "source_id": 1219,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Like Exploding Stones",
-        "artist_name": "Kurt Vile",
+        "title": "Slaughterhouse",
+        "artist_name": "Chat Pile",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.090090",
-        "source_id": 1142,
-        "song_id": 11722,
+        "capture_date": "2022-05-30 08:12:32.399399",
+        "source_id": 1220,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wicked",
+        "artist_name": "VNTAGEPARADISE",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.404404",
+        "source_id": 1221,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cherry",
+        "artist_name": "Daphni",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.405405",
+        "source_id": 1222,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bones",
+        "artist_name": "Soccer Mommy",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.405405",
+        "source_id": 1223,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Angel of Business",
+        "artist_name": "Grace Ives",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.405405",
+        "source_id": 1224,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "This Hell",
+        "artist_name": "Rina Sawayama",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.406406",
+        "source_id": 1225,
+        "song_id": 12246,
         "duplicate": true
     },
     {
-        "title": "Black Be the Source",
-        "artist_name": "Fly Anakin",
+        "title": "UW4GM",
+        "artist_name": "Joviale",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.090090",
-        "source_id": 1143,
+        "capture_date": "2022-05-30 08:12:32.409409",
+        "source_id": 1226,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Finger Pies (Maral At The Controls Dub Mix)",
-        "artist_name": "Anika",
+        "title": "Lungs",
+        "artist_name": "Stella Donnelly",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.090090",
-        "source_id": 1144,
+        "capture_date": "2022-05-30 08:12:32.410410",
+        "source_id": 1226,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Billions",
-        "artist_name": "Caroline Polachek",
+        "title": "Mother I Sober",
+        "artist_name": "Kendrick Lamar",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.090090",
-        "source_id": 1145,
-        "song_id": 11671,
+        "capture_date": "2022-05-30 08:12:32.411411",
+        "source_id": 1227,
+        "song_id": 12245,
         "duplicate": true
     },
     {
-        "title": "Porta",
-        "artist_name": "Sharon Van Etten",
+        "title": "Lydia Wears a Cross",
+        "artist_name": "Julia Jacklin",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.090090",
-        "source_id": 1146,
-        "song_id": 11699,
+        "capture_date": "2022-05-30 08:12:32.412412",
+        "source_id": 1228,
+        "song_id": 12204,
         "duplicate": true
     },
     {
-        "title": "Bites on My Neck",
-        "artist_name": "yeule",
+        "title": "How Far",
+        "artist_name": "Astrid Sonne",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.090090",
-        "source_id": 1147,
+        "capture_date": "2022-05-30 08:12:32.413413",
+        "source_id": 1229,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Luv Like",
-        "artist_name": "Nia Archives",
+        "title": "The Heart Part 5",
+        "artist_name": "Kendrick Lamar",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.090090",
-        "source_id": 1147,
+        "capture_date": "2022-05-30 08:12:32.413413",
+        "source_id": 1230,
+        "song_id": 12176,
+        "duplicate": true
+    },
+    {
+        "title": "Western Wind",
+        "artist_name": "Carly Rae Jepsen",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.413413",
+        "source_id": 1231,
+        "song_id": 12143,
+        "duplicate": true
+    },
+    {
+        "title": "Ribs",
+        "artist_name": "Tirzah",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.413413",
+        "source_id": 1232,
+        "song_id": 12150,
+        "duplicate": true
+    },
+    {
+        "title": "Tastes Just Like It Costs",
+        "artist_name": "MJ Lenderman",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.413413",
+        "source_id": 1233,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Manatee (A Story of This World Pt. III)",
-        "artist_name": "Circuit des Yeux",
+        "title": "Decimation (Dis Nation)",
+        "artist_name": "Dälek",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.091091",
-        "source_id": 1148,
+        "capture_date": "2022-05-30 08:12:32.413413",
+        "source_id": 1234,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Don’t Forget You’re Precious",
-        "artist_name": "Alabaster dePlume",
+        "title": "Big Time",
+        "artist_name": "Angel Olsen",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.091091",
-        "source_id": 1149,
+        "capture_date": "2022-05-30 08:12:32.413413",
+        "source_id": 1235,
+        "song_id": 12124,
+        "duplicate": true
+    },
+    {
+        "title": "Surprise Me",
+        "artist_name": "Mallrat",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.413413",
+        "source_id": 1236,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cities on Fire",
-        "artist_name": "Shitbots",
+        "title": "Layla",
+        "artist_name": "Mdou Moctar",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.091091",
-        "source_id": 1150,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1237,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Madeso",
-        "artist_name": "DJ Nigga Fox",
+        "title": "The Question",
+        "artist_name": "Dirty Bird",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.091091",
-        "source_id": 1151,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1238,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Slow Crash",
-        "artist_name": "Tony Shhnow",
+        "title": "Doritos & Fritos",
+        "artist_name": "100 gecs",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.091091",
-        "source_id": 1152,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1239,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Falnukmel",
-        "artist_name": "Julmud",
+        "title": "The Spur",
+        "artist_name": "Joan Shelley",
         "video_id": null,
-        "capture_date": "2022-02-22 08:44:25.091091",
-        "source_id": 1152,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1240,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "World of Pots and Pans",
+        "artist_name": "Horsegirl",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1241,
+        "song_id": 12010,
+        "duplicate": true
+    },
+    {
+        "title": "As It Was",
+        "artist_name": "Harry Styles",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1242,
+        "song_id": 11940,
+        "duplicate": true
+    },
+    {
+        "title": "Breathe You",
+        "artist_name": "My Idea",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1243,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Shotgun",
+        "artist_name": "Soccer Mommy",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1244,
+        "song_id": 11899,
+        "duplicate": true
+    },
+    {
+        "title": "Fair",
+        "artist_name": "Normani",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1245,
+        "song_id": 11863,
+        "duplicate": true
+    },
+    {
+        "title": "Home Maker",
+        "artist_name": "Sudan Archives",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1246,
+        "song_id": 11887,
+        "duplicate": true
+    },
+    {
+        "title": "The Lightning I, II",
+        "artist_name": "Arcade Fire",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1246,
+        "song_id": 11861,
+        "duplicate": true
+    },
+    {
+        "title": "Pressure Cooker",
+        "artist_name": "Dazy & Militarie Gun",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1247,
+        "song_id": 11889,
+        "duplicate": true
+    },
+    {
+        "title": "June",
+        "artist_name": "Destroyer",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1248,
+        "song_id": 11844,
+        "duplicate": true
+    },
+    {
+        "title": "Vocoder",
+        "artist_name": "Floating Points",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1248,
+        "song_id": 11819,
+        "duplicate": true
+    },
+    {
+        "title": "It Hit Me",
+        "artist_name": "Charlotte AdigéryBolis Pupul",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1249,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hi-De-Ho",
+        "artist_name": "Jack White",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1250,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "It’s Random",
+        "artist_name": "Dora Jar",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1251,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Snåcko",
+        "artist_name": "Jeremiah ChiuMarta Sofia Honer",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1252,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Everybody Love",
+        "artist_name": "Robert Glasper",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1252,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sorry Not Sorry",
+        "artist_name": "Omerettà the Great",
+        "video_id": null,
+        "capture_date": "2022-05-30 08:12:32.414414",
+        "source_id": 1253,
         "song_id": null,
         "duplicate": false
     }
@@ -322,18 +570,30 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Back to the Radio', 'Porridge Radio', NULL),
-  ('Punish', '4s4ki', NULL),
-  ('Black Be the Source', 'Fly Anakin', NULL),
-  ('Finger Pies (Maral At The Controls Dub Mix)', 'Anika', NULL),
-  ('Bites on My Neck', 'yeule', NULL),
-  ('Luv Like', 'Nia Archives', NULL),
-  ('The Manatee (A Story of This World Pt. III)', 'Circuit des Yeux', NULL),
-  ('Don’t Forget You’re Precious', 'Alabaster dePlume', NULL),
-  ('Cities on Fire', 'Shitbots', NULL),
-  ('Madeso', 'DJ Nigga Fox', NULL),
-  ('Slow Crash', 'Tony Shhnow', NULL),
-  ('Falnukmel', 'Julmud', NULL)
+  ('Potion', 'Calvin Harris & Dua Lipa & Young Thug', NULL),
+  ('Don’t Forget', 'Sky Ferreira', NULL),
+  ('Slaughterhouse', 'Chat Pile', NULL),
+  ('Wicked', 'VNTAGEPARADISE', NULL),
+  ('Cherry', 'Daphni', NULL),
+  ('Bones', 'Soccer Mommy', NULL),
+  ('Angel of Business', 'Grace Ives', NULL),
+  ('UW4GM', 'Joviale', NULL),
+  ('Lungs', 'Stella Donnelly', NULL),
+  ('How Far', 'Astrid Sonne', NULL),
+  ('Tastes Just Like It Costs', 'MJ Lenderman', NULL),
+  ('Decimation (Dis Nation)', 'Dälek', NULL),
+  ('Surprise Me', 'Mallrat', NULL),
+  ('Layla', 'Mdou Moctar', NULL),
+  ('The Question', 'Dirty Bird', NULL),
+  ('Doritos & Fritos', '100 gecs', NULL),
+  ('The Spur', 'Joan Shelley', NULL),
+  ('Breathe You', 'My Idea', NULL),
+  ('It Hit Me', 'Charlotte AdigéryBolis Pupul', NULL),
+  ('Hi-De-Ho', 'Jack White', NULL),
+  ('It’s Random', 'Dora Jar', NULL),
+  ('Snåcko', 'Jeremiah ChiuMarta Sofia Honer', NULL),
+  ('Everybody Love', 'Robert Glasper', NULL),
+  ('Sorry Not Sorry', 'Omerettà the Great', NULL)
   ;
 
    // Update to song table
@@ -344,7 +604,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 11735; // SELECT last_insert_rowid();
+  song_id = 12303; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -384,21 +644,46 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-02-22 08:44:25.087087', '1140', '11724'),
-  ('2022-02-22 08:44:25.089089', '1141', '11725'),
-  ('2022-02-22 08:44:25.090090', '1142', '11722'),
-  ('2022-02-22 08:44:25.090090', '1143', '11726'),
-  ('2022-02-22 08:44:25.090090', '1144', '11727'),
-  ('2022-02-22 08:44:25.090090', '1145', '11671'),
-  ('2022-02-22 08:44:25.090090', '1146', '11699'),
-  ('2022-02-22 08:44:25.090090', '1147', '11728'),
-  ('2022-02-22 08:44:25.090090', '1147', '11729'),
-  ('2022-02-22 08:44:25.091091', '1148', '11730'),
-  ('2022-02-22 08:44:25.091091', '1149', '11731'),
-  ('2022-02-22 08:44:25.091091', '1150', '11732'),
-  ('2022-02-22 08:44:25.091091', '1151', '11733'),
-  ('2022-02-22 08:44:25.091091', '1152', '11734'),
-  ('2022-02-22 08:44:25.091091', '1152', '11735')
+  ('2022-05-30 08:12:32.392392', '1218', '12280'),
+  ('2022-05-30 08:12:32.398398', '1219', '12281'),
+  ('2022-05-30 08:12:32.399399', '1220', '12282'),
+  ('2022-05-30 08:12:32.404404', '1221', '12283'),
+  ('2022-05-30 08:12:32.405405', '1222', '12284'),
+  ('2022-05-30 08:12:32.405405', '1223', '12285'),
+  ('2022-05-30 08:12:32.405405', '1224', '12286'),
+  ('2022-05-30 08:12:32.406406', '1225', '12246'),
+  ('2022-05-30 08:12:32.409409', '1226', '12287'),
+  ('2022-05-30 08:12:32.410410', '1226', '12288'),
+  ('2022-05-30 08:12:32.411411', '1227', '12245'),
+  ('2022-05-30 08:12:32.412412', '1228', '12204'),
+  ('2022-05-30 08:12:32.413413', '1229', '12289'),
+  ('2022-05-30 08:12:32.413413', '1230', '12176'),
+  ('2022-05-30 08:12:32.413413', '1231', '12143'),
+  ('2022-05-30 08:12:32.413413', '1232', '12150'),
+  ('2022-05-30 08:12:32.413413', '1233', '12290'),
+  ('2022-05-30 08:12:32.413413', '1234', '12291'),
+  ('2022-05-30 08:12:32.413413', '1235', '12124'),
+  ('2022-05-30 08:12:32.413413', '1236', '12292'),
+  ('2022-05-30 08:12:32.414414', '1237', '12293'),
+  ('2022-05-30 08:12:32.414414', '1238', '12294'),
+  ('2022-05-30 08:12:32.414414', '1239', '12295'),
+  ('2022-05-30 08:12:32.414414', '1240', '12296'),
+  ('2022-05-30 08:12:32.414414', '1241', '12010'),
+  ('2022-05-30 08:12:32.414414', '1242', '11940'),
+  ('2022-05-30 08:12:32.414414', '1243', '12297'),
+  ('2022-05-30 08:12:32.414414', '1244', '11899'),
+  ('2022-05-30 08:12:32.414414', '1245', '11863'),
+  ('2022-05-30 08:12:32.414414', '1246', '11887'),
+  ('2022-05-30 08:12:32.414414', '1246', '11861'),
+  ('2022-05-30 08:12:32.414414', '1247', '11889'),
+  ('2022-05-30 08:12:32.414414', '1248', '11844'),
+  ('2022-05-30 08:12:32.414414', '1248', '11819'),
+  ('2022-05-30 08:12:32.414414', '1249', '12298'),
+  ('2022-05-30 08:12:32.414414', '1250', '12299'),
+  ('2022-05-30 08:12:32.414414', '1251', '12300'),
+  ('2022-05-30 08:12:32.414414', '1252', '12301'),
+  ('2022-05-30 08:12:32.414414', '1252', '12302'),
+  ('2022-05-30 08:12:32.414414', '1253', '12303')
   ;
 
   // Update to source_song table
