@@ -13,7 +13,7 @@
 // Step 1: Scrape source data
 //
 
-  fader_no = 252 // from the chart page
+  fader_no = 253 // from the chart page
 
   // Add moment.js to the header (make sure scripts aren't blocked in the browser)
   momentjs = document.createElement("script");
@@ -50,7 +50,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('The Fader', '10 songs you need in your life this week', 'No. 252 Week of May 09, 2022', '2022-05-09 12:00:00.000000', 'https://www.thefader.com/2022/05/09/songs-you-need-wu-lu-daboii-duke-deuce-muddymya');
+    ('The Fader', '10 songs you need in your life this week', 'No. 253 Week of May 16, 2022', '2022-05-16 12:00:00.000000', 'https://www.thefader.com/2022/05/16/songs-you-need-blunt-chunks-hitkdd-glorilla-crack-cloud');
 
   // Update to source table
 
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1206; // SELECT last_insert_rowid();
+  source_id = 1211; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("headline");
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Blame",
-        "artist_name": "Wu-Lu",
+        "title": "FNF (Let’s Go)",
+        "artist_name": "Hitkidd and Glorilla",
         "video_id": null,
-        "capture_date": "2022-05-29 07:43:15.077077",
-        "source_id": 1206,
+        "capture_date": "2022-05-29 05:41:18.226226",
+        "source_id": 1211,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Submission",
-        "artist_name": "Organ Tapes",
+        "title": "Hieroglyphics",
+        "artist_name": "Editrix",
         "video_id": null,
-        "capture_date": "2022-05-29 07:43:15.077077",
-        "source_id": 1206,
+        "capture_date": "2022-05-29 05:41:18.227227",
+        "source_id": 1211,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Jealousy",
-        "artist_name": "George Riley",
+        "title": "Topside Freestyle",
+        "artist_name": "Shaudy Kash and Top$ide",
         "video_id": null,
-        "capture_date": "2022-05-29 07:43:15.078078",
-        "source_id": 1206,
+        "capture_date": "2022-05-29 05:41:18.227227",
+        "source_id": 1211,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Drugs & Rovers",
-        "artist_name": "MuddyMya",
+        "title": "Please Yourself",
+        "artist_name": "Crack Cloud",
         "video_id": null,
-        "capture_date": "2022-05-29 07:43:15.078078",
-        "source_id": 1206,
+        "capture_date": "2022-05-29 05:41:18.227227",
+        "source_id": 1211,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ojitos Lindos",
-        "artist_name": "Bad Bunny feat Bomba Estéreo",
+        "title": "Canção da Cura",
+        "artist_name": "Sessa",
         "video_id": null,
-        "capture_date": "2022-05-29 07:43:15.078078",
-        "source_id": 1206,
+        "capture_date": "2022-05-29 05:41:18.227227",
+        "source_id": 1211,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Understand",
-        "artist_name": "Mall Grab ft. Turnstile's Brendan Yates",
+        "title": "Part Of Me",
+        "artist_name": "Blunt Chunks",
         "video_id": null,
-        "capture_date": "2022-05-29 07:43:15.078078",
-        "source_id": 1206,
+        "capture_date": "2022-05-29 05:41:18.227227",
+        "source_id": 1211,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mistakes",
-        "artist_name": "Sharon Van Etten",
+        "title": "Wrong For It",
+        "artist_name": "Obongjayar ft. Nubya Garcia",
         "video_id": null,
-        "capture_date": "2022-05-29 07:43:15.078078",
-        "source_id": 1206,
+        "capture_date": "2022-05-29 05:41:18.227227",
+        "source_id": 1211,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "CRUNKSTARZ",
-        "artist_name": "Duke Deuce",
+        "title": "In The Dark",
+        "artist_name": "MISZCZYK ft. Lætitia Sadler",
         "video_id": null,
-        "capture_date": "2022-05-29 07:43:15.078078",
-        "source_id": 1206,
-        "song_id": 12155,
-        "duplicate": true
-    },
-    {
-        "title": "The Deal",
-        "artist_name": "DaBoii ft. Drakeo The Ruler",
-        "video_id": null,
-        "capture_date": "2022-05-29 07:43:15.078078",
-        "source_id": 1206,
+        "capture_date": "2022-05-29 05:41:18.227227",
+        "source_id": 1211,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nascer, Viver, Morrer",
-        "artist_name": "Tim Bernardes",
+        "title": "Ptolemaea",
+        "artist_name": "Ethel Cain",
         "video_id": null,
-        "capture_date": "2022-05-29 07:43:15.078078",
-        "source_id": 1206,
+        "capture_date": "2022-05-29 05:41:18.227227",
+        "source_id": 1211,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Purple Hearts",
+        "artist_name": "Kendrick Lamar ft. Summer Walker and Ghostface Killah",
+        "video_id": null,
+        "capture_date": "2022-05-29 05:41:18.227227",
+        "source_id": 1211,
         "song_id": null,
         "duplicate": false
     }
@@ -230,15 +230,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Blame', 'Wu-Lu', NULL),
-  ('Submission', 'Organ Tapes', NULL),
-  ('Jealousy', 'George Riley', NULL),
-  ('Drugs & Rovers', 'MuddyMya', NULL),
-  ('Ojitos Lindos', 'Bad Bunny feat Bomba Estéreo', NULL),
-  ('Understand', 'Mall Grab ft. Turnstile’s Brendan Yates', NULL),
-  ('Mistakes', 'Sharon Van Etten', NULL),
-  ('The Deal', 'DaBoii ft. Drakeo The Ruler', NULL),
-  ('Nascer, Viver, Morrer', 'Tim Bernardes', NULL)
+  ('FNF (Let’s Go)', 'Hitkidd and Glorilla', NULL),
+  ('Hieroglyphics', 'Editrix', NULL),
+  ('Topside Freestyle', 'Shaudy Kash and Top$ide', NULL),
+  ('Please Yourself', 'Crack Cloud', NULL),
+  ('Canção da Cura', 'Sessa', NULL),
+  ('Part Of Me', 'Blunt Chunks', NULL),
+  ('Wrong For It', 'Obongjayar ft. Nubya Garcia', NULL),
+  ('In The Dark', 'MISZCZYK ft. Lætitia Sadler', NULL),
+  ('Ptolemaea', 'Ethel Cain', NULL),
+  ('Purple Hearts', 'Kendrick Lamar ft. Summer Walker and Ghostface Killah', NULL)
   ;
 
    // Update to song table
@@ -249,7 +250,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12165; // SELECT last_insert_rowid();
+  song_id = 12225; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +290,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-29 07:43:15.077077', '1206', '12157'),
-  ('2022-05-29 07:43:15.077077', '1206', '12158'),
-  ('2022-05-29 07:43:15.078078', '1206', '12159'),
-  ('2022-05-29 07:43:15.078078', '1206', '12160'),
-  ('2022-05-29 07:43:15.078078', '1206', '12161'),
-  ('2022-05-29 07:43:15.078078', '1206', '12162'),
-  ('2022-05-29 07:43:15.078078', '1206', '12163'),
-  ('2022-05-29 07:43:15.078078', '1206', '12155'),
-  ('2022-05-29 07:43:15.078078', '1206', '12164'),
-  ('2022-05-29 07:43:15.078078', '1206', '12165')
+  ('2022-05-29 05:41:18.226226', '1211', '12216'),
+  ('2022-05-29 05:41:18.227227', '1211', '12217'),
+  ('2022-05-29 05:41:18.227227', '1211', '12218'),
+  ('2022-05-29 05:41:18.227227', '1211', '12219'),
+  ('2022-05-29 05:41:18.227227', '1211', '12220'),
+  ('2022-05-29 05:41:18.227227', '1211', '12221'),
+  ('2022-05-29 05:41:18.227227', '1211', '12222'),
+  ('2022-05-29 05:41:18.227227', '1211', '12223'),
+  ('2022-05-29 05:41:18.227227', '1211', '12224'),
+  ('2022-05-29 05:41:18.227227', '1211', '12225')
   ;
 
   // Update to source_song table

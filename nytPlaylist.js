@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Black Star’s First Album in 24 Years Arrives, and 11 More New Songs', '2022-05-06 08:50:08.000000', 'https://www.nytimes.com/2022/05/06/arts/music/playlist-black-star-lady-gaga-doja-cat.html');
+    ('New York Times', 'The Playlist', 'My Chemical Romance’s Prog-Emo Surprise, and 12 More New Songs', '2022-05-13 08:16:46.000000', 'https://www.nytimes.com/2022/05/13/arts/music/playlist-my-chemical-romance-kendrick-lamar.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1204; // SELECT last_insert_rowid();
+  source_id = 1209; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,110 +100,119 @@
   songsData =
   [
     {
-        "title": "O.G.",
-        "artist_name": "Black Star",
+        "title": "The Foundations of Decay",
+        "artist_name": "My Chemical Romance",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.255255",
-        "source_id": 1204,
+        "capture_date": "2022-05-29 05:25:16.755755",
+        "source_id": 1209,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Vegas",
-        "artist_name": "Doja Cat",
+        "title": "The Opposite",
+        "artist_name": "The Smile",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.256256",
-        "source_id": 1204,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Western Wind",
-        "artist_name": "Carly Rae Jepsen",
+        "title": "Welcome to Hell",
+        "artist_name": "black midi",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.256256",
-        "source_id": 1204,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sleep Tight",
-        "artist_name": "Holly Humberstone",
+        "title": "The Heart Part 5",
+        "artist_name": "Kendrick Lamar",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.256256",
-        "source_id": 1204,
-        "song_id": 12112,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
+        "song_id": 12176,
         "duplicate": true
     },
     {
-        "title": "Hold My Hand",
-        "artist_name": "Lady Gaga",
+        "title": "Brown",
+        "artist_name": "Flores",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.256256",
-        "source_id": 1204,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Web",
-        "artist_name": "070 Shake",
+        "title": "Michael",
+        "artist_name": "Remi Wolf",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.256256",
-        "source_id": 1204,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Come Back",
-        "artist_name": "Sharon Van Etten",
+        "title": "Lydia Wears a Cross",
+        "artist_name": "Julia Jacklin",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.256256",
-        "source_id": 1204,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mirrorball",
-        "artist_name": "Kathleen Hanna, Erica Dawn Lyle and Vice Cooler",
+        "title": "Roman Candles",
+        "artist_name": "Death Cab for Cutie",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.256256",
-        "source_id": 1204,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Le Bal Est Fini",
-        "artist_name": "Leyla McCalla",
+        "title": "How Long",
+        "artist_name": "The Black Keys",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.256256",
-        "source_id": 1204,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "D.M.B.",
-        "artist_name": "ASAP Rocky",
+        "title": "Purple Haze",
+        "artist_name": "Joy Oladokun",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.256256",
-        "source_id": 1204,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ribs",
-        "artist_name": "Tirzah",
+        "title": "Girl Ur So Pretty",
+        "artist_name": "Ambar Lucid",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.257257",
-        "source_id": 1204,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "New Scars",
-        "artist_name": "Glasser",
+        "title": "Interpret It Well",
+        "artist_name": "Ches Smith",
         "video_id": null,
-        "capture_date": "2022-05-29 07:31:08.257257",
-        "source_id": 1204,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fanfare",
+        "artist_name": "Jacob Garchik",
+        "video_id": null,
+        "capture_date": "2022-05-29 05:25:16.760760",
+        "source_id": 1209,
         "song_id": null,
         "duplicate": false
     }
@@ -246,17 +255,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('O.G.', 'Black Star', NULL),
-  ('Vegas', 'Doja Cat', NULL),
-  ('Western Wind', 'Carly Rae Jepsen', NULL),
-  ('Hold My Hand', 'Lady Gaga', NULL),
-  ('Web', '070 Shake', NULL),
-  ('Come Back', 'Sharon Van Etten', NULL),
-  ('Mirrorball', 'Kathleen Hanna, Erica Dawn Lyle and Vice Cooler', NULL),
-  ('Le Bal Est Fini', 'Leyla McCalla', NULL),
-  ('D.M.B.', 'ASAP Rocky', NULL),
-  ('Ribs', 'Tirzah', NULL),
-  ('New Scars', 'Glasser', NULL)
+  ('The Foundations of Decay', 'My Chemical Romance', NULL),
+  ('The Opposite', 'The Smile', NULL),
+  ('Welcome to Hell', 'black midi', NULL),
+  ('Brown', 'Flores', NULL),
+  ('Michael', 'Remi Wolf', NULL),
+  ('Lydia Wears a Cross', 'Julia Jacklin', NULL),
+  ('Roman Candles', 'Death Cab for Cutie', NULL),
+  ('How Long', 'The Black Keys', NULL),
+  ('Purple Haze', 'Joy Oladokun', NULL),
+  ('Girl Ur So Pretty', 'Ambar Lucid', NULL),
+  ('Interpret It Well', 'Ches Smith', NULL),
+  ('Fanfare', 'Jacob Garchik', NULL)
   ;
 
    // Update to song table
@@ -267,7 +277,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12151; // SELECT last_insert_rowid();
+  song_id = 12210; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -307,18 +317,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-29 07:31:08.255255', '1204', '12141'),
-  ('2022-05-29 07:31:08.256256', '1204', '12142'),
-  ('2022-05-29 07:31:08.256256', '1204', '12143'),
-  ('2022-05-29 07:31:08.256256', '1204', '12112'),
-  ('2022-05-29 07:31:08.256256', '1204', '12144'),
-  ('2022-05-29 07:31:08.256256', '1204', '12145'),
-  ('2022-05-29 07:31:08.256256', '1204', '12146'),
-  ('2022-05-29 07:31:08.256256', '1204', '12147'),
-  ('2022-05-29 07:31:08.256256', '1204', '12148'),
-  ('2022-05-29 07:31:08.256256', '1204', '12149'),
-  ('2022-05-29 07:31:08.257257', '1204', '12150'),
-  ('2022-05-29 07:31:08.257257', '1204', '12151')
+  ('2022-05-29 05:25:16.755755', '1209', '12199'),
+  ('2022-05-29 05:25:16.760760', '1209', '12200'),
+  ('2022-05-29 05:25:16.760760', '1209', '12201'),
+  ('2022-05-29 05:25:16.760760', '1209', '12176'),
+  ('2022-05-29 05:25:16.760760', '1209', '12202'),
+  ('2022-05-29 05:25:16.760760', '1209', '12203'),
+  ('2022-05-29 05:25:16.760760', '1209', '12204'),
+  ('2022-05-29 05:25:16.760760', '1209', '12205'),
+  ('2022-05-29 05:25:16.760760', '1209', '12206'),
+  ('2022-05-29 05:25:16.760760', '1209', '12207'),
+  ('2022-05-29 05:25:16.760760', '1209', '12208'),
+  ('2022-05-29 05:25:16.760760', '1209', '12209'),
+  ('2022-05-29 05:25:16.760760', '1209', '12210')
   ;
 
   // Update to source_song table

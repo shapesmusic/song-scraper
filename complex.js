@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'Best New Music This Week', 'ASAP Rocky, Jack Harlow, Bad Bunny, and More', '2022-05-06 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-may-6/sir-satisfaction');
+    ('Complex', 'Best New Music This Week', 'Kendrick Lamar, Post Malone, Burna Boy, and More', '2022-05-13 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-may-13/lil-eazzyy-no-hook');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1205; // SELECT last_insert_rowid();
+  source_id = 1210; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,65 +101,47 @@
   songsData =
   [
     {
-        "title": "D.M.B.",
-        "artist_name": "ASAP Rocky",
+        "title": "N95",
+        "artist_name": "Kendrick Lamar",
         "video_id": null,
-        "capture_date": "2022-05-29 07:36:05.665665",
-        "source_id": 1205,
-        "song_id": 12149,
-        "duplicate": true
-    },
-    {
-        "title": "Churchill Downs",
-        "artist_name": "Jack Harlow ft. Drake",
-        "video_id": null,
-        "capture_date": "2022-05-29 07:36:05.673673",
-        "source_id": 1205,
+        "capture_date": "2022-05-29 05:30:52.029029",
+        "source_id": 1210,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Vegas",
-        "artist_name": "Doja Cat",
+        "title": "Cooped Up",
+        "artist_name": "Post Malone ft. Roddy Ricch",
         "video_id": null,
-        "capture_date": "2022-05-29 07:36:05.673673",
-        "source_id": 1205,
-        "song_id": 12142,
-        "duplicate": true
-    },
-    {
-        "title": "Moscow Mule",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2022-05-29 07:36:05.674674",
-        "source_id": 1205,
+        "capture_date": "2022-05-29 05:30:52.030030",
+        "source_id": 1210,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Code",
-        "artist_name": "IDK ft. Mike Dimes",
+        "title": "Last Last",
+        "artist_name": "Burna Boy",
         "video_id": null,
-        "capture_date": "2022-05-29 07:36:05.674674",
-        "source_id": 1205,
+        "capture_date": "2022-05-29 05:30:52.030030",
+        "source_id": 1210,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Crunkstarz",
-        "artist_name": "Duke Deuce",
+        "title": "Get the Riches",
+        "artist_name": "Leikeli47",
         "video_id": null,
-        "capture_date": "2022-05-29 07:36:05.674674",
-        "source_id": 1205,
+        "capture_date": "2022-05-29 05:30:52.030030",
+        "source_id": 1210,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Satisfaction",
-        "artist_name": "SiR",
+        "title": "No Hook",
+        "artist_name": "Lil Eazzyy",
         "video_id": null,
-        "capture_date": "2022-05-29 07:36:05.674674",
-        "source_id": 1205,
+        "capture_date": "2022-05-29 05:30:52.030030",
+        "source_id": 1210,
         "song_id": null,
         "duplicate": false
     }
@@ -202,11 +184,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Churchill Downs', 'Jack Harlow ft. Drake', NULL),
-  ('Moscow Mule', 'Bad Bunny', NULL),
-  ('The Code', 'IDK ft. Mike Dimes', NULL),
-  ('Crunkstarz', 'Duke Deuce', NULL),
-  ('Satisfaction', 'SiR', NULL)
+  ('N95', 'Kendrick Lamar', NULL),
+  ('Cooped Up', 'Post Malone ft. Roddy Ricch', NULL),
+  ('Last Last', 'Burna Boy', NULL),
+  ('Get the Riches', 'Leikeli47', NULL),
+  ('No Hook', 'Lil Eazzyy', NULL)
   ;
 
    // Update to song table
@@ -217,7 +199,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12156; // SELECT last_insert_rowid();
+  song_id = 12215; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -257,13 +239,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-29 07:36:05.665665', '1205', '12149'),
-  ('2022-05-29 07:36:05.673673', '1205', '12152'),
-  ('2022-05-29 07:36:05.673673', '1205', '12142'),
-  ('2022-05-29 07:36:05.674674', '1205', '12153'),
-  ('2022-05-29 07:36:05.674674', '1205', '12154'),
-  ('2022-05-29 07:36:05.674674', '1205', '12155'),
-  ('2022-05-29 07:36:05.674674', '1205', '12156')
+  ('2022-05-29 05:30:52.029029', '1210', '12211'),
+  ('2022-05-29 05:30:52.030030', '1210', '12212'),
+  ('2022-05-29 05:30:52.030030', '1210', '12213'),
+  ('2022-05-29 05:30:52.030030', '1210', '12214'),
+  ('2022-05-29 05:30:52.030030', '1210', '12215')
   ;
 
   // Update to source_song table
