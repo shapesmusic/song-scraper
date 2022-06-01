@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Rina Sawayama Flips Damnation Into a Dance Party, and 15 More New Songs', '2022-05-20 07:30:54.000000', 'https://www.nytimes.com/2022/05/20/arts/music/playlist-rina-sawayama-burna-boy.html');
+    ('New York Times', 'The Playlist', 'Sky Ferreira’s Dazzling, Defiant Return, and 11 More New Songs', '2022-05-27 08:25:04.000000', 'https://www.nytimes.com/2022/05/27/arts/music/playlist-sky-ferreira-rico-nasty.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1214; // SELECT last_insert_rowid();
+  source_id = 1254; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,146 +100,110 @@
   songsData =
   [
     {
-        "title": "This Hell",
-        "artist_name": "Rina Sawayama",
+        "title": "Don’t Forget",
+        "artist_name": "Sky Ferreira",
         "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.244244",
-        "source_id": 1214,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Frown",
-        "artist_name": "mxmtoon",
-        "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Turn Up the Sunshine",
-        "artist_name": "Diana Ross and Tame Impala",
-        "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "She Don’t Know",
-        "artist_name": "Carrie Underwood",
-        "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Conchitas",
-        "artist_name": "Katzù Oso",
-        "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Selfish Soul",
-        "artist_name": "Sudan Archives",
-        "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Doomscroller",
-        "artist_name": "Metric",
-        "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sunburn",
-        "artist_name": "Sylvan Esso",
-        "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Last Last",
-        "artist_name": "Burna Boy",
-        "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
-        "song_id": 12213,
+        "capture_date": "2022-05-31 07:17:05.023023",
+        "source_id": 1254,
+        "song_id": 12281,
         "duplicate": true
     },
     {
-        "title": "Metamorfosis",
-        "artist_name": "Meridian Brothers & El Grupo Renacimiento",
+        "title": "Blessing",
+        "artist_name": "Alex G",
         "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
+        "capture_date": "2022-05-31 07:17:05.023023",
+        "source_id": 1254,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Watina",
-        "artist_name": "Calypso Rose ft. Carlos Santana and the Garifuna Collective",
+        "title": "On & On",
+        "artist_name": "Superorganism",
         "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
+        "capture_date": "2022-05-31 07:17:05.023023",
+        "source_id": 1254,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Wanna Hold Your Electric Hand",
-        "artist_name": "Oneida",
+        "title": "Other Side",
+        "artist_name": "Wynonna & Waxahatchee",
         "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
+        "capture_date": "2022-05-31 07:17:05.023023",
+        "source_id": 1254,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "A Moment of Mystery",
-        "artist_name": "FKJ ft. Toro y Moi",
+        "title": "Empathy for Bethany",
+        "artist_name": "Saya Gray",
         "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
+        "capture_date": "2022-05-31 07:17:05.023023",
+        "source_id": 1254,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Formwela 12",
-        "artist_name": "Esperanza Spalding",
+        "title": "Tag",
+        "artist_name": "Bruce Hornsby",
         "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
+        "capture_date": "2022-05-31 07:17:05.023023",
+        "source_id": 1254,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Explore Inner Space",
-        "artist_name": "Shabaka",
+        "title": "April",
+        "artist_name": "Maria BC",
         "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
+        "capture_date": "2022-05-31 07:17:05.023023",
+        "source_id": 1254,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hundred Dollar Hoagie",
-        "artist_name": "Mary Lattimore and Paul Sukeena",
+        "title": "Amber",
+        "artist_name": "Kaitlyn Aurelia Smith & Emile Mosseri",
         "video_id": null,
-        "capture_date": "2022-05-30 07:34:25.248248",
-        "source_id": 1214,
+        "capture_date": "2022-05-31 07:17:05.023023",
+        "source_id": 1254,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mama",
+        "artist_name": "Nduduzo Makhathini ft. Omagugu",
+        "video_id": null,
+        "capture_date": "2022-05-31 07:17:05.023023",
+        "source_id": 1254,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Intrusive",
+        "artist_name": "Rico Nasty",
+        "video_id": null,
+        "capture_date": "2022-05-31 07:17:05.023023",
+        "source_id": 1254,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sleazy Flow (remix)",
+        "artist_name": "SleazyWorld Go ft. Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-05-31 07:17:05.024024",
+        "source_id": 1254,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Al Compas de Mi Viejo Tres",
+        "artist_name": "David Virelles",
+        "video_id": null,
+        "capture_date": "2022-05-31 07:17:05.024024",
+        "source_id": 1254,
         "song_id": null,
         "duplicate": false
     }
@@ -282,21 +246,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('This Hell', 'Rina Sawayama', NULL),
-  ('Frown', 'mxmtoon', NULL),
-  ('Turn Up the Sunshine', 'Diana Ross and Tame Impala', NULL),
-  ('She Don’t Know', 'Carrie Underwood', NULL),
-  ('Conchitas', 'Katzù Oso', NULL),
-  ('Selfish Soul', 'Sudan Archives', NULL),
-  ('Doomscroller', 'Metric', NULL),
-  ('Sunburn', 'Sylvan Esso', NULL),
-  ('Metamorfosis', 'Meridian Brothers & El Grupo Renacimiento', NULL),
-  ('Watina', 'Calypso Rose ft. Carlos Santana and the Garifuna Collective', NULL),
-  ('I Wanna Hold Your Electric Hand', 'Oneida', NULL),
-  ('A Moment of Mystery', 'FKJ ft. Toro y Moi', NULL),
-  ('Formwela 12', 'Esperanza Spalding', NULL),
-  ('Explore Inner Space', 'Shabaka', NULL),
-  ('Hundred Dollar Hoagie', 'Mary Lattimore and Paul Sukeena', NULL)
+  ('Blessing', 'Alex G', NULL),
+  ('On & On', 'Superorganism', NULL),
+  ('Other Side', 'Wynonna & Waxahatchee', NULL),
+  ('Empathy for Bethany', 'Saya Gray', NULL),
+  ('Tag', 'Bruce Hornsby', NULL),
+  ('April', 'Maria BC', NULL),
+  ('Amber', 'Kaitlyn Aurelia Smith & Emile Mosseri', NULL),
+  ('Mama', 'Nduduzo Makhathini ft. Omagugu', NULL),
+  ('Intrusive', 'Rico Nasty', NULL),
+  ('Sleazy Flow (remix)', 'SleazyWorld Go ft. Lil Baby', NULL),
+  ('Al Compas de Mi Viejo Tres', 'David Virelles', NULL)
   ;
 
    // Update to song table
@@ -307,7 +267,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12260; // SELECT last_insert_rowid();
+  song_id = 12314; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -347,22 +307,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-30 07:34:25.244244', '1214', '12246'),
-  ('2022-05-30 07:34:25.248248', '1214', '12247'),
-  ('2022-05-30 07:34:25.248248', '1214', '12248'),
-  ('2022-05-30 07:34:25.248248', '1214', '12249'),
-  ('2022-05-30 07:34:25.248248', '1214', '12250'),
-  ('2022-05-30 07:34:25.248248', '1214', '12251'),
-  ('2022-05-30 07:34:25.248248', '1214', '12252'),
-  ('2022-05-30 07:34:25.248248', '1214', '12253'),
-  ('2022-05-30 07:34:25.248248', '1214', '12213'),
-  ('2022-05-30 07:34:25.248248', '1214', '12254'),
-  ('2022-05-30 07:34:25.248248', '1214', '12255'),
-  ('2022-05-30 07:34:25.248248', '1214', '12256'),
-  ('2022-05-30 07:34:25.248248', '1214', '12257'),
-  ('2022-05-30 07:34:25.248248', '1214', '12258'),
-  ('2022-05-30 07:34:25.248248', '1214', '12259'),
-  ('2022-05-30 07:34:25.248248', '1214', '12260')
+  ('2022-05-31 07:17:05.023023', '1254', '12281'),
+  ('2022-05-31 07:17:05.023023', '1254', '12304'),
+  ('2022-05-31 07:17:05.023023', '1254', '12305'),
+  ('2022-05-31 07:17:05.023023', '1254', '12306'),
+  ('2022-05-31 07:17:05.023023', '1254', '12307'),
+  ('2022-05-31 07:17:05.023023', '1254', '12308'),
+  ('2022-05-31 07:17:05.023023', '1254', '12309'),
+  ('2022-05-31 07:17:05.023023', '1254', '12310'),
+  ('2022-05-31 07:17:05.023023', '1254', '12311'),
+  ('2022-05-31 07:17:05.023023', '1254', '12312'),
+  ('2022-05-31 07:17:05.024024', '1254', '12313'),
+  ('2022-05-31 07:17:05.024024', '1254', '12314')
   ;
 
   // Update to source_song table

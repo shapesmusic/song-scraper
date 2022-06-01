@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of May 20, 2022', '2022-05-20 12:00:00.000000', 'https://www.stereogum.com/2187277/the-5-best-songs-of-the-week-434/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of May 27, 2022', '2022-05-27 12:00:00.000000', 'https://www.stereogum.com/2188148/the-5-best-songs-of-the-week-435/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1217; // SELECT last_insert_rowid();
+  source_id = 1256; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,48 +101,48 @@
   songsData =
   [
     {
-        "title": "(Herman's) House",
-        "artist_name": "Special Interest",
+        "title": "Hatekeeper",
+        "artist_name": "End It",
         "video_id": null,
-        "capture_date": "2022-05-30 07:47:40.516516",
-        "source_id": 1217,
-        "song_id": 12274,
-        "duplicate": true
-    },
-    {
-        "title": "Through The Fires",
-        "artist_name": "Angel Olsen",
-        "video_id": null,
-        "capture_date": "2022-05-30 07:47:40.523523",
-        "source_id": 1217,
+        "capture_date": "2022-05-31 07:30:18.686686",
+        "source_id": 1256,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Toll",
-        "artist_name": "Naima Bock",
+        "title": "People Watching",
+        "artist_name": "Ganser",
         "video_id": null,
-        "capture_date": "2022-05-30 07:47:40.523523",
-        "source_id": 1217,
+        "capture_date": "2022-05-31 07:30:18.687687",
+        "source_id": 1256,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Selfish Soul",
-        "artist_name": "Sudan Archives",
+        "title": "Blessing",
+        "artist_name": "Alex G",
         "video_id": null,
-        "capture_date": "2022-05-30 07:47:40.523523",
-        "source_id": 1217,
-        "song_id": 12251,
+        "capture_date": "2022-05-31 07:30:18.687687",
+        "source_id": 1256,
+        "song_id": 12304,
         "duplicate": true
     },
     {
-        "title": "Mother I Sober",
-        "artist_name": "Kendrick Lamar",
+        "title": "That's Physics, Baby",
+        "artist_name": "Pool Kids",
         "video_id": null,
-        "capture_date": "2022-05-30 07:47:40.523523",
-        "source_id": 1217,
-        "song_id": 12245,
+        "capture_date": "2022-05-31 07:30:18.687687",
+        "source_id": 1256,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Don't Forget",
+        "artist_name": "Sky Ferreira",
+        "video_id": null,
+        "capture_date": "2022-05-31 07:30:18.687687",
+        "source_id": 1256,
+        "song_id": 12281,
         "duplicate": true
     }
 ]
@@ -184,8 +184,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Through The Fires', 'Angel Olsen', NULL),
-  ('Toll', 'Naima Bock', NULL)
+  ('Hatekeeper', 'End It', NULL),
+  ('People Watching', 'Ganser', NULL),
+  ('That’s Physics, Baby', 'Pool Kids', NULL)
   ;
 
    // Update to song table
@@ -196,7 +197,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12279; // SELECT last_insert_rowid();
+  song_id = 12324; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -236,11 +237,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-30 07:47:40.516516', '1217', '12274'),
-  ('2022-05-30 07:47:40.523523', '1217', '12278'),
-  ('2022-05-30 07:47:40.523523', '1217', '12279'),
-  ('2022-05-30 07:47:40.523523', '1217', '12251'),
-  ('2022-05-30 07:47:40.523523', '1217', '12245')
+  ('2022-05-31 07:30:18.686686', '1256', '12322'),
+  ('2022-05-31 07:30:18.687687', '1256', '12323'),
+  ('2022-05-31 07:30:18.687687', '1256', '12304'),
+  ('2022-05-31 07:30:18.687687', '1256', '12324'),
+  ('2022-05-31 07:30:18.687687', '1256', '12281')
   ;
 
   // Update to source_song table
