@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Sky Ferreira’s Dazzling, Defiant Return, and 11 More New Songs', '2022-05-27 08:25:04.000000', 'https://www.nytimes.com/2022/05/27/arts/music/playlist-sky-ferreira-rico-nasty.html');
+    ('New York Times', 'The Playlist', 'Yeah Yeahs Yeahs’ Apocalyptic March, and 10 More New Songs', '2022-06-09 12:57:51.000000', 'https://www.nytimes.com/2022/06/03/arts/music/playlist-yeah-yeahs-yeahs-maggie-rogers.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1254; // SELECT last_insert_rowid();
+  source_id = 1259; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,110 +100,101 @@
   songsData =
   [
     {
-        "title": "Don’t Forget",
-        "artist_name": "Sky Ferreira",
+        "title": "Spitting Off the Edge of the World",
+        "artist_name": "Yeah Yeah Yeahs ft. Perfume Genius",
         "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.023023",
-        "source_id": 1254,
-        "song_id": 12281,
-        "duplicate": true
-    },
-    {
-        "title": "Blessing",
-        "artist_name": "Alex G",
-        "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.023023",
-        "source_id": 1254,
+        "capture_date": "2022-06-09 06:15:30.534534",
+        "source_id": 1259,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "On & On",
-        "artist_name": "Superorganism",
+        "title": "Want Want",
+        "artist_name": "Maggie Rogers",
         "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.023023",
-        "source_id": 1254,
+        "capture_date": "2022-06-09 06:15:30.539539",
+        "source_id": 1259,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Other Side",
-        "artist_name": "Wynonna & Waxahatchee",
+        "title": "The Name of This Terrain",
+        "artist_name": "Denny Zeitlin with George Marsh and Mel Graves",
         "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.023023",
-        "source_id": 1254,
+        "capture_date": "2022-06-09 06:15:30.539539",
+        "source_id": 1259,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Empathy for Bethany",
-        "artist_name": "Saya Gray",
+        "title": "Grieving",
+        "artist_name": "Revelators Sound System",
         "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.023023",
-        "source_id": 1254,
+        "capture_date": "2022-06-09 06:15:30.539539",
+        "source_id": 1259,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tag",
-        "artist_name": "Bruce Hornsby",
+        "title": "In the Sand",
+        "artist_name": "Kamikaze Palm Tree",
         "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.023023",
-        "source_id": 1254,
+        "capture_date": "2022-06-09 06:15:30.539539",
+        "source_id": 1259,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "April",
-        "artist_name": "Maria BC",
+        "title": "Eniko",
+        "artist_name": "Arp",
         "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.023023",
-        "source_id": 1254,
+        "capture_date": "2022-06-09 06:15:30.539539",
+        "source_id": 1259,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Amber",
-        "artist_name": "Kaitlyn Aurelia Smith & Emile Mosseri",
+        "title": "Training Montage",
+        "artist_name": "The Mountain Goats",
         "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.023023",
-        "source_id": 1254,
+        "capture_date": "2022-06-09 06:15:30.540540",
+        "source_id": 1259,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mama",
-        "artist_name": "Nduduzo Makhathini ft. Omagugu",
+        "title": "Out Loud",
+        "artist_name": "Kyshona",
         "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.023023",
-        "source_id": 1254,
+        "capture_date": "2022-06-09 06:15:30.540540",
+        "source_id": 1259,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Intrusive",
-        "artist_name": "Rico Nasty",
+        "title": "Weather Alive",
+        "artist_name": "Beth Orton",
         "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.023023",
-        "source_id": 1254,
+        "capture_date": "2022-06-09 06:15:30.540540",
+        "source_id": 1259,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sleazy Flow (remix)",
-        "artist_name": "SleazyWorld Go ft. Lil Baby",
+        "title": "Madness",
+        "artist_name": "Poliça",
         "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.024024",
-        "source_id": 1254,
+        "capture_date": "2022-06-09 06:15:30.540540",
+        "source_id": 1259,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Al Compas de Mi Viejo Tres",
-        "artist_name": "David Virelles",
+        "title": "Meditations on Oya",
+        "artist_name": "JoVia Armstrong",
         "video_id": null,
-        "capture_date": "2022-05-31 07:17:05.024024",
-        "source_id": 1254,
+        "capture_date": "2022-06-09 06:15:30.540540",
+        "source_id": 1259,
         "song_id": null,
         "duplicate": false
     }
@@ -246,17 +237,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Blessing', 'Alex G', NULL),
-  ('On & On', 'Superorganism', NULL),
-  ('Other Side', 'Wynonna & Waxahatchee', NULL),
-  ('Empathy for Bethany', 'Saya Gray', NULL),
-  ('Tag', 'Bruce Hornsby', NULL),
-  ('April', 'Maria BC', NULL),
-  ('Amber', 'Kaitlyn Aurelia Smith & Emile Mosseri', NULL),
-  ('Mama', 'Nduduzo Makhathini ft. Omagugu', NULL),
-  ('Intrusive', 'Rico Nasty', NULL),
-  ('Sleazy Flow (remix)', 'SleazyWorld Go ft. Lil Baby', NULL),
-  ('Al Compas de Mi Viejo Tres', 'David Virelles', NULL)
+  ('Spitting Off the Edge of the World', 'Yeah Yeah Yeahs ft. Perfume Genius', NULL),
+  ('Want Want', 'Maggie Rogers', NULL),
+  ('The Name of This Terrain', 'Denny Zeitlin with George Marsh and Mel Graves', NULL),
+  ('Grieving', 'Revelators Sound System', NULL),
+  ('In the Sand', 'Kamikaze Palm Tree', NULL),
+  ('Eniko', 'Arp', NULL),
+  ('Training Montage', 'The Mountain Goats', NULL),
+  ('Out Loud', 'Kyshona', NULL),
+  ('Weather Alive', 'Beth Orton', NULL),
+  ('Madness', 'Poliça', NULL),
+  ('Meditations on Oya', 'JoVia Armstrong', NULL)
   ;
 
    // Update to song table
@@ -267,7 +258,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12314; // SELECT last_insert_rowid();
+  song_id = 12355; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -307,18 +298,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-31 07:17:05.023023', '1254', '12281'),
-  ('2022-05-31 07:17:05.023023', '1254', '12304'),
-  ('2022-05-31 07:17:05.023023', '1254', '12305'),
-  ('2022-05-31 07:17:05.023023', '1254', '12306'),
-  ('2022-05-31 07:17:05.023023', '1254', '12307'),
-  ('2022-05-31 07:17:05.023023', '1254', '12308'),
-  ('2022-05-31 07:17:05.023023', '1254', '12309'),
-  ('2022-05-31 07:17:05.023023', '1254', '12310'),
-  ('2022-05-31 07:17:05.023023', '1254', '12311'),
-  ('2022-05-31 07:17:05.023023', '1254', '12312'),
-  ('2022-05-31 07:17:05.024024', '1254', '12313'),
-  ('2022-05-31 07:17:05.024024', '1254', '12314')
+  ('2022-06-09 06:15:30.534534', '1259', '12345'),
+  ('2022-06-09 06:15:30.539539', '1259', '12346'),
+  ('2022-06-09 06:15:30.539539', '1259', '12347'),
+  ('2022-06-09 06:15:30.539539', '1259', '12348'),
+  ('2022-06-09 06:15:30.539539', '1259', '12349'),
+  ('2022-06-09 06:15:30.539539', '1259', '12350'),
+  ('2022-06-09 06:15:30.540540', '1259', '12351'),
+  ('2022-06-09 06:15:30.540540', '1259', '12352'),
+  ('2022-06-09 06:15:30.540540', '1259', '12353'),
+  ('2022-06-09 06:15:30.540540', '1259', '12354'),
+  ('2022-06-09 06:15:30.540540', '1259', '12355')
   ;
 
   // Update to source_song table

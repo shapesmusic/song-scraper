@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of June 4, 2022', '2022-06-04 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-06-04');
+    ('Billboard', 'The Hot 100', 'Week of June 11, 2022', '2022-06-11 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-06-11');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1257; // SELECT last_insert_rowid();
+  source_id = 1258; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,137 +105,110 @@
   songsData =
   [
     {
-        "title": "Late Night Talking",
-        "artist_name": "Harry Styles",
+        "title": "True Love",
+        "artist_name": "Kanye West & XXXTENTACION",
         "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.833833",
-        "source_id": 1257,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Music For A Sushi Restaurant",
-        "artist_name": "Harry Styles",
-        "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.833833",
-        "source_id": 1257,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Matilda",
-        "artist_name": "Harry Styles",
-        "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.833833",
-        "source_id": 1257,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Daylight",
-        "artist_name": "Harry Styles",
-        "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.834834",
-        "source_id": 1257,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Little Freak",
-        "artist_name": "Harry Styles",
-        "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.834834",
-        "source_id": 1257,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Grapejuice",
-        "artist_name": "Harry Styles",
-        "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.835835",
-        "source_id": 1257,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Satellite",
-        "artist_name": "Harry Styles",
-        "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.836836",
-        "source_id": 1257,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cinema",
-        "artist_name": "Harry Styles",
-        "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.836836",
-        "source_id": 1257,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Daydreaming",
-        "artist_name": "Harry Styles",
-        "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.838838",
-        "source_id": 1257,
-        "song_id": 12267,
+        "capture_date": "2022-06-09 06:07:25.932932",
+        "source_id": 1258,
+        "song_id": 12321,
         "duplicate": true
     },
     {
-        "title": "Keep Driving",
-        "artist_name": "Harry Styles",
+        "title": "Sleazy Flow",
+        "artist_name": "SleazyWorld Go ft. Lil Baby",
         "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.838838",
-        "source_id": 1257,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Love Of My Life",
-        "artist_name": "Harry Styles",
-        "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.839839",
-        "source_id": 1257,
-        "song_id": 12276,
+        "capture_date": "2022-06-09 06:07:25.933933",
+        "source_id": 1258,
+        "song_id": 12319,
         "duplicate": true
     },
     {
-        "title": "Boyfriends",
-        "artist_name": "Harry Styles",
+        "title": "See Wat I'm Sayin",
+        "artist_name": "Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.839839",
-        "source_id": 1257,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hotel Lobby (Unc And Phew)",
-        "artist_name": "Quavo & Takeoff",
-        "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.842842",
-        "source_id": 1257,
-        "song_id": 12261,
+        "capture_date": "2022-06-09 06:07:25.933933",
+        "source_id": 1258,
+        "song_id": 12318,
         "duplicate": true
     },
     {
-        "title": "Like I Love Country Music",
-        "artist_name": "Kane Brown",
+        "title": "Die Young",
+        "artist_name": "Sleepy Hallow ft. 347aidan",
         "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.845845",
-        "source_id": 1257,
+        "capture_date": "2022-06-09 06:07:25.933933",
+        "source_id": 1258,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "DFMU",
-        "artist_name": "Ella Mai",
+        "title": "Potion",
+        "artist_name": "Calvin Harris, Dua Lipa & Young Thug",
         "video_id": null,
-        "capture_date": "2022-06-01 10:07:34.846846",
-        "source_id": 1257,
+        "capture_date": "2022-06-09 06:07:25.934934",
+        "source_id": 1258,
+        "song_id": 12280,
+        "duplicate": true
+    },
+    {
+        "title": "She Had Me At Heads Carolina",
+        "artist_name": "Cole Swindell",
+        "video_id": null,
+        "capture_date": "2022-06-09 06:07:25.934934",
+        "source_id": 1258,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sunroof",
+        "artist_name": "Nicky Youre & dazy",
+        "video_id": null,
+        "capture_date": "2022-06-09 06:07:25.934934",
+        "source_id": 1258,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "F.N.F. (Let's Go)",
+        "artist_name": "Hitkidd & Glorilla",
+        "video_id": null,
+        "capture_date": "2022-06-09 06:07:25.934934",
+        "source_id": 1258,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wild Hearts",
+        "artist_name": "Keith Urban",
+        "video_id": null,
+        "capture_date": "2022-06-09 06:07:25.934934",
+        "source_id": 1258,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Last Night Lonely",
+        "artist_name": "Jon Pardi",
+        "video_id": null,
+        "capture_date": "2022-06-09 06:07:25.934934",
+        "source_id": 1258,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "7500 OBO",
+        "artist_name": "Tim McGraw",
+        "video_id": null,
+        "capture_date": "2022-06-09 06:07:25.934934",
+        "source_id": 1258,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Until I Found You",
+        "artist_name": "Stephen Sanchez",
+        "video_id": null,
+        "capture_date": "2022-06-09 06:07:25.934934",
+        "source_id": 1258,
         "song_id": null,
         "duplicate": false
     }
@@ -278,18 +251,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Late Night Talking', 'Harry Styles', NULL),
-  ('Music For A Sushi Restaurant', 'Harry Styles', NULL),
-  ('Matilda', 'Harry Styles', NULL),
-  ('Daylight', 'Harry Styles', NULL),
-  ('Little Freak', 'Harry Styles', NULL),
-  ('Grapejuice', 'Harry Styles', NULL),
-  ('Satellite', 'Harry Styles', NULL),
-  ('Cinema', 'Harry Styles', NULL),
-  ('Keep Driving', 'Harry Styles', NULL),
-  ('Boyfriends', 'Harry Styles', NULL),
-  ('Like I Love Country Music', 'Kane Brown', NULL),
-  ('DFMU', 'Ella Mai', NULL)
+  ('Die Young', 'Sleepy Hallow ft. 347aidan', NULL),
+  ('She Had Me At Heads Carolina', 'Cole Swindell', NULL),
+  ('Sunroof', 'Nicky Youre & dazy', NULL),
+  ('F.N.F. (Let’s Go)', 'Hitkidd & Glorilla', NULL),
+  ('Wild Hearts', 'Keith Urban', NULL),
+  ('Last Night Lonely', 'Jon Pardi', NULL),
+  ('7500 OBO', 'Tim McGraw', NULL),
+  ('Until I Found You', 'Stephen Sanchez', NULL)
   ;
 
    // Update to song table
@@ -300,7 +269,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12336; // SELECT last_insert_rowid();
+  song_id = 12344; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -340,21 +309,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-06-01 10:07:34.833833', '1257', '12325'),
-  ('2022-06-01 10:07:34.833833', '1257', '12326'),
-  ('2022-06-01 10:07:34.833833', '1257', '12327'),
-  ('2022-06-01 10:07:34.834834', '1257', '12328'),
-  ('2022-06-01 10:07:34.834834', '1257', '12329'),
-  ('2022-06-01 10:07:34.835835', '1257', '12330'),
-  ('2022-06-01 10:07:34.836836', '1257', '12331'),
-  ('2022-06-01 10:07:34.836836', '1257', '12332'),
-  ('2022-06-01 10:07:34.838838', '1257', '12267'),
-  ('2022-06-01 10:07:34.838838', '1257', '12333'),
-  ('2022-06-01 10:07:34.839839', '1257', '12276'),
-  ('2022-06-01 10:07:34.839839', '1257', '12334'),
-  ('2022-06-01 10:07:34.842842', '1257', '12261'),
-  ('2022-06-01 10:07:34.845845', '1257', '12335'),
-  ('2022-06-01 10:07:34.846846', '1257', '12336')
+  ('2022-06-09 06:07:25.932932', '1258', '12321'),
+  ('2022-06-09 06:07:25.933933', '1258', '12319'),
+  ('2022-06-09 06:07:25.933933', '1258', '12318'),
+  ('2022-06-09 06:07:25.933933', '1258', '12337'),
+  ('2022-06-09 06:07:25.934934', '1258', '12280'),
+  ('2022-06-09 06:07:25.934934', '1258', '12338'),
+  ('2022-06-09 06:07:25.934934', '1258', '12339'),
+  ('2022-06-09 06:07:25.934934', '1258', '12340'),
+  ('2022-06-09 06:07:25.934934', '1258', '12341'),
+  ('2022-06-09 06:07:25.934934', '1258', '12342'),
+  ('2022-06-09 06:07:25.934934', '1258', '12343'),
+  ('2022-06-09 06:07:25.934934', '1258', '12344')
   ;
 
   // Update to source_song table
