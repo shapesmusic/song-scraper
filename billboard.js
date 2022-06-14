@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of June 11, 2022', '2022-06-11 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-06-11');
+    ('Billboard', 'The Hot 100', 'Week of June 18, 2022', '2022-06-18 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-06-18');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1258; // SELECT last_insert_rowid();
+  source_id = 1261; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,110 +105,119 @@
   songsData =
   [
     {
-        "title": "True Love",
-        "artist_name": "Kanye West & XXXTENTACION",
+        "title": "I Like You (A Happier Song)",
+        "artist_name": "Post Malone ft. Doja Cat",
         "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.932932",
-        "source_id": 1258,
-        "song_id": 12321,
+        "capture_date": "2022-06-14 11:51:03.485485",
+        "source_id": 1261,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Distraction",
+        "artist_name": "Polo G",
+        "video_id": null,
+        "capture_date": "2022-06-14 11:51:03.486486",
+        "source_id": 1261,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Cannot Be (A Sadder Song)",
+        "artist_name": "Post Malone ft. Gunna",
+        "video_id": null,
+        "capture_date": "2022-06-14 11:51:03.486486",
+        "source_id": 1261,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wrapped Around Your Finger",
+        "artist_name": "Post Malone",
+        "video_id": null,
+        "capture_date": "2022-06-14 11:51:03.486486",
+        "source_id": 1261,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lemon Tree",
+        "artist_name": "Post Malone",
+        "video_id": null,
+        "capture_date": "2022-06-14 11:51:03.487487",
+        "source_id": 1261,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Reputation",
+        "artist_name": "Post Malone",
+        "video_id": null,
+        "capture_date": "2022-06-14 11:51:03.487487",
+        "source_id": 1261,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wasting Angels",
+        "artist_name": "Post Malone ft. The Kid LAROI",
+        "video_id": null,
+        "capture_date": "2022-06-14 11:51:03.487487",
+        "source_id": 1261,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Insane",
+        "artist_name": "Post Malone",
+        "video_id": null,
+        "capture_date": "2022-06-14 11:51:03.487487",
+        "source_id": 1261,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Love/Hate Letter To Alcohol",
+        "artist_name": "Post Malone ft. Fleet Foxes",
+        "video_id": null,
+        "capture_date": "2022-06-14 11:51:03.487487",
+        "source_id": 1261,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Vegas",
+        "artist_name": "Doja Cat",
+        "video_id": null,
+        "capture_date": "2022-06-14 11:51:03.487487",
+        "source_id": 1261,
+        "song_id": 12142,
         "duplicate": true
     },
     {
-        "title": "Sleazy Flow",
-        "artist_name": "SleazyWorld Go ft. Lil Baby",
+        "title": "Te Felicito",
+        "artist_name": "Shakira & Rauw Alejandro",
         "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.933933",
-        "source_id": 1258,
-        "song_id": 12319,
+        "capture_date": "2022-06-14 11:51:03.488488",
+        "source_id": 1261,
+        "song_id": 12053,
         "duplicate": true
     },
     {
-        "title": "See Wat I'm Sayin",
-        "artist_name": "Moneybagg Yo",
+        "title": "When I'm Alone",
+        "artist_name": "Post Malone",
         "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.933933",
-        "source_id": 1258,
-        "song_id": 12318,
-        "duplicate": true
-    },
-    {
-        "title": "Die Young",
-        "artist_name": "Sleepy Hallow ft. 347aidan",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.933933",
-        "source_id": 1258,
+        "capture_date": "2022-06-14 11:51:03.488488",
+        "source_id": 1261,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Potion",
-        "artist_name": "Calvin Harris, Dua Lipa & Young Thug",
+        "title": "Euthanasia",
+        "artist_name": "Post Malone",
         "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.934934",
-        "source_id": 1258,
-        "song_id": 12280,
-        "duplicate": true
-    },
-    {
-        "title": "She Had Me At Heads Carolina",
-        "artist_name": "Cole Swindell",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.934934",
-        "source_id": 1258,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sunroof",
-        "artist_name": "Nicky Youre & dazy",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.934934",
-        "source_id": 1258,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "F.N.F. (Let's Go)",
-        "artist_name": "Hitkidd & Glorilla",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.934934",
-        "source_id": 1258,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Wild Hearts",
-        "artist_name": "Keith Urban",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.934934",
-        "source_id": 1258,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Last Night Lonely",
-        "artist_name": "Jon Pardi",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.934934",
-        "source_id": 1258,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "7500 OBO",
-        "artist_name": "Tim McGraw",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.934934",
-        "source_id": 1258,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Until I Found You",
-        "artist_name": "Stephen Sanchez",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:07:25.934934",
-        "source_id": 1258,
+        "capture_date": "2022-06-14 11:51:03.488488",
+        "source_id": 1261,
         "song_id": null,
         "duplicate": false
     }
@@ -251,14 +260,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Die Young', 'Sleepy Hallow ft. 347aidan', NULL),
-  ('She Had Me At Heads Carolina', 'Cole Swindell', NULL),
-  ('Sunroof', 'Nicky Youre & dazy', NULL),
-  ('F.N.F. (Let’s Go)', 'Hitkidd & Glorilla', NULL),
-  ('Wild Hearts', 'Keith Urban', NULL),
-  ('Last Night Lonely', 'Jon Pardi', NULL),
-  ('7500 OBO', 'Tim McGraw', NULL),
-  ('Until I Found You', 'Stephen Sanchez', NULL)
+  ('I Like You (A Happier Song)', 'Post Malone ft. Doja Cat', NULL),
+  ('Distraction', 'Polo G', NULL),
+  ('I Cannot Be (A Sadder Song)', 'Post Malone ft. Gunna', NULL),
+  ('Wrapped Around Your Finger', 'Post Malone', NULL),
+  ('Lemon Tree', 'Post Malone', NULL),
+  ('Reputation', 'Post Malone', NULL),
+  ('Wasting Angels', 'Post Malone ft. The Kid LAROI', NULL),
+  ('Insane', 'Post Malone', NULL),
+  ('Love/Hate Letter To Alcohol', 'Post Malone ft. Fleet Foxes', NULL),
+  ('When I’m Alone', 'Post Malone', NULL),
+  ('Euthanasia', 'Post Malone', NULL)
   ;
 
    // Update to song table
@@ -269,7 +281,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12344; // SELECT last_insert_rowid();
+  song_id = 12368; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -309,18 +321,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-06-09 06:07:25.932932', '1258', '12321'),
-  ('2022-06-09 06:07:25.933933', '1258', '12319'),
-  ('2022-06-09 06:07:25.933933', '1258', '12318'),
-  ('2022-06-09 06:07:25.933933', '1258', '12337'),
-  ('2022-06-09 06:07:25.934934', '1258', '12280'),
-  ('2022-06-09 06:07:25.934934', '1258', '12338'),
-  ('2022-06-09 06:07:25.934934', '1258', '12339'),
-  ('2022-06-09 06:07:25.934934', '1258', '12340'),
-  ('2022-06-09 06:07:25.934934', '1258', '12341'),
-  ('2022-06-09 06:07:25.934934', '1258', '12342'),
-  ('2022-06-09 06:07:25.934934', '1258', '12343'),
-  ('2022-06-09 06:07:25.934934', '1258', '12344')
+  ('2022-06-14 11:51:03.485485', '1261', '12358'),
+  ('2022-06-14 11:51:03.486486', '1261', '12359'),
+  ('2022-06-14 11:51:03.486486', '1261', '12360'),
+  ('2022-06-14 11:51:03.486486', '1261', '12361'),
+  ('2022-06-14 11:51:03.487487', '1261', '12362'),
+  ('2022-06-14 11:51:03.487487', '1261', '12363'),
+  ('2022-06-14 11:51:03.487487', '1261', '12364'),
+  ('2022-06-14 11:51:03.487487', '1261', '12365'),
+  ('2022-06-14 11:51:03.487487', '1261', '12366'),
+  ('2022-06-14 11:51:03.487487', '1261', '12142'),
+  ('2022-06-14 11:51:03.488488', '1261', '12053'),
+  ('2022-06-14 11:51:03.488488', '1261', '12367'),
+  ('2022-06-14 11:51:03.488488', '1261', '12368')
   ;
 
   // Update to source_song table

@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Yeah Yeahs Yeahs’ Apocalyptic March, and 10 More New Songs', '2022-06-09 12:57:51.000000', 'https://www.nytimes.com/2022/06/03/arts/music/playlist-yeah-yeahs-yeahs-maggie-rogers.html');
+    ('New York Times', 'The Playlist', 'SZA’s ‘Ctrl’ Bonus, and 8 More New Songs', '2022-06-10 09:24:35.000000', 'https://www.nytimes.com/2022/06/10/arts/music/playlist-sza-demi-lovato-lizzo.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1259; // SELECT last_insert_rowid();
+  source_id = 1262; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,101 +100,83 @@
   songsData =
   [
     {
-        "title": "Spitting Off the Edge of the World",
-        "artist_name": "Yeah Yeah Yeahs ft. Perfume Genius",
+        "title": "Jodie",
+        "artist_name": "SZA",
         "video_id": null,
-        "capture_date": "2022-06-09 06:15:30.534534",
-        "source_id": 1259,
+        "capture_date": "2022-06-14 11:58:12.238238",
+        "source_id": 1262,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Want Want",
-        "artist_name": "Maggie Rogers",
+        "title": "Booty",
+        "artist_name": "Saucy Santana ft. Latto",
         "video_id": null,
-        "capture_date": "2022-06-09 06:15:30.539539",
-        "source_id": 1259,
+        "capture_date": "2022-06-14 11:58:12.241241",
+        "source_id": 1262,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Name of This Terrain",
-        "artist_name": "Denny Zeitlin with George Marsh and Mel Graves",
+        "title": "Grrrls",
+        "artist_name": "Lizzo",
         "video_id": null,
-        "capture_date": "2022-06-09 06:15:30.539539",
-        "source_id": 1259,
+        "capture_date": "2022-06-14 11:58:12.241241",
+        "source_id": 1262,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Grieving",
-        "artist_name": "Revelators Sound System",
+        "title": "Entropy",
+        "artist_name": "Beach Bunny",
         "video_id": null,
-        "capture_date": "2022-06-09 06:15:30.539539",
-        "source_id": 1259,
+        "capture_date": "2022-06-14 11:58:12.241241",
+        "source_id": 1262,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In the Sand",
-        "artist_name": "Kamikaze Palm Tree",
+        "title": "Skin of My Teeth",
+        "artist_name": "Demi Lovato",
         "video_id": null,
-        "capture_date": "2022-06-09 06:15:30.539539",
-        "source_id": 1259,
+        "capture_date": "2022-06-14 11:58:12.241241",
+        "source_id": 1262,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Eniko",
-        "artist_name": "Arp",
+        "title": "You’re Not Famous Anymore",
+        "artist_name": "Joyce Manor",
         "video_id": null,
-        "capture_date": "2022-06-09 06:15:30.539539",
-        "source_id": 1259,
+        "capture_date": "2022-06-14 11:58:12.241241",
+        "source_id": 1262,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Training Montage",
-        "artist_name": "The Mountain Goats",
+        "title": "Glimpse of Us",
+        "artist_name": "Joji",
         "video_id": null,
-        "capture_date": "2022-06-09 06:15:30.540540",
-        "source_id": 1259,
+        "capture_date": "2022-06-14 11:58:12.241241",
+        "source_id": 1262,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Out Loud",
-        "artist_name": "Kyshona",
+        "title": "In Heaven",
+        "artist_name": "Julius Rodriguez",
         "video_id": null,
-        "capture_date": "2022-06-09 06:15:30.540540",
-        "source_id": 1259,
+        "capture_date": "2022-06-14 11:58:12.241241",
+        "source_id": 1262,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Weather Alive",
-        "artist_name": "Beth Orton",
+        "title": "Ain’t Nothin’ Real But Love",
+        "artist_name": "Sonic Liberation Front and the Sonic Liberation Singers ft. Oliver Lake",
         "video_id": null,
-        "capture_date": "2022-06-09 06:15:30.540540",
-        "source_id": 1259,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Madness",
-        "artist_name": "Poliça",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:15:30.540540",
-        "source_id": 1259,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Meditations on Oya",
-        "artist_name": "JoVia Armstrong",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:15:30.540540",
-        "source_id": 1259,
+        "capture_date": "2022-06-14 11:58:12.241241",
+        "source_id": 1262,
         "song_id": null,
         "duplicate": false
     }
@@ -237,17 +219,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Spitting Off the Edge of the World', 'Yeah Yeah Yeahs ft. Perfume Genius', NULL),
-  ('Want Want', 'Maggie Rogers', NULL),
-  ('The Name of This Terrain', 'Denny Zeitlin with George Marsh and Mel Graves', NULL),
-  ('Grieving', 'Revelators Sound System', NULL),
-  ('In the Sand', 'Kamikaze Palm Tree', NULL),
-  ('Eniko', 'Arp', NULL),
-  ('Training Montage', 'The Mountain Goats', NULL),
-  ('Out Loud', 'Kyshona', NULL),
-  ('Weather Alive', 'Beth Orton', NULL),
-  ('Madness', 'Poliça', NULL),
-  ('Meditations on Oya', 'JoVia Armstrong', NULL)
+  ('Jodie', 'SZA', NULL),
+  ('Booty', 'Saucy Santana ft. Latto', NULL),
+  ('Grrrls', 'Lizzo', NULL),
+  ('Entropy', 'Beach Bunny', NULL),
+  ('Skin of My Teeth', 'Demi Lovato', NULL),
+  ('You’re Not Famous Anymore', 'Joyce Manor', NULL),
+  ('Glimpse of Us', 'Joji', NULL),
+  ('In Heaven', 'Julius Rodriguez', NULL),
+  ('Ain’t Nothin’ Real But Love', 'Sonic Liberation Front and the Sonic Liberation Singers ft. Oliver Lake', NULL)
   ;
 
    // Update to song table
@@ -258,7 +238,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12355; // SELECT last_insert_rowid();
+  song_id = 12377; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +278,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-06-09 06:15:30.534534', '1259', '12345'),
-  ('2022-06-09 06:15:30.539539', '1259', '12346'),
-  ('2022-06-09 06:15:30.539539', '1259', '12347'),
-  ('2022-06-09 06:15:30.539539', '1259', '12348'),
-  ('2022-06-09 06:15:30.539539', '1259', '12349'),
-  ('2022-06-09 06:15:30.539539', '1259', '12350'),
-  ('2022-06-09 06:15:30.540540', '1259', '12351'),
-  ('2022-06-09 06:15:30.540540', '1259', '12352'),
-  ('2022-06-09 06:15:30.540540', '1259', '12353'),
-  ('2022-06-09 06:15:30.540540', '1259', '12354'),
-  ('2022-06-09 06:15:30.540540', '1259', '12355')
+  ('2022-06-14 11:58:12.238238', '1262', '12369'),
+  ('2022-06-14 11:58:12.241241', '1262', '12370'),
+  ('2022-06-14 11:58:12.241241', '1262', '12371'),
+  ('2022-06-14 11:58:12.241241', '1262', '12372'),
+  ('2022-06-14 11:58:12.241241', '1262', '12373'),
+  ('2022-06-14 11:58:12.241241', '1262', '12374'),
+  ('2022-06-14 11:58:12.241241', '1262', '12375'),
+  ('2022-06-14 11:58:12.241241', '1262', '12376'),
+  ('2022-06-14 11:58:12.241241', '1262', '12377')
   ;
 
   // Update to source_song table

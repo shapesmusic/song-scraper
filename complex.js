@@ -47,7 +47,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'M.I.A., Chance the Rapper, Moneybagg Yo, and More', '2022-05-27 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-may-27/calvin-harris-dua-lipa-young-thug-potion');
+    ('Complex', 'The Best New Music This Week', 'Pharrell, Kid Cudi, SZA, and More', '2022-06-10 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-june-10/rae-sremmurd-denial');
 
   // Update to source table
 
@@ -56,7 +56,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1255; // SELECT last_insert_rowid();
+  source_id = 1263; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -101,76 +101,94 @@
   songsData =
   [
     {
-        "title": "The One",
-        "artist_name": "M.I.A.",
+        "title": "Do What I Want",
+        "artist_name": "Kid Cudi",
         "video_id": null,
-        "capture_date": "2022-05-31 07:22:36.720720",
-        "source_id": 1255,
+        "capture_date": "2022-06-14 12:02:40.551551",
+        "source_id": 1263,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "A Bar About A Bar",
-        "artist_name": "Chance The Rapper",
+        "title": "Cash In Cash Out",
+        "artist_name": "Pharrell ft. 21 Savage & Tyler The Creator",
         "video_id": null,
-        "capture_date": "2022-05-31 07:22:36.721721",
-        "source_id": 1255,
+        "capture_date": "2022-06-14 12:02:40.552552",
+        "source_id": 1263,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dear Miss Holloway",
-        "artist_name": "Easy Life ft. Kevin Abstract",
+        "title": "Drive",
+        "artist_name": "Fana Hues",
         "video_id": null,
-        "capture_date": "2022-05-31 07:22:36.721721",
-        "source_id": 1255,
+        "capture_date": "2022-06-14 12:02:40.552552",
+        "source_id": 1263,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "See Wat I’m Sayin",
-        "artist_name": "Moneybagg Yo",
+        "title": "Awkward",
+        "artist_name": "SZA",
         "video_id": null,
-        "capture_date": "2022-05-31 07:22:36.721721",
-        "source_id": 1255,
+        "capture_date": "2022-06-14 12:02:40.552552",
+        "source_id": 1263,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sleazy Flow Remix",
-        "artist_name": "SleazyWorld Go ft. Lil Baby",
+        "title": "Riot",
+        "artist_name": "Nardo Wick",
         "video_id": null,
-        "capture_date": "2022-05-31 07:22:36.721721",
-        "source_id": 1255,
+        "capture_date": "2022-06-14 12:02:40.552552",
+        "source_id": 1263,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "24 Hours",
-        "artist_name": "Kaash Paige & Lil Tjay",
+        "title": "Umi Says",
+        "artist_name": "6LACK",
         "video_id": null,
-        "capture_date": "2022-05-31 07:22:36.721721",
-        "source_id": 1255,
+        "capture_date": "2022-06-14 12:02:40.552552",
+        "source_id": 1263,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "True Love",
-        "artist_name": "XXXTENTACION & Kanye West",
+        "title": "Booty",
+        "artist_name": "Saucy Santana ft. Latto",
         "video_id": null,
-        "capture_date": "2022-05-31 07:22:36.721721",
-        "source_id": 1255,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Potion",
-        "artist_name": "Calvin Harris, Dua Lipa & Young Thug",
-        "video_id": null,
-        "capture_date": "2022-05-31 07:22:36.721721",
-        "source_id": 1255,
-        "song_id": 12280,
+        "capture_date": "2022-06-14 12:02:40.552552",
+        "source_id": 1263,
+        "song_id": 12370,
         "duplicate": true
+    },
+    {
+        "title": "Wifey",
+        "artist_name": "Rubi Rose",
+        "video_id": null,
+        "capture_date": "2022-06-14 12:02:40.552552",
+        "source_id": 1263,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Distraction",
+        "artist_name": "Polo G",
+        "video_id": null,
+        "capture_date": "2022-06-14 12:02:40.552552",
+        "source_id": 1263,
+        "song_id": 12359,
+        "duplicate": true
+    },
+    {
+        "title": "Denial",
+        "artist_name": "Rae Sremmurd",
+        "video_id": null,
+        "capture_date": "2022-06-14 12:02:40.552552",
+        "source_id": 1263,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -211,13 +229,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The One', 'M.I.A.', NULL),
-  ('A Bar About A Bar', 'Chance The Rapper', NULL),
-  ('Dear Miss Holloway', 'Easy Life ft. Kevin Abstract', NULL),
-  ('See Wat I’m Sayin', 'Moneybagg Yo', NULL),
-  ('Sleazy Flow Remix', 'SleazyWorld Go ft. Lil Baby', NULL),
-  ('24 Hours', 'Kaash Paige & Lil Tjay', NULL),
-  ('True Love', 'XXXTENTACION & Kanye West', NULL)
+  ('Do What I Want', 'Kid Cudi', NULL),
+  ('Cash In Cash Out', 'Pharrell ft. 21 Savage & Tyler The Creator', NULL),
+  ('Drive', 'Fana Hues', NULL),
+  ('Awkward', 'SZA', NULL),
+  ('Riot', 'Nardo Wick', NULL),
+  ('Umi Says', '6LACK', NULL),
+  ('Wifey', 'Rubi Rose', NULL),
+  ('Denial', 'Rae Sremmurd', NULL)
   ;
 
    // Update to song table
@@ -228,7 +247,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12321; // SELECT last_insert_rowid();
+  song_id = 12385; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -268,14 +287,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-05-31 07:22:36.720720', '1255', '12315'),
-  ('2022-05-31 07:22:36.721721', '1255', '12316'),
-  ('2022-05-31 07:22:36.721721', '1255', '12317'),
-  ('2022-05-31 07:22:36.721721', '1255', '12318'),
-  ('2022-05-31 07:22:36.721721', '1255', '12319'),
-  ('2022-05-31 07:22:36.721721', '1255', '12320'),
-  ('2022-05-31 07:22:36.721721', '1255', '12321'),
-  ('2022-05-31 07:22:36.721721', '1255', '12280')
+  ('2022-06-14 12:02:40.551551', '1263', '12378'),
+  ('2022-06-14 12:02:40.552552', '1263', '12379'),
+  ('2022-06-14 12:02:40.552552', '1263', '12380'),
+  ('2022-06-14 12:02:40.552552', '1263', '12381'),
+  ('2022-06-14 12:02:40.552552', '1263', '12382'),
+  ('2022-06-14 12:02:40.552552', '1263', '12383'),
+  ('2022-06-14 12:02:40.552552', '1263', '12370'),
+  ('2022-06-14 12:02:40.552552', '1263', '12384'),
+  ('2022-06-14 12:02:40.552552', '1263', '12359'),
+  ('2022-06-14 12:02:40.552552', '1263', '12385')
   ;
 
   // Update to source_song table

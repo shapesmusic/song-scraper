@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of June 3, 2022', '2022-06-03 12:00:00.000000', 'https://www.stereogum.com/2188720/the-5-best-songs-of-the-week-436/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of June 10, 2022', '2022-06-10 12:00:00.000000', 'https://www.stereogum.com/2189625/the-5-best-songs-of-the-week-437/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1260; // SELECT last_insert_rowid();
+  source_id = 1264; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,49 +101,49 @@
   songsData =
   [
     {
-        "title": "Water Wings",
-        "artist_name": "Birds In Row",
+        "title": "Terminal",
+        "artist_name": "Marci",
         "video_id": null,
-        "capture_date": "2022-06-09 06:23:38.375375",
-        "source_id": 1260,
+        "capture_date": "2022-06-14 12:09:07.548548",
+        "source_id": 1264,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Training Montage",
-        "artist_name": "The Mountain Goats",
+        "title": "Come For Me",
+        "artist_name": "Shygirl",
         "video_id": null,
-        "capture_date": "2022-06-09 06:23:38.376376",
-        "source_id": 1260,
-        "song_id": 12351,
-        "duplicate": true
-    },
-    {
-        "title": "Weather Alive",
-        "artist_name": "Beth Orton",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:23:38.377377",
-        "source_id": 1260,
-        "song_id": 12353,
-        "duplicate": true
-    },
-    {
-        "title": "nothing (in my head)",
-        "artist_name": "Pinkshift",
-        "video_id": null,
-        "capture_date": "2022-06-09 06:23:38.377377",
-        "source_id": 1260,
+        "capture_date": "2022-06-14 12:09:07.549549",
+        "source_id": 1264,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Spitting Off The Edge Of The World",
-        "artist_name": "Yeah Yeah Yeahs",
+        "title": "Mellow My Mind",
+        "artist_name": "Life's Question",
         "video_id": null,
-        "capture_date": "2022-06-09 06:23:38.377377",
-        "source_id": 1260,
-        "song_id": 12345,
-        "duplicate": true
+        "capture_date": "2022-06-14 12:09:07.549549",
+        "source_id": 1264,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Nothing In My Head",
+        "artist_name": "Dust Star",
+        "video_id": null,
+        "capture_date": "2022-06-14 12:09:07.549549",
+        "source_id": 1264,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "California",
+        "artist_name": "Bonny Light Horseman",
+        "video_id": null,
+        "capture_date": "2022-06-14 12:09:07.549549",
+        "source_id": 1264,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -184,8 +184,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Water Wings', 'Birds In Row', NULL),
-  ('nothing (in my head)', 'Pinkshift', NULL)
+  ('Terminal', 'Marci', NULL),
+  ('Come For Me', 'Shygirl', NULL),
+  ('Mellow My Mind', 'Life’s Question', NULL),
+  ('Nothing In My Head', 'Dust Star', NULL),
+  ('California', 'Bonny Light Horseman', NULL)
   ;
 
    // Update to song table
@@ -196,7 +199,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12357; // SELECT last_insert_rowid();
+  song_id = 12390; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -236,11 +239,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-06-09 06:23:38.375375', '1260', '12356'),
-  ('2022-06-09 06:23:38.376376', '1260', '12351'),
-  ('2022-06-09 06:23:38.377377', '1260', '12353'),
-  ('2022-06-09 06:23:38.377377', '1260', '12357'),
-  ('2022-06-09 06:23:38.377377', '1260', '12345')
+  ('2022-06-14 12:09:07.548548', '1264', '12386'),
+  ('2022-06-14 12:09:07.549549', '1264', '12387'),
+  ('2022-06-14 12:09:07.549549', '1264', '12388'),
+  ('2022-06-14 12:09:07.549549', '1264', '12389'),
+  ('2022-06-14 12:09:07.549549', '1264', '12390')
   ;
 
   // Update to source_song table
