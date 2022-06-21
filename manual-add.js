@@ -186,7 +186,7 @@ VALUES
       song = String(
         "\n(\'" + songsData[i].title + "\', "
         + "\'" + songsData[i].artist_name + "\', "
-        + "\'" + songsData[i].video_id + "\')"
+        + "NULL)"
       );
 
       if (songsData[i].duplicate == false){
@@ -203,9 +203,9 @@ VALUES
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-      ('Skin and Bones', 'Shake', 'null'),
-      ('Crazy', 'Doechii', 'null'),
-      ('Inside Out', 'Ravyn Lenae', 'null')
+    ('Skin and Bones', 'Shake', NULL),
+    ('Crazy', 'Doechii', NULL),
+    ('Inside Out', 'Ravyn Lenae', NULL)
     ;
 
      // Update to song table
