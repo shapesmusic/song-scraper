@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'SZA’s ‘Ctrl’ Bonus, and 8 More New Songs', '2022-06-10 09:24:35.000000', 'https://www.nytimes.com/2022/06/10/arts/music/playlist-sza-demi-lovato-lizzo.html');
+    ('New York Times', 'The Playlist', 'Drake Looks for Love, Repeatedly, and 9 More New Songs', '2022-06-17 08:41:36.000000', 'https://www.nytimes.com/2022/06/17/arts/music/playlist-drake-fka-twigs-perfume-genius.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1262; // SELECT last_insert_rowid();
+  source_id = 1266; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,83 +100,92 @@
   songsData =
   [
     {
-        "title": "Jodie",
-        "artist_name": "SZA",
+        "title": "Falling Back",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2022-06-14 11:58:12.238238",
-        "source_id": 1262,
+        "capture_date": "2022-06-21 02:22:33.652652",
+        "source_id": 1266,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Booty",
-        "artist_name": "Saucy Santana ft. Latto",
+        "title": "Progressive House, Conservative Ligature",
+        "artist_name": "Rhys Langston ft. Fatboi Sharif",
         "video_id": null,
-        "capture_date": "2022-06-14 11:58:12.241241",
-        "source_id": 1262,
+        "capture_date": "2022-06-21 02:22:33.653653",
+        "source_id": 1266,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Grrrls",
-        "artist_name": "Lizzo",
+        "title": "10:36",
+        "artist_name": "beabadoobee",
         "video_id": null,
-        "capture_date": "2022-06-14 11:58:12.241241",
-        "source_id": 1262,
+        "capture_date": "2022-06-21 02:22:33.653653",
+        "source_id": 1266,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Entropy",
-        "artist_name": "Beach Bunny",
+        "title": "Silence Is Golden",
+        "artist_name": "The Beths",
         "video_id": null,
-        "capture_date": "2022-06-14 11:58:12.241241",
-        "source_id": 1262,
+        "capture_date": "2022-06-21 02:22:33.653653",
+        "source_id": 1266,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Skin of My Teeth",
-        "artist_name": "Demi Lovato",
+        "title": "I Was Neon",
+        "artist_name": "Julia Jacklin",
         "video_id": null,
-        "capture_date": "2022-06-14 11:58:12.241241",
-        "source_id": 1262,
+        "capture_date": "2022-06-21 02:22:33.653653",
+        "source_id": 1266,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You’re Not Famous Anymore",
-        "artist_name": "Joyce Manor",
+        "title": "Photograph",
+        "artist_name": "Perfume Genius",
         "video_id": null,
-        "capture_date": "2022-06-14 11:58:12.241241",
-        "source_id": 1262,
+        "capture_date": "2022-06-21 02:22:33.653653",
+        "source_id": 1266,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Glimpse of Us",
-        "artist_name": "Joji",
+        "title": "Killer",
+        "artist_name": "FKA twigs",
         "video_id": null,
-        "capture_date": "2022-06-14 11:58:12.241241",
-        "source_id": 1262,
+        "capture_date": "2022-06-21 02:22:33.653653",
+        "source_id": 1266,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In Heaven",
-        "artist_name": "Julius Rodriguez",
+        "title": "Sorry",
+        "artist_name": "Röyksopp ft. Jamie Irrepressible",
         "video_id": null,
-        "capture_date": "2022-06-14 11:58:12.241241",
-        "source_id": 1262,
+        "capture_date": "2022-06-21 02:22:33.653653",
+        "source_id": 1266,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ain’t Nothin’ Real But Love",
-        "artist_name": "Sonic Liberation Front and the Sonic Liberation Singers ft. Oliver Lake",
+        "title": "Heart — Power of a Soft Heart",
+        "artist_name": "Alanis Morissette",
         "video_id": null,
-        "capture_date": "2022-06-14 11:58:12.241241",
-        "source_id": 1262,
+        "capture_date": "2022-06-21 02:22:33.653653",
+        "source_id": 1266,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Waltz of Odesa Conservatory",
+        "artist_name": "Vadim Neselovskyi",
+        "video_id": null,
+        "capture_date": "2022-06-21 02:22:33.653653",
+        "source_id": 1266,
         "song_id": null,
         "duplicate": false
     }
@@ -215,19 +224,21 @@
 
   // Stage SQL statement
   // Replace any ' in strings with ’
+  // If ’ replaced, check again for duplicate
 
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Jodie', 'SZA', NULL),
-  ('Booty', 'Saucy Santana ft. Latto', NULL),
-  ('Grrrls', 'Lizzo', NULL),
-  ('Entropy', 'Beach Bunny', NULL),
-  ('Skin of My Teeth', 'Demi Lovato', NULL),
-  ('You’re Not Famous Anymore', 'Joyce Manor', NULL),
-  ('Glimpse of Us', 'Joji', NULL),
-  ('In Heaven', 'Julius Rodriguez', NULL),
-  ('Ain’t Nothin’ Real But Love', 'Sonic Liberation Front and the Sonic Liberation Singers ft. Oliver Lake', NULL)
+  ('Falling Back', 'Drake', NULL),
+  ('Progressive House, Conservative Ligature', 'Rhys Langston ft. Fatboi Sharif', NULL),
+  ('10:36', 'beabadoobee', NULL),
+  ('Silence Is Golden', 'The Beths', NULL),
+  ('I Was Neon', 'Julia Jacklin', NULL),
+  ('Photograph', 'Perfume Genius', NULL),
+  ('Killer', 'FKA twigs', NULL),
+  ('Sorry', 'Röyksopp ft. Jamie Irrepressible', NULL),
+  ('Heart — Power of a Soft Heart', 'Alanis Morissette', NULL),
+  ('Waltz of Odesa Conservatory', 'Vadim Neselovskyi', NULL)
   ;
 
    // Update to song table
@@ -238,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12377; // SELECT last_insert_rowid();
+  song_id = 12407; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -278,15 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-06-14 11:58:12.238238', '1262', '12369'),
-  ('2022-06-14 11:58:12.241241', '1262', '12370'),
-  ('2022-06-14 11:58:12.241241', '1262', '12371'),
-  ('2022-06-14 11:58:12.241241', '1262', '12372'),
-  ('2022-06-14 11:58:12.241241', '1262', '12373'),
-  ('2022-06-14 11:58:12.241241', '1262', '12374'),
-  ('2022-06-14 11:58:12.241241', '1262', '12375'),
-  ('2022-06-14 11:58:12.241241', '1262', '12376'),
-  ('2022-06-14 11:58:12.241241', '1262', '12377')
+  ('2022-06-21 02:22:33.652652', '1266', '12398'),
+  ('2022-06-21 02:22:33.653653', '1266', '12399'),
+  ('2022-06-21 02:22:33.653653', '1266', '12400'),
+  ('2022-06-21 02:22:33.653653', '1266', '12401'),
+  ('2022-06-21 02:22:33.653653', '1266', '12402'),
+  ('2022-06-21 02:22:33.653653', '1266', '12403'),
+  ('2022-06-21 02:22:33.653653', '1266', '12404'),
+  ('2022-06-21 02:22:33.653653', '1266', '12405'),
+  ('2022-06-21 02:22:33.653653', '1266', '12406'),
+  ('2022-06-21 02:22:33.653653', '1266', '12407')
   ;
 
   // Update to source_song table

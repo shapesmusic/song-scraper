@@ -565,6 +565,7 @@
 
   // Stage SQL statement
   // Replace any ' in strings with ’
+  // If ’ replaced, check again for duplicate
   // check artist name formatting
 
   INSERT INTO song

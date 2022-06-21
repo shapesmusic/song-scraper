@@ -46,6 +46,7 @@
 
   // Stage the SQL statement
   // Replace any ' in strings with ’
+  // If ’ replaced, check again for duplicate
 
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)

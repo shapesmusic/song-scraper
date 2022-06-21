@@ -51,11 +51,11 @@
 
   // For non-recurring sources
 
-  parent_entity = "Popjustice" // the entity is an individual user
+  parent_entity = "Complex" // the entity is an individual user
   parent_stream = null // a non-recurring source usually has no parent_stream
-  instance_name = "The Top 45 Singles Of 2020" // title of the source
-  publication_date = "2020-12-31 00:00:00.000000" // publication date of the source
-  chart_location = "https://www.popjustice.com/articles/the-top-45-singles-of-2020/" // URL for the instance, or if there isn't one, null
+  instance_name = "The Best Songs of 2022 (So Far)" // title of the source
+  publication_date = "2022-06-15 00:00:00.000000" // publication date of the source
+  chart_location = "https://www.complex.com/music/best-songs-of-2022/" // URL for the instance, or if there isn't one, null
 
 
   // Build the INSERT statement
@@ -79,6 +79,13 @@
   VALUES
     ('User', 'davidforrest', 'My Shazams', '2021-04-11 19:15:00.000000', 'null');
 
+  // or
+
+  INSERT INTO source
+  (parent_entity, parent_stream, instance_name, publication_date, location)
+VALUES
+  ('Complex', 'null', 'The Best Songs of 2022 (So Far)', '2022-06-15 00:00:00.000000', 'https://www.complex.com/music/best-songs-of-2022/');
+
   // Update to source table
 
 
@@ -86,7 +93,7 @@
   // Step 2: Enter song data into an array
   //
 
-    source_id = 908; // SELECT last_insert_rowid();
+    source_id = 1269; // SELECT last_insert_rowid();
 
     // Add info for the first song only, or a blank template song
     title = ""
@@ -131,14 +138,32 @@
     songsData =
     [
         {
-            "title": "B.S.",
-            "artist_name": "Jhené Aiko ft. H.E.R.",
-            "video_id": null,
-            "capture_date": "2021-05-13 08:41:44.470470",
-            "source_id": 908,
-            "song_id": 376,
-            "duplicate": true
-        }
+          "title": "Skin and Bones",
+          "artist_name": "Shake",
+          "video_id": null,
+          "capture_date": "2022-06-21 03:00:03.245245",
+          "source_id": 1269,
+          "song_id": null,
+          "duplicate": false
+        },
+        {
+          "title": "Crazy",
+          "artist_name": "Doechii",
+          "video_id": null,
+          "capture_date": "2022-06-21 03:00:03.245245",
+          "source_id": 1269,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+        "title": "Inside Out",
+        "artist_name": "Ravyn Lenae",
+        "video_id": null,
+        "capture_date": "2022-06-21 03:00:03.245245",
+        "source_id": 1269,
+        "song_id": null,
+        "duplicate": false
+      }
     ]
 
     // Check each song for duplicates in the database
@@ -178,37 +203,9 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-      ('Hypnotized', 'Purple Disco Machine and Sophie and the Giants', 'null'),
-      ('Experience', 'Victoria Monét, Khalid and SG Lewis', 'null'),
-      ('Wish You Were Sober', 'Conan Gray', 'null'),
-      ('DAMN DANIEL', 'Bree Runway and Yung Baby Tate', 'null'),
-      ('The Streets Where I Belong', 'Annie', 'null'),
-      ('Casino', 'Ryan Beatty', 'null'),
-      ('Kings & Queens, Pt. 2', 'Ava Max, Lauv and Saweetie', 'null'),
-      ('Somebody', 'Dagny', 'null'),
-      ('I Don’t Mind', 'Georgia Twinn', 'null'),
-      ('Alone In My Room (Gone)', 'GRACEY', 'null'),
-      ('Promises', 'COY', 'null'),
-      ('Crush On You (Latroit & Pretty Garter remix)', 'HARLOE', 'null'),
-      ('Wildflower', '5 Seconds of Summer', 'null'),
-      ('want u back', 'joan', 'null'),
-      ('Malibu', 'Kim Petras', 'null'),
-      ('Fever', 'Dua Lipa and Angèle', 'null'),
-      ('Modern Loneliness', 'Lauv', 'null'),
-      ('TASTY', 'Shygirl', 'null'),
-      ('Please Don’t Touch', 'RAYE', 'null'),
-      ('THE BADDEST', 'K/DA, (G)I‑DLE, Wolftyla, Bea Miller and League of Legends', 'null'),
-      ('Die 4 Ur Love', 'Tei Shi', 'null'),
-      ('Stunnin’', 'Curtis Waters and Harm Franklin', 'null'),
-      ('Sweet Melody', 'Little Mix', 'null'),
-      ('If You’re Too Shy (Let Me Know)', 'The 1975', 'null'),
-      ('New Me', 'Ella Eyre', 'null'),
-      ('I Wanna Be A Cowboy, Baby!', 'CMAT', 'null'),
-      ('Something In Your Eyes', 'Steps', 'null'),
-      ('She’s My Religion', 'Pale Waves', 'null'),
-      ('Pretty Girl Lie', 'Baby Queen', 'null'),
-      ('What’s Your Pleasure?', 'Jessie Ware', 'null'),
-      ('dependent', 'Mae Muller', 'null')
+      ('Skin and Bones', 'Shake', 'null'),
+      ('Crazy', 'Doechii', 'null'),
+      ('Inside Out', 'Ravyn Lenae', 'null')
     ;
 
      // Update to song table
@@ -219,7 +216,7 @@
    //
 
     // Get the last song_id inserted
-    song_id = 10182; // SELECT last_insert_rowid();
+    song_id = 12414; // SELECT last_insert_rowid();
 
     // Calculate the number of nonduplicate songs added
     nonduplicates = 0;
@@ -259,7 +256,9 @@
     INSERT INTO source_song
       (capture_date, source_id, song_id)
     VALUES
-    ('2021-05-13 08:41:44.470470', '908', '376')
+      ('2022-06-21 03:00:03.245245', '1269', '12412'),
+      ('2022-06-21 03:00:03.245245', '1269', '12413'),
+      ('2022-06-21 03:00:03.245245', '1269', '12414')
     ;
 
     // Update to source_song table
