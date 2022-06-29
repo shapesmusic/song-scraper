@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of June 25, 2022', '2022-06-25 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-06-25');
+    ('Billboard', 'The Hot 100', 'Week of July 2, 2022', '2022-07-02 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-07-02');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1265; // SELECT last_insert_rowid();
+  source_id = 1270; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,83 +105,146 @@
   songsData =
   [
     {
-        "title": "Glimpse Of Us",
-        "artist_name": "Joji",
+        "title": "Sticky",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2022-06-21 02:16:26.709709",
-        "source_id": 1265,
-        "song_id": 12375,
+        "capture_date": "2022-06-29 08:58:46.782782",
+        "source_id": 1270,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Falling Back",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2022-06-29 08:58:46.783783",
+        "source_id": 1270,
+        "song_id": 12398,
         "duplicate": true
     },
     {
-        "title": "Yet To Come",
-        "artist_name": "BTS",
+        "title": "Texts Go Green",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2022-06-21 02:16:26.709709",
-        "source_id": 1265,
+        "capture_date": "2022-06-29 08:58:46.783783",
+        "source_id": 1270,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rock And A Hard Place",
-        "artist_name": "Bailey Zimmerman",
+        "title": "Massive",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2022-06-21 02:16:26.709709",
-        "source_id": 1265,
+        "capture_date": "2022-06-29 08:58:46.783783",
+        "source_id": 1270,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cash In Cash Out",
-        "artist_name": "Pharrell Williams ft. 21 Savage & Tyler, The Creator",
+        "title": "Break My Soul",
+        "artist_name": "Beyonce",
         "video_id": null,
-        "capture_date": "2022-06-21 02:16:26.709709",
-        "source_id": 1265,
-        "song_id": 12379,
-        "duplicate": true
-    },
-    {
-        "title": "So Good",
-        "artist_name": "Halsey",
-        "video_id": null,
-        "capture_date": "2022-06-21 02:16:26.710710",
-        "source_id": 1265,
+        "capture_date": "2022-06-29 08:58:46.783783",
+        "source_id": 1270,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Run BTS",
-        "artist_name": "BTS",
+        "title": "The Kind Of Love We Make",
+        "artist_name": "Luke Combs",
         "video_id": null,
-        "capture_date": "2022-06-21 02:16:26.711711",
-        "source_id": 1265,
+        "capture_date": "2022-06-29 08:58:46.783783",
+        "source_id": 1270,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Ain't Worried",
-        "artist_name": "OneRepublic",
+        "title": "Calling My Name",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2022-06-21 02:16:26.711711",
-        "source_id": 1265,
+        "capture_date": "2022-06-29 08:58:46.783783",
+        "source_id": 1270,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "5 Foot 9",
-        "artist_name": "Tyler Hubbard",
+        "title": "A Keeper",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2022-06-21 02:16:26.711711",
-        "source_id": 1265,
+        "capture_date": "2022-06-29 08:58:46.783783",
+        "source_id": 1270,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "New Truck",
-        "artist_name": "Dylan Scott",
+        "title": "Currents",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2022-06-21 02:16:26.712712",
-        "source_id": 1265,
+        "capture_date": "2022-06-29 08:58:46.783783",
+        "source_id": 1270,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Flight's Booked",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2022-06-29 08:58:46.784784",
+        "source_id": 1270,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Overdrive",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2022-06-29 08:58:46.784784",
+        "source_id": 1270,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Liability",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2022-06-29 08:58:46.784784",
+        "source_id": 1270,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "U-Digg",
+        "artist_name": "Lil Baby, 42 Dugg & Veeze",
+        "video_id": null,
+        "capture_date": "2022-06-29 08:58:46.785785",
+        "source_id": 1270,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Down Hill",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2022-06-29 08:58:46.785785",
+        "source_id": 1270,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Tie That Binds",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2022-06-29 08:58:46.785785",
+        "source_id": 1270,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wild As Her",
+        "artist_name": "Corey Kent",
+        "video_id": null,
+        "capture_date": "2022-06-29 08:58:46.786786",
+        "source_id": 1270,
         "song_id": null,
         "duplicate": false
     }
@@ -225,13 +288,21 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Yet To Come', 'BTS', NULL),
-  ('Rock And A Hard Place', 'Bailey Zimmerman', NULL),
-  ('So Good', 'Halsey', NULL),
-  ('Run BTS', 'BTS', NULL),
-  ('I Ain’t Worried', 'OneRepublic', NULL),
-  ('5 Foot 9', 'Tyler Hubbard', NULL),
-  ('New Truck', 'Dylan Scott', NULL)
+  ('Sticky', 'Drake', NULL),
+  ('Texts Go Green', 'Drake', NULL),
+  ('Massive', 'Drake', NULL),
+  ('Break My Soul', 'Beyonce', NULL),
+  ('The Kind Of Love We Make', 'Luke Combs', NULL),
+  ('Calling My Name', 'Drake', NULL),
+  ('A Keeper', 'Drake', NULL),
+  ('Currents', 'Drake', NULL),
+  ('Flight’s Booked', 'Drake', NULL),
+  ('Overdrive', 'Drake', NULL),
+  ('Liability', 'Drake', NULL),
+  ('U-Digg', 'Lil Baby, 42 Dugg & Veeze', NULL),
+  ('Down Hill', 'Drake', NULL),
+  ('Tie That Binds', 'Drake', NULL),
+  ('Wild As Her', 'Corey Kent', NULL)
   ;
 
    // Update to song table
@@ -242,7 +313,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12397; // SELECT last_insert_rowid();
+  song_id = 12429; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -282,15 +353,22 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-06-21 02:16:26.709709', '1265', '12375'),
-  ('2022-06-21 02:16:26.709709', '1265', '12391'),
-  ('2022-06-21 02:16:26.709709', '1265', '12392'),
-  ('2022-06-21 02:16:26.709709', '1265', '12379'),
-  ('2022-06-21 02:16:26.710710', '1265', '12393'),
-  ('2022-06-21 02:16:26.711711', '1265', '12394'),
-  ('2022-06-21 02:16:26.711711', '1265', '12395'),
-  ('2022-06-21 02:16:26.711711', '1265', '12396'),
-  ('2022-06-21 02:16:26.712712', '1265', '12397')
+  ('2022-06-29 08:58:46.782782', '1270', '12415'),
+  ('2022-06-29 08:58:46.783783', '1270', '12398'),
+  ('2022-06-29 08:58:46.783783', '1270', '12416'),
+  ('2022-06-29 08:58:46.783783', '1270', '12417'),
+  ('2022-06-29 08:58:46.783783', '1270', '12418'),
+  ('2022-06-29 08:58:46.783783', '1270', '12419'),
+  ('2022-06-29 08:58:46.783783', '1270', '12420'),
+  ('2022-06-29 08:58:46.783783', '1270', '12421'),
+  ('2022-06-29 08:58:46.783783', '1270', '12422'),
+  ('2022-06-29 08:58:46.784784', '1270', '12423'),
+  ('2022-06-29 08:58:46.784784', '1270', '12424'),
+  ('2022-06-29 08:58:46.784784', '1270', '12425'),
+  ('2022-06-29 08:58:46.785785', '1270', '12426'),
+  ('2022-06-29 08:58:46.785785', '1270', '12427'),
+  ('2022-06-29 08:58:46.785785', '1270', '12428'),
+  ('2022-06-29 08:58:46.786786', '1270', '12429')
   ;
 
   // Update to source_song table

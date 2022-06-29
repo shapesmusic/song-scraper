@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Drake Looks for Love, Repeatedly, and 9 More New Songs', '2022-06-17 08:41:36.000000', 'https://www.nytimes.com/2022/06/17/arts/music/playlist-drake-fka-twigs-perfume-genius.html');
+    ('New York Times', 'The Playlist', 'Beyoncé’s Dance-Floor Salvation, and 12 More New Songs', '2022-06-28 10:59:30.000000', 'https://www.nytimes.com/2022/06/24/arts/music/playlist-beyonce-taylor-swift.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1266; // SELECT last_insert_rowid();
+  source_id = 1271; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,92 +100,119 @@
   songsData =
   [
     {
-        "title": "Falling Back",
-        "artist_name": "Drake",
+        "title": "Break My Soul",
+        "artist_name": "Beyoncé",
         "video_id": null,
-        "capture_date": "2022-06-21 02:22:33.652652",
-        "source_id": 1266,
+        "capture_date": "2022-06-29 09:05:18.611611",
+        "source_id": 1271,
+        "song_id": 12418,
+        "duplicate": true
+    },
+    {
+        "title": "Cracker Island",
+        "artist_name": "Gorillaz ft. Thundercat",
+        "video_id": null,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Progressive House, Conservative Ligature",
-        "artist_name": "Rhys Langston ft. Fatboi Sharif",
+        "title": "I Got a Love",
+        "artist_name": "Elizabeth King",
         "video_id": null,
-        "capture_date": "2022-06-21 02:22:33.653653",
-        "source_id": 1266,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "10:36",
-        "artist_name": "beabadoobee",
+        "title": "Take It Like a Man",
+        "artist_name": "Amanda Shires",
         "video_id": null,
-        "capture_date": "2022-06-21 02:22:33.653653",
-        "source_id": 1266,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Silence Is Golden",
-        "artist_name": "The Beths",
+        "title": "Carolina",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-06-21 02:22:33.653653",
-        "source_id": 1266,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Was Neon",
-        "artist_name": "Julia Jacklin",
+        "title": "Canção da Cura",
+        "artist_name": "Sessa",
         "video_id": null,
-        "capture_date": "2022-06-21 02:22:33.653653",
-        "source_id": 1266,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
+        "song_id": 12220,
+        "duplicate": true
+    },
+    {
+        "title": "Blacklight Shine",
+        "artist_name": "The Mars Volta",
+        "video_id": null,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Photograph",
-        "artist_name": "Perfume Genius",
+        "title": "Watawi",
+        "artist_name": "CKay ft. Davido, Focalistic and Abidoza",
         "video_id": null,
-        "capture_date": "2022-06-21 02:22:33.653653",
-        "source_id": 1266,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Killer",
-        "artist_name": "FKA twigs",
+        "title": "Runner",
+        "artist_name": "Alex G",
         "video_id": null,
-        "capture_date": "2022-06-21 02:22:33.653653",
-        "source_id": 1266,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sorry",
-        "artist_name": "Röyksopp ft. Jamie Irrepressible",
+        "title": "Late to da Party",
+        "artist_name": "Lil Nas X ft. YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-06-21 02:22:33.653653",
-        "source_id": 1266,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Heart — Power of a Soft Heart",
-        "artist_name": "Alanis Morissette",
+        "title": "True Romance",
+        "artist_name": "Tove Lo",
         "video_id": null,
-        "capture_date": "2022-06-21 02:22:33.653653",
-        "source_id": 1266,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Waltz of Odesa Conservatory",
-        "artist_name": "Vadim Neselovskyi",
+        "title": "Heaven Come Crashing",
+        "artist_name": "Rachika Nayar",
         "video_id": null,
-        "capture_date": "2022-06-21 02:22:33.653653",
-        "source_id": 1266,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Will Never Be Forgotten",
+        "artist_name": "Abraham Burton and Eric McPherson",
+        "video_id": null,
+        "capture_date": "2022-06-29 09:05:18.612612",
+        "source_id": 1271,
         "song_id": null,
         "duplicate": false
     }
@@ -229,16 +256,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Falling Back', 'Drake', NULL),
-  ('Progressive House, Conservative Ligature', 'Rhys Langston ft. Fatboi Sharif', NULL),
-  ('10:36', 'beabadoobee', NULL),
-  ('Silence Is Golden', 'The Beths', NULL),
-  ('I Was Neon', 'Julia Jacklin', NULL),
-  ('Photograph', 'Perfume Genius', NULL),
-  ('Killer', 'FKA twigs', NULL),
-  ('Sorry', 'Röyksopp ft. Jamie Irrepressible', NULL),
-  ('Heart — Power of a Soft Heart', 'Alanis Morissette', NULL),
-  ('Waltz of Odesa Conservatory', 'Vadim Neselovskyi', NULL)
+  ('Cracker Island', 'Gorillaz ft. Thundercat', NULL),
+  ('I Got a Love', 'Elizabeth King', NULL),
+  ('Take It Like a Man', 'Amanda Shires', NULL),
+  ('Carolina', 'Taylor Swift', NULL),
+  ('Blacklight Shine', 'The Mars Volta', NULL),
+  ('Watawi', 'CKay ft. Davido, Focalistic and Abidoza', NULL),
+  ('Runner', 'Alex G', NULL),
+  ('Late to da Party', 'Lil Nas X ft. YoungBoy Never Broke Again', NULL),
+  ('True Romance', 'Tove Lo', NULL),
+  ('Heaven Come Crashing', 'Rachika Nayar', NULL),
+  ('Will Never Be Forgotten', 'Abraham Burton and Eric McPherson', NULL)
   ;
 
    // Update to song table
@@ -249,7 +277,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12407; // SELECT last_insert_rowid();
+  song_id = 12440; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +317,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-06-21 02:22:33.652652', '1266', '12398'),
-  ('2022-06-21 02:22:33.653653', '1266', '12399'),
-  ('2022-06-21 02:22:33.653653', '1266', '12400'),
-  ('2022-06-21 02:22:33.653653', '1266', '12401'),
-  ('2022-06-21 02:22:33.653653', '1266', '12402'),
-  ('2022-06-21 02:22:33.653653', '1266', '12403'),
-  ('2022-06-21 02:22:33.653653', '1266', '12404'),
-  ('2022-06-21 02:22:33.653653', '1266', '12405'),
-  ('2022-06-21 02:22:33.653653', '1266', '12406'),
-  ('2022-06-21 02:22:33.653653', '1266', '12407')
+  ('2022-06-29 09:05:18.611611', '1271', '12418'),
+  ('2022-06-29 09:05:18.612612', '1271', '12430'),
+  ('2022-06-29 09:05:18.612612', '1271', '12431'),
+  ('2022-06-29 09:05:18.612612', '1271', '12432'),
+  ('2022-06-29 09:05:18.612612', '1271', '12433'),
+  ('2022-06-29 09:05:18.612612', '1271', '12220'),
+  ('2022-06-29 09:05:18.612612', '1271', '12434'),
+  ('2022-06-29 09:05:18.612612', '1271', '12435'),
+  ('2022-06-29 09:05:18.612612', '1271', '12436'),
+  ('2022-06-29 09:05:18.612612', '1271', '12437'),
+  ('2022-06-29 09:05:18.612612', '1271', '12438'),
+  ('2022-06-29 09:05:18.612612', '1271', '12439'),
+  ('2022-06-29 09:05:18.612612', '1271', '12440')
   ;
 
   // Update to source_song table
