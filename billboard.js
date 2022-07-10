@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 2, 2022', '2022-07-02 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-07-02');
+    ('Billboard', 'The Hot 100', 'Week of July 9, 2022', '2022-07-09 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-07-09');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1270; // SELECT last_insert_rowid();
+  source_id = 1284; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,146 +105,101 @@
   songsData =
   [
     {
-        "title": "Sticky",
-        "artist_name": "Drake",
+        "title": "Left And Right",
+        "artist_name": "Charlie Puth ft. Jung Kook",
         "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.782782",
-        "source_id": 1270,
+        "capture_date": "2022-07-09 06:35:55.697697",
+        "source_id": 1284,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Falling Back",
-        "artist_name": "Drake",
+        "title": "Carolina",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.783783",
-        "source_id": 1270,
-        "song_id": 12398,
+        "capture_date": "2022-07-09 06:35:55.698698",
+        "source_id": 1284,
+        "song_id": 12433,
         "duplicate": true
     },
     {
-        "title": "Texts Go Green",
-        "artist_name": "Drake",
+        "title": "Late To Da Party (F*CK BET)",
+        "artist_name": "Lil Nas X & Youngboy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.783783",
-        "source_id": 1270,
+        "capture_date": "2022-07-09 06:35:55.698698",
+        "source_id": 1284,
+        "song_id": 12437,
+        "duplicate": true
+    },
+    {
+        "title": "From The D 2 The LBC",
+        "artist_name": "Eminem & Snoop Dogg",
+        "video_id": null,
+        "capture_date": "2022-07-09 06:35:55.698698",
+        "source_id": 1284,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Massive",
-        "artist_name": "Drake",
+        "title": "Call Me Everyday",
+        "artist_name": "Chris Brown ft. WizKid",
         "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.783783",
-        "source_id": 1270,
+        "capture_date": "2022-07-09 06:35:55.698698",
+        "source_id": 1284,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Break My Soul",
-        "artist_name": "Beyonce",
+        "title": "Psychic",
+        "artist_name": "Chris Brown ft. Jack Harlow",
         "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.783783",
-        "source_id": 1270,
+        "capture_date": "2022-07-09 06:35:55.698698",
+        "source_id": 1284,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Kind Of Love We Make",
-        "artist_name": "Luke Combs",
+        "title": "WE (Warm Embrace)",
+        "artist_name": "Chris Brown",
         "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.783783",
-        "source_id": 1270,
+        "capture_date": "2022-07-09 06:35:55.698698",
+        "source_id": 1284,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Calling My Name",
-        "artist_name": "Drake",
+        "title": "Burglars & Murderers",
+        "artist_name": "Lil Durk ft. EST Gee",
         "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.783783",
-        "source_id": 1270,
+        "capture_date": "2022-07-09 06:35:55.699699",
+        "source_id": 1284,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "A Keeper",
-        "artist_name": "Drake",
+        "title": "Addicted",
+        "artist_name": "Chris Brown ft. Lil Baby",
         "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.783783",
-        "source_id": 1270,
+        "capture_date": "2022-07-09 06:35:55.699699",
+        "source_id": 1284,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Currents",
-        "artist_name": "Drake",
+        "title": "Did Shit To Me",
+        "artist_name": "Lil Durk ft. Doodie Lo",
         "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.783783",
-        "source_id": 1270,
+        "capture_date": "2022-07-09 06:35:55.699699",
+        "source_id": 1284,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Flight's Booked",
-        "artist_name": "Drake",
+        "title": "Possessive",
+        "artist_name": "Chris Brown ft. Lil Wayne & BLEU",
         "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.784784",
-        "source_id": 1270,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Overdrive",
-        "artist_name": "Drake",
-        "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.784784",
-        "source_id": 1270,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Liability",
-        "artist_name": "Drake",
-        "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.784784",
-        "source_id": 1270,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "U-Digg",
-        "artist_name": "Lil Baby, 42 Dugg & Veeze",
-        "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.785785",
-        "source_id": 1270,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Down Hill",
-        "artist_name": "Drake",
-        "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.785785",
-        "source_id": 1270,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tie That Binds",
-        "artist_name": "Drake",
-        "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.785785",
-        "source_id": 1270,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Wild As Her",
-        "artist_name": "Corey Kent",
-        "video_id": null,
-        "capture_date": "2022-06-29 08:58:46.786786",
-        "source_id": 1270,
+        "capture_date": "2022-07-09 06:35:55.699699",
+        "source_id": 1284,
         "song_id": null,
         "duplicate": false
     }
@@ -288,21 +243,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Sticky', 'Drake', NULL),
-  ('Texts Go Green', 'Drake', NULL),
-  ('Massive', 'Drake', NULL),
-  ('Break My Soul', 'Beyonce', NULL),
-  ('The Kind Of Love We Make', 'Luke Combs', NULL),
-  ('Calling My Name', 'Drake', NULL),
-  ('A Keeper', 'Drake', NULL),
-  ('Currents', 'Drake', NULL),
-  ('Flight’s Booked', 'Drake', NULL),
-  ('Overdrive', 'Drake', NULL),
-  ('Liability', 'Drake', NULL),
-  ('U-Digg', 'Lil Baby, 42 Dugg & Veeze', NULL),
-  ('Down Hill', 'Drake', NULL),
-  ('Tie That Binds', 'Drake', NULL),
-  ('Wild As Her', 'Corey Kent', NULL)
+  ('Left And Right', 'Charlie Puth ft. Jung Kook', NULL),
+  ('From The D 2 The LBC', 'Eminem & Snoop Dogg', NULL),
+  ('Call Me Everyday', 'Chris Brown ft. WizKid', NULL),
+  ('Psychic', 'Chris Brown ft. Jack Harlow', NULL),
+  ('WE (Warm Embrace)', 'Chris Brown', NULL),
+  ('Burglars & Murderers', 'Lil Durk ft. EST Gee', NULL),
+  ('Addicted', 'Chris Brown ft. Lil Baby', NULL),
+  ('Did Shit To Me', 'Lil Durk ft. Doodie Lo', NULL),
+  ('Possessive', 'Chris Brown ft. Lil Wayne & BLEU', NULL)
   ;
 
    // Update to song table
@@ -313,7 +262,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12429; // SELECT last_insert_rowid();
+  song_id = 12457; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -353,22 +302,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-06-29 08:58:46.782782', '1270', '12415'),
-  ('2022-06-29 08:58:46.783783', '1270', '12398'),
-  ('2022-06-29 08:58:46.783783', '1270', '12416'),
-  ('2022-06-29 08:58:46.783783', '1270', '12417'),
-  ('2022-06-29 08:58:46.783783', '1270', '12418'),
-  ('2022-06-29 08:58:46.783783', '1270', '12419'),
-  ('2022-06-29 08:58:46.783783', '1270', '12420'),
-  ('2022-06-29 08:58:46.783783', '1270', '12421'),
-  ('2022-06-29 08:58:46.783783', '1270', '12422'),
-  ('2022-06-29 08:58:46.784784', '1270', '12423'),
-  ('2022-06-29 08:58:46.784784', '1270', '12424'),
-  ('2022-06-29 08:58:46.784784', '1270', '12425'),
-  ('2022-06-29 08:58:46.785785', '1270', '12426'),
-  ('2022-06-29 08:58:46.785785', '1270', '12427'),
-  ('2022-06-29 08:58:46.785785', '1270', '12428'),
-  ('2022-06-29 08:58:46.786786', '1270', '12429')
+  ('2022-07-09 06:35:55.697697', '1284', '12449'),
+  ('2022-07-09 06:35:55.698698', '1284', '12433'),
+  ('2022-07-09 06:35:55.698698', '1284', '12437'),
+  ('2022-07-09 06:35:55.698698', '1284', '12450'),
+  ('2022-07-09 06:35:55.698698', '1284', '12451'),
+  ('2022-07-09 06:35:55.698698', '1284', '12452'),
+  ('2022-07-09 06:35:55.698698', '1284', '12453'),
+  ('2022-07-09 06:35:55.699699', '1284', '12454'),
+  ('2022-07-09 06:35:55.699699', '1284', '12455'),
+  ('2022-07-09 06:35:55.699699', '1284', '12456'),
+  ('2022-07-09 06:35:55.699699', '1284', '12457')
   ;
 
   // Update to source_song table

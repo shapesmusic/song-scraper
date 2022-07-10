@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Beyoncé’s Dance-Floor Salvation, and 12 More New Songs', '2022-06-28 10:59:30.000000', 'https://www.nytimes.com/2022/06/24/arts/music/playlist-beyonce-taylor-swift.html');
+    ('New York Times', 'The Playlist', 'Cardi B’s All-Star Team-Up, and 9 More New Songs', '2022-07-01 08:40:18.000000', 'https://www.nytimes.com/2022/07/01/arts/music/playlist-cardi-b-raye-steve-lacy.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1271; // SELECT last_insert_rowid();
+  source_id = 1285; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,119 +100,92 @@
   songsData =
   [
     {
-        "title": "Break My Soul",
-        "artist_name": "Beyoncé",
+        "title": "Hot ____",
+        "artist_name": "Cardi B ft. Ye and Lil Durk",
         "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.611611",
-        "source_id": 1271,
-        "song_id": 12418,
-        "duplicate": true
-    },
-    {
-        "title": "Cracker Island",
-        "artist_name": "Gorillaz ft. Thundercat",
-        "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
+        "capture_date": "2022-07-09 06:44:34.878878",
+        "source_id": 1285,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Got a Love",
-        "artist_name": "Elizabeth King",
+        "title": "Hard Out Here",
+        "artist_name": "Raye",
         "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
+        "capture_date": "2022-07-09 06:44:34.880880",
+        "source_id": 1285,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Take It Like a Man",
-        "artist_name": "Amanda Shires",
+        "title": "Bad Habit",
+        "artist_name": "Steve Lacy",
         "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
+        "capture_date": "2022-07-09 06:44:34.880880",
+        "source_id": 1285,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Carolina",
-        "artist_name": "Taylor Swift",
+        "title": "NBPQ (Topless)",
+        "artist_name": "Sudan Archives",
         "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
+        "capture_date": "2022-07-09 06:44:34.880880",
+        "source_id": 1285,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Canção da Cura",
-        "artist_name": "Sessa",
+        "title": "Cloudy",
+        "artist_name": "Daphni",
         "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
-        "song_id": 12220,
-        "duplicate": true
-    },
-    {
-        "title": "Blacklight Shine",
-        "artist_name": "The Mars Volta",
-        "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
+        "capture_date": "2022-07-09 06:44:34.880880",
+        "source_id": 1285,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Watawi",
-        "artist_name": "CKay ft. Davido, Focalistic and Abidoza",
+        "title": "Never Forget",
+        "artist_name": "Sampa the Great ft. Chef 187, Tio Nason, and Mwanjé",
         "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
+        "capture_date": "2022-07-09 06:44:34.880880",
+        "source_id": 1285,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Runner",
-        "artist_name": "Alex G",
+        "title": "Jazz Codes",
+        "artist_name": "Moor Mother",
         "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
+        "capture_date": "2022-07-09 06:44:34.880880",
+        "source_id": 1285,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Late to da Party",
-        "artist_name": "Lil Nas X ft. YoungBoy Never Broke Again",
+        "title": "Lose It",
+        "artist_name": "Paolo Nutini",
         "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
+        "capture_date": "2022-07-09 06:44:34.880880",
+        "source_id": 1285,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "True Romance",
-        "artist_name": "Tove Lo",
+        "title": "The Antidote Is in the Poison",
+        "artist_name": "Gogo Penguin",
         "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
+        "capture_date": "2022-07-09 06:44:34.880880",
+        "source_id": 1285,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Heaven Come Crashing",
-        "artist_name": "Rachika Nayar",
+        "title": "The Water Will Win",
+        "artist_name": "Kirk Knuffke",
         "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Will Never Be Forgotten",
-        "artist_name": "Abraham Burton and Eric McPherson",
-        "video_id": null,
-        "capture_date": "2022-06-29 09:05:18.612612",
-        "source_id": 1271,
+        "capture_date": "2022-07-09 06:44:34.880880",
+        "source_id": 1285,
         "song_id": null,
         "duplicate": false
     }
@@ -256,17 +229,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Cracker Island', 'Gorillaz ft. Thundercat', NULL),
-  ('I Got a Love', 'Elizabeth King', NULL),
-  ('Take It Like a Man', 'Amanda Shires', NULL),
-  ('Carolina', 'Taylor Swift', NULL),
-  ('Blacklight Shine', 'The Mars Volta', NULL),
-  ('Watawi', 'CKay ft. Davido, Focalistic and Abidoza', NULL),
-  ('Runner', 'Alex G', NULL),
-  ('Late to da Party', 'Lil Nas X ft. YoungBoy Never Broke Again', NULL),
-  ('True Romance', 'Tove Lo', NULL),
-  ('Heaven Come Crashing', 'Rachika Nayar', NULL),
-  ('Will Never Be Forgotten', 'Abraham Burton and Eric McPherson', NULL)
+  ('Hot ____', 'Cardi B ft. Ye and Lil Durk', NULL),
+  ('Hard Out Here', 'Raye', NULL),
+  ('Bad Habit', 'Steve Lacy', NULL),
+  ('NBPQ (Topless)', 'Sudan Archives', NULL),
+  ('Cloudy', 'Daphni', NULL),
+  ('Never Forget', 'Sampa the Great ft. Chef 187, Tio Nason, and Mwanjé', NULL),
+  ('Jazz Codes', 'Moor Mother', NULL),
+  ('Lose It', 'Paolo Nutini', NULL),
+  ('The Antidote Is in the Poison', 'Gogo Penguin', NULL),
+  ('The Water Will Win', 'Kirk Knuffke', NULL)
   ;
 
    // Update to song table
@@ -277,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12440; // SELECT last_insert_rowid();
+  song_id = 12467; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -317,19 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-06-29 09:05:18.611611', '1271', '12418'),
-  ('2022-06-29 09:05:18.612612', '1271', '12430'),
-  ('2022-06-29 09:05:18.612612', '1271', '12431'),
-  ('2022-06-29 09:05:18.612612', '1271', '12432'),
-  ('2022-06-29 09:05:18.612612', '1271', '12433'),
-  ('2022-06-29 09:05:18.612612', '1271', '12220'),
-  ('2022-06-29 09:05:18.612612', '1271', '12434'),
-  ('2022-06-29 09:05:18.612612', '1271', '12435'),
-  ('2022-06-29 09:05:18.612612', '1271', '12436'),
-  ('2022-06-29 09:05:18.612612', '1271', '12437'),
-  ('2022-06-29 09:05:18.612612', '1271', '12438'),
-  ('2022-06-29 09:05:18.612612', '1271', '12439'),
-  ('2022-06-29 09:05:18.612612', '1271', '12440')
+  ('2022-07-09 06:44:34.878878', '1285', '12458'),
+  ('2022-07-09 06:44:34.880880', '1285', '12459'),
+  ('2022-07-09 06:44:34.880880', '1285', '12460'),
+  ('2022-07-09 06:44:34.880880', '1285', '12461'),
+  ('2022-07-09 06:44:34.880880', '1285', '12462'),
+  ('2022-07-09 06:44:34.880880', '1285', '12463'),
+  ('2022-07-09 06:44:34.880880', '1285', '12464'),
+  ('2022-07-09 06:44:34.880880', '1285', '12465'),
+  ('2022-07-09 06:44:34.880880', '1285', '12466'),
+  ('2022-07-09 06:44:34.880880', '1285', '12467')
   ;
 
   // Update to source_song table
