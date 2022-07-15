@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of June 24, 2022', '2022-06-24 12:00:00.000000', 'https://www.stereogum.com/2191354/the-5-best-songs-of-the-week-439/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of July 8, 2022', '2022-07-08 12:00:00.000000', 'https://www.stereogum.com/2192531/the-5-best-songs-of-the-week-441/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1272; // SELECT last_insert_rowid();
+  source_id = 1290; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,48 +101,48 @@
   songsData =
   [
     {
-        "title": "Seventh String",
-        "artist_name": "Makaya McCraven",
+        "title": "Feathers",
+        "artist_name": "Florist",
         "video_id": null,
-        "capture_date": "2022-06-29 09:14:54.573573",
-        "source_id": 1272,
+        "capture_date": "2022-07-15 04:12:54.677677",
+        "source_id": 1290,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Heaven Come Crashing",
-        "artist_name": "Rachika Nayar",
+        "title": "Good Love",
+        "artist_name": "City Girls",
         "video_id": null,
-        "capture_date": "2022-06-29 09:14:54.605605",
-        "source_id": 1272,
-        "song_id": 12439,
+        "capture_date": "2022-07-15 04:12:54.678678",
+        "source_id": 1290,
+        "song_id": 12468,
         "duplicate": true
     },
     {
-        "title": "True Romance",
-        "artist_name": "Tove Lo",
+        "title": "Eleanor",
+        "artist_name": "Hot Chip",
         "video_id": null,
-        "capture_date": "2022-06-29 09:14:54.605605",
-        "source_id": 1272,
-        "song_id": 12438,
-        "duplicate": true
-    },
-    {
-        "title": "Just Say That",
-        "artist_name": "Duke Deuce & Glorilla",
-        "video_id": null,
-        "capture_date": "2022-06-29 09:14:54.606606",
-        "source_id": 1272,
+        "capture_date": "2022-07-15 04:12:54.678678",
+        "source_id": 1290,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Break My Soul",
-        "artist_name": "Beyoncé",
+        "title": "Part Of The Band",
+        "artist_name": "The 1975",
         "video_id": null,
-        "capture_date": "2022-06-29 09:14:54.606606",
-        "source_id": 1272,
-        "song_id": 12418,
+        "capture_date": "2022-07-15 04:12:54.678678",
+        "source_id": 1290,
+        "song_id": 12484,
+        "duplicate": true
+    },
+    {
+        "title": "Pharmacist",
+        "artist_name": "Alvvays",
+        "video_id": null,
+        "capture_date": "2022-07-15 04:12:54.678678",
+        "source_id": 1290,
+        "song_id": 12485,
         "duplicate": true
     }
 ]
@@ -185,8 +185,8 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Seventh String', 'Makaya McCraven', NULL),
-  ('Just Say That', 'Duke Deuce & Glorilla', NULL)
+  ('Feathers', 'Florist', NULL),
+  ('Eleanor', 'Hot Chip', NULL)
   ;
 
    // Update to song table
@@ -197,7 +197,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12442; // SELECT last_insert_rowid();
+  song_id = 12504; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -237,11 +237,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-06-29 09:14:54.573573', '1272', '12441'),
-  ('2022-06-29 09:14:54.605605', '1272', '12439'),
-  ('2022-06-29 09:14:54.605605', '1272', '12438'),
-  ('2022-06-29 09:14:54.606606', '1272', '12442'),
-  ('2022-06-29 09:14:54.606606', '1272', '12418')
+  ('2022-07-15 04:12:54.677677', '1290', '12503'),
+  ('2022-07-15 04:12:54.678678', '1290', '12468'),
+  ('2022-07-15 04:12:54.678678', '1290', '12504'),
+  ('2022-07-15 04:12:54.678678', '1290', '12484'),
+  ('2022-07-15 04:12:54.678678', '1290', '12485')
   ;
 
   // Update to source_song table

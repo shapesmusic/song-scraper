@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Cardi B’s All-Star Team-Up, and 9 More New Songs', '2022-07-01 08:40:18.000000', 'https://www.nytimes.com/2022/07/01/arts/music/playlist-cardi-b-raye-steve-lacy.html');
+    ('New York Times', 'The Playlist', 'The 1975’s Chamber-Pop Confessions, and 8 More New Songs', '2022-07-08 09:48:24.000000', 'https://www.nytimes.com/2022/07/08/arts/music/playlist-1975-killer-mike-alvvays.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1285; // SELECT last_insert_rowid();
+  source_id = 1288; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,92 +100,83 @@
   songsData =
   [
     {
-        "title": "Hot ____",
-        "artist_name": "Cardi B ft. Ye and Lil Durk",
+        "title": "Part of the Band",
+        "artist_name": "The 1975",
         "video_id": null,
-        "capture_date": "2022-07-09 06:44:34.878878",
-        "source_id": 1285,
+        "capture_date": "2022-07-15 03:49:59.724724",
+        "source_id": 1288,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hard Out Here",
-        "artist_name": "Raye",
+        "title": "Pharmacist",
+        "artist_name": "Alvvays",
         "video_id": null,
-        "capture_date": "2022-07-09 06:44:34.880880",
-        "source_id": 1285,
+        "capture_date": "2022-07-15 03:49:59.726726",
+        "source_id": 1288,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bad Habit",
-        "artist_name": "Steve Lacy",
+        "title": "Guthrie",
+        "artist_name": "Julien Baker",
         "video_id": null,
-        "capture_date": "2022-07-09 06:44:34.880880",
-        "source_id": 1285,
+        "capture_date": "2022-07-15 03:49:59.726726",
+        "source_id": 1288,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "NBPQ (Topless)",
-        "artist_name": "Sudan Archives",
+        "title": "Change the Locks",
+        "artist_name": "King Princess",
         "video_id": null,
-        "capture_date": "2022-07-09 06:44:34.880880",
-        "source_id": 1285,
+        "capture_date": "2022-07-15 03:49:59.726726",
+        "source_id": 1288,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cloudy",
-        "artist_name": "Daphni",
+        "title": "Immature",
+        "artist_name": "Flo",
         "video_id": null,
-        "capture_date": "2022-07-09 06:44:34.880880",
-        "source_id": 1285,
+        "capture_date": "2022-07-15 03:49:59.726726",
+        "source_id": 1288,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Never Forget",
-        "artist_name": "Sampa the Great ft. Chef 187, Tio Nason, and Mwanjé",
+        "title": "Pila Pila (Trooko Remix)",
+        "artist_name": "Ghetto Kumbé",
         "video_id": null,
-        "capture_date": "2022-07-09 06:44:34.880880",
-        "source_id": 1285,
+        "capture_date": "2022-07-15 03:49:59.726726",
+        "source_id": 1288,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Jazz Codes",
-        "artist_name": "Moor Mother",
+        "title": "Run",
+        "artist_name": "Killer Mike ft. Young Thug",
         "video_id": null,
-        "capture_date": "2022-07-09 06:44:34.880880",
-        "source_id": 1285,
+        "capture_date": "2022-07-15 03:49:59.726726",
+        "source_id": 1288,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lose It",
-        "artist_name": "Paolo Nutini",
+        "title": "Take a Chance",
+        "artist_name": "Domi & JD Beck (ft. Anderson .Paak)",
         "video_id": null,
-        "capture_date": "2022-07-09 06:44:34.880880",
-        "source_id": 1285,
+        "capture_date": "2022-07-15 03:49:59.726726",
+        "source_id": 1288,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Antidote Is in the Poison",
-        "artist_name": "Gogo Penguin",
+        "title": "Enchantment",
+        "artist_name": "Tyshawn Sorey Trio",
         "video_id": null,
-        "capture_date": "2022-07-09 06:44:34.880880",
-        "source_id": 1285,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Water Will Win",
-        "artist_name": "Kirk Knuffke",
-        "video_id": null,
-        "capture_date": "2022-07-09 06:44:34.880880",
-        "source_id": 1285,
+        "capture_date": "2022-07-15 03:49:59.726726",
+        "source_id": 1288,
         "song_id": null,
         "duplicate": false
     }
@@ -229,16 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Hot ____', 'Cardi B ft. Ye and Lil Durk', NULL),
-  ('Hard Out Here', 'Raye', NULL),
-  ('Bad Habit', 'Steve Lacy', NULL),
-  ('NBPQ (Topless)', 'Sudan Archives', NULL),
-  ('Cloudy', 'Daphni', NULL),
-  ('Never Forget', 'Sampa the Great ft. Chef 187, Tio Nason, and Mwanjé', NULL),
-  ('Jazz Codes', 'Moor Mother', NULL),
-  ('Lose It', 'Paolo Nutini', NULL),
-  ('The Antidote Is in the Poison', 'Gogo Penguin', NULL),
-  ('The Water Will Win', 'Kirk Knuffke', NULL)
+  ('Part of the Band', 'The 1975', NULL),
+  ('Pharmacist', 'Alvvays', NULL),
+  ('Guthrie', 'Julien Baker', NULL),
+  ('Change the Locks', 'King Princess', NULL),
+  ('Immature', 'Flo', NULL),
+  ('Pila Pila (Trooko Remix)', 'Ghetto Kumbé', NULL),
+  ('Run', 'Killer Mike ft. Young Thug', NULL),
+  ('Take a Chance', 'Domi & JD Beck (ft. Anderson .Paak)', NULL),
+  ('Enchantment', 'Tyshawn Sorey Trio', NULL)
   ;
 
    // Update to song table
@@ -249,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12467; // SELECT last_insert_rowid();
+  song_id = 12492; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-09 06:44:34.878878', '1285', '12458'),
-  ('2022-07-09 06:44:34.880880', '1285', '12459'),
-  ('2022-07-09 06:44:34.880880', '1285', '12460'),
-  ('2022-07-09 06:44:34.880880', '1285', '12461'),
-  ('2022-07-09 06:44:34.880880', '1285', '12462'),
-  ('2022-07-09 06:44:34.880880', '1285', '12463'),
-  ('2022-07-09 06:44:34.880880', '1285', '12464'),
-  ('2022-07-09 06:44:34.880880', '1285', '12465'),
-  ('2022-07-09 06:44:34.880880', '1285', '12466'),
-  ('2022-07-09 06:44:34.880880', '1285', '12467')
+  ('2022-07-15 03:49:59.724724', '1288', '12484'),
+  ('2022-07-15 03:49:59.726726', '1288', '12485'),
+  ('2022-07-15 03:49:59.726726', '1288', '12486'),
+  ('2022-07-15 03:49:59.726726', '1288', '12487'),
+  ('2022-07-15 03:49:59.726726', '1288', '12488'),
+  ('2022-07-15 03:49:59.726726', '1288', '12489'),
+  ('2022-07-15 03:49:59.726726', '1288', '12490'),
+  ('2022-07-15 03:49:59.726726', '1288', '12491'),
+  ('2022-07-15 03:49:59.726726', '1288', '12492')
   ;
 
   // Update to source_song table
