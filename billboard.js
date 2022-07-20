@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 16, 2022', '2022-07-16 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-07-16');
+    ('Billboard', 'The Hot 100', 'Week of July 23, 2022', '2022-07-23 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-07-23');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1287; // SELECT last_insert_rowid();
+  source_id = 1291; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,112 +105,85 @@
   songsData =
   [
     {
-        "title": "Hot Shit",
-        "artist_name": "Cardi B, Ye & Lil Durk",
+        "title": "All Mine",
+        "artist_name": "Brent Faiyaz",
         "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.176176",
-        "source_id": 1287,
-        "song_id": 12458,
+        "capture_date": "2022-07-19 08:46:22.483483",
+        "source_id": 1291,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Loose Change",
+        "artist_name": "Brent Faiyaz",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:46:22.484484",
+        "source_id": 1291,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Price Of Fame",
+        "artist_name": "Brent Faiyaz",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:46:22.484484",
+        "source_id": 1291,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Betty (Get Money)",
+        "artist_name": "Yung Gravy",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:46:22.484484",
+        "source_id": 1291,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Rolling Stone",
+        "artist_name": "Brent Faiyaz",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:46:22.485485",
+        "source_id": 1291,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Last Last",
+        "artist_name": "Burna Boy",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:46:22.485485",
+        "source_id": 1291,
+        "song_id": 12213,
         "duplicate": true
     },
     {
-        "title": "Master Of Puppets",
-        "artist_name": "Metallica",
+        "title": "Ghetto Gatsby",
+        "artist_name": "Brent Faiyaz ft. Alicia Keys",
         "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.179179",
-        "source_id": 1287,
+        "capture_date": "2022-07-19 08:46:22.485485",
+        "source_id": 1291,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Son Of A Sinner",
-        "artist_name": "Jelly Roll",
+        "title": "Heal Your Heart (Interlude)",
+        "artist_name": "Brent Faiyaz",
         "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.180180",
-        "source_id": 1287,
+        "capture_date": "2022-07-19 08:46:22.485485",
+        "source_id": 1291,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Good Love",
-        "artist_name": "City Girls & Usher",
+        "title": "FYTB",
+        "artist_name": "Brent Faiyaz ft. Joony",
         "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.180180",
-        "source_id": 1287,
-        "song_id": 12468,
-        "duplicate": true
-    },
-    {
-        "title": "Wishful Drinking",
-        "artist_name": "Ingrid Andress With Sam Hunt",
-        "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.180180",
-        "source_id": 1287,
+        "capture_date": "2022-07-19 08:46:22.485485",
+        "source_id": 1291,
         "song_id": null,
         "duplicate": false
-    },
-    {
-        "title": "Country On",
-        "artist_name": "Luke Bryan",
-        "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.185185",
-        "source_id": 1287,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "More",
-        "artist_name": "j-hope",
-        "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.185185",
-        "source_id": 1287,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Numb",
-        "artist_name": "Marshmello & Khalid",
-        "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.185185",
-        "source_id": 1287,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Best Thing Since Backroads",
-        "artist_name": "Jake Owen",
-        "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.186186",
-        "source_id": 1287,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Unstoppable",
-        "artist_name": "Sia",
-        "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.186186",
-        "source_id": 1287,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Rich Minion",
-        "artist_name": "Yeat",
-        "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.186186",
-        "source_id": 1287,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bad Habit",
-        "artist_name": "Steve Lacy",
-        "video_id": null,
-        "capture_date": "2022-07-15 03:44:18.186186",
-        "source_id": 1287,
-        "song_id": 12460,
-        "duplicate": true
     }
 ]
 
@@ -252,15 +225,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Master Of Puppets', 'Metallica', NULL),
-  ('Son Of A Sinner', 'Jelly Roll', NULL),
-  ('Wishful Drinking', 'Ingrid Andress With Sam Hunt', NULL),
-  ('Country On', 'Luke Bryan', NULL),
-  ('More', 'j-hope', NULL),
-  ('Numb', 'Marshmello & Khalid', NULL),
-  ('Best Thing Since Backroads', 'Jake Owen', NULL),
-  ('Unstoppable', 'Sia', NULL),
-  ('Rich Minion', 'Yeat', NULL)
+  ('All Mine', 'Brent Faiyaz', NULL),
+  ('Loose Change', 'Brent Faiyaz', NULL),
+  ('Price Of Fame', 'Brent Faiyaz', NULL),
+  ('Betty (Get Money)', 'Yung Gravy', NULL),
+  ('Rolling Stone', 'Brent Faiyaz', NULL),
+  ('Ghetto Gatsby', 'Brent Faiyaz ft. Alicia Keys', NULL),
+  ('Heal Your Heart (Interlude)', 'Brent Faiyaz', NULL),
+  ('FYTB', 'Brent Faiyaz ft. Joony', NULL)
   ;
 
    // Update to song table
@@ -271,7 +243,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12483; // SELECT last_insert_rowid();
+  song_id = 12512; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -311,18 +283,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-15 03:44:18.176176', '1287', '12458'),
-  ('2022-07-15 03:44:18.179179', '1287', '12475'),
-  ('2022-07-15 03:44:18.180180', '1287', '12476'),
-  ('2022-07-15 03:44:18.180180', '1287', '12468'),
-  ('2022-07-15 03:44:18.180180', '1287', '12477'),
-  ('2022-07-15 03:44:18.185185', '1287', '12478'),
-  ('2022-07-15 03:44:18.185185', '1287', '12479'),
-  ('2022-07-15 03:44:18.185185', '1287', '12480'),
-  ('2022-07-15 03:44:18.186186', '1287', '12481'),
-  ('2022-07-15 03:44:18.186186', '1287', '12482'),
-  ('2022-07-15 03:44:18.186186', '1287', '12483'),
-  ('2022-07-15 03:44:18.186186', '1287', '12460')
+  ('2022-07-19 08:46:22.483483', '1291', '12505'),
+  ('2022-07-19 08:46:22.484484', '1291', '12506'),
+  ('2022-07-19 08:46:22.484484', '1291', '12507'),
+  ('2022-07-19 08:46:22.484484', '1291', '12508'),
+  ('2022-07-19 08:46:22.485485', '1291', '12509'),
+  ('2022-07-19 08:46:22.485485', '1291', '12213'),
+  ('2022-07-19 08:46:22.485485', '1291', '12510'),
+  ('2022-07-19 08:46:22.485485', '1291', '12511'),
+  ('2022-07-19 08:46:22.485485', '1291', '12512')
   ;
 
   // Update to source_song table

@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Brent Faiyaz, Burna Boy, Ken Carson, and More', '2022-07-08 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-july-8/key-glock-diapers');
+    ('Complex', 'The Best New Music This Week', 'Joey Badass, Steve Lacy, Latto, and More', '2022-07-15 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-july15/zubin-coi-leray-yungmanny-givenchy');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1289; // SELECT last_insert_rowid();
+  source_id = 1293; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,92 +102,92 @@
   songsData =
   [
     {
-        "title": "Role Model",
-        "artist_name": "Brent Faiyaz",
-        "video_id": null,
-        "capture_date": "2022-07-15 04:02:27.589589",
-        "source_id": 1289,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Toni-Ann Singh",
-        "artist_name": "Burna Boy ft. Popcaan",
-        "video_id": null,
-        "capture_date": "2022-07-15 04:02:27.590590",
-        "source_id": 1289,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Go",
-        "artist_name": "Ken Carson",
-        "video_id": null,
-        "capture_date": "2022-07-15 04:02:27.590590",
-        "source_id": 1289,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bitch I’m Nice",
-        "artist_name": "Doechii",
-        "video_id": null,
-        "capture_date": "2022-07-15 04:02:27.590590",
-        "source_id": 1289,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Danhausen",
-        "artist_name": "Westside Gunn",
-        "video_id": null,
-        "capture_date": "2022-07-15 04:02:27.590590",
-        "source_id": 1289,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Paris To Tokyo",
-        "artist_name": "Fivo Foreign & Kid LAROI",
-        "video_id": null,
-        "capture_date": "2022-07-15 04:02:27.590590",
-        "source_id": 1289,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "No Mas",
-        "artist_name": "Murda Beatz ft. Quavo, Pharrell, J Balvin & Anitta",
-        "video_id": null,
-        "capture_date": "2022-07-15 04:02:27.590590",
-        "source_id": 1289,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Survivor’s Guilt",
+        "title": "Zipcodes",
         "artist_name": "Joey Badass",
         "video_id": null,
-        "capture_date": "2022-07-15 04:02:27.590590",
-        "source_id": 1289,
+        "capture_date": "2022-07-19 08:55:38.604604",
+        "source_id": 1293,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Life Is Good",
-        "artist_name": "SiR ft. Scribz Riley",
+        "title": "Pussy",
+        "artist_name": "Latto",
         "video_id": null,
-        "capture_date": "2022-07-15 04:02:27.590590",
-        "source_id": 1289,
+        "capture_date": "2022-07-19 08:55:38.605605",
+        "source_id": 1293,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Diapers",
-        "artist_name": "Key Glock",
+        "title": "Buttons",
+        "artist_name": "Steve Lacy",
         "video_id": null,
-        "capture_date": "2022-07-15 04:02:27.590590",
-        "source_id": 1289,
+        "capture_date": "2022-07-19 08:55:38.605605",
+        "source_id": 1293,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Loner",
+        "artist_name": "Terry Presume",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:55:38.605605",
+        "source_id": 1293,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Listen",
+        "artist_name": "Sheff G",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:55:38.605605",
+        "source_id": 1293,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Beat Breaks",
+        "artist_name": "DJ Premier & Nas",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:55:38.605605",
+        "source_id": 1293,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Rain",
+        "artist_name": "2KBaby",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:55:38.605605",
+        "source_id": 1293,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Football Heads",
+        "artist_name": "Maxo Kream & Benny The Butcher",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:55:38.605605",
+        "source_id": 1293,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bad Bad",
+        "artist_name": "Roy Woods",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:55:38.605605",
+        "source_id": 1293,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Givenchy",
+        "artist_name": "Zubin ft. Coi Leray & YungManny",
+        "video_id": null,
+        "capture_date": "2022-07-19 08:55:38.605605",
+        "source_id": 1293,
         "song_id": null,
         "duplicate": false
     }
@@ -230,16 +230,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Role Model', 'Brent Faiyaz', NULL),
-  ('Toni-Ann Singh', 'Burna Boy ft. Popcaan', NULL),
-  ('Go', 'Ken Carson', NULL),
-  ('Bitch I’m Nice', 'Doechii', NULL),
-  ('Danhausen', 'Westside Gunn', NULL),
-  ('Paris To Tokyo', 'Fivo Foreign & Kid LAROI', NULL),
-  ('No Mas', 'Murda Beatz ft. Quavo, Pharrell, J Balvin & Anitta', NULL),
-  ('Survivor’s Guilt', 'Joey Badass', NULL),
-  ('Life Is Good', 'SiR ft. Scribz Riley', NULL),
-  ('Diapers', 'Key Glock', NULL)
+  ('Zipcodes', 'Joey Badass', NULL),
+  ('Pussy', 'Latto', NULL),
+  ('Buttons', 'Steve Lacy', NULL),
+  ('Loner', 'Terry Presume', NULL),
+  ('Listen', 'Sheff G', NULL),
+  ('Beat Breaks', 'DJ Premier & Nas', NULL),
+  ('Rain', '2KBaby', NULL),
+  ('Football Heads', 'Maxo Kream & Benny The Butcher', NULL),
+  ('Bad Bad', 'Roy Woods', NULL),
+  ('Givenchy', 'Zubin ft. Coi Leray & YungManny', NULL)
   ;
 
    // Update to song table
@@ -250,7 +250,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12502; // SELECT last_insert_rowid();
+  song_id = 12529; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -290,16 +290,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-15 04:02:27.589589', '1289', '12493'),
-  ('2022-07-15 04:02:27.590590', '1289', '12494'),
-  ('2022-07-15 04:02:27.590590', '1289', '12495'),
-  ('2022-07-15 04:02:27.590590', '1289', '12496'),
-  ('2022-07-15 04:02:27.590590', '1289', '12497'),
-  ('2022-07-15 04:02:27.590590', '1289', '12498'),
-  ('2022-07-15 04:02:27.590590', '1289', '12499'),
-  ('2022-07-15 04:02:27.590590', '1289', '12500'),
-  ('2022-07-15 04:02:27.590590', '1289', '12501'),
-  ('2022-07-15 04:02:27.590590', '1289', '12502')
+  ('2022-07-19 08:55:38.604604', '1293', '12520'),
+  ('2022-07-19 08:55:38.605605', '1293', '12521'),
+  ('2022-07-19 08:55:38.605605', '1293', '12522'),
+  ('2022-07-19 08:55:38.605605', '1293', '12523'),
+  ('2022-07-19 08:55:38.605605', '1293', '12524'),
+  ('2022-07-19 08:55:38.605605', '1293', '12525'),
+  ('2022-07-19 08:55:38.605605', '1293', '12526'),
+  ('2022-07-19 08:55:38.605605', '1293', '12527'),
+  ('2022-07-19 08:55:38.605605', '1293', '12528'),
+  ('2022-07-19 08:55:38.605605', '1293', '12529')
   ;
 
   // Update to source_song table
