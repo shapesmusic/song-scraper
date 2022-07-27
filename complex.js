@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Joey Badass, Steve Lacy, Latto, and More', '2022-07-15 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-july15/zubin-coi-leray-yungmanny-givenchy');
+    ('Complex', 'The Best New Music This Week', 'Lil Uzi Vert, Megan Thee Stallion, Joey Badass, and More', '2022-07-22 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-july-22/internet-money-lil-tecca-ken-carson-she-want-some-more');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1293; // SELECT last_insert_rowid();
+  source_id = 1297; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,92 +102,101 @@
   songsData =
   [
     {
-        "title": "Zipcodes",
-        "artist_name": "Joey Badass",
+        "title": "I Know",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2022-07-19 08:55:38.604604",
-        "source_id": 1293,
+        "capture_date": "2022-07-27 04:33:15.936936",
+        "source_id": 1297,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pussy",
-        "artist_name": "Latto",
+        "title": "Pressurelicious",
+        "artist_name": "Megan Thee Stallion ft. Future",
         "video_id": null,
-        "capture_date": "2022-07-19 08:55:38.605605",
-        "source_id": 1293,
+        "capture_date": "2022-07-27 04:33:15.937937",
+        "source_id": 1297,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Buttons",
-        "artist_name": "Steve Lacy",
+        "title": "Wanna Be Loved",
+        "artist_name": "Joey Badass ft. JID",
         "video_id": null,
-        "capture_date": "2022-07-19 08:55:38.605605",
-        "source_id": 1293,
+        "capture_date": "2022-07-27 04:33:15.937937",
+        "source_id": 1297,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Loner",
-        "artist_name": "Terry Presume",
+        "title": "Bed Time",
+        "artist_name": "Flo Milli",
         "video_id": null,
-        "capture_date": "2022-07-19 08:55:38.605605",
-        "source_id": 1293,
+        "capture_date": "2022-07-27 04:33:15.937937",
+        "source_id": 1297,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Listen",
-        "artist_name": "Sheff G",
+        "title": "Persuasive",
+        "artist_name": "Doechii & SZA",
         "video_id": null,
-        "capture_date": "2022-07-19 08:55:38.605605",
-        "source_id": 1293,
+        "capture_date": "2022-07-27 04:33:15.937937",
+        "source_id": 1297,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Beat Breaks",
-        "artist_name": "DJ Premier & Nas",
+        "title": "Save Me",
+        "artist_name": "Lil Durk & Southside",
         "video_id": null,
-        "capture_date": "2022-07-19 08:55:38.605605",
-        "source_id": 1293,
+        "capture_date": "2022-07-27 04:33:15.937937",
+        "source_id": 1297,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rain",
-        "artist_name": "2KBaby",
+        "title": "Dah Dah DahDah",
+        "artist_name": "Nardo Wick",
         "video_id": null,
-        "capture_date": "2022-07-19 08:55:38.605605",
-        "source_id": 1293,
+        "capture_date": "2022-07-27 04:33:15.937937",
+        "source_id": 1297,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Football Heads",
-        "artist_name": "Maxo Kream & Benny The Butcher",
+        "title": "One On 5",
+        "artist_name": "Rico Nasty",
         "video_id": null,
-        "capture_date": "2022-07-19 08:55:38.605605",
-        "source_id": 1293,
+        "capture_date": "2022-07-27 04:33:15.937937",
+        "source_id": 1297,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bad Bad",
-        "artist_name": "Roy Woods",
+        "title": "In My Face",
+        "artist_name": "Mozzy ft. YG, 2 Chainz, & Saweetie",
         "video_id": null,
-        "capture_date": "2022-07-19 08:55:38.605605",
-        "source_id": 1293,
+        "capture_date": "2022-07-27 04:33:15.937937",
+        "source_id": 1297,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Givenchy",
-        "artist_name": "Zubin ft. Coi Leray & YungManny",
+        "title": "If I Get Caught",
+        "artist_name": "DVSN",
         "video_id": null,
-        "capture_date": "2022-07-19 08:55:38.605605",
-        "source_id": 1293,
+        "capture_date": "2022-07-27 04:33:15.937937",
+        "source_id": 1297,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "She Want Some More",
+        "artist_name": "Internet Money, Lil Tecca, & Ken Carson",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:33:15.938938",
+        "source_id": 1297,
         "song_id": null,
         "duplicate": false
     }
@@ -230,16 +239,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Zipcodes', 'Joey Badass', NULL),
-  ('Pussy', 'Latto', NULL),
-  ('Buttons', 'Steve Lacy', NULL),
-  ('Loner', 'Terry Presume', NULL),
-  ('Listen', 'Sheff G', NULL),
-  ('Beat Breaks', 'DJ Premier & Nas', NULL),
-  ('Rain', '2KBaby', NULL),
-  ('Football Heads', 'Maxo Kream & Benny The Butcher', NULL),
-  ('Bad Bad', 'Roy Woods', NULL),
-  ('Givenchy', 'Zubin ft. Coi Leray & YungManny', NULL)
+  ('I Know', 'Lil Uzi Vert', NULL),
+  ('Pressurelicious', 'Megan Thee Stallion ft. Future', NULL),
+  ('Wanna Be Loved', 'Joey Badass ft. JID', NULL),
+  ('Bed Time', 'Flo Milli', NULL),
+  ('Persuasive', 'Doechii & SZA', NULL),
+  ('Save Me', 'Lil Durk & Southside', NULL),
+  ('Dah Dah DahDah', 'Nardo Wick', NULL),
+  ('One On 5', 'Rico Nasty', NULL),
+  ('In My Face', 'Mozzy ft. YG, 2 Chainz, & Saweetie', NULL),
+  ('If I Get Caught', 'DVSN', NULL),
+  ('She Want Some More', 'Internet Money, Lil Tecca, & Ken Carson', NULL)
   ;
 
    // Update to song table
@@ -250,7 +260,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12529; // SELECT last_insert_rowid();
+  song_id = 12561; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -290,16 +300,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-19 08:55:38.604604', '1293', '12520'),
-  ('2022-07-19 08:55:38.605605', '1293', '12521'),
-  ('2022-07-19 08:55:38.605605', '1293', '12522'),
-  ('2022-07-19 08:55:38.605605', '1293', '12523'),
-  ('2022-07-19 08:55:38.605605', '1293', '12524'),
-  ('2022-07-19 08:55:38.605605', '1293', '12525'),
-  ('2022-07-19 08:55:38.605605', '1293', '12526'),
-  ('2022-07-19 08:55:38.605605', '1293', '12527'),
-  ('2022-07-19 08:55:38.605605', '1293', '12528'),
-  ('2022-07-19 08:55:38.605605', '1293', '12529')
+  ('2022-07-27 04:33:15.936936', '1297', '12551'),
+  ('2022-07-27 04:33:15.937937', '1297', '12552'),
+  ('2022-07-27 04:33:15.937937', '1297', '12553'),
+  ('2022-07-27 04:33:15.937937', '1297', '12554'),
+  ('2022-07-27 04:33:15.937937', '1297', '12555'),
+  ('2022-07-27 04:33:15.937937', '1297', '12556'),
+  ('2022-07-27 04:33:15.937937', '1297', '12557'),
+  ('2022-07-27 04:33:15.937937', '1297', '12558'),
+  ('2022-07-27 04:33:15.937937', '1297', '12559'),
+  ('2022-07-27 04:33:15.937937', '1297', '12560'),
+  ('2022-07-27 04:33:15.938938', '1297', '12561')
   ;
 
   // Update to source_song table

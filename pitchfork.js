@@ -76,17 +76,18 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2022-06-24 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-06-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-06-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-06-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-06-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-06-10 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-06-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-06-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-06-06 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-06-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-05-31 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-22 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-06 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -136,121 +137,166 @@
   songsData =
   [
     {
-        "title": "Carolina",
-        "artist_name": "Taylor Swift",
+        "title": "Muzik",
+        "artist_name": "Jennifer Loveless",
         "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.492492",
-        "source_id": 1273,
-        "song_id": 12433,
-        "duplicate": true
-    },
-    {
-        "title": "Break My Soul",
-        "artist_name": "Beyoncé",
-        "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.497497",
-        "source_id": 1274,
-        "song_id": 12418,
-        "duplicate": true
-    },
-    {
-        "title": "Don’t Press Me",
-        "artist_name": "Dry Cleaning",
-        "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.497497",
-        "source_id": 1275,
+        "capture_date": "2022-07-27 04:57:07.390390",
+        "source_id": 1299,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sticky",
-        "artist_name": "Drake",
+        "title": "Feathers",
+        "artist_name": "Palm",
         "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.497497",
-        "source_id": 1275,
-        "song_id": 12415,
-        "duplicate": true
-    },
-    {
-        "title": "Betamax",
-        "artist_name": "Elucid",
-        "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.498498",
-        "source_id": 1276,
+        "capture_date": "2022-07-27 04:57:07.393393",
+        "source_id": 1300,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "BDA Creature",
-        "artist_name": "Altrice",
+        "title": "Cross the Sea",
+        "artist_name": "Alex G",
         "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.498498",
-        "source_id": 1276,
+        "capture_date": "2022-07-27 04:57:07.393393",
+        "source_id": 1300,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Carmen Villain (Actress Remix)",
-        "artist_name": "Carmen Villain",
+        "title": "Gotsta Get Paid",
+        "artist_name": "Rico Nasty",
         "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.499499",
-        "source_id": 1277,
+        "capture_date": "2022-07-27 04:57:07.393393",
+        "source_id": 1301,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cash In Cash Out",
-        "artist_name": "Pharrell Williams",
+        "title": "Karaoke",
+        "artist_name": "Cass McCombs",
         "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.499499",
-        "source_id": 1278,
-        "song_id": 12379,
-        "duplicate": true
-    },
-    {
-        "title": "Olympus",
-        "artist_name": "Blondshell",
-        "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.499499",
-        "source_id": 1279,
+        "capture_date": "2022-07-27 04:57:07.393393",
+        "source_id": 1301,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Come for Me",
-        "artist_name": "Shygirl",
+        "title": "Three Essays: First Essay (Nimrod)",
+        "artist_name": "Caroline ShawAttacca Quartet",
         "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.499499",
-        "source_id": 1280,
-        "song_id": 12387,
-        "duplicate": true
-    },
-    {
-        "title": "Teeth Marks",
-        "artist_name": "S.G. Goodman",
-        "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.499499",
-        "source_id": 1281,
+        "capture_date": "2022-07-27 04:57:07.394394",
+        "source_id": 1302,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Spitting Off the Edge of the World",
-        "artist_name": "Yeah Yeah Yeahs",
+        "title": "Big Steppa",
+        "artist_name": "Flo Milli",
         "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.499499",
-        "source_id": 1282,
-        "song_id": 12345,
+        "capture_date": "2022-07-27 04:57:07.394394",
+        "source_id": 1303,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sueños",
+        "artist_name": "Waleed",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:57:07.395395",
+        "source_id": 1303,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Free Yourself",
+        "artist_name": "Jessie Ware",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:57:07.395395",
+        "source_id": 1304,
+        "song_id": 12541,
         "duplicate": true
     },
     {
-        "title": "Weather Alive",
-        "artist_name": "Beth Orton",
+        "title": "YAY",
+        "artist_name": "valknee",
         "video_id": null,
-        "capture_date": "2022-06-29 09:30:14.499499",
-        "source_id": 1283,
-        "song_id": 12353,
+        "capture_date": "2022-07-27 04:57:07.395395",
+        "source_id": 1305,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Nausea",
+        "artist_name": "Rachika Nayar",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:57:07.395395",
+        "source_id": 1306,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Let the Lights On",
+        "artist_name": "Sorry",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:57:07.395395",
+        "source_id": 1307,
+        "song_id": 12534,
         "duplicate": true
+    },
+    {
+        "title": "Pressure in My Chest",
+        "artist_name": "Indigo Sparke",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:57:07.395395",
+        "source_id": 1307,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Part of the Band",
+        "artist_name": "The 1975",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:57:07.395395",
+        "source_id": 1308,
+        "song_id": 12484,
+        "duplicate": true
+    },
+    {
+        "title": "Immature",
+        "artist_name": "Flo",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:57:07.395395",
+        "source_id": 1308,
+        "song_id": 12488,
+        "duplicate": true
+    },
+    {
+        "title": "Pharmacist",
+        "artist_name": "Alvvays",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:57:07.395395",
+        "source_id": 1309,
+        "song_id": 12485,
+        "duplicate": true
+    },
+    {
+        "title": "Thérèse",
+        "artist_name": "Maya Hawke",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:57:07.395395",
+        "source_id": 1309,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Touch Tank",
+        "artist_name": "quinnie",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:57:07.395395",
+        "source_id": 1310,
+        "song_id": null,
+        "duplicate": false
     }
   ]
 
@@ -303,12 +349,19 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Don’t Press Me', 'Dry Cleaning', NULL),
-  ('Betamax', 'Elucid', NULL),
-  ('BDA Creature', 'Altrice', NULL),
-  ('Carmen Villain (Actress Remix)', 'Carmen Villain', NULL),
-  ('Olympus', 'Blondshell', NULL),
-  ('Teeth Marks', 'S.G. Goodman', NULL)
+  ('Muzik', 'Jennifer Loveless', NULL),
+  ('Feathers', 'Palm', NULL),
+  ('Cross the Sea', 'Alex G', NULL),
+  ('Gotsta Get Paid', 'Rico Nasty', NULL),
+  ('Karaoke', 'Cass McCombs', NULL),
+  ('Three Essays: First Essay (Nimrod)', 'Caroline ShawAttacca Quartet', NULL),
+  ('Big Steppa', 'Flo Milli', NULL),
+  ('Sueños', 'Waleed', NULL),
+  ('YAY', 'valknee', NULL),
+  ('Nausea', 'Rachika Nayar', NULL),
+  ('Pressure in My Chest', 'Indigo Sparke', NULL),
+  ('Thérèse', 'Maya Hawke', NULL),
+  ('Touch Tank', 'quinnie', NULL)
   ;
 
    // Update to song table
@@ -319,7 +372,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 12448; // SELECT last_insert_rowid();
+  song_id = 12578; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -359,19 +412,24 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-06-29 09:30:14.492492', '1273', '12433'),
-  ('2022-06-29 09:30:14.497497', '1274', '12418'),
-  ('2022-06-29 09:30:14.497497', '1275', '12443'),
-  ('2022-06-29 09:30:14.497497', '1275', '12415'),
-  ('2022-06-29 09:30:14.498498', '1276', '12444'),
-  ('2022-06-29 09:30:14.498498', '1276', '12445'),
-  ('2022-06-29 09:30:14.499499', '1277', '12446'),
-  ('2022-06-29 09:30:14.499499', '1278', '12379'),
-  ('2022-06-29 09:30:14.499499', '1279', '12447'),
-  ('2022-06-29 09:30:14.499499', '1280', '12387'),
-  ('2022-06-29 09:30:14.499499', '1281', '12448'),
-  ('2022-06-29 09:30:14.499499', '1282', '12345'),
-  ('2022-06-29 09:30:14.499499', '1283', '12353')
+  ('2022-07-27 04:57:07.390390', '1299', '12566'),
+  ('2022-07-27 04:57:07.393393', '1300', '12567'),
+  ('2022-07-27 04:57:07.393393', '1300', '12568'),
+  ('2022-07-27 04:57:07.393393', '1301', '12569'),
+  ('2022-07-27 04:57:07.393393', '1301', '12570'),
+  ('2022-07-27 04:57:07.394394', '1302', '12571'),
+  ('2022-07-27 04:57:07.394394', '1303', '12572'),
+  ('2022-07-27 04:57:07.395395', '1303', '12573'),
+  ('2022-07-27 04:57:07.395395', '1304', '12541'),
+  ('2022-07-27 04:57:07.395395', '1305', '12574'),
+  ('2022-07-27 04:57:07.395395', '1306', '12575'),
+  ('2022-07-27 04:57:07.395395', '1307', '12534'),
+  ('2022-07-27 04:57:07.395395', '1307', '12576'),
+  ('2022-07-27 04:57:07.395395', '1308', '12484'),
+  ('2022-07-27 04:57:07.395395', '1308', '12488'),
+  ('2022-07-27 04:57:07.395395', '1309', '12485'),
+  ('2022-07-27 04:57:07.395395', '1309', '12577'),
+  ('2022-07-27 04:57:07.395395', '1310', '12578')
   ;
 
   // Update to source_song table

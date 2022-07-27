@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 23, 2022', '2022-07-23 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-07-23');
+    ('Billboard', 'The Hot 100', 'Week of July 30, 2022', '2022-07-30 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-07-30');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1291; // SELECT last_insert_rowid();
+  source_id = 1295; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,83 +105,56 @@
   songsData =
   [
     {
-        "title": "All Mine",
-        "artist_name": "Brent Faiyaz",
+        "title": "2 Be Loved (Am I Ready)",
+        "artist_name": "Lizzo",
         "video_id": null,
-        "capture_date": "2022-07-19 08:46:22.483483",
-        "source_id": 1291,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Loose Change",
-        "artist_name": "Brent Faiyaz",
-        "video_id": null,
-        "capture_date": "2022-07-19 08:46:22.484484",
-        "source_id": 1291,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Price Of Fame",
-        "artist_name": "Brent Faiyaz",
-        "video_id": null,
-        "capture_date": "2022-07-19 08:46:22.484484",
-        "source_id": 1291,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Betty (Get Money)",
-        "artist_name": "Yung Gravy",
-        "video_id": null,
-        "capture_date": "2022-07-19 08:46:22.484484",
-        "source_id": 1291,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Rolling Stone",
-        "artist_name": "Brent Faiyaz",
-        "video_id": null,
-        "capture_date": "2022-07-19 08:46:22.485485",
-        "source_id": 1291,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Last Last",
-        "artist_name": "Burna Boy",
-        "video_id": null,
-        "capture_date": "2022-07-19 08:46:22.485485",
-        "source_id": 1291,
-        "song_id": 12213,
+        "capture_date": "2022-07-27 04:21:49.104104",
+        "source_id": 1295,
+        "song_id": 12513,
         "duplicate": true
     },
     {
-        "title": "Ghetto Gatsby",
-        "artist_name": "Brent Faiyaz ft. Alicia Keys",
+        "title": "Truth About You",
+        "artist_name": "Mitchell Tenpenny",
         "video_id": null,
-        "capture_date": "2022-07-19 08:46:22.485485",
-        "source_id": 1291,
+        "capture_date": "2022-07-27 04:21:49.104104",
+        "source_id": 1295,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Heal Your Heart (Interlude)",
-        "artist_name": "Brent Faiyaz",
+        "title": "Free Mind",
+        "artist_name": "Tems",
         "video_id": null,
-        "capture_date": "2022-07-19 08:46:22.485485",
-        "source_id": 1291,
+        "capture_date": "2022-07-27 04:21:49.104104",
+        "source_id": 1295,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "FYTB",
-        "artist_name": "Brent Faiyaz ft. Joony",
+        "title": "At The End Of A Bar",
+        "artist_name": "Chris Young With Mitchell Tenpenny",
         "video_id": null,
-        "capture_date": "2022-07-19 08:46:22.485485",
-        "source_id": 1291,
+        "capture_date": "2022-07-27 04:21:49.105105",
+        "source_id": 1295,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Arson",
+        "artist_name": "j-hope",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:21:49.105105",
+        "source_id": 1295,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pick Me Up",
+        "artist_name": "Gabby Barrett",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:21:49.105105",
+        "source_id": 1295,
         "song_id": null,
         "duplicate": false
     }
@@ -225,14 +198,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('All Mine', 'Brent Faiyaz', NULL),
-  ('Loose Change', 'Brent Faiyaz', NULL),
-  ('Price Of Fame', 'Brent Faiyaz', NULL),
-  ('Betty (Get Money)', 'Yung Gravy', NULL),
-  ('Rolling Stone', 'Brent Faiyaz', NULL),
-  ('Ghetto Gatsby', 'Brent Faiyaz ft. Alicia Keys', NULL),
-  ('Heal Your Heart (Interlude)', 'Brent Faiyaz', NULL),
-  ('FYTB', 'Brent Faiyaz ft. Joony', NULL)
+  ('Truth About You', 'Mitchell Tenpenny', NULL),
+  ('Free Mind', 'Tems', NULL),
+  ('At The End Of A Bar', 'Chris Young With Mitchell Tenpenny', NULL),
+  ('Arson', 'j-hope', NULL),
+  ('Pick Me Up', 'Gabby Barrett', NULL)
   ;
 
    // Update to song table
@@ -243,7 +213,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12512; // SELECT last_insert_rowid();
+  song_id = 12539; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -283,15 +253,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-19 08:46:22.483483', '1291', '12505'),
-  ('2022-07-19 08:46:22.484484', '1291', '12506'),
-  ('2022-07-19 08:46:22.484484', '1291', '12507'),
-  ('2022-07-19 08:46:22.484484', '1291', '12508'),
-  ('2022-07-19 08:46:22.485485', '1291', '12509'),
-  ('2022-07-19 08:46:22.485485', '1291', '12213'),
-  ('2022-07-19 08:46:22.485485', '1291', '12510'),
-  ('2022-07-19 08:46:22.485485', '1291', '12511'),
-  ('2022-07-19 08:46:22.485485', '1291', '12512')
+  ('2022-07-27 04:21:49.104104', '1295', '12513'),
+  ('2022-07-27 04:21:49.104104', '1295', '12535'),
+  ('2022-07-27 04:21:49.104104', '1295', '12536'),
+  ('2022-07-27 04:21:49.105105', '1295', '12537'),
+  ('2022-07-27 04:21:49.105105', '1295', '12538'),
+  ('2022-07-27 04:21:49.105105', '1295', '12539')
   ;
 
   // Update to source_song table

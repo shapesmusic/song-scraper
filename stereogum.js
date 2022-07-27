@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of July 15, 2022', '2022-07-15 12:00:00.000000', 'https://www.stereogum.com/2193127/the-5-best-songs-of-the-week-442/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of July 22, 2022', '2022-07-22 12:00:00.000000', 'https://www.stereogum.com/2193885/the-5-best-songs-of-the-week-443/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1294; // SELECT last_insert_rowid();
+  source_id = 1298; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,49 +101,49 @@
   songsData =
   [
     {
-        "title": "Go On",
-        "artist_name": "Panda Bear & Sonic Boom",
+        "title": "Cut",
+        "artist_name": "Working Men's Club",
         "video_id": null,
-        "capture_date": "2022-07-19 09:00:38.661661",
-        "source_id": 1294,
+        "capture_date": "2022-07-27 04:51:43.868868",
+        "source_id": 1298,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wage Wars Get Rich Die Handsome",
-        "artist_name": "The Mountain Goats",
+        "title": "(I'm) Screwed",
+        "artist_name": "Titus Andronicus",
         "video_id": null,
-        "capture_date": "2022-07-19 09:00:38.662662",
-        "source_id": 1294,
+        "capture_date": "2022-07-27 04:51:43.869869",
+        "source_id": 1298,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Arm's Length",
-        "artist_name": "Pool Kids",
+        "title": "On My Nerves",
+        "artist_name": "Flo Milli",
         "video_id": null,
-        "capture_date": "2022-07-19 09:00:38.662662",
-        "source_id": 1294,
+        "capture_date": "2022-07-27 04:51:43.869869",
+        "source_id": 1298,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Geronimo",
-        "artist_name": "Young Fathers",
+        "title": "Love, Try Not To Let Go",
+        "artist_name": "Julia Jacklin",
         "video_id": null,
-        "capture_date": "2022-07-19 09:00:38.662662",
-        "source_id": 1294,
+        "capture_date": "2022-07-27 04:51:43.869869",
+        "source_id": 1298,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Let The Lights On",
-        "artist_name": "Sorry",
+        "title": "Free Yourself",
+        "artist_name": "Jessie Ware",
         "video_id": null,
-        "capture_date": "2022-07-19 09:00:38.662662",
-        "source_id": 1294,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-07-27 04:51:43.869869",
+        "source_id": 1298,
+        "song_id": 12541,
+        "duplicate": true
     }
 ]
 
@@ -185,11 +185,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Go On', 'Panda Bear & Sonic Boom', NULL),
-  ('Wage Wars Get Rich Die Handsome', 'The Mountain Goats', NULL),
-  ('Arm’s Length', 'Pool Kids', NULL),
-  ('Geronimo', 'Young Fathers', NULL),
-  ('Let The Lights On', 'Sorry', NULL)
+  ('Cut', 'Working Men’s Club', NULL),
+  ('(I’m) Screwed', 'Titus Andronicus', NULL),
+  ('On My Nerves', 'Flo Milli', NULL),
+  ('Love, Try Not To Let Go', 'Julia Jacklin', NULL)
   ;
 
    // Update to song table
@@ -200,7 +199,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12534; // SELECT last_insert_rowid();
+  song_id = 12565; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -240,11 +239,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-19 09:00:38.661661', '1294', '12530'),
-  ('2022-07-19 09:00:38.662662', '1294', '12531'),
-  ('2022-07-19 09:00:38.662662', '1294', '12532'),
-  ('2022-07-19 09:00:38.662662', '1294', '12533'),
-  ('2022-07-19 09:00:38.662662', '1294', '12534')
+  ('2022-07-27 04:51:43.868868', '1298', '12562'),
+  ('2022-07-27 04:51:43.869869', '1298', '12563'),
+  ('2022-07-27 04:51:43.869869', '1298', '12564'),
+  ('2022-07-27 04:51:43.869869', '1298', '12565'),
+  ('2022-07-27 04:51:43.869869', '1298', '12541')
   ;
 
   // Update to source_song table

@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Lizzo Conquers Self-Doubt With an ’80s Jam, and 7 More New Songs', '2022-07-15 10:15:32.000000', 'https://www.nytimes.com/2022/07/15/arts/music/playlist-lizzo-brent-faiyaz-pink.html');
+    ('New York Times', 'The Playlist', 'Billie Eilish Contemplates Distraction, and 10 More New Songs', '2022-07-22 11:39:48.000000', 'https://www.nytimes.com/2022/07/22/arts/music/playlist-billie-eilish-flo-milli.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1292; // SELECT last_insert_rowid();
+  source_id = 1296; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,74 +100,101 @@
   songsData =
   [
     {
-        "title": "2 Be Loved (Am I Ready)",
-        "artist_name": "Lizzo",
+        "title": "TV",
+        "artist_name": "Billie Eilish",
         "video_id": null,
-        "capture_date": "2022-07-19 08:51:20.666666",
-        "source_id": 1292,
+        "capture_date": "2022-07-27 04:26:36.200200",
+        "source_id": 1296,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Irrelevant",
-        "artist_name": "Pink",
+        "title": "Free Yourself",
+        "artist_name": "Jessie Ware",
         "video_id": null,
-        "capture_date": "2022-07-19 08:51:20.669669",
-        "source_id": 1292,
+        "capture_date": "2022-07-27 04:26:36.203203",
+        "source_id": 1296,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Substance",
-        "artist_name": "Demi Lovato",
+        "title": "Hottie",
+        "artist_name": "Flo Milli ft. BabyFace Ray",
         "video_id": null,
-        "capture_date": "2022-07-19 08:51:20.669669",
-        "source_id": 1292,
+        "capture_date": "2022-07-27 04:26:36.203203",
+        "source_id": 1296,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Loose Change",
-        "artist_name": "Brent Faiyaz",
+        "title": "Inhliziyo",
+        "artist_name": "Tyler ICU ft. Nkosazana Daughter, Kabza De Small and DJ Maphorisa",
         "video_id": null,
-        "capture_date": "2022-07-19 08:51:20.669669",
-        "source_id": 1292,
-        "song_id": 12506,
-        "duplicate": true
-    },
-    {
-        "title": "When I Die",
-        "artist_name": "The A’s",
-        "video_id": null,
-        "capture_date": "2022-07-19 08:51:20.669669",
-        "source_id": 1292,
+        "capture_date": "2022-07-27 04:26:36.203203",
+        "source_id": 1296,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cannibal",
-        "artist_name": "Marcus Mumford",
+        "title": "Somebody Else’s Idea",
+        "artist_name": "Sun Ra Arkestra",
         "video_id": null,
-        "capture_date": "2022-07-19 08:51:20.669669",
-        "source_id": 1292,
+        "capture_date": "2022-07-27 04:26:36.203203",
+        "source_id": 1296,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Because I Liked a Boy",
-        "artist_name": "Sabrina Carpenter",
+        "title": "You",
+        "artist_name": "Julianna Riolino",
         "video_id": null,
-        "capture_date": "2022-07-19 08:51:20.669669",
-        "source_id": 1292,
+        "capture_date": "2022-07-27 04:26:36.203203",
+        "source_id": 1296,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Golden Galactic",
-        "artist_name": "Pantha du Prince",
+        "title": "Mythical Bonds",
+        "artist_name": "Mamalarky",
         "video_id": null,
-        "capture_date": "2022-07-19 08:51:20.669669",
-        "source_id": 1292,
+        "capture_date": "2022-07-27 04:26:36.203203",
+        "source_id": 1296,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Kiss City",
+        "artist_name": "Blondshell",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:26:36.203203",
+        "source_id": 1296,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Simple as Love",
+        "artist_name": "Kelsey Waldon",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:26:36.203203",
+        "source_id": 1296,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Darling",
+        "artist_name": "Montell Fish",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:26:36.203203",
+        "source_id": 1296,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bad Apples",
+        "artist_name": "Objekt",
+        "video_id": null,
+        "capture_date": "2022-07-27 04:26:36.203203",
+        "source_id": 1296,
         "song_id": null,
         "duplicate": false
     }
@@ -211,13 +238,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('2 Be Loved (Am I Ready)', 'Lizzo', NULL),
-  ('Irrelevant', 'Pink', NULL),
-  ('Substance', 'Demi Lovato', NULL),
-  ('When I Die', 'The A’s', NULL),
-  ('Cannibal', 'Marcus Mumford', NULL),
-  ('Because I Liked a Boy', 'Sabrina Carpenter', NULL),
-  ('Golden Galactic', 'Pantha du Prince', NULL)
+  ('TV', 'Billie Eilish', NULL),
+  ('Free Yourself', 'Jessie Ware', NULL),
+  ('Hottie', 'Flo Milli ft. BabyFace Ray', NULL),
+  ('Inhliziyo', 'Tyler ICU ft. Nkosazana Daughter, Kabza De Small and DJ Maphorisa', NULL),
+  ('Somebody Else’s Idea', 'Sun Ra Arkestra', NULL),
+  ('You', 'Julianna Riolino', NULL),
+  ('Mythical Bonds', 'Mamalarky', NULL),
+  ('Kiss City', 'Blondshell', NULL),
+  ('Simple as Love', 'Kelsey Waldon', NULL),
+  ('Darling', 'Montell Fish', NULL),
+  ('Bad Apples', 'Objekt', NULL)
   ;
 
    // Update to song table
@@ -228,7 +259,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12519; // SELECT last_insert_rowid();
+  song_id = 12550; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -268,14 +299,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-19 08:51:20.666666', '1292', '12513'),
-  ('2022-07-19 08:51:20.669669', '1292', '12514'),
-  ('2022-07-19 08:51:20.669669', '1292', '12515'),
-  ('2022-07-19 08:51:20.669669', '1292', '12506'),
-  ('2022-07-19 08:51:20.669669', '1292', '12516'),
-  ('2022-07-19 08:51:20.669669', '1292', '12517'),
-  ('2022-07-19 08:51:20.669669', '1292', '12518'),
-  ('2022-07-19 08:51:20.669669', '1292', '12519')
+  ('2022-07-27 04:26:36.200200', '1296', '12540'),
+  ('2022-07-27 04:26:36.203203', '1296', '12541'),
+  ('2022-07-27 04:26:36.203203', '1296', '12542'),
+  ('2022-07-27 04:26:36.203203', '1296', '12543'),
+  ('2022-07-27 04:26:36.203203', '1296', '12544'),
+  ('2022-07-27 04:26:36.203203', '1296', '12545'),
+  ('2022-07-27 04:26:36.203203', '1296', '12546'),
+  ('2022-07-27 04:26:36.203203', '1296', '12547'),
+  ('2022-07-27 04:26:36.203203', '1296', '12548'),
+  ('2022-07-27 04:26:36.203203', '1296', '12549'),
+  ('2022-07-27 04:26:36.203203', '1296', '12550')
   ;
 
   // Update to source_song table
