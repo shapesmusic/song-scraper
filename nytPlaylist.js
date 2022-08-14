@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Beyoncé’s Anthem for the Unique, and 10 More New Songs', '2022-07-30 11:31:24.000000', 'https://www.nytimes.com/2022/07/29/arts/music/playlist-beyonce-rosalia.html');
+    ('New York Times', 'The Playlist', 'Carly Rae Jepsen’s Brand-New Boy Problems, and 7 More New Songs', '2022-08-05 09:42:40.000000', 'https://www.nytimes.com/2022/08/05/arts/music/playlist-carly-rae-jepsen-dj-khaled-drake-lil-baby.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1312; // SELECT last_insert_rowid();
+  source_id = 1315; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,101 +100,74 @@
   songsData =
   [
     {
-        "title": "Alien Superstar",
-        "artist_name": "Beyoncé",
+        "title": "Beach House",
+        "artist_name": "Carly Rae Jepsen",
         "video_id": null,
-        "capture_date": "2022-08-14 02:10:58.423423",
-        "source_id": 1312,
+        "capture_date": "2022-08-14 02:28:18.306306",
+        "source_id": 1315,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Despechá",
-        "artist_name": "Rosalía",
+        "title": "Staying Alive",
+        "artist_name": "DJ Khaled featuring Drake and Lil Baby",
         "video_id": null,
-        "capture_date": "2022-08-14 02:10:58.426426",
-        "source_id": 1312,
+        "capture_date": "2022-08-14 02:28:18.310310",
+        "source_id": 1315,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "So Typically Now",
-        "artist_name": "U.S. Girls",
+        "title": "Bad Decisions",
+        "artist_name": "Benny Blanco, BTS and Snoop Dogg",
         "video_id": null,
-        "capture_date": "2022-08-14 02:10:58.426426",
-        "source_id": 1312,
+        "capture_date": "2022-08-14 02:28:18.310310",
+        "source_id": 1315,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hold the Girl",
-        "artist_name": "Rina Sawayama",
+        "title": "Happiness",
+        "artist_name": "The 1975",
         "video_id": null,
-        "capture_date": "2022-08-14 02:10:58.426426",
-        "source_id": 1312,
+        "capture_date": "2022-08-14 02:28:18.310310",
+        "source_id": 1315,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "All Masks",
-        "artist_name": "Robert Glasper ft. Masego",
+        "title": "Real Hips",
+        "artist_name": "Bandmanrill",
         "video_id": null,
-        "capture_date": "2022-08-14 02:10:58.427427",
-        "source_id": 1312,
+        "capture_date": "2022-08-14 02:28:18.310310",
+        "source_id": 1315,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "There Were Bells",
-        "artist_name": "Brian Eno",
+        "title": "Edge of the Edge",
+        "artist_name": "Panda Bear & Sonic Boom",
         "video_id": null,
-        "capture_date": "2022-08-14 02:10:58.427427",
-        "source_id": 1312,
+        "capture_date": "2022-08-14 02:28:18.310310",
+        "source_id": 1315,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Prettier",
-        "artist_name": "Rat Tally",
+        "title": "Exile",
+        "artist_name": "Bonny Light Horseman",
         "video_id": null,
-        "capture_date": "2022-08-14 02:10:58.427427",
-        "source_id": 1312,
+        "capture_date": "2022-08-14 02:28:18.310310",
+        "source_id": 1315,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Problem With It",
-        "artist_name": "Plains",
+        "title": "Home Ain’t Home",
+        "artist_name": "YoungBoy Never Broke Again featuring Rod Wave",
         "video_id": null,
-        "capture_date": "2022-08-14 02:10:58.427427",
-        "source_id": 1312,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "A Body, a Coffin",
-        "artist_name": "Amaarae",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:10:58.427427",
-        "source_id": 1312,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Feathers",
-        "artist_name": "Palm",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:10:58.427427",
-        "source_id": 1312,
-        "song_id": 12567,
-        "duplicate": true
-    },
-    {
-        "title": "KJ’s Discovery",
-        "artist_name": "Bobby Krlic",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:10:58.427427",
-        "source_id": 1312,
+        "capture_date": "2022-08-14 02:28:18.310310",
+        "source_id": 1315,
         "song_id": null,
         "duplicate": false
     }
@@ -238,16 +211,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Alien Superstar', 'Beyoncé', NULL),
-  ('Despechá', 'Rosalía', NULL),
-  ('So Typically Now', 'U.S. Girls', NULL),
-  ('Hold the Girl', 'Rina Sawayama', NULL),
-  ('All Masks', 'Robert Glasper ft. Masego', NULL),
-  ('There Were Bells', 'Brian Eno', NULL),
-  ('Prettier', 'Rat Tally', NULL),
-  ('Problem With It', 'Plains', NULL),
-  ('A Body, a Coffin', 'Amaarae', NULL),
-  ('KJ’s Discovery', 'Bobby Krlic', NULL)
+  ('Beach House', 'Carly Rae Jepsen', NULL),
+  ('Staying Alive', 'DJ Khaled featuring Drake and Lil Baby', NULL),
+  ('Bad Decisions', 'Benny Blanco, BTS and Snoop Dogg', NULL),
+  ('Happiness', 'The 1975', NULL),
+  ('Real Hips', 'Bandmanrill', NULL),
+  ('Edge of the Edge', 'Panda Bear & Sonic Boom', NULL),
+  ('Exile', 'Bonny Light Horseman', NULL),
+  ('Home Ain’t Home', 'YoungBoy Never Broke Again featuring Rod Wave', NULL)
   ;
 
    // Update to song table
@@ -258,7 +229,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12595; // SELECT last_insert_rowid();
+  song_id = 12622; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +269,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-14 02:10:58.423423', '1312', '12586'),
-  ('2022-08-14 02:10:58.426426', '1312', '12587'),
-  ('2022-08-14 02:10:58.426426', '1312', '12588'),
-  ('2022-08-14 02:10:58.426426', '1312', '12589'),
-  ('2022-08-14 02:10:58.427427', '1312', '12590'),
-  ('2022-08-14 02:10:58.427427', '1312', '12591'),
-  ('2022-08-14 02:10:58.427427', '1312', '12592'),
-  ('2022-08-14 02:10:58.427427', '1312', '12593'),
-  ('2022-08-14 02:10:58.427427', '1312', '12594'),
-  ('2022-08-14 02:10:58.427427', '1312', '12567'),
-  ('2022-08-14 02:10:58.427427', '1312', '12595')
+  ('2022-08-14 02:28:18.306306', '1315', '12615'),
+  ('2022-08-14 02:28:18.310310', '1315', '12616'),
+  ('2022-08-14 02:28:18.310310', '1315', '12617'),
+  ('2022-08-14 02:28:18.310310', '1315', '12618'),
+  ('2022-08-14 02:28:18.310310', '1315', '12619'),
+  ('2022-08-14 02:28:18.310310', '1315', '12620'),
+  ('2022-08-14 02:28:18.310310', '1315', '12621'),
+  ('2022-08-14 02:28:18.310310', '1315', '12622')
   ;
 
   // Update to source_song table
