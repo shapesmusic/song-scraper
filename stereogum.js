@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of July 22, 2022', '2022-07-22 12:00:00.000000', 'https://www.stereogum.com/2193885/the-5-best-songs-of-the-week-443/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of July 29, 2022', '2022-07-29 12:00:00.000000', 'https://www.stereogum.com/2194640/the-5-best-songs-of-the-week-444/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1298; // SELECT last_insert_rowid();
+  source_id = 1313; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,48 +101,48 @@
   songsData =
   [
     {
-        "title": "Cut",
-        "artist_name": "Working Men's Club",
+        "title": "Problem With It",
+        "artist_name": "Plains",
         "video_id": null,
-        "capture_date": "2022-07-27 04:51:43.868868",
-        "source_id": 1298,
+        "capture_date": "2022-08-14 02:16:09.537537",
+        "source_id": 1313,
+        "song_id": 12593,
+        "duplicate": true
+    },
+    {
+        "title": "2 Die 4",
+        "artist_name": "Tove Lo",
+        "video_id": null,
+        "capture_date": "2022-08-14 02:16:09.538538",
+        "source_id": 1313,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "(I'm) Screwed",
-        "artist_name": "Titus Andronicus",
+        "title": "Survival Is Vengeance",
+        "artist_name": "Mindforce",
         "video_id": null,
-        "capture_date": "2022-07-27 04:51:43.869869",
-        "source_id": 1298,
+        "capture_date": "2022-08-14 02:16:09.538538",
+        "source_id": 1313,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "On My Nerves",
-        "artist_name": "Flo Milli",
+        "title": "ILYSM",
+        "artist_name": "Wild Pink",
         "video_id": null,
-        "capture_date": "2022-07-27 04:51:43.869869",
-        "source_id": 1298,
+        "capture_date": "2022-08-14 02:16:09.538538",
+        "source_id": 1313,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Love, Try Not To Let Go",
-        "artist_name": "Julia Jacklin",
+        "title": "So Typically Now",
+        "artist_name": "U.S. Girls",
         "video_id": null,
-        "capture_date": "2022-07-27 04:51:43.869869",
-        "source_id": 1298,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Free Yourself",
-        "artist_name": "Jessie Ware",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:51:43.869869",
-        "source_id": 1298,
-        "song_id": 12541,
+        "capture_date": "2022-08-14 02:16:09.538538",
+        "source_id": 1313,
+        "song_id": 12588,
         "duplicate": true
     }
 ]
@@ -185,10 +185,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Cut', 'Working Men’s Club', NULL),
-  ('(I’m) Screwed', 'Titus Andronicus', NULL),
-  ('On My Nerves', 'Flo Milli', NULL),
-  ('Love, Try Not To Let Go', 'Julia Jacklin', NULL)
+  ('2 Die 4', 'Tove Lo', NULL),
+  ('Survival Is Vengeance', 'Mindforce', NULL),
+  ('ILYSM', 'Wild Pink', NULL)
   ;
 
    // Update to song table
@@ -199,7 +198,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12565; // SELECT last_insert_rowid();
+  song_id = 12598; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -239,11 +238,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-27 04:51:43.868868', '1298', '12562'),
-  ('2022-07-27 04:51:43.869869', '1298', '12563'),
-  ('2022-07-27 04:51:43.869869', '1298', '12564'),
-  ('2022-07-27 04:51:43.869869', '1298', '12565'),
-  ('2022-07-27 04:51:43.869869', '1298', '12541')
+  ('2022-08-14 02:16:09.537537', '1313', '12593'),
+  ('2022-08-14 02:16:09.538538', '1313', '12596'),
+  ('2022-08-14 02:16:09.538538', '1313', '12597'),
+  ('2022-08-14 02:16:09.538538', '1313', '12598'),
+  ('2022-08-14 02:16:09.538538', '1313', '12588')
   ;
 
   // Update to source_song table

@@ -32,7 +32,7 @@
     + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'"
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
+    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   );
 
 
@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 30, 2022', '2022-07-30 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-07-30');
+    ('Billboard', 'The Hot 100', 'Week of August 6, 2022', '2022-08-06 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-08-06/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1295; // SELECT last_insert_rowid();
+  source_id = 1311; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,56 +105,83 @@
   songsData =
   [
     {
-        "title": "2 Be Loved (Am I Ready)",
-        "artist_name": "Lizzo",
+        "title": "TV",
+        "artist_name": "Billie Eilish",
         "video_id": null,
-        "capture_date": "2022-07-27 04:21:49.104104",
-        "source_id": 1295,
-        "song_id": 12513,
+        "capture_date": "2022-08-14 02:06:03.454454",
+        "source_id": 1311,
+        "song_id": 12540,
         "duplicate": true
     },
     {
-        "title": "Truth About You",
-        "artist_name": "Mitchell Tenpenny",
+        "title": "Pressurelicious",
+        "artist_name": "Megan Thee Stallion ft. Future",
         "video_id": null,
-        "capture_date": "2022-07-27 04:21:49.104104",
-        "source_id": 1295,
+        "capture_date": "2022-08-14 02:06:03.454454",
+        "source_id": 1311,
+        "song_id": 12552,
+        "duplicate": true
+    },
+    {
+        "title": "Progress",
+        "artist_name": "John Rich",
+        "video_id": null,
+        "capture_date": "2022-08-14 02:06:03.454454",
+        "source_id": 1311,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Free Mind",
-        "artist_name": "Tems",
+        "title": "The 30th",
+        "artist_name": "Billie Eilish",
         "video_id": null,
-        "capture_date": "2022-07-27 04:21:49.104104",
-        "source_id": 1295,
+        "capture_date": "2022-08-14 02:06:03.455455",
+        "source_id": 1311,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "At The End Of A Bar",
-        "artist_name": "Chris Young With Mitchell Tenpenny",
+        "title": "With A Woman You Love",
+        "artist_name": "Justin Moore",
         "video_id": null,
-        "capture_date": "2022-07-27 04:21:49.105105",
-        "source_id": 1295,
+        "capture_date": "2022-08-14 02:06:03.456456",
+        "source_id": 1311,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Arson",
-        "artist_name": "j-hope",
+        "title": "Love Lost",
+        "artist_name": "Mac Miller",
         "video_id": null,
-        "capture_date": "2022-07-27 04:21:49.105105",
-        "source_id": 1295,
+        "capture_date": "2022-08-14 02:06:03.456456",
+        "source_id": 1311,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pick Me Up",
-        "artist_name": "Gabby Barrett",
+        "title": "Vette Motors",
+        "artist_name": "YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-07-27 04:21:49.105105",
-        "source_id": 1295,
+        "capture_date": "2022-08-14 02:06:03.456456",
+        "source_id": 1311,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Are You Entertained",
+        "artist_name": "Russ & Ed Sheeran",
+        "video_id": null,
+        "capture_date": "2022-08-14 02:06:03.456456",
+        "source_id": 1311,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bzrp Music Sessions, Vol. 52",
+        "artist_name": "Bizarrap & Quevedo",
+        "video_id": null,
+        "capture_date": "2022-08-14 02:06:03.456456",
+        "source_id": 1311,
         "song_id": null,
         "duplicate": false
     }
@@ -198,11 +225,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Truth About You', 'Mitchell Tenpenny', NULL),
-  ('Free Mind', 'Tems', NULL),
-  ('At The End Of A Bar', 'Chris Young With Mitchell Tenpenny', NULL),
-  ('Arson', 'j-hope', NULL),
-  ('Pick Me Up', 'Gabby Barrett', NULL)
+  ('Progress', 'John Rich', NULL),
+  ('The 30th', 'Billie Eilish', NULL),
+  ('With A Woman You Love', 'Justin Moore', NULL),
+  ('Love Lost', 'Mac Miller', NULL),
+  ('Vette Motors', 'YoungBoy Never Broke Again', NULL),
+  ('Are You Entertained', 'Russ & Ed Sheeran', NULL),
+  ('Bzrp Music Sessions, Vol. 52', 'Bizarrap & Quevedo', NULL)
   ;
 
    // Update to song table
@@ -213,7 +242,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12539; // SELECT last_insert_rowid();
+  song_id = 12585; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -253,12 +282,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-27 04:21:49.104104', '1295', '12513'),
-  ('2022-07-27 04:21:49.104104', '1295', '12535'),
-  ('2022-07-27 04:21:49.104104', '1295', '12536'),
-  ('2022-07-27 04:21:49.105105', '1295', '12537'),
-  ('2022-07-27 04:21:49.105105', '1295', '12538'),
-  ('2022-07-27 04:21:49.105105', '1295', '12539')
+  ('2022-08-14 02:06:03.454454', '1311', '12540'),
+  ('2022-08-14 02:06:03.454454', '1311', '12552'),
+  ('2022-08-14 02:06:03.454454', '1311', '12579'),
+  ('2022-08-14 02:06:03.455455', '1311', '12580'),
+  ('2022-08-14 02:06:03.456456', '1311', '12581'),
+  ('2022-08-14 02:06:03.456456', '1311', '12582'),
+  ('2022-08-14 02:06:03.456456', '1311', '12583'),
+  ('2022-08-14 02:06:03.456456', '1311', '12584'),
+  ('2022-08-14 02:06:03.456456', '1311', '12585')
   ;
 
   // Update to source_song table

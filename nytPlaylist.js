@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Billie Eilish Contemplates Distraction, and 10 More New Songs', '2022-07-22 11:39:48.000000', 'https://www.nytimes.com/2022/07/22/arts/music/playlist-billie-eilish-flo-milli.html');
+    ('New York Times', 'The Playlist', 'Beyoncé’s Anthem for the Unique, and 10 More New Songs', '2022-07-30 11:31:24.000000', 'https://www.nytimes.com/2022/07/29/arts/music/playlist-beyonce-rosalia.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1296; // SELECT last_insert_rowid();
+  source_id = 1312; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,101 +100,101 @@
   songsData =
   [
     {
-        "title": "TV",
-        "artist_name": "Billie Eilish",
+        "title": "Alien Superstar",
+        "artist_name": "Beyoncé",
         "video_id": null,
-        "capture_date": "2022-07-27 04:26:36.200200",
-        "source_id": 1296,
+        "capture_date": "2022-08-14 02:10:58.423423",
+        "source_id": 1312,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Free Yourself",
-        "artist_name": "Jessie Ware",
+        "title": "Despechá",
+        "artist_name": "Rosalía",
         "video_id": null,
-        "capture_date": "2022-07-27 04:26:36.203203",
-        "source_id": 1296,
+        "capture_date": "2022-08-14 02:10:58.426426",
+        "source_id": 1312,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hottie",
-        "artist_name": "Flo Milli ft. BabyFace Ray",
+        "title": "So Typically Now",
+        "artist_name": "U.S. Girls",
         "video_id": null,
-        "capture_date": "2022-07-27 04:26:36.203203",
-        "source_id": 1296,
+        "capture_date": "2022-08-14 02:10:58.426426",
+        "source_id": 1312,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Inhliziyo",
-        "artist_name": "Tyler ICU ft. Nkosazana Daughter, Kabza De Small and DJ Maphorisa",
+        "title": "Hold the Girl",
+        "artist_name": "Rina Sawayama",
         "video_id": null,
-        "capture_date": "2022-07-27 04:26:36.203203",
-        "source_id": 1296,
+        "capture_date": "2022-08-14 02:10:58.426426",
+        "source_id": 1312,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Somebody Else’s Idea",
-        "artist_name": "Sun Ra Arkestra",
+        "title": "All Masks",
+        "artist_name": "Robert Glasper ft. Masego",
         "video_id": null,
-        "capture_date": "2022-07-27 04:26:36.203203",
-        "source_id": 1296,
+        "capture_date": "2022-08-14 02:10:58.427427",
+        "source_id": 1312,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You",
-        "artist_name": "Julianna Riolino",
+        "title": "There Were Bells",
+        "artist_name": "Brian Eno",
         "video_id": null,
-        "capture_date": "2022-07-27 04:26:36.203203",
-        "source_id": 1296,
+        "capture_date": "2022-08-14 02:10:58.427427",
+        "source_id": 1312,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mythical Bonds",
-        "artist_name": "Mamalarky",
+        "title": "Prettier",
+        "artist_name": "Rat Tally",
         "video_id": null,
-        "capture_date": "2022-07-27 04:26:36.203203",
-        "source_id": 1296,
+        "capture_date": "2022-08-14 02:10:58.427427",
+        "source_id": 1312,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kiss City",
-        "artist_name": "Blondshell",
+        "title": "Problem With It",
+        "artist_name": "Plains",
         "video_id": null,
-        "capture_date": "2022-07-27 04:26:36.203203",
-        "source_id": 1296,
+        "capture_date": "2022-08-14 02:10:58.427427",
+        "source_id": 1312,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Simple as Love",
-        "artist_name": "Kelsey Waldon",
+        "title": "A Body, a Coffin",
+        "artist_name": "Amaarae",
         "video_id": null,
-        "capture_date": "2022-07-27 04:26:36.203203",
-        "source_id": 1296,
+        "capture_date": "2022-08-14 02:10:58.427427",
+        "source_id": 1312,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Darling",
-        "artist_name": "Montell Fish",
+        "title": "Feathers",
+        "artist_name": "Palm",
         "video_id": null,
-        "capture_date": "2022-07-27 04:26:36.203203",
-        "source_id": 1296,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-08-14 02:10:58.427427",
+        "source_id": 1312,
+        "song_id": 12567,
+        "duplicate": true
     },
     {
-        "title": "Bad Apples",
-        "artist_name": "Objekt",
+        "title": "KJ’s Discovery",
+        "artist_name": "Bobby Krlic",
         "video_id": null,
-        "capture_date": "2022-07-27 04:26:36.203203",
-        "source_id": 1296,
+        "capture_date": "2022-08-14 02:10:58.427427",
+        "source_id": 1312,
         "song_id": null,
         "duplicate": false
     }
@@ -238,17 +238,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('TV', 'Billie Eilish', NULL),
-  ('Free Yourself', 'Jessie Ware', NULL),
-  ('Hottie', 'Flo Milli ft. BabyFace Ray', NULL),
-  ('Inhliziyo', 'Tyler ICU ft. Nkosazana Daughter, Kabza De Small and DJ Maphorisa', NULL),
-  ('Somebody Else’s Idea', 'Sun Ra Arkestra', NULL),
-  ('You', 'Julianna Riolino', NULL),
-  ('Mythical Bonds', 'Mamalarky', NULL),
-  ('Kiss City', 'Blondshell', NULL),
-  ('Simple as Love', 'Kelsey Waldon', NULL),
-  ('Darling', 'Montell Fish', NULL),
-  ('Bad Apples', 'Objekt', NULL)
+  ('Alien Superstar', 'Beyoncé', NULL),
+  ('Despechá', 'Rosalía', NULL),
+  ('So Typically Now', 'U.S. Girls', NULL),
+  ('Hold the Girl', 'Rina Sawayama', NULL),
+  ('All Masks', 'Robert Glasper ft. Masego', NULL),
+  ('There Were Bells', 'Brian Eno', NULL),
+  ('Prettier', 'Rat Tally', NULL),
+  ('Problem With It', 'Plains', NULL),
+  ('A Body, a Coffin', 'Amaarae', NULL),
+  ('KJ’s Discovery', 'Bobby Krlic', NULL)
   ;
 
    // Update to song table
@@ -259,7 +258,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12550; // SELECT last_insert_rowid();
+  song_id = 12595; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -299,17 +298,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-27 04:26:36.200200', '1296', '12540'),
-  ('2022-07-27 04:26:36.203203', '1296', '12541'),
-  ('2022-07-27 04:26:36.203203', '1296', '12542'),
-  ('2022-07-27 04:26:36.203203', '1296', '12543'),
-  ('2022-07-27 04:26:36.203203', '1296', '12544'),
-  ('2022-07-27 04:26:36.203203', '1296', '12545'),
-  ('2022-07-27 04:26:36.203203', '1296', '12546'),
-  ('2022-07-27 04:26:36.203203', '1296', '12547'),
-  ('2022-07-27 04:26:36.203203', '1296', '12548'),
-  ('2022-07-27 04:26:36.203203', '1296', '12549'),
-  ('2022-07-27 04:26:36.203203', '1296', '12550')
+  ('2022-08-14 02:10:58.423423', '1312', '12586'),
+  ('2022-08-14 02:10:58.426426', '1312', '12587'),
+  ('2022-08-14 02:10:58.426426', '1312', '12588'),
+  ('2022-08-14 02:10:58.426426', '1312', '12589'),
+  ('2022-08-14 02:10:58.427427', '1312', '12590'),
+  ('2022-08-14 02:10:58.427427', '1312', '12591'),
+  ('2022-08-14 02:10:58.427427', '1312', '12592'),
+  ('2022-08-14 02:10:58.427427', '1312', '12593'),
+  ('2022-08-14 02:10:58.427427', '1312', '12594'),
+  ('2022-08-14 02:10:58.427427', '1312', '12567'),
+  ('2022-08-14 02:10:58.427427', '1312', '12595')
   ;
 
   // Update to source_song table
