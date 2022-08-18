@@ -318,8 +318,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of August 15, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2022-08-15 12:00:00.000000',
+      'Week of August 8, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-08-08 12:00:00.000000',
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -329,7 +329,7 @@
   // Step 2: Enter song data into an array
   //
 
-    source_id = 1321; // SELECT last_insert_rowid();
+    source_id = 1322; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -454,43 +454,43 @@
 
     songsData =
     [
-        {
-            "title": "Unforgiven",
-            "artist_name": "The Soft Moon",
-            "video_id": null,
-            "capture_date": "2022-08-18 01:03:15.396396",
-            "source_id": 1321,
-            "song_id": null,
-            "duplicate": false
-        },
-        {
-            "title": "In Time",
-            "artist_name": "Blixa Bargeld",
-            "video_id": null,
-            "capture_date": "2022-08-18 01:03:15.396396",
-            "source_id": 1321,
-            "song_id": null,
-            "duplicate": false
-        },
-        {
-            "title": "Embarrassing",
-            "artist_name": "Baby Smoove",
-            "video_id": null,
-            "capture_date": "2022-08-18 01:03:15.396396",
-            "source_id": 1321,
-            "song_id": null,
-            "duplicate": false
-        },
-        {
-            "title": "Watersynth",
-            "artist_name": "Four Tet",
-            "video_id": null,
-            "capture_date": "2022-08-18 01:03:15.396396",
-            "source_id": 1321,
-            "song_id": null,
-            "duplicate": false
-        }
-    ]
+    {
+        "title": "Boil First",
+        "artist_name": "Bill Nace",
+        "video_id": null,
+        "capture_date": "2022-08-18 05:09:20.073073",
+        "source_id": 1322,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sorry We Was Trapping",
+        "artist_name": "Drego and Beno",
+        "video_id": null,
+        "capture_date": "2022-08-18 05:09:20.073073",
+        "source_id": 1322,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Personal Baby",
+        "artist_name": "Mr Eazi",
+        "video_id": null,
+        "capture_date": "2022-08-18 05:09:20.073073",
+        "source_id": 1322,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "48",
+        "artist_name": "Maxo",
+        "video_id": null,
+        "capture_date": "2022-08-18 05:09:20.073073",
+        "source_id": 1322,
+        "song_id": null,
+        "duplicate": false
+    }
+]
 
     // Check each song for duplicates in the database
     SELECT id, title, artist_name FROM song WHERE
@@ -528,10 +528,10 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Unforgiven', 'The Soft Moon', NULL),
-    ('In Time', 'Blixa Bargeld', NULL),
-    ('Embarrassing', 'Baby Smoove', NULL),
-    ('Watersynth', 'Four Tet', NULL)
+    ('Boil First', 'Bill Nace', NULL),
+    ('Sorry We Was Trapping', 'Drego and Beno', NULL),
+    ('Personal Baby', 'Mr Eazi', NULL),
+    ('48', 'Maxo', NULL)
     ;
 
      // Update to song table
@@ -542,7 +542,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12662; // SELECT last_insert_rowid();
+  song_id = 12666; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -582,10 +582,10 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-18 01:03:15.396396', '1321', '12659'),
-  ('2022-08-18 01:03:15.396396', '1321', '12660'),
-  ('2022-08-18 01:03:15.396396', '1321', '12661'),
-  ('2022-08-18 01:03:15.396396', '1321', '12662')
+  ('2022-08-18 05:09:20.073073', '1322', '12663'),
+  ('2022-08-18 05:09:20.073073', '1322', '12664'),
+  ('2022-08-18 05:09:20.073073', '1322', '12665'),
+  ('2022-08-18 05:09:20.073073', '1322', '12666')
   ;
 
   // Update to source_song table
