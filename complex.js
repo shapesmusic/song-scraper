@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Lil Uzi Vert, Megan Thee Stallion, Joey Badass, and More', '2022-07-22 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-july-22/internet-money-lil-tecca-ken-carson-she-want-some-more');
+    ('Complex', 'The Best New Music This Week', 'Megan Thee Stallion, Nicki Minaj, Rod Wave, and More', '2022-08-12 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-august-12/cordae-unacceptable');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1297; // SELECT last_insert_rowid();
+  source_id = 1319; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,101 +102,101 @@
   songsData =
   [
     {
-        "title": "I Know",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Flip Flop",
+        "artist_name": "Megan Thee Stallion",
         "video_id": null,
-        "capture_date": "2022-07-27 04:33:15.936936",
-        "source_id": 1297,
+        "capture_date": "2022-08-18 11:49:02.675675",
+        "source_id": 1319,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pressurelicious",
-        "artist_name": "Megan Thee Stallion ft. Future",
+        "title": "Super Freaky Girl",
+        "artist_name": "Nicki Minaj",
         "video_id": null,
-        "capture_date": "2022-07-27 04:33:15.937937",
-        "source_id": 1297,
+        "capture_date": "2022-08-18 11:49:02.676676",
+        "source_id": 1319,
+        "song_id": 12643,
+        "duplicate": true
+    },
+    {
+        "title": "Make Me Say It Again, Girl",
+        "artist_name": "Beyoncé & Ronald Isley",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:49:02.676676",
+        "source_id": 1319,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wanna Be Loved",
-        "artist_name": "Joey Badass ft. JID",
+        "title": "Alone",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-07-27 04:33:15.937937",
-        "source_id": 1297,
+        "capture_date": "2022-08-18 11:49:02.676676",
+        "source_id": 1319,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bed Time",
-        "artist_name": "Flo Milli",
+        "title": "Hoodie",
+        "artist_name": "Ari Lennox",
         "video_id": null,
-        "capture_date": "2022-07-27 04:33:15.937937",
-        "source_id": 1297,
+        "capture_date": "2022-08-18 11:49:02.676676",
+        "source_id": 1319,
+        "song_id": 12646,
+        "duplicate": true
+    },
+    {
+        "title": "Ticket",
+        "artist_name": "Morray",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:49:02.676676",
+        "source_id": 1319,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Persuasive",
-        "artist_name": "Doechii & SZA",
+        "title": "Dance Now",
+        "artist_name": "JID & Kenny Mason",
         "video_id": null,
-        "capture_date": "2022-07-27 04:33:15.937937",
-        "source_id": 1297,
+        "capture_date": "2022-08-18 11:49:02.676676",
+        "source_id": 1319,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Save Me",
-        "artist_name": "Lil Durk & Southside",
+        "title": "Toxic",
+        "artist_name": "YG",
         "video_id": null,
-        "capture_date": "2022-07-27 04:33:15.937937",
-        "source_id": 1297,
+        "capture_date": "2022-08-18 11:49:02.676676",
+        "source_id": 1319,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dah Dah DahDah",
-        "artist_name": "Nardo Wick",
+        "title": "Sunshine",
+        "artist_name": "Tyga ft. Pop Smoke & Jhene Aiko",
         "video_id": null,
-        "capture_date": "2022-07-27 04:33:15.937937",
-        "source_id": 1297,
+        "capture_date": "2022-08-18 11:49:02.676676",
+        "source_id": 1319,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "One On 5",
-        "artist_name": "Rico Nasty",
+        "title": "Fortunate",
+        "artist_name": "The Game ft. Kanye West, Dreezy, and CHILLLER",
         "video_id": null,
-        "capture_date": "2022-07-27 04:33:15.937937",
-        "source_id": 1297,
+        "capture_date": "2022-08-18 11:49:02.676676",
+        "source_id": 1319,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In My Face",
-        "artist_name": "Mozzy ft. YG, 2 Chainz, & Saweetie",
+        "title": "Unacceptable",
+        "artist_name": "Cordae",
         "video_id": null,
-        "capture_date": "2022-07-27 04:33:15.937937",
-        "source_id": 1297,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "If I Get Caught",
-        "artist_name": "DVSN",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:33:15.937937",
-        "source_id": 1297,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "She Want Some More",
-        "artist_name": "Internet Money, Lil Tecca, & Ken Carson",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:33:15.938938",
-        "source_id": 1297,
+        "capture_date": "2022-08-18 11:49:02.677677",
+        "source_id": 1319,
         "song_id": null,
         "duplicate": false
     }
@@ -239,17 +239,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('I Know', 'Lil Uzi Vert', NULL),
-  ('Pressurelicious', 'Megan Thee Stallion ft. Future', NULL),
-  ('Wanna Be Loved', 'Joey Badass ft. JID', NULL),
-  ('Bed Time', 'Flo Milli', NULL),
-  ('Persuasive', 'Doechii & SZA', NULL),
-  ('Save Me', 'Lil Durk & Southside', NULL),
-  ('Dah Dah DahDah', 'Nardo Wick', NULL),
-  ('One On 5', 'Rico Nasty', NULL),
-  ('In My Face', 'Mozzy ft. YG, 2 Chainz, & Saweetie', NULL),
-  ('If I Get Caught', 'DVSN', NULL),
-  ('She Want Some More', 'Internet Money, Lil Tecca, & Ken Carson', NULL)
+  ('Flip Flop', 'Megan Thee Stallion', NULL),
+  ('Make Me Say It Again, Girl', 'Beyoncé & Ronald Isley', NULL),
+  ('Alone', 'Rod Wave', NULL),
+  ('Ticket', 'Morray', NULL),
+  ('Dance Now', 'JID & Kenny Mason', NULL),
+  ('Toxic', 'YG', NULL),
+  ('Sunshine', 'Tyga ft. Pop Smoke & Jhene Aiko', NULL),
+  ('Fortunate', 'The Game ft. Kanye West, Dreezy, and CHILLLER', NULL),
+  ('Unacceptable', 'Cordae', NULL)
   ;
 
    // Update to song table
@@ -260,7 +258,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12561; // SELECT last_insert_rowid();
+  song_id = 12655; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -300,17 +298,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-27 04:33:15.936936', '1297', '12551'),
-  ('2022-07-27 04:33:15.937937', '1297', '12552'),
-  ('2022-07-27 04:33:15.937937', '1297', '12553'),
-  ('2022-07-27 04:33:15.937937', '1297', '12554'),
-  ('2022-07-27 04:33:15.937937', '1297', '12555'),
-  ('2022-07-27 04:33:15.937937', '1297', '12556'),
-  ('2022-07-27 04:33:15.937937', '1297', '12557'),
-  ('2022-07-27 04:33:15.937937', '1297', '12558'),
-  ('2022-07-27 04:33:15.937937', '1297', '12559'),
-  ('2022-07-27 04:33:15.937937', '1297', '12560'),
-  ('2022-07-27 04:33:15.938938', '1297', '12561')
+  ('2022-08-18 11:49:02.675675', '1319', '12647'),
+  ('2022-08-18 11:49:02.676676', '1319', '12643'),
+  ('2022-08-18 11:49:02.676676', '1319', '12648'),
+  ('2022-08-18 11:49:02.676676', '1319', '12649'),
+  ('2022-08-18 11:49:02.676676', '1319', '12646'),
+  ('2022-08-18 11:49:02.676676', '1319', '12650'),
+  ('2022-08-18 11:49:02.676676', '1319', '12651'),
+  ('2022-08-18 11:49:02.676676', '1319', '12652'),
+  ('2022-08-18 11:49:02.676676', '1319', '12653'),
+  ('2022-08-18 11:49:02.676676', '1319', '12654'),
+  ('2022-08-18 11:49:02.677677', '1319', '12655')
   ;
 
   // Update to source_song table

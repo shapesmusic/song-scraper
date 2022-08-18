@@ -47,9 +47,9 @@
   // Replace any ' in strings with ’
 
   INSERT INTO source
-  (parent_entity, parent_stream, instance_name, publication_date, location)
-VALUES
-  ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of August 5, 2022', '2022-08-05 12:00:00.000000', 'https://www.stereogum.com/2195313/the-5-best-songs-of-the-week-445/lists/the-5-best-songs-of-the-week/');
+    (parent_entity, parent_stream, instance_name, publication_date, location)
+  VALUES
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of August 12, 2022', '2022-08-12 12:00:00.000000', 'https://www.stereogum.com/2196083/the-5-best-songs-of-the-week-446/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@ VALUES
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1316; // SELECT last_insert_rowid();
+  source_id = 1320; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,49 +101,49 @@ VALUES
   songsData =
   [
     {
-        "title": "Happiness",
-        "artist_name": "The 1975",
+        "title": "Paint By Number",
+        "artist_name": "Shannen Moser",
         "video_id": null,
-        "capture_date": "2022-08-14 02:33:01.239239",
-        "source_id": 1316,
-        "song_id": 12618,
+        "capture_date": "2022-08-18 12:06:19.582582",
+        "source_id": 1320,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dance Now",
+        "artist_name": "JID",
+        "video_id": null,
+        "capture_date": "2022-08-18 12:06:19.583583",
+        "source_id": 1320,
+        "song_id": 12651,
         "duplicate": true
     },
     {
-        "title": "CODE",
-        "artist_name": "The Comet Is Coming",
+        "title": "Trauma Bonds",
+        "artist_name": "High Vis",
         "video_id": null,
-        "capture_date": "2022-08-14 02:33:01.239239",
-        "source_id": 1316,
+        "capture_date": "2022-08-18 12:06:19.583583",
+        "source_id": 1320,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Zum Herz",
-        "artist_name": "Guerilla Toss",
+        "title": "Easy On Your Own?",
+        "artist_name": "Alvvays",
         "video_id": null,
-        "capture_date": "2022-08-14 02:33:01.239239",
-        "source_id": 1316,
+        "capture_date": "2022-08-18 12:06:19.583583",
+        "source_id": 1320,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Estrangement Zone",
-        "artist_name": "Will Sheff",
+        "title": "Burning",
+        "artist_name": "Yeah Yeah Yeahs",
         "video_id": null,
-        "capture_date": "2022-08-14 02:33:01.239239",
-        "source_id": 1316,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pájaros En Verano",
-        "artist_name": "Ela Minus & DJ Python",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:33:01.239239",
-        "source_id": 1316,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-08-18 12:06:19.583583",
+        "source_id": 1320,
+        "song_id": 12642,
+        "duplicate": true
     }
 ]
 
@@ -185,10 +185,9 @@ VALUES
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('CODE', 'The Comet Is Coming', NULL),
-  ('Zum Herz', 'Guerilla Toss', NULL),
-  ('Estrangement Zone', 'Will Sheff', NULL),
-  ('Pájaros En Verano', 'Ela Minus & DJ Python', NULL)
+  ('Paint By Number', 'Shannen Moser', NULL),
+  ('Trauma Bonds', 'High Vis', NULL),
+  ('Easy On Your Own?', 'Alvvays', NULL)
   ;
 
    // Update to song table
@@ -199,7 +198,7 @@ VALUES
  //
 
   // Get the last song_id inserted
-  song_id = 12626; // SELECT last_insert_rowid();
+  song_id = 12658; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -239,11 +238,11 @@ VALUES
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-14 02:33:01.239239', '1316', '12618'),
-  ('2022-08-14 02:33:01.239239', '1316', '12623'),
-  ('2022-08-14 02:33:01.239239', '1316', '12624'),
-  ('2022-08-14 02:33:01.239239', '1316', '12625'),
-  ('2022-08-14 02:33:01.239239', '1316', '12626')
+  ('2022-08-18 12:06:19.582582', '1320', '12656'),
+  ('2022-08-18 12:06:19.583583', '1320', '12651'),
+  ('2022-08-18 12:06:19.583583', '1320', '12657'),
+  ('2022-08-18 12:06:19.583583', '1320', '12658'),
+  ('2022-08-18 12:06:19.583583', '1320', '12642')
   ;
 
   // Update to source_song table

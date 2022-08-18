@@ -1,5 +1,6 @@
 // Scroll to the bottom of the page first, so all the lazyload stuff loads
 // Always check the last song name to make sure everything got scraped
+// If no roundup this week, manually add songs (steps at the end of this file)
 
 
 //
@@ -300,6 +301,291 @@
   ('2022-05-30 07:43:31.139139', '1216', '12275'),
   ('2022-05-30 07:43:31.139139', '1216', '12276'),
   ('2022-05-30 07:43:31.139139', '1216', '12277')
+  ;
+
+  // Update to source_song table
+
+
+  ---
+  Manual Additions
+
+  //
+  // Step 1: Fill in the source data manually
+  //
+
+    INSERT INTO source
+      (parent_entity, parent_stream, instance_name, publication_date, location)
+    VALUES
+      ('The Fader',
+      'Songs You Need',
+      'Week of August 15, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-08-15 12:00:00.000000',
+      'https://www.thefader.com/tag/songs-you-need-in-your-life');
+
+      // Update to source table
+
+
+  //
+  // Step 2: Enter song data into an array
+  //
+
+    source_id = 1321; // SELECT last_insert_rowid();
+
+    // Create a blank template song
+    title = ""
+    artist_name = ""
+    video_id = null // if not adding video_id, set to null
+
+    song_id = null;
+
+    // Add moment.js to the header (make sure scripts aren't blocked in the browser)
+    momentjs = document.createElement("script");
+    momentjs.src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.2.1/moment.min.js";
+    document.head.appendChild(momentjs);
+
+    capture_date = moment(new Date()).format("YYYY-MM-DD hh:mm:ss.SSSSSS"); // sqlite time format
+
+    // build template songsData
+    songsData =
+    [
+      {
+          "title": title,
+          "artist_name": artist_name,
+          "video_id": video_id,
+          "capture_date": capture_date,
+          "source_id": source_id,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": title,
+          "artist_name": artist_name,
+          "video_id": video_id,
+          "capture_date": capture_date,
+          "source_id": source_id,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": title,
+          "artist_name": artist_name,
+          "video_id": video_id,
+          "capture_date": capture_date,
+          "source_id": source_id,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": title,
+          "artist_name": artist_name,
+          "video_id": video_id,
+          "capture_date": capture_date,
+          "source_id": source_id,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": title,
+          "artist_name": artist_name,
+          "video_id": video_id,
+          "capture_date": capture_date,
+          "source_id": source_id,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": title,
+          "artist_name": artist_name,
+          "video_id": video_id,
+          "capture_date": capture_date,
+          "source_id": source_id,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": title,
+          "artist_name": artist_name,
+          "video_id": video_id,
+          "capture_date": capture_date,
+          "source_id": source_id,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": title,
+          "artist_name": artist_name,
+          "video_id": video_id,
+          "capture_date": capture_date,
+          "source_id": source_id,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": title,
+          "artist_name": artist_name,
+          "video_id": video_id,
+          "capture_date": capture_date,
+          "source_id": source_id,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": title,
+          "artist_name": artist_name,
+          "video_id": video_id,
+          "capture_date": capture_date,
+          "source_id": source_id,
+          "song_id": null,
+          "duplicate": false
+      }
+  ]
+
+    console.log(JSON.stringify(songsData, null, 4));
+
+
+  //
+  // Step 3: Stage songsData
+  //
+
+    // manually add titles and artists,
+    // find & set any duplicate songs to true,
+    // add song_ids for duplicates
+    // add or remove blank songs as needed
+
+    songsData =
+    [
+        {
+            "title": "Unforgiven",
+            "artist_name": "The Soft Moon",
+            "video_id": null,
+            "capture_date": "2022-08-18 01:03:15.396396",
+            "source_id": 1321,
+            "song_id": null,
+            "duplicate": false
+        },
+        {
+            "title": "In Time",
+            "artist_name": "Blixa Bargeld",
+            "video_id": null,
+            "capture_date": "2022-08-18 01:03:15.396396",
+            "source_id": 1321,
+            "song_id": null,
+            "duplicate": false
+        },
+        {
+            "title": "Embarrassing",
+            "artist_name": "Baby Smoove",
+            "video_id": null,
+            "capture_date": "2022-08-18 01:03:15.396396",
+            "source_id": 1321,
+            "song_id": null,
+            "duplicate": false
+        },
+        {
+            "title": "Watersynth",
+            "artist_name": "Four Tet",
+            "video_id": null,
+            "capture_date": "2022-08-18 01:03:15.396396",
+            "source_id": 1321,
+            "song_id": null,
+            "duplicate": false
+        }
+    ]
+
+    // Check each song for duplicates in the database
+    SELECT id, title, artist_name FROM song WHERE
+      title LIKE '%Up%'
+      AND artist_name LIKE '%Cardi%'
+    ;
+
+    // Add var songsData = the deduplicated list above
+
+
+  //
+  // Step 4: Update nonduplicates to the song table
+  //
+
+    // Build the SQL statement
+    songs = [];
+
+    for (var i=0; i<songsData.length; i++){
+      song = String(
+        "\n(\'" + songsData[i].title + "\', "
+        + "\'" + songsData[i].artist_name + "\', "
+        + "NULL)"
+      );
+
+      if (songsData[i].duplicate == false){
+        songs.push(song);
+      }
+    }
+    console.log(String(songs));
+
+
+    // Stage the SQL statement
+    // Replace any ' in strings with ’
+
+    INSERT INTO song
+      (title, artist_name, video_id)
+    VALUES
+    ('Unforgiven', 'The Soft Moon', NULL),
+    ('In Time', 'Blixa Bargeld', NULL),
+    ('Embarrassing', 'Baby Smoove', NULL),
+    ('Watersynth', 'Four Tet', NULL)
+    ;
+
+     // Update to song table
+
+
+ //
+ // Step 5: Add new song_ids and update all songs to the source_song table.
+ //
+
+  // Get the last song_id inserted
+  song_id = 12662; // SELECT last_insert_rowid();
+
+  // Calculate the number of nonduplicate songs added
+  nonduplicates = 0;
+
+  for (var i=0; i<songsData.length; i++){
+    if (songsData[i].duplicate == false){
+      nonduplicates++
+    }
+  };
+
+  // Update nonduplicate song_ids
+  for (var i=0; i<songsData.length; i++){
+
+    if (songsData[i].duplicate == false){
+      songsData[i].song_id = (song_id - nonduplicates +1);
+      nonduplicates--;
+    }
+  }
+
+  // Build the SQL statement
+  source_songs = [];
+
+  for (var i=0; i<songsData.length; i++){
+    source_song = String(
+      "\n(\'" + songsData[i].capture_date + "\', "
+      + "\'" + songsData[i].source_id + "\', "
+      + "\'" + songsData[i].song_id + "\')"
+    );
+
+    source_songs.push(source_song);
+  }
+
+  console.log(String(source_songs));
+
+
+  // Stage the SQL statement
+  INSERT INTO source_song
+    (capture_date, source_id, song_id)
+  VALUES
+  ('2022-08-18 01:03:15.396396', '1321', '12659'),
+  ('2022-08-18 01:03:15.396396', '1321', '12660'),
+  ('2022-08-18 01:03:15.396396', '1321', '12661'),
+  ('2022-08-18 01:03:15.396396', '1321', '12662')
   ;
 
   // Update to source_song table

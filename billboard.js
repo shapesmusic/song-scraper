@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of August 13, 2022', '2022-08-13 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-08-13/');
+    ('Billboard', 'The Hot 100', 'Week of August 20, 2022', '2022-08-20 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-08-20');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1314; // SELECT last_insert_rowid();
+  source_id = 1317; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,166 +105,139 @@
   songsData =
   [
     {
-        "title": "Cuff It",
-        "artist_name": "Beyonce",
+        "title": "Staying Alive",
+        "artist_name": "DJ Khaled ft. Drake & Lil Baby",
         "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.330330",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Alien Superstar",
-        "artist_name": "Beyonce",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.330330",
-        "source_id": 1314,
-        "song_id": 12586,
+        "capture_date": "2022-08-18 11:26:15.853853",
+        "source_id": 1317,
+        "song_id": 12616,
         "duplicate": true
     },
     {
-        "title": "Church Girl",
-        "artist_name": "Beyonce",
+        "title": "Bad Decisions",
+        "artist_name": "benny blanco, BTS & Snoop Dogg",
         "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.330330",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I'm That Girl",
-        "artist_name": "Beyonce",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.330330",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Energy",
-        "artist_name": "Beyonce ft. BEAM",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.330330",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cozy",
-        "artist_name": "Beyonce",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.330330",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Plastic Off The Sofa",
-        "artist_name": "Beyonce",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.331331",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Virgo's Groove",
-        "artist_name": "Beyonce",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.331331",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Summer Renaissance",
-        "artist_name": "Beyonce",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.331331",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Never Sleep",
-        "artist_name": "NAV, Travis Scott & Lil Baby",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.331331",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Heated",
-        "artist_name": "Beyonce",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.331331",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Thique",
-        "artist_name": "Beyonce",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.331331",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Move",
-        "artist_name": "Beyonce ft. Grace Jones & Tems",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.331331",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pure/Honey",
-        "artist_name": "Beyonce",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.331331",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "America Has A Problem",
-        "artist_name": "Beyonce",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.332332",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "All Up In Your Mind",
-        "artist_name": "Beyonce",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.332332",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Victoria’s Secret",
-        "artist_name": "Jax",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.332332",
-        "source_id": 1314,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dah Dah DahDah",
-        "artist_name": "Nardo Wick",
-        "video_id": null,
-        "capture_date": "2022-08-14 02:19:50.332332",
-        "source_id": 1314,
-        "song_id": 12557,
+        "capture_date": "2022-08-18 11:26:15.853853",
+        "source_id": 1317,
+        "song_id": 12617,
         "duplicate": true
+    },
+    {
+        "title": "Umm Hmm",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.855855",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Know",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.857857",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Home Ain't Home",
+        "artist_name": "YoungBoy Never Broke Again ft. Rod Wave",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.858858",
+        "source_id": 1317,
+        "song_id": 12622,
+        "duplicate": true
+    },
+    {
+        "title": "Fuck Da Industry",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.858858",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Free Dem 5's",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.858858",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lost Soul Survivor",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.858858",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hold Your Own",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.859859",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Top Sound",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.859859",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Kamikaze",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.859859",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "My Time",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.859859",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Big 14",
+        "artist_name": "Trippie Redd, Moneybagg Yo & Offset",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.859859",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Despecha",
+        "artist_name": "Rosalia",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.859859",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "7 Days",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-08-18 11:26:15.859859",
+        "source_id": 1317,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -306,22 +279,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Cuff It', 'Beyonce', NULL),
-  ('Church Girl', 'Beyonce', NULL),
-  ('I’m That Girl', 'Beyonce', NULL),
-  ('Energy', 'Beyonce ft. BEAM', NULL),
-  ('Cozy', 'Beyonce', NULL),
-  ('Plastic Off The Sofa', 'Beyonce', NULL),
-  ('Virgo’s Groove', 'Beyonce', NULL),
-  ('Summer Renaissance', 'Beyonce', NULL),
-  ('Never Sleep', 'NAV, Travis Scott & Lil Baby', NULL),
-  ('Heated', 'Beyonce', NULL),
-  ('Thique', 'Beyonce', NULL),
-  ('Move', 'Beyonce ft. Grace Jones & Tems', NULL),
-  ('Pure/Honey', 'Beyonce', NULL),
-  ('America Has A Problem', 'Beyonce', NULL),
-  ('All Up In Your Mind', 'Beyonce', NULL),
-  ('Victoria’s Secret', 'Jax', NULL)
+  ('Umm Hmm', 'YoungBoy Never Broke Again', NULL),
+  ('I Know', 'YoungBoy Never Broke Again', NULL),
+  ('Fuck Da Industry', 'YoungBoy Never Broke Again', NULL),
+  ('Free Dem 5’s', 'YoungBoy Never Broke Again', NULL),
+  ('Lost Soul Survivor', 'YoungBoy Never Broke Again', NULL),
+  ('Hold Your Own', 'YoungBoy Never Broke Again', NULL),
+  ('Top Sound', 'YoungBoy Never Broke Again', NULL),
+  ('Kamikaze', 'YoungBoy Never Broke Again', NULL),
+  ('My Time', 'YoungBoy Never Broke Again', NULL),
+  ('Big 14', 'Trippie Redd, Moneybagg Yo & Offset', NULL),
+  ('Despecha', 'Rosalia', NULL),
+  ('7 Days', 'YoungBoy Never Broke Again', NULL)
   ;
 
    // Update to song table
@@ -332,7 +301,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12614; // SELECT last_insert_rowid();
+  song_id = 12638; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -372,24 +341,21 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-14 02:19:50.330330', '1314', '12599'),
-  ('2022-08-14 02:19:50.330330', '1314', '12586'),
-  ('2022-08-14 02:19:50.330330', '1314', '12600'),
-  ('2022-08-14 02:19:50.330330', '1314', '12601'),
-  ('2022-08-14 02:19:50.330330', '1314', '12602'),
-  ('2022-08-14 02:19:50.330330', '1314', '12603'),
-  ('2022-08-14 02:19:50.331331', '1314', '12604'),
-  ('2022-08-14 02:19:50.331331', '1314', '12605'),
-  ('2022-08-14 02:19:50.331331', '1314', '12606'),
-  ('2022-08-14 02:19:50.331331', '1314', '12607'),
-  ('2022-08-14 02:19:50.331331', '1314', '12608'),
-  ('2022-08-14 02:19:50.331331', '1314', '12609'),
-  ('2022-08-14 02:19:50.331331', '1314', '12610'),
-  ('2022-08-14 02:19:50.331331', '1314', '12611'),
-  ('2022-08-14 02:19:50.332332', '1314', '12612'),
-  ('2022-08-14 02:19:50.332332', '1314', '12613'),
-  ('2022-08-14 02:19:50.332332', '1314', '12614'),
-  ('2022-08-14 02:19:50.332332', '1314', '12557')
+  ('2022-08-18 11:26:15.853853', '1317', '12616'),
+  ('2022-08-18 11:26:15.853853', '1317', '12617'),
+  ('2022-08-18 11:26:15.855855', '1317', '12627'),
+  ('2022-08-18 11:26:15.857857', '1317', '12628'),
+  ('2022-08-18 11:26:15.858858', '1317', '12622'),
+  ('2022-08-18 11:26:15.858858', '1317', '12629'),
+  ('2022-08-18 11:26:15.858858', '1317', '12630'),
+  ('2022-08-18 11:26:15.858858', '1317', '12631'),
+  ('2022-08-18 11:26:15.859859', '1317', '12632'),
+  ('2022-08-18 11:26:15.859859', '1317', '12633'),
+  ('2022-08-18 11:26:15.859859', '1317', '12634'),
+  ('2022-08-18 11:26:15.859859', '1317', '12635'),
+  ('2022-08-18 11:26:15.859859', '1317', '12636'),
+  ('2022-08-18 11:26:15.859859', '1317', '12637'),
+  ('2022-08-18 11:26:15.859859', '1317', '12638')
   ;
 
   // Update to source_song table
