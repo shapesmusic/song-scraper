@@ -318,8 +318,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of August 8, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2022-08-08 12:00:00.000000',
+      'Week of August 1, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-08-01 12:00:00.000000',
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -329,7 +329,7 @@
   // Step 2: Enter song data into an array
   //
 
-    source_id = 1322; // SELECT last_insert_rowid();
+    source_id = 1323; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -455,38 +455,47 @@
     songsData =
     [
     {
-        "title": "Boil First",
-        "artist_name": "Bill Nace",
+        "title": "I'm In Love",
+        "artist_name": "Joony",
         "video_id": null,
-        "capture_date": "2022-08-18 05:09:20.073073",
-        "source_id": 1322,
+        "capture_date": "2022-08-18 05:16:09.644644",
+        "source_id": 1323,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sorry We Was Trapping",
-        "artist_name": "Drego and Beno",
+        "title": "Savanne",
+        "artist_name": "Vieux Farka Touré and Khruangbin",
         "video_id": null,
-        "capture_date": "2022-08-18 05:09:20.073073",
-        "source_id": 1322,
+        "capture_date": "2022-08-18 05:16:09.644644",
+        "source_id": 1323,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Personal Baby",
-        "artist_name": "Mr Eazi",
+        "title": "The Wire",
+        "artist_name": "Shordie Shordie and Rich Homie Quan",
         "video_id": null,
-        "capture_date": "2022-08-18 05:09:20.073073",
-        "source_id": 1322,
+        "capture_date": "2022-08-18 05:16:09.644644",
+        "source_id": 1323,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "48",
-        "artist_name": "Maxo",
+        "title": "SOLD",
+        "artist_name": "Lana Lubany",
         "video_id": null,
-        "capture_date": "2022-08-18 05:09:20.073073",
-        "source_id": 1322,
+        "capture_date": "2022-08-18 05:16:09.644644",
+        "source_id": 1323,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Slam Dunk Contestants",
+        "artist_name": "ShittyBoyz",
+        "video_id": null,
+        "capture_date": "2022-08-18 05:16:09.644644",
+        "source_id": 1323,
         "song_id": null,
         "duplicate": false
     }
@@ -528,10 +537,11 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Boil First', 'Bill Nace', NULL),
-    ('Sorry We Was Trapping', 'Drego and Beno', NULL),
-    ('Personal Baby', 'Mr Eazi', NULL),
-    ('48', 'Maxo', NULL)
+    ('I’m In Love', 'Joony', NULL),
+    ('Savanne', 'Vieux Farka Touré and Khruangbin', NULL),
+    ('The Wire', 'Shordie Shordie and Rich Homie Quan', NULL),
+    ('SOLD', 'Lana Lubany', NULL),
+    ('Slam Dunk Contestants', 'ShittyBoyz', NULL)
     ;
 
      // Update to song table
@@ -542,7 +552,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12666; // SELECT last_insert_rowid();
+  song_id = 12671; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -582,10 +592,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-18 05:09:20.073073', '1322', '12663'),
-  ('2022-08-18 05:09:20.073073', '1322', '12664'),
-  ('2022-08-18 05:09:20.073073', '1322', '12665'),
-  ('2022-08-18 05:09:20.073073', '1322', '12666')
+  ('2022-08-18 05:16:09.644644', '1323', '12667'),
+  ('2022-08-18 05:16:09.644644', '1323', '12668'),
+  ('2022-08-18 05:16:09.644644', '1323', '12669'),
+  ('2022-08-18 05:16:09.644644', '1323', '12670'),
+  ('2022-08-18 05:16:09.644644', '1323', '12671')
   ;
 
   // Update to source_song table
