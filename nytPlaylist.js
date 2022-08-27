@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'M.I.A. Takes Aim at Fame, and 7 More New Songs', '2022-08-14 07:43:35.000000', 'https://www.nytimes.com/2022/08/12/arts/music/playlist-mia-nicki-minaj-willow.html');
+    ('New York Times', 'The Playlist', 'Blackpink’s Genre-Hopping Return, and 8 More New Songs', '2022-08-21 10:20:36.000000', 'https://www.nytimes.com/2022/08/19/arts/music/playlist-blackpink-madonna.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1318; // SELECT last_insert_rowid();
+  source_id = 1325; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,74 +100,74 @@
   songsData =
   [
     {
-        "title": "Popular",
-        "artist_name": "M.I.A.",
+        "title": "Pink Venom",
+        "artist_name": "Blackpink",
         "video_id": null,
-        "capture_date": "2022-08-18 11:34:03.677677",
-        "source_id": 1318,
+        "capture_date": "2022-08-27 01:56:53.427427",
+        "source_id": 1325,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Indieedgycool",
-        "artist_name": "Gayle",
+        "title": "Get Together (Jacques Lu Cont Vocal Edit)",
+        "artist_name": "Madonna",
         "video_id": null,
-        "capture_date": "2022-08-18 11:34:03.678678",
-        "source_id": 1318,
+        "capture_date": "2022-08-27 01:56:53.427427",
+        "source_id": 1325,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hover Like a Goddess",
-        "artist_name": "Willow",
+        "title": "Make You Say",
+        "artist_name": "Zedd, Maren Morris and Beauz",
         "video_id": null,
-        "capture_date": "2022-08-18 11:34:03.678678",
-        "source_id": 1318,
+        "capture_date": "2022-08-27 01:56:53.427427",
+        "source_id": 1325,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Burning",
-        "artist_name": "Yeah Yeah Yeahs",
+        "title": "Sexo Amor Dinero",
+        "artist_name": "Isabella Lovestory",
         "video_id": null,
-        "capture_date": "2022-08-18 11:34:03.678678",
-        "source_id": 1318,
+        "capture_date": "2022-08-27 01:56:53.428428",
+        "source_id": 1325,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Super Freaky Girl",
-        "artist_name": "Nicki Minaj",
+        "title": "Fruity",
+        "artist_name": "Chloe Moriondo",
         "video_id": null,
-        "capture_date": "2022-08-18 11:34:03.678678",
-        "source_id": 1318,
+        "capture_date": "2022-08-27 01:56:53.428428",
+        "source_id": 1325,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Munch (Feelin’ U)",
-        "artist_name": "Ice Spice",
+        "title": "Peach",
+        "artist_name": "Pony",
         "video_id": null,
-        "capture_date": "2022-08-18 11:34:03.678678",
-        "source_id": 1318,
+        "capture_date": "2022-08-27 01:56:53.428428",
+        "source_id": 1325,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Threat",
-        "artist_name": "Rex Orange County",
+        "title": "No Body",
+        "artist_name": "Blake Shelton",
         "video_id": null,
-        "capture_date": "2022-08-18 11:34:03.678678",
-        "source_id": 1318,
+        "capture_date": "2022-08-27 01:56:53.428428",
+        "source_id": 1325,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hoodie",
-        "artist_name": "Ari Lennox",
+        "title": "Happen",
+        "artist_name": "Nick Hakim",
         "video_id": null,
-        "capture_date": "2022-08-18 11:34:03.678678",
-        "source_id": 1318,
+        "capture_date": "2022-08-27 01:56:53.428428",
+        "source_id": 1325,
         "song_id": null,
         "duplicate": false
     }
@@ -211,14 +211,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Popular', 'M.I.A.', NULL),
-  ('Indieedgycool', 'Gayle', NULL),
-  ('Hover Like a Goddess', 'Willow', NULL),
-  ('Burning', 'Yeah Yeah Yeahs', NULL),
-  ('Super Freaky Girl', 'Nicki Minaj', NULL),
-  ('Munch (Feelin’ U)', 'Ice Spice', NULL),
-  ('Threat', 'Rex Orange County', NULL),
-  ('Hoodie', 'Ari Lennox', NULL)
+  ('Pink Venom', 'Blackpink', NULL),
+  ('Get Together (Jacques Lu Cont Vocal Edit)', 'Madonna', NULL),
+  ('Make You Say', 'Zedd, Maren Morris and Beauz', NULL),
+  ('Sexo Amor Dinero', 'Isabella Lovestory', NULL),
+  ('Fruity', 'Chloe Moriondo', NULL),
+  ('Peach', 'Pony', NULL),
+  ('No Body', 'Blake Shelton', NULL),
+  ('Happen', 'Nick Hakim', NULL)
   ;
 
    // Update to song table
@@ -229,7 +229,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12646; // SELECT last_insert_rowid();
+  song_id = 12694; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -269,14 +269,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-18 11:34:03.677677', '1318', '12639'),
-  ('2022-08-18 11:34:03.678678', '1318', '12640'),
-  ('2022-08-18 11:34:03.678678', '1318', '12641'),
-  ('2022-08-18 11:34:03.678678', '1318', '12642'),
-  ('2022-08-18 11:34:03.678678', '1318', '12643'),
-  ('2022-08-18 11:34:03.678678', '1318', '12644'),
-  ('2022-08-18 11:34:03.678678', '1318', '12645'),
-  ('2022-08-18 11:34:03.678678', '1318', '12646')
+  ('2022-08-27 01:56:53.427427', '1325', '12687'),
+  ('2022-08-27 01:56:53.427427', '1325', '12688'),
+  ('2022-08-27 01:56:53.427427', '1325', '12689'),
+  ('2022-08-27 01:56:53.428428', '1325', '12690'),
+  ('2022-08-27 01:56:53.428428', '1325', '12691'),
+  ('2022-08-27 01:56:53.428428', '1325', '12692'),
+  ('2022-08-27 01:56:53.428428', '1325', '12693'),
+  ('2022-08-27 01:56:53.428428', '1325', '12694')
   ;
 
   // Update to source_song table

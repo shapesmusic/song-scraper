@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of August 20, 2022', '2022-08-20 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-08-20');
+    ('Billboard', 'The Hot 100', 'Week of August 27, 2022', '2022-08-27 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-08-27');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1317; // SELECT last_insert_rowid();
+  source_id = 1324; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,137 +105,146 @@
   songsData =
   [
     {
-        "title": "Staying Alive",
-        "artist_name": "DJ Khaled ft. Drake & Lil Baby",
+        "title": "Alone",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.853853",
-        "source_id": 1317,
-        "song_id": 12616,
+        "capture_date": "2022-08-27 01:49:40.734734",
+        "source_id": 1324,
+        "song_id": 12649,
         "duplicate": true
     },
     {
-        "title": "Bad Decisions",
-        "artist_name": "benny blanco, BTS & Snoop Dogg",
+        "title": "Yungen",
+        "artist_name": "Rod Wave ft. Jack Harlow",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.853853",
-        "source_id": 1317,
-        "song_id": 12617,
-        "duplicate": true
-    },
-    {
-        "title": "Umm Hmm",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.855855",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.734734",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Know",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Never Get Over Me",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.857857",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.735735",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Home Ain't Home",
-        "artist_name": "YoungBoy Never Broke Again ft. Rod Wave",
+        "title": "Sweet Little Lies",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.858858",
-        "source_id": 1317,
-        "song_id": 12622,
-        "duplicate": true
-    },
-    {
-        "title": "Fuck Da Industry",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.858858",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.735735",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Free Dem 5's",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Forever",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.858858",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.735735",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lost Soul Survivor",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Her",
+        "artist_name": "Megan Thee Stallion",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.858858",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.735735",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hold Your Own",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Stone Rolling",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.859859",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.735735",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Top Sound",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "No Deal",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.859859",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.735735",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kamikaze",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "I Know It",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.859859",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.735735",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "My Time",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Ungrateful",
+        "artist_name": "Megan Thee Stallion ft. Key Glock",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.859859",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.736736",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Big 14",
-        "artist_name": "Trippie Redd, Moneybagg Yo & Offset",
+        "title": "Pieces",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.859859",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.736736",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Despecha",
-        "artist_name": "Rosalia",
+        "title": "Budget",
+        "artist_name": "Megan Thee Stallion ft. Latto",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.859859",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.736736",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "7 Days",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Rockstar Heart",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-08-18 11:26:15.859859",
-        "source_id": 1317,
+        "capture_date": "2022-08-27 01:49:40.736736",
+        "source_id": 1324,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Time Kills (Love Birds)",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2022-08-27 01:49:40.736736",
+        "source_id": 1324,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fading",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2022-08-27 01:49:40.736736",
+        "source_id": 1324,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "What My World Spins Around",
+        "artist_name": "Jordan Davis",
+        "video_id": null,
+        "capture_date": "2022-08-27 01:49:40.736736",
+        "source_id": 1324,
         "song_id": null,
         "duplicate": false
     }
@@ -279,18 +288,21 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Umm Hmm', 'YoungBoy Never Broke Again', NULL),
-  ('I Know', 'YoungBoy Never Broke Again', NULL),
-  ('Fuck Da Industry', 'YoungBoy Never Broke Again', NULL),
-  ('Free Dem 5’s', 'YoungBoy Never Broke Again', NULL),
-  ('Lost Soul Survivor', 'YoungBoy Never Broke Again', NULL),
-  ('Hold Your Own', 'YoungBoy Never Broke Again', NULL),
-  ('Top Sound', 'YoungBoy Never Broke Again', NULL),
-  ('Kamikaze', 'YoungBoy Never Broke Again', NULL),
-  ('My Time', 'YoungBoy Never Broke Again', NULL),
-  ('Big 14', 'Trippie Redd, Moneybagg Yo & Offset', NULL),
-  ('Despecha', 'Rosalia', NULL),
-  ('7 Days', 'YoungBoy Never Broke Again', NULL)
+  ('Yungen', 'Rod Wave ft. Jack Harlow', NULL),
+  ('Never Get Over Me', 'Rod Wave', NULL),
+  ('Sweet Little Lies', 'Rod Wave', NULL),
+  ('Forever', 'Rod Wave', NULL),
+  ('Her', 'Megan Thee Stallion', NULL),
+  ('Stone Rolling', 'Rod Wave', NULL),
+  ('No Deal', 'Rod Wave', NULL),
+  ('I Know It', 'Rod Wave', NULL),
+  ('Ungrateful', 'Megan Thee Stallion ft. Key Glock', NULL),
+  ('Pieces', 'Rod Wave', NULL),
+  ('Budget', 'Megan Thee Stallion ft. Latto', NULL),
+  ('Rockstar Heart', 'Rod Wave', NULL),
+  ('Time Kills (Love Birds)', 'Rod Wave', NULL),
+  ('Fading', 'Rod Wave', NULL),
+  ('What My World Spins Around', 'Jordan Davis', NULL)
   ;
 
    // Update to song table
@@ -301,7 +313,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12638; // SELECT last_insert_rowid();
+  song_id = 12686; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -341,21 +353,22 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-18 11:26:15.853853', '1317', '12616'),
-  ('2022-08-18 11:26:15.853853', '1317', '12617'),
-  ('2022-08-18 11:26:15.855855', '1317', '12627'),
-  ('2022-08-18 11:26:15.857857', '1317', '12628'),
-  ('2022-08-18 11:26:15.858858', '1317', '12622'),
-  ('2022-08-18 11:26:15.858858', '1317', '12629'),
-  ('2022-08-18 11:26:15.858858', '1317', '12630'),
-  ('2022-08-18 11:26:15.858858', '1317', '12631'),
-  ('2022-08-18 11:26:15.859859', '1317', '12632'),
-  ('2022-08-18 11:26:15.859859', '1317', '12633'),
-  ('2022-08-18 11:26:15.859859', '1317', '12634'),
-  ('2022-08-18 11:26:15.859859', '1317', '12635'),
-  ('2022-08-18 11:26:15.859859', '1317', '12636'),
-  ('2022-08-18 11:26:15.859859', '1317', '12637'),
-  ('2022-08-18 11:26:15.859859', '1317', '12638')
+  ('2022-08-27 01:49:40.734734', '1324', '12649'),
+  ('2022-08-27 01:49:40.734734', '1324', '12672'),
+  ('2022-08-27 01:49:40.735735', '1324', '12673'),
+  ('2022-08-27 01:49:40.735735', '1324', '12674'),
+  ('2022-08-27 01:49:40.735735', '1324', '12675'),
+  ('2022-08-27 01:49:40.735735', '1324', '12676'),
+  ('2022-08-27 01:49:40.735735', '1324', '12677'),
+  ('2022-08-27 01:49:40.735735', '1324', '12678'),
+  ('2022-08-27 01:49:40.735735', '1324', '12679'),
+  ('2022-08-27 01:49:40.736736', '1324', '12680'),
+  ('2022-08-27 01:49:40.736736', '1324', '12681'),
+  ('2022-08-27 01:49:40.736736', '1324', '12682'),
+  ('2022-08-27 01:49:40.736736', '1324', '12683'),
+  ('2022-08-27 01:49:40.736736', '1324', '12684'),
+  ('2022-08-27 01:49:40.736736', '1324', '12685'),
+  ('2022-08-27 01:49:40.736736', '1324', '12686')
   ;
 
   // Update to source_song table

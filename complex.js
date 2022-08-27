@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Megan Thee Stallion, Nicki Minaj, Rod Wave, and More', '2022-08-12 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-august-12/cordae-unacceptable');
+    ('Complex', 'The Best New Music This Week', 'Lil Yachty, Offset, Anitta, and More', '2022-08-19 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-august-19/42-dugg-idgaf');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1319; // SELECT last_insert_rowid();
+  source_id = 1326; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,101 +102,74 @@
   songsData =
   [
     {
-        "title": "Flip Flop",
-        "artist_name": "Megan Thee Stallion",
+        "title": "Codeine Cowboy",
+        "artist_name": "Internet Money ft. Lil Yachty",
         "video_id": null,
-        "capture_date": "2022-08-18 11:49:02.675675",
-        "source_id": 1319,
+        "capture_date": "2022-08-27 02:01:02.758758",
+        "source_id": 1326,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Super Freaky Girl",
-        "artist_name": "Nicki Minaj",
+        "title": "54321",
+        "artist_name": "Offset",
         "video_id": null,
-        "capture_date": "2022-08-18 11:49:02.676676",
-        "source_id": 1319,
-        "song_id": 12643,
-        "duplicate": true
-    },
-    {
-        "title": "Make Me Say It Again, Girl",
-        "artist_name": "Beyoncé & Ronald Isley",
-        "video_id": null,
-        "capture_date": "2022-08-18 11:49:02.676676",
-        "source_id": 1319,
+        "capture_date": "2022-08-27 02:01:02.758758",
+        "source_id": 1326,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Alone",
-        "artist_name": "Rod Wave",
+        "title": "Lobby",
+        "artist_name": "Anitta ft. Missy Eliott",
         "video_id": null,
-        "capture_date": "2022-08-18 11:49:02.676676",
-        "source_id": 1319,
+        "capture_date": "2022-08-27 02:01:02.759759",
+        "source_id": 1326,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hoodie",
-        "artist_name": "Ari Lennox",
+        "title": "London Freestyle",
+        "artist_name": "Fivio Foreign",
         "video_id": null,
-        "capture_date": "2022-08-18 11:49:02.676676",
-        "source_id": 1319,
-        "song_id": 12646,
-        "duplicate": true
-    },
-    {
-        "title": "Ticket",
-        "artist_name": "Morray",
-        "video_id": null,
-        "capture_date": "2022-08-18 11:49:02.676676",
-        "source_id": 1319,
+        "capture_date": "2022-08-27 02:01:02.760760",
+        "source_id": 1326,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dance Now",
-        "artist_name": "JID & Kenny Mason",
+        "title": "For Tonight",
+        "artist_name": "Larry June ft. Syd",
         "video_id": null,
-        "capture_date": "2022-08-18 11:49:02.676676",
-        "source_id": 1319,
+        "capture_date": "2022-08-27 02:01:02.760760",
+        "source_id": 1326,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Toxic",
-        "artist_name": "YG",
+        "title": "IDGAF",
+        "artist_name": "42 Dugg",
         "video_id": null,
-        "capture_date": "2022-08-18 11:49:02.676676",
-        "source_id": 1319,
+        "capture_date": "2022-08-27 02:01:02.760760",
+        "source_id": 1326,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sunshine",
-        "artist_name": "Tyga ft. Pop Smoke & Jhene Aiko",
+        "title": "Chief So",
+        "artist_name": "Chief Keef",
         "video_id": null,
-        "capture_date": "2022-08-18 11:49:02.676676",
-        "source_id": 1319,
+        "capture_date": "2022-08-27 02:01:02.760760",
+        "source_id": 1326,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fortunate",
-        "artist_name": "The Game ft. Kanye West, Dreezy, and CHILLLER",
+        "title": "From Nothing",
+        "artist_name": "Key Glock",
         "video_id": null,
-        "capture_date": "2022-08-18 11:49:02.676676",
-        "source_id": 1319,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Unacceptable",
-        "artist_name": "Cordae",
-        "video_id": null,
-        "capture_date": "2022-08-18 11:49:02.677677",
-        "source_id": 1319,
+        "capture_date": "2022-08-27 02:01:02.760760",
+        "source_id": 1326,
         "song_id": null,
         "duplicate": false
     }
@@ -239,15 +212,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Flip Flop', 'Megan Thee Stallion', NULL),
-  ('Make Me Say It Again, Girl', 'Beyoncé & Ronald Isley', NULL),
-  ('Alone', 'Rod Wave', NULL),
-  ('Ticket', 'Morray', NULL),
-  ('Dance Now', 'JID & Kenny Mason', NULL),
-  ('Toxic', 'YG', NULL),
-  ('Sunshine', 'Tyga ft. Pop Smoke & Jhene Aiko', NULL),
-  ('Fortunate', 'The Game ft. Kanye West, Dreezy, and CHILLLER', NULL),
-  ('Unacceptable', 'Cordae', NULL)
+  ('Codeine Cowboy', 'Internet Money ft. Lil Yachty', NULL),
+  ('54321', 'Offset', NULL),
+  ('Lobby', 'Anitta ft. Missy Eliott', NULL),
+  ('London Freestyle', 'Fivio Foreign', NULL),
+  ('For Tonight', 'Larry June ft. Syd', NULL),
+  ('IDGAF', '42 Dugg', NULL),
+  ('Chief So', 'Chief Keef', NULL),
+  ('From Nothing', 'Key Glock', NULL)
   ;
 
    // Update to song table
@@ -258,7 +230,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12655; // SELECT last_insert_rowid();
+  song_id = 12702; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +270,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-18 11:49:02.675675', '1319', '12647'),
-  ('2022-08-18 11:49:02.676676', '1319', '12643'),
-  ('2022-08-18 11:49:02.676676', '1319', '12648'),
-  ('2022-08-18 11:49:02.676676', '1319', '12649'),
-  ('2022-08-18 11:49:02.676676', '1319', '12646'),
-  ('2022-08-18 11:49:02.676676', '1319', '12650'),
-  ('2022-08-18 11:49:02.676676', '1319', '12651'),
-  ('2022-08-18 11:49:02.676676', '1319', '12652'),
-  ('2022-08-18 11:49:02.676676', '1319', '12653'),
-  ('2022-08-18 11:49:02.676676', '1319', '12654'),
-  ('2022-08-18 11:49:02.677677', '1319', '12655')
+  ('2022-08-27 02:01:02.758758', '1326', '12695'),
+  ('2022-08-27 02:01:02.758758', '1326', '12696'),
+  ('2022-08-27 02:01:02.759759', '1326', '12697'),
+  ('2022-08-27 02:01:02.760760', '1326', '12698'),
+  ('2022-08-27 02:01:02.760760', '1326', '12699'),
+  ('2022-08-27 02:01:02.760760', '1326', '12700'),
+  ('2022-08-27 02:01:02.760760', '1326', '12701'),
+  ('2022-08-27 02:01:02.760760', '1326', '12702')
   ;
 
   // Update to source_song table
