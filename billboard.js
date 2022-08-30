@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of August 27, 2022', '2022-08-27 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-08-27');
+    ('Billboard', 'The Hot 100', 'Week of September 3, 2022', '2022-09-03 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-09-03');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1324; // SELECT last_insert_rowid();
+  source_id = 1328; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,146 +105,83 @@
   songsData =
   [
     {
-        "title": "Alone",
-        "artist_name": "Rod Wave",
+        "title": "Pink Venom",
+        "artist_name": "BLACKPINK",
         "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.734734",
-        "source_id": 1324,
-        "song_id": 12649,
+        "capture_date": "2022-08-30 11:14:22.457457",
+        "source_id": 1328,
+        "song_id": 12687,
         "duplicate": true
     },
     {
-        "title": "Yungen",
-        "artist_name": "Rod Wave ft. Jack Harlow",
+        "title": "Where It Ends",
+        "artist_name": "Bailey Zimmerman",
         "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.734734",
-        "source_id": 1324,
+        "capture_date": "2022-08-30 11:14:22.457457",
+        "source_id": 1328,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Never Get Over Me",
-        "artist_name": "Rod Wave",
+        "title": "54321",
+        "artist_name": "Offset",
         "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.735735",
-        "source_id": 1324,
+        "capture_date": "2022-08-30 11:14:22.459459",
+        "source_id": 1328,
+        "song_id": 12696,
+        "duplicate": true
+    },
+    {
+        "title": "Don't Come Lookin'",
+        "artist_name": "Jackson Dean",
+        "video_id": null,
+        "capture_date": "2022-08-30 11:14:22.459459",
+        "source_id": 1328,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sweet Little Lies",
-        "artist_name": "Rod Wave",
+        "title": "Half Of Me",
+        "artist_name": "Thomas Rhett ft. Riley Green",
         "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.735735",
-        "source_id": 1324,
+        "capture_date": "2022-08-30 11:14:22.459459",
+        "source_id": 1328,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Forever",
-        "artist_name": "Rod Wave",
+        "title": "29",
+        "artist_name": "Demi Lovato",
         "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.735735",
-        "source_id": 1324,
+        "capture_date": "2022-08-30 11:14:22.459459",
+        "source_id": 1328,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Her",
-        "artist_name": "Megan Thee Stallion",
+        "title": "Snap",
+        "artist_name": "Rosa Linn",
         "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.735735",
-        "source_id": 1324,
+        "capture_date": "2022-08-30 11:14:22.459459",
+        "source_id": 1328,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Stone Rolling",
-        "artist_name": "Rod Wave",
+        "title": "Soul",
+        "artist_name": "Lee Brice",
         "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.735735",
-        "source_id": 1324,
+        "capture_date": "2022-08-30 11:14:22.459459",
+        "source_id": 1328,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Deal",
-        "artist_name": "Rod Wave",
+        "title": "La Bachata",
+        "artist_name": "Manuel Turizo",
         "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.735735",
-        "source_id": 1324,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I Know It",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.735735",
-        "source_id": 1324,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ungrateful",
-        "artist_name": "Megan Thee Stallion ft. Key Glock",
-        "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.736736",
-        "source_id": 1324,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pieces",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.736736",
-        "source_id": 1324,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Budget",
-        "artist_name": "Megan Thee Stallion ft. Latto",
-        "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.736736",
-        "source_id": 1324,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Rockstar Heart",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.736736",
-        "source_id": 1324,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Time Kills (Love Birds)",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.736736",
-        "source_id": 1324,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fading",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.736736",
-        "source_id": 1324,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "What My World Spins Around",
-        "artist_name": "Jordan Davis",
-        "video_id": null,
-        "capture_date": "2022-08-27 01:49:40.736736",
-        "source_id": 1324,
+        "capture_date": "2022-08-30 11:14:22.459459",
+        "source_id": 1328,
         "song_id": null,
         "duplicate": false
     }
@@ -288,21 +225,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Yungen', 'Rod Wave ft. Jack Harlow', NULL),
-  ('Never Get Over Me', 'Rod Wave', NULL),
-  ('Sweet Little Lies', 'Rod Wave', NULL),
-  ('Forever', 'Rod Wave', NULL),
-  ('Her', 'Megan Thee Stallion', NULL),
-  ('Stone Rolling', 'Rod Wave', NULL),
-  ('No Deal', 'Rod Wave', NULL),
-  ('I Know It', 'Rod Wave', NULL),
-  ('Ungrateful', 'Megan Thee Stallion ft. Key Glock', NULL),
-  ('Pieces', 'Rod Wave', NULL),
-  ('Budget', 'Megan Thee Stallion ft. Latto', NULL),
-  ('Rockstar Heart', 'Rod Wave', NULL),
-  ('Time Kills (Love Birds)', 'Rod Wave', NULL),
-  ('Fading', 'Rod Wave', NULL),
-  ('What My World Spins Around', 'Jordan Davis', NULL)
+  ('Where It Ends', 'Bailey Zimmerman', NULL),
+  ('Don’t Come Lookin’', 'Jackson Dean', NULL),
+  ('Half Of Me', 'Thomas Rhett ft. Riley Green', NULL),
+  ('29', 'Demi Lovato', NULL),
+  ('Snap', 'Rosa Linn', NULL),
+  ('Soul', 'Lee Brice', NULL),
+  ('La Bachata', 'Manuel Turizo', NULL)
   ;
 
    // Update to song table
@@ -313,7 +242,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12686; // SELECT last_insert_rowid();
+  song_id = 12712; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -353,22 +282,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-27 01:49:40.734734', '1324', '12649'),
-  ('2022-08-27 01:49:40.734734', '1324', '12672'),
-  ('2022-08-27 01:49:40.735735', '1324', '12673'),
-  ('2022-08-27 01:49:40.735735', '1324', '12674'),
-  ('2022-08-27 01:49:40.735735', '1324', '12675'),
-  ('2022-08-27 01:49:40.735735', '1324', '12676'),
-  ('2022-08-27 01:49:40.735735', '1324', '12677'),
-  ('2022-08-27 01:49:40.735735', '1324', '12678'),
-  ('2022-08-27 01:49:40.735735', '1324', '12679'),
-  ('2022-08-27 01:49:40.736736', '1324', '12680'),
-  ('2022-08-27 01:49:40.736736', '1324', '12681'),
-  ('2022-08-27 01:49:40.736736', '1324', '12682'),
-  ('2022-08-27 01:49:40.736736', '1324', '12683'),
-  ('2022-08-27 01:49:40.736736', '1324', '12684'),
-  ('2022-08-27 01:49:40.736736', '1324', '12685'),
-  ('2022-08-27 01:49:40.736736', '1324', '12686')
+  ('2022-08-30 11:14:22.457457', '1328', '12687'),
+  ('2022-08-30 11:14:22.457457', '1328', '12706'),
+  ('2022-08-30 11:14:22.459459', '1328', '12696'),
+  ('2022-08-30 11:14:22.459459', '1328', '12707'),
+  ('2022-08-30 11:14:22.459459', '1328', '12708'),
+  ('2022-08-30 11:14:22.459459', '1328', '12709'),
+  ('2022-08-30 11:14:22.459459', '1328', '12710'),
+  ('2022-08-30 11:14:22.459459', '1328', '12711'),
+  ('2022-08-30 11:14:22.459459', '1328', '12712')
   ;
 
   // Update to source_song table

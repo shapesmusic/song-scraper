@@ -4,7 +4,7 @@
 // Step 0: Check recent scraped
 //
 
-  SELECT source.publication_date, song.title
+  SELECT source.id, source.publication_date, song.title
   FROM source_song
   INNER JOIN song
     ON song.id = source_song.song_id
@@ -76,18 +76,25 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-22 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-06 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2022-07-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-30 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-29 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-23 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-22 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-18 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-05 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-08-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-29 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-07-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/?page=4')
   ;
 
   // Update to source table
@@ -137,168 +144,267 @@
   songsData =
   [
     {
-        "title": "Muzik",
-        "artist_name": "Jennifer Loveless",
+        "title": "There’d Better Be a Mirrorball",
+        "artist_name": "Arctic Monkeys",
         "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.390390",
+        "capture_date": "2022-08-30 02:01:13.138138",
+        "source_id": 1333,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cada Músculo",
+        "artist_name": "Mabe Fratti",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.142142",
+        "source_id": 1333,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hey Baby",
+        "artist_name": "I. Jordan",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.142142",
+        "source_id": 1334,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hagan Ruido",
+        "artist_name": "Gera MXSnow tha Product",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.142142",
+        "source_id": 1334,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dicen",
+        "artist_name": "Lucrecia Dalt",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.142142",
+        "source_id": 1335,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Weird Goodbyes",
+        "artist_name": "The National",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.143143",
+        "source_id": 1336,
+        "song_id": 12716,
+        "duplicate": true
+    },
+    {
+        "title": "Make You Say",
+        "artist_name": "Zedd, Maren Morris, Beauz",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.143143",
+        "source_id": 1337,
+        "song_id": 12689,
+        "duplicate": true
+    },
+    {
+        "title": "Happen",
+        "artist_name": "Nick Hakim",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.143143",
+        "source_id": 1338,
+        "song_id": 12694,
+        "duplicate": true
+    },
+    {
+        "title": "Brindo",
+        "artist_name": "Silvana Estrada",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.143143",
+        "source_id": 1338,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hoodie",
+        "artist_name": "Ari Lennox",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.143143",
+        "source_id": 1339,
+        "song_id": 12646,
+        "duplicate": true
+    },
+    {
+        "title": "Plug",
+        "artist_name": "Nikki Nair",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.143143",
+        "source_id": 1340,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sex Appeal",
+        "artist_name": "Blackstarkids",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.143143",
+        "source_id": 1341,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sudany",
+        "artist_name": "Sofie BirchAntonina Nowacka",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.143143",
+        "source_id": 1342,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Paper Plane",
+        "artist_name": "Girls’ Generation",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.143143",
+        "source_id": 1343,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Real Hips",
+        "artist_name": "Bandmanrill",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.143143",
+        "source_id": 1344,
+        "song_id": 12619,
+        "duplicate": true
+    },
+    {
+        "title": "Ven Vamos",
+        "artist_name": "MULA",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.143143",
+        "source_id": 1345,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pájaros en Verano",
+        "artist_name": "Ela MinusDJ Python",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1345,
+        "song_id": 12626,
+        "duplicate": true
+    },
+    {
+        "title": "Ocean",
+        "artist_name": "Young Jesus",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1346,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Edge of the Edge",
+        "artist_name": "Panda BearSonic Boom",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1346,
+        "song_id": 12620,
+        "duplicate": true
+    },
+    {
+        "title": "Daydream",
+        "artist_name": "Neggy Gemmy",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1347,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Blessing",
+        "artist_name": "Akini JingChace",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1347,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cookie",
+        "artist_name": "NewJeans",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1348,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Drugs du Jour",
+        "artist_name": "Cakes da Killa",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1349,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Xtasis",
+        "artist_name": "Nick León",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1349,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "grimace_smoking_weed.jpeg",
+        "artist_name": "Chat Pile",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1350,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Virgo’s Groove",
+        "artist_name": "Beyoncé",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1350,
+        "song_id": 12605,
+        "duplicate": true
+    },
+    {
+        "title": "2 Die 4",
+        "artist_name": "Tove Lo",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1351,
+        "song_id": 12596,
+        "duplicate": true
+    },
+    {
+        "title": "Despechá",
+        "artist_name": "Rosalía",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
+        "source_id": 1351,
+        "song_id": 12587,
+        "duplicate": true
+    },
+    {
+        "title": "So Typically Now",
+        "artist_name": "U.S. Girls",
+        "video_id": null,
+        "capture_date": "2022-08-30 02:01:13.144144",
         "source_id": 1299,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Feathers",
-        "artist_name": "Palm",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.393393",
-        "source_id": 1300,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cross the Sea",
-        "artist_name": "Alex G",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.393393",
-        "source_id": 1300,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gotsta Get Paid",
-        "artist_name": "Rico Nasty",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.393393",
-        "source_id": 1301,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Karaoke",
-        "artist_name": "Cass McCombs",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.393393",
-        "source_id": 1301,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Three Essays: First Essay (Nimrod)",
-        "artist_name": "Caroline ShawAttacca Quartet",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.394394",
-        "source_id": 1302,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Big Steppa",
-        "artist_name": "Flo Milli",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.394394",
-        "source_id": 1303,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sueños",
-        "artist_name": "Waleed",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.395395",
-        "source_id": 1303,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Free Yourself",
-        "artist_name": "Jessie Ware",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.395395",
-        "source_id": 1304,
-        "song_id": 12541,
+        "song_id": 12588,
         "duplicate": true
-    },
-    {
-        "title": "YAY",
-        "artist_name": "valknee",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.395395",
-        "source_id": 1305,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nausea",
-        "artist_name": "Rachika Nayar",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.395395",
-        "source_id": 1306,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Let the Lights On",
-        "artist_name": "Sorry",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.395395",
-        "source_id": 1307,
-        "song_id": 12534,
-        "duplicate": true
-    },
-    {
-        "title": "Pressure in My Chest",
-        "artist_name": "Indigo Sparke",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.395395",
-        "source_id": 1307,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Part of the Band",
-        "artist_name": "The 1975",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.395395",
-        "source_id": 1308,
-        "song_id": 12484,
-        "duplicate": true
-    },
-    {
-        "title": "Immature",
-        "artist_name": "Flo",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.395395",
-        "source_id": 1308,
-        "song_id": 12488,
-        "duplicate": true
-    },
-    {
-        "title": "Pharmacist",
-        "artist_name": "Alvvays",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.395395",
-        "source_id": 1309,
-        "song_id": 12485,
-        "duplicate": true
-    },
-    {
-        "title": "Thérèse",
-        "artist_name": "Maya Hawke",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.395395",
-        "source_id": 1309,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Touch Tank",
-        "artist_name": "quinnie",
-        "video_id": null,
-        "capture_date": "2022-07-27 04:57:07.395395",
-        "source_id": 1310,
-        "song_id": null,
-        "duplicate": false
     }
-  ]
+]
 
   // To check for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -313,7 +419,7 @@
 
   // get source_ids and dates for newly added sources
   // increase LIMIT number if necessary
-  SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 20;
+  SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 30;
 
   // manually add source_ids in songsData above (INT without quotation marks).
 
@@ -349,19 +455,24 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Muzik', 'Jennifer Loveless', NULL),
-  ('Feathers', 'Palm', NULL),
-  ('Cross the Sea', 'Alex G', NULL),
-  ('Gotsta Get Paid', 'Rico Nasty', NULL),
-  ('Karaoke', 'Cass McCombs', NULL),
-  ('Three Essays: First Essay (Nimrod)', 'Caroline ShawAttacca Quartet', NULL),
-  ('Big Steppa', 'Flo Milli', NULL),
-  ('Sueños', 'Waleed', NULL),
-  ('YAY', 'valknee', NULL),
-  ('Nausea', 'Rachika Nayar', NULL),
-  ('Pressure in My Chest', 'Indigo Sparke', NULL),
-  ('Thérèse', 'Maya Hawke', NULL),
-  ('Touch Tank', 'quinnie', NULL)
+  ('There’d Better Be a Mirrorball', 'Arctic Monkeys', NULL),
+  ('Cada Músculo', 'Mabe Fratti', NULL),
+  ('Hey Baby', 'I. Jordan', NULL),
+  ('Hagan Ruido', 'Gera MXSnow tha Product', NULL),
+  ('Dicen', 'Lucrecia Dalt', NULL),
+  ('Brindo', 'Silvana Estrada', NULL),
+  ('Plug', 'Nikki Nair', NULL),
+  ('Sex Appeal', 'Blackstarkids', NULL),
+  ('Sudany', 'Sofie BirchAntonina Nowacka', NULL),
+  ('Paper Plane', 'Girls’ Generation', NULL),
+  ('Ven Vamos', 'MULA', NULL),
+  ('Ocean', 'Young Jesus', NULL),
+  ('Daydream', 'Neggy Gemmy', NULL),
+  ('Blessing', 'Akini JingChace', NULL),
+  ('Cookie', 'NewJeans', NULL),
+  ('Drugs du Jour', 'Cakes da Killa', NULL),
+  ('Xtasis', 'Nick León', NULL),
+  ('grimace_smoking_weed.jpeg', 'Chat Pile', NULL)
   ;
 
    // Update to song table
@@ -372,7 +483,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 12578; // SELECT last_insert_rowid();
+  song_id = 12759; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -412,24 +523,35 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-07-27 04:57:07.390390', '1299', '12566'),
-  ('2022-07-27 04:57:07.393393', '1300', '12567'),
-  ('2022-07-27 04:57:07.393393', '1300', '12568'),
-  ('2022-07-27 04:57:07.393393', '1301', '12569'),
-  ('2022-07-27 04:57:07.393393', '1301', '12570'),
-  ('2022-07-27 04:57:07.394394', '1302', '12571'),
-  ('2022-07-27 04:57:07.394394', '1303', '12572'),
-  ('2022-07-27 04:57:07.395395', '1303', '12573'),
-  ('2022-07-27 04:57:07.395395', '1304', '12541'),
-  ('2022-07-27 04:57:07.395395', '1305', '12574'),
-  ('2022-07-27 04:57:07.395395', '1306', '12575'),
-  ('2022-07-27 04:57:07.395395', '1307', '12534'),
-  ('2022-07-27 04:57:07.395395', '1307', '12576'),
-  ('2022-07-27 04:57:07.395395', '1308', '12484'),
-  ('2022-07-27 04:57:07.395395', '1308', '12488'),
-  ('2022-07-27 04:57:07.395395', '1309', '12485'),
-  ('2022-07-27 04:57:07.395395', '1309', '12577'),
-  ('2022-07-27 04:57:07.395395', '1310', '12578')
+  ('2022-08-30 02:01:13.138138', '1333', '12742'),
+  ('2022-08-30 02:01:13.142142', '1333', '12743'),
+  ('2022-08-30 02:01:13.142142', '1334', '12744'),
+  ('2022-08-30 02:01:13.142142', '1334', '12745'),
+  ('2022-08-30 02:01:13.142142', '1335', '12746'),
+  ('2022-08-30 02:01:13.143143', '1336', '12716'),
+  ('2022-08-30 02:01:13.143143', '1337', '12689'),
+  ('2022-08-30 02:01:13.143143', '1338', '12694'),
+  ('2022-08-30 02:01:13.143143', '1338', '12747'),
+  ('2022-08-30 02:01:13.143143', '1339', '12646'),
+  ('2022-08-30 02:01:13.143143', '1340', '12748'),
+  ('2022-08-30 02:01:13.143143', '1341', '12749'),
+  ('2022-08-30 02:01:13.143143', '1342', '12750'),
+  ('2022-08-30 02:01:13.143143', '1343', '12751'),
+  ('2022-08-30 02:01:13.143143', '1344', '12619'),
+  ('2022-08-30 02:01:13.143143', '1345', '12752'),
+  ('2022-08-30 02:01:13.144144', '1345', '12626'),
+  ('2022-08-30 02:01:13.144144', '1346', '12753'),
+  ('2022-08-30 02:01:13.144144', '1346', '12620'),
+  ('2022-08-30 02:01:13.144144', '1347', '12754'),
+  ('2022-08-30 02:01:13.144144', '1347', '12755'),
+  ('2022-08-30 02:01:13.144144', '1348', '12756'),
+  ('2022-08-30 02:01:13.144144', '1349', '12757'),
+  ('2022-08-30 02:01:13.144144', '1349', '12758'),
+  ('2022-08-30 02:01:13.144144', '1350', '12759'),
+  ('2022-08-30 02:01:13.144144', '1350', '12605'),
+  ('2022-08-30 02:01:13.144144', '1351', '12596'),
+  ('2022-08-30 02:01:13.144144', '1351', '12587'),
+  ('2022-08-30 02:01:13.144144', '1299', '12588')
   ;
 
   // Update to source_song table

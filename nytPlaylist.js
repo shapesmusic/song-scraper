@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Blackpink’s Genre-Hopping Return, and 8 More New Songs', '2022-08-21 10:20:36.000000', 'https://www.nytimes.com/2022/08/19/arts/music/playlist-blackpink-madonna.html');
+    ('New York Times', 'The Playlist', 'Britney Spears and Elton John’s Mash-up, and 8 More New Songs', '2022-08-26 08:56:45.000000', 'https://www.nytimes.com/2022/08/26/arts/music/britney-spears-elton-john-hold-me-closer.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1325; // SELECT last_insert_rowid();
+  source_id = 1329; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,74 +100,83 @@
   songsData =
   [
     {
-        "title": "Pink Venom",
-        "artist_name": "Blackpink",
+        "title": "Hold Me Closer",
+        "artist_name": "Elton John & Britney Spears",
         "video_id": null,
-        "capture_date": "2022-08-27 01:56:53.427427",
-        "source_id": 1325,
+        "capture_date": "2022-08-30 11:19:57.367367",
+        "source_id": 1329,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Get Together (Jacques Lu Cont Vocal Edit)",
-        "artist_name": "Madonna",
+        "title": "Calm Down",
+        "artist_name": "Rema & Selena Gomez",
         "video_id": null,
-        "capture_date": "2022-08-27 01:56:53.427427",
-        "source_id": 1325,
+        "capture_date": "2022-08-30 11:19:57.368368",
+        "source_id": 1329,
+        "song_id": 11692,
+        "duplicate": true
+    },
+    {
+        "title": "Been to the Mountain",
+        "artist_name": "Margo Price",
+        "video_id": null,
+        "capture_date": "2022-08-30 11:19:57.368368",
+        "source_id": 1329,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Make You Say",
-        "artist_name": "Zedd, Maren Morris and Beauz",
+        "title": "Be Careful With Yourself",
+        "artist_name": "Julia Jacklin",
         "video_id": null,
-        "capture_date": "2022-08-27 01:56:53.427427",
-        "source_id": 1325,
+        "capture_date": "2022-08-30 11:19:57.368368",
+        "source_id": 1329,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sexo Amor Dinero",
-        "artist_name": "Isabella Lovestory",
+        "title": "Weird Goodbyes",
+        "artist_name": "The National ft. Bon Iver",
         "video_id": null,
-        "capture_date": "2022-08-27 01:56:53.428428",
-        "source_id": 1325,
+        "capture_date": "2022-08-30 11:19:57.368368",
+        "source_id": 1329,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fruity",
-        "artist_name": "Chloe Moriondo",
+        "title": "Beautiful Life",
+        "artist_name": "Michael Kiwanuka",
         "video_id": null,
-        "capture_date": "2022-08-27 01:56:53.428428",
-        "source_id": 1325,
+        "capture_date": "2022-08-30 11:19:57.368368",
+        "source_id": 1329,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Peach",
-        "artist_name": "Pony",
+        "title": "Every Beginning Ends",
+        "artist_name": "Noah Cyrus and Benjamin Gibbard",
         "video_id": null,
-        "capture_date": "2022-08-27 01:56:53.428428",
-        "source_id": 1325,
+        "capture_date": "2022-08-30 11:19:57.368368",
+        "source_id": 1329,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Body",
-        "artist_name": "Blake Shelton",
+        "title": "Blue Hour",
+        "artist_name": "Nosaj Thing ft. Julianna Barwick",
         "video_id": null,
-        "capture_date": "2022-08-27 01:56:53.428428",
-        "source_id": 1325,
+        "capture_date": "2022-08-30 11:19:57.368368",
+        "source_id": 1329,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Happen",
-        "artist_name": "Nick Hakim",
+        "title": "Amorpha",
+        "artist_name": "Bitchin Bajas",
         "video_id": null,
-        "capture_date": "2022-08-27 01:56:53.428428",
-        "source_id": 1325,
+        "capture_date": "2022-08-30 11:19:57.368368",
+        "source_id": 1329,
         "song_id": null,
         "duplicate": false
     }
@@ -211,14 +220,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Pink Venom', 'Blackpink', NULL),
-  ('Get Together (Jacques Lu Cont Vocal Edit)', 'Madonna', NULL),
-  ('Make You Say', 'Zedd, Maren Morris and Beauz', NULL),
-  ('Sexo Amor Dinero', 'Isabella Lovestory', NULL),
-  ('Fruity', 'Chloe Moriondo', NULL),
-  ('Peach', 'Pony', NULL),
-  ('No Body', 'Blake Shelton', NULL),
-  ('Happen', 'Nick Hakim', NULL)
+  ('Hold Me Closer', 'Elton John & Britney Spears', NULL),
+  ('Been to the Mountain', 'Margo Price', NULL),
+  ('Be Careful With Yourself', 'Julia Jacklin', NULL),
+  ('Weird Goodbyes', 'The National ft. Bon Iver', NULL),
+  ('Beautiful Life', 'Michael Kiwanuka', NULL),
+  ('Every Beginning Ends', 'Noah Cyrus and Benjamin Gibbard', NULL),
+  ('Blue Hour', 'Nosaj Thing ft. Julianna Barwick', NULL),
+  ('Amorpha', 'Bitchin Bajas', NULL)
   ;
 
    // Update to song table
@@ -229,7 +238,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12694; // SELECT last_insert_rowid();
+  song_id = 12720; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -269,14 +278,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-27 01:56:53.427427', '1325', '12687'),
-  ('2022-08-27 01:56:53.427427', '1325', '12688'),
-  ('2022-08-27 01:56:53.427427', '1325', '12689'),
-  ('2022-08-27 01:56:53.428428', '1325', '12690'),
-  ('2022-08-27 01:56:53.428428', '1325', '12691'),
-  ('2022-08-27 01:56:53.428428', '1325', '12692'),
-  ('2022-08-27 01:56:53.428428', '1325', '12693'),
-  ('2022-08-27 01:56:53.428428', '1325', '12694')
+  ('2022-08-30 11:19:57.367367', '1329', '12713'),
+  ('2022-08-30 11:19:57.368368', '1329', '11692'),
+  ('2022-08-30 11:19:57.368368', '1329', '12714'),
+  ('2022-08-30 11:19:57.368368', '1329', '12715'),
+  ('2022-08-30 11:19:57.368368', '1329', '12716'),
+  ('2022-08-30 11:19:57.368368', '1329', '12717'),
+  ('2022-08-30 11:19:57.368368', '1329', '12718'),
+  ('2022-08-30 11:19:57.368368', '1329', '12719'),
+  ('2022-08-30 11:19:57.368368', '1329', '12720')
   ;
 
   // Update to source_song table

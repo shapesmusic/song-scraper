@@ -318,18 +318,18 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of August 1, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2022-08-01 12:00:00.000000',
+      'Week of August 29, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-08-29 12:00:00.000000',
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
 
 
   //
-  // Step 2: Enter song data into an array
+  // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1323; // SELECT last_insert_rowid();
+    source_id = 1331; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -455,47 +455,74 @@
     songsData =
     [
     {
-        "title": "I'm In Love",
-        "artist_name": "Joony",
+        "title": "Constrictor",
+        "artist_name": "DJ Florentino",
         "video_id": null,
-        "capture_date": "2022-08-18 05:16:09.644644",
-        "source_id": 1323,
+        "capture_date": "2022-08-30 11:32:16.618618",
+        "source_id": 1331,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Savanne",
-        "artist_name": "Vieux Farka Touré and Khruangbin",
+        "title": "Mystery",
+        "artist_name": "Fauness",
         "video_id": null,
-        "capture_date": "2022-08-18 05:16:09.644644",
-        "source_id": 1323,
+        "capture_date": "2022-08-30 11:32:16.618618",
+        "source_id": 1331,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Wire",
-        "artist_name": "Shordie Shordie and Rich Homie Quan",
+        "title": "Dayenu",
+        "artist_name": "Eli Winter",
         "video_id": null,
-        "capture_date": "2022-08-18 05:16:09.644644",
-        "source_id": 1323,
+        "capture_date": "2022-08-30 11:32:16.618618",
+        "source_id": 1331,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "SOLD",
-        "artist_name": "Lana Lubany",
+        "title": "Candy Run",
+        "artist_name": "Sea Moss",
         "video_id": null,
-        "capture_date": "2022-08-18 05:16:09.644644",
-        "source_id": 1323,
+        "capture_date": "2022-08-30 11:32:16.618618",
+        "source_id": 1331,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Slam Dunk Contestants",
-        "artist_name": "ShittyBoyz",
+        "title": "Back It Up",
+        "artist_name": "Cash Cobain",
         "video_id": null,
-        "capture_date": "2022-08-18 05:16:09.644644",
-        "source_id": 1323,
+        "capture_date": "2022-08-30 11:32:16.618618",
+        "source_id": 1331,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Relax",
+        "artist_name": "Kelow LaTesha",
+        "video_id": null,
+        "capture_date": "2022-08-30 11:32:16.618618",
+        "source_id": 1331,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "About A Gemini, Pt. 3",
+        "artist_name": "ImaniCarolyn and SZA",
+        "video_id": null,
+        "capture_date": "2022-08-30 11:32:16.618618",
+        "source_id": 1331,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "might b",
+        "artist_name": "LustSickPuppy",
+        "video_id": null,
+        "capture_date": "2022-08-30 11:32:16.618618",
+        "source_id": 1331,
         "song_id": null,
         "duplicate": false
     }
@@ -537,11 +564,14 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('I’m In Love', 'Joony', NULL),
-    ('Savanne', 'Vieux Farka Touré and Khruangbin', NULL),
-    ('The Wire', 'Shordie Shordie and Rich Homie Quan', NULL),
-    ('SOLD', 'Lana Lubany', NULL),
-    ('Slam Dunk Contestants', 'ShittyBoyz', NULL)
+    ('Constrictor', 'DJ Florentino', NULL),
+    ('Mystery', 'Fauness', NULL),
+    ('Dayenu', 'Eli Winter', NULL),
+    ('Candy Run', 'Sea Moss', NULL),
+    ('Back It Up', 'Cash Cobain', NULL),
+    ('Relax', 'Kelow LaTesha', NULL),
+    ('About A Gemini, Pt. 3', 'ImaniCarolyn and SZA', NULL),
+    ('might b', 'LustSickPuppy', NULL)
     ;
 
      // Update to song table
@@ -552,7 +582,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12671; // SELECT last_insert_rowid();
+  song_id = 12736; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -592,11 +622,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-18 05:16:09.644644', '1323', '12667'),
-  ('2022-08-18 05:16:09.644644', '1323', '12668'),
-  ('2022-08-18 05:16:09.644644', '1323', '12669'),
-  ('2022-08-18 05:16:09.644644', '1323', '12670'),
-  ('2022-08-18 05:16:09.644644', '1323', '12671')
+  ('2022-08-30 11:32:16.618618', '1331', '12729'),
+  ('2022-08-30 11:32:16.618618', '1331', '12730'),
+  ('2022-08-30 11:32:16.618618', '1331', '12731'),
+  ('2022-08-30 11:32:16.618618', '1331', '12732'),
+  ('2022-08-30 11:32:16.618618', '1331', '12733'),
+  ('2022-08-30 11:32:16.618618', '1331', '12734'),
+  ('2022-08-30 11:32:16.618618', '1331', '12735'),
+  ('2022-08-30 11:32:16.618618', '1331', '12736')
   ;
 
   // Update to source_song table

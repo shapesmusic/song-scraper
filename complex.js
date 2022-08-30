@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Lil Yachty, Offset, Anitta, and More', '2022-08-19 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-august-19/42-dugg-idgaf');
+    ('Complex', 'The Best New Music This Week', 'JID, Lil Tjay, DJ Khaled, and More', '2022-08-26 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-august-26/pierre-bourne-good-movie');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1326; // SELECT last_insert_rowid();
+  source_id = 1330; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,74 +102,74 @@
   songsData =
   [
     {
-        "title": "Codeine Cowboy",
-        "artist_name": "Internet Money ft. Lil Yachty",
+        "title": "God Did",
+        "artist_name": "DJ Khaled ft. Rick Ross, John Legend, Lil Wayne, & Jay-Z",
         "video_id": null,
-        "capture_date": "2022-08-27 02:01:02.758758",
-        "source_id": 1326,
+        "capture_date": "2022-08-30 11:24:22.255255",
+        "source_id": 1330,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "54321",
-        "artist_name": "Offset",
+        "title": "Can’t Make You Change",
+        "artist_name": "JID ft. Ari Lennox",
         "video_id": null,
-        "capture_date": "2022-08-27 02:01:02.758758",
-        "source_id": 1326,
+        "capture_date": "2022-08-30 11:24:22.256256",
+        "source_id": 1330,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lobby",
-        "artist_name": "Anitta ft. Missy Eliott",
+        "title": "Beat Da Odds",
+        "artist_name": "Lil Tjay",
         "video_id": null,
-        "capture_date": "2022-08-27 02:01:02.759759",
-        "source_id": 1326,
+        "capture_date": "2022-08-30 11:24:22.256256",
+        "source_id": 1330,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "London Freestyle",
-        "artist_name": "Fivio Foreign",
+        "title": "CODE",
+        "artist_name": "Offset ft. Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2022-08-27 02:01:02.760760",
-        "source_id": 1326,
+        "capture_date": "2022-08-30 11:24:22.256256",
+        "source_id": 1330,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "For Tonight",
-        "artist_name": "Larry June ft. Syd",
+        "title": "Big Stunna",
+        "artist_name": "Quavo, Takeoff & Birdman",
         "video_id": null,
-        "capture_date": "2022-08-27 02:01:02.760760",
-        "source_id": 1326,
+        "capture_date": "2022-08-30 11:24:22.256256",
+        "source_id": 1330,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "IDGAF",
-        "artist_name": "42 Dugg",
+        "title": "Good Movie",
+        "artist_name": "Pi’erre Bourne",
         "video_id": null,
-        "capture_date": "2022-08-27 02:01:02.760760",
-        "source_id": 1326,
+        "capture_date": "2022-08-30 11:24:22.256256",
+        "source_id": 1330,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Chief So",
-        "artist_name": "Chief Keef",
+        "title": "Drop Down",
+        "artist_name": "03 Greedo, Mike Free ft. KenTheMan",
         "video_id": null,
-        "capture_date": "2022-08-27 02:01:02.760760",
-        "source_id": 1326,
+        "capture_date": "2022-08-30 11:24:22.256256",
+        "source_id": 1330,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "From Nothing",
-        "artist_name": "Key Glock",
+        "title": "Free Slime",
+        "artist_name": "IDK",
         "video_id": null,
-        "capture_date": "2022-08-27 02:01:02.760760",
-        "source_id": 1326,
+        "capture_date": "2022-08-30 11:24:22.256256",
+        "source_id": 1330,
         "song_id": null,
         "duplicate": false
     }
@@ -212,14 +212,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Codeine Cowboy', 'Internet Money ft. Lil Yachty', NULL),
-  ('54321', 'Offset', NULL),
-  ('Lobby', 'Anitta ft. Missy Eliott', NULL),
-  ('London Freestyle', 'Fivio Foreign', NULL),
-  ('For Tonight', 'Larry June ft. Syd', NULL),
-  ('IDGAF', '42 Dugg', NULL),
-  ('Chief So', 'Chief Keef', NULL),
-  ('From Nothing', 'Key Glock', NULL)
+  ('God Did', 'DJ Khaled ft. Rick Ross, John Legend, Lil Wayne, & Jay-Z', NULL),
+  ('Can’t Make You Change', 'JID ft. Ari Lennox', NULL),
+  ('Beat Da Odds', 'Lil Tjay', NULL),
+  ('CODE', 'Offset ft. Moneybagg Yo', NULL),
+  ('Big Stunna', 'Quavo, Takeoff & Birdman', NULL),
+  ('Good Movie', 'Pi’erre Bourne', NULL),
+  ('Drop Down', '03 Greedo, Mike Free ft. KenTheMan', NULL),
+  ('Free Slime', 'IDK', NULL)
   ;
 
    // Update to song table
@@ -230,7 +230,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12702; // SELECT last_insert_rowid();
+  song_id = 12728; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -270,14 +270,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-27 02:01:02.758758', '1326', '12695'),
-  ('2022-08-27 02:01:02.758758', '1326', '12696'),
-  ('2022-08-27 02:01:02.759759', '1326', '12697'),
-  ('2022-08-27 02:01:02.760760', '1326', '12698'),
-  ('2022-08-27 02:01:02.760760', '1326', '12699'),
-  ('2022-08-27 02:01:02.760760', '1326', '12700'),
-  ('2022-08-27 02:01:02.760760', '1326', '12701'),
-  ('2022-08-27 02:01:02.760760', '1326', '12702')
+  ('2022-08-30 11:24:22.255255', '1330', '12721'),
+  ('2022-08-30 11:24:22.256256', '1330', '12722'),
+  ('2022-08-30 11:24:22.256256', '1330', '12723'),
+  ('2022-08-30 11:24:22.256256', '1330', '12724'),
+  ('2022-08-30 11:24:22.256256', '1330', '12725'),
+  ('2022-08-30 11:24:22.256256', '1330', '12726'),
+  ('2022-08-30 11:24:22.256256', '1330', '12727'),
+  ('2022-08-30 11:24:22.256256', '1330', '12728')
   ;
 
   // Update to source_song table
