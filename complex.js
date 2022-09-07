@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'JID, Lil Tjay, DJ Khaled, and More', '2022-08-26 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-august-26/pierre-bourne-good-movie');
+    ('Complex', 'The Best New Music This Week', 'Lil Baby, Yeat, Ari Lennox, and More', '2022-09-02 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-september-2/kenny-beats-slowthai-family-tree');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1330; // SELECT last_insert_rowid();
+  source_id = 1354; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,74 +102,92 @@
   songsData =
   [
     {
-        "title": "God Did",
-        "artist_name": "DJ Khaled ft. Rick Ross, John Legend, Lil Wayne, & Jay-Z",
+        "title": "Detox",
+        "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2022-08-30 11:24:22.255255",
-        "source_id": 1330,
+        "capture_date": "2022-09-07 03:27:41.973973",
+        "source_id": 1354,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Can’t Make You Change",
-        "artist_name": "JID ft. Ari Lennox",
+        "title": "Talk",
+        "artist_name": "Yeat",
         "video_id": null,
-        "capture_date": "2022-08-30 11:24:22.256256",
-        "source_id": 1330,
+        "capture_date": "2022-09-07 03:27:41.974974",
+        "source_id": 1354,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Beat Da Odds",
-        "artist_name": "Lil Tjay",
+        "title": "Queen Space",
+        "artist_name": "Ari Lennox & Summer Walker",
         "video_id": null,
-        "capture_date": "2022-08-30 11:24:22.256256",
-        "source_id": 1330,
+        "capture_date": "2022-09-07 03:27:41.974974",
+        "source_id": 1354,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "CODE",
-        "artist_name": "Offset ft. Moneybagg Yo",
+        "title": "Moving Too Fast",
+        "artist_name": "Pi’erre Bourne ft. Young Nudy",
         "video_id": null,
-        "capture_date": "2022-08-30 11:24:22.256256",
-        "source_id": 1330,
+        "capture_date": "2022-09-07 03:27:41.974974",
+        "source_id": 1354,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Big Stunna",
-        "artist_name": "Quavo, Takeoff & Birdman",
+        "title": "Too Much",
+        "artist_name": "Freddie Gibbs ft. Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2022-08-30 11:24:22.256256",
-        "source_id": 1330,
+        "capture_date": "2022-09-07 03:27:41.974974",
+        "source_id": 1354,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Good Movie",
-        "artist_name": "Pi’erre Bourne",
+        "title": "Hell",
+        "artist_name": "EST Gee",
         "video_id": null,
-        "capture_date": "2022-08-30 11:24:22.256256",
-        "source_id": 1330,
+        "capture_date": "2022-09-07 03:27:41.974974",
+        "source_id": 1354,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Drop Down",
-        "artist_name": "03 Greedo, Mike Free ft. KenTheMan",
+        "title": "I Ain’t Gone Hold Ya",
+        "artist_name": "DJ Drama & Jeezy",
         "video_id": null,
-        "capture_date": "2022-08-30 11:24:22.256256",
-        "source_id": 1330,
+        "capture_date": "2022-09-07 03:27:41.974974",
+        "source_id": 1354,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Free Slime",
-        "artist_name": "IDK",
+        "title": "24-8",
+        "artist_name": "Smino",
         "video_id": null,
-        "capture_date": "2022-08-30 11:24:22.256256",
-        "source_id": 1330,
+        "capture_date": "2022-09-07 03:27:41.974974",
+        "source_id": 1354,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Give Me A Sign",
+        "artist_name": "Quando Rondo & NBA YoungBoy",
+        "video_id": null,
+        "capture_date": "2022-09-07 03:27:41.974974",
+        "source_id": 1354,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Family Tree",
+        "artist_name": "Kenny Beats ft. slowthai",
+        "video_id": null,
+        "capture_date": "2022-09-07 03:27:41.974974",
+        "source_id": 1354,
         "song_id": null,
         "duplicate": false
     }
@@ -212,14 +230,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('God Did', 'DJ Khaled ft. Rick Ross, John Legend, Lil Wayne, & Jay-Z', NULL),
-  ('Can’t Make You Change', 'JID ft. Ari Lennox', NULL),
-  ('Beat Da Odds', 'Lil Tjay', NULL),
-  ('CODE', 'Offset ft. Moneybagg Yo', NULL),
-  ('Big Stunna', 'Quavo, Takeoff & Birdman', NULL),
-  ('Good Movie', 'Pi’erre Bourne', NULL),
-  ('Drop Down', '03 Greedo, Mike Free ft. KenTheMan', NULL),
-  ('Free Slime', 'IDK', NULL)
+  ('Detox', 'Lil Baby', NULL),
+  ('Talk', 'Yeat', NULL),
+  ('Queen Space', 'Ari Lennox & Summer Walker', NULL),
+  ('Moving Too Fast', 'Pi’erre Bourne ft. Young Nudy', NULL),
+  ('Too Much', 'Freddie Gibbs ft. Moneybagg Yo', NULL),
+  ('Hell', 'EST Gee', NULL),
+  ('I Ain’t Gone Hold Ya', 'DJ Drama & Jeezy', NULL),
+  ('24-8', 'Smino', NULL),
+  ('Give Me A Sign', 'Quando Rondo & NBA YoungBoy', NULL),
+  ('Family Tree', 'Kenny Beats ft. slowthai', NULL)
   ;
 
    // Update to song table
@@ -230,7 +250,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12728; // SELECT last_insert_rowid();
+  song_id = 12793; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -270,14 +290,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-30 11:24:22.255255', '1330', '12721'),
-  ('2022-08-30 11:24:22.256256', '1330', '12722'),
-  ('2022-08-30 11:24:22.256256', '1330', '12723'),
-  ('2022-08-30 11:24:22.256256', '1330', '12724'),
-  ('2022-08-30 11:24:22.256256', '1330', '12725'),
-  ('2022-08-30 11:24:22.256256', '1330', '12726'),
-  ('2022-08-30 11:24:22.256256', '1330', '12727'),
-  ('2022-08-30 11:24:22.256256', '1330', '12728')
+  ('2022-09-07 03:27:41.973973', '1354', '12784'),
+  ('2022-09-07 03:27:41.974974', '1354', '12785'),
+  ('2022-09-07 03:27:41.974974', '1354', '12786'),
+  ('2022-09-07 03:27:41.974974', '1354', '12787'),
+  ('2022-09-07 03:27:41.974974', '1354', '12788'),
+  ('2022-09-07 03:27:41.974974', '1354', '12789'),
+  ('2022-09-07 03:27:41.974974', '1354', '12790'),
+  ('2022-09-07 03:27:41.974974', '1354', '12791'),
+  ('2022-09-07 03:27:41.974974', '1354', '12792'),
+  ('2022-09-07 03:27:41.974974', '1354', '12793')
   ;
 
   // Update to source_song table

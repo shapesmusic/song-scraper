@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of August 26, 2022', '2022-08-26 12:00:00.000000', 'https://www.stereogum.com/2197555/the-5-best-songs-of-the-week-448/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of September 2, 2022', '2022-09-02 12:00:00.000000', 'https://www.stereogum.com/2198339/the-5-best-songs-of-the-week-449/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1332; // SELECT last_insert_rowid();
+  source_id = 1356; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,47 +101,47 @@
   songsData =
   [
     {
-        "title": "Black Paladin's Theme (free take)",
-        "artist_name": "R.A.P. Ferreira",
+        "title": "Giving The Past Away",
+        "artist_name": "Quicksand",
         "video_id": null,
-        "capture_date": "2022-08-30 11:41:04.510510",
-        "source_id": 1332,
+        "capture_date": "2022-09-07 03:39:50.578578",
+        "source_id": 1356,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Screaming Undercover",
-        "artist_name": "Archers Of Loaf",
+        "title": "There’d Better Be A Mirrorball",
+        "artist_name": "Arctic Monkeys",
         "video_id": null,
-        "capture_date": "2022-08-30 11:41:04.510510",
-        "source_id": 1332,
+        "capture_date": "2022-09-07 03:39:50.579579",
+        "source_id": 1356,
+        "song_id": 12742,
+        "duplicate": true
+    },
+    {
+        "title": "Sandstone",
+        "artist_name": "Dawn Richard & Spencer Zahn",
+        "video_id": null,
+        "capture_date": "2022-09-07 03:39:50.579579",
+        "source_id": 1356,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Piscean Lover",
-        "artist_name": "Johanna Warren",
+        "title": "Abilene",
+        "artist_name": "Plains",
         "video_id": null,
-        "capture_date": "2022-08-30 11:41:04.511511",
-        "source_id": 1332,
+        "capture_date": "2022-09-07 03:39:50.579579",
+        "source_id": 1356,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hold My Hand",
-        "artist_name": "Wild Pink",
+        "title": "Promise",
+        "artist_name": "Knifeplay",
         "video_id": null,
-        "capture_date": "2022-08-30 11:41:04.511511",
-        "source_id": 1332,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I'm Tight",
-        "artist_name": "Louis Cole",
-        "video_id": null,
-        "capture_date": "2022-08-30 11:41:04.511511",
-        "source_id": 1332,
+        "capture_date": "2022-09-07 03:39:50.579579",
+        "source_id": 1356,
         "song_id": null,
         "duplicate": false
     }
@@ -185,11 +185,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Black Paladin’s Theme (free take)', 'R.A.P. Ferreira', NULL),
-  ('Screaming Undercover', 'Archers Of Loaf', NULL),
-  ('Piscean Lover', 'Johanna Warren', NULL),
-  ('Hold My Hand', 'Wild Pink', NULL),
-  ('I’m Tight', 'Louis Cole', NULL)
+  ('Giving The Past Away', 'Quicksand', NULL),
+  ('Sandstone', 'Dawn Richard & Spencer Zahn', NULL),
+  ('Abilene', 'Plains', NULL),
+  ('Promise', 'Knifeplay', NULL)
   ;
 
    // Update to song table
@@ -200,7 +199,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12741; // SELECT last_insert_rowid();
+  song_id = 12803; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -240,11 +239,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-30 11:41:04.510510', '1332', '12737'),
-  ('2022-08-30 11:41:04.510510', '1332', '12738'),
-  ('2022-08-30 11:41:04.511511', '1332', '12739'),
-  ('2022-08-30 11:41:04.511511', '1332', '12740'),
-  ('2022-08-30 11:41:04.511511', '1332', '12741')
+  ('2022-09-07 03:39:50.578578', '1356', '12800'),
+  ('2022-09-07 03:39:50.579579', '1356', '12742'),
+  ('2022-09-07 03:39:50.579579', '1356', '12801'),
+  ('2022-09-07 03:39:50.579579', '1356', '12802'),
+  ('2022-09-07 03:39:50.579579', '1356', '12803')
   ;
 
   // Update to source_song table

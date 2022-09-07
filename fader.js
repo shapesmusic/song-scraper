@@ -318,8 +318,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of August 29, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2022-08-29 12:00:00.000000',
+      'Week of September 5, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-09-05 12:00:00.000000',
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -329,7 +329,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1331; // SELECT last_insert_rowid();
+    source_id = 1355; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -455,74 +455,56 @@
     songsData =
     [
     {
-        "title": "Constrictor",
-        "artist_name": "DJ Florentino",
+        "title": "Look To Him",
+        "artist_name": "Greentea Peng",
         "video_id": null,
-        "capture_date": "2022-08-30 11:32:16.618618",
-        "source_id": 1331,
+        "capture_date": "2022-09-07 03:31:45.068000",
+        "source_id": 1355,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mystery",
-        "artist_name": "Fauness",
+        "title": "Looking For Water",
+        "artist_name": "Boldy James",
         "video_id": null,
-        "capture_date": "2022-08-30 11:32:16.618618",
-        "source_id": 1331,
+        "capture_date": "2022-09-07 03:31:45.068000",
+        "source_id": 1355,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dayenu",
-        "artist_name": "Eli Winter",
+        "title": "The Elephant Man's Bones",
+        "artist_name": "Roc Marciano & The Alchemist",
         "video_id": null,
-        "capture_date": "2022-08-30 11:32:16.618618",
-        "source_id": 1331,
+        "capture_date": "2022-09-07 03:31:45.068000",
+        "source_id": 1355,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Candy Run",
-        "artist_name": "Sea Moss",
+        "title": "New Orleans",
+        "artist_name": "Kony and Nef the Pharaoh",
         "video_id": null,
-        "capture_date": "2022-08-30 11:32:16.618618",
-        "source_id": 1331,
+        "capture_date": "2022-09-07 03:31:45.068000",
+        "source_id": 1355,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Back It Up",
-        "artist_name": "Cash Cobain",
+        "title": "Culpable",
+        "artist_name": "Romeo Santos and Lapiz Conciente",
         "video_id": null,
-        "capture_date": "2022-08-30 11:32:16.618618",
-        "source_id": 1331,
+        "capture_date": "2022-09-07 03:31:45.068000",
+        "source_id": 1355,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Relax",
-        "artist_name": "Kelow LaTesha",
+        "title": "Body Feeling",
+        "artist_name": "AKAI SOLO",
         "video_id": null,
-        "capture_date": "2022-08-30 11:32:16.618618",
-        "source_id": 1331,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "About A Gemini, Pt. 3",
-        "artist_name": "ImaniCarolyn and SZA",
-        "video_id": null,
-        "capture_date": "2022-08-30 11:32:16.618618",
-        "source_id": 1331,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "might b",
-        "artist_name": "LustSickPuppy",
-        "video_id": null,
-        "capture_date": "2022-08-30 11:32:16.618618",
-        "source_id": 1331,
+        "capture_date": "2022-09-07 03:31:45.068000",
+        "source_id": 1355,
         "song_id": null,
         "duplicate": false
     }
@@ -564,14 +546,12 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Constrictor', 'DJ Florentino', NULL),
-    ('Mystery', 'Fauness', NULL),
-    ('Dayenu', 'Eli Winter', NULL),
-    ('Candy Run', 'Sea Moss', NULL),
-    ('Back It Up', 'Cash Cobain', NULL),
-    ('Relax', 'Kelow LaTesha', NULL),
-    ('About A Gemini, Pt. 3', 'ImaniCarolyn and SZA', NULL),
-    ('might b', 'LustSickPuppy', NULL)
+    ('Look To Him', 'Greentea Peng', NULL),
+    ('Looking For Water', 'Boldy James', NULL),
+    ('The Elephant Man’s Bones', 'Roc Marciano & The Alchemist', NULL),
+    ('New Orleans', 'Kony and Nef the Pharaoh', NULL),
+    ('Culpable', 'Romeo Santos and Lapiz Conciente', NULL),
+    ('Body Feeling', 'AKAI SOLO', NULL)
     ;
 
      // Update to song table
@@ -582,7 +562,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12736; // SELECT last_insert_rowid();
+  song_id = 12799; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -622,14 +602,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-30 11:32:16.618618', '1331', '12729'),
-  ('2022-08-30 11:32:16.618618', '1331', '12730'),
-  ('2022-08-30 11:32:16.618618', '1331', '12731'),
-  ('2022-08-30 11:32:16.618618', '1331', '12732'),
-  ('2022-08-30 11:32:16.618618', '1331', '12733'),
-  ('2022-08-30 11:32:16.618618', '1331', '12734'),
-  ('2022-08-30 11:32:16.618618', '1331', '12735'),
-  ('2022-08-30 11:32:16.618618', '1331', '12736')
+  ('2022-09-07 03:31:45.068000', '1355', '12794'),
+  ('2022-09-07 03:31:45.068000', '1355', '12795'),
+  ('2022-09-07 03:31:45.068000', '1355', '12796'),
+  ('2022-09-07 03:31:45.068000', '1355', '12797'),
+  ('2022-09-07 03:31:45.068000', '1355', '12798'),
+  ('2022-09-07 03:31:45.068000', '1355', '12799')
   ;
 
   // Update to source_song table

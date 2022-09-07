@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Britney Spears and Elton John’s Mash-up, and 8 More New Songs', '2022-08-26 08:56:45.000000', 'https://www.nytimes.com/2022/08/26/arts/music/britney-spears-elton-john-hold-me-closer.html');
+    ('New York Times', 'The Playlist', 'Romeo Santos and Justin Timberlake’s Team-Up, and 10 More New Songs', '2022-09-02 10:21:03.000000', 'https://www.nytimes.com/2022/09/02/arts/music/playlist-romeo-santos-justin-timberlake.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1329; // SELECT last_insert_rowid();
+  source_id = 1353; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,83 +100,101 @@
   songsData =
   [
     {
-        "title": "Hold Me Closer",
-        "artist_name": "Elton John & Britney Spears",
+        "title": "Sin Fin",
+        "artist_name": "Romeo Santos and Justin Timberlake",
         "video_id": null,
-        "capture_date": "2022-08-30 11:19:57.367367",
-        "source_id": 1329,
+        "capture_date": "2022-09-07 03:23:13.157157",
+        "source_id": 1353,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Calm Down",
-        "artist_name": "Rema & Selena Gomez",
+        "title": "Million Dollar Baby",
+        "artist_name": "Ava Max",
         "video_id": null,
-        "capture_date": "2022-08-30 11:19:57.368368",
-        "source_id": 1329,
-        "song_id": 11692,
+        "capture_date": "2022-09-07 03:23:13.158158",
+        "source_id": 1353,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Congratulations",
+        "artist_name": "Alex Lahey",
+        "video_id": null,
+        "capture_date": "2022-09-07 03:23:13.158158",
+        "source_id": 1353,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Nike",
+        "artist_name": "Shygirl",
+        "video_id": null,
+        "capture_date": "2022-09-07 03:23:13.158158",
+        "source_id": 1353,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mess Mend",
+        "artist_name": "Horse Lords",
+        "video_id": null,
+        "capture_date": "2022-09-07 03:23:13.158158",
+        "source_id": 1353,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Môgô Kélé",
+        "artist_name": "VDA",
+        "video_id": null,
+        "capture_date": "2022-09-07 03:23:13.158158",
+        "source_id": 1353,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Only the Lonely",
+        "artist_name": "Danielle Ponder",
+        "video_id": null,
+        "capture_date": "2022-09-07 03:23:13.158158",
+        "source_id": 1353,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "More and More",
+        "artist_name": "Carm ft. Edie Brickell",
+        "video_id": null,
+        "capture_date": "2022-09-07 03:23:13.159159",
+        "source_id": 1353,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hold My Hand",
+        "artist_name": "Wild Pink ft. Julien Baker",
+        "video_id": null,
+        "capture_date": "2022-09-07 03:23:13.159159",
+        "source_id": 1353,
+        "song_id": 12740,
         "duplicate": true
     },
     {
-        "title": "Been to the Mountain",
-        "artist_name": "Margo Price",
+        "title": "Vantablack",
+        "artist_name": "Dawn Richard and Spencer Zahn",
         "video_id": null,
-        "capture_date": "2022-08-30 11:19:57.368368",
-        "source_id": 1329,
+        "capture_date": "2022-09-07 03:23:13.159159",
+        "source_id": 1353,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Be Careful With Yourself",
-        "artist_name": "Julia Jacklin",
+        "title": "Poesie I",
+        "artist_name": "Steve Lehman and Sélébéyone",
         "video_id": null,
-        "capture_date": "2022-08-30 11:19:57.368368",
-        "source_id": 1329,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Weird Goodbyes",
-        "artist_name": "The National ft. Bon Iver",
-        "video_id": null,
-        "capture_date": "2022-08-30 11:19:57.368368",
-        "source_id": 1329,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Beautiful Life",
-        "artist_name": "Michael Kiwanuka",
-        "video_id": null,
-        "capture_date": "2022-08-30 11:19:57.368368",
-        "source_id": 1329,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Every Beginning Ends",
-        "artist_name": "Noah Cyrus and Benjamin Gibbard",
-        "video_id": null,
-        "capture_date": "2022-08-30 11:19:57.368368",
-        "source_id": 1329,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Blue Hour",
-        "artist_name": "Nosaj Thing ft. Julianna Barwick",
-        "video_id": null,
-        "capture_date": "2022-08-30 11:19:57.368368",
-        "source_id": 1329,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Amorpha",
-        "artist_name": "Bitchin Bajas",
-        "video_id": null,
-        "capture_date": "2022-08-30 11:19:57.368368",
-        "source_id": 1329,
+        "capture_date": "2022-09-07 03:23:13.159159",
+        "source_id": 1353,
         "song_id": null,
         "duplicate": false
     }
@@ -220,14 +238,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Hold Me Closer', 'Elton John & Britney Spears', NULL),
-  ('Been to the Mountain', 'Margo Price', NULL),
-  ('Be Careful With Yourself', 'Julia Jacklin', NULL),
-  ('Weird Goodbyes', 'The National ft. Bon Iver', NULL),
-  ('Beautiful Life', 'Michael Kiwanuka', NULL),
-  ('Every Beginning Ends', 'Noah Cyrus and Benjamin Gibbard', NULL),
-  ('Blue Hour', 'Nosaj Thing ft. Julianna Barwick', NULL),
-  ('Amorpha', 'Bitchin Bajas', NULL)
+  ('Sin Fin', 'Romeo Santos and Justin Timberlake', NULL),
+  ('Million Dollar Baby', 'Ava Max', NULL),
+  ('Congratulations', 'Alex Lahey', NULL),
+  ('Nike', 'Shygirl', NULL),
+  ('Mess Mend', 'Horse Lords', NULL),
+  ('Môgô Kélé', 'VDA', NULL),
+  ('Only the Lonely', 'Danielle Ponder', NULL),
+  ('More and More', 'Carm ft. Edie Brickell', NULL),
+  ('Vantablack', 'Dawn Richard and Spencer Zahn', NULL),
+  ('Poesie I', 'Steve Lehman and Sélébéyone', NULL)
   ;
 
    // Update to song table
@@ -238,7 +258,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12720; // SELECT last_insert_rowid();
+  song_id = 12783; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -278,15 +298,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-08-30 11:19:57.367367', '1329', '12713'),
-  ('2022-08-30 11:19:57.368368', '1329', '11692'),
-  ('2022-08-30 11:19:57.368368', '1329', '12714'),
-  ('2022-08-30 11:19:57.368368', '1329', '12715'),
-  ('2022-08-30 11:19:57.368368', '1329', '12716'),
-  ('2022-08-30 11:19:57.368368', '1329', '12717'),
-  ('2022-08-30 11:19:57.368368', '1329', '12718'),
-  ('2022-08-30 11:19:57.368368', '1329', '12719'),
-  ('2022-08-30 11:19:57.368368', '1329', '12720')
+  ('2022-09-07 03:23:13.157157', '1353', '12774'),
+  ('2022-09-07 03:23:13.158158', '1353', '12775'),
+  ('2022-09-07 03:23:13.158158', '1353', '12776'),
+  ('2022-09-07 03:23:13.158158', '1353', '12777'),
+  ('2022-09-07 03:23:13.158158', '1353', '12778'),
+  ('2022-09-07 03:23:13.158158', '1353', '12779'),
+  ('2022-09-07 03:23:13.158158', '1353', '12780'),
+  ('2022-09-07 03:23:13.159159', '1353', '12781'),
+  ('2022-09-07 03:23:13.159159', '1353', '12740'),
+  ('2022-09-07 03:23:13.159159', '1353', '12782'),
+  ('2022-09-07 03:23:13.159159', '1353', '12783')
   ;
 
   // Update to source_song table
