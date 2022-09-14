@@ -318,8 +318,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of September 5, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2022-09-05 12:00:00.000000',
+      'Week of September 12, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-09-12 12:00:00.000000', -- Don't forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -329,7 +329,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1355; // SELECT last_insert_rowid();
+    source_id = 1360; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -455,58 +455,85 @@
     songsData =
     [
     {
-        "title": "Look To Him",
-        "artist_name": "Greentea Peng",
+        "title": "Puerta de Limosina",
+        "artist_name": "The Garden",
         "video_id": null,
-        "capture_date": "2022-09-07 03:31:45.068000",
-        "source_id": 1355,
+        "capture_date": "2022-09-14 12:33:15.321000",
+        "source_id": 1360,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Looking For Water",
-        "artist_name": "Boldy James",
+        "title": "Coyotes",
+        "artist_name": "Bill Callahan",
         "video_id": null,
-        "capture_date": "2022-09-07 03:31:45.068000",
-        "source_id": 1355,
+        "capture_date": "2022-09-14 12:33:15.321000",
+        "source_id": 1360,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Elephant Man's Bones",
-        "artist_name": "Roc Marciano & The Alchemist",
+        "title": "Why",
+        "artist_name": "Kelz",
         "video_id": null,
-        "capture_date": "2022-09-07 03:31:45.068000",
-        "source_id": 1355,
+        "capture_date": "2022-09-14 12:33:15.321000",
+        "source_id": 1360,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "New Orleans",
-        "artist_name": "Kony and Nef the Pharaoh",
+        "title": "Shoot It Myself",
+        "artist_name": "EST Gee & Future",
         "video_id": null,
-        "capture_date": "2022-09-07 03:31:45.068000",
-        "source_id": 1355,
+        "capture_date": "2022-09-14 12:33:15.321000",
+        "source_id": 1360,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Culpable",
-        "artist_name": "Romeo Santos and Lapiz Conciente",
+        "title": "Baguettes",
+        "artist_name": "Damedot",
         "video_id": null,
-        "capture_date": "2022-09-07 03:31:45.068000",
-        "source_id": 1355,
+        "capture_date": "2022-09-14 12:33:15.321000",
+        "source_id": 1360,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Body Feeling",
-        "artist_name": "AKAI SOLO",
+        "title": "My Lovely Cat",
+        "artist_name": "Deerhoof",
         "video_id": null,
-        "capture_date": "2022-09-07 03:31:45.068000",
-        "source_id": 1355,
+        "capture_date": "2022-09-14 12:33:15.321000",
+        "source_id": 1360,
+        "song_id": 12810,
+        "duplicate": true
+    },
+    {
+        "title": "Victoria",
+        "artist_name": "Brutus",
+        "video_id": null,
+        "capture_date": "2022-09-14 12:33:15.321000",
+        "source_id": 1360,
         "song_id": null,
         "duplicate": false
+    },
+    {
+        "title": "The Light That Flickers In The Mirror",
+        "artist_name": "Laila Sakini",
+        "video_id": null,
+        "capture_date": "2022-09-14 12:33:15.321000",
+        "source_id": 1360,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Atopos",
+        "artist_name": "Björk",
+        "video_id": null,
+        "capture_date": "2022-09-14 12:33:15.321000",
+        "source_id": 1360,
+        "song_id": 12807,
+        "duplicate": true
     }
 ]
 
@@ -546,12 +573,13 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Look To Him', 'Greentea Peng', NULL),
-    ('Looking For Water', 'Boldy James', NULL),
-    ('The Elephant Man’s Bones', 'Roc Marciano & The Alchemist', NULL),
-    ('New Orleans', 'Kony and Nef the Pharaoh', NULL),
-    ('Culpable', 'Romeo Santos and Lapiz Conciente', NULL),
-    ('Body Feeling', 'AKAI SOLO', NULL)
+    ('Puerta de Limosina', 'The Garden', NULL),
+    ('Coyotes', 'Bill Callahan', NULL),
+    ('Why', 'Kelz', NULL),
+    ('Shoot It Myself', 'EST Gee & Future', NULL),
+    ('Baguettes', 'Damedot', NULL),
+    ('Victoria', 'Brutus', NULL),
+    ('The Light That Flickers In The Mirror', 'Laila Sakini', NULL)
     ;
 
      // Update to song table
@@ -562,7 +590,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12799; // SELECT last_insert_rowid();
+  song_id = 12831; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -602,12 +630,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-07 03:31:45.068000', '1355', '12794'),
-  ('2022-09-07 03:31:45.068000', '1355', '12795'),
-  ('2022-09-07 03:31:45.068000', '1355', '12796'),
-  ('2022-09-07 03:31:45.068000', '1355', '12797'),
-  ('2022-09-07 03:31:45.068000', '1355', '12798'),
-  ('2022-09-07 03:31:45.068000', '1355', '12799')
+  ('2022-09-14 12:33:15.321000', '1360', '12825'),
+  ('2022-09-14 12:33:15.321000', '1360', '12826'),
+  ('2022-09-14 12:33:15.321000', '1360', '12827'),
+  ('2022-09-14 12:33:15.321000', '1360', '12828'),
+  ('2022-09-14 12:33:15.321000', '1360', '12829'),
+  ('2022-09-14 12:33:15.321000', '1360', '12810'),
+  ('2022-09-14 12:33:15.321000', '1360', '12830'),
+  ('2022-09-14 12:33:15.321000', '1360', '12831'),
+  ('2022-09-14 12:33:15.321000', '1360', '12807')
   ;
 
   // Update to source_song table

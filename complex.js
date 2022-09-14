@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Lil Baby, Yeat, Ari Lennox, and More', '2022-09-02 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-september-2/kenny-beats-slowthai-family-tree');
+    ('Complex', 'The Best New Music This Week', 'NAV, Roddy Ricch, Glorilla, and More', '2022-09-09 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-sept-9/bryson-tiller-outside');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1354; // SELECT last_insert_rowid();
+  source_id = 1359; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,94 +102,67 @@
   songsData =
   [
     {
-        "title": "Detox",
-        "artist_name": "Lil Baby",
+        "title": "Dead Shot",
+        "artist_name": "NAV f/ Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2022-09-07 03:27:41.973973",
-        "source_id": 1354,
+        "capture_date": "2022-09-14 12:29:20.749749",
+        "source_id": 1359,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Talk",
+        "title": "Ghetto Superstar",
+        "artist_name": "Roddy Ricch f/ G Herbo & Doe Boy",
+        "video_id": null,
+        "capture_date": "2022-09-14 12:29:20.750750",
+        "source_id": 1359,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "F.N.F. (Let’s Go) Remix",
+        "artist_name": "Glorilla f/ Latto & JT",
+        "video_id": null,
+        "capture_date": "2022-09-14 12:29:20.750750",
+        "source_id": 1359,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Waste My Time",
+        "artist_name": "Ari Lennox",
+        "video_id": null,
+        "capture_date": "2022-09-14 12:29:20.750750",
+        "source_id": 1359,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Out thë Way",
         "artist_name": "Yeat",
         "video_id": null,
-        "capture_date": "2022-09-07 03:27:41.974974",
-        "source_id": 1354,
+        "capture_date": "2022-09-14 12:29:20.750750",
+        "source_id": 1359,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Queen Space",
-        "artist_name": "Ari Lennox & Summer Walker",
+        "title": "Me, Myself & I",
+        "artist_name": "G Herbo f/ A Boogie",
         "video_id": null,
-        "capture_date": "2022-09-07 03:27:41.974974",
-        "source_id": 1354,
+        "capture_date": "2022-09-14 12:29:20.750750",
+        "source_id": 1359,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Moving Too Fast",
-        "artist_name": "Pi’erre Bourne ft. Young Nudy",
+        "title": "Outside",
+        "artist_name": "Bryson Tiller",
         "video_id": null,
-        "capture_date": "2022-09-07 03:27:41.974974",
-        "source_id": 1354,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Too Much",
-        "artist_name": "Freddie Gibbs ft. Moneybagg Yo",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:27:41.974974",
-        "source_id": 1354,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hell",
-        "artist_name": "EST Gee",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:27:41.974974",
-        "source_id": 1354,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I Ain’t Gone Hold Ya",
-        "artist_name": "DJ Drama & Jeezy",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:27:41.974974",
-        "source_id": 1354,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "24-8",
-        "artist_name": "Smino",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:27:41.974974",
-        "source_id": 1354,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Give Me A Sign",
-        "artist_name": "Quando Rondo & NBA YoungBoy",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:27:41.974974",
-        "source_id": 1354,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Family Tree",
-        "artist_name": "Kenny Beats ft. slowthai",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:27:41.974974",
-        "source_id": 1354,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-09-14 12:29:20.750750",
+        "source_id": 1359,
+        "song_id": 12815,
+        "duplicate": true
     }
 ]
 
@@ -230,16 +203,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Detox', 'Lil Baby', NULL),
-  ('Talk', 'Yeat', NULL),
-  ('Queen Space', 'Ari Lennox & Summer Walker', NULL),
-  ('Moving Too Fast', 'Pi’erre Bourne ft. Young Nudy', NULL),
-  ('Too Much', 'Freddie Gibbs ft. Moneybagg Yo', NULL),
-  ('Hell', 'EST Gee', NULL),
-  ('I Ain’t Gone Hold Ya', 'DJ Drama & Jeezy', NULL),
-  ('24-8', 'Smino', NULL),
-  ('Give Me A Sign', 'Quando Rondo & NBA YoungBoy', NULL),
-  ('Family Tree', 'Kenny Beats ft. slowthai', NULL)
+  ('Dead Shot', 'NAV f/ Lil Uzi Vert', NULL),
+  ('Ghetto Superstar', 'Roddy Ricch f/ G Herbo & Doe Boy', NULL),
+  ('F.N.F. (Let’s Go) Remix', 'Glorilla f/ Latto & JT', NULL),
+  ('Waste My Time', 'Ari Lennox', NULL),
+  ('Out thë Way', 'Yeat', NULL),
+  ('Me, Myself & I', 'G Herbo f/ A Boogie', NULL)
   ;
 
    // Update to song table
@@ -250,7 +219,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12793; // SELECT last_insert_rowid();
+  song_id = 12824; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -290,16 +259,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-07 03:27:41.973973', '1354', '12784'),
-  ('2022-09-07 03:27:41.974974', '1354', '12785'),
-  ('2022-09-07 03:27:41.974974', '1354', '12786'),
-  ('2022-09-07 03:27:41.974974', '1354', '12787'),
-  ('2022-09-07 03:27:41.974974', '1354', '12788'),
-  ('2022-09-07 03:27:41.974974', '1354', '12789'),
-  ('2022-09-07 03:27:41.974974', '1354', '12790'),
-  ('2022-09-07 03:27:41.974974', '1354', '12791'),
-  ('2022-09-07 03:27:41.974974', '1354', '12792'),
-  ('2022-09-07 03:27:41.974974', '1354', '12793')
+  ('2022-09-14 12:29:20.749749', '1359', '12819'),
+  ('2022-09-14 12:29:20.750750', '1359', '12820'),
+  ('2022-09-14 12:29:20.750750', '1359', '12821'),
+  ('2022-09-14 12:29:20.750750', '1359', '12822'),
+  ('2022-09-14 12:29:20.750750', '1359', '12823'),
+  ('2022-09-14 12:29:20.750750', '1359', '12824'),
+  ('2022-09-14 12:29:20.750750', '1359', '12815')
   ;
 
   // Update to source_song table

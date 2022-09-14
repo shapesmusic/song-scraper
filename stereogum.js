@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of September 2, 2022', '2022-09-02 12:00:00.000000', 'https://www.stereogum.com/2198339/the-5-best-songs-of-the-week-449/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of September 9, 2022', '2022-09-09 12:00:00.000000', 'https://www.stereogum.com/2198959/the-5-best-songs-of-the-week-450/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1356; // SELECT last_insert_rowid();
+  source_id = 1361; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,47 +101,47 @@
   songsData =
   [
     {
-        "title": "Giving The Past Away",
-        "artist_name": "Quicksand",
+        "title": "These Are The Good Old Days",
+        "artist_name": "Courtney Marie Andrews",
         "video_id": null,
-        "capture_date": "2022-09-07 03:39:50.578578",
-        "source_id": 1356,
+        "capture_date": "2022-09-14 12:41:01.683683",
+        "source_id": 1361,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "There’d Better Be A Mirrorball",
-        "artist_name": "Arctic Monkeys",
+        "title": "Miracles",
+        "artist_name": "Alex G",
         "video_id": null,
-        "capture_date": "2022-09-07 03:39:50.579579",
-        "source_id": 1356,
-        "song_id": 12742,
-        "duplicate": true
-    },
-    {
-        "title": "Sandstone",
-        "artist_name": "Dawn Richard & Spencer Zahn",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:39:50.579579",
-        "source_id": 1356,
+        "capture_date": "2022-09-14 12:41:01.685685",
+        "source_id": 1361,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Abilene",
-        "artist_name": "Plains",
+        "title": "Flip",
+        "artist_name": "Excide",
         "video_id": null,
-        "capture_date": "2022-09-07 03:39:50.579579",
-        "source_id": 1356,
+        "capture_date": "2022-09-14 12:41:01.685685",
+        "source_id": 1361,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Promise",
-        "artist_name": "Knifeplay",
+        "title": "Key To The City",
+        "artist_name": "Sorry",
         "video_id": null,
-        "capture_date": "2022-09-07 03:39:50.579579",
-        "source_id": 1356,
+        "capture_date": "2022-09-14 12:41:01.685685",
+        "source_id": 1361,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bull Believer",
+        "artist_name": "Wednesday",
+        "video_id": null,
+        "capture_date": "2022-09-14 12:41:01.685685",
+        "source_id": 1361,
         "song_id": null,
         "duplicate": false
     }
@@ -185,10 +185,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Giving The Past Away', 'Quicksand', NULL),
-  ('Sandstone', 'Dawn Richard & Spencer Zahn', NULL),
-  ('Abilene', 'Plains', NULL),
-  ('Promise', 'Knifeplay', NULL)
+  ('These Are The Good Old Days', 'Courtney Marie Andrews', NULL),
+  ('Miracles', 'Alex G', NULL),
+  ('Flip', 'Excide', NULL),
+  ('Key To The City', 'Sorry', NULL),
+  ('Bull Believer', 'Wednesday', NULL)
   ;
 
    // Update to song table
@@ -199,7 +200,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12803; // SELECT last_insert_rowid();
+  song_id = 12836; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -239,11 +240,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-07 03:39:50.578578', '1356', '12800'),
-  ('2022-09-07 03:39:50.579579', '1356', '12742'),
-  ('2022-09-07 03:39:50.579579', '1356', '12801'),
-  ('2022-09-07 03:39:50.579579', '1356', '12802'),
-  ('2022-09-07 03:39:50.579579', '1356', '12803')
+  ('2022-09-14 12:41:01.683683', '1361', '12832'),
+  ('2022-09-14 12:41:01.685685', '1361', '12833'),
+  ('2022-09-14 12:41:01.685685', '1361', '12834'),
+  ('2022-09-14 12:41:01.685685', '1361', '12835'),
+  ('2022-09-14 12:41:01.685685', '1361', '12836')
   ;
 
   // Update to source_song table

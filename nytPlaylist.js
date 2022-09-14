@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Romeo Santos and Justin Timberlake’s Team-Up, and 10 More New Songs', '2022-09-02 10:21:03.000000', 'https://www.nytimes.com/2022/09/02/arts/music/playlist-romeo-santos-justin-timberlake.html');
+    ('New York Times', 'The Playlist', 'Björk Insists on Connection, and 11 More New Songs', '2022-09-09 09:41:14.000000', 'https://www.nytimes.com/2022/09/09/arts/music/playlist-bjork-yeat-phoenix.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1353; // SELECT last_insert_rowid();
+  source_id = 1358; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,101 +100,110 @@
   songsData =
   [
     {
-        "title": "Sin Fin",
-        "artist_name": "Romeo Santos and Justin Timberlake",
+        "title": "Atopos",
+        "artist_name": "Björk",
         "video_id": null,
-        "capture_date": "2022-09-07 03:23:13.157157",
-        "source_id": 1353,
+        "capture_date": "2022-09-14 12:24:58.287287",
+        "source_id": 1358,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Million Dollar Baby",
-        "artist_name": "Ava Max",
+        "title": "Jesus Freak Lighter",
+        "artist_name": "Blood Orange",
         "video_id": null,
-        "capture_date": "2022-09-07 03:23:13.158158",
-        "source_id": 1353,
+        "capture_date": "2022-09-14 12:24:58.288288",
+        "source_id": 1358,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Congratulations",
-        "artist_name": "Alex Lahey",
+        "title": "Tonight",
+        "artist_name": "Phoenix ft. Ezra Koenig",
         "video_id": null,
-        "capture_date": "2022-09-07 03:23:13.158158",
-        "source_id": 1353,
+        "capture_date": "2022-09-14 12:24:58.288288",
+        "source_id": 1358,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nike",
-        "artist_name": "Shygirl",
+        "title": "My Lovely Cat",
+        "artist_name": "Deerhoof",
         "video_id": null,
-        "capture_date": "2022-09-07 03:23:13.158158",
-        "source_id": 1353,
+        "capture_date": "2022-09-14 12:24:58.288288",
+        "source_id": 1358,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mess Mend",
-        "artist_name": "Horse Lords",
+        "title": "Our Rebellion",
+        "artist_name": "Madison Cunningham",
         "video_id": null,
-        "capture_date": "2022-09-07 03:23:13.158158",
-        "source_id": 1353,
+        "capture_date": "2022-09-14 12:24:58.289289",
+        "source_id": 1358,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Môgô Kélé",
-        "artist_name": "VDA",
+        "title": "Is It Worth It Now?",
+        "artist_name": "Jordana",
         "video_id": null,
-        "capture_date": "2022-09-07 03:23:13.158158",
-        "source_id": 1353,
+        "capture_date": "2022-09-14 12:24:58.289289",
+        "source_id": 1358,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Only the Lonely",
-        "artist_name": "Danielle Ponder",
+        "title": "Can I Call You",
+        "artist_name": "The Waeve",
         "video_id": null,
-        "capture_date": "2022-09-07 03:23:13.158158",
-        "source_id": 1353,
+        "capture_date": "2022-09-14 12:24:58.289289",
+        "source_id": 1358,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "More and More",
-        "artist_name": "Carm ft. Edie Brickell",
+        "title": "Krank",
+        "artist_name": "Yeat",
         "video_id": null,
-        "capture_date": "2022-09-07 03:23:13.159159",
-        "source_id": 1353,
+        "capture_date": "2022-09-14 12:24:58.289289",
+        "source_id": 1358,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hold My Hand",
-        "artist_name": "Wild Pink ft. Julien Baker",
+        "title": "Outside",
+        "artist_name": "Bryson Tiller",
         "video_id": null,
-        "capture_date": "2022-09-07 03:23:13.159159",
-        "source_id": 1353,
-        "song_id": 12740,
-        "duplicate": true
-    },
-    {
-        "title": "Vantablack",
-        "artist_name": "Dawn Richard and Spencer Zahn",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:23:13.159159",
-        "source_id": 1353,
+        "capture_date": "2022-09-14 12:24:58.289289",
+        "source_id": 1358,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Poesie I",
-        "artist_name": "Steve Lehman and Sélébéyone",
+        "title": "Forget Me",
+        "artist_name": "​​Lewis Capaldi",
         "video_id": null,
-        "capture_date": "2022-09-07 03:23:13.159159",
-        "source_id": 1353,
+        "capture_date": "2022-09-14 12:24:58.289289",
+        "source_id": 1358,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Fire This Time",
+        "artist_name": "Marisa Anderson",
+        "video_id": null,
+        "capture_date": "2022-09-14 12:24:58.289289",
+        "source_id": 1358,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Fours",
+        "artist_name": "Makaya McCraven",
+        "video_id": null,
+        "capture_date": "2022-09-14 12:24:58.289289",
+        "source_id": 1358,
         "song_id": null,
         "duplicate": false
     }
@@ -238,16 +247,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Sin Fin', 'Romeo Santos and Justin Timberlake', NULL),
-  ('Million Dollar Baby', 'Ava Max', NULL),
-  ('Congratulations', 'Alex Lahey', NULL),
-  ('Nike', 'Shygirl', NULL),
-  ('Mess Mend', 'Horse Lords', NULL),
-  ('Môgô Kélé', 'VDA', NULL),
-  ('Only the Lonely', 'Danielle Ponder', NULL),
-  ('More and More', 'Carm ft. Edie Brickell', NULL),
-  ('Vantablack', 'Dawn Richard and Spencer Zahn', NULL),
-  ('Poesie I', 'Steve Lehman and Sélébéyone', NULL)
+  ('Atopos', 'Björk', NULL),
+  ('Jesus Freak Lighter', 'Blood Orange', NULL),
+  ('Tonight', 'Phoenix ft. Ezra Koenig', NULL),
+  ('My Lovely Cat', 'Deerhoof', NULL),
+  ('Our Rebellion', 'Madison Cunningham', NULL),
+  ('Is It Worth It Now?', 'Jordana', NULL),
+  ('Can I Call You', 'The Waeve', NULL),
+  ('Krank', 'Yeat', NULL),
+  ('Outside', 'Bryson Tiller', NULL),
+  ('Forget Me', '​​Lewis Capaldi', NULL),
+  ('The Fire This Time', 'Marisa Anderson', NULL),
+  ('The Fours', 'Makaya McCraven', NULL)
   ;
 
    // Update to song table
@@ -258,7 +269,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12783; // SELECT last_insert_rowid();
+  song_id = 12818; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +309,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-07 03:23:13.157157', '1353', '12774'),
-  ('2022-09-07 03:23:13.158158', '1353', '12775'),
-  ('2022-09-07 03:23:13.158158', '1353', '12776'),
-  ('2022-09-07 03:23:13.158158', '1353', '12777'),
-  ('2022-09-07 03:23:13.158158', '1353', '12778'),
-  ('2022-09-07 03:23:13.158158', '1353', '12779'),
-  ('2022-09-07 03:23:13.158158', '1353', '12780'),
-  ('2022-09-07 03:23:13.159159', '1353', '12781'),
-  ('2022-09-07 03:23:13.159159', '1353', '12740'),
-  ('2022-09-07 03:23:13.159159', '1353', '12782'),
-  ('2022-09-07 03:23:13.159159', '1353', '12783')
+  ('2022-09-14 12:24:58.287287', '1358', '12807'),
+  ('2022-09-14 12:24:58.288288', '1358', '12808'),
+  ('2022-09-14 12:24:58.288288', '1358', '12809'),
+  ('2022-09-14 12:24:58.288288', '1358', '12810'),
+  ('2022-09-14 12:24:58.289289', '1358', '12811'),
+  ('2022-09-14 12:24:58.289289', '1358', '12812'),
+  ('2022-09-14 12:24:58.289289', '1358', '12813'),
+  ('2022-09-14 12:24:58.289289', '1358', '12814'),
+  ('2022-09-14 12:24:58.289289', '1358', '12815'),
+  ('2022-09-14 12:24:58.289289', '1358', '12816'),
+  ('2022-09-14 12:24:58.289289', '1358', '12817'),
+  ('2022-09-14 12:24:58.289289', '1358', '12818')
   ;
 
   // Update to source_song table

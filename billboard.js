@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of September 10, 2022', '2022-09-10 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-09-10');
+    ('Billboard', 'The Hot 100', 'Week of September 17, 2022', '2022-09-17 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-09-17');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1352; // SELECT last_insert_rowid();
+  source_id = 1357; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,148 +105,67 @@
   songsData =
   [
     {
-        "title": "Hold Me Closer",
-        "artist_name": "Elton John & Britney Spears",
+        "title": "Detox",
+        "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.250250",
-        "source_id": 1352,
-        "song_id": 12713,
+        "capture_date": "2022-09-14 12:20:35.317317",
+        "source_id": 1357,
+        "song_id": 12784,
         "duplicate": true
     },
     {
-        "title": "God Did",
-        "artist_name": "DJ Khaled ft. Rick Ross, Lil Wayne, JAY-Z, John Legend & Fridayy",
+        "title": "Talk",
+        "artist_name": "Yeat",
         "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.251251",
-        "source_id": 1352,
-        "song_id": 12721,
+        "capture_date": "2022-09-14 12:20:35.317317",
+        "source_id": 1357,
+        "song_id": 12785,
         "duplicate": true
     },
     {
-        "title": "Beautiful",
-        "artist_name": "DJ Khaled ft. Future & SZA",
+        "title": "Romantic Homicide",
+        "artist_name": "d4vd",
         "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.251251",
-        "source_id": 1352,
+        "capture_date": "2022-09-14 12:20:35.319319",
+        "source_id": 1357,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Big Time",
-        "artist_name": "DJ Khaled ft. Future & Lil Baby",
+        "title": "Calm Down",
+        "artist_name": "Rema & Selena Gomez",
         "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.252252",
-        "source_id": 1352,
+        "capture_date": "2022-09-14 12:20:35.319319",
+        "source_id": 1357,
+        "song_id": 11692,
+        "duplicate": true
+    },
+    {
+        "title": "Static",
+        "artist_name": "Steve Lacy",
+        "video_id": null,
+        "capture_date": "2022-09-14 12:20:35.319319",
+        "source_id": 1357,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Beat The Odds",
-        "artist_name": "Lil Tjay",
+        "title": "Billie Eilish.",
+        "artist_name": "Armani White",
         "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.252252",
-        "source_id": 1352,
+        "capture_date": "2022-09-14 12:20:35.319319",
+        "source_id": 1357,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gatubela",
-        "artist_name": "Karol G x Maldy",
+        "title": "Sin Fin",
+        "artist_name": "Romeo Santos & Justin Timberlake",
         "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.252252",
-        "source_id": 1352,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Use This Gospel (Remix)",
-        "artist_name": "DJ Khaled ft. Kanye West & Eminem",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.253253",
-        "source_id": 1352,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Juice WRLD Did",
-        "artist_name": "DJ Khaled ft. Juice WRLD",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.253253",
-        "source_id": 1352,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Keep Going",
-        "artist_name": "DJ Khaled ft. Lil Durk, 21 Savage & Roddy Ricch",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.253253",
-        "source_id": 1352,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Party",
-        "artist_name": "DJ Khaled ft. Quavo & Takeoff",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.254254",
-        "source_id": 1352,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Golden Hour",
-        "artist_name": "JVKE",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.254254",
-        "source_id": 1352,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "It Ain't Safe",
-        "artist_name": "DJ Khaled ft. Nardo Wick & Kodak Black",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.254254",
-        "source_id": 1352,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "No Secret",
-        "artist_name": "DJ Khaled ft. Drake",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.254254",
-        "source_id": 1352,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I'm Good (Blue)",
-        "artist_name": "David Guetta & Bebe Rexha",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.254254",
-        "source_id": 1352,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Let's Pray",
-        "artist_name": "DJ Khaled ft. Don Toliver & Travis Scott",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.254254",
-        "source_id": 1352,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Wait In The Truck",
-        "artist_name": "HARDY ft. Lainey Wilson",
-        "video_id": null,
-        "capture_date": "2022-09-07 03:17:48.254254",
-        "source_id": 1352,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-09-14 12:20:35.319319",
+        "source_id": 1357,
+        "song_id": 12774,
+        "duplicate": true
     }
 ]
 
@@ -288,20 +207,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Beautiful', 'DJ Khaled ft. Future & SZA', NULL),
-  ('Big Time', 'DJ Khaled ft. Future & Lil Baby', NULL),
-  ('Beat The Odds', 'Lil Tjay', NULL),
-  ('Gatubela', 'Karol G x Maldy', NULL),
-  ('Use This Gospel (Remix)', 'DJ Khaled ft. Kanye West & Eminem', NULL),
-  ('Juice WRLD Did', 'DJ Khaled ft. Juice WRLD', NULL),
-  ('Keep Going', 'DJ Khaled ft. Lil Durk, 21 Savage & Roddy Ricch', NULL),
-  ('Party', 'DJ Khaled ft. Quavo & Takeoff', NULL),
-  ('Golden Hour', 'JVKE', NULL),
-  ('It Ain’t Safe', 'DJ Khaled ft. Nardo Wick & Kodak Black', NULL),
-  ('No Secret', 'DJ Khaled ft. Drake', NULL),
-  ('I’m Good (Blue)', 'David Guetta & Bebe Rexha', NULL),
-  ('Let’s Pray', 'DJ Khaled ft. Don Toliver & Travis Scott', NULL),
-  ('Wait In The Truck', 'HARDY ft. Lainey Wilson', NULL)
+  ('Romantic Homicide', 'd4vd', NULL),
+  ('Static', 'Steve Lacy', NULL),
+  ('Billie Eilish.', 'Armani White', NULL)
   ;
 
    // Update to song table
@@ -312,7 +220,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12773; // SELECT last_insert_rowid();
+  song_id = 12806; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -352,22 +260,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-07 03:17:48.250250', '1352', '12713'),
-  ('2022-09-07 03:17:48.251251', '1352', '12721'),
-  ('2022-09-07 03:17:48.251251', '1352', '12760'),
-  ('2022-09-07 03:17:48.252252', '1352', '12761'),
-  ('2022-09-07 03:17:48.252252', '1352', '12762'),
-  ('2022-09-07 03:17:48.252252', '1352', '12763'),
-  ('2022-09-07 03:17:48.253253', '1352', '12764'),
-  ('2022-09-07 03:17:48.253253', '1352', '12765'),
-  ('2022-09-07 03:17:48.253253', '1352', '12766'),
-  ('2022-09-07 03:17:48.254254', '1352', '12767'),
-  ('2022-09-07 03:17:48.254254', '1352', '12768'),
-  ('2022-09-07 03:17:48.254254', '1352', '12769'),
-  ('2022-09-07 03:17:48.254254', '1352', '12770'),
-  ('2022-09-07 03:17:48.254254', '1352', '12771'),
-  ('2022-09-07 03:17:48.254254', '1352', '12772'),
-  ('2022-09-07 03:17:48.254254', '1352', '12773')
+  ('2022-09-14 12:20:35.317317', '1357', '12784'),
+  ('2022-09-14 12:20:35.317317', '1357', '12785'),
+  ('2022-09-14 12:20:35.319319', '1357', '12804'),
+  ('2022-09-14 12:20:35.319319', '1357', '11692'),
+  ('2022-09-14 12:20:35.319319', '1357', '12805'),
+  ('2022-09-14 12:20:35.319319', '1357', '12806'),
+  ('2022-09-14 12:20:35.319319', '1357', '12774')
   ;
 
   // Update to source_song table
