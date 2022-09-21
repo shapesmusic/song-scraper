@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of September 9, 2022', '2022-09-09 12:00:00.000000', 'https://www.stereogum.com/2198959/the-5-best-songs-of-the-week-450/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of September 16, 2022', '2022-09-16 12:00:00.000000', 'https://www.stereogum.com/2199698/the-5-best-songs-of-the-week-451/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1361; // SELECT last_insert_rowid();
+  source_id = 1366; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,47 +101,47 @@
   songsData =
   [
     {
-        "title": "These Are The Good Old Days",
-        "artist_name": "Courtney Marie Andrews",
+        "title": "The Brazil",
+        "artist_name": "They Are Gutting A Body Of Water",
         "video_id": null,
-        "capture_date": "2022-09-14 12:41:01.683683",
-        "source_id": 1361,
+        "capture_date": "2022-09-20 10:19:26.702702",
+        "source_id": 1366,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Miracles",
-        "artist_name": "Alex G",
+        "title": "Danielle (Smile On My Face)",
+        "artist_name": "Fred Again..",
         "video_id": null,
-        "capture_date": "2022-09-14 12:41:01.685685",
-        "source_id": 1361,
+        "capture_date": "2022-09-20 10:19:26.702702",
+        "source_id": 1366,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Flip",
-        "artist_name": "Excide",
+        "title": "Curb Stomp Earth",
+        "artist_name": "Long Knife",
         "video_id": null,
-        "capture_date": "2022-09-14 12:41:01.685685",
-        "source_id": 1361,
+        "capture_date": "2022-09-20 10:19:26.702702",
+        "source_id": 1366,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Key To The City",
-        "artist_name": "Sorry",
+        "title": "Bite Back",
+        "artist_name": "Algiers",
         "video_id": null,
-        "capture_date": "2022-09-14 12:41:01.685685",
-        "source_id": 1361,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-09-20 10:19:26.702702",
+        "source_id": 1366,
+        "song_id": 12867,
+        "duplicate": true
     },
     {
-        "title": "Bull Believer",
-        "artist_name": "Wednesday",
+        "title": "Rights And Reproduction",
+        "artist_name": "Hammered Hulls",
         "video_id": null,
-        "capture_date": "2022-09-14 12:41:01.685685",
-        "source_id": 1361,
+        "capture_date": "2022-09-20 10:19:26.702702",
+        "source_id": 1366,
         "song_id": null,
         "duplicate": false
     }
@@ -185,11 +185,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('These Are The Good Old Days', 'Courtney Marie Andrews', NULL),
-  ('Miracles', 'Alex G', NULL),
-  ('Flip', 'Excide', NULL),
-  ('Key To The City', 'Sorry', NULL),
-  ('Bull Believer', 'Wednesday', NULL)
+  ('The Brazil', 'They Are Gutting A Body Of Water', NULL),
+  ('Danielle (Smile On My Face)', 'Fred Again..', NULL),
+  ('Curb Stomp Earth', 'Long Knife', NULL),
+  ('Rights And Reproduction', 'Hammered Hulls', NULL)
   ;
 
    // Update to song table
@@ -200,7 +199,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12836; // SELECT last_insert_rowid();
+  song_id = 12871; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -240,11 +239,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-14 12:41:01.683683', '1361', '12832'),
-  ('2022-09-14 12:41:01.685685', '1361', '12833'),
-  ('2022-09-14 12:41:01.685685', '1361', '12834'),
-  ('2022-09-14 12:41:01.685685', '1361', '12835'),
-  ('2022-09-14 12:41:01.685685', '1361', '12836')
+  ('2022-09-20 10:19:26.702702', '1366', '12868'),
+  ('2022-09-20 10:19:26.702702', '1366', '12869'),
+  ('2022-09-20 10:19:26.702702', '1366', '12870'),
+  ('2022-09-20 10:19:26.702702', '1366', '12867'),
+  ('2022-09-20 10:19:26.702702', '1366', '12871')
   ;
 
   // Update to source_song table

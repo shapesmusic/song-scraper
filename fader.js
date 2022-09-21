@@ -318,8 +318,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of September 12, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2022-09-12 12:00:00.000000', -- Don't forget this!
+      'Week of September 19, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-09-19 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -329,7 +329,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1360; // SELECT last_insert_rowid();
+    source_id = 1365; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -452,88 +452,71 @@
     // add song_ids for duplicates
     // add or remove blank songs as needed
 
+    // the top song is the most recent song
     songsData =
     [
     {
-        "title": "Puerta de Limosina",
-        "artist_name": "The Garden",
+        "title": "WTF!",
+        "artist_name": "Odunsi (The Engine)",
         "video_id": null,
-        "capture_date": "2022-09-14 12:33:15.321000",
-        "source_id": 1360,
+        "capture_date": "2022-09-20 10:11:13.494000",
+        "source_id": 1365,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Coyotes",
-        "artist_name": "Bill Callahan",
+        "title": "Baking Soda",
+        "artist_name": "Mavi",
         "video_id": null,
-        "capture_date": "2022-09-14 12:33:15.321000",
-        "source_id": 1360,
+        "capture_date": "2022-09-20 10:11:13.494000",
+        "source_id": 1365,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Why",
-        "artist_name": "Kelz",
+        "title": "Spiritual Bath",
+        "artist_name": "Zyah Belle",
         "video_id": null,
-        "capture_date": "2022-09-14 12:33:15.321000",
-        "source_id": 1360,
+        "capture_date": "2022-09-20 10:11:13.494000",
+        "source_id": 1365,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shoot It Myself",
-        "artist_name": "EST Gee & Future",
+        "title": "Vexed",
+        "artist_name": "Dexter",
         "video_id": null,
-        "capture_date": "2022-09-14 12:33:15.321000",
-        "source_id": 1360,
+        "capture_date": "2022-09-20 10:11:13.494000",
+        "source_id": 1365,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Baguettes",
-        "artist_name": "Damedot",
+        "title": "It's Not Just Me, It's Everybody",
+        "artist_name": "Weyes Blood",
         "video_id": null,
-        "capture_date": "2022-09-14 12:33:15.321000",
-        "source_id": 1360,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "My Lovely Cat",
-        "artist_name": "Deerhoof",
-        "video_id": null,
-        "capture_date": "2022-09-14 12:33:15.321000",
-        "source_id": 1360,
-        "song_id": 12810,
+        "capture_date": "2022-09-20 10:11:13.494000",
+        "source_id": 1365,
+        "song_id": 12846,
         "duplicate": true
     },
     {
-        "title": "Victoria",
-        "artist_name": "Brutus",
+        "title": "Bad Habit (remix)",
+        "artist_name": "AshZone",
         "video_id": null,
-        "capture_date": "2022-09-14 12:33:15.321000",
-        "source_id": 1360,
+        "capture_date": "2022-09-20 10:11:13.494000",
+        "source_id": 1365,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Light That Flickers In The Mirror",
-        "artist_name": "Laila Sakini",
+        "title": "Bite Back",
+        "artist_name": "Algiers, billy woods, and Backxwash",
         "video_id": null,
-        "capture_date": "2022-09-14 12:33:15.321000",
-        "source_id": 1360,
+        "capture_date": "2022-09-20 10:11:13.494000",
+        "source_id": 1365,
         "song_id": null,
         "duplicate": false
-    },
-    {
-        "title": "Atopos",
-        "artist_name": "Björk",
-        "video_id": null,
-        "capture_date": "2022-09-14 12:33:15.321000",
-        "source_id": 1360,
-        "song_id": 12807,
-        "duplicate": true
     }
 ]
 
@@ -573,13 +556,12 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Puerta de Limosina', 'The Garden', NULL),
-    ('Coyotes', 'Bill Callahan', NULL),
-    ('Why', 'Kelz', NULL),
-    ('Shoot It Myself', 'EST Gee & Future', NULL),
-    ('Baguettes', 'Damedot', NULL),
-    ('Victoria', 'Brutus', NULL),
-    ('The Light That Flickers In The Mirror', 'Laila Sakini', NULL)
+    ('WTF!', 'Odunsi (The Engine)', NULL),
+    ('Baking Soda', 'Mavi', NULL),
+    ('Spiritual Bath', 'Zyah Belle', NULL),
+    ('Vexed', 'Dexter', NULL),
+    ('Bad Habit (remix)', 'AshZone', NULL),
+    ('Bite Back', 'Algiers, billy woods, and Backxwash', NULL)
     ;
 
      // Update to song table
@@ -590,7 +572,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12831; // SELECT last_insert_rowid();
+  song_id = 12867; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -630,15 +612,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-14 12:33:15.321000', '1360', '12825'),
-  ('2022-09-14 12:33:15.321000', '1360', '12826'),
-  ('2022-09-14 12:33:15.321000', '1360', '12827'),
-  ('2022-09-14 12:33:15.321000', '1360', '12828'),
-  ('2022-09-14 12:33:15.321000', '1360', '12829'),
-  ('2022-09-14 12:33:15.321000', '1360', '12810'),
-  ('2022-09-14 12:33:15.321000', '1360', '12830'),
-  ('2022-09-14 12:33:15.321000', '1360', '12831'),
-  ('2022-09-14 12:33:15.321000', '1360', '12807')
+  ('2022-09-20 10:11:13.494000', '1365', '12862'),
+  ('2022-09-20 10:11:13.494000', '1365', '12863'),
+  ('2022-09-20 10:11:13.494000', '1365', '12864'),
+  ('2022-09-20 10:11:13.494000', '1365', '12865'),
+  ('2022-09-20 10:11:13.494000', '1365', '12846'),
+  ('2022-09-20 10:11:13.494000', '1365', '12866'),
+  ('2022-09-20 10:11:13.494000', '1365', '12867')
   ;
 
   // Update to source_song table

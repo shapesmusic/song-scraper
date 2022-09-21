@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'NAV, Roddy Ricch, Glorilla, and More', '2022-09-09 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-sept-9/bryson-tiller-outside');
+    ('Complex', 'The Best New Music This Week', 'EST Gee, Blood Orange, Symba, and More', '2022-09-16 12:00:00.000000', 'https://www.complex.com/music/best-new-music-sept-16/blood-orange-something-you-know');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1359; // SELECT last_insert_rowid();
+  source_id = 1364; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,67 +102,67 @@
   songsData =
   [
     {
-        "title": "Dead Shot",
-        "artist_name": "NAV f/ Lil Uzi Vert",
+        "title": "Backstage Passes",
+        "artist_name": "EST Gee ft. Jack Harlow",
         "video_id": null,
-        "capture_date": "2022-09-14 12:29:20.749749",
-        "source_id": 1359,
+        "capture_date": "2022-09-20 10:05:57.339339",
+        "source_id": 1364,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ghetto Superstar",
-        "artist_name": "Roddy Ricch f/ G Herbo & Doe Boy",
+        "title": "Blues",
+        "artist_name": "G Herbo ft. Future",
         "video_id": null,
-        "capture_date": "2022-09-14 12:29:20.750750",
-        "source_id": 1359,
+        "capture_date": "2022-09-20 10:05:57.340340",
+        "source_id": 1364,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "F.N.F. (Let’s Go) Remix",
-        "artist_name": "Glorilla f/ Latto & JT",
+        "title": "Moonshooter",
+        "artist_name": "Ab-Soul",
         "video_id": null,
-        "capture_date": "2022-09-14 12:29:20.750750",
-        "source_id": 1359,
+        "capture_date": "2022-09-20 10:05:57.340340",
+        "source_id": 1364,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Waste My Time",
-        "artist_name": "Ari Lennox",
+        "title": "Soul Ties",
+        "artist_name": "Symba ft. Rayven Tyler",
         "video_id": null,
-        "capture_date": "2022-09-14 12:29:20.750750",
-        "source_id": 1359,
+        "capture_date": "2022-09-20 10:05:57.340340",
+        "source_id": 1364,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Out thë Way",
-        "artist_name": "Yeat",
+        "title": "Love in the Way",
+        "artist_name": "Bleu ft. Nicki Minaj",
         "video_id": null,
-        "capture_date": "2022-09-14 12:29:20.750750",
-        "source_id": 1359,
+        "capture_date": "2022-09-20 10:05:57.340340",
+        "source_id": 1364,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Me, Myself & I",
-        "artist_name": "G Herbo f/ A Boogie",
+        "title": "One Time",
+        "artist_name": "B-Lovee ft. Ice Spice, Skillibeng, and J.I the Prince of N.Y",
         "video_id": null,
-        "capture_date": "2022-09-14 12:29:20.750750",
-        "source_id": 1359,
+        "capture_date": "2022-09-20 10:05:57.340340",
+        "source_id": 1364,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Outside",
-        "artist_name": "Bryson Tiller",
+        "title": "Something You Know",
+        "artist_name": "Blood Orange",
         "video_id": null,
-        "capture_date": "2022-09-14 12:29:20.750750",
-        "source_id": 1359,
-        "song_id": 12815,
-        "duplicate": true
+        "capture_date": "2022-09-20 10:05:57.340340",
+        "source_id": 1364,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -203,12 +203,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Dead Shot', 'NAV f/ Lil Uzi Vert', NULL),
-  ('Ghetto Superstar', 'Roddy Ricch f/ G Herbo & Doe Boy', NULL),
-  ('F.N.F. (Let’s Go) Remix', 'Glorilla f/ Latto & JT', NULL),
-  ('Waste My Time', 'Ari Lennox', NULL),
-  ('Out thë Way', 'Yeat', NULL),
-  ('Me, Myself & I', 'G Herbo f/ A Boogie', NULL)
+  ('Backstage Passes', 'EST Gee ft. Jack Harlow', NULL),
+  ('Blues', 'G Herbo ft. Future', NULL),
+  ('Moonshooter', 'Ab-Soul', NULL),
+  ('Soul Ties', 'Symba ft. Rayven Tyler', NULL),
+  ('Love in the Way', 'Bleu ft. Nicki Minaj', NULL),
+  ('One Time', 'B-Lovee ft. Ice Spice, Skillibeng, and J.I the Prince of N.Y', NULL),
+  ('Something You Know', 'Blood Orange', NULL)
   ;
 
    // Update to song table
@@ -219,7 +220,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12824; // SELECT last_insert_rowid();
+  song_id = 12861; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -259,13 +260,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-14 12:29:20.749749', '1359', '12819'),
-  ('2022-09-14 12:29:20.750750', '1359', '12820'),
-  ('2022-09-14 12:29:20.750750', '1359', '12821'),
-  ('2022-09-14 12:29:20.750750', '1359', '12822'),
-  ('2022-09-14 12:29:20.750750', '1359', '12823'),
-  ('2022-09-14 12:29:20.750750', '1359', '12824'),
-  ('2022-09-14 12:29:20.750750', '1359', '12815')
+  ('2022-09-20 10:05:57.339339', '1364', '12855'),
+  ('2022-09-20 10:05:57.340340', '1364', '12856'),
+  ('2022-09-20 10:05:57.340340', '1364', '12857'),
+  ('2022-09-20 10:05:57.340340', '1364', '12858'),
+  ('2022-09-20 10:05:57.340340', '1364', '12859'),
+  ('2022-09-20 10:05:57.340340', '1364', '12860'),
+  ('2022-09-20 10:05:57.340340', '1364', '12861')
   ;
 
   // Update to source_song table

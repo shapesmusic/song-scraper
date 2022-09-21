@@ -40,9 +40,9 @@
   // Replace any ' in strings with ’
 
   INSERT INTO source
-    (parent_entity, parent_stream, instance_name, publication_date, location)
-  VALUES
-    ('Billboard', 'The Hot 100', 'Week of September 17, 2022', '2022-09-17 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-09-17');
+  (parent_entity, parent_stream, instance_name, publication_date, location)
+VALUES
+  ('Billboard', 'The Hot 100', 'Week of September 24, 2022', '2022-09-24 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-09-24');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1357; // SELECT last_insert_rowid();
+  source_id = 1362; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,67 +105,76 @@
   songsData =
   [
     {
-        "title": "Detox",
+        "title": "Thank God",
+        "artist_name": "Kane Brown With Katelyn Brown",
+        "video_id": null,
+        "capture_date": "2022-09-20 11:52:04.595595",
+        "source_id": 1362,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Under The Influence",
+        "artist_name": "Chris Brown",
+        "video_id": null,
+        "capture_date": "2022-09-20 11:52:04.596596",
+        "source_id": 1362,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Put It On Me",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2022-09-20 11:52:04.597597",
+        "source_id": 1362,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Freestyle",
         "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2022-09-14 12:20:35.317317",
-        "source_id": 1357,
-        "song_id": 12784,
-        "duplicate": true
-    },
-    {
-        "title": "Talk",
-        "artist_name": "Yeat",
-        "video_id": null,
-        "capture_date": "2022-09-14 12:20:35.317317",
-        "source_id": 1357,
-        "song_id": 12785,
-        "duplicate": true
-    },
-    {
-        "title": "Romantic Homicide",
-        "artist_name": "d4vd",
-        "video_id": null,
-        "capture_date": "2022-09-14 12:20:35.319319",
-        "source_id": 1357,
+        "capture_date": "2022-09-20 11:52:04.597597",
+        "source_id": 1362,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Calm Down",
-        "artist_name": "Rema & Selena Gomez",
+        "title": "Flawless",
+        "artist_name": "Yeat ft. Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2022-09-14 12:20:35.319319",
-        "source_id": 1357,
-        "song_id": 11692,
-        "duplicate": true
-    },
-    {
-        "title": "Static",
-        "artist_name": "Steve Lacy",
-        "video_id": null,
-        "capture_date": "2022-09-14 12:20:35.319319",
-        "source_id": 1357,
+        "capture_date": "2022-09-20 11:52:04.597597",
+        "source_id": 1362,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Billie Eilish.",
-        "artist_name": "Armani White",
+        "title": "Mary On A Cross",
+        "artist_name": "Ghost",
         "video_id": null,
-        "capture_date": "2022-09-14 12:20:35.319319",
-        "source_id": 1357,
+        "capture_date": "2022-09-20 11:52:04.598598",
+        "source_id": 1362,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sin Fin",
-        "artist_name": "Romeo Santos & Justin Timberlake",
+        "title": "Purge Me",
+        "artist_name": "YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-09-14 12:20:35.319319",
-        "source_id": 1357,
-        "song_id": 12774,
-        "duplicate": true
+        "capture_date": "2022-09-20 11:52:04.598598",
+        "source_id": 1362,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Burn, Burn, Burn",
+        "artist_name": "Zach Bryan",
+        "video_id": null,
+        "capture_date": "2022-09-20 11:52:04.598598",
+        "source_id": 1362,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -207,9 +216,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Romantic Homicide', 'd4vd', NULL),
-  ('Static', 'Steve Lacy', NULL),
-  ('Billie Eilish.', 'Armani White', NULL)
+  ('Thank God', 'Kane Brown With Katelyn Brown', NULL),
+  ('Under The Influence', 'Chris Brown', NULL),
+  ('Put It On Me', 'YoungBoy Never Broke Again', NULL),
+  ('Freestyle', 'Lil Baby', NULL),
+  ('Flawless', 'Yeat ft. Lil Uzi Vert', NULL),
+  ('Mary On A Cross', 'Ghost', NULL),
+  ('Purge Me', 'YoungBoy Never Broke Again', NULL),
+  ('Burn, Burn, Burn', 'Zach Bryan', NULL)
   ;
 
    // Update to song table
@@ -220,7 +234,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12806; // SELECT last_insert_rowid();
+  song_id = 12844; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -260,13 +274,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-14 12:20:35.317317', '1357', '12784'),
-  ('2022-09-14 12:20:35.317317', '1357', '12785'),
-  ('2022-09-14 12:20:35.319319', '1357', '12804'),
-  ('2022-09-14 12:20:35.319319', '1357', '11692'),
-  ('2022-09-14 12:20:35.319319', '1357', '12805'),
-  ('2022-09-14 12:20:35.319319', '1357', '12806'),
-  ('2022-09-14 12:20:35.319319', '1357', '12774')
+  ('2022-09-20 11:52:04.595595', '1362', '12837'),
+  ('2022-09-20 11:52:04.596596', '1362', '12838'),
+  ('2022-09-20 11:52:04.597597', '1362', '12839'),
+  ('2022-09-20 11:52:04.597597', '1362', '12840'),
+  ('2022-09-20 11:52:04.597597', '1362', '12841'),
+  ('2022-09-20 11:52:04.598598', '1362', '12842'),
+  ('2022-09-20 11:52:04.598598', '1362', '12843'),
+  ('2022-09-20 11:52:04.598598', '1362', '12844')
   ;
 
   // Update to source_song table

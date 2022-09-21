@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Björk Insists on Connection, and 11 More New Songs', '2022-09-09 09:41:14.000000', 'https://www.nytimes.com/2022/09/09/arts/music/playlist-bjork-yeat-phoenix.html');
+    ('New York Times', 'The Playlist', 'Lou Reed’s Folky Velvet Underground Demo, and 9 More New Songs', '2022-09-16 10:05:15.000000', 'https://www.nytimes.com/2022/09/16/arts/music/playlist-lou-reed-weyes-blood-kelela.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1358; // SELECT last_insert_rowid();
+  source_id = 1363; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,110 +100,92 @@
   songsData =
   [
     {
-        "title": "Atopos",
-        "artist_name": "Björk",
+        "title": "I’m Waiting for the Man – May 1965 Demo",
+        "artist_name": "Lou Reed",
         "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.287287",
-        "source_id": 1358,
+        "capture_date": "2022-09-20 11:56:21.333333",
+        "source_id": 1363,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Jesus Freak Lighter",
-        "artist_name": "Blood Orange",
+        "title": "It’s Not Just Me, It’s Everybody",
+        "artist_name": "Weyes Blood",
         "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.288288",
-        "source_id": 1358,
+        "capture_date": "2022-09-20 11:56:21.334334",
+        "source_id": 1363,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tonight",
-        "artist_name": "Phoenix ft. Ezra Koenig",
+        "title": "Enemy",
+        "artist_name": "Mightmare",
         "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.288288",
-        "source_id": 1358,
+        "capture_date": "2022-09-20 11:56:21.334334",
+        "source_id": 1363,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "My Lovely Cat",
-        "artist_name": "Deerhoof",
+        "title": "Me Duele",
+        "artist_name": "Bomba Estéreo and Manu Chao",
         "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.288288",
-        "source_id": 1358,
+        "capture_date": "2022-09-20 11:56:21.334334",
+        "source_id": 1363,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Our Rebellion",
-        "artist_name": "Madison Cunningham",
+        "title": "Mutual Friend",
+        "artist_name": "Jessie Reyez",
         "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.289289",
-        "source_id": 1358,
+        "capture_date": "2022-09-20 11:56:21.334334",
+        "source_id": 1363,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Is It Worth It Now?",
-        "artist_name": "Jordana",
+        "title": "Washed Away",
+        "artist_name": "Kelela",
         "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.289289",
-        "source_id": 1358,
+        "capture_date": "2022-09-20 11:56:21.334334",
+        "source_id": 1363,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Can I Call You",
-        "artist_name": "The Waeve",
+        "title": "Traguito",
+        "artist_name": "iLe and Mon Laferte",
         "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.289289",
-        "source_id": 1358,
+        "capture_date": "2022-09-20 11:56:21.334334",
+        "source_id": 1363,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Krank",
-        "artist_name": "Yeat",
+        "title": "The Greatest Weapon",
+        "artist_name": "Hand Habits",
         "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.289289",
-        "source_id": 1358,
+        "capture_date": "2022-09-20 11:56:21.334334",
+        "source_id": 1363,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Outside",
-        "artist_name": "Bryson Tiller",
+        "title": "Ossature",
+        "artist_name": "Ouri",
         "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.289289",
-        "source_id": 1358,
+        "capture_date": "2022-09-20 11:56:21.334334",
+        "source_id": 1363,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Forget Me",
-        "artist_name": "​​Lewis Capaldi",
+        "title": "Guajira en Sol",
+        "artist_name": "Dafnis Prieto ft. Luciana Souza",
         "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.289289",
-        "source_id": 1358,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Fire This Time",
-        "artist_name": "Marisa Anderson",
-        "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.289289",
-        "source_id": 1358,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Fours",
-        "artist_name": "Makaya McCraven",
-        "video_id": null,
-        "capture_date": "2022-09-14 12:24:58.289289",
-        "source_id": 1358,
+        "capture_date": "2022-09-20 11:56:21.334334",
+        "source_id": 1363,
         "song_id": null,
         "duplicate": false
     }
@@ -247,18 +229,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Atopos', 'Björk', NULL),
-  ('Jesus Freak Lighter', 'Blood Orange', NULL),
-  ('Tonight', 'Phoenix ft. Ezra Koenig', NULL),
-  ('My Lovely Cat', 'Deerhoof', NULL),
-  ('Our Rebellion', 'Madison Cunningham', NULL),
-  ('Is It Worth It Now?', 'Jordana', NULL),
-  ('Can I Call You', 'The Waeve', NULL),
-  ('Krank', 'Yeat', NULL),
-  ('Outside', 'Bryson Tiller', NULL),
-  ('Forget Me', '​​Lewis Capaldi', NULL),
-  ('The Fire This Time', 'Marisa Anderson', NULL),
-  ('The Fours', 'Makaya McCraven', NULL)
+  ('I’m Waiting for the Man – May 1965 Demo', 'Lou Reed', NULL),
+  ('It’s Not Just Me, It’s Everybody', 'Weyes Blood', NULL),
+  ('Enemy', 'Mightmare', NULL),
+  ('Me Duele', 'Bomba Estéreo and Manu Chao', NULL),
+  ('Mutual Friend', 'Jessie Reyez', NULL),
+  ('Washed Away', 'Kelela', NULL),
+  ('Traguito', 'iLe and Mon Laferte', NULL),
+  ('The Greatest Weapon', 'Hand Habits', NULL),
+  ('Ossature', 'Ouri', NULL),
+  ('Guajira en Sol', 'Dafnis Prieto ft. Luciana Souza', NULL)
   ;
 
    // Update to song table
@@ -269,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12818; // SELECT last_insert_rowid();
+  song_id = 12854; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -309,18 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-14 12:24:58.287287', '1358', '12807'),
-  ('2022-09-14 12:24:58.288288', '1358', '12808'),
-  ('2022-09-14 12:24:58.288288', '1358', '12809'),
-  ('2022-09-14 12:24:58.288288', '1358', '12810'),
-  ('2022-09-14 12:24:58.289289', '1358', '12811'),
-  ('2022-09-14 12:24:58.289289', '1358', '12812'),
-  ('2022-09-14 12:24:58.289289', '1358', '12813'),
-  ('2022-09-14 12:24:58.289289', '1358', '12814'),
-  ('2022-09-14 12:24:58.289289', '1358', '12815'),
-  ('2022-09-14 12:24:58.289289', '1358', '12816'),
-  ('2022-09-14 12:24:58.289289', '1358', '12817'),
-  ('2022-09-14 12:24:58.289289', '1358', '12818')
+  ('2022-09-20 11:56:21.333333', '1363', '12845'),
+  ('2022-09-20 11:56:21.334334', '1363', '12846'),
+  ('2022-09-20 11:56:21.334334', '1363', '12847'),
+  ('2022-09-20 11:56:21.334334', '1363', '12848'),
+  ('2022-09-20 11:56:21.334334', '1363', '12849'),
+  ('2022-09-20 11:56:21.334334', '1363', '12850'),
+  ('2022-09-20 11:56:21.334334', '1363', '12851'),
+  ('2022-09-20 11:56:21.334334', '1363', '12852'),
+  ('2022-09-20 11:56:21.334334', '1363', '12853'),
+  ('2022-09-20 11:56:21.334334', '1363', '12854')
   ;
 
   // Update to source_song table
