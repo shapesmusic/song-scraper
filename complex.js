@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Glorilla, Cardi B, Freddie Gibbs, and More', '2022-09-23 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-sept-23/dababy-summa-dat');
+    ('Complex', 'The Best New Music This Week', 'Roddy Ricch, Smino, Freddie Gibbs, and More', '2022-09-30 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-september-30/kenzo-balla-tg-crippy-evil-twinz');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1369; // SELECT last_insert_rowid();
+  source_id = 1373; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,65 +102,65 @@
   songsData =
   [
     {
-        "title": "Tomorrow 2",
-        "artist_name": "Glorilla ft. Cardi B",
+        "title": "Stop Breathing",
+        "artist_name": "Roddy Ricch",
         "video_id": null,
-        "capture_date": "2022-10-05 08:07:23.392392",
-        "source_id": 1369,
+        "capture_date": "2022-10-05 09:01:28.800800",
+        "source_id": 1373,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dark Hearted",
+        "title": "90 Proof",
+        "artist_name": "Smino ft. J. Cole",
+        "video_id": null,
+        "capture_date": "2022-10-05 09:01:28.800800",
+        "source_id": 1373,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Space Rabbit",
         "artist_name": "Freddie Gibbs",
         "video_id": null,
-        "capture_date": "2022-10-05 08:07:23.393393",
-        "source_id": 1369,
+        "capture_date": "2022-10-05 09:01:28.800800",
+        "source_id": 1373,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Willing To Trust",
-        "artist_name": "Kid Cudi ft. Ty Dolla Sign",
+        "title": "What’s Up",
+        "artist_name": "DVSN ft. Jagged Edge",
         "video_id": null,
-        "capture_date": "2022-10-05 08:07:23.393393",
-        "source_id": 1369,
+        "capture_date": "2022-10-05 09:01:28.800800",
+        "source_id": 1373,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The World Is Yours to Take",
-        "artist_name": "Lil Baby",
+        "title": "No Weapon",
+        "artist_name": "YG ft. Nas",
         "video_id": null,
-        "capture_date": "2022-10-05 08:07:23.393393",
-        "source_id": 1369,
+        "capture_date": "2022-10-05 09:01:28.801801",
+        "source_id": 1373,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Blow",
-        "artist_name": "Moneybagg Yo",
+        "title": "Nothing Changed",
+        "artist_name": "Quavo & Takeoff",
         "video_id": null,
-        "capture_date": "2022-10-05 08:07:23.393393",
-        "source_id": 1369,
+        "capture_date": "2022-10-05 09:01:28.801801",
+        "source_id": 1373,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Maniac",
-        "artist_name": "YG",
+        "title": "Evil Twinz",
+        "artist_name": "Kenzo Balla ft. TG Crippy",
         "video_id": null,
-        "capture_date": "2022-10-05 08:07:23.393393",
-        "source_id": 1369,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Summa Dat",
-        "artist_name": "DaBaby",
-        "video_id": null,
-        "capture_date": "2022-10-05 08:07:23.393393",
-        "source_id": 1369,
+        "capture_date": "2022-10-05 09:01:28.801801",
+        "source_id": 1373,
         "song_id": null,
         "duplicate": false
     }
@@ -203,13 +203,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Tomorrow 2', 'Glorilla ft. Cardi B', NULL),
-  ('Dark Hearted', 'Freddie Gibbs', NULL),
-  ('Willing To Trust', 'Kid Cudi ft. Ty Dolla Sign', NULL),
-  ('The World Is Yours to Take', 'Lil Baby', NULL),
-  ('Blow', 'Moneybagg Yo', NULL),
-  ('Maniac', 'YG', NULL),
-  ('Summa Dat', 'DaBaby', NULL)
+  ('Stop Breathing', 'Roddy Ricch', NULL),
+  ('90 Proof', 'Smino ft. J. Cole', NULL),
+  ('Space Rabbit', 'Freddie Gibbs', NULL),
+  ('What’s Up', 'DVSN ft. Jagged Edge', NULL),
+  ('No Weapon', 'YG ft. Nas', NULL),
+  ('Nothing Changed', 'Quavo & Takeoff', NULL),
+  ('Evil Twinz', 'Kenzo Balla ft. TG Crippy', NULL)
   ;
 
    // Update to song table
@@ -220,7 +220,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12891; // SELECT last_insert_rowid();
+  song_id = 12916; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -260,13 +260,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-05 08:07:23.392392', '1369', '12885'),
-  ('2022-10-05 08:07:23.393393', '1369', '12886'),
-  ('2022-10-05 08:07:23.393393', '1369', '12887'),
-  ('2022-10-05 08:07:23.393393', '1369', '12888'),
-  ('2022-10-05 08:07:23.393393', '1369', '12889'),
-  ('2022-10-05 08:07:23.393393', '1369', '12890'),
-  ('2022-10-05 08:07:23.393393', '1369', '12891')
+  ('2022-10-05 09:01:28.800800', '1373', '12910'),
+  ('2022-10-05 09:01:28.800800', '1373', '12911'),
+  ('2022-10-05 09:01:28.800800', '1373', '12912'),
+  ('2022-10-05 09:01:28.800800', '1373', '12913'),
+  ('2022-10-05 09:01:28.801801', '1373', '12914'),
+  ('2022-10-05 09:01:28.801801', '1373', '12915'),
+  ('2022-10-05 09:01:28.801801', '1373', '12916')
   ;
 
   // Update to source_song table

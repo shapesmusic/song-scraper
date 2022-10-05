@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Red Hot Chili Peppers Honor Eddie Van Halen, and 10 More New Songs', '2022-09-23 09:42:58.000000', 'https://www.nytimes.com/2022/09/23/arts/music/playlist-red-hot-chili-peppers-lil-nas-x.html');
+    ('New York Times', 'The Playlist', 'Paramore Steps Into a New Era, and 8 More New Songs', '2022-10-03 07:13:04.000000', 'https://www.nytimes.com/2022/09/30/arts/music/playlist-paramore-yeah-yeah-yeahs.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1368; // SELECT last_insert_rowid();
+  source_id = 1372; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,92 +100,83 @@
   songsData =
   [
     {
-        "title": "Eddie",
-        "artist_name": "Red Hot Chili Peppers",
+        "title": "This Is Why",
+        "artist_name": "Paramore",
         "video_id": null,
-        "capture_date": "2022-10-05 08:03:30.859859",
-        "source_id": 1368,
+        "capture_date": "2022-10-05 08:57:35.459459",
+        "source_id": 1372,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Muscle Memory",
-        "artist_name": "Kelsea Ballerini",
+        "title": "Fleez",
+        "artist_name": "Yeah Yeah Yeahs",
         "video_id": null,
-        "capture_date": "2022-10-05 08:03:30.860860",
-        "source_id": 1368,
+        "capture_date": "2022-10-05 08:57:35.460460",
+        "source_id": 1372,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Change of Heart",
-        "artist_name": "Margo Price",
+        "title": "New Body Rhumba",
+        "artist_name": "LCD Soundsystem",
         "video_id": null,
-        "capture_date": "2022-10-05 08:03:30.860860",
-        "source_id": 1368,
+        "capture_date": "2022-10-05 08:57:35.460460",
+        "source_id": 1372,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kill Dem",
-        "artist_name": "Jamie xx",
+        "title": "Nobody’s Sweetheart",
+        "artist_name": "Caitlin Rose",
         "video_id": null,
-        "capture_date": "2022-10-05 08:03:30.860860",
-        "source_id": 1368,
+        "capture_date": "2022-10-05 08:57:35.460460",
+        "source_id": 1372,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pyramids",
-        "artist_name": "The Comet Is Coming",
+        "title": "F.O.O.F.",
+        "artist_name": "Frankie Cosmos",
         "video_id": null,
-        "capture_date": "2022-10-05 08:03:30.860860",
-        "source_id": 1368,
+        "capture_date": "2022-10-05 08:57:35.460460",
+        "source_id": 1372,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Waile",
-        "artist_name": "Witch",
+        "title": "Sever",
+        "artist_name": "Nisa",
         "video_id": null,
-        "capture_date": "2022-10-05 08:03:30.861861",
-        "source_id": 1368,
+        "capture_date": "2022-10-05 08:57:35.460460",
+        "source_id": 1372,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Not My Job",
-        "artist_name": "Flo",
+        "title": "Let Me See Your Phone",
+        "artist_name": "Dram",
         "video_id": null,
-        "capture_date": "2022-10-05 08:03:30.861861",
-        "source_id": 1368,
+        "capture_date": "2022-10-05 08:57:35.460460",
+        "source_id": 1372,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Star Walkin",
-        "artist_name": "Lil Nas X",
+        "title": "I",
+        "artist_name": "Oren Ambarchi",
         "video_id": null,
-        "capture_date": "2022-10-05 08:03:30.861861",
-        "source_id": 1368,
+        "capture_date": "2022-10-05 08:57:35.460460",
+        "source_id": 1372,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Right Here",
-        "artist_name": "Emiliana Torrini & the Colorist Orchestra",
+        "title": "Waltz for Hal Willner",
+        "artist_name": "Bill Frisell",
         "video_id": null,
-        "capture_date": "2022-10-05 08:03:30.861861",
-        "source_id": 1368,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Oh My God",
-        "artist_name": "Shannen Moser",
-        "video_id": null,
-        "capture_date": "2022-10-05 08:03:30.861861",
-        "source_id": 1368,
+        "capture_date": "2022-10-05 08:57:35.460460",
+        "source_id": 1372,
         "song_id": null,
         "duplicate": false
     }
@@ -229,16 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Eddie', 'Red Hot Chili Peppers', NULL),
-  ('Muscle Memory', 'Kelsea Ballerini', NULL),
-  ('Change of Heart', 'Margo Price', NULL),
-  ('Kill Dem', 'Jamie xx', NULL),
-  ('Pyramids', 'The Comet Is Coming', NULL),
-  ('Waile', 'Witch', NULL),
-  ('Not My Job', 'Flo', NULL),
-  ('Star Walkin', 'Lil Nas X', NULL),
-  ('Right Here', 'Emiliana Torrini & the Colorist Orchestra', NULL),
-  ('Oh My God', 'Shannen Moser', NULL)
+  ('This Is Why', 'Paramore', NULL),
+  ('Fleez', 'Yeah Yeah Yeahs', NULL),
+  ('New Body Rhumba', 'LCD Soundsystem', NULL),
+  ('Nobody’s Sweetheart', 'Caitlin Rose', NULL),
+  ('F.O.O.F.', 'Frankie Cosmos', NULL),
+  ('Sever', 'Nisa', NULL),
+  ('Let Me See Your Phone', 'Dram', NULL),
+  ('I', 'Oren Ambarchi', NULL),
+  ('Waltz for Hal Willner', 'Bill Frisell', NULL)
   ;
 
    // Update to song table
@@ -249,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12884; // SELECT last_insert_rowid();
+  song_id = 12909; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-05 08:03:30.859859', '1368', '12875'),
-  ('2022-10-05 08:03:30.860860', '1368', '12876'),
-  ('2022-10-05 08:03:30.860860', '1368', '12877'),
-  ('2022-10-05 08:03:30.860860', '1368', '12878'),
-  ('2022-10-05 08:03:30.860860', '1368', '12879'),
-  ('2022-10-05 08:03:30.861861', '1368', '12880'),
-  ('2022-10-05 08:03:30.861861', '1368', '12881'),
-  ('2022-10-05 08:03:30.861861', '1368', '12882'),
-  ('2022-10-05 08:03:30.861861', '1368', '12883'),
-  ('2022-10-05 08:03:30.861861', '1368', '12884')
+  ('2022-10-05 08:57:35.459459', '1372', '12901'),
+  ('2022-10-05 08:57:35.460460', '1372', '12902'),
+  ('2022-10-05 08:57:35.460460', '1372', '12903'),
+  ('2022-10-05 08:57:35.460460', '1372', '12904'),
+  ('2022-10-05 08:57:35.460460', '1372', '12905'),
+  ('2022-10-05 08:57:35.460460', '1372', '12906'),
+  ('2022-10-05 08:57:35.460460', '1372', '12907'),
+  ('2022-10-05 08:57:35.460460', '1372', '12908'),
+  ('2022-10-05 08:57:35.460460', '1372', '12909')
   ;
 
   // Update to source_song table

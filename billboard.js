@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 1, 2022', '2022-10-01 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-10-01/');
+    ('Billboard', 'The Hot 100', 'Week of October 8, 2022', '2022-10-08 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-10-08');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1367; // SELECT last_insert_rowid();
+  source_id = 1371; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,58 +105,85 @@
   songsData =
   [
     {
-        "title": "Shut Down",
-        "artist_name": "BLACKPINK",
+        "title": "Unholy",
+        "artist_name": "Sam Smith & Kim Petras",
         "video_id": null,
-        "capture_date": "2022-10-05 07:59:22.689689",
-        "source_id": 1367,
+        "capture_date": "2022-10-05 08:14:41.470470",
+        "source_id": 1371,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Evergreen",
-        "artist_name": "Omar Apollo",
+        "title": "Tomorrow 2",
+        "artist_name": "GloRilla & Cardi B",
         "video_id": null,
-        "capture_date": "2022-10-05 07:59:22.690690",
-        "source_id": 1367,
-        "song_id": 11998,
+        "capture_date": "2022-10-05 08:14:41.471471",
+        "source_id": 1371,
+        "song_id": 12885,
         "duplicate": true
     },
     {
-        "title": "Hell Yeah",
-        "artist_name": "Little Big Town",
+        "title": "Star Walkin' (League Of Legends Worlds Anthem)",
+        "artist_name": "Lil Nas X",
         "video_id": null,
-        "capture_date": "2022-10-05 07:59:22.691691",
-        "source_id": 1367,
+        "capture_date": "2022-10-05 08:14:41.472472",
+        "source_id": 1371,
+        "song_id": 12882,
+        "duplicate": true
+    },
+    {
+        "title": "Out In The Middle",
+        "artist_name": "Zac Brown Band",
+        "video_id": null,
+        "capture_date": "2022-10-05 08:14:41.475475",
+        "source_id": 1371,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Love In The Way",
-        "artist_name": "BLEU & Nicki Minaj",
+        "title": "Blow",
+        "artist_name": "Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2022-10-05 07:59:22.691691",
-        "source_id": 1367,
-        "song_id": 12859,
+        "capture_date": "2022-10-05 08:14:41.475475",
+        "source_id": 1371,
+        "song_id": 12889,
         "duplicate": true
     },
     {
-        "title": "Dark Red",
-        "artist_name": "Steve Lacy",
+        "title": "World's Smallest Violin",
+        "artist_name": "AJR",
         "video_id": null,
-        "capture_date": "2022-10-05 07:59:22.691691",
-        "source_id": 1367,
+        "capture_date": "2022-10-05 08:14:41.475475",
+        "source_id": 1371,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Backstage Passes",
-        "artist_name": "EST Gee ft. Jack Harlow",
+        "title": "Oklahoma Smoke Show",
+        "artist_name": "Zach Bryan",
         "video_id": null,
-        "capture_date": "2022-10-05 07:59:22.691691",
-        "source_id": 1367,
-        "song_id": 12855,
-        "duplicate": true
+        "capture_date": "2022-10-05 08:14:41.475475",
+        "source_id": 1371,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "No Se Va",
+        "artist_name": "Grupo Frontera",
+        "video_id": null,
+        "capture_date": "2022-10-05 08:14:41.475475",
+        "source_id": 1371,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Down Home",
+        "artist_name": "Jimmie Allen",
+        "video_id": null,
+        "capture_date": "2022-10-05 08:14:41.475475",
+        "source_id": 1371,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -198,9 +225,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Shut Down', 'BLACKPINK', NULL),
-  ('Hell Yeah', 'Little Big Town', NULL),
-  ('Dark Red', 'Steve Lacy', NULL)
+  ('Unholy', 'Sam Smith & Kim Petras', NULL),
+  ('Out In The Middle', 'Zac Brown Band', NULL),
+  ('World’s Smallest Violin', 'AJR', NULL),
+  ('Oklahoma Smoke Show', 'Zach Bryan', NULL),
+  ('No Se Va', 'Grupo Frontera', NULL),
+  ('Down Home', 'Jimmie Allen', NULL)
   ;
 
    // Update to song table
@@ -211,7 +241,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12874; // SELECT last_insert_rowid();
+  song_id = 12900; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -251,12 +281,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-05 07:59:22.689689', '1367', '12872'),
-  ('2022-10-05 07:59:22.690690', '1367', '11998'),
-  ('2022-10-05 07:59:22.691691', '1367', '12873'),
-  ('2022-10-05 07:59:22.691691', '1367', '12859'),
-  ('2022-10-05 07:59:22.691691', '1367', '12874'),
-  ('2022-10-05 07:59:22.691691', '1367', '12855')
+  ('2022-10-05 08:14:41.470470', '1371', '12895'),
+  ('2022-10-05 08:14:41.471471', '1371', '12885'),
+  ('2022-10-05 08:14:41.472472', '1371', '12882'),
+  ('2022-10-05 08:14:41.475475', '1371', '12896'),
+  ('2022-10-05 08:14:41.475475', '1371', '12889'),
+  ('2022-10-05 08:14:41.475475', '1371', '12897'),
+  ('2022-10-05 08:14:41.475475', '1371', '12898'),
+  ('2022-10-05 08:14:41.475475', '1371', '12899'),
+  ('2022-10-05 08:14:41.475475', '1371', '12900')
   ;
 
   // Update to source_song table
