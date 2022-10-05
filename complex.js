@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'EST Gee, Blood Orange, Symba, and More', '2022-09-16 12:00:00.000000', 'https://www.complex.com/music/best-new-music-sept-16/blood-orange-something-you-know');
+    ('Complex', 'The Best New Music This Week', 'Glorilla, Cardi B, Freddie Gibbs, and More', '2022-09-23 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-sept-23/dababy-summa-dat');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1364; // SELECT last_insert_rowid();
+  source_id = 1369; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,65 +102,65 @@
   songsData =
   [
     {
-        "title": "Backstage Passes",
-        "artist_name": "EST Gee ft. Jack Harlow",
+        "title": "Tomorrow 2",
+        "artist_name": "Glorilla ft. Cardi B",
         "video_id": null,
-        "capture_date": "2022-09-20 10:05:57.339339",
-        "source_id": 1364,
+        "capture_date": "2022-10-05 08:07:23.392392",
+        "source_id": 1369,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Blues",
-        "artist_name": "G Herbo ft. Future",
+        "title": "Dark Hearted",
+        "artist_name": "Freddie Gibbs",
         "video_id": null,
-        "capture_date": "2022-09-20 10:05:57.340340",
-        "source_id": 1364,
+        "capture_date": "2022-10-05 08:07:23.393393",
+        "source_id": 1369,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Moonshooter",
-        "artist_name": "Ab-Soul",
+        "title": "Willing To Trust",
+        "artist_name": "Kid Cudi ft. Ty Dolla Sign",
         "video_id": null,
-        "capture_date": "2022-09-20 10:05:57.340340",
-        "source_id": 1364,
+        "capture_date": "2022-10-05 08:07:23.393393",
+        "source_id": 1369,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Soul Ties",
-        "artist_name": "Symba ft. Rayven Tyler",
+        "title": "The World Is Yours to Take",
+        "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2022-09-20 10:05:57.340340",
-        "source_id": 1364,
+        "capture_date": "2022-10-05 08:07:23.393393",
+        "source_id": 1369,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Love in the Way",
-        "artist_name": "Bleu ft. Nicki Minaj",
+        "title": "Blow",
+        "artist_name": "Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2022-09-20 10:05:57.340340",
-        "source_id": 1364,
+        "capture_date": "2022-10-05 08:07:23.393393",
+        "source_id": 1369,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "One Time",
-        "artist_name": "B-Lovee ft. Ice Spice, Skillibeng, and J.I the Prince of N.Y",
+        "title": "Maniac",
+        "artist_name": "YG",
         "video_id": null,
-        "capture_date": "2022-09-20 10:05:57.340340",
-        "source_id": 1364,
+        "capture_date": "2022-10-05 08:07:23.393393",
+        "source_id": 1369,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Something You Know",
-        "artist_name": "Blood Orange",
+        "title": "Summa Dat",
+        "artist_name": "DaBaby",
         "video_id": null,
-        "capture_date": "2022-09-20 10:05:57.340340",
-        "source_id": 1364,
+        "capture_date": "2022-10-05 08:07:23.393393",
+        "source_id": 1369,
         "song_id": null,
         "duplicate": false
     }
@@ -203,13 +203,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Backstage Passes', 'EST Gee ft. Jack Harlow', NULL),
-  ('Blues', 'G Herbo ft. Future', NULL),
-  ('Moonshooter', 'Ab-Soul', NULL),
-  ('Soul Ties', 'Symba ft. Rayven Tyler', NULL),
-  ('Love in the Way', 'Bleu ft. Nicki Minaj', NULL),
-  ('One Time', 'B-Lovee ft. Ice Spice, Skillibeng, and J.I the Prince of N.Y', NULL),
-  ('Something You Know', 'Blood Orange', NULL)
+  ('Tomorrow 2', 'Glorilla ft. Cardi B', NULL),
+  ('Dark Hearted', 'Freddie Gibbs', NULL),
+  ('Willing To Trust', 'Kid Cudi ft. Ty Dolla Sign', NULL),
+  ('The World Is Yours to Take', 'Lil Baby', NULL),
+  ('Blow', 'Moneybagg Yo', NULL),
+  ('Maniac', 'YG', NULL),
+  ('Summa Dat', 'DaBaby', NULL)
   ;
 
    // Update to song table
@@ -220,7 +220,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12861; // SELECT last_insert_rowid();
+  song_id = 12891; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -260,13 +260,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-20 10:05:57.339339', '1364', '12855'),
-  ('2022-09-20 10:05:57.340340', '1364', '12856'),
-  ('2022-09-20 10:05:57.340340', '1364', '12857'),
-  ('2022-09-20 10:05:57.340340', '1364', '12858'),
-  ('2022-09-20 10:05:57.340340', '1364', '12859'),
-  ('2022-09-20 10:05:57.340340', '1364', '12860'),
-  ('2022-09-20 10:05:57.340340', '1364', '12861')
+  ('2022-10-05 08:07:23.392392', '1369', '12885'),
+  ('2022-10-05 08:07:23.393393', '1369', '12886'),
+  ('2022-10-05 08:07:23.393393', '1369', '12887'),
+  ('2022-10-05 08:07:23.393393', '1369', '12888'),
+  ('2022-10-05 08:07:23.393393', '1369', '12889'),
+  ('2022-10-05 08:07:23.393393', '1369', '12890'),
+  ('2022-10-05 08:07:23.393393', '1369', '12891')
   ;
 
   // Update to source_song table

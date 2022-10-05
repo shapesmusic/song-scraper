@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Lou Reed’s Folky Velvet Underground Demo, and 9 More New Songs', '2022-09-16 10:05:15.000000', 'https://www.nytimes.com/2022/09/16/arts/music/playlist-lou-reed-weyes-blood-kelela.html');
+    ('New York Times', 'The Playlist', 'Red Hot Chili Peppers Honor Eddie Van Halen, and 10 More New Songs', '2022-09-23 09:42:58.000000', 'https://www.nytimes.com/2022/09/23/arts/music/playlist-red-hot-chili-peppers-lil-nas-x.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1363; // SELECT last_insert_rowid();
+  source_id = 1368; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,92 +100,92 @@
   songsData =
   [
     {
-        "title": "I’m Waiting for the Man – May 1965 Demo",
-        "artist_name": "Lou Reed",
+        "title": "Eddie",
+        "artist_name": "Red Hot Chili Peppers",
         "video_id": null,
-        "capture_date": "2022-09-20 11:56:21.333333",
-        "source_id": 1363,
+        "capture_date": "2022-10-05 08:03:30.859859",
+        "source_id": 1368,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "It’s Not Just Me, It’s Everybody",
-        "artist_name": "Weyes Blood",
+        "title": "Muscle Memory",
+        "artist_name": "Kelsea Ballerini",
         "video_id": null,
-        "capture_date": "2022-09-20 11:56:21.334334",
-        "source_id": 1363,
+        "capture_date": "2022-10-05 08:03:30.860860",
+        "source_id": 1368,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Enemy",
-        "artist_name": "Mightmare",
+        "title": "Change of Heart",
+        "artist_name": "Margo Price",
         "video_id": null,
-        "capture_date": "2022-09-20 11:56:21.334334",
-        "source_id": 1363,
+        "capture_date": "2022-10-05 08:03:30.860860",
+        "source_id": 1368,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Me Duele",
-        "artist_name": "Bomba Estéreo and Manu Chao",
+        "title": "Kill Dem",
+        "artist_name": "Jamie xx",
         "video_id": null,
-        "capture_date": "2022-09-20 11:56:21.334334",
-        "source_id": 1363,
+        "capture_date": "2022-10-05 08:03:30.860860",
+        "source_id": 1368,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mutual Friend",
-        "artist_name": "Jessie Reyez",
+        "title": "Pyramids",
+        "artist_name": "The Comet Is Coming",
         "video_id": null,
-        "capture_date": "2022-09-20 11:56:21.334334",
-        "source_id": 1363,
+        "capture_date": "2022-10-05 08:03:30.860860",
+        "source_id": 1368,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Washed Away",
-        "artist_name": "Kelela",
+        "title": "Waile",
+        "artist_name": "Witch",
         "video_id": null,
-        "capture_date": "2022-09-20 11:56:21.334334",
-        "source_id": 1363,
+        "capture_date": "2022-10-05 08:03:30.861861",
+        "source_id": 1368,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Traguito",
-        "artist_name": "iLe and Mon Laferte",
+        "title": "Not My Job",
+        "artist_name": "Flo",
         "video_id": null,
-        "capture_date": "2022-09-20 11:56:21.334334",
-        "source_id": 1363,
+        "capture_date": "2022-10-05 08:03:30.861861",
+        "source_id": 1368,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Greatest Weapon",
-        "artist_name": "Hand Habits",
+        "title": "Star Walkin",
+        "artist_name": "Lil Nas X",
         "video_id": null,
-        "capture_date": "2022-09-20 11:56:21.334334",
-        "source_id": 1363,
+        "capture_date": "2022-10-05 08:03:30.861861",
+        "source_id": 1368,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ossature",
-        "artist_name": "Ouri",
+        "title": "Right Here",
+        "artist_name": "Emiliana Torrini & the Colorist Orchestra",
         "video_id": null,
-        "capture_date": "2022-09-20 11:56:21.334334",
-        "source_id": 1363,
+        "capture_date": "2022-10-05 08:03:30.861861",
+        "source_id": 1368,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Guajira en Sol",
-        "artist_name": "Dafnis Prieto ft. Luciana Souza",
+        "title": "Oh My God",
+        "artist_name": "Shannen Moser",
         "video_id": null,
-        "capture_date": "2022-09-20 11:56:21.334334",
-        "source_id": 1363,
+        "capture_date": "2022-10-05 08:03:30.861861",
+        "source_id": 1368,
         "song_id": null,
         "duplicate": false
     }
@@ -229,16 +229,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('I’m Waiting for the Man – May 1965 Demo', 'Lou Reed', NULL),
-  ('It’s Not Just Me, It’s Everybody', 'Weyes Blood', NULL),
-  ('Enemy', 'Mightmare', NULL),
-  ('Me Duele', 'Bomba Estéreo and Manu Chao', NULL),
-  ('Mutual Friend', 'Jessie Reyez', NULL),
-  ('Washed Away', 'Kelela', NULL),
-  ('Traguito', 'iLe and Mon Laferte', NULL),
-  ('The Greatest Weapon', 'Hand Habits', NULL),
-  ('Ossature', 'Ouri', NULL),
-  ('Guajira en Sol', 'Dafnis Prieto ft. Luciana Souza', NULL)
+  ('Eddie', 'Red Hot Chili Peppers', NULL),
+  ('Muscle Memory', 'Kelsea Ballerini', NULL),
+  ('Change of Heart', 'Margo Price', NULL),
+  ('Kill Dem', 'Jamie xx', NULL),
+  ('Pyramids', 'The Comet Is Coming', NULL),
+  ('Waile', 'Witch', NULL),
+  ('Not My Job', 'Flo', NULL),
+  ('Star Walkin', 'Lil Nas X', NULL),
+  ('Right Here', 'Emiliana Torrini & the Colorist Orchestra', NULL),
+  ('Oh My God', 'Shannen Moser', NULL)
   ;
 
    // Update to song table
@@ -249,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12854; // SELECT last_insert_rowid();
+  song_id = 12884; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-20 11:56:21.333333', '1363', '12845'),
-  ('2022-09-20 11:56:21.334334', '1363', '12846'),
-  ('2022-09-20 11:56:21.334334', '1363', '12847'),
-  ('2022-09-20 11:56:21.334334', '1363', '12848'),
-  ('2022-09-20 11:56:21.334334', '1363', '12849'),
-  ('2022-09-20 11:56:21.334334', '1363', '12850'),
-  ('2022-09-20 11:56:21.334334', '1363', '12851'),
-  ('2022-09-20 11:56:21.334334', '1363', '12852'),
-  ('2022-09-20 11:56:21.334334', '1363', '12853'),
-  ('2022-09-20 11:56:21.334334', '1363', '12854')
+  ('2022-10-05 08:03:30.859859', '1368', '12875'),
+  ('2022-10-05 08:03:30.860860', '1368', '12876'),
+  ('2022-10-05 08:03:30.860860', '1368', '12877'),
+  ('2022-10-05 08:03:30.860860', '1368', '12878'),
+  ('2022-10-05 08:03:30.860860', '1368', '12879'),
+  ('2022-10-05 08:03:30.861861', '1368', '12880'),
+  ('2022-10-05 08:03:30.861861', '1368', '12881'),
+  ('2022-10-05 08:03:30.861861', '1368', '12882'),
+  ('2022-10-05 08:03:30.861861', '1368', '12883'),
+  ('2022-10-05 08:03:30.861861', '1368', '12884')
   ;
 
   // Update to source_song table

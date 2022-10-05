@@ -40,9 +40,9 @@
   // Replace any ' in strings with ’
 
   INSERT INTO source
-  (parent_entity, parent_stream, instance_name, publication_date, location)
-VALUES
-  ('Billboard', 'The Hot 100', 'Week of September 24, 2022', '2022-09-24 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-09-24');
+    (parent_entity, parent_stream, instance_name, publication_date, location)
+  VALUES
+    ('Billboard', 'The Hot 100', 'Week of October 1, 2022', '2022-10-01 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-10-01/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@ VALUES
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1362; // SELECT last_insert_rowid();
+  source_id = 1367; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,76 +105,58 @@ VALUES
   songsData =
   [
     {
-        "title": "Thank God",
-        "artist_name": "Kane Brown With Katelyn Brown",
+        "title": "Shut Down",
+        "artist_name": "BLACKPINK",
         "video_id": null,
-        "capture_date": "2022-09-20 11:52:04.595595",
-        "source_id": 1362,
+        "capture_date": "2022-10-05 07:59:22.689689",
+        "source_id": 1367,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Under The Influence",
-        "artist_name": "Chris Brown",
+        "title": "Evergreen",
+        "artist_name": "Omar Apollo",
         "video_id": null,
-        "capture_date": "2022-09-20 11:52:04.596596",
-        "source_id": 1362,
+        "capture_date": "2022-10-05 07:59:22.690690",
+        "source_id": 1367,
+        "song_id": 11998,
+        "duplicate": true
+    },
+    {
+        "title": "Hell Yeah",
+        "artist_name": "Little Big Town",
+        "video_id": null,
+        "capture_date": "2022-10-05 07:59:22.691691",
+        "source_id": 1367,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Put It On Me",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Love In The Way",
+        "artist_name": "BLEU & Nicki Minaj",
         "video_id": null,
-        "capture_date": "2022-09-20 11:52:04.597597",
-        "source_id": 1362,
+        "capture_date": "2022-10-05 07:59:22.691691",
+        "source_id": 1367,
+        "song_id": 12859,
+        "duplicate": true
+    },
+    {
+        "title": "Dark Red",
+        "artist_name": "Steve Lacy",
+        "video_id": null,
+        "capture_date": "2022-10-05 07:59:22.691691",
+        "source_id": 1367,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Freestyle",
-        "artist_name": "Lil Baby",
+        "title": "Backstage Passes",
+        "artist_name": "EST Gee ft. Jack Harlow",
         "video_id": null,
-        "capture_date": "2022-09-20 11:52:04.597597",
-        "source_id": 1362,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Flawless",
-        "artist_name": "Yeat ft. Lil Uzi Vert",
-        "video_id": null,
-        "capture_date": "2022-09-20 11:52:04.597597",
-        "source_id": 1362,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mary On A Cross",
-        "artist_name": "Ghost",
-        "video_id": null,
-        "capture_date": "2022-09-20 11:52:04.598598",
-        "source_id": 1362,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Purge Me",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": null,
-        "capture_date": "2022-09-20 11:52:04.598598",
-        "source_id": 1362,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Burn, Burn, Burn",
-        "artist_name": "Zach Bryan",
-        "video_id": null,
-        "capture_date": "2022-09-20 11:52:04.598598",
-        "source_id": 1362,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-10-05 07:59:22.691691",
+        "source_id": 1367,
+        "song_id": 12855,
+        "duplicate": true
     }
 ]
 
@@ -216,14 +198,9 @@ VALUES
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Thank God', 'Kane Brown With Katelyn Brown', NULL),
-  ('Under The Influence', 'Chris Brown', NULL),
-  ('Put It On Me', 'YoungBoy Never Broke Again', NULL),
-  ('Freestyle', 'Lil Baby', NULL),
-  ('Flawless', 'Yeat ft. Lil Uzi Vert', NULL),
-  ('Mary On A Cross', 'Ghost', NULL),
-  ('Purge Me', 'YoungBoy Never Broke Again', NULL),
-  ('Burn, Burn, Burn', 'Zach Bryan', NULL)
+  ('Shut Down', 'BLACKPINK', NULL),
+  ('Hell Yeah', 'Little Big Town', NULL),
+  ('Dark Red', 'Steve Lacy', NULL)
   ;
 
    // Update to song table
@@ -234,7 +211,7 @@ VALUES
  //
 
   // Get the last song_id inserted
-  song_id = 12844; // SELECT last_insert_rowid();
+  song_id = 12874; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -274,14 +251,12 @@ VALUES
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-09-20 11:52:04.595595', '1362', '12837'),
-  ('2022-09-20 11:52:04.596596', '1362', '12838'),
-  ('2022-09-20 11:52:04.597597', '1362', '12839'),
-  ('2022-09-20 11:52:04.597597', '1362', '12840'),
-  ('2022-09-20 11:52:04.597597', '1362', '12841'),
-  ('2022-09-20 11:52:04.598598', '1362', '12842'),
-  ('2022-09-20 11:52:04.598598', '1362', '12843'),
-  ('2022-09-20 11:52:04.598598', '1362', '12844')
+  ('2022-10-05 07:59:22.689689', '1367', '12872'),
+  ('2022-10-05 07:59:22.690690', '1367', '11998'),
+  ('2022-10-05 07:59:22.691691', '1367', '12873'),
+  ('2022-10-05 07:59:22.691691', '1367', '12859'),
+  ('2022-10-05 07:59:22.691691', '1367', '12874'),
+  ('2022-10-05 07:59:22.691691', '1367', '12855')
   ;
 
   // Update to source_song table
