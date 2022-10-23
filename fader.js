@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of October 4, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2022-10-04 12:00:00.000000', -- Dont forget this!
+      'Week of October 17, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-10-17 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1375; // SELECT last_insert_rowid();
+    source_id = 1402; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,146 +458,173 @@
     songsData =
     [
     {
-        "title": "Heart On Froze",
-        "artist_name": "Rome Streetz",
+        "title": "Reel Em In",
+        "artist_name": "PGF Nuk",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "BLUE CRUSH ANGEL",
-        "artist_name": "Bladee",
+        "title": "Aang",
+        "artist_name": "Pivot Gang",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Give Her Soul",
-        "artist_name": "ICYTWAT",
+        "title": "How Far",
+        "artist_name": "Africaine",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Steel Wing",
-        "artist_name": "Arima Ederra",
+        "title": "STORY OF BLOOD",
+        "artist_name": "John Cale",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Your Last Everything",
-        "artist_name": "Soft Crash ft. Marie Davidson",
+        "title": "delta p",
+        "artist_name": "They Are Gutting a Body of Water",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Saffron",
-        "artist_name": "Dawn Richard and Spencer Zahn",
+        "title": "Fight Club",
+        "artist_name": "Baby Rose",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wall of Sleep",
-        "artist_name": "Daniel Avery ft. HAAi",
+        "title": "Ghost",
+        "artist_name": "Liv.e",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "World Sandwiches 2",
-        "artist_name": "Persher",
+        "title": "At All",
+        "artist_name": "Contour",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lieber Honig (Remix)",
-        "artist_name": "Yann Tiersen",
+        "title": "Early Bird",
+        "artist_name": "Kate NV",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "rien dire",
-        "artist_name": "Christine and the Queens",
+        "title": "Dream",
+        "artist_name": "Actress",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nothing Even Matters",
-        "artist_name": "SiR",
+        "title": "LA Freestyle",
+        "artist_name": "Surf Gang",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Early Morning Waiting",
-        "artist_name": "Alex G",
+        "title": "Fever",
+        "artist_name": "Mansur Brown",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Emotional",
-        "artist_name": "Benedek",
+        "title": "Time Garbage",
+        "artist_name": "Wolf Eyes",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Life of a Fly",
-        "artist_name": "James K",
+        "title": "Creepers",
+        "artist_name": "SleazyWorld Go",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Not My Job",
-        "artist_name": "FLO",
+        "title": "The Fonz",
+        "artist_name": "Wiki and Subjxct 5",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
-        "song_id": 12881,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lucky Star",
+        "artist_name": "Merely",
+        "video_id": null,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Foul",
+        "artist_name": "Special Interest",
+        "video_id": null,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
+        "song_id": 12962,
         "duplicate": true
     },
     {
-        "title": "careful what you wish for",
-        "artist_name": "isomonstrosity",
+        "title": "This Is Why",
+        "artist_name": "Paramore",
         "video_id": null,
-        "capture_date": "2022-10-05 09:47:11.271000",
-        "source_id": 1375,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
+        "song_id": 12901,
+        "duplicate": true
+    },
+    {
+        "title": "Consistent Dedication",
+        "artist_name": "Heartworm",
+        "video_id": null,
+        "capture_date": "2022-10-22 10:12:13.586586",
+        "source_id": 1402,
         "song_id": null,
         "duplicate": false
     }
@@ -639,21 +666,23 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Heart On Froze', 'Rome Streetz', NULL),
-    ('BLUE CRUSH ANGEL', 'Bladee', NULL),
-    ('Give Her Soul', 'ICYTWAT', NULL),
-    ('Steel Wing', 'Arima Ederra', NULL),
-    ('Your Last Everything', 'Soft Crash ft. Marie Davidson', NULL),
-    ('Saffron', 'Dawn Richard and Spencer Zahn', NULL),
-    ('Wall of Sleep', 'Daniel Avery ft. HAAi', NULL),
-    ('World Sandwiches 2', 'Persher', NULL),
-    ('Lieber Honig (Remix)', 'Yann Tiersen', NULL),
-    ('rien dire', 'Christine and the Queens', NULL),
-    ('Nothing Even Matters', 'SiR', NULL),
-    ('Early Morning Waiting', 'Alex G', NULL),
-    ('Emotional', 'Benedek', NULL),
-    ('Life of a Fly', 'James K', NULL),
-    ('careful what you wish for', 'isomonstrosity', NULL)
+    ('Reel Em In', 'PGF Nuk', NULL),
+    ('Aang', 'Pivot Gang', NULL),
+    ('How Far', 'Africaine', NULL),
+    ('STORY OF BLOOD', 'John Cale', NULL),
+    ('delta p', 'They Are Gutting a Body of Water', NULL),
+    ('Fight Club', 'Baby Rose', NULL),
+    ('Ghost', 'Liv.e', NULL),
+    ('At All', 'Contour', NULL),
+    ('Early Bird', 'Kate NV', NULL),
+    ('Dream', 'Actress', NULL),
+    ('LA Freestyle', 'Surf Gang', NULL),
+    ('Fever', 'Mansur Brown', NULL),
+    ('Time Garbage', 'Wolf Eyes', NULL),
+    ('Creepers', 'SleazyWorld Go', NULL),
+    ('The Fonz', 'Wiki and Subjxct 5', NULL),
+    ('Lucky Star', 'Merely', NULL),
+    ('Consistent Dedication', 'Heartworm', NULL)
     ;
 
      // Update to song table
@@ -664,7 +693,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12935; // SELECT last_insert_rowid();
+  song_id = 13015; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -704,22 +733,25 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-05 09:47:11.271000', '1375', '12921'),
-  ('2022-10-05 09:47:11.271000', '1375', '12922'),
-  ('2022-10-05 09:47:11.271000', '1375', '12923'),
-  ('2022-10-05 09:47:11.271000', '1375', '12924'),
-  ('2022-10-05 09:47:11.271000', '1375', '12925'),
-  ('2022-10-05 09:47:11.271000', '1375', '12926'),
-  ('2022-10-05 09:47:11.271000', '1375', '12927'),
-  ('2022-10-05 09:47:11.271000', '1375', '12928'),
-  ('2022-10-05 09:47:11.271000', '1375', '12929'),
-  ('2022-10-05 09:47:11.271000', '1375', '12930'),
-  ('2022-10-05 09:47:11.271000', '1375', '12931'),
-  ('2022-10-05 09:47:11.271000', '1375', '12932'),
-  ('2022-10-05 09:47:11.271000', '1375', '12933'),
-  ('2022-10-05 09:47:11.271000', '1375', '12934'),
-  ('2022-10-05 09:47:11.271000', '1375', '12881'),
-  ('2022-10-05 09:47:11.271000', '1375', '12935')
+  ('2022-10-22 10:12:13.586586', '1402', '12999'),
+  ('2022-10-22 10:12:13.586586', '1402', '13000'),
+  ('2022-10-22 10:12:13.586586', '1402', '13001'),
+  ('2022-10-22 10:12:13.586586', '1402', '13002'),
+  ('2022-10-22 10:12:13.586586', '1402', '13003'),
+  ('2022-10-22 10:12:13.586586', '1402', '13004'),
+  ('2022-10-22 10:12:13.586586', '1402', '13005'),
+  ('2022-10-22 10:12:13.586586', '1402', '13006'),
+  ('2022-10-22 10:12:13.586586', '1402', '13007'),
+  ('2022-10-22 10:12:13.586586', '1402', '13008'),
+  ('2022-10-22 10:12:13.586586', '1402', '13009'),
+  ('2022-10-22 10:12:13.586586', '1402', '13010'),
+  ('2022-10-22 10:12:13.586586', '1402', '13011'),
+  ('2022-10-22 10:12:13.586586', '1402', '13012'),
+  ('2022-10-22 10:12:13.586586', '1402', '13013'),
+  ('2022-10-22 10:12:13.586586', '1402', '13014'),
+  ('2022-10-22 10:12:13.586586', '1402', '12962'),
+  ('2022-10-22 10:12:13.586586', '1402', '12901'),
+  ('2022-10-22 10:12:13.586586', '1402', '13015')
   ;
 
   // Update to source_song table

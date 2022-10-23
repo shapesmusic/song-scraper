@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Jazmine Sullivan’s Meditation on Courage, and 10 More New Songs', '2022-10-07 10:44:26.000000', 'https://www.nytimes.com/2022/10/07/arts/music/playlist-jazmine-sullivan-charlie-puth.html');
+    ('New York Times', 'The Playlist', 'Queen’s Unearthed Lament, and 6 More New Songs', '2022-10-14 10:15:35.000000', 'https://www.nytimes.com/2022/10/14/arts/music/playlist-queen-blink-182-lil-baby.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1396; // SELECT last_insert_rowid();
+  source_id = 1400; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,101 +100,65 @@
   songsData =
   [
     {
-        "title": "Stand Up",
-        "artist_name": "Jazmine Sullivan",
+        "title": "Face It Alone",
+        "artist_name": "Queen",
         "video_id": null,
-        "capture_date": "2022-10-22 09:48:31.159159",
-        "source_id": 1396,
+        "capture_date": "2022-10-22 10:04:28.058058",
+        "source_id": 1400,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Boundaries",
-        "artist_name": "Jamila Woods",
+        "title": "Oh Caroline",
+        "artist_name": "The 1975",
         "video_id": null,
-        "capture_date": "2022-10-22 09:48:31.160160",
-        "source_id": 1396,
+        "capture_date": "2022-10-22 10:04:28.060060",
+        "source_id": 1400,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Marks on My Neck",
-        "artist_name": "Charlie Puth",
+        "title": "Tired of California",
+        "artist_name": "Nessa Barrett",
         "video_id": null,
-        "capture_date": "2022-10-22 09:48:31.161161",
-        "source_id": 1396,
+        "capture_date": "2022-10-22 10:04:28.060060",
+        "source_id": 1400,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dress Up",
-        "artist_name": "Chloe Moriondo",
+        "title": "Back and Forth",
+        "artist_name": "Lil Baby featuring EST Gee",
         "video_id": null,
-        "capture_date": "2022-10-22 09:48:31.161161",
-        "source_id": 1396,
+        "capture_date": "2022-10-22 10:04:28.060060",
+        "source_id": 1400,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Foul",
-        "artist_name": "Special Interest",
+        "title": "Edging",
+        "artist_name": "Blink-182",
         "video_id": null,
-        "capture_date": "2022-10-22 09:48:31.161161",
-        "source_id": 1396,
+        "capture_date": "2022-10-22 10:04:28.060060",
+        "source_id": 1400,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "La Unica",
-        "artist_name": "Kali Uchis",
+        "title": "Woman Life Freedom",
+        "artist_name": "Sevdaliza",
         "video_id": null,
-        "capture_date": "2022-10-22 09:48:31.161161",
-        "source_id": 1396,
+        "capture_date": "2022-10-22 10:04:28.060060",
+        "source_id": 1400,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Poland",
-        "artist_name": "Lil Yachty",
+        "title": "Atemporal",
+        "artist_name": "Lucrecia Dalt",
         "video_id": null,
-        "capture_date": "2022-10-22 09:48:31.161161",
-        "source_id": 1396,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Steel Wing",
-        "artist_name": "Arima Ederra",
-        "video_id": null,
-        "capture_date": "2022-10-22 09:48:31.161161",
-        "source_id": 1396,
-        "song_id": 12924,
-        "duplicate": true
-    },
-    {
-        "title": "Thinkin’ on You",
-        "artist_name": "Courtney Marie Andrews",
-        "video_id": null,
-        "capture_date": "2022-10-22 09:48:31.161161",
-        "source_id": 1396,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tooth for a Tooth",
-        "artist_name": "Johanna Warren",
-        "video_id": null,
-        "capture_date": "2022-10-22 09:48:31.161161",
-        "source_id": 1396,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sickworld",
-        "artist_name": "Midwife",
-        "video_id": null,
-        "capture_date": "2022-10-22 09:48:31.161161",
-        "source_id": 1396,
+        "capture_date": "2022-10-22 10:04:28.061061",
+        "source_id": 1400,
         "song_id": null,
         "duplicate": false
     }
@@ -238,16 +202,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Stand Up', 'Jazmine Sullivan', NULL),
-  ('Boundaries', 'Jamila Woods', NULL),
-  ('Marks on My Neck', 'Charlie Puth', NULL),
-  ('Dress Up', 'Chloe Moriondo', NULL),
-  ('Foul', 'Special Interest', NULL),
-  ('La Unica', 'Kali Uchis', NULL),
-  ('Poland', 'Lil Yachty', NULL),
-  ('Thinkin’ on You', 'Courtney Marie Andrews', NULL),
-  ('Tooth for a Tooth', 'Johanna Warren', NULL),
-  ('Sickworld', 'Midwife', NULL)
+  ('Face It Alone', 'Queen', NULL),
+  ('Oh Caroline', 'The 1975', NULL),
+  ('Tired of California', 'Nessa Barrett', NULL),
+  ('Back and Forth', 'Lil Baby featuring EST Gee', NULL),
+  ('Edging', 'Blink-182', NULL),
+  ('Woman Life Freedom', 'Sevdaliza', NULL),
+  ('Atemporal', 'Lucrecia Dalt', NULL)
   ;
 
    // Update to song table
@@ -258,7 +219,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12967; // SELECT last_insert_rowid();
+  song_id = 12990; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +259,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-22 09:48:31.159159', '1396', '12958'),
-  ('2022-10-22 09:48:31.160160', '1396', '12959'),
-  ('2022-10-22 09:48:31.161161', '1396', '12960'),
-  ('2022-10-22 09:48:31.161161', '1396', '12961'),
-  ('2022-10-22 09:48:31.161161', '1396', '12962'),
-  ('2022-10-22 09:48:31.161161', '1396', '12963'),
-  ('2022-10-22 09:48:31.161161', '1396', '12964'),
-  ('2022-10-22 09:48:31.161161', '1396', '12924'),
-  ('2022-10-22 09:48:31.161161', '1396', '12965'),
-  ('2022-10-22 09:48:31.161161', '1396', '12966'),
-  ('2022-10-22 09:48:31.161161', '1396', '12967')
+  ('2022-10-22 10:04:28.058058', '1400', '12984'),
+  ('2022-10-22 10:04:28.060060', '1400', '12985'),
+  ('2022-10-22 10:04:28.060060', '1400', '12986'),
+  ('2022-10-22 10:04:28.060060', '1400', '12987'),
+  ('2022-10-22 10:04:28.060060', '1400', '12988'),
+  ('2022-10-22 10:04:28.060060', '1400', '12989'),
+  ('2022-10-22 10:04:28.061061', '1400', '12990')
   ;
 
   // Update to source_song table

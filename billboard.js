@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 15, 2022', '2022-10-15 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-10-15');
+    ('Billboard', 'The Hot 100', 'Week of October 22, 2022', '2022-10-22 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-10-22');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1395; // SELECT last_insert_rowid();
+  source_id = 1399; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,47 +105,47 @@
   songsData =
   [
     {
-        "title": "Toxic",
-        "artist_name": "YG",
+        "title": "Poland",
+        "artist_name": "Lil Yachty",
         "video_id": null,
-        "capture_date": "2022-10-22 09:44:24.073073",
-        "source_id": 1395,
-        "song_id": 12652,
+        "capture_date": "2022-10-22 10:01:07.727727",
+        "source_id": 1399,
+        "song_id": 12964,
         "duplicate": true
     },
     {
-        "title": "Tennessee Orange",
-        "artist_name": "Megan Moroney",
+        "title": "Heyy",
+        "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2022-10-22 09:44:24.073073",
-        "source_id": 1395,
+        "capture_date": "2022-10-22 10:01:07.728728",
+        "source_id": 1399,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gotta Move On",
-        "artist_name": "Diddy & Bryson Tiller",
+        "title": "To The Bone",
+        "artist_name": "Quavo, Takeoff & YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-10-22 09:44:24.073073",
-        "source_id": 1395,
+        "capture_date": "2022-10-22 10:01:07.728728",
+        "source_id": 1399,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Forget Me",
-        "artist_name": "Lewis Capaldi",
+        "title": "Lokera",
+        "artist_name": "Rauw Alejandro, Lyanno & Brray",
         "video_id": null,
-        "capture_date": "2022-10-22 09:44:24.074074",
-        "source_id": 1395,
-        "song_id": 12816,
-        "duplicate": true
+        "capture_date": "2022-10-22 10:01:07.728728",
+        "source_id": 1399,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "What He Didn't Do",
-        "artist_name": "Carly Pearce",
+        "title": "Walk",
+        "artist_name": "Kodak Black",
         "video_id": null,
-        "capture_date": "2022-10-22 09:44:24.074074",
-        "source_id": 1395,
+        "capture_date": "2022-10-22 10:01:07.728728",
+        "source_id": 1399,
         "song_id": null,
         "duplicate": false
     }
@@ -189,9 +189,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Tennessee Orange', 'Megan Moroney', NULL),
-  ('Gotta Move On', 'Diddy & Bryson Tiller', NULL),
-  ('What He Didn’t Do', 'Carly Pearce', NULL)
+  ('Heyy', 'Lil Baby', NULL),
+  ('To The Bone', 'Quavo, Takeoff & YoungBoy Never Broke Again', NULL),
+  ('Lokera', 'Rauw Alejandro, Lyanno & Brray', NULL),
+  ('Walk', 'Kodak Black', NULL)
   ;
 
    // Update to song table
@@ -202,7 +203,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12957; // SELECT last_insert_rowid();
+  song_id = 12983; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -242,11 +243,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-22 09:44:24.073073', '1395', '12652'),
-  ('2022-10-22 09:44:24.073073', '1395', '12955'),
-  ('2022-10-22 09:44:24.073073', '1395', '12956'),
-  ('2022-10-22 09:44:24.074074', '1395', '12816'),
-  ('2022-10-22 09:44:24.074074', '1395', '12957')
+  ('2022-10-22 10:01:07.727727', '1399', '12964'),
+  ('2022-10-22 10:01:07.728728', '1399', '12980'),
+  ('2022-10-22 10:01:07.728728', '1399', '12981'),
+  ('2022-10-22 10:01:07.728728', '1399', '12982'),
+  ('2022-10-22 10:01:07.728728', '1399', '12983')
   ;
 
   // Update to source_song table
