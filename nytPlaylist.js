@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Paramore Steps Into a New Era, and 8 More New Songs', '2022-10-03 07:13:04.000000', 'https://www.nytimes.com/2022/09/30/arts/music/playlist-paramore-yeah-yeah-yeahs.html');
+    ('New York Times', 'The Playlist', 'Jazmine Sullivan’s Meditation on Courage, and 10 More New Songs', '2022-10-07 10:44:26.000000', 'https://www.nytimes.com/2022/10/07/arts/music/playlist-jazmine-sullivan-charlie-puth.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1372; // SELECT last_insert_rowid();
+  source_id = 1396; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,83 +100,101 @@
   songsData =
   [
     {
-        "title": "This Is Why",
-        "artist_name": "Paramore",
+        "title": "Stand Up",
+        "artist_name": "Jazmine Sullivan",
         "video_id": null,
-        "capture_date": "2022-10-05 08:57:35.459459",
-        "source_id": 1372,
+        "capture_date": "2022-10-22 09:48:31.159159",
+        "source_id": 1396,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fleez",
-        "artist_name": "Yeah Yeah Yeahs",
+        "title": "Boundaries",
+        "artist_name": "Jamila Woods",
         "video_id": null,
-        "capture_date": "2022-10-05 08:57:35.460460",
-        "source_id": 1372,
+        "capture_date": "2022-10-22 09:48:31.160160",
+        "source_id": 1396,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "New Body Rhumba",
-        "artist_name": "LCD Soundsystem",
+        "title": "Marks on My Neck",
+        "artist_name": "Charlie Puth",
         "video_id": null,
-        "capture_date": "2022-10-05 08:57:35.460460",
-        "source_id": 1372,
+        "capture_date": "2022-10-22 09:48:31.161161",
+        "source_id": 1396,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nobody’s Sweetheart",
-        "artist_name": "Caitlin Rose",
+        "title": "Dress Up",
+        "artist_name": "Chloe Moriondo",
         "video_id": null,
-        "capture_date": "2022-10-05 08:57:35.460460",
-        "source_id": 1372,
+        "capture_date": "2022-10-22 09:48:31.161161",
+        "source_id": 1396,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "F.O.O.F.",
-        "artist_name": "Frankie Cosmos",
+        "title": "Foul",
+        "artist_name": "Special Interest",
         "video_id": null,
-        "capture_date": "2022-10-05 08:57:35.460460",
-        "source_id": 1372,
+        "capture_date": "2022-10-22 09:48:31.161161",
+        "source_id": 1396,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sever",
-        "artist_name": "Nisa",
+        "title": "La Unica",
+        "artist_name": "Kali Uchis",
         "video_id": null,
-        "capture_date": "2022-10-05 08:57:35.460460",
-        "source_id": 1372,
+        "capture_date": "2022-10-22 09:48:31.161161",
+        "source_id": 1396,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Let Me See Your Phone",
-        "artist_name": "Dram",
+        "title": "Poland",
+        "artist_name": "Lil Yachty",
         "video_id": null,
-        "capture_date": "2022-10-05 08:57:35.460460",
-        "source_id": 1372,
+        "capture_date": "2022-10-22 09:48:31.161161",
+        "source_id": 1396,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I",
-        "artist_name": "Oren Ambarchi",
+        "title": "Steel Wing",
+        "artist_name": "Arima Ederra",
         "video_id": null,
-        "capture_date": "2022-10-05 08:57:35.460460",
-        "source_id": 1372,
+        "capture_date": "2022-10-22 09:48:31.161161",
+        "source_id": 1396,
+        "song_id": 12924,
+        "duplicate": true
+    },
+    {
+        "title": "Thinkin’ on You",
+        "artist_name": "Courtney Marie Andrews",
+        "video_id": null,
+        "capture_date": "2022-10-22 09:48:31.161161",
+        "source_id": 1396,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Waltz for Hal Willner",
-        "artist_name": "Bill Frisell",
+        "title": "Tooth for a Tooth",
+        "artist_name": "Johanna Warren",
         "video_id": null,
-        "capture_date": "2022-10-05 08:57:35.460460",
-        "source_id": 1372,
+        "capture_date": "2022-10-22 09:48:31.161161",
+        "source_id": 1396,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sickworld",
+        "artist_name": "Midwife",
+        "video_id": null,
+        "capture_date": "2022-10-22 09:48:31.161161",
+        "source_id": 1396,
         "song_id": null,
         "duplicate": false
     }
@@ -220,15 +238,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('This Is Why', 'Paramore', NULL),
-  ('Fleez', 'Yeah Yeah Yeahs', NULL),
-  ('New Body Rhumba', 'LCD Soundsystem', NULL),
-  ('Nobody’s Sweetheart', 'Caitlin Rose', NULL),
-  ('F.O.O.F.', 'Frankie Cosmos', NULL),
-  ('Sever', 'Nisa', NULL),
-  ('Let Me See Your Phone', 'Dram', NULL),
-  ('I', 'Oren Ambarchi', NULL),
-  ('Waltz for Hal Willner', 'Bill Frisell', NULL)
+  ('Stand Up', 'Jazmine Sullivan', NULL),
+  ('Boundaries', 'Jamila Woods', NULL),
+  ('Marks on My Neck', 'Charlie Puth', NULL),
+  ('Dress Up', 'Chloe Moriondo', NULL),
+  ('Foul', 'Special Interest', NULL),
+  ('La Unica', 'Kali Uchis', NULL),
+  ('Poland', 'Lil Yachty', NULL),
+  ('Thinkin’ on You', 'Courtney Marie Andrews', NULL),
+  ('Tooth for a Tooth', 'Johanna Warren', NULL),
+  ('Sickworld', 'Midwife', NULL)
   ;
 
    // Update to song table
@@ -239,7 +258,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12909; // SELECT last_insert_rowid();
+  song_id = 12967; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +298,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-05 08:57:35.459459', '1372', '12901'),
-  ('2022-10-05 08:57:35.460460', '1372', '12902'),
-  ('2022-10-05 08:57:35.460460', '1372', '12903'),
-  ('2022-10-05 08:57:35.460460', '1372', '12904'),
-  ('2022-10-05 08:57:35.460460', '1372', '12905'),
-  ('2022-10-05 08:57:35.460460', '1372', '12906'),
-  ('2022-10-05 08:57:35.460460', '1372', '12907'),
-  ('2022-10-05 08:57:35.460460', '1372', '12908'),
-  ('2022-10-05 08:57:35.460460', '1372', '12909')
+  ('2022-10-22 09:48:31.159159', '1396', '12958'),
+  ('2022-10-22 09:48:31.160160', '1396', '12959'),
+  ('2022-10-22 09:48:31.161161', '1396', '12960'),
+  ('2022-10-22 09:48:31.161161', '1396', '12961'),
+  ('2022-10-22 09:48:31.161161', '1396', '12962'),
+  ('2022-10-22 09:48:31.161161', '1396', '12963'),
+  ('2022-10-22 09:48:31.161161', '1396', '12964'),
+  ('2022-10-22 09:48:31.161161', '1396', '12924'),
+  ('2022-10-22 09:48:31.161161', '1396', '12965'),
+  ('2022-10-22 09:48:31.161161', '1396', '12966'),
+  ('2022-10-22 09:48:31.161161', '1396', '12967')
   ;
 
   // Update to source_song table

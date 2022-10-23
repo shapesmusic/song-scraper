@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 8, 2022', '2022-10-08 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-10-08');
+    ('Billboard', 'The Hot 100', 'Week of October 15, 2022', '2022-10-15 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-10-15');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1371; // SELECT last_insert_rowid();
+  source_id = 1395; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,83 +105,47 @@
   songsData =
   [
     {
-        "title": "Unholy",
-        "artist_name": "Sam Smith & Kim Petras",
+        "title": "Toxic",
+        "artist_name": "YG",
         "video_id": null,
-        "capture_date": "2022-10-05 08:14:41.470470",
-        "source_id": 1371,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tomorrow 2",
-        "artist_name": "GloRilla & Cardi B",
-        "video_id": null,
-        "capture_date": "2022-10-05 08:14:41.471471",
-        "source_id": 1371,
-        "song_id": 12885,
+        "capture_date": "2022-10-22 09:44:24.073073",
+        "source_id": 1395,
+        "song_id": 12652,
         "duplicate": true
     },
     {
-        "title": "Star Walkin' (League Of Legends Worlds Anthem)",
-        "artist_name": "Lil Nas X",
+        "title": "Tennessee Orange",
+        "artist_name": "Megan Moroney",
         "video_id": null,
-        "capture_date": "2022-10-05 08:14:41.472472",
-        "source_id": 1371,
-        "song_id": 12882,
+        "capture_date": "2022-10-22 09:44:24.073073",
+        "source_id": 1395,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Gotta Move On",
+        "artist_name": "Diddy & Bryson Tiller",
+        "video_id": null,
+        "capture_date": "2022-10-22 09:44:24.073073",
+        "source_id": 1395,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Forget Me",
+        "artist_name": "Lewis Capaldi",
+        "video_id": null,
+        "capture_date": "2022-10-22 09:44:24.074074",
+        "source_id": 1395,
+        "song_id": 12816,
         "duplicate": true
     },
     {
-        "title": "Out In The Middle",
-        "artist_name": "Zac Brown Band",
+        "title": "What He Didn't Do",
+        "artist_name": "Carly Pearce",
         "video_id": null,
-        "capture_date": "2022-10-05 08:14:41.475475",
-        "source_id": 1371,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Blow",
-        "artist_name": "Moneybagg Yo",
-        "video_id": null,
-        "capture_date": "2022-10-05 08:14:41.475475",
-        "source_id": 1371,
-        "song_id": 12889,
-        "duplicate": true
-    },
-    {
-        "title": "World's Smallest Violin",
-        "artist_name": "AJR",
-        "video_id": null,
-        "capture_date": "2022-10-05 08:14:41.475475",
-        "source_id": 1371,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Oklahoma Smoke Show",
-        "artist_name": "Zach Bryan",
-        "video_id": null,
-        "capture_date": "2022-10-05 08:14:41.475475",
-        "source_id": 1371,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "No Se Va",
-        "artist_name": "Grupo Frontera",
-        "video_id": null,
-        "capture_date": "2022-10-05 08:14:41.475475",
-        "source_id": 1371,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Down Home",
-        "artist_name": "Jimmie Allen",
-        "video_id": null,
-        "capture_date": "2022-10-05 08:14:41.475475",
-        "source_id": 1371,
+        "capture_date": "2022-10-22 09:44:24.074074",
+        "source_id": 1395,
         "song_id": null,
         "duplicate": false
     }
@@ -225,12 +189,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Unholy', 'Sam Smith & Kim Petras', NULL),
-  ('Out In The Middle', 'Zac Brown Band', NULL),
-  ('World’s Smallest Violin', 'AJR', NULL),
-  ('Oklahoma Smoke Show', 'Zach Bryan', NULL),
-  ('No Se Va', 'Grupo Frontera', NULL),
-  ('Down Home', 'Jimmie Allen', NULL)
+  ('Tennessee Orange', 'Megan Moroney', NULL),
+  ('Gotta Move On', 'Diddy & Bryson Tiller', NULL),
+  ('What He Didn’t Do', 'Carly Pearce', NULL)
   ;
 
    // Update to song table
@@ -241,7 +202,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12900; // SELECT last_insert_rowid();
+  song_id = 12957; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -281,15 +242,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-05 08:14:41.470470', '1371', '12895'),
-  ('2022-10-05 08:14:41.471471', '1371', '12885'),
-  ('2022-10-05 08:14:41.472472', '1371', '12882'),
-  ('2022-10-05 08:14:41.475475', '1371', '12896'),
-  ('2022-10-05 08:14:41.475475', '1371', '12889'),
-  ('2022-10-05 08:14:41.475475', '1371', '12897'),
-  ('2022-10-05 08:14:41.475475', '1371', '12898'),
-  ('2022-10-05 08:14:41.475475', '1371', '12899'),
-  ('2022-10-05 08:14:41.475475', '1371', '12900')
+  ('2022-10-22 09:44:24.073073', '1395', '12652'),
+  ('2022-10-22 09:44:24.073073', '1395', '12955'),
+  ('2022-10-22 09:44:24.073073', '1395', '12956'),
+  ('2022-10-22 09:44:24.074074', '1395', '12816'),
+  ('2022-10-22 09:44:24.074074', '1395', '12957')
   ;
 
   // Update to source_song table

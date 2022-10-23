@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Roddy Ricch, Smino, Freddie Gibbs, and More', '2022-09-30 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-september-30/kenzo-balla-tg-crippy-evil-twinz');
+    ('Complex', 'The Best New Music This Week', 'Unc & Phew, G Herbo, A Boogie Wit Da Hoodie, and More', '2022-10-07 12:00:00.000000', 'https://www.complex.com/music/best-new-music-october-6/lil-yachty-poland');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1373; // SELECT last_insert_rowid();
+  source_id = 1397; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,67 +102,76 @@
   songsData =
   [
     {
-        "title": "Stop Breathing",
-        "artist_name": "Roddy Ricch",
+        "title": "Two Infinity Links",
+        "artist_name": "Unc & Phew",
         "video_id": null,
-        "capture_date": "2022-10-05 09:01:28.800800",
-        "source_id": 1373,
+        "capture_date": "2022-10-22 09:53:18.829829",
+        "source_id": 1397,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "90 Proof",
-        "artist_name": "Smino ft. J. Cole",
+        "title": "My Friends",
+        "artist_name": "Ty Dolla Sign & Mustard f/ Lil Durk",
         "video_id": null,
-        "capture_date": "2022-10-05 09:01:28.800800",
-        "source_id": 1373,
+        "capture_date": "2022-10-22 09:53:18.830830",
+        "source_id": 1397,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Space Rabbit",
-        "artist_name": "Freddie Gibbs",
+        "title": "Scandalous",
+        "artist_name": "Gryffin & Tinashe",
         "video_id": null,
-        "capture_date": "2022-10-05 09:01:28.800800",
-        "source_id": 1373,
+        "capture_date": "2022-10-22 09:53:18.830830",
+        "source_id": 1397,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "What’s Up",
-        "artist_name": "DVSN ft. Jagged Edge",
+        "title": "Pump It Louder",
+        "artist_name": "Tiësto & Black Eyed Peas",
         "video_id": null,
-        "capture_date": "2022-10-05 09:01:28.800800",
-        "source_id": 1373,
+        "capture_date": "2022-10-22 09:53:18.830830",
+        "source_id": 1397,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Weapon",
-        "artist_name": "YG ft. Nas",
+        "title": "B.R.O. (Better Ride Out)",
+        "artist_name": "A Boogie Wit Da Hoodie & Roddy Ricch",
         "video_id": null,
-        "capture_date": "2022-10-05 09:01:28.801801",
-        "source_id": 1373,
+        "capture_date": "2022-10-22 09:53:18.830830",
+        "source_id": 1397,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nothing Changed",
-        "artist_name": "Quavo & Takeoff",
+        "title": "Bout U",
+        "artist_name": "Kali",
         "video_id": null,
-        "capture_date": "2022-10-05 09:01:28.801801",
-        "source_id": 1373,
+        "capture_date": "2022-10-22 09:53:18.830830",
+        "source_id": 1397,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Evil Twinz",
-        "artist_name": "Kenzo Balla ft. TG Crippy",
+        "title": "4 Minutes of Hell, Pt. 6",
+        "artist_name": "G Herbo",
         "video_id": null,
-        "capture_date": "2022-10-05 09:01:28.801801",
-        "source_id": 1373,
+        "capture_date": "2022-10-22 09:53:18.830830",
+        "source_id": 1397,
         "song_id": null,
         "duplicate": false
+    },
+    {
+        "title": "Poland",
+        "artist_name": "Lil Yachty",
+        "video_id": null,
+        "capture_date": "2022-10-22 09:53:18.830830",
+        "source_id": 1397,
+        "song_id": 12964,
+        "duplicate": true
     }
 ]
 
@@ -203,13 +212,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Stop Breathing', 'Roddy Ricch', NULL),
-  ('90 Proof', 'Smino ft. J. Cole', NULL),
-  ('Space Rabbit', 'Freddie Gibbs', NULL),
-  ('What’s Up', 'DVSN ft. Jagged Edge', NULL),
-  ('No Weapon', 'YG ft. Nas', NULL),
-  ('Nothing Changed', 'Quavo & Takeoff', NULL),
-  ('Evil Twinz', 'Kenzo Balla ft. TG Crippy', NULL)
+  ('Two Infinity Links', 'Unc & Phew', NULL),
+  ('My Friends', 'Ty Dolla Sign & Mustard f/ Lil Durk', NULL),
+  ('Scandalous', 'Gryffin & Tinashe', NULL),
+  ('Pump It Louder', 'Tiësto & Black Eyed Peas', NULL),
+  ('B.R.O. (Better Ride Out)', 'A Boogie Wit Da Hoodie & Roddy Ricch', NULL),
+  ('Bout U', 'Kali', NULL),
+  ('4 Minutes of Hell, Pt. 6', 'G Herbo', NULL)
   ;
 
    // Update to song table
@@ -220,7 +229,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12916; // SELECT last_insert_rowid();
+  song_id = 12974; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -260,13 +269,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-05 09:01:28.800800', '1373', '12910'),
-  ('2022-10-05 09:01:28.800800', '1373', '12911'),
-  ('2022-10-05 09:01:28.800800', '1373', '12912'),
-  ('2022-10-05 09:01:28.800800', '1373', '12913'),
-  ('2022-10-05 09:01:28.801801', '1373', '12914'),
-  ('2022-10-05 09:01:28.801801', '1373', '12915'),
-  ('2022-10-05 09:01:28.801801', '1373', '12916')
+  ('2022-10-22 09:53:18.829829', '1397', '12968'),
+  ('2022-10-22 09:53:18.830830', '1397', '12969'),
+  ('2022-10-22 09:53:18.830830', '1397', '12970'),
+  ('2022-10-22 09:53:18.830830', '1397', '12971'),
+  ('2022-10-22 09:53:18.830830', '1397', '12972'),
+  ('2022-10-22 09:53:18.830830', '1397', '12973'),
+  ('2022-10-22 09:53:18.830830', '1397', '12974'),
+  ('2022-10-22 09:53:18.830830', '1397', '12964')
   ;
 
   // Update to source_song table

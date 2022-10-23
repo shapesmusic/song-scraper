@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of September 30, 2022', '2022-09-30 12:00:00.000000', 'https://www.stereogum.com/2201211/the-5-best-songs-of-the-week-453/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of October 7, 2022', '2022-10-07 12:00:00.000000', 'https://www.stereogum.com/2202024/the-5-best-songs-of-the-week-454/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1374; // SELECT last_insert_rowid();
+  source_id = 1398; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,49 +101,49 @@
   songsData =
   [
     {
-        "title": "Deathwestern",
-        "artist_name": "SpiritWorld",
+        "title": "Pollo Rico",
+        "artist_name": "billy woods & Messiah Music",
         "video_id": null,
-        "capture_date": "2022-10-05 09:04:32.814814",
-        "source_id": 1374,
+        "capture_date": "2022-10-22 09:57:52.983983",
+        "source_id": 1398,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Split",
-        "artist_name": "Dazy",
+        "title": "Kiss The Ladder",
+        "artist_name": "Fleshwater",
         "video_id": null,
-        "capture_date": "2022-10-05 09:04:32.815815",
-        "source_id": 1374,
+        "capture_date": "2022-10-22 09:57:52.983983",
+        "source_id": 1398,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Look Both Ways",
-        "artist_name": "Nosaj Thing & Pink Siifu",
+        "title": "Circuit City",
+        "artist_name": "Open Mike Eagle",
         "video_id": null,
-        "capture_date": "2022-10-05 09:04:32.815815",
-        "source_id": 1374,
+        "capture_date": "2022-10-22 09:57:52.983983",
+        "source_id": 1398,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Billie Toppy",
-        "artist_name": "Men I Trust",
+        "title": "What They Call Us",
+        "artist_name": "Fever Ray",
         "video_id": null,
-        "capture_date": "2022-10-05 09:04:32.815815",
-        "source_id": 1374,
+        "capture_date": "2022-10-22 09:57:52.984984",
+        "source_id": 1398,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "This Is Why",
-        "artist_name": "Paramore",
+        "title": "Gospel Night At The Strip Club",
+        "artist_name": "Ashley McBryde & Benjy Davis",
         "video_id": null,
-        "capture_date": "2022-10-05 09:04:32.815815",
-        "source_id": 1374,
-        "song_id": 12901,
-        "duplicate": true
+        "capture_date": "2022-10-22 09:57:52.984984",
+        "source_id": 1398,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -185,10 +185,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Deathwestern', 'SpiritWorld', NULL),
-  ('Split', 'Dazy', NULL),
-  ('Look Both Ways', 'Nosaj Thing & Pink Siifu', NULL),
-  ('Billie Toppy', 'Men I Trust', NULL)
+  ('Pollo Rico', 'billy woods & Messiah Music', NULL),
+  ('Kiss The Ladder', 'Fleshwater', NULL),
+  ('Circuit City', 'Open Mike Eagle', NULL),
+  ('What They Call Us', 'Fever Ray', NULL),
+  ('Gospel Night At The Strip Club', 'Ashley McBryde & Benjy Davis', NULL)
   ;
 
    // Update to song table
@@ -199,7 +200,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12920; // SELECT last_insert_rowid();
+  song_id = 12979; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -239,11 +240,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-05 09:04:32.814814', '1374', '12917'),
-  ('2022-10-05 09:04:32.815815', '1374', '12918'),
-  ('2022-10-05 09:04:32.815815', '1374', '12919'),
-  ('2022-10-05 09:04:32.815815', '1374', '12920'),
-  ('2022-10-05 09:04:32.815815', '1374', '12901')
+  ('2022-10-22 09:57:52.983983', '1398', '12975'),
+  ('2022-10-22 09:57:52.983983', '1398', '12976'),
+  ('2022-10-22 09:57:52.983983', '1398', '12977'),
+  ('2022-10-22 09:57:52.984984', '1398', '12978'),
+  ('2022-10-22 09:57:52.984984', '1398', '12979')
   ;
 
   // Update to source_song table
