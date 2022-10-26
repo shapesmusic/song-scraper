@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Queen’s Unearthed Lament, and 6 More New Songs', '2022-10-14 10:15:35.000000', 'https://www.nytimes.com/2022/10/14/arts/music/playlist-queen-blink-182-lil-baby.html');
+    ('New York Times', 'The Playlist', 'Shakira and Ozuna’s Breakup Bachata, and 7 More New Songs', '2022-10-21 09:35:02.000000', 'https://www.nytimes.com/2022/10/21/arts/music/playlist-shakira-ozuna-kelela.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1400; // SELECT last_insert_rowid();
+  source_id = 1405; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,67 +100,76 @@
   songsData =
   [
     {
-        "title": "Face It Alone",
-        "artist_name": "Queen",
+        "title": "Monotonía",
+        "artist_name": "Shakira and Ozuna",
         "video_id": null,
-        "capture_date": "2022-10-22 10:04:28.058058",
-        "source_id": 1400,
+        "capture_date": "2022-10-25 08:30:00.189189",
+        "source_id": 1405,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Oh Caroline",
-        "artist_name": "The 1975",
+        "title": "Sunset",
+        "artist_name": "Caroline Polachek",
         "video_id": null,
-        "capture_date": "2022-10-22 10:04:28.060060",
-        "source_id": 1400,
+        "capture_date": "2022-10-25 08:30:00.190190",
+        "source_id": 1405,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tired of California",
-        "artist_name": "Nessa Barrett",
+        "title": "Story of Blood",
+        "artist_name": "John Cale ft. Weyes Blood",
         "video_id": null,
-        "capture_date": "2022-10-22 10:04:28.060060",
-        "source_id": 1400,
+        "capture_date": "2022-10-25 08:30:00.190190",
+        "source_id": 1405,
+        "song_id": 13002,
+        "duplicate": true
+    },
+    {
+        "title": "Where I Go",
+        "artist_name": "NxWorries ft. H.E.R.",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:30:00.190190",
+        "source_id": 1405,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Back and Forth",
-        "artist_name": "Lil Baby featuring EST Gee",
+        "title": "Happy Ending",
+        "artist_name": "Kelela",
         "video_id": null,
-        "capture_date": "2022-10-22 10:04:28.060060",
-        "source_id": 1400,
+        "capture_date": "2022-10-25 08:30:00.190190",
+        "source_id": 1405,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Edging",
-        "artist_name": "Blink-182",
+        "title": "(Escapándome) de Mí",
+        "artist_name": "iLe",
         "video_id": null,
-        "capture_date": "2022-10-22 10:04:28.060060",
-        "source_id": 1400,
+        "capture_date": "2022-10-25 08:30:00.190190",
+        "source_id": 1405,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Woman Life Freedom",
-        "artist_name": "Sevdaliza",
+        "title": "Inside of a Plum",
+        "artist_name": "Okay Kaya",
         "video_id": null,
-        "capture_date": "2022-10-22 10:04:28.060060",
-        "source_id": 1400,
+        "capture_date": "2022-10-25 08:30:00.190190",
+        "source_id": 1405,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Atemporal",
-        "artist_name": "Lucrecia Dalt",
+        "title": "Right to Riot",
+        "artist_name": "Hagop Tchaparian",
         "video_id": null,
-        "capture_date": "2022-10-22 10:04:28.061061",
-        "source_id": 1400,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-10-25 08:30:00.190190",
+        "source_id": 1405,
+        "song_id": 12945,
+        "duplicate": true
     }
 ]
 
@@ -202,13 +211,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Face It Alone', 'Queen', NULL),
-  ('Oh Caroline', 'The 1975', NULL),
-  ('Tired of California', 'Nessa Barrett', NULL),
-  ('Back and Forth', 'Lil Baby featuring EST Gee', NULL),
-  ('Edging', 'Blink-182', NULL),
-  ('Woman Life Freedom', 'Sevdaliza', NULL),
-  ('Atemporal', 'Lucrecia Dalt', NULL)
+  ('Monotonía', 'Shakira and Ozuna', NULL),
+  ('Sunset', 'Caroline Polachek', NULL),
+  ('Where I Go', 'NxWorries ft. H.E.R.', NULL),
+  ('Happy Ending', 'Kelela', NULL),
+  ('(Escapándome) de Mí', 'iLe', NULL),
+  ('Inside of a Plum', 'Okay Kaya', NULL)
   ;
 
    // Update to song table
@@ -219,7 +227,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12990; // SELECT last_insert_rowid();
+  song_id = 13045; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -259,13 +267,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-22 10:04:28.058058', '1400', '12984'),
-  ('2022-10-22 10:04:28.060060', '1400', '12985'),
-  ('2022-10-22 10:04:28.060060', '1400', '12986'),
-  ('2022-10-22 10:04:28.060060', '1400', '12987'),
-  ('2022-10-22 10:04:28.060060', '1400', '12988'),
-  ('2022-10-22 10:04:28.060060', '1400', '12989'),
-  ('2022-10-22 10:04:28.061061', '1400', '12990')
+  ('2022-10-25 08:30:00.189189', '1405', '13040'),
+  ('2022-10-25 08:30:00.190190', '1405', '13041'),
+  ('2022-10-25 08:30:00.190190', '1405', '13002'),
+  ('2022-10-25 08:30:00.190190', '1405', '13042'),
+  ('2022-10-25 08:30:00.190190', '1405', '13043'),
+  ('2022-10-25 08:30:00.190190', '1405', '13044'),
+  ('2022-10-25 08:30:00.190190', '1405', '13045'),
+  ('2022-10-25 08:30:00.190190', '1405', '12945')
   ;
 
   // Update to source_song table

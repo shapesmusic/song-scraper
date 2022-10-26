@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of October 14, 2022', '2022-10-14 12:00:00.000000', 'https://www.stereogum.com/2202759/the-5-best-songs-of-the-week-455/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of October 21, 2022', '2022-10-21 12:00:00.000000', 'https://www.stereogum.com/2203607/the-5-best-songs-of-the-week-456/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1403; // SELECT last_insert_rowid();
+  source_id = 1408; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,49 +101,49 @@
   songsData =
   [
     {
-        "title": "Too Bright Window",
-        "artist_name": "Ted Leo",
+        "title": "Bed Of Every",
+        "artist_name": "Gay Meat",
         "video_id": null,
-        "capture_date": "2022-10-22 10:26:32.945945",
-        "source_id": 1403,
+        "capture_date": "2022-10-25 08:42:21.079079",
+        "source_id": 1408,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Poland",
-        "artist_name": "Lil Yachty",
+        "title": "Story Of Blood",
+        "artist_name": "John Cale",
         "video_id": null,
-        "capture_date": "2022-10-22 10:26:32.948948",
-        "source_id": 1403,
-        "song_id": 12964,
+        "capture_date": "2022-10-25 08:42:21.079079",
+        "source_id": 1408,
+        "song_id": 13002,
         "duplicate": true
     },
     {
-        "title": "Nothing",
-        "artist_name": "Gladie",
+        "title": "Nobody",
+        "artist_name": "Knifeplay",
         "video_id": null,
-        "capture_date": "2022-10-22 10:26:32.948948",
-        "source_id": 1403,
+        "capture_date": "2022-10-25 08:42:21.079079",
+        "source_id": 1408,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Idol; RE-run",
-        "artist_name": "Westerman",
+        "title": "kmart amen break",
+        "artist_name": "They Are Gutting A Body Of Water",
         "video_id": null,
-        "capture_date": "2022-10-22 10:26:32.948948",
-        "source_id": 1403,
+        "capture_date": "2022-10-25 08:42:21.080080",
+        "source_id": 1408,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Acid",
-        "artist_name": "MSPAINT",
+        "title": "Happy Ending",
+        "artist_name": "Kelela",
         "video_id": null,
-        "capture_date": "2022-10-22 10:26:32.948948",
-        "source_id": 1403,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-10-25 08:42:21.080080",
+        "source_id": 1408,
+        "song_id": 13043,
+        "duplicate": true
     }
 ]
 
@@ -185,10 +185,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Too Bright Window', 'Ted Leo', NULL),
-  ('Nothing', 'Gladie', NULL),
-  ('Idol; RE-run', 'Westerman', NULL),
-  ('Acid', 'MSPAINT', NULL)
+  ('Bed Of Every', 'Gay Meat', NULL),
+  ('Nobody', 'Knifeplay', NULL),
+  ('kmart amen break', 'They Are Gutting A Body Of Water', NULL)
   ;
 
    // Update to song table
@@ -199,7 +198,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13019; // SELECT last_insert_rowid();
+  song_id = 13058; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -239,11 +238,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-22 10:26:32.945945', '1403', '13016'),
-  ('2022-10-22 10:26:32.948948', '1403', '12964'),
-  ('2022-10-22 10:26:32.948948', '1403', '13017'),
-  ('2022-10-22 10:26:32.948948', '1403', '13018'),
-  ('2022-10-22 10:26:32.948948', '1403', '13019')
+  ('2022-10-25 08:42:21.079079', '1408', '13056'),
+  ('2022-10-25 08:42:21.079079', '1408', '13002'),
+  ('2022-10-25 08:42:21.079079', '1408', '13057'),
+  ('2022-10-25 08:42:21.080080', '1408', '13058'),
+  ('2022-10-25 08:42:21.080080', '1408', '13043')
   ;
 
   // Update to source_song table

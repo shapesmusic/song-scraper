@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 22, 2022', '2022-10-22 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-10-22');
+    ('Billboard', 'The Hot 100', 'Week of October 29, 2022', '2022-10-29 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-10-29');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1399; // SELECT last_insert_rowid();
+  source_id = 1404; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,47 +105,218 @@
   songsData =
   [
     {
-        "title": "Poland",
-        "artist_name": "Lil Yachty",
+        "title": "California Breeze",
+        "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2022-10-22 10:01:07.727727",
-        "source_id": 1399,
-        "song_id": 12964,
+        "capture_date": "2022-10-25 08:22:30.831831",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Forever",
+        "artist_name": "Lil Baby ft. Fridayy",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.831831",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Real Spill",
+        "artist_name": "Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.831831",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pop Out",
+        "artist_name": "Lil Baby & Nardo Wick",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.832832",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Never Hating",
+        "artist_name": "Lil Baby & Young Thug",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.832832",
+        "source_id": 1404,
+        "song_id": 12991,
         "duplicate": true
     },
     {
-        "title": "Heyy",
+        "title": "Stand On It",
         "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2022-10-22 10:01:07.728728",
-        "source_id": 1399,
+        "capture_date": "2022-10-25 08:22:30.832832",
+        "source_id": 1404,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "To The Bone",
-        "artist_name": "Quavo, Takeoff & YoungBoy Never Broke Again",
+        "title": "Not Finished",
+        "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2022-10-22 10:01:07.728728",
-        "source_id": 1399,
+        "capture_date": "2022-10-25 08:22:30.832832",
+        "source_id": 1404,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lokera",
-        "artist_name": "Rauw Alejandro, Lyanno & Brray",
+        "title": "Perfect Timing",
+        "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2022-10-22 10:01:07.728728",
-        "source_id": 1399,
+        "capture_date": "2022-10-25 08:22:30.832832",
+        "source_id": 1404,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Walk",
-        "artist_name": "Kodak Black",
+        "title": "From Now On",
+        "artist_name": "Lil Baby ft. Future",
         "video_id": null,
-        "capture_date": "2022-10-22 10:01:07.728728",
-        "source_id": 1399,
+        "capture_date": "2022-10-25 08:22:30.833833",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Waterfall Flow",
+        "artist_name": "Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.833833",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Everything",
+        "artist_name": "Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.833833",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bye Bye",
+        "artist_name": "Marshmello & Juice WRLD",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.833833",
+        "source_id": 1404,
+        "song_id": 12995,
+        "duplicate": true
+    },
+    {
+        "title": "Double Down",
+        "artist_name": "Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.833833",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cost To Be Alive",
+        "artist_name": "Lil Baby & Rylo Rodriguez",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.833833",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Shiest Talk",
+        "artist_name": "Lil Baby ft. Pooh Shiesty",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.833833",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Edging",
+        "artist_name": "Blink-182",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.833833",
+        "source_id": 1404,
+        "song_id": 12988,
+        "duplicate": true
+    },
+    {
+        "title": "Top Priority",
+        "artist_name": "Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.833833",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Back And Forth",
+        "artist_name": "Lil Baby & EST Gee",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.834834",
+        "source_id": 1404,
+        "song_id": 12987,
+        "duplicate": true
+    },
+    {
+        "title": "Danger",
+        "artist_name": "Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.834834",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Russian Roulette",
+        "artist_name": "Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.834834",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "FR",
+        "artist_name": "Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.834834",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "No Fly Zone",
+        "artist_name": "Lil Baby",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.834834",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Stop Playin",
+        "artist_name": "Lil Baby ft. Jeremih",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.834834",
+        "source_id": 1404,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Just Wanna Rock",
+        "artist_name": "Lil Uzi Vert",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:22:30.834834",
+        "source_id": 1404,
         "song_id": null,
         "duplicate": false
     }
@@ -189,10 +360,26 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Heyy', 'Lil Baby', NULL),
-  ('To The Bone', 'Quavo, Takeoff & YoungBoy Never Broke Again', NULL),
-  ('Lokera', 'Rauw Alejandro, Lyanno & Brray', NULL),
-  ('Walk', 'Kodak Black', NULL)
+  ('California Breeze', 'Lil Baby', NULL),
+  ('Forever', 'Lil Baby ft. Fridayy', NULL),
+  ('Real Spill', 'Lil Baby', NULL),
+  ('Pop Out', 'Lil Baby & Nardo Wick', NULL),
+  ('Stand On It', 'Lil Baby', NULL),
+  ('Not Finished', 'Lil Baby', NULL),
+  ('Perfect Timing', 'Lil Baby', NULL),
+  ('From Now On', 'Lil Baby ft. Future', NULL),
+  ('Waterfall Flow', 'Lil Baby', NULL),
+  ('Everything', 'Lil Baby', NULL),
+  ('Double Down', 'Lil Baby', NULL),
+  ('Cost To Be Alive', 'Lil Baby & Rylo Rodriguez', NULL),
+  ('Shiest Talk', 'Lil Baby ft. Pooh Shiesty', NULL),
+  ('Top Priority', 'Lil Baby', NULL),
+  ('Danger', 'Lil Baby', NULL),
+  ('Russian Roulette', 'Lil Baby', NULL),
+  ('FR', 'Lil Baby', NULL),
+  ('No Fly Zone', 'Lil Baby', NULL),
+  ('Stop Playin', 'Lil Baby ft. Jeremih', NULL),
+  ('Just Wanna Rock', 'Lil Uzi Vert', NULL)
   ;
 
    // Update to song table
@@ -203,7 +390,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12983; // SELECT last_insert_rowid();
+  song_id = 13039; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -243,11 +430,30 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-22 10:01:07.727727', '1399', '12964'),
-  ('2022-10-22 10:01:07.728728', '1399', '12980'),
-  ('2022-10-22 10:01:07.728728', '1399', '12981'),
-  ('2022-10-22 10:01:07.728728', '1399', '12982'),
-  ('2022-10-22 10:01:07.728728', '1399', '12983')
+  ('2022-10-25 08:22:30.831831', '1404', '13020'),
+  ('2022-10-25 08:22:30.831831', '1404', '13021'),
+  ('2022-10-25 08:22:30.831831', '1404', '13022'),
+  ('2022-10-25 08:22:30.832832', '1404', '13023'),
+  ('2022-10-25 08:22:30.832832', '1404', '12991'),
+  ('2022-10-25 08:22:30.832832', '1404', '13024'),
+  ('2022-10-25 08:22:30.832832', '1404', '13025'),
+  ('2022-10-25 08:22:30.832832', '1404', '13026'),
+  ('2022-10-25 08:22:30.833833', '1404', '13027'),
+  ('2022-10-25 08:22:30.833833', '1404', '13028'),
+  ('2022-10-25 08:22:30.833833', '1404', '13029'),
+  ('2022-10-25 08:22:30.833833', '1404', '12995'),
+  ('2022-10-25 08:22:30.833833', '1404', '13030'),
+  ('2022-10-25 08:22:30.833833', '1404', '13031'),
+  ('2022-10-25 08:22:30.833833', '1404', '13032'),
+  ('2022-10-25 08:22:30.833833', '1404', '12988'),
+  ('2022-10-25 08:22:30.833833', '1404', '13033'),
+  ('2022-10-25 08:22:30.834834', '1404', '12987'),
+  ('2022-10-25 08:22:30.834834', '1404', '13034'),
+  ('2022-10-25 08:22:30.834834', '1404', '13035'),
+  ('2022-10-25 08:22:30.834834', '1404', '13036'),
+  ('2022-10-25 08:22:30.834834', '1404', '13037'),
+  ('2022-10-25 08:22:30.834834', '1404', '13038'),
+  ('2022-10-25 08:22:30.834834', '1404', '13039')
   ;
 
   // Update to source_song table

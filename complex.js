@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Lil Baby, $NOT, Stormzy, and More', '2022-10-14 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-october-14/stany-rema-offset-only-you');
+    ('Complex', 'The Best New Music This Week', 'Roddy Ricch, Lil Uzi Vert, Armani Caesar, and More', '2022-10-21 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-october-21/youngboy-never-go-broke-again-yeat-i-dont-text-back');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1401; // SELECT last_insert_rowid();
+  source_id = 1406; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,74 +102,83 @@
   songsData =
   [
     {
-        "title": "Never Hating",
-        "artist_name": "Lil Baby ft. Young Thug",
+        "title": "Aston Martin Truck",
+        "artist_name": "Roddy Ricch",
         "video_id": null,
-        "capture_date": "2022-10-22 10:07:28.756756",
-        "source_id": 1401,
+        "capture_date": "2022-10-25 08:34:03.197197",
+        "source_id": 1406,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hide & Seek",
-        "artist_name": "Stormzy",
+        "title": "Just Wanna Rock",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2022-10-22 10:07:28.757757",
-        "source_id": 1401,
+        "capture_date": "2022-10-25 08:34:03.198198",
+        "source_id": 1406,
+        "song_id": 13039,
+        "duplicate": true
+    },
+    {
+        "title": "Mel Gibson",
+        "artist_name": "Armani Caesar",
+        "video_id": null,
+        "capture_date": "2022-10-25 08:34:03.198198",
+        "source_id": 1406,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "One Up",
-        "artist_name": "Central Cee",
+        "title": "Matinee",
+        "artist_name": "Smino",
         "video_id": null,
-        "capture_date": "2022-10-22 10:07:28.757757",
-        "source_id": 1401,
+        "capture_date": "2022-10-25 08:34:03.198198",
+        "source_id": 1406,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "High John",
-        "artist_name": "MAVI",
+        "title": "Do Better",
+        "artist_name": "Ab-Soul ft. Zacari",
         "video_id": null,
-        "capture_date": "2022-10-22 10:07:28.758758",
-        "source_id": 1401,
+        "capture_date": "2022-10-25 08:34:03.198198",
+        "source_id": 1406,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bye Bye",
-        "artist_name": "Juice WRLD & Marshmello",
+        "title": "Street Cred",
+        "artist_name": "Jeezy & DJ Drama",
         "video_id": null,
-        "capture_date": "2022-10-22 10:07:28.758758",
-        "source_id": 1401,
+        "capture_date": "2022-10-25 08:34:03.198198",
+        "source_id": 1406,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Simple",
-        "artist_name": "$NOT",
+        "title": "Fenty",
+        "artist_name": "French Montana & NAV",
         "video_id": null,
-        "capture_date": "2022-10-22 10:07:28.758758",
-        "source_id": 1401,
+        "capture_date": "2022-10-25 08:34:03.199199",
+        "source_id": 1406,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lay Up N’ Chill",
-        "artist_name": "Pink Sweat$ ft. A Boogie wit da Hoodie",
+        "title": "Body Bag",
+        "artist_name": "Monaleo",
         "video_id": null,
-        "capture_date": "2022-10-22 10:07:28.758758",
-        "source_id": 1401,
+        "capture_date": "2022-10-25 08:34:03.199199",
+        "source_id": 1406,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Only You",
-        "artist_name": "STANY ft. Rema & Offset",
+        "title": "I Don’t Text Back",
+        "artist_name": "YoungBoy Never Broke Again ft. Yeat",
         "video_id": null,
-        "capture_date": "2022-10-22 10:07:28.758758",
-        "source_id": 1401,
+        "capture_date": "2022-10-25 08:34:03.199199",
+        "source_id": 1406,
         "song_id": null,
         "duplicate": false
     }
@@ -212,14 +221,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Never Hating', 'Lil Baby ft. Young Thug', NULL),
-  ('Hide & Seek', 'Stormzy', NULL),
-  ('One Up', 'Central Cee', NULL),
-  ('High John', 'MAVI', NULL),
-  ('Bye Bye', 'Juice WRLD & Marshmello', NULL),
-  ('Simple', '$NOT', NULL),
-  ('Lay Up N’ Chill', 'Pink Sweat$ ft. A Boogie wit da Hoodie', NULL),
-  ('Only You', 'STANY ft. Rema & Offset', NULL)
+  ('Aston Martin Truck', 'Roddy Ricch', NULL),
+  ('Mel Gibson', 'Armani Caesar', NULL),
+  ('Matinee', 'Smino', NULL),
+  ('Do Better', 'Ab-Soul ft. Zacari', NULL),
+  ('Street Cred', 'Jeezy & DJ Drama', NULL),
+  ('Fenty', 'French Montana & NAV', NULL),
+  ('Body Bag', 'Monaleo', NULL),
+  ('I Don’t Text Back', 'YoungBoy Never Broke Again ft. Yeat', NULL)
   ;
 
    // Update to song table
@@ -230,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 12998; // SELECT last_insert_rowid();
+  song_id = 13053; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -270,14 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-22 10:07:28.756756', '1401', '12991'),
-  ('2022-10-22 10:07:28.757757', '1401', '12992'),
-  ('2022-10-22 10:07:28.757757', '1401', '12993'),
-  ('2022-10-22 10:07:28.758758', '1401', '12994'),
-  ('2022-10-22 10:07:28.758758', '1401', '12995'),
-  ('2022-10-22 10:07:28.758758', '1401', '12996'),
-  ('2022-10-22 10:07:28.758758', '1401', '12997'),
-  ('2022-10-22 10:07:28.758758', '1401', '12998')
+  ('2022-10-25 08:34:03.197197', '1406', '13046'),
+  ('2022-10-25 08:34:03.198198', '1406', '13039'),
+  ('2022-10-25 08:34:03.198198', '1406', '13047'),
+  ('2022-10-25 08:34:03.198198', '1406', '13048'),
+  ('2022-10-25 08:34:03.198198', '1406', '13049'),
+  ('2022-10-25 08:34:03.198198', '1406', '13050'),
+  ('2022-10-25 08:34:03.199199', '1406', '13051'),
+  ('2022-10-25 08:34:03.199199', '1406', '13052'),
+  ('2022-10-25 08:34:03.199199', '1406', '13053')
   ;
 
   // Update to source_song table

@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of October 17, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2022-10-17 12:00:00.000000', -- Dont forget this!
+      'Week of October 24, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-10-24 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1402; // SELECT last_insert_rowid();
+    source_id = 1407; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,173 +458,20 @@
     songsData =
     [
     {
-        "title": "Reel Em In",
-        "artist_name": "PGF Nuk",
+        "title": "Valentine",
+        "artist_name": "Sainté",
         "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
+        "capture_date": "2022-10-25 08:37:37.500000",
+        "source_id": 1407,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Aang",
-        "artist_name": "Pivot Gang",
+        "title": "Confused N In Love",
+        "artist_name": "Polo Perks",
         "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "How Far",
-        "artist_name": "Africaine",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "STORY OF BLOOD",
-        "artist_name": "John Cale",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "delta p",
-        "artist_name": "They Are Gutting a Body of Water",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fight Club",
-        "artist_name": "Baby Rose",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ghost",
-        "artist_name": "Liv.e",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "At All",
-        "artist_name": "Contour",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Early Bird",
-        "artist_name": "Kate NV",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dream",
-        "artist_name": "Actress",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "LA Freestyle",
-        "artist_name": "Surf Gang",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fever",
-        "artist_name": "Mansur Brown",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Time Garbage",
-        "artist_name": "Wolf Eyes",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Creepers",
-        "artist_name": "SleazyWorld Go",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Fonz",
-        "artist_name": "Wiki and Subjxct 5",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lucky Star",
-        "artist_name": "Merely",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Foul",
-        "artist_name": "Special Interest",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": 12962,
-        "duplicate": true
-    },
-    {
-        "title": "This Is Why",
-        "artist_name": "Paramore",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
-        "song_id": 12901,
-        "duplicate": true
-    },
-    {
-        "title": "Consistent Dedication",
-        "artist_name": "Heartworm",
-        "video_id": null,
-        "capture_date": "2022-10-22 10:12:13.586586",
-        "source_id": 1402,
+        "capture_date": "2022-10-25 08:37:37.500000",
+        "source_id": 1407,
         "song_id": null,
         "duplicate": false
     }
@@ -666,23 +513,8 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Reel Em In', 'PGF Nuk', NULL),
-    ('Aang', 'Pivot Gang', NULL),
-    ('How Far', 'Africaine', NULL),
-    ('STORY OF BLOOD', 'John Cale', NULL),
-    ('delta p', 'They Are Gutting a Body of Water', NULL),
-    ('Fight Club', 'Baby Rose', NULL),
-    ('Ghost', 'Liv.e', NULL),
-    ('At All', 'Contour', NULL),
-    ('Early Bird', 'Kate NV', NULL),
-    ('Dream', 'Actress', NULL),
-    ('LA Freestyle', 'Surf Gang', NULL),
-    ('Fever', 'Mansur Brown', NULL),
-    ('Time Garbage', 'Wolf Eyes', NULL),
-    ('Creepers', 'SleazyWorld Go', NULL),
-    ('The Fonz', 'Wiki and Subjxct 5', NULL),
-    ('Lucky Star', 'Merely', NULL),
-    ('Consistent Dedication', 'Heartworm', NULL)
+    ('Valentine', 'Sainté', NULL),
+    ('Confused N In Love', 'Polo Perks', NULL)
     ;
 
      // Update to song table
@@ -693,7 +525,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13015; // SELECT last_insert_rowid();
+  song_id = 13055; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -733,25 +565,8 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-22 10:12:13.586586', '1402', '12999'),
-  ('2022-10-22 10:12:13.586586', '1402', '13000'),
-  ('2022-10-22 10:12:13.586586', '1402', '13001'),
-  ('2022-10-22 10:12:13.586586', '1402', '13002'),
-  ('2022-10-22 10:12:13.586586', '1402', '13003'),
-  ('2022-10-22 10:12:13.586586', '1402', '13004'),
-  ('2022-10-22 10:12:13.586586', '1402', '13005'),
-  ('2022-10-22 10:12:13.586586', '1402', '13006'),
-  ('2022-10-22 10:12:13.586586', '1402', '13007'),
-  ('2022-10-22 10:12:13.586586', '1402', '13008'),
-  ('2022-10-22 10:12:13.586586', '1402', '13009'),
-  ('2022-10-22 10:12:13.586586', '1402', '13010'),
-  ('2022-10-22 10:12:13.586586', '1402', '13011'),
-  ('2022-10-22 10:12:13.586586', '1402', '13012'),
-  ('2022-10-22 10:12:13.586586', '1402', '13013'),
-  ('2022-10-22 10:12:13.586586', '1402', '13014'),
-  ('2022-10-22 10:12:13.586586', '1402', '12962'),
-  ('2022-10-22 10:12:13.586586', '1402', '12901'),
-  ('2022-10-22 10:12:13.586586', '1402', '13015')
+  ('2022-10-25 08:37:37.500000', '1407', '13054'),
+  ('2022-10-25 08:37:37.500000', '1407', '13055')
   ;
 
   // Update to source_song table
