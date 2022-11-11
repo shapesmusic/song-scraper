@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 29, 2022', '2022-10-29 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-10-29');
+    ('Billboard', 'The Hot 100', 'Week of November 5, 2022', '2022-11-05 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-11-05');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1404; // SELECT last_insert_rowid();
+  source_id = 1423; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,218 +105,200 @@
   songsData =
   [
     {
-        "title": "California Breeze",
-        "artist_name": "Lil Baby",
+        "title": "Lavender Haze",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.831831",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.021021",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Forever",
-        "artist_name": "Lil Baby ft. Fridayy",
+        "title": "Maroon",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.831831",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.022022",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Real Spill",
-        "artist_name": "Lil Baby",
+        "title": "Snow On The Beach",
+        "artist_name": "Taylor Swift ft. Lana Del Rey",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.831831",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.022022",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pop Out",
-        "artist_name": "Lil Baby & Nardo Wick",
+        "title": "Midnight Rain",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.832832",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.022022",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Never Hating",
-        "artist_name": "Lil Baby & Young Thug",
+        "title": "Bejeweled",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.832832",
-        "source_id": 1404,
-        "song_id": 12991,
-        "duplicate": true
-    },
-    {
-        "title": "Stand On It",
-        "artist_name": "Lil Baby",
-        "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.832832",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.022022",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Not Finished",
-        "artist_name": "Lil Baby",
+        "title": "Question...?",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.832832",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.023023",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Perfect Timing",
-        "artist_name": "Lil Baby",
+        "title": "You're On Your Own, Kid",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.832832",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.023023",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "From Now On",
-        "artist_name": "Lil Baby ft. Future",
+        "title": "Karma",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.833833",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.023023",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Waterfall Flow",
-        "artist_name": "Lil Baby",
+        "title": "Vigilante Shit",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.833833",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.023023",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Everything",
-        "artist_name": "Lil Baby",
+        "title": "Mastermind",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.833833",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.023023",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bye Bye",
-        "artist_name": "Marshmello & Juice WRLD",
+        "title": "Labyrinth",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.833833",
-        "source_id": 1404,
-        "song_id": 12995,
-        "duplicate": true
-    },
-    {
-        "title": "Double Down",
-        "artist_name": "Lil Baby",
-        "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.833833",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.023023",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cost To Be Alive",
-        "artist_name": "Lil Baby & Rylo Rodriguez",
+        "title": "Sweet Nothing",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.833833",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.023023",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shiest Talk",
-        "artist_name": "Lil Baby ft. Pooh Shiesty",
+        "title": "Would've, Could've, Should've",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.833833",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.023023",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Edging",
-        "artist_name": "Blink-182",
+        "title": "Bigger Than The Whole Sky",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.833833",
-        "source_id": 1404,
-        "song_id": 12988,
-        "duplicate": true
-    },
-    {
-        "title": "Top Priority",
-        "artist_name": "Lil Baby",
-        "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.833833",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.023023",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Back And Forth",
-        "artist_name": "Lil Baby & EST Gee",
+        "title": "The Great War",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.834834",
-        "source_id": 1404,
-        "song_id": 12987,
-        "duplicate": true
-    },
-    {
-        "title": "Danger",
-        "artist_name": "Lil Baby",
-        "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.834834",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.024024",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Russian Roulette",
-        "artist_name": "Lil Baby",
+        "title": "Paris",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.834834",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.024024",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "FR",
-        "artist_name": "Lil Baby",
+        "title": "High Infidelity",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.834834",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.024024",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Fly Zone",
-        "artist_name": "Lil Baby",
+        "title": "Glitch",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.834834",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.024024",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Stop Playin",
-        "artist_name": "Lil Baby ft. Jeremih",
+        "title": "Dear Reader",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.834834",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.024024",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Just Wanna Rock",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Monotonia",
+        "artist_name": "Shakira + Ozuna",
         "video_id": null,
-        "capture_date": "2022-10-25 08:22:30.834834",
-        "source_id": 1404,
+        "capture_date": "2022-11-11 03:32:57.025025",
+        "source_id": 1423,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Made You Look",
+        "artist_name": "Meghan Trainor",
+        "video_id": null,
+        "capture_date": "2022-11-11 03:32:57.027027",
+        "source_id": 1423,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Miss You",
+        "artist_name": "Oliver Tree & Robin Schulz",
+        "video_id": null,
+        "capture_date": "2022-11-11 03:32:57.027027",
+        "source_id": 1423,
         "song_id": null,
         "duplicate": false
     }
@@ -360,26 +342,28 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('California Breeze', 'Lil Baby', NULL),
-  ('Forever', 'Lil Baby ft. Fridayy', NULL),
-  ('Real Spill', 'Lil Baby', NULL),
-  ('Pop Out', 'Lil Baby & Nardo Wick', NULL),
-  ('Stand On It', 'Lil Baby', NULL),
-  ('Not Finished', 'Lil Baby', NULL),
-  ('Perfect Timing', 'Lil Baby', NULL),
-  ('From Now On', 'Lil Baby ft. Future', NULL),
-  ('Waterfall Flow', 'Lil Baby', NULL),
-  ('Everything', 'Lil Baby', NULL),
-  ('Double Down', 'Lil Baby', NULL),
-  ('Cost To Be Alive', 'Lil Baby & Rylo Rodriguez', NULL),
-  ('Shiest Talk', 'Lil Baby ft. Pooh Shiesty', NULL),
-  ('Top Priority', 'Lil Baby', NULL),
-  ('Danger', 'Lil Baby', NULL),
-  ('Russian Roulette', 'Lil Baby', NULL),
-  ('FR', 'Lil Baby', NULL),
-  ('No Fly Zone', 'Lil Baby', NULL),
-  ('Stop Playin', 'Lil Baby ft. Jeremih', NULL),
-  ('Just Wanna Rock', 'Lil Uzi Vert', NULL)
+  ('Lavender Haze', 'Taylor Swift', NULL),
+  ('Maroon', 'Taylor Swift', NULL),
+  ('Snow On The Beach', 'Taylor Swift ft. Lana Del Rey', NULL),
+  ('Midnight Rain', 'Taylor Swift', NULL),
+  ('Bejeweled', 'Taylor Swift', NULL),
+  ('Question...?', 'Taylor Swift', NULL),
+  ('You’re On Your Own, Kid', 'Taylor Swift', NULL),
+  ('Karma', 'Taylor Swift', NULL),
+  ('Vigilante Shit', 'Taylor Swift', NULL),
+  ('Mastermind', 'Taylor Swift', NULL),
+  ('Labyrinth', 'Taylor Swift', NULL),
+  ('Sweet Nothing', 'Taylor Swift', NULL),
+  ('Would’ve, Could’ve, Should’ve', 'Taylor Swift', NULL),
+  ('Bigger Than The Whole Sky', 'Taylor Swift', NULL),
+  ('The Great War', 'Taylor Swift', NULL),
+  ('Paris', 'Taylor Swift', NULL),
+  ('High Infidelity', 'Taylor Swift', NULL),
+  ('Glitch', 'Taylor Swift', NULL),
+  ('Dear Reader', 'Taylor Swift', NULL),
+  ('Monotonia', 'Shakira + Ozuna', NULL),
+  ('Made You Look', 'Meghan Trainor', NULL),
+  ('Miss You', 'Oliver Tree & Robin Schulz', NULL)
   ;
 
    // Update to song table
@@ -390,7 +374,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13039; // SELECT last_insert_rowid();
+  song_id = 13095; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -430,30 +414,28 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-25 08:22:30.831831', '1404', '13020'),
-  ('2022-10-25 08:22:30.831831', '1404', '13021'),
-  ('2022-10-25 08:22:30.831831', '1404', '13022'),
-  ('2022-10-25 08:22:30.832832', '1404', '13023'),
-  ('2022-10-25 08:22:30.832832', '1404', '12991'),
-  ('2022-10-25 08:22:30.832832', '1404', '13024'),
-  ('2022-10-25 08:22:30.832832', '1404', '13025'),
-  ('2022-10-25 08:22:30.832832', '1404', '13026'),
-  ('2022-10-25 08:22:30.833833', '1404', '13027'),
-  ('2022-10-25 08:22:30.833833', '1404', '13028'),
-  ('2022-10-25 08:22:30.833833', '1404', '13029'),
-  ('2022-10-25 08:22:30.833833', '1404', '12995'),
-  ('2022-10-25 08:22:30.833833', '1404', '13030'),
-  ('2022-10-25 08:22:30.833833', '1404', '13031'),
-  ('2022-10-25 08:22:30.833833', '1404', '13032'),
-  ('2022-10-25 08:22:30.833833', '1404', '12988'),
-  ('2022-10-25 08:22:30.833833', '1404', '13033'),
-  ('2022-10-25 08:22:30.834834', '1404', '12987'),
-  ('2022-10-25 08:22:30.834834', '1404', '13034'),
-  ('2022-10-25 08:22:30.834834', '1404', '13035'),
-  ('2022-10-25 08:22:30.834834', '1404', '13036'),
-  ('2022-10-25 08:22:30.834834', '1404', '13037'),
-  ('2022-10-25 08:22:30.834834', '1404', '13038'),
-  ('2022-10-25 08:22:30.834834', '1404', '13039')
+  ('2022-11-11 03:32:57.021021', '1423', '13074'),
+  ('2022-11-11 03:32:57.022022', '1423', '13075'),
+  ('2022-11-11 03:32:57.022022', '1423', '13076'),
+  ('2022-11-11 03:32:57.022022', '1423', '13077'),
+  ('2022-11-11 03:32:57.022022', '1423', '13078'),
+  ('2022-11-11 03:32:57.023023', '1423', '13079'),
+  ('2022-11-11 03:32:57.023023', '1423', '13080'),
+  ('2022-11-11 03:32:57.023023', '1423', '13081'),
+  ('2022-11-11 03:32:57.023023', '1423', '13082'),
+  ('2022-11-11 03:32:57.023023', '1423', '13083'),
+  ('2022-11-11 03:32:57.023023', '1423', '13084'),
+  ('2022-11-11 03:32:57.023023', '1423', '13085'),
+  ('2022-11-11 03:32:57.023023', '1423', '13086'),
+  ('2022-11-11 03:32:57.023023', '1423', '13087'),
+  ('2022-11-11 03:32:57.024024', '1423', '13088'),
+  ('2022-11-11 03:32:57.024024', '1423', '13089'),
+  ('2022-11-11 03:32:57.024024', '1423', '13090'),
+  ('2022-11-11 03:32:57.024024', '1423', '13091'),
+  ('2022-11-11 03:32:57.024024', '1423', '13092'),
+  ('2022-11-11 03:32:57.025025', '1423', '13093'),
+  ('2022-11-11 03:32:57.027027', '1423', '13094'),
+  ('2022-11-11 03:32:57.027027', '1423', '13095')
   ;
 
   // Update to source_song table

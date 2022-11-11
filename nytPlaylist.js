@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Shakira and Ozuna’s Breakup Bachata, and 7 More New Songs', '2022-10-21 09:35:02.000000', 'https://www.nytimes.com/2022/10/21/arts/music/playlist-shakira-ozuna-kelela.html');
+    ('New York Times', 'The Playlist', 'Rihanna Inches Back to Music, and 8 More New Songs', '2022-10-28 09:38:29.000000', 'https://www.nytimes.com/2022/10/28/arts/music/playlist-rihanna-sza-ice-spice.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1405; // SELECT last_insert_rowid();
+  source_id = 1424; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,76 +100,85 @@
   songsData =
   [
     {
-        "title": "Monotonía",
-        "artist_name": "Shakira and Ozuna",
+        "title": "Lift Me Up",
+        "artist_name": "Rihanna",
         "video_id": null,
-        "capture_date": "2022-10-25 08:30:00.189189",
-        "source_id": 1405,
+        "capture_date": "2022-11-11 03:40:45.118118",
+        "source_id": 1424,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sunset",
-        "artist_name": "Caroline Polachek",
+        "title": "Shirt",
+        "artist_name": "SZA",
         "video_id": null,
-        "capture_date": "2022-10-25 08:30:00.190190",
-        "source_id": 1405,
+        "capture_date": "2022-11-11 03:40:45.119119",
+        "source_id": 1424,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Story of Blood",
-        "artist_name": "John Cale ft. Weyes Blood",
+        "title": "Do You Well",
+        "artist_name": "Nakhane ft. Perfume Genius",
         "video_id": null,
-        "capture_date": "2022-10-25 08:30:00.190190",
-        "source_id": 1405,
-        "song_id": 13002,
-        "duplicate": true
-    },
-    {
-        "title": "Where I Go",
-        "artist_name": "NxWorries ft. H.E.R.",
-        "video_id": null,
-        "capture_date": "2022-10-25 08:30:00.190190",
-        "source_id": 1405,
+        "capture_date": "2022-11-11 03:40:45.119119",
+        "source_id": 1424,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Happy Ending",
-        "artist_name": "Kelela",
+        "title": "Bikini Bottom",
+        "artist_name": "Ice Spice",
         "video_id": null,
-        "capture_date": "2022-10-25 08:30:00.190190",
-        "source_id": 1405,
+        "capture_date": "2022-11-11 03:40:45.119119",
+        "source_id": 1424,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "(Escapándome) de Mí",
-        "artist_name": "iLe",
+        "title": "Frenzy",
+        "artist_name": "Iggy Pop",
         "video_id": null,
-        "capture_date": "2022-10-25 08:30:00.190190",
-        "source_id": 1405,
+        "capture_date": "2022-11-11 03:40:45.119119",
+        "source_id": 1424,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Inside of a Plum",
-        "artist_name": "Okay Kaya",
+        "title": "Chores",
+        "artist_name": "Feeble Little Horse",
         "video_id": null,
-        "capture_date": "2022-10-25 08:30:00.190190",
-        "source_id": 1405,
+        "capture_date": "2022-11-11 03:40:45.119119",
+        "source_id": 1424,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Right to Riot",
-        "artist_name": "Hagop Tchaparian",
+        "title": "Mi Manera de Querer",
+        "artist_name": "Natalia Lafourcade",
         "video_id": null,
-        "capture_date": "2022-10-25 08:30:00.190190",
-        "source_id": 1405,
-        "song_id": 12945,
-        "duplicate": true
+        "capture_date": "2022-11-11 03:40:45.119119",
+        "source_id": 1424,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Can You Afford to Lose Me?",
+        "artist_name": "Holly Humberstone",
+        "video_id": null,
+        "capture_date": "2022-11-11 03:40:45.119119",
+        "source_id": 1424,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Love/Lover/Friend",
+        "artist_name": "Caroline Rose",
+        "video_id": null,
+        "capture_date": "2022-11-11 03:40:45.119119",
+        "source_id": 1424,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -211,12 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Monotonía', 'Shakira and Ozuna', NULL),
-  ('Sunset', 'Caroline Polachek', NULL),
-  ('Where I Go', 'NxWorries ft. H.E.R.', NULL),
-  ('Happy Ending', 'Kelela', NULL),
-  ('(Escapándome) de Mí', 'iLe', NULL),
-  ('Inside of a Plum', 'Okay Kaya', NULL)
+  ('Lift Me Up', 'Rihanna', NULL),
+  ('Shirt', 'SZA', NULL),
+  ('Do You Well', 'Nakhane ft. Perfume Genius', NULL),
+  ('Bikini Bottom', 'Ice Spice', NULL),
+  ('Frenzy', 'Iggy Pop', NULL),
+  ('Chores', 'Feeble Little Horse', NULL),
+  ('Mi Manera de Querer', 'Natalia Lafourcade', NULL),
+  ('Can You Afford to Lose Me?', 'Holly Humberstone', NULL),
+  ('Love/Lover/Friend', 'Caroline Rose', NULL)
   ;
 
    // Update to song table
@@ -227,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13045; // SELECT last_insert_rowid();
+  song_id = 13104; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -267,14 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-25 08:30:00.189189', '1405', '13040'),
-  ('2022-10-25 08:30:00.190190', '1405', '13041'),
-  ('2022-10-25 08:30:00.190190', '1405', '13002'),
-  ('2022-10-25 08:30:00.190190', '1405', '13042'),
-  ('2022-10-25 08:30:00.190190', '1405', '13043'),
-  ('2022-10-25 08:30:00.190190', '1405', '13044'),
-  ('2022-10-25 08:30:00.190190', '1405', '13045'),
-  ('2022-10-25 08:30:00.190190', '1405', '12945')
+  ('2022-11-11 03:40:45.118118', '1424', '13096'),
+  ('2022-11-11 03:40:45.119119', '1424', '13097'),
+  ('2022-11-11 03:40:45.119119', '1424', '13098'),
+  ('2022-11-11 03:40:45.119119', '1424', '13099'),
+  ('2022-11-11 03:40:45.119119', '1424', '13100'),
+  ('2022-11-11 03:40:45.119119', '1424', '13101'),
+  ('2022-11-11 03:40:45.119119', '1424', '13102'),
+  ('2022-11-11 03:40:45.119119', '1424', '13103'),
+  ('2022-11-11 03:40:45.119119', '1424', '13104')
   ;
 
   // Update to source_song table

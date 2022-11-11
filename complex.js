@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Roddy Ricch, Lil Uzi Vert, Armani Caesar, and More', '2022-10-21 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-october-21/youngboy-never-go-broke-again-yeat-i-dont-text-back');
+    ('Complex', 'The Best New Music This Week', 'Rihanna, Baby Keem, SZA & More', '2022-10-28 12:00:00.000000', 'https://www.complex.com/music/best-new-music-october-28/mariah-the-scientist-bout-mine');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1406; // SELECT last_insert_rowid();
+  source_id = 1425; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,83 +102,110 @@
   songsData =
   [
     {
-        "title": "Aston Martin Truck",
-        "artist_name": "Roddy Ricch",
+        "title": "Lift Me Up",
+        "artist_name": "Rihanna",
         "video_id": null,
-        "capture_date": "2022-10-25 08:34:03.197197",
-        "source_id": 1406,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Just Wanna Rock",
-        "artist_name": "Lil Uzi Vert",
-        "video_id": null,
-        "capture_date": "2022-10-25 08:34:03.198198",
-        "source_id": 1406,
-        "song_id": 13039,
+        "capture_date": "2022-11-11 03:44:11.516516",
+        "source_id": 1425,
+        "song_id": 13096,
         "duplicate": true
     },
     {
-        "title": "Mel Gibson",
-        "artist_name": "Armani Caesar",
+        "title": "Shirt",
+        "artist_name": "SZA",
         "video_id": null,
-        "capture_date": "2022-10-25 08:34:03.198198",
-        "source_id": 1406,
+        "capture_date": "2022-11-11 03:44:11.516516",
+        "source_id": 1425,
+        "song_id": 13097,
+        "duplicate": true
+    },
+    {
+        "title": "killstreaks",
+        "artist_name": "Baby Keem ft. Don Toliver & PinkPantheress",
+        "video_id": null,
+        "capture_date": "2022-11-11 03:44:11.516516",
+        "source_id": 1425,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Matinee",
-        "artist_name": "Smino",
+        "title": "Bag Talk",
+        "artist_name": "Polo G",
         "video_id": null,
-        "capture_date": "2022-10-25 08:34:03.198198",
-        "source_id": 1406,
+        "capture_date": "2022-11-11 03:44:11.516516",
+        "source_id": 1425,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Do Better",
-        "artist_name": "Ab-Soul ft. Zacari",
+        "title": "Pudgy",
+        "artist_name": "Smino ft. Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2022-10-25 08:34:03.198198",
-        "source_id": 1406,
+        "capture_date": "2022-11-11 03:44:11.516516",
+        "source_id": 1425,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Street Cred",
-        "artist_name": "Jeezy & DJ Drama",
+        "title": "Get Even",
+        "artist_name": "DVSN",
         "video_id": null,
-        "capture_date": "2022-10-25 08:34:03.198198",
-        "source_id": 1406,
+        "capture_date": "2022-11-11 03:44:11.516516",
+        "source_id": 1425,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fenty",
-        "artist_name": "French Montana & NAV",
+        "title": "What You Rep",
+        "artist_name": "Duke Deuce ft. DJ Paul",
         "video_id": null,
-        "capture_date": "2022-10-25 08:34:03.199199",
-        "source_id": 1406,
+        "capture_date": "2022-11-11 03:44:11.516516",
+        "source_id": 1425,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Body Bag",
-        "artist_name": "Monaleo",
+        "title": "Letter to Myself",
+        "artist_name": "Morray",
         "video_id": null,
-        "capture_date": "2022-10-25 08:34:03.199199",
-        "source_id": 1406,
+        "capture_date": "2022-11-11 03:44:11.517517",
+        "source_id": 1425,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Don’t Text Back",
-        "artist_name": "YoungBoy Never Broke Again ft. Yeat",
+        "title": "Bikini Bottom",
+        "artist_name": "Ice Spice",
         "video_id": null,
-        "capture_date": "2022-10-25 08:34:03.199199",
-        "source_id": 1406,
+        "capture_date": "2022-11-11 03:44:11.517517",
+        "source_id": 1425,
+        "song_id": 13099,
+        "duplicate": true
+    },
+    {
+        "title": "Science Class",
+        "artist_name": "Westside Gunn ft. Busta Rhymes, Raekwon, Ghostface Killah & Stove God Cooks",
+        "video_id": null,
+        "capture_date": "2022-11-11 03:44:11.517517",
+        "source_id": 1425,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ain’t Safe",
+        "artist_name": "Trippie Redd & Don Toliver",
+        "video_id": null,
+        "capture_date": "2022-11-11 03:44:11.517517",
+        "source_id": 1425,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bout Mine",
+        "artist_name": "Mariah the Scientist",
+        "video_id": null,
+        "capture_date": "2022-11-11 03:44:11.517517",
+        "source_id": 1425,
         "song_id": null,
         "duplicate": false
     }
@@ -221,14 +248,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Aston Martin Truck', 'Roddy Ricch', NULL),
-  ('Mel Gibson', 'Armani Caesar', NULL),
-  ('Matinee', 'Smino', NULL),
-  ('Do Better', 'Ab-Soul ft. Zacari', NULL),
-  ('Street Cred', 'Jeezy & DJ Drama', NULL),
-  ('Fenty', 'French Montana & NAV', NULL),
-  ('Body Bag', 'Monaleo', NULL),
-  ('I Don’t Text Back', 'YoungBoy Never Broke Again ft. Yeat', NULL)
+  ('killstreaks', 'Baby Keem ft. Don Toliver & PinkPantheress', NULL),
+  ('Bag Talk', 'Polo G', NULL),
+  ('Pudgy', 'Smino ft. Lil Uzi Vert', NULL),
+  ('Get Even', 'DVSN', NULL),
+  ('What You Rep', 'Duke Deuce ft. DJ Paul', NULL),
+  ('Letter to Myself', 'Morray', NULL),
+  ('Science Class', 'Westside Gunn ft. Busta Rhymes, Raekwon, Ghostface Killah & Stove God Cooks', NULL),
+  ('Ain’t Safe', 'Trippie Redd & Don Toliver', NULL),
+  ('Bout Mine', 'Mariah the Scientist', NULL)
   ;
 
    // Update to song table
@@ -239,7 +267,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13053; // SELECT last_insert_rowid();
+  song_id = 13113; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +307,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-10-25 08:34:03.197197', '1406', '13046'),
-  ('2022-10-25 08:34:03.198198', '1406', '13039'),
-  ('2022-10-25 08:34:03.198198', '1406', '13047'),
-  ('2022-10-25 08:34:03.198198', '1406', '13048'),
-  ('2022-10-25 08:34:03.198198', '1406', '13049'),
-  ('2022-10-25 08:34:03.198198', '1406', '13050'),
-  ('2022-10-25 08:34:03.199199', '1406', '13051'),
-  ('2022-10-25 08:34:03.199199', '1406', '13052'),
-  ('2022-10-25 08:34:03.199199', '1406', '13053')
+  ('2022-11-11 03:44:11.516516', '1425', '13096'),
+  ('2022-11-11 03:44:11.516516', '1425', '13097'),
+  ('2022-11-11 03:44:11.516516', '1425', '13105'),
+  ('2022-11-11 03:44:11.516516', '1425', '13106'),
+  ('2022-11-11 03:44:11.516516', '1425', '13107'),
+  ('2022-11-11 03:44:11.516516', '1425', '13108'),
+  ('2022-11-11 03:44:11.516516', '1425', '13109'),
+  ('2022-11-11 03:44:11.517517', '1425', '13110'),
+  ('2022-11-11 03:44:11.517517', '1425', '13099'),
+  ('2022-11-11 03:44:11.517517', '1425', '13111'),
+  ('2022-11-11 03:44:11.517517', '1425', '13112'),
+  ('2022-11-11 03:44:11.517517', '1425', '13113')
   ;
 
   // Update to source_song table
