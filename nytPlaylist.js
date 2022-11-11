@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Rihanna Inches Back to Music, and 8 More New Songs', '2022-10-28 09:38:29.000000', 'https://www.nytimes.com/2022/10/28/arts/music/playlist-rihanna-sza-ice-spice.html');
+    ('New York Times', 'The Playlist', 'Selena Gomez’s Boldly Revealing Ballad, and 9 More New Songs', '2022-11-08 07:31:02.000000', 'https://www.nytimes.com/2022/11/04/arts/music/playlist-selena-gomez-tiesto-tate-mcrae.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1424; // SELECT last_insert_rowid();
+  source_id = 1428; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,83 +100,92 @@
   songsData =
   [
     {
-        "title": "Lift Me Up",
-        "artist_name": "Rihanna",
+        "title": "My Mind & Me",
+        "artist_name": "Selena Gomez",
         "video_id": null,
-        "capture_date": "2022-11-11 03:40:45.118118",
-        "source_id": 1424,
+        "capture_date": "2022-11-11 03:57:43.788788",
+        "source_id": 1428,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shirt",
-        "artist_name": "SZA",
+        "title": "Muse",
+        "artist_name": "Lucius",
         "video_id": null,
-        "capture_date": "2022-11-11 03:40:45.119119",
-        "source_id": 1424,
+        "capture_date": "2022-11-11 03:57:43.788788",
+        "source_id": 1428,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Do You Well",
-        "artist_name": "Nakhane ft. Perfume Genius",
+        "title": "10:35",
+        "artist_name": "Tiësto ft. Tate McRae",
         "video_id": null,
-        "capture_date": "2022-11-11 03:40:45.119119",
-        "source_id": 1424,
+        "capture_date": "2022-11-11 03:57:43.788788",
+        "source_id": 1428,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bikini Bottom",
-        "artist_name": "Ice Spice",
+        "title": "Quiet Culture",
+        "artist_name": "Ibrahim Maalouf ft. De La Soul",
         "video_id": null,
-        "capture_date": "2022-11-11 03:40:45.119119",
-        "source_id": 1424,
+        "capture_date": "2022-11-11 03:57:43.789789",
+        "source_id": 1428,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Frenzy",
-        "artist_name": "Iggy Pop",
+        "title": "God Is a Circle",
+        "artist_name": "Yves Tumor",
         "video_id": null,
-        "capture_date": "2022-11-11 03:40:45.119119",
-        "source_id": 1424,
+        "capture_date": "2022-11-11 03:57:43.789789",
+        "source_id": 1428,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Chores",
-        "artist_name": "Feeble Little Horse",
+        "title": "Irreversible Damage",
+        "artist_name": "Algiers ft. Zack de la Rocha",
         "video_id": null,
-        "capture_date": "2022-11-11 03:40:45.119119",
-        "source_id": 1424,
+        "capture_date": "2022-11-11 03:57:43.789789",
+        "source_id": 1428,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mi Manera de Querer",
-        "artist_name": "Natalia Lafourcade",
+        "title": "Fallout",
+        "artist_name": "Yo La Tengo",
         "video_id": null,
-        "capture_date": "2022-11-11 03:40:45.119119",
-        "source_id": 1424,
+        "capture_date": "2022-11-11 03:57:43.789789",
+        "source_id": 1428,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Can You Afford to Lose Me?",
-        "artist_name": "Holly Humberstone",
+        "title": "Arms",
+        "artist_name": "Sipho",
         "video_id": null,
-        "capture_date": "2022-11-11 03:40:45.119119",
-        "source_id": 1424,
+        "capture_date": "2022-11-11 03:57:43.789789",
+        "source_id": 1428,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Love/Lover/Friend",
-        "artist_name": "Caroline Rose",
+        "title": "Itch",
+        "artist_name": "quinnie",
         "video_id": null,
-        "capture_date": "2022-11-11 03:40:45.119119",
-        "source_id": 1424,
+        "capture_date": "2022-11-11 03:57:43.789789",
+        "source_id": 1428,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Corpus",
+        "artist_name": "Old Fire ft. Bill Callahan",
+        "video_id": null,
+        "capture_date": "2022-11-11 03:57:43.789789",
+        "source_id": 1428,
         "song_id": null,
         "duplicate": false
     }
@@ -220,15 +229,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Lift Me Up', 'Rihanna', NULL),
-  ('Shirt', 'SZA', NULL),
-  ('Do You Well', 'Nakhane ft. Perfume Genius', NULL),
-  ('Bikini Bottom', 'Ice Spice', NULL),
-  ('Frenzy', 'Iggy Pop', NULL),
-  ('Chores', 'Feeble Little Horse', NULL),
-  ('Mi Manera de Querer', 'Natalia Lafourcade', NULL),
-  ('Can You Afford to Lose Me?', 'Holly Humberstone', NULL),
-  ('Love/Lover/Friend', 'Caroline Rose', NULL)
+  ('My Mind & Me', 'Selena Gomez', NULL),
+  ('Muse', 'Lucius', NULL),
+  ('10:35', 'Tiësto ft. Tate McRae', NULL),
+  ('Quiet Culture', 'Ibrahim Maalouf ft. De La Soul', NULL),
+  ('God Is a Circle', 'Yves Tumor', NULL),
+  ('Irreversible Damage', 'Algiers ft. Zack de la Rocha', NULL),
+  ('Fallout', 'Yo La Tengo', NULL),
+  ('Arms', 'Sipho', NULL),
+  ('Itch', 'quinnie', NULL),
+  ('Corpus', 'Old Fire ft. Bill Callahan', NULL)
   ;
 
    // Update to song table
@@ -239,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13104; // SELECT last_insert_rowid();
+  song_id = 13130; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-11 03:40:45.118118', '1424', '13096'),
-  ('2022-11-11 03:40:45.119119', '1424', '13097'),
-  ('2022-11-11 03:40:45.119119', '1424', '13098'),
-  ('2022-11-11 03:40:45.119119', '1424', '13099'),
-  ('2022-11-11 03:40:45.119119', '1424', '13100'),
-  ('2022-11-11 03:40:45.119119', '1424', '13101'),
-  ('2022-11-11 03:40:45.119119', '1424', '13102'),
-  ('2022-11-11 03:40:45.119119', '1424', '13103'),
-  ('2022-11-11 03:40:45.119119', '1424', '13104')
+  ('2022-11-11 03:57:43.788788', '1428', '13121'),
+  ('2022-11-11 03:57:43.788788', '1428', '13122'),
+  ('2022-11-11 03:57:43.788788', '1428', '13123'),
+  ('2022-11-11 03:57:43.789789', '1428', '13124'),
+  ('2022-11-11 03:57:43.789789', '1428', '13125'),
+  ('2022-11-11 03:57:43.789789', '1428', '13126'),
+  ('2022-11-11 03:57:43.789789', '1428', '13127'),
+  ('2022-11-11 03:57:43.789789', '1428', '13128'),
+  ('2022-11-11 03:57:43.789789', '1428', '13129'),
+  ('2022-11-11 03:57:43.789789', '1428', '13130')
   ;
 
   // Update to source_song table

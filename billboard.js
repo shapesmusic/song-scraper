@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of November 5, 2022', '2022-11-05 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-11-05');
+    ('Billboard', 'The Hot 100', 'Week of November 12, 2022', '2022-11-12 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-11-12');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1423; // SELECT last_insert_rowid();
+  source_id = 1427; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,200 +105,56 @@
   songsData =
   [
     {
-        "title": "Lavender Haze",
-        "artist_name": "Taylor Swift",
+        "title": "Lift Me Up",
+        "artist_name": "Rihanna",
         "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.021021",
-        "source_id": 1423,
+        "capture_date": "2022-11-11 03:53:09.613613",
+        "source_id": 1427,
+        "song_id": 13096,
+        "duplicate": true
+    },
+    {
+        "title": "Shirt",
+        "artist_name": "SZA",
+        "video_id": null,
+        "capture_date": "2022-11-11 03:53:09.615615",
+        "source_id": 1427,
+        "song_id": 13097,
+        "duplicate": true
+    },
+    {
+        "title": "In My Head",
+        "artist_name": "Juice WRLD",
+        "video_id": null,
+        "capture_date": "2022-11-11 03:53:09.616616",
+        "source_id": 1427,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Maroon",
-        "artist_name": "Taylor Swift",
+        "title": "The Astronaut",
+        "artist_name": "JIN",
         "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.022022",
-        "source_id": 1423,
+        "capture_date": "2022-11-11 03:53:09.617617",
+        "source_id": 1427,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Snow On The Beach",
-        "artist_name": "Taylor Swift ft. Lana Del Rey",
+        "title": "Ain't Safe",
+        "artist_name": "Trippie Redd & Don Toliver",
         "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.022022",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-11-11 03:53:09.619619",
+        "source_id": 1427,
+        "song_id": 13112,
+        "duplicate": true
     },
     {
-        "title": "Midnight Rain",
-        "artist_name": "Taylor Swift",
+        "title": "300 Blackout",
+        "artist_name": "Kodak Black",
         "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.022022",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bejeweled",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.022022",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Question...?",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.023023",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "You're On Your Own, Kid",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.023023",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Karma",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.023023",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Vigilante Shit",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.023023",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mastermind",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.023023",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Labyrinth",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.023023",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sweet Nothing",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.023023",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Would've, Could've, Should've",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.023023",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bigger Than The Whole Sky",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.023023",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Great War",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.024024",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Paris",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.024024",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "High Infidelity",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.024024",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Glitch",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.024024",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dear Reader",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.024024",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Monotonia",
-        "artist_name": "Shakira + Ozuna",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.025025",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Made You Look",
-        "artist_name": "Meghan Trainor",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.027027",
-        "source_id": 1423,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Miss You",
-        "artist_name": "Oliver Tree & Robin Schulz",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:32:57.027027",
-        "source_id": 1423,
+        "capture_date": "2022-11-11 03:53:09.619619",
+        "source_id": 1427,
         "song_id": null,
         "duplicate": false
     }
@@ -342,28 +198,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Lavender Haze', 'Taylor Swift', NULL),
-  ('Maroon', 'Taylor Swift', NULL),
-  ('Snow On The Beach', 'Taylor Swift ft. Lana Del Rey', NULL),
-  ('Midnight Rain', 'Taylor Swift', NULL),
-  ('Bejeweled', 'Taylor Swift', NULL),
-  ('Question...?', 'Taylor Swift', NULL),
-  ('You’re On Your Own, Kid', 'Taylor Swift', NULL),
-  ('Karma', 'Taylor Swift', NULL),
-  ('Vigilante Shit', 'Taylor Swift', NULL),
-  ('Mastermind', 'Taylor Swift', NULL),
-  ('Labyrinth', 'Taylor Swift', NULL),
-  ('Sweet Nothing', 'Taylor Swift', NULL),
-  ('Would’ve, Could’ve, Should’ve', 'Taylor Swift', NULL),
-  ('Bigger Than The Whole Sky', 'Taylor Swift', NULL),
-  ('The Great War', 'Taylor Swift', NULL),
-  ('Paris', 'Taylor Swift', NULL),
-  ('High Infidelity', 'Taylor Swift', NULL),
-  ('Glitch', 'Taylor Swift', NULL),
-  ('Dear Reader', 'Taylor Swift', NULL),
-  ('Monotonia', 'Shakira + Ozuna', NULL),
-  ('Made You Look', 'Meghan Trainor', NULL),
-  ('Miss You', 'Oliver Tree & Robin Schulz', NULL)
+  ('In My Head', 'Juice WRLD', NULL),
+  ('The Astronaut', 'JIN', NULL),
+  ('300 Blackout', 'Kodak Black', NULL)
   ;
 
    // Update to song table
@@ -374,7 +211,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13095; // SELECT last_insert_rowid();
+  song_id = 13120; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -414,28 +251,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-11 03:32:57.021021', '1423', '13074'),
-  ('2022-11-11 03:32:57.022022', '1423', '13075'),
-  ('2022-11-11 03:32:57.022022', '1423', '13076'),
-  ('2022-11-11 03:32:57.022022', '1423', '13077'),
-  ('2022-11-11 03:32:57.022022', '1423', '13078'),
-  ('2022-11-11 03:32:57.023023', '1423', '13079'),
-  ('2022-11-11 03:32:57.023023', '1423', '13080'),
-  ('2022-11-11 03:32:57.023023', '1423', '13081'),
-  ('2022-11-11 03:32:57.023023', '1423', '13082'),
-  ('2022-11-11 03:32:57.023023', '1423', '13083'),
-  ('2022-11-11 03:32:57.023023', '1423', '13084'),
-  ('2022-11-11 03:32:57.023023', '1423', '13085'),
-  ('2022-11-11 03:32:57.023023', '1423', '13086'),
-  ('2022-11-11 03:32:57.023023', '1423', '13087'),
-  ('2022-11-11 03:32:57.024024', '1423', '13088'),
-  ('2022-11-11 03:32:57.024024', '1423', '13089'),
-  ('2022-11-11 03:32:57.024024', '1423', '13090'),
-  ('2022-11-11 03:32:57.024024', '1423', '13091'),
-  ('2022-11-11 03:32:57.024024', '1423', '13092'),
-  ('2022-11-11 03:32:57.025025', '1423', '13093'),
-  ('2022-11-11 03:32:57.027027', '1423', '13094'),
-  ('2022-11-11 03:32:57.027027', '1423', '13095')
+  ('2022-11-11 03:53:09.613613', '1427', '13096'),
+  ('2022-11-11 03:53:09.615615', '1427', '13097'),
+  ('2022-11-11 03:53:09.616616', '1427', '13118'),
+  ('2022-11-11 03:53:09.617617', '1427', '13119'),
+  ('2022-11-11 03:53:09.619619', '1427', '13112'),
+  ('2022-11-11 03:53:09.619619', '1427', '13120')
   ;
 
   // Update to source_song table
