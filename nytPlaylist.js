@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Selena Gomez’s Boldly Revealing Ballad, and 9 More New Songs', '2022-11-08 07:31:02.000000', 'https://www.nytimes.com/2022/11/04/arts/music/playlist-selena-gomez-tiesto-tate-mcrae.html');
+    ('New York Times', 'The Playlist', 'Bruce Springsteen’s Exuberant Soul Cover, and 10 More New Songs', '2022-11-11 11:56:12.000000', 'https://www.nytimes.com/2022/11/11/arts/music/playlist-bruce-springsteen-rauw-alejandro.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1428; // SELECT last_insert_rowid();
+  source_id = 1432; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,92 +100,101 @@
   songsData =
   [
     {
-        "title": "My Mind & Me",
-        "artist_name": "Selena Gomez",
+        "title": "Do I Love You (Indeed I Do)",
+        "artist_name": "Bruce Springsteen",
         "video_id": null,
-        "capture_date": "2022-11-11 03:57:43.788788",
-        "source_id": 1428,
+        "capture_date": "2022-11-16 04:19:01.783783",
+        "source_id": 1432,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Muse",
-        "artist_name": "Lucius",
+        "title": "When I Die",
+        "artist_name": "Sharon Van Etten",
         "video_id": null,
-        "capture_date": "2022-11-11 03:57:43.788788",
-        "source_id": 1428,
+        "capture_date": "2022-11-16 04:19:01.784784",
+        "source_id": 1432,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "10:35",
-        "artist_name": "Tiësto ft. Tate McRae",
+        "title": "Lydia",
+        "artist_name": "Margo Price",
         "video_id": null,
-        "capture_date": "2022-11-11 03:57:43.788788",
-        "source_id": 1428,
+        "capture_date": "2022-11-16 04:19:01.784784",
+        "source_id": 1432,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Quiet Culture",
-        "artist_name": "Ibrahim Maalouf ft. De La Soul",
+        "title": "Texas",
+        "artist_name": "Dagr and Cherry Glazerr",
         "video_id": null,
-        "capture_date": "2022-11-11 03:57:43.789789",
-        "source_id": 1428,
+        "capture_date": "2022-11-16 04:19:01.784784",
+        "source_id": 1432,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "God Is a Circle",
-        "artist_name": "Yves Tumor",
+        "title": "Lejos de Cielo",
+        "artist_name": "Rauw Alejandro",
         "video_id": null,
-        "capture_date": "2022-11-11 03:57:43.789789",
-        "source_id": 1428,
+        "capture_date": "2022-11-16 04:19:01.784784",
+        "source_id": 1432,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Irreversible Damage",
-        "artist_name": "Algiers ft. Zack de la Rocha",
+        "title": "Dreamer",
+        "artist_name": "The Blaze",
         "video_id": null,
-        "capture_date": "2022-11-11 03:57:43.789789",
-        "source_id": 1428,
+        "capture_date": "2022-11-16 04:19:01.784784",
+        "source_id": 1432,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fallout",
-        "artist_name": "Yo La Tengo",
+        "title": "Amores Prohibidos",
+        "artist_name": "Juanes",
         "video_id": null,
-        "capture_date": "2022-11-11 03:57:43.789789",
-        "source_id": 1428,
+        "capture_date": "2022-11-16 04:19:01.784784",
+        "source_id": 1432,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Arms",
-        "artist_name": "Sipho",
+        "title": "Carbon Dioxide",
+        "artist_name": "Fever Ray",
         "video_id": null,
-        "capture_date": "2022-11-11 03:57:43.789789",
-        "source_id": 1428,
+        "capture_date": "2022-11-16 04:19:01.784784",
+        "source_id": 1432,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Itch",
-        "artist_name": "quinnie",
+        "title": "Wish I Was You",
+        "artist_name": "Gina Birch ft. Thurston Moore",
         "video_id": null,
-        "capture_date": "2022-11-11 03:57:43.789789",
-        "source_id": 1428,
+        "capture_date": "2022-11-16 04:19:01.784784",
+        "source_id": 1432,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Corpus",
-        "artist_name": "Old Fire ft. Bill Callahan",
+        "title": "Firebabe",
+        "artist_name": "Stormzy",
         "video_id": null,
-        "capture_date": "2022-11-11 03:57:43.789789",
-        "source_id": 1428,
+        "capture_date": "2022-11-16 04:19:01.784784",
+        "source_id": 1432,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Someone Close",
+        "artist_name": "Floating Points",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:19:01.784784",
+        "source_id": 1432,
         "song_id": null,
         "duplicate": false
     }
@@ -229,16 +238,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('My Mind & Me', 'Selena Gomez', NULL),
-  ('Muse', 'Lucius', NULL),
-  ('10:35', 'Tiësto ft. Tate McRae', NULL),
-  ('Quiet Culture', 'Ibrahim Maalouf ft. De La Soul', NULL),
-  ('God Is a Circle', 'Yves Tumor', NULL),
-  ('Irreversible Damage', 'Algiers ft. Zack de la Rocha', NULL),
-  ('Fallout', 'Yo La Tengo', NULL),
-  ('Arms', 'Sipho', NULL),
-  ('Itch', 'quinnie', NULL),
-  ('Corpus', 'Old Fire ft. Bill Callahan', NULL)
+  ('Do I Love You (Indeed I Do)', 'Bruce Springsteen', NULL),
+  ('When I Die', 'Sharon Van Etten', NULL),
+  ('Lydia', 'Margo Price', NULL),
+  ('Texas', 'Dagr and Cherry Glazerr', NULL),
+  ('Lejos de Cielo', 'Rauw Alejandro', NULL),
+  ('Dreamer', 'The Blaze', NULL),
+  ('Amores Prohibidos', 'Juanes', NULL),
+  ('Carbon Dioxide', 'Fever Ray', NULL),
+  ('Wish I Was You', 'Gina Birch ft. Thurston Moore', NULL),
+  ('Firebabe', 'Stormzy', NULL),
+  ('Someone Close', 'Floating Points', NULL)
   ;
 
    // Update to song table
@@ -249,7 +259,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13130; // SELECT last_insert_rowid();
+  song_id = 13173; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +299,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-11 03:57:43.788788', '1428', '13121'),
-  ('2022-11-11 03:57:43.788788', '1428', '13122'),
-  ('2022-11-11 03:57:43.788788', '1428', '13123'),
-  ('2022-11-11 03:57:43.789789', '1428', '13124'),
-  ('2022-11-11 03:57:43.789789', '1428', '13125'),
-  ('2022-11-11 03:57:43.789789', '1428', '13126'),
-  ('2022-11-11 03:57:43.789789', '1428', '13127'),
-  ('2022-11-11 03:57:43.789789', '1428', '13128'),
-  ('2022-11-11 03:57:43.789789', '1428', '13129'),
-  ('2022-11-11 03:57:43.789789', '1428', '13130')
+  ('2022-11-16 04:19:01.783783', '1432', '13163'),
+  ('2022-11-16 04:19:01.784784', '1432', '13164'),
+  ('2022-11-16 04:19:01.784784', '1432', '13165'),
+  ('2022-11-16 04:19:01.784784', '1432', '13166'),
+  ('2022-11-16 04:19:01.784784', '1432', '13167'),
+  ('2022-11-16 04:19:01.784784', '1432', '13168'),
+  ('2022-11-16 04:19:01.784784', '1432', '13169'),
+  ('2022-11-16 04:19:01.784784', '1432', '13170'),
+  ('2022-11-16 04:19:01.784784', '1432', '13171'),
+  ('2022-11-16 04:19:01.784784', '1432', '13172'),
+  ('2022-11-16 04:19:01.784784', '1432', '13173')
   ;
 
   // Update to source_song table

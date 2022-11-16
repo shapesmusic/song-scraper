@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of November 12, 2022', '2022-11-12 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-11-12');
+    ('Billboard', 'The Hot 100', 'Week of November 19, 2022', '2022-11-19 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-11-19');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1427; // SELECT last_insert_rowid();
+  source_id = 1431; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,58 +105,166 @@
   songsData =
   [
     {
-        "title": "Lift Me Up",
-        "artist_name": "Rihanna",
+        "title": "Rich Flex",
+        "artist_name": "Drake & 21 Savage",
         "video_id": null,
-        "capture_date": "2022-11-11 03:53:09.613613",
-        "source_id": 1427,
-        "song_id": 13096,
-        "duplicate": true
-    },
-    {
-        "title": "Shirt",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:53:09.615615",
-        "source_id": 1427,
-        "song_id": 13097,
-        "duplicate": true
-    },
-    {
-        "title": "In My Head",
-        "artist_name": "Juice WRLD",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:53:09.616616",
-        "source_id": 1427,
+        "capture_date": "2022-11-16 04:13:28.364364",
+        "source_id": 1431,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Astronaut",
-        "artist_name": "JIN",
+        "title": "Major Distribution",
+        "artist_name": "Drake & 21 Savage",
         "video_id": null,
-        "capture_date": "2022-11-11 03:53:09.617617",
-        "source_id": 1427,
+        "capture_date": "2022-11-16 04:13:28.365365",
+        "source_id": 1431,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ain't Safe",
-        "artist_name": "Trippie Redd & Don Toliver",
+        "title": "On BS",
+        "artist_name": "Drake & 21 Savage",
         "video_id": null,
-        "capture_date": "2022-11-11 03:53:09.619619",
-        "source_id": 1427,
-        "song_id": 13112,
+        "capture_date": "2022-11-16 04:13:28.365365",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Spin Bout U",
+        "artist_name": "Drake & 21 Savage",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.365365",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pussy & Millions",
+        "artist_name": "Drake & 21 Savage ft. Travis Scott",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.365365",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Privileged Rappers",
+        "artist_name": "Drake & 21 Savage",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.365365",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Circo Loco",
+        "artist_name": "Drake & 21 Savage",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.365365",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "BackOutsideBoyz",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.365365",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hours In Silence",
+        "artist_name": "Drake & 21 Savage",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.365365",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Broke Boys",
+        "artist_name": "Drake & 21 Savage",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.365365",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Treacherous Twins",
+        "artist_name": "Drake & 21 Savage",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.366366",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Middle Of The Ocean",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.366366",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Jumbotron Shit Poppin",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.366366",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "More M’s",
+        "artist_name": "Drake & 21 Savage",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.366366",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Guess It's Fuck Me",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.366366",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "3AM On Glenwood",
+        "artist_name": "21 Savage",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.366366",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Die For You",
+        "artist_name": "Joji",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.367367",
+        "source_id": 1431,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "My Mind & Me",
+        "artist_name": "Selena Gomez",
+        "video_id": null,
+        "capture_date": "2022-11-16 04:13:28.368368",
+        "source_id": 1431,
+        "song_id": 13121,
         "duplicate": true
-    },
-    {
-        "title": "300 Blackout",
-        "artist_name": "Kodak Black",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:53:09.619619",
-        "source_id": 1427,
-        "song_id": null,
-        "duplicate": false
     }
 ]
 
@@ -198,9 +306,23 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('In My Head', 'Juice WRLD', NULL),
-  ('The Astronaut', 'JIN', NULL),
-  ('300 Blackout', 'Kodak Black', NULL)
+  ('Rich Flex', 'Drake & 21 Savage', NULL),
+  ('Major Distribution', 'Drake & 21 Savage', NULL),
+  ('On BS', 'Drake & 21 Savage', NULL),
+  ('Spin Bout U', 'Drake & 21 Savage', NULL),
+  ('Pussy & Millions', 'Drake & 21 Savage ft. Travis Scott', NULL),
+  ('Privileged Rappers', 'Drake & 21 Savage', NULL),
+  ('Circo Loco', 'Drake & 21 Savage', NULL),
+  ('BackOutsideBoyz', 'Drake', NULL),
+  ('Hours In Silence', 'Drake & 21 Savage', NULL),
+  ('Broke Boys', 'Drake & 21 Savage', NULL),
+  ('Treacherous Twins', 'Drake & 21 Savage', NULL),
+  ('Middle Of The Ocean', 'Drake', NULL),
+  ('Jumbotron Shit Poppin', 'Drake', NULL),
+  ('More M’s', 'Drake & 21 Savage', NULL),
+  ('I Guess It’s Fuck Me', 'Drake', NULL),
+  ('3AM On Glenwood', '21 Savage', NULL),
+  ('Die For You', 'Joji', NULL)
   ;
 
    // Update to song table
@@ -211,7 +333,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13120; // SELECT last_insert_rowid();
+  song_id = 13162; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -251,12 +373,24 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-11 03:53:09.613613', '1427', '13096'),
-  ('2022-11-11 03:53:09.615615', '1427', '13097'),
-  ('2022-11-11 03:53:09.616616', '1427', '13118'),
-  ('2022-11-11 03:53:09.617617', '1427', '13119'),
-  ('2022-11-11 03:53:09.619619', '1427', '13112'),
-  ('2022-11-11 03:53:09.619619', '1427', '13120')
+  ('2022-11-16 04:13:28.364364', '1431', '13146'),
+  ('2022-11-16 04:13:28.365365', '1431', '13147'),
+  ('2022-11-16 04:13:28.365365', '1431', '13148'),
+  ('2022-11-16 04:13:28.365365', '1431', '13149'),
+  ('2022-11-16 04:13:28.365365', '1431', '13150'),
+  ('2022-11-16 04:13:28.365365', '1431', '13151'),
+  ('2022-11-16 04:13:28.365365', '1431', '13152'),
+  ('2022-11-16 04:13:28.365365', '1431', '13153'),
+  ('2022-11-16 04:13:28.365365', '1431', '13154'),
+  ('2022-11-16 04:13:28.365365', '1431', '13155'),
+  ('2022-11-16 04:13:28.366366', '1431', '13156'),
+  ('2022-11-16 04:13:28.366366', '1431', '13157'),
+  ('2022-11-16 04:13:28.366366', '1431', '13158'),
+  ('2022-11-16 04:13:28.366366', '1431', '13159'),
+  ('2022-11-16 04:13:28.366366', '1431', '13160'),
+  ('2022-11-16 04:13:28.366366', '1431', '13161'),
+  ('2022-11-16 04:13:28.367367', '1431', '13162'),
+  ('2022-11-16 04:13:28.368368', '1431', '13121')
   ;
 
   // Update to source_song table

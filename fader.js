@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of November 7, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2022-11-07 12:00:00.000000', -- Dont forget this!
+      'Week of November 14, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-11-14 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1429; // SELECT last_insert_rowid();
+    source_id = 1434; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,137 +458,74 @@
     songsData =
     [
     {
-        "title": "1471",
-        "artist_name": "Babyfather and Tirzah",
+        "title": "Buffy",
+        "artist_name": "Jenny Hval",
         "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
+        "capture_date": "2022-11-16 04:26:36.787000",
+        "source_id": 1434,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Not There",
-        "artist_name": "Kučka",
+        "title": "2M3 2U",
+        "artist_name": "Joy Orbison",
         "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
+        "capture_date": "2022-11-16 04:26:36.787000",
+        "source_id": 1434,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "RIVERSIDE",
-        "artist_name": "Duke Deuce",
+        "title": "Diamond's Shining Face",
+        "artist_name": "Godcaster",
         "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
+        "capture_date": "2022-11-16 04:26:36.787000",
+        "source_id": 1434,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mosquito",
-        "artist_name": "Model/Actriz",
+        "title": "Clues Not to Read",
+        "artist_name": "Fievel Is Glauque",
         "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
+        "capture_date": "2022-11-16 04:26:36.787000",
+        "source_id": 1434,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "MELTING / HAD 2",
-        "artist_name": "Leven Kali",
+        "title": "ON 10",
+        "artist_name": "Destin Conrad",
         "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
+        "capture_date": "2022-11-16 04:26:36.787000",
+        "source_id": 1434,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "A Mile In My Head",
-        "artist_name": "Raw Poetic and Damu the Fudgemunk",
+        "title": "Cardinal",
+        "artist_name": "QUADRY and Topaz Jones",
         "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
+        "capture_date": "2022-11-16 04:26:36.787000",
+        "source_id": 1434,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "ARMS",
-        "artist_name": "SIPHO",
+        "title": "fai fighter",
+        "artist_name": "yuné pinku",
         "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
-        "song_id": 13128,
-        "duplicate": true
-    },
-    {
-        "title": "God Is a Circle",
-        "artist_name": "Yves Tumor",
-        "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
-        "song_id": 13125,
-        "duplicate": true
-    },
-    {
-        "title": "Walt Disney's Grave",
-        "artist_name": "Lucy and Gods Wisdom",
-        "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
+        "capture_date": "2022-11-16 04:26:36.787000",
+        "source_id": 1434,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Add It Up",
-        "artist_name": "Rob49 and G Herbo",
+        "title": "Band Of Brothers",
+        "artist_name": "Benny The Butcher & Ransom",
         "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Built",
-        "artist_name": "BaBoii",
-        "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Slaeski",
-        "artist_name": "DaeMoney",
-        "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Satellite 9",
-        "artist_name": "Kai Campos",
-        "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hot Penny Day",
-        "artist_name": "Dry Cleaning",
-        "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Naturally Conspiring",
-        "artist_name": "Dadge Époque Ensemble and Lammping ft. Boldy James and Roshin",
-        "video_id": null,
-        "capture_date": "2022-11-11 04:04:01.010000",
-        "source_id": 1429,
+        "capture_date": "2022-11-16 04:26:36.787000",
+        "source_id": 1434,
         "song_id": null,
         "duplicate": false
     }
@@ -630,19 +567,14 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('1471', 'Babyfather and Tirzah', NULL),
-    ('Not There', 'Kučka', NULL),
-    ('RIVERSIDE', 'Duke Deuce', NULL),
-    ('Mosquito', 'Model/Actriz', NULL),
-    ('MELTING / HAD 2', 'Leven Kali', NULL),
-    ('A Mile In My Head', 'Raw Poetic and Damu the Fudgemunk', NULL),
-    ('Walt Disney’s Grave', 'Lucy and Gods Wisdom', NULL),
-    ('Add It Up', 'Rob49 and G Herbo', NULL),
-    ('Built', 'BaBoii', NULL),
-    ('Slaeski', 'DaeMoney', NULL),
-    ('Satellite 9', 'Kai Campos', NULL),
-    ('Hot Penny Day', 'Dry Cleaning', NULL),
-    ('Naturally Conspiring', 'Dadge Époque Ensemble and Lammping ft. Boldy James and Roshin', NULL)
+    ('Buffy', 'Jenny Hval', NULL),
+    ('2M3 2U', 'Joy Orbison', NULL),
+    ('Diamond’s Shining Face', 'Godcaster', NULL),
+    ('Clues Not to Read', 'Fievel Is Glauque', NULL),
+    ('ON 10', 'Destin Conrad', NULL),
+    ('Cardinal', 'QUADRY and Topaz Jones', NULL),
+    ('fai fighter', 'yuné pinku', NULL),
+    ('Band Of Brothers', 'Benny The Butcher & Ransom', NULL)
     ;
 
      // Update to song table
@@ -653,7 +585,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13143; // SELECT last_insert_rowid();
+  song_id = 13189; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -693,21 +625,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-11 04:04:01.010000', '1429', '13131'),
-  ('2022-11-11 04:04:01.010000', '1429', '13132'),
-  ('2022-11-11 04:04:01.010000', '1429', '13133'),
-  ('2022-11-11 04:04:01.010000', '1429', '13134'),
-  ('2022-11-11 04:04:01.010000', '1429', '13135'),
-  ('2022-11-11 04:04:01.010000', '1429', '13136'),
-  ('2022-11-11 04:04:01.010000', '1429', '13128'),
-  ('2022-11-11 04:04:01.010000', '1429', '13125'),
-  ('2022-11-11 04:04:01.010000', '1429', '13137'),
-  ('2022-11-11 04:04:01.010000', '1429', '13138'),
-  ('2022-11-11 04:04:01.010000', '1429', '13139'),
-  ('2022-11-11 04:04:01.010000', '1429', '13140'),
-  ('2022-11-11 04:04:01.010000', '1429', '13141'),
-  ('2022-11-11 04:04:01.010000', '1429', '13142'),
-  ('2022-11-11 04:04:01.010000', '1429', '13143')
+  ('2022-11-16 04:26:36.787000', '1434', '13182'),
+  ('2022-11-16 04:26:36.787000', '1434', '13183'),
+  ('2022-11-16 04:26:36.787000', '1434', '13184'),
+  ('2022-11-16 04:26:36.787000', '1434', '13185'),
+  ('2022-11-16 04:26:36.787000', '1434', '13186'),
+  ('2022-11-16 04:26:36.787000', '1434', '13187'),
+  ('2022-11-16 04:26:36.787000', '1434', '13188'),
+  ('2022-11-16 04:26:36.787000', '1434', '13189')
   ;
 
   // Update to source_song table

@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Rihanna, Baby Keem, SZA & More', '2022-10-28 12:00:00.000000', 'https://www.complex.com/music/best-new-music-october-28/mariah-the-scientist-bout-mine');
+    ('Complex', 'The Best New Music This Week', 'Nas, Rihanna, Glorilla, and More', '2022-11-11 12:00:00.000000', 'https://www.complex.com/music/best-new-music-nov-11/rauw-alejandro-que-rico');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1425; // SELECT last_insert_rowid();
+  source_id = 1433; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,110 +102,74 @@
   songsData =
   [
     {
-        "title": "Lift Me Up",
+        "title": "Born Again",
         "artist_name": "Rihanna",
         "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.516516",
-        "source_id": 1425,
-        "song_id": 13096,
-        "duplicate": true
-    },
-    {
-        "title": "Shirt",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.516516",
-        "source_id": 1425,
-        "song_id": 13097,
-        "duplicate": true
-    },
-    {
-        "title": "killstreaks",
-        "artist_name": "Baby Keem ft. Don Toliver & PinkPantheress",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.516516",
-        "source_id": 1425,
+        "capture_date": "2022-11-16 04:23:28.167167",
+        "source_id": 1433,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bag Talk",
-        "artist_name": "Polo G",
+        "title": "Nut Quick",
+        "artist_name": "Glorilla",
         "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.516516",
-        "source_id": 1425,
+        "capture_date": "2022-11-16 04:23:28.168168",
+        "source_id": 1433,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pudgy",
-        "artist_name": "Smino ft. Lil Uzi Vert",
+        "title": "Flower Pads",
+        "artist_name": "Wizkid",
         "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.516516",
-        "source_id": 1425,
+        "capture_date": "2022-11-16 04:23:28.168168",
+        "source_id": 1433,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Get Even",
-        "artist_name": "DVSN",
+        "title": "Vibe of the Year",
+        "artist_name": "DRAM",
         "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.516516",
-        "source_id": 1425,
+        "capture_date": "2022-11-16 04:23:28.168168",
+        "source_id": 1433,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "What You Rep",
-        "artist_name": "Duke Deuce ft. DJ Paul",
+        "title": "Yes I Do",
+        "artist_name": "French Montana",
         "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.516516",
-        "source_id": 1425,
+        "capture_date": "2022-11-16 04:23:28.168168",
+        "source_id": 1433,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Letter to Myself",
-        "artist_name": "Morray",
+        "title": "Thun",
+        "artist_name": "Nas",
         "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.517517",
-        "source_id": 1425,
+        "capture_date": "2022-11-16 04:23:28.168168",
+        "source_id": 1433,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bikini Bottom",
-        "artist_name": "Ice Spice",
+        "title": "Fight For Love",
+        "artist_name": "Sault",
         "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.517517",
-        "source_id": 1425,
-        "song_id": 13099,
-        "duplicate": true
-    },
-    {
-        "title": "Science Class",
-        "artist_name": "Westside Gunn ft. Busta Rhymes, Raekwon, Ghostface Killah & Stove God Cooks",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.517517",
-        "source_id": 1425,
+        "capture_date": "2022-11-16 04:23:28.168168",
+        "source_id": 1433,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ain’t Safe",
-        "artist_name": "Trippie Redd & Don Toliver",
+        "title": "Qué Rico Ch**gamos",
+        "artist_name": "Rauw Alejandro",
         "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.517517",
-        "source_id": 1425,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bout Mine",
-        "artist_name": "Mariah the Scientist",
-        "video_id": null,
-        "capture_date": "2022-11-11 03:44:11.517517",
-        "source_id": 1425,
+        "capture_date": "2022-11-16 04:23:28.168168",
+        "source_id": 1433,
         "song_id": null,
         "duplicate": false
     }
@@ -248,15 +212,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('killstreaks', 'Baby Keem ft. Don Toliver & PinkPantheress', NULL),
-  ('Bag Talk', 'Polo G', NULL),
-  ('Pudgy', 'Smino ft. Lil Uzi Vert', NULL),
-  ('Get Even', 'DVSN', NULL),
-  ('What You Rep', 'Duke Deuce ft. DJ Paul', NULL),
-  ('Letter to Myself', 'Morray', NULL),
-  ('Science Class', 'Westside Gunn ft. Busta Rhymes, Raekwon, Ghostface Killah & Stove God Cooks', NULL),
-  ('Ain’t Safe', 'Trippie Redd & Don Toliver', NULL),
-  ('Bout Mine', 'Mariah the Scientist', NULL)
+  ('Born Again', 'Rihanna', NULL),
+  ('Nut Quick', 'Glorilla', NULL),
+  ('Flower Pads', 'Wizkid', NULL),
+  ('Vibe of the Year', 'DRAM', NULL),
+  ('Yes I Do', 'French Montana', NULL),
+  ('Thun', 'Nas', NULL),
+  ('Fight For Love', 'Sault', NULL),
+  ('Qué Rico Ch**gamos', 'Rauw Alejandro', NULL)
   ;
 
    // Update to song table
@@ -267,7 +230,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13113; // SELECT last_insert_rowid();
+  song_id = 13181; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -307,18 +270,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-11 03:44:11.516516', '1425', '13096'),
-  ('2022-11-11 03:44:11.516516', '1425', '13097'),
-  ('2022-11-11 03:44:11.516516', '1425', '13105'),
-  ('2022-11-11 03:44:11.516516', '1425', '13106'),
-  ('2022-11-11 03:44:11.516516', '1425', '13107'),
-  ('2022-11-11 03:44:11.516516', '1425', '13108'),
-  ('2022-11-11 03:44:11.516516', '1425', '13109'),
-  ('2022-11-11 03:44:11.517517', '1425', '13110'),
-  ('2022-11-11 03:44:11.517517', '1425', '13099'),
-  ('2022-11-11 03:44:11.517517', '1425', '13111'),
-  ('2022-11-11 03:44:11.517517', '1425', '13112'),
-  ('2022-11-11 03:44:11.517517', '1425', '13113')
+  ('2022-11-16 04:23:28.167167', '1433', '13174'),
+  ('2022-11-16 04:23:28.168168', '1433', '13175'),
+  ('2022-11-16 04:23:28.168168', '1433', '13176'),
+  ('2022-11-16 04:23:28.168168', '1433', '13177'),
+  ('2022-11-16 04:23:28.168168', '1433', '13178'),
+  ('2022-11-16 04:23:28.168168', '1433', '13179'),
+  ('2022-11-16 04:23:28.168168', '1433', '13180'),
+  ('2022-11-16 04:23:28.168168', '1433', '13181')
   ;
 
   // Update to source_song table
