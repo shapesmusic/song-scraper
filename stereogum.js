@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of November 11, 2022', '2022-11-11 12:00:00.000000', 'https://www.stereogum.com/2205730/the-5-best-songs-of-the-week-459/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of November 18, 2022', '2022-11-18 12:00:00.000000', 'https://www.stereogum.com/2206470/the-5-best-songs-of-the-week-460/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1435; // SELECT last_insert_rowid();
+  source_id = 1441; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,49 +101,49 @@
   songsData =
   [
     {
-        "title": "After Midnight",
-        "artist_name": "Phoenix",
+        "title": "Do You Miss Me?",
+        "artist_name": "PinkPantheress",
         "video_id": null,
-        "capture_date": "2022-11-16 04:33:37.424424",
-        "source_id": 1435,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gold Satin Dreamer",
-        "artist_name": "Nicole Dollanganger",
-        "video_id": null,
-        "capture_date": "2022-11-16 04:33:37.425425",
-        "source_id": 1435,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sơn Đoòng",
-        "artist_name": "Vibora",
-        "video_id": null,
-        "capture_date": "2022-11-16 04:33:37.425425",
-        "source_id": 1435,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Loops",
-        "artist_name": "Pile",
-        "video_id": null,
-        "capture_date": "2022-11-16 04:33:37.425425",
-        "source_id": 1435,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Carbon Dioxide",
-        "artist_name": "Fever Ray",
-        "video_id": null,
-        "capture_date": "2022-11-16 04:33:37.425425",
-        "source_id": 1435,
-        "song_id": 13170,
+        "capture_date": "2022-11-30 04:01:20.918918",
+        "source_id": 1441,
+        "song_id": 13200,
         "duplicate": true
+    },
+    {
+        "title": "Wasted On You",
+        "artist_name": "Andy Shauf",
+        "video_id": null,
+        "capture_date": "2022-11-30 04:01:20.919919",
+        "source_id": 1441,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Found",
+        "artist_name": "Fucked Up",
+        "video_id": null,
+        "capture_date": "2022-11-30 04:01:20.919919",
+        "source_id": 1441,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Strong",
+        "artist_name": "Romy & Fred again..",
+        "video_id": null,
+        "capture_date": "2022-11-30 04:01:20.919919",
+        "source_id": 1441,
+        "song_id": 13201,
+        "duplicate": true
+    },
+    {
+        "title": "God Turn Me Into A Flower",
+        "artist_name": "Weyes Blood",
+        "video_id": null,
+        "capture_date": "2022-11-30 04:01:20.919919",
+        "source_id": 1441,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -185,10 +185,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('After Midnight', 'Phoenix', NULL),
-  ('Gold Satin Dreamer', 'Nicole Dollanganger', NULL),
-  ('Sơn Đoòng', 'Vibora', NULL),
-  ('Loops', 'Pile', NULL)
+  ('Wasted On You', 'Andy Shauf', NULL),
+  ('Found', 'Fucked Up', NULL),
+  ('God Turn Me Into A Flower', 'Weyes Blood', NULL)
   ;
 
    // Update to song table
@@ -199,7 +198,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13193; // SELECT last_insert_rowid();
+  song_id = 13228; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -239,11 +238,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-16 04:33:37.424424', '1435', '13190'),
-  ('2022-11-16 04:33:37.425425', '1435', '13191'),
-  ('2022-11-16 04:33:37.425425', '1435', '13192'),
-  ('2022-11-16 04:33:37.425425', '1435', '13193'),
-  ('2022-11-16 04:33:37.425425', '1435', '13170')
+  ('2022-11-30 04:01:20.918918', '1441', '13200'),
+  ('2022-11-30 04:01:20.919919', '1441', '13226'),
+  ('2022-11-30 04:01:20.919919', '1441', '13227'),
+  ('2022-11-30 04:01:20.919919', '1441', '13201'),
+  ('2022-11-30 04:01:20.919919', '1441', '13228')
   ;
 
   // Update to source_song table

@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Nas, Rihanna, Glorilla, and More', '2022-11-11 12:00:00.000000', 'https://www.complex.com/music/best-new-music-nov-11/rauw-alejandro-que-rico');
+    ('Complex', 'The Best New Music This Week', 'Roddy Ricch, Pharrell, Travis Scott, Don Toliver, and More', '2022-11-18 12:00:00.000000', 'https://www.complex.com/music/the-best-new-music-this-week-november-18/foushee-lil-uzi-vert-spend-that-money');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1433; // SELECT last_insert_rowid();
+  source_id = 1439; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,74 +102,119 @@
   songsData =
   [
     {
-        "title": "Born Again",
-        "artist_name": "Rihanna",
+        "title": "Blue Cheese",
+        "artist_name": "Roddy Ricch",
         "video_id": null,
-        "capture_date": "2022-11-16 04:23:28.167167",
-        "source_id": 1433,
+        "capture_date": "2022-11-30 03:47:11.772772",
+        "source_id": 1439,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nut Quick",
-        "artist_name": "Glorilla",
+        "title": "Down In Atlanta",
+        "artist_name": "Pharrell & Travis Scott",
         "video_id": null,
-        "capture_date": "2022-11-16 04:23:28.168168",
-        "source_id": 1433,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
+        "song_id": 13197,
+        "duplicate": true
+    },
+    {
+        "title": "Do It Right",
+        "artist_name": "Don Toliver",
+        "video_id": null,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Flower Pads",
-        "artist_name": "Wizkid",
+        "title": "Yah Know",
+        "artist_name": "Chance the Rapper ft. King Promise",
         "video_id": null,
-        "capture_date": "2022-11-16 04:23:28.168168",
-        "source_id": 1433,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Vibe of the Year",
-        "artist_name": "DRAM",
+        "title": "Thumbing",
+        "artist_name": "Key Glock",
         "video_id": null,
-        "capture_date": "2022-11-16 04:23:28.168168",
-        "source_id": 1433,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Yes I Do",
-        "artist_name": "French Montana",
+        "title": "Spend It",
+        "artist_name": "Babyface Ray ft. Blxst & Nija",
         "video_id": null,
-        "capture_date": "2022-11-16 04:23:28.168168",
-        "source_id": 1433,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Thun",
-        "artist_name": "Nas",
+        "title": "The Ending",
+        "artist_name": "BROCKHAMPTON",
         "video_id": null,
-        "capture_date": "2022-11-16 04:23:28.168168",
-        "source_id": 1433,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fight For Love",
-        "artist_name": "Sault",
+        "title": "Love Overdose",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-11-16 04:23:28.168168",
-        "source_id": 1433,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Qué Rico Ch**gamos",
-        "artist_name": "Rauw Alejandro",
+        "title": "Speshal",
+        "artist_name": "Harry Fraud & 38 Spesh ft. Stove God Cooks",
         "video_id": null,
-        "capture_date": "2022-11-16 04:23:28.168168",
-        "source_id": 1433,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wave",
+        "artist_name": "SSGKobe",
+        "video_id": null,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Blitz",
+        "artist_name": "Destroy Lonely",
+        "video_id": null,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Spend That Money",
+        "artist_name": "Fousheé ft. Lil Uzi Vert",
+        "video_id": null,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Awesome",
+        "artist_name": "Kash Paige",
+        "video_id": null,
+        "capture_date": "2022-11-30 03:47:11.773773",
+        "source_id": 1439,
         "song_id": null,
         "duplicate": false
     }
@@ -212,14 +257,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Born Again', 'Rihanna', NULL),
-  ('Nut Quick', 'Glorilla', NULL),
-  ('Flower Pads', 'Wizkid', NULL),
-  ('Vibe of the Year', 'DRAM', NULL),
-  ('Yes I Do', 'French Montana', NULL),
-  ('Thun', 'Nas', NULL),
-  ('Fight For Love', 'Sault', NULL),
-  ('Qué Rico Ch**gamos', 'Rauw Alejandro', NULL)
+  ('Blue Cheese', 'Roddy Ricch', NULL),
+  ('Do It Right', 'Don Toliver', NULL),
+  ('Yah Know', 'Chance the Rapper ft. King Promise', NULL),
+  ('Thumbing', 'Key Glock', NULL),
+  ('Spend It', 'Babyface Ray ft. Blxst & Nija', NULL),
+  ('The Ending', 'BROCKHAMPTON', NULL),
+  ('Love Overdose', 'Rod Wave', NULL),
+  ('Speshal', 'Harry Fraud & 38 Spesh ft. Stove God Cooks', NULL),
+  ('Wave', 'SSGKobe', NULL),
+  ('Blitz', 'Destroy Lonely', NULL),
+  ('Spend That Money', 'Fousheé ft. Lil Uzi Vert', NULL),
+  ('Awesome', 'Kash Paige', NULL)
   ;
 
    // Update to song table
@@ -230,7 +279,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13181; // SELECT last_insert_rowid();
+  song_id = 13216; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -270,14 +319,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-16 04:23:28.167167', '1433', '13174'),
-  ('2022-11-16 04:23:28.168168', '1433', '13175'),
-  ('2022-11-16 04:23:28.168168', '1433', '13176'),
-  ('2022-11-16 04:23:28.168168', '1433', '13177'),
-  ('2022-11-16 04:23:28.168168', '1433', '13178'),
-  ('2022-11-16 04:23:28.168168', '1433', '13179'),
-  ('2022-11-16 04:23:28.168168', '1433', '13180'),
-  ('2022-11-16 04:23:28.168168', '1433', '13181')
+  ('2022-11-30 03:47:11.772772', '1439', '13205'),
+  ('2022-11-30 03:47:11.773773', '1439', '13197'),
+  ('2022-11-30 03:47:11.773773', '1439', '13206'),
+  ('2022-11-30 03:47:11.773773', '1439', '13207'),
+  ('2022-11-30 03:47:11.773773', '1439', '13208'),
+  ('2022-11-30 03:47:11.773773', '1439', '13209'),
+  ('2022-11-30 03:47:11.773773', '1439', '13210'),
+  ('2022-11-30 03:47:11.773773', '1439', '13211'),
+  ('2022-11-30 03:47:11.773773', '1439', '13212'),
+  ('2022-11-30 03:47:11.773773', '1439', '13213'),
+  ('2022-11-30 03:47:11.773773', '1439', '13214'),
+  ('2022-11-30 03:47:11.773773', '1439', '13215'),
+  ('2022-11-30 03:47:11.773773', '1439', '13216')
   ;
 
   // Update to source_song table

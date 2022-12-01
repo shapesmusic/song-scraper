@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of November 14, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2022-11-14 12:00:00.000000', -- Dont forget this!
+      'Week of November 28, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-11-28 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1434; // SELECT last_insert_rowid();
+    source_id = 1440; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,74 +458,83 @@
     songsData =
     [
     {
-        "title": "Buffy",
-        "artist_name": "Jenny Hval",
+        "title": "Still Eating Noodles",
+        "artist_name": "Big Yavo ft. Bandroll Freddie",
         "video_id": null,
-        "capture_date": "2022-11-16 04:26:36.787000",
-        "source_id": 1434,
+        "capture_date": "2022-11-30 03:53:30.073000",
+        "source_id": 1440,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "2M3 2U",
-        "artist_name": "Joy Orbison",
+        "title": "Georgia Boy",
+        "artist_name": "Rabit",
         "video_id": null,
-        "capture_date": "2022-11-16 04:26:36.787000",
-        "source_id": 1434,
+        "capture_date": "2022-11-30 03:53:30.073000",
+        "source_id": 1440,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Diamond's Shining Face",
-        "artist_name": "Godcaster",
+        "title": "bored",
+        "artist_name": "Fousheé",
         "video_id": null,
-        "capture_date": "2022-11-16 04:26:36.787000",
-        "source_id": 1434,
+        "capture_date": "2022-11-30 03:53:30.073000",
+        "source_id": 1440,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Clues Not to Read",
-        "artist_name": "Fievel Is Glauque",
+        "title": "Thicker Than Water",
+        "artist_name": "Richard Dawson",
         "video_id": null,
-        "capture_date": "2022-11-16 04:26:36.787000",
-        "source_id": 1434,
+        "capture_date": "2022-11-30 03:53:30.073000",
+        "source_id": 1440,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "ON 10",
-        "artist_name": "Destin Conrad",
+        "title": "once the reaper",
+        "artist_name": "Joe Rainey",
         "video_id": null,
-        "capture_date": "2022-11-16 04:26:36.787000",
-        "source_id": 1434,
+        "capture_date": "2022-11-30 03:53:30.073000",
+        "source_id": 1440,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cardinal",
-        "artist_name": "QUADRY and Topaz Jones",
+        "title": "150",
+        "artist_name": "Yung Kayo",
         "video_id": null,
-        "capture_date": "2022-11-16 04:26:36.787000",
-        "source_id": 1434,
+        "capture_date": "2022-11-30 03:53:30.073000",
+        "source_id": 1440,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "fai fighter",
-        "artist_name": "yuné pinku",
+        "title": "Cuummoney Amiliani",
+        "artist_name": "$ilkmoney",
         "video_id": null,
-        "capture_date": "2022-11-16 04:26:36.787000",
-        "source_id": 1434,
+        "capture_date": "2022-11-30 03:53:30.073000",
+        "source_id": 1440,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Band Of Brothers",
-        "artist_name": "Benny The Butcher & Ransom",
+        "title": "Monsoon",
+        "artist_name": "Wesley Joseph",
         "video_id": null,
-        "capture_date": "2022-11-16 04:26:36.787000",
-        "source_id": 1434,
+        "capture_date": "2022-11-30 03:53:30.073000",
+        "source_id": 1440,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "So Tell Me...",
+        "artist_name": "Nia Archives",
+        "video_id": null,
+        "capture_date": "2022-11-30 03:53:30.073000",
+        "source_id": 1440,
         "song_id": null,
         "duplicate": false
     }
@@ -567,14 +576,15 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Buffy', 'Jenny Hval', NULL),
-    ('2M3 2U', 'Joy Orbison', NULL),
-    ('Diamond’s Shining Face', 'Godcaster', NULL),
-    ('Clues Not to Read', 'Fievel Is Glauque', NULL),
-    ('ON 10', 'Destin Conrad', NULL),
-    ('Cardinal', 'QUADRY and Topaz Jones', NULL),
-    ('fai fighter', 'yuné pinku', NULL),
-    ('Band Of Brothers', 'Benny The Butcher & Ransom', NULL)
+    ('Still Eating Noodles', 'Big Yavo ft. Bandroll Freddie', NULL),
+    ('Georgia Boy', 'Rabit', NULL),
+    ('bored', 'Fousheé', NULL),
+    ('Thicker Than Water', 'Richard Dawson', NULL),
+    ('once the reaper', 'Joe Rainey', NULL),
+    ('150', 'Yung Kayo', NULL),
+    ('Cuummoney Amiliani', '$ilkmoney', NULL),
+    ('Monsoon', 'Wesley Joseph', NULL),
+    ('So Tell Me...', 'Nia Archives', NULL)
     ;
 
      // Update to song table
@@ -585,7 +595,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13189; // SELECT last_insert_rowid();
+  song_id = 13225; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -625,14 +635,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-16 04:26:36.787000', '1434', '13182'),
-  ('2022-11-16 04:26:36.787000', '1434', '13183'),
-  ('2022-11-16 04:26:36.787000', '1434', '13184'),
-  ('2022-11-16 04:26:36.787000', '1434', '13185'),
-  ('2022-11-16 04:26:36.787000', '1434', '13186'),
-  ('2022-11-16 04:26:36.787000', '1434', '13187'),
-  ('2022-11-16 04:26:36.787000', '1434', '13188'),
-  ('2022-11-16 04:26:36.787000', '1434', '13189')
+  ('2022-11-30 03:53:30.073000', '1440', '13217'),
+  ('2022-11-30 03:53:30.073000', '1440', '13218'),
+  ('2022-11-30 03:53:30.073000', '1440', '13219'),
+  ('2022-11-30 03:53:30.073000', '1440', '13220'),
+  ('2022-11-30 03:53:30.073000', '1440', '13221'),
+  ('2022-11-30 03:53:30.073000', '1440', '13222'),
+  ('2022-11-30 03:53:30.073000', '1440', '13223'),
+  ('2022-11-30 03:53:30.073000', '1440', '13224'),
+  ('2022-11-30 03:53:30.073000', '1440', '13225')
   ;
 
   // Update to source_song table

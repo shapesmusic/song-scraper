@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Bruce Springsteen’s Exuberant Soul Cover, and 10 More New Songs', '2022-11-11 11:56:12.000000', 'https://www.nytimes.com/2022/11/11/arts/music/playlist-bruce-springsteen-rauw-alejandro.html');
+    ('New York Times', 'The Playlist', 'Gucci Mane’s Tribute to Takeoff, and 6 More New Songs', '2022-11-18 09:36:49.000000', 'https://www.nytimes.com/2022/11/18/arts/music/playlist-gucci-mane-pinkpantheress.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1432; // SELECT last_insert_rowid();
+  source_id = 1438; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,103 +100,67 @@
   songsData =
   [
     {
-        "title": "Do I Love You (Indeed I Do)",
-        "artist_name": "Bruce Springsteen",
+        "title": "Letter to Takeoff",
+        "artist_name": "Gucci Mane",
         "video_id": null,
-        "capture_date": "2022-11-16 04:19:01.783783",
-        "source_id": 1432,
+        "capture_date": "2022-11-30 03:43:52.450450",
+        "source_id": 1438,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "When I Die",
-        "artist_name": "Sharon Van Etten",
+        "title": "Do You Miss Me?",
+        "artist_name": "PinkPantheress",
         "video_id": null,
-        "capture_date": "2022-11-16 04:19:01.784784",
-        "source_id": 1432,
+        "capture_date": "2022-11-30 03:43:52.451451",
+        "source_id": 1438,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lydia",
-        "artist_name": "Margo Price",
+        "title": "Strong",
+        "artist_name": "Romy & Fred again..",
         "video_id": null,
-        "capture_date": "2022-11-16 04:19:01.784784",
-        "source_id": 1432,
+        "capture_date": "2022-11-30 03:43:52.451451",
+        "source_id": 1438,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Texas",
-        "artist_name": "Dagr and Cherry Glazerr",
+        "title": "Tukoh Taka",
+        "artist_name": "Nicki Minaj, Maluma and Myriam Fares",
         "video_id": null,
-        "capture_date": "2022-11-16 04:19:01.784784",
-        "source_id": 1432,
+        "capture_date": "2022-11-30 03:43:52.451451",
+        "source_id": 1438,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lejos de Cielo",
-        "artist_name": "Rauw Alejandro",
+        "title": "MJ Story",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-11-16 04:19:01.784784",
-        "source_id": 1432,
+        "capture_date": "2022-11-30 03:43:52.451451",
+        "source_id": 1438,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dreamer",
-        "artist_name": "The Blaze",
+        "title": "Star Hill Song",
+        "artist_name": "Meg Baird",
         "video_id": null,
-        "capture_date": "2022-11-16 04:19:01.784784",
-        "source_id": 1432,
+        "capture_date": "2022-11-30 03:43:52.452452",
+        "source_id": 1438,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Amores Prohibidos",
-        "artist_name": "Juanes",
+        "title": "Buffy",
+        "artist_name": "Jenny Hval",
         "video_id": null,
-        "capture_date": "2022-11-16 04:19:01.784784",
-        "source_id": 1432,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Carbon Dioxide",
-        "artist_name": "Fever Ray",
-        "video_id": null,
-        "capture_date": "2022-11-16 04:19:01.784784",
-        "source_id": 1432,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Wish I Was You",
-        "artist_name": "Gina Birch ft. Thurston Moore",
-        "video_id": null,
-        "capture_date": "2022-11-16 04:19:01.784784",
-        "source_id": 1432,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Firebabe",
-        "artist_name": "Stormzy",
-        "video_id": null,
-        "capture_date": "2022-11-16 04:19:01.784784",
-        "source_id": 1432,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Someone Close",
-        "artist_name": "Floating Points",
-        "video_id": null,
-        "capture_date": "2022-11-16 04:19:01.784784",
-        "source_id": 1432,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2022-11-30 03:43:52.452452",
+        "source_id": 1438,
+        "song_id": 13182,
+        "duplicate": true
     }
 ]
 
@@ -238,17 +202,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Do I Love You (Indeed I Do)', 'Bruce Springsteen', NULL),
-  ('When I Die', 'Sharon Van Etten', NULL),
-  ('Lydia', 'Margo Price', NULL),
-  ('Texas', 'Dagr and Cherry Glazerr', NULL),
-  ('Lejos de Cielo', 'Rauw Alejandro', NULL),
-  ('Dreamer', 'The Blaze', NULL),
-  ('Amores Prohibidos', 'Juanes', NULL),
-  ('Carbon Dioxide', 'Fever Ray', NULL),
-  ('Wish I Was You', 'Gina Birch ft. Thurston Moore', NULL),
-  ('Firebabe', 'Stormzy', NULL),
-  ('Someone Close', 'Floating Points', NULL)
+  ('Letter to Takeoff', 'Gucci Mane', NULL),
+  ('Do You Miss Me?', 'PinkPantheress', NULL),
+  ('Strong', 'Romy & Fred again..', NULL),
+  ('Tukoh Taka', 'Nicki Minaj, Maluma and Myriam Fares', NULL),
+  ('MJ Story', 'Rod Wave', NULL),
+  ('Star Hill Song', 'Meg Baird', NULL)
   ;
 
    // Update to song table
@@ -259,7 +218,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13173; // SELECT last_insert_rowid();
+  song_id = 13204; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -299,17 +258,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-16 04:19:01.783783', '1432', '13163'),
-  ('2022-11-16 04:19:01.784784', '1432', '13164'),
-  ('2022-11-16 04:19:01.784784', '1432', '13165'),
-  ('2022-11-16 04:19:01.784784', '1432', '13166'),
-  ('2022-11-16 04:19:01.784784', '1432', '13167'),
-  ('2022-11-16 04:19:01.784784', '1432', '13168'),
-  ('2022-11-16 04:19:01.784784', '1432', '13169'),
-  ('2022-11-16 04:19:01.784784', '1432', '13170'),
-  ('2022-11-16 04:19:01.784784', '1432', '13171'),
-  ('2022-11-16 04:19:01.784784', '1432', '13172'),
-  ('2022-11-16 04:19:01.784784', '1432', '13173')
+  ('2022-11-30 03:43:52.450450', '1438', '13199'),
+  ('2022-11-30 03:43:52.451451', '1438', '13200'),
+  ('2022-11-30 03:43:52.451451', '1438', '13201'),
+  ('2022-11-30 03:43:52.451451', '1438', '13202'),
+  ('2022-11-30 03:43:52.451451', '1438', '13203'),
+  ('2022-11-30 03:43:52.452452', '1438', '13204'),
+  ('2022-11-30 03:43:52.452452', '1438', '13182')
   ;
 
   // Update to source_song table

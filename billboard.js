@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of November 26, 2022', '2022-11-26 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-11-26');
+    ('Billboard', 'The Hot 100', 'Week of December 3, 2022', '2022-12-03 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-12-03');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1436; // SELECT last_insert_rowid();
+  source_id = 1437; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,29 +105,20 @@
   songsData =
   [
     {
-        "title": "Heart Like A Truck",
-        "artist_name": "Lainey Wilson",
+        "title": "Down In Atlanta",
+        "artist_name": "Pharrell Williams & Travis Scott",
         "video_id": null,
-        "capture_date": "2022-11-30 03:37:19.809809",
-        "source_id": 1436,
+        "capture_date": "2022-11-30 03:40:59.431431",
+        "source_id": 1437,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Break My Heart",
+        "title": "Got It Right",
         "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2022-11-30 03:37:19.809809",
-        "source_id": 1436,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Going, Going, Gone",
-        "artist_name": "Luke Combs",
-        "video_id": null,
-        "capture_date": "2022-11-30 03:37:19.810810",
-        "source_id": 1436,
+        "capture_date": "2022-11-30 03:40:59.431431",
+        "source_id": 1437,
         "song_id": null,
         "duplicate": false
     }
@@ -171,9 +162,8 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Heart Like A Truck', 'Lainey Wilson', NULL),
-  ('Break My Heart', 'Rod Wave', NULL),
-  ('Going, Going, Gone', 'Luke Combs', NULL)
+  ('Down In Atlanta', 'Pharrell Williams & Travis Scott', NULL),
+  ('Got It Right', 'Rod Wave', NULL)
   ;
 
    // Update to song table
@@ -184,7 +174,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13196; // SELECT last_insert_rowid();
+  song_id = 13198; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -224,9 +214,8 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-30 03:37:19.809809', '1436', '13194'),
-  ('2022-11-30 03:37:19.809809', '1436', '13195'),
-  ('2022-11-30 03:37:19.810810', '1436', '13196')
+  ('2022-11-30 03:40:59.431431', '1437', '13197'),
+  ('2022-11-30 03:40:59.431431', '1437', '13198')
   ;
 
   // Update to source_song table
