@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of November 18, 2022', '2022-11-18 12:00:00.000000', 'https://www.stereogum.com/2206470/the-5-best-songs-of-the-week-460/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of December 2, 2022', '2022-12-02 12:00:00.000000', 'https://www.stereogum.com/2207272/the-5-best-songs-of-the-week-461/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1441; // SELECT last_insert_rowid();
+  source_id = 1464; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,49 +101,49 @@
   songsData =
   [
     {
-        "title": "Do You Miss Me?",
-        "artist_name": "PinkPantheress",
+        "title": "Dark Blue",
+        "artist_name": "One Step Closer",
         "video_id": null,
-        "capture_date": "2022-11-30 04:01:20.918918",
-        "source_id": 1441,
-        "song_id": 13200,
+        "capture_date": "2022-12-28 08:10:35.123123",
+        "source_id": 1464,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Texas",
+        "artist_name": "BigXthaPlug",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:10:35.124124",
+        "source_id": 1464,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Rotten Bun",
+        "artist_name": "mui zyu",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:10:35.124124",
+        "source_id": 1464,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Violent Night (A Christmas Tale)",
+        "artist_name": "Chubby And The Gang",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:10:35.124124",
+        "source_id": 1464,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Famous Last Words (An Ode To Eaters)",
+        "artist_name": "Ethel Cain",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:10:35.124124",
+        "source_id": 1464,
+        "song_id": 13252,
         "duplicate": true
-    },
-    {
-        "title": "Wasted On You",
-        "artist_name": "Andy Shauf",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:01:20.919919",
-        "source_id": 1441,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Found",
-        "artist_name": "Fucked Up",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:01:20.919919",
-        "source_id": 1441,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Strong",
-        "artist_name": "Romy & Fred again..",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:01:20.919919",
-        "source_id": 1441,
-        "song_id": 13201,
-        "duplicate": true
-    },
-    {
-        "title": "God Turn Me Into A Flower",
-        "artist_name": "Weyes Blood",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:01:20.919919",
-        "source_id": 1441,
-        "song_id": null,
-        "duplicate": false
     }
 ]
 
@@ -185,9 +185,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Wasted On You', 'Andy Shauf', NULL),
-  ('Found', 'Fucked Up', NULL),
-  ('God Turn Me Into A Flower', 'Weyes Blood', NULL)
+  ('Dark Blue', 'One Step Closer', NULL),
+  ('Texas', 'BigXthaPlug', NULL),
+  ('Rotten Bun', 'mui zyu', NULL),
+  ('Violent Night (A Christmas Tale)', 'Chubby And The Gang', NULL)
   ;
 
    // Update to song table
@@ -198,7 +199,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13228; // SELECT last_insert_rowid();
+  song_id = 13267; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -238,11 +239,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-30 04:01:20.918918', '1441', '13200'),
-  ('2022-11-30 04:01:20.919919', '1441', '13226'),
-  ('2022-11-30 04:01:20.919919', '1441', '13227'),
-  ('2022-11-30 04:01:20.919919', '1441', '13201'),
-  ('2022-11-30 04:01:20.919919', '1441', '13228')
+  ('2022-12-28 08:10:35.123123', '1464', '13264'),
+  ('2022-12-28 08:10:35.124124', '1464', '13265'),
+  ('2022-12-28 08:10:35.124124', '1464', '13266'),
+  ('2022-12-28 08:10:35.124124', '1464', '13267'),
+  ('2022-12-28 08:10:35.124124', '1464', '13252')
   ;
 
   // Update to source_song table

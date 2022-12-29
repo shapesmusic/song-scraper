@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Gucci Mane’s Tribute to Takeoff, and 6 More New Songs', '2022-11-18 09:36:49.000000', 'https://www.nytimes.com/2022/11/18/arts/music/playlist-gucci-mane-pinkpantheress.html');
+    ('New York Times', 'The Playlist', 'Coi Leray Borrows a Hip-Hop Classic, and 8 More New Songs', '2022-12-07 06:01:25.000000', 'https://www.nytimes.com/2022/12/02/arts/music/playlist-coi-leray-100-gecs.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1438; // SELECT last_insert_rowid();
+  source_id = 1462; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,67 +100,85 @@
   songsData =
   [
     {
-        "title": "Letter to Takeoff",
-        "artist_name": "Gucci Mane",
+        "title": "Players",
+        "artist_name": "Coi Leray",
         "video_id": null,
-        "capture_date": "2022-11-30 03:43:52.450450",
-        "source_id": 1438,
+        "capture_date": "2022-12-28 08:04:03.300300",
+        "source_id": 1462,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Do You Miss Me?",
+        "title": "Boy’s a Liar",
         "artist_name": "PinkPantheress",
         "video_id": null,
-        "capture_date": "2022-11-30 03:43:52.451451",
-        "source_id": 1438,
+        "capture_date": "2022-12-28 08:04:03.301301",
+        "source_id": 1462,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Strong",
-        "artist_name": "Romy & Fred again..",
+        "title": "Hey Big Man",
+        "artist_name": "100 gecs",
         "video_id": null,
-        "capture_date": "2022-11-30 03:43:52.451451",
-        "source_id": 1438,
+        "capture_date": "2022-12-28 08:04:03.301301",
+        "source_id": 1462,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tukoh Taka",
-        "artist_name": "Nicki Minaj, Maluma and Myriam Fares",
+        "title": "Famous Last Words (An Ode to Eaters)",
+        "artist_name": "Ethel Cain",
         "video_id": null,
-        "capture_date": "2022-11-30 03:43:52.451451",
-        "source_id": 1438,
+        "capture_date": "2022-12-28 08:04:03.301301",
+        "source_id": 1462,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "MJ Story",
-        "artist_name": "Rod Wave",
+        "title": "The Hands",
+        "artist_name": "serpentwithfeet",
         "video_id": null,
-        "capture_date": "2022-11-30 03:43:52.451451",
-        "source_id": 1438,
+        "capture_date": "2022-12-28 08:04:03.301301",
+        "source_id": 1462,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Star Hill Song",
-        "artist_name": "Meg Baird",
+        "title": "In the Water",
+        "artist_name": "Kali Horse",
         "video_id": null,
-        "capture_date": "2022-11-30 03:43:52.452452",
-        "source_id": 1438,
+        "capture_date": "2022-12-28 08:04:03.301301",
+        "source_id": 1462,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Buffy",
-        "artist_name": "Jenny Hval",
+        "title": "In|Flux",
+        "artist_name": "Anna B Savage",
         "video_id": null,
-        "capture_date": "2022-11-30 03:43:52.452452",
-        "source_id": 1438,
-        "song_id": 13182,
-        "duplicate": true
+        "capture_date": "2022-12-28 08:04:03.301301",
+        "source_id": 1462,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "She",
+        "artist_name": "Jelly Roll",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:04:03.301301",
+        "source_id": 1462,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Save the Phenomenon",
+        "artist_name": "Fievel Is Glauque",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:04:03.301301",
+        "source_id": 1462,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -202,12 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Letter to Takeoff', 'Gucci Mane', NULL),
-  ('Do You Miss Me?', 'PinkPantheress', NULL),
-  ('Strong', 'Romy & Fred again..', NULL),
-  ('Tukoh Taka', 'Nicki Minaj, Maluma and Myriam Fares', NULL),
-  ('MJ Story', 'Rod Wave', NULL),
-  ('Star Hill Song', 'Meg Baird', NULL)
+  ('Players', 'Coi Leray', NULL),
+  ('Boy’s a Liar', 'PinkPantheress', NULL),
+  ('Hey Big Man', '100 gecs', NULL),
+  ('Famous Last Words (An Ode to Eaters)', 'Ethel Cain', NULL),
+  ('The Hands', 'serpentwithfeet', NULL),
+  ('In the Water', 'Kali Horse', NULL),
+  ('In|Flux', 'Anna B Savage', NULL),
+  ('She', 'Jelly Roll', NULL),
+  ('Save the Phenomenon', 'Fievel Is Glauque', NULL)
   ;
 
    // Update to song table
@@ -218,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13204; // SELECT last_insert_rowid();
+  song_id = 13257; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -258,13 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-30 03:43:52.450450', '1438', '13199'),
-  ('2022-11-30 03:43:52.451451', '1438', '13200'),
-  ('2022-11-30 03:43:52.451451', '1438', '13201'),
-  ('2022-11-30 03:43:52.451451', '1438', '13202'),
-  ('2022-11-30 03:43:52.451451', '1438', '13203'),
-  ('2022-11-30 03:43:52.452452', '1438', '13204'),
-  ('2022-11-30 03:43:52.452452', '1438', '13182')
+  ('2022-12-28 08:04:03.300300', '1462', '13249'),
+  ('2022-12-28 08:04:03.301301', '1462', '13250'),
+  ('2022-12-28 08:04:03.301301', '1462', '13251'),
+  ('2022-12-28 08:04:03.301301', '1462', '13252'),
+  ('2022-12-28 08:04:03.301301', '1462', '13253'),
+  ('2022-12-28 08:04:03.301301', '1462', '13254'),
+  ('2022-12-28 08:04:03.301301', '1462', '13255'),
+  ('2022-12-28 08:04:03.301301', '1462', '13256'),
+  ('2022-12-28 08:04:03.301301', '1462', '13257')
   ;
 
   // Update to source_song table
