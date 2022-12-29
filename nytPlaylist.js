@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'SZA and Phoebe Bridgers’s Team-Up, and 8 More New Songs', '2022-12-09 09:08:27.000000', 'https://www.nytimes.com/2022/12/09/arts/music/playlist-sza-phoebe-bridgers-paramore.html');
+    ('New York Times', 'The Playlist', 'The Weeknd’s ‘Avatar’ Anthem, and 8 More New Songs', '2022-12-16 09:06:49.000000', 'https://www.nytimes.com/2022/12/16/arts/music/playlist-weeknd-rosalia-cardi-b-saint-levant.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1466; // SELECT last_insert_rowid();
+  source_id = 1469; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,83 +100,83 @@
   songsData =
   [
     {
-        "title": "Ghost in the Machine",
-        "artist_name": "SZA ft. Phoebe Bridgers",
+        "title": "Nothing Is Lost (You Give Me Strength)",
+        "artist_name": "The Weeknd",
         "video_id": null,
-        "capture_date": "2022-12-28 08:21:00.908908",
-        "source_id": 1466,
+        "capture_date": "2022-12-28 08:33:54.094094",
+        "source_id": 1469,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Did You Know That There’s a Tunnel Under Ocean Blvd",
-        "artist_name": "Lana Del Rey",
+        "title": "Despechá Rmx",
+        "artist_name": "Rosalía ft. Cardi B",
         "video_id": null,
-        "capture_date": "2022-12-28 08:21:00.910910",
-        "source_id": 1466,
+        "capture_date": "2022-12-28 08:33:54.095095",
+        "source_id": 1469,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Welcome to My Island",
-        "artist_name": "Caroline Polachek",
+        "title": "Haffmilch Holiday",
+        "artist_name": "Decisive Pink",
         "video_id": null,
-        "capture_date": "2022-12-28 08:21:00.910910",
-        "source_id": 1466,
+        "capture_date": "2022-12-28 08:33:54.095095",
+        "source_id": 1469,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The News",
-        "artist_name": "Paramore",
+        "title": "Doesn’t Really Matter",
+        "artist_name": "Barrie",
         "video_id": null,
-        "capture_date": "2022-12-28 08:21:00.910910",
-        "source_id": 1466,
+        "capture_date": "2022-12-28 08:33:54.095095",
+        "source_id": 1469,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "It Will Never Stop",
-        "artist_name": "Sparklehorse",
+        "title": "I Guess",
+        "artist_name": "Saint Levant & Playyard",
         "video_id": null,
-        "capture_date": "2022-12-28 08:21:00.910910",
-        "source_id": 1466,
+        "capture_date": "2022-12-28 08:33:54.096096",
+        "source_id": 1469,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Oni (They)",
-        "artist_name": "Kate NV",
+        "title": "Morning Elvis",
+        "artist_name": "Florence + the Machine ft. Ethel Cain",
         "video_id": null,
-        "capture_date": "2022-12-28 08:21:00.910910",
-        "source_id": 1466,
+        "capture_date": "2022-12-28 08:33:54.096096",
+        "source_id": 1469,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Moon Talk",
-        "artist_name": "Harvey Mandel",
+        "title": "Let Go",
+        "artist_name": "Central Cee",
         "video_id": null,
-        "capture_date": "2022-12-28 08:21:00.910910",
-        "source_id": 1466,
+        "capture_date": "2022-12-28 08:33:54.096096",
+        "source_id": 1469,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pedacitos",
-        "artist_name": "Jackie Mendoza",
+        "title": "Gorilla",
+        "artist_name": "Little Simz",
         "video_id": null,
-        "capture_date": "2022-12-28 08:21:00.910910",
-        "source_id": 1466,
+        "capture_date": "2022-12-28 08:33:54.096096",
+        "source_id": 1469,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Want a Dog",
-        "artist_name": "Weezer",
+        "title": "Catch Your Eye",
+        "artist_name": "Andy Shauf",
         "video_id": null,
-        "capture_date": "2022-12-28 08:21:00.910910",
-        "source_id": 1466,
+        "capture_date": "2022-12-28 08:33:54.096096",
+        "source_id": 1469,
         "song_id": null,
         "duplicate": false
     }
@@ -220,15 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Ghost in the Machine', 'SZA ft. Phoebe Bridgers', NULL),
-  ('Did You Know That There’s a Tunnel Under Ocean Blvd', 'Lana Del Rey', NULL),
-  ('Welcome to My Island', 'Caroline Polachek', NULL),
-  ('The News', 'Paramore', NULL),
-  ('It Will Never Stop', 'Sparklehorse', NULL),
-  ('Oni (They)', 'Kate NV', NULL),
-  ('Moon Talk', 'Harvey Mandel', NULL),
-  ('Pedacitos', 'Jackie Mendoza', NULL),
-  ('I Want a Dog', 'Weezer', NULL)
+  ('Nothing Is Lost (You Give Me Strength)', 'The Weeknd', NULL),
+  ('Despechá Rmx', 'Rosalía ft. Cardi B', NULL),
+  ('Haffmilch Holiday', 'Decisive Pink', NULL),
+  ('Doesn’t Really Matter', 'Barrie', NULL),
+  ('I Guess', 'Saint Levant & Playyard', NULL),
+  ('Morning Elvis', 'Florence + the Machine ft. Ethel Cain', NULL),
+  ('Let Go', 'Central Cee', NULL),
+  ('Gorilla', 'Little Simz', NULL),
+  ('Catch Your Eye', 'Andy Shauf', NULL)
   ;
 
    // Update to song table
@@ -239,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13298; // SELECT last_insert_rowid();
+  song_id = 13330; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-12-28 08:21:00.908908', '1466', '13290'),
-  ('2022-12-28 08:21:00.910910', '1466', '13291'),
-  ('2022-12-28 08:21:00.910910', '1466', '13292'),
-  ('2022-12-28 08:21:00.910910', '1466', '13293'),
-  ('2022-12-28 08:21:00.910910', '1466', '13294'),
-  ('2022-12-28 08:21:00.910910', '1466', '13295'),
-  ('2022-12-28 08:21:00.910910', '1466', '13296'),
-  ('2022-12-28 08:21:00.910910', '1466', '13297'),
-  ('2022-12-28 08:21:00.910910', '1466', '13298')
+  ('2022-12-28 08:33:54.094094', '1469', '13322'),
+  ('2022-12-28 08:33:54.095095', '1469', '13323'),
+  ('2022-12-28 08:33:54.095095', '1469', '13324'),
+  ('2022-12-28 08:33:54.095095', '1469', '13325'),
+  ('2022-12-28 08:33:54.096096', '1469', '13326'),
+  ('2022-12-28 08:33:54.096096', '1469', '13327'),
+  ('2022-12-28 08:33:54.096096', '1469', '13328'),
+  ('2022-12-28 08:33:54.096096', '1469', '13329'),
+  ('2022-12-28 08:33:54.096096', '1469', '13330')
   ;
 
   // Update to source_song table
