@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Coi Leray Borrows a Hip-Hop Classic, and 8 More New Songs', '2022-12-07 06:01:25.000000', 'https://www.nytimes.com/2022/12/02/arts/music/playlist-coi-leray-100-gecs.html');
+    ('New York Times', 'The Playlist', 'SZA and Phoebe Bridgers’s Team-Up, and 8 More New Songs', '2022-12-09 09:08:27.000000', 'https://www.nytimes.com/2022/12/09/arts/music/playlist-sza-phoebe-bridgers-paramore.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1462; // SELECT last_insert_rowid();
+  source_id = 1466; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,83 +100,83 @@
   songsData =
   [
     {
-        "title": "Players",
-        "artist_name": "Coi Leray",
+        "title": "Ghost in the Machine",
+        "artist_name": "SZA ft. Phoebe Bridgers",
         "video_id": null,
-        "capture_date": "2022-12-28 08:04:03.300300",
-        "source_id": 1462,
+        "capture_date": "2022-12-28 08:21:00.908908",
+        "source_id": 1466,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Boy’s a Liar",
-        "artist_name": "PinkPantheress",
+        "title": "Did You Know That There’s a Tunnel Under Ocean Blvd",
+        "artist_name": "Lana Del Rey",
         "video_id": null,
-        "capture_date": "2022-12-28 08:04:03.301301",
-        "source_id": 1462,
+        "capture_date": "2022-12-28 08:21:00.910910",
+        "source_id": 1466,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hey Big Man",
-        "artist_name": "100 gecs",
+        "title": "Welcome to My Island",
+        "artist_name": "Caroline Polachek",
         "video_id": null,
-        "capture_date": "2022-12-28 08:04:03.301301",
-        "source_id": 1462,
+        "capture_date": "2022-12-28 08:21:00.910910",
+        "source_id": 1466,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Famous Last Words (An Ode to Eaters)",
-        "artist_name": "Ethel Cain",
+        "title": "The News",
+        "artist_name": "Paramore",
         "video_id": null,
-        "capture_date": "2022-12-28 08:04:03.301301",
-        "source_id": 1462,
+        "capture_date": "2022-12-28 08:21:00.910910",
+        "source_id": 1466,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Hands",
-        "artist_name": "serpentwithfeet",
+        "title": "It Will Never Stop",
+        "artist_name": "Sparklehorse",
         "video_id": null,
-        "capture_date": "2022-12-28 08:04:03.301301",
-        "source_id": 1462,
+        "capture_date": "2022-12-28 08:21:00.910910",
+        "source_id": 1466,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In the Water",
-        "artist_name": "Kali Horse",
+        "title": "Oni (They)",
+        "artist_name": "Kate NV",
         "video_id": null,
-        "capture_date": "2022-12-28 08:04:03.301301",
-        "source_id": 1462,
+        "capture_date": "2022-12-28 08:21:00.910910",
+        "source_id": 1466,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In|Flux",
-        "artist_name": "Anna B Savage",
+        "title": "Moon Talk",
+        "artist_name": "Harvey Mandel",
         "video_id": null,
-        "capture_date": "2022-12-28 08:04:03.301301",
-        "source_id": 1462,
+        "capture_date": "2022-12-28 08:21:00.910910",
+        "source_id": 1466,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "She",
-        "artist_name": "Jelly Roll",
+        "title": "Pedacitos",
+        "artist_name": "Jackie Mendoza",
         "video_id": null,
-        "capture_date": "2022-12-28 08:04:03.301301",
-        "source_id": 1462,
+        "capture_date": "2022-12-28 08:21:00.910910",
+        "source_id": 1466,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Save the Phenomenon",
-        "artist_name": "Fievel Is Glauque",
+        "title": "I Want a Dog",
+        "artist_name": "Weezer",
         "video_id": null,
-        "capture_date": "2022-12-28 08:04:03.301301",
-        "source_id": 1462,
+        "capture_date": "2022-12-28 08:21:00.910910",
+        "source_id": 1466,
         "song_id": null,
         "duplicate": false
     }
@@ -220,15 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Players', 'Coi Leray', NULL),
-  ('Boy’s a Liar', 'PinkPantheress', NULL),
-  ('Hey Big Man', '100 gecs', NULL),
-  ('Famous Last Words (An Ode to Eaters)', 'Ethel Cain', NULL),
-  ('The Hands', 'serpentwithfeet', NULL),
-  ('In the Water', 'Kali Horse', NULL),
-  ('In|Flux', 'Anna B Savage', NULL),
-  ('She', 'Jelly Roll', NULL),
-  ('Save the Phenomenon', 'Fievel Is Glauque', NULL)
+  ('Ghost in the Machine', 'SZA ft. Phoebe Bridgers', NULL),
+  ('Did You Know That There’s a Tunnel Under Ocean Blvd', 'Lana Del Rey', NULL),
+  ('Welcome to My Island', 'Caroline Polachek', NULL),
+  ('The News', 'Paramore', NULL),
+  ('It Will Never Stop', 'Sparklehorse', NULL),
+  ('Oni (They)', 'Kate NV', NULL),
+  ('Moon Talk', 'Harvey Mandel', NULL),
+  ('Pedacitos', 'Jackie Mendoza', NULL),
+  ('I Want a Dog', 'Weezer', NULL)
   ;
 
    // Update to song table
@@ -239,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13257; // SELECT last_insert_rowid();
+  song_id = 13298; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-12-28 08:04:03.300300', '1462', '13249'),
-  ('2022-12-28 08:04:03.301301', '1462', '13250'),
-  ('2022-12-28 08:04:03.301301', '1462', '13251'),
-  ('2022-12-28 08:04:03.301301', '1462', '13252'),
-  ('2022-12-28 08:04:03.301301', '1462', '13253'),
-  ('2022-12-28 08:04:03.301301', '1462', '13254'),
-  ('2022-12-28 08:04:03.301301', '1462', '13255'),
-  ('2022-12-28 08:04:03.301301', '1462', '13256'),
-  ('2022-12-28 08:04:03.301301', '1462', '13257')
+  ('2022-12-28 08:21:00.908908', '1466', '13290'),
+  ('2022-12-28 08:21:00.910910', '1466', '13291'),
+  ('2022-12-28 08:21:00.910910', '1466', '13292'),
+  ('2022-12-28 08:21:00.910910', '1466', '13293'),
+  ('2022-12-28 08:21:00.910910', '1466', '13294'),
+  ('2022-12-28 08:21:00.910910', '1466', '13295'),
+  ('2022-12-28 08:21:00.910910', '1466', '13296'),
+  ('2022-12-28 08:21:00.910910', '1466', '13297'),
+  ('2022-12-28 08:21:00.910910', '1466', '13298')
   ;
 
   // Update to source_song table
