@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of November 28, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2022-11-28 12:00:00.000000', -- Dont forget this!
+      'Week of December 26, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2022-12-26 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1440; // SELECT last_insert_rowid();
+    source_id = 1473; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,83 +458,110 @@
     songsData =
     [
     {
-        "title": "Still Eating Noodles",
-        "artist_name": "Big Yavo ft. Bandroll Freddie",
+        "title": "My Love Is True",
+        "artist_name": "Gods Wisdom and Europu$$y",
         "video_id": null,
-        "capture_date": "2022-11-30 03:53:30.073000",
-        "source_id": 1440,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Georgia Boy",
-        "artist_name": "Rabit",
+        "title": "Bad Mojo",
+        "artist_name": "Smokingskul and Rx Papi",
         "video_id": null,
-        "capture_date": "2022-11-30 03:53:30.073000",
-        "source_id": 1440,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "bored",
-        "artist_name": "Fousheé",
+        "title": "Sideways",
+        "artist_name": "Little Simz",
         "video_id": null,
-        "capture_date": "2022-11-30 03:53:30.073000",
-        "source_id": 1440,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Thicker Than Water",
-        "artist_name": "Richard Dawson",
+        "title": "Car Keys",
+        "artist_name": "Gregg Turkington",
         "video_id": null,
-        "capture_date": "2022-11-30 03:53:30.073000",
-        "source_id": 1440,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "once the reaper",
-        "artist_name": "Joe Rainey",
+        "title": "Plagiarizer",
+        "artist_name": "Thanks For Coming",
         "video_id": null,
-        "capture_date": "2022-11-30 03:53:30.073000",
-        "source_id": 1440,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
+        "song_id": 13335,
+        "duplicate": true
+    },
+    {
+        "title": "Imprinting",
+        "artist_name": "The Necks",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "150",
-        "artist_name": "Yung Kayo",
+        "title": "Artificial Intelligence",
+        "artist_name": "Mumdance",
         "video_id": null,
-        "capture_date": "2022-11-30 03:53:30.073000",
-        "source_id": 1440,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cuummoney Amiliani",
-        "artist_name": "$ilkmoney",
+        "title": "An Offering To The Night",
+        "artist_name": "Jesus Piece",
         "video_id": null,
-        "capture_date": "2022-11-30 03:53:30.073000",
-        "source_id": 1440,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
+        "song_id": 13300,
+        "duplicate": true
+    },
+    {
+        "title": "Nazarite",
+        "artist_name": "Greg Anderson and David Pajo",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Monsoon",
-        "artist_name": "Wesley Joseph",
+        "title": "Welcome To My Island",
+        "artist_name": "Caroline Polachek",
         "video_id": null,
-        "capture_date": "2022-11-30 03:53:30.073000",
-        "source_id": 1440,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
+        "song_id": 13292,
+        "duplicate": true
+    },
+    {
+        "title": "Japan",
+        "artist_name": "Wallice",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "So Tell Me...",
-        "artist_name": "Nia Archives",
+        "title": "I Don't Know How to Get Away",
+        "artist_name": "Max Mason",
         "video_id": null,
-        "capture_date": "2022-11-30 03:53:30.073000",
-        "source_id": 1440,
+        "capture_date": "2022-12-28 08:47:31.098000",
+        "source_id": 1473,
         "song_id": null,
         "duplicate": false
     }
@@ -576,15 +603,15 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Still Eating Noodles', 'Big Yavo ft. Bandroll Freddie', NULL),
-    ('Georgia Boy', 'Rabit', NULL),
-    ('bored', 'Fousheé', NULL),
-    ('Thicker Than Water', 'Richard Dawson', NULL),
-    ('once the reaper', 'Joe Rainey', NULL),
-    ('150', 'Yung Kayo', NULL),
-    ('Cuummoney Amiliani', '$ilkmoney', NULL),
-    ('Monsoon', 'Wesley Joseph', NULL),
-    ('So Tell Me...', 'Nia Archives', NULL)
+    ('My Love Is True', 'Gods Wisdom and Europu$$y', NULL),
+    ('Bad Mojo', 'Smokingskul and Rx Papi', NULL),
+    ('Sideways', 'Little Simz', NULL),
+    ('Car Keys', 'Gregg Turkington', NULL),
+    ('Imprinting', 'The Necks', NULL),
+    ('Artificial Intelligence', 'Mumdance', NULL),
+    ('Nazarite', 'Greg Anderson and David Pajo', NULL),
+    ('Japan', 'Wallice', NULL),
+    ('I Don’t Know How to Get Away', 'Max Mason', NULL)
     ;
 
      // Update to song table
@@ -595,7 +622,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13225; // SELECT last_insert_rowid();
+  song_id = 13347; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -635,15 +662,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-11-30 03:53:30.073000', '1440', '13217'),
-  ('2022-11-30 03:53:30.073000', '1440', '13218'),
-  ('2022-11-30 03:53:30.073000', '1440', '13219'),
-  ('2022-11-30 03:53:30.073000', '1440', '13220'),
-  ('2022-11-30 03:53:30.073000', '1440', '13221'),
-  ('2022-11-30 03:53:30.073000', '1440', '13222'),
-  ('2022-11-30 03:53:30.073000', '1440', '13223'),
-  ('2022-11-30 03:53:30.073000', '1440', '13224'),
-  ('2022-11-30 03:53:30.073000', '1440', '13225')
+  ('2022-12-28 08:47:31.098000', '1473', '13339'),
+  ('2022-12-28 08:47:31.098000', '1473', '13340'),
+  ('2022-12-28 08:47:31.098000', '1473', '13341'),
+  ('2022-12-28 08:47:31.098000', '1473', '13342'),
+  ('2022-12-28 08:47:31.098000', '1473', '13335'),
+  ('2022-12-28 08:47:31.098000', '1473', '13343'),
+  ('2022-12-28 08:47:31.098000', '1473', '13344'),
+  ('2022-12-28 08:47:31.098000', '1473', '13300'),
+  ('2022-12-28 08:47:31.098000', '1473', '13345'),
+  ('2022-12-28 08:47:31.098000', '1473', '13292'),
+  ('2022-12-28 08:47:31.098000', '1473', '13346'),
+  ('2022-12-28 08:47:31.098000', '1473', '13347')
   ;
 
   // Update to source_song table

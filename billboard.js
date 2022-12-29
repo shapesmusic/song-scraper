@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of December 24, 2022', '2022-12-24 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-12-24');
+    ('Billboard', 'The Hot 100', 'Week of December 31, 2022', '2022-12-31 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-12-31');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1468; // SELECT last_insert_rowid();
+  source_id = 1472; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,191 +105,20 @@
   songsData =
   [
     {
-        "title": "Kill Bill",
-        "artist_name": "SZA",
+        "title": "Face 2 Face",
+        "artist_name": "Juice WRLD",
         "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.155155",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nobody Gets Me",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.155155",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Blind",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.155155",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Low",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.156156",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Love Language",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.156156",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Seek & Destroy",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.156156",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Snooze",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.156156",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Used",
-        "artist_name": "SZA ft. Don Toliver",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.156156",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "SOS",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.156156",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Special",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.156156",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ghost In The Machine",
-        "artist_name": "SZA ft. Phoebe Bridgers",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.157157",
-        "source_id": 1468,
-        "song_id": 13290,
+        "capture_date": "2022-12-28 08:43:36.384384",
+        "source_id": 1472,
+        "song_id": 13333,
         "duplicate": true
     },
     {
-        "title": "Gone Girl",
-        "artist_name": "SZA",
+        "title": "Kid On Christmas",
+        "artist_name": "Pentatonix Featuring Meghan Trainor",
         "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.157157",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Notice Me",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.157157",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Smoking On My Ex Pack",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.157157",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Open Arms",
-        "artist_name": "SZA ft. Travis Scott",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.157157",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "F2F",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.157157",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Conceited",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.157157",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Far",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.157157",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Too Late",
-        "artist_name": "SZA",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.157157",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Forgiveless",
-        "artist_name": "SZA ft. Ol' Dirty Bastard",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.158158",
-        "source_id": 1468,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Water (Drowning Pt. 2)",
-        "artist_name": "A Boogie Wit da Hoodie ft. Kodak Black",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:28:14.158158",
-        "source_id": 1468,
+        "capture_date": "2022-12-28 08:43:36.384384",
+        "source_id": 1472,
         "song_id": null,
         "duplicate": false
     }
@@ -333,26 +162,7 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Kill Bill', 'SZA', NULL),
-  ('Nobody Gets Me', 'SZA', NULL),
-  ('Blind', 'SZA', NULL),
-  ('Low', 'SZA', NULL),
-  ('Love Language', 'SZA', NULL),
-  ('Seek & Destroy', 'SZA', NULL),
-  ('Snooze', 'SZA', NULL),
-  ('Used', 'SZA ft. Don Toliver', NULL),
-  ('SOS', 'SZA', NULL),
-  ('Special', 'SZA', NULL),
-  ('Gone Girl', 'SZA', NULL),
-  ('Notice Me', 'SZA', NULL),
-  ('Smoking On My Ex Pack', 'SZA', NULL),
-  ('Open Arms', 'SZA ft. Travis Scott', NULL),
-  ('F2F', 'SZA', NULL),
-  ('Conceited', 'SZA', NULL),
-  ('Far', 'SZA', NULL),
-  ('Too Late', 'SZA', NULL),
-  ('Forgiveless', 'SZA ft. Ol’ Dirty Bastard', NULL),
-  ('Water (Drowning Pt. 2)', 'A Boogie Wit da Hoodie ft. Kodak Black', NULL)
+  ('Kid On Christmas', 'Pentatonix Featuring Meghan Trainor', NULL)
   ;
 
    // Update to song table
@@ -363,7 +173,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13321; // SELECT last_insert_rowid();
+  song_id = 13338; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -403,27 +213,8 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-12-28 08:28:14.155155', '1468', '13302'),
-  ('2022-12-28 08:28:14.155155', '1468', '13303'),
-  ('2022-12-28 08:28:14.155155', '1468', '13304'),
-  ('2022-12-28 08:28:14.156156', '1468', '13305'),
-  ('2022-12-28 08:28:14.156156', '1468', '13306'),
-  ('2022-12-28 08:28:14.156156', '1468', '13307'),
-  ('2022-12-28 08:28:14.156156', '1468', '13308'),
-  ('2022-12-28 08:28:14.156156', '1468', '13309'),
-  ('2022-12-28 08:28:14.156156', '1468', '13310'),
-  ('2022-12-28 08:28:14.156156', '1468', '13311'),
-  ('2022-12-28 08:28:14.157157', '1468', '13290'),
-  ('2022-12-28 08:28:14.157157', '1468', '13312'),
-  ('2022-12-28 08:28:14.157157', '1468', '13313'),
-  ('2022-12-28 08:28:14.157157', '1468', '13314'),
-  ('2022-12-28 08:28:14.157157', '1468', '13315'),
-  ('2022-12-28 08:28:14.157157', '1468', '13316'),
-  ('2022-12-28 08:28:14.157157', '1468', '13317'),
-  ('2022-12-28 08:28:14.157157', '1468', '13318'),
-  ('2022-12-28 08:28:14.157157', '1468', '13319'),
-  ('2022-12-28 08:28:14.158158', '1468', '13320'),
-  ('2022-12-28 08:28:14.158158', '1468', '13321')
+  ('2022-12-28 08:43:36.384384', '1472', '13333'),
+  ('2022-12-28 08:43:36.384384', '1472', '13338')
   ;
 
   // Update to source_song table

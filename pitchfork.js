@@ -76,26 +76,15 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-30 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-29 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-10 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-11-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-10-31 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-10-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-10-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-    ('Pitchfork', 'Track Reviews', NULL, '2022-10-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
-;
+  ('Pitchfork', 'Track Reviews', NULL, '2022-12-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-12-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-12-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-12-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-12-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-12-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-12-06 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2022-12-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ;
 
   // Update to source table
 
@@ -145,282 +134,120 @@
   songsData =
   [
     {
-        "title": "Stop Worry!",
-        "artist_name": "MIKE",
+        "title": "Madhatter",
+        "artist_name": "Mona Evie",
         "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.297297",
-        "source_id": 1442,
+        "capture_date": "2022-12-28 08:58:44.076076",
+        "source_id": 1474,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Help",
-        "artist_name": "Rozi Plain",
+        "title": "Only in The",
+        "artist_name": "Crosslegged",
         "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.299299",
-        "source_id": 1443,
+        "capture_date": "2022-12-28 08:58:44.078078",
+        "source_id": 1474,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Aquarius",
-        "artist_name": "Subsonic Eye",
+        "title": "Gorilla",
+        "artist_name": "Little Simz",
         "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.300300",
-        "source_id": 1444,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "once the reaper",
-        "artist_name": "Joe Rainey",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.300300",
-        "source_id": 1444,
-        "song_id": 13221,
+        "capture_date": "2022-12-28 08:58:44.078078",
+        "source_id": 1475,
+        "song_id": 13329,
         "duplicate": true
     },
     {
-        "title": "Wild Animals",
-        "artist_name": "Liv.e",
+        "title": "The Sheltering Sky - Alva Noto Remodel",
+        "artist_name": "Ryuichi SakamotoAlva Noto",
         "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.300300",
-        "source_id": 1445,
+        "capture_date": "2022-12-28 08:58:44.079079",
+        "source_id": 1475,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Do you miss me?",
-        "artist_name": "PinkPantheress",
+        "title": "Ocean",
+        "artist_name": "Katarina Gryvul",
         "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.300300",
-        "source_id": 1445,
-        "song_id": 13200,
-        "duplicate": true
-    },
-    {
-        "title": "Contingency Song",
-        "artist_name": "Jane Remover",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.300300",
-        "source_id": 1446,
+        "capture_date": "2022-12-28 08:58:44.079079",
+        "source_id": 1476,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Climate and Resilience",
-        "artist_name": "Egg Meat",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.300300",
-        "source_id": 1446,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "De Carolina",
-        "artist_name": "Rauw Alejandro",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.300300",
-        "source_id": 1447,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Freedom Tap Water",
-        "artist_name": "38Kea",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.300300",
-        "source_id": 1447,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nut Quick",
-        "artist_name": "Glorilla",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1448,
-        "song_id": 13175,
-        "duplicate": true
-    },
-    {
-        "title": "Raining Moment",
-        "artist_name": "Fingergap",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1449,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Keep on Pushing These Walls",
-        "artist_name": "Nadine Khouri",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1449,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "foam angel",
-        "artist_name": "Ulla",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1450,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mike",
-        "artist_name": "Shake Chain",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1450,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Loaded",
-        "artist_name": "Tiwa SavageAsake",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1451,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mind You’re On",
-        "artist_name": "Carla dal Forno",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1451,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gold Satin Dreamer",
-        "artist_name": "Nicole Dollanganger",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1452,
-        "song_id": 13191,
-        "duplicate": true
-    },
-    {
-        "title": "Rich Flex",
-        "artist_name": "Drake21 Savage",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1453,
-        "song_id": 13146,
-        "duplicate": true
-    },
-    {
-        "title": "Casual",
-        "artist_name": "Chappell Roan",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1454,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Another Bird Song",
-        "artist_name": "Acre Memos",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1454,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "girlfriend",
-        "artist_name": "Hemlocke Springs",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1455,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "God Is a Circle",
-        "artist_name": "Yves Tumor",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1455,
-        "song_id": 13125,
-        "duplicate": true
-    },
-    {
-        "title": "Follow the Cyborg",
-        "artist_name": "Miss Grit",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1456,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "제 ceremony",
-        "artist_name": "baehyuni",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1457,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bikini Bottom",
-        "artist_name": "Ice Spice",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1458,
-        "song_id": 13099,
-        "duplicate": true
-    },
-    {
-        "title": "Lift Me Up",
-        "artist_name": "Rihanna",
-        "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1458,
-        "song_id": 13096,
-        "duplicate": true
-    },
-    {
-        "title": "Shirt",
+        "title": "Blind",
         "artist_name": "SZA",
         "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.301301",
-        "source_id": 1458,
-        "song_id": 13097,
+        "capture_date": "2022-12-28 08:58:44.079079",
+        "source_id": 1477,
+        "song_id": 13304,
         "duplicate": true
     },
     {
-        "title": "no fun/party",
-        "artist_name": "Kara Jackson",
+        "title": "Body/Prison",
+        "artist_name": "Evita Manji",
         "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.302302",
-        "source_id": 1459,
+        "capture_date": "2022-12-28 08:58:44.079079",
+        "source_id": 1478,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Do You Well",
-        "artist_name": "Nakhane",
+        "title": "Yerimayo Celebration",
+        "artist_name": "Baaba Maal",
         "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.302302",
-        "source_id": 1459,
-        "song_id": 13098,
+        "capture_date": "2022-12-28 08:58:44.079079",
+        "source_id": 1478,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Did You Know That There’s a Tunnel Under Ocean Blvd",
+        "artist_name": "Lana Del Rey",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:58:44.079079",
+        "source_id": 1479,
+        "song_id": 13291,
         "duplicate": true
     },
     {
-        "title": "Chores",
-        "artist_name": "Feeble Little Horse",
+        "title": "Puesta",
+        "artist_name": "Villano AntillanoLa Dame Blanche",
         "video_id": null,
-        "capture_date": "2022-11-30 04:06:36.302302",
-        "source_id": 1460,
-        "song_id": 13101,
+        "capture_date": "2022-12-28 08:58:44.079079",
+        "source_id": 1479,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Shittin’ Me",
+        "artist_name": "A$AP Rocky",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:58:44.079079",
+        "source_id": 1480,
+        "song_id": 13261,
+        "duplicate": true
+    },
+    {
+        "title": "Oni (They)",
+        "artist_name": "Kate NV",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:58:44.079079",
+        "source_id": 1480,
+        "song_id": 13295,
+        "duplicate": true
+    },
+    {
+        "title": "Hey Big Man",
+        "artist_name": "100 gecs",
+        "video_id": null,
+        "capture_date": "2022-12-28 08:58:44.079079",
+        "source_id": 1481,
+        "song_id": 13251,
         "duplicate": true
     }
 ]
@@ -474,26 +301,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Stop Worry!', 'MIKE', NULL),
-    ('Help', 'Rozi Plain', NULL),
-    ('Aquarius', 'Subsonic Eye', NULL),
-    ('Wild Animals', 'Liv.e', NULL),
-    ('Contingency Song', 'Jane Remover', NULL),
-    ('Climate and Resilience', 'Egg Meat', NULL),
-    ('De Carolina', 'Rauw Alejandro', NULL),
-    ('Freedom Tap Water', '38Kea', NULL),
-    ('Raining Moment', 'Fingergap', NULL),
-    ('Keep on Pushing These Walls', 'Nadine Khouri', NULL),
-    ('foam angel', 'Ulla', NULL),
-    ('Mike', 'Shake Chain', NULL),
-    ('Loaded', 'Tiwa SavageAsake', NULL),
-    ('Mind You’re On', 'Carla dal Forno', NULL),
-    ('Casual', 'Chappell Roan', NULL),
-    ('Another Bird Song', 'Acre Memos', NULL),
-    ('girlfriend', 'Hemlocke Springs', NULL),
-    ('Follow the Cyborg', 'Miss Grit', NULL),
-    ('제 ceremony', 'baehyuni', NULL),
-    ('no fun/party', 'Kara Jackson', NULL)
+  ('Madhatter', 'Mona Evie', NULL),
+  ('Only in The', 'Crosslegged', NULL),
+  ('The Sheltering Sky - Alva Noto Remodel', 'Ryuichi SakamotoAlva Noto', NULL),
+  ('Ocean', 'Katarina Gryvul', NULL),
+  ('Body/Prison', 'Evita Manji', NULL),
+  ('Yerimayo Celebration', 'Baaba Maal', NULL),
+  ('Puesta', 'Villano AntillanoLa Dame Blanche', NULL)
   ;
 
    // Update to song table
@@ -504,7 +318,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 13248; // SELECT last_insert_rowid();
+  song_id = 13354; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -544,37 +358,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2022-11-30 04:06:36.297297', '1442', '13229'),
-    ('2022-11-30 04:06:36.299299', '1443', '13230'),
-    ('2022-11-30 04:06:36.300300', '1444', '13231'),
-    ('2022-11-30 04:06:36.300300', '1444', '13221'),
-    ('2022-11-30 04:06:36.300300', '1445', '13232'),
-    ('2022-11-30 04:06:36.300300', '1445', '13200'),
-    ('2022-11-30 04:06:36.300300', '1446', '13233'),
-    ('2022-11-30 04:06:36.300300', '1446', '13234'),
-    ('2022-11-30 04:06:36.300300', '1447', '13235'),
-    ('2022-11-30 04:06:36.300300', '1447', '13236'),
-    ('2022-11-30 04:06:36.301301', '1448', '13175'),
-    ('2022-11-30 04:06:36.301301', '1449', '13237'),
-    ('2022-11-30 04:06:36.301301', '1449', '13238'),
-    ('2022-11-30 04:06:36.301301', '1450', '13239'),
-    ('2022-11-30 04:06:36.301301', '1450', '13240'),
-    ('2022-11-30 04:06:36.301301', '1451', '13241'),
-    ('2022-11-30 04:06:36.301301', '1451', '13242'),
-    ('2022-11-30 04:06:36.301301', '1452', '13191'),
-    ('2022-11-30 04:06:36.301301', '1453', '13146'),
-    ('2022-11-30 04:06:36.301301', '1454', '13243'),
-    ('2022-11-30 04:06:36.301301', '1454', '13244'),
-    ('2022-11-30 04:06:36.301301', '1455', '13245'),
-    ('2022-11-30 04:06:36.301301', '1455', '13125'),
-    ('2022-11-30 04:06:36.301301', '1456', '13246'),
-    ('2022-11-30 04:06:36.301301', '1457', '13247'),
-    ('2022-11-30 04:06:36.301301', '1458', '13099'),
-    ('2022-11-30 04:06:36.301301', '1458', '13096'),
-    ('2022-11-30 04:06:36.301301', '1458', '13097'),
-    ('2022-11-30 04:06:36.302302', '1459', '13248'),
-    ('2022-11-30 04:06:36.302302', '1459', '13098'),
-    ('2022-11-30 04:06:36.302302', '1460', '13101')
+    ('2022-12-28 08:58:44.076076', '1474', '13348'),
+    ('2022-12-28 08:58:44.078078', '1474', '13349'),
+    ('2022-12-28 08:58:44.078078', '1475', '13329'),
+    ('2022-12-28 08:58:44.079079', '1475', '13350'),
+    ('2022-12-28 08:58:44.079079', '1476', '13351'),
+    ('2022-12-28 08:58:44.079079', '1477', '13304'),
+    ('2022-12-28 08:58:44.079079', '1478', '13352'),
+    ('2022-12-28 08:58:44.079079', '1478', '13353'),
+    ('2022-12-28 08:58:44.079079', '1479', '13291'),
+    ('2022-12-28 08:58:44.079079', '1479', '13354'),
+    ('2022-12-28 08:58:44.079079', '1480', '13261'),
+    ('2022-12-28 08:58:44.079079', '1480', '13295'),
+    ('2022-12-28 08:58:44.079079', '1481', '13251')
   ;
 
   // Update to source_song table
