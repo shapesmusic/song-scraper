@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of December 31, 2022', '2022-12-31 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2022-12-31');
+    ('Billboard', 'The Hot 100', 'Week of January 7, 2023', '2023-01-07 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-01-07');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1472; // SELECT last_insert_rowid();
+  source_id = 1482; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -104,25 +104,34 @@
 
   songsData =
   [
-    {
-        "title": "Face 2 Face",
-        "artist_name": "Juice WRLD",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:43:36.384384",
-        "source_id": 1472,
-        "song_id": 13333,
-        "duplicate": true
-    },
-    {
-        "title": "Kid On Christmas",
-        "artist_name": "Pentatonix Featuring Meghan Trainor",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:43:36.384384",
-        "source_id": 1472,
-        "song_id": null,
-        "duplicate": false
-    }
-]
+      {
+          "title": "Gato de Noche",
+          "artist_name": "Nengo Flow & Bad Bunny",
+          "video_id": null,
+          "capture_date": "2023-01-04 08:49:14.017017",
+          "source_id": 1482,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Que Vuelvas",
+          "artist_name": "Carin Leon X Grupo Frontera",
+          "video_id": null,
+          "capture_date": "2023-01-04 08:49:14.018018",
+          "source_id": 1482,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Bebe Dame",
+          "artist_name": "Fuerza Regida X Grupo Frontera",
+          "video_id": null,
+          "capture_date": "2023-01-04 08:49:14.018018",
+          "source_id": 1482,
+          "song_id": null,
+          "duplicate": false
+      }
+  ]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -162,7 +171,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Kid On Christmas', 'Pentatonix Featuring Meghan Trainor', NULL)
+  ('Gato de Noche', 'Nengo Flow & Bad Bunny', NULL),
+  ('Que Vuelvas', 'Carin Leon X Grupo Frontera', NULL),
+  ('Bebe Dame', 'Fuerza Regida X Grupo Frontera', NULL)
   ;
 
    // Update to song table
@@ -173,7 +184,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13338; // SELECT last_insert_rowid();
+  song_id = 13357; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -213,8 +224,9 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-12-28 08:43:36.384384', '1472', '13333'),
-  ('2022-12-28 08:43:36.384384', '1472', '13338')
+  ('2023-01-04 08:49:14.017017', '1482', '13355'),
+  ('2023-01-04 08:49:14.018018', '1482', '13356'),
+  ('2023-01-04 08:49:14.018018', '1482', '13357')
   ;
 
   // Update to source_song table
