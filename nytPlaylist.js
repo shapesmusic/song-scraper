@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'The Weeknd’s ‘Avatar’ Anthem, and 8 More New Songs', '2022-12-16 09:06:49.000000', 'https://www.nytimes.com/2022/12/16/arts/music/playlist-weeknd-rosalia-cardi-b-saint-levant.html');
+    ('New York Times', 'The Playlist', '7 Songs We Nearly Missed in 2022', '2023-01-06 09:07:35.000000', 'https://www.nytimes.com/2023/01/06/arts/music/playlist-flo-becky-g-karol-g.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1469; // SELECT last_insert_rowid();
+  source_id = 1484; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,85 +100,67 @@
   songsData =
   [
     {
-        "title": "Nothing Is Lost (You Give Me Strength)",
-        "artist_name": "The Weeknd",
+        "title": "Cardboard Box (Live Acoustic)",
+        "artist_name": "Flo",
         "video_id": null,
-        "capture_date": "2022-12-28 08:33:54.094094",
-        "source_id": 1469,
+        "capture_date": "2023-01-27 08:04:07.622622",
+        "source_id": 1484,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Despechá Rmx",
-        "artist_name": "Rosalía ft. Cardi B",
+        "title": "Mamiii",
+        "artist_name": "Becky G and Karol G",
         "video_id": null,
-        "capture_date": "2022-12-28 08:33:54.095095",
-        "source_id": 1469,
+        "capture_date": "2023-01-27 08:04:07.622622",
+        "source_id": 1484,
+        "song_id": 11736,
+        "duplicate": true
+    },
+    {
+        "title": "Cappin",
+        "artist_name": "Monster and Big Flock",
+        "video_id": null,
+        "capture_date": "2023-01-27 08:04:07.622622",
+        "source_id": 1484,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Haffmilch Holiday",
-        "artist_name": "Decisive Pink",
+        "title": "Formule 7",
+        "artist_name": "Fally Ipupa",
         "video_id": null,
-        "capture_date": "2022-12-28 08:33:54.095095",
-        "source_id": 1469,
+        "capture_date": "2023-01-27 08:04:07.623623",
+        "source_id": 1484,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Doesn’t Really Matter",
-        "artist_name": "Barrie",
+        "title": "Kiss You",
+        "artist_name": "Ela Minus and DJ Python",
         "video_id": null,
-        "capture_date": "2022-12-28 08:33:54.095095",
-        "source_id": 1469,
+        "capture_date": "2023-01-27 08:04:07.623623",
+        "source_id": 1484,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Guess",
-        "artist_name": "Saint Levant & Playyard",
+        "title": "La Bachata",
+        "artist_name": "Manuel Turizo",
         "video_id": null,
-        "capture_date": "2022-12-28 08:33:54.096096",
-        "source_id": 1469,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2023-01-27 08:04:07.623623",
+        "source_id": 1484,
+        "song_id": 12712,
+        "duplicate": true
     },
     {
-        "title": "Morning Elvis",
-        "artist_name": "Florence + the Machine ft. Ethel Cain",
+        "title": "Cada Músculo",
+        "artist_name": "Mabe Fratti",
         "video_id": null,
-        "capture_date": "2022-12-28 08:33:54.096096",
-        "source_id": 1469,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Let Go",
-        "artist_name": "Central Cee",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:33:54.096096",
-        "source_id": 1469,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gorilla",
-        "artist_name": "Little Simz",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:33:54.096096",
-        "source_id": 1469,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Catch Your Eye",
-        "artist_name": "Andy Shauf",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:33:54.096096",
-        "source_id": 1469,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2023-01-27 08:04:07.623623",
+        "source_id": 1484,
+        "song_id": 12743,
+        "duplicate": true
     }
 ]
 
@@ -220,15 +202,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Nothing Is Lost (You Give Me Strength)', 'The Weeknd', NULL),
-  ('Despechá Rmx', 'Rosalía ft. Cardi B', NULL),
-  ('Haffmilch Holiday', 'Decisive Pink', NULL),
-  ('Doesn’t Really Matter', 'Barrie', NULL),
-  ('I Guess', 'Saint Levant & Playyard', NULL),
-  ('Morning Elvis', 'Florence + the Machine ft. Ethel Cain', NULL),
-  ('Let Go', 'Central Cee', NULL),
-  ('Gorilla', 'Little Simz', NULL),
-  ('Catch Your Eye', 'Andy Shauf', NULL)
+  ('Cardboard Box (Live Acoustic)', 'Flo', NULL),
+  ('Cappin', 'Monster and Big Flock', NULL),
+  ('Formule 7', 'Fally Ipupa', NULL),
+  ('Kiss You', 'Ela Minus and DJ Python', NULL)
   ;
 
    // Update to song table
@@ -239,7 +216,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13330; // SELECT last_insert_rowid();
+  song_id = 13366; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +256,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-12-28 08:33:54.094094', '1469', '13322'),
-  ('2022-12-28 08:33:54.095095', '1469', '13323'),
-  ('2022-12-28 08:33:54.095095', '1469', '13324'),
-  ('2022-12-28 08:33:54.095095', '1469', '13325'),
-  ('2022-12-28 08:33:54.096096', '1469', '13326'),
-  ('2022-12-28 08:33:54.096096', '1469', '13327'),
-  ('2022-12-28 08:33:54.096096', '1469', '13328'),
-  ('2022-12-28 08:33:54.096096', '1469', '13329'),
-  ('2022-12-28 08:33:54.096096', '1469', '13330')
+  ('2023-01-27 08:04:07.622622', '1484', '13363'),
+  ('2023-01-27 08:04:07.622622', '1484', '11736'),
+  ('2023-01-27 08:04:07.622622', '1484', '13364'),
+  ('2023-01-27 08:04:07.623623', '1484', '13365'),
+  ('2023-01-27 08:04:07.623623', '1484', '13366'),
+  ('2023-01-27 08:04:07.623623', '1484', '12712'),
+  ('2023-01-27 08:04:07.623623', '1484', '12743')
   ;
 
   // Update to source_song table

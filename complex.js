@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Latto, Lil Durk, Central Cee, and More', '2022-12-16 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-december-16/the-alchemist-schoolboy-q-clip-in-a-tray');
+    ('Complex', 'The Best New Music This Week', 'Quavo, YoungBoy Never Broke Again, and More', '2023-01-06 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-january-6-quavo-youngboy/french-montana-dj-drama-asap-rocky-smooky-margielaa-chit-chat');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1470; // SELECT last_insert_rowid();
+  source_id = 1485; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,56 +102,47 @@
   songsData =
   [
     {
-        "title": "Another Nasty Song",
-        "artist_name": "Latto",
+        "title": "Without You",
+        "artist_name": "Quavo",
         "video_id": null,
-        "capture_date": "2022-12-28 08:37:15.237237",
-        "source_id": 1470,
+        "capture_date": "2023-01-27 08:08:46.203203",
+        "source_id": 1485,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mad Max",
-        "artist_name": "Lil Durk & Future",
+        "title": "Black",
+        "artist_name": "YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2022-12-28 08:37:15.238238",
-        "source_id": 1470,
+        "capture_date": "2023-01-27 08:08:46.203203",
+        "source_id": 1485,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Let Go",
-        "artist_name": "Central Cee",
+        "title": "We Caa Done",
+        "artist_name": "Popcaan ft. Drake",
         "video_id": null,
-        "capture_date": "2022-12-28 08:37:15.238238",
-        "source_id": 1470,
-        "song_id": 13328,
-        "duplicate": true
-    },
-    {
-        "title": "Moonshooter",
-        "artist_name": "Ab-Soul & Joey Bada$$",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:37:15.238238",
-        "source_id": 1470,
-        "song_id": 12857,
-        "duplicate": true
-    },
-    {
-        "title": "Face 2 Face",
-        "artist_name": "Juice WRLD",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:37:15.238238",
-        "source_id": 1470,
+        "capture_date": "2023-01-27 08:08:46.204204",
+        "source_id": 1485,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Clip In A Tray",
-        "artist_name": "The Alchemist ft. ScHoolboy Q",
+        "title": "Chit Chat",
+        "artist_name": "French Montana ft. DJ Drama, ASAP Rocky, Smooky Margielaa",
         "video_id": null,
-        "capture_date": "2022-12-28 08:37:15.238238",
-        "source_id": 1470,
+        "capture_date": "2023-01-27 08:08:46.204204",
+        "source_id": 1485,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Try Again",
+        "artist_name": "Oddisee",
+        "video_id": null,
+        "capture_date": "2023-01-27 08:08:46.204204",
+        "source_id": 1485,
         "song_id": null,
         "duplicate": false
     }
@@ -194,10 +185,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Another Nasty Song', 'Latto', NULL),
-  ('Mad Max', 'Lil Durk & Future', NULL),
-  ('Face 2 Face', 'Juice WRLD', NULL),
-  ('Clip In A Tray', 'The Alchemist ft. ScHoolboy Q', NULL)
+  ('Without You', 'Quavo', NULL),
+  ('Black', 'YoungBoy Never Broke Again', NULL),
+  ('We Caa Done', 'Popcaan ft. Drake', NULL),
+  ('Chit Chat', 'French Montana ft. DJ Drama, ASAP Rocky, Smooky Margielaa', NULL),
+  ('Try Again', 'Oddisee', NULL)
   ;
 
    // Update to song table
@@ -208,7 +200,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13334; // SELECT last_insert_rowid();
+  song_id = 13371; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -248,12 +240,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-12-28 08:37:15.237237', '1470', '13331'),
-  ('2022-12-28 08:37:15.238238', '1470', '13332'),
-  ('2022-12-28 08:37:15.238238', '1470', '13328'),
-  ('2022-12-28 08:37:15.238238', '1470', '12857'),
-  ('2022-12-28 08:37:15.238238', '1470', '13333'),
-  ('2022-12-28 08:37:15.238238', '1470', '13334')
+  ('2023-01-27 08:08:46.203203', '1485', '13367'),
+  ('2023-01-27 08:08:46.203203', '1485', '13368'),
+  ('2023-01-27 08:08:46.204204', '1485', '13369'),
+  ('2023-01-27 08:08:46.204204', '1485', '13370'),
+  ('2023-01-27 08:08:46.204204', '1485', '13371')
   ;
 
   // Update to source_song table

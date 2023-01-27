@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of December 16, 2022', '2022-12-16 12:00:00.000000', 'https://www.stereogum.com/2208643/the-5-best-songs-of-the-week-463/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of January 6, 2023', '2023-01-06 12:00:00.000000', 'https://www.stereogum.com/2209627/the-5-best-songs-of-the-week-464/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1471; // SELECT last_insert_rowid();
+  source_id = 1486; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,49 +101,49 @@
   songsData =
   [
     {
-        "title": "Plagiarizer",
-        "artist_name": "Thanks For Coming",
+        "title": "I Want To Start A Religion With You",
+        "artist_name": "Fireworks",
         "video_id": null,
-        "capture_date": "2022-12-28 08:40:29.091091",
-        "source_id": 1471,
+        "capture_date": "2023-01-27 08:12:01.090090",
+        "source_id": 1486,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Silver Spoon",
-        "artist_name": "FAIM",
+        "title": "Swoosh 23",
+        "artist_name": "MIKE",
         "video_id": null,
-        "capture_date": "2022-12-28 08:40:29.092092",
-        "source_id": 1471,
+        "capture_date": "2023-01-27 08:12:01.090090",
+        "source_id": 1486,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Haffmilch Holiday",
-        "artist_name": "Decisive Pink",
+        "title": "Familia Finito",
+        "artist_name": "End It",
         "video_id": null,
-        "capture_date": "2022-12-28 08:40:29.092092",
-        "source_id": 1471,
-        "song_id": 13324,
-        "duplicate": true
-    },
-    {
-        "title": "No Merci",
-        "artist_name": "Little Simz",
-        "video_id": null,
-        "capture_date": "2022-12-28 08:40:29.092092",
-        "source_id": 1471,
+        "capture_date": "2023-01-27 08:12:01.090090",
+        "source_id": 1486,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gone Girl",
-        "artist_name": "SZA",
+        "title": "Rows Of Clover",
+        "artist_name": "H.C. McEntire",
         "video_id": null,
-        "capture_date": "2022-12-28 08:40:29.092092",
-        "source_id": 1471,
-        "song_id": 13312,
-        "duplicate": true
+        "capture_date": "2023-01-27 08:12:01.091091",
+        "source_id": 1486,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Huge Fire",
+        "artist_name": "Mount Eerie",
+        "video_id": null,
+        "capture_date": "2023-01-27 08:12:01.091091",
+        "source_id": 1486,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -185,9 +185,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Plagiarizer', 'Thanks For Coming', NULL),
-  ('Silver Spoon', 'FAIM', NULL),
-  ('No Merci', 'Little Simz', NULL)
+  ('I Want To Start A Religion With You', 'Fireworks', NULL),
+  ('Swoosh 23', 'MIKE', NULL),
+  ('Familia Finito', 'End It', NULL),
+  ('Rows Of Clover', 'H.C. McEntire', NULL),
+  ('Huge Fire', 'Mount Eerie', NULL)
   ;
 
    // Update to song table
@@ -198,7 +200,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13337; // SELECT last_insert_rowid();
+  song_id = 13376; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -238,11 +240,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2022-12-28 08:40:29.091091', '1471', '13335'),
-  ('2022-12-28 08:40:29.092092', '1471', '13336'),
-  ('2022-12-28 08:40:29.092092', '1471', '13324'),
-  ('2022-12-28 08:40:29.092092', '1471', '13337'),
-  ('2022-12-28 08:40:29.092092', '1471', '13312')
+  ('2023-01-27 08:12:01.090090', '1486', '13372'),
+  ('2023-01-27 08:12:01.090090', '1486', '13373'),
+  ('2023-01-27 08:12:01.090090', '1486', '13374'),
+  ('2023-01-27 08:12:01.091091', '1486', '13375'),
+  ('2023-01-27 08:12:01.091091', '1486', '13376')
   ;
 
   // Update to source_song table
