@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', '7 Songs We Nearly Missed in 2022', '2023-01-06 09:07:35.000000', 'https://www.nytimes.com/2023/01/06/arts/music/playlist-flo-becky-g-karol-g.html');
+    ('New York Times', 'The Playlist', 'Everything But the Girl’s Long-Awaited Return, and 12 More New Songs', '2023-01-13 09:40:32.000000', 'https://www.nytimes.com/2023/01/13/arts/music/playlist-everything-but-the-girl-miley-cyrus.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1484; // SELECT last_insert_rowid();
+  source_id = 1488; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,67 +100,112 @@
   songsData =
   [
     {
-        "title": "Cardboard Box (Live Acoustic)",
-        "artist_name": "Flo",
+        "title": "Nothing Left to Lose",
+        "artist_name": "Everything But the Girl",
         "video_id": null,
-        "capture_date": "2023-01-27 08:04:07.622622",
-        "source_id": 1484,
+        "capture_date": "2023-01-28 09:48:16.294294",
+        "source_id": 1488,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mamiii",
-        "artist_name": "Becky G and Karol G",
+        "title": "Way Back",
+        "artist_name": "Skrillex, Fred again.. and Flowdan",
         "video_id": null,
-        "capture_date": "2023-01-27 08:04:07.622622",
-        "source_id": 1484,
-        "song_id": 11736,
-        "duplicate": true
-    },
-    {
-        "title": "Cappin",
-        "artist_name": "Monster and Big Flock",
-        "video_id": null,
-        "capture_date": "2023-01-27 08:04:07.622622",
-        "source_id": 1484,
+        "capture_date": "2023-01-28 09:48:16.295295",
+        "source_id": 1488,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Formule 7",
-        "artist_name": "Fally Ipupa",
+        "title": "Bzrp Music Sessions, Vol. 53",
+        "artist_name": "Bizarrap and Shakira",
         "video_id": null,
-        "capture_date": "2023-01-27 08:04:07.623623",
-        "source_id": 1484,
+        "capture_date": "2023-01-28 09:48:16.295295",
+        "source_id": 1488,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kiss You",
-        "artist_name": "Ela Minus and DJ Python",
+        "title": "Flowers",
+        "artist_name": "Miley Cyrus",
         "video_id": null,
-        "capture_date": "2023-01-27 08:04:07.623623",
-        "source_id": 1484,
+        "capture_date": "2023-01-28 09:48:16.295295",
+        "source_id": 1488,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "La Bachata",
-        "artist_name": "Manuel Turizo",
+        "title": "C’est Comme Ça",
+        "artist_name": "Paramore",
         "video_id": null,
-        "capture_date": "2023-01-27 08:04:07.623623",
-        "source_id": 1484,
-        "song_id": 12712,
-        "duplicate": true
+        "capture_date": "2023-01-28 09:48:16.295295",
+        "source_id": 1488,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Cada Músculo",
-        "artist_name": "Mabe Fratti",
+        "title": "Carpenter",
+        "artist_name": "Vagabon",
         "video_id": null,
-        "capture_date": "2023-01-27 08:04:07.623623",
-        "source_id": 1484,
-        "song_id": 12743,
-        "duplicate": true
+        "capture_date": "2023-01-28 09:48:16.295295",
+        "source_id": 1488,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Where Do We Go Now?",
+        "artist_name": "Gracie Abrams",
+        "video_id": null,
+        "capture_date": "2023-01-28 09:48:16.295295",
+        "source_id": 1488,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Aselestine",
+        "artist_name": "Yo La Tengo",
+        "video_id": null,
+        "capture_date": "2023-01-28 09:48:16.295295",
+        "source_id": 1488,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cambiaste",
+        "artist_name": "Yahritza y Su Esencia",
+        "video_id": null,
+        "capture_date": "2023-01-28 09:48:16.295295",
+        "source_id": 1488,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "On Wat U On",
+        "artist_name": "Moneybagg Yo ft. GloRilla",
+        "video_id": null,
+        "capture_date": "2023-01-28 09:48:16.295295",
+        "source_id": 1488,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "New Atlantis",
+        "artist_name": "Iggy Pop",
+        "video_id": null,
+        "capture_date": "2023-01-28 09:48:16.295295",
+        "source_id": 1488,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Oh Me, Oh My",
+        "artist_name": "Lonnie Holley ft. Michael Stipe",
+        "video_id": null,
+        "capture_date": "2023-01-28 09:48:16.295295",
+        "source_id": 1488,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -202,10 +247,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Cardboard Box (Live Acoustic)', 'Flo', NULL),
-  ('Cappin', 'Monster and Big Flock', NULL),
-  ('Formule 7', 'Fally Ipupa', NULL),
-  ('Kiss You', 'Ela Minus and DJ Python', NULL)
+  ('Nothing Left to Lose', 'Everything But the Girl', NULL),
+  ('Way Back', 'Skrillex, Fred again.. and Flowdan', NULL),
+  ('Bzrp Music Sessions, Vol. 53', 'Bizarrap and Shakira', NULL),
+  ('Flowers', 'Miley Cyrus', NULL),
+  ('C’est Comme Ça', 'Paramore', NULL),
+  ('Carpenter', 'Vagabon', NULL),
+  ('Where Do We Go Now?', 'Gracie Abrams', NULL),
+  ('Aselestine', 'Yo La Tengo', NULL),
+  ('Cambiaste', 'Yahritza y Su Esencia', NULL),
+  ('On Wat U On', 'Moneybagg Yo ft. GloRilla', NULL),
+  ('New Atlantis', 'Iggy Pop', NULL),
+  ('Oh Me, Oh My', 'Lonnie Holley ft. Michael Stipe', NULL)
   ;
 
    // Update to song table
@@ -216,7 +269,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13366; // SELECT last_insert_rowid();
+  song_id = 13391; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -256,13 +309,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-01-27 08:04:07.622622', '1484', '13363'),
-  ('2023-01-27 08:04:07.622622', '1484', '11736'),
-  ('2023-01-27 08:04:07.622622', '1484', '13364'),
-  ('2023-01-27 08:04:07.623623', '1484', '13365'),
-  ('2023-01-27 08:04:07.623623', '1484', '13366'),
-  ('2023-01-27 08:04:07.623623', '1484', '12712'),
-  ('2023-01-27 08:04:07.623623', '1484', '12743')
+  ('2023-01-28 09:48:16.294294', '1488', '13380'),
+  ('2023-01-28 09:48:16.295295', '1488', '13381'),
+  ('2023-01-28 09:48:16.295295', '1488', '13382'),
+  ('2023-01-28 09:48:16.295295', '1488', '13383'),
+  ('2023-01-28 09:48:16.295295', '1488', '13384'),
+  ('2023-01-28 09:48:16.295295', '1488', '13385'),
+  ('2023-01-28 09:48:16.295295', '1488', '13386'),
+  ('2023-01-28 09:48:16.295295', '1488', '13387'),
+  ('2023-01-28 09:48:16.295295', '1488', '13388'),
+  ('2023-01-28 09:48:16.295295', '1488', '13389'),
+  ('2023-01-28 09:48:16.295295', '1488', '13390'),
+  ('2023-01-28 09:48:16.295295', '1488', '13391')
   ;
 
   // Update to source_song table

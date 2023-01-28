@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of January 14, 2023', '2023-01-14 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-01-14/2023-01-14');
+    ('Billboard', 'The Hot 100', 'Week of January 21, 2023', '2023-01-21 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-01-21/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1483; // SELECT last_insert_rowid();
+  source_id = 1487; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,58 +105,40 @@
   songsData =
   [
     {
-        "title": "Bloody Mary",
-        "artist_name": "Lady Gaga",
+        "title": "Black",
+        "artist_name": "YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2023-01-27 08:00:13.116116",
-        "source_id": 1483,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Handle On You",
-        "artist_name": "Parker McCollum",
-        "video_id": null,
-        "capture_date": "2023-01-27 08:00:13.116116",
-        "source_id": 1483,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Color Violet",
-        "artist_name": "Tory Lanez",
-        "video_id": null,
-        "capture_date": "2023-01-27 08:00:13.116116",
-        "source_id": 1483,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Here With Me",
-        "artist_name": "d4vd",
-        "video_id": null,
-        "capture_date": "2023-01-27 08:00:13.116116",
-        "source_id": 1483,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Shut Up My Moms Calling",
-        "artist_name": "Hotel Ugly",
-        "video_id": null,
-        "capture_date": "2023-01-27 08:00:13.117117",
-        "source_id": 1483,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Players",
-        "artist_name": "Coi Leray",
-        "video_id": null,
-        "capture_date": "2023-01-27 08:00:13.117117",
-        "source_id": 1483,
-        "song_id": 13249,
+        "capture_date": "2023-01-28 09:42:39.866866",
+        "source_id": 1487,
+        "song_id": 13368,
         "duplicate": true
+    },
+    {
+        "title": "Ditto",
+        "artist_name": "NewJeans",
+        "video_id": null,
+        "capture_date": "2023-01-28 09:42:39.868868",
+        "source_id": 1487,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "That's What Tequila Does",
+        "artist_name": "Jason Aldean",
+        "video_id": null,
+        "capture_date": "2023-01-28 09:42:39.868868",
+        "source_id": 1487,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "You Didn't",
+        "artist_name": "Brett Young",
+        "video_id": null,
+        "capture_date": "2023-01-28 09:42:39.868868",
+        "source_id": 1487,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -198,11 +180,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Bloody Mary', 'Lady Gaga', NULL),
-  ('Handle On You', 'Parker McCollum', NULL),
-  ('The Color Violet', 'Tory Lanez', NULL),
-  ('Here With Me', 'd4vd', NULL),
-  ('Shut Up My Moms Calling', 'Hotel Ugly', NULL)
+  ('Ditto', 'NewJeans', NULL),
+  ('That’s What Tequila Does', 'Jason Aldean', NULL),
+  ('You Didn’t', 'Brett Young', NULL)
   ;
 
    // Update to song table
@@ -213,7 +193,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13362; // SELECT last_insert_rowid();
+  song_id = 13379; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -253,12 +233,10 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-01-27 08:00:13.116116', '1483', '13358'),
-  ('2023-01-27 08:00:13.116116', '1483', '13359'),
-  ('2023-01-27 08:00:13.116116', '1483', '13360'),
-  ('2023-01-27 08:00:13.116116', '1483', '13361'),
-  ('2023-01-27 08:00:13.117117', '1483', '13362'),
-  ('2023-01-27 08:00:13.117117', '1483', '13249')
+  ('2023-01-28 09:42:39.866866', '1487', '13368'),
+  ('2023-01-28 09:42:39.868868', '1487', '13377'),
+  ('2023-01-28 09:42:39.868868', '1487', '13378'),
+  ('2023-01-28 09:42:39.868868', '1487', '13379')
   ;
 
   // Update to source_song table
