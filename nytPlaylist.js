@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Everything But the Girl’s Long-Awaited Return, and 12 More New Songs', '2023-01-13 09:40:32.000000', 'https://www.nytimes.com/2023/01/13/arts/music/playlist-everything-but-the-girl-miley-cyrus.html');
+    ('New York Times', 'The Playlist', 'Indie-Rock Supergroup boygenius Returns, and 5 More New Songs', '2023-01-20 10:18:42.000000', 'https://www.nytimes.com/2023/01/20/arts/music/playlist-boygenius-kim-petras.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1488; // SELECT last_insert_rowid();
+  source_id = 1491; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
@@ -100,110 +100,56 @@
   songsData =
   [
     {
-        "title": "Nothing Left to Lose",
-        "artist_name": "Everything But the Girl",
+        "title": "$20",
+        "artist_name": "boygenius",
         "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.294294",
-        "source_id": 1488,
+        "capture_date": "2023-01-28 10:05:49.209209",
+        "source_id": 1491,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Way Back",
-        "artist_name": "Skrillex, Fred again.. and Flowdan",
+        "title": "Lights Light Up",
+        "artist_name": "Fenne Lily",
         "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.295295",
-        "source_id": 1488,
+        "capture_date": "2023-01-28 10:05:49.210210",
+        "source_id": 1491,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bzrp Music Sessions, Vol. 53",
-        "artist_name": "Bizarrap and Shakira",
+        "title": "For Granted",
+        "artist_name": "Yaeji",
         "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.295295",
-        "source_id": 1488,
+        "capture_date": "2023-01-28 10:05:49.210210",
+        "source_id": 1491,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Flowers",
-        "artist_name": "Miley Cyrus",
+        "title": "Weightless",
+        "artist_name": "Arlo Parks",
         "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.295295",
-        "source_id": 1488,
+        "capture_date": "2023-01-28 10:05:49.210210",
+        "source_id": 1491,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "C’est Comme Ça",
-        "artist_name": "Paramore",
+        "title": "Brrr",
+        "artist_name": "Kim Petras",
         "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.295295",
-        "source_id": 1488,
+        "capture_date": "2023-01-28 10:05:49.210210",
+        "source_id": 1491,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Carpenter",
-        "artist_name": "Vagabon",
+        "title": "Gangsta Boo",
+        "artist_name": "Ice Spice and Lil Tjay",
         "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.295295",
-        "source_id": 1488,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Where Do We Go Now?",
-        "artist_name": "Gracie Abrams",
-        "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.295295",
-        "source_id": 1488,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Aselestine",
-        "artist_name": "Yo La Tengo",
-        "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.295295",
-        "source_id": 1488,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cambiaste",
-        "artist_name": "Yahritza y Su Esencia",
-        "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.295295",
-        "source_id": 1488,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "On Wat U On",
-        "artist_name": "Moneybagg Yo ft. GloRilla",
-        "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.295295",
-        "source_id": 1488,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "New Atlantis",
-        "artist_name": "Iggy Pop",
-        "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.295295",
-        "source_id": 1488,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Oh Me, Oh My",
-        "artist_name": "Lonnie Holley ft. Michael Stipe",
-        "video_id": null,
-        "capture_date": "2023-01-28 09:48:16.295295",
-        "source_id": 1488,
+        "capture_date": "2023-01-28 10:05:49.210210",
+        "source_id": 1491,
         "song_id": null,
         "duplicate": false
     }
@@ -247,18 +193,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Nothing Left to Lose', 'Everything But the Girl', NULL),
-  ('Way Back', 'Skrillex, Fred again.. and Flowdan', NULL),
-  ('Bzrp Music Sessions, Vol. 53', 'Bizarrap and Shakira', NULL),
-  ('Flowers', 'Miley Cyrus', NULL),
-  ('C’est Comme Ça', 'Paramore', NULL),
-  ('Carpenter', 'Vagabon', NULL),
-  ('Where Do We Go Now?', 'Gracie Abrams', NULL),
-  ('Aselestine', 'Yo La Tengo', NULL),
-  ('Cambiaste', 'Yahritza y Su Esencia', NULL),
-  ('On Wat U On', 'Moneybagg Yo ft. GloRilla', NULL),
-  ('New Atlantis', 'Iggy Pop', NULL),
-  ('Oh Me, Oh My', 'Lonnie Holley ft. Michael Stipe', NULL)
+  ('$20', 'boygenius', NULL),
+  ('Lights Light Up', 'Fenne Lily', NULL),
+  ('For Granted', 'Yaeji', NULL),
+  ('Weightless', 'Arlo Parks', NULL),
+  ('Brrr', 'Kim Petras', NULL),
+  ('Gangsta Boo', 'Ice Spice and Lil Tjay', NULL)
   ;
 
    // Update to song table
@@ -269,7 +209,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13391; // SELECT last_insert_rowid();
+  song_id = 13407; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -309,18 +249,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-01-28 09:48:16.294294', '1488', '13380'),
-  ('2023-01-28 09:48:16.295295', '1488', '13381'),
-  ('2023-01-28 09:48:16.295295', '1488', '13382'),
-  ('2023-01-28 09:48:16.295295', '1488', '13383'),
-  ('2023-01-28 09:48:16.295295', '1488', '13384'),
-  ('2023-01-28 09:48:16.295295', '1488', '13385'),
-  ('2023-01-28 09:48:16.295295', '1488', '13386'),
-  ('2023-01-28 09:48:16.295295', '1488', '13387'),
-  ('2023-01-28 09:48:16.295295', '1488', '13388'),
-  ('2023-01-28 09:48:16.295295', '1488', '13389'),
-  ('2023-01-28 09:48:16.295295', '1488', '13390'),
-  ('2023-01-28 09:48:16.295295', '1488', '13391')
+  ('2023-01-28 10:05:49.209209', '1491', '13402'),
+  ('2023-01-28 10:05:49.210210', '1491', '13403'),
+  ('2023-01-28 10:05:49.210210', '1491', '13404'),
+  ('2023-01-28 10:05:49.210210', '1491', '13405'),
+  ('2023-01-28 10:05:49.210210', '1491', '13406'),
+  ('2023-01-28 10:05:49.210210', '1491', '13407')
   ;
 
   // Update to source_song table

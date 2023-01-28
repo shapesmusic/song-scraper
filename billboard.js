@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of January 21, 2023', '2023-01-21 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-01-21/');
+    ('Billboard', 'The Hot 100', 'Week of January 28, 2023', '2023-01-28 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-01-28');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1487; // SELECT last_insert_rowid();
+  source_id = 1490; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,38 +105,74 @@
   songsData =
   [
     {
-        "title": "Black",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Bzrp Music Sessions, Vol. 53",
+        "artist_name": "Bizarrap & Shakira",
         "video_id": null,
-        "capture_date": "2023-01-28 09:42:39.866866",
-        "source_id": 1487,
-        "song_id": 13368,
+        "capture_date": "2023-01-28 10:02:07.677677",
+        "source_id": 1490,
+        "song_id": 13382,
         "duplicate": true
     },
     {
-        "title": "Ditto",
+        "title": "On Wat U On",
+        "artist_name": "Moneybagg Yo x GloRilla",
+        "video_id": null,
+        "capture_date": "2023-01-28 10:02:07.680680",
+        "source_id": 1490,
+        "song_id": 13389,
+        "duplicate": true
+    },
+    {
+        "title": "Nonsense",
+        "artist_name": "Sabrina Carpenter",
+        "video_id": null,
+        "capture_date": "2023-01-28 10:02:07.681681",
+        "source_id": 1490,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Vibe",
+        "artist_name": "TAEYANG ft. Jimin",
+        "video_id": null,
+        "capture_date": "2023-01-28 10:02:07.681681",
+        "source_id": 1490,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "OMG",
         "artist_name": "NewJeans",
         "video_id": null,
-        "capture_date": "2023-01-28 09:42:39.868868",
-        "source_id": 1487,
+        "capture_date": "2023-01-28 10:02:07.682682",
+        "source_id": 1490,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "That's What Tequila Does",
-        "artist_name": "Jason Aldean",
+        "title": "Human",
+        "artist_name": "Cody Johnson",
         "video_id": null,
-        "capture_date": "2023-01-28 09:42:39.868868",
-        "source_id": 1487,
+        "capture_date": "2023-01-28 10:02:07.682682",
+        "source_id": 1490,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You Didn't",
-        "artist_name": "Brett Young",
+        "title": "Heart To Heart",
+        "artist_name": "Mac DeMarco",
         "video_id": null,
-        "capture_date": "2023-01-28 09:42:39.868868",
-        "source_id": 1487,
+        "capture_date": "2023-01-28 10:02:07.682682",
+        "source_id": 1490,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "King Snipe",
+        "artist_name": "Gucci Mane & Kodak Black",
+        "video_id": null,
+        "capture_date": "2023-01-28 10:02:07.682682",
+        "source_id": 1490,
         "song_id": null,
         "duplicate": false
     }
@@ -180,9 +216,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Ditto', 'NewJeans', NULL),
-  ('That’s What Tequila Does', 'Jason Aldean', NULL),
-  ('You Didn’t', 'Brett Young', NULL)
+  ('Nonsense', 'Sabrina Carpenter', NULL),
+  ('Vibe', 'TAEYANG ft. Jimin', NULL),
+  ('OMG', 'NewJeans', NULL),
+  ('Human', 'Cody Johnson', NULL),
+  ('Heart To Heart', 'Mac DeMarco', NULL),
+  ('King Snipe', 'Gucci Mane & Kodak Black', NULL)
   ;
 
    // Update to song table
@@ -193,7 +232,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13379; // SELECT last_insert_rowid();
+  song_id = 13401; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -233,10 +272,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-01-28 09:42:39.866866', '1487', '13368'),
-  ('2023-01-28 09:42:39.868868', '1487', '13377'),
-  ('2023-01-28 09:42:39.868868', '1487', '13378'),
-  ('2023-01-28 09:42:39.868868', '1487', '13379')
+  ('2023-01-28 10:02:07.677677', '1490', '13382'),
+  ('2023-01-28 10:02:07.680680', '1490', '13389'),
+  ('2023-01-28 10:02:07.681681', '1490', '13396'),
+  ('2023-01-28 10:02:07.681681', '1490', '13397'),
+  ('2023-01-28 10:02:07.682682', '1490', '13398'),
+  ('2023-01-28 10:02:07.682682', '1490', '13399'),
+  ('2023-01-28 10:02:07.682682', '1490', '13400'),
+  ('2023-01-28 10:02:07.682682', '1490', '13401')
   ;
 
   // Update to source_song table
