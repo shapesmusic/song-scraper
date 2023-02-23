@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of February 3, 2023', '2023-02-03 12:00:00.000000', 'https://www.stereogum.com/2212608/the-5-best-songs-of-the-week-468/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of February 10, 2023', '2023-02-10 12:00:00.000000', 'https://www.stereogum.com/2213514/the-5-best-songs-of-the-week-469/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1502; // SELECT last_insert_rowid();
+  source_id = 1506; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,51 +101,51 @@
   songsData =
   [
     {
-        "title": "REACH THE SUNSHINE",
-        "artist_name": "Lil Yachty",
+        "title": "love him",
+        "artist_name": "Two Shell",
         "video_id": null,
-        "capture_date": "2023-02-22 09:52:09.495495",
-        "source_id": 1502,
+        "capture_date": "2023-02-23 12:29:02.806806",
+        "source_id": 1506,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dawns",
-        "artist_name": "Zach Bryan",
+        "title": "Shock Site",
+        "artist_name": "Garden Centre",
         "video_id": null,
-        "capture_date": "2023-02-22 09:52:09.496496",
-        "source_id": 1502,
-        "song_id": 13477,
+        "capture_date": "2023-02-23 12:29:02.807807",
+        "source_id": 1506,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Outsidigan's Anthem",
+        "artist_name": "Fly Anakin",
+        "video_id": null,
+        "capture_date": "2023-02-23 12:29:02.807807",
+        "source_id": 1506,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Opening Night",
+        "artist_name": "Scowl",
+        "video_id": null,
+        "capture_date": "2023-02-23 12:29:02.807807",
+        "source_id": 1506,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Younger & Dumber",
+        "artist_name": "Indigo De Souza",
+        "video_id": null,
+        "capture_date": "2023-02-23 12:29:02.807807",
+        "source_id": 1506,
+        "song_id": 13517,
         "duplicate": true
-    },
-    {
-        "title": "Polaris",
-        "artist_name": "Parannoul",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:52:09.496496",
-        "source_id": 1502,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "LLYLM",
-        "artist_name": "Rosalía",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:52:09.496496",
-        "source_id": 1502,
-        "song_id": 13454,
-        "duplicate": true
-    },
-    {
-        "title": "Attainable",
-        "artist_name": "Gel",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:52:09.496496",
-        "source_id": 1502,
-        "song_id": null,
-        "duplicate": false
     }
-  ]
+]
 
 
   // Check each song for duplicates in the database
@@ -186,9 +186,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('REACH THE SUNSHINE', 'Lil Yachty', NULL),
-  ('Polaris', 'Parannoul', NULL),
-  ('Attainable', 'Gel', NULL)
+  ('love him', 'Two Shell', NULL),
+  ('Shock Site', 'Garden Centre', NULL),
+  ('Outsidigan’s Anthem', 'Fly Anakin', NULL),
+  ('Opening Night', 'Scowl', NULL)
   ;
 
    // Update to song table
@@ -199,7 +200,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13506; // SELECT last_insert_rowid();
+  song_id = 13528; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -239,11 +240,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-22 09:52:09.495495', '1502', '13504'),
-  ('2023-02-22 09:52:09.496496', '1502', '13477'),
-  ('2023-02-22 09:52:09.496496', '1502', '13505'),
-  ('2023-02-22 09:52:09.496496', '1502', '13454'),
-  ('2023-02-22 09:52:09.496496', '1502', '13506')
+  ('2023-02-23 12:29:02.806806', '1506', '13525'),
+  ('2023-02-23 12:29:02.807807', '1506', '13526'),
+  ('2023-02-23 12:29:02.807807', '1506', '13527'),
+  ('2023-02-23 12:29:02.807807', '1506', '13528'),
+  ('2023-02-23 12:29:02.807807', '1506', '13517')
   ;
 
   // Update to source_song table

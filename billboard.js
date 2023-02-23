@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of February 11, 2023', '2023-02-11 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-02-11/');
+    ('Billboard', 'The Hot 100', 'Week of February 18, 2023', '2023-02-18 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-02-18/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1499; // SELECT last_insert_rowid();
+  source_id = 1503; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,110 +105,56 @@
   songsData =
   [
     {
-        "title": "Last Night",
-        "artist_name": "Morgan Wallen",
+        "title": "Boy's A Liar, Pt. 2",
+        "artist_name": "PinkPantheress & Ice Spice",
         "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.157157",
-        "source_id": 1499,
+        "capture_date": "2023-02-23 12:14:06.301301",
+        "source_id": 1503,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Love Again",
-        "artist_name": "The Kid LAROI",
+        "title": "X Si Volvemos",
+        "artist_name": "Karol G x Romeo Santos",
         "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.158158",
-        "source_id": 1499,
+        "capture_date": "2023-02-23 12:14:06.306306",
+        "source_id": 1503,
+        "song_id": 13487,
+        "duplicate": true
+    },
+    {
+        "title": "PRC",
+        "artist_name": "Peso Pluma X Natanael Cano",
+        "video_id": null,
+        "capture_date": "2023-02-23 12:14:06.307307",
+        "source_id": 1503,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dawns",
-        "artist_name": "Zach Bryan ft. Maggie Rogers",
+        "title": "Watch The World Burn",
+        "artist_name": "Falling In Reverse",
         "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.158158",
-        "source_id": 1499,
+        "capture_date": "2023-02-23 12:14:06.307307",
+        "source_id": 1503,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Wrote The Book",
-        "artist_name": "Morgan Wallen",
+        "title": "In Ha Mood",
+        "artist_name": "Ice Spice",
         "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.158158",
-        "source_id": 1499,
+        "capture_date": "2023-02-23 12:14:06.307307",
+        "source_id": 1503,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Everything I Love",
-        "artist_name": "Morgan Wallen",
+        "title": "Yandel 150",
+        "artist_name": "Yandel & Feid",
         "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.160160",
-        "source_id": 1499,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Growin' Up And Gettin' Old",
-        "artist_name": "Luke Combs",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.160160",
-        "source_id": 1499,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I'm Not Here To Make Friends",
-        "artist_name": "Sam Smith",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.160160",
-        "source_id": 1499,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Black Seminole.",
-        "artist_name": "Lil Yachty",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.161161",
-        "source_id": 1499,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fin de Semana",
-        "artist_name": "Junior H X Oscar Maydon",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.161161",
-        "source_id": 1499,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hey Mor",
-        "artist_name": "Ozuna ft. Feid",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.161161",
-        "source_id": 1499,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Never Gonna Not Dance Again",
-        "artist_name": "P!nk",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.161161",
-        "source_id": 1499,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dancin' In The Country",
-        "artist_name": "Tyler Hubbard",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:38:58.161161",
-        "source_id": 1499,
+        "capture_date": "2023-02-23 12:14:06.307307",
+        "source_id": 1503,
         "song_id": null,
         "duplicate": false
     }
@@ -252,18 +198,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Last Night', 'Morgan Wallen', NULL),
-  ('Love Again', 'The Kid LAROI', NULL),
-  ('Dawns', 'Zach Bryan ft. Maggie Rogers', NULL),
-  ('I Wrote The Book', 'Morgan Wallen', NULL),
-  ('Everything I Love', 'Morgan Wallen', NULL),
-  ('Growin’ Up And Gettin’ Old', 'Luke Combs', NULL),
-  ('I’m Not Here To Make Friends', 'Sam Smith', NULL),
-  ('The Black Seminole.', 'Lil Yachty', NULL),
-  ('Fin de Semana', 'Junior H X Oscar Maydon', NULL),
-  ('Hey Mor', 'Ozuna ft. Feid', NULL),
-  ('Never Gonna Not Dance Again', 'P!nk', NULL),
-  ('Dancin’ In The Country', 'Tyler Hubbard', NULL)
+  ('Boy’s A Liar, Pt. 2', 'PinkPantheress & Ice Spice', NULL),
+  ('PRC', 'Peso Pluma X Natanael Cano', NULL),
+  ('Watch The World Burn', 'Falling In Reverse', NULL),
+  ('In Ha Mood', 'Ice Spice', NULL),
+  ('Yandel 150', 'Yandel & Feid', NULL)
   ;
 
    // Update to song table
@@ -274,7 +213,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13486; // SELECT last_insert_rowid();
+  song_id = 13511; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -314,18 +253,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-22 09:38:58.157157', '1499', '13475'),
-  ('2023-02-22 09:38:58.158158', '1499', '13476'),
-  ('2023-02-22 09:38:58.158158', '1499', '13477'),
-  ('2023-02-22 09:38:58.158158', '1499', '13478'),
-  ('2023-02-22 09:38:58.160160', '1499', '13479'),
-  ('2023-02-22 09:38:58.160160', '1499', '13480'),
-  ('2023-02-22 09:38:58.160160', '1499', '13481'),
-  ('2023-02-22 09:38:58.161161', '1499', '13482'),
-  ('2023-02-22 09:38:58.161161', '1499', '13483'),
-  ('2023-02-22 09:38:58.161161', '1499', '13484'),
-  ('2023-02-22 09:38:58.161161', '1499', '13485'),
-  ('2023-02-22 09:38:58.161161', '1499', '13486')
+  ('2023-02-23 12:14:06.301301', '1503', '13507'),
+  ('2023-02-23 12:14:06.306306', '1503', '13487'),
+  ('2023-02-23 12:14:06.307307', '1503', '13508'),
+  ('2023-02-23 12:14:06.307307', '1503', '13509'),
+  ('2023-02-23 12:14:06.307307', '1503', '13510'),
+  ('2023-02-23 12:14:06.307307', '1503', '13511')
   ;
 
   // Update to source_song table

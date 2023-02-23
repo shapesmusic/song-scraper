@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Karol G and Romeo Santos’s Sensual Goodbye, and 12 More New Songs', '2023-02-03 09:41:45.000000', 'https://www.nytimes.com/2023/02/03/arts/music/playlist-karol-g-romeo-santos-morgan-wallen.html');
+    ('New York Times', 'The Playlist', 'Lizzo and SZA Spin Up a Fresh ‘Special,’ and 7 More New Songs', '2023-02-12 01:10:58.000000', 'https://www.nytimes.com/2023/02/10/arts/music/playlist-sza-lizzo-beyonce.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1500; // SELECT last_insert_rowid();
+  source_id = 1504; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,119 +100,74 @@
   songsData =
   [
     {
-        "title": "X Si Volvemos",
-        "artist_name": "Karol G and Romeo Santos",
+        "title": "Special",
+        "artist_name": "Lizzo ft. SZA",
         "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.865865",
-        "source_id": 1500,
+        "capture_date": "2023-02-23 12:20:52.986986",
+        "source_id": 1504,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Last Night",
-        "artist_name": "Morgan Wallen",
+        "title": "Cuff It (Wetter Remix)",
+        "artist_name": "Beyoncé",
         "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.866866",
-        "source_id": 1500,
-        "song_id": 13475,
-        "duplicate": true
-    },
-    {
-        "title": "No Reason",
-        "artist_name": "Sunny War",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.866866",
-        "source_id": 1500,
-        "song_id": 12265,
-        "duplicate": true
-    },
-    {
-        "title": "Echolalia",
-        "artist_name": "Yves Tumor",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.866866",
-        "source_id": 1500,
+        "capture_date": "2023-02-23 12:20:52.986986",
+        "source_id": 1504,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Someday We’ll All Be Free",
-        "artist_name": "James Brandon Lewis",
+        "title": "Pearls",
+        "artist_name": "Jessie Ware",
         "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.866866",
-        "source_id": 1500,
+        "capture_date": "2023-02-23 12:20:52.986986",
+        "source_id": 1504,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Layla",
-        "artist_name": "Unknown Mortal Orchestra",
+        "title": "I’m Not Pretty",
+        "artist_name": "Megan Moroney",
         "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.866866",
-        "source_id": 1500,
+        "capture_date": "2023-02-23 12:20:52.986986",
+        "source_id": 1504,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bleedthemtoxins",
-        "artist_name": "Temps ft. Joana Gomila, Nnamdï, Shamir and Quelle Chris",
+        "title": "Love You Anyway",
+        "artist_name": "Luke Combs",
         "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.866866",
-        "source_id": 1500,
+        "capture_date": "2023-02-23 12:20:52.986986",
+        "source_id": 1504,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Got It",
-        "artist_name": "Debby Friday ft. Uñas",
+        "title": "Younger & Dumber",
+        "artist_name": "Indigo de Souza",
         "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.866866",
-        "source_id": 1500,
+        "capture_date": "2023-02-23 12:20:52.986986",
+        "source_id": 1504,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Blood and Butter",
-        "artist_name": "Caroline Polachek",
+        "title": "Exodus the North Star",
+        "artist_name": "Yaya Bey",
         "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.866866",
-        "source_id": 1500,
+        "capture_date": "2023-02-23 12:20:52.986986",
+        "source_id": 1504,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Environmental Anxiety.",
-        "artist_name": "Raye",
+        "title": "Ratataaaaa",
+        "artist_name": "French Montana ft. 2Rare",
         "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.867867",
-        "source_id": 1500,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "L8 Nite Txts",
-        "artist_name": "Yuniverse",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.867867",
-        "source_id": 1500,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "After All This Time",
-        "artist_name": "Jana Horn",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.867867",
-        "source_id": 1500,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Go Dig My Grave",
-        "artist_name": "Lankum",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:43:30.867867",
-        "source_id": 1500,
+        "capture_date": "2023-02-23 12:20:52.986986",
+        "source_id": 1504,
         "song_id": null,
         "duplicate": false
     }
@@ -256,17 +211,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('X Si Volvemos', 'Karol G and Romeo Santos', NULL),
-  ('Echolalia', 'Yves Tumor', NULL),
-  ('Someday We’ll All Be Free', 'James Brandon Lewis', NULL),
-  ('Layla', 'Unknown Mortal Orchestra', NULL),
-  ('Bleedthemtoxins', 'Temps ft. Joana Gomila, Nnamdï, Shamir and Quelle Chris', NULL),
-  ('I Got It', 'Debby Friday ft. Uñas', NULL),
-  ('Blood and Butter', 'Caroline Polachek', NULL),
-  ('Environmental Anxiety.', 'Raye', NULL),
-  ('L8 Nite Txts', 'Yuniverse', NULL),
-  ('After All This Time', 'Jana Horn', NULL),
-  ('Go Dig My Grave', 'Lankum', NULL)
+  ('Special', 'Lizzo ft. SZA', NULL),
+  ('Cuff It (Wetter Remix)', 'Beyoncé', NULL),
+  ('Pearls', 'Jessie Ware', NULL),
+  ('I’m Not Pretty', 'Megan Moroney', NULL),
+  ('Love You Anyway', 'Luke Combs', NULL),
+  ('Younger & Dumber', 'Indigo de Souza', NULL),
+  ('Exodus the North Star', 'Yaya Bey', NULL),
+  ('Ratataaaaa', 'French Montana ft. 2Rare', NULL)
   ;
 
    // Update to song table
@@ -277,7 +229,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13497; // SELECT last_insert_rowid();
+  song_id = 13519; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -317,19 +269,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-22 09:43:30.865865', '1500', '13487'),
-  ('2023-02-22 09:43:30.866866', '1500', '13475'),
-  ('2023-02-22 09:43:30.866866', '1500', '12265'),
-  ('2023-02-22 09:43:30.866866', '1500', '13488'),
-  ('2023-02-22 09:43:30.866866', '1500', '13489'),
-  ('2023-02-22 09:43:30.866866', '1500', '13490'),
-  ('2023-02-22 09:43:30.866866', '1500', '13491'),
-  ('2023-02-22 09:43:30.866866', '1500', '13492'),
-  ('2023-02-22 09:43:30.866866', '1500', '13493'),
-  ('2023-02-22 09:43:30.867867', '1500', '13494'),
-  ('2023-02-22 09:43:30.867867', '1500', '13495'),
-  ('2023-02-22 09:43:30.867867', '1500', '13496'),
-  ('2023-02-22 09:43:30.867867', '1500', '13497')
+  ('2023-02-23 12:20:52.986986', '1504', '13512'),
+  ('2023-02-23 12:20:52.986986', '1504', '13513'),
+  ('2023-02-23 12:20:52.986986', '1504', '13514'),
+  ('2023-02-23 12:20:52.986986', '1504', '13515'),
+  ('2023-02-23 12:20:52.986986', '1504', '13516'),
+  ('2023-02-23 12:20:52.986986', '1504', '13517'),
+  ('2023-02-23 12:20:52.986986', '1504', '13518'),
+  ('2023-02-23 12:20:52.986986', '1504', '13519')
   ;
 
   // Update to source_song table

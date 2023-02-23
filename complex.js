@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Lil Keed, GloRilla, JID, and More', '2023-02-03 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-lil-keed-glorilla-jid');
+    ('Complex', 'The Best New Music This Week', 'Central Cee, NAV, Daniel Caesar, and More', '2023-02-10 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-central-cee-nav-conway');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1501; // SELECT last_insert_rowid();
+  source_id = 1505; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,56 +102,47 @@
   songsData =
   [
     {
-        "title": "Long Way To Go",
-        "artist_name": "Lil Keed",
+        "title": "Me and You",
+        "artist_name": "Central Cee",
         "video_id": null,
-        "capture_date": "2023-02-22 09:48:03.148148",
-        "source_id": 1501,
+        "capture_date": "2023-02-23 12:26:13.593593",
+        "source_id": 1505,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Internet Trolls",
-        "artist_name": "GloRilla",
+        "title": "Lately",
+        "artist_name": "NAV",
         "video_id": null,
-        "capture_date": "2023-02-22 09:48:03.149149",
-        "source_id": 1501,
+        "capture_date": "2023-02-23 12:26:13.594594",
+        "source_id": 1505,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ma Boy",
-        "artist_name": "JID ft. Lute",
+        "title": "Don’t Love Me",
+        "artist_name": "Roy Woods",
         "video_id": null,
-        "capture_date": "2023-02-22 09:48:03.149149",
-        "source_id": 1501,
+        "capture_date": "2023-02-23 12:26:13.594594",
+        "source_id": 1505,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Boy’s A Liar (Remix)",
-        "artist_name": "PinkPantheress ft. Ice Spice",
+        "title": "Motions",
+        "artist_name": "Zacari ft. Ab-Soul",
         "video_id": null,
-        "capture_date": "2023-02-22 09:48:03.149149",
-        "source_id": 1501,
+        "capture_date": "2023-02-23 12:26:13.594594",
+        "source_id": 1505,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rare’s Room",
-        "artist_name": "2Rare",
+        "title": "Let Me Go",
+        "artist_name": "Daniel Caesar",
         "video_id": null,
-        "capture_date": "2023-02-22 09:48:03.149149",
-        "source_id": 1501,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Champions",
-        "artist_name": "NLE Choppa",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:48:03.149149",
-        "source_id": 1501,
+        "capture_date": "2023-02-23 12:26:13.595595",
+        "source_id": 1505,
         "song_id": null,
         "duplicate": false
     }
@@ -194,12 +185,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Long Way To Go', 'Lil Keed', NULL),
-  ('Internet Trolls', 'GloRilla', NULL),
-  ('Ma Boy', 'JID ft. Lute', NULL),
-  ('Boy’s A Liar (Remix)', 'PinkPantheress ft. Ice Spice', NULL),
-  ('Rare’s Room', '2Rare', NULL),
-  ('Champions', 'NLE Choppa', NULL)
+  ('Me and You', 'Central Cee', NULL),
+  ('Lately', 'NAV', NULL),
+  ('Don’t Love Me', 'Roy Woods', NULL),
+  ('Motions', 'Zacari ft. Ab-Soul', NULL),
+  ('Let Me Go', 'Daniel Caesar', NULL)
   ;
 
    // Update to song table
@@ -210,7 +200,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13503; // SELECT last_insert_rowid();
+  song_id = 13524; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -250,12 +240,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-22 09:48:03.148148', '1501', '13498'),
-  ('2023-02-22 09:48:03.149149', '1501', '13499'),
-  ('2023-02-22 09:48:03.149149', '1501', '13500'),
-  ('2023-02-22 09:48:03.149149', '1501', '13501'),
-  ('2023-02-22 09:48:03.149149', '1501', '13502'),
-  ('2023-02-22 09:48:03.149149', '1501', '13503')
+  ('2023-02-23 12:26:13.593593', '1505', '13520'),
+  ('2023-02-23 12:26:13.594594', '1505', '13521'),
+  ('2023-02-23 12:26:13.594594', '1505', '13522'),
+  ('2023-02-23 12:26:13.594594', '1505', '13523'),
+  ('2023-02-23 12:26:13.595595', '1505', '13524')
   ;
 
   // Update to source_song table
