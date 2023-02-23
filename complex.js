@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Ice Spice, J. Cole, ASAP Rocky & More', '2023-01-20 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-january-ice-spice-j-cole/shady-blu-babyface-ray-topic-of-discussion');
+    ('Complex', 'The Best New Music This Week', 'Lil Yachty, Rae Sremmurd, Chloë, and More', '2023-01-27 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-january27-lil-yachty-chloe-bailey');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1492; // SELECT last_insert_rowid();
+  source_id = 1497; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,56 +102,83 @@
   songsData =
   [
     {
-        "title": "Princess Diana",
-        "artist_name": "Ice Spice",
+        "title": "drive ME crazy!",
+        "artist_name": "Lil Yachty ft. Diana Gordon",
         "video_id": null,
-        "capture_date": "2023-01-28 10:08:47.494494",
-        "source_id": 1492,
+        "capture_date": "2023-02-22 09:27:57.517517",
+        "source_id": 1497,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Procrastination (broke)",
-        "artist_name": "J. Cole",
+        "title": "Pray It Away",
+        "artist_name": "Chlöe",
         "video_id": null,
-        "capture_date": "2023-01-28 10:08:47.495495",
-        "source_id": 1492,
+        "capture_date": "2023-02-22 09:27:57.518518",
+        "source_id": 1497,
+        "song_id": 13458,
+        "duplicate": true
+    },
+    {
+        "title": "Sucka or Sum",
+        "artist_name": "Rae Sremmurd",
+        "video_id": null,
+        "capture_date": "2023-02-22 09:27:57.518518",
+        "source_id": 1497,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Same Problems?",
-        "artist_name": "ASAP Rocky",
+        "title": "Hardcore",
+        "artist_name": "Zack Bia & Don Toliver",
         "video_id": null,
-        "capture_date": "2023-01-28 10:08:47.495495",
-        "source_id": 1492,
+        "capture_date": "2023-02-22 09:27:57.518518",
+        "source_id": 1497,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "i hate the drunk you",
-        "artist_name": "Joe Trufant",
+        "title": "Tally",
+        "artist_name": "Midwxst & Denzel Curry",
         "video_id": null,
-        "capture_date": "2023-01-28 10:08:47.495495",
-        "source_id": 1492,
+        "capture_date": "2023-02-22 09:27:57.518518",
+        "source_id": 1497,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Do It Again",
-        "artist_name": "NLE Choppa ft. 2Rare",
+        "title": "Motown",
+        "artist_name": "Kaycyy & BabyTron",
         "video_id": null,
-        "capture_date": "2023-01-28 10:08:47.495495",
-        "source_id": 1492,
+        "capture_date": "2023-02-22 09:27:57.518518",
+        "source_id": 1497,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Topic of Discussion",
-        "artist_name": "Shady Blu & Babyface Ray",
+        "title": "Robbers and Villains",
+        "artist_name": "SleazyWorld Go",
         "video_id": null,
-        "capture_date": "2023-01-28 10:08:47.495495",
-        "source_id": 1492,
+        "capture_date": "2023-02-22 09:27:57.518518",
+        "source_id": 1497,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Do You Like Me",
+        "artist_name": "Daniel Caesar",
+        "video_id": null,
+        "capture_date": "2023-02-22 09:27:57.518518",
+        "source_id": 1497,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Two Tens",
+        "artist_name": "Cordae & Anderson .Paak",
+        "video_id": null,
+        "capture_date": "2023-02-22 09:27:57.518518",
+        "source_id": 1497,
         "song_id": null,
         "duplicate": false
     }
@@ -194,12 +221,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Princess Diana', 'Ice Spice', NULL),
-  ('Procrastination (broke)', 'J. Cole', NULL),
-  ('Same Problems?', 'ASAP Rocky', NULL),
-  ('i hate the drunk you', 'Joe Trufant', NULL),
-  ('Do It Again', 'NLE Choppa ft. 2Rare', NULL),
-  ('Topic of Discussion', 'Shady Blu & Babyface Ray', NULL)
+  ('drive ME crazy!', 'Lil Yachty ft. Diana Gordon', NULL),
+  ('Sucka or Sum', 'Rae Sremmurd', NULL),
+  ('Hardcore', 'Zack Bia & Don Toliver', NULL),
+  ('Tally', 'Midwxst & Denzel Curry', NULL),
+  ('Motown', 'Kaycyy & BabyTron', NULL),
+  ('Robbers and Villains', 'SleazyWorld Go', NULL),
+  ('Do You Like Me', 'Daniel Caesar', NULL),
+  ('Two Tens', 'Cordae & Anderson .Paak', NULL)
   ;
 
    // Update to song table
@@ -210,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13413; // SELECT last_insert_rowid();
+  song_id = 13470; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -250,12 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-01-28 10:08:47.494494', '1492', '13408'),
-  ('2023-01-28 10:08:47.495495', '1492', '13409'),
-  ('2023-01-28 10:08:47.495495', '1492', '13410'),
-  ('2023-01-28 10:08:47.495495', '1492', '13411'),
-  ('2023-01-28 10:08:47.495495', '1492', '13412'),
-  ('2023-01-28 10:08:47.495495', '1492', '13413')
+  ('2023-02-22 09:27:57.517517', '1497', '13463'),
+  ('2023-02-22 09:27:57.518518', '1497', '13458'),
+  ('2023-02-22 09:27:57.518518', '1497', '13464'),
+  ('2023-02-22 09:27:57.518518', '1497', '13465'),
+  ('2023-02-22 09:27:57.518518', '1497', '13466'),
+  ('2023-02-22 09:27:57.518518', '1497', '13467'),
+  ('2023-02-22 09:27:57.518518', '1497', '13468'),
+  ('2023-02-22 09:27:57.518518', '1497', '13469'),
+  ('2023-02-22 09:27:57.518518', '1497', '13470')
   ;
 
   // Update to source_song table

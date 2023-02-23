@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Indie-Rock Supergroup boygenius Returns, and 5 More New Songs', '2023-01-20 10:18:42.000000', 'https://www.nytimes.com/2023/01/20/arts/music/playlist-boygenius-kim-petras.html');
+    ('New York Times', 'The Playlist', 'Rosalía Issues an English Request, and 9 More New Songs', '2023-02-02 09:44:34.000000', 'https://www.nytimes.com/2023/01/27/arts/music/playlist-rosalia-chloe-asap-rocky.html');
 
   // Update to source table
 
@@ -53,10 +53,10 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1491; // SELECT last_insert_rowid();
+  source_id = 1496; // SELECT last_insert_rowid();
   song_id = null;
 
-  elements = document.getElementsByClassName("css-1bxm55 eoo0vm40"); // this class changes periodically
+  elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
 
   songsData = [];
 
@@ -100,56 +100,92 @@
   songsData =
   [
     {
-        "title": "$20",
-        "artist_name": "boygenius",
+        "title": "LLYLM",
+        "artist_name": "Rosalía",
         "video_id": null,
-        "capture_date": "2023-01-28 10:05:49.209209",
-        "source_id": 1491,
+        "capture_date": "2023-02-22 06:30:05.871871",
+        "source_id": 1496,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lights Light Up",
-        "artist_name": "Fenne Lily",
+        "title": "Kandy",
+        "artist_name": "Fever Ray",
         "video_id": null,
-        "capture_date": "2023-01-28 10:05:49.210210",
-        "source_id": 1491,
+        "capture_date": "2023-02-22 06:30:05.872872",
+        "source_id": 1496,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "For Granted",
-        "artist_name": "Yaeji",
+        "title": "Town Crank",
+        "artist_name": "Clark",
         "video_id": null,
-        "capture_date": "2023-01-28 10:05:49.210210",
-        "source_id": 1491,
+        "capture_date": "2023-02-22 06:30:05.872872",
+        "source_id": 1496,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Weightless",
-        "artist_name": "Arlo Parks",
+        "title": "D’un Feu Secret",
+        "artist_name": "Cécile McLorin Salvant",
         "video_id": null,
-        "capture_date": "2023-01-28 10:05:49.210210",
-        "source_id": 1491,
+        "capture_date": "2023-02-22 06:30:05.872872",
+        "source_id": 1496,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Brrr",
-        "artist_name": "Kim Petras",
+        "title": "Pray It Away",
+        "artist_name": "Chlöe",
         "video_id": null,
-        "capture_date": "2023-01-28 10:05:49.210210",
-        "source_id": 1491,
+        "capture_date": "2023-02-22 06:30:05.872872",
+        "source_id": 1496,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gangsta Boo",
-        "artist_name": "Ice Spice and Lil Tjay",
+        "title": "Same Problems?",
+        "artist_name": "ASAP Rocky",
         "video_id": null,
-        "capture_date": "2023-01-28 10:05:49.210210",
-        "source_id": 1491,
+        "capture_date": "2023-02-22 06:30:05.872872",
+        "source_id": 1496,
+        "song_id": 13410,
+        "duplicate": true
+    },
+    {
+        "title": "Foolish Thinking",
+        "artist_name": "Kimbra ft. Ryan Lott",
+        "video_id": null,
+        "capture_date": "2023-02-22 06:30:05.872872",
+        "source_id": 1496,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Just in Time",
+        "artist_name": "Rickie Lee Jones",
+        "video_id": null,
+        "capture_date": "2023-02-22 06:30:05.872872",
+        "source_id": 1496,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "For Me It’s You",
+        "artist_name": "Jobi Riccio",
+        "video_id": null,
+        "capture_date": "2023-02-22 06:30:05.872872",
+        "source_id": 1496,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Breathing Song",
+        "artist_name": "Samia",
+        "video_id": null,
+        "capture_date": "2023-02-22 06:30:05.872872",
+        "source_id": 1496,
         "song_id": null,
         "duplicate": false
     }
@@ -193,12 +229,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('$20', 'boygenius', NULL),
-  ('Lights Light Up', 'Fenne Lily', NULL),
-  ('For Granted', 'Yaeji', NULL),
-  ('Weightless', 'Arlo Parks', NULL),
-  ('Brrr', 'Kim Petras', NULL),
-  ('Gangsta Boo', 'Ice Spice and Lil Tjay', NULL)
+  ('LLYLM', 'Rosalía', NULL),
+  ('Kandy', 'Fever Ray', NULL),
+  ('Town Crank', 'Clark', NULL),
+  ('D’un Feu Secret', 'Cécile McLorin Salvant', NULL),
+  ('Pray It Away', 'Chlöe', NULL),
+  ('Foolish Thinking', 'Kimbra ft. Ryan Lott', NULL),
+  ('Just in Time', 'Rickie Lee Jones', NULL),
+  ('For Me It’s You', 'Jobi Riccio', NULL),
+  ('Breathing Song', 'Samia', NULL)
   ;
 
    // Update to song table
@@ -209,7 +248,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13407; // SELECT last_insert_rowid();
+  song_id = 13462; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -249,12 +288,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-01-28 10:05:49.209209', '1491', '13402'),
-  ('2023-01-28 10:05:49.210210', '1491', '13403'),
-  ('2023-01-28 10:05:49.210210', '1491', '13404'),
-  ('2023-01-28 10:05:49.210210', '1491', '13405'),
-  ('2023-01-28 10:05:49.210210', '1491', '13406'),
-  ('2023-01-28 10:05:49.210210', '1491', '13407')
+  ('2023-02-22 06:30:05.871871', '1496', '13454'),
+  ('2023-02-22 06:30:05.872872', '1496', '13455'),
+  ('2023-02-22 06:30:05.872872', '1496', '13456'),
+  ('2023-02-22 06:30:05.872872', '1496', '13457'),
+  ('2023-02-22 06:30:05.872872', '1496', '13458'),
+  ('2023-02-22 06:30:05.872872', '1496', '13410'),
+  ('2023-02-22 06:30:05.872872', '1496', '13459'),
+  ('2023-02-22 06:30:05.872872', '1496', '13460'),
+  ('2023-02-22 06:30:05.872872', '1496', '13461'),
+  ('2023-02-22 06:30:05.872872', '1496', '13462')
   ;
 
   // Update to source_song table
