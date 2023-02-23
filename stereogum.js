@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of January 27, 2023', '2023-01-27 12:00:00.000000', 'https://www.stereogum.com/2211750/the-5-best-songs-of-the-week-467/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of February 3, 2023', '2023-02-03 12:00:00.000000', 'https://www.stereogum.com/2212608/the-5-best-songs-of-the-week-468/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1498; // SELECT last_insert_rowid();
+  source_id = 1502; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,51 +101,52 @@
   songsData =
   [
     {
-        "title": "Brute",
-        "artist_name": "Katie Gately",
+        "title": "REACH THE SUNSHINE",
+        "artist_name": "Lil Yachty",
         "video_id": null,
-        "capture_date": "2023-02-22 09:33:00.631631",
-        "source_id": 1498,
+        "capture_date": "2023-02-22 09:52:09.495495",
+        "source_id": 1502,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Another Life",
-        "artist_name": "Naomi Sharon",
+        "title": "Dawns",
+        "artist_name": "Zach Bryan",
         "video_id": null,
-        "capture_date": "2023-02-22 09:33:00.631631",
-        "source_id": 1498,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Electric Blue",
-        "artist_name": "Boldy James & RichGains",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:33:00.631631",
-        "source_id": 1498,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Faded State",
-        "artist_name": "Home Front",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:33:00.632632",
-        "source_id": 1498,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gangsta Boo",
-        "artist_name": "Ice Spice & Lil Tjay",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:33:00.632632",
-        "source_id": 1498,
-        "song_id": 13407,
+        "capture_date": "2023-02-22 09:52:09.496496",
+        "source_id": 1502,
+        "song_id": 13477,
         "duplicate": true
+    },
+    {
+        "title": "Polaris",
+        "artist_name": "Parannoul",
+        "video_id": null,
+        "capture_date": "2023-02-22 09:52:09.496496",
+        "source_id": 1502,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "LLYLM",
+        "artist_name": "Rosalía",
+        "video_id": null,
+        "capture_date": "2023-02-22 09:52:09.496496",
+        "source_id": 1502,
+        "song_id": 13454,
+        "duplicate": true
+    },
+    {
+        "title": "Attainable",
+        "artist_name": "Gel",
+        "video_id": null,
+        "capture_date": "2023-02-22 09:52:09.496496",
+        "source_id": 1502,
+        "song_id": null,
+        "duplicate": false
     }
-]
+  ]
+
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -185,10 +186,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Brute', 'Katie Gately', NULL),
-  ('Another Life', 'Naomi Sharon', NULL),
-  ('Electric Blue', 'Boldy James & RichGains', NULL),
-  ('Faded State', 'Home Front', NULL)
+  ('REACH THE SUNSHINE', 'Lil Yachty', NULL),
+  ('Polaris', 'Parannoul', NULL),
+  ('Attainable', 'Gel', NULL)
   ;
 
    // Update to song table
@@ -199,7 +199,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13474; // SELECT last_insert_rowid();
+  song_id = 13506; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -239,11 +239,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-22 09:33:00.631631', '1498', '13471'),
-  ('2023-02-22 09:33:00.631631', '1498', '13472'),
-  ('2023-02-22 09:33:00.631631', '1498', '13473'),
-  ('2023-02-22 09:33:00.632632', '1498', '13474'),
-  ('2023-02-22 09:33:00.632632', '1498', '13407')
+  ('2023-02-22 09:52:09.495495', '1502', '13504'),
+  ('2023-02-22 09:52:09.496496', '1502', '13477'),
+  ('2023-02-22 09:52:09.496496', '1502', '13505'),
+  ('2023-02-22 09:52:09.496496', '1502', '13454'),
+  ('2023-02-22 09:52:09.496496', '1502', '13506')
   ;
 
   // Update to source_song table

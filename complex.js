@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Lil Yachty, Rae Sremmurd, Chloë, and More', '2023-01-27 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-january27-lil-yachty-chloe-bailey');
+    ('Complex', 'The Best New Music This Week', 'Lil Keed, GloRilla, JID, and More', '2023-02-03 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-lil-keed-glorilla-jid');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1497; // SELECT last_insert_rowid();
+  source_id = 1501; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,83 +102,56 @@
   songsData =
   [
     {
-        "title": "drive ME crazy!",
-        "artist_name": "Lil Yachty ft. Diana Gordon",
+        "title": "Long Way To Go",
+        "artist_name": "Lil Keed",
         "video_id": null,
-        "capture_date": "2023-02-22 09:27:57.517517",
-        "source_id": 1497,
+        "capture_date": "2023-02-22 09:48:03.148148",
+        "source_id": 1501,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pray It Away",
-        "artist_name": "Chlöe",
+        "title": "Internet Trolls",
+        "artist_name": "GloRilla",
         "video_id": null,
-        "capture_date": "2023-02-22 09:27:57.518518",
-        "source_id": 1497,
-        "song_id": 13458,
-        "duplicate": true
-    },
-    {
-        "title": "Sucka or Sum",
-        "artist_name": "Rae Sremmurd",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:27:57.518518",
-        "source_id": 1497,
+        "capture_date": "2023-02-22 09:48:03.149149",
+        "source_id": 1501,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hardcore",
-        "artist_name": "Zack Bia & Don Toliver",
+        "title": "Ma Boy",
+        "artist_name": "JID ft. Lute",
         "video_id": null,
-        "capture_date": "2023-02-22 09:27:57.518518",
-        "source_id": 1497,
+        "capture_date": "2023-02-22 09:48:03.149149",
+        "source_id": 1501,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tally",
-        "artist_name": "Midwxst & Denzel Curry",
+        "title": "Boy’s A Liar (Remix)",
+        "artist_name": "PinkPantheress ft. Ice Spice",
         "video_id": null,
-        "capture_date": "2023-02-22 09:27:57.518518",
-        "source_id": 1497,
+        "capture_date": "2023-02-22 09:48:03.149149",
+        "source_id": 1501,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Motown",
-        "artist_name": "Kaycyy & BabyTron",
+        "title": "Rare’s Room",
+        "artist_name": "2Rare",
         "video_id": null,
-        "capture_date": "2023-02-22 09:27:57.518518",
-        "source_id": 1497,
+        "capture_date": "2023-02-22 09:48:03.149149",
+        "source_id": 1501,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Robbers and Villains",
-        "artist_name": "SleazyWorld Go",
+        "title": "Champions",
+        "artist_name": "NLE Choppa",
         "video_id": null,
-        "capture_date": "2023-02-22 09:27:57.518518",
-        "source_id": 1497,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Do You Like Me",
-        "artist_name": "Daniel Caesar",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:27:57.518518",
-        "source_id": 1497,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Two Tens",
-        "artist_name": "Cordae & Anderson .Paak",
-        "video_id": null,
-        "capture_date": "2023-02-22 09:27:57.518518",
-        "source_id": 1497,
+        "capture_date": "2023-02-22 09:48:03.149149",
+        "source_id": 1501,
         "song_id": null,
         "duplicate": false
     }
@@ -221,14 +194,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('drive ME crazy!', 'Lil Yachty ft. Diana Gordon', NULL),
-  ('Sucka or Sum', 'Rae Sremmurd', NULL),
-  ('Hardcore', 'Zack Bia & Don Toliver', NULL),
-  ('Tally', 'Midwxst & Denzel Curry', NULL),
-  ('Motown', 'Kaycyy & BabyTron', NULL),
-  ('Robbers and Villains', 'SleazyWorld Go', NULL),
-  ('Do You Like Me', 'Daniel Caesar', NULL),
-  ('Two Tens', 'Cordae & Anderson .Paak', NULL)
+  ('Long Way To Go', 'Lil Keed', NULL),
+  ('Internet Trolls', 'GloRilla', NULL),
+  ('Ma Boy', 'JID ft. Lute', NULL),
+  ('Boy’s A Liar (Remix)', 'PinkPantheress ft. Ice Spice', NULL),
+  ('Rare’s Room', '2Rare', NULL),
+  ('Champions', 'NLE Choppa', NULL)
   ;
 
    // Update to song table
@@ -239,7 +210,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13470; // SELECT last_insert_rowid();
+  song_id = 13503; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +250,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-22 09:27:57.517517', '1497', '13463'),
-  ('2023-02-22 09:27:57.518518', '1497', '13458'),
-  ('2023-02-22 09:27:57.518518', '1497', '13464'),
-  ('2023-02-22 09:27:57.518518', '1497', '13465'),
-  ('2023-02-22 09:27:57.518518', '1497', '13466'),
-  ('2023-02-22 09:27:57.518518', '1497', '13467'),
-  ('2023-02-22 09:27:57.518518', '1497', '13468'),
-  ('2023-02-22 09:27:57.518518', '1497', '13469'),
-  ('2023-02-22 09:27:57.518518', '1497', '13470')
+  ('2023-02-22 09:48:03.148148', '1501', '13498'),
+  ('2023-02-22 09:48:03.149149', '1501', '13499'),
+  ('2023-02-22 09:48:03.149149', '1501', '13500'),
+  ('2023-02-22 09:48:03.149149', '1501', '13501'),
+  ('2023-02-22 09:48:03.149149', '1501', '13502'),
+  ('2023-02-22 09:48:03.149149', '1501', '13503')
   ;
 
   // Update to source_song table

@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of February 4, 2023', '2023-02-04 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-02-04/');
+    ('Billboard', 'The Hot 100', 'Week of February 11, 2023', '2023-02-11 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-02-11/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1495; // SELECT last_insert_rowid();
+  source_id = 1499; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,119 +105,110 @@
   songsData =
   [
     {
-        "title": "Knight Crawler",
-        "artist_name": "Trippie Redd & Juice WRLD",
+        "title": "Last Night",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.013013",
-        "source_id": 1495,
+        "capture_date": "2023-02-22 09:38:58.157157",
+        "source_id": 1499,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Red",
-        "artist_name": "HARDY ft. Morgan Wallen",
+        "title": "Love Again",
+        "artist_name": "The Kid LAROI",
         "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.013013",
-        "source_id": 1495,
+        "capture_date": "2023-02-22 09:38:58.158158",
+        "source_id": 1499,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "10:35",
-        "artist_name": "Tiesto ft. Tate McRae",
+        "title": "Dawns",
+        "artist_name": "Zach Bryan ft. Maggie Rogers",
         "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.013013",
-        "source_id": 1495,
-        "song_id": 13123,
-        "duplicate": true
-    },
-    {
-        "title": "I Wish You Roses",
-        "artist_name": "Kali Uchis",
-        "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.014014",
-        "source_id": 1495,
+        "capture_date": "2023-02-22 09:38:58.158158",
+        "source_id": 1499,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gangsta Boo",
-        "artist_name": "Ice Spice & Lil Tjay",
+        "title": "I Wrote The Book",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.014014",
-        "source_id": 1495,
+        "capture_date": "2023-02-22 09:38:58.158158",
+        "source_id": 1499,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Moonlight Sunrise",
-        "artist_name": "TWICE",
+        "title": "Everything I Love",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.014014",
-        "source_id": 1495,
+        "capture_date": "2023-02-22 09:38:58.160160",
+        "source_id": 1499,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fully Loaded",
-        "artist_name": "Trippie Redd, Future & Lil Baby",
+        "title": "Growin' Up And Gettin' Old",
+        "artist_name": "Luke Combs",
         "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.014014",
-        "source_id": 1495,
+        "capture_date": "2023-02-22 09:38:58.160160",
+        "source_id": 1499,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Krzy Train",
-        "artist_name": "Trippie Redd & Travis Scott",
+        "title": "I'm Not Here To Make Friends",
+        "artist_name": "Sam Smith",
         "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.014014",
-        "source_id": 1495,
+        "capture_date": "2023-02-22 09:38:58.160160",
+        "source_id": 1499,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Next Thing You Know",
-        "artist_name": "Jordan Davis",
+        "title": "The Black Seminole.",
+        "artist_name": "Lil Yachty",
         "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.014014",
-        "source_id": 1495,
+        "capture_date": "2023-02-22 09:38:58.161161",
+        "source_id": 1499,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "AMG",
-        "artist_name": "Gabito Ballesteros, Peso Pluma & Natanael Cano",
+        "title": "Fin de Semana",
+        "artist_name": "Junior H X Oscar Maydon",
         "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.014014",
-        "source_id": 1495,
+        "capture_date": "2023-02-22 09:38:58.161161",
+        "source_id": 1499,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Do It Again",
-        "artist_name": "NLE Choppa & 2Rare",
+        "title": "Hey Mor",
+        "artist_name": "Ozuna ft. Feid",
         "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.014014",
-        "source_id": 1495,
-        "song_id": 13412,
-        "duplicate": true
-    },
-    {
-        "title": "Back End",
-        "artist_name": "Finesse2Tymes",
-        "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.014014",
-        "source_id": 1495,
+        "capture_date": "2023-02-22 09:38:58.161161",
+        "source_id": 1499,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Spit In My Face!",
-        "artist_name": "ThxSoMch",
+        "title": "Never Gonna Not Dance Again",
+        "artist_name": "P!nk",
         "video_id": null,
-        "capture_date": "2023-02-22 06:18:07.014014",
-        "source_id": 1495,
+        "capture_date": "2023-02-22 09:38:58.161161",
+        "source_id": 1499,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dancin' In The Country",
+        "artist_name": "Tyler Hubbard",
+        "video_id": null,
+        "capture_date": "2023-02-22 09:38:58.161161",
+        "source_id": 1499,
         "song_id": null,
         "duplicate": false
     }
@@ -261,17 +252,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Knight Crawler', 'Trippie Redd & Juice WRLD', NULL),
-  ('Red', 'HARDY ft. Morgan Wallen', NULL),
-  ('I Wish You Roses', 'Kali Uchis', NULL),
-  ('Gangsta Boo', 'Ice Spice & Lil Tjay', NULL),
-  ('Moonlight Sunrise', 'TWICE', NULL),
-  ('Fully Loaded', 'Trippie Redd, Future & Lil Baby', NULL),
-  ('Krzy Train', 'Trippie Redd & Travis Scott', NULL),
-  ('Next Thing You Know', 'Jordan Davis', NULL),
-  ('AMG', 'Gabito Ballesteros, Peso Pluma & Natanael Cano', NULL),
-  ('Back End', 'Finesse2Tymes', NULL),
-  ('Spit In My Face!', 'ThxSoMch', NULL)
+  ('Last Night', 'Morgan Wallen', NULL),
+  ('Love Again', 'The Kid LAROI', NULL),
+  ('Dawns', 'Zach Bryan ft. Maggie Rogers', NULL),
+  ('I Wrote The Book', 'Morgan Wallen', NULL),
+  ('Everything I Love', 'Morgan Wallen', NULL),
+  ('Growin’ Up And Gettin’ Old', 'Luke Combs', NULL),
+  ('I’m Not Here To Make Friends', 'Sam Smith', NULL),
+  ('The Black Seminole.', 'Lil Yachty', NULL),
+  ('Fin de Semana', 'Junior H X Oscar Maydon', NULL),
+  ('Hey Mor', 'Ozuna ft. Feid', NULL),
+  ('Never Gonna Not Dance Again', 'P!nk', NULL),
+  ('Dancin’ In The Country', 'Tyler Hubbard', NULL)
   ;
 
    // Update to song table
@@ -282,7 +274,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13453; // SELECT last_insert_rowid();
+  song_id = 13486; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -322,19 +314,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-22 06:18:07.013013', '1495', '13443'),
-  ('2023-02-22 06:18:07.013013', '1495', '13444'),
-  ('2023-02-22 06:18:07.013013', '1495', '13123'),
-  ('2023-02-22 06:18:07.014014', '1495', '13445'),
-  ('2023-02-22 06:18:07.014014', '1495', '13446'),
-  ('2023-02-22 06:18:07.014014', '1495', '13447'),
-  ('2023-02-22 06:18:07.014014', '1495', '13448'),
-  ('2023-02-22 06:18:07.014014', '1495', '13449'),
-  ('2023-02-22 06:18:07.014014', '1495', '13450'),
-  ('2023-02-22 06:18:07.014014', '1495', '13451'),
-  ('2023-02-22 06:18:07.014014', '1495', '13412'),
-  ('2023-02-22 06:18:07.014014', '1495', '13452'),
-  ('2023-02-22 06:18:07.014014', '1495', '13453')
+  ('2023-02-22 09:38:58.157157', '1499', '13475'),
+  ('2023-02-22 09:38:58.158158', '1499', '13476'),
+  ('2023-02-22 09:38:58.158158', '1499', '13477'),
+  ('2023-02-22 09:38:58.158158', '1499', '13478'),
+  ('2023-02-22 09:38:58.160160', '1499', '13479'),
+  ('2023-02-22 09:38:58.160160', '1499', '13480'),
+  ('2023-02-22 09:38:58.160160', '1499', '13481'),
+  ('2023-02-22 09:38:58.161161', '1499', '13482'),
+  ('2023-02-22 09:38:58.161161', '1499', '13483'),
+  ('2023-02-22 09:38:58.161161', '1499', '13484'),
+  ('2023-02-22 09:38:58.161161', '1499', '13485'),
+  ('2023-02-22 09:38:58.161161', '1499', '13486')
   ;
 
   // Update to source_song table
