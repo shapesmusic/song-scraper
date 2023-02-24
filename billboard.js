@@ -32,7 +32,7 @@
     + "\nVALUES \n  (\'Billboard\', \'The Hot 100\', \'"
     + publicationDate + "\', "
     + "\'" + publicationDateFormatted + "\', "
-    + "\'" + pastChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
+    + "\'" + currentChartLocation + "\');" // use pastChartLocation if not the current week's chart, otherwise use currentChartLocation
   );
 
 
@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of February 18, 2023', '2023-02-18 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-02-18/');
+    ('Billboard', 'The Hot 100', 'Week of February 25, 2023', '2023-02-25 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-02-25');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1503; // SELECT last_insert_rowid();
+  source_id = 1507; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,56 +105,47 @@
   songsData =
   [
     {
-        "title": "Boy's A Liar, Pt. 2",
-        "artist_name": "PinkPantheress & Ice Spice",
+        "title": "Love You Anyway",
+        "artist_name": "Luke Combs",
         "video_id": null,
-        "capture_date": "2023-02-23 12:14:06.301301",
-        "source_id": 1503,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "X Si Volvemos",
-        "artist_name": "Karol G x Romeo Santos",
-        "video_id": null,
-        "capture_date": "2023-02-23 12:14:06.306306",
-        "source_id": 1503,
-        "song_id": 13487,
+        "capture_date": "2023-02-23 02:48:08.627627",
+        "source_id": 1507,
+        "song_id": 13516,
         "duplicate": true
     },
     {
-        "title": "PRC",
-        "artist_name": "Peso Pluma X Natanael Cano",
+        "title": "Lost",
+        "artist_name": "Linkin Park",
         "video_id": null,
-        "capture_date": "2023-02-23 12:14:06.307307",
-        "source_id": 1503,
+        "capture_date": "2023-02-23 02:48:08.628628",
+        "source_id": 1507,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Watch The World Burn",
-        "artist_name": "Falling In Reverse",
+        "title": "Special",
+        "artist_name": "Lizzo ft. SZA",
         "video_id": null,
-        "capture_date": "2023-02-23 12:14:06.307307",
-        "source_id": 1503,
+        "capture_date": "2023-02-23 02:48:08.629629",
+        "source_id": 1507,
+        "song_id": 13512,
+        "duplicate": true
+    },
+    {
+        "title": "Fix'n To Break",
+        "artist_name": "Bailey Zimmerman",
+        "video_id": null,
+        "capture_date": "2023-02-23 02:48:08.634634",
+        "source_id": 1507,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "In Ha Mood",
-        "artist_name": "Ice Spice",
+        "title": "Painting Pictures",
+        "artist_name": "Superstar Pride",
         "video_id": null,
-        "capture_date": "2023-02-23 12:14:06.307307",
-        "source_id": 1503,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Yandel 150",
-        "artist_name": "Yandel & Feid",
-        "video_id": null,
-        "capture_date": "2023-02-23 12:14:06.307307",
-        "source_id": 1503,
+        "capture_date": "2023-02-23 02:48:08.634634",
+        "source_id": 1507,
         "song_id": null,
         "duplicate": false
     }
@@ -198,11 +189,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Boy’s A Liar, Pt. 2', 'PinkPantheress & Ice Spice', NULL),
-  ('PRC', 'Peso Pluma X Natanael Cano', NULL),
-  ('Watch The World Burn', 'Falling In Reverse', NULL),
-  ('In Ha Mood', 'Ice Spice', NULL),
-  ('Yandel 150', 'Yandel & Feid', NULL)
+
+  ('Lost', 'Linkin Park', NULL),
+  ('Fix’n To Break', 'Bailey Zimmerman', NULL),
+  ('Painting Pictures', 'Superstar Pride', NULL)
   ;
 
    // Update to song table
@@ -213,7 +203,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13511; // SELECT last_insert_rowid();
+  song_id = 13531; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -253,12 +243,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-23 12:14:06.301301', '1503', '13507'),
-  ('2023-02-23 12:14:06.306306', '1503', '13487'),
-  ('2023-02-23 12:14:06.307307', '1503', '13508'),
-  ('2023-02-23 12:14:06.307307', '1503', '13509'),
-  ('2023-02-23 12:14:06.307307', '1503', '13510'),
-  ('2023-02-23 12:14:06.307307', '1503', '13511')
+  ('2023-02-23 02:48:08.627627', '1507', '13516'),
+  ('2023-02-23 02:48:08.628628', '1507', '13529'),
+  ('2023-02-23 02:48:08.629629', '1507', '13512'),
+  ('2023-02-23 02:48:08.634634', '1507', '13530'),
+  ('2023-02-23 02:48:08.634634', '1507', '13531')
   ;
 
   // Update to source_song table

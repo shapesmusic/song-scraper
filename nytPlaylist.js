@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Lizzo and SZA Spin Up a Fresh ‘Special,’ and 7 More New Songs', '2023-02-12 01:10:58.000000', 'https://www.nytimes.com/2023/02/10/arts/music/playlist-sza-lizzo-beyonce.html');
+    ('New York Times', 'The Playlist', 'Feist’s Electrifying Return, and 9 More New Songs', '2023-02-17 10:13:34.000000', 'https://www.nytimes.com/2023/02/17/arts/music/playlist-feist-lana-del-rey-janelle-monae.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1504; // SELECT last_insert_rowid();
+  source_id = 1508; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,74 +100,92 @@
   songsData =
   [
     {
-        "title": "Special",
-        "artist_name": "Lizzo ft. SZA",
+        "title": "In Lightning",
+        "artist_name": "Feist",
         "video_id": null,
-        "capture_date": "2023-02-23 12:20:52.986986",
-        "source_id": 1504,
+        "capture_date": "2023-02-23 02:51:12.341341",
+        "source_id": 1508,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cuff It (Wetter Remix)",
-        "artist_name": "Beyoncé",
+        "title": "A&W",
+        "artist_name": "Lana Del Rey",
         "video_id": null,
-        "capture_date": "2023-02-23 12:20:52.986986",
-        "source_id": 1504,
+        "capture_date": "2023-02-23 02:51:12.342342",
+        "source_id": 1508,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pearls",
-        "artist_name": "Jessie Ware",
+        "title": "Float",
+        "artist_name": "Janelle Monáe",
         "video_id": null,
-        "capture_date": "2023-02-23 12:20:52.986986",
-        "source_id": 1504,
+        "capture_date": "2023-02-23 02:51:12.342342",
+        "source_id": 1508,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I’m Not Pretty",
-        "artist_name": "Megan Moroney",
+        "title": "Be Free",
+        "artist_name": "Desire Marea",
         "video_id": null,
-        "capture_date": "2023-02-23 12:20:52.986986",
-        "source_id": 1504,
+        "capture_date": "2023-02-23 02:51:12.342342",
+        "source_id": 1508,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Love You Anyway",
-        "artist_name": "Luke Combs",
+        "title": "Pavlov’s Dog",
+        "artist_name": "Anna B Savage",
         "video_id": null,
-        "capture_date": "2023-02-23 12:20:52.986986",
-        "source_id": 1504,
+        "capture_date": "2023-02-23 02:51:12.342342",
+        "source_id": 1508,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Younger & Dumber",
-        "artist_name": "Indigo de Souza",
+        "title": "Mountain With a View",
+        "artist_name": "Kelsea Ballerini",
         "video_id": null,
-        "capture_date": "2023-02-23 12:20:52.986986",
-        "source_id": 1504,
+        "capture_date": "2023-02-23 02:51:12.342342",
+        "source_id": 1508,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Exodus the North Star",
-        "artist_name": "Yaya Bey",
+        "title": "Lines",
+        "artist_name": "Naima Bock",
         "video_id": null,
-        "capture_date": "2023-02-23 12:20:52.986986",
-        "source_id": 1504,
+        "capture_date": "2023-02-23 02:51:12.342342",
+        "source_id": 1508,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ratataaaaa",
-        "artist_name": "French Montana ft. 2Rare",
+        "title": "Holding Pattern",
+        "artist_name": "Nickel Creek",
         "video_id": null,
-        "capture_date": "2023-02-23 12:20:52.986986",
-        "source_id": 1504,
+        "capture_date": "2023-02-23 02:51:12.342342",
+        "source_id": 1508,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "When I Get There",
+        "artist_name": "Pink",
+        "video_id": null,
+        "capture_date": "2023-02-23 02:51:12.342342",
+        "source_id": 1508,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Touha",
+        "artist_name": "Oval",
+        "video_id": null,
+        "capture_date": "2023-02-23 02:51:12.342342",
+        "source_id": 1508,
         "song_id": null,
         "duplicate": false
     }
@@ -211,14 +229,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Special', 'Lizzo ft. SZA', NULL),
-  ('Cuff It (Wetter Remix)', 'Beyoncé', NULL),
-  ('Pearls', 'Jessie Ware', NULL),
-  ('I’m Not Pretty', 'Megan Moroney', NULL),
-  ('Love You Anyway', 'Luke Combs', NULL),
-  ('Younger & Dumber', 'Indigo de Souza', NULL),
-  ('Exodus the North Star', 'Yaya Bey', NULL),
-  ('Ratataaaaa', 'French Montana ft. 2Rare', NULL)
+  ('In Lightning', 'Feist', NULL),
+  ('A&W', 'Lana Del Rey', NULL),
+  ('Float', 'Janelle Monáe', NULL),
+  ('Be Free', 'Desire Marea', NULL),
+  ('Pavlov’s Dog', 'Anna B Savage', NULL),
+  ('Mountain With a View', 'Kelsea Ballerini', NULL),
+  ('Lines', 'Naima Bock', NULL),
+  ('Holding Pattern', 'Nickel Creek', NULL),
+  ('When I Get There', 'Pink', NULL),
+  ('Touha', 'Oval', NULL)
   ;
 
    // Update to song table
@@ -229,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13519; // SELECT last_insert_rowid();
+  song_id = 13541; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -269,14 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-23 12:20:52.986986', '1504', '13512'),
-  ('2023-02-23 12:20:52.986986', '1504', '13513'),
-  ('2023-02-23 12:20:52.986986', '1504', '13514'),
-  ('2023-02-23 12:20:52.986986', '1504', '13515'),
-  ('2023-02-23 12:20:52.986986', '1504', '13516'),
-  ('2023-02-23 12:20:52.986986', '1504', '13517'),
-  ('2023-02-23 12:20:52.986986', '1504', '13518'),
-  ('2023-02-23 12:20:52.986986', '1504', '13519')
+  ('2023-02-23 02:51:12.341341', '1508', '13532'),
+  ('2023-02-23 02:51:12.342342', '1508', '13533'),
+  ('2023-02-23 02:51:12.342342', '1508', '13534'),
+  ('2023-02-23 02:51:12.342342', '1508', '13535'),
+  ('2023-02-23 02:51:12.342342', '1508', '13536'),
+  ('2023-02-23 02:51:12.342342', '1508', '13537'),
+  ('2023-02-23 02:51:12.342342', '1508', '13538'),
+  ('2023-02-23 02:51:12.342342', '1508', '13539'),
+  ('2023-02-23 02:51:12.342342', '1508', '13540'),
+  ('2023-02-23 02:51:12.342342', '1508', '13541')
   ;
 
   // Update to source_song table

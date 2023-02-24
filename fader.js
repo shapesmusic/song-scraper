@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of January 23, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2023-01-23 12:00:00.000000', -- Dont forget this!
+      'Week of February 20, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2023-02-20 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1493; // SELECT last_insert_rowid();
+    source_id = 1510; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,264 +458,210 @@
     songsData =
     [
     {
-        "title": "Just Say (remix)",
-        "artist_name": "DJ Sliink and Coco & Breezy",
+        "title": "Circle Back Around",
+        "artist_name": "Jayda G",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Black Firework",
-        "artist_name": "Dave Okumu",
+        "title": "Work With It",
+        "artist_name": "Peezy and Yg Teck",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Count of Three (You Can Eat $#@!)",
-        "artist_name": "Underscores",
+        "title": "Us Against The World",
+        "artist_name": "Strandz and Digga D",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lemonade",
-        "artist_name": "Max B",
+        "title": "Strange As Can Be",
+        "artist_name": "Lucy",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Telephone",
-        "artist_name": "Andy Shauf",
+        "title": "Reason You",
+        "artist_name": "Rema",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kurt Rambis",
-        "artist_name": "Papo2oo4",
+        "title": "The Clown",
+        "artist_name": "Mega Bog",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Brody Trippin",
-        "artist_name": "CEO Trayle ft. Baby Drill",
+        "title": "Titan of Hope",
+        "artist_name": "MSPAINT",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Injury Detail",
-        "artist_name": "Mandy, Indiana",
+        "title": "A&W",
+        "artist_name": "Lana Del Rey",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mystery Boy (remix)",
-        "artist_name": "Vegyn and Sassy 009",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cnt Go Back",
-        "artist_name": "Pink Siifu",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Walked In",
-        "artist_name": "Eem Triplin",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Time",
-        "artist_name": "Nico Paulo",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "NOISE OF YOU",
-        "artist_name": "John Cale",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Maybae Baeby",
-        "artist_name": "Xiu Xiu",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Oh Me, Oh My",
-        "artist_name": "Lonnie Holley ft. Michael Stipe",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": 13391,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
+        "song_id": 13533,
         "duplicate": true
     },
     {
-        "title": "Blicky Bop",
-        "artist_name": "Fly Anakin",
+        "title": "Trust Fund",
+        "artist_name": "Llainwire",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Try Again",
-        "artist_name": "Oddisee",
+        "title": "73%",
+        "artist_name": "Algiers",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": 13371,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Evil Finds Light",
+        "artist_name": "Drain",
+        "video_id": null,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Stay Close",
+        "artist_name": "Bawo",
+        "video_id": null,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Femme Fatale",
+        "artist_name": "gyrofield",
+        "video_id": null,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Redd St. Turbulence",
+        "artist_name": "Jam City ft. Julian Cashwan Pratt",
+        "video_id": null,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Night Light",
+        "artist_name": "yuné pinku",
+        "video_id": null,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wooden Cross",
+        "artist_name": "Fooly Cooly",
+        "video_id": null,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Yoga",
+        "artist_name": "Asake",
+        "video_id": null,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dawns",
+        "artist_name": "Zach Bryan and Maggie Rogers",
+        "video_id": null,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
+        "song_id": 13477,
         "duplicate": true
     },
     {
-        "title": "C Class",
-        "artist_name": "Wizz Havinn",
+        "title": "Can't Move Wrong",
+        "artist_name": "Luh Tyler ft. Trapland Pat",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hypnic Jerk",
-        "artist_name": "Oozing Wound",
+        "title": "Over the Dune",
+        "artist_name": "Steve Gunn and David Moore",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dorothee Thines",
-        "artist_name": "Asian Glow",
+        "title": "Sandrail Silhouette",
+        "artist_name": "Avalon Emerson",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dogwood",
-        "artist_name": "Nicole Dollanganger",
+        "title": "Future Shaman",
+        "artist_name": "Rob Mazurek",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "So Hard To Tell",
-        "artist_name": "Debby Friday",
+        "title": "Town Crank",
+        "artist_name": "Clark",
         "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "One of Us",
-        "artist_name": "Goodfight",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Aftershow",
-        "artist_name": "Império Pacifico & Panda Bear",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Last Time I Checked",
-        "artist_name": "Bandmanrill",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Painted the Room",
-        "artist_name": "Rozi Plain",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Unit",
-        "artist_name": "Isyti",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Choujin",
-        "artist_name": "betcover!!",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Huge Fire",
-        "artist_name": "Mount Eerie",
-        "video_id": null,
-        "capture_date": "2023-01-28 10:12:36.254000",
-        "source_id": 1493,
-        "song_id": 13376,
+        "capture_date": "2023-02-24 09:15:12.918000",
+        "source_id": 1510,
+        "song_id": 13456,
         "duplicate": true
     }
 ]
@@ -756,32 +702,26 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Just Say (remix)', 'DJ Sliink and Coco & Breezy', NULL),
-    ('Black Firework', 'Dave Okumu', NULL),
-    ('Count of Three (You Can Eat $#@!)', 'Underscores', NULL),
-    ('Lemonade', 'Max B', NULL),
-    ('Telephone', 'Andy Shauf', NULL),
-    ('Kurt Rambis', 'Papo2oo4', NULL),
-    ('Brody Trippin', 'CEO Trayle ft. Baby Drill', NULL),
-    ('Injury Detail', 'Mandy, Indiana', NULL),
-    ('Mystery Boy (remix)', 'Vegyn and Sassy 009', NULL),
-    ('Cnt Go Back', 'Pink Siifu', NULL),
-    ('Walked In', 'Eem Triplin', NULL),
-    ('Time', 'Nico Paulo', NULL),
-    ('NOISE OF YOU', 'John Cale', NULL),
-    ('Maybae Baeby', 'Xiu Xiu', NULL),
-    ('Blicky Bop', 'Fly Anakin', NULL),
-    ('C Class', 'Wizz Havinn', NULL),
-    ('Hypnic Jerk', 'Oozing Wound', NULL),
-    ('Dorothee Thines', 'Asian Glow', NULL),
-    ('Dogwood', 'Nicole Dollanganger', NULL),
-    ('So Hard To Tell', 'Debby Friday', NULL),
-    ('One of Us', 'Goodfight', NULL),
-    ('Aftershow', 'Império Pacifico & Panda Bear', NULL),
-    ('Last Time I Checked', 'Bandmanrill', NULL),
-    ('Painted the Room', 'Rozi Plain', NULL),
-    ('Unit', 'Isyti', NULL),
-    ('Choujin', 'betcover!!', NULL)
+    ('Circle Back Around', 'Jayda G', NULL),
+    ('Work With It', 'Peezy and Yg Teck', NULL),
+    ('Us Against The World', 'Strandz and Digga D', NULL),
+    ('Strange As Can Be', 'Lucy', NULL),
+    ('Reason You', 'Rema', NULL),
+    ('The Clown', 'Mega Bog', NULL),
+    ('Titan of Hope', 'MSPAINT', NULL),
+    ('Trust Fund', 'Llainwire', NULL),
+    ('73%', 'Algiers', NULL),
+    ('Evil Finds Light', 'Drain', NULL),
+    ('Stay Close', 'Bawo', NULL),
+    ('Femme Fatale', 'gyrofield', NULL),
+    ('Redd St. Turbulence', 'Jam City ft. Julian Cashwan Pratt', NULL),
+    ('Night Light', 'yuné pinku', NULL),
+    ('Wooden Cross', 'Fooly Cooly', NULL),
+    ('Yoga', 'Asake', NULL),
+    ('Can’t Move Wrong', 'Luh Tyler ft. Trapland Pat', NULL),
+    ('Over the Dune', 'Steve Gunn and David Moore', NULL),
+    ('Sandrail Silhouette', 'Avalon Emerson', NULL),
+    ('Future Shaman', 'Rob Mazurek', NULL)
     ;
 
      // Update to song table
@@ -792,7 +732,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13439; // SELECT last_insert_rowid();
+  song_id = 13565; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -832,35 +772,29 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-01-28 10:12:36.254000', '1493', '13414'),
-  ('2023-01-28 10:12:36.254000', '1493', '13415'),
-  ('2023-01-28 10:12:36.254000', '1493', '13416'),
-  ('2023-01-28 10:12:36.254000', '1493', '13417'),
-  ('2023-01-28 10:12:36.254000', '1493', '13418'),
-  ('2023-01-28 10:12:36.254000', '1493', '13419'),
-  ('2023-01-28 10:12:36.254000', '1493', '13420'),
-  ('2023-01-28 10:12:36.254000', '1493', '13421'),
-  ('2023-01-28 10:12:36.254000', '1493', '13422'),
-  ('2023-01-28 10:12:36.254000', '1493', '13423'),
-  ('2023-01-28 10:12:36.254000', '1493', '13424'),
-  ('2023-01-28 10:12:36.254000', '1493', '13425'),
-  ('2023-01-28 10:12:36.254000', '1493', '13426'),
-  ('2023-01-28 10:12:36.254000', '1493', '13427'),
-  ('2023-01-28 10:12:36.254000', '1493', '13391'),
-  ('2023-01-28 10:12:36.254000', '1493', '13428'),
-  ('2023-01-28 10:12:36.254000', '1493', '13371'),
-  ('2023-01-28 10:12:36.254000', '1493', '13429'),
-  ('2023-01-28 10:12:36.254000', '1493', '13430'),
-  ('2023-01-28 10:12:36.254000', '1493', '13431'),
-  ('2023-01-28 10:12:36.254000', '1493', '13432'),
-  ('2023-01-28 10:12:36.254000', '1493', '13433'),
-  ('2023-01-28 10:12:36.254000', '1493', '13434'),
-  ('2023-01-28 10:12:36.254000', '1493', '13435'),
-  ('2023-01-28 10:12:36.254000', '1493', '13436'),
-  ('2023-01-28 10:12:36.254000', '1493', '13437'),
-  ('2023-01-28 10:12:36.254000', '1493', '13438'),
-  ('2023-01-28 10:12:36.254000', '1493', '13439'),
-  ('2023-01-28 10:12:36.254000', '1493', '13376')
+  ('2023-02-24 09:15:12.918000', '1510', '13546'),
+  ('2023-02-24 09:15:12.918000', '1510', '13547'),
+  ('2023-02-24 09:15:12.918000', '1510', '13548'),
+  ('2023-02-24 09:15:12.918000', '1510', '13549'),
+  ('2023-02-24 09:15:12.918000', '1510', '13550'),
+  ('2023-02-24 09:15:12.918000', '1510', '13551'),
+  ('2023-02-24 09:15:12.918000', '1510', '13552'),
+  ('2023-02-24 09:15:12.918000', '1510', '13533'),
+  ('2023-02-24 09:15:12.918000', '1510', '13553'),
+  ('2023-02-24 09:15:12.918000', '1510', '13554'),
+  ('2023-02-24 09:15:12.918000', '1510', '13555'),
+  ('2023-02-24 09:15:12.918000', '1510', '13556'),
+  ('2023-02-24 09:15:12.918000', '1510', '13557'),
+  ('2023-02-24 09:15:12.918000', '1510', '13558'),
+  ('2023-02-24 09:15:12.918000', '1510', '13559'),
+  ('2023-02-24 09:15:12.918000', '1510', '13560'),
+  ('2023-02-24 09:15:12.918000', '1510', '13561'),
+  ('2023-02-24 09:15:12.918000', '1510', '13477'),
+  ('2023-02-24 09:15:12.918000', '1510', '13562'),
+  ('2023-02-24 09:15:12.918000', '1510', '13563'),
+  ('2023-02-24 09:15:12.918000', '1510', '13564'),
+  ('2023-02-24 09:15:12.918000', '1510', '13565'),
+  ('2023-02-24 09:15:12.918000', '1510', '13456')
   ;
 
   // Update to source_song table

@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of February 10, 2023', '2023-02-10 12:00:00.000000', 'https://www.stereogum.com/2213514/the-5-best-songs-of-the-week-469/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of February 17, 2023', '2023-02-17 12:00:00.000000', 'https://www.stereogum.com/2214269/the-5-best-songs-of-the-week-470/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1506; // SELECT last_insert_rowid();
+  source_id = 1509; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,48 +101,48 @@
   songsData =
   [
     {
-        "title": "love him",
-        "artist_name": "Two Shell",
+        "title": "Housefly",
+        "artist_name": "Cory Hanson",
         "video_id": null,
-        "capture_date": "2023-02-23 12:29:02.806806",
-        "source_id": 1506,
+        "capture_date": "2023-02-23 02:54:58.052052",
+        "source_id": 1509,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shock Site",
-        "artist_name": "Garden Centre",
+        "title": "The Doldrums",
+        "artist_name": "Caroline Rose",
         "video_id": null,
-        "capture_date": "2023-02-23 12:29:02.807807",
-        "source_id": 1506,
+        "capture_date": "2023-02-23 02:54:58.053053",
+        "source_id": 1509,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Outsidigan's Anthem",
-        "artist_name": "Fly Anakin",
+        "title": "Florida Water",
+        "artist_name": "Danny Towers, DJ Scheme, & Ski Mask The Slump God",
         "video_id": null,
-        "capture_date": "2023-02-23 12:29:02.807807",
-        "source_id": 1506,
+        "capture_date": "2023-02-23 02:54:58.053053",
+        "source_id": 1509,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Opening Night",
-        "artist_name": "Scowl",
+        "title": "Lose You",
+        "artist_name": "Bully",
         "video_id": null,
-        "capture_date": "2023-02-23 12:29:02.807807",
-        "source_id": 1506,
+        "capture_date": "2023-02-23 02:54:58.053053",
+        "source_id": 1509,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Younger & Dumber",
-        "artist_name": "Indigo De Souza",
+        "title": "A&W",
+        "artist_name": "Lana Del Rey",
         "video_id": null,
-        "capture_date": "2023-02-23 12:29:02.807807",
-        "source_id": 1506,
-        "song_id": 13517,
+        "capture_date": "2023-02-23 02:54:58.053053",
+        "source_id": 1509,
+        "song_id": 13533,
         "duplicate": true
     }
 ]
@@ -186,10 +186,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('love him', 'Two Shell', NULL),
-  ('Shock Site', 'Garden Centre', NULL),
-  ('Outsidigan’s Anthem', 'Fly Anakin', NULL),
-  ('Opening Night', 'Scowl', NULL)
+  ('Housefly', 'Cory Hanson', NULL),
+  ('The Doldrums', 'Caroline Rose', NULL),
+  ('Florida Water', 'Danny Towers, DJ Scheme, & Ski Mask The Slump God', NULL),
+  ('Lose You', 'Bully', NULL)
   ;
 
    // Update to song table
@@ -200,7 +200,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13528; // SELECT last_insert_rowid();
+  song_id = 13545; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -240,11 +240,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-23 12:29:02.806806', '1506', '13525'),
-  ('2023-02-23 12:29:02.807807', '1506', '13526'),
-  ('2023-02-23 12:29:02.807807', '1506', '13527'),
-  ('2023-02-23 12:29:02.807807', '1506', '13528'),
-  ('2023-02-23 12:29:02.807807', '1506', '13517')
+  ('2023-02-23 02:54:58.052052', '1509', '13542'),
+  ('2023-02-23 02:54:58.053053', '1509', '13543'),
+  ('2023-02-23 02:54:58.053053', '1509', '13544'),
+  ('2023-02-23 02:54:58.053053', '1509', '13545'),
+  ('2023-02-23 02:54:58.053053', '1509', '13533')
   ;
 
   // Update to source_song table
