@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'U.S. Girls’ Luxuriously Absurd Disco, and 9 More New Songs', '2023-02-24 09:45:54.000000', 'https://www.nytimes.com/2023/02/24/arts/music/playlist-us-girls-skrillex-gracie-abrams.html');
+    ('New York Times', 'The Playlist', 'Nicki Minaj Returns Ready to Rumble, and 8 More New Songs', '2023-03-03 10:35:31.000000', 'https://www.nytimes.com/2023/03/03/arts/music/playlist-nicki-minaj-kali-uchis-summer-walker.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1541; // SELECT last_insert_rowid();
+  source_id = 1544; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,92 +100,83 @@
   songsData =
   [
     {
-        "title": "Tux (Your Body Fills Me, Boo)",
-        "artist_name": "U.S. Girls",
+        "title": "Red Ruby Da Sleeze",
+        "artist_name": "Nicki Minaj",
         "video_id": null,
-        "capture_date": "2023-03-12 08:37:38.544544",
-        "source_id": 1541,
+        "capture_date": "2023-03-12 08:50:25.144144",
+        "source_id": 1544,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Painting Rainbows",
-        "artist_name": "Skrillex and Bibi Bourelly",
+        "title": "Deserve Me",
+        "artist_name": "Kali Uchis and Summer Walker",
         "video_id": null,
-        "capture_date": "2023-03-12 08:37:38.545545",
-        "source_id": 1541,
+        "capture_date": "2023-03-12 08:50:25.146146",
+        "source_id": 1544,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "What You Did",
-        "artist_name": "Hannah Jadagu",
+        "title": "Not Strong Enough",
+        "artist_name": "boygenius",
         "video_id": null,
-        "capture_date": "2023-03-12 08:37:38.545545",
-        "source_id": 1541,
+        "capture_date": "2023-03-12 08:50:25.146146",
+        "source_id": 1544,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "All We Have Is Now",
-        "artist_name": "Fishbone",
+        "title": "Impurities",
+        "artist_name": "Arlo Parks",
         "video_id": null,
-        "capture_date": "2023-03-12 08:37:38.545545",
-        "source_id": 1541,
+        "capture_date": "2023-03-12 08:50:25.146146",
+        "source_id": 1544,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Light on in the Kitchen",
-        "artist_name": "Ashley McBryde",
+        "title": "Pinking Shears",
+        "artist_name": "Mandy, Indiana",
         "video_id": null,
-        "capture_date": "2023-03-12 08:37:38.545545",
-        "source_id": 1541,
+        "capture_date": "2023-03-12 08:50:25.146146",
+        "source_id": 1544,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Know It Won’t Work",
-        "artist_name": "Gracie Abrams",
+        "title": "Barley",
+        "artist_name": "Water From Your Eyes",
         "video_id": null,
-        "capture_date": "2023-03-12 08:37:38.545545",
-        "source_id": 1541,
+        "capture_date": "2023-03-12 08:50:25.146146",
+        "source_id": 1544,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Underneath My Toe",
-        "artist_name": "Bernice",
+        "title": "Since I Have a Lover",
+        "artist_name": "6lack",
         "video_id": null,
-        "capture_date": "2023-03-12 08:37:38.545545",
-        "source_id": 1541,
+        "capture_date": "2023-03-12 08:50:25.146146",
+        "source_id": 1544,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "To Remain/To Return",
-        "artist_name": "Arooj Aftab, Vijay Iyer, Shahzad Ismaily",
+        "title": "Lo Siento",
+        "artist_name": "Princess Nokia",
         "video_id": null,
-        "capture_date": "2023-03-12 08:37:38.545545",
-        "source_id": 1541,
+        "capture_date": "2023-03-12 08:50:25.146146",
+        "source_id": 1544,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Manitou",
-        "artist_name": "Zoon",
+        "title": "Zebras",
+        "artist_name": "yMusic",
         "video_id": null,
-        "capture_date": "2023-03-12 08:37:38.545545",
-        "source_id": 1541,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ngo Ma",
-        "artist_name": "IzangoMa",
-        "video_id": null,
-        "capture_date": "2023-03-12 08:37:38.545545",
-        "source_id": 1541,
+        "capture_date": "2023-03-12 08:50:25.146146",
+        "source_id": 1544,
         "song_id": null,
         "duplicate": false
     }
@@ -229,16 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Tux (Your Body Fills Me, Boo)', 'U.S. Girls', NULL),
-  ('Painting Rainbows', 'Skrillex and Bibi Bourelly', NULL),
-  ('What You Did', 'Hannah Jadagu', NULL),
-  ('All We Have Is Now', 'Fishbone', NULL),
-  ('Light on in the Kitchen', 'Ashley McBryde', NULL),
-  ('I Know It Won’t Work', 'Gracie Abrams', NULL),
-  ('Underneath My Toe', 'Bernice', NULL),
-  ('To Remain/To Return', 'Arooj Aftab, Vijay Iyer, Shahzad Ismaily', NULL),
-  ('Manitou', 'Zoon', NULL),
-  ('Ngo Ma', 'IzangoMa', NULL)
+  ('Red Ruby Da Sleeze', 'Nicki Minaj', NULL),
+  ('Deserve Me', 'Kali Uchis and Summer Walker', NULL),
+  ('Not Strong Enough', 'boygenius', NULL),
+  ('Impurities', 'Arlo Parks', NULL),
+  ('Pinking Shears', 'Mandy, Indiana', NULL),
+  ('Barley', 'Water From Your Eyes', NULL),
+  ('Since I Have a Lover', '6lack', NULL),
+  ('Lo Siento', 'Princess Nokia', NULL),
+  ('Zebras', 'yMusic', NULL)
   ;
 
    // Update to song table
@@ -249,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13609; // SELECT last_insert_rowid();
+  song_id = 13639; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-03-12 08:37:38.544544', '1541', '13600'),
-  ('2023-03-12 08:37:38.545545', '1541', '13601'),
-  ('2023-03-12 08:37:38.545545', '1541', '13602'),
-  ('2023-03-12 08:37:38.545545', '1541', '13603'),
-  ('2023-03-12 08:37:38.545545', '1541', '13604'),
-  ('2023-03-12 08:37:38.545545', '1541', '13605'),
-  ('2023-03-12 08:37:38.545545', '1541', '13606'),
-  ('2023-03-12 08:37:38.545545', '1541', '13607'),
-  ('2023-03-12 08:37:38.545545', '1541', '13608'),
-  ('2023-03-12 08:37:38.545545', '1541', '13609')
+  ('2023-03-12 08:50:25.144144', '1544', '13631'),
+  ('2023-03-12 08:50:25.146146', '1544', '13632'),
+  ('2023-03-12 08:50:25.146146', '1544', '13633'),
+  ('2023-03-12 08:50:25.146146', '1544', '13634'),
+  ('2023-03-12 08:50:25.146146', '1544', '13635'),
+  ('2023-03-12 08:50:25.146146', '1544', '13636'),
+  ('2023-03-12 08:50:25.146146', '1544', '13637'),
+  ('2023-03-12 08:50:25.146146', '1544', '13638'),
+  ('2023-03-12 08:50:25.146146', '1544', '13639')
   ;
 
   // Update to source_song table

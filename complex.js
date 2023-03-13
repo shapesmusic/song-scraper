@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Central Cee, NAV, Daniel Caesar, and More', '2023-02-10 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-central-cee-nav-conway');
+    ('Complex', 'The Best New Music This Week', 'J. Cole, Nicki Minaj, Kali Uchis, and More', '2023-03-03 12:00:00.000000', 'https://www.complex.com/music/best-new-music-march-3-j-cole-nick-minaj');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1505; // SELECT last_insert_rowid();
+  source_id = 1545; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,47 +102,74 @@
   songsData =
   [
     {
-        "title": "Me and You",
-        "artist_name": "Central Cee",
+        "title": "Adonis Interlude (The Montage)",
+        "artist_name": "J. Cole",
         "video_id": null,
-        "capture_date": "2023-02-23 12:26:13.593593",
-        "source_id": 1505,
+        "capture_date": "2023-03-12 08:53:21.583583",
+        "source_id": 1545,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lately",
-        "artist_name": "NAV",
+        "title": "Red Ruby Da Sleeze",
+        "artist_name": "Nicki Minaj",
         "video_id": null,
-        "capture_date": "2023-02-23 12:26:13.594594",
-        "source_id": 1505,
+        "capture_date": "2023-03-12 08:53:21.584584",
+        "source_id": 1545,
+        "song_id": 13631,
+        "duplicate": true
+    },
+    {
+        "title": "Love Between",
+        "artist_name": "Kali Uchis",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:53:21.584584",
+        "source_id": 1545,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Don’t Love Me",
-        "artist_name": "Roy Woods",
+        "title": "Peaches & Eggplants",
+        "artist_name": "Young Nudy ft. 21 Savage",
         "video_id": null,
-        "capture_date": "2023-02-23 12:26:13.594594",
-        "source_id": 1505,
+        "capture_date": "2023-03-12 08:53:21.584584",
+        "source_id": 1545,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Motions",
-        "artist_name": "Zacari ft. Ab-Soul",
+        "title": "Sixteen",
+        "artist_name": "BIA",
         "video_id": null,
-        "capture_date": "2023-02-23 12:26:13.594594",
-        "source_id": 1505,
+        "capture_date": "2023-03-12 08:53:21.584584",
+        "source_id": 1545,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Let Me Go",
-        "artist_name": "Daniel Caesar",
+        "title": "In Style",
+        "artist_name": "Masego",
         "video_id": null,
-        "capture_date": "2023-02-23 12:26:13.595595",
-        "source_id": 1505,
+        "capture_date": "2023-03-12 08:53:21.584584",
+        "source_id": 1545,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "HAPPY",
+        "artist_name": "slowthai",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:53:21.584584",
+        "source_id": 1545,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dusties",
+        "artist_name": "Maiya The Don",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:53:21.584584",
+        "source_id": 1545,
         "song_id": null,
         "duplicate": false
     }
@@ -185,11 +212,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Me and You', 'Central Cee', NULL),
-  ('Lately', 'NAV', NULL),
-  ('Don’t Love Me', 'Roy Woods', NULL),
-  ('Motions', 'Zacari ft. Ab-Soul', NULL),
-  ('Let Me Go', 'Daniel Caesar', NULL)
+  ('Adonis Interlude (The Montage)', 'J. Cole', NULL),
+  ('Love Between', 'Kali Uchis', NULL),
+  ('Peaches & Eggplants', 'Young Nudy ft. 21 Savage', NULL),
+  ('Sixteen', 'BIA', NULL),
+  ('In Style', 'Masego', NULL),
+  ('HAPPY', 'slowthai', NULL),
+  ('Dusties', 'Maiya The Don', NULL)
   ;
 
    // Update to song table
@@ -200,7 +229,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13524; // SELECT last_insert_rowid();
+  song_id = 13646; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -240,11 +269,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-23 12:26:13.593593', '1505', '13520'),
-  ('2023-02-23 12:26:13.594594', '1505', '13521'),
-  ('2023-02-23 12:26:13.594594', '1505', '13522'),
-  ('2023-02-23 12:26:13.594594', '1505', '13523'),
-  ('2023-02-23 12:26:13.595595', '1505', '13524')
+  ('2023-03-12 08:53:21.583583', '1545', '13640'),
+  ('2023-03-12 08:53:21.584584', '1545', '13631'),
+  ('2023-03-12 08:53:21.584584', '1545', '13641'),
+  ('2023-03-12 08:53:21.584584', '1545', '13642'),
+  ('2023-03-12 08:53:21.584584', '1545', '13643'),
+  ('2023-03-12 08:53:21.584584', '1545', '13644'),
+  ('2023-03-12 08:53:21.584584', '1545', '13645'),
+  ('2023-03-12 08:53:21.584584', '1545', '13646')
   ;
 
   // Update to source_song table

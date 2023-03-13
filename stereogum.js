@@ -49,7 +49,8 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of February 24, 2023', '2023-02-24 12:00:00.000000', 'https://www.stereogum.com/2214764/the-5-best-songs-of-the-week-471/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of March 3, 2023', '2023-03-03 12:00:00.000000', 'https://www.stereogum.com/2215739/the-5-best-songs-of-the-week-472/lists/the-5-best-songs-of-the-week/');
+
 
   // Update to source table
 
@@ -58,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1542; // SELECT last_insert_rowid();
+  source_id = 1546; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,47 +102,47 @@
   songsData =
   [
     {
-        "title": "Underneath My Toe",
-        "artist_name": "Bernice",
+        "title": "Only Daedalus",
+        "artist_name": "U.S. Girls",
         "video_id": null,
-        "capture_date": "2023-03-12 08:41:56.664664",
-        "source_id": 1542,
-        "song_id": 13606,
+        "capture_date": "2023-03-12 08:56:47.100100",
+        "source_id": 1546,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Super Bowl",
+        "artist_name": "Conway The Machine",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:56:47.101101",
+        "source_id": 1546,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Barley",
+        "artist_name": "Water From Your Eyes",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:56:47.101101",
+        "source_id": 1546,
+        "song_id": 13636,
         "duplicate": true
     },
     {
-        "title": "alyosha",
-        "artist_name": "Susanne Sundfør",
+        "title": "In Verona",
+        "artist_name": "Lael Neale",
         "video_id": null,
-        "capture_date": "2023-03-12 08:41:56.665665",
-        "source_id": 1542,
+        "capture_date": "2023-03-12 08:56:47.101101",
+        "source_id": 1546,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Do It Faster",
-        "artist_name": "Militarie Gun",
+        "title": "Myopic",
+        "artist_name": "Drug Church",
         "video_id": null,
-        "capture_date": "2023-03-12 08:41:56.665665",
-        "source_id": 1542,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bath County",
-        "artist_name": "Wednesday",
-        "video_id": null,
-        "capture_date": "2023-03-12 08:41:56.665665",
-        "source_id": 1542,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Death Wish",
-        "artist_name": "Jason Isbell And The 400 Unit",
-        "video_id": null,
-        "capture_date": "2023-03-12 08:41:56.665665",
-        "source_id": 1542,
+        "capture_date": "2023-03-12 08:56:47.101101",
+        "source_id": 1546,
         "song_id": null,
         "duplicate": false
     }
@@ -186,10 +187,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('alyosha', 'Susanne Sundfør', NULL),
-  ('Do It Faster', 'Militarie Gun', NULL),
-  ('Bath County', 'Wednesday', NULL),
-  ('Death Wish', 'Jason Isbell And The 400 Unit', NULL)
+  ('Only Daedalus', 'U.S. Girls', NULL),
+  ('Super Bowl', 'Conway The Machine', NULL),
+  ('In Verona', 'Lael Neale', NULL),
+  ('Myopic', 'Drug Church', NULL)
   ;
 
    // Update to song table
@@ -200,7 +201,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13613; // SELECT last_insert_rowid();
+  song_id = 13650; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -240,11 +241,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-03-12 08:41:56.664664', '1542', '13606'),
-  ('2023-03-12 08:41:56.665665', '1542', '13610'),
-  ('2023-03-12 08:41:56.665665', '1542', '13611'),
-  ('2023-03-12 08:41:56.665665', '1542', '13612'),
-  ('2023-03-12 08:41:56.665665', '1542', '13613')
+  ('2023-03-12 08:56:47.100100', '1546', '13647'),
+  ('2023-03-12 08:56:47.101101', '1546', '13648'),
+  ('2023-03-12 08:56:47.101101', '1546', '13636'),
+  ('2023-03-12 08:56:47.101101', '1546', '13649'),
+  ('2023-03-12 08:56:47.101101', '1546', '13650')
   ;
 
   // Update to source_song table

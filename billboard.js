@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of March 4, 2023', '2023-03-04 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-03-04/');
+    ('Billboard', 'The Hot 100', 'Week of March 11, 2023', '2023-03-11 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-03-11');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1540; // SELECT last_insert_rowid();
+  source_id = 1543; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,92 +105,155 @@
   songsData =
   [
     {
-        "title": "Hope",
-        "artist_name": "NF",
+        "title": "TQG",
+        "artist_name": "Karol G x Shakira",
         "video_id": null,
-        "capture_date": "2023-03-12 08:32:50.198198",
-        "source_id": 1540,
+        "capture_date": "2023-03-12 08:45:46.195195",
+        "source_id": 1543,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Favorite Song",
-        "artist_name": "Toosii",
+        "title": "Kant Nobody",
+        "artist_name": "Lil Wayne ft. DMX",
         "video_id": null,
-        "capture_date": "2023-03-12 08:32:50.198198",
-        "source_id": 1540,
+        "capture_date": "2023-03-12 08:45:46.197197",
+        "source_id": 1543,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Watch This (ARIZONATEARS Pluggnb Remix)",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Mientras Me Curo del Cora",
+        "artist_name": "Karol G",
         "video_id": null,
-        "capture_date": "2023-03-12 08:32:50.199199",
-        "source_id": 1540,
+        "capture_date": "2023-03-12 08:45:46.197197",
+        "source_id": 1543,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Heaven",
-        "artist_name": "Niall Horan",
+        "title": "Gucci Los Panos",
+        "artist_name": "Karol G",
         "video_id": null,
-        "capture_date": "2023-03-12 08:32:50.199199",
-        "source_id": 1540,
+        "capture_date": "2023-03-12 08:45:46.197197",
+        "source_id": 1543,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Time Wasted",
-        "artist_name": "Polo G & Future",
+        "title": "Private Landing",
+        "artist_name": "Don Toliver ft. Justin Bieber & Future",
         "video_id": null,
-        "capture_date": "2023-03-12 08:32:50.199199",
-        "source_id": 1540,
+        "capture_date": "2023-03-12 08:45:46.197197",
+        "source_id": 1543,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ceilings",
-        "artist_name": "Lizzy McAlpine",
+        "title": "Tus Gafitas",
+        "artist_name": "Karol G",
         "video_id": null,
-        "capture_date": "2023-03-12 08:32:50.199199",
-        "source_id": 1540,
+        "capture_date": "2023-03-12 08:45:46.197197",
+        "source_id": 1543,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lottery",
-        "artist_name": "Latto ft. LU KALA",
+        "title": "No More Talk",
+        "artist_name": "Yeat",
         "video_id": null,
-        "capture_date": "2023-03-12 08:32:50.199199",
-        "source_id": 1540,
+        "capture_date": "2023-03-12 08:45:46.198198",
+        "source_id": 1543,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Trustfall",
-        "artist_name": "P!nk",
+        "title": "Split",
+        "artist_name": "Yeat",
         "video_id": null,
-        "capture_date": "2023-03-12 08:32:50.200200",
-        "source_id": 1540,
+        "capture_date": "2023-03-12 08:45:46.198198",
+        "source_id": 1543,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Slut Me Out",
-        "artist_name": "NLE Choppa",
+        "title": "Cairo",
+        "artist_name": "Karol G & Ovy On The Drums",
         "video_id": null,
-        "capture_date": "2023-03-12 08:32:50.200200",
-        "source_id": 1540,
+        "capture_date": "2023-03-12 08:45:46.198198",
+        "source_id": 1543,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gold",
-        "artist_name": "Dierks Bentley",
+        "title": "Shmunk",
+        "artist_name": "Yeat ft. YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2023-03-12 08:32:50.200200",
-        "source_id": 1540,
+        "capture_date": "2023-03-12 08:45:46.198198",
+        "source_id": 1543,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pero Tu",
+        "artist_name": "Karol G & Quevedo",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:45:46.198198",
+        "source_id": 1543,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dirt",
+        "artist_name": "Key Glock",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:45:46.198198",
+        "source_id": 1543,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Joe",
+        "artist_name": "Luke Combs",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:45:46.198198",
+        "source_id": 1543,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ojos Ferrari",
+        "artist_name": "Karol G, Justin Quiles & Angel Dior",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:45:46.198198",
+        "source_id": 1543,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Besties",
+        "artist_name": "Karol G",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:45:46.198198",
+        "source_id": 1543,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Manana Sera Bonito",
+        "artist_name": "Karol G & Carla Morrison",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:45:46.198198",
+        "source_id": 1543,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Die 4 Me",
+        "artist_name": "Halsey",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:45:46.198198",
+        "source_id": 1543,
         "song_id": null,
         "duplicate": false
     }
@@ -234,16 +297,23 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Hope', 'NF', NULL),
-  ('Favorite Song', 'Toosii', NULL),
-  ('Watch This (ARIZONATEARS Pluggnb Remix)', 'Lil Uzi Vert', NULL),
-  ('Heaven', 'Niall Horan', NULL),
-  ('No Time Wasted', 'Polo G & Future', NULL),
-  ('Ceilings', 'Lizzy McAlpine', NULL),
-  ('Lottery', 'Latto ft. LU KALA', NULL),
-  ('Trustfall', 'P!nk', NULL),
-  ('Slut Me Out', 'NLE Choppa', NULL),
-  ('Gold', 'Dierks Bentley', NULL)
+  ('TQG', 'Karol G x Shakira', NULL),
+  ('Kant Nobody', 'Lil Wayne ft. DMX', NULL),
+  ('Mientras Me Curo del Cora', 'Karol G', NULL),
+  ('Gucci Los Panos', 'Karol G', NULL),
+  ('Private Landing', 'Don Toliver ft. Justin Bieber & Future', NULL),
+  ('Tus Gafitas', 'Karol G', NULL),
+  ('No More Talk', 'Yeat', NULL),
+  ('Split', 'Yeat', NULL),
+  ('Cairo', 'Karol G & Ovy On The Drums', NULL),
+  ('Shmunk', 'Yeat ft. YoungBoy Never Broke Again', NULL),
+  ('Pero Tu', 'Karol G & Quevedo', NULL),
+  ('Dirt', 'Key Glock', NULL),
+  ('Joe', 'Luke Combs', NULL),
+  ('Ojos Ferrari', 'Karol G, Justin Quiles & Angel Dior', NULL),
+  ('Besties', 'Karol G', NULL),
+  ('Manana Sera Bonito', 'Karol G & Carla Morrison', NULL),
+  ('Die 4 Me', 'Halsey', NULL)
   ;
 
    // Update to song table
@@ -254,7 +324,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13599; // SELECT last_insert_rowid();
+  song_id = 13630; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -294,16 +364,23 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-03-12 08:32:50.198198', '1540', '13590'),
-  ('2023-03-12 08:32:50.198198', '1540', '13591'),
-  ('2023-03-12 08:32:50.199199', '1540', '13592'),
-  ('2023-03-12 08:32:50.199199', '1540', '13593'),
-  ('2023-03-12 08:32:50.199199', '1540', '13594'),
-  ('2023-03-12 08:32:50.199199', '1540', '13595'),
-  ('2023-03-12 08:32:50.199199', '1540', '13596'),
-  ('2023-03-12 08:32:50.200200', '1540', '13597'),
-  ('2023-03-12 08:32:50.200200', '1540', '13598'),
-  ('2023-03-12 08:32:50.200200', '1540', '13599')
+  ('2023-03-12 08:45:46.195195', '1543', '13614'),
+  ('2023-03-12 08:45:46.197197', '1543', '13615'),
+  ('2023-03-12 08:45:46.197197', '1543', '13616'),
+  ('2023-03-12 08:45:46.197197', '1543', '13617'),
+  ('2023-03-12 08:45:46.197197', '1543', '13618'),
+  ('2023-03-12 08:45:46.197197', '1543', '13619'),
+  ('2023-03-12 08:45:46.198198', '1543', '13620'),
+  ('2023-03-12 08:45:46.198198', '1543', '13621'),
+  ('2023-03-12 08:45:46.198198', '1543', '13622'),
+  ('2023-03-12 08:45:46.198198', '1543', '13623'),
+  ('2023-03-12 08:45:46.198198', '1543', '13624'),
+  ('2023-03-12 08:45:46.198198', '1543', '13625'),
+  ('2023-03-12 08:45:46.198198', '1543', '13626'),
+  ('2023-03-12 08:45:46.198198', '1543', '13627'),
+  ('2023-03-12 08:45:46.198198', '1543', '13628'),
+  ('2023-03-12 08:45:46.198198', '1543', '13629'),
+  ('2023-03-12 08:45:46.198198', '1543', '13630')
   ;
 
   // Update to source_song table
