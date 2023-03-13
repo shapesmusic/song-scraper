@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of February 17, 2023', '2023-02-17 12:00:00.000000', 'https://www.stereogum.com/2214269/the-5-best-songs-of-the-week-470/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of February 24, 2023', '2023-02-24 12:00:00.000000', 'https://www.stereogum.com/2214764/the-5-best-songs-of-the-week-471/lists/the-5-best-songs-of-the-week/');
 
   // Update to source table
 
@@ -58,7 +58,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1509; // SELECT last_insert_rowid();
+  source_id = 1542; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,49 +101,49 @@
   songsData =
   [
     {
-        "title": "Housefly",
-        "artist_name": "Cory Hanson",
+        "title": "Underneath My Toe",
+        "artist_name": "Bernice",
         "video_id": null,
-        "capture_date": "2023-02-23 02:54:58.052052",
-        "source_id": 1509,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Doldrums",
-        "artist_name": "Caroline Rose",
-        "video_id": null,
-        "capture_date": "2023-02-23 02:54:58.053053",
-        "source_id": 1509,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Florida Water",
-        "artist_name": "Danny Towers, DJ Scheme, & Ski Mask The Slump God",
-        "video_id": null,
-        "capture_date": "2023-02-23 02:54:58.053053",
-        "source_id": 1509,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lose You",
-        "artist_name": "Bully",
-        "video_id": null,
-        "capture_date": "2023-02-23 02:54:58.053053",
-        "source_id": 1509,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "A&W",
-        "artist_name": "Lana Del Rey",
-        "video_id": null,
-        "capture_date": "2023-02-23 02:54:58.053053",
-        "source_id": 1509,
-        "song_id": 13533,
+        "capture_date": "2023-03-12 08:41:56.664664",
+        "source_id": 1542,
+        "song_id": 13606,
         "duplicate": true
+    },
+    {
+        "title": "alyosha",
+        "artist_name": "Susanne Sundfør",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:41:56.665665",
+        "source_id": 1542,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Do It Faster",
+        "artist_name": "Militarie Gun",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:41:56.665665",
+        "source_id": 1542,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bath County",
+        "artist_name": "Wednesday",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:41:56.665665",
+        "source_id": 1542,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Death Wish",
+        "artist_name": "Jason Isbell And The 400 Unit",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:41:56.665665",
+        "source_id": 1542,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -186,10 +186,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Housefly', 'Cory Hanson', NULL),
-  ('The Doldrums', 'Caroline Rose', NULL),
-  ('Florida Water', 'Danny Towers, DJ Scheme, & Ski Mask The Slump God', NULL),
-  ('Lose You', 'Bully', NULL)
+  ('alyosha', 'Susanne Sundfør', NULL),
+  ('Do It Faster', 'Militarie Gun', NULL),
+  ('Bath County', 'Wednesday', NULL),
+  ('Death Wish', 'Jason Isbell And The 400 Unit', NULL)
   ;
 
    // Update to song table
@@ -200,7 +200,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13545; // SELECT last_insert_rowid();
+  song_id = 13613; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -240,11 +240,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-23 02:54:58.052052', '1509', '13542'),
-  ('2023-02-23 02:54:58.053053', '1509', '13543'),
-  ('2023-02-23 02:54:58.053053', '1509', '13544'),
-  ('2023-02-23 02:54:58.053053', '1509', '13545'),
-  ('2023-02-23 02:54:58.053053', '1509', '13533')
+  ('2023-03-12 08:41:56.664664', '1542', '13606'),
+  ('2023-03-12 08:41:56.665665', '1542', '13610'),
+  ('2023-03-12 08:41:56.665665', '1542', '13611'),
+  ('2023-03-12 08:41:56.665665', '1542', '13612'),
+  ('2023-03-12 08:41:56.665665', '1542', '13613')
   ;
 
   // Update to source_song table

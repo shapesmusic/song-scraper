@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Feist’s Electrifying Return, and 9 More New Songs', '2023-02-17 10:13:34.000000', 'https://www.nytimes.com/2023/02/17/arts/music/playlist-feist-lana-del-rey-janelle-monae.html');
+    ('New York Times', 'The Playlist', 'U.S. Girls’ Luxuriously Absurd Disco, and 9 More New Songs', '2023-02-24 09:45:54.000000', 'https://www.nytimes.com/2023/02/24/arts/music/playlist-us-girls-skrillex-gracie-abrams.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1508; // SELECT last_insert_rowid();
+  source_id = 1541; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,92 +100,92 @@
   songsData =
   [
     {
-        "title": "In Lightning",
-        "artist_name": "Feist",
+        "title": "Tux (Your Body Fills Me, Boo)",
+        "artist_name": "U.S. Girls",
         "video_id": null,
-        "capture_date": "2023-02-23 02:51:12.341341",
-        "source_id": 1508,
+        "capture_date": "2023-03-12 08:37:38.544544",
+        "source_id": 1541,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "A&W",
-        "artist_name": "Lana Del Rey",
+        "title": "Painting Rainbows",
+        "artist_name": "Skrillex and Bibi Bourelly",
         "video_id": null,
-        "capture_date": "2023-02-23 02:51:12.342342",
-        "source_id": 1508,
+        "capture_date": "2023-03-12 08:37:38.545545",
+        "source_id": 1541,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Float",
-        "artist_name": "Janelle Monáe",
+        "title": "What You Did",
+        "artist_name": "Hannah Jadagu",
         "video_id": null,
-        "capture_date": "2023-02-23 02:51:12.342342",
-        "source_id": 1508,
+        "capture_date": "2023-03-12 08:37:38.545545",
+        "source_id": 1541,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Be Free",
-        "artist_name": "Desire Marea",
+        "title": "All We Have Is Now",
+        "artist_name": "Fishbone",
         "video_id": null,
-        "capture_date": "2023-02-23 02:51:12.342342",
-        "source_id": 1508,
+        "capture_date": "2023-03-12 08:37:38.545545",
+        "source_id": 1541,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pavlov’s Dog",
-        "artist_name": "Anna B Savage",
+        "title": "Light on in the Kitchen",
+        "artist_name": "Ashley McBryde",
         "video_id": null,
-        "capture_date": "2023-02-23 02:51:12.342342",
-        "source_id": 1508,
+        "capture_date": "2023-03-12 08:37:38.545545",
+        "source_id": 1541,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mountain With a View",
-        "artist_name": "Kelsea Ballerini",
+        "title": "I Know It Won’t Work",
+        "artist_name": "Gracie Abrams",
         "video_id": null,
-        "capture_date": "2023-02-23 02:51:12.342342",
-        "source_id": 1508,
+        "capture_date": "2023-03-12 08:37:38.545545",
+        "source_id": 1541,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lines",
-        "artist_name": "Naima Bock",
+        "title": "Underneath My Toe",
+        "artist_name": "Bernice",
         "video_id": null,
-        "capture_date": "2023-02-23 02:51:12.342342",
-        "source_id": 1508,
+        "capture_date": "2023-03-12 08:37:38.545545",
+        "source_id": 1541,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Holding Pattern",
-        "artist_name": "Nickel Creek",
+        "title": "To Remain/To Return",
+        "artist_name": "Arooj Aftab, Vijay Iyer, Shahzad Ismaily",
         "video_id": null,
-        "capture_date": "2023-02-23 02:51:12.342342",
-        "source_id": 1508,
+        "capture_date": "2023-03-12 08:37:38.545545",
+        "source_id": 1541,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "When I Get There",
-        "artist_name": "Pink",
+        "title": "Manitou",
+        "artist_name": "Zoon",
         "video_id": null,
-        "capture_date": "2023-02-23 02:51:12.342342",
-        "source_id": 1508,
+        "capture_date": "2023-03-12 08:37:38.545545",
+        "source_id": 1541,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Touha",
-        "artist_name": "Oval",
+        "title": "Ngo Ma",
+        "artist_name": "IzangoMa",
         "video_id": null,
-        "capture_date": "2023-02-23 02:51:12.342342",
-        "source_id": 1508,
+        "capture_date": "2023-03-12 08:37:38.545545",
+        "source_id": 1541,
         "song_id": null,
         "duplicate": false
     }
@@ -229,16 +229,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('In Lightning', 'Feist', NULL),
-  ('A&W', 'Lana Del Rey', NULL),
-  ('Float', 'Janelle Monáe', NULL),
-  ('Be Free', 'Desire Marea', NULL),
-  ('Pavlov’s Dog', 'Anna B Savage', NULL),
-  ('Mountain With a View', 'Kelsea Ballerini', NULL),
-  ('Lines', 'Naima Bock', NULL),
-  ('Holding Pattern', 'Nickel Creek', NULL),
-  ('When I Get There', 'Pink', NULL),
-  ('Touha', 'Oval', NULL)
+  ('Tux (Your Body Fills Me, Boo)', 'U.S. Girls', NULL),
+  ('Painting Rainbows', 'Skrillex and Bibi Bourelly', NULL),
+  ('What You Did', 'Hannah Jadagu', NULL),
+  ('All We Have Is Now', 'Fishbone', NULL),
+  ('Light on in the Kitchen', 'Ashley McBryde', NULL),
+  ('I Know It Won’t Work', 'Gracie Abrams', NULL),
+  ('Underneath My Toe', 'Bernice', NULL),
+  ('To Remain/To Return', 'Arooj Aftab, Vijay Iyer, Shahzad Ismaily', NULL),
+  ('Manitou', 'Zoon', NULL),
+  ('Ngo Ma', 'IzangoMa', NULL)
   ;
 
    // Update to song table
@@ -249,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13541; // SELECT last_insert_rowid();
+  song_id = 13609; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-23 02:51:12.341341', '1508', '13532'),
-  ('2023-02-23 02:51:12.342342', '1508', '13533'),
-  ('2023-02-23 02:51:12.342342', '1508', '13534'),
-  ('2023-02-23 02:51:12.342342', '1508', '13535'),
-  ('2023-02-23 02:51:12.342342', '1508', '13536'),
-  ('2023-02-23 02:51:12.342342', '1508', '13537'),
-  ('2023-02-23 02:51:12.342342', '1508', '13538'),
-  ('2023-02-23 02:51:12.342342', '1508', '13539'),
-  ('2023-02-23 02:51:12.342342', '1508', '13540'),
-  ('2023-02-23 02:51:12.342342', '1508', '13541')
+  ('2023-03-12 08:37:38.544544', '1541', '13600'),
+  ('2023-03-12 08:37:38.545545', '1541', '13601'),
+  ('2023-03-12 08:37:38.545545', '1541', '13602'),
+  ('2023-03-12 08:37:38.545545', '1541', '13603'),
+  ('2023-03-12 08:37:38.545545', '1541', '13604'),
+  ('2023-03-12 08:37:38.545545', '1541', '13605'),
+  ('2023-03-12 08:37:38.545545', '1541', '13606'),
+  ('2023-03-12 08:37:38.545545', '1541', '13607'),
+  ('2023-03-12 08:37:38.545545', '1541', '13608'),
+  ('2023-03-12 08:37:38.545545', '1541', '13609')
   ;
 
   // Update to source_song table

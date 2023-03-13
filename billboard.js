@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of February 25, 2023', '2023-02-25 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-02-25');
+    ('Billboard', 'The Hot 100', 'Week of March 4, 2023', '2023-03-04 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-03-04/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1507; // SELECT last_insert_rowid();
+  source_id = 1540; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,47 +105,92 @@
   songsData =
   [
     {
-        "title": "Love You Anyway",
-        "artist_name": "Luke Combs",
+        "title": "Hope",
+        "artist_name": "NF",
         "video_id": null,
-        "capture_date": "2023-02-23 02:48:08.627627",
-        "source_id": 1507,
-        "song_id": 13516,
-        "duplicate": true
-    },
-    {
-        "title": "Lost",
-        "artist_name": "Linkin Park",
-        "video_id": null,
-        "capture_date": "2023-02-23 02:48:08.628628",
-        "source_id": 1507,
+        "capture_date": "2023-03-12 08:32:50.198198",
+        "source_id": 1540,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Special",
-        "artist_name": "Lizzo ft. SZA",
+        "title": "Favorite Song",
+        "artist_name": "Toosii",
         "video_id": null,
-        "capture_date": "2023-02-23 02:48:08.629629",
-        "source_id": 1507,
-        "song_id": 13512,
-        "duplicate": true
-    },
-    {
-        "title": "Fix'n To Break",
-        "artist_name": "Bailey Zimmerman",
-        "video_id": null,
-        "capture_date": "2023-02-23 02:48:08.634634",
-        "source_id": 1507,
+        "capture_date": "2023-03-12 08:32:50.198198",
+        "source_id": 1540,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Painting Pictures",
-        "artist_name": "Superstar Pride",
+        "title": "Watch This (ARIZONATEARS Pluggnb Remix)",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-02-23 02:48:08.634634",
-        "source_id": 1507,
+        "capture_date": "2023-03-12 08:32:50.199199",
+        "source_id": 1540,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Heaven",
+        "artist_name": "Niall Horan",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:32:50.199199",
+        "source_id": 1540,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "No Time Wasted",
+        "artist_name": "Polo G & Future",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:32:50.199199",
+        "source_id": 1540,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ceilings",
+        "artist_name": "Lizzy McAlpine",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:32:50.199199",
+        "source_id": 1540,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lottery",
+        "artist_name": "Latto ft. LU KALA",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:32:50.199199",
+        "source_id": 1540,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Trustfall",
+        "artist_name": "P!nk",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:32:50.200200",
+        "source_id": 1540,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Slut Me Out",
+        "artist_name": "NLE Choppa",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:32:50.200200",
+        "source_id": 1540,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Gold",
+        "artist_name": "Dierks Bentley",
+        "video_id": null,
+        "capture_date": "2023-03-12 08:32:50.200200",
+        "source_id": 1540,
         "song_id": null,
         "duplicate": false
     }
@@ -189,10 +234,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-
-  ('Lost', 'Linkin Park', NULL),
-  ('Fix’n To Break', 'Bailey Zimmerman', NULL),
-  ('Painting Pictures', 'Superstar Pride', NULL)
+  ('Hope', 'NF', NULL),
+  ('Favorite Song', 'Toosii', NULL),
+  ('Watch This (ARIZONATEARS Pluggnb Remix)', 'Lil Uzi Vert', NULL),
+  ('Heaven', 'Niall Horan', NULL),
+  ('No Time Wasted', 'Polo G & Future', NULL),
+  ('Ceilings', 'Lizzy McAlpine', NULL),
+  ('Lottery', 'Latto ft. LU KALA', NULL),
+  ('Trustfall', 'P!nk', NULL),
+  ('Slut Me Out', 'NLE Choppa', NULL),
+  ('Gold', 'Dierks Bentley', NULL)
   ;
 
    // Update to song table
@@ -203,7 +254,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13531; // SELECT last_insert_rowid();
+  song_id = 13599; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -243,11 +294,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-23 02:48:08.627627', '1507', '13516'),
-  ('2023-02-23 02:48:08.628628', '1507', '13529'),
-  ('2023-02-23 02:48:08.629629', '1507', '13512'),
-  ('2023-02-23 02:48:08.634634', '1507', '13530'),
-  ('2023-02-23 02:48:08.634634', '1507', '13531')
+  ('2023-03-12 08:32:50.198198', '1540', '13590'),
+  ('2023-03-12 08:32:50.198198', '1540', '13591'),
+  ('2023-03-12 08:32:50.199199', '1540', '13592'),
+  ('2023-03-12 08:32:50.199199', '1540', '13593'),
+  ('2023-03-12 08:32:50.199199', '1540', '13594'),
+  ('2023-03-12 08:32:50.199199', '1540', '13595'),
+  ('2023-03-12 08:32:50.199199', '1540', '13596'),
+  ('2023-03-12 08:32:50.200200', '1540', '13597'),
+  ('2023-03-12 08:32:50.200200', '1540', '13598'),
+  ('2023-03-12 08:32:50.200200', '1540', '13599')
   ;
 
   // Update to source_song table
