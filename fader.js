@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of February 20, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2023-02-20 12:00:00.000000', -- Dont forget this!
+      'Week of March 20, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2023-03-20 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1510; // SELECT last_insert_rowid();
+    source_id = 1553; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,211 +458,247 @@
     songsData =
     [
     {
-        "title": "Circle Back Around",
-        "artist_name": "Jayda G",
+        "title": "GOMD",
+        "artist_name": "Veeze",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Work With It",
-        "artist_name": "Peezy and Yg Teck",
+        "title": "Boyhood",
+        "artist_name": "The Japanese House",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Us Against The World",
-        "artist_name": "Strandz and Digga D",
+        "title": "It's You",
+        "artist_name": "LA Priest",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Strange As Can Be",
-        "artist_name": "Lucy",
+        "title": "Playin' the Same Game",
+        "artist_name": "YUNGMORPHEUS",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Reason You",
-        "artist_name": "Rema",
+        "title": "Jeans",
+        "artist_name": "Joanne Robertson",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Clown",
-        "artist_name": "Mega Bog",
+        "title": "Madres",
+        "artist_name": "Sofia Kourtesis",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Titan of Hope",
-        "artist_name": "MSPAINT",
+        "title": "Tenere Den",
+        "artist_name": "Tinariwen",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "A&W",
-        "artist_name": "Lana Del Rey",
+        "title": "That's Tha Way Life Goes",
+        "artist_name": "Nia Archives",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
-        "song_id": 13533,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "What if",
+        "artist_name": "Kerri Chandler",
+        "video_id": null,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "CooCool",
+        "artist_name": "Róisín Murphy",
+        "video_id": null,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Nurse!",
+        "artist_name": "bar italia",
+        "video_id": null,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "verano adentro",
+        "artist_name": "NOIA",
+        "video_id": null,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
+        "song_id": 13687,
         "duplicate": true
     },
     {
-        "title": "Trust Fund",
-        "artist_name": "Llainwire",
+        "title": "Wynter Time",
+        "artist_name": "Asher Gamedze",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "73%",
-        "artist_name": "Algiers",
+        "title": "Favorite Shirt",
+        "artist_name": "Jozzy",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Evil Finds Light",
-        "artist_name": "Drain",
+        "title": "Run, Run, Run",
+        "artist_name": "McKinley Dixon",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Stay Close",
-        "artist_name": "Bawo",
+        "title": "This World Couldn't See Us",
+        "artist_name": "Nabihah Iqbal",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Femme Fatale",
-        "artist_name": "gyrofield",
+        "title": "old place",
+        "artist_name": "Jim Legxacy",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Redd St. Turbulence",
-        "artist_name": "Jam City ft. Julian Cashwan Pratt",
+        "title": "Before I Knew the Truth",
+        "artist_name": "Liturgy",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Night Light",
-        "artist_name": "yuné pinku",
+        "title": "Love You Better",
+        "artist_name": "gum.mp3 and Netanya",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wooden Cross",
-        "artist_name": "Fooly Cooly",
+        "title": "EASY PREY (Remix)",
+        "artist_name": "yeule and Kin Leonn, ft. Moderat",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Yoga",
-        "artist_name": "Asake",
+        "title": "Destiny",
+        "artist_name": "Angel Deradoorian and Kate NV",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dawns",
-        "artist_name": "Zach Bryan and Maggie Rogers",
+        "title": "America's Next Top Model",
+        "artist_name": "SPIDER",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
-        "song_id": 13477,
-        "duplicate": true
-    },
-    {
-        "title": "Can't Move Wrong",
-        "artist_name": "Luh Tyler ft. Trapland Pat",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Over the Dune",
-        "artist_name": "Steve Gunn and David Moore",
+        "title": "Stigmergy",
+        "artist_name": "Natural Information Society",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sandrail Silhouette",
-        "artist_name": "Avalon Emerson",
+        "title": "pawnshop",
+        "artist_name": "Kara Jackson",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Future Shaman",
-        "artist_name": "Rob Mazurek",
+        "title": "(Please Don't) Leave Me Now",
+        "artist_name": "Madison McFerrin",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Town Crank",
-        "artist_name": "Clark",
+        "title": "Black",
+        "artist_name": "Neue Grafik and Brother Portrait",
         "video_id": null,
-        "capture_date": "2023-02-24 09:15:12.918000",
-        "source_id": 1510,
-        "song_id": 13456,
-        "duplicate": true
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ball N Chill",
+        "artist_name": "Rob49",
+        "video_id": null,
+        "capture_date": "2023-03-23 03:17:27.029000",
+        "source_id": 1553,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -702,26 +738,32 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Circle Back Around', 'Jayda G', NULL),
-    ('Work With It', 'Peezy and Yg Teck', NULL),
-    ('Us Against The World', 'Strandz and Digga D', NULL),
-    ('Strange As Can Be', 'Lucy', NULL),
-    ('Reason You', 'Rema', NULL),
-    ('The Clown', 'Mega Bog', NULL),
-    ('Titan of Hope', 'MSPAINT', NULL),
-    ('Trust Fund', 'Llainwire', NULL),
-    ('73%', 'Algiers', NULL),
-    ('Evil Finds Light', 'Drain', NULL),
-    ('Stay Close', 'Bawo', NULL),
-    ('Femme Fatale', 'gyrofield', NULL),
-    ('Redd St. Turbulence', 'Jam City ft. Julian Cashwan Pratt', NULL),
-    ('Night Light', 'yuné pinku', NULL),
-    ('Wooden Cross', 'Fooly Cooly', NULL),
-    ('Yoga', 'Asake', NULL),
-    ('Can’t Move Wrong', 'Luh Tyler ft. Trapland Pat', NULL),
-    ('Over the Dune', 'Steve Gunn and David Moore', NULL),
-    ('Sandrail Silhouette', 'Avalon Emerson', NULL),
-    ('Future Shaman', 'Rob Mazurek', NULL)
+    ('GOMD', 'Veeze', NULL),
+    ('Boyhood', 'The Japanese House', NULL),
+    ('It’s You', 'LA Priest', NULL),
+    ('Playin’ the Same Game', 'YUNGMORPHEUS', NULL),
+    ('Jeans', 'Joanne Robertson', NULL),
+    ('Madres', 'Sofia Kourtesis', NULL),
+    ('Tenere Den', 'Tinariwen', NULL),
+    ('That’s Tha Way Life Goes', 'Nia Archives', NULL),
+    ('What if', 'Kerri Chandler', NULL),
+    ('CooCool', 'Róisín Murphy', NULL),
+    ('Nurse!', 'bar italia', NULL),
+    ('Wynter Time', 'Asher Gamedze', NULL),
+    ('Favorite Shirt', 'Jozzy', NULL),
+    ('Run, Run, Run', 'McKinley Dixon', NULL),
+    ('This World Couldn’t See Us', 'Nabihah Iqbal', NULL),
+    ('old place', 'Jim Legxacy', NULL),
+    ('Before I Knew the Truth', 'Liturgy', NULL),
+    ('Love You Better', 'gum.mp3 and Netanya', NULL),
+    ('EASY PREY (Remix)', 'yeule and Kin Leonn, ft. Moderat', NULL),
+    ('Destiny', 'Angel Deradoorian and Kate NV', NULL),
+    ('America’s Next Top Model', 'SPIDER', NULL),
+    ('Stigmergy', 'Natural Information Society', NULL),
+    ('pawnshop', 'Kara Jackson', NULL),
+    ('(Please Don’t) Leave Me Now', 'Madison McFerrin', NULL),
+    ('Black', 'Neue Grafik and Brother Portrait', NULL),
+    ('Ball N Chill', 'Rob49', NULL)
     ;
 
      // Update to song table
@@ -732,7 +774,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13565; // SELECT last_insert_rowid();
+  song_id = 13737; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -772,29 +814,33 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-02-24 09:15:12.918000', '1510', '13546'),
-  ('2023-02-24 09:15:12.918000', '1510', '13547'),
-  ('2023-02-24 09:15:12.918000', '1510', '13548'),
-  ('2023-02-24 09:15:12.918000', '1510', '13549'),
-  ('2023-02-24 09:15:12.918000', '1510', '13550'),
-  ('2023-02-24 09:15:12.918000', '1510', '13551'),
-  ('2023-02-24 09:15:12.918000', '1510', '13552'),
-  ('2023-02-24 09:15:12.918000', '1510', '13533'),
-  ('2023-02-24 09:15:12.918000', '1510', '13553'),
-  ('2023-02-24 09:15:12.918000', '1510', '13554'),
-  ('2023-02-24 09:15:12.918000', '1510', '13555'),
-  ('2023-02-24 09:15:12.918000', '1510', '13556'),
-  ('2023-02-24 09:15:12.918000', '1510', '13557'),
-  ('2023-02-24 09:15:12.918000', '1510', '13558'),
-  ('2023-02-24 09:15:12.918000', '1510', '13559'),
-  ('2023-02-24 09:15:12.918000', '1510', '13560'),
-  ('2023-02-24 09:15:12.918000', '1510', '13561'),
-  ('2023-02-24 09:15:12.918000', '1510', '13477'),
-  ('2023-02-24 09:15:12.918000', '1510', '13562'),
-  ('2023-02-24 09:15:12.918000', '1510', '13563'),
-  ('2023-02-24 09:15:12.918000', '1510', '13564'),
-  ('2023-02-24 09:15:12.918000', '1510', '13565'),
-  ('2023-02-24 09:15:12.918000', '1510', '13456')
+  ('2023-03-23 03:17:27.029000', '1553', '13712'),
+  ('2023-03-23 03:17:27.029000', '1553', '13713'),
+  ('2023-03-23 03:17:27.029000', '1553', '13714'),
+  ('2023-03-23 03:17:27.029000', '1553', '13715'),
+  ('2023-03-23 03:17:27.029000', '1553', '13716'),
+  ('2023-03-23 03:17:27.029000', '1553', '13717'),
+  ('2023-03-23 03:17:27.029000', '1553', '13718'),
+  ('2023-03-23 03:17:27.029000', '1553', '13719'),
+  ('2023-03-23 03:17:27.029000', '1553', '13720'),
+  ('2023-03-23 03:17:27.029000', '1553', '13721'),
+  ('2023-03-23 03:17:27.029000', '1553', '13722'),
+  ('2023-03-23 03:17:27.029000', '1553', '13687'),
+  ('2023-03-23 03:17:27.029000', '1553', '13723'),
+  ('2023-03-23 03:17:27.029000', '1553', '13724'),
+  ('2023-03-23 03:17:27.029000', '1553', '13725'),
+  ('2023-03-23 03:17:27.029000', '1553', '13726'),
+  ('2023-03-23 03:17:27.029000', '1553', '13727'),
+  ('2023-03-23 03:17:27.029000', '1553', '13728'),
+  ('2023-03-23 03:17:27.029000', '1553', '13729'),
+  ('2023-03-23 03:17:27.029000', '1553', '13730'),
+  ('2023-03-23 03:17:27.029000', '1553', '13731'),
+  ('2023-03-23 03:17:27.029000', '1553', '13732'),
+  ('2023-03-23 03:17:27.029000', '1553', '13733'),
+  ('2023-03-23 03:17:27.029000', '1553', '13734'),
+  ('2023-03-23 03:17:27.029000', '1553', '13735'),
+  ('2023-03-23 03:17:27.029000', '1553', '13736'),
+  ('2023-03-23 03:17:27.029000', '1553', '13737')
   ;
 
   // Update to source_song table

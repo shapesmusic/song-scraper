@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Miley Cyrus and Brandi Carlile’s Raw Duet, and 9 More New Songs', '2023-03-13 07:50:44.000000', 'https://www.nytimes.com/2023/03/10/arts/music/playlist-miley-cyrus-brandi-carlile-eladio-carrion.html');
+    ('New York Times', 'The Playlist', 'Taylor Swift’s ‘Lover’ Outtake, and 8 More New Songs', '2023-03-17 08:35:59.000000', 'https://www.nytimes.com/2023/03/17/arts/music/playlist-taylor-swift-100-gecs.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1548; // SELECT last_insert_rowid();
+  source_id = 1551; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,92 +100,83 @@
   songsData =
   [
     {
-        "title": "Thousand Miles",
-        "artist_name": "Miley Cyrus ft. Brandi Carlile",
+        "title": "All of the Girls You Loved Before",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-03-23 02:39:24.141141",
-        "source_id": 1548,
+        "capture_date": "2023-03-23 02:50:42.604604",
+        "source_id": 1551,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Voy a Llorar",
-        "artist_name": "Nicki Nicole",
+        "title": "Borrowed Trouble",
+        "artist_name": "Feist",
         "video_id": null,
-        "capture_date": "2023-03-23 02:39:24.141141",
-        "source_id": 1548,
+        "capture_date": "2023-03-23 02:50:42.606606",
+        "source_id": 1551,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Freak Out",
-        "artist_name": "Baaba Maal ft. the Very Best",
+        "title": "So Hard So Hot",
+        "artist_name": "Alison Goldfrapp",
         "video_id": null,
-        "capture_date": "2023-03-23 02:39:24.141141",
-        "source_id": 1548,
+        "capture_date": "2023-03-23 02:50:42.606606",
+        "source_id": 1551,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mbappe (Remix)",
-        "artist_name": "Eladio Carrión ft. Future",
+        "title": "Stamina",
+        "artist_name": "Tiwa Savage, Ayra Starr and Young Jonn",
         "video_id": null,
-        "capture_date": "2023-03-23 02:39:24.141141",
-        "source_id": 1548,
+        "capture_date": "2023-03-23 02:50:42.606606",
+        "source_id": 1551,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Motto",
-        "artist_name": "NF",
+        "title": "Dumbest Girl Alive",
+        "artist_name": "100 gecs",
         "video_id": null,
-        "capture_date": "2023-03-23 02:39:24.141141",
-        "source_id": 1548,
+        "capture_date": "2023-03-23 02:50:42.606606",
+        "source_id": 1551,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Daily News",
-        "artist_name": "Bartees Strange",
+        "title": "The Horse Has a Voice",
+        "artist_name": "Matthew Herbert ft. Theon Cross",
         "video_id": null,
-        "capture_date": "2023-03-23 02:39:24.141141",
-        "source_id": 1548,
+        "capture_date": "2023-03-23 02:50:42.606606",
+        "source_id": 1551,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tell Me What You Want",
-        "artist_name": "Caroline Rose",
+        "title": "Thing or 2",
+        "artist_name": "Pieta Brown and JT Bates",
         "video_id": null,
-        "capture_date": "2023-03-23 02:39:24.141141",
-        "source_id": 1548,
+        "capture_date": "2023-03-23 02:50:42.606606",
+        "source_id": 1551,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nothing’s Free",
-        "artist_name": "Angel Olsen",
+        "title": "5 Leaf Clover",
+        "artist_name": "Luke Combs",
         "video_id": null,
-        "capture_date": "2023-03-23 02:39:24.141141",
-        "source_id": 1548,
+        "capture_date": "2023-03-23 02:50:42.606606",
+        "source_id": 1551,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Verano Adentro",
-        "artist_name": "Noia",
+        "title": "Safe to Run",
+        "artist_name": "Esther Rose ft. Hurray for the Riff Raff",
         "video_id": null,
-        "capture_date": "2023-03-23 02:39:24.141141",
-        "source_id": 1548,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Premiers Pas Au Marécage",
-        "artist_name": "Sarah Pagé",
-        "video_id": null,
-        "capture_date": "2023-03-23 02:39:24.141141",
-        "source_id": 1548,
+        "capture_date": "2023-03-23 02:50:42.606606",
+        "source_id": 1551,
         "song_id": null,
         "duplicate": false
     }
@@ -229,16 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Thousand Miles', 'Miley Cyrus ft. Brandi Carlile', NULL),
-  ('No Voy a Llorar', 'Nicki Nicole', NULL),
-  ('Freak Out', 'Baaba Maal ft. the Very Best', NULL),
-  ('Mbappe (Remix)', 'Eladio Carrión ft. Future', NULL),
-  ('Motto', 'NF', NULL),
-  ('Daily News', 'Bartees Strange', NULL),
-  ('Tell Me What You Want', 'Caroline Rose', NULL),
-  ('Nothing’s Free', 'Angel Olsen', NULL),
-  ('Verano Adentro', 'Noia', NULL),
-  ('Premiers Pas Au Marécage', 'Sarah Pagé', NULL)
+  ('All of the Girls You Loved Before', 'Taylor Swift', NULL),
+  ('Borrowed Trouble', 'Feist', NULL),
+  ('So Hard So Hot', 'Alison Goldfrapp', NULL),
+  ('Stamina', 'Tiwa Savage, Ayra Starr and Young Jonn', NULL),
+  ('Dumbest Girl Alive', '100 gecs', NULL),
+  ('The Horse Has a Voice', 'Matthew Herbert ft. Theon Cross', NULL),
+  ('Thing or 2', 'Pieta Brown and JT Bates', NULL),
+  ('5 Leaf Clover', 'Luke Combs', NULL),
+  ('Safe to Run', 'Esther Rose ft. Hurray for the Riff Raff', NULL)
   ;
 
    // Update to song table
@@ -249,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13688; // SELECT last_insert_rowid();
+  song_id = 13705; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-03-23 02:39:24.141141', '1548', '13679'),
-  ('2023-03-23 02:39:24.141141', '1548', '13680'),
-  ('2023-03-23 02:39:24.141141', '1548', '13681'),
-  ('2023-03-23 02:39:24.141141', '1548', '13682'),
-  ('2023-03-23 02:39:24.141141', '1548', '13683'),
-  ('2023-03-23 02:39:24.141141', '1548', '13684'),
-  ('2023-03-23 02:39:24.141141', '1548', '13685'),
-  ('2023-03-23 02:39:24.141141', '1548', '13686'),
-  ('2023-03-23 02:39:24.141141', '1548', '13687'),
-  ('2023-03-23 02:39:24.141141', '1548', '13688')
+  ('2023-03-23 02:50:42.604604', '1551', '13697'),
+  ('2023-03-23 02:50:42.606606', '1551', '13698'),
+  ('2023-03-23 02:50:42.606606', '1551', '13699'),
+  ('2023-03-23 02:50:42.606606', '1551', '13700'),
+  ('2023-03-23 02:50:42.606606', '1551', '13701'),
+  ('2023-03-23 02:50:42.606606', '1551', '13702'),
+  ('2023-03-23 02:50:42.606606', '1551', '13703'),
+  ('2023-03-23 02:50:42.606606', '1551', '13704'),
+  ('2023-03-23 02:50:42.606606', '1551', '13705')
   ;
 
   // Update to source_song table
