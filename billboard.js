@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of March 11, 2023', '2023-03-11 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-03-11');
+    ('Billboard', 'The Hot 100', 'Week of March 18, 2023', '2023-03-18 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-03-18/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1543; // SELECT last_insert_rowid();
+  source_id = 1547; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,155 +105,263 @@
   songsData =
   [
     {
-        "title": "TQG",
-        "artist_name": "Karol G x Shakira",
+        "title": "Thinkin' Bout Me",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.195195",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.963963",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kant Nobody",
-        "artist_name": "Lil Wayne ft. DMX",
+        "title": "Ain't That Some",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.197197",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.963963",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mientras Me Curo del Cora",
-        "artist_name": "Karol G",
+        "title": "Red Ruby Da Sleeze",
+        "artist_name": "Nicki Minaj",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.197197",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.966966",
+        "source_id": 1547,
+        "song_id": 13631,
+        "duplicate": true
+    },
+    {
+        "title": "Man Made A Bar",
+        "artist_name": "Morgan Wallen ft. Eric Church",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.966966",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Gucci Los Panos",
-        "artist_name": "Karol G",
+        "title": "'98 Braves",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.197197",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.967967",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Private Landing",
-        "artist_name": "Don Toliver ft. Justin Bieber & Future",
+        "title": "Devil Don't Know",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.197197",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.967967",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tus Gafitas",
-        "artist_name": "Karol G",
+        "title": "Sunrise",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.197197",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.967967",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No More Talk",
-        "artist_name": "Yeat",
+        "title": "Born With A Beer In My Hand",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.198198",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.967967",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Split",
-        "artist_name": "Yeat",
+        "title": "Whiskey Friends",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.198198",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.967967",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cairo",
-        "artist_name": "Karol G & Ovy On The Drums",
+        "title": "Tennessee Numbers",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.198198",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.968968",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shmunk",
-        "artist_name": "Yeat ft. YoungBoy Never Broke Again",
+        "title": "Cowgirls",
+        "artist_name": "Morgan Wallen ft. ERNEST",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.198198",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.968968",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pero Tu",
-        "artist_name": "Karol G & Quevedo",
+        "title": "Hope That's True",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.198198",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.968968",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dirt",
-        "artist_name": "Key Glock",
+        "title": "Dying Man",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.198198",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.968968",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Joe",
-        "artist_name": "Luke Combs",
+        "title": "Keith Whitley",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.198198",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.968968",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ojos Ferrari",
-        "artist_name": "Karol G, Justin Quiles & Angel Dior",
+        "title": "In The Bible",
+        "artist_name": "Morgan Wallen ft. HARDY",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.198198",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.968968",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Besties",
-        "artist_name": "Karol G",
+        "title": "Neon Star (Country Boy Lullaby)",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.198198",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.968968",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Manana Sera Bonito",
-        "artist_name": "Karol G & Carla Morrison",
+        "title": "Me + All Your Reasons",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.198198",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.968968",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Die 4 Me",
-        "artist_name": "Halsey",
+        "title": "I Deserve A Drink",
+        "artist_name": "Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:45:46.198198",
-        "source_id": 1543,
+        "capture_date": "2023-03-23 02:26:49.968968",
+        "source_id": 1547,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "F150-50",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.968968",
+        "source_id": 1547,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Single Than She Was",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.968968",
+        "source_id": 1547,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wine Into Water",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.969969",
+        "source_id": 1547,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "On The Street",
+        "artist_name": "j-hope With J. Cole",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.969969",
+        "source_id": 1547,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "180 (Lifestyle)",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.969969",
+        "source_id": 1547,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Last Drive Down Main",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.969969",
+        "source_id": 1547,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Good Girl Gone Missin'",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.969969",
+        "source_id": 1547,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Me To Me",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.969969",
+        "source_id": 1547,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Money On Me",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.969969",
+        "source_id": 1547,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Had It",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.969969",
+        "source_id": 1547,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Outlook",
+        "artist_name": "Morgan Wallen",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:26:49.969969",
+        "source_id": 1547,
         "song_id": null,
         "duplicate": false
     }
@@ -297,23 +405,34 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('TQG', 'Karol G x Shakira', NULL),
-  ('Kant Nobody', 'Lil Wayne ft. DMX', NULL),
-  ('Mientras Me Curo del Cora', 'Karol G', NULL),
-  ('Gucci Los Panos', 'Karol G', NULL),
-  ('Private Landing', 'Don Toliver ft. Justin Bieber & Future', NULL),
-  ('Tus Gafitas', 'Karol G', NULL),
-  ('No More Talk', 'Yeat', NULL),
-  ('Split', 'Yeat', NULL),
-  ('Cairo', 'Karol G & Ovy On The Drums', NULL),
-  ('Shmunk', 'Yeat ft. YoungBoy Never Broke Again', NULL),
-  ('Pero Tu', 'Karol G & Quevedo', NULL),
-  ('Dirt', 'Key Glock', NULL),
-  ('Joe', 'Luke Combs', NULL),
-  ('Ojos Ferrari', 'Karol G, Justin Quiles & Angel Dior', NULL),
-  ('Besties', 'Karol G', NULL),
-  ('Manana Sera Bonito', 'Karol G & Carla Morrison', NULL),
-  ('Die 4 Me', 'Halsey', NULL)
+  ('Thinkin’ Bout Me', 'Morgan Wallen', NULL),
+  ('Ain’t That Some', 'Morgan Wallen', NULL),
+  ('Man Made A Bar', 'Morgan Wallen ft. Eric Church', NULL),
+  ('’98 Braves', 'Morgan Wallen', NULL),
+  ('Devil Don’t Know', 'Morgan Wallen', NULL),
+  ('Sunrise', 'Morgan Wallen', NULL),
+  ('Born With A Beer In My Hand', 'Morgan Wallen', NULL),
+  ('Whiskey Friends', 'Morgan Wallen', NULL),
+  ('Tennessee Numbers', 'Morgan Wallen', NULL),
+  ('Cowgirls', 'Morgan Wallen ft. ERNEST', NULL),
+  ('Hope That’s True', 'Morgan Wallen', NULL),
+  ('Dying Man', 'Morgan Wallen', NULL),
+  ('Keith Whitley', 'Morgan Wallen', NULL),
+  ('In The Bible', 'Morgan Wallen ft. HARDY', NULL),
+  ('Neon Star (Country Boy Lullaby)', 'Morgan Wallen', NULL),
+  ('Me + All Your Reasons', 'Morgan Wallen', NULL),
+  ('I Deserve A Drink', 'Morgan Wallen', NULL),
+  ('F150-50', 'Morgan Wallen', NULL),
+  ('Single Than She Was', 'Morgan Wallen', NULL),
+  ('Wine Into Water', 'Morgan Wallen', NULL),
+  ('On The Street', 'j-hope With J. Cole', NULL),
+  ('180 (Lifestyle)', 'Morgan Wallen', NULL),
+  ('Last Drive Down Main', 'Morgan Wallen', NULL),
+  ('Good Girl Gone Missin’', 'Morgan Wallen', NULL),
+  ('Me To Me', 'Morgan Wallen', NULL),
+  ('Money On Me', 'Morgan Wallen', NULL),
+  ('Had It', 'Morgan Wallen', NULL),
+  ('Outlook', 'Morgan Wallen', NULL)
   ;
 
    // Update to song table
@@ -324,7 +443,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13630; // SELECT last_insert_rowid();
+  song_id = 13678; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -364,23 +483,35 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-03-12 08:45:46.195195', '1543', '13614'),
-  ('2023-03-12 08:45:46.197197', '1543', '13615'),
-  ('2023-03-12 08:45:46.197197', '1543', '13616'),
-  ('2023-03-12 08:45:46.197197', '1543', '13617'),
-  ('2023-03-12 08:45:46.197197', '1543', '13618'),
-  ('2023-03-12 08:45:46.197197', '1543', '13619'),
-  ('2023-03-12 08:45:46.198198', '1543', '13620'),
-  ('2023-03-12 08:45:46.198198', '1543', '13621'),
-  ('2023-03-12 08:45:46.198198', '1543', '13622'),
-  ('2023-03-12 08:45:46.198198', '1543', '13623'),
-  ('2023-03-12 08:45:46.198198', '1543', '13624'),
-  ('2023-03-12 08:45:46.198198', '1543', '13625'),
-  ('2023-03-12 08:45:46.198198', '1543', '13626'),
-  ('2023-03-12 08:45:46.198198', '1543', '13627'),
-  ('2023-03-12 08:45:46.198198', '1543', '13628'),
-  ('2023-03-12 08:45:46.198198', '1543', '13629'),
-  ('2023-03-12 08:45:46.198198', '1543', '13630')
+  ('2023-03-23 02:26:49.963963', '1547', '13651'),
+  ('2023-03-23 02:26:49.963963', '1547', '13652'),
+  ('2023-03-23 02:26:49.966966', '1547', '13631'),
+  ('2023-03-23 02:26:49.966966', '1547', '13653'),
+  ('2023-03-23 02:26:49.967967', '1547', '13654'),
+  ('2023-03-23 02:26:49.967967', '1547', '13655'),
+  ('2023-03-23 02:26:49.967967', '1547', '13656'),
+  ('2023-03-23 02:26:49.967967', '1547', '13657'),
+  ('2023-03-23 02:26:49.967967', '1547', '13658'),
+  ('2023-03-23 02:26:49.968968', '1547', '13659'),
+  ('2023-03-23 02:26:49.968968', '1547', '13660'),
+  ('2023-03-23 02:26:49.968968', '1547', '13661'),
+  ('2023-03-23 02:26:49.968968', '1547', '13662'),
+  ('2023-03-23 02:26:49.968968', '1547', '13663'),
+  ('2023-03-23 02:26:49.968968', '1547', '13664'),
+  ('2023-03-23 02:26:49.968968', '1547', '13665'),
+  ('2023-03-23 02:26:49.968968', '1547', '13666'),
+  ('2023-03-23 02:26:49.968968', '1547', '13667'),
+  ('2023-03-23 02:26:49.968968', '1547', '13668'),
+  ('2023-03-23 02:26:49.968968', '1547', '13669'),
+  ('2023-03-23 02:26:49.969969', '1547', '13670'),
+  ('2023-03-23 02:26:49.969969', '1547', '13671'),
+  ('2023-03-23 02:26:49.969969', '1547', '13672'),
+  ('2023-03-23 02:26:49.969969', '1547', '13673'),
+  ('2023-03-23 02:26:49.969969', '1547', '13674'),
+  ('2023-03-23 02:26:49.969969', '1547', '13675'),
+  ('2023-03-23 02:26:49.969969', '1547', '13676'),
+  ('2023-03-23 02:26:49.969969', '1547', '13677'),
+  ('2023-03-23 02:26:49.969969', '1547', '13678')
   ;
 
   // Update to source_song table

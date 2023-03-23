@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Nicki Minaj Returns Ready to Rumble, and 8 More New Songs', '2023-03-03 10:35:31.000000', 'https://www.nytimes.com/2023/03/03/arts/music/playlist-nicki-minaj-kali-uchis-summer-walker.html');
+    ('New York Times', 'The Playlist', 'Miley Cyrus and Brandi Carlile’s Raw Duet, and 9 More New Songs', '2023-03-13 07:50:44.000000', 'https://www.nytimes.com/2023/03/10/arts/music/playlist-miley-cyrus-brandi-carlile-eladio-carrion.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1544; // SELECT last_insert_rowid();
+  source_id = 1548; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,83 +100,92 @@
   songsData =
   [
     {
-        "title": "Red Ruby Da Sleeze",
-        "artist_name": "Nicki Minaj",
+        "title": "Thousand Miles",
+        "artist_name": "Miley Cyrus ft. Brandi Carlile",
         "video_id": null,
-        "capture_date": "2023-03-12 08:50:25.144144",
-        "source_id": 1544,
+        "capture_date": "2023-03-23 02:39:24.141141",
+        "source_id": 1548,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Deserve Me",
-        "artist_name": "Kali Uchis and Summer Walker",
+        "title": "No Voy a Llorar",
+        "artist_name": "Nicki Nicole",
         "video_id": null,
-        "capture_date": "2023-03-12 08:50:25.146146",
-        "source_id": 1544,
+        "capture_date": "2023-03-23 02:39:24.141141",
+        "source_id": 1548,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Not Strong Enough",
-        "artist_name": "boygenius",
+        "title": "Freak Out",
+        "artist_name": "Baaba Maal ft. the Very Best",
         "video_id": null,
-        "capture_date": "2023-03-12 08:50:25.146146",
-        "source_id": 1544,
+        "capture_date": "2023-03-23 02:39:24.141141",
+        "source_id": 1548,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Impurities",
-        "artist_name": "Arlo Parks",
+        "title": "Mbappe (Remix)",
+        "artist_name": "Eladio Carrión ft. Future",
         "video_id": null,
-        "capture_date": "2023-03-12 08:50:25.146146",
-        "source_id": 1544,
+        "capture_date": "2023-03-23 02:39:24.141141",
+        "source_id": 1548,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pinking Shears",
-        "artist_name": "Mandy, Indiana",
+        "title": "Motto",
+        "artist_name": "NF",
         "video_id": null,
-        "capture_date": "2023-03-12 08:50:25.146146",
-        "source_id": 1544,
+        "capture_date": "2023-03-23 02:39:24.141141",
+        "source_id": 1548,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Barley",
-        "artist_name": "Water From Your Eyes",
+        "title": "Daily News",
+        "artist_name": "Bartees Strange",
         "video_id": null,
-        "capture_date": "2023-03-12 08:50:25.146146",
-        "source_id": 1544,
+        "capture_date": "2023-03-23 02:39:24.141141",
+        "source_id": 1548,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Since I Have a Lover",
-        "artist_name": "6lack",
+        "title": "Tell Me What You Want",
+        "artist_name": "Caroline Rose",
         "video_id": null,
-        "capture_date": "2023-03-12 08:50:25.146146",
-        "source_id": 1544,
+        "capture_date": "2023-03-23 02:39:24.141141",
+        "source_id": 1548,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lo Siento",
-        "artist_name": "Princess Nokia",
+        "title": "Nothing’s Free",
+        "artist_name": "Angel Olsen",
         "video_id": null,
-        "capture_date": "2023-03-12 08:50:25.146146",
-        "source_id": 1544,
+        "capture_date": "2023-03-23 02:39:24.141141",
+        "source_id": 1548,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Zebras",
-        "artist_name": "yMusic",
+        "title": "Verano Adentro",
+        "artist_name": "Noia",
         "video_id": null,
-        "capture_date": "2023-03-12 08:50:25.146146",
-        "source_id": 1544,
+        "capture_date": "2023-03-23 02:39:24.141141",
+        "source_id": 1548,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Premiers Pas Au Marécage",
+        "artist_name": "Sarah Pagé",
+        "video_id": null,
+        "capture_date": "2023-03-23 02:39:24.141141",
+        "source_id": 1548,
         "song_id": null,
         "duplicate": false
     }
@@ -220,15 +229,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Red Ruby Da Sleeze', 'Nicki Minaj', NULL),
-  ('Deserve Me', 'Kali Uchis and Summer Walker', NULL),
-  ('Not Strong Enough', 'boygenius', NULL),
-  ('Impurities', 'Arlo Parks', NULL),
-  ('Pinking Shears', 'Mandy, Indiana', NULL),
-  ('Barley', 'Water From Your Eyes', NULL),
-  ('Since I Have a Lover', '6lack', NULL),
-  ('Lo Siento', 'Princess Nokia', NULL),
-  ('Zebras', 'yMusic', NULL)
+  ('Thousand Miles', 'Miley Cyrus ft. Brandi Carlile', NULL),
+  ('No Voy a Llorar', 'Nicki Nicole', NULL),
+  ('Freak Out', 'Baaba Maal ft. the Very Best', NULL),
+  ('Mbappe (Remix)', 'Eladio Carrión ft. Future', NULL),
+  ('Motto', 'NF', NULL),
+  ('Daily News', 'Bartees Strange', NULL),
+  ('Tell Me What You Want', 'Caroline Rose', NULL),
+  ('Nothing’s Free', 'Angel Olsen', NULL),
+  ('Verano Adentro', 'Noia', NULL),
+  ('Premiers Pas Au Marécage', 'Sarah Pagé', NULL)
   ;
 
    // Update to song table
@@ -239,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13639; // SELECT last_insert_rowid();
+  song_id = 13688; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-03-12 08:50:25.144144', '1544', '13631'),
-  ('2023-03-12 08:50:25.146146', '1544', '13632'),
-  ('2023-03-12 08:50:25.146146', '1544', '13633'),
-  ('2023-03-12 08:50:25.146146', '1544', '13634'),
-  ('2023-03-12 08:50:25.146146', '1544', '13635'),
-  ('2023-03-12 08:50:25.146146', '1544', '13636'),
-  ('2023-03-12 08:50:25.146146', '1544', '13637'),
-  ('2023-03-12 08:50:25.146146', '1544', '13638'),
-  ('2023-03-12 08:50:25.146146', '1544', '13639')
+  ('2023-03-23 02:39:24.141141', '1548', '13679'),
+  ('2023-03-23 02:39:24.141141', '1548', '13680'),
+  ('2023-03-23 02:39:24.141141', '1548', '13681'),
+  ('2023-03-23 02:39:24.141141', '1548', '13682'),
+  ('2023-03-23 02:39:24.141141', '1548', '13683'),
+  ('2023-03-23 02:39:24.141141', '1548', '13684'),
+  ('2023-03-23 02:39:24.141141', '1548', '13685'),
+  ('2023-03-23 02:39:24.141141', '1548', '13686'),
+  ('2023-03-23 02:39:24.141141', '1548', '13687'),
+  ('2023-03-23 02:39:24.141141', '1548', '13688')
   ;
 
   // Update to source_song table
