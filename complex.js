@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', '6LACK, BIA, Chlöe, and More', '2023-03-24 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-march-6lack-bia-chloe');
+    ('Complex', 'The Best New Music This Week', 'Tyler, The Creator, Quavo, DJ Drama, & More', '2023-03-31 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-tyler-the-creator-quavo-dj-drama');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1557; // SELECT last_insert_rowid();
+  source_id = 1561; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,83 +102,83 @@
   songsData =
   [
     {
-        "title": "Decatur",
-        "artist_name": "6LACK",
+        "title": "Sorry Not Sorry",
+        "artist_name": "Tyler, The Creator",
         "video_id": null,
-        "capture_date": "2023-04-19 11:56:23.511511",
-        "source_id": 1557,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Don’t Play With It",
-        "artist_name": "Lola Brooke ft. Latto & Yung Miami",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:56:23.512512",
-        "source_id": 1557,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I’m That Bitch",
-        "artist_name": "BIA ft. Timbaland",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:56:23.512512",
-        "source_id": 1557,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Body Do",
-        "artist_name": "Chlöe",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:56:23.512512",
-        "source_id": 1557,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "48 Laws of Power",
-        "artist_name": "HUNXHO",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:56:23.512512",
-        "source_id": 1557,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I Remember",
-        "artist_name": "Internet Money ft. Kodak Black & Roddy Ricch",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:56:23.512512",
-        "source_id": 1557,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Beso",
-        "artist_name": "Rosalía & Rauw Alejandro",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:56:23.512512",
-        "source_id": 1557,
-        "song_id": 14012,
+        "capture_date": "2023-04-19 05:31:57.753753",
+        "source_id": 1561,
+        "song_id": 14044,
         "duplicate": true
     },
     {
-        "title": "Cut You Off",
-        "artist_name": "Quando Rondo",
+        "title": "Honey Bun",
+        "artist_name": "Quavo",
         "video_id": null,
-        "capture_date": "2023-04-19 11:56:23.512512",
-        "source_id": 1557,
+        "capture_date": "2023-04-19 05:31:57.754754",
+        "source_id": 1561,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kiss N Tell",
-        "artist_name": "Mike Dimes",
+        "title": "Free Game",
+        "artist_name": "DJ Drama ft. Lil Uzi Vert & 42 Dugg",
         "video_id": null,
-        "capture_date": "2023-04-19 11:56:23.512512",
-        "source_id": 1557,
+        "capture_date": "2023-04-19 05:31:57.754754",
+        "source_id": 1561,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "High Price",
+        "artist_name": "Morray ft. Lil Tjay",
+        "video_id": null,
+        "capture_date": "2023-04-19 05:31:57.755755",
+        "source_id": 1561,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cheatback",
+        "artist_name": "Chlöe ft. Future & Joey Bada$$",
+        "video_id": null,
+        "capture_date": "2023-04-19 05:31:57.755755",
+        "source_id": 1561,
+        "song_id": 14039,
+        "duplicate": true
+    },
+    {
+        "title": "​​Barragán Lighting",
+        "artist_name": "Larry June & The Alchemist ft. Joey Bada$$ & Curren$y",
+        "video_id": null,
+        "capture_date": "2023-04-19 05:31:57.755755",
+        "source_id": 1561,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fight the Feeling",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2023-04-19 05:31:57.755755",
+        "source_id": 1561,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hot Boy",
+        "artist_name": "Nardo Wick ft. Lil Baby",
+        "video_id": null,
+        "capture_date": "2023-04-19 05:31:57.755755",
+        "source_id": 1561,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "You Was Laughing",
+        "artist_name": "Luh Tyler",
+        "video_id": null,
+        "capture_date": "2023-04-19 05:31:57.755755",
+        "source_id": 1561,
         "song_id": null,
         "duplicate": false
     }
@@ -221,14 +221,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Decatur', '6LACK', NULL),
-  ('Don’t Play With It', 'Lola Brooke ft. Latto & Yung Miami', NULL),
-  ('I’m That Bitch', 'BIA ft. Timbaland', NULL),
-  ('Body Do', 'Chlöe', NULL),
-  ('48 Laws of Power', 'HUNXHO', NULL),
-  ('I Remember', 'Internet Money ft. Kodak Black & Roddy Ricch', NULL),
-  ('Cut You Off', 'Quando Rondo', NULL),
-  ('Kiss N Tell', 'Mike Dimes', NULL)
+  ('Honey Bun', 'Quavo', NULL),
+  ('Free Game', 'DJ Drama ft. Lil Uzi Vert & 42 Dugg', NULL),
+  ('High Price', 'Morray ft. Lil Tjay', NULL),
+  ('​​Barragán Lighting', 'Larry June & The Alchemist ft. Joey Bada$$ & Curren$y', NULL),
+  ('Fight the Feeling', 'Rod Wave', NULL),
+  ('Hot Boy', 'Nardo Wick ft. Lil Baby', NULL),
+  ('You Was Laughing', 'Luh Tyler', NULL)
   ;
 
    // Update to song table
@@ -239,7 +238,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14027; // SELECT last_insert_rowid();
+  song_id = 14054; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +278,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-19 11:56:23.511511', '1557', '14020'),
-  ('2023-04-19 11:56:23.512512', '1557', '14021'),
-  ('2023-04-19 11:56:23.512512', '1557', '14022'),
-  ('2023-04-19 11:56:23.512512', '1557', '14023'),
-  ('2023-04-19 11:56:23.512512', '1557', '14024'),
-  ('2023-04-19 11:56:23.512512', '1557', '14025'),
-  ('2023-04-19 11:56:23.512512', '1557', '14012'),
-  ('2023-04-19 11:56:23.512512', '1557', '14026'),
-  ('2023-04-19 11:56:23.512512', '1557', '14027')
+  ('2023-04-19 05:31:57.753753', '1561', '14044'),
+  ('2023-04-19 05:31:57.754754', '1561', '14048'),
+  ('2023-04-19 05:31:57.754754', '1561', '14049'),
+  ('2023-04-19 05:31:57.755755', '1561', '14050'),
+  ('2023-04-19 05:31:57.755755', '1561', '14039'),
+  ('2023-04-19 05:31:57.755755', '1561', '14051'),
+  ('2023-04-19 05:31:57.755755', '1561', '14052'),
+  ('2023-04-19 05:31:57.755755', '1561', '14053'),
+  ('2023-04-19 05:31:57.755755', '1561', '14054')
   ;
 
   // Update to source_song table

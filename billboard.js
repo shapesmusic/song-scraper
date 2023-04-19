@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of April 1, 2023', '2023-04-01 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-04-01/2023-04-01');
+    ('Billboard', 'The Hot 100', 'Week of April 8, 2023', '2023-04-08 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-04-08/2023-04-08');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1555; // SELECT last_insert_rowid();
+  source_id = 1559; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,119 +105,74 @@
   songsData =
   [
     {
-        "title": "All Of The Girls You Loved Before",
-        "artist_name": "Taylor Swift",
+        "title": "Eyes Closed",
+        "artist_name": "Ed Sheeran",
         "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.229229",
-        "source_id": 1555,
-        "song_id": 13697,
-        "duplicate": true
-    },
-    {
-        "title": "Ella Baila Sola",
-        "artist_name": "Eslabon Armado X Peso Pluma",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.230230",
-        "source_id": 1555,
+        "capture_date": "2023-04-19 05:25:29.537537",
+        "source_id": 1559,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Set Me Free, Pt. 2",
-        "artist_name": "Jimin",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.230230",
-        "source_id": 1555,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "5 Leaf Clover",
+        "title": "Fast Car",
         "artist_name": "Luke Combs",
         "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.231231",
-        "source_id": 1555,
-        "song_id": 13704,
+        "capture_date": "2023-04-19 05:25:29.539539",
+        "source_id": 1559,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Beso",
+        "artist_name": "Rosalia & Rauw Alejandro",
+        "video_id": null,
+        "capture_date": "2023-04-19 05:25:29.539539",
+        "source_id": 1559,
+        "song_id": 14012,
         "duplicate": true
     },
     {
-        "title": "Eat Your Young",
-        "artist_name": "Hozier",
+        "title": "Don't Play With It",
+        "artist_name": "Lola Brooke X Latto X Yung Miami Or ft. Billy B",
         "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.231231",
-        "source_id": 1555,
+        "capture_date": "2023-04-19 05:25:29.539539",
+        "source_id": 1559,
+        "song_id": 14021,
+        "duplicate": true
+    },
+    {
+        "title": "Dogtooth",
+        "artist_name": "Tyler, The Creator",
+        "video_id": null,
+        "capture_date": "2023-04-19 05:25:29.540540",
+        "source_id": 1559,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "La Bebe",
-        "artist_name": "Yng Lvcas x Peso Pluma",
+        "title": "The Light",
+        "artist_name": "Juice WRLD",
         "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.231231",
-        "source_id": 1555,
+        "capture_date": "2023-04-19 05:25:29.540540",
+        "source_id": 1559,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "El Gordo Trae El Mando",
-        "artist_name": "Chino Pacas",
+        "title": "Ch y La Pizza",
+        "artist_name": "Fuerza Regida X Natanael Cano",
         "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.232232",
-        "source_id": 1555,
+        "capture_date": "2023-04-19 05:25:29.540540",
+        "source_id": 1559,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Coco Chanel",
-        "artist_name": "Eladio Carrion & Bad Bunny",
+        "title": "Memory Lane",
+        "artist_name": "Old Dominion",
         "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.232232",
-        "source_id": 1555,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "ICU",
-        "artist_name": "Coco Jones",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.232232",
-        "source_id": 1555,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Moonlight",
-        "artist_name": "Kali Uchis",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.233233",
-        "source_id": 1555,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Death",
-        "artist_name": "Melanie Martinez",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.234234",
-        "source_id": 1555,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nasty",
-        "artist_name": "Russ",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.234234",
-        "source_id": 1555,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cupid",
-        "artist_name": "Fifty Fifty",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:22:42.234234",
-        "source_id": 1555,
+        "capture_date": "2023-04-19 05:25:29.540540",
+        "source_id": 1559,
         "song_id": null,
         "duplicate": false
     }
@@ -261,17 +216,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Ella Baila Sola', 'Eslabon Armado X Peso Pluma', NULL),
-  ('Set Me Free, Pt. 2', 'Jimin', NULL),
-  ('Eat Your Young', 'Hozier', NULL),
-  ('La Bebe', 'Yng Lvcas x Peso Pluma', NULL),
-  ('El Gordo Trae El Mando', 'Chino Pacas', NULL),
-  ('Coco Chanel', 'Eladio Carrion & Bad Bunny', NULL),
-  ('ICU', 'Coco Jones', NULL),
-  ('Moonlight', 'Kali Uchis', NULL),
-  ('Death', 'Melanie Martinez', NULL),
-  ('Nasty', 'Russ', NULL),
-  ('Cupid', 'Fifty Fifty', NULL)
+  ('Eyes Closed', 'Ed Sheeran', NULL),
+  ('Fast Car', 'Luke Combs', NULL),
+  ('Dogtooth', 'Tyler, The Creator', NULL),
+  ('The Light', 'Juice WRLD', NULL),
+  ('Ch y La Pizza', 'Fuerza Regida X Natanael Cano', NULL),
+  ('Memory Lane', 'Old Dominion', NULL)
   ;
 
    // Update to song table
@@ -282,7 +232,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14011; // SELECT last_insert_rowid();
+  song_id = 14038; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -322,19 +272,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-19 11:22:42.229229', '1555', '13697'),
-  ('2023-04-19 11:22:42.230230', '1555', '14001'),
-  ('2023-04-19 11:22:42.230230', '1555', '14002'),
-  ('2023-04-19 11:22:42.231231', '1555', '13704'),
-  ('2023-04-19 11:22:42.231231', '1555', '14003'),
-  ('2023-04-19 11:22:42.231231', '1555', '14004'),
-  ('2023-04-19 11:22:42.232232', '1555', '14005'),
-  ('2023-04-19 11:22:42.232232', '1555', '14006'),
-  ('2023-04-19 11:22:42.232232', '1555', '14007'),
-  ('2023-04-19 11:22:42.233233', '1555', '14008'),
-  ('2023-04-19 11:22:42.234234', '1555', '14009'),
-  ('2023-04-19 11:22:42.234234', '1555', '14010'),
-  ('2023-04-19 11:22:42.234234', '1555', '14011')
+  ('2023-04-19 05:25:29.537537', '1559', '14033'),
+  ('2023-04-19 05:25:29.539539', '1559', '14034'),
+  ('2023-04-19 05:25:29.539539', '1559', '14012'),
+  ('2023-04-19 05:25:29.539539', '1559', '14021'),
+  ('2023-04-19 05:25:29.540540', '1559', '14035'),
+  ('2023-04-19 05:25:29.540540', '1559', '14036'),
+  ('2023-04-19 05:25:29.540540', '1559', '14037'),
+  ('2023-04-19 05:25:29.540540', '1559', '14038')
   ;
 
   // Update to source_song table

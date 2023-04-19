@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Rosalía and Rauw Alejandro’s Love Trilogy, and 8 More New Songs', '2023-03-30 07:26:52.000000', 'https://www.nytimes.com/2023/03/24/arts/music/playlist-rosalia-rauw-alejandro-shygirl-bjork.html');
+    ('New York Times', 'The Playlist', 'Chlöe Tangles With Future, and 8 More New Songs', '2023-04-10 01:32:27.000000', 'https://www.nytimes.com/2023/03/31/arts/music/playlist-chloe-future-tyler-the-creator.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1556; // SELECT last_insert_rowid();
+  source_id = 1560; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,83 +100,83 @@
   songsData =
   [
     {
-        "title": "Beso",
-        "artist_name": "Rosalía and Rauw Alejandro",
+        "title": "Cheatback",
+        "artist_name": "Chlöe and Future",
         "video_id": null,
-        "capture_date": "2023-04-19 11:52:12.008008",
-        "source_id": 1556,
+        "capture_date": "2023-04-19 05:28:50.359359",
+        "source_id": 1560,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Virgo",
-        "artist_name": "Meshell Ndegeocello",
+        "title": "It’s Euphoric",
+        "artist_name": "Georgia",
         "video_id": null,
-        "capture_date": "2023-04-19 11:52:12.009009",
-        "source_id": 1556,
+        "capture_date": "2023-04-19 05:28:50.360360",
+        "source_id": 1560,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "We Got the Jazz",
-        "artist_name": "Moor Mother ft. Kyle Kidd, Keir Neuringer and Aquiles Navarro",
+        "title": "FKA Mess",
+        "artist_name": "Abra",
         "video_id": null,
-        "capture_date": "2023-04-19 11:52:12.009009",
-        "source_id": 1556,
+        "capture_date": "2023-04-19 05:28:50.360360",
+        "source_id": 1560,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Boyhood",
-        "artist_name": "The Japanese House",
+        "title": "Plan B",
+        "artist_name": "Bettye LaVette",
         "video_id": null,
-        "capture_date": "2023-04-19 11:52:12.009009",
-        "source_id": 1556,
-        "song_id": 13713,
-        "duplicate": true
-    },
-    {
-        "title": "Eye for an Eye",
-        "artist_name": "Rina Sawayama",
-        "video_id": null,
-        "capture_date": "2023-04-19 11:52:12.009009",
-        "source_id": 1556,
+        "capture_date": "2023-04-19 05:28:50.360360",
+        "source_id": 1560,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Days Move Slow",
-        "artist_name": "Bully",
+        "title": "Make My Way Back Home",
+        "artist_name": "Kassa Overall ft. Nick Hakim and Theo Croker",
         "video_id": null,
-        "capture_date": "2023-04-19 11:52:12.009009",
-        "source_id": 1556,
+        "capture_date": "2023-04-19 05:28:50.360360",
+        "source_id": 1560,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Woe (I See It From Your Side) (Björk Remix)",
-        "artist_name": "Shygirl",
+        "title": "Sorry Not Sorry",
+        "artist_name": "Tyler, the Creator",
         "video_id": null,
-        "capture_date": "2023-04-19 11:52:12.009009",
-        "source_id": 1556,
+        "capture_date": "2023-04-19 05:28:50.360360",
+        "source_id": 1560,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Warning Sign",
-        "artist_name": "Hannah Jadagu",
+        "title": "God Herself",
+        "artist_name": "Madison McFerrin",
         "video_id": null,
-        "capture_date": "2023-04-19 11:52:12.009009",
-        "source_id": 1556,
+        "capture_date": "2023-04-19 05:28:50.361361",
+        "source_id": 1560,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Something Other Than Years",
-        "artist_name": "Lucinda Chua ft. Yeule",
+        "title": "If You Go Down (I’m Goin’ Down Too)",
+        "artist_name": "Kelsea Ballerini",
         "video_id": null,
-        "capture_date": "2023-04-19 11:52:12.009009",
-        "source_id": 1556,
+        "capture_date": "2023-04-19 05:28:50.361361",
+        "source_id": 1560,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hunter",
+        "artist_name": "Jess Williamson",
+        "video_id": null,
+        "capture_date": "2023-04-19 05:28:50.361361",
+        "source_id": 1560,
         "song_id": null,
         "duplicate": false
     }
@@ -220,14 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Beso', 'Rosalía and Rauw Alejandro', NULL),
-  ('Virgo', 'Meshell Ndegeocello', NULL),
-  ('We Got the Jazz', 'Moor Mother ft. Kyle Kidd, Keir Neuringer and Aquiles Navarro', NULL),
-  ('Eye for an Eye', 'Rina Sawayama', NULL),
-  ('Days Move Slow', 'Bully', NULL),
-  ('Woe (I See It From Your Side) (Björk Remix)', 'Shygirl', NULL),
-  ('Warning Sign', 'Hannah Jadagu', NULL),
-  ('Something Other Than Years', 'Lucinda Chua ft. Yeule', NULL)
+  ('Cheatback', 'Chlöe and Future', NULL),
+  ('It’s Euphoric', 'Georgia', NULL),
+  ('FKA Mess', 'Abra', NULL),
+  ('Plan B', 'Bettye LaVette', NULL),
+  ('Make My Way Back Home', 'Kassa Overall ft. Nick Hakim and Theo Croker', NULL),
+  ('Sorry Not Sorry', 'Tyler, the Creator', NULL),
+  ('God Herself', 'Madison McFerrin', NULL),
+  ('If You Go Down (I’m Goin’ Down Too)', 'Kelsea Ballerini', NULL),
+  ('Hunter', 'Jess Williamson', NULL)
   ;
 
    // Update to song table
@@ -238,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14019; // SELECT last_insert_rowid();
+  song_id = 14047; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -278,15 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-19 11:52:12.008008', '1556', '14012'),
-  ('2023-04-19 11:52:12.009009', '1556', '14013'),
-  ('2023-04-19 11:52:12.009009', '1556', '14014'),
-  ('2023-04-19 11:52:12.009009', '1556', '13713'),
-  ('2023-04-19 11:52:12.009009', '1556', '14015'),
-  ('2023-04-19 11:52:12.009009', '1556', '14016'),
-  ('2023-04-19 11:52:12.009009', '1556', '14017'),
-  ('2023-04-19 11:52:12.009009', '1556', '14018'),
-  ('2023-04-19 11:52:12.009009', '1556', '14019')
+  ('2023-04-19 05:28:50.359359', '1560', '14039'),
+  ('2023-04-19 05:28:50.360360', '1560', '14040'),
+  ('2023-04-19 05:28:50.360360', '1560', '14041'),
+  ('2023-04-19 05:28:50.360360', '1560', '14042'),
+  ('2023-04-19 05:28:50.360360', '1560', '14043'),
+  ('2023-04-19 05:28:50.360360', '1560', '14044'),
+  ('2023-04-19 05:28:50.361361', '1560', '14045'),
+  ('2023-04-19 05:28:50.361361', '1560', '14046'),
+  ('2023-04-19 05:28:50.361361', '1560', '14047')
   ;
 
   // Update to source_song table
