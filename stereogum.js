@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of March 17, 2023', '2023-03-17 12:00:00.000000', 'https://www.stereogum.com/2217155/the-5-best-songs-of-the-week-474/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of March 24, 2023', '2023-03-24 12:00:00.000000', 'https://www.stereogum.com/2217899/the-5-best-songs-of-the-week-475/lists/the-5-best-songs-of-the-week/');
 
 
   // Update to source table
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1554; // SELECT last_insert_rowid();
+  source_id = 1558; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -102,47 +102,47 @@
   songsData =
   [
     {
-        "title": "Words With You",
-        "artist_name": "Chromeo",
+        "title": "Memory Lane",
+        "artist_name": "Taking Meds",
         "video_id": null,
-        "capture_date": "2023-03-23 03:41:57.468468",
-        "source_id": 1554,
+        "capture_date": "2023-04-19 11:59:30.663663",
+        "source_id": 1558,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Borrow Trouble",
-        "artist_name": "Feist",
+        "title": "Times Square",
+        "artist_name": "Jam City",
         "video_id": null,
-        "capture_date": "2023-03-23 03:41:57.468468",
-        "source_id": 1554,
+        "capture_date": "2023-04-19 11:59:30.664664",
+        "source_id": 1558,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bite The Hook",
-        "artist_name": "Incendiary",
+        "title": "TV In The Gas Pump",
+        "artist_name": "Wednesday",
         "video_id": null,
-        "capture_date": "2023-03-23 03:41:57.468468",
-        "source_id": 1554,
+        "capture_date": "2023-04-19 11:59:30.664664",
+        "source_id": 1558,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Grants",
-        "artist_name": "Lana Del Rey",
+        "title": "I Know Nothing At All",
+        "artist_name": "Dazy",
         "video_id": null,
-        "capture_date": "2023-03-23 03:41:57.468468",
-        "source_id": 1554,
+        "capture_date": "2023-04-19 11:59:30.664664",
+        "source_id": 1558,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "LEAN BEEF PATTY",
-        "artist_name": "JPEGMAFIA & Danny Brown",
+        "title": "Reckless And Sweet",
+        "artist_name": "Amaarae",
         "video_id": null,
-        "capture_date": "2023-03-23 03:41:57.469469",
-        "source_id": 1554,
+        "capture_date": "2023-04-19 11:59:30.664664",
+        "source_id": 1558,
         "song_id": null,
         "duplicate": false
     }
@@ -187,11 +187,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Words With You', 'Chromeo', NULL),
-  ('Borrow Trouble', 'Feist', NULL),
-  ('Bite The Hook', 'Incendiary', NULL),
-  ('The Grants', 'Lana Del Rey', NULL),
-  ('LEAN BEEF PATTY', 'JPEGMAFIA & Danny Brown', NULL)
+  ('Memory Lane', 'Taking Meds', NULL),
+  ('Times Square', 'Jam City', NULL),
+  ('TV In The Gas Pump', 'Wednesday', NULL),
+  ('I Know Nothing At All', 'Dazy', NULL),
+  ('Reckless And Sweet', 'Amaarae', NULL)
   ;
 
    // Update to song table
@@ -202,7 +202,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13742; // SELECT last_insert_rowid();
+  song_id = 14032; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -242,11 +242,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-03-23 03:41:57.468468', '1554', '13738'),
-  ('2023-03-23 03:41:57.468468', '1554', '13739'),
-  ('2023-03-23 03:41:57.468468', '1554', '13740'),
-  ('2023-03-23 03:41:57.468468', '1554', '13741'),
-  ('2023-03-23 03:41:57.469469', '1554', '13742')
+  ('2023-04-19 11:59:30.663663', '1558', '14028'),
+  ('2023-04-19 11:59:30.664664', '1558', '14029'),
+  ('2023-04-19 11:59:30.664664', '1558', '14030'),
+  ('2023-04-19 11:59:30.664664', '1558', '14031'),
+  ('2023-04-19 11:59:30.664664', '1558', '14032')
   ;
 
   // Update to source_song table

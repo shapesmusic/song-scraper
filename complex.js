@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', '6lack, EST Gee, Lil Keed, Doechii, and More', '2023-03-17 12:00:00.000000', 'https://www.complex.com/music/new-music-this-week-doechii-lil-keed');
+    ('Complex', 'The Best New Music This Week', '6LACK, BIA, Chlöe, and More', '2023-03-24 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-march-6lack-bia-chloe');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1552; // SELECT last_insert_rowid();
+  source_id = 1557; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,67 +102,85 @@
   songsData =
   [
     {
-        "title": "Fatal Attraction",
-        "artist_name": "6lack",
+        "title": "Decatur",
+        "artist_name": "6LACK",
         "video_id": null,
-        "capture_date": "2023-03-23 02:57:24.366366",
-        "source_id": 1552,
+        "capture_date": "2023-04-19 11:56:23.511511",
+        "source_id": 1557,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The One and Only",
-        "artist_name": "EST Gee",
+        "title": "Don’t Play With It",
+        "artist_name": "Lola Brooke ft. Latto & Yung Miami",
         "video_id": null,
-        "capture_date": "2023-03-23 02:57:24.366366",
-        "source_id": 1552,
+        "capture_date": "2023-04-19 11:56:23.512512",
+        "source_id": 1557,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "What It Is (Block Boy)",
-        "artist_name": "Doechii",
+        "title": "I’m That Bitch",
+        "artist_name": "BIA ft. Timbaland",
         "video_id": null,
-        "capture_date": "2023-03-23 02:57:24.366366",
-        "source_id": 1552,
+        "capture_date": "2023-04-19 11:56:23.512512",
+        "source_id": 1557,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "All I Wanna Know",
-        "artist_name": "Lil Keed ft. Young Thug",
+        "title": "Body Do",
+        "artist_name": "Chlöe",
         "video_id": null,
-        "capture_date": "2023-03-23 02:57:24.366366",
-        "source_id": 1552,
+        "capture_date": "2023-04-19 11:56:23.512512",
+        "source_id": 1557,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sticky",
-        "artist_name": "Ni’jah ft. Childish Gambino & KIRBY",
+        "title": "48 Laws of Power",
+        "artist_name": "HUNXHO",
         "video_id": null,
-        "capture_date": "2023-03-23 02:57:24.366366",
-        "source_id": 1552,
+        "capture_date": "2023-04-19 11:56:23.512512",
+        "source_id": 1557,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "A Change is Gonna Come",
-        "artist_name": "T-Pain",
+        "title": "I Remember",
+        "artist_name": "Internet Money ft. Kodak Black & Roddy Ricch",
         "video_id": null,
-        "capture_date": "2023-03-23 02:57:24.366366",
-        "source_id": 1552,
+        "capture_date": "2023-04-19 11:56:23.512512",
+        "source_id": 1557,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Creepin",
-        "artist_name": "Diddy, Metro Boomin, The Weekend, and 21 Savage",
+        "title": "Beso",
+        "artist_name": "Rosalía & Rauw Alejandro",
         "video_id": null,
-        "capture_date": "2023-03-23 02:57:24.367367",
-        "source_id": 1552,
-        "song_id": 13260,
+        "capture_date": "2023-04-19 11:56:23.512512",
+        "source_id": 1557,
+        "song_id": 14012,
         "duplicate": true
+    },
+    {
+        "title": "Cut You Off",
+        "artist_name": "Quando Rondo",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:56:23.512512",
+        "source_id": 1557,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Kiss N Tell",
+        "artist_name": "Mike Dimes",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:56:23.512512",
+        "source_id": 1557,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -203,12 +221,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Fatal Attraction', '6lack', NULL),
-  ('The One and Only', 'EST Gee', NULL),
-  ('What It Is (Block Boy)', 'Doechii', NULL),
-  ('All I Wanna Know', 'Lil Keed ft. Young Thug', NULL),
-  ('Sticky', 'Ni’jah ft. Childish Gambino & KIRBY', NULL),
-  ('A Change is Gonna Come', 'T-Pain', NULL)
+  ('Decatur', '6LACK', NULL),
+  ('Don’t Play With It', 'Lola Brooke ft. Latto & Yung Miami', NULL),
+  ('I’m That Bitch', 'BIA ft. Timbaland', NULL),
+  ('Body Do', 'Chlöe', NULL),
+  ('48 Laws of Power', 'HUNXHO', NULL),
+  ('I Remember', 'Internet Money ft. Kodak Black & Roddy Ricch', NULL),
+  ('Cut You Off', 'Quando Rondo', NULL),
+  ('Kiss N Tell', 'Mike Dimes', NULL)
   ;
 
    // Update to song table
@@ -219,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13711; // SELECT last_insert_rowid();
+  song_id = 14027; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -259,13 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-03-23 02:57:24.366366', '1552', '13706'),
-  ('2023-03-23 02:57:24.366366', '1552', '13707'),
-  ('2023-03-23 02:57:24.366366', '1552', '13708'),
-  ('2023-03-23 02:57:24.366366', '1552', '13709'),
-  ('2023-03-23 02:57:24.366366', '1552', '13710'),
-  ('2023-03-23 02:57:24.366366', '1552', '13711'),
-  ('2023-03-23 02:57:24.367367', '1552', '13260')
+  ('2023-04-19 11:56:23.511511', '1557', '14020'),
+  ('2023-04-19 11:56:23.512512', '1557', '14021'),
+  ('2023-04-19 11:56:23.512512', '1557', '14022'),
+  ('2023-04-19 11:56:23.512512', '1557', '14023'),
+  ('2023-04-19 11:56:23.512512', '1557', '14024'),
+  ('2023-04-19 11:56:23.512512', '1557', '14025'),
+  ('2023-04-19 11:56:23.512512', '1557', '14012'),
+  ('2023-04-19 11:56:23.512512', '1557', '14026'),
+  ('2023-04-19 11:56:23.512512', '1557', '14027')
   ;
 
   // Update to source_song table

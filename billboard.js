@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of March 25, 2023', '2023-03-25 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-03-25');
+    ('Billboard', 'The Hot 100', 'Week of April 1, 2023', '2023-04-01 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-04-01/2023-04-01');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1550; // SELECT last_insert_rowid();
+  source_id = 1555; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,47 +105,119 @@
   songsData =
   [
     {
-        "title": "River",
-        "artist_name": "Miley Cyrus",
+        "title": "All Of The Girls You Loved Before",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-03-23 02:46:42.368368",
-        "source_id": 1550,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Jaded",
-        "artist_name": "Miley Cyrus",
-        "video_id": null,
-        "capture_date": "2023-03-23 02:46:42.373373",
-        "source_id": 1550,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Thousand Miles",
-        "artist_name": "Miley Cyrus ft. Brandi Carlile",
-        "video_id": null,
-        "capture_date": "2023-03-23 02:46:42.373373",
-        "source_id": 1550,
-        "song_id": 13679,
+        "capture_date": "2023-04-19 11:22:42.229229",
+        "source_id": 1555,
+        "song_id": 13697,
         "duplicate": true
     },
     {
-        "title": "Rose Colored Lenses",
-        "artist_name": "Miley Cyrus",
+        "title": "Ella Baila Sola",
+        "artist_name": "Eslabon Armado X Peso Pluma",
         "video_id": null,
-        "capture_date": "2023-03-23 02:46:42.374374",
-        "source_id": 1550,
+        "capture_date": "2023-04-19 11:22:42.230230",
+        "source_id": 1555,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Por Las Noches",
-        "artist_name": "Peso Pluma",
+        "title": "Set Me Free, Pt. 2",
+        "artist_name": "Jimin",
         "video_id": null,
-        "capture_date": "2023-03-23 02:46:42.374374",
-        "source_id": 1550,
+        "capture_date": "2023-04-19 11:22:42.230230",
+        "source_id": 1555,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "5 Leaf Clover",
+        "artist_name": "Luke Combs",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:22:42.231231",
+        "source_id": 1555,
+        "song_id": 13704,
+        "duplicate": true
+    },
+    {
+        "title": "Eat Your Young",
+        "artist_name": "Hozier",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:22:42.231231",
+        "source_id": 1555,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "La Bebe",
+        "artist_name": "Yng Lvcas x Peso Pluma",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:22:42.231231",
+        "source_id": 1555,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "El Gordo Trae El Mando",
+        "artist_name": "Chino Pacas",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:22:42.232232",
+        "source_id": 1555,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Coco Chanel",
+        "artist_name": "Eladio Carrion & Bad Bunny",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:22:42.232232",
+        "source_id": 1555,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "ICU",
+        "artist_name": "Coco Jones",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:22:42.232232",
+        "source_id": 1555,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Moonlight",
+        "artist_name": "Kali Uchis",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:22:42.233233",
+        "source_id": 1555,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Death",
+        "artist_name": "Melanie Martinez",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:22:42.234234",
+        "source_id": 1555,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Nasty",
+        "artist_name": "Russ",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:22:42.234234",
+        "source_id": 1555,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cupid",
+        "artist_name": "Fifty Fifty",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:22:42.234234",
+        "source_id": 1555,
         "song_id": null,
         "duplicate": false
     }
@@ -189,10 +261,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('River', 'Miley Cyrus', NULL),
-  ('Jaded', 'Miley Cyrus', NULL),
-  ('Rose Colored Lenses', 'Miley Cyrus', NULL),
-  ('Por Las Noches', 'Peso Pluma', NULL)
+  ('Ella Baila Sola', 'Eslabon Armado X Peso Pluma', NULL),
+  ('Set Me Free, Pt. 2', 'Jimin', NULL),
+  ('Eat Your Young', 'Hozier', NULL),
+  ('La Bebe', 'Yng Lvcas x Peso Pluma', NULL),
+  ('El Gordo Trae El Mando', 'Chino Pacas', NULL),
+  ('Coco Chanel', 'Eladio Carrion & Bad Bunny', NULL),
+  ('ICU', 'Coco Jones', NULL),
+  ('Moonlight', 'Kali Uchis', NULL),
+  ('Death', 'Melanie Martinez', NULL),
+  ('Nasty', 'Russ', NULL),
+  ('Cupid', 'Fifty Fifty', NULL)
   ;
 
    // Update to song table
@@ -203,7 +282,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13696; // SELECT last_insert_rowid();
+  song_id = 14011; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -243,11 +322,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-03-23 02:46:42.368368', '1550', '13693'),
-  ('2023-03-23 02:46:42.373373', '1550', '13694'),
-  ('2023-03-23 02:46:42.373373', '1550', '13679'),
-  ('2023-03-23 02:46:42.374374', '1550', '13695'),
-  ('2023-03-23 02:46:42.374374', '1550', '13696')
+  ('2023-04-19 11:22:42.229229', '1555', '13697'),
+  ('2023-04-19 11:22:42.230230', '1555', '14001'),
+  ('2023-04-19 11:22:42.230230', '1555', '14002'),
+  ('2023-04-19 11:22:42.231231', '1555', '13704'),
+  ('2023-04-19 11:22:42.231231', '1555', '14003'),
+  ('2023-04-19 11:22:42.231231', '1555', '14004'),
+  ('2023-04-19 11:22:42.232232', '1555', '14005'),
+  ('2023-04-19 11:22:42.232232', '1555', '14006'),
+  ('2023-04-19 11:22:42.232232', '1555', '14007'),
+  ('2023-04-19 11:22:42.233233', '1555', '14008'),
+  ('2023-04-19 11:22:42.234234', '1555', '14009'),
+  ('2023-04-19 11:22:42.234234', '1555', '14010'),
+  ('2023-04-19 11:22:42.234234', '1555', '14011')
   ;
 
   // Update to source_song table

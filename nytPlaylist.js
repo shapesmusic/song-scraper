@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Taylor Swift’s ‘Lover’ Outtake, and 8 More New Songs', '2023-03-17 08:35:59.000000', 'https://www.nytimes.com/2023/03/17/arts/music/playlist-taylor-swift-100-gecs.html');
+    ('New York Times', 'The Playlist', 'Rosalía and Rauw Alejandro’s Love Trilogy, and 8 More New Songs', '2023-03-30 07:26:52.000000', 'https://www.nytimes.com/2023/03/24/arts/music/playlist-rosalia-rauw-alejandro-shygirl-bjork.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1551; // SELECT last_insert_rowid();
+  source_id = 1556; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,83 +100,83 @@
   songsData =
   [
     {
-        "title": "All of the Girls You Loved Before",
-        "artist_name": "Taylor Swift",
+        "title": "Beso",
+        "artist_name": "Rosalía and Rauw Alejandro",
         "video_id": null,
-        "capture_date": "2023-03-23 02:50:42.604604",
-        "source_id": 1551,
+        "capture_date": "2023-04-19 11:52:12.008008",
+        "source_id": 1556,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Borrowed Trouble",
-        "artist_name": "Feist",
+        "title": "Virgo",
+        "artist_name": "Meshell Ndegeocello",
         "video_id": null,
-        "capture_date": "2023-03-23 02:50:42.606606",
-        "source_id": 1551,
+        "capture_date": "2023-04-19 11:52:12.009009",
+        "source_id": 1556,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "So Hard So Hot",
-        "artist_name": "Alison Goldfrapp",
+        "title": "We Got the Jazz",
+        "artist_name": "Moor Mother ft. Kyle Kidd, Keir Neuringer and Aquiles Navarro",
         "video_id": null,
-        "capture_date": "2023-03-23 02:50:42.606606",
-        "source_id": 1551,
+        "capture_date": "2023-04-19 11:52:12.009009",
+        "source_id": 1556,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Stamina",
-        "artist_name": "Tiwa Savage, Ayra Starr and Young Jonn",
+        "title": "Boyhood",
+        "artist_name": "The Japanese House",
         "video_id": null,
-        "capture_date": "2023-03-23 02:50:42.606606",
-        "source_id": 1551,
+        "capture_date": "2023-04-19 11:52:12.009009",
+        "source_id": 1556,
+        "song_id": 13713,
+        "duplicate": true
+    },
+    {
+        "title": "Eye for an Eye",
+        "artist_name": "Rina Sawayama",
+        "video_id": null,
+        "capture_date": "2023-04-19 11:52:12.009009",
+        "source_id": 1556,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dumbest Girl Alive",
-        "artist_name": "100 gecs",
+        "title": "Days Move Slow",
+        "artist_name": "Bully",
         "video_id": null,
-        "capture_date": "2023-03-23 02:50:42.606606",
-        "source_id": 1551,
+        "capture_date": "2023-04-19 11:52:12.009009",
+        "source_id": 1556,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Horse Has a Voice",
-        "artist_name": "Matthew Herbert ft. Theon Cross",
+        "title": "Woe (I See It From Your Side) (Björk Remix)",
+        "artist_name": "Shygirl",
         "video_id": null,
-        "capture_date": "2023-03-23 02:50:42.606606",
-        "source_id": 1551,
+        "capture_date": "2023-04-19 11:52:12.009009",
+        "source_id": 1556,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Thing or 2",
-        "artist_name": "Pieta Brown and JT Bates",
+        "title": "Warning Sign",
+        "artist_name": "Hannah Jadagu",
         "video_id": null,
-        "capture_date": "2023-03-23 02:50:42.606606",
-        "source_id": 1551,
+        "capture_date": "2023-04-19 11:52:12.009009",
+        "source_id": 1556,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "5 Leaf Clover",
-        "artist_name": "Luke Combs",
+        "title": "Something Other Than Years",
+        "artist_name": "Lucinda Chua ft. Yeule",
         "video_id": null,
-        "capture_date": "2023-03-23 02:50:42.606606",
-        "source_id": 1551,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Safe to Run",
-        "artist_name": "Esther Rose ft. Hurray for the Riff Raff",
-        "video_id": null,
-        "capture_date": "2023-03-23 02:50:42.606606",
-        "source_id": 1551,
+        "capture_date": "2023-04-19 11:52:12.009009",
+        "source_id": 1556,
         "song_id": null,
         "duplicate": false
     }
@@ -220,15 +220,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('All of the Girls You Loved Before', 'Taylor Swift', NULL),
-  ('Borrowed Trouble', 'Feist', NULL),
-  ('So Hard So Hot', 'Alison Goldfrapp', NULL),
-  ('Stamina', 'Tiwa Savage, Ayra Starr and Young Jonn', NULL),
-  ('Dumbest Girl Alive', '100 gecs', NULL),
-  ('The Horse Has a Voice', 'Matthew Herbert ft. Theon Cross', NULL),
-  ('Thing or 2', 'Pieta Brown and JT Bates', NULL),
-  ('5 Leaf Clover', 'Luke Combs', NULL),
-  ('Safe to Run', 'Esther Rose ft. Hurray for the Riff Raff', NULL)
+  ('Beso', 'Rosalía and Rauw Alejandro', NULL),
+  ('Virgo', 'Meshell Ndegeocello', NULL),
+  ('We Got the Jazz', 'Moor Mother ft. Kyle Kidd, Keir Neuringer and Aquiles Navarro', NULL),
+  ('Eye for an Eye', 'Rina Sawayama', NULL),
+  ('Days Move Slow', 'Bully', NULL),
+  ('Woe (I See It From Your Side) (Björk Remix)', 'Shygirl', NULL),
+  ('Warning Sign', 'Hannah Jadagu', NULL),
+  ('Something Other Than Years', 'Lucinda Chua ft. Yeule', NULL)
   ;
 
    // Update to song table
@@ -239,7 +238,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13705; // SELECT last_insert_rowid();
+  song_id = 14019; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +278,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-03-23 02:50:42.604604', '1551', '13697'),
-  ('2023-03-23 02:50:42.606606', '1551', '13698'),
-  ('2023-03-23 02:50:42.606606', '1551', '13699'),
-  ('2023-03-23 02:50:42.606606', '1551', '13700'),
-  ('2023-03-23 02:50:42.606606', '1551', '13701'),
-  ('2023-03-23 02:50:42.606606', '1551', '13702'),
-  ('2023-03-23 02:50:42.606606', '1551', '13703'),
-  ('2023-03-23 02:50:42.606606', '1551', '13704'),
-  ('2023-03-23 02:50:42.606606', '1551', '13705')
+  ('2023-04-19 11:52:12.008008', '1556', '14012'),
+  ('2023-04-19 11:52:12.009009', '1556', '14013'),
+  ('2023-04-19 11:52:12.009009', '1556', '14014'),
+  ('2023-04-19 11:52:12.009009', '1556', '13713'),
+  ('2023-04-19 11:52:12.009009', '1556', '14015'),
+  ('2023-04-19 11:52:12.009009', '1556', '14016'),
+  ('2023-04-19 11:52:12.009009', '1556', '14017'),
+  ('2023-04-19 11:52:12.009009', '1556', '14018'),
+  ('2023-04-19 11:52:12.009009', '1556', '14019')
   ;
 
   // Update to source_song table
