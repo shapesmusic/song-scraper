@@ -76,35 +76,34 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-10 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-02-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-31 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-30 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-25 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-24 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-18 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-10 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-06 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-01-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+    ('Pitchfork', 'Track Reviews', NULL, '2023-04-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-04-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-04-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-04-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-04-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-04-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-04-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-04-05 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-04-04 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-31 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-29 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-24 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-23 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-22 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-10 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-06 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-03-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-02-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-02-24 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-02-23 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -155,418 +154,364 @@
   songsData =
   [
     {
-        "title": "Dale Paca",
-        "artist_name": "Flow 28 x Braulio Fogon x Kiko El Crazy ft. Leo RD",
+        "title": "Double Fantasy",
+        "artist_name": "The Weeknd",
         "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.881881",
-        "source_id": 1511,
+        "capture_date": "2023-04-22 09:22:34.484484",
+        "source_id": 1571,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Float",
-        "artist_name": "Janelle Monáe ft. Seun Kuti and Egypt 80",
+        "title": "Don’t Let the Devil",
+        "artist_name": "Killer Mike",
         "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.883883",
-        "source_id": 1512,
-        "song_id": 13534,
+        "capture_date": "2023-04-22 09:22:34.487487",
+        "source_id": 1572,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Fields",
+        "artist_name": "Nourished by Time",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.487487",
+        "source_id": 1573,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fubu",
+        "artist_name": "DinamarcaRalphie Choo",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.487487",
+        "source_id": 1574,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pod",
+        "artist_name": "Snõõper",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.487487",
+        "source_id": 1575,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "FaceTime",
+        "artist_name": "billy woodsKenny Segal",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.487487",
+        "source_id": 1576,
+        "song_id": 14116,
         "duplicate": true
     },
     {
-        "title": "Respawn",
-        "artist_name": "Crushed",
+        "title": "Waffle House",
+        "artist_name": "Jonas Brothers",
         "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.883883",
-        "source_id": 1512,
+        "capture_date": "2023-04-22 09:22:34.487487",
+        "source_id": 1577,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You the Type",
-        "artist_name": "Hitkidd x Aleza x Slimeroni ft. Gloss Up and K Carbon",
+        "title": "Big Songbirds Don’t Cry",
+        "artist_name": "Superviolet",
         "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.883883",
-        "source_id": 1513,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "In Lightning",
-        "artist_name": "Feist",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.883883",
-        "source_id": 1513,
-        "song_id": 13532,
+        "capture_date": "2023-04-22 09:22:34.487487",
+        "source_id": 1578,
+        "song_id": 14058,
         "duplicate": true
     },
     {
-        "title": "A&W",
-        "artist_name": "Lana Del Rey",
+        "title": "Cloudy",
+        "artist_name": "Blue Bendy",
         "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.883883",
-        "source_id": 1514,
-        "song_id": 13533,
-        "duplicate": true
-    },
-    {
-        "title": "Play",
-        "artist_name": "Le Makeup ft. Tohji & gummyboy",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.883883",
-        "source_id": 1515,
+        "capture_date": "2023-04-22 09:22:34.487487",
+        "source_id": 1578,
         "song_id": null,
         "duplicate": false
-    },
-    {
-        "title": "Love Potion",
-        "artist_name": "Nick León",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.883883",
-        "source_id": 1516,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Been Thinking",
-        "artist_name": "Tyla",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.884884",
-        "source_id": 1517,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pearls",
-        "artist_name": "Jessie Ware",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.884884",
-        "source_id": 1517,
-        "song_id": 13514,
-        "duplicate": true
-    },
-    {
-        "title": "GETOUTOFMYHEAD",
-        "artist_name": "SHERELLE",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.884884",
-        "source_id": 1518,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Younger & Dumber",
-        "artist_name": "Indigo De Souza",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.884884",
-        "source_id": 1518,
-        "song_id": 13517,
-        "duplicate": true
-    },
-    {
-        "title": "Exodus the North Star",
-        "artist_name": "Yaya Bey",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.884884",
-        "source_id": 1519,
-        "song_id": 13518,
-        "duplicate": true
-    },
-    {
-        "title": "Elevator",
-        "artist_name": "Addison Groove",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.884884",
-        "source_id": 1519,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gotikeo (Sapphir22 Remix)",
-        "artist_name": "Sassyggirl x Sapphir22",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.884884",
-        "source_id": 1519,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Boy’s a Liar Pt. 2",
-        "artist_name": "PinkPantheress x Ice Spice",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.884884",
-        "source_id": 1520,
-        "song_id": 13507,
-        "duplicate": true
-    },
-    {
-        "title": "Mojik (Your Waves)",
-        "artist_name": "Fatima Al Qadiri",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.884884",
-        "source_id": 1520,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dibujos de Mi Alma",
-        "artist_name": "Y La Bamba",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.884884",
-        "source_id": 1521,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Amaranth",
-        "artist_name": "Model x Actriz",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.884884",
-        "source_id": 1522,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "After All This Time",
-        "artist_name": "Jana Horn",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1523,
-        "song_id": 13496,
-        "duplicate": true
-    },
-    {
-        "title": "Pray It Away",
-        "artist_name": "Chlöe",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1523,
-        "song_id": 13458,
-        "duplicate": true
-    },
-    {
-        "title": "Echolalia",
-        "artist_name": "Yves Tumor",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1524,
-        "song_id": 13488,
-        "duplicate": true
     },
     {
         "title": "One Touch",
-        "artist_name": "Golin",
+        "artist_name": "Bambii",
         "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1524,
+        "capture_date": "2023-04-22 09:22:34.487487",
+        "source_id": 1579,
+        "song_id": 14104,
+        "duplicate": true
+    },
+    {
+        "title": "Maria",
+        "artist_name": "Greg Mendez",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1580,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dickhead Blues",
+        "title": "Don’t Leave Me Now",
+        "artist_name": "Jessy Lanza",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1581,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Psychos",
+        "artist_name": "Jenny Lewis",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1581,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dogtooth",
+        "artist_name": "Tyler, the Creator",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1582,
+        "song_id": 14035,
+        "duplicate": true
+    },
+    {
+        "title": "Smoke",
+        "artist_name": "Victoria Monét",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1582,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dancehall",
+        "artist_name": "Bella Boo",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1583,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Vampiros",
+        "artist_name": "RosalíaRauw Alejandro",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1583,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Abril Lluvias Mil (Ricardo Villalobos Remix)",
+        "artist_name": "Ela MinusDJ Python",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1584,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sports",
+        "artist_name": "Yunè Pinku",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1585,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Reckless & Sweet",
+        "artist_name": "Amaarae",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1586,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lean Beef Patty",
+        "artist_name": "JPEGMAFIADanny Brown",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1587,
+        "song_id": 13742,
+        "duplicate": true
+    },
+    {
+        "title": "Safe to Run",
+        "artist_name": "Esther Rose",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1588,
+        "song_id": 13705,
+        "duplicate": true
+    },
+    {
+        "title": "Nurse!",
+        "artist_name": "Bar Italia",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1589,
+        "song_id": 13722,
+        "duplicate": true
+    },
+    {
+        "title": "Shiver",
+        "artist_name": "Fever Ray",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1589,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Never Coming Back",
+        "artist_name": "Alan BraxeAnnie",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.488488",
+        "source_id": 1590,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I’ve Got Me",
+        "artist_name": "Joanna Sternberg",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1590,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "To Be Honest",
+        "artist_name": "Christine and the Queens",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1591,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "CooCool",
+        "artist_name": "Róisín Murphy",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1591,
+        "song_id": 13721,
+        "duplicate": true
+    },
+    {
+        "title": "Pic of U",
+        "artist_name": "Proc Fiskal",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1592,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Old Place",
+        "artist_name": "Jim Legxacy",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1593,
+        "song_id": 13727,
+        "duplicate": true
+    },
+    {
+        "title": "Coogie",
+        "artist_name": "Dijon",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1594,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Good Time",
+        "artist_name": "The Dare",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1594,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Believe",
+        "artist_name": "Jacques Greene",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1595,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Idaho Alien",
+        "artist_name": "Youth Lagoon",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1596,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Barley",
+        "artist_name": "Water From Your Eyes",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1596,
+        "song_id": 13636,
+        "duplicate": true
+    },
+    {
+        "title": "Tin Man",
+        "artist_name": "Feeble Little Horse",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1596,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pawnshop",
         "artist_name": "Kara Jackson",
         "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1525,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1597,
+        "song_id": 13734,
+        "duplicate": true
+    },
+    {
+        "title": "Moonlight",
+        "artist_name": "Kali Uchis",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1597,
+        "song_id": 14008,
+        "duplicate": true
+    },
+    {
+        "title": "To Remain/To Return",
+        "artist_name": "Arooj Aftab, Vijay Iyer, Shahzad Ismaily",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1597,
+        "song_id": 13607,
+        "duplicate": true
+    },
+    {
+        "title": "Captain Picard",
+        "artist_name": "PhiikLungs",
+        "video_id": null,
+        "capture_date": "2023-04-22 09:22:34.489489",
+        "source_id": 1598,
         "song_id": null,
         "duplicate": false
-    },
-    {
-        "title": "Cinnamon",
-        "artist_name": "Fatboi Sharif x Roper Williams",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1526,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sandrail Silhouette",
-        "artist_name": "Avalon Emerson",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1527,
-        "song_id": 13564,
-        "duplicate": true
-    },
-    {
-        "title": "Nazama",
-        "artist_name": "Nyokabi Kariũki",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1527,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "All the Girls <3 ft. Tony Shhnow",
-        "artist_name": "Popstar Benny",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1528,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Echo",
-        "artist_name": "Lucinda Chua",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1528,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Chilldo Cycling Club",
-        "artist_name": "Huizit",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1528,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gloss Up",
-        "artist_name": "BestFrenn ft. Glorilla",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1529,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cnt Go Back ( Tell Me )",
-        "artist_name": "B. Cool-Aid x Pink Siifu x Ahwlee ft. Liv.e, Butcher Brown, Jimetta Rose, V.C.R, and Maurice II",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1530,
-        "song_id": 13423,
-        "duplicate": true
-    },
-    {
-        "title": "Eclipse de Amor",
-        "artist_name": "NOIA ft. Buscabulla",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1530,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Injury Detail",
-        "artist_name": "Mandy, Indiana",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1531,
-        "song_id": 13421,
-        "duplicate": true
-    },
-    {
-        "title": "Chosen to Deserve",
-        "artist_name": "Wednesday",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1531,
-        "song_id": 13441,
-        "duplicate": true
-    },
-    {
-        "title": "$20",
-        "artist_name": "boygenius",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1531,
-        "song_id": 13402,
-        "duplicate": true
-    },
-    {
-        "title": "For Granted",
-        "artist_name": "Yaeji",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1532,
-        "song_id": 13404,
-        "duplicate": true
-    },
-    {
-        "title": "Flowers",
-        "artist_name": "Miley Cyrus",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1533,
-        "song_id": 13383,
-        "duplicate": true
-    },
-    {
-        "title": "Istibtan",
-        "artist_name": "Toumba",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1534,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "So Hard to Tell",
-        "artist_name": "Debby Friday",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1534,
-        "song_id": 13433,
-        "duplicate": true
-    },
-    {
-        "title": "Contains Multitudes",
-        "artist_name": "James Holden",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.885885",
-        "source_id": 1535,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Oceans Niagara",
-        "artist_name": "M83",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.886886",
-        "source_id": 1536,
-        "song_id": 13394,
-        "duplicate": true
-    },
-    {
-        "title": "Nothing Left to Lose",
-        "artist_name": "Everything But the Girl",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.886886",
-        "source_id": 1536,
-        "song_id": 13380,
-        "duplicate": true
-    },
-    {
-        "title": "We Caa Done",
-        "artist_name": "Popcaan ft. Drake",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.887887",
-        "source_id": 1537,
-        "song_id": 13369,
-        "duplicate": true
-    },
-    {
-        "title": "Negro Leo",
-        "artist_name": "Rela ft. May Tuti",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.887887",
-        "source_id": 1538,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "OMG",
-        "artist_name": "NewJeans",
-        "video_id": null,
-        "capture_date": "2023-02-24 09:31:04.887887",
-        "source_id": 1539,
-        "song_id": 13398,
-        "duplicate": true
     }
 ]
 
@@ -619,30 +564,33 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Dale Paca', 'Flow 28 x Braulio Fogon x Kiko El Crazy ft. Leo RD', NULL),
-  ('Respawn', 'Crushed', NULL),
-  ('You the Type', 'Hitkidd x Aleza x Slimeroni ft. Gloss Up and K Carbon', NULL),
-  ('Play', 'Le Makeup ft. Tohji & gummyboy', NULL),
-  ('Love Potion', 'Nick León', NULL),
-  ('Been Thinking', 'Tyla', NULL),
-  ('GETOUTOFMYHEAD', 'SHERELLE', NULL),
-  ('Elevator', 'Addison Groove', NULL),
-  ('Gotikeo (Sapphir22 Remix)', 'Sassyggirl x Sapphir22', NULL),
-  ('Mojik (Your Waves)', 'Fatima Al Qadiri', NULL),
-  ('Dibujos de Mi Alma', 'Y La Bamba', NULL),
-  ('Amaranth', 'Model x Actriz', NULL),
-  ('One Touch', 'Golin', NULL),
-  ('Dickhead Blues', 'Kara Jackson', NULL),
-  ('Cinnamon', 'Fatboi Sharif x Roper Williams', NULL),
-  ('Nazama', 'Nyokabi Kariũki', NULL),
-  ('All the Girls <3 ft. Tony Shhnow', 'Popstar Benny', NULL),
-  ('Echo', 'Lucinda Chua', NULL),
-  ('Chilldo Cycling Club', 'Huizit', NULL),
-  ('Gloss Up', 'BestFrenn ft. Glorilla', NULL),
-  ('Eclipse de Amor', 'NOIA ft. Buscabulla', NULL),
-  ('Istibtan', 'Toumba', NULL),
-  ('Contains Multitudes', 'James Holden', NULL),
-  ('Negro Leo', 'Rela ft. May Tuti', NULL)
+  ('Double Fantasy', 'The Weeknd', NULL),
+  ('Don’t Let the Devil', 'Killer Mike', NULL),
+  ('The Fields', 'Nourished by Time', NULL),
+  ('Fubu', 'DinamarcaRalphie Choo', NULL),
+  ('Pod', 'Snõõper', NULL),
+  ('Waffle House', 'Jonas Brothers', NULL),
+  ('Cloudy', 'Blue Bendy', NULL),
+  ('Maria', 'Greg Mendez', NULL),
+  ('Don’t Leave Me Now', 'Jessy Lanza', NULL),
+  ('Psychos', 'Jenny Lewis', NULL),
+  ('Smoke', 'Victoria Monét', NULL),
+  ('Dancehall', 'Bella Boo', NULL),
+  ('Vampiros', 'RosalíaRauw Alejandro', NULL),
+  ('Abril Lluvias Mil (Ricardo Villalobos Remix)', 'Ela MinusDJ Python', NULL),
+  ('Sports', 'Yunè Pinku', NULL),
+  ('Reckless & Sweet', 'Amaarae', NULL),
+  ('Shiver', 'Fever Ray', NULL),
+  ('Never Coming Back', 'Alan BraxeAnnie', NULL),
+  ('I’ve Got Me', 'Joanna Sternberg', NULL),
+  ('To Be Honest', 'Christine and the Queens', NULL),
+  ('Pic of U', 'Proc Fiskal', NULL),
+  ('Coogie', 'Dijon', NULL),
+  ('Good Time', 'The Dare', NULL),
+  ('Believe', 'Jacques Greene', NULL),
+  ('Idaho Alien', 'Youth Lagoon', NULL),
+  ('Tin Man', 'Feeble Little Horse', NULL),
+  ('Captain Picard', 'PhiikLungs', NULL)
   ;
 
    // Update to song table
@@ -653,7 +601,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 13589; // SELECT last_insert_rowid();
+  song_id = 14143; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -693,52 +641,46 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-    ('2023-02-24 09:31:04.881881', '1511', '13566'),
-    ('2023-02-24 09:31:04.883883', '1512', '13534'),
-    ('2023-02-24 09:31:04.883883', '1512', '13567'),
-    ('2023-02-24 09:31:04.883883', '1513', '13568'),
-    ('2023-02-24 09:31:04.883883', '1513', '13532'),
-    ('2023-02-24 09:31:04.883883', '1514', '13533'),
-    ('2023-02-24 09:31:04.883883', '1515', '13569'),
-    ('2023-02-24 09:31:04.883883', '1516', '13570'),
-    ('2023-02-24 09:31:04.884884', '1517', '13571'),
-    ('2023-02-24 09:31:04.884884', '1517', '13514'),
-    ('2023-02-24 09:31:04.884884', '1518', '13572'),
-    ('2023-02-24 09:31:04.884884', '1518', '13517'),
-    ('2023-02-24 09:31:04.884884', '1519', '13518'),
-    ('2023-02-24 09:31:04.884884', '1519', '13573'),
-    ('2023-02-24 09:31:04.884884', '1519', '13574'),
-    ('2023-02-24 09:31:04.884884', '1520', '13507'),
-    ('2023-02-24 09:31:04.884884', '1520', '13575'),
-    ('2023-02-24 09:31:04.884884', '1521', '13576'),
-    ('2023-02-24 09:31:04.884884', '1522', '13577'),
-    ('2023-02-24 09:31:04.885885', '1523', '13496'),
-    ('2023-02-24 09:31:04.885885', '1523', '13458'),
-    ('2023-02-24 09:31:04.885885', '1524', '13488'),
-    ('2023-02-24 09:31:04.885885', '1524', '13578'),
-    ('2023-02-24 09:31:04.885885', '1525', '13579'),
-    ('2023-02-24 09:31:04.885885', '1526', '13580'),
-    ('2023-02-24 09:31:04.885885', '1527', '13564'),
-    ('2023-02-24 09:31:04.885885', '1527', '13581'),
-    ('2023-02-24 09:31:04.885885', '1528', '13582'),
-    ('2023-02-24 09:31:04.885885', '1528', '13583'),
-    ('2023-02-24 09:31:04.885885', '1528', '13584'),
-    ('2023-02-24 09:31:04.885885', '1529', '13585'),
-    ('2023-02-24 09:31:04.885885', '1530', '13423'),
-    ('2023-02-24 09:31:04.885885', '1530', '13586'),
-    ('2023-02-24 09:31:04.885885', '1531', '13421'),
-    ('2023-02-24 09:31:04.885885', '1531', '13441'),
-    ('2023-02-24 09:31:04.885885', '1531', '13402'),
-    ('2023-02-24 09:31:04.885885', '1532', '13404'),
-    ('2023-02-24 09:31:04.885885', '1533', '13383'),
-    ('2023-02-24 09:31:04.885885', '1534', '13587'),
-    ('2023-02-24 09:31:04.885885', '1534', '13433'),
-    ('2023-02-24 09:31:04.885885', '1535', '13588'),
-    ('2023-02-24 09:31:04.886886', '1536', '13394'),
-    ('2023-02-24 09:31:04.886886', '1536', '13380'),
-    ('2023-02-24 09:31:04.887887', '1537', '13369'),
-    ('2023-02-24 09:31:04.887887', '1538', '13589'),
-    ('2023-02-24 09:31:04.887887', '1539', '13398')
+  ('2023-04-22 09:22:34.484484', '1571', '14117'),
+  ('2023-04-22 09:22:34.487487', '1572', '14118'),
+  ('2023-04-22 09:22:34.487487', '1573', '14119'),
+  ('2023-04-22 09:22:34.487487', '1574', '14120'),
+  ('2023-04-22 09:22:34.487487', '1575', '14121'),
+  ('2023-04-22 09:22:34.487487', '1576', '14116'),
+  ('2023-04-22 09:22:34.487487', '1577', '14122'),
+  ('2023-04-22 09:22:34.487487', '1578', '14058'),
+  ('2023-04-22 09:22:34.487487', '1578', '14123'),
+  ('2023-04-22 09:22:34.487487', '1579', '14104'),
+  ('2023-04-22 09:22:34.488488', '1580', '14124'),
+  ('2023-04-22 09:22:34.488488', '1581', '14125'),
+  ('2023-04-22 09:22:34.488488', '1581', '14126'),
+  ('2023-04-22 09:22:34.488488', '1582', '14035'),
+  ('2023-04-22 09:22:34.488488', '1582', '14127'),
+  ('2023-04-22 09:22:34.488488', '1583', '14128'),
+  ('2023-04-22 09:22:34.488488', '1583', '14129'),
+  ('2023-04-22 09:22:34.488488', '1584', '14130'),
+  ('2023-04-22 09:22:34.488488', '1585', '14131'),
+  ('2023-04-22 09:22:34.488488', '1586', '14132'),
+  ('2023-04-22 09:22:34.488488', '1587', '13742'),
+  ('2023-04-22 09:22:34.488488', '1588', '13705'),
+  ('2023-04-22 09:22:34.488488', '1589', '13722'),
+  ('2023-04-22 09:22:34.488488', '1589', '14133'),
+  ('2023-04-22 09:22:34.488488', '1590', '14134'),
+  ('2023-04-22 09:22:34.489489', '1590', '14135'),
+  ('2023-04-22 09:22:34.489489', '1591', '14136'),
+  ('2023-04-22 09:22:34.489489', '1591', '13721'),
+  ('2023-04-22 09:22:34.489489', '1592', '14137'),
+  ('2023-04-22 09:22:34.489489', '1593', '13727'),
+  ('2023-04-22 09:22:34.489489', '1594', '14138'),
+  ('2023-04-22 09:22:34.489489', '1594', '14139'),
+  ('2023-04-22 09:22:34.489489', '1595', '14140'),
+  ('2023-04-22 09:22:34.489489', '1596', '14141'),
+  ('2023-04-22 09:22:34.489489', '1596', '13636'),
+  ('2023-04-22 09:22:34.489489', '1596', '14142'),
+  ('2023-04-22 09:22:34.489489', '1597', '13734'),
+  ('2023-04-22 09:22:34.489489', '1597', '14008'),
+  ('2023-04-22 09:22:34.489489', '1597', '13607'),
+  ('2023-04-22 09:22:34.489489', '1598', '14143')
   ;
 
   // Update to source_song table

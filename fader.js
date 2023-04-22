@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of March 20, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2023-03-20 12:00:00.000000', -- Dont forget this!
+      'Week of April 17, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2023-04-17 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1553; // SELECT last_insert_rowid();
+    source_id = 1569; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,245 +458,164 @@
     songsData =
     [
     {
-        "title": "GOMD",
-        "artist_name": "Veeze",
+        "title": "Get Busy With It",
+        "artist_name": "Conducta and MC Novelist",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Boyhood",
-        "artist_name": "The Japanese House",
+        "title": "Elsewhere",
+        "artist_name": "Hayden Pedigo",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "It's You",
-        "artist_name": "LA Priest",
+        "title": "Back In Office",
+        "artist_name": "Saba and No I.D.",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Playin' the Same Game",
-        "artist_name": "YUNGMORPHEUS",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Jeans",
-        "artist_name": "Joanne Robertson",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Madres",
-        "artist_name": "Sofia Kourtesis",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tenere Den",
-        "artist_name": "Tinariwen",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "That's Tha Way Life Goes",
-        "artist_name": "Nia Archives",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "What if",
-        "artist_name": "Kerri Chandler",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "CooCool",
-        "artist_name": "Róisín Murphy",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nurse!",
-        "artist_name": "bar italia",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "verano adentro",
-        "artist_name": "NOIA",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": 13687,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
+        "song_id": 14099,
         "duplicate": true
     },
     {
-        "title": "Wynter Time",
-        "artist_name": "Asher Gamedze",
+        "title": "Modus Operandi",
+        "artist_name": "Juan Wauters and Frankie Cosmos",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Favorite Shirt",
-        "artist_name": "Jozzy",
+        "title": "Paraclete Bhishajyai",
+        "artist_name": "Fire-Toolz",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Run, Run, Run",
-        "artist_name": "McKinley Dixon",
+        "title": "One Touch",
+        "artist_name": "Bambii",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "This World Couldn't See Us",
-        "artist_name": "Nabihah Iqbal",
+        "title": "FKA MESS",
+        "artist_name": "Abra",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
+        "song_id": 14041,
+        "duplicate": true
+    },
+    {
+        "title": "Dog Dreams",
+        "artist_name": "Lucy Liyou",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "old place",
-        "artist_name": "Jim Legxacy",
+        "title": "Hollow Head",
+        "artist_name": "GracieHorse",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Before I Knew the Truth",
-        "artist_name": "Liturgy",
+        "title": "Phone Me",
+        "artist_name": "MAY",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Love You Better",
-        "artist_name": "gum.mp3 and Netanya",
+        "title": "Oklahoma Baby",
+        "artist_name": "Emile Mosseri",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "EASY PREY (Remix)",
-        "artist_name": "yeule and Kin Leonn, ft. Moderat",
+        "title": "uHhH HuH.mp3",
+        "artist_name": "Tisakorean",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Destiny",
-        "artist_name": "Angel Deradoorian and Kate NV",
+        "title": "Get Down",
+        "artist_name": "DJ Girl",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "America's Next Top Model",
-        "artist_name": "SPIDER",
+        "title": "Cut",
+        "artist_name": "Chat Pile",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
+        "song_id": 14056,
+        "duplicate": true
+    },
+    {
+        "title": "Something Other Than Years",
+        "artist_name": "Lucinda Chua ft. yeule",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
+        "song_id": 14019,
+        "duplicate": true
+    },
+    {
+        "title": "night n day",
+        "artist_name": "NEW YORK",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Stigmergy",
-        "artist_name": "Natural Information Society",
+        "title": "Dumbest Girl Alive",
+        "artist_name": "100 gecs",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
+        "song_id": 13701,
+        "duplicate": true
     },
     {
-        "title": "pawnshop",
-        "artist_name": "Kara Jackson",
+        "title": "No Effort to Exist",
+        "artist_name": "Bernice",
         "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "(Please Don't) Leave Me Now",
-        "artist_name": "Madison McFerrin",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Black",
-        "artist_name": "Neue Grafik and Brother Portrait",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ball N Chill",
-        "artist_name": "Rob49",
-        "video_id": null,
-        "capture_date": "2023-03-23 03:17:27.029000",
-        "source_id": 1553,
+        "capture_date": "2023-04-22 08:34:07.080000",
+        "source_id": 1569,
         "song_id": null,
         "duplicate": false
     }
@@ -738,32 +657,19 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('GOMD', 'Veeze', NULL),
-    ('Boyhood', 'The Japanese House', NULL),
-    ('It’s You', 'LA Priest', NULL),
-    ('Playin’ the Same Game', 'YUNGMORPHEUS', NULL),
-    ('Jeans', 'Joanne Robertson', NULL),
-    ('Madres', 'Sofia Kourtesis', NULL),
-    ('Tenere Den', 'Tinariwen', NULL),
-    ('That’s Tha Way Life Goes', 'Nia Archives', NULL),
-    ('What if', 'Kerri Chandler', NULL),
-    ('CooCool', 'Róisín Murphy', NULL),
-    ('Nurse!', 'bar italia', NULL),
-    ('Wynter Time', 'Asher Gamedze', NULL),
-    ('Favorite Shirt', 'Jozzy', NULL),
-    ('Run, Run, Run', 'McKinley Dixon', NULL),
-    ('This World Couldn’t See Us', 'Nabihah Iqbal', NULL),
-    ('old place', 'Jim Legxacy', NULL),
-    ('Before I Knew the Truth', 'Liturgy', NULL),
-    ('Love You Better', 'gum.mp3 and Netanya', NULL),
-    ('EASY PREY (Remix)', 'yeule and Kin Leonn, ft. Moderat', NULL),
-    ('Destiny', 'Angel Deradoorian and Kate NV', NULL),
-    ('America’s Next Top Model', 'SPIDER', NULL),
-    ('Stigmergy', 'Natural Information Society', NULL),
-    ('pawnshop', 'Kara Jackson', NULL),
-    ('(Please Don’t) Leave Me Now', 'Madison McFerrin', NULL),
-    ('Black', 'Neue Grafik and Brother Portrait', NULL),
-    ('Ball N Chill', 'Rob49', NULL)
+    ('Get Busy With It', 'Conducta and MC Novelist', NULL),
+    ('Elsewhere', 'Hayden Pedigo', NULL),
+    ('Modus Operandi', 'Juan Wauters and Frankie Cosmos', NULL),
+    ('Paraclete Bhishajyai', 'Fire-Toolz', NULL),
+    ('One Touch', 'Bambii', NULL),
+    ('Dog Dreams', 'Lucy Liyou', NULL),
+    ('Hollow Head', 'GracieHorse', NULL),
+    ('Phone Me', 'MAY', NULL),
+    ('Oklahoma Baby', 'Emile Mosseri', NULL),
+    ('uHhH HuH.mp3', 'Tisakorean', NULL),
+    ('Get Down', 'DJ Girl', NULL),
+    ('night n day', 'NEW YORK', NULL),
+    ('No Effort to Exist', 'Bernice', NULL)
     ;
 
      // Update to song table
@@ -774,7 +680,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 13737; // SELECT last_insert_rowid();
+  song_id = 14112; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -814,33 +720,24 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-03-23 03:17:27.029000', '1553', '13712'),
-  ('2023-03-23 03:17:27.029000', '1553', '13713'),
-  ('2023-03-23 03:17:27.029000', '1553', '13714'),
-  ('2023-03-23 03:17:27.029000', '1553', '13715'),
-  ('2023-03-23 03:17:27.029000', '1553', '13716'),
-  ('2023-03-23 03:17:27.029000', '1553', '13717'),
-  ('2023-03-23 03:17:27.029000', '1553', '13718'),
-  ('2023-03-23 03:17:27.029000', '1553', '13719'),
-  ('2023-03-23 03:17:27.029000', '1553', '13720'),
-  ('2023-03-23 03:17:27.029000', '1553', '13721'),
-  ('2023-03-23 03:17:27.029000', '1553', '13722'),
-  ('2023-03-23 03:17:27.029000', '1553', '13687'),
-  ('2023-03-23 03:17:27.029000', '1553', '13723'),
-  ('2023-03-23 03:17:27.029000', '1553', '13724'),
-  ('2023-03-23 03:17:27.029000', '1553', '13725'),
-  ('2023-03-23 03:17:27.029000', '1553', '13726'),
-  ('2023-03-23 03:17:27.029000', '1553', '13727'),
-  ('2023-03-23 03:17:27.029000', '1553', '13728'),
-  ('2023-03-23 03:17:27.029000', '1553', '13729'),
-  ('2023-03-23 03:17:27.029000', '1553', '13730'),
-  ('2023-03-23 03:17:27.029000', '1553', '13731'),
-  ('2023-03-23 03:17:27.029000', '1553', '13732'),
-  ('2023-03-23 03:17:27.029000', '1553', '13733'),
-  ('2023-03-23 03:17:27.029000', '1553', '13734'),
-  ('2023-03-23 03:17:27.029000', '1553', '13735'),
-  ('2023-03-23 03:17:27.029000', '1553', '13736'),
-  ('2023-03-23 03:17:27.029000', '1553', '13737')
+  ('2023-04-22 08:34:07.080000', '1569', '14100'),
+  ('2023-04-22 08:34:07.080000', '1569', '14101'),
+  ('2023-04-22 08:34:07.080000', '1569', '14099'),
+  ('2023-04-22 08:34:07.080000', '1569', '14102'),
+  ('2023-04-22 08:34:07.080000', '1569', '14103'),
+  ('2023-04-22 08:34:07.080000', '1569', '14104'),
+  ('2023-04-22 08:34:07.080000', '1569', '14041'),
+  ('2023-04-22 08:34:07.080000', '1569', '14105'),
+  ('2023-04-22 08:34:07.080000', '1569', '14106'),
+  ('2023-04-22 08:34:07.080000', '1569', '14107'),
+  ('2023-04-22 08:34:07.080000', '1569', '14108'),
+  ('2023-04-22 08:34:07.080000', '1569', '14109'),
+  ('2023-04-22 08:34:07.080000', '1569', '14110'),
+  ('2023-04-22 08:34:07.080000', '1569', '14056'),
+  ('2023-04-22 08:34:07.080000', '1569', '14019'),
+  ('2023-04-22 08:34:07.080000', '1569', '14111'),
+  ('2023-04-22 08:34:07.080000', '1569', '13701'),
+  ('2023-04-22 08:34:07.080000', '1569', '14112')
   ;
 
   // Update to source_song table

@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Tyler, The Creator, Quavo, DJ Drama, & More', '2023-03-31 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-tyler-the-creator-quavo-dj-drama');
+    ('Complex', 'The Best New Music This Week', 'Ice Spice, Nicki Minaj, Pi’erre Bourne, NLE Choppa, and More', '2023-04-14 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-ice-spice-nicki-minaj');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1561; // SELECT last_insert_rowid();
+  source_id = 1568; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,85 +102,67 @@
   songsData =
   [
     {
-        "title": "Sorry Not Sorry",
-        "artist_name": "Tyler, The Creator",
+        "title": "Princess Diana (Remix)",
+        "artist_name": "Ice Spice & Nicki Minaj",
         "video_id": null,
-        "capture_date": "2023-04-19 05:31:57.753753",
-        "source_id": 1561,
-        "song_id": 14044,
+        "capture_date": "2023-04-22 08:29:36.238238",
+        "source_id": 1568,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Tabloid",
+        "artist_name": "Pi’erre Bourne",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:29:36.239239",
+        "source_id": 1568,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Automobooty",
+        "artist_name": "NLE Choppa ft. Lola Brooke & Modesty",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:29:36.239239",
+        "source_id": 1568,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Kill Bill (Remix)",
+        "artist_name": "SZA ft. Doja Cat",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:29:36.239239",
+        "source_id": 1568,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Rear View",
+        "artist_name": "YoungBoy Never Broke Again ft. Mariah The Scientist",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:29:36.239239",
+        "source_id": 1568,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Back In Office",
+        "artist_name": "Saba & No I.D.",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:29:36.239239",
+        "source_id": 1568,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Try Me",
+        "artist_name": "Jorja Smith",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:29:36.239239",
+        "source_id": 1568,
+        "song_id": 14066,
         "duplicate": true
-    },
-    {
-        "title": "Honey Bun",
-        "artist_name": "Quavo",
-        "video_id": null,
-        "capture_date": "2023-04-19 05:31:57.754754",
-        "source_id": 1561,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Free Game",
-        "artist_name": "DJ Drama ft. Lil Uzi Vert & 42 Dugg",
-        "video_id": null,
-        "capture_date": "2023-04-19 05:31:57.754754",
-        "source_id": 1561,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "High Price",
-        "artist_name": "Morray ft. Lil Tjay",
-        "video_id": null,
-        "capture_date": "2023-04-19 05:31:57.755755",
-        "source_id": 1561,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cheatback",
-        "artist_name": "Chlöe ft. Future & Joey Bada$$",
-        "video_id": null,
-        "capture_date": "2023-04-19 05:31:57.755755",
-        "source_id": 1561,
-        "song_id": 14039,
-        "duplicate": true
-    },
-    {
-        "title": "​​Barragán Lighting",
-        "artist_name": "Larry June & The Alchemist ft. Joey Bada$$ & Curren$y",
-        "video_id": null,
-        "capture_date": "2023-04-19 05:31:57.755755",
-        "source_id": 1561,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fight the Feeling",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2023-04-19 05:31:57.755755",
-        "source_id": 1561,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hot Boy",
-        "artist_name": "Nardo Wick ft. Lil Baby",
-        "video_id": null,
-        "capture_date": "2023-04-19 05:31:57.755755",
-        "source_id": 1561,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "You Was Laughing",
-        "artist_name": "Luh Tyler",
-        "video_id": null,
-        "capture_date": "2023-04-19 05:31:57.755755",
-        "source_id": 1561,
-        "song_id": null,
-        "duplicate": false
     }
 ]
 
@@ -221,13 +203,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Honey Bun', 'Quavo', NULL),
-  ('Free Game', 'DJ Drama ft. Lil Uzi Vert & 42 Dugg', NULL),
-  ('High Price', 'Morray ft. Lil Tjay', NULL),
-  ('​​Barragán Lighting', 'Larry June & The Alchemist ft. Joey Bada$$ & Curren$y', NULL),
-  ('Fight the Feeling', 'Rod Wave', NULL),
-  ('Hot Boy', 'Nardo Wick ft. Lil Baby', NULL),
-  ('You Was Laughing', 'Luh Tyler', NULL)
+  ('Princess Diana (Remix)', 'Ice Spice & Nicki Minaj', NULL),
+  ('Tabloid', 'Pi’erre Bourne', NULL),
+  ('Automobooty', 'NLE Choppa ft. Lola Brooke & Modesty', NULL),
+  ('Kill Bill (Remix)', 'SZA ft. Doja Cat', NULL),
+  ('Rear View', 'YoungBoy Never Broke Again ft. Mariah The Scientist', NULL),
+  ('Back In Office', 'Saba & No I.D.', NULL)
   ;
 
    // Update to song table
@@ -238,7 +219,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14054; // SELECT last_insert_rowid();
+  song_id = 14099; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -278,15 +259,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-19 05:31:57.753753', '1561', '14044'),
-  ('2023-04-19 05:31:57.754754', '1561', '14048'),
-  ('2023-04-19 05:31:57.754754', '1561', '14049'),
-  ('2023-04-19 05:31:57.755755', '1561', '14050'),
-  ('2023-04-19 05:31:57.755755', '1561', '14039'),
-  ('2023-04-19 05:31:57.755755', '1561', '14051'),
-  ('2023-04-19 05:31:57.755755', '1561', '14052'),
-  ('2023-04-19 05:31:57.755755', '1561', '14053'),
-  ('2023-04-19 05:31:57.755755', '1561', '14054')
+  ('2023-04-22 08:29:36.238238', '1568', '14094'),
+  ('2023-04-22 08:29:36.239239', '1568', '14095'),
+  ('2023-04-22 08:29:36.239239', '1568', '14096'),
+  ('2023-04-22 08:29:36.239239', '1568', '14097'),
+  ('2023-04-22 08:29:36.239239', '1568', '14098'),
+  ('2023-04-22 08:29:36.239239', '1568', '14099'),
+  ('2023-04-22 08:29:36.239239', '1568', '14066')
   ;
 
   // Update to source_song table

@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of April 7, 2023', '2023-04-07 12:00:00.000000', 'https://www.stereogum.com/2219518/the-5-best-songs-of-the-week-477/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of April 14, 2023', '2023-04-14 12:00:00.000000', 'https://www.stereogum.com/2220240/the-5-best-songs-of-the-week-478/lists/the-5-best-songs-of-the-week/');
 
 
   // Update to source table
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1565; // SELECT last_insert_rowid();
+  source_id = 1570; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -102,49 +102,49 @@
   songsData =
   [
     {
-        "title": "I Don't Talk To You",
-        "artist_name": "Paper Bee",
+        "title": "Begin Again",
+        "artist_name": "Jessie Ware",
         "video_id": null,
-        "capture_date": "2023-04-22 07:36:46.237237",
-        "source_id": 1565,
+        "capture_date": "2023-04-22 08:49:09.126126",
+        "source_id": 1570,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Keys Down If You Stay",
-        "artist_name": "Cola",
+        "title": "Hold Tight",
+        "artist_name": "Girl Ray",
         "video_id": null,
-        "capture_date": "2023-04-22 07:36:46.238238",
-        "source_id": 1565,
+        "capture_date": "2023-04-22 08:49:09.127127",
+        "source_id": 1570,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Slogan Machine",
-        "artist_name": "Gumm",
+        "title": "Krøterveg Te Helvete",
+        "artist_name": "Kvelertak",
         "video_id": null,
-        "capture_date": "2023-04-22 07:36:46.238238",
-        "source_id": 1565,
+        "capture_date": "2023-04-22 08:49:09.127127",
+        "source_id": 1570,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Good Lies",
-        "artist_name": "Overmono",
+        "title": "FaceTime",
+        "artist_name": "billy woods & Kenny Segal",
         "video_id": null,
-        "capture_date": "2023-04-22 07:36:46.238238",
-        "source_id": 1565,
+        "capture_date": "2023-04-22 08:49:09.127127",
+        "source_id": 1570,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Passed Me By",
-        "artist_name": "Yaeji",
+        "title": "Bubblegum",
+        "artist_name": "Dawn Richard",
         "video_id": null,
-        "capture_date": "2023-04-22 07:36:46.238238",
-        "source_id": 1565,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2023-04-22 08:49:09.127127",
+        "source_id": 1570,
+        "song_id": 14068,
+        "duplicate": true
     }
 ]
 
@@ -187,11 +187,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('I Don’t Talk To You', 'Paper Bee', NULL),
-  ('Keys Down If You Stay', 'Cola', NULL),
-  ('Slogan Machine', 'Gumm', NULL),
-  ('Good Lies', 'Overmono', NULL),
-  ('Passed Me By', 'Yaeji', NULL)
+  ('Begin Again', 'Jessie Ware', NULL),
+  ('Hold Tight', 'Girl Ray', NULL),
+  ('Krøterveg Te Helvete', 'Kvelertak', NULL),
+  ('FaceTime', 'billy woods & Kenny Segal', NULL)
   ;
 
    // Update to song table
@@ -202,7 +201,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14076; // SELECT last_insert_rowid();
+  song_id = 14116; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -242,11 +241,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-22 07:36:46.237237', '1565', '14072'),
-  ('2023-04-22 07:36:46.238238', '1565', '14073'),
-  ('2023-04-22 07:36:46.238238', '1565', '14074'),
-  ('2023-04-22 07:36:46.238238', '1565', '14075'),
-  ('2023-04-22 07:36:46.238238', '1565', '14076')
+  ('2023-04-22 08:49:09.126126', '1570', '14113'),
+  ('2023-04-22 08:49:09.127127', '1570', '14114'),
+  ('2023-04-22 08:49:09.127127', '1570', '14115'),
+  ('2023-04-22 08:49:09.127127', '1570', '14116'),
+  ('2023-04-22 08:49:09.127127', '1570', '14068')
   ;
 
   // Update to source_song table

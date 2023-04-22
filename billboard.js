@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of April 15, 2023', '2023-04-15 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-04-15/');
+    ('Billboard', 'The Hot 100', 'Week of April 22, 2023', '2023-04-22 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-04-22');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1563; // SELECT last_insert_rowid();
+  source_id = 1566; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,67 +105,76 @@
   songsData =
   [
     {
-        "title": "Fight The Feeling",
-        "artist_name": "Rod Wave",
+        "title": "Search & Rescue",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2023-04-22 07:28:01.747747",
-        "source_id": 1563,
-        "song_id": 14052,
-        "duplicate": true
-    },
-    {
-        "title": "Sorry Not Sorry",
-        "artist_name": "Tyler, The Creator",
-        "video_id": null,
-        "capture_date": "2023-04-22 07:28:01.749749",
-        "source_id": 1563,
-        "song_id": 14044,
-        "duplicate": true
-    },
-    {
-        "title": "Void",
-        "artist_name": "Melanie Martinez",
-        "video_id": null,
-        "capture_date": "2023-04-22 07:28:01.749749",
-        "source_id": 1563,
+        "capture_date": "2023-04-22 08:20:54.465465",
+        "source_id": 1566,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Need A Favor",
-        "artist_name": "Jelly Roll",
+        "title": "Happy",
+        "artist_name": "NF",
         "video_id": null,
-        "capture_date": "2023-04-22 07:28:01.750750",
-        "source_id": 1563,
+        "capture_date": "2023-04-22 08:20:54.472472",
+        "source_id": 1566,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "WHARF TALK",
-        "artist_name": "Tyler, The Creator ft. A$AP Rocky",
+        "title": "Strike (Holster)",
+        "artist_name": "Lil Yachty",
         "video_id": null,
-        "capture_date": "2023-04-22 07:28:01.750750",
-        "source_id": 1563,
+        "capture_date": "2023-04-22 08:20:54.474474",
+        "source_id": 1566,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Know",
-        "artist_name": "Kanii",
+        "title": "Peaches",
+        "artist_name": "Jack Black",
         "video_id": null,
-        "capture_date": "2023-04-22 07:28:01.751751",
-        "source_id": 1563,
+        "capture_date": "2023-04-22 08:20:54.477477",
+        "source_id": 1566,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hot Boy",
-        "artist_name": "Nardo Wick ft. Lil Baby",
+        "title": "Careful",
+        "artist_name": "NF & Cordae",
         "video_id": null,
-        "capture_date": "2023-04-22 07:28:01.751751",
-        "source_id": 1563,
-        "song_id": 14053,
-        "duplicate": true
+        "capture_date": "2023-04-22 08:20:54.477477",
+        "source_id": 1566,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "El Azul",
+        "artist_name": "Junior H x Peso Pluma",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:20:54.477477",
+        "source_id": 1566,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Never Felt So Alone",
+        "artist_name": "Labrinth",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:20:54.478478",
+        "source_id": 1566,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "WTF",
+        "artist_name": "YoungBoy Never Broke Again ft. Nicki Minaj",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:20:54.478478",
+        "source_id": 1566,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -207,10 +216,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Void', 'Melanie Martinez', NULL),
-  ('Need A Favor', 'Jelly Roll', NULL),
-  ('WHARF TALK', 'Tyler, The Creator ft. A$AP Rocky', NULL),
-  ('I Know', 'Kanii', NULL)
+  ('Search & Rescue', 'Drake', NULL),
+  ('Happy', 'NF', NULL),
+  ('Strike (Holster)', 'Lil Yachty', NULL),
+  ('Peaches', 'Jack Black', NULL),
+  ('Careful', 'NF & Cordae', NULL),
+  ('El Azul', 'Junior H x Peso Pluma', NULL),
+  ('Never Felt So Alone', 'Labrinth', NULL),
+  ('WTF', 'YoungBoy Never Broke Again ft. Nicki Minaj', NULL)
   ;
 
    // Update to song table
@@ -221,7 +234,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14062; // SELECT last_insert_rowid();
+  song_id = 14084; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -261,13 +274,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-22 07:28:01.747747', '1563', '14052'),
-  ('2023-04-22 07:28:01.749749', '1563', '14044'),
-  ('2023-04-22 07:28:01.749749', '1563', '14059'),
-  ('2023-04-22 07:28:01.750750', '1563', '14060'),
-  ('2023-04-22 07:28:01.750750', '1563', '14061'),
-  ('2023-04-22 07:28:01.751751', '1563', '14062'),
-  ('2023-04-22 07:28:01.751751', '1563', '14053')
+  ('2023-04-22 08:20:54.465465', '1566', '14077'),
+  ('2023-04-22 08:20:54.472472', '1566', '14078'),
+  ('2023-04-22 08:20:54.474474', '1566', '14079'),
+  ('2023-04-22 08:20:54.477477', '1566', '14080'),
+  ('2023-04-22 08:20:54.477477', '1566', '14081'),
+  ('2023-04-22 08:20:54.477477', '1566', '14082'),
+  ('2023-04-22 08:20:54.478478', '1566', '14083'),
+  ('2023-04-22 08:20:54.478478', '1566', '14084')
   ;
 
   // Update to source_song table

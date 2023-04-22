@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Kelly Clarkson Starts Telling Her Story, and 7 More New Songs', '2023-04-14 09:52:19.000000', 'https://www.nytimes.com/2023/04/14/arts/music/playlist-kelly-clarkson-jorja-smith.html');
+    ('New York Times', 'The Playlist', 'Drake Surprises With a Kim Kardashian Sample, and 11 More New Songs', '2023-04-07 10:43:48.000000', 'https://www.nytimes.com/2023/04/07/arts/music/playlist-drake-kaytramine.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1564; // SELECT last_insert_rowid();
+  source_id = 1567; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,83 +100,110 @@
   songsData =
   [
     {
-        "title": "Mine",
-        "artist_name": "Kelly Clarkson",
+        "title": "Search & Rescue",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2023-04-22 07:32:00.009009",
-        "source_id": 1564,
+        "capture_date": "2023-04-22 08:25:36.817817",
+        "source_id": 1567,
+        "song_id": 14077,
+        "duplicate": true
+    },
+    {
+        "title": "4EVA",
+        "artist_name": "Kaytraminé ft. Pharrell Williams",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:25:36.818818",
+        "source_id": 1567,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Me",
-        "artist_name": "Kelly Clarkson",
+        "title": "Terms and Conditions",
+        "artist_name": "Mahalia",
         "video_id": null,
-        "capture_date": "2023-04-22 07:32:00.009009",
-        "source_id": 1564,
+        "capture_date": "2023-04-22 08:25:36.818818",
+        "source_id": 1567,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Enjoy Your Life",
-        "artist_name": "Romy",
+        "title": "You Can Be Mean",
+        "artist_name": "Indigo De Souza",
         "video_id": null,
-        "capture_date": "2023-04-22 07:32:00.010010",
-        "source_id": 1564,
+        "capture_date": "2023-04-22 08:25:36.818818",
+        "source_id": 1567,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Try Me",
-        "artist_name": "Jorja Smith",
+        "title": "Salad",
+        "artist_name": "Blondshell",
         "video_id": null,
-        "capture_date": "2023-04-22 07:32:00.010010",
-        "source_id": 1564,
+        "capture_date": "2023-04-22 08:25:36.818818",
+        "source_id": 1567,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ode to Boy",
-        "artist_name": "Decisive Pink",
+        "title": "New York Comeback",
+        "artist_name": "Lucinda Williams",
         "video_id": null,
-        "capture_date": "2023-04-22 07:32:00.010010",
-        "source_id": 1564,
+        "capture_date": "2023-04-22 08:25:36.818818",
+        "source_id": 1567,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bubblegum",
-        "artist_name": "Dawn Richard",
+        "title": "Passed Me By",
+        "artist_name": "Yaeji",
         "video_id": null,
-        "capture_date": "2023-04-22 07:32:00.011011",
-        "source_id": 1564,
+        "capture_date": "2023-04-22 08:25:36.819819",
+        "source_id": 1567,
+        "song_id": 14076,
+        "duplicate": true
+    },
+    {
+        "title": "Asylum",
+        "artist_name": "Uncle Waffles",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:25:36.819819",
+        "source_id": 1567,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Scabs",
-        "artist_name": "Speedy Ortiz",
+        "title": "7 O’Clock Clap",
+        "artist_name": "Arthur Moon",
         "video_id": null,
-        "capture_date": "2023-04-22 07:32:00.011011",
-        "source_id": 1564,
+        "capture_date": "2023-04-22 08:25:36.819819",
+        "source_id": 1567,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Girl in the Mirror",
-        "artist_name": "Megan Moroney",
+        "title": "Never Felt So Alone",
+        "artist_name": "Labrinth",
         "video_id": null,
-        "capture_date": "2023-04-22 07:32:00.011011",
-        "source_id": 1564,
+        "capture_date": "2023-04-22 08:25:36.819819",
+        "source_id": 1567,
+        "song_id": 14083,
+        "duplicate": true
+    },
+    {
+        "title": "I/O",
+        "artist_name": "Peter Gabriel",
+        "video_id": null,
+        "capture_date": "2023-04-22 08:25:36.819819",
+        "source_id": 1567,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ashufak Shay",
-        "artist_name": "Dudu Tassa & Jonny Greenwood ft. Rashid Al Najjar",
+        "title": "Inside/Outside",
+        "artist_name": "This Is the Kit",
         "video_id": null,
-        "capture_date": "2023-04-22 07:32:00.011011",
-        "source_id": 1564,
+        "capture_date": "2023-04-22 08:25:36.820820",
+        "source_id": 1567,
         "song_id": null,
         "duplicate": false
     }
@@ -220,15 +247,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Mine', 'Kelly Clarkson', NULL),
-  ('Me', 'Kelly Clarkson', NULL),
-  ('Enjoy Your Life', 'Romy', NULL),
-  ('Try Me', 'Jorja Smith', NULL),
-  ('Ode to Boy', 'Decisive Pink', NULL),
-  ('Bubblegum', 'Dawn Richard', NULL),
-  ('Scabs', 'Speedy Ortiz', NULL),
-  ('Girl in the Mirror', 'Megan Moroney', NULL),
-  ('Ashufak Shay', 'Dudu Tassa & Jonny Greenwood ft. Rashid Al Najjar', NULL)
+  ('4EVA', 'Kaytraminé ft. Pharrell Williams', NULL),
+  ('Terms and Conditions', 'Mahalia', NULL),
+  ('You Can Be Mean', 'Indigo De Souza', NULL),
+  ('Salad', 'Blondshell', NULL),
+  ('New York Comeback', 'Lucinda Williams', NULL),
+  ('Asylum', 'Uncle Waffles', NULL),
+  ('7 O’Clock Clap', 'Arthur Moon', NULL),
+  ('I/O', 'Peter Gabriel', NULL),
+  ('Inside/Outside', 'This Is the Kit', NULL)
   ;
 
    // Update to song table
@@ -239,7 +266,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14071; // SELECT last_insert_rowid();
+  song_id = 14093; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +306,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-22 07:32:00.009009', '1564', '14063'),
-  ('2023-04-22 07:32:00.009009', '1564', '14064'),
-  ('2023-04-22 07:32:00.010010', '1564', '14065'),
-  ('2023-04-22 07:32:00.010010', '1564', '14066'),
-  ('2023-04-22 07:32:00.010010', '1564', '14067'),
-  ('2023-04-22 07:32:00.011011', '1564', '14068'),
-  ('2023-04-22 07:32:00.011011', '1564', '14069'),
-  ('2023-04-22 07:32:00.011011', '1564', '14070'),
-  ('2023-04-22 07:32:00.011011', '1564', '14071')
+  ('2023-04-22 08:25:36.817817', '1567', '14077'),
+  ('2023-04-22 08:25:36.818818', '1567', '14085'),
+  ('2023-04-22 08:25:36.818818', '1567', '14086'),
+  ('2023-04-22 08:25:36.818818', '1567', '14087'),
+  ('2023-04-22 08:25:36.818818', '1567', '14088'),
+  ('2023-04-22 08:25:36.818818', '1567', '14089'),
+  ('2023-04-22 08:25:36.819819', '1567', '14076'),
+  ('2023-04-22 08:25:36.819819', '1567', '14090'),
+  ('2023-04-22 08:25:36.819819', '1567', '14091'),
+  ('2023-04-22 08:25:36.819819', '1567', '14083'),
+  ('2023-04-22 08:25:36.819819', '1567', '14092'),
+  ('2023-04-22 08:25:36.820820', '1567', '14093')
   ;
 
   // Update to source_song table
