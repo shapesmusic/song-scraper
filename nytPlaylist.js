@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Chlöe Tangles With Future, and 8 More New Songs', '2023-04-10 01:32:27.000000', 'https://www.nytimes.com/2023/03/31/arts/music/playlist-chloe-future-tyler-the-creator.html');
+    ('New York Times', 'The Playlist', 'Kelly Clarkson Starts Telling Her Story, and 7 More New Songs', '2023-04-14 09:52:19.000000', 'https://www.nytimes.com/2023/04/14/arts/music/playlist-kelly-clarkson-jorja-smith.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1560; // SELECT last_insert_rowid();
+  source_id = 1564; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,83 +100,83 @@
   songsData =
   [
     {
-        "title": "Cheatback",
-        "artist_name": "Chlöe and Future",
+        "title": "Mine",
+        "artist_name": "Kelly Clarkson",
         "video_id": null,
-        "capture_date": "2023-04-19 05:28:50.359359",
-        "source_id": 1560,
+        "capture_date": "2023-04-22 07:32:00.009009",
+        "source_id": 1564,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "It’s Euphoric",
-        "artist_name": "Georgia",
+        "title": "Me",
+        "artist_name": "Kelly Clarkson",
         "video_id": null,
-        "capture_date": "2023-04-19 05:28:50.360360",
-        "source_id": 1560,
+        "capture_date": "2023-04-22 07:32:00.009009",
+        "source_id": 1564,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "FKA Mess",
-        "artist_name": "Abra",
+        "title": "Enjoy Your Life",
+        "artist_name": "Romy",
         "video_id": null,
-        "capture_date": "2023-04-19 05:28:50.360360",
-        "source_id": 1560,
+        "capture_date": "2023-04-22 07:32:00.010010",
+        "source_id": 1564,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Plan B",
-        "artist_name": "Bettye LaVette",
+        "title": "Try Me",
+        "artist_name": "Jorja Smith",
         "video_id": null,
-        "capture_date": "2023-04-19 05:28:50.360360",
-        "source_id": 1560,
+        "capture_date": "2023-04-22 07:32:00.010010",
+        "source_id": 1564,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Make My Way Back Home",
-        "artist_name": "Kassa Overall ft. Nick Hakim and Theo Croker",
+        "title": "Ode to Boy",
+        "artist_name": "Decisive Pink",
         "video_id": null,
-        "capture_date": "2023-04-19 05:28:50.360360",
-        "source_id": 1560,
+        "capture_date": "2023-04-22 07:32:00.010010",
+        "source_id": 1564,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sorry Not Sorry",
-        "artist_name": "Tyler, the Creator",
+        "title": "Bubblegum",
+        "artist_name": "Dawn Richard",
         "video_id": null,
-        "capture_date": "2023-04-19 05:28:50.360360",
-        "source_id": 1560,
+        "capture_date": "2023-04-22 07:32:00.011011",
+        "source_id": 1564,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "God Herself",
-        "artist_name": "Madison McFerrin",
+        "title": "Scabs",
+        "artist_name": "Speedy Ortiz",
         "video_id": null,
-        "capture_date": "2023-04-19 05:28:50.361361",
-        "source_id": 1560,
+        "capture_date": "2023-04-22 07:32:00.011011",
+        "source_id": 1564,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "If You Go Down (I’m Goin’ Down Too)",
-        "artist_name": "Kelsea Ballerini",
+        "title": "Girl in the Mirror",
+        "artist_name": "Megan Moroney",
         "video_id": null,
-        "capture_date": "2023-04-19 05:28:50.361361",
-        "source_id": 1560,
+        "capture_date": "2023-04-22 07:32:00.011011",
+        "source_id": 1564,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hunter",
-        "artist_name": "Jess Williamson",
+        "title": "Ashufak Shay",
+        "artist_name": "Dudu Tassa & Jonny Greenwood ft. Rashid Al Najjar",
         "video_id": null,
-        "capture_date": "2023-04-19 05:28:50.361361",
-        "source_id": 1560,
+        "capture_date": "2023-04-22 07:32:00.011011",
+        "source_id": 1564,
         "song_id": null,
         "duplicate": false
     }
@@ -220,15 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Cheatback', 'Chlöe and Future', NULL),
-  ('It’s Euphoric', 'Georgia', NULL),
-  ('FKA Mess', 'Abra', NULL),
-  ('Plan B', 'Bettye LaVette', NULL),
-  ('Make My Way Back Home', 'Kassa Overall ft. Nick Hakim and Theo Croker', NULL),
-  ('Sorry Not Sorry', 'Tyler, the Creator', NULL),
-  ('God Herself', 'Madison McFerrin', NULL),
-  ('If You Go Down (I’m Goin’ Down Too)', 'Kelsea Ballerini', NULL),
-  ('Hunter', 'Jess Williamson', NULL)
+  ('Mine', 'Kelly Clarkson', NULL),
+  ('Me', 'Kelly Clarkson', NULL),
+  ('Enjoy Your Life', 'Romy', NULL),
+  ('Try Me', 'Jorja Smith', NULL),
+  ('Ode to Boy', 'Decisive Pink', NULL),
+  ('Bubblegum', 'Dawn Richard', NULL),
+  ('Scabs', 'Speedy Ortiz', NULL),
+  ('Girl in the Mirror', 'Megan Moroney', NULL),
+  ('Ashufak Shay', 'Dudu Tassa & Jonny Greenwood ft. Rashid Al Najjar', NULL)
   ;
 
    // Update to song table
@@ -239,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14047; // SELECT last_insert_rowid();
+  song_id = 14071; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-19 05:28:50.359359', '1560', '14039'),
-  ('2023-04-19 05:28:50.360360', '1560', '14040'),
-  ('2023-04-19 05:28:50.360360', '1560', '14041'),
-  ('2023-04-19 05:28:50.360360', '1560', '14042'),
-  ('2023-04-19 05:28:50.360360', '1560', '14043'),
-  ('2023-04-19 05:28:50.360360', '1560', '14044'),
-  ('2023-04-19 05:28:50.361361', '1560', '14045'),
-  ('2023-04-19 05:28:50.361361', '1560', '14046'),
-  ('2023-04-19 05:28:50.361361', '1560', '14047')
+  ('2023-04-22 07:32:00.009009', '1564', '14063'),
+  ('2023-04-22 07:32:00.009009', '1564', '14064'),
+  ('2023-04-22 07:32:00.010010', '1564', '14065'),
+  ('2023-04-22 07:32:00.010010', '1564', '14066'),
+  ('2023-04-22 07:32:00.010010', '1564', '14067'),
+  ('2023-04-22 07:32:00.011011', '1564', '14068'),
+  ('2023-04-22 07:32:00.011011', '1564', '14069'),
+  ('2023-04-22 07:32:00.011011', '1564', '14070'),
+  ('2023-04-22 07:32:00.011011', '1564', '14071')
   ;
 
   // Update to source_song table

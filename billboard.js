@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of April 8, 2023', '2023-04-08 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-04-08/2023-04-08');
+    ('Billboard', 'The Hot 100', 'Week of April 15, 2023', '2023-04-15 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-04-15/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1559; // SELECT last_insert_rowid();
+  source_id = 1563; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,76 +105,67 @@
   songsData =
   [
     {
-        "title": "Eyes Closed",
-        "artist_name": "Ed Sheeran",
+        "title": "Fight The Feeling",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2023-04-19 05:25:29.537537",
-        "source_id": 1559,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fast Car",
-        "artist_name": "Luke Combs",
-        "video_id": null,
-        "capture_date": "2023-04-19 05:25:29.539539",
-        "source_id": 1559,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Beso",
-        "artist_name": "Rosalia & Rauw Alejandro",
-        "video_id": null,
-        "capture_date": "2023-04-19 05:25:29.539539",
-        "source_id": 1559,
-        "song_id": 14012,
+        "capture_date": "2023-04-22 07:28:01.747747",
+        "source_id": 1563,
+        "song_id": 14052,
         "duplicate": true
     },
     {
-        "title": "Don't Play With It",
-        "artist_name": "Lola Brooke X Latto X Yung Miami Or ft. Billy B",
-        "video_id": null,
-        "capture_date": "2023-04-19 05:25:29.539539",
-        "source_id": 1559,
-        "song_id": 14021,
-        "duplicate": true
-    },
-    {
-        "title": "Dogtooth",
+        "title": "Sorry Not Sorry",
         "artist_name": "Tyler, The Creator",
         "video_id": null,
-        "capture_date": "2023-04-19 05:25:29.540540",
-        "source_id": 1559,
+        "capture_date": "2023-04-22 07:28:01.749749",
+        "source_id": 1563,
+        "song_id": 14044,
+        "duplicate": true
+    },
+    {
+        "title": "Void",
+        "artist_name": "Melanie Martinez",
+        "video_id": null,
+        "capture_date": "2023-04-22 07:28:01.749749",
+        "source_id": 1563,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Light",
-        "artist_name": "Juice WRLD",
+        "title": "Need A Favor",
+        "artist_name": "Jelly Roll",
         "video_id": null,
-        "capture_date": "2023-04-19 05:25:29.540540",
-        "source_id": 1559,
+        "capture_date": "2023-04-22 07:28:01.750750",
+        "source_id": 1563,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ch y La Pizza",
-        "artist_name": "Fuerza Regida X Natanael Cano",
+        "title": "WHARF TALK",
+        "artist_name": "Tyler, The Creator ft. A$AP Rocky",
         "video_id": null,
-        "capture_date": "2023-04-19 05:25:29.540540",
-        "source_id": 1559,
+        "capture_date": "2023-04-22 07:28:01.750750",
+        "source_id": 1563,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Memory Lane",
-        "artist_name": "Old Dominion",
+        "title": "I Know",
+        "artist_name": "Kanii",
         "video_id": null,
-        "capture_date": "2023-04-19 05:25:29.540540",
-        "source_id": 1559,
+        "capture_date": "2023-04-22 07:28:01.751751",
+        "source_id": 1563,
         "song_id": null,
         "duplicate": false
+    },
+    {
+        "title": "Hot Boy",
+        "artist_name": "Nardo Wick ft. Lil Baby",
+        "video_id": null,
+        "capture_date": "2023-04-22 07:28:01.751751",
+        "source_id": 1563,
+        "song_id": 14053,
+        "duplicate": true
     }
 ]
 
@@ -216,12 +207,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Eyes Closed', 'Ed Sheeran', NULL),
-  ('Fast Car', 'Luke Combs', NULL),
-  ('Dogtooth', 'Tyler, The Creator', NULL),
-  ('The Light', 'Juice WRLD', NULL),
-  ('Ch y La Pizza', 'Fuerza Regida X Natanael Cano', NULL),
-  ('Memory Lane', 'Old Dominion', NULL)
+  ('Void', 'Melanie Martinez', NULL),
+  ('Need A Favor', 'Jelly Roll', NULL),
+  ('WHARF TALK', 'Tyler, The Creator ft. A$AP Rocky', NULL),
+  ('I Know', 'Kanii', NULL)
   ;
 
    // Update to song table
@@ -232,7 +221,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14038; // SELECT last_insert_rowid();
+  song_id = 14062; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -272,14 +261,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-19 05:25:29.537537', '1559', '14033'),
-  ('2023-04-19 05:25:29.539539', '1559', '14034'),
-  ('2023-04-19 05:25:29.539539', '1559', '14012'),
-  ('2023-04-19 05:25:29.539539', '1559', '14021'),
-  ('2023-04-19 05:25:29.540540', '1559', '14035'),
-  ('2023-04-19 05:25:29.540540', '1559', '14036'),
-  ('2023-04-19 05:25:29.540540', '1559', '14037'),
-  ('2023-04-19 05:25:29.540540', '1559', '14038')
+  ('2023-04-22 07:28:01.747747', '1563', '14052'),
+  ('2023-04-22 07:28:01.749749', '1563', '14044'),
+  ('2023-04-22 07:28:01.749749', '1563', '14059'),
+  ('2023-04-22 07:28:01.750750', '1563', '14060'),
+  ('2023-04-22 07:28:01.750750', '1563', '14061'),
+  ('2023-04-22 07:28:01.751751', '1563', '14062'),
+  ('2023-04-22 07:28:01.751751', '1563', '14053')
   ;
 
   // Update to source_song table
