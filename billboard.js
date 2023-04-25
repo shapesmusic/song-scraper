@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of April 22, 2023', '2023-04-22 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-04-22');
+    ('Billboard', 'The Hot 100', 'Week of April 29, 2023', '2023-04-29 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-04-29');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1566; // SELECT last_insert_rowid();
+  source_id = 1599; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,74 +105,83 @@
   songsData =
   [
     {
-        "title": "Search & Rescue",
-        "artist_name": "Drake",
+        "title": "Princess Diana",
+        "artist_name": "Ice Spice & Nicki Minaj",
         "video_id": null,
-        "capture_date": "2023-04-22 08:20:54.465465",
-        "source_id": 1566,
+        "capture_date": "2023-04-25 04:48:54.309309",
+        "source_id": 1599,
+        "song_id": 14094,
+        "duplicate": true
+    },
+    {
+        "title": "Chemical",
+        "artist_name": "Post Malone",
+        "video_id": null,
+        "capture_date": "2023-04-25 04:48:54.309309",
+        "source_id": 1599,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Happy",
-        "artist_name": "NF",
+        "title": "Un x100to",
+        "artist_name": "Grupo Frontera X Bad Bunny",
         "video_id": null,
-        "capture_date": "2023-04-22 08:20:54.472472",
-        "source_id": 1566,
+        "capture_date": "2023-04-25 04:48:54.309309",
+        "source_id": 1599,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Strike (Holster)",
-        "artist_name": "Lil Yachty",
+        "title": "Daylight",
+        "artist_name": "David Kushner",
         "video_id": null,
-        "capture_date": "2023-04-22 08:20:54.474474",
-        "source_id": 1566,
+        "capture_date": "2023-04-25 04:48:54.311311",
+        "source_id": 1599,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Peaches",
-        "artist_name": "Jack Black",
+        "title": "See You Again",
+        "artist_name": "Tyler, The Creator ft. Kali Uchis",
         "video_id": null,
-        "capture_date": "2023-04-22 08:20:54.477477",
-        "source_id": 1566,
+        "capture_date": "2023-04-25 04:48:54.311311",
+        "source_id": 1599,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Careful",
-        "artist_name": "NF & Cordae",
+        "title": "Chanel",
+        "artist_name": "Becky G & Peso Pluma",
         "video_id": null,
-        "capture_date": "2023-04-22 08:20:54.477477",
-        "source_id": 1566,
+        "capture_date": "2023-04-25 04:48:54.312312",
+        "source_id": 1599,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "El Azul",
-        "artist_name": "Junior H x Peso Pluma",
+        "title": "Igualito A Mi Apa",
+        "artist_name": "Fuerza Regida & Peso Pluma",
         "video_id": null,
-        "capture_date": "2023-04-22 08:20:54.477477",
-        "source_id": 1566,
+        "capture_date": "2023-04-25 04:48:54.312312",
+        "source_id": 1599,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Never Felt So Alone",
-        "artist_name": "Labrinth",
+        "title": "Di Que Si",
+        "artist_name": "Grupo Marca Registrada X Grupo Frontera",
         "video_id": null,
-        "capture_date": "2023-04-22 08:20:54.478478",
-        "source_id": 1566,
+        "capture_date": "2023-04-25 04:48:54.312312",
+        "source_id": 1599,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "WTF",
-        "artist_name": "YoungBoy Never Broke Again ft. Nicki Minaj",
+        "title": "It Matters To Her",
+        "artist_name": "Scotty McCreery",
         "video_id": null,
-        "capture_date": "2023-04-22 08:20:54.478478",
-        "source_id": 1566,
+        "capture_date": "2023-04-25 04:48:54.312312",
+        "source_id": 1599,
         "song_id": null,
         "duplicate": false
     }
@@ -216,14 +225,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Search & Rescue', 'Drake', NULL),
-  ('Happy', 'NF', NULL),
-  ('Strike (Holster)', 'Lil Yachty', NULL),
-  ('Peaches', 'Jack Black', NULL),
-  ('Careful', 'NF & Cordae', NULL),
-  ('El Azul', 'Junior H x Peso Pluma', NULL),
-  ('Never Felt So Alone', 'Labrinth', NULL),
-  ('WTF', 'YoungBoy Never Broke Again ft. Nicki Minaj', NULL)
+  ('Chemical', 'Post Malone', NULL),
+  ('Un x100to', 'Grupo Frontera X Bad Bunny', NULL),
+  ('Daylight', 'David Kushner', NULL),
+  ('See You Again', 'Tyler, The Creator ft. Kali Uchis', NULL),
+  ('Chanel', 'Becky G & Peso Pluma', NULL),
+  ('Igualito A Mi Apa', 'Fuerza Regida & Peso Pluma', NULL),
+  ('Di Que Si', 'Grupo Marca Registrada X Grupo Frontera', NULL),
+  ('It Matters To Her', 'Scotty McCreery', NULL)
   ;
 
    // Update to song table
@@ -234,7 +243,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14084; // SELECT last_insert_rowid();
+  song_id = 14151; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -274,14 +283,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-22 08:20:54.465465', '1566', '14077'),
-  ('2023-04-22 08:20:54.472472', '1566', '14078'),
-  ('2023-04-22 08:20:54.474474', '1566', '14079'),
-  ('2023-04-22 08:20:54.477477', '1566', '14080'),
-  ('2023-04-22 08:20:54.477477', '1566', '14081'),
-  ('2023-04-22 08:20:54.477477', '1566', '14082'),
-  ('2023-04-22 08:20:54.478478', '1566', '14083'),
-  ('2023-04-22 08:20:54.478478', '1566', '14084')
+  ('2023-04-25 04:48:54.309309', '1599', '14094'),
+  ('2023-04-25 04:48:54.309309', '1599', '14144'),
+  ('2023-04-25 04:48:54.309309', '1599', '14145'),
+  ('2023-04-25 04:48:54.311311', '1599', '14146'),
+  ('2023-04-25 04:48:54.311311', '1599', '14147'),
+  ('2023-04-25 04:48:54.312312', '1599', '14148'),
+  ('2023-04-25 04:48:54.312312', '1599', '14149'),
+  ('2023-04-25 04:48:54.312312', '1599', '14150'),
+  ('2023-04-25 04:48:54.312312', '1599', '14151')
   ;
 
   // Update to source_song table
