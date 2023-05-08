@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of April 29, 2023', '2023-04-29 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-04-29');
+    ('Billboard', 'The Hot 100', 'Week of May 6, 2023', '2023-05-06 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-05-06');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1599; // SELECT last_insert_rowid();
+  source_id = 1603; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,83 +105,47 @@
   songsData =
   [
     {
-        "title": "Princess Diana",
-        "artist_name": "Ice Spice & Nicki Minaj",
+        "title": "Double Fantasy",
+        "artist_name": "The Weeknd ft. Future",
         "video_id": null,
-        "capture_date": "2023-04-25 04:48:54.309309",
-        "source_id": 1599,
-        "song_id": 14094,
+        "capture_date": "2023-05-08 01:29:12.602602",
+        "source_id": 1603,
+        "song_id": 14117,
         "duplicate": true
     },
     {
-        "title": "Chemical",
-        "artist_name": "Post Malone",
+        "title": "Alone",
+        "artist_name": "Kim Petras ft. Nicki Minaj",
         "video_id": null,
-        "capture_date": "2023-04-25 04:48:54.309309",
-        "source_id": 1599,
+        "capture_date": "2023-05-08 01:29:12.627627",
+        "source_id": 1603,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Un x100to",
-        "artist_name": "Grupo Frontera X Bad Bunny",
+        "title": "Haegeum",
+        "artist_name": "Agust D",
         "video_id": null,
-        "capture_date": "2023-04-25 04:48:54.309309",
-        "source_id": 1599,
+        "capture_date": "2023-05-08 01:29:12.627627",
+        "source_id": 1603,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Daylight",
-        "artist_name": "David Kushner",
+        "title": "Fragil",
+        "artist_name": "Yahritza y Su Esencia x Grupo Frontera",
         "video_id": null,
-        "capture_date": "2023-04-25 04:48:54.311311",
-        "source_id": 1599,
+        "capture_date": "2023-05-08 01:29:12.631631",
+        "source_id": 1603,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "See You Again",
-        "artist_name": "Tyler, The Creator ft. Kali Uchis",
+        "title": "Big Truck",
+        "artist_name": "YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2023-04-25 04:48:54.311311",
-        "source_id": 1599,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Chanel",
-        "artist_name": "Becky G & Peso Pluma",
-        "video_id": null,
-        "capture_date": "2023-04-25 04:48:54.312312",
-        "source_id": 1599,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Igualito A Mi Apa",
-        "artist_name": "Fuerza Regida & Peso Pluma",
-        "video_id": null,
-        "capture_date": "2023-04-25 04:48:54.312312",
-        "source_id": 1599,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Di Que Si",
-        "artist_name": "Grupo Marca Registrada X Grupo Frontera",
-        "video_id": null,
-        "capture_date": "2023-04-25 04:48:54.312312",
-        "source_id": 1599,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "It Matters To Her",
-        "artist_name": "Scotty McCreery",
-        "video_id": null,
-        "capture_date": "2023-04-25 04:48:54.312312",
-        "source_id": 1599,
+        "capture_date": "2023-05-08 01:29:12.639639",
+        "source_id": 1603,
         "song_id": null,
         "duplicate": false
     }
@@ -225,14 +189,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Chemical', 'Post Malone', NULL),
-  ('Un x100to', 'Grupo Frontera X Bad Bunny', NULL),
-  ('Daylight', 'David Kushner', NULL),
-  ('See You Again', 'Tyler, The Creator ft. Kali Uchis', NULL),
-  ('Chanel', 'Becky G & Peso Pluma', NULL),
-  ('Igualito A Mi Apa', 'Fuerza Regida & Peso Pluma', NULL),
-  ('Di Que Si', 'Grupo Marca Registrada X Grupo Frontera', NULL),
-  ('It Matters To Her', 'Scotty McCreery', NULL)
+  ('Alone', 'Kim Petras ft. Nicki Minaj', NULL),
+  ('Haegeum', 'Agust D', NULL),
+  ('Fragil', 'Yahritza y Su Esencia x Grupo Frontera', NULL),
+  ('Big Truck', 'YoungBoy Never Broke Again', NULL)
   ;
 
    // Update to song table
@@ -243,7 +203,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14151; // SELECT last_insert_rowid();
+  song_id = 14173; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -283,15 +243,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-25 04:48:54.309309', '1599', '14094'),
-  ('2023-04-25 04:48:54.309309', '1599', '14144'),
-  ('2023-04-25 04:48:54.309309', '1599', '14145'),
-  ('2023-04-25 04:48:54.311311', '1599', '14146'),
-  ('2023-04-25 04:48:54.311311', '1599', '14147'),
-  ('2023-04-25 04:48:54.312312', '1599', '14148'),
-  ('2023-04-25 04:48:54.312312', '1599', '14149'),
-  ('2023-04-25 04:48:54.312312', '1599', '14150'),
-  ('2023-04-25 04:48:54.312312', '1599', '14151')
+  ('2023-05-08 01:29:12.602602', '1603', '14117'),
+  ('2023-05-08 01:29:12.627627', '1603', '14170'),
+  ('2023-05-08 01:29:12.627627', '1603', '14171'),
+  ('2023-05-08 01:29:12.631631', '1603', '14172'),
+  ('2023-05-08 01:29:12.639639', '1603', '14173')
   ;
 
   // Update to source_song table

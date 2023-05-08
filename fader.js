@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of April 17, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2023-04-17 12:00:00.000000', -- Dont forget this!
+      'Week of May 1, 2022', -- Mondays (for the previous week, including the publication_date)
+      '2023-05-01 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1569; // SELECT last_insert_rowid();
+    source_id = 1606; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,164 +458,56 @@
     songsData =
     [
     {
-        "title": "Get Busy With It",
-        "artist_name": "Conducta and MC Novelist",
+        "title": "On The Street",
+        "artist_name": "Tony Shhnow",
         "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
+        "capture_date": "2023-05-08 01:45:23.488000",
+        "source_id": 1606,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Elsewhere",
-        "artist_name": "Hayden Pedigo",
+        "title": "STORIES",
+        "artist_name": "Moor Mother and Sovei",
         "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
+        "capture_date": "2023-05-08 01:45:23.488000",
+        "source_id": 1606,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Back In Office",
-        "artist_name": "Saba and No I.D.",
+        "title": "Devil Lady",
+        "artist_name": "GHÖSH",
         "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": 14099,
-        "duplicate": true
-    },
-    {
-        "title": "Modus Operandi",
-        "artist_name": "Juan Wauters and Frankie Cosmos",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
+        "capture_date": "2023-05-08 01:45:23.488000",
+        "source_id": 1606,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Paraclete Bhishajyai",
-        "artist_name": "Fire-Toolz",
+        "title": "Pop Trunk",
+        "artist_name": "xaviersobased and AyooLii",
         "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
+        "capture_date": "2023-05-08 01:45:23.488000",
+        "source_id": 1606,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "One Touch",
-        "artist_name": "Bambii",
+        "title": "Grace (Remix)",
+        "artist_name": "CFCF and The Life",
         "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
+        "capture_date": "2023-05-08 01:45:23.488000",
+        "source_id": 1606,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "FKA MESS",
-        "artist_name": "Abra",
+        "title": "Zooted",
+        "artist_name": "HiTech",
         "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": 14041,
-        "duplicate": true
-    },
-    {
-        "title": "Dog Dreams",
-        "artist_name": "Lucy Liyou",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hollow Head",
-        "artist_name": "GracieHorse",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Phone Me",
-        "artist_name": "MAY",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Oklahoma Baby",
-        "artist_name": "Emile Mosseri",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "uHhH HuH.mp3",
-        "artist_name": "Tisakorean",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Get Down",
-        "artist_name": "DJ Girl",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cut",
-        "artist_name": "Chat Pile",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": 14056,
-        "duplicate": true
-    },
-    {
-        "title": "Something Other Than Years",
-        "artist_name": "Lucinda Chua ft. yeule",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": 14019,
-        "duplicate": true
-    },
-    {
-        "title": "night n day",
-        "artist_name": "NEW YORK",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dumbest Girl Alive",
-        "artist_name": "100 gecs",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
-        "song_id": 13701,
-        "duplicate": true
-    },
-    {
-        "title": "No Effort to Exist",
-        "artist_name": "Bernice",
-        "video_id": null,
-        "capture_date": "2023-04-22 08:34:07.080000",
-        "source_id": 1569,
+        "capture_date": "2023-05-08 01:45:23.488000",
+        "source_id": 1606,
         "song_id": null,
         "duplicate": false
     }
@@ -657,19 +549,12 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Get Busy With It', 'Conducta and MC Novelist', NULL),
-    ('Elsewhere', 'Hayden Pedigo', NULL),
-    ('Modus Operandi', 'Juan Wauters and Frankie Cosmos', NULL),
-    ('Paraclete Bhishajyai', 'Fire-Toolz', NULL),
-    ('One Touch', 'Bambii', NULL),
-    ('Dog Dreams', 'Lucy Liyou', NULL),
-    ('Hollow Head', 'GracieHorse', NULL),
-    ('Phone Me', 'MAY', NULL),
-    ('Oklahoma Baby', 'Emile Mosseri', NULL),
-    ('uHhH HuH.mp3', 'Tisakorean', NULL),
-    ('Get Down', 'DJ Girl', NULL),
-    ('night n day', 'NEW YORK', NULL),
-    ('No Effort to Exist', 'Bernice', NULL)
+    ('On The Street', 'Tony Shhnow', NULL),
+    ('STORIES', 'Moor Mother and Sovei', NULL),
+    ('Devil Lady', 'GHÖSH', NULL),
+    ('Pop Trunk', 'xaviersobased and AyooLii', NULL),
+    ('Grace (Remix)', 'CFCF and The Life', NULL),
+    ('Zooted', 'HiTech', NULL)
     ;
 
      // Update to song table
@@ -680,7 +565,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14112; // SELECT last_insert_rowid();
+  song_id = 14195; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -720,24 +605,12 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-22 08:34:07.080000', '1569', '14100'),
-  ('2023-04-22 08:34:07.080000', '1569', '14101'),
-  ('2023-04-22 08:34:07.080000', '1569', '14099'),
-  ('2023-04-22 08:34:07.080000', '1569', '14102'),
-  ('2023-04-22 08:34:07.080000', '1569', '14103'),
-  ('2023-04-22 08:34:07.080000', '1569', '14104'),
-  ('2023-04-22 08:34:07.080000', '1569', '14041'),
-  ('2023-04-22 08:34:07.080000', '1569', '14105'),
-  ('2023-04-22 08:34:07.080000', '1569', '14106'),
-  ('2023-04-22 08:34:07.080000', '1569', '14107'),
-  ('2023-04-22 08:34:07.080000', '1569', '14108'),
-  ('2023-04-22 08:34:07.080000', '1569', '14109'),
-  ('2023-04-22 08:34:07.080000', '1569', '14110'),
-  ('2023-04-22 08:34:07.080000', '1569', '14056'),
-  ('2023-04-22 08:34:07.080000', '1569', '14019'),
-  ('2023-04-22 08:34:07.080000', '1569', '14111'),
-  ('2023-04-22 08:34:07.080000', '1569', '13701'),
-  ('2023-04-22 08:34:07.080000', '1569', '14112')
+  ('2023-05-08 01:45:23.488000', '1606', '14190'),
+  ('2023-05-08 01:45:23.488000', '1606', '14191'),
+  ('2023-05-08 01:45:23.488000', '1606', '14192'),
+  ('2023-05-08 01:45:23.488000', '1606', '14193'),
+  ('2023-05-08 01:45:23.488000', '1606', '14194'),
+  ('2023-05-08 01:45:23.488000', '1606', '14195')
   ;
 
   // Update to source_song table

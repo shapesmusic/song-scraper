@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Foo Fighters Begin a New Chapter, and 8 More New Songs', '2023-04-21 09:52:11.000000', 'https://www.nytimes.com/2023/04/21/arts/music/playlist-foo-fighters-bad-bunny.html');
+    ('New York Times', 'The Playlist', 'Jack Harlow Goes Deep on Race and Rap, and 8 More New Songs', '2023-05-01 07:44:53.000000', 'https://www.nytimes.com/2023/04/28/arts/music/playlist-jack-harlow-jessie-ware.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1600; // SELECT last_insert_rowid();
+  source_id = 1604; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,83 +100,83 @@
   songsData =
   [
     {
-        "title": "Rescued",
-        "artist_name": "Foo Fighters",
+        "title": "Common Ground",
+        "artist_name": "Jack Harlow",
         "video_id": null,
-        "capture_date": "2023-04-25 04:57:16.279279",
-        "source_id": 1600,
+        "capture_date": "2023-05-08 01:35:58.466466",
+        "source_id": 1604,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "One That Got Away",
-        "artist_name": "Muna",
+        "title": "Freak Me Now",
+        "artist_name": "Jessie Ware",
         "video_id": null,
-        "capture_date": "2023-04-25 04:57:16.280280",
-        "source_id": 1600,
+        "capture_date": "2023-05-08 01:35:58.467467",
+        "source_id": 1604,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dimcola Reprise",
-        "artist_name": "Salami Rose Joe Louis",
+        "title": "Three Drums",
+        "artist_name": "Four Tet",
         "video_id": null,
-        "capture_date": "2023-04-25 04:57:16.280280",
-        "source_id": 1600,
+        "capture_date": "2023-05-08 01:35:58.467467",
+        "source_id": 1604,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "L.F.O.",
-        "artist_name": "Sbtrkt ft. Sampha and George Riley",
+        "title": "Give It to Me",
+        "artist_name": "Miguel",
         "video_id": null,
-        "capture_date": "2023-04-25 04:57:16.280280",
-        "source_id": 1600,
+        "capture_date": "2023-05-08 01:35:58.467467",
+        "source_id": 1604,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tonta",
-        "artist_name": "Nathy Peluso",
+        "title": "Somebody Like Me",
+        "artist_name": "Joy Oladokun",
         "video_id": null,
-        "capture_date": "2023-04-25 04:57:16.280280",
-        "source_id": 1600,
+        "capture_date": "2023-05-08 01:35:58.467467",
+        "source_id": 1604,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Un x100to",
-        "artist_name": "Grupo Frontera x Bad Bunny",
+        "title": "Seasons",
+        "artist_name": "Bebe Rexha & Dolly Parton",
         "video_id": null,
-        "capture_date": "2023-04-25 04:57:16.280280",
-        "source_id": 1600,
-        "song_id": 14145,
-        "duplicate": true
-    },
-    {
-        "title": "Mermaids",
-        "artist_name": "Florence + the Machine",
-        "video_id": null,
-        "capture_date": "2023-04-25 04:57:16.280280",
-        "source_id": 1600,
+        "capture_date": "2023-05-08 01:35:58.467467",
+        "source_id": 1604,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "True Love",
-        "artist_name": "Christine and the Queens ft. 070 Shake",
+        "title": "Aviatrix",
+        "artist_name": "The 3 Clubmen",
         "video_id": null,
-        "capture_date": "2023-04-25 04:57:16.280280",
-        "source_id": 1600,
+        "capture_date": "2023-05-08 01:35:58.467467",
+        "source_id": 1604,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Motion",
-        "artist_name": "Béla Fleck, Edgar Meyer and Zakir Hussain ft. Rakesh Chaurasia",
+        "title": "The Life of Jesus",
+        "artist_name": "Bill Orcutt",
         "video_id": null,
-        "capture_date": "2023-04-25 04:57:16.280280",
-        "source_id": 1600,
+        "capture_date": "2023-05-08 01:35:58.467467",
+        "source_id": 1604,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Bend But Never Break",
+        "artist_name": "Rob Moose ft. Brittany Howard",
+        "video_id": null,
+        "capture_date": "2023-05-08 01:35:58.467467",
+        "source_id": 1604,
         "song_id": null,
         "duplicate": false
     }
@@ -220,14 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-    ('Rescued', 'Foo Fighters', NULL),
-    ('One That Got Away', 'Muna', NULL),
-    ('Dimcola Reprise', 'Salami Rose Joe Louis', NULL),
-    ('L.F.O.', 'Sbtrkt ft. Sampha and George Riley', NULL),
-    ('Tonta', 'Nathy Peluso', NULL),
-    ('Mermaids', 'Florence + the Machine', NULL),
-    ('True Love', 'Christine and the Queens ft. 070 Shake', NULL),
-    ('Motion', 'Béla Fleck, Edgar Meyer and Zakir Hussain ft. Rakesh Chaurasia', NULL)
+  ('Common Ground', 'Jack Harlow', NULL),
+  ('Freak Me Now', 'Jessie Ware', NULL),
+  ('Three Drums', 'Four Tet', NULL),
+  ('Give It to Me', 'Miguel', NULL),
+  ('Somebody Like Me', 'Joy Oladokun', NULL),
+  ('Seasons', 'Bebe Rexha & Dolly Parton', NULL),
+  ('Aviatrix', 'The 3 Clubmen', NULL),
+  ('The Life of Jesus', 'Bill Orcutt', NULL),
+  ('I Bend But Never Break', 'Rob Moose ft. Brittany Howard', NULL)
   ;
 
    // Update to song table
@@ -238,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14159; // SELECT last_insert_rowid();
+  song_id = 14182; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -278,15 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-25 04:57:16.279279', '1600', '14152'),
-  ('2023-04-25 04:57:16.280280', '1600', '14153'),
-  ('2023-04-25 04:57:16.280280', '1600', '14154'),
-  ('2023-04-25 04:57:16.280280', '1600', '14155'),
-  ('2023-04-25 04:57:16.280280', '1600', '14156'),
-  ('2023-04-25 04:57:16.280280', '1600', '14145'),
-  ('2023-04-25 04:57:16.280280', '1600', '14157'),
-  ('2023-04-25 04:57:16.280280', '1600', '14158'),
-  ('2023-04-25 04:57:16.280280', '1600', '14159')
+  ('2023-05-08 01:35:58.466466', '1604', '14174'),
+  ('2023-05-08 01:35:58.467467', '1604', '14175'),
+  ('2023-05-08 01:35:58.467467', '1604', '14176'),
+  ('2023-05-08 01:35:58.467467', '1604', '14177'),
+  ('2023-05-08 01:35:58.467467', '1604', '14178'),
+  ('2023-05-08 01:35:58.467467', '1604', '14179'),
+  ('2023-05-08 01:35:58.467467', '1604', '14180'),
+  ('2023-05-08 01:35:58.467467', '1604', '14181'),
+  ('2023-05-08 01:35:58.467467', '1604', '14182')
   ;
 
   // Update to source_song table

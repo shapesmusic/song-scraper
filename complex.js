@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Lil Wayne, Latto, The Weeknd, Future, and More', '2023-04-21 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-lil-wayne-theweeknd-latto');
+    ('Complex', 'The Best New Music This Week', 'Jack Harlow, Lola Brooke, Miguel, and More', '2023-04-28 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-jack-harlow-lola-brooke-miguel');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1601; // SELECT last_insert_rowid();
+  source_id = 1605; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,85 +102,76 @@
   songsData =
   [
     {
-        "title": "This Sh*t Right Here",
-        "artist_name": "Swizz Beatz ft. Lil Wayne",
+        "title": "Gang Gang Gang",
+        "artist_name": "Jack Harlow",
         "video_id": null,
-        "capture_date": "2023-04-25 05:00:59.768768",
-        "source_id": 1601,
+        "capture_date": "2023-05-08 01:41:15.140140",
+        "source_id": 1605,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Choppa Docter",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "Just Relax",
+        "artist_name": "Lola Brooke",
         "video_id": null,
-        "capture_date": "2023-04-25 05:00:59.769769",
-        "source_id": 1601,
+        "capture_date": "2023-05-08 01:41:15.140140",
+        "source_id": 1605,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "SILVER TOOTH",
-        "artist_name": "Armani White ft. A$AP Ferg",
+        "title": "Give It To Me",
+        "artist_name": "Miguel",
         "video_id": null,
-        "capture_date": "2023-04-25 05:00:59.769769",
-        "source_id": 1601,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "FreakyT (Remix)",
-        "artist_name": "TiaCorine ft. Latto",
-        "video_id": null,
-        "capture_date": "2023-04-25 05:00:59.769769",
-        "source_id": 1601,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Double Fantasy",
-        "artist_name": "The Weeknd ft. Future",
-        "video_id": null,
-        "capture_date": "2023-04-25 05:00:59.769769",
-        "source_id": 1601,
-        "song_id": 14117,
+        "capture_date": "2023-05-08 01:41:15.140140",
+        "source_id": 1605,
+        "song_id": 14177,
         "duplicate": true
     },
     {
-        "title": "Motion God",
-        "artist_name": "Moneybagg Yo",
+        "title": "Chosen",
+        "artist_name": "Conway The Machine ft. Jae Skeese",
         "video_id": null,
-        "capture_date": "2023-04-25 05:00:59.769769",
-        "source_id": 1601,
+        "capture_date": "2023-05-08 01:41:15.140140",
+        "source_id": 1605,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Swish",
-        "artist_name": "Vic Mensa ft. G-Eazy & Chance the Rapper",
+        "title": "Turn It Up",
+        "artist_name": "Rico Nasty",
         "video_id": null,
-        "capture_date": "2023-04-25 05:00:59.769769",
-        "source_id": 1601,
+        "capture_date": "2023-05-08 01:41:15.140140",
+        "source_id": 1605,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Put It On Da Floor",
-        "artist_name": "Latto",
+        "title": "Ends & Begins",
+        "artist_name": "Labrinth",
         "video_id": null,
-        "capture_date": "2023-04-25 05:00:59.769769",
-        "source_id": 1601,
+        "capture_date": "2023-05-08 01:41:15.141141",
+        "source_id": 1605,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Don’t Let the Devil",
-        "artist_name": "Killer Mike ft. El-P & thankugoodsir",
+        "title": "My Body",
+        "artist_name": "Coi Leray",
         "video_id": null,
-        "capture_date": "2023-04-25 05:00:59.769769",
-        "source_id": 1601,
-        "song_id": 14118,
-        "duplicate": true
+        "capture_date": "2023-05-08 01:41:15.141141",
+        "source_id": 1605,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "If It Wasn’t For Me",
+        "artist_name": "Tony Shhnow",
+        "video_id": null,
+        "capture_date": "2023-05-08 01:41:15.141141",
+        "source_id": 1605,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -221,13 +212,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('This Sh*t Right Here', 'Swizz Beatz ft. Lil Wayne', NULL),
-  ('Choppa Docter', 'YoungBoy Never Broke Again', NULL),
-  ('SILVER TOOTH', 'Armani White ft. A$AP Ferg', NULL),
-  ('FreakyT (Remix)', 'TiaCorine ft. Latto', NULL),
-  ('Motion God', 'Moneybagg Yo', NULL),
-  ('Swish', 'Vic Mensa ft. G-Eazy & Chance the Rapper', NULL),
-  ('Put It On Da Floor', 'Latto', NULL)
+  ('Gang Gang Gang', 'Jack Harlow', NULL),
+  ('Just Relax', 'Lola Brooke', NULL),
+  ('Chosen', 'Conway The Machine ft. Jae Skeese', NULL),
+  ('Turn It Up', 'Rico Nasty', NULL),
+  ('Ends & Begins', 'Labrinth', NULL),
+  ('My Body', 'Coi Leray', NULL),
+  ('If It Wasn’t For Me', 'Tony Shhnow', NULL)
   ;
 
    // Update to song table
@@ -238,7 +229,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14166; // SELECT last_insert_rowid();
+  song_id = 14189; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -278,15 +269,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-04-25 05:00:59.768768', '1601', '14160'),
-  ('2023-04-25 05:00:59.769769', '1601', '14161'),
-  ('2023-04-25 05:00:59.769769', '1601', '14162'),
-  ('2023-04-25 05:00:59.769769', '1601', '14163'),
-  ('2023-04-25 05:00:59.769769', '1601', '14117'),
-  ('2023-04-25 05:00:59.769769', '1601', '14164'),
-  ('2023-04-25 05:00:59.769769', '1601', '14165'),
-  ('2023-04-25 05:00:59.769769', '1601', '14166'),
-  ('2023-04-25 05:00:59.769769', '1601', '14118')
+  ('2023-05-08 01:41:15.140140', '1605', '14183'),
+  ('2023-05-08 01:41:15.140140', '1605', '14184'),
+  ('2023-05-08 01:41:15.140140', '1605', '14177'),
+  ('2023-05-08 01:41:15.140140', '1605', '14185'),
+  ('2023-05-08 01:41:15.140140', '1605', '14186'),
+  ('2023-05-08 01:41:15.141141', '1605', '14187'),
+  ('2023-05-08 01:41:15.141141', '1605', '14188'),
+  ('2023-05-08 01:41:15.141141', '1605', '14189')
   ;
 
   // Update to source_song table
