@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of May 6, 2023', '2023-05-06 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-05-06');
+    ('Billboard', 'The Hot 100', 'Week of May 13, 2023', '2023-05-13 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-05-13/2023-05-13');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1603; // SELECT last_insert_rowid();
+  source_id = 1608; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,49 +105,49 @@
   songsData =
   [
     {
-        "title": "Double Fantasy",
-        "artist_name": "The Weeknd ft. Future",
+        "title": "They Don't Love It",
+        "artist_name": "Jack Harlow",
         "video_id": null,
-        "capture_date": "2023-05-08 01:29:12.602602",
-        "source_id": 1603,
-        "song_id": 14117,
+        "capture_date": "2023-05-24 12:08:36.793793",
+        "source_id": 1608,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wreckage",
+        "artist_name": "Nate Smith",
+        "video_id": null,
+        "capture_date": "2023-05-24 12:08:36.793793",
+        "source_id": 1608,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Waffle House",
+        "artist_name": "Jonas Brothers",
+        "video_id": null,
+        "capture_date": "2023-05-24 12:08:36.794794",
+        "source_id": 1608,
+        "song_id": 14122,
         "duplicate": true
     },
     {
-        "title": "Alone",
-        "artist_name": "Kim Petras ft. Nicki Minaj",
+        "title": "People",
+        "artist_name": "Libianca",
         "video_id": null,
-        "capture_date": "2023-05-08 01:29:12.627627",
-        "source_id": 1603,
+        "capture_date": "2023-05-24 12:08:36.794794",
+        "source_id": 1608,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Haegeum",
-        "artist_name": "Agust D",
+        "title": "Common Ground",
+        "artist_name": "Jack Harlow",
         "video_id": null,
-        "capture_date": "2023-05-08 01:29:12.627627",
-        "source_id": 1603,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Fragil",
-        "artist_name": "Yahritza y Su Esencia x Grupo Frontera",
-        "video_id": null,
-        "capture_date": "2023-05-08 01:29:12.631631",
-        "source_id": 1603,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Big Truck",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": null,
-        "capture_date": "2023-05-08 01:29:12.639639",
-        "source_id": 1603,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2023-05-24 12:08:36.794794",
+        "source_id": 1608,
+        "song_id": 14174,
+        "duplicate": true
     }
 ]
 
@@ -189,10 +189,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Alone', 'Kim Petras ft. Nicki Minaj', NULL),
-  ('Haegeum', 'Agust D', NULL),
-  ('Fragil', 'Yahritza y Su Esencia x Grupo Frontera', NULL),
-  ('Big Truck', 'YoungBoy Never Broke Again', NULL)
+  ('They Don’t Love It', 'Jack Harlow', NULL),
+  ('Wreckage', 'Nate Smith', NULL),
+  ('People', 'Libianca', NULL)
   ;
 
    // Update to song table
@@ -203,7 +202,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14173; // SELECT last_insert_rowid();
+  song_id = 14202; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -243,11 +242,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-05-08 01:29:12.602602', '1603', '14117'),
-  ('2023-05-08 01:29:12.627627', '1603', '14170'),
-  ('2023-05-08 01:29:12.627627', '1603', '14171'),
-  ('2023-05-08 01:29:12.631631', '1603', '14172'),
-  ('2023-05-08 01:29:12.639639', '1603', '14173')
+  ('2023-05-24 12:08:36.793793', '1608', '14200'),
+  ('2023-05-24 12:08:36.793793', '1608', '14201'),
+  ('2023-05-24 12:08:36.794794', '1608', '14122'),
+  ('2023-05-24 12:08:36.794794', '1608', '14202'),
+  ('2023-05-24 12:08:36.794794', '1608', '14174')
   ;
 
   // Update to source_song table

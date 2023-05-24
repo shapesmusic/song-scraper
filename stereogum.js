@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of April 28, 2023', '2023-04-28 12:00:00.000000', 'https://www.stereogum.com/2222044/the-5-best-songs-of-the-week-480/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of May 5, 2023', '2023-05-05 12:00:00.000000', 'https://www.stereogum.com/2222828/the-5-best-songs-of-the-week-481/lists/the-5-best-songs-of-the-week/');
 
 
   // Update to source table
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1607; // SELECT last_insert_rowid();
+  source_id = 1610; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -102,47 +102,47 @@
   songsData =
   [
     {
-        "title": "Hinoki Wood",
-        "artist_name": "Gia Margaret",
+        "title": "Fairlies",
+        "artist_name": "Grian Chatten",
         "video_id": null,
-        "capture_date": "2023-05-08 02:08:39.039039",
-        "source_id": 1607,
+        "capture_date": "2023-05-24 12:17:04.016016",
+        "source_id": 1610,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Make A Wish",
-        "artist_name": "Kari Faux",
+        "title": "She's On Fire",
+        "artist_name": "Strange Ranger",
         "video_id": null,
-        "capture_date": "2023-05-08 02:08:39.040040",
-        "source_id": 1607,
+        "capture_date": "2023-05-24 12:17:04.017017",
+        "source_id": 1610,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Nothing",
-        "artist_name": "Sign Language",
+        "title": "I'm The President",
+        "artist_name": "Knower",
         "video_id": null,
-        "capture_date": "2023-05-08 02:08:39.040040",
-        "source_id": 1607,
+        "capture_date": "2023-05-24 12:17:04.017017",
+        "source_id": 1610,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Silver Tooth",
-        "artist_name": "Armani White & A$AP Ferg",
+        "title": "Eraser",
+        "artist_name": "Sweeping Promises",
         "video_id": null,
-        "capture_date": "2023-05-08 02:08:39.040040",
-        "source_id": 1607,
-        "song_id": 14162,
-        "duplicate": true
+        "capture_date": "2023-05-24 12:17:04.017017",
+        "source_id": 1610,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Glare",
-        "artist_name": "Loma Prieta",
+        "title": "Holiday House",
+        "artist_name": "Beach House",
         "video_id": null,
-        "capture_date": "2023-05-08 02:08:39.040040",
-        "source_id": 1607,
+        "capture_date": "2023-05-24 12:17:04.017017",
+        "source_id": 1610,
         "song_id": null,
         "duplicate": false
     }
@@ -187,10 +187,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Hinoki Wood', 'Gia Margaret', NULL),
-  ('Make A Wish', 'Kari Faux', NULL),
-  ('The Nothing', 'Sign Language', NULL),
-  ('Glare', 'Loma Prieta', NULL)
+  ('Fairlies', 'Grian Chatten', NULL),
+  ('She’s On Fire', 'Strange Ranger', NULL),
+  ('I’m The President', 'Knower', NULL),
+  ('Eraser', 'Sweeping Promises', NULL),
+  ('Holiday House', 'Beach House', NULL)
   ;
 
    // Update to song table
@@ -201,7 +202,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14199; // SELECT last_insert_rowid();
+  song_id = 14218; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -241,11 +242,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-05-08 02:08:39.039039', '1607', '14196'),
-  ('2023-05-08 02:08:39.040040', '1607', '14197'),
-  ('2023-05-08 02:08:39.040040', '1607', '14198'),
-  ('2023-05-08 02:08:39.040040', '1607', '14162'),
-  ('2023-05-08 02:08:39.040040', '1607', '14199')
+  ('2023-05-24 12:17:04.016016', '1610', '14214'),
+  ('2023-05-24 12:17:04.017017', '1610', '14215'),
+  ('2023-05-24 12:17:04.017017', '1610', '14216'),
+  ('2023-05-24 12:17:04.017017', '1610', '14217'),
+  ('2023-05-24 12:17:04.017017', '1610', '14218')
   ;
 
   // Update to source_song table
