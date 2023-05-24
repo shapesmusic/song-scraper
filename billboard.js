@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of May 20, 2023', '2023-05-20 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-05-20/2023-05-20');
+    ('Billboard', 'The Hot 100', 'Week of May 27, 2023', '2023-05-27 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-05-27');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1611; // SELECT last_insert_rowid();
+  source_id = 1615; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,85 +105,85 @@
   songsData =
   [
     {
-        "title": "Area Codes",
-        "artist_name": "Kali",
+        "title": "All My Life",
+        "artist_name": "Lil Durk ft. J. Cole",
         "video_id": null,
-        "capture_date": "2023-05-24 12:21:40.640640",
-        "source_id": 1611,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Go Hard",
-        "artist_name": "Lil Baby",
-        "video_id": null,
-        "capture_date": "2023-05-24 12:21:40.641641",
-        "source_id": 1611,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Religiously",
-        "artist_name": "Bailey Zimmerman",
-        "video_id": null,
-        "capture_date": "2023-05-24 12:21:40.641641",
-        "source_id": 1611,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mejor Que Yo",
-        "artist_name": "Anuel AA, Mambo Kingz & DJ Luian",
-        "video_id": null,
-        "capture_date": "2023-05-24 12:21:40.641641",
-        "source_id": 1611,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "You, Me, & Whiskey",
-        "artist_name": "Justin Moore & Priscilla Block",
-        "video_id": null,
-        "capture_date": "2023-05-24 12:21:40.641641",
-        "source_id": 1611,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mathematical Disrespect",
-        "artist_name": "Lil Mabu",
-        "video_id": null,
-        "capture_date": "2023-05-24 12:21:40.642642",
-        "source_id": 1611,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Shake Sumn",
-        "artist_name": "DaBaby",
-        "video_id": null,
-        "capture_date": "2023-05-24 12:21:40.642642",
-        "source_id": 1611,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Curtains",
-        "artist_name": "Ed Sheeran",
-        "video_id": null,
-        "capture_date": "2023-05-24 12:21:40.645645",
-        "source_id": 1611,
-        "song_id": 14207,
+        "capture_date": "2023-05-24 04:46:24.834834",
+        "source_id": 1615,
+        "song_id": 14235,
         "duplicate": true
     },
     {
-        "title": "What It Is (Block Boy)",
-        "artist_name": "Doechii ft. Kodak Black",
+        "title": "Bitch Let's Do It",
+        "artist_name": "YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2023-05-24 12:21:40.645645",
-        "source_id": 1611,
-        "song_id": 13708,
-        "duplicate": true
+        "capture_date": "2023-05-24 04:46:24.838838",
+        "source_id": 1615,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Life Goes On",
+        "artist_name": "Ed Sheeran ft. Luke Combs",
+        "video_id": null,
+        "capture_date": "2023-05-24 04:46:24.838838",
+        "source_id": 1615,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Acrostico",
+        "artist_name": "Shakira",
+        "video_id": null,
+        "capture_date": "2023-05-24 04:46:24.838838",
+        "source_id": 1615,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bury Me In Georgia",
+        "artist_name": "Kane Brown",
+        "video_id": null,
+        "capture_date": "2023-05-24 04:46:24.838838",
+        "source_id": 1615,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "F**k The Industry Pt. 2",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2023-05-24 04:46:24.838838",
+        "source_id": 1615,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Everything She Ain't",
+        "artist_name": "Hailey Whitters",
+        "video_id": null,
+        "capture_date": "2023-05-24 04:46:24.838838",
+        "source_id": 1615,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Your Heart Or Mine",
+        "artist_name": "Jon Pardi",
+        "video_id": null,
+        "capture_date": "2023-05-24 04:46:24.839839",
+        "source_id": 1615,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Heard",
+        "artist_name": "YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2023-05-24 04:46:24.839839",
+        "source_id": 1615,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -225,13 +225,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Area Codes', 'Kali', NULL),
-  ('Go Hard', 'Lil Baby', NULL),
-  ('Religiously', 'Bailey Zimmerman', NULL),
-  ('Mejor Que Yo', 'Anuel AA, Mambo Kingz & DJ Luian', NULL),
-  ('You, Me, & Whiskey', 'Justin Moore & Priscilla Block', NULL),
-  ('Mathematical Disrespect', 'Lil Mabu', NULL),
-  ('Shake Sumn', 'DaBaby', NULL)
+  ('Bitch Let’s Do It', 'YoungBoy Never Broke Again', NULL),
+  ('Life Goes On', 'Ed Sheeran ft. Luke Combs', NULL),
+  ('Acrostico', 'Shakira', NULL),
+  ('Bury Me In Georgia', 'Kane Brown', NULL),
+  ('F**k The Industry Pt. 2', 'YoungBoy Never Broke Again', NULL),
+  ('Everything She Ain’t', 'Hailey Whitters', NULL),
+  ('Your Heart Or Mine', 'Jon Pardi', NULL),
+  ('I Heard', 'YoungBoy Never Broke Again', NULL)
   ;
 
    // Update to song table
@@ -242,7 +243,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14225; // SELECT last_insert_rowid();
+  song_id = 14252; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -282,15 +283,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-05-24 12:21:40.640640', '1611', '14219'),
-  ('2023-05-24 12:21:40.641641', '1611', '14220'),
-  ('2023-05-24 12:21:40.641641', '1611', '14221'),
-  ('2023-05-24 12:21:40.641641', '1611', '14222'),
-  ('2023-05-24 12:21:40.641641', '1611', '14223'),
-  ('2023-05-24 12:21:40.642642', '1611', '14224'),
-  ('2023-05-24 12:21:40.642642', '1611', '14225'),
-  ('2023-05-24 12:21:40.645645', '1611', '14207'),
-  ('2023-05-24 12:21:40.645645', '1611', '13708')
+  ('2023-05-24 04:46:24.834834', '1615', '14235'),
+  ('2023-05-24 04:46:24.838838', '1615', '14245'),
+  ('2023-05-24 04:46:24.838838', '1615', '14246'),
+  ('2023-05-24 04:46:24.838838', '1615', '14247'),
+  ('2023-05-24 04:46:24.838838', '1615', '14248'),
+  ('2023-05-24 04:46:24.838838', '1615', '14249'),
+  ('2023-05-24 04:46:24.838838', '1615', '14250'),
+  ('2023-05-24 04:46:24.839839', '1615', '14251'),
+  ('2023-05-24 04:46:24.839839', '1615', '14252')
   ;
 
   // Update to source_song table

@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Dolly Parton Goes Arena Rock, and 9 More New Songs', '2023-05-12 09:49:33.000000', 'https://www.nytimes.com/2023/05/12/arts/music/playlist-dolly-parton-joni-mitchell-shakira.html');
+    ('New York Times', 'The Playlist', 'Blur Surprises With a Reflection on Fame, and 9 More New Songs', '2023-05-19 11:50:56.000000', 'https://www.nytimes.com/2023/05/19/arts/music/playlist-blur-bad-bunny-lana-del-rey.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1612; // SELECT last_insert_rowid();
+  source_id = 1616; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,92 +100,92 @@
   songsData =
   [
     {
-        "title": "World on Fire",
-        "artist_name": "Dolly Parton",
+        "title": "The Narcissist",
+        "artist_name": "Blur",
         "video_id": null,
-        "capture_date": "2023-05-24 12:25:30.210210",
-        "source_id": 1612,
+        "capture_date": "2023-05-24 04:51:07.302302",
+        "source_id": 1616,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Both Sides Now (Live at the Newport Folk Festival 2022)",
-        "artist_name": "Joni Mitchell",
+        "title": "Nothing Is as Good as They Say It Is",
+        "artist_name": "Sparks",
         "video_id": null,
-        "capture_date": "2023-05-24 12:25:30.211211",
-        "source_id": 1612,
-        "song_id": 5740,
-        "duplicate": true
-    },
-    {
-        "title": "You’re the One",
-        "artist_name": "Rhiannon Giddens",
-        "video_id": null,
-        "capture_date": "2023-05-24 12:25:30.211211",
-        "source_id": 1612,
+        "capture_date": "2023-05-24 04:51:07.303303",
+        "source_id": 1616,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Little Things",
-        "artist_name": "Jorja Smith",
+        "title": "It Must Change",
+        "artist_name": "Anohni and the Johnsons",
         "video_id": null,
-        "capture_date": "2023-05-24 12:25:30.211211",
-        "source_id": 1612,
+        "capture_date": "2023-05-24 04:51:07.303303",
+        "source_id": 1616,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Blues",
-        "artist_name": "Fatoumata Diawara and Roberto Fonseca",
+        "title": "Ein Sof, Infinito",
+        "artist_name": "Lido Pimienta",
         "video_id": null,
-        "capture_date": "2023-05-24 12:25:30.211211",
-        "source_id": 1612,
+        "capture_date": "2023-05-24 04:51:07.303303",
+        "source_id": 1616,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Acróstico",
-        "artist_name": "Shakira",
+        "title": "Where She Goes",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2023-05-24 12:25:30.211211",
-        "source_id": 1612,
+        "capture_date": "2023-05-24 04:51:07.303303",
+        "source_id": 1616,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tears Can Be So Soft",
-        "artist_name": "Christine and the Queens",
+        "title": "New Type",
+        "artist_name": "Summer Walker featuring Childish Gambino",
         "video_id": null,
-        "capture_date": "2023-05-24 12:25:30.211211",
-        "source_id": 1612,
+        "capture_date": "2023-05-24 04:51:07.303303",
+        "source_id": 1616,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wasted",
-        "artist_name": "Rob Moose ft. Phoebe Bridgers",
+        "title": "Cockroach",
+        "artist_name": "Miya Folick",
         "video_id": null,
-        "capture_date": "2023-05-24 12:25:30.211211",
-        "source_id": 1612,
+        "capture_date": "2023-05-24 04:51:07.303303",
+        "source_id": 1616,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sword",
-        "artist_name": "Natural Wonder Beauty Concept",
+        "title": "Say Yes to Heaven",
+        "artist_name": "Lana Del Rey",
         "video_id": null,
-        "capture_date": "2023-05-24 12:25:30.211211",
-        "source_id": 1612,
+        "capture_date": "2023-05-24 04:51:07.303303",
+        "source_id": 1616,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Waking of Insects",
-        "artist_name": "Ben Chasny & Rick Tomlinson",
+        "title": "Could’ve Been Her",
+        "artist_name": "Ella Langley",
         "video_id": null,
-        "capture_date": "2023-05-24 12:25:30.211211",
-        "source_id": 1612,
+        "capture_date": "2023-05-24 04:51:07.303303",
+        "source_id": 1616,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Illumina",
+        "artist_name": "Call Super and Julia Holter",
+        "video_id": null,
+        "capture_date": "2023-05-24 04:51:07.303303",
+        "source_id": 1616,
         "song_id": null,
         "duplicate": false
     }
@@ -229,15 +229,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('World on Fire', 'Dolly Parton', NULL),
-  ('You’re the One', 'Rhiannon Giddens', NULL),
-  ('Little Things', 'Jorja Smith', NULL),
-  ('Blues', 'Fatoumata Diawara and Roberto Fonseca', NULL),
-  ('Acróstico', 'Shakira', NULL),
-  ('Tears Can Be So Soft', 'Christine and the Queens', NULL),
-  ('Wasted', 'Rob Moose ft. Phoebe Bridgers', NULL),
-  ('Sword', 'Natural Wonder Beauty Concept', NULL),
-  ('Waking of Insects', 'Ben Chasny & Rick Tomlinson', NULL)
+  ('The Narcissist', 'Blur', NULL),
+  ('Nothing Is as Good as They Say It Is', 'Sparks', NULL),
+  ('It Must Change', 'Anohni and the Johnsons', NULL),
+  ('Ein Sof, Infinito', 'Lido Pimienta', NULL),
+  ('Where She Goes', 'Bad Bunny', NULL),
+  ('New Type', 'Summer Walker featuring Childish Gambino', NULL),
+  ('Cockroach', 'Miya Folick', NULL),
+  ('Say Yes to Heaven', 'Lana Del Rey', NULL),
+  ('Could’ve Been Her', 'Ella Langley', NULL),
+  ('Illumina', 'Call Super and Julia Holter', NULL)
   ;
 
    // Update to song table
@@ -248,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14234; // SELECT last_insert_rowid();
+  song_id = 14262; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -288,16 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-05-24 12:25:30.210210', '1612', '14226'),
-  ('2023-05-24 12:25:30.211211', '1612', '5740'),
-  ('2023-05-24 12:25:30.211211', '1612', '14227'),
-  ('2023-05-24 12:25:30.211211', '1612', '14228'),
-  ('2023-05-24 12:25:30.211211', '1612', '14229'),
-  ('2023-05-24 12:25:30.211211', '1612', '14230'),
-  ('2023-05-24 12:25:30.211211', '1612', '14231'),
-  ('2023-05-24 12:25:30.211211', '1612', '14232'),
-  ('2023-05-24 12:25:30.211211', '1612', '14233'),
-  ('2023-05-24 12:25:30.211211', '1612', '14234')
+  ('2023-05-24 04:51:07.302302', '1616', '14253'),
+  ('2023-05-24 04:51:07.303303', '1616', '14254'),
+  ('2023-05-24 04:51:07.303303', '1616', '14255'),
+  ('2023-05-24 04:51:07.303303', '1616', '14256'),
+  ('2023-05-24 04:51:07.303303', '1616', '14257'),
+  ('2023-05-24 04:51:07.303303', '1616', '14258'),
+  ('2023-05-24 04:51:07.303303', '1616', '14259'),
+  ('2023-05-24 04:51:07.303303', '1616', '14260'),
+  ('2023-05-24 04:51:07.303303', '1616', '14261'),
+  ('2023-05-24 04:51:07.303303', '1616', '14262')
   ;
 
   // Update to source_song table

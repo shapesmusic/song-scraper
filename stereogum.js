@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of May 12, 2023', '2023-05-12 12:00:00.000000', 'https://www.stereogum.com/2223437/the-5-best-songs-of-the-week-482/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of May 19, 2023', '2023-05-19 12:00:00.000000', 'https://www.stereogum.com/2224182/the-5-best-songs-of-the-week-483/lists/the-5-best-songs-of-the-week/');
 
 
   // Update to source table
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1614; // SELECT last_insert_rowid();
+  source_id = 1618; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -102,47 +102,47 @@
   songsData =
   [
     {
-        "title": "Sword",
-        "artist_name": "Natural Wonder Beauty Concept",
+        "title": "Lose",
+        "artist_name": "Hannah Jadagu",
         "video_id": null,
-        "capture_date": "2023-05-24 12:33:12.923923",
-        "source_id": 1614,
-        "song_id": 14233,
-        "duplicate": true
-    },
-    {
-        "title": "Invasive Species (Cop City)",
-        "artist_name": "Snag",
-        "video_id": null,
-        "capture_date": "2023-05-24 12:33:12.924924",
-        "source_id": 1614,
+        "capture_date": "2023-05-24 05:02:29.268268",
+        "source_id": 1618,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pocket",
-        "artist_name": "Feeble Little Horse",
+        "title": "Gila Monster",
+        "artist_name": "King Gizzard & The Lizard Wizard",
         "video_id": null,
-        "capture_date": "2023-05-24 12:33:12.924924",
-        "source_id": 1614,
+        "capture_date": "2023-05-24 05:02:29.269269",
+        "source_id": 1618,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Idealized",
-        "artist_name": "Gouge Away",
+        "title": "Pottery Class",
+        "artist_name": "Lande Hekt",
         "video_id": null,
-        "capture_date": "2023-05-24 12:33:12.924924",
-        "source_id": 1614,
+        "capture_date": "2023-05-24 05:02:29.269269",
+        "source_id": 1618,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dopamine",
-        "artist_name": "Decisive Pink",
+        "title": "Ass Kickin'",
+        "artist_name": "Monaleo",
         "video_id": null,
-        "capture_date": "2023-05-24 12:33:12.924924",
-        "source_id": 1614,
+        "capture_date": "2023-05-24 05:02:29.269269",
+        "source_id": 1618,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Cosmic Leash",
+        "artist_name": "Chris Farren",
+        "video_id": null,
+        "capture_date": "2023-05-24 05:02:29.269269",
+        "source_id": 1618,
         "song_id": null,
         "duplicate": false
     }
@@ -187,10 +187,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Invasive Species (Cop City)', 'Snag', NULL),
-  ('Pocket', 'Feeble Little Horse', NULL),
-  ('Idealized', 'Gouge Away', NULL),
-  ('Dopamine', 'Decisive Pink', NULL)
+  ('Lose', 'Hannah Jadagu', NULL),
+  ('Gila Monster', 'King Gizzard & The Lizard Wizard', NULL),
+  ('Pottery Class', 'Lande Hekt', NULL),
+  ('Ass Kickin’', 'Monaleo', NULL),
+  ('Cosmic Leash', 'Chris Farren', NULL)
   ;
 
    // Update to song table
@@ -201,7 +202,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14244; // SELECT last_insert_rowid();
+  song_id = 14277; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -241,11 +242,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-05-24 12:33:12.923923', '1614', '14233'),
-  ('2023-05-24 12:33:12.924924', '1614', '14241'),
-  ('2023-05-24 12:33:12.924924', '1614', '14242'),
-  ('2023-05-24 12:33:12.924924', '1614', '14243'),
-  ('2023-05-24 12:33:12.924924', '1614', '14244')
+  ('2023-05-24 05:02:29.268268', '1618', '14273'),
+  ('2023-05-24 05:02:29.269269', '1618', '14274'),
+  ('2023-05-24 05:02:29.269269', '1618', '14275'),
+  ('2023-05-24 05:02:29.269269', '1618', '14276'),
+  ('2023-05-24 05:02:29.269269', '1618', '14277')
   ;
 
   // Update to source_song table
