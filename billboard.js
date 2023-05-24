@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of May 13, 2023', '2023-05-13 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-05-13/2023-05-13');
+    ('Billboard', 'The Hot 100', 'Week of May 20, 2023', '2023-05-20 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-05-20/2023-05-20');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1608; // SELECT last_insert_rowid();
+  source_id = 1611; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,48 +105,84 @@
   songsData =
   [
     {
-        "title": "They Don't Love It",
-        "artist_name": "Jack Harlow",
+        "title": "Area Codes",
+        "artist_name": "Kali",
         "video_id": null,
-        "capture_date": "2023-05-24 12:08:36.793793",
-        "source_id": 1608,
+        "capture_date": "2023-05-24 12:21:40.640640",
+        "source_id": 1611,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wreckage",
-        "artist_name": "Nate Smith",
+        "title": "Go Hard",
+        "artist_name": "Lil Baby",
         "video_id": null,
-        "capture_date": "2023-05-24 12:08:36.793793",
-        "source_id": 1608,
+        "capture_date": "2023-05-24 12:21:40.641641",
+        "source_id": 1611,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Waffle House",
-        "artist_name": "Jonas Brothers",
+        "title": "Religiously",
+        "artist_name": "Bailey Zimmerman",
         "video_id": null,
-        "capture_date": "2023-05-24 12:08:36.794794",
-        "source_id": 1608,
-        "song_id": 14122,
+        "capture_date": "2023-05-24 12:21:40.641641",
+        "source_id": 1611,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mejor Que Yo",
+        "artist_name": "Anuel AA, Mambo Kingz & DJ Luian",
+        "video_id": null,
+        "capture_date": "2023-05-24 12:21:40.641641",
+        "source_id": 1611,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "You, Me, & Whiskey",
+        "artist_name": "Justin Moore & Priscilla Block",
+        "video_id": null,
+        "capture_date": "2023-05-24 12:21:40.641641",
+        "source_id": 1611,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mathematical Disrespect",
+        "artist_name": "Lil Mabu",
+        "video_id": null,
+        "capture_date": "2023-05-24 12:21:40.642642",
+        "source_id": 1611,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Shake Sumn",
+        "artist_name": "DaBaby",
+        "video_id": null,
+        "capture_date": "2023-05-24 12:21:40.642642",
+        "source_id": 1611,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Curtains",
+        "artist_name": "Ed Sheeran",
+        "video_id": null,
+        "capture_date": "2023-05-24 12:21:40.645645",
+        "source_id": 1611,
+        "song_id": 14207,
         "duplicate": true
     },
     {
-        "title": "People",
-        "artist_name": "Libianca",
+        "title": "What It Is (Block Boy)",
+        "artist_name": "Doechii ft. Kodak Black",
         "video_id": null,
-        "capture_date": "2023-05-24 12:08:36.794794",
-        "source_id": 1608,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Common Ground",
-        "artist_name": "Jack Harlow",
-        "video_id": null,
-        "capture_date": "2023-05-24 12:08:36.794794",
-        "source_id": 1608,
-        "song_id": 14174,
+        "capture_date": "2023-05-24 12:21:40.645645",
+        "source_id": 1611,
+        "song_id": 13708,
         "duplicate": true
     }
 ]
@@ -189,9 +225,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('They Don’t Love It', 'Jack Harlow', NULL),
-  ('Wreckage', 'Nate Smith', NULL),
-  ('People', 'Libianca', NULL)
+  ('Area Codes', 'Kali', NULL),
+  ('Go Hard', 'Lil Baby', NULL),
+  ('Religiously', 'Bailey Zimmerman', NULL),
+  ('Mejor Que Yo', 'Anuel AA, Mambo Kingz & DJ Luian', NULL),
+  ('You, Me, & Whiskey', 'Justin Moore & Priscilla Block', NULL),
+  ('Mathematical Disrespect', 'Lil Mabu', NULL),
+  ('Shake Sumn', 'DaBaby', NULL)
   ;
 
    // Update to song table
@@ -202,7 +242,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14202; // SELECT last_insert_rowid();
+  song_id = 14225; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -242,11 +282,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-05-24 12:08:36.793793', '1608', '14200'),
-  ('2023-05-24 12:08:36.793793', '1608', '14201'),
-  ('2023-05-24 12:08:36.794794', '1608', '14122'),
-  ('2023-05-24 12:08:36.794794', '1608', '14202'),
-  ('2023-05-24 12:08:36.794794', '1608', '14174')
+  ('2023-05-24 12:21:40.640640', '1611', '14219'),
+  ('2023-05-24 12:21:40.641641', '1611', '14220'),
+  ('2023-05-24 12:21:40.641641', '1611', '14221'),
+  ('2023-05-24 12:21:40.641641', '1611', '14222'),
+  ('2023-05-24 12:21:40.641641', '1611', '14223'),
+  ('2023-05-24 12:21:40.642642', '1611', '14224'),
+  ('2023-05-24 12:21:40.642642', '1611', '14225'),
+  ('2023-05-24 12:21:40.645645', '1611', '14207'),
+  ('2023-05-24 12:21:40.645645', '1611', '13708')
   ;
 
   // Update to source_song table

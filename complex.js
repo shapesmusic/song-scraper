@@ -48,7 +48,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Complex', 'The Best New Music This Week', 'Jack Harlow, Lola Brooke, Miguel, and More', '2023-04-28 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-jack-harlow-lola-brooke-miguel');
+    ('Complex', 'The Best New Music This Week', 'Lil Durk, Jorja Smith, YoungBoy Never Broke Again, and More', '2023-05-12 12:00:00.000000', 'https://www.complex.com/music/best-new-music-this-week-lil-durk-nba-youngboy');
 
   // Update to source table
 
@@ -57,7 +57,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1605; // SELECT last_insert_rowid();
+  source_id = 1613; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("article-list");
@@ -102,74 +102,65 @@
   songsData =
   [
     {
-        "title": "Gang Gang Gang",
-        "artist_name": "Jack Harlow",
+        "title": "All My Life",
+        "artist_name": "Lil Durk f/ J. Cole",
         "video_id": null,
-        "capture_date": "2023-05-08 01:41:15.140140",
-        "source_id": 1605,
+        "capture_date": "2023-05-24 12:29:38.568568",
+        "source_id": 1613,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Just Relax",
-        "artist_name": "Lola Brooke",
+        "title": "Little Things",
+        "artist_name": "Jorja Smith",
         "video_id": null,
-        "capture_date": "2023-05-08 01:41:15.140140",
-        "source_id": 1605,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Give It To Me",
-        "artist_name": "Miguel",
-        "video_id": null,
-        "capture_date": "2023-05-08 01:41:15.140140",
-        "source_id": 1605,
-        "song_id": 14177,
+        "capture_date": "2023-05-24 12:29:38.568568",
+        "source_id": 1613,
+        "song_id": 14228,
         "duplicate": true
     },
     {
-        "title": "Chosen",
-        "artist_name": "Conway The Machine ft. Jae Skeese",
+        "title": "Perspective",
+        "artist_name": "YoungBoy Never Broke Again",
         "video_id": null,
-        "capture_date": "2023-05-08 01:41:15.140140",
-        "source_id": 1605,
+        "capture_date": "2023-05-24 12:29:38.568568",
+        "source_id": 1613,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Turn It Up",
-        "artist_name": "Rico Nasty",
+        "title": "Lipstick Lover",
+        "artist_name": "Janelle Monáe",
         "video_id": null,
-        "capture_date": "2023-05-08 01:41:15.140140",
-        "source_id": 1605,
+        "capture_date": "2023-05-24 12:29:38.569569",
+        "source_id": 1613,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ends & Begins",
-        "artist_name": "Labrinth",
+        "title": "Ring Ring",
+        "artist_name": "CHASE B f/ Travis Scott, Quavo, Don Toliver & Ty Dolla $ign",
         "video_id": null,
-        "capture_date": "2023-05-08 01:41:15.141141",
-        "source_id": 1605,
+        "capture_date": "2023-05-24 12:29:38.569569",
+        "source_id": 1613,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "My Body",
-        "artist_name": "Coi Leray",
+        "title": "Need Me",
+        "artist_name": "Lil Tecca",
         "video_id": null,
-        "capture_date": "2023-05-08 01:41:15.141141",
-        "source_id": 1605,
+        "capture_date": "2023-05-24 12:29:38.569569",
+        "source_id": 1613,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "If It Wasn’t For Me",
-        "artist_name": "Tony Shhnow",
+        "title": "Roll the Dice",
+        "artist_name": "KayCyy",
         "video_id": null,
-        "capture_date": "2023-05-08 01:41:15.141141",
-        "source_id": 1605,
+        "capture_date": "2023-05-24 12:29:38.569569",
+        "source_id": 1613,
         "song_id": null,
         "duplicate": false
     }
@@ -212,13 +203,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Gang Gang Gang', 'Jack Harlow', NULL),
-  ('Just Relax', 'Lola Brooke', NULL),
-  ('Chosen', 'Conway The Machine ft. Jae Skeese', NULL),
-  ('Turn It Up', 'Rico Nasty', NULL),
-  ('Ends & Begins', 'Labrinth', NULL),
-  ('My Body', 'Coi Leray', NULL),
-  ('If It Wasn’t For Me', 'Tony Shhnow', NULL)
+  ('All My Life', 'Lil Durk f/ J. Cole', NULL),
+  ('Perspective', 'YoungBoy Never Broke Again', NULL),
+  ('Lipstick Lover', 'Janelle Monáe', NULL),
+  ('Ring Ring', 'CHASE B f/ Travis Scott, Quavo, Don Toliver & Ty Dolla $ign', NULL),
+  ('Need Me', 'Lil Tecca', NULL),
+  ('Roll the Dice', 'KayCyy', NULL)
   ;
 
    // Update to song table
@@ -229,7 +219,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14189; // SELECT last_insert_rowid();
+  song_id = 14240; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -269,14 +259,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-05-08 01:41:15.140140', '1605', '14183'),
-  ('2023-05-08 01:41:15.140140', '1605', '14184'),
-  ('2023-05-08 01:41:15.140140', '1605', '14177'),
-  ('2023-05-08 01:41:15.140140', '1605', '14185'),
-  ('2023-05-08 01:41:15.140140', '1605', '14186'),
-  ('2023-05-08 01:41:15.141141', '1605', '14187'),
-  ('2023-05-08 01:41:15.141141', '1605', '14188'),
-  ('2023-05-08 01:41:15.141141', '1605', '14189')
+  ('2023-05-24 12:29:38.568568', '1613', '14235'),
+  ('2023-05-24 12:29:38.568568', '1613', '14228'),
+  ('2023-05-24 12:29:38.568568', '1613', '14236'),
+  ('2023-05-24 12:29:38.569569', '1613', '14237'),
+  ('2023-05-24 12:29:38.569569', '1613', '14238'),
+  ('2023-05-24 12:29:38.569569', '1613', '14239'),
+  ('2023-05-24 12:29:38.569569', '1613', '14240')
   ;
 
   // Update to source_song table
