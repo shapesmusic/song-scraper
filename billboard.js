@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of June 3, 2023', '2023-06-03 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-06-03/2023-06-03');
+    ('Billboard', 'The Hot 100', 'Week of June 10, 2023', '2023-06-10 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-06-10');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1619; // SELECT last_insert_rowid();
+  source_id = 1622; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,74 +105,164 @@
   songsData =
   [
     {
-        "title": "Where She Goes",
-        "artist_name": "Bad Bunny",
+        "title": "Stand By Me",
+        "artist_name": "Lil Durk ft. Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-06-12 05:16:28.821821",
-        "source_id": 1619,
-        "song_id": 14257,
+        "capture_date": "2023-06-12 05:29:55.500500",
+        "source_id": 1622,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hits Different",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:29:55.501501",
+        "source_id": 1622,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pelle Coat",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:29:55.501501",
+        "source_id": 1622,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "War Bout It",
+        "artist_name": "Lil Durk ft. 21 Savage",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:29:55.501501",
+        "source_id": 1622,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Dance The Night",
+        "artist_name": "Dua Lipa",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:29:55.501501",
+        "source_id": 1622,
+        "song_id": 14284,
         "duplicate": true
     },
     {
-        "title": "TQM",
-        "artist_name": "Fuerza Regida",
+        "title": "Bye",
+        "artist_name": "Peso Pluma",
         "video_id": null,
-        "capture_date": "2023-06-12 05:16:28.822822",
-        "source_id": 1619,
+        "capture_date": "2023-06-12 05:29:55.502502",
+        "source_id": 1622,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mourning",
-        "artist_name": "Post Malone",
+        "title": "Never Imagined",
+        "artist_name": "Lil Durk ft. Future",
         "video_id": null,
-        "capture_date": "2023-06-12 05:16:28.822822",
-        "source_id": 1619,
+        "capture_date": "2023-06-12 05:29:55.502502",
+        "source_id": 1622,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Say Yes To Heaven",
-        "artist_name": "Lana Del Rey",
+        "title": "Never Again",
+        "artist_name": "Lil Durk",
         "video_id": null,
-        "capture_date": "2023-06-12 05:16:28.822822",
-        "source_id": 1619,
-        "song_id": 14260,
-        "duplicate": true
-    },
-    {
-        "title": "To Summer, From Cole (Audio Hug)",
-        "artist_name": "Summer Walker & J. Cole",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:16:28.823823",
-        "source_id": 1619,
+        "capture_date": "2023-06-12 05:29:55.502502",
+        "source_id": 1622,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Angel, Pt. 1",
-        "artist_name": "Kodak Black, NLE Choppa, Jimin, JVKE & Muni Long",
+        "title": "Pound Town 2",
+        "artist_name": "Sexyy Red & Tay Keith & Nicki Minaj",
         "video_id": null,
-        "capture_date": "2023-06-12 05:16:28.823823",
-        "source_id": 1619,
+        "capture_date": "2023-06-12 05:29:55.502502",
+        "source_id": 1622,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You",
-        "artist_name": "Dan + Shay",
+        "title": "Big Dawg",
+        "artist_name": "Lil Durk & Chief Wuk",
         "video_id": null,
-        "capture_date": "2023-06-12 05:16:28.824824",
-        "source_id": 1619,
+        "capture_date": "2023-06-12 05:29:55.502502",
+        "source_id": 1622,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Baby Don't Hurt Me",
-        "artist_name": "David Guetta, Anne-Marie & Coi Leray",
+        "title": "Cross The Globe",
+        "artist_name": "Lil Durk ft. Juice WRLD",
         "video_id": null,
-        "capture_date": "2023-06-12 05:16:28.824824",
-        "source_id": 1619,
+        "capture_date": "2023-06-12 05:29:55.502502",
+        "source_id": 1622,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Put Em On Ice",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:29:55.502502",
+        "source_id": 1622,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "300 Urus",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:29:55.502502",
+        "source_id": 1622,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sad Songs",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:29:55.502502",
+        "source_id": 1622,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Grandson",
+        "artist_name": "Lil Durk ft. Kodak Black",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:29:55.502502",
+        "source_id": 1622,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Before Fajr",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:29:55.503503",
+        "source_id": 1622,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "B12",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:29:55.503503",
+        "source_id": 1622,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "You Got Em",
+        "artist_name": "Lil Durk",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:29:55.503503",
+        "source_id": 1622,
         "song_id": null,
         "duplicate": false
     }
@@ -216,12 +306,23 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('TQM', 'Fuerza Regida', NULL),
-  ('Mourning', 'Post Malone', NULL),
-  ('To Summer, From Cole (Audio Hug)', 'Summer Walker & J. Cole', NULL),
-  ('Angel, Pt. 1', 'Kodak Black, NLE Choppa, Jimin, JVKE & Muni Long', NULL),
-  ('You', 'Dan + Shay', NULL),
-  ('Baby Don’t Hurt Me', 'David Guetta, Anne-Marie & Coi Leray', NULL)
+  ('Stand By Me', 'Lil Durk ft. Morgan Wallen', NULL),
+  ('Hits Different', 'Taylor Swift', NULL),
+  ('Pelle Coat', 'Lil Durk', NULL),
+  ('War Bout It', 'Lil Durk ft. 21 Savage', NULL),
+  ('Bye', 'Peso Pluma', NULL),
+  ('Never Imagined', 'Lil Durk ft. Future', NULL),
+  ('Never Again', 'Lil Durk', NULL),
+  ('Pound Town 2', 'Sexyy Red & Tay Keith & Nicki Minaj', NULL),
+  ('Big Dawg', 'Lil Durk & Chief Wuk', NULL),
+  ('Cross The Globe', 'Lil Durk ft. Juice WRLD', NULL),
+  ('Put Em On Ice', 'Lil Durk', NULL),
+  ('300 Urus', 'Lil Durk', NULL),
+  ('Sad Songs', 'Lil Durk', NULL),
+  ('Grandson', 'Lil Durk ft. Kodak Black', NULL),
+  ('Before Fajr', 'Lil Durk', NULL),
+  ('B12', 'Lil Durk', NULL),
+  ('You Got Em', 'Lil Durk', NULL)
   ;
 
    // Update to song table
@@ -232,7 +333,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14283; // SELECT last_insert_rowid();
+  song_id = 14312; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -272,14 +373,24 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-06-12 05:16:28.821821', '1619', '14257'),
-  ('2023-06-12 05:16:28.822822', '1619', '14278'),
-  ('2023-06-12 05:16:28.822822', '1619', '14279'),
-  ('2023-06-12 05:16:28.822822', '1619', '14260'),
-  ('2023-06-12 05:16:28.823823', '1619', '14280'),
-  ('2023-06-12 05:16:28.823823', '1619', '14281'),
-  ('2023-06-12 05:16:28.824824', '1619', '14282'),
-  ('2023-06-12 05:16:28.824824', '1619', '14283')
+  ('2023-06-12 05:29:55.500500', '1622', '14296'),
+  ('2023-06-12 05:29:55.501501', '1622', '14297'),
+  ('2023-06-12 05:29:55.501501', '1622', '14298'),
+  ('2023-06-12 05:29:55.501501', '1622', '14299'),
+  ('2023-06-12 05:29:55.501501', '1622', '14284'),
+  ('2023-06-12 05:29:55.502502', '1622', '14300'),
+  ('2023-06-12 05:29:55.502502', '1622', '14301'),
+  ('2023-06-12 05:29:55.502502', '1622', '14302'),
+  ('2023-06-12 05:29:55.502502', '1622', '14303'),
+  ('2023-06-12 05:29:55.502502', '1622', '14304'),
+  ('2023-06-12 05:29:55.502502', '1622', '14305'),
+  ('2023-06-12 05:29:55.502502', '1622', '14306'),
+  ('2023-06-12 05:29:55.502502', '1622', '14307'),
+  ('2023-06-12 05:29:55.502502', '1622', '14308'),
+  ('2023-06-12 05:29:55.502502', '1622', '14309'),
+  ('2023-06-12 05:29:55.503503', '1622', '14310'),
+  ('2023-06-12 05:29:55.503503', '1622', '14311'),
+  ('2023-06-12 05:29:55.503503', '1622', '14312')
   ;
 
   // Update to source_song table

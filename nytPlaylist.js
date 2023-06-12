@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Ice Spice Joins Taylor Swift’s ‘Karma,’ and 9 More New Songs', '2023-05-26 10:47:57.000000', 'https://www.nytimes.com/2023/05/26/arts/music/playlist-taylor-swift-ice-spice-dua-lipa.html');
+    ('New York Times', 'The Playlist', 'A Lost (and Found) John Coltrane Recording, and 9 More New Songs', '2023-06-02 08:37:52.000000', 'https://www.nytimes.com/2023/06/02/arts/music/playlist-john-coltrane-the-weeknd-madonna.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1620; // SELECT last_insert_rowid();
+  source_id = 1623; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,92 +100,83 @@
   songsData =
   [
     {
-        "title": "Karma",
-        "artist_name": "Taylor Swift ft. Ice Spice",
+        "title": "Bzrp Music Sessions, Vol. 55",
+        "artist_name": "Bizarrap and Peso Pluma",
         "video_id": null,
-        "capture_date": "2023-06-12 05:21:32.364364",
-        "source_id": 1620,
-        "song_id": 13081,
-        "duplicate": true
-    },
-    {
-        "title": "America Has a Problem",
-        "artist_name": "Beyoncé ft. Kendrick Lamar",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:21:32.369369",
-        "source_id": 1620,
-        "song_id": 12612,
-        "duplicate": true
-    },
-    {
-        "title": "Dance the Night",
-        "artist_name": "Dua Lipa",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:21:32.369369",
-        "source_id": 1620,
+        "capture_date": "2023-06-12 05:34:02.352352",
+        "source_id": 1623,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Everyone’s Crushed",
-        "artist_name": "Water From Your Eyes",
+        "title": "Popular",
+        "artist_name": "The Weeknd with Playboi Carti and Madonna",
         "video_id": null,
-        "capture_date": "2023-06-12 05:21:32.369369",
-        "source_id": 1620,
+        "capture_date": "2023-06-12 05:34:02.352352",
+        "source_id": 1623,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Blades",
-        "artist_name": "Squid",
+        "title": "Motion",
+        "artist_name": "Ty Dolla Sign",
         "video_id": null,
-        "capture_date": "2023-06-12 05:21:32.369369",
-        "source_id": 1620,
+        "capture_date": "2023-06-12 05:34:02.352352",
+        "source_id": 1623,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Liked U Better",
-        "artist_name": "Jeff Rosenstock",
+        "title": "Hard to Be a Human",
+        "artist_name": "Bettye LaVette",
         "video_id": null,
-        "capture_date": "2023-06-12 05:21:32.369369",
-        "source_id": 1620,
+        "capture_date": "2023-06-12 05:34:02.352352",
+        "source_id": 1623,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Time Ain’t Accidental",
-        "artist_name": "Jess Williamson",
+        "title": "Dirtmouth",
+        "artist_name": "High Pulp ft. James Brandon Lewis",
         "video_id": null,
-        "capture_date": "2023-06-12 05:21:32.369369",
-        "source_id": 1620,
+        "capture_date": "2023-06-12 05:34:02.352352",
+        "source_id": 1623,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You Gotta Man",
-        "artist_name": "Blk Odyssy ft. Kirby",
+        "title": "Better Somehow",
+        "artist_name": "Hannah Georgas",
         "video_id": null,
-        "capture_date": "2023-06-12 05:21:32.369369",
-        "source_id": 1620,
+        "capture_date": "2023-06-12 05:34:02.352352",
+        "source_id": 1623,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Space Orphans",
-        "artist_name": "Ichiko Aoba",
+        "title": "Crumbs",
+        "artist_name": "Claud",
         "video_id": null,
-        "capture_date": "2023-06-12 05:21:32.370370",
-        "source_id": 1620,
-        "song_id": 14263,
-        "duplicate": true
+        "capture_date": "2023-06-12 05:34:02.352352",
+        "source_id": 1623,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "The King",
-        "artist_name": "Anjimile",
+        "title": "Milagro y Desastre",
+        "artist_name": "Silvana Estrada",
         "video_id": null,
-        "capture_date": "2023-06-12 05:21:32.370370",
-        "source_id": 1620,
+        "capture_date": "2023-06-12 05:34:02.352352",
+        "source_id": 1623,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "On Lamp",
+        "artist_name": "Gunn Truscinski Nace",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:34:02.352352",
+        "source_id": 1623,
         "song_id": null,
         "duplicate": false
     }
@@ -229,13 +220,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Dance the Night', 'Dua Lipa', NULL),
-  ('Everyone’s Crushed', 'Water From Your Eyes', NULL),
-  ('The Blades', 'Squid', NULL),
-  ('Liked U Better', 'Jeff Rosenstock', NULL),
-  ('Time Ain’t Accidental', 'Jess Williamson', NULL),
-  ('You Gotta Man', 'Blk Odyssy ft. Kirby', NULL),
-  ('The King', 'Anjimile', NULL)
+  ('Bzrp Music Sessions, Vol. 55', 'Bizarrap and Peso Pluma', NULL),
+  ('Popular', 'The Weeknd with Playboi Carti and Madonna', NULL),
+  ('Motion', 'Ty Dolla Sign', NULL),
+  ('Hard to Be a Human', 'Bettye LaVette', NULL),
+  ('Dirtmouth', 'High Pulp ft. James Brandon Lewis', NULL),
+  ('Better Somehow', 'Hannah Georgas', NULL),
+  ('Crumbs', 'Claud', NULL),
+  ('Milagro y Desastre', 'Silvana Estrada', NULL),
+  ('On Lamp', 'Gunn Truscinski Nace', NULL)
   ;
 
    // Update to song table
@@ -246,7 +239,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14290; // SELECT last_insert_rowid();
+  song_id = 14321; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -286,16 +279,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-06-12 05:21:32.364364', '1620', '13081'),
-  ('2023-06-12 05:21:32.369369', '1620', '12612'),
-  ('2023-06-12 05:21:32.369369', '1620', '14284'),
-  ('2023-06-12 05:21:32.369369', '1620', '14285'),
-  ('2023-06-12 05:21:32.369369', '1620', '14286'),
-  ('2023-06-12 05:21:32.369369', '1620', '14287'),
-  ('2023-06-12 05:21:32.369369', '1620', '14288'),
-  ('2023-06-12 05:21:32.369369', '1620', '14289'),
-  ('2023-06-12 05:21:32.370370', '1620', '14263'),
-  ('2023-06-12 05:21:32.370370', '1620', '14290')
+  ('2023-06-12 05:34:02.352352', '1623', '14313'),
+  ('2023-06-12 05:34:02.352352', '1623', '14314'),
+  ('2023-06-12 05:34:02.352352', '1623', '14315'),
+  ('2023-06-12 05:34:02.352352', '1623', '14316'),
+  ('2023-06-12 05:34:02.352352', '1623', '14317'),
+  ('2023-06-12 05:34:02.352352', '1623', '14318'),
+  ('2023-06-12 05:34:02.352352', '1623', '14319'),
+  ('2023-06-12 05:34:02.352352', '1623', '14320'),
+  ('2023-06-12 05:34:02.352352', '1623', '14321')
   ;
 
   // Update to source_song table
