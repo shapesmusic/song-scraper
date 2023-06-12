@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of May 27, 2023', '2023-05-27 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-05-27');
+    ('Billboard', 'The Hot 100', 'Week of June 3, 2023', '2023-06-03 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-06-03/2023-06-03');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1615; // SELECT last_insert_rowid();
+  source_id = 1619; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,83 +105,74 @@
   songsData =
   [
     {
-        "title": "All My Life",
-        "artist_name": "Lil Durk ft. J. Cole",
+        "title": "Where She Goes",
+        "artist_name": "Bad Bunny",
         "video_id": null,
-        "capture_date": "2023-05-24 04:46:24.834834",
-        "source_id": 1615,
-        "song_id": 14235,
+        "capture_date": "2023-06-12 05:16:28.821821",
+        "source_id": 1619,
+        "song_id": 14257,
         "duplicate": true
     },
     {
-        "title": "Bitch Let's Do It",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "TQM",
+        "artist_name": "Fuerza Regida",
         "video_id": null,
-        "capture_date": "2023-05-24 04:46:24.838838",
-        "source_id": 1615,
+        "capture_date": "2023-06-12 05:16:28.822822",
+        "source_id": 1619,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Life Goes On",
-        "artist_name": "Ed Sheeran ft. Luke Combs",
+        "title": "Mourning",
+        "artist_name": "Post Malone",
         "video_id": null,
-        "capture_date": "2023-05-24 04:46:24.838838",
-        "source_id": 1615,
+        "capture_date": "2023-06-12 05:16:28.822822",
+        "source_id": 1619,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Acrostico",
-        "artist_name": "Shakira",
+        "title": "Say Yes To Heaven",
+        "artist_name": "Lana Del Rey",
         "video_id": null,
-        "capture_date": "2023-05-24 04:46:24.838838",
-        "source_id": 1615,
+        "capture_date": "2023-06-12 05:16:28.822822",
+        "source_id": 1619,
+        "song_id": 14260,
+        "duplicate": true
+    },
+    {
+        "title": "To Summer, From Cole (Audio Hug)",
+        "artist_name": "Summer Walker & J. Cole",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:16:28.823823",
+        "source_id": 1619,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bury Me In Georgia",
-        "artist_name": "Kane Brown",
+        "title": "Angel, Pt. 1",
+        "artist_name": "Kodak Black, NLE Choppa, Jimin, JVKE & Muni Long",
         "video_id": null,
-        "capture_date": "2023-05-24 04:46:24.838838",
-        "source_id": 1615,
+        "capture_date": "2023-06-12 05:16:28.823823",
+        "source_id": 1619,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "F**k The Industry Pt. 2",
-        "artist_name": "YoungBoy Never Broke Again",
+        "title": "You",
+        "artist_name": "Dan + Shay",
         "video_id": null,
-        "capture_date": "2023-05-24 04:46:24.838838",
-        "source_id": 1615,
+        "capture_date": "2023-06-12 05:16:28.824824",
+        "source_id": 1619,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Everything She Ain't",
-        "artist_name": "Hailey Whitters",
+        "title": "Baby Don't Hurt Me",
+        "artist_name": "David Guetta, Anne-Marie & Coi Leray",
         "video_id": null,
-        "capture_date": "2023-05-24 04:46:24.838838",
-        "source_id": 1615,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Your Heart Or Mine",
-        "artist_name": "Jon Pardi",
-        "video_id": null,
-        "capture_date": "2023-05-24 04:46:24.839839",
-        "source_id": 1615,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I Heard",
-        "artist_name": "YoungBoy Never Broke Again",
-        "video_id": null,
-        "capture_date": "2023-05-24 04:46:24.839839",
-        "source_id": 1615,
+        "capture_date": "2023-06-12 05:16:28.824824",
+        "source_id": 1619,
         "song_id": null,
         "duplicate": false
     }
@@ -225,14 +216,12 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Bitch Let’s Do It', 'YoungBoy Never Broke Again', NULL),
-  ('Life Goes On', 'Ed Sheeran ft. Luke Combs', NULL),
-  ('Acrostico', 'Shakira', NULL),
-  ('Bury Me In Georgia', 'Kane Brown', NULL),
-  ('F**k The Industry Pt. 2', 'YoungBoy Never Broke Again', NULL),
-  ('Everything She Ain’t', 'Hailey Whitters', NULL),
-  ('Your Heart Or Mine', 'Jon Pardi', NULL),
-  ('I Heard', 'YoungBoy Never Broke Again', NULL)
+  ('TQM', 'Fuerza Regida', NULL),
+  ('Mourning', 'Post Malone', NULL),
+  ('To Summer, From Cole (Audio Hug)', 'Summer Walker & J. Cole', NULL),
+  ('Angel, Pt. 1', 'Kodak Black, NLE Choppa, Jimin, JVKE & Muni Long', NULL),
+  ('You', 'Dan + Shay', NULL),
+  ('Baby Don’t Hurt Me', 'David Guetta, Anne-Marie & Coi Leray', NULL)
   ;
 
    // Update to song table
@@ -243,7 +232,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14252; // SELECT last_insert_rowid();
+  song_id = 14283; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -283,15 +272,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-05-24 04:46:24.834834', '1615', '14235'),
-  ('2023-05-24 04:46:24.838838', '1615', '14245'),
-  ('2023-05-24 04:46:24.838838', '1615', '14246'),
-  ('2023-05-24 04:46:24.838838', '1615', '14247'),
-  ('2023-05-24 04:46:24.838838', '1615', '14248'),
-  ('2023-05-24 04:46:24.838838', '1615', '14249'),
-  ('2023-05-24 04:46:24.838838', '1615', '14250'),
-  ('2023-05-24 04:46:24.839839', '1615', '14251'),
-  ('2023-05-24 04:46:24.839839', '1615', '14252')
+  ('2023-06-12 05:16:28.821821', '1619', '14257'),
+  ('2023-06-12 05:16:28.822822', '1619', '14278'),
+  ('2023-06-12 05:16:28.822822', '1619', '14279'),
+  ('2023-06-12 05:16:28.822822', '1619', '14260'),
+  ('2023-06-12 05:16:28.823823', '1619', '14280'),
+  ('2023-06-12 05:16:28.823823', '1619', '14281'),
+  ('2023-06-12 05:16:28.824824', '1619', '14282'),
+  ('2023-06-12 05:16:28.824824', '1619', '14283')
   ;
 
   // Update to source_song table

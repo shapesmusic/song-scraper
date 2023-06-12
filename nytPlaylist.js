@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Blur Surprises With a Reflection on Fame, and 9 More New Songs', '2023-05-19 11:50:56.000000', 'https://www.nytimes.com/2023/05/19/arts/music/playlist-blur-bad-bunny-lana-del-rey.html');
+    ('New York Times', 'The Playlist', 'Ice Spice Joins Taylor Swift’s ‘Karma,’ and 9 More New Songs', '2023-05-26 10:47:57.000000', 'https://www.nytimes.com/2023/05/26/arts/music/playlist-taylor-swift-ice-spice-dua-lipa.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1616; // SELECT last_insert_rowid();
+  source_id = 1620; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,92 +100,92 @@
   songsData =
   [
     {
-        "title": "The Narcissist",
-        "artist_name": "Blur",
+        "title": "Karma",
+        "artist_name": "Taylor Swift ft. Ice Spice",
         "video_id": null,
-        "capture_date": "2023-05-24 04:51:07.302302",
-        "source_id": 1616,
+        "capture_date": "2023-06-12 05:21:32.364364",
+        "source_id": 1620,
+        "song_id": 13081,
+        "duplicate": true
+    },
+    {
+        "title": "America Has a Problem",
+        "artist_name": "Beyoncé ft. Kendrick Lamar",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:21:32.369369",
+        "source_id": 1620,
+        "song_id": 12612,
+        "duplicate": true
+    },
+    {
+        "title": "Dance the Night",
+        "artist_name": "Dua Lipa",
+        "video_id": null,
+        "capture_date": "2023-06-12 05:21:32.369369",
+        "source_id": 1620,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nothing Is as Good as They Say It Is",
-        "artist_name": "Sparks",
+        "title": "Everyone’s Crushed",
+        "artist_name": "Water From Your Eyes",
         "video_id": null,
-        "capture_date": "2023-05-24 04:51:07.303303",
-        "source_id": 1616,
+        "capture_date": "2023-06-12 05:21:32.369369",
+        "source_id": 1620,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "It Must Change",
-        "artist_name": "Anohni and the Johnsons",
+        "title": "The Blades",
+        "artist_name": "Squid",
         "video_id": null,
-        "capture_date": "2023-05-24 04:51:07.303303",
-        "source_id": 1616,
+        "capture_date": "2023-06-12 05:21:32.369369",
+        "source_id": 1620,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ein Sof, Infinito",
-        "artist_name": "Lido Pimienta",
+        "title": "Liked U Better",
+        "artist_name": "Jeff Rosenstock",
         "video_id": null,
-        "capture_date": "2023-05-24 04:51:07.303303",
-        "source_id": 1616,
+        "capture_date": "2023-06-12 05:21:32.369369",
+        "source_id": 1620,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Where She Goes",
-        "artist_name": "Bad Bunny",
+        "title": "Time Ain’t Accidental",
+        "artist_name": "Jess Williamson",
         "video_id": null,
-        "capture_date": "2023-05-24 04:51:07.303303",
-        "source_id": 1616,
+        "capture_date": "2023-06-12 05:21:32.369369",
+        "source_id": 1620,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "New Type",
-        "artist_name": "Summer Walker featuring Childish Gambino",
+        "title": "You Gotta Man",
+        "artist_name": "Blk Odyssy ft. Kirby",
         "video_id": null,
-        "capture_date": "2023-05-24 04:51:07.303303",
-        "source_id": 1616,
+        "capture_date": "2023-06-12 05:21:32.369369",
+        "source_id": 1620,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cockroach",
-        "artist_name": "Miya Folick",
+        "title": "Space Orphans",
+        "artist_name": "Ichiko Aoba",
         "video_id": null,
-        "capture_date": "2023-05-24 04:51:07.303303",
-        "source_id": 1616,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2023-06-12 05:21:32.370370",
+        "source_id": 1620,
+        "song_id": 14263,
+        "duplicate": true
     },
     {
-        "title": "Say Yes to Heaven",
-        "artist_name": "Lana Del Rey",
+        "title": "The King",
+        "artist_name": "Anjimile",
         "video_id": null,
-        "capture_date": "2023-05-24 04:51:07.303303",
-        "source_id": 1616,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Could’ve Been Her",
-        "artist_name": "Ella Langley",
-        "video_id": null,
-        "capture_date": "2023-05-24 04:51:07.303303",
-        "source_id": 1616,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Illumina",
-        "artist_name": "Call Super and Julia Holter",
-        "video_id": null,
-        "capture_date": "2023-05-24 04:51:07.303303",
-        "source_id": 1616,
+        "capture_date": "2023-06-12 05:21:32.370370",
+        "source_id": 1620,
         "song_id": null,
         "duplicate": false
     }
@@ -229,16 +229,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Narcissist', 'Blur', NULL),
-  ('Nothing Is as Good as They Say It Is', 'Sparks', NULL),
-  ('It Must Change', 'Anohni and the Johnsons', NULL),
-  ('Ein Sof, Infinito', 'Lido Pimienta', NULL),
-  ('Where She Goes', 'Bad Bunny', NULL),
-  ('New Type', 'Summer Walker featuring Childish Gambino', NULL),
-  ('Cockroach', 'Miya Folick', NULL),
-  ('Say Yes to Heaven', 'Lana Del Rey', NULL),
-  ('Could’ve Been Her', 'Ella Langley', NULL),
-  ('Illumina', 'Call Super and Julia Holter', NULL)
+  ('Dance the Night', 'Dua Lipa', NULL),
+  ('Everyone’s Crushed', 'Water From Your Eyes', NULL),
+  ('The Blades', 'Squid', NULL),
+  ('Liked U Better', 'Jeff Rosenstock', NULL),
+  ('Time Ain’t Accidental', 'Jess Williamson', NULL),
+  ('You Gotta Man', 'Blk Odyssy ft. Kirby', NULL),
+  ('The King', 'Anjimile', NULL)
   ;
 
    // Update to song table
@@ -249,7 +246,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14262; // SELECT last_insert_rowid();
+  song_id = 14290; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +286,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-05-24 04:51:07.302302', '1616', '14253'),
-  ('2023-05-24 04:51:07.303303', '1616', '14254'),
-  ('2023-05-24 04:51:07.303303', '1616', '14255'),
-  ('2023-05-24 04:51:07.303303', '1616', '14256'),
-  ('2023-05-24 04:51:07.303303', '1616', '14257'),
-  ('2023-05-24 04:51:07.303303', '1616', '14258'),
-  ('2023-05-24 04:51:07.303303', '1616', '14259'),
-  ('2023-05-24 04:51:07.303303', '1616', '14260'),
-  ('2023-05-24 04:51:07.303303', '1616', '14261'),
-  ('2023-05-24 04:51:07.303303', '1616', '14262')
+  ('2023-06-12 05:21:32.364364', '1620', '13081'),
+  ('2023-06-12 05:21:32.369369', '1620', '12612'),
+  ('2023-06-12 05:21:32.369369', '1620', '14284'),
+  ('2023-06-12 05:21:32.369369', '1620', '14285'),
+  ('2023-06-12 05:21:32.369369', '1620', '14286'),
+  ('2023-06-12 05:21:32.369369', '1620', '14287'),
+  ('2023-06-12 05:21:32.369369', '1620', '14288'),
+  ('2023-06-12 05:21:32.369369', '1620', '14289'),
+  ('2023-06-12 05:21:32.370370', '1620', '14263'),
+  ('2023-06-12 05:21:32.370370', '1620', '14290')
   ;
 
   // Update to source_song table
