@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of May 22, 2022', -- Mondays (for the previous week, including the publication_date)
-      '2023-05-22 12:00:00.000000', -- Dont forget this!
+      'Week of June 12, 2023', -- Mondays (for the previous week, including the publication_date)
+      '2023-06-12 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1617; // SELECT last_insert_rowid();
+    source_id = 1625; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,92 +458,65 @@
     songsData =
     [
     {
-        "title": "Space Orphans",
-        "artist_name": "Ichiko Aoba",
+        "title": "Stain",
+        "artist_name": "Anysia Kim and Jadasea",
         "video_id": null,
-        "capture_date": "2023-05-24 04:55:12.951000",
-        "source_id": 1617,
+        "capture_date": "2023-06-12 05:43:37.122000",
+        "source_id": 1625,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Intercepted Message",
-        "artist_name": "OSEES",
+        "title": "Body",
+        "artist_name": "Sword II",
         "video_id": null,
-        "capture_date": "2023-05-24 04:55:12.951000",
-        "source_id": 1617,
+        "capture_date": "2023-06-12 05:43:37.122000",
+        "source_id": 1625,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "My God",
-        "artist_name": "Twine",
+        "title": "Mystery Channel",
+        "artist_name": "Killah Priest",
         "video_id": null,
-        "capture_date": "2023-05-24 04:55:12.951000",
-        "source_id": 1617,
+        "capture_date": "2023-06-12 05:43:37.122000",
+        "source_id": 1625,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Family",
-        "artist_name": "Shapednoise",
+        "title": "Won't Ever Know",
+        "artist_name": "JEWELSSEA",
         "video_id": null,
-        "capture_date": "2023-05-24 04:55:12.951000",
-        "source_id": 1617,
+        "capture_date": "2023-06-12 05:43:37.122000",
+        "source_id": 1625,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Girl Next Door",
-        "artist_name": "Tayla and Ayra Starr",
+        "title": "Polacrilex Kid",
+        "artist_name": "Protomartyr",
         "video_id": null,
-        "capture_date": "2023-05-24 04:55:12.951000",
-        "source_id": 1617,
+        "capture_date": "2023-06-12 05:43:37.122000",
+        "source_id": 1625,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Sling",
-        "artist_name": "Youth Lagoon",
+        "title": "City Song",
+        "artist_name": "Gia Margaret",
         "video_id": null,
-        "capture_date": "2023-05-24 04:55:12.951000",
-        "source_id": 1617,
+        "capture_date": "2023-06-12 05:43:37.122000",
+        "source_id": 1625,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Superficial Conversation",
-        "artist_name": "Madeline Kenney",
+        "title": "SONG",
+        "artist_name": "Nikki Nair and Hudson Mohawke",
         "video_id": null,
-        "capture_date": "2023-05-24 04:55:12.951000",
-        "source_id": 1617,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "ODEE",
-        "artist_name": "BLK ODYSSY",
-        "video_id": null,
-        "capture_date": "2023-05-24 04:55:12.951000",
-        "source_id": 1617,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "14",
-        "artist_name": "Water From Your Eyes",
-        "video_id": null,
-        "capture_date": "2023-05-24 04:55:12.951000",
-        "source_id": 1617,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mama's Eyes",
-        "artist_name": "METTE",
-        "video_id": null,
-        "capture_date": "2023-05-24 04:55:12.951000",
-        "source_id": 1617,
+        "capture_date": "2023-06-12 05:43:37.122000",
+        "source_id": 1625,
         "song_id": null,
         "duplicate": false
     }
@@ -585,16 +558,13 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Space Orphans', 'Ichiko Aoba', NULL),
-    ('Intercepted Message', 'OSEES', NULL),
-    ('My God', 'Twine', NULL),
-    ('Family', 'Shapednoise', NULL),
-    ('Girl Next Door', 'Tayla and Ayra Starr', NULL),
-    ('The Sling', 'Youth Lagoon', NULL),
-    ('Superficial Conversation', 'Madeline Kenney', NULL),
-    ('ODEE', 'BLK ODYSSY', NULL),
-    ('14', 'Water From Your Eyes', NULL),
-    ('Mama’s Eyes', 'METTE', NULL)
+    ('Stain', 'Anysia Kim and Jadasea', NULL),
+    ('Body', 'Sword II', NULL),
+    ('Mystery Channel', 'Killah Priest', NULL),
+    ('Won’t Ever Know', 'JEWELSSEA', NULL),
+    ('Polacrilex Kid', 'Protomartyr', NULL),
+    ('City Song', 'Gia Margaret', NULL),
+    ('SONG', 'Nikki Nair and Hudson Mohawke', NULL)
     ;
 
      // Update to song table
@@ -605,7 +575,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14272; // SELECT last_insert_rowid();
+  song_id = 14331; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -645,16 +615,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-05-24 04:55:12.951000', '1617', '14263'),
-  ('2023-05-24 04:55:12.951000', '1617', '14264'),
-  ('2023-05-24 04:55:12.951000', '1617', '14265'),
-  ('2023-05-24 04:55:12.951000', '1617', '14266'),
-  ('2023-05-24 04:55:12.951000', '1617', '14267'),
-  ('2023-05-24 04:55:12.951000', '1617', '14268'),
-  ('2023-05-24 04:55:12.951000', '1617', '14269'),
-  ('2023-05-24 04:55:12.951000', '1617', '14270'),
-  ('2023-05-24 04:55:12.951000', '1617', '14271'),
-  ('2023-05-24 04:55:12.951000', '1617', '14272')
+  ('2023-06-12 05:43:37.122000', '1625', '14325'),
+  ('2023-06-12 05:43:37.122000', '1625', '14326'),
+  ('2023-06-12 05:43:37.122000', '1625', '14327'),
+  ('2023-06-12 05:43:37.122000', '1625', '14328'),
+  ('2023-06-12 05:43:37.122000', '1625', '14329'),
+  ('2023-06-12 05:43:37.122000', '1625', '14330'),
+  ('2023-06-12 05:43:37.122000', '1625', '14331')
   ;
 
   // Update to source_song table

@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of June 10, 2023', '2023-06-10 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-06-10');
+    ('Billboard', 'The Hot 100', 'Week of June 17, 2023', '2023-06-17 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-06-17');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1622; // SELECT last_insert_rowid();
+  source_id = 1640; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,164 +105,137 @@
   songsData =
   [
     {
-        "title": "Stand By Me",
-        "artist_name": "Lil Durk ft. Morgan Wallen",
+        "title": "Put It On Da Floor Again",
+        "artist_name": "Latto ft. Cardi B",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.500500",
-        "source_id": 1622,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hits Different",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.501501",
-        "source_id": 1622,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pelle Coat",
-        "artist_name": "Lil Durk",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.501501",
-        "source_id": 1622,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "War Bout It",
-        "artist_name": "Lil Durk ft. 21 Savage",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.501501",
-        "source_id": 1622,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dance The Night",
-        "artist_name": "Dua Lipa",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.501501",
-        "source_id": 1622,
-        "song_id": 14284,
+        "capture_date": "2023-06-18 07:25:15.967967",
+        "source_id": 1640,
+        "song_id": 14166,
         "duplicate": true
     },
     {
-        "title": "Bye",
-        "artist_name": "Peso Pluma",
+        "title": "Bzrp Music Sessions, Vol. 55",
+        "artist_name": "Bizarrap & Peso Pluma",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.502502",
-        "source_id": 1622,
+        "capture_date": "2023-06-18 07:25:15.967967",
+        "source_id": 1640,
+        "song_id": 14313,
+        "duplicate": true
+    },
+    {
+        "title": "Calling",
+        "artist_name": "Metro Boomin, Swae Lee & NAV ft. A Boogie Wit da Hoodie",
+        "video_id": null,
+        "capture_date": "2023-06-18 07:25:15.968968",
+        "source_id": 1640,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Never Imagined",
-        "artist_name": "Lil Durk ft. Future",
+        "title": "Popular",
+        "artist_name": "The Weeknd, Playboi Carti & Madonna",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.502502",
-        "source_id": 1622,
+        "capture_date": "2023-06-18 07:25:15.968968",
+        "source_id": 1640,
+        "song_id": 14314,
+        "duplicate": true
+    },
+    {
+        "title": "Annihilate",
+        "artist_name": "Metro Boomin, Swae Lee, Lil Wayne & Offset",
+        "video_id": null,
+        "capture_date": "2023-06-18 07:25:15.968968",
+        "source_id": 1640,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Never Again",
-        "artist_name": "Lil Durk",
+        "title": "Bread & Butter",
+        "artist_name": "Gunna",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.502502",
-        "source_id": 1622,
+        "capture_date": "2023-06-18 07:25:15.968968",
+        "source_id": 1640,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pound Town 2",
-        "artist_name": "Sexyy Red & Tay Keith & Nicki Minaj",
+        "title": "Am I Dreaming",
+        "artist_name": "Metro Boomin, A$AP Rocky & Roisee",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.502502",
-        "source_id": 1622,
+        "capture_date": "2023-06-18 07:25:15.968968",
+        "source_id": 1640,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Big Dawg",
-        "artist_name": "Lil Durk & Chief Wuk",
+        "title": "Keep It Low",
+        "artist_name": "Moneybagg Yo ft. Future",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.502502",
-        "source_id": 1622,
+        "capture_date": "2023-06-18 07:25:15.969969",
+        "source_id": 1640,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cross The Globe",
-        "artist_name": "Lil Durk ft. Juice WRLD",
+        "title": "All The Way Live",
+        "artist_name": "Metro Boomin, Future & Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.502502",
-        "source_id": 1622,
+        "capture_date": "2023-06-18 07:25:15.969969",
+        "source_id": 1640,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Put Em On Ice",
-        "artist_name": "Lil Durk",
+        "title": "Self Love",
+        "artist_name": "Metro Boomin & Coi Leray",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.502502",
-        "source_id": 1622,
+        "capture_date": "2023-06-18 07:25:15.969969",
+        "source_id": 1640,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "300 Urus",
-        "artist_name": "Lil Durk",
+        "title": "Ocean Spray",
+        "artist_name": "Moneybagg Yo",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.502502",
-        "source_id": 1622,
+        "capture_date": "2023-06-18 07:25:15.969969",
+        "source_id": 1640,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sad Songs",
-        "artist_name": "Lil Durk",
+        "title": "Save Me",
+        "artist_name": "Jelly Roll With Lainey Wilson",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.502502",
-        "source_id": 1622,
+        "capture_date": "2023-06-18 07:25:15.970970",
+        "source_id": 1640,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Grandson",
-        "artist_name": "Lil Durk ft. Kodak Black",
+        "title": "Hummingbird",
+        "artist_name": "Metro Boomin & James Blake",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.502502",
-        "source_id": 1622,
+        "capture_date": "2023-06-18 07:25:15.970970",
+        "source_id": 1640,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Before Fajr",
-        "artist_name": "Lil Durk",
+        "title": "Peaches & Eggplants",
+        "artist_name": "Young Nudy ft. 21 Savage",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.503503",
-        "source_id": 1622,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2023-06-18 07:25:15.970970",
+        "source_id": 1640,
+        "song_id": 13642,
+        "duplicate": true
     },
     {
-        "title": "B12",
-        "artist_name": "Lil Durk",
+        "title": "Danger (Spider)",
+        "artist_name": "Offset & JID",
         "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.503503",
-        "source_id": 1622,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "You Got Em",
-        "artist_name": "Lil Durk",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:29:55.503503",
-        "source_id": 1622,
+        "capture_date": "2023-06-18 07:25:15.970970",
+        "source_id": 1640,
         "song_id": null,
         "duplicate": false
     }
@@ -306,23 +279,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Stand By Me', 'Lil Durk ft. Morgan Wallen', NULL),
-  ('Hits Different', 'Taylor Swift', NULL),
-  ('Pelle Coat', 'Lil Durk', NULL),
-  ('War Bout It', 'Lil Durk ft. 21 Savage', NULL),
-  ('Bye', 'Peso Pluma', NULL),
-  ('Never Imagined', 'Lil Durk ft. Future', NULL),
-  ('Never Again', 'Lil Durk', NULL),
-  ('Pound Town 2', 'Sexyy Red & Tay Keith & Nicki Minaj', NULL),
-  ('Big Dawg', 'Lil Durk & Chief Wuk', NULL),
-  ('Cross The Globe', 'Lil Durk ft. Juice WRLD', NULL),
-  ('Put Em On Ice', 'Lil Durk', NULL),
-  ('300 Urus', 'Lil Durk', NULL),
-  ('Sad Songs', 'Lil Durk', NULL),
-  ('Grandson', 'Lil Durk ft. Kodak Black', NULL),
-  ('Before Fajr', 'Lil Durk', NULL),
-  ('B12', 'Lil Durk', NULL),
-  ('You Got Em', 'Lil Durk', NULL)
+  ('Calling', 'Metro Boomin, Swae Lee & NAV ft. A Boogie Wit da Hoodie', NULL),
+  ('Annihilate', 'Metro Boomin, Swae Lee, Lil Wayne & Offset', NULL),
+  ('Bread & Butter', 'Gunna', NULL),
+  ('Am I Dreaming', 'Metro Boomin, A$AP Rocky & Roisee', NULL),
+  ('Keep It Low', 'Moneybagg Yo ft. Future', NULL),
+  ('All The Way Live', 'Metro Boomin, Future & Lil Uzi Vert', NULL),
+  ('Self Love', 'Metro Boomin & Coi Leray', NULL),
+  ('Ocean Spray', 'Moneybagg Yo', NULL),
+  ('Save Me', 'Jelly Roll With Lainey Wilson', NULL),
+  ('Hummingbird', 'Metro Boomin & James Blake', NULL),
+  ('Danger (Spider)', 'Offset & JID', NULL)
   ;
 
    // Update to song table
@@ -333,7 +300,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14312; // SELECT last_insert_rowid();
+  song_id = 14351; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -373,24 +340,21 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-06-12 05:29:55.500500', '1622', '14296'),
-  ('2023-06-12 05:29:55.501501', '1622', '14297'),
-  ('2023-06-12 05:29:55.501501', '1622', '14298'),
-  ('2023-06-12 05:29:55.501501', '1622', '14299'),
-  ('2023-06-12 05:29:55.501501', '1622', '14284'),
-  ('2023-06-12 05:29:55.502502', '1622', '14300'),
-  ('2023-06-12 05:29:55.502502', '1622', '14301'),
-  ('2023-06-12 05:29:55.502502', '1622', '14302'),
-  ('2023-06-12 05:29:55.502502', '1622', '14303'),
-  ('2023-06-12 05:29:55.502502', '1622', '14304'),
-  ('2023-06-12 05:29:55.502502', '1622', '14305'),
-  ('2023-06-12 05:29:55.502502', '1622', '14306'),
-  ('2023-06-12 05:29:55.502502', '1622', '14307'),
-  ('2023-06-12 05:29:55.502502', '1622', '14308'),
-  ('2023-06-12 05:29:55.502502', '1622', '14309'),
-  ('2023-06-12 05:29:55.503503', '1622', '14310'),
-  ('2023-06-12 05:29:55.503503', '1622', '14311'),
-  ('2023-06-12 05:29:55.503503', '1622', '14312')
+  ('2023-06-18 07:25:15.967967', '1640', '14166'),
+  ('2023-06-18 07:25:15.967967', '1640', '14313'),
+  ('2023-06-18 07:25:15.968968', '1640', '14341'),
+  ('2023-06-18 07:25:15.968968', '1640', '14314'),
+  ('2023-06-18 07:25:15.968968', '1640', '14342'),
+  ('2023-06-18 07:25:15.968968', '1640', '14343'),
+  ('2023-06-18 07:25:15.968968', '1640', '14344'),
+  ('2023-06-18 07:25:15.969969', '1640', '14345'),
+  ('2023-06-18 07:25:15.969969', '1640', '14346'),
+  ('2023-06-18 07:25:15.969969', '1640', '14347'),
+  ('2023-06-18 07:25:15.969969', '1640', '14348'),
+  ('2023-06-18 07:25:15.970970', '1640', '14349'),
+  ('2023-06-18 07:25:15.970970', '1640', '14350'),
+  ('2023-06-18 07:25:15.970970', '1640', '13642'),
+  ('2023-06-18 07:25:15.970970', '1640', '14351')
   ;
 
   // Update to source_song table

@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'A Lost (and Found) John Coltrane Recording, and 9 More New Songs', '2023-06-02 08:37:52.000000', 'https://www.nytimes.com/2023/06/02/arts/music/playlist-john-coltrane-the-weeknd-madonna.html');
+    ('New York Times', 'The Playlist', 'PinkPantheress’s Bittersweet ‘Barbie’ Tune, and 11 More New Songs', '2023-06-09 10:29:36.000000', 'https://www.nytimes.com/2023/06/09/arts/music/playlist-pinkpantheresss-rosalia.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1623; // SELECT last_insert_rowid();
+  source_id = 1641; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,83 +100,110 @@
   songsData =
   [
     {
-        "title": "Bzrp Music Sessions, Vol. 55",
-        "artist_name": "Bizarrap and Peso Pluma",
+        "title": "Angel",
+        "artist_name": "PinkPantheress",
         "video_id": null,
-        "capture_date": "2023-06-12 05:34:02.352352",
-        "source_id": 1623,
+        "capture_date": "2023-06-18 07:31:03.440440",
+        "source_id": 1641,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Popular",
-        "artist_name": "The Weeknd with Playboi Carti and Madonna",
+        "title": "Tuya",
+        "artist_name": "Rosalía",
         "video_id": null,
-        "capture_date": "2023-06-12 05:34:02.352352",
-        "source_id": 1623,
+        "capture_date": "2023-06-18 07:31:03.440440",
+        "source_id": 1641,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Motion",
-        "artist_name": "Ty Dolla Sign",
+        "title": "Loveher",
+        "artist_name": "Romy",
         "video_id": null,
-        "capture_date": "2023-06-12 05:34:02.352352",
-        "source_id": 1623,
+        "capture_date": "2023-06-18 07:31:03.440440",
+        "source_id": 1641,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hard to Be a Human",
-        "artist_name": "Bettye LaVette",
+        "title": "I Drew a Line",
+        "artist_name": "Madeline Kenney",
         "video_id": null,
-        "capture_date": "2023-06-12 05:34:02.352352",
-        "source_id": 1623,
+        "capture_date": "2023-06-18 07:31:03.440440",
+        "source_id": 1641,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dirtmouth",
-        "artist_name": "High Pulp ft. James Brandon Lewis",
+        "title": "Phenomenal",
+        "artist_name": "Janelle Monáe ft. Doechii",
         "video_id": null,
-        "capture_date": "2023-06-12 05:34:02.352352",
-        "source_id": 1623,
+        "capture_date": "2023-06-18 07:31:03.440440",
+        "source_id": 1641,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Better Somehow",
-        "artist_name": "Hannah Georgas",
+        "title": "Texas",
+        "artist_name": "Jessie Murph and Maren Morris",
         "video_id": null,
-        "capture_date": "2023-06-12 05:34:02.352352",
-        "source_id": 1623,
+        "capture_date": "2023-06-18 07:31:03.441441",
+        "source_id": 1641,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Crumbs",
-        "artist_name": "Claud",
+        "title": "Oversized Sweater",
+        "artist_name": "Shamir",
         "video_id": null,
-        "capture_date": "2023-06-12 05:34:02.352352",
-        "source_id": 1623,
+        "capture_date": "2023-06-18 07:31:03.441441",
+        "source_id": 1641,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Milagro y Desastre",
-        "artist_name": "Silvana Estrada",
+        "title": "New Year’s UnResolution",
+        "artist_name": "L’Rain",
         "video_id": null,
-        "capture_date": "2023-06-12 05:34:02.352352",
-        "source_id": 1623,
+        "capture_date": "2023-06-18 07:31:03.441441",
+        "source_id": 1641,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "On Lamp",
-        "artist_name": "Gunn Truscinski Nace",
+        "title": "Peaches",
+        "artist_name": "Nora Stanley and Benny Bock",
         "video_id": null,
-        "capture_date": "2023-06-12 05:34:02.352352",
-        "source_id": 1623,
+        "capture_date": "2023-06-18 07:31:03.441441",
+        "source_id": 1641,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Portals",
+        "artist_name": "Laura Misch",
+        "video_id": null,
+        "capture_date": "2023-06-18 07:31:03.441441",
+        "source_id": 1641,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lemon Treasure",
+        "artist_name": "Black Duck",
+        "video_id": null,
+        "capture_date": "2023-06-18 07:31:03.441441",
+        "source_id": 1641,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pido El Silencio",
+        "artist_name": "Roxana Amed and Frank Carlberg",
+        "video_id": null,
+        "capture_date": "2023-06-18 07:31:03.441441",
+        "source_id": 1641,
         "song_id": null,
         "duplicate": false
     }
@@ -220,15 +247,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Bzrp Music Sessions, Vol. 55', 'Bizarrap and Peso Pluma', NULL),
-  ('Popular', 'The Weeknd with Playboi Carti and Madonna', NULL),
-  ('Motion', 'Ty Dolla Sign', NULL),
-  ('Hard to Be a Human', 'Bettye LaVette', NULL),
-  ('Dirtmouth', 'High Pulp ft. James Brandon Lewis', NULL),
-  ('Better Somehow', 'Hannah Georgas', NULL),
-  ('Crumbs', 'Claud', NULL),
-  ('Milagro y Desastre', 'Silvana Estrada', NULL),
-  ('On Lamp', 'Gunn Truscinski Nace', NULL)
+  ('Angel', 'PinkPantheress', NULL),
+  ('Tuya', 'Rosalía', NULL),
+  ('Loveher', 'Romy', NULL),
+  ('I Drew a Line', 'Madeline Kenney', NULL),
+  ('Phenomenal', 'Janelle Monáe ft. Doechii', NULL),
+  ('Texas', 'Jessie Murph and Maren Morris', NULL),
+  ('Oversized Sweater', 'Shamir', NULL),
+  ('New Year’s UnResolution', 'L’Rain', NULL),
+  ('Peaches', 'Nora Stanley and Benny Bock', NULL),
+  ('Portals', 'Laura Misch', NULL),
+  ('Lemon Treasure', 'Black Duck', NULL),
+  ('Pido El Silencio', 'Roxana Amed and Frank Carlberg', NULL)
   ;
 
    // Update to song table
@@ -239,7 +269,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14321; // SELECT last_insert_rowid();
+  song_id = 14363; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -279,15 +309,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-06-12 05:34:02.352352', '1623', '14313'),
-  ('2023-06-12 05:34:02.352352', '1623', '14314'),
-  ('2023-06-12 05:34:02.352352', '1623', '14315'),
-  ('2023-06-12 05:34:02.352352', '1623', '14316'),
-  ('2023-06-12 05:34:02.352352', '1623', '14317'),
-  ('2023-06-12 05:34:02.352352', '1623', '14318'),
-  ('2023-06-12 05:34:02.352352', '1623', '14319'),
-  ('2023-06-12 05:34:02.352352', '1623', '14320'),
-  ('2023-06-12 05:34:02.352352', '1623', '14321')
+  ('2023-06-18 07:31:03.440440', '1641', '14352'),
+  ('2023-06-18 07:31:03.440440', '1641', '14353'),
+  ('2023-06-18 07:31:03.440440', '1641', '14354'),
+  ('2023-06-18 07:31:03.440440', '1641', '14355'),
+  ('2023-06-18 07:31:03.440440', '1641', '14356'),
+  ('2023-06-18 07:31:03.441441', '1641', '14357'),
+  ('2023-06-18 07:31:03.441441', '1641', '14358'),
+  ('2023-06-18 07:31:03.441441', '1641', '14359'),
+  ('2023-06-18 07:31:03.441441', '1641', '14360'),
+  ('2023-06-18 07:31:03.441441', '1641', '14361'),
+  ('2023-06-18 07:31:03.441441', '1641', '14362'),
+  ('2023-06-18 07:31:03.441441', '1641', '14363')
   ;
 
   // Update to source_song table
