@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'PinkPantheress’s Bittersweet ‘Barbie’ Tune, and 11 More New Songs', '2023-06-09 10:29:36.000000', 'https://www.nytimes.com/2023/06/09/arts/music/playlist-pinkpantheresss-rosalia.html');
+    ('New York Times', 'The Playlist', 'Meshell Ndegeocello’s Magnificent Mix, and 9 More New Songs', '2023-06-17 12:06:00.000000', 'https://www.nytimes.com/2023/06/16/arts/music/playlist-meshell-ndegeocello-doja-cat.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1641; // SELECT last_insert_rowid();
+  source_id = 1644; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,110 +100,92 @@
   songsData =
   [
     {
-        "title": "Angel",
-        "artist_name": "PinkPantheress",
+        "title": "ASR",
+        "artist_name": "Meshell Ndegeocello ft. Jeff Parker",
         "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.440440",
-        "source_id": 1641,
+        "capture_date": "2023-06-26 01:53:36.126126",
+        "source_id": 1644,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tuya",
-        "artist_name": "Rosalía",
+        "title": "(It Goes Like) Nanana",
+        "artist_name": "Peggy Gou",
         "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.440440",
-        "source_id": 1641,
+        "capture_date": "2023-06-26 01:53:36.127127",
+        "source_id": 1644,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Loveher",
-        "artist_name": "Romy",
+        "title": "Attention",
+        "artist_name": "Doja Cat",
         "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.440440",
-        "source_id": 1641,
+        "capture_date": "2023-06-26 01:53:36.127127",
+        "source_id": 1644,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Drew a Line",
-        "artist_name": "Madeline Kenney",
+        "title": "Scientists & Engineers",
+        "artist_name": "Killer Mike ft. Future, André 3000 and Eryn Allen Kane",
         "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.440440",
-        "source_id": 1641,
+        "capture_date": "2023-06-26 01:53:36.127127",
+        "source_id": 1644,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Phenomenal",
-        "artist_name": "Janelle Monáe ft. Doechii",
+        "title": "Komfortzone",
+        "artist_name": "Flesh Eater with Fiona Apple",
         "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.440440",
-        "source_id": 1641,
+        "capture_date": "2023-06-26 01:53:36.127127",
+        "source_id": 1644,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Texas",
-        "artist_name": "Jessie Murph and Maren Morris",
+        "title": "Evening Star Supercharger",
+        "artist_name": "Sparklehorse",
         "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.441441",
-        "source_id": 1641,
+        "capture_date": "2023-06-26 01:53:36.127127",
+        "source_id": 1644,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Oversized Sweater",
-        "artist_name": "Shamir",
+        "title": "Reason",
+        "artist_name": "Omah Lay",
         "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.441441",
-        "source_id": 1641,
+        "capture_date": "2023-06-26 01:53:36.127127",
+        "source_id": 1644,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "New Year’s UnResolution",
-        "artist_name": "L’Rain",
+        "title": "Uncommon Sense",
+        "artist_name": "David Virelles",
         "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.441441",
-        "source_id": 1641,
+        "capture_date": "2023-06-26 01:53:36.128128",
+        "source_id": 1644,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Peaches",
-        "artist_name": "Nora Stanley and Benny Bock",
+        "title": "Spectrum",
+        "artist_name": "Ben van Gelder",
         "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.441441",
-        "source_id": 1641,
+        "capture_date": "2023-06-26 01:53:36.128128",
+        "source_id": 1644,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Portals",
-        "artist_name": "Laura Misch",
+        "title": "Rosette",
+        "artist_name": "Elliott Sharp",
         "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.441441",
-        "source_id": 1641,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lemon Treasure",
-        "artist_name": "Black Duck",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.441441",
-        "source_id": 1641,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pido El Silencio",
-        "artist_name": "Roxana Amed and Frank Carlberg",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:31:03.441441",
-        "source_id": 1641,
+        "capture_date": "2023-06-26 01:53:36.128128",
+        "source_id": 1644,
         "song_id": null,
         "duplicate": false
     }
@@ -247,18 +229,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Angel', 'PinkPantheress', NULL),
-  ('Tuya', 'Rosalía', NULL),
-  ('Loveher', 'Romy', NULL),
-  ('I Drew a Line', 'Madeline Kenney', NULL),
-  ('Phenomenal', 'Janelle Monáe ft. Doechii', NULL),
-  ('Texas', 'Jessie Murph and Maren Morris', NULL),
-  ('Oversized Sweater', 'Shamir', NULL),
-  ('New Year’s UnResolution', 'L’Rain', NULL),
-  ('Peaches', 'Nora Stanley and Benny Bock', NULL),
-  ('Portals', 'Laura Misch', NULL),
-  ('Lemon Treasure', 'Black Duck', NULL),
-  ('Pido El Silencio', 'Roxana Amed and Frank Carlberg', NULL)
+  ('ASR', 'Meshell Ndegeocello ft. Jeff Parker', NULL),
+  ('(It Goes Like) Nanana', 'Peggy Gou', NULL),
+  ('Attention', 'Doja Cat', NULL),
+  ('Scientists & Engineers', 'Killer Mike ft. Future, André 3000 and Eryn Allen Kane', NULL),
+  ('Komfortzone', 'Flesh Eater with Fiona Apple', NULL),
+  ('Evening Star Supercharger', 'Sparklehorse', NULL),
+  ('Reason', 'Omah Lay', NULL),
+  ('Uncommon Sense', 'David Virelles', NULL),
+  ('Spectrum', 'Ben van Gelder', NULL),
+  ('Rosette', 'Elliott Sharp', NULL)
   ;
 
    // Update to song table
@@ -269,7 +249,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14363; // SELECT last_insert_rowid();
+  song_id = 14381; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -309,18 +289,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-06-18 07:31:03.440440', '1641', '14352'),
-  ('2023-06-18 07:31:03.440440', '1641', '14353'),
-  ('2023-06-18 07:31:03.440440', '1641', '14354'),
-  ('2023-06-18 07:31:03.440440', '1641', '14355'),
-  ('2023-06-18 07:31:03.440440', '1641', '14356'),
-  ('2023-06-18 07:31:03.441441', '1641', '14357'),
-  ('2023-06-18 07:31:03.441441', '1641', '14358'),
-  ('2023-06-18 07:31:03.441441', '1641', '14359'),
-  ('2023-06-18 07:31:03.441441', '1641', '14360'),
-  ('2023-06-18 07:31:03.441441', '1641', '14361'),
-  ('2023-06-18 07:31:03.441441', '1641', '14362'),
-  ('2023-06-18 07:31:03.441441', '1641', '14363')
+  ('2023-06-26 01:53:36.126126', '1644', '14372'),
+  ('2023-06-26 01:53:36.127127', '1644', '14373'),
+  ('2023-06-26 01:53:36.127127', '1644', '14374'),
+  ('2023-06-26 01:53:36.127127', '1644', '14375'),
+  ('2023-06-26 01:53:36.127127', '1644', '14376'),
+  ('2023-06-26 01:53:36.127127', '1644', '14377'),
+  ('2023-06-26 01:53:36.127127', '1644', '14378'),
+  ('2023-06-26 01:53:36.128128', '1644', '14379'),
+  ('2023-06-26 01:53:36.128128', '1644', '14380'),
+  ('2023-06-26 01:53:36.128128', '1644', '14381')
   ;
 
   // Update to source_song table

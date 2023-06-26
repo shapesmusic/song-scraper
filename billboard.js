@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of June 17, 2023', '2023-06-17 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-06-17');
+    ('Billboard', 'The Hot 100', 'Week of June 24, 2023', '2023-06-24 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-06-24');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1640; // SELECT last_insert_rowid();
+  source_id = 1643; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,139 +105,49 @@
   songsData =
   [
     {
-        "title": "Put It On Da Floor Again",
-        "artist_name": "Latto ft. Cardi B",
+        "title": "Dial Drunk",
+        "artist_name": "Noah Kahan",
         "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.967967",
-        "source_id": 1640,
-        "song_id": 14166,
+        "capture_date": "2023-06-26 01:49:49.053053",
+        "source_id": 1643,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Take Two",
+        "artist_name": "BTS",
+        "video_id": null,
+        "capture_date": "2023-06-26 01:49:49.053053",
+        "source_id": 1643,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Plebada",
+        "artist_name": "El Alfa x Peso Pluma",
+        "video_id": null,
+        "capture_date": "2023-06-26 01:49:49.054054",
+        "source_id": 1643,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Truck Bed",
+        "artist_name": "HARDY",
+        "video_id": null,
+        "capture_date": "2023-06-26 01:49:49.054054",
+        "source_id": 1643,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Hillbillies",
+        "artist_name": "Baby Keem & Kendrick Lamar",
+        "video_id": null,
+        "capture_date": "2023-06-26 01:49:49.055055",
+        "source_id": 1643,
+        "song_id": 14324,
         "duplicate": true
-    },
-    {
-        "title": "Bzrp Music Sessions, Vol. 55",
-        "artist_name": "Bizarrap & Peso Pluma",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.967967",
-        "source_id": 1640,
-        "song_id": 14313,
-        "duplicate": true
-    },
-    {
-        "title": "Calling",
-        "artist_name": "Metro Boomin, Swae Lee & NAV ft. A Boogie Wit da Hoodie",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.968968",
-        "source_id": 1640,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Popular",
-        "artist_name": "The Weeknd, Playboi Carti & Madonna",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.968968",
-        "source_id": 1640,
-        "song_id": 14314,
-        "duplicate": true
-    },
-    {
-        "title": "Annihilate",
-        "artist_name": "Metro Boomin, Swae Lee, Lil Wayne & Offset",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.968968",
-        "source_id": 1640,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bread & Butter",
-        "artist_name": "Gunna",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.968968",
-        "source_id": 1640,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Am I Dreaming",
-        "artist_name": "Metro Boomin, A$AP Rocky & Roisee",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.968968",
-        "source_id": 1640,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Keep It Low",
-        "artist_name": "Moneybagg Yo ft. Future",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.969969",
-        "source_id": 1640,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "All The Way Live",
-        "artist_name": "Metro Boomin, Future & Lil Uzi Vert",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.969969",
-        "source_id": 1640,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Self Love",
-        "artist_name": "Metro Boomin & Coi Leray",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.969969",
-        "source_id": 1640,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ocean Spray",
-        "artist_name": "Moneybagg Yo",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.969969",
-        "source_id": 1640,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Save Me",
-        "artist_name": "Jelly Roll With Lainey Wilson",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.970970",
-        "source_id": 1640,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hummingbird",
-        "artist_name": "Metro Boomin & James Blake",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.970970",
-        "source_id": 1640,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Peaches & Eggplants",
-        "artist_name": "Young Nudy ft. 21 Savage",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.970970",
-        "source_id": 1640,
-        "song_id": 13642,
-        "duplicate": true
-    },
-    {
-        "title": "Danger (Spider)",
-        "artist_name": "Offset & JID",
-        "video_id": null,
-        "capture_date": "2023-06-18 07:25:15.970970",
-        "source_id": 1640,
-        "song_id": null,
-        "duplicate": false
     }
 ]
 
@@ -280,16 +190,10 @@
     (title, artist_name, video_id)
   VALUES
   ('Calling', 'Metro Boomin, Swae Lee & NAV ft. A Boogie Wit da Hoodie', NULL),
-  ('Annihilate', 'Metro Boomin, Swae Lee, Lil Wayne & Offset', NULL),
-  ('Bread & Butter', 'Gunna', NULL),
-  ('Am I Dreaming', 'Metro Boomin, A$AP Rocky & Roisee', NULL),
-  ('Keep It Low', 'Moneybagg Yo ft. Future', NULL),
-  ('All The Way Live', 'Metro Boomin, Future & Lil Uzi Vert', NULL),
-  ('Self Love', 'Metro Boomin & Coi Leray', NULL),
-  ('Ocean Spray', 'Moneybagg Yo', NULL),
-  ('Save Me', 'Jelly Roll With Lainey Wilson', NULL),
-  ('Hummingbird', 'Metro Boomin & James Blake', NULL),
-  ('Danger (Spider)', 'Offset & JID', NULL)
+  ('Dial Drunk', 'Noah Kahan', NULL),
+  ('Take Two', 'BTS', NULL),
+  ('Plebada', 'El Alfa x Peso Pluma', NULL),
+  ('Truck Bed', 'HARDY', NULL)
   ;
 
    // Update to song table
@@ -300,7 +204,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14351; // SELECT last_insert_rowid();
+  song_id = 14371; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -340,21 +244,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-06-18 07:25:15.967967', '1640', '14166'),
-  ('2023-06-18 07:25:15.967967', '1640', '14313'),
-  ('2023-06-18 07:25:15.968968', '1640', '14341'),
-  ('2023-06-18 07:25:15.968968', '1640', '14314'),
-  ('2023-06-18 07:25:15.968968', '1640', '14342'),
-  ('2023-06-18 07:25:15.968968', '1640', '14343'),
-  ('2023-06-18 07:25:15.968968', '1640', '14344'),
-  ('2023-06-18 07:25:15.969969', '1640', '14345'),
-  ('2023-06-18 07:25:15.969969', '1640', '14346'),
-  ('2023-06-18 07:25:15.969969', '1640', '14347'),
-  ('2023-06-18 07:25:15.969969', '1640', '14348'),
-  ('2023-06-18 07:25:15.970970', '1640', '14349'),
-  ('2023-06-18 07:25:15.970970', '1640', '14350'),
-  ('2023-06-18 07:25:15.970970', '1640', '13642'),
-  ('2023-06-18 07:25:15.970970', '1640', '14351')
+  ('2023-06-26 01:49:49.053053', '1643', '14368'),
+  ('2023-06-26 01:49:49.053053', '1643', '14369'),
+  ('2023-06-26 01:49:49.054054', '1643', '14370'),
+  ('2023-06-26 01:49:49.054054', '1643', '14371'),
+  ('2023-06-26 01:49:49.055055', '1643', '14324')
   ;
 
   // Update to source_song table

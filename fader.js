@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of June 12, 2023', -- Mondays (for the previous week, including the publication_date)
-      '2023-06-12 12:00:00.000000', -- Dont forget this!
+      'Week of June 19, 2023', -- Mondays (for the previous week, including the publication_date)
+      '2023-06-19 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1625; // SELECT last_insert_rowid();
+    source_id = 1645; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,65 +458,65 @@
     songsData =
     [
     {
-        "title": "Stain",
-        "artist_name": "Anysia Kim and Jadasea",
+        "title": "Trip Sitters Are The Best Friends",
+        "artist_name": "Chris Crack",
         "video_id": null,
-        "capture_date": "2023-06-12 05:43:37.122000",
-        "source_id": 1625,
+        "capture_date": "2023-06-26 02:01:22.170000",
+        "source_id": 1645,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Body",
-        "artist_name": "Sword II",
+        "title": "But Not Kiss",
+        "artist_name": "Faye Webster",
         "video_id": null,
-        "capture_date": "2023-06-12 05:43:37.122000",
-        "source_id": 1625,
+        "capture_date": "2023-06-26 02:01:22.170000",
+        "source_id": 1645,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mystery Channel",
-        "artist_name": "Killah Priest",
+        "title": "Fader",
+        "artist_name": "Róisín Murphy",
         "video_id": null,
-        "capture_date": "2023-06-12 05:43:37.122000",
-        "source_id": 1625,
+        "capture_date": "2023-06-26 02:01:22.170000",
+        "source_id": 1645,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Won't Ever Know",
-        "artist_name": "JEWELSSEA",
+        "title": "SkeeYee",
+        "artist_name": "Sexyy Red",
         "video_id": null,
-        "capture_date": "2023-06-12 05:43:37.122000",
-        "source_id": 1625,
+        "capture_date": "2023-06-26 02:01:22.170000",
+        "source_id": 1645,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Polacrilex Kid",
-        "artist_name": "Protomartyr",
+        "title": "Double Time",
+        "artist_name": "Tara Lily",
         "video_id": null,
-        "capture_date": "2023-06-12 05:43:37.122000",
-        "source_id": 1625,
+        "capture_date": "2023-06-26 02:01:22.170000",
+        "source_id": 1645,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "City Song",
-        "artist_name": "Gia Margaret",
+        "title": "Woman",
+        "artist_name": "Barry Can't Swim",
         "video_id": null,
-        "capture_date": "2023-06-12 05:43:37.122000",
-        "source_id": 1625,
+        "capture_date": "2023-06-26 02:01:22.170000",
+        "source_id": 1645,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "SONG",
-        "artist_name": "Nikki Nair and Hudson Mohawke",
+        "title": "The Bust of Nefertiti",
+        "artist_name": "Hand Habits",
         "video_id": null,
-        "capture_date": "2023-06-12 05:43:37.122000",
-        "source_id": 1625,
+        "capture_date": "2023-06-26 02:01:22.170000",
+        "source_id": 1645,
         "song_id": null,
         "duplicate": false
     }
@@ -558,13 +558,13 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Stain', 'Anysia Kim and Jadasea', NULL),
-    ('Body', 'Sword II', NULL),
-    ('Mystery Channel', 'Killah Priest', NULL),
-    ('Won’t Ever Know', 'JEWELSSEA', NULL),
-    ('Polacrilex Kid', 'Protomartyr', NULL),
-    ('City Song', 'Gia Margaret', NULL),
-    ('SONG', 'Nikki Nair and Hudson Mohawke', NULL)
+    ('Trip Sitters Are The Best Friends', 'Chris Crack', NULL),
+    ('But Not Kiss', 'Faye Webster', NULL),
+    ('Fader', 'Róisín Murphy', NULL),
+    ('SkeeYee', 'Sexyy Red', NULL),
+    ('Double Time', 'Tara Lily', NULL),
+    ('Woman', 'Barry Can’t Swim', NULL),
+    ('The Bust of Nefertiti', 'Hand Habits', NULL)
     ;
 
      // Update to song table
@@ -575,7 +575,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14331; // SELECT last_insert_rowid();
+  song_id = 14388; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -615,13 +615,13 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-06-12 05:43:37.122000', '1625', '14325'),
-  ('2023-06-12 05:43:37.122000', '1625', '14326'),
-  ('2023-06-12 05:43:37.122000', '1625', '14327'),
-  ('2023-06-12 05:43:37.122000', '1625', '14328'),
-  ('2023-06-12 05:43:37.122000', '1625', '14329'),
-  ('2023-06-12 05:43:37.122000', '1625', '14330'),
-  ('2023-06-12 05:43:37.122000', '1625', '14331')
+  ('2023-06-26 02:01:22.170000', '1645', '14382'),
+  ('2023-06-26 02:01:22.170000', '1645', '14383'),
+  ('2023-06-26 02:01:22.170000', '1645', '14384'),
+  ('2023-06-26 02:01:22.170000', '1645', '14385'),
+  ('2023-06-26 02:01:22.170000', '1645', '14386'),
+  ('2023-06-26 02:01:22.170000', '1645', '14387'),
+  ('2023-06-26 02:01:22.170000', '1645', '14388')
   ;
 
   // Update to source_song table
