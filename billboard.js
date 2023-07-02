@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of June 24, 2023', '2023-06-24 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-06-24');
+    ('Billboard', 'The Hot 100', 'Week of July 1, 2023', '2023-07-01 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-07-01');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1643; // SELECT last_insert_rowid();
+  source_id = 1647; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,49 +105,130 @@
   songsData =
   [
     {
-        "title": "Dial Drunk",
-        "artist_name": "Noah Kahan",
+        "title": "Fukumean",
+        "artist_name": "Gunna",
         "video_id": null,
-        "capture_date": "2023-06-26 01:49:49.053053",
-        "source_id": 1643,
+        "capture_date": "2023-07-01 08:59:22.921921",
+        "source_id": 1647,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Take Two",
-        "artist_name": "BTS",
+        "title": "Back To The Moon",
+        "artist_name": "Gunna",
         "video_id": null,
-        "capture_date": "2023-06-26 01:49:49.053053",
-        "source_id": 1643,
+        "capture_date": "2023-07-01 08:59:22.921921",
+        "source_id": 1647,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Plebada",
-        "artist_name": "El Alfa x Peso Pluma",
+        "title": "Attention",
+        "artist_name": "Doja Cat",
         "video_id": null,
-        "capture_date": "2023-06-26 01:49:49.054054",
-        "source_id": 1643,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Truck Bed",
-        "artist_name": "HARDY",
-        "video_id": null,
-        "capture_date": "2023-06-26 01:49:49.054054",
-        "source_id": 1643,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Hillbillies",
-        "artist_name": "Baby Keem & Kendrick Lamar",
-        "video_id": null,
-        "capture_date": "2023-06-26 01:49:49.055055",
-        "source_id": 1643,
-        "song_id": 14324,
+        "capture_date": "2023-07-01 08:59:22.921921",
+        "source_id": 1647,
+        "song_id": 14374,
         "duplicate": true
+    },
+    {
+        "title": "Rodeo Dr",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2023-07-01 08:59:22.922922",
+        "source_id": 1647,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Back At It",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2023-07-01 08:59:22.922922",
+        "source_id": 1647,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ca$h $hit",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2023-07-01 08:59:22.922922",
+        "source_id": 1647,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bottom",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2023-07-01 08:59:22.922922",
+        "source_id": 1647,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "IDK NoMore",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2023-07-01 08:59:22.923923",
+        "source_id": 1647,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "P Angels",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2023-07-01 08:59:22.923923",
+        "source_id": 1647,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Paybach",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2023-07-01 08:59:22.923923",
+        "source_id": 1647,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Go Crazy",
+        "artist_name": "Gunna",
+        "video_id": null,
+        "capture_date": "2023-07-01 08:59:22.923923",
+        "source_id": 1647,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Girl In Mine",
+        "artist_name": "Parmalee",
+        "video_id": null,
+        "capture_date": "2023-07-01 08:59:22.923923",
+        "source_id": 1647,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Classy 101",
+        "artist_name": "Feid x Young Miko",
+        "video_id": null,
+        "capture_date": "2023-07-01 08:59:22.923923",
+        "source_id": 1647,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bluffin",
+        "artist_name": "Gucci Mane & Lil Baby",
+        "video_id": null,
+        "capture_date": "2023-07-01 08:59:22.923923",
+        "source_id": 1647,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -190,10 +271,19 @@
     (title, artist_name, video_id)
   VALUES
   ('Calling', 'Metro Boomin, Swae Lee & NAV ft. A Boogie Wit da Hoodie', NULL),
-  ('Dial Drunk', 'Noah Kahan', NULL),
-  ('Take Two', 'BTS', NULL),
-  ('Plebada', 'El Alfa x Peso Pluma', NULL),
-  ('Truck Bed', 'HARDY', NULL)
+  ('Fukumean', 'Gunna', NULL),
+  ('Back To The Moon', 'Gunna', NULL),
+  ('Rodeo Dr', 'Gunna', NULL),
+  ('Back At It', 'Gunna', NULL),
+  ('Ca$h $hit', 'Gunna', NULL),
+  ('Bottom', 'Gunna', NULL),
+  ('IDK NoMore', 'Gunna', NULL),
+  ('P Angels', 'Gunna', NULL),
+  ('Paybach', 'Gunna', NULL),
+  ('Go Crazy', 'Gunna', NULL),
+  ('Girl In Mine', 'Parmalee', NULL),
+  ('Classy 101', 'Feid x Young Miko', NULL),
+  ('Bluffin', 'Gucci Mane & Lil Baby', NULL)
   ;
 
    // Update to song table
@@ -204,7 +294,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14371; // SELECT last_insert_rowid();
+  song_id = 14405; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -244,11 +334,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-06-26 01:49:49.053053', '1643', '14368'),
-  ('2023-06-26 01:49:49.053053', '1643', '14369'),
-  ('2023-06-26 01:49:49.054054', '1643', '14370'),
-  ('2023-06-26 01:49:49.054054', '1643', '14371'),
-  ('2023-06-26 01:49:49.055055', '1643', '14324')
+  ('2023-07-01 08:59:22.921921', '1647', '14393'),
+  ('2023-07-01 08:59:22.921921', '1647', '14394'),
+  ('2023-07-01 08:59:22.921921', '1647', '14374'),
+  ('2023-07-01 08:59:22.922922', '1647', '14395'),
+  ('2023-07-01 08:59:22.922922', '1647', '14396'),
+  ('2023-07-01 08:59:22.922922', '1647', '14397'),
+  ('2023-07-01 08:59:22.922922', '1647', '14398'),
+  ('2023-07-01 08:59:22.923923', '1647', '14399'),
+  ('2023-07-01 08:59:22.923923', '1647', '14400'),
+  ('2023-07-01 08:59:22.923923', '1647', '14401'),
+  ('2023-07-01 08:59:22.923923', '1647', '14402'),
+  ('2023-07-01 08:59:22.923923', '1647', '14403'),
+  ('2023-07-01 08:59:22.923923', '1647', '14404'),
+  ('2023-07-01 08:59:22.923923', '1647', '14405')
   ;
 
   // Update to source_song table

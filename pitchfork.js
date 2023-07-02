@@ -76,20 +76,14 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2023-06-06 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-05-30 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-05-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-05-24 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-05-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-05-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-05-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-05-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-05-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-05-09 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-05-08 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-05-03 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-04-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-04-25 12:00:00.000000', 'https://pitchfork.com/reviews/tracks')
+  ('Pitchfork', 'Track Reviews', NULL, '2023-06-30 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-06-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-06-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-06-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-06-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-06-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-06-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-06-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -140,155 +134,92 @@
   songsData =
   [
     {
-        "title": "Skeleton Is Walking",
-        "artist_name": "Blake Mills",
+        "title": "Vampire",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.216216",
-        "source_id": 1626,
+        "capture_date": "2023-07-01 09:15:20.954954",
+        "source_id": 1650,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Hillbillies",
-        "artist_name": "Baby Keem & Kendrick Lamar",
+        "title": "Lady Gaga",
+        "artist_name": "Peso Pluma / Gabito Ballesteros / Junior H",
         "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.218218",
-        "source_id": 1627,
-        "song_id": 14324,
-        "duplicate": true
-    },
-    {
-        "title": "Karma",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.219219",
-        "source_id": 1628,
-        "song_id": 13081,
-        "duplicate": true
-    },
-    {
-        "title": "The King",
-        "artist_name": "Anjimile",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.219219",
-        "source_id": 1629,
-        "song_id": 14290,
-        "duplicate": true
-    },
-    {
-        "title": "Where She Goes",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.219219",
-        "source_id": 1630,
-        "song_id": 14257,
-        "duplicate": true
-    },
-    {
-        "title": "You’ll Never Get Your Money Back",
-        "artist_name": "Alex Lahey",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.219219",
-        "source_id": 1630,
+        "capture_date": "2023-07-01 09:15:20.956956",
+        "source_id": 1651,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Universe",
-        "artist_name": "Róisín Murphy",
+        "title": "Spirit 2.0",
+        "artist_name": "Sampha",
         "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.219219",
-        "source_id": 1631,
+        "capture_date": "2023-07-01 09:15:20.956956",
+        "source_id": 1651,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Greater Wings",
-        "artist_name": "Julie Byrne",
+        "title": "Rosa Rugosa",
+        "artist_name": "Olof Dreijer",
         "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.219219",
-        "source_id": 1631,
+        "capture_date": "2023-07-01 09:15:20.956956",
+        "source_id": 1652,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Illumina",
-        "artist_name": "Call Super and Julia Holter",
+        "title": "Blackbox Life Recorder 21f",
+        "artist_name": "Aphex Twin",
         "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.219219",
-        "source_id": 1631,
-        "song_id": 14262,
+        "capture_date": "2023-07-01 09:15:20.956956",
+        "source_id": 1653,
+        "song_id": 14408,
         "duplicate": true
     },
     {
-        "title": "It Must Change",
-        "artist_name": "ANOHNI and the Johnsons",
+        "title": "Kisses",
+        "artist_name": "Slowdive",
         "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.219219",
-        "source_id": 1632,
-        "song_id": 14255,
+        "capture_date": "2023-07-01 09:15:20.956956",
+        "source_id": 1654,
+        "song_id": 14415,
         "duplicate": true
     },
     {
-        "title": "Girl Next Door",
-        "artist_name": "Tyla",
+        "title": "The Bell (Acoustic)",
+        "artist_name": "Anna Tivel",
         "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.219219",
-        "source_id": 1633,
-        "song_id": 14267,
+        "capture_date": "2023-07-01 09:15:20.956956",
+        "source_id": 1654,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Attention",
+        "artist_name": "Doja Cat",
+        "video_id": null,
+        "capture_date": "2023-07-01 09:15:20.957957",
+        "source_id": 1655,
+        "song_id": 14374,
         "duplicate": true
     },
     {
-        "title": "Sword",
-        "artist_name": "Natural Wonder Beauty Concept",
+        "title": "If I Don’t See You in the Future, I’ll See You in the Pasture",
+        "artist_name": "Cole Pulice",
         "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.219219",
-        "source_id": 1634,
-        "song_id": 14233,
-        "duplicate": true
-    },
-    {
-        "title": "Ritual",
-        "artist_name": "DJ Danifox",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.219219",
-        "source_id": 1635,
+        "capture_date": "2023-07-01 09:15:20.957957",
+        "source_id": 1656,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "X Em",
-        "artist_name": "Philly Goats",
+        "title": "Shitty Town",
+        "artist_name": "Sarah Mary Chadwick",
         "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.220220",
-        "source_id": 1636,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Co-Star",
-        "artist_name": "Amaarae",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.220220",
-        "source_id": 1637,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "A Child’s Question, August",
-        "artist_name": "PJ Harvey",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.220220",
-        "source_id": 1638,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "No More Lies",
-        "artist_name": "Thundercat and Tame Impala",
-        "video_id": null,
-        "capture_date": "2023-06-12 05:50:42.220220",
-        "source_id": 1639,
+        "capture_date": "2023-07-01 09:15:20.957957",
+        "source_id": 1657,
         "song_id": null,
         "duplicate": false
     }
@@ -307,7 +238,7 @@
 
   // get source_ids and dates for newly added sources
   // increase LIMIT number if necessary
-  SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 48;
+  SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 15;
 
   // manually add source_ids in songsData above (INT without quotation marks).
 
@@ -343,15 +274,13 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Skeleton Is Walking', 'Blake Mills', NULL),
-  ('You’ll Never Get Your Money Back', 'Alex Lahey', NULL),
-  ('The Universe', 'Róisín Murphy', NULL),
-  ('The Greater Wings', 'Julie Byrne', NULL),
-  ('Ritual', 'DJ Danifox', NULL),
-  ('X Em', 'Philly Goats', NULL),
-  ('Co-Star', 'Amaarae', NULL),
-  ('A Child’s Question, August', 'PJ Harvey', NULL),
-  ('No More Lies', 'Thundercat and Tame Impala', NULL)
+  ('Vampire', 'Olivia Rodrigo', NULL),
+  ('Lady Gaga', 'Peso Pluma / Gabito Ballesteros / Junior H', NULL),
+  ('Spirit 2.0', 'Sampha', NULL),
+  ('Rosa Rugosa', 'Olof Dreijer', NULL),
+  ('The Bell (Acoustic)', 'Anna Tivel', NULL),
+  ('If I Don’t See You in the Future, I’ll See You in the Pasture', 'Cole Pulice', NULL),
+  ('Shitty Town', 'Sarah Mary Chadwick', NULL)
   ;
 
    // Update to song table
@@ -362,7 +291,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 14340; // SELECT last_insert_rowid();
+  song_id = 14422; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -402,23 +331,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-06-12 05:50:42.216216', '1626', '14332'),
-  ('2023-06-12 05:50:42.218218', '1627', '14324'),
-  ('2023-06-12 05:50:42.219219', '1628', '13081'),
-  ('2023-06-12 05:50:42.219219', '1629', '14290'),
-  ('2023-06-12 05:50:42.219219', '1630', '14257'),
-  ('2023-06-12 05:50:42.219219', '1630', '14333'),
-  ('2023-06-12 05:50:42.219219', '1631', '14334'),
-  ('2023-06-12 05:50:42.219219', '1631', '14335'),
-  ('2023-06-12 05:50:42.219219', '1631', '14262'),
-  ('2023-06-12 05:50:42.219219', '1632', '14255'),
-  ('2023-06-12 05:50:42.219219', '1633', '14267'),
-  ('2023-06-12 05:50:42.219219', '1634', '14233'),
-  ('2023-06-12 05:50:42.219219', '1635', '14336'),
-  ('2023-06-12 05:50:42.220220', '1636', '14337'),
-  ('2023-06-12 05:50:42.220220', '1637', '14338'),
-  ('2023-06-12 05:50:42.220220', '1638', '14339'),
-  ('2023-06-12 05:50:42.220220', '1639', '14340')
+  ('2023-07-01 09:15:20.954954', '1650', '14416'),
+  ('2023-07-01 09:15:20.956956', '1651', '14417'),
+  ('2023-07-01 09:15:20.956956', '1651', '14418'),
+  ('2023-07-01 09:15:20.956956', '1652', '14419'),
+  ('2023-07-01 09:15:20.956956', '1653', '14408'),
+  ('2023-07-01 09:15:20.956956', '1654', '14415'),
+  ('2023-07-01 09:15:20.956956', '1654', '14420'),
+  ('2023-07-01 09:15:20.957957', '1655', '14374'),
+  ('2023-07-01 09:15:20.957957', '1656', '14421'),
+  ('2023-07-01 09:15:20.957957', '1657', '14422')
   ;
 
   // Update to source_song table

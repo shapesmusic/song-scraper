@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Meshell Ndegeocello’s Magnificent Mix, and 9 More New Songs', '2023-06-17 12:06:00.000000', 'https://www.nytimes.com/2023/06/16/arts/music/playlist-meshell-ndegeocello-doja-cat.html');
+    ('New York Times', 'The Playlist', 'Beck and Phoenix’s Bouncy Synth-Pop Team-up, and 8 More New Songs', '2023-06-23 09:39:02.000000', 'https://www.nytimes.com/2023/06/23/arts/music/playlist-beck-phoenix.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1644; // SELECT last_insert_rowid();
+  source_id = 1648; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,92 +100,83 @@
   songsData =
   [
     {
-        "title": "ASR",
-        "artist_name": "Meshell Ndegeocello ft. Jeff Parker",
+        "title": "Odyssey",
+        "artist_name": "Beck and Phoenix",
         "video_id": null,
-        "capture_date": "2023-06-26 01:53:36.126126",
-        "source_id": 1644,
+        "capture_date": "2023-07-01 09:04:24.264264",
+        "source_id": 1648,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "(It Goes Like) Nanana",
-        "artist_name": "Peggy Gou",
+        "title": "Run",
+        "artist_name": "Maisie Peters",
         "video_id": null,
-        "capture_date": "2023-06-26 01:53:36.127127",
-        "source_id": 1644,
+        "capture_date": "2023-07-01 09:04:24.265265",
+        "source_id": 1648,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Attention",
-        "artist_name": "Doja Cat",
+        "title": "Blackbox Life Recorder 21f",
+        "artist_name": "Aphex Twin",
         "video_id": null,
-        "capture_date": "2023-06-26 01:53:36.127127",
-        "source_id": 1644,
+        "capture_date": "2023-07-01 09:04:24.265265",
+        "source_id": 1648,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Scientists & Engineers",
-        "artist_name": "Killer Mike ft. Future, André 3000 and Eryn Allen Kane",
+        "title": "Take Over the World",
+        "artist_name": "Jaimie Branch",
         "video_id": null,
-        "capture_date": "2023-06-26 01:53:36.127127",
-        "source_id": 1644,
+        "capture_date": "2023-07-01 09:04:24.265265",
+        "source_id": 1648,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Komfortzone",
-        "artist_name": "Flesh Eater with Fiona Apple",
+        "title": "Independence Day",
+        "artist_name": "Palehound",
         "video_id": null,
-        "capture_date": "2023-06-26 01:53:36.127127",
-        "source_id": 1644,
+        "capture_date": "2023-07-01 09:04:24.265265",
+        "source_id": 1648,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Evening Star Supercharger",
-        "artist_name": "Sparklehorse",
+        "title": "Waltz Across Texas",
+        "artist_name": "Amanda Shires and Bobbie Nelson",
         "video_id": null,
-        "capture_date": "2023-06-26 01:53:36.127127",
-        "source_id": 1644,
+        "capture_date": "2023-07-01 09:04:24.265265",
+        "source_id": 1648,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Reason",
-        "artist_name": "Omah Lay",
+        "title": "But Not Kiss",
+        "artist_name": "Faye Webster",
         "video_id": null,
-        "capture_date": "2023-06-26 01:53:36.127127",
-        "source_id": 1644,
+        "capture_date": "2023-07-01 09:04:24.265265",
+        "source_id": 1648,
+        "song_id": 14383,
+        "duplicate": true
+    },
+    {
+        "title": "Bending Hectic",
+        "artist_name": "The Smile",
+        "video_id": null,
+        "capture_date": "2023-07-01 09:04:24.265265",
+        "source_id": 1648,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Uncommon Sense",
-        "artist_name": "David Virelles",
+        "title": "Cora Campbell",
+        "artist_name": "Ambrose Akinmusire",
         "video_id": null,
-        "capture_date": "2023-06-26 01:53:36.128128",
-        "source_id": 1644,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Spectrum",
-        "artist_name": "Ben van Gelder",
-        "video_id": null,
-        "capture_date": "2023-06-26 01:53:36.128128",
-        "source_id": 1644,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Rosette",
-        "artist_name": "Elliott Sharp",
-        "video_id": null,
-        "capture_date": "2023-06-26 01:53:36.128128",
-        "source_id": 1644,
+        "capture_date": "2023-07-01 09:04:24.265265",
+        "source_id": 1648,
         "song_id": null,
         "duplicate": false
     }
@@ -229,16 +220,14 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('ASR', 'Meshell Ndegeocello ft. Jeff Parker', NULL),
-  ('(It Goes Like) Nanana', 'Peggy Gou', NULL),
-  ('Attention', 'Doja Cat', NULL),
-  ('Scientists & Engineers', 'Killer Mike ft. Future, André 3000 and Eryn Allen Kane', NULL),
-  ('Komfortzone', 'Flesh Eater with Fiona Apple', NULL),
-  ('Evening Star Supercharger', 'Sparklehorse', NULL),
-  ('Reason', 'Omah Lay', NULL),
-  ('Uncommon Sense', 'David Virelles', NULL),
-  ('Spectrum', 'Ben van Gelder', NULL),
-  ('Rosette', 'Elliott Sharp', NULL)
+  ('Odyssey', 'Beck and Phoenix', NULL),
+  ('Run', 'Maisie Peters', NULL),
+  ('Blackbox Life Recorder 21f', 'Aphex Twin', NULL),
+  ('Take Over the World', 'Jaimie Branch', NULL),
+  ('Independence Day', 'Palehound', NULL),
+  ('Waltz Across Texas', 'Amanda Shires and Bobbie Nelson', NULL),
+  ('Bending Hectic', 'The Smile', NULL),
+  ('Cora Campbell', 'Ambrose Akinmusire', NULL)
   ;
 
    // Update to song table
@@ -249,7 +238,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14381; // SELECT last_insert_rowid();
+  song_id = 14413; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -289,16 +278,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-06-26 01:53:36.126126', '1644', '14372'),
-  ('2023-06-26 01:53:36.127127', '1644', '14373'),
-  ('2023-06-26 01:53:36.127127', '1644', '14374'),
-  ('2023-06-26 01:53:36.127127', '1644', '14375'),
-  ('2023-06-26 01:53:36.127127', '1644', '14376'),
-  ('2023-06-26 01:53:36.127127', '1644', '14377'),
-  ('2023-06-26 01:53:36.127127', '1644', '14378'),
-  ('2023-06-26 01:53:36.128128', '1644', '14379'),
-  ('2023-06-26 01:53:36.128128', '1644', '14380'),
-  ('2023-06-26 01:53:36.128128', '1644', '14381')
+  ('2023-07-01 09:04:24.264264', '1648', '14406'),
+  ('2023-07-01 09:04:24.265265', '1648', '14407'),
+  ('2023-07-01 09:04:24.265265', '1648', '14408'),
+  ('2023-07-01 09:04:24.265265', '1648', '14409'),
+  ('2023-07-01 09:04:24.265265', '1648', '14410'),
+  ('2023-07-01 09:04:24.265265', '1648', '14411'),
+  ('2023-07-01 09:04:24.265265', '1648', '14383'),
+  ('2023-07-01 09:04:24.265265', '1648', '14412'),
+  ('2023-07-01 09:04:24.265265', '1648', '14413')
   ;
 
   // Update to source_song table
