@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 1, 2023', '2023-07-01 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-07-01');
+    ('Billboard', 'The Hot 100', 'Week of July 8, 2023', '2023-07-08 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-07-08');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1647; // SELECT last_insert_rowid();
+  source_id = 1658; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,128 +105,191 @@
   songsData =
   [
     {
-        "title": "Fukumean",
-        "artist_name": "Gunna",
+        "title": "Barbie World",
+        "artist_name": "Nicki Minaj & Ice Spice With Aqua",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.921921",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.080080",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Back To The Moon",
-        "artist_name": "Gunna",
+        "title": "Oh U Went",
+        "artist_name": "Young Thug ft. Drake",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.921921",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.081081",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Attention",
-        "artist_name": "Doja Cat",
+        "title": "Sabor Fresa",
+        "artist_name": "Fuerza Regida",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.921921",
-        "source_id": 1647,
-        "song_id": 14374,
+        "capture_date": "2023-07-07 05:51:44.081081",
+        "source_id": 1658,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Luna",
+        "artist_name": "Peso Pluma & Junior H",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:51:44.082082",
+        "source_id": 1658,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lady Gaga",
+        "artist_name": "Peso Pluma, Gabito Ballesteros & Junior H",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:51:44.082082",
+        "source_id": 1658,
+        "song_id": 14417,
         "duplicate": true
     },
     {
-        "title": "Rodeo Dr",
-        "artist_name": "Gunna",
+        "title": "Parade On Cleveland",
+        "artist_name": "Young Thug ft. Drake",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.922922",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.082082",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Back At It",
-        "artist_name": "Gunna",
+        "title": "Cars Bring Me Out",
+        "artist_name": "Young Thug ft. Future",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.922922",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.082082",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ca$h $hit",
-        "artist_name": "Gunna",
+        "title": "VVS",
+        "artist_name": "Peso Pluma, Edgardo Nunez & Los Dareyes de La Sierra",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.922922",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.082082",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bottom",
-        "artist_name": "Gunna",
+        "title": "Wit Da Racks",
+        "artist_name": "Young Thug ft. 21 Savage, Travis Scott & Yak Gotti",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.922922",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.083083",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "IDK NoMore",
-        "artist_name": "Gunna",
+        "title": "Doomsday.",
+        "artist_name": "Juice WRLD & Cordae",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.923923",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.083083",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "P Angels",
-        "artist_name": "Gunna",
+        "title": "Want Me Dead",
+        "artist_name": "Young Thug ft. 21 Savage",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.923923",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.083083",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Paybach",
-        "artist_name": "Gunna",
+        "title": "Rubicon",
+        "artist_name": "Peso Pluma",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.923923",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.083083",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Go Crazy",
-        "artist_name": "Gunna",
+        "title": "Hellcat Kenny",
+        "artist_name": "Young Thug ft. Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.923923",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.083083",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Girl In Mine",
-        "artist_name": "Parmalee",
+        "title": "Money On The Dresser",
+        "artist_name": "Young Thug",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.923923",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.083083",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Classy 101",
-        "artist_name": "Feid x Young Miko",
+        "title": "Uncle M",
+        "artist_name": "Young Thug",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.923923",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.083083",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bluffin",
-        "artist_name": "Gucci Mane & Lil Baby",
+        "title": "Nueva Vida",
+        "artist_name": "Peso Pluma",
         "video_id": null,
-        "capture_date": "2023-07-01 08:59:22.923923",
-        "source_id": 1647,
+        "capture_date": "2023-07-07 05:51:44.084084",
+        "source_id": 1658,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Watermelon Moonshine",
+        "artist_name": "Lainey Wilson",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:51:44.084084",
+        "source_id": 1658,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lagunas",
+        "artist_name": "Peso Pluma & Jasiel Nunez",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:51:44.084084",
+        "source_id": 1658,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Rosa Pastel",
+        "artist_name": "Peso Pluma & Jasiel Nunez",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:51:44.084084",
+        "source_id": 1658,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Abracadabra",
+        "artist_name": "Young Thug ft. Travis Scott",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:51:44.084084",
+        "source_id": 1658,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Gucci Grocery Bag",
+        "artist_name": "Young Thug",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:51:44.084084",
+        "source_id": 1658,
         "song_id": null,
         "duplicate": false
     }
@@ -270,20 +333,26 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Calling', 'Metro Boomin, Swae Lee & NAV ft. A Boogie Wit da Hoodie', NULL),
-  ('Fukumean', 'Gunna', NULL),
-  ('Back To The Moon', 'Gunna', NULL),
-  ('Rodeo Dr', 'Gunna', NULL),
-  ('Back At It', 'Gunna', NULL),
-  ('Ca$h $hit', 'Gunna', NULL),
-  ('Bottom', 'Gunna', NULL),
-  ('IDK NoMore', 'Gunna', NULL),
-  ('P Angels', 'Gunna', NULL),
-  ('Paybach', 'Gunna', NULL),
-  ('Go Crazy', 'Gunna', NULL),
-  ('Girl In Mine', 'Parmalee', NULL),
-  ('Classy 101', 'Feid x Young Miko', NULL),
-  ('Bluffin', 'Gucci Mane & Lil Baby', NULL)
+  ('Barbie World', 'Nicki Minaj & Ice Spice With Aqua', NULL),
+  ('Oh U Went', 'Young Thug ft. Drake', NULL),
+  ('Sabor Fresa', 'Fuerza Regida', NULL),
+  ('Luna', 'Peso Pluma & Junior H', NULL),
+  ('Parade On Cleveland', 'Young Thug ft. Drake', NULL),
+  ('Cars Bring Me Out', 'Young Thug ft. Future', NULL),
+  ('VVS', 'Peso Pluma, Edgardo Nunez & Los Dareyes de La Sierra', NULL),
+  ('Wit Da Racks', 'Young Thug ft. 21 Savage, Travis Scott & Yak Gotti', NULL),
+  ('Doomsday.', 'Juice WRLD & Cordae', NULL),
+  ('Want Me Dead', 'Young Thug ft. 21 Savage', NULL),
+  ('Rubicon', 'Peso Pluma', NULL),
+  ('Hellcat Kenny', 'Young Thug ft. Lil Uzi Vert', NULL),
+  ('Money On The Dresser', 'Young Thug', NULL),
+  ('Uncle M', 'Young Thug', NULL),
+  ('Nueva Vida', 'Peso Pluma', NULL),
+  ('Watermelon Moonshine', 'Lainey Wilson', NULL),
+  ('Lagunas', 'Peso Pluma & Jasiel Nunez', NULL),
+  ('Rosa Pastel', 'Peso Pluma & Jasiel Nunez', NULL),
+  ('Abracadabra', 'Young Thug ft. Travis Scott', NULL),
+  ('Gucci Grocery Bag', 'Young Thug', NULL)
   ;
 
    // Update to song table
@@ -294,7 +363,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14405; // SELECT last_insert_rowid();
+  song_id = 14442; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -334,20 +403,27 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-01 08:59:22.921921', '1647', '14393'),
-  ('2023-07-01 08:59:22.921921', '1647', '14394'),
-  ('2023-07-01 08:59:22.921921', '1647', '14374'),
-  ('2023-07-01 08:59:22.922922', '1647', '14395'),
-  ('2023-07-01 08:59:22.922922', '1647', '14396'),
-  ('2023-07-01 08:59:22.922922', '1647', '14397'),
-  ('2023-07-01 08:59:22.922922', '1647', '14398'),
-  ('2023-07-01 08:59:22.923923', '1647', '14399'),
-  ('2023-07-01 08:59:22.923923', '1647', '14400'),
-  ('2023-07-01 08:59:22.923923', '1647', '14401'),
-  ('2023-07-01 08:59:22.923923', '1647', '14402'),
-  ('2023-07-01 08:59:22.923923', '1647', '14403'),
-  ('2023-07-01 08:59:22.923923', '1647', '14404'),
-  ('2023-07-01 08:59:22.923923', '1647', '14405')
+  ('2023-07-07 05:51:44.080080', '1658', '14423'),
+  ('2023-07-07 05:51:44.081081', '1658', '14424'),
+  ('2023-07-07 05:51:44.081081', '1658', '14425'),
+  ('2023-07-07 05:51:44.082082', '1658', '14426'),
+  ('2023-07-07 05:51:44.082082', '1658', '14417'),
+  ('2023-07-07 05:51:44.082082', '1658', '14427'),
+  ('2023-07-07 05:51:44.082082', '1658', '14428'),
+  ('2023-07-07 05:51:44.082082', '1658', '14429'),
+  ('2023-07-07 05:51:44.083083', '1658', '14430'),
+  ('2023-07-07 05:51:44.083083', '1658', '14431'),
+  ('2023-07-07 05:51:44.083083', '1658', '14432'),
+  ('2023-07-07 05:51:44.083083', '1658', '14433'),
+  ('2023-07-07 05:51:44.083083', '1658', '14434'),
+  ('2023-07-07 05:51:44.083083', '1658', '14435'),
+  ('2023-07-07 05:51:44.083083', '1658', '14436'),
+  ('2023-07-07 05:51:44.084084', '1658', '14437'),
+  ('2023-07-07 05:51:44.084084', '1658', '14438'),
+  ('2023-07-07 05:51:44.084084', '1658', '14439'),
+  ('2023-07-07 05:51:44.084084', '1658', '14440'),
+  ('2023-07-07 05:51:44.084084', '1658', '14441'),
+  ('2023-07-07 05:51:44.084084', '1658', '14442')
   ;
 
   // Update to source_song table

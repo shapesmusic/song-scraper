@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of June 19, 2023', -- Mondays (for the previous week, including the publication_date)
-      '2023-06-19 12:00:00.000000', -- Dont forget this!
+      'Week of June 26, 2023', -- Mondays (for the previous week, including the publication_date)
+      '2023-06-26 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1645; // SELECT last_insert_rowid();
+    source_id = 1660; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,67 +458,40 @@
     songsData =
     [
     {
-        "title": "Trip Sitters Are The Best Friends",
-        "artist_name": "Chris Crack",
+        "title": "Body of Lies",
+        "artist_name": "Nicholas Craven & Ransom",
         "video_id": null,
-        "capture_date": "2023-06-26 02:01:22.170000",
-        "source_id": 1645,
+        "capture_date": "2023-07-07 06:07:03.898000",
+        "source_id": 1660,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "But Not Kiss",
-        "artist_name": "Faye Webster",
+        "title": "Any Weather",
+        "artist_name": "Sam Binga, Sir Hiss, SBA Karma",
         "video_id": null,
-        "capture_date": "2023-06-26 02:01:22.170000",
-        "source_id": 1645,
+        "capture_date": "2023-07-07 06:07:03.898000",
+        "source_id": 1660,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fader",
-        "artist_name": "Róisín Murphy",
+        "title": "smiles :)",
+        "artist_name": "grouptherapy",
         "video_id": null,
-        "capture_date": "2023-06-26 02:01:22.170000",
-        "source_id": 1645,
+        "capture_date": "2023-07-07 06:07:03.898000",
+        "source_id": 1660,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "SkeeYee",
-        "artist_name": "Sexyy Red",
+        "title": "Money On The Dresser",
+        "artist_name": "Young Thug",
         "video_id": null,
-        "capture_date": "2023-06-26 02:01:22.170000",
-        "source_id": 1645,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Double Time",
-        "artist_name": "Tara Lily",
-        "video_id": null,
-        "capture_date": "2023-06-26 02:01:22.170000",
-        "source_id": 1645,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Woman",
-        "artist_name": "Barry Can't Swim",
-        "video_id": null,
-        "capture_date": "2023-06-26 02:01:22.170000",
-        "source_id": 1645,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Bust of Nefertiti",
-        "artist_name": "Hand Habits",
-        "video_id": null,
-        "capture_date": "2023-06-26 02:01:22.170000",
-        "source_id": 1645,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2023-07-07 06:07:03.898000",
+        "source_id": 1660,
+        "song_id": 14435,
+        "duplicate": true
     }
 ]
 
@@ -558,13 +531,9 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Trip Sitters Are The Best Friends', 'Chris Crack', NULL),
-    ('But Not Kiss', 'Faye Webster', NULL),
-    ('Fader', 'Róisín Murphy', NULL),
-    ('SkeeYee', 'Sexyy Red', NULL),
-    ('Double Time', 'Tara Lily', NULL),
-    ('Woman', 'Barry Can’t Swim', NULL),
-    ('The Bust of Nefertiti', 'Hand Habits', NULL)
+    ('Body of Lies', 'Nicholas Craven & Ransom', NULL),
+    ('Any Weather', 'Sam Binga, Sir Hiss, SBA Karma', NULL),
+    ('smiles :)', 'grouptherapy', NULL)
     ;
 
      // Update to song table
@@ -575,7 +544,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14388; // SELECT last_insert_rowid();
+  song_id = 14456; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -615,13 +584,10 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-06-26 02:01:22.170000', '1645', '14382'),
-  ('2023-06-26 02:01:22.170000', '1645', '14383'),
-  ('2023-06-26 02:01:22.170000', '1645', '14384'),
-  ('2023-06-26 02:01:22.170000', '1645', '14385'),
-  ('2023-06-26 02:01:22.170000', '1645', '14386'),
-  ('2023-06-26 02:01:22.170000', '1645', '14387'),
-  ('2023-06-26 02:01:22.170000', '1645', '14388')
+  ('2023-07-07 06:07:03.898000', '1660', '14454'),
+  ('2023-07-07 06:07:03.898000', '1660', '14455'),
+  ('2023-07-07 06:07:03.898000', '1660', '14456'),
+  ('2023-07-07 06:07:03.898000', '1660', '14435')
   ;
 
   // Update to source_song table

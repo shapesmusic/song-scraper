@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Beck and Phoenix’s Bouncy Synth-Pop Team-up, and 8 More New Songs', '2023-06-23 09:39:02.000000', 'https://www.nytimes.com/2023/06/23/arts/music/playlist-beck-phoenix.html');
+    ('New York Times', 'The Playlist', 'Olivia Rodrigo’s Gutsy Catharsis, and 12 More New Songs', '2023-06-30 11:38:14.000000', 'https://www.nytimes.com/2023/06/30/arts/music/playlist-olivia-rodrigo-bad-bunny-fall-out-boy.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1648; // SELECT last_insert_rowid();
+  source_id = 1659; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,88 +100,123 @@
   songsData =
   [
     {
-        "title": "Odyssey",
-        "artist_name": "Beck and Phoenix",
+        "title": "Vampire",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2023-07-01 09:04:24.264264",
-        "source_id": 1648,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Run",
-        "artist_name": "Maisie Peters",
-        "video_id": null,
-        "capture_date": "2023-07-01 09:04:24.265265",
-        "source_id": 1648,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Blackbox Life Recorder 21f",
-        "artist_name": "Aphex Twin",
-        "video_id": null,
-        "capture_date": "2023-07-01 09:04:24.265265",
-        "source_id": 1648,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Take Over the World",
-        "artist_name": "Jaimie Branch",
-        "video_id": null,
-        "capture_date": "2023-07-01 09:04:24.265265",
-        "source_id": 1648,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Independence Day",
-        "artist_name": "Palehound",
-        "video_id": null,
-        "capture_date": "2023-07-01 09:04:24.265265",
-        "source_id": 1648,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Waltz Across Texas",
-        "artist_name": "Amanda Shires and Bobbie Nelson",
-        "video_id": null,
-        "capture_date": "2023-07-01 09:04:24.265265",
-        "source_id": 1648,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "But Not Kiss",
-        "artist_name": "Faye Webster",
-        "video_id": null,
-        "capture_date": "2023-07-01 09:04:24.265265",
-        "source_id": 1648,
-        "song_id": 14383,
+        "capture_date": "2023-07-07 05:58:11.452452",
+        "source_id": 1659,
+        "song_id": 14416,
         "duplicate": true
     },
     {
-        "title": "Bending Hectic",
-        "artist_name": "The Smile",
+        "title": "Mojabi Ghost",
+        "artist_name": "Tainy and Bad Bunny",
         "video_id": null,
-        "capture_date": "2023-07-01 09:04:24.265265",
-        "source_id": 1648,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cora Campbell",
-        "artist_name": "Ambrose Akinmusire",
+        "title": "Sport of Form",
+        "artist_name": "The Armed",
         "video_id": null,
-        "capture_date": "2023-07-01 09:04:24.265265",
-        "source_id": 1648,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "We Didn’t Start the Fire",
+        "artist_name": "Fall Out Boy",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Undoer",
+        "artist_name": "Geese",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Degnan Dreams",
+        "artist_name": "Terrace Martin ft. Keyon Harrold, Justin Tyson and Dominique Sanders",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Spirit 2.0",
+        "artist_name": "Sampha",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
+        "song_id": 14418,
+        "duplicate": true
+    },
+    {
+        "title": "Don’t Even Worry",
+        "artist_name": "Becca Mancari ft. Brittany Howard",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Signal of Hope",
+        "artist_name": "Hayden Pedigo",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "For a Long While",
+        "artist_name": "Colter Wall",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Calling",
+        "artist_name": "John Raymond and S. Carey",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Blood Calls Blood",
+        "artist_name": "Chief Xian aTunde Adjuah",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Hide, Then Seek",
+        "artist_name": "JoVia Armstrong and Eunoia Society",
+        "video_id": null,
+        "capture_date": "2023-07-07 05:58:11.454454",
+        "source_id": 1659,
         "song_id": null,
         "duplicate": false
     }
 ]
-
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
     title LIKE '%AP%'
@@ -220,14 +255,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Odyssey', 'Beck and Phoenix', NULL),
-  ('Run', 'Maisie Peters', NULL),
-  ('Blackbox Life Recorder 21f', 'Aphex Twin', NULL),
-  ('Take Over the World', 'Jaimie Branch', NULL),
-  ('Independence Day', 'Palehound', NULL),
-  ('Waltz Across Texas', 'Amanda Shires and Bobbie Nelson', NULL),
-  ('Bending Hectic', 'The Smile', NULL),
-  ('Cora Campbell', 'Ambrose Akinmusire', NULL)
+  ('Mojabi Ghost', 'Tainy and Bad Bunny', NULL),
+  ('Sport of Form', 'The Armed', NULL),
+  ('We Didn’t Start the Fire', 'Fall Out Boy', NULL),
+  ('Undoer', 'Geese', NULL),
+  ('Degnan Dreams', 'Terrace Martin ft. Keyon Harrold, Justin Tyson and Dominique Sanders', NULL),
+  ('Don’t Even Worry', 'Becca Mancari ft. Brittany Howard', NULL),
+  ('Signal of Hope', 'Hayden Pedigo', NULL),
+  ('For a Long While', 'Colter Wall', NULL),
+  ('Calling', 'John Raymond and S. Carey', NULL),
+  ('Blood Calls Blood', 'Chief Xian aTunde Adjuah', NULL),
+  ('Hide, Then Seek', 'JoVia Armstrong and Eunoia Society', NULL)
   ;
 
    // Update to song table
@@ -238,7 +276,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14413; // SELECT last_insert_rowid();
+  song_id = 14453; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -278,15 +316,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-01 09:04:24.264264', '1648', '14406'),
-  ('2023-07-01 09:04:24.265265', '1648', '14407'),
-  ('2023-07-01 09:04:24.265265', '1648', '14408'),
-  ('2023-07-01 09:04:24.265265', '1648', '14409'),
-  ('2023-07-01 09:04:24.265265', '1648', '14410'),
-  ('2023-07-01 09:04:24.265265', '1648', '14411'),
-  ('2023-07-01 09:04:24.265265', '1648', '14383'),
-  ('2023-07-01 09:04:24.265265', '1648', '14412'),
-  ('2023-07-01 09:04:24.265265', '1648', '14413')
+  ('2023-07-07 05:58:11.452452', '1659', '14416'),
+  ('2023-07-07 05:58:11.454454', '1659', '14443'),
+  ('2023-07-07 05:58:11.454454', '1659', '14444'),
+  ('2023-07-07 05:58:11.454454', '1659', '14445'),
+  ('2023-07-07 05:58:11.454454', '1659', '14446'),
+  ('2023-07-07 05:58:11.454454', '1659', '14447'),
+  ('2023-07-07 05:58:11.454454', '1659', '14418'),
+  ('2023-07-07 05:58:11.454454', '1659', '14448'),
+  ('2023-07-07 05:58:11.454454', '1659', '14449'),
+  ('2023-07-07 05:58:11.454454', '1659', '14450'),
+  ('2023-07-07 05:58:11.454454', '1659', '14451'),
+  ('2023-07-07 05:58:11.454454', '1659', '14452'),
+  ('2023-07-07 05:58:11.454454', '1659', '14453')
   ;
 
   // Update to source_song table

@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of June 23, 2023', '2023-06-23 12:00:00.000000', 'https://www.stereogum.com/2228106/the-5-best-songs-of-the-week-488/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of June 30, 2023', '2023-06-30 12:00:00.000000', 'https://www.stereogum.com/2228821/the-5-best-songs-of-the-week-489/lists/the-5-best-songs-of-the-week/');
 
 
   // Update to source table
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1649; // SELECT last_insert_rowid();
+  source_id = 1661; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -102,48 +102,48 @@
   songsData =
   [
     {
-        "title": "Drunk And High",
-        "artist_name": "Florry",
+        "title": "Toxic Trait",
+        "artist_name": "Stormzy",
         "video_id": null,
-        "capture_date": "2023-07-01 09:11:19.555555",
-        "source_id": 1649,
+        "capture_date": "2023-07-07 06:12:46.363363",
+        "source_id": 1661,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Kisses",
-        "artist_name": "Slowdive",
+        "title": "Slugs",
+        "artist_name": "Slow Pulp",
         "video_id": null,
-        "capture_date": "2023-07-01 09:11:19.556556",
-        "source_id": 1649,
+        "capture_date": "2023-07-07 06:12:46.364364",
+        "source_id": 1661,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bending Hectic",
-        "artist_name": "The Smile",
+        "title": "Spirit 2.0",
+        "artist_name": "Sampha",
         "video_id": null,
-        "capture_date": "2023-07-01 09:11:19.556556",
-        "source_id": 1649,
-        "song_id": 14412,
+        "capture_date": "2023-07-07 06:12:46.364364",
+        "source_id": 1661,
+        "song_id": 14418,
         "duplicate": true
     },
     {
-        "title": "Blackbox Life Recorder 21f",
-        "artist_name": "Aphex Twin",
+        "title": "The Window",
+        "artist_name": "Ratboys",
         "video_id": null,
-        "capture_date": "2023-07-01 09:11:19.556556",
-        "source_id": 1649,
-        "song_id": 14408,
-        "duplicate": true
+        "capture_date": "2023-07-07 06:12:46.364364",
+        "source_id": 1661,
+        "song_id": null,
+        "duplicate": false
     },
     {
-        "title": "Attention",
-        "artist_name": "Doja Cat",
+        "title": "Sport Of Form",
+        "artist_name": "The Armed",
         "video_id": null,
-        "capture_date": "2023-07-01 09:11:19.556556",
-        "source_id": 1649,
-        "song_id": 14374,
+        "capture_date": "2023-07-07 06:12:46.364364",
+        "source_id": 1661,
+        "song_id": 14444,
         "duplicate": true
     }
 ]
@@ -187,8 +187,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Drunk And High', 'Florry', NULL),
-  ('Kisses', 'Slowdive', NULL)
+  ('Toxic Trait', 'Stormzy', NULL),
+  ('Slugs', 'Slow Pulp', NULL),
+  ('The Window', 'Ratboys', NULL)
   ;
 
    // Update to song table
@@ -199,7 +200,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14415; // SELECT last_insert_rowid();
+  song_id = 14459; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -239,11 +240,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-01 09:11:19.555555', '1649', '14414'),
-  ('2023-07-01 09:11:19.556556', '1649', '14415'),
-  ('2023-07-01 09:11:19.556556', '1649', '14412'),
-  ('2023-07-01 09:11:19.556556', '1649', '14408'),
-  ('2023-07-01 09:11:19.556556', '1649', '14374')
+  ('2023-07-07 06:12:46.363363', '1661', '14457'),
+  ('2023-07-07 06:12:46.364364', '1661', '14458'),
+  ('2023-07-07 06:12:46.364364', '1661', '14418'),
+  ('2023-07-07 06:12:46.364364', '1661', '14459'),
+  ('2023-07-07 06:12:46.364364', '1661', '14444')
   ;
 
   // Update to source_song table
