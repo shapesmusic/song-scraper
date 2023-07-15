@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 8, 2023', '2023-07-08 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-07-08');
+    ('Billboard', 'The Hot 100', 'Week of July 15, 2023', '2023-07-15 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-07-15');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1658; // SELECT last_insert_rowid();
+  source_id = 1662; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,193 +105,193 @@
   songsData =
   [
     {
-        "title": "Barbie World",
-        "artist_name": "Nicki Minaj & Ice Spice With Aqua",
+        "title": "Flooded The Face",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.080080",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.922922",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Oh U Went",
-        "artist_name": "Young Thug ft. Drake",
+        "title": "Endless Fashion",
+        "artist_name": "Lil Uzi Vert ft. Nicki Minaj",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.081081",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.928928",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Sabor Fresa",
-        "artist_name": "Fuerza Regida",
+        "title": "Suicide Doors",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.081081",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.928928",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Luna",
-        "artist_name": "Peso Pluma & Junior H",
+        "title": "Aye",
+        "artist_name": "Lil Uzi Vert ft. Travis Scott",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.082082",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.928928",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lady Gaga",
-        "artist_name": "Peso Pluma, Gabito Ballesteros & Junior H",
+        "title": "Tulum",
+        "artist_name": "Peso Pluma & Grupo Frontera",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.082082",
-        "source_id": 1658,
-        "song_id": 14417,
+        "capture_date": "2023-07-14 07:02:36.929929",
+        "source_id": 1662,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Gotta",
+        "artist_name": "Lil Uzi Vert",
+        "video_id": null,
+        "capture_date": "2023-07-14 07:02:36.929929",
+        "source_id": 1662,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Spin Again",
+        "artist_name": "Lil Uzi Vert",
+        "video_id": null,
+        "capture_date": "2023-07-14 07:02:36.932932",
+        "source_id": 1662,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Crush Em",
+        "artist_name": "Lil Uzi Vert",
+        "video_id": null,
+        "capture_date": "2023-07-14 07:02:36.932932",
+        "source_id": 1662,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "X2",
+        "artist_name": "Lil Uzi Vert",
+        "video_id": null,
+        "capture_date": "2023-07-14 07:02:36.932932",
+        "source_id": 1662,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Mojabi Ghost",
+        "artist_name": "Tainy & Bad Bunny",
+        "video_id": null,
+        "capture_date": "2023-07-14 07:02:36.932932",
+        "source_id": 1662,
+        "song_id": 14443,
         "duplicate": true
     },
     {
-        "title": "Parade On Cleveland",
-        "artist_name": "Young Thug ft. Drake",
+        "title": "Pluto To Mars",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.082082",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.935935",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cars Bring Me Out",
-        "artist_name": "Young Thug ft. Future",
+        "title": "Mama, I'm Sorry",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.082082",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.936936",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "VVS",
-        "artist_name": "Peso Pluma, Edgardo Nunez & Los Dareyes de La Sierra",
+        "title": "Amped",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.082082",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.936936",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Wit Da Racks",
-        "artist_name": "Young Thug ft. 21 Savage, Travis Scott & Yak Gotti",
+        "title": "Patience",
+        "artist_name": "Lil Uzi Vert ft. Don Toliver",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.083083",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.936936",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Doomsday.",
-        "artist_name": "Juice WRLD & Cordae",
+        "title": "Nakamura",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.083083",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.936936",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Want Me Dead",
-        "artist_name": "Young Thug ft. 21 Savage",
+        "title": "All Alone",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.083083",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.936936",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rubicon",
-        "artist_name": "Peso Pluma",
+        "title": "Died And Came Back",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.083083",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.936936",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hellcat Kenny",
-        "artist_name": "Young Thug ft. Lil Uzi Vert",
+        "title": "Werewolf",
+        "artist_name": "Lil Uzi Vert ft. Bring Me The Horizon",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.083083",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.936936",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Money On The Dresser",
-        "artist_name": "Young Thug",
+        "title": "Zoom",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.083083",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.937937",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Uncle M",
-        "artist_name": "Young Thug",
+        "title": "That Fiya",
+        "artist_name": "Lil Uzi Vert",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.083083",
-        "source_id": 1658,
+        "capture_date": "2023-07-14 07:02:36.937937",
+        "source_id": 1662,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nueva Vida",
-        "artist_name": "Peso Pluma",
+        "title": "We Didn't Start The Fire",
+        "artist_name": "Fall Out Boy",
         "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.084084",
-        "source_id": 1658,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Watermelon Moonshine",
-        "artist_name": "Lainey Wilson",
-        "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.084084",
-        "source_id": 1658,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lagunas",
-        "artist_name": "Peso Pluma & Jasiel Nunez",
-        "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.084084",
-        "source_id": 1658,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Rosa Pastel",
-        "artist_name": "Peso Pluma & Jasiel Nunez",
-        "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.084084",
-        "source_id": 1658,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Abracadabra",
-        "artist_name": "Young Thug ft. Travis Scott",
-        "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.084084",
-        "source_id": 1658,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gucci Grocery Bag",
-        "artist_name": "Young Thug",
-        "video_id": null,
-        "capture_date": "2023-07-07 05:51:44.084084",
-        "source_id": 1658,
-        "song_id": null,
-        "duplicate": false
+        "capture_date": "2023-07-14 07:02:36.937937",
+        "source_id": 1662,
+        "song_id": 14445,
+        "duplicate": true
     }
 ]
 
@@ -333,26 +333,25 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Barbie World', 'Nicki Minaj & Ice Spice With Aqua', NULL),
-  ('Oh U Went', 'Young Thug ft. Drake', NULL),
-  ('Sabor Fresa', 'Fuerza Regida', NULL),
-  ('Luna', 'Peso Pluma & Junior H', NULL),
-  ('Parade On Cleveland', 'Young Thug ft. Drake', NULL),
-  ('Cars Bring Me Out', 'Young Thug ft. Future', NULL),
-  ('VVS', 'Peso Pluma, Edgardo Nunez & Los Dareyes de La Sierra', NULL),
-  ('Wit Da Racks', 'Young Thug ft. 21 Savage, Travis Scott & Yak Gotti', NULL),
-  ('Doomsday.', 'Juice WRLD & Cordae', NULL),
-  ('Want Me Dead', 'Young Thug ft. 21 Savage', NULL),
-  ('Rubicon', 'Peso Pluma', NULL),
-  ('Hellcat Kenny', 'Young Thug ft. Lil Uzi Vert', NULL),
-  ('Money On The Dresser', 'Young Thug', NULL),
-  ('Uncle M', 'Young Thug', NULL),
-  ('Nueva Vida', 'Peso Pluma', NULL),
-  ('Watermelon Moonshine', 'Lainey Wilson', NULL),
-  ('Lagunas', 'Peso Pluma & Jasiel Nunez', NULL),
-  ('Rosa Pastel', 'Peso Pluma & Jasiel Nunez', NULL),
-  ('Abracadabra', 'Young Thug ft. Travis Scott', NULL),
-  ('Gucci Grocery Bag', 'Young Thug', NULL)
+  ('Flooded The Face', 'Lil Uzi Vert', NULL),
+  ('Endless Fashion', 'Lil Uzi Vert ft. Nicki Minaj', NULL),
+  ('Suicide Doors', 'Lil Uzi Vert', NULL),
+  ('Aye', 'Lil Uzi Vert ft. Travis Scott', NULL),
+  ('Tulum', 'Peso Pluma & Grupo Frontera', NULL),
+  ('I Gotta', 'Lil Uzi Vert', NULL),
+  ('Spin Again', 'Lil Uzi Vert', NULL),
+  ('Crush Em', 'Lil Uzi Vert', NULL),
+  ('X2', 'Lil Uzi Vert', NULL),
+  ('Pluto To Mars', 'Lil Uzi Vert', NULL),
+  ('Mama, I’m Sorry', 'Lil Uzi Vert', NULL),
+  ('Amped', 'Lil Uzi Vert', NULL),
+  ('Patience', 'Lil Uzi Vert ft. Don Toliver', NULL),
+  ('Nakamura', 'Lil Uzi Vert', NULL),
+  ('All Alone', 'Lil Uzi Vert', NULL),
+  ('Died And Came Back', 'Lil Uzi Vert', NULL),
+  ('Werewolf', 'Lil Uzi Vert ft. Bring Me The Horizon', NULL),
+  ('Zoom', 'Lil Uzi Vert', NULL),
+  ('That Fiya', 'Lil Uzi Vert', NULL)
   ;
 
    // Update to song table
@@ -363,7 +362,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14442; // SELECT last_insert_rowid();
+  song_id = 14478; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -403,27 +402,27 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-07 05:51:44.080080', '1658', '14423'),
-  ('2023-07-07 05:51:44.081081', '1658', '14424'),
-  ('2023-07-07 05:51:44.081081', '1658', '14425'),
-  ('2023-07-07 05:51:44.082082', '1658', '14426'),
-  ('2023-07-07 05:51:44.082082', '1658', '14417'),
-  ('2023-07-07 05:51:44.082082', '1658', '14427'),
-  ('2023-07-07 05:51:44.082082', '1658', '14428'),
-  ('2023-07-07 05:51:44.082082', '1658', '14429'),
-  ('2023-07-07 05:51:44.083083', '1658', '14430'),
-  ('2023-07-07 05:51:44.083083', '1658', '14431'),
-  ('2023-07-07 05:51:44.083083', '1658', '14432'),
-  ('2023-07-07 05:51:44.083083', '1658', '14433'),
-  ('2023-07-07 05:51:44.083083', '1658', '14434'),
-  ('2023-07-07 05:51:44.083083', '1658', '14435'),
-  ('2023-07-07 05:51:44.083083', '1658', '14436'),
-  ('2023-07-07 05:51:44.084084', '1658', '14437'),
-  ('2023-07-07 05:51:44.084084', '1658', '14438'),
-  ('2023-07-07 05:51:44.084084', '1658', '14439'),
-  ('2023-07-07 05:51:44.084084', '1658', '14440'),
-  ('2023-07-07 05:51:44.084084', '1658', '14441'),
-  ('2023-07-07 05:51:44.084084', '1658', '14442')
+  ('2023-07-14 07:02:36.922922', '1662', '14460'),
+  ('2023-07-14 07:02:36.928928', '1662', '14461'),
+  ('2023-07-14 07:02:36.928928', '1662', '14462'),
+  ('2023-07-14 07:02:36.928928', '1662', '14463'),
+  ('2023-07-14 07:02:36.929929', '1662', '14464'),
+  ('2023-07-14 07:02:36.929929', '1662', '14465'),
+  ('2023-07-14 07:02:36.932932', '1662', '14466'),
+  ('2023-07-14 07:02:36.932932', '1662', '14467'),
+  ('2023-07-14 07:02:36.932932', '1662', '14468'),
+  ('2023-07-14 07:02:36.932932', '1662', '14443'),
+  ('2023-07-14 07:02:36.935935', '1662', '14469'),
+  ('2023-07-14 07:02:36.936936', '1662', '14470'),
+  ('2023-07-14 07:02:36.936936', '1662', '14471'),
+  ('2023-07-14 07:02:36.936936', '1662', '14472'),
+  ('2023-07-14 07:02:36.936936', '1662', '14473'),
+  ('2023-07-14 07:02:36.936936', '1662', '14474'),
+  ('2023-07-14 07:02:36.936936', '1662', '14475'),
+  ('2023-07-14 07:02:36.936936', '1662', '14476'),
+  ('2023-07-14 07:02:36.937937', '1662', '14477'),
+  ('2023-07-14 07:02:36.937937', '1662', '14478'),
+  ('2023-07-14 07:02:36.937937', '1662', '14445')
   ;
 
   // Update to source_song table

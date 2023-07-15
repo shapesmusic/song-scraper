@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of June 26, 2023', -- Mondays (for the previous week, including the publication_date)
-      '2023-06-26 12:00:00.000000', -- Dont forget this!
+      'Week of July 10, 2023', -- Mondays (for the previous week, including the publication_date)
+      '2023-07-10 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1660; // SELECT last_insert_rowid();
+    source_id = 1664; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,40 +458,40 @@
     songsData =
     [
     {
-        "title": "Body of Lies",
-        "artist_name": "Nicholas Craven & Ransom",
+        "title": "Chain",
+        "artist_name": "Aziya",
         "video_id": null,
-        "capture_date": "2023-07-07 06:07:03.898000",
-        "source_id": 1660,
+        "capture_date": "2023-07-14 07:15:21.286286",
+        "source_id": 1664,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Any Weather",
-        "artist_name": "Sam Binga, Sir Hiss, SBA Karma",
+        "title": "Watermelon Automobile",
+        "artist_name": "Valee and Fraud ft. Saba and MAVI",
         "video_id": null,
-        "capture_date": "2023-07-07 06:07:03.898000",
-        "source_id": 1660,
+        "capture_date": "2023-07-14 07:15:21.286286",
+        "source_id": 1664,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "smiles :)",
-        "artist_name": "grouptherapy",
+        "title": "Walk In The Club",
+        "artist_name": "Celebrity Bitcrush",
         "video_id": null,
-        "capture_date": "2023-07-07 06:07:03.898000",
-        "source_id": 1660,
+        "capture_date": "2023-07-14 07:15:21.286286",
+        "source_id": 1664,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Money On The Dresser",
-        "artist_name": "Young Thug",
+        "title": "Driving",
+        "artist_name": "DJ Python and Ana Roxanne",
         "video_id": null,
-        "capture_date": "2023-07-07 06:07:03.898000",
-        "source_id": 1660,
-        "song_id": 14435,
-        "duplicate": true
+        "capture_date": "2023-07-14 07:15:21.286286",
+        "source_id": 1664,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -531,9 +531,10 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Body of Lies', 'Nicholas Craven & Ransom', NULL),
-    ('Any Weather', 'Sam Binga, Sir Hiss, SBA Karma', NULL),
-    ('smiles :)', 'grouptherapy', NULL)
+    ('Chain', 'Aziya', NULL),
+    ('Watermelon Automobile', 'Valee and Fraud ft. Saba and MAVI', NULL),
+    ('Walk In The Club', 'Celebrity Bitcrush', NULL),
+    ('Driving', 'DJ Python and Ana Roxanne', NULL)
     ;
 
      // Update to song table
@@ -544,7 +545,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14456; // SELECT last_insert_rowid();
+  song_id = 14493; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -584,10 +585,10 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-07 06:07:03.898000', '1660', '14454'),
-  ('2023-07-07 06:07:03.898000', '1660', '14455'),
-  ('2023-07-07 06:07:03.898000', '1660', '14456'),
-  ('2023-07-07 06:07:03.898000', '1660', '14435')
+  ('2023-07-14 07:15:21.286286', '1664', '14490'),
+  ('2023-07-14 07:15:21.286286', '1664', '14491'),
+  ('2023-07-14 07:15:21.286286', '1664', '14492'),
+  ('2023-07-14 07:15:21.286286', '1664', '14493')
   ;
 
   // Update to source_song table
