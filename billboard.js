@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 15, 2023', '2023-07-15 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-07-15');
+    ('Billboard', 'The Hot 100', 'Week of July 22, 2023', '2023-07-22 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-07-22');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1662; // SELECT last_insert_rowid();
+  source_id = 1666; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,193 +105,229 @@
   songsData =
   [
     {
-        "title": "Flooded The Face",
-        "artist_name": "Lil Uzi Vert",
+        "title": "I Can See You (Taylor’s Version) (From The Vault)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.922922",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.780780",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Endless Fashion",
-        "artist_name": "Lil Uzi Vert ft. Nicki Minaj",
+        "title": "Mine (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.928928",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.781781",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Suicide Doors",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Back To December (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.928928",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.781781",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Aye",
-        "artist_name": "Lil Uzi Vert ft. Travis Scott",
+        "title": "Enchanted (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.928928",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.781781",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tulum",
-        "artist_name": "Peso Pluma & Grupo Frontera",
+        "title": "Sparks Fly (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.929929",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.782782",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I Gotta",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Dear John (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.929929",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.782782",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Spin Again",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Better Than Revenge (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.932932",
-        "source_id": 1662,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Crush Em",
-        "artist_name": "Lil Uzi Vert",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.932932",
-        "source_id": 1662,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "X2",
-        "artist_name": "Lil Uzi Vert",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.932932",
-        "source_id": 1662,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mojabi Ghost",
-        "artist_name": "Tainy & Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.932932",
-        "source_id": 1662,
-        "song_id": 14443,
+        "capture_date": "2023-07-22 07:23:56.782782",
+        "source_id": 1666,
+        "song_id": 14479,
         "duplicate": true
     },
     {
-        "title": "Pluto To Mars",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Castles Crumbling (Taylor’s Version) (From The Vault)",
+        "artist_name": "Taylor Swift ft. Hayley Williams",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.935935",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.782782",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mama, I'm Sorry",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Speak Now (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.936936",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.782782",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Amped",
-        "artist_name": "Lil Uzi Vert",
+        "title": "When Emma Falls In Love (Taylor’s Version) (From The Vault)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.936936",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.782782",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Patience",
-        "artist_name": "Lil Uzi Vert ft. Don Toliver",
+        "title": "Electric Touch (Taylor’s Version) (From The Vault)",
+        "artist_name": "Taylor Swift ft. Fall Out Boy",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.936936",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.782782",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nakamura",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Mean (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.936936",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.782782",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "All Alone",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Foolish One (Taylor’s Version) (From The Vault)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.936936",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.782782",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Died And Came Back",
-        "artist_name": "Lil Uzi Vert",
+        "title": "The Story Of Us (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.936936",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.782782",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Werewolf",
-        "artist_name": "Lil Uzi Vert ft. Bring Me The Horizon",
+        "title": "Timeless (Taylor’s Version) (From The Vault)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.936936",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.783783",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Zoom",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Haunted (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.937937",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.783783",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "That Fiya",
-        "artist_name": "Lil Uzi Vert",
+        "title": "Long Live (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.937937",
-        "source_id": 1662,
+        "capture_date": "2023-07-22 07:23:56.783783",
+        "source_id": 1666,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "We Didn't Start The Fire",
-        "artist_name": "Fall Out Boy",
+        "title": "Last Kiss (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
         "video_id": null,
-        "capture_date": "2023-07-14 07:02:36.937937",
-        "source_id": 1662,
-        "song_id": 14445,
-        "duplicate": true
+        "capture_date": "2023-07-22 07:23:56.783783",
+        "source_id": 1666,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Never Grow Up (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2023-07-22 07:23:56.783783",
+        "source_id": 1666,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Innocent (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2023-07-22 07:23:56.783783",
+        "source_id": 1666,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Super Shy",
+        "artist_name": "NewJeans",
+        "video_id": null,
+        "capture_date": "2023-07-22 07:23:56.783783",
+        "source_id": 1666,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ours (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2023-07-22 07:23:56.783783",
+        "source_id": 1666,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Superman (Taylor’s Version)",
+        "artist_name": "Taylor Swift",
+        "video_id": null,
+        "capture_date": "2023-07-22 07:23:56.783783",
+        "source_id": 1666,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Point Me 2",
+        "artist_name": "FendiDa Rappa With Cardi B",
+        "video_id": null,
+        "capture_date": "2023-07-22 07:23:56.784784",
+        "source_id": 1666,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "LaLa",
+        "artist_name": "Myke Towers",
+        "video_id": null,
+        "capture_date": "2023-07-22 07:23:56.784784",
+        "source_id": 1666,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -333,25 +369,30 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Flooded The Face', 'Lil Uzi Vert', NULL),
-  ('Endless Fashion', 'Lil Uzi Vert ft. Nicki Minaj', NULL),
-  ('Suicide Doors', 'Lil Uzi Vert', NULL),
-  ('Aye', 'Lil Uzi Vert ft. Travis Scott', NULL),
-  ('Tulum', 'Peso Pluma & Grupo Frontera', NULL),
-  ('I Gotta', 'Lil Uzi Vert', NULL),
-  ('Spin Again', 'Lil Uzi Vert', NULL),
-  ('Crush Em', 'Lil Uzi Vert', NULL),
-  ('X2', 'Lil Uzi Vert', NULL),
-  ('Pluto To Mars', 'Lil Uzi Vert', NULL),
-  ('Mama, I’m Sorry', 'Lil Uzi Vert', NULL),
-  ('Amped', 'Lil Uzi Vert', NULL),
-  ('Patience', 'Lil Uzi Vert ft. Don Toliver', NULL),
-  ('Nakamura', 'Lil Uzi Vert', NULL),
-  ('All Alone', 'Lil Uzi Vert', NULL),
-  ('Died And Came Back', 'Lil Uzi Vert', NULL),
-  ('Werewolf', 'Lil Uzi Vert ft. Bring Me The Horizon', NULL),
-  ('Zoom', 'Lil Uzi Vert', NULL),
-  ('That Fiya', 'Lil Uzi Vert', NULL)
+  ('I Can See You (Taylor’s Version) (From The Vault)', 'Taylor Swift', NULL),
+  ('Mine (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Back To December (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Enchanted (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Sparks Fly (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Dear John (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Castles Crumbling (Taylor’s Version) (From The Vault)', 'Taylor Swift ft. Hayley Williams', NULL),
+  ('Speak Now (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('When Emma Falls In Love (Taylor’s Version) (From The Vault)', 'Taylor Swift', NULL),
+  ('Electric Touch (Taylor’s Version) (From The Vault)', 'Taylor Swift ft. Fall Out Boy', NULL),
+  ('Mean (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Foolish One (Taylor’s Version) (From The Vault)', 'Taylor Swift', NULL),
+  ('The Story Of Us (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Timeless (Taylor’s Version) (From The Vault)', 'Taylor Swift', NULL),
+  ('Haunted (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Long Live (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Last Kiss (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Never Grow Up (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Innocent (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Super Shy', 'NewJeans', NULL),
+  ('Ours (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Superman (Taylor’s Version)', 'Taylor Swift', NULL),
+  ('Point Me 2', 'FendiDa Rappa With Cardi B', NULL),
+  ('LaLa', 'Myke Towers', NULL)
   ;
 
    // Update to song table
@@ -362,7 +403,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14478; // SELECT last_insert_rowid();
+  song_id = 14520; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -402,27 +443,31 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-14 07:02:36.922922', '1662', '14460'),
-  ('2023-07-14 07:02:36.928928', '1662', '14461'),
-  ('2023-07-14 07:02:36.928928', '1662', '14462'),
-  ('2023-07-14 07:02:36.928928', '1662', '14463'),
-  ('2023-07-14 07:02:36.929929', '1662', '14464'),
-  ('2023-07-14 07:02:36.929929', '1662', '14465'),
-  ('2023-07-14 07:02:36.932932', '1662', '14466'),
-  ('2023-07-14 07:02:36.932932', '1662', '14467'),
-  ('2023-07-14 07:02:36.932932', '1662', '14468'),
-  ('2023-07-14 07:02:36.932932', '1662', '14443'),
-  ('2023-07-14 07:02:36.935935', '1662', '14469'),
-  ('2023-07-14 07:02:36.936936', '1662', '14470'),
-  ('2023-07-14 07:02:36.936936', '1662', '14471'),
-  ('2023-07-14 07:02:36.936936', '1662', '14472'),
-  ('2023-07-14 07:02:36.936936', '1662', '14473'),
-  ('2023-07-14 07:02:36.936936', '1662', '14474'),
-  ('2023-07-14 07:02:36.936936', '1662', '14475'),
-  ('2023-07-14 07:02:36.936936', '1662', '14476'),
-  ('2023-07-14 07:02:36.937937', '1662', '14477'),
-  ('2023-07-14 07:02:36.937937', '1662', '14478'),
-  ('2023-07-14 07:02:36.937937', '1662', '14445')
+  ('2023-07-22 07:23:56.780780', '1666', '14497'),
+  ('2023-07-22 07:23:56.781781', '1666', '14498'),
+  ('2023-07-22 07:23:56.781781', '1666', '14499'),
+  ('2023-07-22 07:23:56.781781', '1666', '14500'),
+  ('2023-07-22 07:23:56.782782', '1666', '14501'),
+  ('2023-07-22 07:23:56.782782', '1666', '14502'),
+  ('2023-07-22 07:23:56.782782', '1666', '14479'),
+  ('2023-07-22 07:23:56.782782', '1666', '14503'),
+  ('2023-07-22 07:23:56.782782', '1666', '14504'),
+  ('2023-07-22 07:23:56.782782', '1666', '14505'),
+  ('2023-07-22 07:23:56.782782', '1666', '14506'),
+  ('2023-07-22 07:23:56.782782', '1666', '14507'),
+  ('2023-07-22 07:23:56.782782', '1666', '14508'),
+  ('2023-07-22 07:23:56.782782', '1666', '14509'),
+  ('2023-07-22 07:23:56.783783', '1666', '14510'),
+  ('2023-07-22 07:23:56.783783', '1666', '14511'),
+  ('2023-07-22 07:23:56.783783', '1666', '14512'),
+  ('2023-07-22 07:23:56.783783', '1666', '14513'),
+  ('2023-07-22 07:23:56.783783', '1666', '14514'),
+  ('2023-07-22 07:23:56.783783', '1666', '14515'),
+  ('2023-07-22 07:23:56.783783', '1666', '14516'),
+  ('2023-07-22 07:23:56.783783', '1666', '14517'),
+  ('2023-07-22 07:23:56.783783', '1666', '14518'),
+  ('2023-07-22 07:23:56.784784', '1666', '14519'),
+  ('2023-07-22 07:23:56.784784', '1666', '14520')
   ;
 
   // Update to source_song table

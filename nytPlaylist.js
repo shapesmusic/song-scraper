@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Taylor Swift’s Revised ‘Revenge,’ and 10 More New Songs', '2023-07-07 09:44:16.000000', 'https://www.nytimes.com/2023/07/07/arts/music/playlist-taylor-swift-speak-now-better-than-revenge.html');
+    ('New York Times', 'The Playlist', 'Billie Eilish’s Forlorn ‘Barbie’ Ballad, and 10 More New Songs', '2023-07-14 10:08:33.000000', 'https://www.nytimes.com/2023/07/14/arts/music/playlist-billie-eilish-troye-sivan.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1663; // SELECT last_insert_rowid();
+  source_id = 1667; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -99,106 +99,108 @@
 
   songsData =
   [
-    {
-        "title": "Better Than Revenge (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:10:06.309309",
-        "source_id": 1663,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Everybody’s Got to Learn",
-        "artist_name": "First Aid Kit",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:10:06.310310",
-        "source_id": 1663,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "All a Share Together Now",
-        "artist_name": "Prince",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:10:06.310310",
-        "source_id": 1663,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Cuando Baje el Sol",
-        "artist_name": "Rauw Alejandro",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:10:06.310310",
-        "source_id": 1663,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gravity",
-        "artist_name": "Kaisa’s Machine",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:10:06.310310",
-        "source_id": 1663,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Why Am I Alive Now?",
-        "artist_name": "Anohni and the Johnsons",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:10:06.310310",
-        "source_id": 1663,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Glow",
-        "artist_name": "Little Dragon ft. Damon Albarn",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:10:06.310310",
-        "source_id": 1663,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sasha, Sissi y el Círculo de Baba",
-        "artist_name": "Fito Páez ft. Mon Laferte",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:10:06.310310",
-        "source_id": 1663,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Silent Assassin",
-        "artist_name": "Tkay Maidza & Flume",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:10:06.310310",
-        "source_id": 1663,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lwonesome Tonight",
-        "artist_name": "PJ Harvey",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:10:06.310310",
-        "source_id": 1663,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "God Be With You",
-        "artist_name": "Brian Blade & the Fellowship Band",
-        "video_id": null,
-        "capture_date": "2023-07-14 07:10:06.310310",
-        "source_id": 1663,
-        "song_id": null,
-        "duplicate": false
-    }
-]
+      {
+          "title": "What Was I Made For?",
+          "artist_name": "Billie Eilish",
+          "video_id": null,
+          "capture_date": "2023-07-22 07:30:55.518518",
+          "source_id": 1667,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Memories",
+          "artist_name": "Margaret Glaspy",
+          "video_id": null,
+          "capture_date": "2023-07-22 07:30:55.519519",
+          "source_id": 1667,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Tiny Garden",
+          "artist_name": "Jamila Woods ft. duendita",
+          "video_id": null,
+          "capture_date": "2023-07-22 07:30:55.519519",
+          "source_id": 1667,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Rush",
+          "artist_name": "Troye Sivan",
+          "video_id": null,
+          "capture_date": "2023-07-22 07:30:55.519519",
+          "source_id": 1667,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "The Hard Way",
+          "artist_name": "Sid Sriram",
+          "video_id": null,
+          "capture_date": "2023-07-22 07:30:55.519519",
+          "source_id": 1667,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "The Trench Coat Museum",
+          "artist_name": "Yard Act",
+          "video_id": null,
+          "capture_date": "2023-07-22 07:30:55.519519",
+          "source_id": 1667,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Oliveira Dos Cen Anos",
+          "artist_name": "C. Tangana",
+          "video_id": null,
+          "capture_date": "2023-07-22 07:30:55.519519",
+          "source_id": 1667,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Déjà Vu",
+          "artist_name": "Loraine James ft. RiTchie",
+          "video_id": null,
+          "capture_date": "2023-07-22 07:30:55.519519",
+          "source_id": 1667,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Intoxycated",
+          "artist_name": "Oxlade ft. Dave",
+          "video_id": null,
+          "capture_date": "2023-07-22 07:30:55.519519",
+          "source_id": 1667,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Fourth Perspective",
+          "artist_name": "Jlin",
+          "video_id": null,
+          "capture_date": "2023-07-22 07:30:55.519519",
+          "source_id": 1667,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "A Vivir en Desacuerdo",
+          "artist_name": "maJa",
+          "video_id": null,
+          "capture_date": "2023-07-22 07:30:55.519519",
+          "source_id": 1667,
+          "song_id": null,
+          "duplicate": false
+      }
+  ]
+
+
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
     title LIKE '%AP%'
@@ -237,17 +239,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Better Than Revenge (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Everybody’s Got to Learn', 'First Aid Kit', NULL),
-  ('All a Share Together Now', 'Prince', NULL),
-  ('Cuando Baje el Sol', 'Rauw Alejandro', NULL),
-  ('Gravity', 'Kaisa’s Machine', NULL),
-  ('Why Am I Alive Now?', 'Anohni and the Johnsons', NULL),
-  ('Glow', 'Little Dragon ft. Damon Albarn', NULL),
-  ('Sasha, Sissi y el Círculo de Baba', 'Fito Páez ft. Mon Laferte', NULL),
-  ('Silent Assassin', 'Tkay Maidza & Flume', NULL),
-  ('Lwonesome Tonight', 'PJ Harvey', NULL),
-  ('God Be With You', 'Brian Blade & the Fellowship Band', NULL)
+  ('What Was I Made For?', 'Billie Eilish', NULL),
+  ('Memories', 'Margaret Glaspy', NULL),
+  ('Tiny Garden', 'Jamila Woods ft. duendita', NULL),
+  ('Rush', 'Troye Sivan', NULL),
+  ('The Hard Way', 'Sid Sriram', NULL),
+  ('The Trench Coat Museum', 'Yard Act', NULL),
+  ('Oliveira Dos Cen Anos', 'C. Tangana', NULL),
+  ('Déjà Vu', 'Loraine James ft. RiTchie', NULL),
+  ('Intoxycated', 'Oxlade ft. Dave', NULL),
+  ('Fourth Perspective', 'Jlin', NULL),
+  ('A Vivir en Desacuerdo', 'maJa', NULL)
   ;
 
    // Update to song table
@@ -258,7 +260,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14489; // SELECT last_insert_rowid();
+  song_id = 14531; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -298,17 +300,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-14 07:10:06.309309', '1663', '14479'),
-  ('2023-07-14 07:10:06.310310', '1663', '14480'),
-  ('2023-07-14 07:10:06.310310', '1663', '14481'),
-  ('2023-07-14 07:10:06.310310', '1663', '14482'),
-  ('2023-07-14 07:10:06.310310', '1663', '14483'),
-  ('2023-07-14 07:10:06.310310', '1663', '14484'),
-  ('2023-07-14 07:10:06.310310', '1663', '14485'),
-  ('2023-07-14 07:10:06.310310', '1663', '14486'),
-  ('2023-07-14 07:10:06.310310', '1663', '14487'),
-  ('2023-07-14 07:10:06.310310', '1663', '14488'),
-  ('2023-07-14 07:10:06.310310', '1663', '14489')
+  ('2023-07-22 07:30:55.518518', '1667', '14521'),
+  ('2023-07-22 07:30:55.519519', '1667', '14522'),
+  ('2023-07-22 07:30:55.519519', '1667', '14523'),
+  ('2023-07-22 07:30:55.519519', '1667', '14524'),
+  ('2023-07-22 07:30:55.519519', '1667', '14525'),
+  ('2023-07-22 07:30:55.519519', '1667', '14526'),
+  ('2023-07-22 07:30:55.519519', '1667', '14527'),
+  ('2023-07-22 07:30:55.519519', '1667', '14528'),
+  ('2023-07-22 07:30:55.519519', '1667', '14529'),
+  ('2023-07-22 07:30:55.519519', '1667', '14530'),
+  ('2023-07-22 07:30:55.519519', '1667', '14531')
   ;
 
   // Update to source_song table
