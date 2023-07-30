@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Billie Eilish’s Forlorn ‘Barbie’ Ballad, and 10 More New Songs', '2023-07-14 10:08:33.000000', 'https://www.nytimes.com/2023/07/14/arts/music/playlist-billie-eilish-troye-sivan.html');
+    ('New York Times', 'The Playlist', 'A Thrilling, Rediscovered Nina Simone Set, and 9 More New Songs', '2023-07-22 07:39:08.000000', 'https://www.nytimes.com/2023/07/22/arts/music/playlist-nina-simone-travis-scott-bad-bunny-weeknd.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1667; // SELECT last_insert_rowid();
+  source_id = 1671; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -99,106 +99,97 @@
 
   songsData =
   [
-      {
-          "title": "What Was I Made For?",
-          "artist_name": "Billie Eilish",
-          "video_id": null,
-          "capture_date": "2023-07-22 07:30:55.518518",
-          "source_id": 1667,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Memories",
-          "artist_name": "Margaret Glaspy",
-          "video_id": null,
-          "capture_date": "2023-07-22 07:30:55.519519",
-          "source_id": 1667,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Tiny Garden",
-          "artist_name": "Jamila Woods ft. duendita",
-          "video_id": null,
-          "capture_date": "2023-07-22 07:30:55.519519",
-          "source_id": 1667,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Rush",
-          "artist_name": "Troye Sivan",
-          "video_id": null,
-          "capture_date": "2023-07-22 07:30:55.519519",
-          "source_id": 1667,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "The Hard Way",
-          "artist_name": "Sid Sriram",
-          "video_id": null,
-          "capture_date": "2023-07-22 07:30:55.519519",
-          "source_id": 1667,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "The Trench Coat Museum",
-          "artist_name": "Yard Act",
-          "video_id": null,
-          "capture_date": "2023-07-22 07:30:55.519519",
-          "source_id": 1667,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Oliveira Dos Cen Anos",
-          "artist_name": "C. Tangana",
-          "video_id": null,
-          "capture_date": "2023-07-22 07:30:55.519519",
-          "source_id": 1667,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Déjà Vu",
-          "artist_name": "Loraine James ft. RiTchie",
-          "video_id": null,
-          "capture_date": "2023-07-22 07:30:55.519519",
-          "source_id": 1667,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Intoxycated",
-          "artist_name": "Oxlade ft. Dave",
-          "video_id": null,
-          "capture_date": "2023-07-22 07:30:55.519519",
-          "source_id": 1667,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Fourth Perspective",
-          "artist_name": "Jlin",
-          "video_id": null,
-          "capture_date": "2023-07-22 07:30:55.519519",
-          "source_id": 1667,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "A Vivir en Desacuerdo",
-          "artist_name": "maJa",
-          "video_id": null,
-          "capture_date": "2023-07-22 07:30:55.519519",
-          "source_id": 1667,
-          "song_id": null,
-          "duplicate": false
-      }
-  ]
+    {
+        "title": "Mississippi Goddam",
+        "artist_name": "Nina Simone",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:27:06.410410",
+        "source_id": 1671,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Be My Summer",
+        "artist_name": "Snoh Aalegra",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:27:06.411411",
+        "source_id": 1671,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Silence",
+        "artist_name": "Ama Lou",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:27:06.411411",
+        "source_id": 1671,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Ballad",
+        "artist_name": "Blur",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:27:06.411411",
+        "source_id": 1671,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Way Things Go",
+        "artist_name": "beabadoobee",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:27:06.411411",
+        "source_id": 1671,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Epoch",
+        "artist_name": "DeYarmond Edison",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:27:06.411411",
+        "source_id": 1671,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Clean Slate",
+        "artist_name": "The Mountain Goats",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:27:06.411411",
+        "source_id": 1671,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ojitos Rojos",
+        "artist_name": "Grupo Frontera and Ke Personajes",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:27:06.411411",
+        "source_id": 1671,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "K-Pop",
+        "artist_name": "Travis Scott, Bad Bunny, the Weeknd",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:27:06.411411",
+        "source_id": 1671,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ten Billion People",
+        "artist_name": "Explosions in the Sky",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:27:06.411411",
+        "source_id": 1671,
+        "song_id": null,
+        "duplicate": false
+    }
+]
 
 
   // Check each song for duplicates in the database
@@ -239,17 +230,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('What Was I Made For?', 'Billie Eilish', NULL),
-  ('Memories', 'Margaret Glaspy', NULL),
-  ('Tiny Garden', 'Jamila Woods ft. duendita', NULL),
-  ('Rush', 'Troye Sivan', NULL),
-  ('The Hard Way', 'Sid Sriram', NULL),
-  ('The Trench Coat Museum', 'Yard Act', NULL),
-  ('Oliveira Dos Cen Anos', 'C. Tangana', NULL),
-  ('Déjà Vu', 'Loraine James ft. RiTchie', NULL),
-  ('Intoxycated', 'Oxlade ft. Dave', NULL),
-  ('Fourth Perspective', 'Jlin', NULL),
-  ('A Vivir en Desacuerdo', 'maJa', NULL)
+  ('Mississippi Goddam', 'Nina Simone', NULL),
+  ('Be My Summer', 'Snoh Aalegra', NULL),
+  ('Silence', 'Ama Lou', NULL),
+  ('The Ballad', 'Blur', NULL),
+  ('The Way Things Go', 'beabadoobee', NULL),
+  ('Epoch', 'DeYarmond Edison', NULL),
+  ('Clean Slate', 'The Mountain Goats', NULL),
+  ('Ojitos Rojos', 'Grupo Frontera and Ke Personajes', NULL),
+  ('K-Pop', 'Travis Scott, Bad Bunny, the Weeknd', NULL),
+  ('Ten Billion People', 'Explosions in the Sky', NULL)
   ;
 
    // Update to song table
@@ -260,7 +250,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14531; // SELECT last_insert_rowid();
+  song_id = 14552; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -300,17 +290,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-22 07:30:55.518518', '1667', '14521'),
-  ('2023-07-22 07:30:55.519519', '1667', '14522'),
-  ('2023-07-22 07:30:55.519519', '1667', '14523'),
-  ('2023-07-22 07:30:55.519519', '1667', '14524'),
-  ('2023-07-22 07:30:55.519519', '1667', '14525'),
-  ('2023-07-22 07:30:55.519519', '1667', '14526'),
-  ('2023-07-22 07:30:55.519519', '1667', '14527'),
-  ('2023-07-22 07:30:55.519519', '1667', '14528'),
-  ('2023-07-22 07:30:55.519519', '1667', '14529'),
-  ('2023-07-22 07:30:55.519519', '1667', '14530'),
-  ('2023-07-22 07:30:55.519519', '1667', '14531')
+  ('2023-07-29 10:27:06.410410', '1671', '14543'),
+  ('2023-07-29 10:27:06.411411', '1671', '14544'),
+  ('2023-07-29 10:27:06.411411', '1671', '14545'),
+  ('2023-07-29 10:27:06.411411', '1671', '14546'),
+  ('2023-07-29 10:27:06.411411', '1671', '14547'),
+  ('2023-07-29 10:27:06.411411', '1671', '14548'),
+  ('2023-07-29 10:27:06.411411', '1671', '14549'),
+  ('2023-07-29 10:27:06.411411', '1671', '14550'),
+  ('2023-07-29 10:27:06.411411', '1671', '14551'),
+  ('2023-07-29 10:27:06.411411', '1671', '14552')
   ;
 
   // Update to source_song table

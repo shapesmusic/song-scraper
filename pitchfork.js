@@ -76,14 +76,13 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2023-06-30 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-06-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-06-27 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-06-21 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-06-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-06-16 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-06-15 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-06-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+  ('Pitchfork', 'Track Reviews', NULL, '2023-07-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-07-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-07-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-07-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-07-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-07-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
+  ('Pitchfork', 'Track Reviews', NULL, '2023-07-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
   ;
 
   // Update to source table
@@ -134,94 +133,76 @@
   songsData =
   [
     {
-        "title": "Vampire",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Psychedelic Switch",
+        "artist_name": "Carly Rae Jepsen",
         "video_id": null,
-        "capture_date": "2023-07-01 09:15:20.954954",
-        "source_id": 1650,
+        "capture_date": "2023-07-29 10:38:40.259259",
+        "source_id": 1673,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lady Gaga",
-        "artist_name": "Peso Pluma / Gabito Ballesteros / Junior H",
+        "title": "Bug Like an Angel",
+        "artist_name": "Mitski",
         "video_id": null,
-        "capture_date": "2023-07-01 09:15:20.956956",
-        "source_id": 1651,
+        "capture_date": "2023-07-29 10:38:40.261261",
+        "source_id": 1674,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Spirit 2.0",
-        "artist_name": "Sampha",
+        "title": "Affirmations",
+        "artist_name": "Hannah Diamond",
         "video_id": null,
-        "capture_date": "2023-07-01 09:15:20.956956",
-        "source_id": 1651,
+        "capture_date": "2023-07-29 10:38:40.261261",
+        "source_id": 1675,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rosa Rugosa",
-        "artist_name": "Olof Dreijer",
+        "title": "Vampire Empire",
+        "artist_name": "Big Thief",
         "video_id": null,
-        "capture_date": "2023-07-01 09:15:20.956956",
-        "source_id": 1652,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Blackbox Life Recorder 21f",
-        "artist_name": "Aphex Twin",
-        "video_id": null,
-        "capture_date": "2023-07-01 09:15:20.956956",
-        "source_id": 1653,
-        "song_id": 14408,
+        "capture_date": "2023-07-29 10:38:40.261261",
+        "source_id": 1676,
+        "song_id": 14556,
         "duplicate": true
     },
     {
-        "title": "Kisses",
-        "artist_name": "Slowdive",
+        "title": "Rush",
+        "artist_name": "Troye Sivan",
         "video_id": null,
-        "capture_date": "2023-07-01 09:15:20.956956",
-        "source_id": 1654,
-        "song_id": 14415,
+        "capture_date": "2023-07-29 10:38:40.261261",
+        "source_id": 1677,
+        "song_id": 14524,
         "duplicate": true
     },
     {
-        "title": "The Bell (Acoustic)",
-        "artist_name": "Anna Tivel",
+        "title": "Wespennest",
+        "artist_name": "DJ Koze",
         "video_id": null,
-        "capture_date": "2023-07-01 09:15:20.956956",
-        "source_id": 1654,
+        "capture_date": "2023-07-29 10:38:40.261261",
+        "source_id": 1677,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Attention",
-        "artist_name": "Doja Cat",
+        "title": "Belleville",
+        "artist_name": "Laurel Halo",
         "video_id": null,
-        "capture_date": "2023-07-01 09:15:20.957957",
-        "source_id": 1655,
-        "song_id": 14374,
+        "capture_date": "2023-07-29 10:38:40.262262",
+        "source_id": 1678,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Tiny Garden",
+        "artist_name": "Jamila Woods",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:38:40.262262",
+        "source_id": 1679,
+        "song_id": 14523,
         "duplicate": true
-    },
-    {
-        "title": "If I Don’t See You in the Future, I’ll See You in the Pasture",
-        "artist_name": "Cole Pulice",
-        "video_id": null,
-        "capture_date": "2023-07-01 09:15:20.957957",
-        "source_id": 1656,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Shitty Town",
-        "artist_name": "Sarah Mary Chadwick",
-        "video_id": null,
-        "capture_date": "2023-07-01 09:15:20.957957",
-        "source_id": 1657,
-        "song_id": null,
-        "duplicate": false
     }
 ]
 
@@ -274,13 +255,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Vampire', 'Olivia Rodrigo', NULL),
-  ('Lady Gaga', 'Peso Pluma / Gabito Ballesteros / Junior H', NULL),
-  ('Spirit 2.0', 'Sampha', NULL),
-  ('Rosa Rugosa', 'Olof Dreijer', NULL),
-  ('The Bell (Acoustic)', 'Anna Tivel', NULL),
-  ('If I Don’t See You in the Future, I’ll See You in the Pasture', 'Cole Pulice', NULL),
-  ('Shitty Town', 'Sarah Mary Chadwick', NULL)
+  ('Psychedelic Switch', 'Carly Rae Jepsen', NULL),
+  ('Bug Like an Angel', 'Mitski', NULL),
+  ('Affirmations', 'Hannah Diamond', NULL),
+  ('Wespennest', 'DJ Koze', NULL),
+  ('Belleville', 'Laurel Halo', NULL)
   ;
 
    // Update to song table
@@ -291,7 +270,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 14422; // SELECT last_insert_rowid();
+  song_id = 14561; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -331,16 +310,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-01 09:15:20.954954', '1650', '14416'),
-  ('2023-07-01 09:15:20.956956', '1651', '14417'),
-  ('2023-07-01 09:15:20.956956', '1651', '14418'),
-  ('2023-07-01 09:15:20.956956', '1652', '14419'),
-  ('2023-07-01 09:15:20.956956', '1653', '14408'),
-  ('2023-07-01 09:15:20.956956', '1654', '14415'),
-  ('2023-07-01 09:15:20.956956', '1654', '14420'),
-  ('2023-07-01 09:15:20.957957', '1655', '14374'),
-  ('2023-07-01 09:15:20.957957', '1656', '14421'),
-  ('2023-07-01 09:15:20.957957', '1657', '14422')
+  ('2023-07-29 10:38:40.259259', '1673', '14557'),
+  ('2023-07-29 10:38:40.261261', '1674', '14558'),
+  ('2023-07-29 10:38:40.261261', '1675', '14559'),
+  ('2023-07-29 10:38:40.261261', '1676', '14556'),
+  ('2023-07-29 10:38:40.261261', '1677', '14524'),
+  ('2023-07-29 10:38:40.261261', '1677', '14560'),
+  ('2023-07-29 10:38:40.262262', '1678', '14561'),
+  ('2023-07-29 10:38:40.262262', '1679', '14523')
   ;
 
   // Update to source_song table

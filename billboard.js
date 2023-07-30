@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 22, 2023', '2023-07-22 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-07-22');
+    ('Billboard', 'The Hot 100', 'Week of July 29, 2023', '2023-07-29 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-07-29');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1666; // SELECT last_insert_rowid();
+  source_id = 1670; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,227 +105,101 @@
   songsData =
   [
     {
-        "title": "I Can See You (Taylor’s Version) (From The Vault)",
-        "artist_name": "Taylor Swift",
+        "title": "Try That In A Small Town",
+        "artist_name": "Jason Aldean",
         "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.780780",
-        "source_id": 1666,
+        "capture_date": "2023-07-29 10:14:35.350350",
+        "source_id": 1670,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mine (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
+        "title": "What Was I Made For?",
+        "artist_name": "Billie Eilish",
         "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.781781",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Back To December (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.781781",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Enchanted (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.781781",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sparks Fly (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.782782",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Dear John (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.782782",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Better Than Revenge (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.782782",
-        "source_id": 1666,
-        "song_id": 14479,
+        "capture_date": "2023-07-29 10:14:35.352352",
+        "source_id": 1670,
+        "song_id": 14521,
         "duplicate": true
     },
     {
-        "title": "Castles Crumbling (Taylor’s Version) (From The Vault)",
-        "artist_name": "Taylor Swift ft. Hayley Williams",
+        "title": "Overdrive",
+        "artist_name": "Post Malone",
         "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.782782",
-        "source_id": 1666,
+        "capture_date": "2023-07-29 10:14:35.352352",
+        "source_id": 1670,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Speak Now (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
+        "title": "S91",
+        "artist_name": "Karol G",
         "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.782782",
-        "source_id": 1666,
+        "capture_date": "2023-07-29 10:14:35.353353",
+        "source_id": 1670,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "When Emma Falls In Love (Taylor’s Version) (From The Vault)",
-        "artist_name": "Taylor Swift",
+        "title": "Rush",
+        "artist_name": "Troye Sivan",
         "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.782782",
-        "source_id": 1666,
+        "capture_date": "2023-07-29 10:14:35.353353",
+        "source_id": 1670,
+        "song_id": 14524,
+        "duplicate": true
+    },
+    {
+        "title": "Save Me The Trouble",
+        "artist_name": "Dan + Shay",
+        "video_id": null,
+        "capture_date": "2023-07-29 10:14:35.353353",
+        "source_id": 1670,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Electric Touch (Taylor’s Version) (From The Vault)",
-        "artist_name": "Taylor Swift ft. Fall Out Boy",
+        "title": "Turn Yo Clic Up",
+        "artist_name": "Quavo & Future",
         "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.782782",
-        "source_id": 1666,
+        "capture_date": "2023-07-29 10:14:35.353353",
+        "source_id": 1670,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mean (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
+        "title": "Quema",
+        "artist_name": "Ryan Castro x Pe$o Pluma",
         "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.782782",
-        "source_id": 1666,
+        "capture_date": "2023-07-29 10:14:35.354354",
+        "source_id": 1670,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Foolish One (Taylor’s Version) (From The Vault)",
-        "artist_name": "Taylor Swift",
+        "title": "Angels Don't Always Have Wings",
+        "artist_name": "Thomas Rhett",
         "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.782782",
-        "source_id": 1666,
+        "capture_date": "2023-07-29 10:14:35.354354",
+        "source_id": 1670,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Story Of Us (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
+        "title": "Thang For You",
+        "artist_name": "Rylo Rodriguez ft. NoCap",
         "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.782782",
-        "source_id": 1666,
+        "capture_date": "2023-07-29 10:14:35.354354",
+        "source_id": 1670,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Timeless (Taylor’s Version) (From The Vault)",
-        "artist_name": "Taylor Swift",
+        "title": "Johnny Dang",
+        "artist_name": "That Mexican OT, Paul Wall & DRODi",
         "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.783783",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Haunted (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.783783",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Long Live (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.783783",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Last Kiss (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.783783",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Never Grow Up (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.783783",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Innocent (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.783783",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Super Shy",
-        "artist_name": "NewJeans",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.783783",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ours (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.783783",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Superman (Taylor’s Version)",
-        "artist_name": "Taylor Swift",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.783783",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Point Me 2",
-        "artist_name": "FendiDa Rappa With Cardi B",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.784784",
-        "source_id": 1666,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "LaLa",
-        "artist_name": "Myke Towers",
-        "video_id": null,
-        "capture_date": "2023-07-22 07:23:56.784784",
-        "source_id": 1666,
+        "capture_date": "2023-07-29 10:14:35.354354",
+        "source_id": 1670,
         "song_id": null,
         "duplicate": false
     }
@@ -369,30 +243,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('I Can See You (Taylor’s Version) (From The Vault)', 'Taylor Swift', NULL),
-  ('Mine (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Back To December (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Enchanted (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Sparks Fly (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Dear John (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Castles Crumbling (Taylor’s Version) (From The Vault)', 'Taylor Swift ft. Hayley Williams', NULL),
-  ('Speak Now (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('When Emma Falls In Love (Taylor’s Version) (From The Vault)', 'Taylor Swift', NULL),
-  ('Electric Touch (Taylor’s Version) (From The Vault)', 'Taylor Swift ft. Fall Out Boy', NULL),
-  ('Mean (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Foolish One (Taylor’s Version) (From The Vault)', 'Taylor Swift', NULL),
-  ('The Story Of Us (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Timeless (Taylor’s Version) (From The Vault)', 'Taylor Swift', NULL),
-  ('Haunted (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Long Live (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Last Kiss (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Never Grow Up (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Innocent (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Super Shy', 'NewJeans', NULL),
-  ('Ours (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Superman (Taylor’s Version)', 'Taylor Swift', NULL),
-  ('Point Me 2', 'FendiDa Rappa With Cardi B', NULL),
-  ('LaLa', 'Myke Towers', NULL)
+  ('Try That In A Small Town', 'Jason Aldean', NULL),
+  ('Overdrive', 'Post Malone', NULL),
+  ('S91', 'Karol G', NULL),
+  ('Save Me The Trouble', 'Dan + Shay', NULL),
+  ('Turn Yo Clic Up', 'Quavo & Future', NULL),
+  ('Quema', 'Ryan Castro x Pe$o Pluma', NULL),
+  ('Angels Don’t Always Have Wings', 'Thomas Rhett', NULL),
+  ('Thang For You', 'Rylo Rodriguez ft. NoCap', NULL),
+  ('Johnny Dang', 'That Mexican OT, Paul Wall & DRODi', NULL)
   ;
 
    // Update to song table
@@ -403,7 +262,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14520; // SELECT last_insert_rowid();
+  song_id = 14542; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -443,31 +302,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-22 07:23:56.780780', '1666', '14497'),
-  ('2023-07-22 07:23:56.781781', '1666', '14498'),
-  ('2023-07-22 07:23:56.781781', '1666', '14499'),
-  ('2023-07-22 07:23:56.781781', '1666', '14500'),
-  ('2023-07-22 07:23:56.782782', '1666', '14501'),
-  ('2023-07-22 07:23:56.782782', '1666', '14502'),
-  ('2023-07-22 07:23:56.782782', '1666', '14479'),
-  ('2023-07-22 07:23:56.782782', '1666', '14503'),
-  ('2023-07-22 07:23:56.782782', '1666', '14504'),
-  ('2023-07-22 07:23:56.782782', '1666', '14505'),
-  ('2023-07-22 07:23:56.782782', '1666', '14506'),
-  ('2023-07-22 07:23:56.782782', '1666', '14507'),
-  ('2023-07-22 07:23:56.782782', '1666', '14508'),
-  ('2023-07-22 07:23:56.782782', '1666', '14509'),
-  ('2023-07-22 07:23:56.783783', '1666', '14510'),
-  ('2023-07-22 07:23:56.783783', '1666', '14511'),
-  ('2023-07-22 07:23:56.783783', '1666', '14512'),
-  ('2023-07-22 07:23:56.783783', '1666', '14513'),
-  ('2023-07-22 07:23:56.783783', '1666', '14514'),
-  ('2023-07-22 07:23:56.783783', '1666', '14515'),
-  ('2023-07-22 07:23:56.783783', '1666', '14516'),
-  ('2023-07-22 07:23:56.783783', '1666', '14517'),
-  ('2023-07-22 07:23:56.783783', '1666', '14518'),
-  ('2023-07-22 07:23:56.784784', '1666', '14519'),
-  ('2023-07-22 07:23:56.784784', '1666', '14520')
+  ('2023-07-29 10:14:35.350350', '1670', '14534'),
+  ('2023-07-29 10:14:35.352352', '1670', '14521'),
+  ('2023-07-29 10:14:35.352352', '1670', '14535'),
+  ('2023-07-29 10:14:35.353353', '1670', '14536'),
+  ('2023-07-29 10:14:35.353353', '1670', '14524'),
+  ('2023-07-29 10:14:35.353353', '1670', '14537'),
+  ('2023-07-29 10:14:35.353353', '1670', '14538'),
+  ('2023-07-29 10:14:35.354354', '1670', '14539'),
+  ('2023-07-29 10:14:35.354354', '1670', '14540'),
+  ('2023-07-29 10:14:35.354354', '1670', '14541'),
+  ('2023-07-29 10:14:35.354354', '1670', '14542')
   ;
 
   // Update to source_song table
