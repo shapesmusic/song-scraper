@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of July 29, 2023', '2023-07-29 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-07-29');
+    ('Billboard', 'The Hot 100', 'Week of August 5, 2023', '2023-08-05 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-08-05');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1670; // SELECT last_insert_rowid();
+  source_id = 1680; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,101 +105,101 @@
   songsData =
   [
     {
-        "title": "Try That In A Small Town",
-        "artist_name": "Jason Aldean",
+        "title": "K-POP",
+        "artist_name": "Travis Scott, Bad Bunny & The Weeknd",
         "video_id": null,
-        "capture_date": "2023-07-29 10:14:35.350350",
-        "source_id": 1670,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "What Was I Made For?",
-        "artist_name": "Billie Eilish",
-        "video_id": null,
-        "capture_date": "2023-07-29 10:14:35.352352",
-        "source_id": 1670,
-        "song_id": 14521,
+        "capture_date": "2023-08-05 08:08:34.454454",
+        "source_id": 1680,
+        "song_id": 14551,
         "duplicate": true
     },
     {
-        "title": "Overdrive",
-        "artist_name": "Post Malone",
+        "title": "White Horse",
+        "artist_name": "Chris Stapleton",
         "video_id": null,
-        "capture_date": "2023-07-29 10:14:35.352352",
-        "source_id": 1670,
+        "capture_date": "2023-08-05 08:08:34.455455",
+        "source_id": 1680,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "S91",
-        "artist_name": "Karol G",
+        "title": "Deli",
+        "artist_name": "Ice Spice",
         "video_id": null,
-        "capture_date": "2023-07-29 10:14:35.353353",
-        "source_id": 1670,
+        "capture_date": "2023-08-05 08:08:34.455455",
+        "source_id": 1680,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Rush",
-        "artist_name": "Troye Sivan",
+        "title": "Heartbroken",
+        "artist_name": "Diplo, Jessie Murph & Polo G",
         "video_id": null,
-        "capture_date": "2023-07-29 10:14:35.353353",
-        "source_id": 1670,
-        "song_id": 14524,
+        "capture_date": "2023-08-05 08:08:34.456456",
+        "source_id": 1680,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Speed Drive",
+        "artist_name": "Charli XCX",
+        "video_id": null,
+        "capture_date": "2023-08-05 08:08:34.456456",
+        "source_id": 1680,
+        "song_id": 14496,
         "duplicate": true
     },
     {
-        "title": "Save Me The Trouble",
-        "artist_name": "Dan + Shay",
+        "title": "ETA",
+        "artist_name": "NewJeans",
         "video_id": null,
-        "capture_date": "2023-07-29 10:14:35.353353",
-        "source_id": 1670,
+        "capture_date": "2023-08-05 08:08:34.457457",
+        "source_id": 1680,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Turn Yo Clic Up",
-        "artist_name": "Quavo & Future",
+        "title": "I'm Just Ken",
+        "artist_name": "Ryan Gosling",
         "video_id": null,
-        "capture_date": "2023-07-29 10:14:35.353353",
-        "source_id": 1670,
+        "capture_date": "2023-08-05 08:08:34.457457",
+        "source_id": 1680,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Quema",
-        "artist_name": "Ryan Castro x Pe$o Pluma",
+        "title": "But I Got A Beer In My Hand",
+        "artist_name": "Luke Bryan",
         "video_id": null,
-        "capture_date": "2023-07-29 10:14:35.354354",
-        "source_id": 1670,
+        "capture_date": "2023-08-05 08:08:34.457457",
+        "source_id": 1680,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Angels Don't Always Have Wings",
-        "artist_name": "Thomas Rhett",
+        "title": "Cool With You",
+        "artist_name": "NewJeans",
         "video_id": null,
-        "capture_date": "2023-07-29 10:14:35.354354",
-        "source_id": 1670,
+        "capture_date": "2023-08-05 08:08:34.457457",
+        "source_id": 1680,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Thang For You",
-        "artist_name": "Rylo Rodriguez ft. NoCap",
+        "title": "Talibans II",
+        "artist_name": "Burna Boy & Byron Messia",
         "video_id": null,
-        "capture_date": "2023-07-29 10:14:35.354354",
-        "source_id": 1670,
+        "capture_date": "2023-08-05 08:08:34.457457",
+        "source_id": 1680,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Johnny Dang",
-        "artist_name": "That Mexican OT, Paul Wall & DRODi",
+        "title": "Equal Dirt",
+        "artist_name": "Rylo Rodriguez",
         "video_id": null,
-        "capture_date": "2023-07-29 10:14:35.354354",
-        "source_id": 1670,
+        "capture_date": "2023-08-05 08:08:34.457457",
+        "source_id": 1680,
         "song_id": null,
         "duplicate": false
     }
@@ -243,15 +243,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Try That In A Small Town', 'Jason Aldean', NULL),
-  ('Overdrive', 'Post Malone', NULL),
-  ('S91', 'Karol G', NULL),
-  ('Save Me The Trouble', 'Dan + Shay', NULL),
-  ('Turn Yo Clic Up', 'Quavo & Future', NULL),
-  ('Quema', 'Ryan Castro x Pe$o Pluma', NULL),
-  ('Angels Don’t Always Have Wings', 'Thomas Rhett', NULL),
-  ('Thang For You', 'Rylo Rodriguez ft. NoCap', NULL),
-  ('Johnny Dang', 'That Mexican OT, Paul Wall & DRODi', NULL)
+  ('White Horse', 'Chris Stapleton', NULL),
+  ('Deli', 'Ice Spice', NULL),
+  ('Heartbroken', 'Diplo, Jessie Murph & Polo G', NULL),
+  ('ETA', 'NewJeans', NULL),
+  ('I’m Just Ken', 'Ryan Gosling', NULL),
+  ('But I Got A Beer In My Hand', 'Luke Bryan', NULL),
+  ('Cool With You', 'NewJeans', NULL),
+  ('Talibans II', 'Burna Boy & Byron Messia', NULL),
+  ('Equal Dirt', 'Rylo Rodriguez', NULL)
   ;
 
    // Update to song table
@@ -262,7 +262,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14542; // SELECT last_insert_rowid();
+  song_id = 14570; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -302,17 +302,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-29 10:14:35.350350', '1670', '14534'),
-  ('2023-07-29 10:14:35.352352', '1670', '14521'),
-  ('2023-07-29 10:14:35.352352', '1670', '14535'),
-  ('2023-07-29 10:14:35.353353', '1670', '14536'),
-  ('2023-07-29 10:14:35.353353', '1670', '14524'),
-  ('2023-07-29 10:14:35.353353', '1670', '14537'),
-  ('2023-07-29 10:14:35.353353', '1670', '14538'),
-  ('2023-07-29 10:14:35.354354', '1670', '14539'),
-  ('2023-07-29 10:14:35.354354', '1670', '14540'),
-  ('2023-07-29 10:14:35.354354', '1670', '14541'),
-  ('2023-07-29 10:14:35.354354', '1670', '14542')
+  ('2023-08-05 08:08:34.454454', '1680', '14551'),
+  ('2023-08-05 08:08:34.455455', '1680', '14562'),
+  ('2023-08-05 08:08:34.455455', '1680', '14563'),
+  ('2023-08-05 08:08:34.456456', '1680', '14564'),
+  ('2023-08-05 08:08:34.456456', '1680', '14496'),
+  ('2023-08-05 08:08:34.457457', '1680', '14565'),
+  ('2023-08-05 08:08:34.457457', '1680', '14566'),
+  ('2023-08-05 08:08:34.457457', '1680', '14567'),
+  ('2023-08-05 08:08:34.457457', '1680', '14568'),
+  ('2023-08-05 08:08:34.457457', '1680', '14569'),
+  ('2023-08-05 08:08:34.457457', '1680', '14570')
   ;
 
   // Update to source_song table

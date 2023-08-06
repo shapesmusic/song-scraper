@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of July 10, 2023', -- Mondays (for the previous week, including the publication_date)
-      '2023-07-10 12:00:00.000000', -- Dont forget this!
+      'Week of August 1, 2023', -- Mondays (for the previous week, including the publication_date)
+      '2023-08-01 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1664; // SELECT last_insert_rowid();
+    source_id = 1681; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,38 +458,74 @@
     songsData =
     [
     {
-        "title": "Chain",
-        "artist_name": "Aziya",
+        "title": "Get Over U",
+        "artist_name": "Chris Farren",
         "video_id": null,
-        "capture_date": "2023-07-14 07:15:21.286286",
-        "source_id": 1664,
+        "capture_date": "2023-08-05 08:15:11.123000",
+        "source_id": 1681,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Watermelon Automobile",
-        "artist_name": "Valee and Fraud ft. Saba and MAVI",
+        "title": "Ride",
+        "artist_name": "Purp",
         "video_id": null,
-        "capture_date": "2023-07-14 07:15:21.286286",
-        "source_id": 1664,
+        "capture_date": "2023-08-05 08:15:11.123000",
+        "source_id": 1681,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Walk In The Club",
-        "artist_name": "Celebrity Bitcrush",
+        "title": "Fall Of The Leaves",
+        "artist_name": "Club Casualties",
         "video_id": null,
-        "capture_date": "2023-07-14 07:15:21.286286",
-        "source_id": 1664,
+        "capture_date": "2023-08-05 08:15:11.123000",
+        "source_id": 1681,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Driving",
-        "artist_name": "DJ Python and Ana Roxanne",
+        "title": "Mouth Flash (Kuchinokanabi)",
+        "artist_name": "Hakushi Hasegawa",
         "video_id": null,
-        "capture_date": "2023-07-14 07:15:21.286286",
-        "source_id": 1664,
+        "capture_date": "2023-08-05 08:15:11.123000",
+        "source_id": 1681,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lean Into Me",
+        "artist_name": "Max Winter",
+        "video_id": null,
+        "capture_date": "2023-08-05 08:15:11.123000",
+        "source_id": 1681,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Unknown Summer",
+        "artist_name": "Burial",
+        "video_id": null,
+        "capture_date": "2023-08-05 08:15:11.123000",
+        "source_id": 1681,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Always Gonna Be The Same",
+        "artist_name": "Mary Jane Dunphe",
+        "video_id": null,
+        "capture_date": "2023-08-05 08:15:11.123000",
+        "source_id": 1681,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "1,000,000 Experiments",
+        "artist_name": "Move",
+        "video_id": null,
+        "capture_date": "2023-08-05 08:15:11.123000",
+        "source_id": 1681,
         "song_id": null,
         "duplicate": false
     }
@@ -531,10 +567,14 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Chain', 'Aziya', NULL),
-    ('Watermelon Automobile', 'Valee and Fraud ft. Saba and MAVI', NULL),
-    ('Walk In The Club', 'Celebrity Bitcrush', NULL),
-    ('Driving', 'DJ Python and Ana Roxanne', NULL)
+    ('Get Over U', 'Chris Farren', NULL),
+    ('Ride', 'Purp', NULL),
+    ('Fall Of The Leaves', 'Club Casualties', NULL),
+    ('Mouth Flash (Kuchinokanabi)', 'Hakushi Hasegawa', NULL),
+    ('Lean Into Me', 'Max Winter', NULL),
+    ('Unknown Summer', 'Burial', NULL),
+    ('Always Gonna Be The Same', 'Mary Jane Dunphe', NULL),
+    ('1,000,000 Experiments', 'Move', NULL)
     ;
 
      // Update to song table
@@ -545,7 +585,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14493; // SELECT last_insert_rowid();
+  song_id = 14578; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -585,10 +625,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-14 07:15:21.286286', '1664', '14490'),
-  ('2023-07-14 07:15:21.286286', '1664', '14491'),
-  ('2023-07-14 07:15:21.286286', '1664', '14492'),
-  ('2023-07-14 07:15:21.286286', '1664', '14493')
+  ('2023-08-05 08:15:11.123000', '1681', '14571'),
+  ('2023-08-05 08:15:11.123000', '1681', '14572'),
+  ('2023-08-05 08:15:11.123000', '1681', '14573'),
+  ('2023-08-05 08:15:11.123000', '1681', '14574'),
+  ('2023-08-05 08:15:11.123000', '1681', '14575'),
+  ('2023-08-05 08:15:11.123000', '1681', '14576'),
+  ('2023-08-05 08:15:11.123000', '1681', '14577'),
+  ('2023-08-05 08:15:11.123000', '1681', '14578')
   ;
 
   // Update to source_song table
