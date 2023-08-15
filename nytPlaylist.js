@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'A Thrilling, Rediscovered Nina Simone Set, and 9 More New Songs', '2023-07-22 07:39:08.000000', 'https://www.nytimes.com/2023/07/22/arts/music/playlist-nina-simone-travis-scott-bad-bunny-weeknd.html');
+    ('New York Times', 'The Playlist', 'Mitski’s Beautifully Moody Meditation, and 11 More New Songs', '2023-08-07 07:52:26.000000', 'https://www.nytimes.com/2023/08/04/arts/music/playlist-mitski-post-malone-jorja-smith.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1671; // SELECT last_insert_rowid();
+  source_id = 1684; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,92 +100,110 @@
   songsData =
   [
     {
-        "title": "Mississippi Goddam",
-        "artist_name": "Nina Simone",
+        "title": "Bug Like an Angel",
+        "artist_name": "Mitski",
         "video_id": null,
-        "capture_date": "2023-07-29 10:27:06.410410",
-        "source_id": 1671,
+        "capture_date": "2023-08-14 06:02:24.288288",
+        "source_id": 1684,
+        "song_id": 14558,
+        "duplicate": true
+    },
+    {
+        "title": "This Isn’t Me",
+        "artist_name": "Towa Bird",
+        "video_id": null,
+        "capture_date": "2023-08-14 06:02:24.290290",
+        "source_id": 1684,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Be My Summer",
-        "artist_name": "Snoh Aalegra",
+        "title": "Go Go Go",
+        "artist_name": "Jorja Smith",
         "video_id": null,
-        "capture_date": "2023-07-29 10:27:06.411411",
-        "source_id": 1671,
+        "capture_date": "2023-08-14 06:02:24.290290",
+        "source_id": 1684,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Silence",
-        "artist_name": "Ama Lou",
+        "title": "Joy",
+        "artist_name": "Post Malone",
         "video_id": null,
-        "capture_date": "2023-07-29 10:27:06.411411",
-        "source_id": 1671,
+        "capture_date": "2023-08-14 06:02:24.290290",
+        "source_id": 1684,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Ballad",
-        "artist_name": "Blur",
+        "title": "Evicted",
+        "artist_name": "Wilco",
         "video_id": null,
-        "capture_date": "2023-07-29 10:27:06.411411",
-        "source_id": 1671,
+        "capture_date": "2023-08-14 06:02:24.290290",
+        "source_id": 1684,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Way Things Go",
-        "artist_name": "beabadoobee",
+        "title": "Angel",
+        "artist_name": "Halle",
         "video_id": null,
-        "capture_date": "2023-07-29 10:27:06.411411",
-        "source_id": 1671,
+        "capture_date": "2023-08-14 06:02:24.290290",
+        "source_id": 1684,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Epoch",
-        "artist_name": "DeYarmond Edison",
+        "title": "Singing Bones",
+        "artist_name": "Nite Bjuti",
         "video_id": null,
-        "capture_date": "2023-07-29 10:27:06.411411",
-        "source_id": 1671,
+        "capture_date": "2023-08-14 06:02:24.290290",
+        "source_id": 1684,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Clean Slate",
-        "artist_name": "The Mountain Goats",
+        "title": "Yes!",
+        "artist_name": "Damon Locks & Rob Mazurek",
         "video_id": null,
-        "capture_date": "2023-07-29 10:27:06.411411",
-        "source_id": 1671,
+        "capture_date": "2023-08-14 06:02:24.290290",
+        "source_id": 1684,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ojitos Rojos",
-        "artist_name": "Grupo Frontera and Ke Personajes",
+        "title": "Te Lo Agradezco",
+        "artist_name": "Kany García and Carin Leon",
         "video_id": null,
-        "capture_date": "2023-07-29 10:27:06.411411",
-        "source_id": 1671,
+        "capture_date": "2023-08-14 06:02:24.290290",
+        "source_id": 1684,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "K-Pop",
-        "artist_name": "Travis Scott, Bad Bunny, the Weeknd",
+        "title": "Good Good",
+        "artist_name": "Usher, Summer Walker and 21 Savage",
         "video_id": null,
-        "capture_date": "2023-07-29 10:27:06.411411",
-        "source_id": 1671,
+        "capture_date": "2023-08-14 06:02:24.290290",
+        "source_id": 1684,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ten Billion People",
-        "artist_name": "Explosions in the Sky",
+        "title": "Don’t Take Kindly",
+        "artist_name": "Jonathan Suazo",
         "video_id": null,
-        "capture_date": "2023-07-29 10:27:06.411411",
-        "source_id": 1671,
+        "capture_date": "2023-08-14 06:02:24.290290",
+        "source_id": 1684,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Les Funambules",
+        "artist_name": "Knoel Scott ft. Marshall Allen",
+        "video_id": null,
+        "capture_date": "2023-08-14 06:02:24.291291",
+        "source_id": 1684,
         "song_id": null,
         "duplicate": false
     }
@@ -230,16 +248,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Mississippi Goddam', 'Nina Simone', NULL),
-  ('Be My Summer', 'Snoh Aalegra', NULL),
-  ('Silence', 'Ama Lou', NULL),
-  ('The Ballad', 'Blur', NULL),
-  ('The Way Things Go', 'beabadoobee', NULL),
-  ('Epoch', 'DeYarmond Edison', NULL),
-  ('Clean Slate', 'The Mountain Goats', NULL),
-  ('Ojitos Rojos', 'Grupo Frontera and Ke Personajes', NULL),
-  ('K-Pop', 'Travis Scott, Bad Bunny, the Weeknd', NULL),
-  ('Ten Billion People', 'Explosions in the Sky', NULL)
+  ('This Isn’t Me', 'Towa Bird', NULL),
+  ('Go Go Go', 'Jorja Smith', NULL),
+  ('Joy', 'Post Malone', NULL),
+  ('Evicted', 'Wilco', NULL),
+  ('Angel', 'Halle', NULL),
+  ('Singing Bones', 'Nite Bjuti', NULL),
+  ('Yes!', 'Damon Locks & Rob Mazurek', NULL),
+  ('Te Lo Agradezco', 'Kany García and Carin Leon', NULL),
+  ('Good Good', 'Usher, Summer Walker and 21 Savage', NULL),
+  ('Don’t Take Kindly', 'Jonathan Suazo', NULL),
+  ('Les Funambules', 'Knoel Scott ft. Marshall Allen', NULL)
   ;
 
    // Update to song table
@@ -250,7 +269,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14552; // SELECT last_insert_rowid();
+  song_id = 14620; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -290,16 +309,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-29 10:27:06.410410', '1671', '14543'),
-  ('2023-07-29 10:27:06.411411', '1671', '14544'),
-  ('2023-07-29 10:27:06.411411', '1671', '14545'),
-  ('2023-07-29 10:27:06.411411', '1671', '14546'),
-  ('2023-07-29 10:27:06.411411', '1671', '14547'),
-  ('2023-07-29 10:27:06.411411', '1671', '14548'),
-  ('2023-07-29 10:27:06.411411', '1671', '14549'),
-  ('2023-07-29 10:27:06.411411', '1671', '14550'),
-  ('2023-07-29 10:27:06.411411', '1671', '14551'),
-  ('2023-07-29 10:27:06.411411', '1671', '14552')
+  ('2023-08-14 06:02:24.288288', '1684', '14558'),
+  ('2023-08-14 06:02:24.290290', '1684', '14610'),
+  ('2023-08-14 06:02:24.290290', '1684', '14611'),
+  ('2023-08-14 06:02:24.290290', '1684', '14612'),
+  ('2023-08-14 06:02:24.290290', '1684', '14613'),
+  ('2023-08-14 06:02:24.290290', '1684', '14614'),
+  ('2023-08-14 06:02:24.290290', '1684', '14615'),
+  ('2023-08-14 06:02:24.290290', '1684', '14616'),
+  ('2023-08-14 06:02:24.290290', '1684', '14617'),
+  ('2023-08-14 06:02:24.290290', '1684', '14618'),
+  ('2023-08-14 06:02:24.290290', '1684', '14619'),
+  ('2023-08-14 06:02:24.291291', '1684', '14620')
   ;
 
   // Update to source_song table
