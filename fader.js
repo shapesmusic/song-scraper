@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of August 1, 2023', -- Mondays (for the previous week, including the publication_date)
-      '2023-08-01 12:00:00.000000', -- Dont forget this!
+      'Week of August 14, 2023', -- Mondays (for the previous week, including the publication_date)
+      '2023-08-14 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1681; // SELECT last_insert_rowid();
+    source_id = 1688; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,74 +458,47 @@
     songsData =
     [
     {
-        "title": "Get Over U",
-        "artist_name": "Chris Farren",
+        "title": "Slauson Malone I",
+        "artist_name": "Voyager",
         "video_id": null,
-        "capture_date": "2023-08-05 08:15:11.123000",
-        "source_id": 1681,
+        "capture_date": "2023-08-15 08:22:16.712000",
+        "source_id": 1688,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Ride",
-        "artist_name": "Purp",
+        "title": "Noname",
+        "artist_name": "namesake",
         "video_id": null,
-        "capture_date": "2023-08-05 08:15:11.123000",
-        "source_id": 1681,
+        "capture_date": "2023-08-15 08:22:16.712000",
+        "source_id": 1688,
+        "song_id": 14627,
+        "duplicate": true
+    },
+    {
+        "title": "Shake the Room",
+        "artist_name": "UNIIQU3 and Dos Flakos",
+        "video_id": null,
+        "capture_date": "2023-08-15 08:22:16.712000",
+        "source_id": 1688,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fall Of The Leaves",
-        "artist_name": "Club Casualties",
+        "title": "Montgomery Brawl",
+        "artist_name": "Gmac Cash",
         "video_id": null,
-        "capture_date": "2023-08-05 08:15:11.123000",
-        "source_id": 1681,
+        "capture_date": "2023-08-15 08:22:16.712000",
+        "source_id": 1688,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mouth Flash (Kuchinokanabi)",
-        "artist_name": "Hakushi Hasegawa",
+        "title": "And Then He Wrapped His Wings Around Me",
+        "artist_name": "Mary Lattimore",
         "video_id": null,
-        "capture_date": "2023-08-05 08:15:11.123000",
-        "source_id": 1681,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lean Into Me",
-        "artist_name": "Max Winter",
-        "video_id": null,
-        "capture_date": "2023-08-05 08:15:11.123000",
-        "source_id": 1681,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Unknown Summer",
-        "artist_name": "Burial",
-        "video_id": null,
-        "capture_date": "2023-08-05 08:15:11.123000",
-        "source_id": 1681,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Always Gonna Be The Same",
-        "artist_name": "Mary Jane Dunphe",
-        "video_id": null,
-        "capture_date": "2023-08-05 08:15:11.123000",
-        "source_id": 1681,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "1,000,000 Experiments",
-        "artist_name": "Move",
-        "video_id": null,
-        "capture_date": "2023-08-05 08:15:11.123000",
-        "source_id": 1681,
+        "capture_date": "2023-08-15 08:22:16.712000",
+        "source_id": 1688,
         "song_id": null,
         "duplicate": false
     }
@@ -567,14 +540,10 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Get Over U', 'Chris Farren', NULL),
-    ('Ride', 'Purp', NULL),
-    ('Fall Of The Leaves', 'Club Casualties', NULL),
-    ('Mouth Flash (Kuchinokanabi)', 'Hakushi Hasegawa', NULL),
-    ('Lean Into Me', 'Max Winter', NULL),
-    ('Unknown Summer', 'Burial', NULL),
-    ('Always Gonna Be The Same', 'Mary Jane Dunphe', NULL),
-    ('1,000,000 Experiments', 'Move', NULL)
+    ('Slauson Malone I', 'Voyager', NULL),
+    ('Shake the Room', 'UNIIQU3 and Dos Flakos', NULL),
+    ('Montgomery Brawl', 'Gmac Cash', NULL),
+    ('And Then He Wrapped His Wings Around Me', 'Mary Lattimore', NULL)
     ;
 
      // Update to song table
@@ -585,7 +554,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14578; // SELECT last_insert_rowid();
+  song_id = 14638; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -625,14 +594,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-08-05 08:15:11.123000', '1681', '14571'),
-  ('2023-08-05 08:15:11.123000', '1681', '14572'),
-  ('2023-08-05 08:15:11.123000', '1681', '14573'),
-  ('2023-08-05 08:15:11.123000', '1681', '14574'),
-  ('2023-08-05 08:15:11.123000', '1681', '14575'),
-  ('2023-08-05 08:15:11.123000', '1681', '14576'),
-  ('2023-08-05 08:15:11.123000', '1681', '14577'),
-  ('2023-08-05 08:15:11.123000', '1681', '14578')
+  ('2023-08-15 08:22:16.712000', '1688', '14635'),
+  ('2023-08-15 08:22:16.712000', '1688', '14627'),
+  ('2023-08-15 08:22:16.712000', '1688', '14636'),
+  ('2023-08-15 08:22:16.712000', '1688', '14637'),
+  ('2023-08-15 08:22:16.712000', '1688', '14638')
   ;
 
   // Update to source_song table

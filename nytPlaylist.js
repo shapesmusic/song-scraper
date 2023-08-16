@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Mitski’s Beautifully Moody Meditation, and 11 More New Songs', '2023-08-07 07:52:26.000000', 'https://www.nytimes.com/2023/08/04/arts/music/playlist-mitski-post-malone-jorja-smith.html');
+    ('New York Times', 'The Playlist', 'Olivia Rodrigo’s Sassy Pop-Rock Banger and 8 More New Songs', '2023-08-11 11:14:08.000000', 'https://www.nytimes.com/2023/08/11/arts/music/playlist-olivia-rodrigo-bad-idea-right-noname.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1684; // SELECT last_insert_rowid();
+  source_id = 1687; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,110 +100,83 @@
   songsData =
   [
     {
-        "title": "Bug Like an Angel",
-        "artist_name": "Mitski",
+        "title": "Bad Idea Right?",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.288288",
-        "source_id": 1684,
-        "song_id": 14558,
-        "duplicate": true
-    },
-    {
-        "title": "This Isn’t Me",
-        "artist_name": "Towa Bird",
-        "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.290290",
-        "source_id": 1684,
+        "capture_date": "2023-08-15 08:18:31.888888",
+        "source_id": 1687,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Go Go Go",
-        "artist_name": "Jorja Smith",
+        "title": "Namesake",
+        "artist_name": "Noname",
         "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.290290",
-        "source_id": 1684,
+        "capture_date": "2023-08-15 08:18:31.889889",
+        "source_id": 1687,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Joy",
-        "artist_name": "Post Malone",
+        "title": "Adore U",
+        "artist_name": "Fred again.. ft. Obongjayar",
         "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.290290",
-        "source_id": 1684,
+        "capture_date": "2023-08-15 08:18:31.889889",
+        "source_id": 1687,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Evicted",
-        "artist_name": "Wilco",
+        "title": "Number 9",
+        "artist_name": "Miguel ft. Lil Yachty",
         "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.290290",
-        "source_id": 1684,
+        "capture_date": "2023-08-15 08:18:31.889889",
+        "source_id": 1687,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Angel",
-        "artist_name": "Halle",
+        "title": "How Do I Do This",
+        "artist_name": "Kelsea Ballerini",
         "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.290290",
-        "source_id": 1684,
+        "capture_date": "2023-08-15 08:18:31.889889",
+        "source_id": 1687,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Singing Bones",
-        "artist_name": "Nite Bjuti",
+        "title": "Your Spit",
+        "artist_name": "Ian Sweet",
         "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.290290",
-        "source_id": 1684,
+        "capture_date": "2023-08-15 08:18:31.889889",
+        "source_id": 1687,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Yes!",
-        "artist_name": "Damon Locks & Rob Mazurek",
+        "title": "I’m a Dog",
+        "artist_name": "Faith Healer",
         "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.290290",
-        "source_id": 1684,
+        "capture_date": "2023-08-15 08:18:31.889889",
+        "source_id": 1687,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Te Lo Agradezco",
-        "artist_name": "Kany García and Carin Leon",
+        "title": "Katie Cruel",
+        "artist_name": "Ora Cogan",
         "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.290290",
-        "source_id": 1684,
+        "capture_date": "2023-08-15 08:18:31.889889",
+        "source_id": 1687,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Good Good",
-        "artist_name": "Usher, Summer Walker and 21 Savage",
+        "title": "Loop",
+        "artist_name": "thanks for coming",
         "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.290290",
-        "source_id": 1684,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Don’t Take Kindly",
-        "artist_name": "Jonathan Suazo",
-        "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.290290",
-        "source_id": 1684,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Les Funambules",
-        "artist_name": "Knoel Scott ft. Marshall Allen",
-        "video_id": null,
-        "capture_date": "2023-08-14 06:02:24.291291",
-        "source_id": 1684,
+        "capture_date": "2023-08-15 08:18:31.889889",
+        "source_id": 1687,
         "song_id": null,
         "duplicate": false
     }
@@ -248,17 +221,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('This Isn’t Me', 'Towa Bird', NULL),
-  ('Go Go Go', 'Jorja Smith', NULL),
-  ('Joy', 'Post Malone', NULL),
-  ('Evicted', 'Wilco', NULL),
-  ('Angel', 'Halle', NULL),
-  ('Singing Bones', 'Nite Bjuti', NULL),
-  ('Yes!', 'Damon Locks & Rob Mazurek', NULL),
-  ('Te Lo Agradezco', 'Kany García and Carin Leon', NULL),
-  ('Good Good', 'Usher, Summer Walker and 21 Savage', NULL),
-  ('Don’t Take Kindly', 'Jonathan Suazo', NULL),
-  ('Les Funambules', 'Knoel Scott ft. Marshall Allen', NULL)
+  ('Bad Idea Right?', 'Olivia Rodrigo', NULL),
+  ('Namesake', 'Noname', NULL),
+  ('Adore U', 'Fred again.. ft. Obongjayar', NULL),
+  ('Number 9', 'Miguel ft. Lil Yachty', NULL),
+  ('How Do I Do This', 'Kelsea Ballerini', NULL),
+  ('Your Spit', 'Ian Sweet', NULL),
+  ('I’m a Dog', 'Faith Healer', NULL),
+  ('Katie Cruel', 'Ora Cogan', NULL),
+  ('Loop', 'thanks for coming', NULL)
   ;
 
    // Update to song table
@@ -269,7 +240,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14620; // SELECT last_insert_rowid();
+  song_id = 14634; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -309,18 +280,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-08-14 06:02:24.288288', '1684', '14558'),
-  ('2023-08-14 06:02:24.290290', '1684', '14610'),
-  ('2023-08-14 06:02:24.290290', '1684', '14611'),
-  ('2023-08-14 06:02:24.290290', '1684', '14612'),
-  ('2023-08-14 06:02:24.290290', '1684', '14613'),
-  ('2023-08-14 06:02:24.290290', '1684', '14614'),
-  ('2023-08-14 06:02:24.290290', '1684', '14615'),
-  ('2023-08-14 06:02:24.290290', '1684', '14616'),
-  ('2023-08-14 06:02:24.290290', '1684', '14617'),
-  ('2023-08-14 06:02:24.290290', '1684', '14618'),
-  ('2023-08-14 06:02:24.290290', '1684', '14619'),
-  ('2023-08-14 06:02:24.291291', '1684', '14620')
+  ('2023-08-15 08:18:31.888888', '1687', '14626'),
+  ('2023-08-15 08:18:31.889889', '1687', '14627'),
+  ('2023-08-15 08:18:31.889889', '1687', '14628'),
+  ('2023-08-15 08:18:31.889889', '1687', '14629'),
+  ('2023-08-15 08:18:31.889889', '1687', '14630'),
+  ('2023-08-15 08:18:31.889889', '1687', '14631'),
+  ('2023-08-15 08:18:31.889889', '1687', '14632'),
+  ('2023-08-15 08:18:31.889889', '1687', '14633'),
+  ('2023-08-15 08:18:31.889889', '1687', '14634')
   ;
 
   // Update to source_song table

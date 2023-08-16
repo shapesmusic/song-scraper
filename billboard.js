@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of August 12, 2023', '2023-08-12 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-08-12');
+    ('Billboard', 'The Hot 100', 'Week of August 19, 2023', '2023-08-19 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-08-19');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1683; // SELECT last_insert_rowid();
+  source_id = 1686; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -104,250 +104,34 @@
 
   songsData =
   [
-    {
-        "title": "Meltdown",
-        "artist_name": "Travis Scott ft. Drake",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.407407",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "FE!N",
-        "artist_name": "Travis Scott ft. Playboi Carti",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.408408",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "I Know ?",
-        "artist_name": "Travis Scott",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.408408",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hyaena",
-        "artist_name": "Travis Scott",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.408408",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Thank God",
-        "artist_name": "Travis Scott",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.409409",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Topia Twins",
-        "artist_name": "Travis Scott ft. Rob49 & 21 Savage",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.409409",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "My Eyes",
-        "artist_name": "Travis Scott",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.409409",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Modern Jam",
-        "artist_name": "Travis Scott ft. Teezo Touchdown",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.409409",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Delresto (Echoes)",
-        "artist_name": "Travis Scott & Beyonce",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.409409",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Telekinesis",
-        "artist_name": "Travis Scott ft. SZA & Future",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.409409",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sirens",
-        "artist_name": "Travis Scott",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.409409",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "God's Country",
-        "artist_name": "Travis Scott",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.409409",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Skitzo",
-        "artist_name": "Travis Scott ft. Young Thug",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.409409",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Circus Maximus",
-        "artist_name": "Travis Scott ft. The Weeknd & Swae Lee",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.409409",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Til Further Notice",
-        "artist_name": "Travis Scott ft. James Blake & 21 Savage",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.410410",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "In Your Love",
-        "artist_name": "Tyler Childers",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.410410",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lost Forever",
-        "artist_name": "Travis Scott ft. Westside Gunn",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.410410",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Looove",
-        "artist_name": "Travis Scott ft. Kid Cudi",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.410410",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Parasail",
-        "artist_name": "Travis Scott ft. Yung Lean & Dave Chappelle",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.410410",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Jealousy",
-        "artist_name": "Offset & Cardi B",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.410410",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Enough Is Enough",
-        "artist_name": "Post Malone",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.410410",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Something Real",
-        "artist_name": "Post Malone",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.410410",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "On The Radar Freestyle",
-        "artist_name": "Drake & Central Cee",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.411411",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Too Cool To Die",
-        "artist_name": "Post Malone",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.411411",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Don't Understand",
-        "artist_name": "Post Malone",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.411411",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Aqui Te Espero",
-        "artist_name": "Ivan Cornejo",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.411411",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Novacandy",
-        "artist_name": "Post Malone",
-        "video_id": null,
-        "capture_date": "2023-08-14 05:55:47.411411",
-        "source_id": 1683,
-        "song_id": null,
-        "duplicate": false
-    }
-]
+      {
+          "title": "Paint The Town Red",
+          "artist_name": "Doja Cat",
+          "video_id": null,
+          "capture_date": "2023-08-15 08:15:13.052052",
+          "source_id": 1686,
+          "song_id": null,
+          "duplicate": false
+      },
+      {
+          "title": "Good Good",
+          "artist_name": "Usher, Summer Walker & 21 Savage",
+          "video_id": null,
+          "capture_date": "2023-08-15 08:15:13.054054",
+          "source_id": 1686,
+          "song_id": 14618,
+          "duplicate": true
+      },
+      {
+          "title": "El Amor de Su Vida",
+          "artist_name": "Grupo Frontera & Grupo Firme",
+          "video_id": null,
+          "capture_date": "2023-08-15 08:15:13.054054",
+          "source_id": 1686,
+          "song_id": null,
+          "duplicate": false
+      }
+  ]
 
   // Check each song for duplicates in the database
   SELECT id, title, artist_name FROM song WHERE
@@ -387,33 +171,8 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Meltdown', 'Travis Scott ft. Drake', NULL),
-  ('FE!N', 'Travis Scott ft. Playboi Carti', NULL),
-  ('I Know ?', 'Travis Scott', NULL),
-  ('Hyaena', 'Travis Scott', NULL),
-  ('Thank God', 'Travis Scott', NULL),
-  ('Topia Twins', 'Travis Scott ft. Rob49 & 21 Savage', NULL),
-  ('My Eyes', 'Travis Scott', NULL),
-  ('Modern Jam', 'Travis Scott ft. Teezo Touchdown', NULL),
-  ('Delresto (Echoes)', 'Travis Scott & Beyonce', NULL),
-  ('Telekinesis', 'Travis Scott ft. SZA & Future', NULL),
-  ('Sirens', 'Travis Scott', NULL),
-  ('God’s Country', 'Travis Scott', NULL),
-  ('Skitzo', 'Travis Scott ft. Young Thug', NULL),
-  ('Circus Maximus', 'Travis Scott ft. The Weeknd & Swae Lee', NULL),
-  ('Til Further Notice', 'Travis Scott ft. James Blake & 21 Savage', NULL),
-  ('In Your Love', 'Tyler Childers', NULL),
-  ('Lost Forever', 'Travis Scott ft. Westside Gunn', NULL),
-  ('Looove', 'Travis Scott ft. Kid Cudi', NULL),
-  ('Parasail', 'Travis Scott ft. Yung Lean & Dave Chappelle', NULL),
-  ('Jealousy', 'Offset & Cardi B', NULL),
-  ('Enough Is Enough', 'Post Malone', NULL),
-  ('Something Real', 'Post Malone', NULL),
-  ('On The Radar Freestyle', 'Drake & Central Cee', NULL),
-  ('Too Cool To Die', 'Post Malone', NULL),
-  ('Don’t Understand', 'Post Malone', NULL),
-  ('Aqui Te Espero', 'Ivan Cornejo', NULL),
-  ('Novacandy', 'Post Malone', NULL)
+  ('Paint The Town Red', 'Doja Cat', NULL),
+  ('El Amor de Su Vida', 'Grupo Frontera & Grupo Firme', NULL)
   ;
 
    // Update to song table
@@ -424,7 +183,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14609; // SELECT last_insert_rowid();
+  song_id = 14625; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -464,33 +223,9 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-08-14 05:55:47.407407', '1683', '14583'),
-  ('2023-08-14 05:55:47.408408', '1683', '14584'),
-  ('2023-08-14 05:55:47.408408', '1683', '14585'),
-  ('2023-08-14 05:55:47.408408', '1683', '14586'),
-  ('2023-08-14 05:55:47.409409', '1683', '14587'),
-  ('2023-08-14 05:55:47.409409', '1683', '14588'),
-  ('2023-08-14 05:55:47.409409', '1683', '14589'),
-  ('2023-08-14 05:55:47.409409', '1683', '14590'),
-  ('2023-08-14 05:55:47.409409', '1683', '14591'),
-  ('2023-08-14 05:55:47.409409', '1683', '14592'),
-  ('2023-08-14 05:55:47.409409', '1683', '14593'),
-  ('2023-08-14 05:55:47.409409', '1683', '14594'),
-  ('2023-08-14 05:55:47.409409', '1683', '14595'),
-  ('2023-08-14 05:55:47.409409', '1683', '14596'),
-  ('2023-08-14 05:55:47.410410', '1683', '14597'),
-  ('2023-08-14 05:55:47.410410', '1683', '14598'),
-  ('2023-08-14 05:55:47.410410', '1683', '14599'),
-  ('2023-08-14 05:55:47.410410', '1683', '14600'),
-  ('2023-08-14 05:55:47.410410', '1683', '14601'),
-  ('2023-08-14 05:55:47.410410', '1683', '14602'),
-  ('2023-08-14 05:55:47.410410', '1683', '14603'),
-  ('2023-08-14 05:55:47.410410', '1683', '14604'),
-  ('2023-08-14 05:55:47.411411', '1683', '14605'),
-  ('2023-08-14 05:55:47.411411', '1683', '14606'),
-  ('2023-08-14 05:55:47.411411', '1683', '14607'),
-  ('2023-08-14 05:55:47.411411', '1683', '14608'),
-  ('2023-08-14 05:55:47.411411', '1683', '14609')
+  ('2023-08-15 08:15:13.052052', '1686', '14624'),
+  ('2023-08-15 08:15:13.054054', '1686', '14618'),
+  ('2023-08-15 08:15:13.054054', '1686', '14625')
   ;
 
   // Update to source_song table
