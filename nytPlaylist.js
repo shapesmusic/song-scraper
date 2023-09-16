@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Olivia Rodrigo’s Sassy Pop-Rock Banger and 8 More New Songs', '2023-08-11 11:14:08.000000', 'https://www.nytimes.com/2023/08/11/arts/music/playlist-olivia-rodrigo-bad-idea-right-noname.html');
+    ('New York Times', 'The Playlist', 'Dolly Parton Reunites Two Beatles, and 12 More New Songs', '2023-08-18 09:21:44.000000', 'https://www.nytimes.com/2023/08/18/arts/music/playlist-dolly-parton-beatles-joni-mitchell.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1687; // SELECT last_insert_rowid();
+  source_id = 1691; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,83 +100,119 @@
   songsData =
   [
     {
-        "title": "Bad Idea Right?",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Let It Be",
+        "artist_name": "Dolly Parton ft. Paul McCartney and Ringo Starr",
         "video_id": null,
-        "capture_date": "2023-08-15 08:18:31.888888",
-        "source_id": 1687,
+        "capture_date": "2023-09-15 08:43:12.427427",
+        "source_id": 1691,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Namesake",
-        "artist_name": "Noname",
+        "title": "Help Me (Demo)",
+        "artist_name": "Joni Mitchell",
         "video_id": null,
-        "capture_date": "2023-08-15 08:18:31.889889",
-        "source_id": 1687,
+        "capture_date": "2023-09-15 08:43:12.428428",
+        "source_id": 1691,
+        "song_id": 7107,
+        "duplicate": true
+    },
+    {
+        "title": "Perhaps",
+        "artist_name": "Guns N’ Roses",
+        "video_id": null,
+        "capture_date": "2023-09-15 08:43:12.428428",
+        "source_id": 1691,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Adore U",
-        "artist_name": "Fred again.. ft. Obongjayar",
+        "title": "Planet of the Bass",
+        "artist_name": "Kyle Gordon ft. DJ Crazy Times and Ms. Biljana Electronica",
         "video_id": null,
-        "capture_date": "2023-08-15 08:18:31.889889",
-        "source_id": 1687,
+        "capture_date": "2023-09-15 08:43:12.428428",
+        "source_id": 1691,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Number 9",
-        "artist_name": "Miguel ft. Lil Yachty",
+        "title": "Better Things",
+        "artist_name": "aespa",
         "video_id": null,
-        "capture_date": "2023-08-15 08:18:31.889889",
-        "source_id": 1687,
+        "capture_date": "2023-09-15 08:43:12.428428",
+        "source_id": 1691,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "How Do I Do This",
-        "artist_name": "Kelsea Ballerini",
+        "title": "Mi Ex Tenía Razón",
+        "artist_name": "Karol G",
         "video_id": null,
-        "capture_date": "2023-08-15 08:18:31.889889",
-        "source_id": 1687,
+        "capture_date": "2023-09-15 08:43:12.428428",
+        "source_id": 1691,
+        "song_id": 14644,
+        "duplicate": true
+    },
+    {
+        "title": "Ready for You",
+        "artist_name": "Cherry Glazerr",
+        "video_id": null,
+        "capture_date": "2023-09-15 08:43:12.428428",
+        "source_id": 1691,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Your Spit",
-        "artist_name": "Ian Sweet",
+        "title": "Criolla",
+        "artist_name": "Guillermo Klein Quinteto",
         "video_id": null,
-        "capture_date": "2023-08-15 08:18:31.889889",
-        "source_id": 1687,
+        "capture_date": "2023-09-15 08:43:12.428428",
+        "source_id": 1691,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I’m a Dog",
-        "artist_name": "Faith Healer",
+        "title": "Hold Me",
+        "artist_name": "Quavo",
         "video_id": null,
-        "capture_date": "2023-08-15 08:18:31.889889",
-        "source_id": 1687,
+        "capture_date": "2023-09-15 08:43:12.428428",
+        "source_id": 1691,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Katie Cruel",
-        "artist_name": "Ora Cogan",
+        "title": "Moments Stolen",
+        "artist_name": "Cautious Clay",
         "video_id": null,
-        "capture_date": "2023-08-15 08:18:31.889889",
-        "source_id": 1687,
+        "capture_date": "2023-09-15 08:43:12.428428",
+        "source_id": 1691,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Loop",
-        "artist_name": "thanks for coming",
+        "title": "Because of You",
+        "artist_name": "K.D. Lang",
         "video_id": null,
-        "capture_date": "2023-08-15 08:18:31.889889",
-        "source_id": 1687,
+        "capture_date": "2023-09-15 08:43:12.428428",
+        "source_id": 1691,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "So You Are Tired",
+        "artist_name": "Sufjan Stevens",
+        "video_id": null,
+        "capture_date": "2023-09-15 08:43:12.429429",
+        "source_id": 1691,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Snake Tune",
+        "artist_name": "Ember",
+        "video_id": null,
+        "capture_date": "2023-09-15 08:43:12.429429",
+        "source_id": 1691,
         "song_id": null,
         "duplicate": false
     }
@@ -221,15 +257,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Bad Idea Right?', 'Olivia Rodrigo', NULL),
-  ('Namesake', 'Noname', NULL),
-  ('Adore U', 'Fred again.. ft. Obongjayar', NULL),
-  ('Number 9', 'Miguel ft. Lil Yachty', NULL),
-  ('How Do I Do This', 'Kelsea Ballerini', NULL),
-  ('Your Spit', 'Ian Sweet', NULL),
-  ('I’m a Dog', 'Faith Healer', NULL),
-  ('Katie Cruel', 'Ora Cogan', NULL),
-  ('Loop', 'thanks for coming', NULL)
+  ('Let It Be', 'Dolly Parton ft. Paul McCartney and Ringo Starr', NULL),
+  ('Perhaps', 'Guns N’ Roses', NULL),
+  ('Planet of the Bass', 'Kyle Gordon ft. DJ Crazy Times and Ms. Biljana Electronica', NULL),
+  ('Better Things', 'aespa', NULL),
+  ('Ready for You', 'Cherry Glazerr', NULL),
+  ('Criolla', 'Guillermo Klein Quinteto', NULL),
+  ('Hold Me', 'Quavo', NULL),
+  ('Moments Stolen', 'Cautious Clay', NULL),
+  ('Because of You', 'K.D. Lang', NULL),
+  ('So You Are Tired', 'Sufjan Stevens', NULL),
+  ('Snake Tune', 'Ember', NULL)
   ;
 
    // Update to song table
@@ -240,7 +278,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14634; // SELECT last_insert_rowid();
+  song_id = 14666; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -280,15 +318,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-08-15 08:18:31.888888', '1687', '14626'),
-  ('2023-08-15 08:18:31.889889', '1687', '14627'),
-  ('2023-08-15 08:18:31.889889', '1687', '14628'),
-  ('2023-08-15 08:18:31.889889', '1687', '14629'),
-  ('2023-08-15 08:18:31.889889', '1687', '14630'),
-  ('2023-08-15 08:18:31.889889', '1687', '14631'),
-  ('2023-08-15 08:18:31.889889', '1687', '14632'),
-  ('2023-08-15 08:18:31.889889', '1687', '14633'),
-  ('2023-08-15 08:18:31.889889', '1687', '14634')
+  ('2023-09-15 08:43:12.427427', '1691', '14656'),
+  ('2023-09-15 08:43:12.428428', '1691', '7107'),
+  ('2023-09-15 08:43:12.428428', '1691', '14657'),
+  ('2023-09-15 08:43:12.428428', '1691', '14658'),
+  ('2023-09-15 08:43:12.428428', '1691', '14659'),
+  ('2023-09-15 08:43:12.428428', '1691', '14644'),
+  ('2023-09-15 08:43:12.428428', '1691', '14660'),
+  ('2023-09-15 08:43:12.428428', '1691', '14661'),
+  ('2023-09-15 08:43:12.428428', '1691', '14662'),
+  ('2023-09-15 08:43:12.428428', '1691', '14663'),
+  ('2023-09-15 08:43:12.428428', '1691', '14664'),
+  ('2023-09-15 08:43:12.429429', '1691', '14665'),
+  ('2023-09-15 08:43:12.429429', '1691', '14666')
   ;
 
   // Update to source_song table
