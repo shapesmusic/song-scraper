@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of August 14, 2023', -- Mondays (for the previous week, including the publication_date)
-      '2023-08-14 12:00:00.000000', -- Dont forget this!
+      'Week of September 11, 2023', -- Mondays (for the previous week, including the publication_date)
+      '2023-09-11 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1688; // SELECT last_insert_rowid();
+    source_id = 1702; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,47 +458,101 @@
     songsData =
     [
     {
-        "title": "Slauson Malone I",
-        "artist_name": "Voyager",
+        "title": "Couldn't Imagine",
+        "artist_name": "RealYungPhil and Gud",
         "video_id": null,
-        "capture_date": "2023-08-15 08:22:16.712000",
-        "source_id": 1688,
+        "capture_date": "2023-09-16 10:16:17.053000",
+        "source_id": 1702,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Noname",
-        "artist_name": "namesake",
+        "title": "Voice From The Wind",
+        "artist_name": "Gabriel Gifford ft. Aphty Khéa",
         "video_id": null,
-        "capture_date": "2023-08-15 08:22:16.712000",
-        "source_id": 1688,
-        "song_id": 14627,
+        "capture_date": "2023-09-16 10:16:17.053000",
+        "source_id": 1702,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Elixir",
+        "artist_name": "George Riley",
+        "video_id": null,
+        "capture_date": "2023-09-16 10:16:17.053000",
+        "source_id": 1702,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Who Am I",
+        "artist_name": "Peewee Longway",
+        "video_id": null,
+        "capture_date": "2023-09-16 10:16:17.053000",
+        "source_id": 1702,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Amber/Watcher",
+        "artist_name": "Maria BC",
+        "video_id": null,
+        "capture_date": "2023-09-16 10:16:17.053000",
+        "source_id": 1702,
+        "song_id": 14718,
         "duplicate": true
     },
     {
-        "title": "Shake the Room",
-        "artist_name": "UNIIQU3 and Dos Flakos",
+        "title": "Don't Forget That I Love You",
+        "artist_name": "Pale Jay",
         "video_id": null,
-        "capture_date": "2023-08-15 08:22:16.712000",
-        "source_id": 1688,
+        "capture_date": "2023-09-16 10:16:17.053000",
+        "source_id": 1702,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Montgomery Brawl",
-        "artist_name": "Gmac Cash",
+        "title": "This Sorry Day",
+        "artist_name": "Sarah Morrison",
         "video_id": null,
-        "capture_date": "2023-08-15 08:22:16.712000",
-        "source_id": 1688,
+        "capture_date": "2023-09-16 10:16:17.053000",
+        "source_id": 1702,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "And Then He Wrapped His Wings Around Me",
-        "artist_name": "Mary Lattimore",
+        "title": "The Laughter Remains",
+        "artist_name": "Nate Amos",
         "video_id": null,
-        "capture_date": "2023-08-15 08:22:16.712000",
-        "source_id": 1688,
+        "capture_date": "2023-09-16 10:16:17.053000",
+        "source_id": 1702,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Too Close",
+        "artist_name": "Nosaj Thing and Jackques Greene ft. Ouri",
+        "video_id": null,
+        "capture_date": "2023-09-16 10:16:17.053000",
+        "source_id": 1702,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Club Deuce",
+        "artist_name": "The Serfs",
+        "video_id": null,
+        "capture_date": "2023-09-16 10:16:17.053000",
+        "source_id": 1702,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Tha Mood",
+        "artist_name": "Suzi Analogue",
+        "video_id": null,
+        "capture_date": "2023-09-16 10:16:17.053000",
+        "source_id": 1702,
         "song_id": null,
         "duplicate": false
     }
@@ -540,10 +594,16 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Slauson Malone I', 'Voyager', NULL),
-    ('Shake the Room', 'UNIIQU3 and Dos Flakos', NULL),
-    ('Montgomery Brawl', 'Gmac Cash', NULL),
-    ('And Then He Wrapped His Wings Around Me', 'Mary Lattimore', NULL)
+    ('Couldn’t Imagine', 'RealYungPhil and Gud', NULL),
+    ('Voice From The Wind', 'Gabriel Gifford ft. Aphty Khéa', NULL),
+    ('Elixir', 'George Riley', NULL),
+    ('Who Am I', 'Peewee Longway', NULL),
+    ('Don’t Forget That I Love You', 'Pale Jay', NULL),
+    ('This Sorry Day', 'Sarah Morrison', NULL),
+    ('The Laughter Remains', 'Nate Amos', NULL),
+    ('Too Close', 'Nosaj Thing and Jackques Greene ft. Ouri', NULL),
+    ('Club Deuce', 'The Serfs', NULL),
+    ('Tha Mood', 'Suzi Analogue', NULL)
     ;
 
      // Update to song table
@@ -554,7 +614,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14638; // SELECT last_insert_rowid();
+  song_id = 14755; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -594,11 +654,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-08-15 08:22:16.712000', '1688', '14635'),
-  ('2023-08-15 08:22:16.712000', '1688', '14627'),
-  ('2023-08-15 08:22:16.712000', '1688', '14636'),
-  ('2023-08-15 08:22:16.712000', '1688', '14637'),
-  ('2023-08-15 08:22:16.712000', '1688', '14638')
+  ('2023-09-16 10:16:17.053000', '1702', '14746'),
+  ('2023-09-16 10:16:17.053000', '1702', '14747'),
+  ('2023-09-16 10:16:17.053000', '1702', '14748'),
+  ('2023-09-16 10:16:17.053000', '1702', '14749'),
+  ('2023-09-16 10:16:17.053000', '1702', '14718'),
+  ('2023-09-16 10:16:17.053000', '1702', '14750'),
+  ('2023-09-16 10:16:17.053000', '1702', '14751'),
+  ('2023-09-16 10:16:17.053000', '1702', '14752'),
+  ('2023-09-16 10:16:17.053000', '1702', '14753'),
+  ('2023-09-16 10:16:17.053000', '1702', '14754'),
+  ('2023-09-16 10:16:17.053000', '1702', '14755')
   ;
 
   // Update to source_song table

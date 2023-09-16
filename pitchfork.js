@@ -76,13 +76,23 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-  ('Pitchfork', 'Track Reviews', NULL, '2023-07-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-07-26 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-07-20 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-07-19 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-07-13 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-07-12 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/'),
-  ('Pitchfork', 'Track Reviews', NULL, '2023-07-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks/')
+    ('Pitchfork', 'Track Reviews', NULL, '2023-09-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-09-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-31 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-30 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-29 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-28 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-24 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-23 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-22 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-18 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-17 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-14 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-11 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-10 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-07 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-02 12:00:00.000000', 'https://pitchfork.com/reviews/tracks'),
+    ('Pitchfork', 'Track Reviews', NULL, '2023-08-01 12:00:00.000000', 'https://pitchfork.com/reviews/tracks')
   ;
 
   // Update to source table
@@ -133,76 +143,202 @@
   songsData =
   [
     {
-        "title": "Psychedelic Switch",
-        "artist_name": "Carly Rae Jepsen",
+        "title": "Will Anybody Ever Love Me?",
+        "artist_name": "Sufjan Stevens",
         "video_id": null,
-        "capture_date": "2023-07-29 10:38:40.259259",
-        "source_id": 1673,
+        "capture_date": "2023-09-16 02:45:48.047047",
+        "source_id": 1703,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bug Like an Angel",
-        "artist_name": "Mitski",
+        "title": "Demons",
+        "artist_name": "Doja Cat",
         "video_id": null,
-        "capture_date": "2023-07-29 10:38:40.261261",
-        "source_id": 1674,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Affirmations",
-        "artist_name": "Hannah Diamond",
-        "video_id": null,
-        "capture_date": "2023-07-29 10:38:40.261261",
-        "source_id": 1675,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Vampire Empire",
-        "artist_name": "Big Thief",
-        "video_id": null,
-        "capture_date": "2023-07-29 10:38:40.261261",
-        "source_id": 1676,
-        "song_id": 14556,
+        "capture_date": "2023-09-16 02:45:48.049049",
+        "source_id": 1704,
+        "song_id": 14708,
         "duplicate": true
     },
     {
-        "title": "Rush",
-        "artist_name": "Troye Sivan",
+        "title": "I’m Scanning Things I Can’t See",
+        "artist_name": "Fievel Is Glauque",
         "video_id": null,
-        "capture_date": "2023-07-29 10:38:40.261261",
-        "source_id": 1677,
-        "song_id": 14524,
-        "duplicate": true
-    },
-    {
-        "title": "Wespennest",
-        "artist_name": "DJ Koze",
-        "video_id": null,
-        "capture_date": "2023-07-29 10:38:40.261261",
-        "source_id": 1677,
+        "capture_date": "2023-09-16 02:45:48.049049",
+        "source_id": 1704,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Belleville",
-        "artist_name": "Laurel Halo",
+        "title": "Runway",
+        "artist_name": "DJ Premier",
         "video_id": null,
-        "capture_date": "2023-07-29 10:38:40.262262",
-        "source_id": 1678,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1705,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tiny Garden",
-        "artist_name": "Jamila Woods",
+        "title": "Plain Speak",
+        "artist_name": "Marnie Stern",
         "video_id": null,
-        "capture_date": "2023-07-29 10:38:40.262262",
-        "source_id": 1679,
-        "song_id": 14523,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1706,
+        "song_id": 14722,
         "duplicate": true
+    },
+    {
+        "title": "Bright Green Vibrant Gray",
+        "artist_name": "Helena Deland",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1706,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Vajkoczy",
+        "artist_name": "Sofia Kourtesis",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1707,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Got Heaven",
+        "artist_name": "Mannequin Pussy",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1708,
+        "song_id": 14723,
+        "duplicate": true
+    },
+    {
+        "title": "For Now and Forever",
+        "artist_name": "DJ Sabrina the Teenage DJ",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1709,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Binoculars",
+        "artist_name": "Shabazz Palaces",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1709,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pet Rock",
+        "artist_name": "L’Rain",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1710,
+        "song_id": 14678,
+        "duplicate": true
+    },
+    {
+        "title": "With the Other Hand",
+        "artist_name": "Lost Girls",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1711,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "I Got It Bad",
+        "artist_name": "Addison Rae",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1712,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "What Comes Will Come",
+        "artist_name": "Genesis Owusu",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1712,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "4K Murmurs",
+        "artist_name": "Purelink",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.050050",
+        "source_id": 1713,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "So You Are Tired",
+        "artist_name": "Sufjan Stevens",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.051051",
+        "source_id": 1714,
+        "song_id": 14665,
+        "duplicate": true
+    },
+    {
+        "title": "Your Spit",
+        "artist_name": "IAN SWEET",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.051051",
+        "source_id": 1714,
+        "song_id": 14631,
+        "duplicate": true
+    },
+    {
+        "title": "Bad Idea Right?",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.051051",
+        "source_id": 1715,
+        "song_id": 14626,
+        "duplicate": true
+    },
+    {
+        "title": "What Not to Do (Moodymann Remix)",
+        "artist_name": "Róisín Murphy",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.051051",
+        "source_id": 1716,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Knockin",
+        "artist_name": "MJ Lenderman",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.051051",
+        "source_id": 1717,
+        "song_id": 14643,
+        "duplicate": true
+    },
+    {
+        "title": "Trauma Mic",
+        "artist_name": "Armand Hammer",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.051051",
+        "source_id": 1718,
+        "song_id": 14621,
+        "duplicate": true
+    },
+    {
+        "title": "Fruit Loop",
+        "artist_name": "Flo Milli",
+        "video_id": null,
+        "capture_date": "2023-09-16 02:45:48.051051",
+        "source_id": 1719,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -219,7 +355,7 @@
 
   // get source_ids and dates for newly added sources
   // increase LIMIT number if necessary
-  SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 15;
+  SELECT id, publication_date, parent_entity FROM source ORDER BY id DESC LIMIT 20;
 
   // manually add source_ids in songsData above (INT without quotation marks).
 
@@ -255,11 +391,19 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Psychedelic Switch', 'Carly Rae Jepsen', NULL),
-  ('Bug Like an Angel', 'Mitski', NULL),
-  ('Affirmations', 'Hannah Diamond', NULL),
-  ('Wespennest', 'DJ Koze', NULL),
-  ('Belleville', 'Laurel Halo', NULL)
+  ('Will Anybody Ever Love Me?', 'Sufjan Stevens', NULL),
+  ('I’m Scanning Things I Can’t See', 'Fievel Is Glauque', NULL),
+  ('Runway', 'DJ Premier', NULL),
+  ('Bright Green Vibrant Gray', 'Helena Deland', NULL),
+  ('Vajkoczy', 'Sofia Kourtesis', NULL),
+  ('For Now and Forever', 'DJ Sabrina the Teenage DJ', NULL),
+  ('Binoculars', 'Shabazz Palaces', NULL),
+  ('With the Other Hand', 'Lost Girls', NULL),
+  ('I Got It Bad', 'Addison Rae', NULL),
+  ('What Comes Will Come', 'Genesis Owusu', NULL),
+  ('4K Murmurs', 'Purelink', NULL),
+  ('What Not to Do (Moodymann Remix)', 'Róisín Murphy', NULL),
+  ('Fruit Loop', 'Flo Milli', NULL)
   ;
 
    // Update to song table
@@ -270,7 +414,7 @@
 //
 
   // Get the last song_id inserted
-  song_id = 14561; // SELECT last_insert_rowid();
+  song_id = 14768; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -310,14 +454,28 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-07-29 10:38:40.259259', '1673', '14557'),
-  ('2023-07-29 10:38:40.261261', '1674', '14558'),
-  ('2023-07-29 10:38:40.261261', '1675', '14559'),
-  ('2023-07-29 10:38:40.261261', '1676', '14556'),
-  ('2023-07-29 10:38:40.261261', '1677', '14524'),
-  ('2023-07-29 10:38:40.261261', '1677', '14560'),
-  ('2023-07-29 10:38:40.262262', '1678', '14561'),
-  ('2023-07-29 10:38:40.262262', '1679', '14523')
+  ('2023-09-16 02:45:48.047047', '1703', '14756'),
+  ('2023-09-16 02:45:48.049049', '1704', '14708'),
+  ('2023-09-16 02:45:48.049049', '1704', '14757'),
+  ('2023-09-16 02:45:48.050050', '1705', '14758'),
+  ('2023-09-16 02:45:48.050050', '1706', '14722'),
+  ('2023-09-16 02:45:48.050050', '1706', '14759'),
+  ('2023-09-16 02:45:48.050050', '1707', '14760'),
+  ('2023-09-16 02:45:48.050050', '1708', '14723'),
+  ('2023-09-16 02:45:48.050050', '1709', '14761'),
+  ('2023-09-16 02:45:48.050050', '1709', '14762'),
+  ('2023-09-16 02:45:48.050050', '1710', '14678'),
+  ('2023-09-16 02:45:48.050050', '1711', '14763'),
+  ('2023-09-16 02:45:48.050050', '1712', '14764'),
+  ('2023-09-16 02:45:48.050050', '1712', '14765'),
+  ('2023-09-16 02:45:48.050050', '1713', '14766'),
+  ('2023-09-16 02:45:48.051051', '1714', '14665'),
+  ('2023-09-16 02:45:48.051051', '1714', '14631'),
+  ('2023-09-16 02:45:48.051051', '1715', '14626'),
+  ('2023-09-16 02:45:48.051051', '1716', '14767'),
+  ('2023-09-16 02:45:48.051051', '1717', '14643'),
+  ('2023-09-16 02:45:48.051051', '1718', '14621'),
+  ('2023-09-16 02:45:48.051051', '1719', '14768')
   ;
 
   // Update to source_song table

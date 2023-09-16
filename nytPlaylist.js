@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Doja Cat Goes Horror Pop, and 12 More New Songs', '2023-09-01 10:44:31.000000', 'https://www.nytimes.com/2023/09/01/arts/music/playlist-doja-cat-nicki-minaj.html');
+    ('New York Times', 'The Playlist', 'The Rolling Stones Roar Back, and 13 More New Songs', '2023-09-14 07:26:10.000000', 'https://www.nytimes.com/2023/09/08/arts/music/playlist-rolling-stones-cardi-b-megan-thee-stallion.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1697; // SELECT last_insert_rowid();
+  source_id = 1700; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,110 +100,128 @@
   songsData =
   [
     {
-        "title": "Demons",
-        "artist_name": "Doja Cat",
+        "title": "Angry",
+        "artist_name": "The Rolling Stones",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.449449",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.715715",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Last Time I Saw You",
-        "artist_name": "Nicki Minaj",
+        "title": "Like Veils Said Lorraine",
+        "artist_name": "Joni Mitchell",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.450450",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.716716",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "You Thought",
-        "artist_name": "Teezo Touchdown ft. Janelle Monáe",
+        "title": "Eve Was Black",
+        "artist_name": "Allison Russell",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.450450",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.716716",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Eighth Pose",
-        "artist_name": "Blankfor.ms, Jason Moran and Marcus Gilmore",
+        "title": "Women Ain’t Whiskey",
+        "artist_name": "Ashley McBryde",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.450450",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.716716",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Strangers",
-        "artist_name": "Kenya Grace",
+        "title": "Texting and Driving",
+        "artist_name": "Guppy",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.450450",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.716716",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Will U Still U",
-        "artist_name": "Jeff Rosenstock",
+        "title": "Bongos",
+        "artist_name": "Cardi B ft. Megan Thee Stallion",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.450450",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.716716",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "A Barely Lit Path",
-        "artist_name": "Oneohtrix Point Never",
+        "title": "Bipolar",
+        "artist_name": "Peso Pluma, Jasiel Nuñez and Junior H",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.450450",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.716716",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Love Can Heal (Bright-Side Mix)",
-        "artist_name": "Peter Gabriel",
+        "title": "Problema Cabrón",
+        "artist_name": "Residente and Wos",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.450450",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.716716",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Jordan and the Nile",
-        "artist_name": "Jason Hawk Harris",
+        "title": "Raisins Under the Sun",
+        "artist_name": "Yussef Dayes ft. Shabaka Hutchings",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.450450",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.716716",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Are You Awake?",
-        "artist_name": "Lauren Mayberry",
+        "title": "No Limit",
+        "artist_name": "Tirzah",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.450450",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.716716",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Amber and Watcher",
-        "artist_name": "Maria BC",
+        "title": "No Caffeine",
+        "artist_name": "Marika Hackman",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.450450",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.717717",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dolores (Take 1)",
-        "artist_name": "Kris Davis",
+        "title": "California and Me",
+        "artist_name": "Laufey",
         "video_id": null,
-        "capture_date": "2023-09-16 09:46:14.450450",
-        "source_id": 1697,
+        "capture_date": "2023-09-16 10:06:56.717717",
+        "source_id": 1700,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sparrow",
+        "artist_name": "James Brandon Lewis",
+        "video_id": null,
+        "capture_date": "2023-09-16 10:06:56.717717",
+        "source_id": 1700,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Lamentations of Jeremiah",
+        "artist_name": "Vince Clarke",
+        "video_id": null,
+        "capture_date": "2023-09-16 10:06:56.717717",
+        "source_id": 1700,
         "song_id": null,
         "duplicate": false
     }
@@ -248,18 +266,20 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Demons', 'Doja Cat', NULL),
-  ('Last Time I Saw You', 'Nicki Minaj', NULL),
-  ('You Thought', 'Teezo Touchdown ft. Janelle Monáe', NULL),
-  ('Eighth Pose', 'Blankfor.ms, Jason Moran and Marcus Gilmore', NULL),
-  ('Strangers', 'Kenya Grace', NULL),
-  ('Will U Still U', 'Jeff Rosenstock', NULL),
-  ('A Barely Lit Path', 'Oneohtrix Point Never', NULL),
-  ('Love Can Heal (Bright-Side Mix)', 'Peter Gabriel', NULL),
-  ('Jordan and the Nile', 'Jason Hawk Harris', NULL),
-  ('Are You Awake?', 'Lauren Mayberry', NULL),
-  ('Amber and Watcher', 'Maria BC', NULL),
-  ('Dolores (Take 1)', 'Kris Davis', NULL)
+  ('Angry', 'The Rolling Stones', NULL),
+  ('Like Veils Said Lorraine', 'Joni Mitchell', NULL),
+  ('Eve Was Black', 'Allison Russell', NULL),
+  ('Women Ain’t Whiskey', 'Ashley McBryde', NULL),
+  ('Texting and Driving', 'Guppy', NULL),
+  ('Bongos', 'Cardi B ft. Megan Thee Stallion', NULL),
+  ('Bipolar', 'Peso Pluma, Jasiel Nuñez and Junior H', NULL),
+  ('Problema Cabrón', 'Residente and Wos', NULL),
+  ('Raisins Under the Sun', 'Yussef Dayes ft. Shabaka Hutchings', NULL),
+  ('No Limit', 'Tirzah', NULL),
+  ('No Caffeine', 'Marika Hackman', NULL),
+  ('California and Me', 'Laufey', NULL),
+  ('Sparrow', 'James Brandon Lewis', NULL),
+  ('The Lamentations of Jeremiah', 'Vince Clarke', NULL)
   ;
 
    // Update to song table
@@ -270,7 +290,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14719; // SELECT last_insert_rowid();
+  song_id = 14740; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -310,18 +330,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-16 09:46:14.449449', '1697', '14708'),
-  ('2023-09-16 09:46:14.450450', '1697', '14709'),
-  ('2023-09-16 09:46:14.450450', '1697', '14710'),
-  ('2023-09-16 09:46:14.450450', '1697', '14711'),
-  ('2023-09-16 09:46:14.450450', '1697', '14712'),
-  ('2023-09-16 09:46:14.450450', '1697', '14713'),
-  ('2023-09-16 09:46:14.450450', '1697', '14714'),
-  ('2023-09-16 09:46:14.450450', '1697', '14715'),
-  ('2023-09-16 09:46:14.450450', '1697', '14716'),
-  ('2023-09-16 09:46:14.450450', '1697', '14717'),
-  ('2023-09-16 09:46:14.450450', '1697', '14718'),
-  ('2023-09-16 09:46:14.450450', '1697', '14719')
+  ('2023-09-16 10:06:56.715715', '1700', '14727'),
+  ('2023-09-16 10:06:56.716716', '1700', '14728'),
+  ('2023-09-16 10:06:56.716716', '1700', '14729'),
+  ('2023-09-16 10:06:56.716716', '1700', '14730'),
+  ('2023-09-16 10:06:56.716716', '1700', '14731'),
+  ('2023-09-16 10:06:56.716716', '1700', '14732'),
+  ('2023-09-16 10:06:56.716716', '1700', '14733'),
+  ('2023-09-16 10:06:56.716716', '1700', '14734'),
+  ('2023-09-16 10:06:56.716716', '1700', '14735'),
+  ('2023-09-16 10:06:56.716716', '1700', '14736'),
+  ('2023-09-16 10:06:56.717717', '1700', '14737'),
+  ('2023-09-16 10:06:56.717717', '1700', '14738'),
+  ('2023-09-16 10:06:56.717717', '1700', '14739'),
+  ('2023-09-16 10:06:56.717717', '1700', '14740')
   ;
 
   // Update to source_song table
