@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of August 18, 2023', '2023-08-18 12:00:00.000000', 'https://www.stereogum.com/2233527/the-5-best-songs-of-the-week-496/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of August 25, 2023', '2023-08-25 12:00:00.000000', 'https://www.stereogum.com/2234190/the-5-best-songs-of-the-week-497/lists/the-5-best-songs-of-the-week/');
 
 
   // Update to source table
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1692; // SELECT last_insert_rowid();
+  source_id = 1695; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -102,49 +102,49 @@
   songsData =
   [
     {
-        "title": "Space Invader",
-        "artist_name": "The National",
+        "title": "Needs",
+        "artist_name": "Tinashe",
         "video_id": null,
-        "capture_date": "2023-09-15 08:47:19.151151",
-        "source_id": 1692,
+        "capture_date": "2023-09-16 09:25:19.738738",
+        "source_id": 1695,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "One Margarita (Ladies Remix)",
-        "artist_name": "That Chick Angel",
+        "title": "Talkin' On The Internet",
+        "artist_name": "Spiritual Cramp",
         "video_id": null,
-        "capture_date": "2023-09-15 08:47:19.153153",
-        "source_id": 1692,
+        "capture_date": "2023-09-16 09:25:19.739739",
+        "source_id": 1695,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Go",
-        "artist_name": "Thrash Palace",
+        "title": "Broadview",
+        "artist_name": "Slow Pulp",
         "video_id": null,
-        "capture_date": "2023-09-15 08:47:19.153153",
-        "source_id": 1692,
+        "capture_date": "2023-09-16 09:25:19.739739",
+        "source_id": 1695,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "So You Are Tired",
-        "artist_name": "Sufjan Stevens",
+        "title": "Better Things",
+        "artist_name": "Aespa",
         "video_id": null,
-        "capture_date": "2023-09-15 08:47:19.153153",
-        "source_id": 1692,
-        "song_id": 14665,
+        "capture_date": "2023-09-16 09:25:19.739739",
+        "source_id": 1695,
+        "song_id": 14659,
         "duplicate": true
     },
     {
-        "title": "Bad Idea Right?",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Lips",
+        "artist_name": "Jane Remover",
         "video_id": null,
-        "capture_date": "2023-09-15 08:47:19.153153",
-        "source_id": 1692,
-        "song_id": 14626,
-        "duplicate": true
+        "capture_date": "2023-09-16 09:25:19.739739",
+        "source_id": 1695,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -187,9 +187,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Space Invader', 'The National', NULL),
-  ('One Margarita (Ladies Remix)', 'That Chick Angel', NULL),
-  ('Go', 'Thrash Palace', NULL)
+  ('Needs', 'Tinashe', NULL),
+  ('Talkin’ On The Internet', 'Spiritual Cramp', NULL),
+  ('Broadview', 'Slow Pulp', NULL),
+  ('Lips', 'Jane Remover', NULL)
   ;
 
    // Update to song table
@@ -200,7 +201,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14669; // SELECT last_insert_rowid();
+  song_id = 14689; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -240,11 +241,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-15 08:47:19.151151', '1692', '14667'),
-  ('2023-09-15 08:47:19.153153', '1692', '14668'),
-  ('2023-09-15 08:47:19.153153', '1692', '14669'),
-  ('2023-09-15 08:47:19.153153', '1692', '14665'),
-  ('2023-09-15 08:47:19.153153', '1692', '14626')
+  ('2023-09-16 09:25:19.738738', '1695', '14686'),
+  ('2023-09-16 09:25:19.739739', '1695', '14687'),
+  ('2023-09-16 09:25:19.739739', '1695', '14688'),
+  ('2023-09-16 09:25:19.739739', '1695', '14659'),
+  ('2023-09-16 09:25:19.739739', '1695', '14689')
   ;
 
   // Update to source_song table

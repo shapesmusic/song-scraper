@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Dolly Parton Reunites Two Beatles, and 12 More New Songs', '2023-08-18 09:21:44.000000', 'https://www.nytimes.com/2023/08/18/arts/music/playlist-dolly-parton-beatles-joni-mitchell.html');
+    ('New York Times', 'The Playlist', 'Miley Cyrus Reserves the Right to Grow, and 10 More New Songs', '2023-08-25 11:02:23.000000', 'https://www.nytimes.com/2023/08/25/arts/music/playlist-miley-cyrus-selena-gomez.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1691; // SELECT last_insert_rowid();
+  source_id = 1694; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,119 +100,101 @@
   songsData =
   [
     {
-        "title": "Let It Be",
-        "artist_name": "Dolly Parton ft. Paul McCartney and Ringo Starr",
+        "title": "Used to Be Young",
+        "artist_name": "Miley Cyrus",
         "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.427427",
-        "source_id": 1691,
+        "capture_date": "2023-09-16 09:21:46.266266",
+        "source_id": 1694,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Help Me (Demo)",
-        "artist_name": "Joni Mitchell",
+        "title": "Perfect Day",
+        "artist_name": "Al Green",
         "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.428428",
-        "source_id": 1691,
-        "song_id": 7107,
-        "duplicate": true
-    },
-    {
-        "title": "Perhaps",
-        "artist_name": "Guns N’ Roses",
-        "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.428428",
-        "source_id": 1691,
+        "capture_date": "2023-09-16 09:21:46.267267",
+        "source_id": 1694,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Planet of the Bass",
-        "artist_name": "Kyle Gordon ft. DJ Crazy Times and Ms. Biljana Electronica",
+        "title": "I Remember Everything",
+        "artist_name": "Zach Bryan ft. Kacey Musgraves",
         "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.428428",
-        "source_id": 1691,
+        "capture_date": "2023-09-16 09:21:46.267267",
+        "source_id": 1694,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Better Things",
-        "artist_name": "aespa",
+        "title": "Pet Rock",
+        "artist_name": "L’Rain",
         "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.428428",
-        "source_id": 1691,
+        "capture_date": "2023-09-16 09:21:46.267267",
+        "source_id": 1694,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mi Ex Tenía Razón",
-        "artist_name": "Karol G",
+        "title": "Single Soon",
+        "artist_name": "Selena Gomez",
         "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.428428",
-        "source_id": 1691,
-        "song_id": 14644,
-        "duplicate": true
-    },
-    {
-        "title": "Ready for You",
-        "artist_name": "Cherry Glazerr",
-        "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.428428",
-        "source_id": 1691,
+        "capture_date": "2023-09-16 09:21:46.267267",
+        "source_id": 1694,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Criolla",
-        "artist_name": "Guillermo Klein Quinteto",
+        "title": "Alice Through the Looking Glass",
+        "artist_name": "Prince",
         "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.428428",
-        "source_id": 1691,
+        "capture_date": "2023-09-16 09:21:46.267267",
+        "source_id": 1694,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hold Me",
-        "artist_name": "Quavo",
+        "title": "Strays",
+        "artist_name": "Margo Price",
         "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.428428",
-        "source_id": 1691,
+        "capture_date": "2023-09-16 09:21:46.267267",
+        "source_id": 1694,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Moments Stolen",
-        "artist_name": "Cautious Clay",
+        "title": "Tenochtitlán",
+        "artist_name": "Mon Laferte",
         "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.428428",
-        "source_id": 1691,
+        "capture_date": "2023-09-16 09:21:46.267267",
+        "source_id": 1694,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Because of You",
-        "artist_name": "K.D. Lang",
+        "title": "Bem Que Te Avisei",
+        "artist_name": "Luciana Souza & Trio Corrente",
         "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.428428",
-        "source_id": 1691,
+        "capture_date": "2023-09-16 09:21:46.267267",
+        "source_id": 1694,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "So You Are Tired",
-        "artist_name": "Sufjan Stevens",
+        "title": "Anónima",
+        "artist_name": "Titanic",
         "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.429429",
-        "source_id": 1691,
+        "capture_date": "2023-09-16 09:21:46.267267",
+        "source_id": 1694,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Snake Tune",
-        "artist_name": "Ember",
+        "title": "Somebody Else’s Idea",
+        "artist_name": "Abiodun Oyewole",
         "video_id": null,
-        "capture_date": "2023-09-15 08:43:12.429429",
-        "source_id": 1691,
+        "capture_date": "2023-09-16 09:21:46.267267",
+        "source_id": 1694,
         "song_id": null,
         "duplicate": false
     }
@@ -257,17 +239,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Let It Be', 'Dolly Parton ft. Paul McCartney and Ringo Starr', NULL),
-  ('Perhaps', 'Guns N’ Roses', NULL),
-  ('Planet of the Bass', 'Kyle Gordon ft. DJ Crazy Times and Ms. Biljana Electronica', NULL),
-  ('Better Things', 'aespa', NULL),
-  ('Ready for You', 'Cherry Glazerr', NULL),
-  ('Criolla', 'Guillermo Klein Quinteto', NULL),
-  ('Hold Me', 'Quavo', NULL),
-  ('Moments Stolen', 'Cautious Clay', NULL),
-  ('Because of You', 'K.D. Lang', NULL),
-  ('So You Are Tired', 'Sufjan Stevens', NULL),
-  ('Snake Tune', 'Ember', NULL)
+  ('Used to Be Young', 'Miley Cyrus', NULL),
+  ('Perfect Day', 'Al Green', NULL),
+  ('I Remember Everything', 'Zach Bryan ft. Kacey Musgraves', NULL),
+  ('Pet Rock', 'L’Rain', NULL),
+  ('Single Soon', 'Selena Gomez', NULL),
+  ('Alice Through the Looking Glass', 'Prince', NULL),
+  ('Strays', 'Margo Price', NULL),
+  ('Tenochtitlán', 'Mon Laferte', NULL),
+  ('Bem Que Te Avisei', 'Luciana Souza & Trio Corrente', NULL),
+  ('Anónima', 'Titanic', NULL),
+  ('Somebody Else’s Idea', 'Abiodun Oyewole', NULL)
   ;
 
    // Update to song table
@@ -278,7 +260,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14666; // SELECT last_insert_rowid();
+  song_id = 14685; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -318,19 +300,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-15 08:43:12.427427', '1691', '14656'),
-  ('2023-09-15 08:43:12.428428', '1691', '7107'),
-  ('2023-09-15 08:43:12.428428', '1691', '14657'),
-  ('2023-09-15 08:43:12.428428', '1691', '14658'),
-  ('2023-09-15 08:43:12.428428', '1691', '14659'),
-  ('2023-09-15 08:43:12.428428', '1691', '14644'),
-  ('2023-09-15 08:43:12.428428', '1691', '14660'),
-  ('2023-09-15 08:43:12.428428', '1691', '14661'),
-  ('2023-09-15 08:43:12.428428', '1691', '14662'),
-  ('2023-09-15 08:43:12.428428', '1691', '14663'),
-  ('2023-09-15 08:43:12.428428', '1691', '14664'),
-  ('2023-09-15 08:43:12.429429', '1691', '14665'),
-  ('2023-09-15 08:43:12.429429', '1691', '14666')
+  ('2023-09-16 09:21:46.266266', '1694', '14675'),
+  ('2023-09-16 09:21:46.267267', '1694', '14676'),
+  ('2023-09-16 09:21:46.267267', '1694', '14677'),
+  ('2023-09-16 09:21:46.267267', '1694', '14678'),
+  ('2023-09-16 09:21:46.267267', '1694', '14679'),
+  ('2023-09-16 09:21:46.267267', '1694', '14680'),
+  ('2023-09-16 09:21:46.267267', '1694', '14681'),
+  ('2023-09-16 09:21:46.267267', '1694', '14682'),
+  ('2023-09-16 09:21:46.267267', '1694', '14683'),
+  ('2023-09-16 09:21:46.267267', '1694', '14684'),
+  ('2023-09-16 09:21:46.267267', '1694', '14685')
   ;
 
   // Update to source_song table

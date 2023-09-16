@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of August 26, 2023', '2023-08-26 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-08-26/');
+    ('Billboard', 'The Hot 100', 'Week of September 2, 2023', '2023-09-02 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-09-02/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1690; // SELECT last_insert_rowid();
+  source_id = 1693; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,119 +105,47 @@
   songsData =
   [
     {
-        "title": "Bad Idea Right?",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Call Your Friends",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.850850",
-        "source_id": 1690,
-        "song_id": 14626,
-        "duplicate": true
-    },
-    {
-        "title": "Mi Ex Tenia Razon",
-        "artist_name": "Karol G",
-        "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.851851",
-        "source_id": 1690,
+        "capture_date": "2023-09-16 09:18:48.113113",
+        "source_id": 1693,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Qlona",
-        "artist_name": "Karol G & Peso Pluma",
+        "title": "Standing Room Only",
+        "artist_name": "Tim McGraw",
         "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.851851",
-        "source_id": 1690,
+        "capture_date": "2023-09-16 09:18:48.114114",
+        "source_id": 1693,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Supposed To Be Loved",
-        "artist_name": "DJ Khaled, Lil Baby, Future & Lil Uzi Vert",
+        "title": "Barely Holdin' On",
+        "artist_name": "Polo G",
         "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.852852",
-        "source_id": 1690,
+        "capture_date": "2023-09-16 09:18:48.114114",
+        "source_id": 1693,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Painter",
-        "artist_name": "Cody Johnson",
+        "title": "F*ck U Thought",
+        "artist_name": "Lil Durk",
         "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.852852",
-        "source_id": 1690,
+        "capture_date": "2023-09-16 09:18:48.115115",
+        "source_id": 1693,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Una Noche En Medellin (Remix)",
-        "artist_name": "Karol G, Cris Mj & Ryan Castro",
+        "title": "Summer Too Hot",
+        "artist_name": "Chris Brown",
         "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.852852",
-        "source_id": 1690,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Aint Gotta Dollar",
-        "artist_name": "Oliver Anthony Music",
-        "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.853853",
-        "source_id": 1690,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Oki Doki",
-        "artist_name": "Karol G",
-        "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.853853",
-        "source_id": 1690,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pretty Little Poison",
-        "artist_name": "Warren Zeiders",
-        "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.853853",
-        "source_id": 1690,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Amargura",
-        "artist_name": "Karol G",
-        "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.853853",
-        "source_id": 1690,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Love Me Again",
-        "artist_name": "V",
-        "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.853853",
-        "source_id": 1690,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mona Lisa",
-        "artist_name": "Dominic Fike",
-        "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.853853",
-        "source_id": 1690,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lose Control",
-        "artist_name": "Teddy Swims",
-        "video_id": null,
-        "capture_date": "2023-09-15 08:38:57.853853",
-        "source_id": 1690,
+        "capture_date": "2023-09-16 09:18:48.115115",
+        "source_id": 1693,
         "song_id": null,
         "duplicate": false
     }
@@ -261,18 +189,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Mi Ex Tenia Razon', 'Karol G', NULL),
-  ('Qlona', 'Karol G & Peso Pluma', NULL),
-  ('Supposed To Be Loved', 'DJ Khaled, Lil Baby, Future & Lil Uzi Vert', NULL),
-  ('The Painter', 'Cody Johnson', NULL),
-  ('Una Noche En Medellin (Remix)', 'Karol G, Cris Mj & Ryan Castro', NULL),
-  ('Aint Gotta Dollar', 'Oliver Anthony Music', NULL),
-  ('Oki Doki', 'Karol G', NULL),
-  ('Pretty Little Poison', 'Warren Zeiders', NULL),
-  ('Amargura', 'Karol G', NULL),
-  ('Love Me Again', 'V', NULL),
-  ('Mona Lisa', 'Dominic Fike', NULL),
-  ('Lose Control', 'Teddy Swims', NULL)
+  ('Call Your Friends', 'Rod Wave', NULL),
+  ('Standing Room Only', 'Tim McGraw', NULL),
+  ('Barely Holdin’ On', 'Polo G', NULL),
+  ('F*ck U Thought', 'Lil Durk', NULL),
+  ('Summer Too Hot', 'Chris Brown', NULL)
   ;
 
    // Update to song table
@@ -283,7 +204,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14655; // SELECT last_insert_rowid();
+  song_id = 14674; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -323,19 +244,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-15 08:38:57.850850', '1690', '14626'),
-  ('2023-09-15 08:38:57.851851', '1690', '14644'),
-  ('2023-09-15 08:38:57.851851', '1690', '14645'),
-  ('2023-09-15 08:38:57.852852', '1690', '14646'),
-  ('2023-09-15 08:38:57.852852', '1690', '14647'),
-  ('2023-09-15 08:38:57.852852', '1690', '14648'),
-  ('2023-09-15 08:38:57.853853', '1690', '14649'),
-  ('2023-09-15 08:38:57.853853', '1690', '14650'),
-  ('2023-09-15 08:38:57.853853', '1690', '14651'),
-  ('2023-09-15 08:38:57.853853', '1690', '14652'),
-  ('2023-09-15 08:38:57.853853', '1690', '14653'),
-  ('2023-09-15 08:38:57.853853', '1690', '14654'),
-  ('2023-09-15 08:38:57.853853', '1690', '14655')
+  ('2023-09-16 09:18:48.113113', '1693', '14670'),
+  ('2023-09-16 09:18:48.114114', '1693', '14671'),
+  ('2023-09-16 09:18:48.114114', '1693', '14672'),
+  ('2023-09-16 09:18:48.115115', '1693', '14673'),
+  ('2023-09-16 09:18:48.115115', '1693', '14674')
   ;
 
   // Update to source_song table
