@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of September 2, 2023', '2023-09-02 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-09-02/');
+    ('Billboard', 'The Hot 100', 'Week of September 9, 2023', '2023-09-09 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-09-09/');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1693; // SELECT last_insert_rowid();
+  source_id = 1696; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,47 +105,182 @@
   songsData =
   [
     {
-        "title": "Call Your Friends",
-        "artist_name": "Rod Wave",
+        "title": "Used To Be Young",
+        "artist_name": "Miley Cyrus",
         "video_id": null,
-        "capture_date": "2023-09-16 09:18:48.113113",
-        "source_id": 1693,
+        "capture_date": "2023-09-16 09:33:49.514514",
+        "source_id": 1696,
+        "song_id": 14675,
+        "duplicate": true
+    },
+    {
+        "title": "Hey Driver",
+        "artist_name": "Zach Bryan ft. The War And Treaty",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Standing Room Only",
-        "artist_name": "Tim McGraw",
+        "title": "Spotless",
+        "artist_name": "Zach Bryan ft. The Lumineers",
         "video_id": null,
-        "capture_date": "2023-09-16 09:18:48.114114",
-        "source_id": 1693,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Barely Holdin' On",
-        "artist_name": "Polo G",
+        "title": "East Side Of Sorrow",
+        "artist_name": "Zach Bryan",
         "video_id": null,
-        "capture_date": "2023-09-16 09:18:48.114114",
-        "source_id": 1693,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "F*ck U Thought",
-        "artist_name": "Lil Durk",
+        "title": "Single Soon",
+        "artist_name": "Selena Gomez",
         "video_id": null,
-        "capture_date": "2023-09-16 09:18:48.115115",
-        "source_id": 1693,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
+        "song_id": 14679,
+        "duplicate": true
+    },
+    {
+        "title": "Tourniquet",
+        "artist_name": "Zach Bryan",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Summer Too Hot",
-        "artist_name": "Chris Brown",
+        "title": "Overtime",
+        "artist_name": "Zach Bryan",
         "video_id": null,
-        "capture_date": "2023-09-16 09:18:48.115115",
-        "source_id": 1693,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Summertime's Close",
+        "artist_name": "Zach Bryan",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Fear And Friday's",
+        "artist_name": "Zach Bryan",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ticking",
+        "artist_name": "Zach Bryan",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "El Dorado",
+        "artist_name": "Zach Bryan",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Holy Roller",
+        "artist_name": "Zach Bryan ft. Sierra Ferrell",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Smaller Acts",
+        "artist_name": "Zach Bryan",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.515515",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Jake's Piano - Long Island",
+        "artist_name": "Zach Bryan",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.516516",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Tradesman",
+        "artist_name": "Zach Bryan",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.516516",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Oklahoman Son",
+        "artist_name": "Zach Bryan",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.516516",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sittin' On Top Of The World",
+        "artist_name": "Burna Boy",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.517517",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "There I Go",
+        "artist_name": "Gucci Mane ft. J. Cole & Mike WiLL Made-It",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.517517",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Primera Cita",
+        "artist_name": "Carin Leon",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.517517",
+        "source_id": 1696,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "On My Mama",
+        "artist_name": "Victoria Monet",
+        "video_id": null,
+        "capture_date": "2023-09-16 09:33:49.517517",
+        "source_id": 1696,
         "song_id": null,
         "duplicate": false
     }
@@ -189,11 +324,24 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Call Your Friends', 'Rod Wave', NULL),
-  ('Standing Room Only', 'Tim McGraw', NULL),
-  ('Barely Holdin’ On', 'Polo G', NULL),
-  ('F*ck U Thought', 'Lil Durk', NULL),
-  ('Summer Too Hot', 'Chris Brown', NULL)
+  ('Hey Driver', 'Zach Bryan ft. The War And Treaty', NULL),
+  ('Spotless', 'Zach Bryan ft. The Lumineers', NULL),
+  ('East Side Of Sorrow', 'Zach Bryan', NULL),
+  ('Tourniquet', 'Zach Bryan', NULL),
+  ('Overtime', 'Zach Bryan', NULL),
+  ('Summertime’s Close', 'Zach Bryan', NULL),
+  ('Fear And Friday’s', 'Zach Bryan', NULL),
+  ('Ticking', 'Zach Bryan', NULL),
+  ('El Dorado', 'Zach Bryan', NULL),
+  ('Holy Roller', 'Zach Bryan ft. Sierra Ferrell', NULL),
+  ('Smaller Acts', 'Zach Bryan', NULL),
+  ('Jake’s Piano - Long Island', 'Zach Bryan', NULL),
+  ('Tradesman', 'Zach Bryan', NULL),
+  ('Oklahoman Son', 'Zach Bryan', NULL),
+  ('Sittin’ On Top Of The World', 'Burna Boy', NULL),
+  ('There I Go', 'Gucci Mane ft. J. Cole & Mike WiLL Made-It', NULL),
+  ('Primera Cita', 'Carin Leon', NULL),
+  ('On My Mama', 'Victoria Monet', NULL)
   ;
 
    // Update to song table
@@ -204,7 +352,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14674; // SELECT last_insert_rowid();
+  song_id = 14707; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -244,11 +392,26 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-16 09:18:48.113113', '1693', '14670'),
-  ('2023-09-16 09:18:48.114114', '1693', '14671'),
-  ('2023-09-16 09:18:48.114114', '1693', '14672'),
-  ('2023-09-16 09:18:48.115115', '1693', '14673'),
-  ('2023-09-16 09:18:48.115115', '1693', '14674')
+  ('2023-09-16 09:33:49.514514', '1696', '14675'),
+  ('2023-09-16 09:33:49.515515', '1696', '14690'),
+  ('2023-09-16 09:33:49.515515', '1696', '14691'),
+  ('2023-09-16 09:33:49.515515', '1696', '14692'),
+  ('2023-09-16 09:33:49.515515', '1696', '14679'),
+  ('2023-09-16 09:33:49.515515', '1696', '14693'),
+  ('2023-09-16 09:33:49.515515', '1696', '14694'),
+  ('2023-09-16 09:33:49.515515', '1696', '14695'),
+  ('2023-09-16 09:33:49.515515', '1696', '14696'),
+  ('2023-09-16 09:33:49.515515', '1696', '14697'),
+  ('2023-09-16 09:33:49.515515', '1696', '14698'),
+  ('2023-09-16 09:33:49.515515', '1696', '14699'),
+  ('2023-09-16 09:33:49.515515', '1696', '14700'),
+  ('2023-09-16 09:33:49.516516', '1696', '14701'),
+  ('2023-09-16 09:33:49.516516', '1696', '14702'),
+  ('2023-09-16 09:33:49.516516', '1696', '14703'),
+  ('2023-09-16 09:33:49.517517', '1696', '14704'),
+  ('2023-09-16 09:33:49.517517', '1696', '14705'),
+  ('2023-09-16 09:33:49.517517', '1696', '14706'),
+  ('2023-09-16 09:33:49.517517', '1696', '14707')
   ;
 
   // Update to source_song table
