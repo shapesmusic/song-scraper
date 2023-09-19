@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of September 8, 2023', '2023-09-08 12:00:00.000000', 'https://www.stereogum.com/2235627/the-5-best-songs-of-the-week-499/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of September 15, 2023', '2023-09-15 12:00:00.000000', 'https://www.stereogum.com/2236240/the-5-best-songs-of-the-week-500/lists/the-5-best-songs-of-the-week/');
 
 
   // Update to source table
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1701; // SELECT last_insert_rowid();
+  source_id = 1722; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -101,52 +101,52 @@
 
   songsData =
   [
-      {
-          "title": "Chaos Reigns",
-          "artist_name": "Gladie",
-          "video_id": null,
-          "capture_date": "2023-09-16 10:10:50.775775",
-          "source_id": 1701,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "I Thought You'd Change",
-          "artist_name": "Hotline TNT",
-          "video_id": null,
-          "capture_date": "2023-09-16 10:10:50.775775",
-          "source_id": 1701,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "The Game",
-          "artist_name": "Faith Healer",
-          "video_id": null,
-          "capture_date": "2023-09-16 10:10:50.775775",
-          "source_id": 1701,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Engine",
-          "artist_name": "Slaughter Beach, Dog",
-          "video_id": null,
-          "capture_date": "2023-09-16 10:10:50.775775",
-          "source_id": 1701,
-          "song_id": null,
-          "duplicate": false
-      },
-      {
-          "title": "Up And Comer",
-          "artist_name": "Sprints",
-          "video_id": null,
-          "capture_date": "2023-09-16 10:10:50.775775",
-          "source_id": 1701,
-          "song_id": null,
-          "duplicate": false
-      }
-  ]
+    {
+        "title": "fan learning difficulty",
+        "artist_name": "Mclusky",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:52:39.146146",
+        "source_id": 1722,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Born For Loving You",
+        "artist_name": "Big Thief",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:52:39.149149",
+        "source_id": 1722,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Sked",
+        "artist_name": "Denzel Curry",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:52:39.149149",
+        "source_id": 1722,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "KPR",
+        "artist_name": "Yumi Zouma",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:52:39.149149",
+        "source_id": 1722,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "get him back!",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:52:39.149149",
+        "source_id": 1722,
+        "song_id": 14769,
+        "duplicate": true
+    }
+]
 
 
   // Check each song for duplicates in the database
@@ -187,11 +187,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Chaos Reigns', 'Gladie', NULL),
-  ('I Thought You’d Change', 'Hotline TNT', NULL),
-  ('The Game', 'Faith Healer', NULL),
-  ('Engine', 'Slaughter Beach, Dog', NULL),
-  ('Up And Comer', 'Sprints', NULL)
+  ('fan learning difficulty', 'Mclusky', NULL),
+  ('Born For Loving You', 'Big Thief', NULL),
+  ('Sked', 'Denzel Curry', NULL),
+  ('KPR', 'Yumi Zouma', NULL)
   ;
 
    // Update to song table
@@ -202,7 +201,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14745; // SELECT last_insert_rowid();
+  song_id = 14794; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -242,11 +241,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-16 10:10:50.775775', '1701', '14741'),
-  ('2023-09-16 10:10:50.775775', '1701', '14742'),
-  ('2023-09-16 10:10:50.775775', '1701', '14743'),
-  ('2023-09-16 10:10:50.775775', '1701', '14744'),
-  ('2023-09-16 10:10:50.775775', '1701', '14745')
+  ('2023-09-19 04:52:39.146146', '1722', '14791'),
+  ('2023-09-19 04:52:39.149149', '1722', '14792'),
+  ('2023-09-19 04:52:39.149149', '1722', '14793'),
+  ('2023-09-19 04:52:39.149149', '1722', '14794'),
+  ('2023-09-19 04:52:39.149149', '1722', '14769')
   ;
 
   // Update to source_song table

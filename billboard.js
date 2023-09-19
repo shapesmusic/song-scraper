@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of September 16, 2023', '2023-09-16 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-09-16');
+    ('Billboard', 'The Hot 100', 'Week of September 23, 2023', '2023-09-23 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-09-23');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1699; // SELECT last_insert_rowid();
+  source_id = 1720; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,58 +105,121 @@
   songsData =
   [
     {
-        "title": "Last Time I Saw You",
-        "artist_name": "Nicki Minaj",
+        "title": "Get Him Back!",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2023-09-16 10:03:06.584584",
-        "source_id": 1699,
-        "song_id": 14709,
-        "duplicate": true
-    },
-    {
-        "title": "Demons",
-        "artist_name": "Doja Cat",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:03:06.585585",
-        "source_id": 1699,
-        "song_id": 14708,
-        "duplicate": true
-    },
-    {
-        "title": "Come See Me",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:03:06.585585",
-        "source_id": 1699,
+        "capture_date": "2023-09-19 04:44:33.735735",
+        "source_id": 1720,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Que Onda",
-        "artist_name": "Calle 24 x Chino Pacas x Fuerza Regida",
+        "title": "All-American Bitch",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2023-09-16 10:03:06.585585",
-        "source_id": 1699,
+        "capture_date": "2023-09-19 04:44:33.735735",
+        "source_id": 1720,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "SkeeYee",
-        "artist_name": "Sexyy Red",
+        "title": "Bongos",
+        "artist_name": "Cardi B & Megan Thee Stallion",
         "video_id": null,
-        "capture_date": "2023-09-16 10:03:06.585585",
-        "source_id": 1699,
-        "song_id": 14385,
+        "capture_date": "2023-09-19 04:44:33.735735",
+        "source_id": 1720,
+        "song_id": 14732,
         "duplicate": true
     },
     {
-        "title": "Keep Going Up!",
-        "artist_name": "Timbaland, Nelly Furtado & Justin Timberlake",
+        "title": "The Grudge",
+        "artist_name": "Olivia Rodrigo",
         "video_id": null,
-        "capture_date": "2023-09-16 10:03:06.586586",
-        "source_id": 1699,
+        "capture_date": "2023-09-19 04:44:33.735735",
+        "source_id": 1720,
         "song_id": null,
         "duplicate": false
+    },
+    {
+        "title": "Making The Bed",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:44:33.735735",
+        "source_id": 1720,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Logical",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:44:33.735735",
+        "source_id": 1720,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Lacy",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:44:33.736736",
+        "source_id": 1720,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Ballad Of A Homeschooled Girl",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:44:33.736736",
+        "source_id": 1720,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Love Is Embarrassing",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:44:33.736736",
+        "source_id": 1720,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pretty Isn't Pretty",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:44:33.736736",
+        "source_id": 1720,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Teenage Dream",
+        "artist_name": "Olivia Rodrigo",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:44:33.736736",
+        "source_id": 1720,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Slow Dancing",
+        "artist_name": "V",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:44:33.737737",
+        "source_id": 1720,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bipolar",
+        "artist_name": "Peso Pluma x Jasiel Nunez x Junior H",
+        "video_id": null,
+        "capture_date": "2023-09-19 04:44:33.737737",
+        "source_id": 1720,
+        "song_id": 14733,
+        "duplicate": true
     }
 ]
 
@@ -198,9 +261,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Come See Me', 'Rod Wave', NULL),
-  ('Que Onda', 'Calle 24 x Chino Pacas x Fuerza Regida', NULL),
-  ('Keep Going Up!', 'Timbaland, Nelly Furtado & Justin Timberlake', NULL)
+  ('Get Him Back!', 'Olivia Rodrigo', NULL),
+  ('All-American Bitch', 'Olivia Rodrigo', NULL),
+  ('The Grudge', 'Olivia Rodrigo', NULL),
+  ('Making The Bed', 'Olivia Rodrigo', NULL),
+  ('Logical', 'Olivia Rodrigo', NULL),
+  ('Lacy', 'Olivia Rodrigo', NULL),
+  ('Ballad Of A Homeschooled Girl', 'Olivia Rodrigo', NULL),
+  ('Love Is Embarrassing', 'Olivia Rodrigo', NULL),
+  ('Pretty Isn’t Pretty', 'Olivia Rodrigo', NULL),
+  ('Teenage Dream', 'Olivia Rodrigo', NULL),
+  ('Slow Dancing', 'V', NULL)
   ;
 
    // Update to song table
@@ -211,7 +282,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14726; // SELECT last_insert_rowid();
+  song_id = 14779; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -251,12 +322,19 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-16 10:03:06.584584', '1699', '14709'),
-  ('2023-09-16 10:03:06.585585', '1699', '14708'),
-  ('2023-09-16 10:03:06.585585', '1699', '14724'),
-  ('2023-09-16 10:03:06.585585', '1699', '14725'),
-  ('2023-09-16 10:03:06.585585', '1699', '14385'),
-  ('2023-09-16 10:03:06.586586', '1699', '14726')
+  ('2023-09-19 04:44:33.735735', '1720', '14769'),
+  ('2023-09-19 04:44:33.735735', '1720', '14770'),
+  ('2023-09-19 04:44:33.735735', '1720', '14732'),
+  ('2023-09-19 04:44:33.735735', '1720', '14771'),
+  ('2023-09-19 04:44:33.735735', '1720', '14772'),
+  ('2023-09-19 04:44:33.735735', '1720', '14773'),
+  ('2023-09-19 04:44:33.736736', '1720', '14774'),
+  ('2023-09-19 04:44:33.736736', '1720', '14775'),
+  ('2023-09-19 04:44:33.736736', '1720', '14776'),
+  ('2023-09-19 04:44:33.736736', '1720', '14777'),
+  ('2023-09-19 04:44:33.736736', '1720', '14778'),
+  ('2023-09-19 04:44:33.737737', '1720', '14779'),
+  ('2023-09-19 04:44:33.737737', '1720', '14733')
   ;
 
   // Update to source_song table

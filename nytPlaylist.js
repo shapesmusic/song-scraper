@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'The Rolling Stones Roar Back, and 13 More New Songs', '2023-09-14 07:26:10.000000', 'https://www.nytimes.com/2023/09/08/arts/music/playlist-rolling-stones-cardi-b-megan-thee-stallion.html');
+    ('New York Times', 'The Playlist', 'Maren Morris Revels in a Fresh Start, and 10 More New Songs', '2023-09-15 10:54:00.000000', 'https://www.nytimes.com/2023/09/15/arts/music/playlist-maren-morris-mitski.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1700; // SELECT last_insert_rowid();
+  source_id = 1721; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,128 +100,101 @@
   songsData =
   [
     {
-        "title": "Angry",
-        "artist_name": "The Rolling Stones",
+        "title": "The Tree",
+        "artist_name": "Maren Morris",
         "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.715715",
-        "source_id": 1700,
+        "capture_date": "2023-09-19 04:49:03.127127",
+        "source_id": 1721,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Like Veils Said Lorraine",
-        "artist_name": "Joni Mitchell",
+        "title": "My Love Mine All Mine",
+        "artist_name": "Mitski",
         "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.716716",
-        "source_id": 1700,
+        "capture_date": "2023-09-19 04:49:03.128128",
+        "source_id": 1721,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Eve Was Black",
-        "artist_name": "Allison Russell",
+        "title": "She Belongs to Me (Live at the Royal Albert Hall)",
+        "artist_name": "Cat Power",
         "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.716716",
-        "source_id": 1700,
+        "capture_date": "2023-09-19 04:49:03.128128",
+        "source_id": 1721,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Women Ain’t Whiskey",
-        "artist_name": "Ashley McBryde",
+        "title": "Think I’m in Love With You",
+        "artist_name": "Chris Stapleton",
         "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.716716",
-        "source_id": 1700,
+        "capture_date": "2023-09-19 04:49:03.128128",
+        "source_id": 1721,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Texting and Driving",
-        "artist_name": "Guppy",
+        "title": "Break Every Chain",
+        "artist_name": "Parchman Prison Prayer",
         "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.716716",
-        "source_id": 1700,
+        "capture_date": "2023-09-19 04:49:03.128128",
+        "source_id": 1721,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bongos",
-        "artist_name": "Cardi B ft. Megan Thee Stallion",
+        "title": "Fever",
+        "artist_name": "Nas",
         "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.716716",
-        "source_id": 1700,
+        "capture_date": "2023-09-19 04:49:03.128128",
+        "source_id": 1721,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bipolar",
-        "artist_name": "Peso Pluma, Jasiel Nuñez and Junior H",
+        "title": "I DM U",
+        "artist_name": "Loraine James ft. Morgan Simpson",
         "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.716716",
-        "source_id": 1700,
+        "capture_date": "2023-09-19 04:49:03.128128",
+        "source_id": 1721,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Problema Cabrón",
-        "artist_name": "Residente and Wos",
+        "title": "Jessica",
+        "artist_name": "Jenn Champion",
         "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.716716",
-        "source_id": 1700,
+        "capture_date": "2023-09-19 04:49:03.128128",
+        "source_id": 1721,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Raisins Under the Sun",
-        "artist_name": "Yussef Dayes ft. Shabaka Hutchings",
+        "title": "Easy Thing (Demo)",
+        "artist_name": "Snail Mail",
         "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.716716",
-        "source_id": 1700,
+        "capture_date": "2023-09-19 04:49:03.128128",
+        "source_id": 1721,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Limit",
-        "artist_name": "Tirzah",
+        "title": "Flor de Lis",
+        "artist_name": "Kavita Shah and Bau",
         "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.716716",
-        "source_id": 1700,
+        "capture_date": "2023-09-19 04:49:03.128128",
+        "source_id": 1721,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "No Caffeine",
-        "artist_name": "Marika Hackman",
+        "title": "Chimera",
+        "artist_name": "Steve Lehman",
         "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.717717",
-        "source_id": 1700,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "California and Me",
-        "artist_name": "Laufey",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.717717",
-        "source_id": 1700,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sparrow",
-        "artist_name": "James Brandon Lewis",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.717717",
-        "source_id": 1700,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Lamentations of Jeremiah",
-        "artist_name": "Vince Clarke",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:06:56.717717",
-        "source_id": 1700,
+        "capture_date": "2023-09-19 04:49:03.128128",
+        "source_id": 1721,
         "song_id": null,
         "duplicate": false
     }
@@ -266,20 +239,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Angry', 'The Rolling Stones', NULL),
-  ('Like Veils Said Lorraine', 'Joni Mitchell', NULL),
-  ('Eve Was Black', 'Allison Russell', NULL),
-  ('Women Ain’t Whiskey', 'Ashley McBryde', NULL),
-  ('Texting and Driving', 'Guppy', NULL),
-  ('Bongos', 'Cardi B ft. Megan Thee Stallion', NULL),
-  ('Bipolar', 'Peso Pluma, Jasiel Nuñez and Junior H', NULL),
-  ('Problema Cabrón', 'Residente and Wos', NULL),
-  ('Raisins Under the Sun', 'Yussef Dayes ft. Shabaka Hutchings', NULL),
-  ('No Limit', 'Tirzah', NULL),
-  ('No Caffeine', 'Marika Hackman', NULL),
-  ('California and Me', 'Laufey', NULL),
-  ('Sparrow', 'James Brandon Lewis', NULL),
-  ('The Lamentations of Jeremiah', 'Vince Clarke', NULL)
+  ('The Tree', 'Maren Morris', NULL),
+  ('My Love Mine All Mine', 'Mitski', NULL),
+  ('She Belongs to Me (Live at the Royal Albert Hall)', 'Cat Power', NULL),
+  ('Think I’m in Love With You', 'Chris Stapleton', NULL),
+  ('Break Every Chain', 'Parchman Prison Prayer', NULL),
+  ('Fever', 'Nas', NULL),
+  ('I DM U', 'Loraine James ft. Morgan Simpson', NULL),
+  ('Jessica', 'Jenn Champion', NULL),
+  ('Easy Thing (Demo)', 'Snail Mail', NULL),
+  ('Flor de Lis', 'Kavita Shah and Bau', NULL),
+  ('Chimera', 'Steve Lehman', NULL)
   ;
 
    // Update to song table
@@ -290,7 +260,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14740; // SELECT last_insert_rowid();
+  song_id = 14790; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -330,20 +300,17 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-16 10:06:56.715715', '1700', '14727'),
-  ('2023-09-16 10:06:56.716716', '1700', '14728'),
-  ('2023-09-16 10:06:56.716716', '1700', '14729'),
-  ('2023-09-16 10:06:56.716716', '1700', '14730'),
-  ('2023-09-16 10:06:56.716716', '1700', '14731'),
-  ('2023-09-16 10:06:56.716716', '1700', '14732'),
-  ('2023-09-16 10:06:56.716716', '1700', '14733'),
-  ('2023-09-16 10:06:56.716716', '1700', '14734'),
-  ('2023-09-16 10:06:56.716716', '1700', '14735'),
-  ('2023-09-16 10:06:56.716716', '1700', '14736'),
-  ('2023-09-16 10:06:56.717717', '1700', '14737'),
-  ('2023-09-16 10:06:56.717717', '1700', '14738'),
-  ('2023-09-16 10:06:56.717717', '1700', '14739'),
-  ('2023-09-16 10:06:56.717717', '1700', '14740')
+  ('2023-09-19 04:49:03.127127', '1721', '14780'),
+  ('2023-09-19 04:49:03.128128', '1721', '14781'),
+  ('2023-09-19 04:49:03.128128', '1721', '14782'),
+  ('2023-09-19 04:49:03.128128', '1721', '14783'),
+  ('2023-09-19 04:49:03.128128', '1721', '14784'),
+  ('2023-09-19 04:49:03.128128', '1721', '14785'),
+  ('2023-09-19 04:49:03.128128', '1721', '14786'),
+  ('2023-09-19 04:49:03.128128', '1721', '14787'),
+  ('2023-09-19 04:49:03.128128', '1721', '14788'),
+  ('2023-09-19 04:49:03.128128', '1721', '14789'),
+  ('2023-09-19 04:49:03.128128', '1721', '14790')
   ;
 
   // Update to source_song table

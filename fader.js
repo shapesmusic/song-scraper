@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of September 11, 2023', -- Mondays (for the previous week, including the publication_date)
-      '2023-09-11 12:00:00.000000', -- Dont forget this!
+      'Week of September 19, 2023', -- Tuesday (NMT) most recent
+      '2023-09-19 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1702; // SELECT last_insert_rowid();
+    source_id = 1723; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,101 +458,29 @@
     songsData =
     [
     {
-        "title": "Couldn't Imagine",
-        "artist_name": "RealYungPhil and Gud",
+        "title": "Eye Never Knew",
+        "artist_name": "Butcher Brown ft. Pink Siifu & Keyon Harrold",
         "video_id": null,
-        "capture_date": "2023-09-16 10:16:17.053000",
-        "source_id": 1702,
+        "capture_date": "2023-09-19 04:57:10.284000",
+        "source_id": 1723,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Voice From The Wind",
-        "artist_name": "Gabriel Gifford ft. Aphty Khéa",
+        "title": "Peaches and Eggplant (remix)",
+        "artist_name": "Young Nudy ft. Sexxy Red & Latto",
         "video_id": null,
-        "capture_date": "2023-09-16 10:16:17.053000",
-        "source_id": 1702,
+        "capture_date": "2023-09-19 04:57:10.284000",
+        "source_id": 1723,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Elixir",
-        "artist_name": "George Riley",
+        "title": "Freedoom",
+        "artist_name": "Upchuck",
         "video_id": null,
-        "capture_date": "2023-09-16 10:16:17.053000",
-        "source_id": 1702,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Who Am I",
-        "artist_name": "Peewee Longway",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:16:17.053000",
-        "source_id": 1702,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Amber/Watcher",
-        "artist_name": "Maria BC",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:16:17.053000",
-        "source_id": 1702,
-        "song_id": 14718,
-        "duplicate": true
-    },
-    {
-        "title": "Don't Forget That I Love You",
-        "artist_name": "Pale Jay",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:16:17.053000",
-        "source_id": 1702,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "This Sorry Day",
-        "artist_name": "Sarah Morrison",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:16:17.053000",
-        "source_id": 1702,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "The Laughter Remains",
-        "artist_name": "Nate Amos",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:16:17.053000",
-        "source_id": 1702,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Too Close",
-        "artist_name": "Nosaj Thing and Jackques Greene ft. Ouri",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:16:17.053000",
-        "source_id": 1702,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Club Deuce",
-        "artist_name": "The Serfs",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:16:17.053000",
-        "source_id": 1702,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Tha Mood",
-        "artist_name": "Suzi Analogue",
-        "video_id": null,
-        "capture_date": "2023-09-16 10:16:17.053000",
-        "source_id": 1702,
+        "capture_date": "2023-09-19 04:57:10.284000",
+        "source_id": 1723,
         "song_id": null,
         "duplicate": false
     }
@@ -594,16 +522,9 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Couldn’t Imagine', 'RealYungPhil and Gud', NULL),
-    ('Voice From The Wind', 'Gabriel Gifford ft. Aphty Khéa', NULL),
-    ('Elixir', 'George Riley', NULL),
-    ('Who Am I', 'Peewee Longway', NULL),
-    ('Don’t Forget That I Love You', 'Pale Jay', NULL),
-    ('This Sorry Day', 'Sarah Morrison', NULL),
-    ('The Laughter Remains', 'Nate Amos', NULL),
-    ('Too Close', 'Nosaj Thing and Jackques Greene ft. Ouri', NULL),
-    ('Club Deuce', 'The Serfs', NULL),
-    ('Tha Mood', 'Suzi Analogue', NULL)
+    ('Eye Never Knew', 'Butcher Brown ft. Pink Siifu & Keyon Harrold', NULL),
+    ('Peaches and Eggplant (remix)', 'Young Nudy ft. Sexxy Red & Latto', NULL),
+    ('Freedoom', 'Upchuck', NULL)
     ;
 
      // Update to song table
@@ -614,7 +535,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14755; // SELECT last_insert_rowid();
+  song_id = 14797; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -654,17 +575,9 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-16 10:16:17.053000', '1702', '14746'),
-  ('2023-09-16 10:16:17.053000', '1702', '14747'),
-  ('2023-09-16 10:16:17.053000', '1702', '14748'),
-  ('2023-09-16 10:16:17.053000', '1702', '14749'),
-  ('2023-09-16 10:16:17.053000', '1702', '14718'),
-  ('2023-09-16 10:16:17.053000', '1702', '14750'),
-  ('2023-09-16 10:16:17.053000', '1702', '14751'),
-  ('2023-09-16 10:16:17.053000', '1702', '14752'),
-  ('2023-09-16 10:16:17.053000', '1702', '14753'),
-  ('2023-09-16 10:16:17.053000', '1702', '14754'),
-  ('2023-09-16 10:16:17.053000', '1702', '14755')
+  ('2023-09-19 04:57:10.284000', '1723', '14795'),
+  ('2023-09-19 04:57:10.284000', '1723', '14796'),
+  ('2023-09-19 04:57:10.284000', '1723', '14797')
   ;
 
   // Update to source_song table
