@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of September 30, 2023', '2023-09-30 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-09-30');
+    ('Billboard', 'The Hot 100', 'Week of October 7, 2023', '2023-10-07 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-10-07');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1724; // SELECT last_insert_rowid();
+  source_id = 1727; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,173 +105,128 @@
   songsData =
   [
     {
-        "title": "Turks & Caicos",
-        "artist_name": "Rod Wave ft. 21 Savage",
+        "title": "Sarah's Place",
+        "artist_name": "Zach Bryan ft. Noah Kahan",
         "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.203203",
-        "source_id": 1724,
+        "capture_date": "2023-10-07 01:44:36.341341",
+        "source_id": 1727,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Boyz Don't Cry",
-        "artist_name": "Rod Wave",
+        "title": "Agora Hills",
+        "artist_name": "Doja Cat",
         "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.203203",
-        "source_id": 1724,
+        "capture_date": "2023-10-07 01:44:36.342342",
+        "source_id": 1727,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Great Gatsby",
-        "artist_name": "Rod Wave",
+        "title": "Boys Of Faith",
+        "artist_name": "Zach Bryan ft. Bon Iver",
         "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.204204",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Greedy",
-        "artist_name": "Tate McRae",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.204204",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Long Journey",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.204204",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nostalgia",
-        "artist_name": "Rod Wave & Wet",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.204204",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Crazy",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.204204",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "HG4",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.204204",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Checkmate",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.204204",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Love For A Thug",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.204204",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "2018",
-        "artist_name": "Rod Wave & Sadie Jean",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.204204",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Keep It G",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.205205",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pass You By",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.205205",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Love Story/Interlude",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.205205",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Back Lit",
-        "artist_name": "Rod Wave",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.205205",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Another One Of Me",
-        "artist_name": "Diddy, French Montana & The Weeknd ft. 21 Savage",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.205205",
-        "source_id": 1724,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Strangers",
-        "artist_name": "Kenya Grace",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.205205",
-        "source_id": 1724,
-        "song_id": 14712,
+        "capture_date": "2023-10-07 01:44:36.342342",
+        "source_id": 1727,
+        "song_id": 14816,
         "duplicate": true
     },
     {
-        "title": "Rap Beef",
-        "artist_name": "Rod Wave",
+        "title": "Deep Satin",
+        "artist_name": "Zach Bryan",
         "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.205205",
-        "source_id": 1724,
+        "capture_date": "2023-10-07 01:44:36.343343",
+        "source_id": 1727,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Lil Boo Thang",
-        "artist_name": "Paul Russell",
+        "title": "Nine Ball",
+        "artist_name": "Zach Bryan",
         "video_id": null,
-        "capture_date": "2023-10-07 01:32:46.206206",
-        "source_id": 1724,
+        "capture_date": "2023-10-07 01:44:36.343343",
+        "source_id": 1727,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "El Jefe",
+        "artist_name": "Shakira X Fuerza Regida",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:44:36.343343",
+        "source_id": 1727,
+        "song_id": 14820,
+        "duplicate": true
+    },
+    {
+        "title": "500lbs",
+        "artist_name": "Lil Tecca",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:44:36.343343",
+        "source_id": 1727,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "One More Time",
+        "artist_name": "Blink-182",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:44:36.343343",
+        "source_id": 1727,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Un Preview",
+        "artist_name": "Bad Bunny",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:44:36.343343",
+        "source_id": 1727,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pain, Sweet, Pain",
+        "artist_name": "Zach Bryan",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:44:36.343343",
+        "source_id": 1727,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "My Love Mine All Mine",
+        "artist_name": "Mitski",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:44:36.344344",
+        "source_id": 1727,
+        "song_id": 14781,
+        "duplicate": true
+    },
+    {
+        "title": "Segun Quien",
+        "artist_name": "Maluma & Carin Leon",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:44:36.344344",
+        "source_id": 1727,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "HVN On Earth",
+        "artist_name": "Lil Tecca & Kodak Black",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:44:36.344344",
+        "source_id": 1727,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Can't Have Mine",
+        "artist_name": "Dylan Scott",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:44:36.344344",
+        "source_id": 1727,
         "song_id": null,
         "duplicate": false
     }
@@ -315,24 +270,17 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Turks & Caicos', 'Rod Wave ft. 21 Savage', NULL),
-  ('Boyz Don’t Cry', 'Rod Wave', NULL),
-  ('Great Gatsby', 'Rod Wave', NULL),
-  ('Greedy', 'Tate McRae', NULL),
-  ('Long Journey', 'Rod Wave', NULL),
-  ('Nostalgia', 'Rod Wave & Wet', NULL),
-  ('Crazy', 'Rod Wave', NULL),
-  ('HG4', 'Rod Wave', NULL),
-  ('Checkmate', 'Rod Wave', NULL),
-  ('Love For A Thug', 'Rod Wave', NULL),
-  ('2018', 'Rod Wave & Sadie Jean', NULL),
-  ('Keep It G', 'Rod Wave', NULL),
-  ('Pass You By', 'Rod Wave', NULL),
-  ('Love Story/Interlude', 'Rod Wave', NULL),
-  ('Back Lit', 'Rod Wave', NULL),
-  ('Another One Of Me', 'Diddy, French Montana & The Weeknd ft. 21 Savage', NULL),
-  ('Rap Beef', 'Rod Wave', NULL),
-  ('Lil Boo Thang', 'Paul Russell', NULL)
+  ('Sarah’s Place', 'Zach Bryan ft. Noah Kahan', NULL),
+  ('Agora Hills', 'Doja Cat', NULL),
+  ('Deep Satin', 'Zach Bryan', NULL),
+  ('Nine Ball', 'Zach Bryan', NULL),
+  ('500lbs', 'Lil Tecca', NULL),
+  ('One More Time', 'Blink-182', NULL),
+  ('Un Preview', 'Bad Bunny', NULL),
+  ('Pain, Sweet, Pain', 'Zach Bryan', NULL),
+  ('Segun Quien', 'Maluma & Carin Leon', NULL),
+  ('HVN On Earth', 'Lil Tecca & Kodak Black', NULL),
+  ('Can’t Have Mine', 'Dylan Scott', NULL)
   ;
 
    // Update to song table
@@ -343,7 +291,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14815; // SELECT last_insert_rowid();
+  song_id = 14840; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -383,25 +331,20 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-10-07 01:32:46.203203', '1724', '14798'),
-  ('2023-10-07 01:32:46.203203', '1724', '14799'),
-  ('2023-10-07 01:32:46.204204', '1724', '14800'),
-  ('2023-10-07 01:32:46.204204', '1724', '14801'),
-  ('2023-10-07 01:32:46.204204', '1724', '14802'),
-  ('2023-10-07 01:32:46.204204', '1724', '14803'),
-  ('2023-10-07 01:32:46.204204', '1724', '14804'),
-  ('2023-10-07 01:32:46.204204', '1724', '14805'),
-  ('2023-10-07 01:32:46.204204', '1724', '14806'),
-  ('2023-10-07 01:32:46.204204', '1724', '14807'),
-  ('2023-10-07 01:32:46.204204', '1724', '14808'),
-  ('2023-10-07 01:32:46.205205', '1724', '14809'),
-  ('2023-10-07 01:32:46.205205', '1724', '14810'),
-  ('2023-10-07 01:32:46.205205', '1724', '14811'),
-  ('2023-10-07 01:32:46.205205', '1724', '14812'),
-  ('2023-10-07 01:32:46.205205', '1724', '14813'),
-  ('2023-10-07 01:32:46.205205', '1724', '14712'),
-  ('2023-10-07 01:32:46.205205', '1724', '14814'),
-  ('2023-10-07 01:32:46.206206', '1724', '14815')
+  ('2023-10-07 01:44:36.341341', '1727', '14830'),
+  ('2023-10-07 01:44:36.342342', '1727', '14831'),
+  ('2023-10-07 01:44:36.342342', '1727', '14816'),
+  ('2023-10-07 01:44:36.343343', '1727', '14832'),
+  ('2023-10-07 01:44:36.343343', '1727', '14833'),
+  ('2023-10-07 01:44:36.343343', '1727', '14820'),
+  ('2023-10-07 01:44:36.343343', '1727', '14834'),
+  ('2023-10-07 01:44:36.343343', '1727', '14835'),
+  ('2023-10-07 01:44:36.343343', '1727', '14836'),
+  ('2023-10-07 01:44:36.343343', '1727', '14837'),
+  ('2023-10-07 01:44:36.344344', '1727', '14781'),
+  ('2023-10-07 01:44:36.344344', '1727', '14838'),
+  ('2023-10-07 01:44:36.344344', '1727', '14839'),
+  ('2023-10-07 01:44:36.344344', '1727', '14840')
   ;
 
   // Update to source_song table

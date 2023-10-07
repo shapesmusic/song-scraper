@@ -320,8 +320,8 @@
     VALUES
       ('The Fader',
       'Songs You Need',
-      'Week of September 19, 2023', -- Tuesday (NMT) most recent
-      '2023-09-19 12:00:00.000000', -- Dont forget this!
+      'Week of October 3, 2023', -- Tuesday (NMT) most recent
+      '2023-10-03 12:00:00.000000', -- Dont forget this!
       'https://www.thefader.com/tag/songs-you-need-in-your-life');
 
       // Update to source table
@@ -331,7 +331,7 @@
   // Step 2: Enter source info into an array & create blank template songs
   //
 
-    source_id = 1723; // SELECT last_insert_rowid();
+    source_id = 1729; // SELECT last_insert_rowid();
 
     // Create a blank template song
     title = ""
@@ -458,29 +458,74 @@
     songsData =
     [
     {
-        "title": "Eye Never Knew",
-        "artist_name": "Butcher Brown ft. Pink Siifu & Keyon Harrold",
+        "title": "Dead or Alive",
+        "artist_name": "Lil Tecca",
         "video_id": null,
-        "capture_date": "2023-09-19 04:57:10.284000",
-        "source_id": 1723,
+        "capture_date": "2023-10-07 01:55:50.832000",
+        "source_id": 1729,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Peaches and Eggplant (remix)",
-        "artist_name": "Young Nudy ft. Sexxy Red & Latto",
+        "title": "T. T. F. G.",
+        "artist_name": "Saya Gray",
         "video_id": null,
-        "capture_date": "2023-09-19 04:57:10.284000",
-        "source_id": 1723,
+        "capture_date": "2023-10-07 01:55:50.832000",
+        "source_id": 1729,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Freedoom",
-        "artist_name": "Upchuck",
+        "title": "?",
+        "artist_name": "Saya Gray",
         "video_id": null,
-        "capture_date": "2023-09-19 04:57:10.284000",
-        "source_id": 1723,
+        "capture_date": "2023-10-07 01:55:50.832000",
+        "source_id": 1729,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "ANNIE, PICK A FLOWER.. (MY HOUSE)",
+        "artist_name": "Saya Gray",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:55:50.832000",
+        "source_id": 1729,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Goddess Woes",
+        "artist_name": "Fielded & Wolf Weston",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:55:50.832000",
+        "source_id": 1729,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pressure",
+        "artist_name": "Florentino ft. Shygirl",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:55:50.832000",
+        "source_id": 1729,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Crazy Girl P2",
+        "artist_name": "Bktherula and YoungBoy Never Broke Again",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:55:50.832000",
+        "source_id": 1729,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Blow Out",
+        "artist_name": "Overmono",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:55:50.832000",
+        "source_id": 1729,
         "song_id": null,
         "duplicate": false
     }
@@ -522,9 +567,14 @@
     INSERT INTO song
       (title, artist_name, video_id)
     VALUES
-    ('Eye Never Knew', 'Butcher Brown ft. Pink Siifu & Keyon Harrold', NULL),
-    ('Peaches and Eggplant (remix)', 'Young Nudy ft. Sexxy Red & Latto', NULL),
-    ('Freedoom', 'Upchuck', NULL)
+    ('Dead or Alive', 'Lil Tecca', NULL),
+    ('T. T. F. G.', 'Saya Gray', NULL),
+    ('?', 'Saya Gray', NULL),
+    ('ANNIE, PICK A FLOWER.. (MY HOUSE)', 'Saya Gray', NULL),
+    ('Goddess Woes', 'Fielded & Wolf Weston', NULL),
+    ('Pressure', 'Florentino ft. Shygirl', NULL),
+    ('Crazy Girl P2', 'Bktherula and YoungBoy Never Broke Again', NULL),
+    ('Blow Out', 'Overmono', NULL)
     ;
 
      // Update to song table
@@ -535,7 +585,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14797; // SELECT last_insert_rowid();
+  song_id = 14860; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -575,9 +625,14 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-19 04:57:10.284000', '1723', '14795'),
-  ('2023-09-19 04:57:10.284000', '1723', '14796'),
-  ('2023-09-19 04:57:10.284000', '1723', '14797')
+  ('2023-10-07 01:55:50.832000', '1729', '14853'),
+  ('2023-10-07 01:55:50.832000', '1729', '14854'),
+  ('2023-10-07 01:55:50.832000', '1729', '14855'),
+  ('2023-10-07 01:55:50.832000', '1729', '14856'),
+  ('2023-10-07 01:55:50.832000', '1729', '14857'),
+  ('2023-10-07 01:55:50.832000', '1729', '14858'),
+  ('2023-10-07 01:55:50.832000', '1729', '14859'),
+  ('2023-10-07 01:55:50.832000', '1729', '14860')
   ;
 
   // Update to source_song table
