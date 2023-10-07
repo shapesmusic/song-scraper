@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of September 23, 2023', '2023-09-23 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-09-23');
+    ('Billboard', 'The Hot 100', 'Week of September 30, 2023', '2023-09-30 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-09-30');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1720; // SELECT last_insert_rowid();
+  source_id = 1724; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,121 +105,175 @@
   songsData =
   [
     {
-        "title": "Get Him Back!",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Turks & Caicos",
+        "artist_name": "Rod Wave ft. 21 Savage",
         "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.735735",
-        "source_id": 1720,
+        "capture_date": "2023-10-07 01:32:46.203203",
+        "source_id": 1724,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "All-American Bitch",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Boyz Don't Cry",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.735735",
-        "source_id": 1720,
+        "capture_date": "2023-10-07 01:32:46.203203",
+        "source_id": 1724,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Bongos",
-        "artist_name": "Cardi B & Megan Thee Stallion",
+        "title": "Great Gatsby",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.735735",
-        "source_id": 1720,
-        "song_id": 14732,
+        "capture_date": "2023-10-07 01:32:46.204204",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Greedy",
+        "artist_name": "Tate McRae",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.204204",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Long Journey",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.204204",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Nostalgia",
+        "artist_name": "Rod Wave & Wet",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.204204",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Crazy",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.204204",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "HG4",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.204204",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Checkmate",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.204204",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Love For A Thug",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.204204",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "2018",
+        "artist_name": "Rod Wave & Sadie Jean",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.204204",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Keep It G",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.205205",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Pass You By",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.205205",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Love Story/Interlude",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.205205",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Back Lit",
+        "artist_name": "Rod Wave",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.205205",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Another One Of Me",
+        "artist_name": "Diddy, French Montana & The Weeknd ft. 21 Savage",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.205205",
+        "source_id": 1724,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Strangers",
+        "artist_name": "Kenya Grace",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:32:46.205205",
+        "source_id": 1724,
+        "song_id": 14712,
         "duplicate": true
     },
     {
-        "title": "The Grudge",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Rap Beef",
+        "artist_name": "Rod Wave",
         "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.735735",
-        "source_id": 1720,
+        "capture_date": "2023-10-07 01:32:46.205205",
+        "source_id": 1724,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Making The Bed",
-        "artist_name": "Olivia Rodrigo",
+        "title": "Lil Boo Thang",
+        "artist_name": "Paul Russell",
         "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.735735",
-        "source_id": 1720,
+        "capture_date": "2023-10-07 01:32:46.206206",
+        "source_id": 1724,
         "song_id": null,
         "duplicate": false
-    },
-    {
-        "title": "Logical",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.735735",
-        "source_id": 1720,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lacy",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.736736",
-        "source_id": 1720,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Ballad Of A Homeschooled Girl",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.736736",
-        "source_id": 1720,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Love Is Embarrassing",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.736736",
-        "source_id": 1720,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Pretty Isn't Pretty",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.736736",
-        "source_id": 1720,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Teenage Dream",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.736736",
-        "source_id": 1720,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Slow Dancing",
-        "artist_name": "V",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.737737",
-        "source_id": 1720,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Bipolar",
-        "artist_name": "Peso Pluma x Jasiel Nunez x Junior H",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:44:33.737737",
-        "source_id": 1720,
-        "song_id": 14733,
-        "duplicate": true
     }
 ]
 
@@ -261,17 +315,24 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Get Him Back!', 'Olivia Rodrigo', NULL),
-  ('All-American Bitch', 'Olivia Rodrigo', NULL),
-  ('The Grudge', 'Olivia Rodrigo', NULL),
-  ('Making The Bed', 'Olivia Rodrigo', NULL),
-  ('Logical', 'Olivia Rodrigo', NULL),
-  ('Lacy', 'Olivia Rodrigo', NULL),
-  ('Ballad Of A Homeschooled Girl', 'Olivia Rodrigo', NULL),
-  ('Love Is Embarrassing', 'Olivia Rodrigo', NULL),
-  ('Pretty Isn’t Pretty', 'Olivia Rodrigo', NULL),
-  ('Teenage Dream', 'Olivia Rodrigo', NULL),
-  ('Slow Dancing', 'V', NULL)
+  ('Turks & Caicos', 'Rod Wave ft. 21 Savage', NULL),
+  ('Boyz Don’t Cry', 'Rod Wave', NULL),
+  ('Great Gatsby', 'Rod Wave', NULL),
+  ('Greedy', 'Tate McRae', NULL),
+  ('Long Journey', 'Rod Wave', NULL),
+  ('Nostalgia', 'Rod Wave & Wet', NULL),
+  ('Crazy', 'Rod Wave', NULL),
+  ('HG4', 'Rod Wave', NULL),
+  ('Checkmate', 'Rod Wave', NULL),
+  ('Love For A Thug', 'Rod Wave', NULL),
+  ('2018', 'Rod Wave & Sadie Jean', NULL),
+  ('Keep It G', 'Rod Wave', NULL),
+  ('Pass You By', 'Rod Wave', NULL),
+  ('Love Story/Interlude', 'Rod Wave', NULL),
+  ('Back Lit', 'Rod Wave', NULL),
+  ('Another One Of Me', 'Diddy, French Montana & The Weeknd ft. 21 Savage', NULL),
+  ('Rap Beef', 'Rod Wave', NULL),
+  ('Lil Boo Thang', 'Paul Russell', NULL)
   ;
 
    // Update to song table
@@ -282,7 +343,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14779; // SELECT last_insert_rowid();
+  song_id = 14815; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -322,19 +383,25 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-19 04:44:33.735735', '1720', '14769'),
-  ('2023-09-19 04:44:33.735735', '1720', '14770'),
-  ('2023-09-19 04:44:33.735735', '1720', '14732'),
-  ('2023-09-19 04:44:33.735735', '1720', '14771'),
-  ('2023-09-19 04:44:33.735735', '1720', '14772'),
-  ('2023-09-19 04:44:33.735735', '1720', '14773'),
-  ('2023-09-19 04:44:33.736736', '1720', '14774'),
-  ('2023-09-19 04:44:33.736736', '1720', '14775'),
-  ('2023-09-19 04:44:33.736736', '1720', '14776'),
-  ('2023-09-19 04:44:33.736736', '1720', '14777'),
-  ('2023-09-19 04:44:33.736736', '1720', '14778'),
-  ('2023-09-19 04:44:33.737737', '1720', '14779'),
-  ('2023-09-19 04:44:33.737737', '1720', '14733')
+  ('2023-10-07 01:32:46.203203', '1724', '14798'),
+  ('2023-10-07 01:32:46.203203', '1724', '14799'),
+  ('2023-10-07 01:32:46.204204', '1724', '14800'),
+  ('2023-10-07 01:32:46.204204', '1724', '14801'),
+  ('2023-10-07 01:32:46.204204', '1724', '14802'),
+  ('2023-10-07 01:32:46.204204', '1724', '14803'),
+  ('2023-10-07 01:32:46.204204', '1724', '14804'),
+  ('2023-10-07 01:32:46.204204', '1724', '14805'),
+  ('2023-10-07 01:32:46.204204', '1724', '14806'),
+  ('2023-10-07 01:32:46.204204', '1724', '14807'),
+  ('2023-10-07 01:32:46.204204', '1724', '14808'),
+  ('2023-10-07 01:32:46.205205', '1724', '14809'),
+  ('2023-10-07 01:32:46.205205', '1724', '14810'),
+  ('2023-10-07 01:32:46.205205', '1724', '14811'),
+  ('2023-10-07 01:32:46.205205', '1724', '14812'),
+  ('2023-10-07 01:32:46.205205', '1724', '14813'),
+  ('2023-10-07 01:32:46.205205', '1724', '14712'),
+  ('2023-10-07 01:32:46.205205', '1724', '14814'),
+  ('2023-10-07 01:32:46.206206', '1724', '14815')
   ;
 
   // Update to source_song table

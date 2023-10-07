@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of September 15, 2023', '2023-09-15 12:00:00.000000', 'https://www.stereogum.com/2236240/the-5-best-songs-of-the-week-500/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of September 22, 2023', '2023-09-22 12:00:00.000000', 'https://www.stereogum.com/2237007/the-5-best-songs-of-the-week-501/lists/the-5-best-songs-of-the-week/');
 
 
   // Update to source table
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1722; // SELECT last_insert_rowid();
+  source_id = 1726; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -102,49 +102,49 @@
   songsData =
   [
     {
-        "title": "fan learning difficulty",
-        "artist_name": "Mclusky",
+        "title": "Got Me Started",
+        "artist_name": "Troye Sivan",
         "video_id": null,
-        "capture_date": "2023-09-19 04:52:39.146146",
-        "source_id": 1722,
+        "capture_date": "2023-10-07 01:41:05.315315",
+        "source_id": 1726,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Born For Loving You",
-        "artist_name": "Big Thief",
+        "title": "Dusk",
+        "artist_name": "Chelsea Wolfe",
         "video_id": null,
-        "capture_date": "2023-09-19 04:52:39.149149",
-        "source_id": 1722,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Sked",
-        "artist_name": "Denzel Curry",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:52:39.149149",
-        "source_id": 1722,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "KPR",
-        "artist_name": "Yumi Zouma",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:52:39.149149",
-        "source_id": 1722,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "get him back!",
-        "artist_name": "Olivia Rodrigo",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:52:39.149149",
-        "source_id": 1722,
-        "song_id": 14769,
+        "capture_date": "2023-10-07 01:41:05.316316",
+        "source_id": 1726,
+        "song_id": 14822,
         "duplicate": true
+    },
+    {
+        "title": "Pacer",
+        "artist_name": "Doechii",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:41:05.316316",
+        "source_id": 1726,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Census Designated",
+        "artist_name": "Jane Remover",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:41:05.316316",
+        "source_id": 1726,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "My Little Tony",
+        "artist_name": "Bar Italia",
+        "video_id": null,
+        "capture_date": "2023-10-07 01:41:05.317317",
+        "source_id": 1726,
+        "song_id": null,
+        "duplicate": false
     }
 ]
 
@@ -187,10 +187,10 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('fan learning difficulty', 'Mclusky', NULL),
-  ('Born For Loving You', 'Big Thief', NULL),
-  ('Sked', 'Denzel Curry', NULL),
-  ('KPR', 'Yumi Zouma', NULL)
+  ('Got Me Started', 'Troye Sivan', NULL),
+  ('Pacer', 'Doechii', NULL),
+  ('Census Designated', 'Jane Remover', NULL),
+  ('My Little Tony', 'Bar Italia', NULL)
   ;
 
    // Update to song table
@@ -201,7 +201,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14794; // SELECT last_insert_rowid();
+  song_id = 14829; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -241,11 +241,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-19 04:52:39.146146', '1722', '14791'),
-  ('2023-09-19 04:52:39.149149', '1722', '14792'),
-  ('2023-09-19 04:52:39.149149', '1722', '14793'),
-  ('2023-09-19 04:52:39.149149', '1722', '14794'),
-  ('2023-09-19 04:52:39.149149', '1722', '14769')
+  ('2023-10-07 01:41:05.315315', '1726', '14826'),
+  ('2023-10-07 01:41:05.316316', '1726', '14822'),
+  ('2023-10-07 01:41:05.316316', '1726', '14827'),
+  ('2023-10-07 01:41:05.316316', '1726', '14828'),
+  ('2023-10-07 01:41:05.317317', '1726', '14829')
   ;
 
   // Update to source_song table

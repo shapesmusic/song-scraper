@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Maren Morris Revels in a Fresh Start, and 10 More New Songs', '2023-09-15 10:54:00.000000', 'https://www.nytimes.com/2023/09/15/arts/music/playlist-maren-morris-mitski.html');
+    ('New York Times', 'The Playlist', 'Zach Bryan’s Melancholy Bon Iver Duet, and 9 More New Songs', '2023-09-22 11:24:41.000000', 'https://www.nytimes.com/2023/09/22/arts/music/playlist-zach-bryan-bon-iver-shakira.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1721; // SELECT last_insert_rowid();
+  source_id = 1725; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,101 +100,92 @@
   songsData =
   [
     {
-        "title": "The Tree",
-        "artist_name": "Maren Morris",
+        "title": "Boys of Faith",
+        "artist_name": "Zach Bryan ft. Bon Iver",
         "video_id": null,
-        "capture_date": "2023-09-19 04:49:03.127127",
-        "source_id": 1721,
+        "capture_date": "2023-10-07 01:37:56.389389",
+        "source_id": 1725,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "My Love Mine All Mine",
-        "artist_name": "Mitski",
+        "title": "Into Your Room",
+        "artist_name": "Holly Humberstone",
         "video_id": null,
-        "capture_date": "2023-09-19 04:49:03.128128",
-        "source_id": 1721,
+        "capture_date": "2023-10-07 01:37:56.390390",
+        "source_id": 1725,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "She Belongs to Me (Live at the Royal Albert Hall)",
-        "artist_name": "Cat Power",
+        "title": "Get Me Started",
+        "artist_name": "Troye Sivan",
         "video_id": null,
-        "capture_date": "2023-09-19 04:49:03.128128",
-        "source_id": 1721,
+        "capture_date": "2023-10-07 01:37:56.390390",
+        "source_id": 1725,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Think I’m in Love With You",
-        "artist_name": "Chris Stapleton",
+        "title": "Friends With Your Ex",
+        "artist_name": "Landon Barker",
         "video_id": null,
-        "capture_date": "2023-09-19 04:49:03.128128",
-        "source_id": 1721,
+        "capture_date": "2023-10-07 01:37:56.390390",
+        "source_id": 1725,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Break Every Chain",
-        "artist_name": "Parchman Prison Prayer",
+        "title": "El Jefe",
+        "artist_name": "Shakira and Fuerza Regida",
         "video_id": null,
-        "capture_date": "2023-09-19 04:49:03.128128",
-        "source_id": 1721,
+        "capture_date": "2023-10-07 01:37:56.390390",
+        "source_id": 1725,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fever",
-        "artist_name": "Nas",
+        "title": "Mad Dawgs",
+        "artist_name": "Byron Messia",
         "video_id": null,
-        "capture_date": "2023-09-19 04:49:03.128128",
-        "source_id": 1721,
+        "capture_date": "2023-10-07 01:37:56.390390",
+        "source_id": 1725,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "I DM U",
-        "artist_name": "Loraine James ft. Morgan Simpson",
+        "title": "Dusk",
+        "artist_name": "Chelsea Wolfe",
         "video_id": null,
-        "capture_date": "2023-09-19 04:49:03.128128",
-        "source_id": 1721,
+        "capture_date": "2023-10-07 01:37:56.390390",
+        "source_id": 1725,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Jessica",
-        "artist_name": "Jenn Champion",
+        "title": "Sick Eros",
+        "artist_name": "Laurel Halo",
         "video_id": null,
-        "capture_date": "2023-09-19 04:49:03.128128",
-        "source_id": 1721,
+        "capture_date": "2023-10-07 01:37:56.390390",
+        "source_id": 1725,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Easy Thing (Demo)",
-        "artist_name": "Snail Mail",
+        "title": "Be Without Being Seen — Movement I",
+        "artist_name": "Colleen",
         "video_id": null,
-        "capture_date": "2023-09-19 04:49:03.128128",
-        "source_id": 1721,
+        "capture_date": "2023-10-07 01:37:56.390390",
+        "source_id": 1725,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Flor de Lis",
-        "artist_name": "Kavita Shah and Bau",
+        "title": "Eros",
+        "artist_name": "Micah Thomas",
         "video_id": null,
-        "capture_date": "2023-09-19 04:49:03.128128",
-        "source_id": 1721,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Chimera",
-        "artist_name": "Steve Lehman",
-        "video_id": null,
-        "capture_date": "2023-09-19 04:49:03.128128",
-        "source_id": 1721,
+        "capture_date": "2023-10-07 01:37:56.390390",
+        "source_id": 1725,
         "song_id": null,
         "duplicate": false
     }
@@ -239,17 +230,16 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('The Tree', 'Maren Morris', NULL),
-  ('My Love Mine All Mine', 'Mitski', NULL),
-  ('She Belongs to Me (Live at the Royal Albert Hall)', 'Cat Power', NULL),
-  ('Think I’m in Love With You', 'Chris Stapleton', NULL),
-  ('Break Every Chain', 'Parchman Prison Prayer', NULL),
-  ('Fever', 'Nas', NULL),
-  ('I DM U', 'Loraine James ft. Morgan Simpson', NULL),
-  ('Jessica', 'Jenn Champion', NULL),
-  ('Easy Thing (Demo)', 'Snail Mail', NULL),
-  ('Flor de Lis', 'Kavita Shah and Bau', NULL),
-  ('Chimera', 'Steve Lehman', NULL)
+  ('Boys of Faith', 'Zach Bryan ft. Bon Iver', NULL),
+  ('Into Your Room', 'Holly Humberstone', NULL),
+  ('Get Me Started', 'Troye Sivan', NULL),
+  ('Friends With Your Ex', 'Landon Barker', NULL),
+  ('El Jefe', 'Shakira and Fuerza Regida', NULL),
+  ('Mad Dawgs', 'Byron Messia', NULL),
+  ('Dusk', 'Chelsea Wolfe', NULL),
+  ('Sick Eros', 'Laurel Halo', NULL),
+  ('Be Without Being Seen — Movement I', 'Colleen', NULL),
+  ('Eros', 'Micah Thomas', NULL)
   ;
 
    // Update to song table
@@ -260,7 +250,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14790; // SELECT last_insert_rowid();
+  song_id = 14825; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -300,17 +290,16 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-09-19 04:49:03.127127', '1721', '14780'),
-  ('2023-09-19 04:49:03.128128', '1721', '14781'),
-  ('2023-09-19 04:49:03.128128', '1721', '14782'),
-  ('2023-09-19 04:49:03.128128', '1721', '14783'),
-  ('2023-09-19 04:49:03.128128', '1721', '14784'),
-  ('2023-09-19 04:49:03.128128', '1721', '14785'),
-  ('2023-09-19 04:49:03.128128', '1721', '14786'),
-  ('2023-09-19 04:49:03.128128', '1721', '14787'),
-  ('2023-09-19 04:49:03.128128', '1721', '14788'),
-  ('2023-09-19 04:49:03.128128', '1721', '14789'),
-  ('2023-09-19 04:49:03.128128', '1721', '14790')
+  ('2023-10-07 01:37:56.389389', '1725', '14816'),
+  ('2023-10-07 01:37:56.390390', '1725', '14817'),
+  ('2023-10-07 01:37:56.390390', '1725', '14818'),
+  ('2023-10-07 01:37:56.390390', '1725', '14819'),
+  ('2023-10-07 01:37:56.390390', '1725', '14820'),
+  ('2023-10-07 01:37:56.390390', '1725', '14821'),
+  ('2023-10-07 01:37:56.390390', '1725', '14822'),
+  ('2023-10-07 01:37:56.390390', '1725', '14823'),
+  ('2023-10-07 01:37:56.390390', '1725', '14824'),
+  ('2023-10-07 01:37:56.390390', '1725', '14825')
   ;
 
   // Update to source_song table
