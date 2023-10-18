@@ -49,7 +49,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of October 6, 2023', '2023-10-06 12:00:00.000000', 'https://www.stereogum.com/2238326/the-5-best-songs-of-the-week-503/lists/the-5-best-songs-of-the-week/');
+    ('Stereogum', 'The 5 Best Songs Of The Week', 'Week of October 13, 2023', '2023-10-13 12:00:00.000000', 'https://www.stereogum.com/2238857/the-5-best-songs-of-the-week-504/lists/the-5-best-songs-of-the-week/');
 
 
   // Update to source table
@@ -59,7 +59,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1737; // SELECT last_insert_rowid();
+  source_id = 1741; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("list-module__title small");
@@ -102,47 +102,47 @@
   songsData =
   [
     {
-        "title": "Neighbors",
-        "artist_name": "Joanna Sternberg",
+        "title": "Let's Talk Money",
+        "artist_name": "Slim",
         "video_id": null,
-        "capture_date": "2023-10-17 07:45:23.153153",
-        "source_id": 1737,
+        "capture_date": "2023-10-17 08:17:14.464464",
+        "source_id": 1741,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shaq & Kobe",
-        "artist_name": "Rick Ross & Meek Mill",
+        "title": "be okay",
+        "artist_name": "Yumi Zouma",
         "video_id": null,
-        "capture_date": "2023-10-17 07:45:23.153153",
-        "source_id": 1737,
-        "song_id": 14875,
-        "duplicate": true
-    },
-    {
-        "title": "ILION",
-        "artist_name": "SLIFT",
-        "video_id": null,
-        "capture_date": "2023-10-17 07:45:23.154154",
-        "source_id": 1737,
+        "capture_date": "2023-10-17 08:17:14.465465",
+        "source_id": 1741,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Western Cum",
-        "artist_name": "Cory Hanson",
+        "title": "Out Of Town",
+        "artist_name": "Hotline TNT",
         "video_id": null,
-        "capture_date": "2023-10-17 07:45:23.154154",
-        "source_id": 1737,
+        "capture_date": "2023-10-17 08:17:14.465465",
+        "source_id": 1741,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Theia",
-        "artist_name": "King Gizzard & The Lizard Wizard",
+        "title": "Spend The Grace",
+        "artist_name": "Full Of Hell & Nothing",
         "video_id": null,
-        "capture_date": "2023-10-17 07:45:23.154154",
-        "source_id": 1737,
+        "capture_date": "2023-10-17 08:17:14.465465",
+        "source_id": 1741,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Shit Talk",
+        "artist_name": "Sufjan Stevens",
+        "video_id": null,
+        "capture_date": "2023-10-17 08:17:14.465465",
+        "source_id": 1741,
         "song_id": null,
         "duplicate": false
     }
@@ -187,10 +187,11 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Neighbors', 'Joanna Sternberg', NULL),
-  ('ILION', 'SLIFT', NULL),
-  ('Western Cum', 'Cory Hanson', NULL),
-  ('Theia', 'King Gizzard & The Lizard Wizard', NULL)
+  ('Let’s Talk Money', 'Slim', NULL),
+  ('be okay', 'Yumi Zouma', NULL),
+  ('Out Of Town', 'Hotline TNT', NULL),
+  ('Spend The Grace', 'Full Of Hell & Nothing', NULL),
+  ('Shit Talk', 'Sufjan Stevens', NULL)
   ;
 
    // Update to song table
@@ -201,7 +202,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14882; // SELECT last_insert_rowid();
+  song_id = 14925; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -241,11 +242,11 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-10-17 07:45:23.153153', '1737', '14879'),
-  ('2023-10-17 07:45:23.153153', '1737', '14875'),
-  ('2023-10-17 07:45:23.154154', '1737', '14880'),
-  ('2023-10-17 07:45:23.154154', '1737', '14881'),
-  ('2023-10-17 07:45:23.154154', '1737', '14882')
+  ('2023-10-17 08:17:14.464464', '1741', '14921'),
+  ('2023-10-17 08:17:14.465465', '1741', '14922'),
+  ('2023-10-17 08:17:14.465465', '1741', '14923'),
+  ('2023-10-17 08:17:14.465465', '1741', '14924'),
+  ('2023-10-17 08:17:14.465465', '1741', '14925')
   ;
 
   // Update to source_song table

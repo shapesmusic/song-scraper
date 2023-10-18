@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 14, 2023', '2023-10-14 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-10-14/2023-10-14');
+    ('Billboard', 'The Hot 100', 'Week of October 21, 2023', '2023-10-21 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-10-21');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1736; // SELECT last_insert_rowid();
+  source_id = 1738; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,83 +105,218 @@
   songsData =
   [
     {
-        "title": "3D",
-        "artist_name": "Jung Kook & Jack Harlow",
+        "title": "IDGAF",
+        "artist_name": "Drake ft. Yeat",
         "video_id": null,
-        "capture_date": "2023-10-17 07:39:40.395395",
-        "source_id": 1736,
+        "capture_date": "2023-10-17 07:50:04.729729",
+        "source_id": 1738,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Better Place",
-        "artist_name": "*NSYNC",
+        "title": "Virginia Beach",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2023-10-17 07:39:40.398398",
-        "source_id": 1736,
+        "capture_date": "2023-10-17 07:50:04.730730",
+        "source_id": 1738,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Mamaw's House",
-        "artist_name": "Thomas Rhett ft. Morgan Wallen",
+        "title": "Calling For You",
+        "artist_name": "Drake ft. 21 Savage",
         "video_id": null,
-        "capture_date": "2023-10-17 07:39:40.401401",
-        "source_id": 1736,
+        "capture_date": "2023-10-17 07:50:04.730730",
+        "source_id": 1738,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Water",
-        "artist_name": "Tyla",
+        "title": "Daylight",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2023-10-17 07:39:40.402402",
-        "source_id": 1736,
+        "capture_date": "2023-10-17 07:50:04.730730",
+        "source_id": 1738,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Stick Season",
-        "artist_name": "Noah Kahan",
+        "title": "Fear Of Heights",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2023-10-17 07:39:40.403403",
-        "source_id": 1736,
+        "capture_date": "2023-10-17 07:50:04.730730",
+        "source_id": 1738,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Shaq & Kobe",
-        "artist_name": "Rick Ross & Meek Mill",
+        "title": "Rich Baby Daddy",
+        "artist_name": "Drake ft. Sexyy Red & SZA",
         "video_id": null,
-        "capture_date": "2023-10-17 07:39:40.403403",
-        "source_id": 1736,
+        "capture_date": "2023-10-17 07:50:04.730730",
+        "source_id": 1738,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Stars Like Confetti",
-        "artist_name": "Dustin Lynch",
+        "title": "Gently",
+        "artist_name": "Drake ft. Bad Bunny",
         "video_id": null,
-        "capture_date": "2023-10-17 07:39:40.406406",
-        "source_id": 1736,
+        "capture_date": "2023-10-17 07:50:04.730730",
+        "source_id": 1738,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "God Gave Me A Girl",
-        "artist_name": "Russell Dickerson",
+        "title": "Amen",
+        "artist_name": "Drake ft. Teezo Touchdown",
         "video_id": null,
-        "capture_date": "2023-10-17 07:39:40.406406",
-        "source_id": 1736,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Secret Recipe",
-        "artist_name": "Lil Yachty & J. Cole",
+        "title": "7969 Santa",
+        "artist_name": "Drake",
         "video_id": null,
-        "capture_date": "2023-10-17 07:39:40.406406",
-        "source_id": 1736,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "8am In Charlotte",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "What Would Pluto Do",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Bahamas Promises",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Tried Our Best",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Members Only",
+        "artist_name": "Drake ft. PARTYNEXTDOOR",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "All The Parties",
+        "artist_name": "Drake ft. Chief Keef",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Drew A Picasso",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Another Late Night",
+        "artist_name": "Drake ft. Lil Yachty",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Away From Home",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "BBL Love Interlude",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Polar Opposites",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.731731",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Screw The World Interlude",
+        "artist_name": "Drake",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.732732",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Wild Ones",
+        "artist_name": "Jessie Murph & Jelly Roll",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.732732",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "She Calls Me Back",
+        "artist_name": "Noah Kahan With Kacey Musgraves",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.733733",
+        "source_id": 1738,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "Y Lloro",
+        "artist_name": "Junior H",
+        "video_id": null,
+        "capture_date": "2023-10-17 07:50:04.734734",
+        "source_id": 1738,
         "song_id": null,
         "duplicate": false
     }
@@ -225,15 +360,30 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('3D', 'Jung Kook & Jack Harlow', NULL),
-  ('Better Place', '*NSYNC', NULL),
-  ('Mamaw’s House', 'Thomas Rhett ft. Morgan Wallen', NULL),
-  ('Water', 'Tyla', NULL),
-  ('Stick Season', 'Noah Kahan', NULL),
-  ('Shaq & Kobe', 'Rick Ross & Meek Mill', NULL),
-  ('Stars Like Confetti', 'Dustin Lynch', NULL),
-  ('God Gave Me A Girl', 'Russell Dickerson', NULL),
-  ('The Secret Recipe', 'Lil Yachty & J. Cole', NULL)
+  ('IDGAF', 'Drake ft. Yeat', NULL),
+  ('Virginia Beach', 'Drake', NULL),
+  ('Calling For You', 'Drake ft. 21 Savage', NULL),
+  ('Daylight', 'Drake', NULL),
+  ('Fear Of Heights', 'Drake', NULL),
+  ('Rich Baby Daddy', 'Drake ft. Sexyy Red & SZA', NULL),
+  ('Gently', 'Drake ft. Bad Bunny', NULL),
+  ('Amen', 'Drake ft. Teezo Touchdown', NULL),
+  ('7969 Santa', 'Drake', NULL),
+  ('8am In Charlotte', 'Drake', NULL),
+  ('What Would Pluto Do', 'Drake', NULL),
+  ('Bahamas Promises', 'Drake', NULL),
+  ('Tried Our Best', 'Drake', NULL),
+  ('Members Only', 'Drake ft. PARTYNEXTDOOR', NULL),
+  ('All The Parties', 'Drake ft. Chief Keef', NULL),
+  ('Drew A Picasso', 'Drake', NULL),
+  ('Another Late Night', 'Drake ft. Lil Yachty', NULL),
+  ('Away From Home', 'Drake', NULL),
+  ('BBL Love Interlude', 'Drake', NULL),
+  ('Polar Opposites', 'Drake', NULL),
+  ('Screw The World Interlude', 'Drake', NULL),
+  ('Wild Ones', 'Jessie Murph & Jelly Roll', NULL),
+  ('She Calls Me Back', 'Noah Kahan With Kacey Musgraves', NULL),
+  ('Y Lloro', 'Junior H', NULL)
   ;
 
    // Update to song table
@@ -244,7 +394,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14878; // SELECT last_insert_rowid();
+  song_id = 14906; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -284,15 +434,30 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-10-17 07:39:40.395395', '1736', '14870'),
-  ('2023-10-17 07:39:40.398398', '1736', '14871'),
-  ('2023-10-17 07:39:40.401401', '1736', '14872'),
-  ('2023-10-17 07:39:40.402402', '1736', '14873'),
-  ('2023-10-17 07:39:40.403403', '1736', '14874'),
-  ('2023-10-17 07:39:40.403403', '1736', '14875'),
-  ('2023-10-17 07:39:40.406406', '1736', '14876'),
-  ('2023-10-17 07:39:40.406406', '1736', '14877'),
-  ('2023-10-17 07:39:40.406406', '1736', '14878')
+  ('2023-10-17 07:50:04.729729', '1738', '14883'),
+  ('2023-10-17 07:50:04.730730', '1738', '14884'),
+  ('2023-10-17 07:50:04.730730', '1738', '14885'),
+  ('2023-10-17 07:50:04.730730', '1738', '14886'),
+  ('2023-10-17 07:50:04.730730', '1738', '14887'),
+  ('2023-10-17 07:50:04.730730', '1738', '14888'),
+  ('2023-10-17 07:50:04.730730', '1738', '14889'),
+  ('2023-10-17 07:50:04.731731', '1738', '14890'),
+  ('2023-10-17 07:50:04.731731', '1738', '14891'),
+  ('2023-10-17 07:50:04.731731', '1738', '14892'),
+  ('2023-10-17 07:50:04.731731', '1738', '14893'),
+  ('2023-10-17 07:50:04.731731', '1738', '14894'),
+  ('2023-10-17 07:50:04.731731', '1738', '14895'),
+  ('2023-10-17 07:50:04.731731', '1738', '14896'),
+  ('2023-10-17 07:50:04.731731', '1738', '14897'),
+  ('2023-10-17 07:50:04.731731', '1738', '14898'),
+  ('2023-10-17 07:50:04.731731', '1738', '14899'),
+  ('2023-10-17 07:50:04.731731', '1738', '14900'),
+  ('2023-10-17 07:50:04.731731', '1738', '14901'),
+  ('2023-10-17 07:50:04.731731', '1738', '14902'),
+  ('2023-10-17 07:50:04.732732', '1738', '14903'),
+  ('2023-10-17 07:50:04.732732', '1738', '14904'),
+  ('2023-10-17 07:50:04.733733', '1738', '14905'),
+  ('2023-10-17 07:50:04.734734', '1738', '14906')
   ;
 
   // Update to source_song table
