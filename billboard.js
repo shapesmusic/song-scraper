@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 7, 2023', '2023-10-07 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-10-07');
+    ('Billboard', 'The Hot 100', 'Week of October 14, 2023', '2023-10-14 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-10-14/2023-10-14');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1727; // SELECT last_insert_rowid();
+  source_id = 1736; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,128 +105,83 @@
   songsData =
   [
     {
-        "title": "Sarah's Place",
-        "artist_name": "Zach Bryan ft. Noah Kahan",
+        "title": "3D",
+        "artist_name": "Jung Kook & Jack Harlow",
         "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.341341",
-        "source_id": 1727,
+        "capture_date": "2023-10-17 07:39:40.395395",
+        "source_id": 1736,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Agora Hills",
-        "artist_name": "Doja Cat",
+        "title": "Better Place",
+        "artist_name": "*NSYNC",
         "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.342342",
-        "source_id": 1727,
+        "capture_date": "2023-10-17 07:39:40.398398",
+        "source_id": 1736,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Boys Of Faith",
-        "artist_name": "Zach Bryan ft. Bon Iver",
+        "title": "Mamaw's House",
+        "artist_name": "Thomas Rhett ft. Morgan Wallen",
         "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.342342",
-        "source_id": 1727,
-        "song_id": 14816,
-        "duplicate": true
-    },
-    {
-        "title": "Deep Satin",
-        "artist_name": "Zach Bryan",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.343343",
-        "source_id": 1727,
+        "capture_date": "2023-10-17 07:39:40.401401",
+        "source_id": 1736,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Nine Ball",
-        "artist_name": "Zach Bryan",
+        "title": "Water",
+        "artist_name": "Tyla",
         "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.343343",
-        "source_id": 1727,
+        "capture_date": "2023-10-17 07:39:40.402402",
+        "source_id": 1736,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "El Jefe",
-        "artist_name": "Shakira X Fuerza Regida",
+        "title": "Stick Season",
+        "artist_name": "Noah Kahan",
         "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.343343",
-        "source_id": 1727,
-        "song_id": 14820,
-        "duplicate": true
-    },
-    {
-        "title": "500lbs",
-        "artist_name": "Lil Tecca",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.343343",
-        "source_id": 1727,
+        "capture_date": "2023-10-17 07:39:40.403403",
+        "source_id": 1736,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "One More Time",
-        "artist_name": "Blink-182",
+        "title": "Shaq & Kobe",
+        "artist_name": "Rick Ross & Meek Mill",
         "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.343343",
-        "source_id": 1727,
+        "capture_date": "2023-10-17 07:39:40.403403",
+        "source_id": 1736,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Un Preview",
-        "artist_name": "Bad Bunny",
+        "title": "Stars Like Confetti",
+        "artist_name": "Dustin Lynch",
         "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.343343",
-        "source_id": 1727,
+        "capture_date": "2023-10-17 07:39:40.406406",
+        "source_id": 1736,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pain, Sweet, Pain",
-        "artist_name": "Zach Bryan",
+        "title": "God Gave Me A Girl",
+        "artist_name": "Russell Dickerson",
         "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.343343",
-        "source_id": 1727,
+        "capture_date": "2023-10-17 07:39:40.406406",
+        "source_id": 1736,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "My Love Mine All Mine",
-        "artist_name": "Mitski",
+        "title": "The Secret Recipe",
+        "artist_name": "Lil Yachty & J. Cole",
         "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.344344",
-        "source_id": 1727,
-        "song_id": 14781,
-        "duplicate": true
-    },
-    {
-        "title": "Segun Quien",
-        "artist_name": "Maluma & Carin Leon",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.344344",
-        "source_id": 1727,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "HVN On Earth",
-        "artist_name": "Lil Tecca & Kodak Black",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.344344",
-        "source_id": 1727,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Can't Have Mine",
-        "artist_name": "Dylan Scott",
-        "video_id": null,
-        "capture_date": "2023-10-07 01:44:36.344344",
-        "source_id": 1727,
+        "capture_date": "2023-10-17 07:39:40.406406",
+        "source_id": 1736,
         "song_id": null,
         "duplicate": false
     }
@@ -270,17 +225,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Sarah’s Place', 'Zach Bryan ft. Noah Kahan', NULL),
-  ('Agora Hills', 'Doja Cat', NULL),
-  ('Deep Satin', 'Zach Bryan', NULL),
-  ('Nine Ball', 'Zach Bryan', NULL),
-  ('500lbs', 'Lil Tecca', NULL),
-  ('One More Time', 'Blink-182', NULL),
-  ('Un Preview', 'Bad Bunny', NULL),
-  ('Pain, Sweet, Pain', 'Zach Bryan', NULL),
-  ('Segun Quien', 'Maluma & Carin Leon', NULL),
-  ('HVN On Earth', 'Lil Tecca & Kodak Black', NULL),
-  ('Can’t Have Mine', 'Dylan Scott', NULL)
+  ('3D', 'Jung Kook & Jack Harlow', NULL),
+  ('Better Place', '*NSYNC', NULL),
+  ('Mamaw’s House', 'Thomas Rhett ft. Morgan Wallen', NULL),
+  ('Water', 'Tyla', NULL),
+  ('Stick Season', 'Noah Kahan', NULL),
+  ('Shaq & Kobe', 'Rick Ross & Meek Mill', NULL),
+  ('Stars Like Confetti', 'Dustin Lynch', NULL),
+  ('God Gave Me A Girl', 'Russell Dickerson', NULL),
+  ('The Secret Recipe', 'Lil Yachty & J. Cole', NULL)
   ;
 
    // Update to song table
@@ -291,7 +244,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14840; // SELECT last_insert_rowid();
+  song_id = 14878; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -331,20 +284,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-10-07 01:44:36.341341', '1727', '14830'),
-  ('2023-10-07 01:44:36.342342', '1727', '14831'),
-  ('2023-10-07 01:44:36.342342', '1727', '14816'),
-  ('2023-10-07 01:44:36.343343', '1727', '14832'),
-  ('2023-10-07 01:44:36.343343', '1727', '14833'),
-  ('2023-10-07 01:44:36.343343', '1727', '14820'),
-  ('2023-10-07 01:44:36.343343', '1727', '14834'),
-  ('2023-10-07 01:44:36.343343', '1727', '14835'),
-  ('2023-10-07 01:44:36.343343', '1727', '14836'),
-  ('2023-10-07 01:44:36.343343', '1727', '14837'),
-  ('2023-10-07 01:44:36.344344', '1727', '14781'),
-  ('2023-10-07 01:44:36.344344', '1727', '14838'),
-  ('2023-10-07 01:44:36.344344', '1727', '14839'),
-  ('2023-10-07 01:44:36.344344', '1727', '14840')
+  ('2023-10-17 07:39:40.395395', '1736', '14870'),
+  ('2023-10-17 07:39:40.398398', '1736', '14871'),
+  ('2023-10-17 07:39:40.401401', '1736', '14872'),
+  ('2023-10-17 07:39:40.402402', '1736', '14873'),
+  ('2023-10-17 07:39:40.403403', '1736', '14874'),
+  ('2023-10-17 07:39:40.403403', '1736', '14875'),
+  ('2023-10-17 07:39:40.406406', '1736', '14876'),
+  ('2023-10-17 07:39:40.406406', '1736', '14877'),
+  ('2023-10-17 07:39:40.406406', '1736', '14878')
   ;
 
   // Update to source_song table
