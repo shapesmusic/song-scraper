@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'Bad Bunny’s Surprising Return and 13 More New Songs', '2023-10-13 11:53:53.000000', 'https://www.nytimes.com/2023/10/13/arts/music/playlist-bad-bunny-ice-spice.html');
+    ('New York Times', 'The Playlist', 'The Rolling Stones’ Ragged Plea, and 8 More New Songs', '2023-10-20 09:49:35.000000', 'https://www.nytimes.com/2023/10/20/arts/music/playlist-rolling-stones-kali-uchis.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1739; // SELECT last_insert_rowid();
+  source_id = 1743; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,128 +100,83 @@
   songsData =
   [
     {
-        "title": "Mr. October",
-        "artist_name": "Bad Bunny",
+        "title": "Tell Me Straight",
+        "artist_name": "The Rolling Stones",
         "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.497497",
-        "source_id": 1739,
+        "capture_date": "2023-10-31 04:27:07.485485",
+        "source_id": 1743,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Pretty Girl",
-        "artist_name": "Ice Spice and Rema",
+        "title": "Te Mata",
+        "artist_name": "Kali Uchis",
         "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
+        "capture_date": "2023-10-31 04:27:07.487487",
+        "source_id": 1743,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "The Only Way",
-        "artist_name": "Desire Marea",
+        "title": "Dang",
+        "artist_name": "Caroline Polachek",
         "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
+        "capture_date": "2023-10-31 04:27:07.487487",
+        "source_id": 1743,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Não Ao Marco Temporal",
-        "artist_name": "Esperanza Spalding",
+        "title": "Tania",
+        "artist_name": "Ana Tijoux",
         "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
+        "capture_date": "2023-10-31 04:27:07.487487",
+        "source_id": 1743,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "What Now",
-        "artist_name": "Brittany Howard",
+        "title": "Saying Something",
+        "artist_name": "Helena Deland",
         "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
+        "capture_date": "2023-10-31 04:27:07.487487",
+        "source_id": 1743,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Same Risk",
-        "artist_name": "Madi Diaz",
+        "title": "Finding Mirrors",
+        "artist_name": "Nailah Hunter",
         "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
+        "capture_date": "2023-10-31 04:27:07.487487",
+        "source_id": 1743,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Hell",
-        "artist_name": "Sleater-Kinney",
+        "title": "Velocity! What About the Inertia?",
+        "artist_name": "Julie Byrne with Laugh Cry Laugh",
         "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
+        "capture_date": "2023-10-31 04:27:07.487487",
+        "source_id": 1743,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Practice",
-        "artist_name": "Jamila Woods ft. Saba",
+        "title": "Babe Ruth",
+        "artist_name": "Dawn Richard",
         "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
+        "capture_date": "2023-10-31 04:27:07.487487",
+        "source_id": 1743,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Deeper",
-        "artist_name": "Sen Morimoto",
+        "title": "Cassia",
+        "artist_name": "Olof Dreijer",
         "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Young Daydreams (Beauteous Visions)",
-        "artist_name": "Roy Hargrove",
-        "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "New Ghosts",
-        "artist_name": "Mendoza Hoff Revels",
-        "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Afraid of Heights",
-        "artist_name": "boygenius",
-        "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Impasse",
-        "artist_name": "Allegra Krieger",
-        "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Lëk Ndau Mbay",
-        "artist_name": "Ndox Électrique",
-        "video_id": null,
-        "capture_date": "2023-10-17 07:56:02.498498",
-        "source_id": 1739,
+        "capture_date": "2023-10-31 04:27:07.487487",
+        "source_id": 1743,
         "song_id": null,
         "duplicate": false
     }
@@ -266,20 +221,15 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Mr. October', 'Bad Bunny', NULL),
-  ('Pretty Girl', 'Ice Spice and Rema', NULL),
-  ('The Only Way', 'Desire Marea', NULL),
-  ('Não Ao Marco Temporal', 'Esperanza Spalding', NULL),
-  ('What Now', 'Brittany Howard', NULL),
-  ('Same Risk', 'Madi Diaz', NULL),
-  ('Hell', 'Sleater-Kinney', NULL),
-  ('Practice', 'Jamila Woods ft. Saba', NULL),
-  ('Deeper', 'Sen Morimoto', NULL),
-  ('Young Daydreams (Beauteous Visions)', 'Roy Hargrove', NULL),
-  ('New Ghosts', 'Mendoza Hoff Revels', NULL),
-  ('Afraid of Heights', 'boygenius', NULL),
-  ('Impasse', 'Allegra Krieger', NULL),
-  ('Lëk Ndau Mbay', 'Ndox Électrique', NULL)
+  ('Tell Me Straight', 'The Rolling Stones', NULL),
+  ('Te Mata', 'Kali Uchis', NULL),
+  ('Dang', 'Caroline Polachek', NULL),
+  ('Tania', 'Ana Tijoux', NULL),
+  ('Saying Something', 'Helena Deland', NULL),
+  ('Finding Mirrors', 'Nailah Hunter', NULL),
+  ('Velocity! What About the Inertia?', 'Julie Byrne with Laugh Cry Laugh', NULL),
+  ('Babe Ruth', 'Dawn Richard', NULL),
+  ('Cassia', 'Olof Dreijer', NULL)
   ;
 
    // Update to song table
@@ -290,7 +240,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14920; // SELECT last_insert_rowid();
+  song_id = 14954; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -330,20 +280,15 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-10-17 07:56:02.497497', '1739', '14907'),
-  ('2023-10-17 07:56:02.498498', '1739', '14908'),
-  ('2023-10-17 07:56:02.498498', '1739', '14909'),
-  ('2023-10-17 07:56:02.498498', '1739', '14910'),
-  ('2023-10-17 07:56:02.498498', '1739', '14911'),
-  ('2023-10-17 07:56:02.498498', '1739', '14912'),
-  ('2023-10-17 07:56:02.498498', '1739', '14913'),
-  ('2023-10-17 07:56:02.498498', '1739', '14914'),
-  ('2023-10-17 07:56:02.498498', '1739', '14915'),
-  ('2023-10-17 07:56:02.498498', '1739', '14916'),
-  ('2023-10-17 07:56:02.498498', '1739', '14917'),
-  ('2023-10-17 07:56:02.498498', '1739', '14918'),
-  ('2023-10-17 07:56:02.498498', '1739', '14919'),
-  ('2023-10-17 07:56:02.498498', '1739', '14920')
+  ('2023-10-31 04:27:07.485485', '1743', '14946'),
+  ('2023-10-31 04:27:07.487487', '1743', '14947'),
+  ('2023-10-31 04:27:07.487487', '1743', '14948'),
+  ('2023-10-31 04:27:07.487487', '1743', '14949'),
+  ('2023-10-31 04:27:07.487487', '1743', '14950'),
+  ('2023-10-31 04:27:07.487487', '1743', '14951'),
+  ('2023-10-31 04:27:07.487487', '1743', '14952'),
+  ('2023-10-31 04:27:07.487487', '1743', '14953'),
+  ('2023-10-31 04:27:07.487487', '1743', '14954')
   ;
 
   // Update to source_song table
