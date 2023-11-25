@@ -42,7 +42,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('Billboard', 'The Hot 100', 'Week of October 28, 2023', '2023-10-28 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-10-28');
+    ('Billboard', 'The Hot 100', 'Week of November 4, 2023', '2023-11-04 12:00:00.000000', 'https://www.billboard.com/charts/hot-100/2023-11-04');
 
   // Update to source table
 
@@ -51,7 +51,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1742; // SELECT last_insert_rowid();
+  source_id = 1745; // SELECT last_insert_rowid();
   song_id = null;
 
   // elements = document.getElementsByClassName('chart-list__element display--flex');
@@ -105,191 +105,29 @@
   songsData =
   [
     {
-        "title": "Monaco",
-        "artist_name": "Bad Bunny",
+        "title": "Too Much",
+        "artist_name": "The Kid LAROI, Jung Kook & Central Cee",
         "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.926926",
-        "source_id": 1742,
+        "capture_date": "2023-11-05 04:39:46.239239",
+        "source_id": 1745,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Fina",
-        "artist_name": "Bad Bunny & Young Miko",
+        "title": "Burn It Down",
+        "artist_name": "Parker McCollum",
         "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.926926",
-        "source_id": 1742,
+        "capture_date": "2023-11-05 04:39:46.240240",
+        "source_id": 1745,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Perro Negro",
-        "artist_name": "Bad Bunny & Feid",
+        "title": "One Of Your Girls",
+        "artist_name": "Troye Sivan",
         "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.926926",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Nadie Sabe",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.926926",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Hibiki",
-        "artist_name": "Bad Bunny & Mora",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.927927",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mr. October",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.927927",
-        "source_id": 1742,
-        "song_id": 14907,
-        "duplicate": true
-    },
-    {
-        "title": "Cybertruck",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.927927",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Telefono Nuevo",
-        "artist_name": "Bad Bunny & Luar La L",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.927927",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Baby Nueva",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.927927",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Seda",
-        "artist_name": "Bad Bunny & Bryant Myers",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.927927",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Say My Grace",
-        "artist_name": "Offset ft. Travis Scott",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.927927",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Gracias Por Nada",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.927927",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Vou 787",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.927927",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Mercedes Carota",
-        "artist_name": "Bad Bunny & YOVNGCHIMI",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.928928",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Los Pits",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.928928",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "No Me Quiero Casar",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.928928",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Vuelve Candy B",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.928928",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Baticano",
-        "artist_name": "Bad Bunny",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.928928",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Thunder y Lightning",
-        "artist_name": "Bad Bunny & Eladio Carrion",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.928928",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Acho PR",
-        "artist_name": "Bad Bunny, Arcangel, De La Ghetto & Nengo Flow",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.928928",
-        "source_id": 1742,
-        "song_id": null,
-        "duplicate": false
-    },
-    {
-        "title": "Worth It",
-        "artist_name": "Offset & Don Toliver",
-        "video_id": null,
-        "capture_date": "2023-10-31 04:22:05.929929",
-        "source_id": 1742,
+        "capture_date": "2023-11-05 04:39:46.240240",
+        "source_id": 1745,
         "song_id": null,
         "duplicate": false
     }
@@ -333,26 +171,9 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Monaco', 'Bad Bunny', NULL),
-  ('Fina', 'Bad Bunny & Young Miko', NULL),
-  ('Perro Negro', 'Bad Bunny & Feid', NULL),
-  ('Nadie Sabe', 'Bad Bunny', NULL),
-  ('Hibiki', 'Bad Bunny & Mora', NULL),
-  ('Cybertruck', 'Bad Bunny', NULL),
-  ('Telefono Nuevo', 'Bad Bunny & Luar La L', NULL),
-  ('Baby Nueva', 'Bad Bunny', NULL),
-  ('Seda', 'Bad Bunny & Bryant Myers', NULL),
-  ('Say My Grace', 'Offset ft. Travis Scott', NULL),
-  ('Gracias Por Nada', 'Bad Bunny', NULL),
-  ('Vou 787', 'Bad Bunny', NULL),
-  ('Mercedes Carota', 'Bad Bunny & YOVNGCHIMI', NULL),
-  ('Los Pits', 'Bad Bunny', NULL),
-  ('No Me Quiero Casar', 'Bad Bunny', NULL),
-  ('Vuelve Candy B', 'Bad Bunny', NULL),
-  ('Baticano', 'Bad Bunny', NULL),
-  ('Thunder y Lightning', 'Bad Bunny & Eladio Carrion', NULL),
-  ('Acho PR', 'Bad Bunny, Arcangel, De La Ghetto & Nengo Flow', NULL),
-  ('Worth It', 'Offset & Don Toliver', NULL)
+  ('Too Much', 'The Kid LAROI, Jung Kook & Central Cee', NULL),
+  ('Burn It Down', 'Parker McCollum', NULL),
+  ('One Of Your Girls', 'Troye Sivan', NULL)
   ;
 
    // Update to song table
@@ -363,7 +184,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14945; // SELECT last_insert_rowid();
+  song_id = 14961; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -403,27 +224,9 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-10-31 04:22:05.926926', '1742', '14926'),
-  ('2023-10-31 04:22:05.926926', '1742', '14927'),
-  ('2023-10-31 04:22:05.926926', '1742', '14928'),
-  ('2023-10-31 04:22:05.926926', '1742', '14929'),
-  ('2023-10-31 04:22:05.927927', '1742', '14930'),
-  ('2023-10-31 04:22:05.927927', '1742', '14907'),
-  ('2023-10-31 04:22:05.927927', '1742', '14931'),
-  ('2023-10-31 04:22:05.927927', '1742', '14932'),
-  ('2023-10-31 04:22:05.927927', '1742', '14933'),
-  ('2023-10-31 04:22:05.927927', '1742', '14934'),
-  ('2023-10-31 04:22:05.927927', '1742', '14935'),
-  ('2023-10-31 04:22:05.927927', '1742', '14936'),
-  ('2023-10-31 04:22:05.927927', '1742', '14937'),
-  ('2023-10-31 04:22:05.928928', '1742', '14938'),
-  ('2023-10-31 04:22:05.928928', '1742', '14939'),
-  ('2023-10-31 04:22:05.928928', '1742', '14940'),
-  ('2023-10-31 04:22:05.928928', '1742', '14941'),
-  ('2023-10-31 04:22:05.928928', '1742', '14942'),
-  ('2023-10-31 04:22:05.928928', '1742', '14943'),
-  ('2023-10-31 04:22:05.928928', '1742', '14944'),
-  ('2023-10-31 04:22:05.929929', '1742', '14945')
+  ('2023-11-05 04:39:46.239239', '1745', '14959'),
+  ('2023-11-05 04:39:46.240240', '1745', '14960'),
+  ('2023-11-05 04:39:46.240240', '1745', '14961')
   ;
 
   // Update to source_song table

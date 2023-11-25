@@ -44,7 +44,7 @@
   INSERT INTO source
     (parent_entity, parent_stream, instance_name, publication_date, location)
   VALUES
-    ('New York Times', 'The Playlist', 'The Rolling Stones’ Ragged Plea, and 8 More New Songs', '2023-10-20 09:49:35.000000', 'https://www.nytimes.com/2023/10/20/arts/music/playlist-rolling-stones-kali-uchis.html');
+    ('New York Times', 'The Playlist', 'Mr Eazi’s Anthem of Gratitude, and 11 More New Songs', '2023-10-27 09:16:33.000000', 'https://www.nytimes.com/2023/10/27/arts/music/playlist-mr-eazi-silvana-estrada.html');
 
   // Update to source table
 
@@ -53,7 +53,7 @@
 // Step 2: Scrape song data into an array
 //
 
-  source_id = 1743; // SELECT last_insert_rowid();
+  source_id = 1746; // SELECT last_insert_rowid();
   song_id = null;
 
   elements = document.getElementsByClassName("css-kypbrf eoo0vm40"); // this class changes periodically
@@ -100,83 +100,110 @@
   songsData =
   [
     {
-        "title": "Tell Me Straight",
-        "artist_name": "The Rolling Stones",
+        "title": "Exit",
+        "artist_name": "​​Mr Eazi ft. Soweto Gospel Choir",
         "video_id": null,
-        "capture_date": "2023-10-31 04:27:07.485485",
-        "source_id": 1743,
+        "capture_date": "2023-11-05 04:42:44.724724",
+        "source_id": 1746,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Te Mata",
-        "artist_name": "Kali Uchis",
+        "title": "Topless Mother",
+        "artist_name": "Nadine Shah",
         "video_id": null,
-        "capture_date": "2023-10-31 04:27:07.487487",
-        "source_id": 1743,
+        "capture_date": "2023-11-05 04:42:44.725725",
+        "source_id": 1746,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Dang",
-        "artist_name": "Caroline Polachek",
+        "title": "Tough Love",
+        "artist_name": "Flyte ft. Laura Marling",
         "video_id": null,
-        "capture_date": "2023-10-31 04:27:07.487487",
-        "source_id": 1743,
+        "capture_date": "2023-11-05 04:42:44.725725",
+        "source_id": 1746,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Tania",
-        "artist_name": "Ana Tijoux",
+        "title": "Qué Problema",
+        "artist_name": "Silvana Estrada",
         "video_id": null,
-        "capture_date": "2023-10-31 04:27:07.487487",
-        "source_id": 1743,
+        "capture_date": "2023-11-05 04:42:44.725725",
+        "source_id": 1746,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Saying Something",
-        "artist_name": "Helena Deland",
+        "title": "Yesterdays",
+        "artist_name": "Lulu. ft. the Joy",
         "video_id": null,
-        "capture_date": "2023-10-31 04:27:07.487487",
-        "source_id": 1743,
+        "capture_date": "2023-11-05 04:42:44.725725",
+        "source_id": 1746,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Finding Mirrors",
-        "artist_name": "Nailah Hunter",
+        "title": "Mashoor",
+        "artist_name": "Sheherazaad",
         "video_id": null,
-        "capture_date": "2023-10-31 04:27:07.487487",
-        "source_id": 1743,
+        "capture_date": "2023-11-05 04:42:44.725725",
+        "source_id": 1746,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Velocity! What About the Inertia?",
-        "artist_name": "Julie Byrne with Laugh Cry Laugh",
+        "title": "Beautiful Sky",
+        "artist_name": "Old Dominion",
         "video_id": null,
-        "capture_date": "2023-10-31 04:27:07.487487",
-        "source_id": 1743,
+        "capture_date": "2023-11-05 04:42:44.725725",
+        "source_id": 1746,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Babe Ruth",
-        "artist_name": "Dawn Richard",
+        "title": "Sally Go Round the Roses",
+        "artist_name": "The Third Mind ft. Jesse Sykes",
         "video_id": null,
-        "capture_date": "2023-10-31 04:27:07.487487",
-        "source_id": 1743,
+        "capture_date": "2023-11-05 04:42:44.725725",
+        "source_id": 1746,
         "song_id": null,
         "duplicate": false
     },
     {
-        "title": "Cassia",
-        "artist_name": "Olof Dreijer",
+        "title": "Altruism",
+        "artist_name": "Hauschka",
         "video_id": null,
-        "capture_date": "2023-10-31 04:27:07.487487",
-        "source_id": 1743,
+        "capture_date": "2023-11-05 04:42:44.725725",
+        "source_id": 1746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "All the Bones Had Names",
+        "artist_name": "Roy Nathanson ft. Nick Hakim",
+        "video_id": null,
+        "capture_date": "2023-11-05 04:42:44.725725",
+        "source_id": 1746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "The Knight of Swords",
+        "artist_name": "J.D. Allen",
+        "video_id": null,
+        "capture_date": "2023-11-05 04:42:44.726726",
+        "source_id": 1746,
+        "song_id": null,
+        "duplicate": false
+    },
+    {
+        "title": "After Depths",
+        "artist_name": "Kevin Sun",
+        "video_id": null,
+        "capture_date": "2023-11-05 04:42:44.726726",
+        "source_id": 1746,
         "song_id": null,
         "duplicate": false
     }
@@ -221,15 +248,18 @@
   INSERT INTO song
     (title, artist_name, video_id)
   VALUES
-  ('Tell Me Straight', 'The Rolling Stones', NULL),
-  ('Te Mata', 'Kali Uchis', NULL),
-  ('Dang', 'Caroline Polachek', NULL),
-  ('Tania', 'Ana Tijoux', NULL),
-  ('Saying Something', 'Helena Deland', NULL),
-  ('Finding Mirrors', 'Nailah Hunter', NULL),
-  ('Velocity! What About the Inertia?', 'Julie Byrne with Laugh Cry Laugh', NULL),
-  ('Babe Ruth', 'Dawn Richard', NULL),
-  ('Cassia', 'Olof Dreijer', NULL)
+  ('Exit', '​​Mr Eazi ft. Soweto Gospel Choir', NULL),
+  ('Topless Mother', 'Nadine Shah', NULL),
+  ('Tough Love', 'Flyte ft. Laura Marling', NULL),
+  ('Qué Problema', 'Silvana Estrada', NULL),
+  ('Yesterdays', 'Lulu. ft. the Joy', NULL),
+  ('Mashoor', 'Sheherazaad', NULL),
+  ('Beautiful Sky', 'Old Dominion', NULL),
+  ('Sally Go Round the Roses', 'The Third Mind ft. Jesse Sykes', NULL),
+  ('Altruism', 'Hauschka', NULL),
+  ('All the Bones Had Names', 'Roy Nathanson ft. Nick Hakim', NULL),
+  ('The Knight of Swords', 'J.D. Allen', NULL),
+  ('After Depths', 'Kevin Sun', NULL)
   ;
 
    // Update to song table
@@ -240,7 +270,7 @@
  //
 
   // Get the last song_id inserted
-  song_id = 14954; // SELECT last_insert_rowid();
+  song_id = 14973; // SELECT last_insert_rowid();
 
   // Calculate the number of nonduplicate songs added
   nonduplicates = 0;
@@ -280,15 +310,18 @@
   INSERT INTO source_song
     (capture_date, source_id, song_id)
   VALUES
-  ('2023-10-31 04:27:07.485485', '1743', '14946'),
-  ('2023-10-31 04:27:07.487487', '1743', '14947'),
-  ('2023-10-31 04:27:07.487487', '1743', '14948'),
-  ('2023-10-31 04:27:07.487487', '1743', '14949'),
-  ('2023-10-31 04:27:07.487487', '1743', '14950'),
-  ('2023-10-31 04:27:07.487487', '1743', '14951'),
-  ('2023-10-31 04:27:07.487487', '1743', '14952'),
-  ('2023-10-31 04:27:07.487487', '1743', '14953'),
-  ('2023-10-31 04:27:07.487487', '1743', '14954')
+  ('2023-11-05 04:42:44.724724', '1746', '14962'),
+  ('2023-11-05 04:42:44.725725', '1746', '14963'),
+  ('2023-11-05 04:42:44.725725', '1746', '14964'),
+  ('2023-11-05 04:42:44.725725', '1746', '14965'),
+  ('2023-11-05 04:42:44.725725', '1746', '14966'),
+  ('2023-11-05 04:42:44.725725', '1746', '14967'),
+  ('2023-11-05 04:42:44.725725', '1746', '14968'),
+  ('2023-11-05 04:42:44.725725', '1746', '14969'),
+  ('2023-11-05 04:42:44.725725', '1746', '14970'),
+  ('2023-11-05 04:42:44.725725', '1746', '14971'),
+  ('2023-11-05 04:42:44.726726', '1746', '14972'),
+  ('2023-11-05 04:42:44.726726', '1746', '14973')
   ;
 
   // Update to source_song table
