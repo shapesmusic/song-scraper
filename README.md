@@ -19,7 +19,7 @@ Most recent added date in [brackets]
 
 **Billboard**
 
-- ✅🤖 Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2023-11-25]
+- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2023-11-25]
 - Pop Airplay https://www.billboard.com/charts/pop-songs/
 - Radio Songs https://www.billboard.com/charts/radio-songs/
 - TikTok Top 50 https://www.billboard.com/charts/tiktok-billboard-top-50/
@@ -27,7 +27,7 @@ Most recent added date in [brackets]
 
 **New York Times**
 
-- ✅🤖 Playlist https://www.nytimes.com/column/playlist [2023-11-17]
+- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2023-11-17]
 
 **YouTube**
 
@@ -43,11 +43,11 @@ Most recent added date in [brackets]
 
 **Stereogum**
 
-- ✅🤖 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2023-11-17]
+- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2023-11-17]
 
 **Pitchfork**
 
-- ✅🤖 Track Reviews https://pitchfork.com/reviews/tracks/ [2023-11-21 "Oral"]
+- ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2023-11-21 "Oral"]
   - Includes Best New Tracks https://pitchfork.com/reviews/best/tracks/
 - Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/
 
