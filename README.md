@@ -15,9 +15,11 @@ sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shap
 
 ### List of Sources
 
+Most recent added date in [brackets]
+
 **Billboard**
 
-- ✅🤖 Hot 100 https://www.billboard.com/charts/hot-100
+- ✅🤖 Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2023-11-25]
 - Pop Airplay https://www.billboard.com/charts/pop-songs/
 - Radio Songs https://www.billboard.com/charts/radio-songs/
 - TikTok Top 50 https://www.billboard.com/charts/tiktok-billboard-top-50/
@@ -25,27 +27,27 @@ sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shap
 
 **New York Times**
 
-- ✅🤖 Playlist https://www.nytimes.com/column/playlist
+- ✅🤖 Playlist https://www.nytimes.com/column/playlist [2023-11-17]
 
 **YouTube**
 
-- Weekly Top Music Videos https://charts.youtube.com/charts/TopVideos/us/weekly
-  - Regions: US, ...
+- ✅ Weekly Top Music Videos https://charts.youtube.com/charts/TopVideos/global/weekly
+  - Regions: Global, ...
 - Weekly Top Songs https://charts.youtube.com/charts/TopSongs/us/weekly
   - Regions: US, ...
 - New Releases: Music Videos https://music.youtube.com/new_releases/videos
 
 **The Fader**
 
-- ✅ Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life
+- ✅ Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [2023-09-29 "Dead or Alive"]
 
 **Stereogum**
 
-- ✅🤖 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/
+- ✅🤖 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2023-11-17]
 
 **Pitchfork**
 
-- ✅🤖 Track Reviews https://pitchfork.com/reviews/tracks/
+- ✅🤖 Track Reviews https://pitchfork.com/reviews/tracks/ [2023-11-21 "Oral"]
   - Includes Best New Tracks https://pitchfork.com/reviews/best/tracks/
 - Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/
 

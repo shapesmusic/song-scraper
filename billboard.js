@@ -37,6 +37,7 @@ for (let i = 1; i < elements.length; i++) {
   }
 }
 
+// Build the SQL Statement
 const songs = [];
 
 for (let i = 0; i < songsData.length; i++) {
