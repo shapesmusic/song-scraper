@@ -5,7 +5,7 @@
 ### A Little Setup
 
 1. Make sure the local copy of the `shapes.sqlite` database is up to date.
-1. Point the sqlite CLI to the database with (for example):
+1. Point the sqlite CLI to the database:
 
 ```
 sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shapes.sqlite
@@ -15,15 +15,19 @@ sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shap
 
 ### List of Sources
 
-Most recent added date in [brackets]
+**NMT [2023-11-28]**
+Most recent `song.id` 15115git
+Most recent 👀 date in [brackets]
+
+
 
 **Billboard**
 
-- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2023-11-25]
+- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2023-12-02]
 - Pop Airplay https://www.billboard.com/charts/pop-songs/
 - Radio Songs https://www.billboard.com/charts/radio-songs/
 - TikTok Top 50 https://www.billboard.com/charts/tiktok-billboard-top-50/
-- ✅ 10 Cool New Pop Songs https://www.billboard.com/results/#?q=cool%20new%20pop%20songs
+- ✅ 10 Cool New Pop Songs https://www.billboard.com/results/#?q=cool%20new%20pop%20songs [2023-11-20]
 
 **New York Times**
 
@@ -39,7 +43,7 @@ Most recent added date in [brackets]
 
 **The Fader**
 
-- ✅ Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [2023-09-29 "Dead or Alive"]
+- ✅ Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Nov 2023 Playlist - through "Oral"]
 
 **Stereogum**
 
@@ -49,7 +53,11 @@ Most recent added date in [brackets]
 
 - ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2023-11-21 "Oral"]
   - Includes Best New Tracks https://pitchfork.com/reviews/best/tracks/
-- Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/
+- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2023-11-27]
+
+**Popjustice**
+
+- ✅ New Music Friday https://www.popjustice.com/playlist/new-music-friday-popjustice-edit/ [Fri 2023-11-24]
 
 **Complex**
 
@@ -67,10 +75,6 @@ Most recent added date in [brackets]
 - ✅ Top 200 Weekly https://charts.spotify.com/charts/view/regional-global-weekly/latest
   - Regions: Global, ...
 
-**Popjustice**
-
--  New Music Friday https://www.popjustice.com/playlist/new-music-friday-popjustice-edit/
-
 **Soundcloud**
 
 - Top 50 https://soundcloud.com/charts/top?genre=all-music&country=all-countries
@@ -80,14 +84,21 @@ Most recent added date in [brackets]
 
 - Top 100 USA https://music.apple.com/us/playlist/top-100-usa/pl.606afcbb70264d2eb2b51d8dbcfa6a12
 
+**Feeds**
 
+- Brooklyn Vegan (x New Songs Out Today)
+
+- EARMILK
+
+- Indie Shuffle
+
+- Obscure Sound
+
+- The Owl
+
+- Line Of Best Fit
+
+  
 
 ---
 
-To list all recurring sources in the database:
-
-```sql
-SELECT DISTINCT parent_entity, parent_stream
-FROM source
-ORDER BY parent_entity;
-```
