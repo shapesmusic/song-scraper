@@ -15,23 +15,23 @@ sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shap
 
 ### List of Sources
 
-**NMT [2023-11-28]**
-Most recent `song.id` 15115git
+**NMT [2023-12-05]**
 Most recent 👀 date in [brackets]
 
 
 
 **Billboard**
 
-- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2023-12-02]
+- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2023-12-09]
+- ✅ 10 Cool New Pop Songs https://www.billboard.com/t/10-cool-new-pop-songs/ [2023-12-4]
+- Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2023-12-1]
 - Pop Airplay https://www.billboard.com/charts/pop-songs/
 - Radio Songs https://www.billboard.com/charts/radio-songs/
 - TikTok Top 50 https://www.billboard.com/charts/tiktok-billboard-top-50/
-- ✅ 10 Cool New Pop Songs https://www.billboard.com/results/#?q=cool%20new%20pop%20songs [2023-11-20]
 
 **New York Times**
 
-- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2023-11-17]
+- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2023-12-01]
 
 **YouTube**
 
@@ -43,17 +43,17 @@ Most recent 👀 date in [brackets]
 
 **The Fader**
 
-- ✅ Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Nov 2023 Playlist - through "Oral"]
+- ✅ Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Dec 2023 Playlist - through "Jennifer Pastoral"]
 
 **Stereogum**
 
-- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2023-11-17]
+- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2023-12-01]
 
 **Pitchfork**
 
-- ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2023-11-21 "Oral"]
+- ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2023-12-05 "Ruined"]
   - Includes Best New Tracks https://pitchfork.com/reviews/best/tracks/
-- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2023-11-27]
+- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2023-12-04]
 
 **Popjustice**
 
