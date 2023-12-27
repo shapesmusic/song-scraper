@@ -15,15 +15,16 @@ sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shap
 
 ### List of Sources
 
-**NMT [2023-12-05]**
+**NMT [2023-12-26]**
+Most recent `song_id` added: 15297
 Most recent 👀 date in [brackets]
 
 
 
 **Billboard**
 
-- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2023-12-09]
-- ✅ 10 Cool New Pop Songs https://www.billboard.com/t/10-cool-new-pop-songs/ [2023-12-4]
+- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2023-12-23]
+- ✅ 10 Cool New Pop Songs https://www.billboard.com/t/10-cool-new-pop-songs/ [2023-12-11]
 - Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2023-12-1]
 - Pop Airplay https://www.billboard.com/charts/pop-songs/
 - Radio Songs https://www.billboard.com/charts/radio-songs/
@@ -31,7 +32,7 @@ Most recent 👀 date in [brackets]
 
 **New York Times**
 
-- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2023-12-01]
+- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2023-12-22]
 
 **YouTube**
 
@@ -43,21 +44,21 @@ Most recent 👀 date in [brackets]
 
 **The Fader**
 
-- ✅ Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Dec 2023 Playlist - through "Jennifer Pastoral"]
+- ✅ Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Dec 2023 Playlist - through "Duofade"]
 
 **Stereogum**
 
-- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2023-12-01]
+- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2023-12-08]
 
 **Pitchfork**
 
-- ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2023-12-05 "Ruined"]
+- ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2023-12-08 "Daddy"]
   - Includes Best New Tracks https://pitchfork.com/reviews/best/tracks/
-- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2023-12-04]
+- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2023-12-18] (in Feedly)
 
 **Popjustice**
 
-- ✅ New Music Friday https://www.popjustice.com/playlist/new-music-friday-popjustice-edit/ [Fri 2023-11-24]
+- ✅ New Music Friday https://www.popjustice.com/playlist/new-music-friday-popjustice-edit/ [Fri 2023-12-22]
 
 **Complex**
 
