@@ -28,7 +28,7 @@ for (let i = 0; i < songsData.length; i++) {
 }
 
 console.log(
-  `INSERT INTO song
+  `INSERT INTO NMT
   (title, artist_name, video_id)
 VALUES
 ${songs.join(",\n")}

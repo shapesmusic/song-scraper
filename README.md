@@ -15,17 +15,16 @@ sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shap
 
 ### List of Sources
 
-**NMT [2023-12-26]**
-Most recent `song_id` added: 15297
+**NMT [2024-01-02]**
 Most recent 👀 date in [brackets]
 
 
 
 **Billboard**
 
-- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2023-12-23]
+- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2023-12-30]
 - ✅ 10 Cool New Pop Songs https://www.billboard.com/t/10-cool-new-pop-songs/ [2023-12-11]
-- Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2023-12-1]
+- ✅ Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2023-12-22]
 - Pop Airplay https://www.billboard.com/charts/pop-songs/
 - Radio Songs https://www.billboard.com/charts/radio-songs/
 - TikTok Top 50 https://www.billboard.com/charts/tiktok-billboard-top-50/
@@ -54,7 +53,7 @@ Most recent 👀 date in [brackets]
 
 - ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2023-12-08 "Daddy"]
   - Includes Best New Tracks https://pitchfork.com/reviews/best/tracks/
-- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2023-12-18] (in Feedly)
+- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2024-01-02] (in Feedly)
 
 **Popjustice**
 
