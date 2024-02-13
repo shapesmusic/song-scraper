@@ -1,6 +1,6 @@
 // NYT Playlist
 
-const elements = document.getElementsByClassName("css-vgpz0b e1gnsphs0"); // this class changes periodically
+const elements = document.getElementsByClassName("css-15h6bi9 e1gnsphs0"); // this class changes periodically
 
 const songsData = [];
 
