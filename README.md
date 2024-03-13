@@ -15,23 +15,23 @@ sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shap
 
 ### List of Sources
 
-**NMT [2024-02-06]**
+**NMT [2024-03-12]**
 Most recent 👀 date in [brackets]
 
 
 
 **Billboard**
 
-- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2024-02-17]
-- ✅ 10 Cool New Pop Songs https://www.billboard.com/t/10-cool-new-pop-songs/ [2023-12-11]
-- ✅ Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2024-02-09]
+- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2024-03-12]
+- ✅ Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2024-03-08]
+- 10 Cool New Pop Songs https://www.billboard.com/t/10-cool-new-pop-songs/ [2023-12-11] (discontinued after 2023?)
 - Pop Airplay https://www.billboard.com/charts/pop-songs/
 - Radio Songs https://www.billboard.com/charts/radio-songs/
 - TikTok Top 50 https://www.billboard.com/charts/tiktok-billboard-top-50/
 
 **New York Times**
 
-- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2024-02-09]
+- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2024-03-08]
 
 **YouTube**
 
@@ -43,21 +43,21 @@ Most recent 👀 date in [brackets]
 
 **The Fader**
 
-- ✅ Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Feb 2024 Playlist - through "Idea June"] 
+- ✅🤖 Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Mar 2024 Playlist - through "Tricky"] 
 
 **Stereogum**
 
-- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2024-02-09]
+- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2024-03-08]
 
 **Pitchfork**
 
-- ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2024-02-09 "Life Is"]
+- ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2024-03-11 "Act II: Date @ 8"]
   - Includes Best New Tracks https://pitchfork.com/reviews/best/tracks/
-- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2024-02-12] (in Feedly)
+- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2024-03-11] (in Feedly)
 
 **Popjustice**
 
-- ✅ New Music Friday https://www.popjustice.com/playlist/new-music-friday-popjustice-edit/ [Fri 2024-02-09]
+- ✅ New Music Friday https://open.spotify.com/playlist/5s7cNVeGfehrRfCatNN43P [Fri 2024-03-08]
   - use [Exportify](https://watsonbox.github.io/exportify/#access_token=BQCtHvo26Mks5zysMmDjh3ZxJ5FisQkzudP1yv2zrcTEK0oUBS4xQHNwLcdjh2SCyaDb8FRqTS5Ke0PiYC5k61Kg7vfHZuiXuvq6CzJQw1LGv9u86bCgQrj5uJ4h_QfWdnIpeLBBh-5Zqr4bE5oG5iWGYedr3Iou3C4BQkeZxCvWdIKf0m0Zg4u6LDOGW4krW0tOwL55qhhYyT2Tv7rhsqdEJw&token_type=Bearer&expires_in=3600)
 
 
@@ -69,12 +69,12 @@ Most recent 👀 date in [brackets]
 
 **Spotify**
 
-- ✅ Weekly Top Songs https://charts.spotify.com/charts/view/regional-global-weekly/latest
+- ✅ Weekly Top Songs https://charts.spotify.com/charts/view/regional-global-weekly/latest [2024-03-07] (take the top 10 or so)
   - Regions: Global, ...
 
 **Shazam**
 
-- ✅ Top 200 Weekly https://charts.spotify.com/charts/view/regional-global-weekly/latest
+- ✅ Top 200 Weekly https://www.shazam.com/charts/top-200/world
   - Regions: Global, ...
 
 **Soundcloud**

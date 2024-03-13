@@ -3,7 +3,7 @@
 const songsData = [];
 const elements = document.getElementsByClassName("artist-list");
 for (var i = 0; i < elements.length; i++) {
-  const title = elements[i].nextElementSibling.innerText.match(/“(.*?)”/)[1]; // everything inside the quotatino marks
+  const title = elements[i].nextElementSibling.innerText.match(/“(.*?)”/)[1]; // everything inside the quotation marks
   const artist_name = elements[i].innerText;
   const video_id = null;
 

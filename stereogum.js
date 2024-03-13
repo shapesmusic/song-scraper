@@ -5,7 +5,7 @@ const elements = document.getElementsByClassName("list-module__title small");
 const songsData = [];
 
 for (var i = 0; i < elements.length; i++) {
-  title = elements[i].innerText.match(/- "(.*?)"/)[1]; // may need " or “” type quotation marks
+  title = elements[i].innerText.match(/- "(.*?)"/)[1]; // may need " or “” type quotation marks. also check the dash type (usually -)
   const artist_name = elements[i].innerText.match(/.+?(?= - ")/)[0]; // may need " or “ type quotation marks
   const video_id = null;
   // replace null with below to grab video IDs (when all songs are YT)
