@@ -1,10 +1,10 @@
 // Pitchfork
 
 const songsData = [];
-const elements = document.getElementsByClassName("artist-list");
+const elements = document.getElementsByClassName("SummaryItemContent-eiDYMl jOmPiF summary-item__content");
 for (var i = 0; i < elements.length; i++) {
-  const title = elements[i].nextElementSibling.innerText.match(/“(.*?)”/)[1]; // everything inside the quotation marks
-  const artist_name = elements[i].innerText;
+  const title = elements[i].getElementsByClassName("SummaryItemHedLink-civMjp PNQqc summary-item-tracking__hed-link summary-item__hed-link summary-item__hed-link--underline-disable")[0].innerText.match(/“(.*?)”/)[1]; // everything inside the quotation marks
+  const artist_name = elements[i].getElementsByClassName("SummaryItemSubHedBase-gMyBBg hTfhzw summary-item__sub-hed")[0].innerText;
   const video_id = null;
 
   const songData = {

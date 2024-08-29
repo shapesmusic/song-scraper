@@ -15,23 +15,23 @@ sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shap
 
 ### List of Sources
 
-**NMT [2024-03-12]**
+**NMT [2024-08-27]**
 Most recent 👀 date in [brackets]
 
 
 
 **Billboard**
 
-- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2024-03-12]
-- ✅ Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2024-03-08]
-- 10 Cool New Pop Songs https://www.billboard.com/t/10-cool-new-pop-songs/ [2023-12-11] (discontinued after 2023?)
+- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2024-08-31]
+- ✅ Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2024-08-23]
+- 10 Cool New Pop Songs https://www.billboard.com/t/10-cool-new-pop-songs/ [2024-08-12]
 - Pop Airplay https://www.billboard.com/charts/pop-songs/
 - Radio Songs https://www.billboard.com/charts/radio-songs/
 - TikTok Top 50 https://www.billboard.com/charts/tiktok-billboard-top-50/
 
 **New York Times**
 
-- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2024-03-08]
+- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2024-08-23]
 
 **YouTube**
 
@@ -43,22 +43,23 @@ Most recent 👀 date in [brackets]
 
 **The Fader**
 
-- ✅🤖 Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Mar 2024 Playlist - through "Tricky"] 
+- ✅🤖 Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Aug 2024 Playlist - through "linear (extra) horizon"] 
 
 **Stereogum**
 
-- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2024-03-08]
+- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2024-08-23]
 
 **Pitchfork**
 
-- ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2024-03-11 "Act II: Date @ 8"]
+- ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2024-08-28 "SOS (Sex on Sight)"]
   - Includes Best New Tracks https://pitchfork.com/reviews/best/tracks/
-- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2024-03-11] (in Feedly)
+- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2024-08-26] (in Feedly)
+`please turn the following list into a SQLite statement with the format INSERT INTO NMT  (title, artist_name, video_id): <copy list>`
 
 **Popjustice**
 
-- ✅ New Music Friday https://open.spotify.com/playlist/5s7cNVeGfehrRfCatNN43P [Fri 2024-03-08]
-  - use [Exportify](https://watsonbox.github.io/exportify/#access_token=BQCtHvo26Mks5zysMmDjh3ZxJ5FisQkzudP1yv2zrcTEK0oUBS4xQHNwLcdjh2SCyaDb8FRqTS5Ke0PiYC5k61Kg7vfHZuiXuvq6CzJQw1LGv9u86bCgQrj5uJ4h_QfWdnIpeLBBh-5Zqr4bE5oG5iWGYedr3Iou3C4BQkeZxCvWdIKf0m0Zg4u6LDOGW4krW0tOwL55qhhYyT2Tv7rhsqdEJw&token_type=Bearer&expires_in=3600)
+- ✅ New Music Friday https://open.spotify.com/playlist/5s7cNVeGfehrRfCatNN43P [Fri 2024-08-23]
+  - use [Exportify](https://watsonbox.github.io/exportify/#access_token=BQCtHvo26Mks5zysMmDjh3ZxJ5FisQkzudP1yv2zrcTEK0oUBS4xQHNwLcdjh2SCyaDb8FRqTS5Ke0PiYC5k61Kg7vfHZuiXuvq6CzJQw1LGv9u86bCgQrj5uJ4h_QfWdnIpeLBBh-5Zqr4bE5oG5iWGYedr3Iou3C4BQkeZxCvWdIKf0m0Zg4u6LDOGW4krW0tOwL55qhhYyT2Tv7rhsqdEJw&token_type=Bearer&expires_in=3600), copy title and artist columns, and use the GPT prompt above.
 
 
 **Complex**
@@ -69,13 +70,15 @@ Most recent 👀 date in [brackets]
 
 **Spotify**
 
-- ✅ Weekly Top Songs https://charts.spotify.com/charts/view/regional-global-weekly/latest [2024-03-07] (take the top 10 or so)
+- ✅ Weekly Top Songs https://charts.spotify.com/charts/view/regional-global-weekly/latest [Week of 2024-08-22]
   - Regions: Global, ...
+  - Download CSV, delete all but the top 10 or so rows, copy title and artist columns, and use the GPT prompt above.
 
 **Shazam**
 
-- ✅ Top 200 Weekly https://www.shazam.com/charts/top-200/world
+- ✅ Top 200 Weekly https://www.shazam.com/charts/top-200/world [2024-08-29]
   - Regions: Global, ...
+  - Download CSV, delete all but the top 10 or so rows, copy title and artist columns, and use the GPT prompt above.
 
 **Soundcloud**
 
