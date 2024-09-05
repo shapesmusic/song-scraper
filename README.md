@@ -15,15 +15,15 @@ sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shap
 
 ### List of Sources
 
-**NMT [2024-08-27]**
+**NMT [2024-09-03]**
 Most recent 👀 date in [brackets]
 
 
 
 **Billboard**
 
-- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2024-08-31]
-- ✅ Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2024-08-23]
+- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2024-09-07]
+- ✅ Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2024-08-30]
 - 10 Cool New Pop Songs https://www.billboard.com/t/10-cool-new-pop-songs/ [2024-08-12]
 - Pop Airplay https://www.billboard.com/charts/pop-songs/
 - Radio Songs https://www.billboard.com/charts/radio-songs/
@@ -31,11 +31,12 @@ Most recent 👀 date in [brackets]
 
 **New York Times**
 
-- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2024-08-23]
+- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2024-08-30]
 
 **YouTube**
 
 - ✅ Weekly Top Music Videos https://charts.youtube.com/charts/TopVideos/global/weekly
+  - Download CSV, copy the top 10 or so title and artist values, and use the GPT prompt: `please turn the following list into a SQLite statement with the format INSERT INTO NMT  (title, artist_name, video_id): <paste list>`
   - Regions: Global, ...
 - Weekly Top Songs https://charts.youtube.com/charts/TopSongs/us/weekly
   - Regions: US, ...
@@ -43,22 +44,23 @@ Most recent 👀 date in [brackets]
 
 **The Fader**
 
-- ✅🤖 Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Aug 2024 Playlist - through "linear (extra) horizon"] 
+- ✅🤖 Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Sept 2024 Playlist - through "Lucky #8"] 
 
 **Stereogum**
 
-- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2024-08-23]
+- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2024-08-30]
 
 **Pitchfork**
 
 - ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2024-08-28 "SOS (Sex on Sight)"]
   - Includes Best New Tracks https://pitchfork.com/reviews/best/tracks/
-- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2024-08-26] (in Feedly)
-`please turn the following list into a SQLite statement with the format INSERT INTO NMT  (title, artist_name, video_id): <copy list>`
+- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2024-09-03] (also in Feedly)
+  - copy list and use GPT prompt above
+
 
 **Popjustice**
 
-- ✅ New Music Friday https://open.spotify.com/playlist/5s7cNVeGfehrRfCatNN43P [Fri 2024-08-23]
+- ✅ New Music Friday https://open.spotify.com/playlist/5s7cNVeGfehrRfCatNN43P [Fri 2024-08-30]
   - use [Exportify](https://watsonbox.github.io/exportify/#access_token=BQCtHvo26Mks5zysMmDjh3ZxJ5FisQkzudP1yv2zrcTEK0oUBS4xQHNwLcdjh2SCyaDb8FRqTS5Ke0PiYC5k61Kg7vfHZuiXuvq6CzJQw1LGv9u86bCgQrj5uJ4h_QfWdnIpeLBBh-5Zqr4bE5oG5iWGYedr3Iou3C4BQkeZxCvWdIKf0m0Zg4u6LDOGW4krW0tOwL55qhhYyT2Tv7rhsqdEJw&token_type=Bearer&expires_in=3600), copy title and artist columns, and use the GPT prompt above.
 
 
@@ -70,7 +72,7 @@ Most recent 👀 date in [brackets]
 
 **Spotify**
 
-- ✅ Weekly Top Songs https://charts.spotify.com/charts/view/regional-global-weekly/latest [Week of 2024-08-22]
+- ✅ Weekly Top Songs https://charts.spotify.com/charts/view/regional-global-weekly/latest [Week of 2024-08-29]
   - Regions: Global, ...
   - Download CSV, delete all but the top 10 or so rows, copy title and artist columns, and use the GPT prompt above.
 
