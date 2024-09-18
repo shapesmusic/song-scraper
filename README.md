@@ -15,15 +15,17 @@ sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shap
 
 ### List of Sources
 
-**NMT [2024-09-10]**
+**NMT [2024-09-17]** 55 songs, 32 videos
 Most recent 👀 date in [brackets]
 
 
 
 **Billboard**
 
-- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2024-09-14]
-- ✅ Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2024-09-06]
+- ✅[🤖](billboard.js) Hot 100 https://www.billboard.com/charts/hot-100 [wk of 2024-09-21]
+- ✅ Friday Music Guide https://www.billboard.com/t/friday-music-guide/ [2024-09-13]
+  - copy songs into a text list, then use the GPT prompt: `please turn the following list into a SQLite statement with the format INSERT INTO NMT (title, artist_name, video_id) and video_id values NULL: <paste list>`
+
 - 10 Cool New Pop Songs https://www.billboard.com/t/10-cool-new-pop-songs/ [2024-08-12]
 - Pop Airplay https://www.billboard.com/charts/pop-songs/
 - Radio Songs https://www.billboard.com/charts/radio-songs/
@@ -31,36 +33,38 @@ Most recent 👀 date in [brackets]
 
 **New York Times**
 
-- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2024-09-06]
+- ✅[🤖](nytPlaylist.js) Playlist https://www.nytimes.com/column/playlist [2024-09-13]
 
 **YouTube**
 
-- ✅ Weekly Top Music Videos https://charts.youtube.com/charts/TopVideos/global/weekly
-  - Download CSV, copy the top 10 or so title and artist values, and use the GPT prompt: `please turn the following list into a SQLite statement with the format INSERT INTO NMT (title, artist_name, video_id) and video_id values NULL: <paste list>`
+- Weekly Top Music Videos https://charts.youtube.com/charts/TopVideos/global/weekly
+  - Download CSV, copy the top 10 or so title and artist values, and use the GPT above.
   - Regions: Global, ...
 - Weekly Top Songs https://charts.youtube.com/charts/TopSongs/us/weekly
   - Regions: US, ...
-- New Releases: Music Videos https://music.youtube.com/new_releases/videos
+- ✅ New Releases: Music Videos https://music.youtube.com/new_releases/videos [2024-09-17]
+  - copy the top 10 or so songs, and use the GPT prompt above.
+
 
 **The Fader**
 
-- ✅🤖 Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Sept 2024 Playlist - through "Malibu Beach House"] 
+- ✅🤖 Songs You Need In Your Life https://www.thefader.com/tag/songs-you-need-in-your-life [Week ending 2024-09-11] 
 
 **Stereogum**
 
-- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2024-09-06]
+- ✅[🤖](stereogum.js) 5 Best Songs of the Week https://www.stereogum.com/category/franchises/the-5-best-songs-of-the-week/ [2024-09-13]
 
 **Pitchfork**
 
-- ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2024-09-06 "SOS (Magic I Want U)"]
+- ✅[🤖](pitchfork.js) Track Reviews https://pitchfork.com/reviews/tracks/ [2024-09-13 "Eusexua"]
   - Includes Best New Tracks https://pitchfork.com/reviews/best/tracks/
-- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2024-09-09] (also in Feedly)
+- ✅ Pitchfork Selects https://pitchfork.com/tags/pitchfork-selects/ [2024-09-16] (also in Feedly)
   - copy list and use GPT prompt above
 
 
 **Popjustice**
 
-- ✅ New Music Friday https://open.spotify.com/playlist/5s7cNVeGfehrRfCatNN43P [Fri 2024-09-06]
+- ✅ New Music Friday https://open.spotify.com/playlist/5s7cNVeGfehrRfCatNN43P [Fri 2024-09-13]
   - use [Exportify](https://watsonbox.github.io/exportify/#access_token=BQCtHvo26Mks5zysMmDjh3ZxJ5FisQkzudP1yv2zrcTEK0oUBS4xQHNwLcdjh2SCyaDb8FRqTS5Ke0PiYC5k61Kg7vfHZuiXuvq6CzJQw1LGv9u86bCgQrj5uJ4h_QfWdnIpeLBBh-5Zqr4bE5oG5iWGYedr3Iou3C4BQkeZxCvWdIKf0m0Zg4u6LDOGW4krW0tOwL55qhhYyT2Tv7rhsqdEJw&token_type=Bearer&expires_in=3600), copy title and artist columns, and use the GPT prompt above.
 
 
@@ -72,21 +76,21 @@ Most recent 👀 date in [brackets]
 
 **Spotify**
 
-- ✅ Weekly Top Songs https://charts.spotify.com/charts/view/regional-global-weekly/latest [Week of 2024-09-05]
+- ✅ Weekly Top Songs https://charts.spotify.com/charts/view/regional-global-weekly/latest [Week of 2024-09-12]
   - Regions: Global, ...
   - Download CSV, copy the top 10 or so titles and artists, and use the GPT prompt above.
   - Week ends on Thursday.
 
 **Shazam**
 
-- ✅ Top 200 Weekly https://www.shazam.com/charts/top-200/world [2024-09-10]
+- ✅ Top 200 Weekly https://www.shazam.com/charts/top-200/world [2024-09-17]
   - Regions: Global, ...
   - Download CSV, delete all but the top 10 or so rows, copy title and artist columns, and use the GPT prompt above.
   - Gives data for the past 7 days from the date accessed.
 
 **Soundcloud**
 
-- Top 50 https://soundcloud.com/charts/top?genre=all-music&country=all-countries
+- Top 50 https://soundcloud.com/charts/top?genre=all-music&country=all-countries [2024-09-17]
   - Regions: Global, ...
 
 **Apple Music**
