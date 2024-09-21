@@ -1,5 +1,7 @@
 # Song Scraper
 
+#### This repo is retired. I moved it into `shapes_backend` on 2024-09-21
+
 
 
 ### A Little Setup
@@ -13,7 +15,7 @@ sqlite3 /Users/davidforrest/david_local/development_local/shapes-backend/db/shap
 
 
 
-### List of Sources
+**List of Sources**
 
 **NMT [2024-09-17]** 55 songs, 32 videos
 Most recent 👀 date in [brackets]
